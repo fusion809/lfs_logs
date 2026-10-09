@@ -42,6 +42,7 @@
   18MiB 00:17:14 dolphin                     26.08.2    KDE File Manager.
   13MiB 00:17:00 spirv-tools                 1.4.363.0  API and commands for processing SPIR-V modules.
  7.1MiB 00:16:54 nss                         3.131      Network Security Services.
+  12MiB 00:16:18 kirigami                    6.31.0     QtQuick based components set.
  8.6MiB 00:15:55 libopenssl3                 3.6.5      OpenSSL 3.x libraries, required as a dependency of Julia.
   18MiB 00:15:18 librsvg                     2.63.2     SVG rendering library.
  185MiB 00:15:12 tesseract                   5.5.3      An OCR program.
@@ -53,7 +54,6 @@
   42MiB 00:13:55 openssl                     4.0.3      The Open Source toolkit for cryptography and Transport Layer Security.
   59MiB 00:13:05 gtk3                        3.24.52    GObject-based multi-platform GUI toolkit.
       - 00:12:43 fwupd (u)                   2.1.8      System daemon to allow session software to update firmware.
-  11MiB 00:12:42 kirigami                    6.30.0     QtQuick based components set.
   15MiB 00:12:38 plasma-nm                   6.7.5      Plasma applet written in QML for managing network connections.
   13MiB 00:12:26 libjxl                      0.12.0     JPEG XL image format reference implementation.
  1.3MiB 00:12:17 pay-respects (u)            0.8.8      Command suggestions, command-not-found and thefuck replacement.
@@ -131,6 +131,7 @@
  3.6MiB 00:04:40 plasma-systemmonitor        6.7.5      Interface for monitoring system resources.
   17MiB 00:04:39 mutter                      51.0       Window manager and compositor for GNOME.
  3.8MiB 00:04:37 kinfocenter                 6.7.5      Utility that provides information about a computer system.
+ 3.9MiB 00:04:36 kimageformats               6.31.0     Image format plugins for Qt 6.
   40MiB 00:04:34 vala                        0.56.19    Compiler for the GObject type system.
   47MiB 00:04:34 vim                         9.2.1172   Vi Improved, a highly configurable, improved version of the vi text editor.
   19MiB 00:04:31 simdutf                     9.2.1      Unicode routines (UTF8, UTF16, UTF32) and Base64.
@@ -143,7 +144,6 @@
  3.8MiB 00:04:18 kquickimageeditor           0.7.0.1    QML image editing components.
       - 00:04:15 gnome-software (u)          51.0       Graphical frontend for a variety of package managers.
  7.6MiB 00:04:15 abseil-cpp                  20260817.0 Collection of C++ library code designed to augment the C++ standard library.
- 3.8MiB 00:04:14 kimageformats               6.30.0     Image format plugins for Qt 6.
  2.3MiB 00:04:10 phonon                      4.12.0     Multimedia API for KDE.
   41MiB 00:04:08 coreutils                   9.12       The basic utilities of the GNU operating system.
  6.2MiB 00:04:06 graphviz                    16.1.0     Graph visualization software.
@@ -182,12 +182,12 @@
   52MiB 00:03:08 sqlite                      3530400    C library that implements an SQL database engine.
   12MiB 00:03:07 gstreamer                   1.28.8     Multimedia graph framework - core.
  1.9GiB 00:03:07 rust-bin (u)                1.99.0     Systems programming language with modern features (binary).
+1012KiB 00:03:06 kguiaddons                  6.31.0     Addons to QtGui.
   15MiB 00:03:03 sundials                    7.9.0      Suite of nonlinear differential/algebraic equation solvers.
  2.0MiB 00:03:03 kcontacts                   6.30.0     Address book API for KDE.
  1.1MiB 00:03:02 kquickcharts                6.30.0     QtQuick plugin providing high-performance charts.
  1.9MiB 00:03:01 kcmutils                    6.30.0     Utilities for interacting with KCModules.
  8.8MiB 00:03:01 fdk-aac                     2.0.3      Fraunhofer FDK AAC codec library.
- 998KiB 00:02:59 kguiaddons                  6.30.0     Addons to QtGui.
   33MiB 00:02:58 mitkrb                      1.22.2     The Kerberos network authentication system.
  774KiB 00:02:55 kpipewire                   6.7.5      Components relating to pipewire use in Plasma.
  1.2MiB 00:02:50 mpc                         1.4.1      Minimalist command line interface to MPD.
@@ -199,6 +199,7 @@
   46MiB 00:02:46 util-linux                  2.42.4     Miscellaneous system utilities for Linux.
  4.4MiB 00:02:45 kde-cli-tools               6.7.5      Tools based on KDE Frameworks to better interact with the system.
  6.7MiB 00:02:45 curl                        8.22.0     Command line tool and library for transferring data with URLs.
+  19MiB 00:02:44 ki18n                       6.31.0     Advanced internationalization framework.
  4.0MiB 00:02:44 gjs                         1.90.0     Javascript Bindings for GNOME.
  6.6MiB 00:02:44 kcoreaddons                 6.31.0     Addons to QtCore.
  1.6MiB 00:02:42 kfilemetadata               6.30.0     Library for extracting file metadata.
@@ -206,7 +207,6 @@
       - 00:02:40 vscode (u)                  1.141.0    Visual Studio Code: an advanced and modern code editor.
  3.3MiB 00:02:40 taglib                      2.3.2      Library for reading/editing the metadata of several popular audio formats.
   11MiB 00:02:38 fastfetch                   2.69.0     Feature-rich and performance oriented neofetch like system information tool.
-  19MiB 00:02:36 ki18n                       6.30.0     Advanced internationalization framework.
  7.4MiB 00:02:36 spice                       0.16.0     SPICE server.
   12MiB 00:02:33 zsh                         5.9.2      Modern, more extensible shell for Unix-like operating systems.
   43MiB 00:02:33 libx11                      1.8.13     X11 client-side library.
@@ -252,9 +252,9 @@
  2.3MiB 00:01:52 kuserfeedback               6.30.0     Collects user feedback for applications via telemetry and surveys.
  715KiB 00:01:52 libtasn1                    4.21.0     The ASN.1 library used in GNUTLS.
  721MiB 00:01:52 antigravity-ide             2.5.5      Agentic development platform from Google based on VSCode.
- 808KiB 00:01:52 kitemmodels                 6.30.0     Models for Qt Model/View system.
  2.9MiB 00:01:51 diffutils                   3.12       Utility programs used for creating patch files.
  434KiB 00:01:51 kdnssd                      6.31.0     Abstraction to system DNSSD features.
+ 793KiB 00:01:51 kitemmodels                 6.31.0     Models for Qt Model/View system.
   16MiB 00:01:48 gnome-shell                 51.0       Next generation desktop shell.
  7.1MiB 00:01:48 libical                     4.0.6      Implementation of the icalendar data type and serialization format.
  8.2MiB 00:01:48 gcr3                        3.41.2     Library for bits of crypto UI and parsing.
@@ -263,7 +263,9 @@
  1.5MiB 00:01:46 libxkbcommon                1.13.2     Keymap handling library for toolkits and window systems.
  5.0MiB 00:01:46 gnome-keyring               51.1       Stores passwords and encryption keys.
  7.0MiB 00:01:46 lvm2                        2.03.43    Logical Volume Manager 2 utilities.
+ 1.3MiB 00:01:45 kholidays                   6.31.0     KDE library for regional holiday information.
  571KiB 00:01:45 knotifications              6.30.0     Abstraction for system notifications.
+ 595KiB 00:01:45 kitemviews                  6.31.0     Widget addons for Qt Model/View.
   12MiB 00:01:44 ntp                         4.2.8p18   Network Time Protocol reference implementation.
  297KiB 00:01:43 knighttime                  6.7.5      Helpers for scheduling the dark-light cycle.
  3.2MiB 00:01:43 openldap                    2.7.1      Lightweight Directory Access Protocol (LDAP) client and server.
@@ -283,12 +285,13 @@
  8.6MiB 00:01:36 ninja                       1.13.2     Small build system with a focus on speed.
  650KiB 00:01:35 kparts                      6.30.0     Document centric plugin system.
  896KiB 00:01:35 pulseaudio-qt               1.9.0      Qt bindings for libpulse.
+ 439KiB 00:01:34 kglobalaccel                6.31.0     Add support for global workspace shortcuts.
  6.8MiB 00:01:34 wpa_supplicant              2.12       Utility providing key negotiation for WPA wireless networks.
  816KiB 00:01:34 kiconthemes                 6.30.0     Support for icon themes.
  4.2MiB 00:01:33 man-db                      2.13.1     Utility for reading man pages.
  8.0MiB 00:01:33 ostree                      2026.4     Operating system and container binary deployment and upgrades.
+ 978KiB 00:01:32 karchive                    6.31.0     Qt addon providing access to numerous types of archives.
  8.1MiB 00:01:31 sg3_utils                   1.49       Generic SCSI utilities.
- 978KiB 00:01:30 karchive                    6.31.0     Qt addon providing access to numerous types of archives.
   38MiB 00:01:29 breeze-icons                6.31.0     Breeze icon theme.
  1.6MiB 00:01:28 kconfigwidgets              6.30.0     Widgets for KConfig.
  1.8MiB 00:01:28 grep                        3.12       String search utility.
@@ -302,12 +305,11 @@
  1.2MiB 00:01:25 libshumate                  1.7.0      Map widget for GTK 4.
  1.8MiB 00:01:25 arpack                      3.9.1      Fortran77 subroutines for solving large scale eigenvalue problems.
  3.5MiB 00:01:25 gcr4                        4.4.1      Library for bits of crypto UI and parsing - version 4 branch.
- 596KiB 00:01:25 kitemviews                  6.30.0     Widget addons for Qt Model/View.
  913KiB 00:01:24 plasma-disks                6.7.5      Monitors S.M.A.R.T. capable devices for imminent failure.
  1.2MiB 00:01:23 libsndfile                  1.2.2      C library for reading and writing files containing sampled audio data.
  339KiB 00:01:23 kdbusaddons                 6.31.0     Addons to QtDBus.
  436KiB 00:01:23 prison                      6.30.0     Barcode API to produce QRCode barcodes and DataMatrix barcodes.
- 1.3MiB 00:01:22 kholidays                   6.30.0     KDE library for regional holiday information.
+ 350KiB 00:01:22 kidletime                   6.31.0     Monitoring user activity.
  3.9MiB 00:01:22 libgedit-gtksourceview      299.7.1    Source code editing widget library.
   65MiB 00:01:22 gnome-user-docs             51.0       User documentation for GNOME.
  574KiB 00:01:21 kcompletion                 6.30.0     Text completion helpers and widgets.
@@ -324,7 +326,6 @@
  739KiB 00:01:17 sddm-kcm                    6.7.5      KDE Config Module for SDDM.
  2.6MiB 00:01:16 libhandy                    1.8.3      GTK 3 UI elements for mobile devices.
  2.9MiB 00:01:16 libsepol                    3.11       SELinux binary policy manipulation library.
- 439KiB 00:01:16 kglobalaccel                6.30.0     Add support for global workspace shortcuts.
  686KiB 00:01:16 krunner                     6.30.0     Framework for providing different actions given a string query.
  9.5MiB 00:01:16 eog                         50.3       Eye of Gnome: An image viewing and cataloging program.
  619KiB 00:01:15 phonon-backend-vlc          0.12.0     VLC backend for Phonon.
@@ -343,7 +344,6 @@
  1.3MiB 00:01:09 gnome-bluetooth             47.2       Bluetooth graphical utilities integrated with GNOME.
  1.9MiB 00:01:09 libgtop                     2.41.3     Library for collecting system monitoring data.
  3.2MiB 00:01:09 localsearch                 3.12.0     Filesystem indexer and metadata extractor.
- 350KiB 00:01:09 kidletime                   6.30.0     Monitoring user activity.
  4.3MiB 00:01:09 at-spi2-core                2.62.0.1   Protocol definitions and daemon for D-Bus at-spi.
  6.5MiB 00:01:09 libwebp                     1.6.0      WebP image codec library.
  1.2MiB 00:01:07 wayland-protocols           1.49       Specifications of extended Wayland protocols.
@@ -357,7 +357,6 @@
  686KiB 00:01:06 gzip                        1.15       GNU compression utility.
  7.6MiB 00:01:06 seahorse                    47.0.1     GNOME application for managing PGP keys.
  262KiB 00:01:05 layer-shell-qt              6.7.5      Allows applications to make use of the Wayland wl-layer-shell protocol.
- 2.6MiB 00:01:05 kdoctools                   6.30.0     Documentation generation from docbook.
  4.3MiB 00:01:05 links                       2.30       Text WWW browser, similar to Lynx.
   27MiB 00:01:04 scc                         4.1.0      Sloc, Cloc and Code: a fast and feature-full code counter/analyser.
  464KiB 00:01:04 plasma-activities-stats     6.7.5      Library for accessing the usage data collected by the activities system.
@@ -367,6 +366,7 @@
  3.0MiB 00:01:01 libevent                    2.1.13     Event notification library.
  846KiB 00:01:01 kpackage                    6.30.0     Allows applications manage user installable packages of non-binary assets.
   21MiB 00:01:00 iso-codes                   4.20.1     Lists of the country, language, and currency names.
+ 2.4MiB 00:01:00 kdoctools                   6.31.0     Documentation generation from docbook.
  583KiB 00:01:00 qrupdate                    1.3.0      Fortran library for fast updates of QR and Cholesky decompositions
  830KiB 00:01:00 gspell                      1.14.5     Spell-checking library for GTK applications.
  9.6MiB 00:01:00 libxaw                      1.0.16     X11 Athena Widget library.
