@@ -1,0 +1,49 @@
+===== Update check started: 2026-10-14 11:52:02 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261014_115202
+Packages needing attention: kholidays
+===== Starting updatec: 2026-10-14 11:52:05 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - gpgmepp
+
+Building custom package gpgmepp...
+[11:53:47] Found custom package for gpgmepp, bypassing BLFS aliases.
+[11:53:47] Custom package detected at /home/fusion809/lfs_packaging/gpgmepp
+[11:53:47] Extracting dependencies for custom package 'gpgmepp'...
+[11:53:47] Required deps: gcc glibc gnupg gpgme libassuan libgpg-error 
+[11:53:47] Dependency 'gcc' already installed.
+[11:53:47] Dependency 'glibc' already installed.
+[11:53:47] Dependency 'gnupg' already installed.
+[11:53:48] Dependency 'gpgme' already installed.
+[11:53:48] Dependency 'libassuan' already installed.
+[11:53:48] Dependency 'libgpg-error' already installed.
+[11:53:48] Starting remote custom build for gpgmepp...
+[11:53:49] [LFS-AUTOBUILD] Skipping custom package gpgmepp: version 2.2.0 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Pushing changes in /var/lib/custom-packages...
+r13.1-21
+r13.1-392
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.2.10...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.2.10-lfs-r13.1-19
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~/lfs-scripts
