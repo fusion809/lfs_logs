@@ -1,0 +1,1115 @@
+===== Update check started: 2026-10-15 12:30:15 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261015_123015
+Packages needing attention: julia lightcraft mesa pdfcraft photocraft soundcraft vectorcraft wordcraft
+===== Starting updatec: 2026-10-15 12:30:18 AEST =====
+Checking for packages with missing file inventories...
+name=julia
+local_ver=1.13.1
+remote_ver=1.13.2
+name=lightcraft
+local_ver=0.7.1
+remote_ver=0.8.0
+name=mesa
+local_ver=26.2.4
+remote_ver=26.2.5
+name=pdfcraft
+local_ver=0.7.1
+remote_ver=0.8.0
+name=photocraft
+local_ver=0.8.2
+remote_ver=0.9.0
+name=soundcraft
+local_ver=0.6.1
+remote_ver=0.7.0
+name=vectorcraft
+local_ver=0.10.0
+remote_ver=0.11.0
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - julia
+  - lightcraft
+  - mesa
+  - pdfcraft
+  - photocraft
+  - soundcraft
+  - vectorcraft
+  - wordcraft
+
+Building custom package julia...
+[12:31:59] Found custom package for julia, bypassing BLFS aliases.
+[12:31:59] Custom package detected at /home/fusion809/lfs_packaging/julia
+[12:31:59] Extracting dependencies for custom package 'julia'...
+[12:31:59] Required deps: blas-lapack gcc glibc gmp libopenssl3 libssh2 lz4 mpfr nghttp2 openssl pcre2 suitesparse xz zlib zstd 
+[12:31:59] Dependency 'blas-lapack' already installed.
+[12:31:59] Dependency 'gcc' already installed.
+[12:32:00] Dependency 'glibc' already installed.
+[12:32:00] Dependency 'gmp' already installed.
+[12:32:00] Dependency 'libopenssl3' already installed.
+[12:32:00] Dependency 'libssh2' already installed.
+[12:32:00] Dependency 'lz4' already installed.
+[12:32:00] Dependency 'mpfr' already installed.
+[12:32:00] Dependency 'nghttp2' already installed.
+[12:32:00] Dependency 'openssl' already installed.
+[12:32:00] Dependency 'pcre2' already installed.
+[12:32:00] Dependency 'suitesparse' already installed.
+[12:32:00] Dependency 'xz' already installed.
+[12:32:00] Dependency 'zlib' already installed.
+[12:32:00] Dependency 'zstd' already installed.
+[12:32:00] Starting remote custom build for julia...
+julia-1.13.2.tar.gz already present and appears valid.
+environment: line 1: upver: command not found
+--2026-10-15 12:32:26--  https://aur.archlinux.org/cgit/aur.git/plain/system-zstd.patch?h=julia-git
+Resolving aur.archlinux.org (aur.archlinux.org)... 209.126.35.78, 2604:cac0:a104:d::2
+Connecting to aur.archlinux.org (aur.archlinux.org)|209.126.35.78|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 880 [text/plain]
+Saving to: ‘system-zstd.patch’
+
+system-zstd.patch     0%[                    ]       0  --.-KB/s               system-zstd.patch   100%[===================>]     880  --.-KB/s    in 0s      
+
+2026-10-15 12:32:28 (133 MB/s) - ‘system-zstd.patch’ saved [880/880]
+
+Warning: git information unavailable; versioning information limited
+Creating usr/etc/julia/startup.jl
+Copying in usr/share/man/man1/julia.1
+mkdir -p /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/share/julia/
+/home/fusion809/lfs_packaging/julia/julia-1.13.2/contrib/install.sh 755 /home/fusion809/lfs_packaging/julia/julia-1.13.2/contrib/julia-config.jl /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/share/julia/
+Warning: git information unavailable; versioning information limited
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    471 100    471   0      0    427      0   00:01   00:01              0100    471 100    471   0      0    427      0   00:01   00:01              0
+100    439 100    439   0      0    387      0   00:01   00:01              0100    439 100    439   0      0    387      0   00:01   00:01              0
+100    477 100    477   0      0    354      0   00:01   00:01              0100    477 100    477   0      0    354      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0  0      0   0      0   0      0      0      0           00:01              0  0      0   0      0   0      0      0      0           00:01              0 48 738.9k  48 356.3k   0      0 135.4k      0   00:05   00:02   00:03 348.4k 74 184.4k  74 137.0k   0      0  52189      0   00:03   00:02   00:01 132.4k100 184.4k 100 184.4k   0      0  70144      0   00:02   00:02         132.4k100 184.4k 100 184.4k   0      0  70101      0   00:02   00:02         132.4k100 184.4k 100 184.4k   0      0  70100      0   00:02   00:02         132.4k
+100 738.9k 100 738.9k   0      0 258.9k      0   00:02   00:02         348.4k100 738.9k 100 738.9k   0      0 258.9k      0   00:02   00:02         348.4k100 738.9k 100 738.9k   0      0 258.9k      0   00:02   00:02         348.4k
+ 85 197.8k  85 169.2k   0      0  59574      0   00:03   00:02   00:01 159.7k100 197.8k 100 197.8k   0      0  69568      0   00:02   00:02         159.7k100 197.8k 100 197.8k   0      0  69568      0   00:02   00:02         159.7k100 197.8k 100 197.8k   0      0  69567      0   00:02   00:02         159.7k
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    477 100    477   0      0    620      0                              0100    477 100    477   0      0    620      0                              0
+100    461 100    461   0      0    469      0                              0100    461 100    461   0      0    469      0                              0
+100    477 100    477   0      0    476      0   00:01   00:01              0100    477 100    477   0      0    476      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0  0      0   0      0   0      0      0      0           00:01              0 64 182.6k  64 118.3k   0      0  49449      0   00:03   00:02   00:01 106.4k  0      0   0      0   0      0      0      0           00:02              0 14 464.9k  14  68922   0      0  25648      0   00:18   00:02   00:16  59736100 182.6k 100 182.6k   0      0  69694      0   00:02   00:02         106.4k100 182.6k 100 182.6k   0      0  69693      0   00:02   00:02         106.4k100 182.6k 100 182.6k   0      0  69693      0   00:02   00:02         106.4k
+100   7691 100   7691   0      0   2787      0   00:02   00:02              0100   7691 100   7691   0      0   2787      0   00:02   00:02              0100   7691 100   7691   0      0   2787      0   00:02   00:02              0
+100 464.9k 100 464.9k   0      0 138.3k      0   00:03   00:03          59736100 464.9k 100 464.9k   0      0 138.3k      0   00:03   00:03          59736100 464.9k 100 464.9k   0      0 138.3k      0   00:03   00:03          59736
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    495 100    495   0      0    620      0                              0100    495 100    495   0      0    620      0                              0
+100    533 100    533   0      0    637      0                              0100    533 100    533   0      0    637      0                              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    469 100    469   0      0    611      0                              0100    469 100    469   0      0    611      0                              0
+  0      0   0      0   0      0      0      0           00:01              0  0      0   0      0   0      0      0      0           00:01              0  0      0   0      0   0      0      0      0           00:01              0 17 968.6k  17 169.2k   0      0  73565      0   00:13   00:02   00:11 164.0k  0 27.30M   0 169.2k   0      0  70630      0   06:45   00:02   06:43 155.2k 25 672.8k  25 168.9k   0      0  73464      0   00:09   00:02   00:07 162.0k100 672.8k 100 672.8k   0      0 238.1k      0   00:02   00:02         162.0k100 672.8k 100 672.8k   0      0 238.1k      0   00:02   00:02         162.0k100 672.8k 100 672.8k   0      0 238.1k      0   00:02   00:02         162.0k
+  7 27.30M   7  1.97M   0      0 585.2k      0   00:47   00:03   00:44 966.9k 82 968.6k  82 798.2k   0      0 228.9k      0   00:04   00:03   00:01 369.0k100 968.6k 100 968.6k   0      0 256.9k      0   00:03   00:03         369.0k100 968.6k 100 968.6k   0      0 256.9k      0   00:03   00:03         369.0k100 968.6k 100 968.6k   0      0 256.9k      0   00:03   00:03         369.0k
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    477 100    477   0      0    641      0                              0100    477 100    477   0      0    641      0                              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0 15 27.30M  15  4.17M   0      0 958.2k      0   00:29   00:04   00:25  1.34M  0      0   0      0   0      0      0      0           00:01              0100    443 100    443   0      0    595      0                              0100    443 100    443   0      0    592      0                              0
+  0      0   0      0   0      0      0      0           00:01              0 25 27.30M  25  6.82M   0      0  1.23M      0   00:22   00:05   00:17  1.64M 19  1.35M  19 271.3k   0      0 120.1k      0   00:11   00:02   00:09 271.2k100  1.35M 100  1.35M   0      0 498.8k      0   00:02   00:02         271.2k100  1.35M 100  1.35M   0      0 498.8k      0   00:02   00:02         271.2k100  1.35M 100  1.35M   0      0 498.8k      0   00:02   00:02         271.2k
+100 198.3k 100 198.3k   0      0  90506      0   00:02   00:02              0100 198.3k 100 198.3k   0      0  90439      0   00:02   00:02              0100 198.3k 100 198.3k   0      0  90438      0   00:02   00:02              0
+ 38 27.30M  38 10.51M   0      0  1.61M      0   00:16   00:06   00:10  2.03M  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    475 100    475   0      0    622      0                              0100    475 100    475   0      0    622      0                              0
+100    469 100    469   0      0    497      0                              0100    469 100    469   0      0    497      0                              0
+ 53 27.30M  53 14.67M   0      0  1.94M      0   00:14   00:07   00:07  2.85M  0      0   0      0   0      0      0      0           00:01              0  0      0   0      0   0      0      0      0           00:01              0100   6617 100   6617   0      0   3776      0   00:01   00:01              0100   6617 100   6617   0      0   3776      0   00:01   00:01              0100   6617 100   6617   0      0   3776      0   00:01   00:01              0
+100 276.4k 100 276.4k   0      0 124.7k      0   00:02   00:02              0100 276.4k 100 276.4k   0      0 124.7k      0   00:02   00:02              0100 276.4k 100 276.4k   0      0 124.7k      0   00:02   00:02              0
+ 72 27.30M  72 19.75M   0      0  2.31M      0   00:11   00:08   00:03  3.49M  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    519 100    519   0      0    656      0                              0100    519 100    519   0      0    656      0                              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0 87 27.30M  87 23.83M   0      0  2.49M      0   00:10   00:09   00:01  3.86M  0      0   0      0   0      0      0      0           00:01              0100    511 100    511   0      0    587      0                              0100    511 100    511   0      0    587      0                              0
+100 27.30M 100 27.30M   0      0  2.73M      0   00:09   00:09          3.86M100 27.30M 100 27.30M   0      0  2.73M      0   00:09   00:09          3.86M100 27.30M 100 27.30M   0      0  2.73M      0   00:09   00:09          3.86M
+  0      0   0      0   0      0      0      0           00:01              0  0 102.6M   0 169.3k   0      0  72079      0   24:53   00:02   24:51 167.5k  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    475 100    475   0      0    565      0                              0100    475 100    475   0      0    565      0                              0
+  2  5.90M   2 163.3k   0      0  67555      0   01:31   00:02   01:29 147.9k  0      0   0      0   0      0      0      0           00:01              0  0 102.6M   0 662.3k   0      0 190.8k      0   09:11   00:03   09:08 319.0k  8  5.90M   8 503.3k   0      0 143.6k      0   00:42   00:03   00:39 236.1k 16 911.4k  16 151.3k   0      0  64538      0   00:14   00:02   00:12 149.4k  1 102.6M   1  1.49M   0      0 340.6k      0   05:08   00:04   05:04 494.2k 16  5.90M  16  0.98M   0      0 217.1k      0   00:27   00:04   00:23 307.6k 65 911.4k  65 594.3k   0      0 166.7k      0   00:05   00:03   00:02 273.0k  1 102.6M   1  1.85M   0      0 344.8k      0   05:04   00:05   04:59 461.5k100 911.4k 100 911.4k   0      0 225.3k      0   00:04   00:04         273.0k100 911.4k 100 911.4k   0      0 225.3k      0   00:04   00:04         273.0k100 911.4k 100 911.4k   0      0 225.3k      0   00:04   00:04         273.0k
+ 26  5.90M  26  1.55M   0      0 279.2k      0   00:21   00:05   00:16 367.7k  2 102.6M   2  2.40M   0      0 377.2k      0   04:38   00:06   04:32 479.6k  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    473 100    473   0      0    625      0                              0100    473 100    473   0      0    625      0                              0
+ 34  5.90M  34  2.01M   0      0 306.2k      0   00:19   00:06   00:13 384.4k  0      0   0      0   0      0      0      0           00:01              0  2 102.6M   2  2.85M   0      0 387.9k      0   04:31   00:07   04:24 536.8k 36 929.6k  36 340.9k   0      0 149.8k      0   00:06   00:02   00:04 337.5k 44  5.90M  44  2.59M   0      0 336.1k      0   00:17   00:07   00:10 458.9k  3 102.6M   3  3.35M   0      0 396.7k      0   04:25   00:08   04:17 534.5k100 929.6k 100 929.6k   0      0 342.1k      0   00:02   00:02         337.5k100 929.6k 100 929.6k   0      0 342.1k      0   00:02   00:02         337.5k100 929.6k 100 929.6k   0      0 342.1k      0   00:02   00:02         337.5k
+ 53  5.90M  53  3.18M   0      0 363.7k      0   00:16   00:08   00:08 505.2k  3 102.6M   3  3.83M   0      0 406.6k      0   04:18   00:09   04:09 463.8k 62  5.90M  62  3.69M   0      0 379.0k      0   00:15   00:09   00:06 521.0k  4 102.6M   4  4.31M   0      0 411.2k      0   04:15   00:10   04:05 481.4kWarning: git information unavailable; versioning information limited
+ 71  5.90M  71  4.24M   0      0 395.5k      0   00:15   00:10   00:05 520.8k  4 102.6M   4  4.79M   0      0 418.1k      0   04:11   00:11   04:00 469.3k 85  5.90M  85  5.04M   0      0 430.4k      0   00:14   00:11   00:03 590.4k  5 102.6M   5  5.37M   0      0 431.7k      0   04:03   00:12   03:51 495.0k 99  5.90M  99  5.85M   0      0 460.5k      0   00:13   00:13         654.0k100  5.90M 100  5.90M   0      0 461.6k      0   00:13   00:13         654.0k100  5.90M 100  5.90M   0      0 461.6k      0   00:13   00:13         654.0k100  5.90M 100  5.90M   0      0 461.6k      0   00:13   00:13         654.0k
+  5 102.6M   5  5.97M   0      0 444.0k      0   03:56   00:13   03:43 523.8k  6 102.6M   6  6.80M   0      0 471.3k      0   03:43   00:14   03:29 593.1k  7 102.6M   7  7.91M   0      0 513.6k      0   03:24   00:15   03:09 731.6k  8 102.6M   8  9.19M   0      0 560.6k      0   03:07   00:16   02:51 892.0kWarning: git information unavailable; versioning information limited
+ 10 102.6M  10 11.03M   0      0 635.0k      0   02:45   00:17   02:28  1.12M 13 102.6M  13 13.48M   0      0 734.6k      0   02:23   00:18   02:05  1.49M 15 102.6M  15 16.37M   0      0 845.9k      0   02:04   00:19   01:45  1.89M 18 102.6M  18 18.48M   0      0 908.9k      0   01:55   00:20   01:35  2.09M 19 102.6M  19 20.12M   0      0 944.1k      0   01:51   00:21   01:30  2.17M 21 102.6M  21 22.05M   0      0 988.7k      0   01:46   00:22   01:24  2.18Mrm: cannot remove 'bin': Is a directory
+removed 'bin/7z'
+rm: cannot remove 'share': Is a directory
+rm: cannot remove 'share/licenses': Is a directory
+rm: cannot remove 'share/licenses/p7zip': Is a directory
+removed 'share/licenses/p7zip/License.txt'
+removed 'share/licenses/p7zip/copying.txt'
+ 23 102.6M  23 24.01M   0      0  1.00M      0   01:41   00:23   01:18  2.09Mmkdir -p . bin share share/licenses share/licenses/p7zip
+ 25 102.6M  25 25.70M   0      0  1.03M      0   01:39   00:24   01:15  1.86MWarning: git information unavailable; versioning information limited
+ 26 102.6M  26 27.23M   0      0  1.05M      0   01:37   00:25   01:12  1.74M 28 102.6M  28 28.84M   0      0  1.07M      0   01:35   00:26   01:09  1.73M 29 102.6M  29 30.55M   0      0  1.09M      0   01:33   00:27   01:06  1.69M 30 102.6M  30 31.83M   0      0  1.10M      0   01:33   00:28   01:05  1.55M 32 102.6M  32 33.16M   0      0  1.10M      0   01:32   00:29   01:03  1.48Mrm: cannot remove 'include': Is a directory
+rm: cannot remove 'include/libblastrampoline': Is a directory
+rm: cannot remove 'include/libblastrampoline/ILP64': Is a directory
+rm: cannot remove 'include/libblastrampoline/ILP64/aarch64-linux-gnu': Is a directory
+removed 'include/libblastrampoline/ILP64/aarch64-linux-gnu/cblas.h'
+removed 'include/libblastrampoline/ILP64/aarch64-linux-gnu/f77blas.h'
+removed 'include/libblastrampoline/ILP64/aarch64-linux-gnu/lapack.h'
+removed 'include/libblastrampoline/ILP64/aarch64-linux-gnu/lapacke.h'
+removed 'include/libblastrampoline/ILP64/aarch64-linux-gnu/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/aarch64-linux-gnu/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/aarch64-linux-gnu/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/aarch64-linux-gnu/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/aarch64-linux-musl': Is a directory
+removed 'include/libblastrampoline/ILP64/aarch64-linux-musl/cblas.h'
+removed 'include/libblastrampoline/ILP64/aarch64-linux-musl/f77blas.h'
+removed 'include/libblastrampoline/ILP64/aarch64-linux-musl/lapack.h'
+removed 'include/libblastrampoline/ILP64/aarch64-linux-musl/lapacke.h'
+removed 'include/libblastrampoline/ILP64/aarch64-linux-musl/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/aarch64-linux-musl/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/aarch64-linux-musl/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/aarch64-linux-musl/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/armv7l-linux-gnueabihf': Is a directory
+removed 'include/libblastrampoline/ILP64/armv7l-linux-gnueabihf/cblas.h'
+removed 'include/libblastrampoline/ILP64/armv7l-linux-gnueabihf/f77blas.h'
+removed 'include/libblastrampoline/ILP64/armv7l-linux-gnueabihf/lapack.h'
+removed 'include/libblastrampoline/ILP64/armv7l-linux-gnueabihf/lapacke.h'
+removed 'include/libblastrampoline/ILP64/armv7l-linux-gnueabihf/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/armv7l-linux-gnueabihf/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/armv7l-linux-gnueabihf/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/armv7l-linux-gnueabihf/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/armv7l-linux-musleabihf': Is a directory
+removed 'include/libblastrampoline/ILP64/armv7l-linux-musleabihf/cblas.h'
+removed 'include/libblastrampoline/ILP64/armv7l-linux-musleabihf/f77blas.h'
+removed 'include/libblastrampoline/ILP64/armv7l-linux-musleabihf/lapack.h'
+removed 'include/libblastrampoline/ILP64/armv7l-linux-musleabihf/lapacke.h'
+removed 'include/libblastrampoline/ILP64/armv7l-linux-musleabihf/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/armv7l-linux-musleabihf/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/armv7l-linux-musleabihf/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/armv7l-linux-musleabihf/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/common': Is a directory
+removed 'include/libblastrampoline/ILP64/common/f77blas.h'
+removed 'include/libblastrampoline/ILP64/common/lapack.h'
+removed 'include/libblastrampoline/ILP64/common/lapacke.h'
+removed 'include/libblastrampoline/ILP64/common/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/common/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/common/lapacke_utils.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/i686-linux-gnu': Is a directory
+removed 'include/libblastrampoline/ILP64/i686-linux-gnu/cblas.h'
+removed 'include/libblastrampoline/ILP64/i686-linux-gnu/f77blas.h'
+removed 'include/libblastrampoline/ILP64/i686-linux-gnu/lapack.h'
+removed 'include/libblastrampoline/ILP64/i686-linux-gnu/lapacke.h'
+removed 'include/libblastrampoline/ILP64/i686-linux-gnu/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/i686-linux-gnu/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/i686-linux-gnu/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/i686-linux-gnu/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/i686-linux-musl': Is a directory
+removed 'include/libblastrampoline/ILP64/i686-linux-musl/cblas.h'
+removed 'include/libblastrampoline/ILP64/i686-linux-musl/f77blas.h'
+removed 'include/libblastrampoline/ILP64/i686-linux-musl/lapack.h'
+removed 'include/libblastrampoline/ILP64/i686-linux-musl/lapacke.h'
+removed 'include/libblastrampoline/ILP64/i686-linux-musl/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/i686-linux-musl/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/i686-linux-musl/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/i686-linux-musl/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/i686-w64-mingw32': Is a directory
+removed 'include/libblastrampoline/ILP64/i686-w64-mingw32/cblas.h'
+removed 'include/libblastrampoline/ILP64/i686-w64-mingw32/f77blas.h'
+removed 'include/libblastrampoline/ILP64/i686-w64-mingw32/lapack.h'
+removed 'include/libblastrampoline/ILP64/i686-w64-mingw32/lapacke.h'
+removed 'include/libblastrampoline/ILP64/i686-w64-mingw32/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/i686-w64-mingw32/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/i686-w64-mingw32/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/i686-w64-mingw32/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/powerpc64le-linux-gnu': Is a directory
+removed 'include/libblastrampoline/ILP64/powerpc64le-linux-gnu/cblas.h'
+removed 'include/libblastrampoline/ILP64/powerpc64le-linux-gnu/f77blas.h'
+removed 'include/libblastrampoline/ILP64/powerpc64le-linux-gnu/lapack.h'
+removed 'include/libblastrampoline/ILP64/powerpc64le-linux-gnu/lapacke.h'
+removed 'include/libblastrampoline/ILP64/powerpc64le-linux-gnu/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/powerpc64le-linux-gnu/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/powerpc64le-linux-gnu/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/powerpc64le-linux-gnu/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/riscv64-linux-gnu': Is a directory
+removed 'include/libblastrampoline/ILP64/riscv64-linux-gnu/cblas.h'
+removed 'include/libblastrampoline/ILP64/riscv64-linux-gnu/f77blas.h'
+removed 'include/libblastrampoline/ILP64/riscv64-linux-gnu/lapack.h'
+removed 'include/libblastrampoline/ILP64/riscv64-linux-gnu/lapacke.h'
+removed 'include/libblastrampoline/ILP64/riscv64-linux-gnu/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/riscv64-linux-gnu/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/riscv64-linux-gnu/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/riscv64-linux-gnu/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/riscv64-linux-musl': Is a directory
+removed 'include/libblastrampoline/ILP64/riscv64-linux-musl/cblas.h'
+removed 'include/libblastrampoline/ILP64/riscv64-linux-musl/f77blas.h'
+removed 'include/libblastrampoline/ILP64/riscv64-linux-musl/lapack.h'
+removed 'include/libblastrampoline/ILP64/riscv64-linux-musl/lapacke.h'
+removed 'include/libblastrampoline/ILP64/riscv64-linux-musl/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/riscv64-linux-musl/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/riscv64-linux-musl/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/riscv64-linux-musl/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/x86_64-apple-darwin': Is a directory
+removed 'include/libblastrampoline/ILP64/x86_64-apple-darwin/cblas.h'
+removed 'include/libblastrampoline/ILP64/x86_64-apple-darwin/f77blas.h'
+removed 'include/libblastrampoline/ILP64/x86_64-apple-darwin/lapack.h'
+removed 'include/libblastrampoline/ILP64/x86_64-apple-darwin/lapacke.h'
+removed 'include/libblastrampoline/ILP64/x86_64-apple-darwin/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/x86_64-apple-darwin/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/x86_64-apple-darwin/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/x86_64-apple-darwin/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/x86_64-linux-gnu': Is a directory
+removed 'include/libblastrampoline/ILP64/x86_64-linux-gnu/cblas.h'
+removed 'include/libblastrampoline/ILP64/x86_64-linux-gnu/f77blas.h'
+removed 'include/libblastrampoline/ILP64/x86_64-linux-gnu/lapack.h'
+removed 'include/libblastrampoline/ILP64/x86_64-linux-gnu/lapacke.h'
+removed 'include/libblastrampoline/ILP64/x86_64-linux-gnu/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/x86_64-linux-gnu/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/x86_64-linux-gnu/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/x86_64-linux-gnu/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/x86_64-linux-musl': Is a directory
+removed 'include/libblastrampoline/ILP64/x86_64-linux-musl/cblas.h'
+removed 'include/libblastrampoline/ILP64/x86_64-linux-musl/f77blas.h'
+removed 'include/libblastrampoline/ILP64/x86_64-linux-musl/lapack.h'
+removed 'include/libblastrampoline/ILP64/x86_64-linux-musl/lapacke.h'
+removed 'include/libblastrampoline/ILP64/x86_64-linux-musl/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/x86_64-linux-musl/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/x86_64-linux-musl/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/x86_64-linux-musl/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/x86_64-unknown-freebsd': Is a directory
+removed 'include/libblastrampoline/ILP64/x86_64-unknown-freebsd/cblas.h'
+removed 'include/libblastrampoline/ILP64/x86_64-unknown-freebsd/f77blas.h'
+removed 'include/libblastrampoline/ILP64/x86_64-unknown-freebsd/lapack.h'
+removed 'include/libblastrampoline/ILP64/x86_64-unknown-freebsd/lapacke.h'
+removed 'include/libblastrampoline/ILP64/x86_64-unknown-freebsd/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/x86_64-unknown-freebsd/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/x86_64-unknown-freebsd/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/x86_64-unknown-freebsd/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/ILP64/x86_64-w64-mingw32': Is a directory
+removed 'include/libblastrampoline/ILP64/x86_64-w64-mingw32/cblas.h'
+removed 'include/libblastrampoline/ILP64/x86_64-w64-mingw32/f77blas.h'
+removed 'include/libblastrampoline/ILP64/x86_64-w64-mingw32/lapack.h'
+removed 'include/libblastrampoline/ILP64/x86_64-w64-mingw32/lapacke.h'
+removed 'include/libblastrampoline/ILP64/x86_64-w64-mingw32/lapacke_config.h'
+removed 'include/libblastrampoline/ILP64/x86_64-w64-mingw32/lapacke_mangling.h'
+removed 'include/libblastrampoline/ILP64/x86_64-w64-mingw32/lapacke_utils.h'
+removed 'include/libblastrampoline/ILP64/x86_64-w64-mingw32/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64': Is a directory
+rm: cannot remove 'include/libblastrampoline/LP64/aarch64-linux-gnu': Is a directory
+removed 'include/libblastrampoline/LP64/aarch64-linux-gnu/cblas.h'
+removed 'include/libblastrampoline/LP64/aarch64-linux-gnu/f77blas.h'
+removed 'include/libblastrampoline/LP64/aarch64-linux-gnu/lapack.h'
+removed 'include/libblastrampoline/LP64/aarch64-linux-gnu/lapacke.h'
+removed 'include/libblastrampoline/LP64/aarch64-linux-gnu/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/aarch64-linux-gnu/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/aarch64-linux-gnu/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/aarch64-linux-gnu/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64/aarch64-linux-musl': Is a directory
+removed 'include/libblastrampoline/LP64/aarch64-linux-musl/cblas.h'
+removed 'include/libblastrampoline/LP64/aarch64-linux-musl/f77blas.h'
+removed 'include/libblastrampoline/LP64/aarch64-linux-musl/lapack.h'
+removed 'include/libblastrampoline/LP64/aarch64-linux-musl/lapacke.h'
+removed 'include/libblastrampoline/LP64/aarch64-linux-musl/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/aarch64-linux-musl/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/aarch64-linux-musl/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/aarch64-linux-musl/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64/armv7l-linux-gnueabihf': Is a directory
+removed 'include/libblastrampoline/LP64/armv7l-linux-gnueabihf/cblas.h'
+removed 'include/libblastrampoline/LP64/armv7l-linux-gnueabihf/f77blas.h'
+removed 'include/libblastrampoline/LP64/armv7l-linux-gnueabihf/lapack.h'
+removed 'include/libblastrampoline/LP64/armv7l-linux-gnueabihf/lapacke.h'
+removed 'include/libblastrampoline/LP64/armv7l-linux-gnueabihf/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/armv7l-linux-gnueabihf/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/armv7l-linux-gnueabihf/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/armv7l-linux-gnueabihf/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64/armv7l-linux-musleabihf': Is a directory
+removed 'include/libblastrampoline/LP64/armv7l-linux-musleabihf/cblas.h'
+removed 'include/libblastrampoline/LP64/armv7l-linux-musleabihf/f77blas.h'
+removed 'include/libblastrampoline/LP64/armv7l-linux-musleabihf/lapack.h'
+removed 'include/libblastrampoline/LP64/armv7l-linux-musleabihf/lapacke.h'
+removed 'include/libblastrampoline/LP64/armv7l-linux-musleabihf/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/armv7l-linux-musleabihf/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/armv7l-linux-musleabihf/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/armv7l-linux-musleabihf/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64/common': Is a directory
+removed 'include/libblastrampoline/LP64/common/cblas.h'
+removed 'include/libblastrampoline/LP64/common/f77blas.h'
+removed 'include/libblastrampoline/LP64/common/lapack.h'
+removed 'include/libblastrampoline/LP64/common/lapacke.h'
+removed 'include/libblastrampoline/LP64/common/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/common/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/common/lapacke_utils.h'
+rm: cannot remove 'include/libblastrampoline/LP64/i686-linux-gnu': Is a directory
+removed 'include/libblastrampoline/LP64/i686-linux-gnu/cblas.h'
+removed 'include/libblastrampoline/LP64/i686-linux-gnu/f77blas.h'
+removed 'include/libblastrampoline/LP64/i686-linux-gnu/lapack.h'
+removed 'include/libblastrampoline/LP64/i686-linux-gnu/lapacke.h'
+removed 'include/libblastrampoline/LP64/i686-linux-gnu/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/i686-linux-gnu/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/i686-linux-gnu/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/i686-linux-gnu/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64/i686-linux-musl': Is a directory
+removed 'include/libblastrampoline/LP64/i686-linux-musl/cblas.h'
+removed 'include/libblastrampoline/LP64/i686-linux-musl/f77blas.h'
+removed 'include/libblastrampoline/LP64/i686-linux-musl/lapack.h'
+removed 'include/libblastrampoline/LP64/i686-linux-musl/lapacke.h'
+removed 'include/libblastrampoline/LP64/i686-linux-musl/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/i686-linux-musl/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/i686-linux-musl/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/i686-linux-musl/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64/i686-w64-mingw32': Is a directory
+removed 'include/libblastrampoline/LP64/i686-w64-mingw32/cblas.h'
+removed 'include/libblastrampoline/LP64/i686-w64-mingw32/f77blas.h'
+removed 'include/libblastrampoline/LP64/i686-w64-mingw32/lapack.h'
+removed 'include/libblastrampoline/LP64/i686-w64-mingw32/lapacke.h'
+removed 'include/libblastrampoline/LP64/i686-w64-mingw32/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/i686-w64-mingw32/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/i686-w64-mingw32/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/i686-w64-mingw32/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64/powerpc64le-linux-gnu': Is a directory
+removed 'include/libblastrampoline/LP64/powerpc64le-linux-gnu/cblas.h'
+removed 'include/libblastrampoline/LP64/powerpc64le-linux-gnu/f77blas.h'
+removed 'include/libblastrampoline/LP64/powerpc64le-linux-gnu/lapack.h'
+removed 'include/libblastrampoline/LP64/powerpc64le-linux-gnu/lapacke.h'
+removed 'include/libblastrampoline/LP64/powerpc64le-linux-gnu/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/powerpc64le-linux-gnu/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/powerpc64le-linux-gnu/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/powerpc64le-linux-gnu/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64/riscv64-linux-gnu': Is a directory
+removed 'include/libblastrampoline/LP64/riscv64-linux-gnu/cblas.h'
+removed 'include/libblastrampoline/LP64/riscv64-linux-gnu/f77blas.h'
+removed 'include/libblastrampoline/LP64/riscv64-linux-gnu/lapack.h'
+removed 'include/libblastrampoline/LP64/riscv64-linux-gnu/lapacke.h'
+removed 'include/libblastrampoline/LP64/riscv64-linux-gnu/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/riscv64-linux-gnu/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/riscv64-linux-gnu/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/riscv64-linux-gnu/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64/riscv64-linux-musl': Is a directory
+removed 'include/libblastrampoline/LP64/riscv64-linux-musl/cblas.h'
+removed 'include/libblastrampoline/LP64/riscv64-linux-musl/f77blas.h'
+removed 'include/libblastrampoline/LP64/riscv64-linux-musl/lapack.h'
+removed 'include/libblastrampoline/LP64/riscv64-linux-musl/lapacke.h'
+removed 'include/libblastrampoline/LP64/riscv64-linux-musl/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/riscv64-linux-musl/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/riscv64-linux-musl/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/riscv64-linux-musl/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64/x86_64-apple-darwin': Is a directory
+removed 'include/libblastrampoline/LP64/x86_64-apple-darwin/cblas.h'
+removed 'include/libblastrampoline/LP64/x86_64-apple-darwin/f77blas.h'
+removed 'include/libblastrampoline/LP64/x86_64-apple-darwin/lapack.h'
+removed 'include/libblastrampoline/LP64/x86_64-apple-darwin/lapacke.h'
+removed 'include/libblastrampoline/LP64/x86_64-apple-darwin/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/x86_64-apple-darwin/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/x86_64-apple-darwin/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/x86_64-apple-darwin/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64/x86_64-linux-gnu': Is a directory
+removed 'include/libblastrampoline/LP64/x86_64-linux-gnu/cblas.h'
+removed 'include/libblastrampoline/LP64/x86_64-linux-gnu/f77blas.h'
+removed 'include/libblastrampoline/LP64/x86_64-linux-gnu/lapack.h'
+removed 'include/libblastrampoline/LP64/x86_64-linux-gnu/lapacke.h'
+removed 'include/libblastrampoline/LP64/x86_64-linux-gnu/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/x86_64-linux-gnu/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/x86_64-linux-gnu/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/x86_64-linux-gnu/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64/x86_64-linux-musl': Is a directory
+removed 'include/libblastrampoline/LP64/x86_64-linux-musl/cblas.h'
+removed 'include/libblastrampoline/LP64/x86_64-linux-musl/f77blas.h'
+removed 'include/libblastrampoline/LP64/x86_64-linux-musl/lapack.h'
+removed 'include/libblastrampoline/LP64/x86_64-linux-musl/lapacke.h'
+removed 'include/libblastrampoline/LP64/x86_64-linux-musl/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/x86_64-linux-musl/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/x86_64-linux-musl/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/x86_64-linux-musl/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64/x86_64-unknown-freebsd': Is a directory
+removed 'include/libblastrampoline/LP64/x86_64-unknown-freebsd/cblas.h'
+removed 'include/libblastrampoline/LP64/x86_64-unknown-freebsd/f77blas.h'
+removed 'include/libblastrampoline/LP64/x86_64-unknown-freebsd/lapack.h'
+removed 'include/libblastrampoline/LP64/x86_64-unknown-freebsd/lapacke.h'
+removed 'include/libblastrampoline/LP64/x86_64-unknown-freebsd/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/x86_64-unknown-freebsd/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/x86_64-unknown-freebsd/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/x86_64-unknown-freebsd/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/LP64/x86_64-w64-mingw32': Is a directory
+removed 'include/libblastrampoline/LP64/x86_64-w64-mingw32/cblas.h'
+removed 'include/libblastrampoline/LP64/x86_64-w64-mingw32/f77blas.h'
+removed 'include/libblastrampoline/LP64/x86_64-w64-mingw32/lapack.h'
+removed 'include/libblastrampoline/LP64/x86_64-w64-mingw32/lapacke.h'
+removed 'include/libblastrampoline/LP64/x86_64-w64-mingw32/lapacke_config.h'
+removed 'include/libblastrampoline/LP64/x86_64-w64-mingw32/lapacke_mangling.h'
+removed 'include/libblastrampoline/LP64/x86_64-w64-mingw32/lapacke_utils.h'
+removed 'include/libblastrampoline/LP64/x86_64-w64-mingw32/openblas_config.h'
+rm: cannot remove 'include/libblastrampoline/common': Is a directory
+removed 'include/libblastrampoline/common/f77blas.h'
+removed 'include/libblastrampoline/common/lapack.h'
+removed 'include/libblastrampoline/common/lapacke.h'
+removed 'include/libblastrampoline/common/lapacke_config.h'
+removed 'include/libblastrampoline/common/lapacke_mangling.h'
+removed 'include/libblastrampoline/common/lapacke_utils.h'
+removed 'include/libblastrampoline.h'
+rm: cannot remove 'lib': Is a directory
+removed 'lib/libblastrampoline.so'
+removed 'lib/libblastrampoline.so.5'
+removed 'lib/libblastrampoline.so.5.15.0'
+rm: cannot remove 'share': Is a directory
+rm: cannot remove 'share/licenses': Is a directory
+rm: cannot remove 'share/licenses/libblastrampoline': Is a directory
+removed 'share/licenses/libblastrampoline/LICENSE.md'
+ 33 102.6M  33 34.47M   0      0  1.11M      0   01:32   00:30   01:02  1.42M 34 102.6M  34 35.76M   0      0  1.11M      0   01:31   00:31   01:00  1.35M 35 102.6M  35 36.91M   0      0  1.11M      0   01:31   00:32   00:59  1.24M 37 102.6M  37 38.22M   0      0  1.12M      0   01:31   00:33   00:58  1.25Mmkdir -p . include include/libblastrampoline include/libblastrampoline/ILP64 include/libblastrampoline/ILP64/aarch64-linux-gnu include/libblastrampoline/ILP64/aarch64-linux-musl include/libblastrampoline/ILP64/armv7l-linux-gnueabihf include/libblastrampoline/ILP64/armv7l-linux-musleabihf include/libblastrampoline/ILP64/common include/libblastrampoline/ILP64/i686-linux-gnu include/libblastrampoline/ILP64/i686-linux-musl include/libblastrampoline/ILP64/i686-w64-mingw32 include/libblastrampoline/ILP64/powerpc64le-linux-gnu include/libblastrampoline/ILP64/riscv64-linux-gnu include/libblastrampoline/ILP64/riscv64-linux-musl include/libblastrampoline/ILP64/x86_64-apple-darwin include/libblastrampoline/ILP64/x86_64-linux-gnu include/libblastrampoline/ILP64/x86_64-linux-musl include/libblastrampoline/ILP64/x86_64-unknown-freebsd include/libblastrampoline/ILP64/x86_64-w64-mingw32 include/libblastrampoline/LP64 include/libblastrampoline/LP64/aarch64-linux-gnu include/libblastrampoline/LP64/aarch64-linux-musl include/libblastrampoline/LP64/armv7l-linux-gnueabihf include/libblastrampoline/LP64/armv7l-linux-musleabihf include/libblastrampoline/LP64/common include/libblastrampoline/LP64/i686-linux-gnu include/libblastrampoline/LP64/i686-linux-musl include/libblastrampoline/LP64/i686-w64-mingw32 include/libblastrampoline/LP64/powerpc64le-linux-gnu include/libblastrampoline/LP64/riscv64-linux-gnu include/libblastrampoline/LP64/riscv64-linux-musl include/libblastrampoline/LP64/x86_64-apple-darwin include/libblastrampoline/LP64/x86_64-linux-gnu include/libblastrampoline/LP64/x86_64-linux-musl include/libblastrampoline/LP64/x86_64-unknown-freebsd include/libblastrampoline/LP64/x86_64-w64-mingw32 include/libblastrampoline/common lib share share/licenses share/licenses/libblastrampoline
+Warning: git information unavailable; versioning information limited
+ 38 102.6M  38 39.39M   0      0  1.12M      0   01:31   00:34   00:57  1.22M 39 102.6M  39 40.62M   0      0  1.12M      0   01:30   00:35   00:55  1.22M 40 102.6M  40 41.92M   0      0  1.13M      0   01:30   00:36   00:54  1.22Mrm: cannot remove 'lib': Is a directory
+rm: cannot remove 'lib/gcc': Is a directory
+rm: cannot remove 'lib/gcc/x86_64-linux-gnu': Is a directory
+rm: cannot remove 'lib/gcc/x86_64-linux-gnu/15': Is a directory
+removed 'lib/gcc/x86_64-linux-gnu/15/crtbeginS.o'
+removed 'lib/gcc/x86_64-linux-gnu/15/crtendS.o'
+removed 'lib/gcc/x86_64-linux-gnu/15/crti.o'
+removed 'lib/gcc/x86_64-linux-gnu/15/crtn.o'
+removed 'lib/gcc/x86_64-linux-gnu/15/libc_nonshared.a'
+removed 'lib/gcc/x86_64-linux-gnu/15/libgcc.a'
+removed 'lib/libasan.so'
+removed 'lib/libasan.so.8'
+removed 'lib/libasan.so.8.0.0'
+removed 'lib/libatomic.so'
+removed 'lib/libatomic.so.1'
+removed 'lib/libatomic.so.1.2.0'
+removed 'lib/libgcc_s.so.1'
+removed 'lib/libgfortran.so'
+removed 'lib/libgfortran.so.5'
+removed 'lib/libgfortran.so.5.0.0'
+removed 'lib/libgomp.so'
+removed 'lib/libgomp.so.1'
+removed 'lib/libgomp.so.1.0.0'
+removed 'lib/libhwasan.so'
+removed 'lib/libhwasan.so.0'
+removed 'lib/libhwasan.so.0.0.0'
+removed 'lib/libitm.so'
+removed 'lib/libitm.so.1'
+removed 'lib/libitm.so.1.0.0'
+removed 'lib/liblsan.so'
+removed 'lib/liblsan.so.0'
+removed 'lib/liblsan.so.0.0.0'
+removed 'lib/libobjc.so'
+removed 'lib/libobjc.so.4'
+removed 'lib/libobjc.so.4.0.0'
+removed 'lib/libquadmath.so'
+removed 'lib/libquadmath.so.0'
+removed 'lib/libquadmath.so.0.0.0'
+removed 'lib/libssp.so'
+removed 'lib/libssp.so.0'
+removed 'lib/libssp.so.0.0.0'
+removed 'lib/libstdc++.so'
+removed 'lib/libstdc++.so.6'
+removed 'lib/libstdc++.so.6.0.34'
+removed 'lib/libtsan.so'
+removed 'lib/libtsan.so.2'
+removed 'lib/libtsan.so.2.0.0'
+removed 'lib/libubsan.so'
+removed 'lib/libubsan.so.1'
+removed 'lib/libubsan.so.1.0.0'
+rm: cannot remove 'share': Is a directory
+rm: cannot remove 'share/licenses': Is a directory
+rm: cannot remove 'share/licenses/CompilerSupportLibraries': Is a directory
+removed 'share/licenses/CompilerSupportLibraries/GPL-3.0+'
+ 41 102.6M  41 43.12M   0      0  1.13M      0   01:30   00:37   00:53  1.23M 43 102.6M  43 44.40M   0      0  1.13M      0   01:30   00:38   00:52  1.23Mmkdir -p . lib lib/gcc lib/gcc/x86_64-linux-gnu lib/gcc/x86_64-linux-gnu/15 share share/licenses share/licenses/CompilerSupportLibraries
+ 44 102.6M  44 45.85M   0      0  1.14M      0   01:29   00:39   00:50  1.28M 46 102.6M  46 47.27M   0      0  1.15M      0   01:29   00:40   00:49  1.32M 47 102.6M  47 48.96M   0      0  1.16M      0   01:28   00:41   00:47  1.40MWarning: git information unavailable; versioning information limited
+ 49 102.6M  49 51.13M   0      0  1.18M      0   01:26   00:42   00:44  1.60M 52 102.6M  52 53.44M   0      0  1.21M      0   01:24   00:44   00:40  1.80M 54 102.6M  54 55.82M   0      0  1.23M      0   01:23   00:45   00:38  1.89M 56 102.6M  56 57.62M   0      0  1.24M      0   01:22   00:46   00:36  1.96Mrm: cannot remove 'include': Is a directory
+rm: cannot remove 'include/uv': Is a directory
+removed 'include/uv/errno.h'
+removed 'include/uv/linux.h'
+removed 'include/uv/threadpool.h'
+removed 'include/uv/unix.h'
+removed 'include/uv/version.h'
+removed 'include/uv.h'
+rm: cannot remove 'lib': Is a directory
+removed 'lib/libuv.a'
+removed 'lib/libuv.so'
+removed 'lib/libuv.so.2'
+removed 'lib/libuv.so.2.0.0'
+rm: cannot remove 'lib/pkgconfig': Is a directory
+removed 'lib/pkgconfig/libuv.pc'
+rm: cannot remove 'share': Is a directory
+rm: cannot remove 'share/licenses': Is a directory
+rm: cannot remove 'share/licenses/LibUV': Is a directory
+removed 'share/licenses/LibUV/LICENSE'
+ 57 102.6M  57 58.54M   0      0  1.23M      0   01:22   00:47   00:35  1.80Mmkdir -p . include include/uv lib lib/pkgconfig share share/licenses share/licenses/LibUV
+ 57 102.6M  57 59.41M   0      0  1.22M      0   01:23   00:48   00:35  1.56Mmkdir: cannot create directory '/home/fusion809/lfs_packaging/julia/julia-1.13.2/deps/srccache/patchelf-0.17.2/': File exists
+make[1]: *** [/home/fusion809/lfs_packaging/julia/julia-1.13.2/deps/patchelf.mk:9: /home/fusion809/lfs_packaging/julia/julia-1.13.2/deps/srccache/patchelf-0.17.2/source-extracted] Error 1
+make[1]: *** Waiting for unfinished jobs....
+ 58 102.6M  58 60.43M   0      0  1.22M      0   01:23   00:49   00:34  1.31M 59 102.6M  59 61.33M   0      0  1.21M      0   01:24   00:50   00:34  1.08M 60 102.6M  60 62.08M   0      0  1.20M      0   01:24   00:51   00:33 900.3k 61 102.6M  61 62.96M   0      0  1.20M      0   01:25   00:52   00:33 892.1krm: cannot remove 'include': Is a directory
+removed 'include/libunwind-common.h'
+removed 'include/libunwind-coredump.h'
+removed 'include/libunwind-dynamic.h'
+removed 'include/libunwind-ptrace.h'
+removed 'include/libunwind-x86_64.h'
+removed 'include/libunwind.h'
+removed 'include/unwind.h'
+rm: cannot remove 'lib': Is a directory
+removed 'lib/libunwind-coredump.a'
+removed 'lib/libunwind-coredump.so'
+removed 'lib/libunwind-coredump.so.0'
+removed 'lib/libunwind-coredump.so.0.0.0'
+removed 'lib/libunwind-generic.a'
+removed 'lib/libunwind-generic.so'
+removed 'lib/libunwind-ptrace.a'
+removed 'lib/libunwind-ptrace.so'
+removed 'lib/libunwind-ptrace.so.0'
+removed 'lib/libunwind-ptrace.so.0.0.0'
+removed 'lib/libunwind-setjmp.a'
+removed 'lib/libunwind-setjmp.so'
+removed 'lib/libunwind-setjmp.so.0'
+removed 'lib/libunwind-setjmp.so.0.0.0'
+removed 'lib/libunwind-x86_64.a'
+removed 'lib/libunwind-x86_64.so'
+removed 'lib/libunwind-x86_64.so.8'
+removed 'lib/libunwind-x86_64.so.8.2.0'
+removed 'lib/libunwind.a'
+removed 'lib/libunwind.so'
+removed 'lib/libunwind.so.8'
+removed 'lib/libunwind.so.8.2.0'
+rm: cannot remove 'lib/pkgconfig': Is a directory
+removed 'lib/pkgconfig/libunwind-coredump.pc'
+removed 'lib/pkgconfig/libunwind-generic.pc'
+removed 'lib/pkgconfig/libunwind-ptrace.pc'
+removed 'lib/pkgconfig/libunwind-setjmp.pc'
+removed 'lib/pkgconfig/libunwind.pc'
+rm: cannot remove 'share': Is a directory
+rm: cannot remove 'share/licenses': Is a directory
+rm: cannot remove 'share/licenses/LibUnwind': Is a directory
+removed 'share/licenses/LibUnwind/COPYING'
+ 62 102.6M  62 63.85M   0      0  1.19M      0   01:25   00:53   00:32 895.2kmkdir -p . include lib lib/pkgconfig share share/licenses share/licenses/LibUnwind
+ 63 102.6M  63 64.85M   0      0  1.19M      0   01:26   00:54   00:32 897.7k 64 102.6M  64 65.83M   0      0  1.18M      0   01:26   00:55   00:31 911.2k 65 102.6M  65 66.76M   0      0  1.18M      0   01:26   00:56   00:30 945.3k 66 102.6M  66 67.77M   0      0  1.17M      0   01:26   00:57   00:29 978.7k 66 102.6M  66 68.77M   0      0  1.17M      0   01:27   00:58   00:29  0.97M 67 102.6M  67 69.82M   0      0  1.17M      0   01:27   00:59   00:28  0.98M 69 102.6M  69 71.02M   0      0  1.17M      0   01:27   01:00   00:27  1.03M 70 102.6M  70 72.40M   0      0  1.17M      0   01:27   01:01   00:26  1.12M 72 102.6M  72 73.98M   0      0  1.18M      0   01:26   01:02   00:24  1.23M 74 102.6M  74 75.99M   0      0  1.19M      0   01:25   01:03   00:22  1.43M 76 102.6M  76 78.46M   0      0  1.21M      0   01:24   01:04   00:20  1.71M 79 102.6M  79 81.37M   0      0  1.24M      0   01:22   01:05   00:17  2.05M 82 102.6M  82 84.44M   0      0  1.26M      0   01:21   01:06   00:15  2.28M 84 102.6M  84 87.18M   0      0  1.28M      0   01:19   01:07   00:12  2.50M 87 102.6M  87 89.33M   0      0  1.29M      0   01:18   01:08   00:10  2.53M 89 102.6M  89 91.57M   0      0  1.31M      0   01:18   01:09   00:09  2.49M 91 102.6M  91 93.77M   0      0  1.32M      0   01:17   01:10   00:07  2.35M 93 102.6M  93 96.08M   0      0  1.33M      0   01:16   01:11   00:05  2.31M 95 102.6M  95 98.29M   0      0  1.35M      0   01:15   01:12   00:03  2.21M 97 102.6M  97 100.6M   0      0  1.36M      0   01:15   01:13   00:02  2.25M100 102.6M 100 102.6M   0      0  1.37M      0   01:14   01:14          2.25M100 102.6M 100 102.6M   0      0  1.37M      0   01:14   01:14          2.25M100 102.6M 100 102.6M   0      0  1.37M      0   01:14   01:14          2.25M
+make: *** [Makefile:86: julia-deps] Error 2
+[ERROR] build.sh exited with code 2 for julia
+[ERROR] Custom build failed for julia
+Building custom package lightcraft...
+[12:34:04] Found custom package for lightcraft, bypassing BLFS aliases.
+[12:34:04] Custom package detected at /home/fusion809/lfs_packaging/lightcraft
+[12:34:04] Extracting dependencies for custom package 'lightcraft'...
+[12:34:04] Required deps: gcc glibc 
+[12:34:05] Dependency 'gcc' already installed.
+[12:34:05] Dependency 'glibc' already installed.
+[12:34:05] Starting remote custom build for lightcraft...
+--2026-10-15 12:34:20--  https://github.com/storytold/lightcraft/archive/v0.8.0.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/storytold/lightcraft/tar.gz/refs/tags/v0.8.0 [following]
+--2026-10-15 12:34:20--  https://codeload.github.com/storytold/lightcraft/tar.gz/refs/tags/v0.8.0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 16207971 (15M) [application/x-gzip]
+Saving to: ‘lightcraft-0.8.0.tar.gz’
+
+lightcraft-0.8.0.ta   0%[                    ]       0  --.-KB/s               lightcraft-0.8.0.ta   1%[                    ] 316.55K  1.54MB/s               lightcraft-0.8.0.ta   6%[>                   ] 956.91K  2.33MB/s               lightcraft-0.8.0.ta  11%[=>                  ]   1.80M  2.99MB/s               lightcraft-0.8.0.ta  19%[==>                 ]   3.00M  3.73MB/s               lightcraft-0.8.0.ta  29%[====>               ]   4.53M  4.52MB/s               lightcraft-0.8.0.ta  41%[=======>            ]   6.47M  5.37MB/s               lightcraft-0.8.0.ta  55%[==========>         ]   8.59M  6.12MB/s               lightcraft-0.8.0.ta  69%[============>       ]  10.79M  6.71MB/s               lightcraft-0.8.0.ta  84%[===============>    ]  13.01M  7.20MB/s               lightcraft-0.8.0.ta  97%[==================> ]  15.13M  7.53MB/s               lightcraft-0.8.0.ta 100%[===================>]  15.46M  7.60MB/s    in 2.0s    
+
+2026-10-15 12:34:22 (7.60 MB/s) - ‘lightcraft-0.8.0.tar.gz’ saved [16207971/16207971]
+
+    Updating crates.io index
+    Updating git repository `https://github.com/storytold/craft-libs`
+ Downloading crates ...
+  Downloaded alloc-stdlib v0.2.4
+  Downloaded aligned-vec v0.6.4
+  Downloaded aligned v0.4.3
+  Downloaded alloc-no-stdlib v2.0.4
+  Downloaded arg_enum_proc_macro v0.3.4
+  Downloaded arrayvec v0.7.8
+  Downloaded as-raw-xcb-connection v1.0.1
+  Downloaded async-recursion v1.1.1
+  Downloaded block v0.1.6
+  Downloaded block-buffer v0.10.4
+  Downloaded linebender_resource_handle v0.1.1
+  Downloaded as-slice v0.2.1
+  Downloaded atomic-waker v1.1.2
+  Downloaded cfg_aliases v0.2.2
+  Downloaded curve25519-dalek-derive v0.1.1
+  Downloaded downcast-rs v1.2.1
+  Downloaded candle-ug v0.9.2
+  Downloaded dpi v0.1.2
+  Downloaded color_quant v1.1.0
+  Downloaded cursor-icon v1.2.0
+  Downloaded dlib v0.5.3
+  Downloaded coe-rs v0.1.2
+  Downloaded document-features v0.2.12
+  Downloaded base16ct v0.2.0
+  Downloaded byteorder-lite v0.1.0
+  Downloaded calloop-wayland-source v0.3.0
+  Downloaded calloop-wayland-source v0.4.1
+  Downloaded core-graphics-types v0.1.3
+  Downloaded crypto-common v0.1.7
+  Downloaded dyn-stack-macros v0.1.3
+  Downloaded lazy_static v1.5.1
+  Downloaded loop9 v0.1.5
+  Downloaded malloc_buf v0.0.6
+  Downloaded anyhow v1.0.104
+  Downloaded async-broadcast v0.7.2
+  Downloaded async-channel v2.5.0
+  Downloaded async-executor v1.14.0
+  Downloaded async-signal v0.2.14
+  Downloaded async-trait v0.1.92
+  Downloaded avif-serialize v0.8.9
+  Downloaded base64ct v1.8.3
+  Downloaded cfg-if v1.0.5
+  Downloaded cipher v0.4.4
+  Downloaded concurrent-queue v2.5.0
+  Downloaded cpufeatures v0.2.17
+  Downloaded crossbeam-deque v0.8.8
+  Downloaded digest v0.10.7
+  Downloaded dyn-stack v0.13.2
+  Downloaded ecolor v0.36.2
+  Downloaded ed25519 v2.2.3
+  Downloaded naga-types v30.0.1
+  Downloaded new_debug_unreachable v1.0.6
+  Downloaded noop_proc_macro v0.3.0
+  Downloaded atspi v0.29.0
+  Downloaded autocfg v1.5.1
+  Downloaded bit-vec v0.9.1
+  Downloaded bitflags v1.3.2
+  Downloaded blocking v1.7.0
+  Downloaded bytemuck_derive v1.12.1
+  Downloaded byteorder v1.5.0
+  Downloaded ab_glyph_rasterizer v0.1.10
+  Downloaded async-task v4.7.1
+  Downloaded bit-set v0.10.0
+  Downloaded chacha20 v0.9.1
+  Downloaded core-foundation v0.9.4
+  Downloaded dyn-stack v0.10.0
+  Downloaded jxl-grid v0.6.2
+  Downloaded ahash v0.8.12
+  Downloaded async-lock v3.4.2
+  Downloaded async-process v2.5.0
+  Downloaded jxl-oxide v0.12.6
+  Downloaded jxl-vardct v0.11.1
+  Downloaded version_check v0.9.5
+  Downloaded wasm-bindgen-shared v0.2.129
+  Downloaded wgpu-core-deps-windows-linux-android v30.0.1
+  Downloaded ctr v0.9.2
+  Downloaded pastey v0.1.1
+  Downloaded wgpu-naga-bridge v30.0.1
+  Downloaded zcheapstr v1.1.0
+  Downloaded zerofrom v0.1.8
+  Downloaded atspi-proxies v0.13.0
+  Downloaded block2 v0.6.2
+  Downloaded core-foundation-sys v0.8.7
+  Downloaded crc32fast v1.5.2
+  Downloaded ecdsa v0.16.9
+  Downloaded quick-error v2.0.1
+  Downloaded const-oid v0.9.6
+  Downloaded crossbeam-epoch v0.9.21
+  Downloaded ab_glyph v0.2.32
+  Downloaded phf_shared v0.13.1
+  Downloaded av1-grain v0.2.5
+  Downloaded pollster v0.4.0
+  Downloaded pulp-wasm-simd-flag v0.1.1
+  Downloaded pollster v1.0.1
+  Downloaded crossbeam-utils v0.8.23
+  Downloaded async-io v2.6.0
+  Downloaded wasm-bindgen-macro v0.2.129
+  Downloaded adler2 v2.0.1
+  Downloaded zmij v1.0.23
+  Downloaded equator-macro v0.4.2
+  Downloaded equivalent v1.0.2
+  Downloaded errno v0.3.14
+  Downloaded event-listener-strategy v0.5.4
+  Downloaded futures-io v0.3.34
+  Downloaded gemm v0.17.1
+  Downloaded equator-macro v0.1.9
+  Downloaded foreign-types-shared v0.3.1
+  Downloaded futures-macro v0.3.34
+  Downloaded futures-task v0.3.34
+  Downloaded arboard v3.6.1
+  Downloaded bitflags v2.13.2
+  Downloaded bitstream-io v4.10.0
+  Downloaded opaque-debug v0.3.1
+  Downloaded parking v2.2.1
+  Downloaded built v0.8.1
+  Downloaded codespan-reporting v0.13.1
+  Downloaded glutin_glx_sys v0.6.1
+  Downloaded futures-core v0.3.34
+  Downloaded percent-encoding v2.3.2
+  Downloaded hex v0.4.3
+  Downloaded rand_chacha v0.3.1
+  Downloaded serde_repr v0.1.21
+  Downloaded serde_spanned v1.1.1
+  Downloaded candle-nn v0.9.2
+  Downloaded chacha20poly1305 v0.10.1
+  Downloaded allocator-api2 v0.2.21
+  Downloaded dispatch2 v0.3.1
+  Downloaded num v0.4.3
+  Downloaded bytemuck v1.25.2
+  Downloaded calloop v0.13.0
+  Downloaded wayland-cursor v0.31.14
+  Downloaded owned_ttf_parser v0.25.1
+  Downloaded profiling v1.0.18
+  Downloaded wayland-csd-frame v0.3.0
+  Downloaded gemm-f32 v0.18.2
+  Downloaded phf_generator v0.13.1
+  Downloaded event-listener v5.4.2
+  Downloaded futures-lite v2.6.1
+  Downloaded group v0.13.0
+  Downloaded guillotiere v0.7.0
+  Downloaded num_cpus v1.17.0
+  Downloaded profiling-procmacros v1.0.18
+  Downloaded libloading v0.8.9
+  Downloaded quote v1.0.47
+  Downloaded matrixcompare-core v0.1.0
+  Downloaded nohash-hasher v0.2.0
+  Downloaded synstructure v0.13.2
+  Downloaded termcolor v1.4.1
+  Downloaded num-iter v0.1.46
+  Downloaded der v0.7.10
+  Downloaded generic-array v0.14.7
+  Downloaded proc-macro-crate v3.5.0
+  Downloaded crypto-bigint v0.5.5
+  Downloaded ed25519-dalek v2.2.0
+  Downloaded color v0.3.3
+  Downloaded egui-wgpu v0.36.2
+  Downloaded egui-winit v0.36.2
+  Downloaded jxl-bitstream v1.1.0
+  Downloaded maybe-rayon v0.1.1
+  Downloaded aead v0.5.2
+  Downloaded num-derive v0.4.2
+  Downloaded either v1.18.0
+  Downloaded fdeflate v0.3.7
+  Downloaded siphasher v1.0.4
+  Downloaded wasm-bindgen v0.2.129
+  Downloaded bumpalo v3.20.3
+  Downloaded calloop v0.14.4
+  Downloaded gemm-common v0.17.1
+  Downloaded ghash v0.5.1
+  Downloaded imgref v1.12.3
+  Downloaded lock_api v0.4.14
+  Downloaded khronos-egl v6.0.0
+  Downloaded type-map v0.5.1
+  Downloaded jxl-threadpool v1.0.0
+  Downloaded universal-hash v0.5.1
+  Downloaded wayland-sys v0.31.11
+  Downloaded accesskit_atspi_common v0.18.1
+  Downloaded weezl v0.1.12
+  Downloaded egui_glow v0.36.2
+  Downloaded objc2-encode v4.1.0
+  Downloaded rgb v0.8.53
+  Downloaded safetensors v0.7.0
+  Downloaded shlex v2.0.1
+  Downloaded yoke-derive v0.7.5
+  Downloaded ppv-lite86 v0.2.21
+  Downloaded zbus-lockstep v0.5.2
+  Downloaded ordered-stream v0.2.0
+  Downloaded pem-rfc7468 v0.7.0
+  Downloaded pkcs8 v0.10.2
+  Downloaded gpu-allocator v0.28.0
+  Downloaded peniko v0.6.1
+  Downloaded equator v0.1.10
+  Downloaded equator v0.4.2
+  Downloaded gemm-f64 v0.17.1
+  Downloaded serde_core v1.0.229
+  Downloaded serde_derive v1.0.229
+  Downloaded synstructure v0.14.0
+  Downloaded cc v1.5.1
+  Downloaded gemm-f64 v0.18.2
+  Downloaded static_assertions v1.1.0
+  Downloaded thiserror v2.0.21
+  Downloaded thiserror-impl v1.0.69
+  Downloaded foreign-types v0.5.0
+  Downloaded glutin-winit v0.5.0
+  Downloaded gif v0.14.2
+  Downloaded rustc-hash v2.1.3
+  Downloaded jpeg-encoder v0.7.1
+  Downloaded jxl-image v0.13.0
+  Downloaded untrusted v0.9.0
+  Downloaded reborrow v0.5.5
+  Downloaded scoped-tls v1.0.1
+  Downloaded zbus-lockstep-macros v0.5.2
+  Downloaded zvariant_utils v4.2.0
+  Downloaded euclid v0.22.14
+  Downloaded polyval v0.6.2
+  Downloaded half v2.7.1
+  Downloaded phf v0.13.1
+  Downloaded faer-entity v0.17.0
+  Downloaded candle-metal-kernels v0.9.2
+  Downloaded piper v0.2.5
+  Downloaded jxl-jbr v0.2.1
+  Downloaded num-complex v0.4.6
+  Downloaded safetensors v0.4.5
+  Downloaded unicode-ident v1.0.26
+  Downloaded y4m v0.8.0
+  Downloaded zeroize_derive v1.5.0
+  Downloaded num-integer v0.1.47
+  Downloaded phf_macros v0.13.1
+  Downloaded polycool v0.4.0
+  Downloaded presser v0.3.1
+  Downloaded wayland-protocols-misc v0.3.12
+  Downloaded paste v1.0.15
+  Downloaded pkg-config v0.3.34
+  Downloaded winresource v0.1.31
+  Downloaded x11-dl v2.21.0
+  Downloaded pin-project-lite v0.2.17
+  Downloaded sha2 v0.10.9
+  Downloaded wayland-scanner v0.31.11
+  Downloaded gemm v0.18.2
+  Downloaded gemm v0.19.0
+  Downloaded primeorder v0.13.6
+  Downloaded gemm-f32 v0.19.0
+  Downloaded gemm-f64 v0.19.0
+  Downloaded rand_core v0.9.5
+  Downloaded gemm-c64 v0.18.2
+  Downloaded gemm-c64 v0.19.0
+  Downloaded glutin_egl_sys v0.7.1
+  Downloaded rand v0.8.8
+  Downloaded serde v1.0.229
+  Downloaded inout v0.1.4
+  Downloaded subtle v2.6.1
+  Downloaded litrs v1.0.0
+  Downloaded atspi-common v0.13.0
+  Downloaded eframe v0.36.2
+  Downloaded rustc_version v0.4.1
+  Downloaded no_std_io2 v0.9.4
+  Downloaded accesskit_consumer v0.36.0
+  Downloaded image-webp v0.2.4
+  Downloaded jxl-render v0.12.4
+  Downloaded accesskit v0.24.1
+  Downloaded wayland-protocols-experimental v20250721.0.1
+  Downloaded zune-core v0.5.3
+  Downloaded accesskit_unix v0.21.1
+  Downloaded once_cell v1.21.4
+  Downloaded parking_lot_core v0.9.12
+  Downloaded pkcs5 v0.7.1
+  Downloaded yoke-derive v0.8.4
+  Downloaded xkbcommon-dl v0.4.2
+  Downloaded log v0.4.34
+  Downloaded font-types v0.12.5
+  Downloaded rustc-hash v1.1.0
+  Downloaded gemm-common v0.18.2
+  Downloaded gl_generator v0.14.0
+  Downloaded toml_parser v1.1.3+spec-1.1.0
+  Downloaded fax v0.2.7
+  Downloaded ff v0.13.1
+  Downloaded find-msvc-tools v0.1.14
+  Downloaded gemm-f16 v0.17.1
+  Downloaded vello_cpu v0.1.0
+  Downloaded smol_str v0.2.2
+  Downloaded gemm-c32 v0.19.0
+  Downloaded rand v0.9.5
+  Downloaded rawpointer v0.2.1
+  Downloaded accesskit_winit v0.32.2
+  Downloaded pkcs1 v0.7.5
+  Downloaded parking_lot v0.12.5
+  Downloaded poly1305 v0.8.0
+  Downloaded simd-adler32 v0.3.10
+  Downloaded xcursor v0.3.11
+  Downloaded rand_chacha v0.9.0
+  Downloaded rand_core v0.6.4
+  Downloaded thiserror v1.0.69
+  Downloaded thiserror-impl v2.0.21
+  Downloaded toml_datetime v1.1.1+spec-1.1.0
+  Downloaded zvariant v5.15.0
+  Downloaded gemm-f16 v0.19.0
+  Downloaded jxl-coding v1.0.1
+  Downloaded jxl-oxide-common v1.0.0
+  Downloaded num-rational v0.4.2
+  Downloaded objc v0.2.7
+  Downloaded ordered-float v5.5.0
+  Downloaded seq-macro v0.3.6
+  Downloaded hmac v0.12.1
+  Downloaded signal-hook-registry v1.4.8
+  Downloaded zvariant_derive v5.15.0
+  Downloaded memmap2 v0.9.11
+  Downloaded num-traits v0.2.19
+  Downloaded zip v7.2.0
+  Downloaded glutin v0.32.3
+  Downloaded signature v2.2.0
+  Downloaded foreign-types-macros v0.2.4
+  Downloaded gemm-c64 v0.17.1
+  Downloaded zerofrom-derive v0.1.8
+  Downloaded simd_helpers v0.1.0
+  Downloaded stable_deref_trait v1.2.1
+  Downloaded gemm-c32 v0.17.1
+  Downloaded gemm-c32 v0.18.2
+  Downloaded toml_writer v1.1.2+spec-1.1.0
+  Downloaded xml-rs v0.8.29
+  Downloaded renderdoc-sys v1.1.0
+  Downloaded yoke v0.8.3
+  Downloaded spin v0.9.9
+  Downloaded fastrand v2.5.0
+  Downloaded yoke v0.7.5
+  Downloaded ravif v0.13.0
+  Downloaded rustversion v1.0.23
+  Downloaded rustls-rustcrypto v0.0.2-alpha
+  Downloaded unicode-segmentation v1.13.3
+  Downloaded endi v1.1.1
+  Downloaded float8 v0.6.1
+  Downloaded wayland-protocols-wlr v0.3.12
+  Downloaded web-time v1.1.0
+  Downloaded itoa v1.0.18
+  Downloaded zbus_names v4.3.4
+  Downloaded wasm-bindgen-macro-support v0.2.129
+  Downloaded wgpu-types v30.0.1
+  Downloaded rfc6979 v0.4.0
+  Downloaded scopeguard v1.2.0
+  Downloaded gemm-f16 v0.18.2
+  Downloaded uuid v1.26.1
+  Downloaded enumflags2_derive v0.7.12
+  Downloaded jxl-frame v0.13.3
+  Downloaded gethostname v1.1.0
+  Downloaded gemm-f32 v0.17.1
+  Downloaded brotli-decompressor v5.0.3
+  Downloaded spirv v0.4.0+sdk-1.4.341.0
+  Downloaded self_cell v1.3.0
+  Downloaded wayland-protocols-plasma v0.3.12
+  Downloaded indexmap v2.14.2
+  Downloaded proc-macro2 v1.0.107
+  Downloaded toml v1.1.6+spec-1.1.0
+  Downloaded getrandom v0.3.4
+  Downloaded p256 v0.13.2
+  Downloaded v_frame v0.3.9
+  Downloaded smithay-clipboard v0.7.3
+  Downloaded ug-metal v0.5.0
+  Downloaded rfd v0.17.2
+  Downloaded rsa v0.9.10
+  Downloaded jxl-modular v0.11.3
+  Downloaded hashbrown v0.16.1
+  Downloaded matrixmultiply v0.3.11
+  Downloaded miniz_oxide v0.8.9
+  Downloaded raw-window-handle v0.6.2
+  Downloaded toml_edit v0.25.15+spec-1.1.0
+  Downloaded ug v0.5.0
+  Downloaded enumflags2 v0.7.12
+  Downloaded foldhash v0.2.0
+  Downloaded zbus_macros v5.19.0
+  Downloaded gemm-common v0.19.0
+  Downloaded elliptic-curve v0.13.8
+  Downloaded tiff v0.11.3
+  Downloaded semver v1.0.28
+  Downloaded smithay-client-toolkit v0.19.2
+  Downloaded futures-util v0.3.34
+  Downloaded spki v0.7.3
+  Downloaded zeroize v1.9.1
+  Downloaded libm v0.2.16
+  Downloaded serde_json v1.0.151
+  Downloaded sec1 v0.7.3
+  Downloaded slab v0.4.12
+  Downloaded getrandom v0.2.17
+  Downloaded glifo v0.2.0
+  Downloaded typed-path v0.12.3
+  Downloaded hashbrown v0.17.1
+  Downloaded polling v3.11.0
+  Downloaded rand_distr v0.5.1
+  Downloaded flate2 v1.1.10
+  Downloaded miniz_oxide v0.9.1
+  Downloaded faer-core v0.17.1
+  Downloaded zbus_xml v5.2.1
+  Downloaded tracing-attributes v0.1.31
+  Downloaded emath v0.36.2
+  Downloaded jxl-color v0.11.0
+  Downloaded rustls-pki-types v1.15.1
+  Downloaded xkeysym v0.2.1
+  Downloaded x25519-dalek v2.0.1
+  Downloaded zlib-rs v0.6.8
+  Downloaded raw-cpuid v10.7.0
+  Downloaded winnow v1.0.4
+  Downloaded heic-rs v0.1.4
+  Downloaded smallvec v1.16.2
+  Downloaded unicode-general-category v1.1.0
+  Downloaded epaint v0.36.2
+  Downloaded webpki-roots v1.0.9
+  Downloaded x11rb v0.13.2
+  Downloaded candle-core v0.9.2
+  Downloaded jobserver v0.1.35
+  Downloaded itertools v0.14.0
+  Downloaded curve25519-dalek v4.1.3
+  Downloaded wayland-backend v0.3.17
+  Downloaded typenum v1.20.1
+  Downloaded vello_common v0.1.0
+  Downloaded rayon-core v1.13.0
+  Downloaded tracing-core v0.1.36
+  Downloaded rustls-webpki v0.102.8
+  Downloaded glow v0.17.0
+  Downloaded rustls-webpki v0.103.15
+  Downloaded zbus v5.19.0
+  Downloaded wgpu v30.0.1
+  Downloaded memchr v2.8.3
+  Downloaded ttf-parser v0.25.1
+  Downloaded harfrust v0.12.0
+  Downloaded num-bigint v0.4.8
+  Downloaded wayland-client v0.31.15
+  Downloaded unicode-width v0.2.2
+  Downloaded zune-jpeg v0.5.15
+  Downloaded png v0.18.1
+  Downloaded aes v0.8.4
+  Downloaded syn v2.0.119
+  Downloaded syn v3.0.6
+  Downloaded num-bigint-dig v0.8.6
+  Downloaded nom v8.0.0
+  Downloaded wgpu-core v30.0.1
+  Downloaded image v0.25.10
+  Downloaded pulp v0.18.22
+  Downloaded skrifa v0.44.0
+  Downloaded ash v0.38.0+1.3.281
+  Downloaded raw-cpuid v11.6.0
+  Downloaded av-scenechange v0.14.1
+  Downloaded pulp v0.21.5
+  Downloaded pulp v0.22.3
+  Downloaded wgpu-hal v30.0.1
+  Downloaded wayland-protocols v0.32.13
+  Downloaded rustls v0.23.45
+  Downloaded aes-gcm v0.10.3
+  Downloaded zerocopy-derive v0.8.59
+  Downloaded tracing v0.1.44
+  Downloaded objc2-core-foundation v0.3.2
+  Downloaded rustix v0.38.44
+  Downloaded rustix v1.1.5
+  Downloaded winit v0.30.13
+  Downloaded p384 v0.13.1
+  Downloaded hkdf v0.12.4
+  Downloaded read-fonts v0.41.0
+  Downloaded khronos_api v3.1.0
+  Downloaded moxcms v0.9.1
+  Downloaded moxcms v0.8.1
+  Downloaded brotli v8.0.4
+  Downloaded smithay-client-toolkit v0.20.0
+  Downloaded quick-xml v0.38.4
+  Downloaded itertools v0.15.0
+  Downloaded kurbo v0.13.1
+  Downloaded rayon v1.12.0
+  Downloaded libc v0.2.189
+  Downloaded epaint_default_fonts v0.36.2
+  Downloaded quick-xml v0.41.0
+  Downloaded fearless_simd v0.4.1
+  Downloaded objc2-metal v0.3.2
+  Downloaded ndarray v0.17.2
+  Downloaded ring v0.17.14
+  Downloaded objc2 v0.6.4
+  Downloaded zerocopy v0.8.59
+  Downloaded objc2-foundation v0.3.2
+  Downloaded egui v0.36.2
+  Downloaded x11rb-protocol v0.13.2
+  Downloaded jpeg-decoder v0.3.2
+  Downloaded naga v30.0.1
+  Downloaded pxfm v0.1.30
+  Downloaded jixel v0.3.4
+  Downloaded rav1e v0.8.1
+  Downloaded linux-raw-sys v0.4.15
+  Downloaded linux-raw-sys v0.12.1
+  Downloaded metal v0.29.0
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+   Compiling cfg-if v1.0.5
+   Compiling once_cell v1.21.4
+   Compiling libc v0.2.189
+   Compiling autocfg v1.5.1
+   Compiling log v0.4.34
+   Compiling syn v2.0.119
+   Compiling syn v3.0.6
+   Compiling version_check v0.9.5
+   Compiling bitflags v2.13.2
+   Compiling libm v0.2.16
+   Compiling num-traits v0.2.19
+/home/fusion809/lfs-scripts/updates_check_and_run.sh: line 96: 286547 Killed                     zsh -ic 'updatec'
+===== ERROR: updatec exited with status 137 =====
+Finished: 2026-10-15 12:35:11 AEST
+Exit status: 137
