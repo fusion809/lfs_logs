@@ -1,0 +1,477 @@
+===== Update check started: 2026-10-17 02:17:02 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261017_021702
+Packages needing attention: libwmf
+===== Starting updatec: 2026-10-17 02:17:05 AEST =====
+Checking for packages with missing file inventories...
+name=libwmf
+local_ver=0.2.16
+remote_ver=0.2.17
+Failed to check custom update version for: lzip
+name=lzip
+local_ver=1.26
+remote_ver=FAILED
+Failed to check custom update version for: perl-file-sharedir-install
+name=perl-file-sharedir-install
+local_ver=0.14
+remote_ver=FAILED
+Failed to check custom update version for: perl-class-inspector
+name=perl-class-inspector
+local_ver=1.36
+remote_ver=FAILED
+Failed to check custom update version for: perl-file-sharedir
+name=perl-file-sharedir
+local_ver=1.118
+remote_ver=FAILED
+Failed to check custom update version for: perl-xml-libxml-simple
+name=perl-xml-libxml-simple
+local_ver=1.01
+remote_ver=FAILED
+Failed to check custom update version for: perl-xml-parser
+name=perl-xml-parser
+local_ver=2.59
+remote_ver=FAILED
+Failed to check custom update version for: x264
+name=x264
+local_ver=20250815
+remote_ver=FAILED
+Failed to check custom update version for: zip
+Applying updates in dependency order:
+  - libwmf
+
+Building custom package libwmf...
+[02:20:44] Found custom package for libwmf, bypassing BLFS aliases.
+[02:20:44] Custom package detected at /home/fusion809/lfs_packaging/libwmf
+[02:20:44] Extracting dependencies for custom package 'libwmf'...
+[02:20:44] Required deps: autoconf bash brotli bzip2 coreutils expat fontconfig freetype gcc gdk-pixbuf glib2 glibc glycin gzip lcms2 libffi libjpeg-turbo libpng libseccomp libx11 libxau libxcb libxdmcp make pcre2 sed systemd tar util-linux zlib 
+[02:20:44] Dependency 'autoconf' already installed.
+[02:20:44] Dependency 'bash' already installed.
+[02:20:44] Dependency 'brotli' already installed.
+[02:20:44] Dependency 'bzip2' already installed.
+[02:20:44] Dependency 'coreutils' already installed.
+[02:20:44] Dependency 'expat' already installed.
+[02:20:44] Dependency 'fontconfig' already installed.
+[02:20:44] Dependency 'freetype' already installed.
+[02:20:44] Dependency 'gcc' already installed.
+[02:20:44] Dependency 'gdk-pixbuf' already installed.
+[02:20:44] Dependency 'glib2' already installed.
+[02:20:44] Dependency 'glibc' already installed.
+[02:20:44] Dependency 'glycin' already installed.
+[02:20:44] Dependency 'gzip' already installed.
+[02:20:44] Dependency 'lcms2' already installed.
+[02:20:44] Dependency 'libffi' already installed.
+[02:20:44] Dependency 'libjpeg-turbo' already installed.
+[02:20:44] Dependency 'libpng' already installed.
+[02:20:44] Dependency 'libseccomp' already installed.
+[02:20:44] Dependency 'libx11' already installed.
+[02:20:44] Dependency 'libxau' already installed.
+[02:20:44] Dependency 'libxcb' already installed.
+[02:20:44] Dependency 'libxdmcp' already installed.
+[02:20:44] Dependency 'make' already installed.
+[02:20:44] Dependency 'pcre2' already installed.
+[02:20:44] Dependency 'sed' already installed.
+[02:20:44] Dependency 'systemd' already installed.
+[02:20:44] Dependency 'tar' already installed.
+[02:20:44] Dependency 'util-linux' already installed.
+[02:20:44] Dependency 'zlib' already installed.
+[02:20:44] Starting remote custom build for libwmf...
+--2026-10-17 02:21:32--  https://github.com/caolanm/libwmf/archive/v0.2.17.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/caolanm/libwmf/tar.gz/refs/tags/v0.2.17 [following]
+--2026-10-17 02:21:33--  https://codeload.github.com/caolanm/libwmf/tar.gz/refs/tags/v0.2.17
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘libwmf-0.2.17.tar.gz’
+
+libwmf-0.2.17.tar.g     [<=>                 ]       0  --.-KB/s               libwmf-0.2.17.tar.g     [ <=>                ]   1.01M  5.06MB/s               libwmf-0.2.17.tar.g     [  <=>               ]   2.57M  7.56MB/s    in 0.3s    
+
+2026-10-17 02:21:33 (7.56 MB/s) - ‘libwmf-0.2.17.tar.gz’ saved [2698886]
+
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'build-aux'.
+libtoolize: copying file 'build-aux/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+configure.ac:150: installing 'build-aux/compile'
+configure.ac:157: installing 'build-aux/config.guess'
+configure.ac:157: installing 'build-aux/config.sub'
+configure.ac:60: installing 'build-aux/install-sh'
+configure.ac:60: installing 'build-aux/missing'
+Makefile.am: installing './INSTALL'
+src/Makefile.am: installing 'build-aux/depcomp'
+parallel-tests: installing 'build-aux/test-driver'
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '97' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for Win32... no
+configure: CC is 
+checking for gawk... (cached) gawk
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C23 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for time.h... yes
+checking for unistd.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for off_t... yes
+checking for size_t... yes
+checking for strstr... yes
+checking for printf... yes
+checking for fprintf... yes
+checking for vfprintf... yes
+checking for sprintf... yes
+checking for vprintf... yes
+checking for vsprintf... yes
+checking for sscanf... yes
+checking for scanf... yes
+checking for vscanf... yes
+checking for fscanf... yes
+checking for vsscanf... yes
+checking for vsnprintf... yes
+checking for snprintf... yes
+checking for vfscanf... yes
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking for expat.h... yes
+checking for XML_ParserFree in -lexpat... yes
+checking for freetype-config... /usr/bin/freetype-config
+checking for freetype2... yes
+checking for zlib... yes
+checking for libpng... yes
+checking for jpeglib.h... yes
+checking for jpeg_CreateCompress in -ljpeg... yes
+checking for main in -lXpm... yes
+checking for gd.h... no
+checking for gdk-pixbuf-2.0 >= 2.1.2... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating fonts/Makefile
+config.status: creating fonts/libwmf-fontmap
+config.status: creating fonts/fontmap
+config.status: creating include/Makefile
+config.status: creating include/libwmf/Makefile
+config.status: creating src/Makefile
+config.status: creating src/extra/Makefile
+config.status: creating src/extra/trio/Makefile
+config.status: creating src/extra/gd/Makefile
+config.status: creating src/ipa/Makefile
+config.status: creating src/convert/Makefile
+config.status: creating tests/Makefile
+config.status: creating libwmf.pc
+config.status: creating libwmf.spec
+config.status: creating wmfconfig.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+	Support for X:			yes
+	Support for GD:			wmf
+	Support for JPEG though GD:	yes
+	Support for XML:		expat
+
+	Font directory:			/usr/share/libwmf/fonts
+	System XML fontmap file:	/usr/share/fonts/fontmap
+	Non-system XML fontmap file:	/usr/share/libwmf/fonts/fontmap
+	ghostscript fontmap file:	/usr/share/ghostscript/Resource/Init/Fontmap.GS
+	ghostscript font directory:	/usr/share/fonts/default/Type1
+
+	building gdk-pixbuf plug-in?	yes
+
+make  all-recursive
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17'
+Making all in .
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17'
+Making all in src
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17/src'
+Making all in extra
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17/src/extra'
+Making all in trio
+make[4]: Entering directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17/src/extra/trio'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17/src/extra/trio'
+Making all in gd
+make[4]: Entering directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17/src/extra/gd'
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gd.lo -MD -MP -MF .deps/gd.Tpo -c -o gd.lo gd.c
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gd_gd.lo -MD -MP -MF .deps/gd_gd.Tpo -c -o gd_gd.lo gd_gd.c
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gd_gd2.lo -MD -MP -MF .deps/gd_gd2.Tpo -c -o gd_gd2.lo gd_gd2.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_gd2.lo -MD -MP -MF .deps/gd_gd2.Tpo -c gd_gd2.c  -fPIC -DPIC -o .libs/gd_gd2.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd.lo -MD -MP -MF .deps/gd.Tpo -c gd.c  -fPIC -DPIC -o .libs/gd.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_gd.lo -MD -MP -MF .deps/gd_gd.Tpo -c gd_gd.c  -fPIC -DPIC -o .libs/gd_gd.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_gd.lo -MD -MP -MF .deps/gd_gd.Tpo -c gd_gd.c -o gd_gd.o >/dev/null 2>&1
+mv -f .deps/gd_gd.Tpo .deps/gd_gd.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gd_io.lo -MD -MP -MF .deps/gd_io.Tpo -c -o gd_io.lo gd_io.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_io.lo -MD -MP -MF .deps/gd_io.Tpo -c gd_io.c  -fPIC -DPIC -o .libs/gd_io.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_gd2.lo -MD -MP -MF .deps/gd_gd2.Tpo -c gd_gd2.c -o gd_gd2.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_io.lo -MD -MP -MF .deps/gd_io.Tpo -c gd_io.c -o gd_io.o >/dev/null 2>&1
+mv -f .deps/gd_io.Tpo .deps/gd_io.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gd_io_dp.lo -MD -MP -MF .deps/gd_io_dp.Tpo -c -o gd_io_dp.lo gd_io_dp.c
+mv -f .deps/gd_gd2.Tpo .deps/gd_gd2.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gd_io_file.lo -MD -MP -MF .deps/gd_io_file.Tpo -c -o gd_io_file.lo gd_io_file.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd.lo -MD -MP -MF .deps/gd.Tpo -c gd.c -o gd.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_io_dp.lo -MD -MP -MF .deps/gd_io_dp.Tpo -c gd_io_dp.c  -fPIC -DPIC -o .libs/gd_io_dp.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_io_file.lo -MD -MP -MF .deps/gd_io_file.Tpo -c gd_io_file.c  -fPIC -DPIC -o .libs/gd_io_file.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_io_file.lo -MD -MP -MF .deps/gd_io_file.Tpo -c gd_io_file.c -o gd_io_file.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_io_dp.lo -MD -MP -MF .deps/gd_io_dp.Tpo -c gd_io_dp.c -o gd_io_dp.o >/dev/null 2>&1
+mv -f .deps/gd_io_file.Tpo .deps/gd_io_file.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gd_ss.lo -MD -MP -MF .deps/gd_ss.Tpo -c -o gd_ss.lo gd_ss.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_ss.lo -MD -MP -MF .deps/gd_ss.Tpo -c gd_ss.c  -fPIC -DPIC -o .libs/gd_ss.o
+mv -f .deps/gd_io_dp.Tpo .deps/gd_io_dp.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gd_io_ss.lo -MD -MP -MF .deps/gd_io_ss.Tpo -c -o gd_io_ss.lo gd_io_ss.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_ss.lo -MD -MP -MF .deps/gd_ss.Tpo -c gd_ss.c -o gd_ss.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_io_ss.lo -MD -MP -MF .deps/gd_io_ss.Tpo -c gd_io_ss.c  -fPIC -DPIC -o .libs/gd_io_ss.o
+mv -f .deps/gd_ss.Tpo .deps/gd_ss.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gd_png.lo -MD -MP -MF .deps/gd_png.Tpo -c -o gd_png.lo gd_png.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_png.lo -MD -MP -MF .deps/gd_png.Tpo -c gd_png.c  -fPIC -DPIC -o .libs/gd_png.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_io_ss.lo -MD -MP -MF .deps/gd_io_ss.Tpo -c gd_io_ss.c -o gd_io_ss.o >/dev/null 2>&1
+mv -f .deps/gd_io_ss.Tpo .deps/gd_io_ss.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gd_jpeg.lo -MD -MP -MF .deps/gd_jpeg.Tpo -c -o gd_jpeg.lo gd_jpeg.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_jpeg.lo -MD -MP -MF .deps/gd_jpeg.Tpo -c gd_jpeg.c  -fPIC -DPIC -o .libs/gd_jpeg.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_png.lo -MD -MP -MF .deps/gd_png.Tpo -c gd_png.c -o gd_png.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_jpeg.lo -MD -MP -MF .deps/gd_jpeg.Tpo -c gd_jpeg.c -o gd_jpeg.o >/dev/null 2>&1
+mv -f .deps/gd.Tpo .deps/gd.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gdxpm.lo -MD -MP -MF .deps/gdxpm.Tpo -c -o gdxpm.lo gdxpm.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdxpm.lo -MD -MP -MF .deps/gdxpm.Tpo -c gdxpm.c  -fPIC -DPIC -o .libs/gdxpm.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdxpm.lo -MD -MP -MF .deps/gdxpm.Tpo -c gdxpm.c -o gdxpm.o >/dev/null 2>&1
+mv -f .deps/gd_jpeg.Tpo .deps/gd_jpeg.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gdfontt.lo -MD -MP -MF .deps/gdfontt.Tpo -c -o gdfontt.lo gdfontt.c
+mv -f .deps/gdxpm.Tpo .deps/gdxpm.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gdfonts.lo -MD -MP -MF .deps/gdfonts.Tpo -c -o gdfonts.lo gdfonts.c
+mv -f .deps/gd_png.Tpo .deps/gd_png.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gdfontmb.lo -MD -MP -MF .deps/gdfontmb.Tpo -c -o gdfontmb.lo gdfontmb.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdfontt.lo -MD -MP -MF .deps/gdfontt.Tpo -c gdfontt.c  -fPIC -DPIC -o .libs/gdfontt.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdfonts.lo -MD -MP -MF .deps/gdfonts.Tpo -c gdfonts.c  -fPIC -DPIC -o .libs/gdfonts.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdfontt.lo -MD -MP -MF .deps/gdfontt.Tpo -c gdfontt.c -o gdfontt.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdfontmb.lo -MD -MP -MF .deps/gdfontmb.Tpo -c gdfontmb.c  -fPIC -DPIC -o .libs/gdfontmb.o
+mv -f .deps/gdfontt.Tpo .deps/gdfontt.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gdfontl.lo -MD -MP -MF .deps/gdfontl.Tpo -c -o gdfontl.lo gdfontl.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdfonts.lo -MD -MP -MF .deps/gdfonts.Tpo -c gdfonts.c -o gdfonts.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdfontmb.lo -MD -MP -MF .deps/gdfontmb.Tpo -c gdfontmb.c -o gdfontmb.o >/dev/null 2>&1
+mv -f .deps/gdfonts.Tpo .deps/gdfonts.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gdfontg.lo -MD -MP -MF .deps/gdfontg.Tpo -c -o gdfontg.lo gdfontg.c
+mv -f .deps/gdfontmb.Tpo .deps/gdfontmb.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gdtables.lo -MD -MP -MF .deps/gdtables.Tpo -c -o gdtables.lo gdtables.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdfontl.lo -MD -MP -MF .deps/gdfontl.Tpo -c gdfontl.c  -fPIC -DPIC -o .libs/gdfontl.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdfontg.lo -MD -MP -MF .deps/gdfontg.Tpo -c gdfontg.c  -fPIC -DPIC -o .libs/gdfontg.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdfontl.lo -MD -MP -MF .deps/gdfontl.Tpo -c gdfontl.c -o gdfontl.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdtables.lo -MD -MP -MF .deps/gdtables.Tpo -c gdtables.c  -fPIC -DPIC -o .libs/gdtables.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdfontg.lo -MD -MP -MF .deps/gdfontg.Tpo -c gdfontg.c -o gdfontg.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdtables.lo -MD -MP -MF .deps/gdtables.Tpo -c gdtables.c -o gdtables.o >/dev/null 2>&1
+mv -f .deps/gdfontl.Tpo .deps/gdfontl.Plo
+mv -f .deps/gdfontg.Tpo .deps/gdfontg.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gdft.lo -MD -MP -MF .deps/gdft.Tpo -c -o gdft.lo gdft.c
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gdcache.lo -MD -MP -MF .deps/gdcache.Tpo -c -o gdcache.lo gdcache.c
+mv -f .deps/gdtables.Tpo .deps/gdtables.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gdkanji.lo -MD -MP -MF .deps/gdkanji.Tpo -c -o gdkanji.lo gdkanji.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdcache.lo -MD -MP -MF .deps/gdcache.Tpo -c gdcache.c  -fPIC -DPIC -o .libs/gdcache.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdft.lo -MD -MP -MF .deps/gdft.Tpo -c gdft.c  -fPIC -DPIC -o .libs/gdft.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdkanji.lo -MD -MP -MF .deps/gdkanji.Tpo -c gdkanji.c  -fPIC -DPIC -o .libs/gdkanji.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdcache.lo -MD -MP -MF .deps/gdcache.Tpo -c gdcache.c -o gdcache.o >/dev/null 2>&1
+mv -f .deps/gdcache.Tpo .deps/gdcache.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT wbmp.lo -MD -MP -MF .deps/wbmp.Tpo -c -o wbmp.lo wbmp.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT wbmp.lo -MD -MP -MF .deps/wbmp.Tpo -c wbmp.c  -fPIC -DPIC -o .libs/wbmp.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdft.lo -MD -MP -MF .deps/gdft.Tpo -c gdft.c -o gdft.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT wbmp.lo -MD -MP -MF .deps/wbmp.Tpo -c wbmp.c -o wbmp.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdkanji.lo -MD -MP -MF .deps/gdkanji.Tpo -c gdkanji.c -o gdkanji.o >/dev/null 2>&1
+mv -f .deps/gdkanji.Tpo .deps/gdkanji.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gd_wbmp.lo -MD -MP -MF .deps/gd_wbmp.Tpo -c -o gd_wbmp.lo gd_wbmp.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_wbmp.lo -MD -MP -MF .deps/gd_wbmp.Tpo -c gd_wbmp.c  -fPIC -DPIC -o .libs/gd_wbmp.o
+mv -f .deps/gdft.Tpo .deps/gdft.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gdhelpers.lo -MD -MP -MF .deps/gdhelpers.Tpo -c -o gdhelpers.lo gdhelpers.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdhelpers.lo -MD -MP -MF .deps/gdhelpers.Tpo -c gdhelpers.c  -fPIC -DPIC -o .libs/gdhelpers.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_wbmp.lo -MD -MP -MF .deps/gd_wbmp.Tpo -c gd_wbmp.c -o gd_wbmp.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gdhelpers.lo -MD -MP -MF .deps/gdhelpers.Tpo -c gdhelpers.c -o gdhelpers.o >/dev/null 2>&1
+mv -f .deps/gd_wbmp.Tpo .deps/gd_wbmp.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H  -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../..  -I.  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT gd_clip.lo -MD -MP -MF .deps/gd_clip.Tpo -c -o gd_clip.lo gd_clip.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_clip.lo -MD -MP -MF .deps/gd_clip.Tpo -c gd_clip.c  -fPIC -DPIC -o .libs/gd_clip.o
+mv -f .deps/gdhelpers.Tpo .deps/gdhelpers.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -DHAVE_UNISTD_H -DHAVE_LIBFREETYPE -DHAVE_LIBPNG -DHAVE_LIBJPEG -I. -I../../.. -I. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT gd_clip.lo -MD -MP -MF .deps/gd_clip.Tpo -c gd_clip.c -o gd_clip.o >/dev/null 2>&1
+mv -f .deps/gd_clip.Tpo .deps/gd_clip.Plo
+mv -f .deps/wbmp.Tpo .deps/wbmp.Plo
+/bin/sh ../../../libtool  --tag=CC   --mode=link gcc -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -lfreetype  -lX11 -lexpat -ljpeg -lpng16 -lz -lm  -o libgd.la  gd.lo gd_gd.lo gd_gd2.lo gd_io.lo gd_io_dp.lo gd_io_file.lo gd_ss.lo gd_io_ss.lo gd_png.lo gd_jpeg.lo gdxpm.lo gdfontt.lo gdfonts.lo gdfontmb.lo gdfontl.lo gdfontg.lo gdtables.lo gdft.lo gdcache.lo gdkanji.lo wbmp.lo gd_wbmp.lo gdhelpers.lo gd_clip.lo  
+libtool: link: ar cr .libs/libgd.a .libs/gd.o .libs/gd_gd.o .libs/gd_gd2.o .libs/gd_io.o .libs/gd_io_dp.o .libs/gd_io_file.o .libs/gd_ss.o .libs/gd_io_ss.o .libs/gd_png.o .libs/gd_jpeg.o .libs/gdxpm.o .libs/gdfontt.o .libs/gdfonts.o .libs/gdfontmb.o .libs/gdfontl.o .libs/gdfontg.o .libs/gdtables.o .libs/gdft.o .libs/gdcache.o .libs/gdkanji.o .libs/wbmp.o .libs/gd_wbmp.o .libs/gdhelpers.o .libs/gd_clip.o 
+libtool: link: ranlib .libs/libgd.a
+libtool: link: ( cd ".libs" && rm -f "libgd.la" && ln -s "../libgd.la" "libgd.la" )
+make[4]: Leaving directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17/src/extra/gd'
+make[4]: Entering directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17/src/extra'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17/src/extra'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17/src/extra'
+Making all in ipa
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17/src/ipa'
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../..  -I../../include -I../../src -I../../src/extra/gd -I../..  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT eps.lo -MD -MP -MF .deps/eps.Tpo -c -o eps.lo eps.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../..  -I../../include -I../../src -I../../src/extra/gd -I../..  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT fig.lo -MD -MP -MF .deps/fig.Tpo -c -o fig.lo fig.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../..  -I../../include -I../../src -I../../src/extra/gd -I../..  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT svg.lo -MD -MP -MF .deps/svg.Tpo -c -o svg.lo svg.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT eps.lo -MD -MP -MF .deps/eps.Tpo -c eps.c  -fPIC -DPIC -o .libs/eps.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT svg.lo -MD -MP -MF .deps/svg.Tpo -c svg.c  -fPIC -DPIC -o .libs/svg.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT fig.lo -MD -MP -MF .deps/fig.Tpo -c fig.c  -fPIC -DPIC -o .libs/fig.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT svg.lo -MD -MP -MF .deps/svg.Tpo -c svg.c -o svg.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT eps.lo -MD -MP -MF .deps/eps.Tpo -c eps.c -o eps.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT fig.lo -MD -MP -MF .deps/fig.Tpo -c fig.c -o fig.o >/dev/null 2>&1
+mv -f .deps/svg.Tpo .deps/svg.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../..  -I../../include -I../../src -I../../src/extra/gd -I../..  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT xgd.lo -MD -MP -MF .deps/xgd.Tpo -c -o xgd.lo xgd.c
+mv -f .deps/eps.Tpo .deps/eps.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../..  -I../../include -I../../src -I../../src/extra/gd -I../..  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT x.lo -MD -MP -MF .deps/x.Tpo -c -o x.lo x.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT xgd.lo -MD -MP -MF .deps/xgd.Tpo -c xgd.c  -fPIC -DPIC -o .libs/xgd.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT x.lo -MD -MP -MF .deps/x.Tpo -c x.c  -fPIC -DPIC -o .libs/x.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT xgd.lo -MD -MP -MF .deps/xgd.Tpo -c xgd.c -o xgd.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT x.lo -MD -MP -MF .deps/x.Tpo -c x.c -o x.o >/dev/null 2>&1
+mv -f .deps/xgd.Tpo .deps/xgd.Plo
+mv -f .deps/fig.Tpo .deps/fig.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../..  -I../../include -I../../src -I../../src/extra/gd -I../..  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT ipa.lo -MD -MP -MF .deps/ipa.Tpo -c -o ipa.lo ipa.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../..  -I../../include -I../../src -I../../src/extra/gd -I../..  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT plot.lo -MD -MP -MF .deps/plot.Tpo -c -o plot.lo plot.c
+mv -f .deps/x.Tpo .deps/x.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../..  -I../../include -I../../src -I../../src/extra/gd -I../..  -I/usr/include/freetype2 -I/usr/include/libpng16      -I/usr/include/libpng16  -g -O2 -MT foreign.lo -MD -MP -MF .deps/foreign.Tpo -c -o foreign.lo foreign.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT ipa.lo -MD -MP -MF .deps/ipa.Tpo -c ipa.c  -fPIC -DPIC -o .libs/ipa.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT plot.lo -MD -MP -MF .deps/plot.Tpo -c plot.c  -fPIC -DPIC -o .libs/plot.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT foreign.lo -MD -MP -MF .deps/foreign.Tpo -c foreign.c  -fPIC -DPIC -o .libs/foreign.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT plot.lo -MD -MP -MF .deps/plot.Tpo -c plot.c -o plot.o >/dev/null 2>&1
+In file included from ipa.c:42:
+../../src/ipa/ipa/bmp.h: In function 'ReadBMPImage':
+../../src/ipa/ipa/bmp.h:1033:9: error: unknown type name 'uint64_t'
+ 1033 |         uint64_t remaining;
+      |         ^~~~~~~~
+../../src/ipa/ipa/bmp.h:1:1: note: 'uint64_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+  +++ |+#include <stdint.h>
+    1 | /* libwmf ("ipa/ipa/bmp.h"): library for wmf conversion
+../../src/ipa/ipa/bmp.h:1222:22: error: 'uint64_t' undeclared (first use in this function)
+ 1222 |         remaining = (uint64_t) (src->end - src->ptr);
+      |                      ^~~~~~~~
+../../src/ipa/ipa/bmp.h:1222:22: note: 'uint64_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+../../src/ipa/ipa/bmp.h:1222:22: note: each undeclared identifier is reported only once for each function it appears in
+make[3]: *** [Makefile:497: ipa.lo] Error 1
+make[3]: *** Waiting for unfinished jobs....
+libtool: compile:  gcc -DHAVE_CONFIG_H -DPACKAGE=\"libwmf\" -DVERSION=\"0.2.17\" -I. -I../.. -I../../include -I../../src -I../../src/extra/gd -I../.. -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libpng16 -g -O2 -MT foreign.lo -MD -MP -MF .deps/foreign.Tpo -c foreign.c -o foreign.o >/dev/null 2>&1
+mv -f .deps/plot.Tpo .deps/plot.Plo
+mv -f .deps/foreign.Tpo .deps/foreign.Plo
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17/src/ipa'
+make[2]: *** [Makefile:668: all-recursive] Error 1
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17/src'
+make[1]: *** [Makefile:593: all-recursive] Error 1
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libwmf/libwmf-0.2.17'
+make: *** [Makefile:465: all] Error 2
+[ERROR] build.sh exited with code 2 for libwmf
+[ERROR] Custom build failed for libwmf
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-27
+r13.1-410
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/atkmm-1.6 (belongs to an installed package)
+Skipping registered directory: /usr/lib/cairomm-1.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/pangomm-1.4 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.2.11...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.2.11-lfs-r13.1-21
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+rm: cannot remove './gimp/gimp-3.2.6/p11-build': Directory not empty
+~
+~/logs ~ ~/lfs_packaging
