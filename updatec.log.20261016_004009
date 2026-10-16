@@ -1,0 +1,1994 @@
+===== Update check started: 2026-10-16 00:40:09 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261016_004009
+Packages needing attention: glycin linux
+===== Starting updatec: 2026-10-16 00:40:12 AEST =====
+Checking for packages with missing file inventories...
+Packages with missing inventories that will be force-rebuilt: julia
+name=glycin
+local_ver=2.2.2
+remote_ver=2.2.3
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - glycin
+  - julia
+  - linux
+
+Building custom package glycin...
+[00:42:20] Found custom package for glycin, bypassing BLFS aliases.
+[00:42:20] Custom package detected at /home/fusion809/lfs_packaging/glycin
+[00:42:20] Extracting dependencies for custom package 'glycin'...
+[00:42:20] Required deps: brotli bubblewrap bzip2 cairo dav1d elfutils expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc graphene graphite2 gst-plugins-bad gst-plugins-base gstreamer gtk4 harfbuzz highway icu lcms2 libaom libde265 libdrm libepoxy libffi libglvnd libgudev libheif libjpeg-turbo libjxl libogg libpng librsvg libseccomp libunwind libwebp libx11 libxau libxcb libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxml2 libxrandr libxrender mesa numactl orc pango pcre2 pixman rust systemd tiff util-linux vala vulkan-loader wayland x264 x265 xz zlib zstd 
+[00:42:20] Dependency 'brotli' already installed.
+[00:42:20] Dependency 'bubblewrap' already installed.
+[00:42:20] Dependency 'bzip2' already installed.
+[00:42:20] Dependency 'cairo' already installed.
+[00:42:20] Dependency 'dav1d' already installed.
+[00:42:20] Dependency 'elfutils' already installed.
+[00:42:20] Dependency 'expat' already installed.
+[00:42:20] Dependency 'fontconfig' already installed.
+[00:42:21] Dependency 'freetype' already installed.
+[00:42:21] Dependency 'fribidi' already installed.
+[00:42:21] Dependency 'gcc' already installed.
+[00:42:21] Dependency 'gdk-pixbuf' already installed.
+[00:42:21] Dependency 'glib2' already installed.
+[00:42:21] Dependency 'glibc' already installed.
+[00:42:21] Dependency 'graphene' already installed.
+[00:42:21] Dependency 'graphite2' already installed.
+[00:42:21] Dependency 'gst-plugins-bad' already installed.
+[00:42:21] Dependency 'gst-plugins-base' already installed.
+[00:42:21] Dependency 'gstreamer' already installed.
+[00:42:21] Dependency 'gtk4' already installed.
+[00:42:21] Dependency 'harfbuzz' already installed.
+[00:42:21] Dependency 'highway' already installed.
+[00:42:21] Dependency 'icu' already installed.
+[00:42:21] Dependency 'lcms2' already installed.
+[00:42:21] Dependency 'libaom' already installed.
+[00:42:21] Dependency 'libde265' already installed.
+[00:42:21] Dependency 'libdrm' already installed.
+[00:42:21] Dependency 'libepoxy' already installed.
+[00:42:21] Dependency 'libffi' already installed.
+[00:42:21] Dependency 'libglvnd' already installed.
+[00:42:21] Dependency 'libgudev' already installed.
+[00:42:21] Dependency 'libheif' already installed.
+[00:42:21] Dependency 'libjpeg-turbo' already installed.
+[00:42:21] Dependency 'libjxl' already installed.
+[00:42:21] Dependency 'libogg' already installed.
+[00:42:21] Dependency 'libpng' already installed.
+[00:42:21] Dependency 'librsvg' already installed.
+[00:42:21] Dependency 'libseccomp' already installed.
+[00:42:21] Dependency 'libunwind' already installed.
+[00:42:21] Dependency 'libwebp' already installed.
+[00:42:21] Dependency 'libx11' already installed.
+[00:42:21] Dependency 'libxau' already installed.
+[00:42:21] Dependency 'libxcb' already installed.
+[00:42:21] Dependency 'libxcursor' already installed.
+[00:42:21] Dependency 'libxdamage' already installed.
+[00:42:21] Dependency 'libxdmcp' already installed.
+[00:42:22] Dependency 'libxext' already installed.
+[00:42:22] Dependency 'libxfixes' already installed.
+[00:42:22] Dependency 'libxi' already installed.
+[00:42:22] Dependency 'libxinerama' already installed.
+[00:42:22] Dependency 'libxkbcommon' already installed.
+[00:42:22] Dependency 'libxml2' already installed.
+[00:42:22] Dependency 'libxrandr' already installed.
+[00:42:22] Dependency 'libxrender' already installed.
+[00:42:22] Dependency 'mesa' already installed.
+[00:42:22] Dependency 'numactl' already installed.
+[00:42:22] Dependency 'orc' already installed.
+[00:42:22] Dependency 'pango' already installed.
+[00:42:22] Dependency 'pcre2' already installed.
+[00:42:22] Dependency 'pixman' already installed.
+[00:42:22] Dependency 'rust' already installed.
+[00:42:22] Dependency 'systemd' already installed.
+[00:42:22] Dependency 'tiff' already installed.
+[00:42:22] Dependency 'util-linux' already installed.
+[00:42:23] Dependency 'vala' already installed.
+[00:42:23] Dependency 'vulkan-loader' already installed.
+[00:42:23] Dependency 'wayland' already installed.
+[00:42:23] Dependency 'x264' already installed.
+[00:42:23] Dependency 'x265' already installed.
+[00:42:23] Dependency 'xz' already installed.
+[00:42:23] Dependency 'zlib' already installed.
+[00:42:23] Dependency 'zstd' already installed.
+[00:42:23] Starting remote custom build for glycin...
+--2026-10-16 00:43:07--  https://download.gnome.org/sources/glycin/2.2/glycin-2.2.3.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 143.244.62.6, 143.244.62.8, 2a02:6ea0:db00::11, ...
+Connecting to download.gnome.org (download.gnome.org)|143.244.62.6|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7766192 (7.4M) [application/octet-stream]
+Saving to: ‘glycin-2.2.3.tar.xz’
+
+glycin-2.2.3.tar.xz   0%[                    ]       0  --.-KB/s               glycin-2.2.3.tar.xz   1%[                    ] 111.44K   520KB/s               glycin-2.2.3.tar.xz   4%[                    ] 335.44K   797KB/s               glycin-2.2.3.tar.xz   6%[>                   ] 463.44K   663KB/s               glycin-2.2.3.tar.xz  19%[==>                 ]   1.45M  1.47MB/s               glycin-2.2.3.tar.xz  29%[====>               ]   2.17M  1.82MB/s               glycin-2.2.3.tar.xz  46%[========>           ]   3.42M  2.45MB/s               glycin-2.2.3.tar.xz  55%[==========>         ]   4.12M  2.57MB/s               glycin-2.2.3.tar.xz  58%[==========>         ]   4.36M  2.33MB/s               glycin-2.2.3.tar.xz  70%[=============>      ]   5.25M  2.52MB/s               glycin-2.2.3.tar.xz  79%[==============>     ]   5.91M  2.59MB/s               glycin-2.2.3.tar.xz  98%[==================> ]   7.28M  2.93MB/s               glycin-2.2.3.tar.xz 100%[===================>]   7.41M  2.94MB/s    in 2.5s    
+
+2026-10-16 00:43:11 (2.94 MB/s) - ‘glycin-2.2.3.tar.xz’ saved [7766192/7766192]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+meson_args: <-D>
+meson_args: <libglycin-gtk4=false>
+meson_args: <-D>
+meson_args: <tests=false>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <-D> <libglycin-gtk4=false> <-D> <tests=false> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/glycin/glycin-2.2.3
+Build dir: /home/fusion809/lfs_packaging/glycin/glycin-2.2.3/build
+Build type: native build
+Project name: glycin
+Project version: 2.2.3
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Rust compiler for the host machine: rustc -C linker=cc (rustc 1.99.0 "1.99.0")
+Rust linker for the host machine:  ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program cargo found: YES (/opt/rustc/bin/cargo)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.8
+Run-time dependency libseccomp found: YES 2.6.1
+Run-time dependency libheif found: YES 1.23.6
+Run-time dependency libjxl found: YES 0.12.0
+Run-time dependency librsvg-2.0 found: YES 2.63.1
+Run-time dependency cairo found: YES 1.18.6
+Configuring tmp-glycin-heif using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Configuring glycin-heif.thumbnailer using configuration
+Configuring tmp-glycin-image-rs using configuration
+Configuring glycin-image-rs.thumbnailer using configuration
+Configuring tmp-glycin-jxl using configuration
+Configuring glycin-jxl.thumbnailer using configuration
+Configuring tmp-glycin-svg using configuration
+Configuring glycin-svg.thumbnailer using configuration
+Run-time dependency gio-2.0 found: YES 2.90.1
+Run-time dependency fontconfig found: YES 2.18.3
+Dependency libseccomp for host machine found: YES 2.6.1 (cached)
+Message: /home/fusion809/lfs_packaging/glycin/glycin-2.2.3/build/cargo-target/release/glycin-2-0.dll
+WARNING: Build target glycin-2 has no sources. This was never supposed to be allowed but did because of a bug, support will be removed in a future release of Meson
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.8
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program vapigen found: YES (/usr/bin/vapigen)
+Build targets in project: 21
+
+glycin 2.2.3
+
+  User defined options
+    buildtype     : release
+    libglycin-gtk4: false
+    prefix        : /usr
+    tests         : false
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[0/21] Generating libglycin/libglycin-cargo with a custom command (wrapped by meson to set env)
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded adler2 v2.0.1
+  Downloaded async-recursion v1.1.1
+  Downloaded async-global-executor v3.1.0
+  Downloaded async-broadcast v0.7.2
+  Downloaded bit_field v0.10.3
+  Downloaded aliasable v0.1.3
+  Downloaded byteorder-lite v0.1.0
+  Downloaded atomic-waker v1.1.2
+  Downloaded cfg-if v1.0.4
+  Downloaded color_quant v1.1.0
+  Downloaded errno v0.3.14
+  Downloaded enumflags2_derive v0.7.12
+  Downloaded equivalent v1.0.2
+  Downloaded endi v1.1.1
+  Downloaded env_filter v2.0.0
+  Downloaded defmt-parser v1.0.0
+  Downloaded matchers v0.2.0
+  Downloaded memmap2 v0.9.11
+  Downloaded futures-io v0.3.33
+  Downloaded futures-macro v0.3.33
+  Downloaded gio-unix v0.22.8
+  Downloaded hex v0.4.3
+  Downloaded futures-task v0.3.33
+  Downloaded heck v0.5.0
+  Downloaded async-fs v2.2.0
+  Downloaded async-signal v0.2.14
+  Downloaded async-trait v0.1.91
+  Downloaded async-channel v2.5.0
+  Downloaded dlib v0.5.3
+  Downloaded event-listener-strategy v0.5.4
+  Downloaded futures-sink v0.3.33
+  Downloaded futures-core v0.3.33
+  Downloaded libseccomp-sys v0.3.0
+  Downloaded async-executor v1.14.0
+  Downloaded autocfg v1.5.1
+  Downloaded bitflags v1.3.2
+  Downloaded blocking v1.6.2
+  Downloaded cfg_aliases v0.2.2
+  Downloaded enumflags2 v0.7.12
+  Downloaded futures-executor v0.3.33
+  Downloaded heck v0.4.1
+  Downloaded defmt-macros v1.1.1
+  Downloaded lazy_static v1.5.0
+  Downloaded async-lock v3.4.2
+  Downloaded concurrent-queue v2.5.0
+  Downloaded either v1.17.0
+  Downloaded fdeflate v0.3.7
+  Downloaded fax v0.2.7
+  Downloaded crossbeam-deque v0.8.7
+  Downloaded fastrand v2.5.0
+  Downloaded futures-timer v3.0.4
+  Downloaded async-process v2.5.0
+  Downloaded async-task v4.7.1
+  Downloaded cfg-expr v0.20.8
+  Downloaded defmt v1.1.1
+  Downloaded gif v0.14.2
+  Downloaded env_logger v0.11.11
+  Downloaded gobject-sys v0.22.6
+  Downloaded ouroboros_macro v0.18.5
+  Downloaded crc32fast v1.5.0
+  Downloaded crossbeam-epoch v0.9.20
+  Downloaded futures-lite v2.6.1
+  Downloaded serde_repr v0.1.21
+  Downloaded serde_spanned v1.1.1
+  Downloaded parking v2.2.1
+  Downloaded event-listener v5.4.2
+  Downloaded proc-macro2-diagnostics v0.10.1
+  Downloaded pulp-wasm-simd-flag v0.1.1
+  Downloaded async-io v2.6.0
+  Downloaded bitflags v2.13.1
+  Downloaded bytemuck v1.25.2
+  Downloaded getrandom v0.4.3
+  Downloaded reborrow v0.5.5
+  Downloaded futures-channel v0.3.33
+  Downloaded crossbeam-utils v0.8.22
+  Downloaded half v2.7.1
+  Downloaded image-extras v0.1.1
+  Downloaded glib-sys v0.22.8
+  Downloaded proc-macro-crate v3.5.0
+  Downloaded image-webp v0.2.4
+  Downloaded glib-macros v0.22.6
+  Downloaded hayro-jpeg2000 v0.3.5
+  Downloaded flate2 v1.1.9
+  Downloaded gio-sys v0.22.8
+  Downloaded aho-corasick v1.1.4
+  Downloaded indexmap v2.14.0
+  Downloaded jiff-core v0.1.0
+  Downloaded hashbrown v0.17.1
+  Downloaded thread_local v1.1.10
+  Downloaded futures-util v0.3.33
+  Downloaded version_check v0.9.5
+  Downloaded ouroboros v0.18.5
+  Downloaded fearless_simd v0.4.1
+  Downloaded exr v1.74.2
+  Downloaded glib v0.22.8
+  Downloaded image v0.25.10
+  Downloaded jiff v0.2.35
+  Downloaded yeslogic-fontconfig-sys v6.0.1
+  Downloaded lebe v0.5.3
+  Downloaded quick-error v2.0.1
+  Downloaded version-compare v0.2.1
+  Downloaded encoding_rs v0.8.35
+  Downloaded glycin-common v2.0.0
+  Downloaded gufo v0.5.0
+  Downloaded gufo-tiff v0.5.0
+  Downloaded gio-unix-sys v0.22.0
+  Downloaded gufo-common v2.0.0
+  Downloaded gufo-jpeg v0.5.1
+  Downloaded gufo-png v0.5.0
+  Downloaded gufo-webp v0.5.0
+  Downloaded gufo-xmp v0.5.0
+  Downloaded gio v0.22.8
+  Downloaded glycin-utils v5.0.1
+  Downloaded glycin-builtin v4.0.3
+  Downloaded gufo-exif v0.5.3
+  Downloaded glycin-external v4.0.3
+  Downloaded glycin-image-rs v2.2.3
+  Downloaded glycin v4.0.3
+  Downloaded num-complex v0.4.6
+  Downloaded ordered-stream v0.2.0
+  Downloaded slab v0.4.12
+  Downloaded pkg-config v0.3.33
+  Downloaded simd-adler32 v0.3.10
+  Downloaded thiserror-impl v2.0.19
+  Downloaded signal-hook-registry v1.4.8
+  Downloaded nu-ansi-term v0.50.3
+  Downloaded zvariant_derive v5.13.1
+  Downloaded toml_datetime v1.1.1+spec-1.1.0
+  Downloaded libloading v0.8.9
+  Downloaded piper v0.2.5
+  Downloaded tracing-log v0.2.0
+  Downloaded glycin-core v4.0.3
+  Downloaded zvariant_utils v3.5.0
+  Downloaded toml_writer v1.1.2+spec-1.1.0
+  Downloaded paste v1.0.15
+  Downloaded thiserror v2.0.19
+  Downloaded zbus_names v4.3.4
+  Downloaded pin-project-lite v0.2.17
+  Downloaded quote v1.0.47
+  Downloaded target-lexicon v0.13.5
+  Downloaded memchr v2.8.3
+  Downloaded jpeg-encoder v0.7.1
+  Downloaded log v0.4.33
+  Downloaded zbus_macros v5.18.0
+  Downloaded tracing-attributes v0.1.31
+  Downloaded static_assertions v1.1.0
+  Downloaded zune-core v0.5.1
+  Downloaded weezl v0.1.12
+  Downloaded once_cell v1.21.4
+  Downloaded zune-inflate v0.2.54
+  Downloaded rmp v0.8.15
+  Downloaded toml_parser v1.1.3+spec-1.1.0
+  Downloaded system-deps v7.0.8
+  Downloaded rmp-serde v1.3.1
+  Downloaded libseccomp v0.4.0
+  Downloaded polling v3.11.0
+  Downloaded smallvec v1.15.2
+  Downloaded num-traits v0.2.19
+  Downloaded proc-macro2 v1.0.107
+  Downloaded uuid v1.24.0
+  Downloaded xml v1.3.0
+  Downloaded toml v1.1.4+spec-1.1.0
+  Downloaded serde_derive v1.0.229
+  Downloaded serde_core v1.0.229
+  Downloaded sharded-slab v0.1.7
+  Downloaded rayon-core v1.13.0
+  Downloaded toml_edit v0.25.13+spec-1.1.0
+  Downloaded tracing-core v0.1.36
+  Downloaded unicode-ident v1.0.24
+  Downloaded yansi v1.0.1
+  Downloaded miniz_oxide v0.9.1
+  Downloaded miniz_oxide v0.8.9
+  Downloaded qoi v0.4.1
+  Downloaded zune-jpeg v0.5.15
+  Downloaded zvariant v5.13.1
+  Downloaded serde v1.0.229
+  Downloaded libm v0.2.16
+  Downloaded tiff v0.11.3
+  Downloaded raw-cpuid v11.6.0
+  Downloaded zerocopy-derive v0.8.55
+  Downloaded png v0.18.1
+  Downloaded regex v1.13.1
+  Downloaded pulp v0.22.3
+  Downloaded rayon v1.12.0
+  Downloaded zbus v5.18.0
+  Downloaded winnow v1.0.4
+  Downloaded moxcms v0.8.1
+  Downloaded tracing-subscriber v0.3.23
+  Downloaded zerocopy v0.8.55
+  Downloaded syn v2.0.119
+  Downloaded syn v3.0.3
+  Downloaded nix v0.31.3
+  Downloaded regex-syntax v0.8.11
+  Downloaded rustix v1.1.4
+  Downloaded tracing v0.1.44
+  Downloaded regex-automata v0.4.16
+  Downloaded libc v0.2.189
+  Downloaded pxfm v0.1.30
+  Downloaded linux-raw-sys v0.12.1
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.24
+   Compiling winnow v1.0.4
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling pin-project-lite v0.2.17
+   Compiling serde_core v1.0.229
+   Compiling pkg-config v0.3.33
+   Compiling toml_parser v1.1.3+spec-1.1.0
+   Compiling serde v1.0.229
+   Compiling libc v0.2.189
+   Compiling target-lexicon v0.13.5
+   Compiling futures-core v0.3.33
+   Compiling smallvec v1.15.2
+   Compiling serde_spanned v1.1.1
+   Compiling heck v0.5.0
+   Compiling toml v1.1.4+spec-1.1.0
+   Compiling cfg-expr v0.20.8
+   Compiling version-compare v0.2.1
+   Compiling system-deps v7.0.8
+   Compiling crossbeam-utils v0.8.22
+   Compiling cfg-if v1.0.4
+   Compiling equivalent v1.0.2
+   Compiling hashbrown v0.17.1
+   Compiling syn v2.0.119
+   Compiling syn v3.0.3
+   Compiling indexmap v2.14.0
+   Compiling parking v2.2.1
+   Compiling autocfg v1.5.1
+   Compiling serde_derive v1.0.229
+   Compiling enumflags2_derive v0.7.12
+   Compiling toml_edit v0.25.13+spec-1.1.0
+   Compiling bitflags v2.13.1
+   Compiling proc-macro-crate v3.5.0
+   Compiling futures-io v0.3.33
+   Compiling slab v0.4.12
+   Compiling fastrand v2.5.0
+   Compiling event-listener v5.4.2
+   Compiling concurrent-queue v2.5.0
+   Compiling zvariant_utils v3.5.0
+   Compiling zvariant_derive v5.13.1
+   Compiling glib-sys v0.22.8
+   Compiling enumflags2 v0.7.12
+   Compiling event-listener-strategy v0.5.4
+   Compiling futures-lite v2.6.1
+   Compiling gobject-sys v0.22.6
+   Compiling rustix v1.1.4
+   Compiling endi v1.1.1
+   Compiling once_cell v1.21.4
+   Compiling zvariant v5.13.1
+   Compiling gio-sys v0.22.8
+   Compiling paste v1.0.15
+   Compiling thiserror v2.0.19
+   Compiling linux-raw-sys v0.12.1
+   Compiling tracing-core v0.1.36
+   Compiling futures-macro v0.3.33
+   Compiling thiserror-impl v2.0.19
+   Compiling async-io v2.6.0
+   Compiling num-traits v0.2.19
+   Compiling async-task v4.7.1
+   Compiling version_check v0.9.5
+   Compiling futures-task v0.3.33
+   Compiling zerocopy v0.8.55
+   Compiling proc-macro2-diagnostics v0.10.1
+   Compiling futures-util v0.3.33
+   Compiling polling v3.11.0
+   Compiling async-channel v2.5.0
+   Compiling tracing-attributes v0.1.31
+   Compiling zerocopy-derive v0.8.55
+   Compiling crossbeam-epoch v0.9.20
+   Compiling atomic-waker v1.1.2
+   Compiling piper v0.2.5
+   Compiling tracing v0.1.44
+   Compiling futures-executor v0.3.33
+   Compiling gufo-common v2.0.0
+   Compiling async-lock v3.4.2
+   Compiling glib-macros v0.22.6
+   Compiling errno v0.3.14
+   Compiling futures-channel v0.3.33
+   Compiling crossbeam-deque v0.8.7
+   Compiling memchr v2.8.3
+   Compiling cfg_aliases v0.2.2
+   Compiling yansi v1.0.1
+   Compiling getrandom v0.4.3
+   Compiling log v0.4.33
+   Compiling glib v0.22.8
+   Compiling nix v0.31.3
+   Compiling signal-hook-registry v1.4.8
+   Compiling blocking v1.6.2
+   Compiling rayon-core v1.13.0
+   Compiling libseccomp-sys v0.3.0
+   Compiling heck v0.4.1
+   Compiling ouroboros_macro v0.18.5
+   Compiling zbus_names v4.3.4
+   Compiling async-signal v0.2.14
+   Compiling rmp v0.8.15
+   Compiling async-executor v1.14.0
+   Compiling gio-unix-sys v0.22.0
+   Compiling libseccomp v0.4.0
+   Compiling static_assertions v1.1.0
+   Compiling regex-syntax v0.8.11
+   Compiling aliasable v0.1.3
+   Compiling jiff-core v0.1.0
+   Compiling jiff v0.2.35
+   Compiling regex-automata v0.4.16
+   Compiling ouroboros v0.18.5
+   Compiling rmp-serde v1.3.1
+   Compiling zbus_macros v5.18.0
+   Compiling uuid v1.24.0
+   Compiling async-process v2.5.0
+   Compiling half v2.7.1
+   Compiling env_filter v2.0.0
+   Compiling async-broadcast v0.7.2
+   Compiling async-recursion v1.1.1
+   Compiling async-trait v0.1.91
+   Compiling serde_repr v0.1.21
+   Compiling libloading v0.8.9
+   Compiling memmap2 v0.9.11
+   Compiling ordered-stream v0.2.0
+   Compiling yeslogic-fontconfig-sys v6.0.1
+   Compiling xml v1.3.0
+   Compiling hex v0.4.3
+   Compiling either v1.17.0
+   Compiling lazy_static v1.5.0
+   Compiling sharded-slab v0.1.7
+   Compiling rayon v1.12.0
+   Compiling gufo-xmp v0.5.0
+   Compiling zbus v5.18.0
+   Compiling glycin-common v2.0.0
+   Compiling dlib v0.5.3
+   Compiling env_logger v0.11.11
+   Compiling gufo-exif v0.5.3
+   Compiling gio v0.22.8
+   Compiling matchers v0.2.0
+   Compiling tracing-log v0.2.0
+   Compiling thread_local v1.1.10
+   Compiling futures-timer v3.0.4
+   Compiling pxfm v0.1.30
+   Compiling nu-ansi-term v0.50.3
+   Compiling tracing-subscriber v0.3.23
+   Compiling moxcms v0.8.1
+   Compiling glycin-utils v5.0.1
+   Compiling gio-unix v0.22.8
+   Compiling gufo v0.5.0
+   Compiling async-global-executor v3.1.0
+   Compiling async-fs v2.2.0
+   Compiling bytemuck v1.25.2
+   Compiling glycin-core v4.0.3
+   Compiling libglycin v2.2.3 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.3/libglycin)
+   Compiling glycin-external v4.0.3
+   Compiling glycin v4.0.3
+    Finished `release` profile [optimized] target(s) in 9m 44s
+[1/21] Merging translations for glycin-loaders/glycin-heif.conf
+/usr/bin/msgfmt: ../glycin-loaders/../po/LINGUAS does not exist
+[2/21] Merging translations for glycin-loaders/glycin-image-rs.conf
+/usr/bin/msgfmt: ../glycin-loaders/../po/LINGUAS does not exist
+[3/21] Merging translations for glycin-loaders/glycin-jxl.conf
+/usr/bin/msgfmt: ../glycin-loaders/../po/LINGUAS does not exist
+[4/21] Merging translations for glycin-loaders/glycin-svg.conf
+/usr/bin/msgfmt: ../glycin-loaders/../po/LINGUAS does not exist
+[5/21] Generating glycin-loaders/glycin-heif with a custom command (wrapped by meson to set env)
+ Downloading crates ...
+  Downloaded enumn v0.1.14
+  Downloaded four-cc v0.4.0
+  Downloaded safe-transmute v0.11.3
+  Downloaded libheif-rs v2.7.0
+  Downloaded libheif-sys v5.3.0+1.23.0
+   Compiling num-traits v0.2.19
+   Compiling tracing-core v0.1.36
+   Compiling libheif-sys v5.3.0+1.23.0
+   Compiling async-executor v1.14.0
+   Compiling tracing v0.1.44
+   Compiling futures-task v0.3.33
+   Compiling zbus v5.18.0
+   Compiling futures-util v0.3.33
+   Compiling rmp v0.8.15
+   Compiling rmp-serde v1.3.1
+   Compiling glycin-common v2.0.0
+   Compiling enumn v0.1.14
+   Compiling four-cc v0.4.0
+   Compiling libheif-rs v2.7.0
+   Compiling safe-transmute v0.11.3
+   Compiling glycin-utils v5.0.1
+   Compiling glycin-heif v2.2.0 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.3/glycin-loaders/glycin-heif)
+    Finished `release` profile [optimized] target(s) in 2m 46s
+[11/21] Generating libglycin/glycin-2.vapi with a custom command
+[12/21] Generating glycin-loaders/glycin-image-rs with a custom command (wrapped by meson to set env)
+   Compiling num-traits v0.2.19
+   Compiling adler2 v2.0.1
+   Compiling simd-adler32 v0.3.10
+   Compiling crc32fast v1.5.0
+   Compiling miniz_oxide v0.8.9
+   Compiling bytemuck v1.25.2
+   Compiling libm v0.2.16
+   Compiling pulp v0.22.3
+   Compiling flate2 v1.1.9
+   Compiling num-complex v0.4.6
+   Compiling raw-cpuid v11.6.0
+   Compiling zune-core v0.5.1
+   Compiling weezl v0.1.12
+   Compiling pulp-wasm-simd-flag v0.1.1
+   Compiling quick-error v2.0.1
+   Compiling reborrow v0.5.5
+   Compiling zune-jpeg v0.5.15
+   Compiling zune-inflate v0.2.54
+   Compiling fdeflate v0.3.7
+   Compiling bit_field v0.10.3
+   Compiling lebe v0.5.3
+   Compiling color_quant v1.1.0
+   Compiling byteorder-lite v0.1.0
+   Compiling fax v0.2.7
+   Compiling smallvec v1.15.2
+   Compiling tiff v0.11.3
+   Compiling image-webp v0.2.4
+   Compiling moxcms v0.8.1
+   Compiling gif v0.14.2
+   Compiling exr v1.74.2
+   Compiling png v0.18.1
+   Compiling qoi v0.4.1
+   Compiling rmp v0.8.15
+   Compiling rmp-serde v1.3.1
+   Compiling image v0.25.10
+   Compiling miniz_oxide v0.9.1
+   Compiling encoding_rs v0.8.35
+   Compiling jpeg-encoder v0.7.1
+   Compiling gufo-jpeg v0.5.1
+   Compiling gufo-png v0.5.0
+   Compiling glycin-common v2.0.0
+   Compiling gufo-exif v0.5.3
+   Compiling gufo-webp v0.5.0
+   Compiling gufo-tiff v0.5.0
+   Compiling fearless_simd v0.4.1
+   Compiling glycin-utils v5.0.1
+   Compiling hayro-jpeg2000 v0.3.5
+   Compiling gufo v0.5.0
+   Compiling image-extras v0.1.1
+   Compiling glycin-image-rs v2.2.3 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.3/glycin-loaders/glycin-image-rs)
+    Finished `release` profile [optimized] target(s) in 7m 29s
+[13/21] Generating glycin-loaders/glycin-heif-cp-binary with a custom command
+[14/21] Generating glycin-loaders/glycin-jxl with a custom command (wrapped by meson to set env)
+ Downloading crates ...
+  Downloaded darling_macro v0.23.0
+  Downloaded byteorder v1.5.0
+  Downloaded ident_case v1.0.1
+  Downloaded strsim v0.11.1
+  Downloaded prettyplease v0.2.37
+  Downloaded darling_core v0.23.0
+  Downloaded rustversion v1.0.23
+  Downloaded darling v0.23.0
+  Downloaded bon v3.9.3
+  Downloaded bon-macros v3.9.3
+  Downloaded jpegxl-rs v0.14.0+libjxl-0.11.2
+  Downloaded jpegxl-sys v0.12.1+libjxl-0.11.2
+   Compiling syn v2.0.119
+   Compiling strsim v0.11.1
+   Compiling ident_case v1.0.1
+   Compiling prettyplease v0.2.37
+   Compiling rustversion v1.0.23
+   Compiling jpegxl-sys v0.12.1+libjxl-0.11.2
+   Compiling byteorder v1.5.0
+   Compiling zvariant_utils v3.5.0
+   Compiling darling_core v0.23.0
+   Compiling enumflags2_derive v0.7.12
+   Compiling zvariant_derive v5.13.1
+   Compiling enumflags2 v0.7.12
+   Compiling zerocopy-derive v0.8.55
+   Compiling zvariant v5.13.1
+   Compiling darling_macro v0.23.0
+   Compiling zerocopy v0.8.55
+   Compiling zbus_names v4.3.4
+   Compiling darling v0.23.0
+   Compiling tracing-attributes v0.1.31
+   Compiling tracing v0.1.44
+   Compiling zbus_macros v5.18.0
+   Compiling bon-macros v3.9.3
+   Compiling half v2.7.1
+   Compiling gufo-common v2.0.0
+   Compiling async-recursion v1.1.1
+   Compiling futures-macro v0.3.33
+   Compiling glycin-common v2.0.0
+   Compiling futures-util v0.3.33
+   Compiling bon v3.9.3
+   Compiling zbus v5.18.0
+   Compiling jpegxl-rs v0.14.0+libjxl-0.11.2
+   Compiling glycin-utils v5.0.1
+   Compiling glycin-jxl v2.2.0 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.3/glycin-loaders/glycin-jxl)
+    Finished `release` profile [optimized] target(s) in 3m 55s
+[15/21] Generating glycin-loaders/glycin-image-rs-cp-binary with a custom command
+[16/21] Generating glycin-loaders/glycin-svg with a custom command (wrapped by meson to set env)
+ Downloading crates ...
+  Downloaded gdk-pixbuf-sys v0.22.0
+  Downloaded cairo-rs v0.22.0
+  Downloaded cairo-sys-rs v0.22.0
+  Downloaded librsvg-rebind v0.3.0
+  Downloaded gufo-svg v0.5.0
+  Downloaded librsvg-rebind-sys v0.3.0
+   Compiling glib-sys v0.22.8
+   Compiling gobject-sys v0.22.6
+   Compiling futures-executor v0.3.33
+   Compiling cairo-sys-rs v0.22.0
+   Compiling gdk-pixbuf-sys v0.22.0
+   Compiling librsvg-rebind-sys v0.3.0
+   Compiling gufo-svg v0.5.0
+   Compiling gio-sys v0.22.8
+   Compiling glib v0.22.8
+   Compiling gio-unix-sys v0.22.0
+   Compiling gio v0.22.8
+   Compiling cairo-rs v0.22.0
+   Compiling gio-unix v0.22.8
+   Compiling librsvg-rebind v0.3.0
+   Compiling glycin-svg v2.2.0 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.3/glycin-loaders/glycin-svg)
+    Finished `release` profile [optimized] target(s) in 2m 48s
+[17/21] Generating glycin-loaders/glycin-jxl-cp-binary with a custom command
+[18/21] Generating glycin-thumbnailer/glycin-thumbnailer with a custom command (wrapped by meson to set env)
+   Compiling winnow v1.0.4
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling libc v0.2.189
+   Compiling syn v2.0.119
+   Compiling toml_parser v1.1.3+spec-1.1.0
+   Compiling toml v1.1.4+spec-1.1.0
+   Compiling futures-core v0.3.33
+   Compiling target-lexicon v0.13.5
+   Compiling slab v0.4.12
+   Compiling system-deps v7.0.8
+   Compiling glib-sys v0.22.8
+   Compiling gobject-sys v0.22.6
+   Compiling gio-sys v0.22.8
+   Compiling bitflags v2.13.1
+   Compiling serde_spanned v1.1.1
+   Compiling futures-macro v0.3.33
+   Compiling glib-macros v0.22.6
+   Compiling cfg-expr v0.20.8
+   Compiling futures-util v0.3.33
+   Compiling libglycin-rebind-sys v0.2.0 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.3/libglycin-rebind/libglycin-rebind/sys)
+   Compiling futures-channel v0.3.33
+   Compiling pkg-config v0.3.33
+   Compiling futures-executor v0.3.33
+   Compiling heck v0.5.0
+   Compiling version-compare v0.2.1
+   Compiling moxcms v0.8.1
+   Compiling glib v0.22.8
+   Compiling bytemuck v1.25.2
+   Compiling png v0.18.1
+   Compiling image v0.25.10
+   Compiling gio v0.22.8
+   Compiling libglycin-rebind v0.2.0 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.3/libglycin-rebind/libglycin-rebind)
+   Compiling glycin-thumbnailer v2.2.0 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.3/glycin-thumbnailer)
+    Finished `release` profile [optimized] target(s) in 2m 36s
+[19/21] Generating glycin-loaders/glycin-svg-cp-binary with a custom command
+[21/21] Generating glycin-thumbnailer/glycin-thumbnailer-cp-binary with a custom command
+[0/18] Generating libglycin/libglycin-cargo with a custom command (wrapped by meson to set env)
+    Finished `release` profile [optimized] target(s) in 0.33s
+[1/18] Generating glycin-loaders/glycin-heif with a custom command (wrapped by meson to set env)
+    Finished `release` profile [optimized] target(s) in 0.22s
+[3/17] Generating libglycin/libglycin-copy-library with a custom command
+[4/14] Generating glycin-loaders/glycin-image-rs with a custom command (wrapped by meson to set env)
+    Finished `release` profile [optimized] target(s) in 0.19s
+[5/14] Generating glycin-loaders/glycin-heif-cp-binary with a custom command
+[6/14] Generating glycin-loaders/glycin-jxl with a custom command (wrapped by meson to set env)
+    Finished `release` profile [optimized] target(s) in 0.18s
+[7/14] Generating glycin-loaders/glycin-image-rs-cp-binary with a custom command
+[8/14] Generating glycin-loaders/glycin-svg with a custom command (wrapped by meson to set env)
+    Finished `release` profile [optimized] target(s) in 0.18s
+[9/14] Generating glycin-loaders/glycin-jxl-cp-binary with a custom command
+[10/14] Generating glycin-thumbnailer/glycin-thumbnailer with a custom command (wrapped by meson to set env)
+    Finished `release` profile [optimized] target(s) in 0.11s
+[11/14] Generating glycin-loaders/glycin-svg-cp-binary with a custom command
+[13/14] Generating glycin-thumbnailer/glycin-thumbnailer-cp-binary with a custom command
+[13/14] Installing files
+Installing glycin-loaders/glycin-heif to /usr/libexec/glycin-loaders/2+
+Installing glycin-loaders/glycin-heif.conf to /usr/share/glycin-loaders/2+/conf.d
+Installing glycin-loaders/glycin-image-rs to /usr/libexec/glycin-loaders/2+
+Installing glycin-loaders/glycin-image-rs.conf to /usr/share/glycin-loaders/2+/conf.d
+Installing glycin-loaders/glycin-jxl to /usr/libexec/glycin-loaders/2+
+Installing glycin-loaders/glycin-jxl.conf to /usr/share/glycin-loaders/2+/conf.d
+Installing glycin-loaders/glycin-svg to /usr/libexec/glycin-loaders/2+
+Installing glycin-loaders/glycin-svg.conf to /usr/share/glycin-loaders/2+/conf.d
+Installing libglycin/libglycin-2.so.0 to /usr/lib
+Installing libglycin/Gly-2.gir to /usr/share/gir-1.0
+Installing libglycin/Gly-2.typelib to /usr/lib/girepository-1.0
+Installing libglycin/glycin-2.vapi to /usr/share/vala/vapi
+Installing glycin-thumbnailer/glycin-thumbnailer to /usr/bin
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.3/libglycin/include/glycin.h to /usr/include/glycin-2
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.3/build/glycin-loaders/glycin-heif.thumbnailer to /usr/share/thumbnailers
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.3/build/glycin-loaders/glycin-image-rs.thumbnailer to /usr/share/thumbnailers
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.3/build/glycin-loaders/glycin-jxl.thumbnailer to /usr/share/thumbnailers
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.3/build/glycin-loaders/glycin-svg.thumbnailer to /usr/share/thumbnailers
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.3/build/meson-private/glycin-2.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.3/build/meson-private/glycin-2.deps to /usr/share/vala/vapi
+Installing symlink pointing to libglycin-2.so.0 to /usr/lib/libglycin-2.so
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+meson_args: <-D>
+meson_args: <libglycin=false>
+meson_args: <-D>
+meson_args: <libglycin-gtk4=true>
+meson_args: <-D>
+meson_args: <glycin-loaders=false>
+meson_args: <-D>
+meson_args: <glycin-thumbnailer=false>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <-D> <libglycin=false> <-D> <libglycin-gtk4=true> <-D> <glycin-loaders=false> <-D> <glycin-thumbnailer=false> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/glycin/glycin-2.2.3
+Build dir: /home/fusion809/lfs_packaging/glycin/glycin-2.2.3/build
+Build type: native build
+Project name: glycin
+Project version: 2.2.3
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Rust compiler for the host machine: rustc -C linker=cc (rustc 1.99.0 "1.99.0")
+Rust linker for the host machine:  ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program cargo found: YES (/opt/rustc/bin/cargo)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.8
+Run-time dependency gio-2.0 found: YES 2.90.1
+Run-time dependency fontconfig found: YES 2.18.3
+Run-time dependency libseccomp found: YES 2.6.1
+Run-time dependency gtk4 found: YES 4.24.1
+Run-time dependency glycin-2 found: YES 2.2.3
+Message: /home/fusion809/lfs_packaging/glycin/glycin-2.2.3/build/cargo-target/release/glycin-gtk4-2-0.dll
+WARNING: Build target glycin-gtk4-2 has no sources. This was never supposed to be allowed but did because of a bug, support will be removed in a future release of Meson
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.8
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program vapigen found: YES (/usr/bin/vapigen)
+Build targets in project: 7
+
+glycin 2.2.3
+
+  User defined options
+    buildtype         : release
+    glycin-loaders    : false
+    glycin-thumbnailer: false
+    libglycin         : false
+    libglycin-gtk4    : true
+    prefix            : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[0/7] Generating libglycin/libglycin-gtk4-cargo with a custom command (wrapped by meson to set env)
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded adler2 v2.0.1
+  Downloaded async-channel v2.5.0
+  Downloaded aliasable v0.1.3
+  Downloaded async-executor v1.14.0
+  Downloaded async-fs v2.2.0
+  Downloaded async-global-executor v3.1.0
+  Downloaded byteorder-lite v0.1.0
+  Downloaded bit_field v0.10.3
+  Downloaded atomic-waker v1.1.2
+  Downloaded async-broadcast v0.7.2
+  Downloaded cfg_aliases v0.2.2
+  Downloaded futures-macro v0.3.33
+  Downloaded enumflags2_derive v0.7.12
+  Downloaded defmt-parser v1.0.0
+  Downloaded endi v1.1.1
+  Downloaded errno v0.3.14
+  Downloaded event-listener-strategy v0.5.4
+  Downloaded gufo-tiff v0.5.0
+  Downloaded heck v0.5.0
+  Downloaded gio-unix-sys v0.22.0
+  Downloaded dlib v0.5.3
+  Downloaded futures-task v0.3.33
+  Downloaded futures-io v0.3.33
+  Downloaded gio-unix v0.22.8
+  Downloaded env_filter v2.0.0
+  Downloaded matchers v0.2.0
+  Downloaded futures-sink v0.3.33
+  Downloaded libseccomp-sys v0.3.0
+  Downloaded cfg-if v1.0.4
+  Downloaded cairo-sys-rs v0.22.0
+  Downloaded pulp-wasm-simd-flag v0.1.1
+  Downloaded heck v0.4.1
+  Downloaded color_quant v1.1.0
+  Downloaded hex v0.4.3
+  Downloaded async-recursion v1.1.1
+  Downloaded bitflags v1.3.2
+  Downloaded async-signal v0.2.14
+  Downloaded autocfg v1.5.1
+  Downloaded blocking v1.6.2
+  Downloaded async-trait v0.1.91
+  Downloaded lebe v0.5.3
+  Downloaded gufo-jpeg v0.5.1
+  Downloaded futures-core v0.3.33
+  Downloaded futures-executor v0.3.33
+  Downloaded gufo-png v0.5.0
+  Downloaded either v1.17.0
+  Downloaded equivalent v1.0.2
+  Downloaded serde_spanned v1.1.1
+  Downloaded fax v0.2.7
+  Downloaded gobject-sys v0.22.6
+  Downloaded defmt-macros v1.1.1
+  Downloaded gdk-pixbuf-sys v0.22.0
+  Downloaded fastrand v2.5.0
+  Downloaded env_logger v0.11.11
+  Downloaded reborrow v0.5.5
+  Downloaded enumflags2 v0.7.12
+  Downloaded proc-macro-crate v3.5.0
+  Downloaded gufo-webp v0.5.0
+  Downloaded gdk-pixbuf v0.22.0
+  Downloaded async-process v2.5.0
+  Downloaded version-compare v0.2.1
+  Downloaded fdeflate v0.3.7
+  Downloaded glycin-external v4.0.3
+  Downloaded crossbeam-deque v0.8.7
+  Downloaded gufo v0.5.0
+  Downloaded glycin-common v2.0.0
+  Downloaded async-task v4.7.1
+  Downloaded async-io v2.6.0
+  Downloaded async-lock v3.4.2
+  Downloaded lazy_static v1.5.0
+  Downloaded crossbeam-utils v0.8.22
+  Downloaded defmt v1.1.1
+  Downloaded glycin-builtin v4.0.3
+  Downloaded glycin-utils v5.0.1
+  Downloaded concurrent-queue v2.5.0
+  Downloaded futures-lite v2.6.1
+  Downloaded gufo-exif v0.5.3
+  Downloaded futures-timer v3.0.4
+  Downloaded gufo-common v2.0.0
+  Downloaded futures-channel v0.3.33
+  Downloaded event-listener v5.4.2
+  Downloaded gufo-xmp v0.5.0
+  Downloaded glycin-image-rs v2.2.3
+  Downloaded gif v0.14.2
+  Downloaded bitflags v2.13.1
+  Downloaded bytemuck v1.25.2
+  Downloaded getrandom v0.4.3
+  Downloaded crc32fast v1.5.0
+  Downloaded glycin v4.0.3
+  Downloaded cfg-expr v0.20.8
+  Downloaded version_check v0.9.5
+  Downloaded glib-sys v0.22.8
+  Downloaded half v2.7.1
+  Downloaded crossbeam-epoch v0.9.20
+  Downloaded image-extras v0.1.1
+  Downloaded glib-macros v0.22.6
+  Downloaded cairo-rs v0.22.0
+  Downloaded image-webp v0.2.4
+  Downloaded hayro-jpeg2000 v0.3.5
+  Downloaded thread_local v1.1.10
+  Downloaded zune-jpeg v0.5.15
+  Downloaded gio-sys v0.22.8
+  Downloaded flate2 v1.1.9
+  Downloaded yeslogic-fontconfig-sys v6.0.1
+  Downloaded glycin-core v4.0.3
+  Downloaded libloading v0.8.9
+  Downloaded quick-error v2.0.1
+  Downloaded indexmap v2.14.0
+  Downloaded jiff-core v0.1.0
+  Downloaded hashbrown v0.17.1
+  Downloaded ouroboros v0.18.5
+  Downloaded aho-corasick v1.1.4
+  Downloaded parking v2.2.1
+  Downloaded futures-util v0.3.33
+  Downloaded serde_repr v0.1.21
+  Downloaded fearless_simd v0.4.1
+  Downloaded gio v0.22.8
+  Downloaded glib v0.22.8
+  Downloaded exr v1.74.2
+  Downloaded ordered-stream v0.2.0
+  Downloaded nu-ansi-term v0.50.3
+  Downloaded pkg-config v0.3.33
+  Downloaded proc-macro2-diagnostics v0.10.1
+  Downloaded num-complex v0.4.6
+  Downloaded paste v1.0.15
+  Downloaded piper v0.2.5
+  Downloaded thiserror v2.0.19
+  Downloaded quote v1.0.47
+  Downloaded simd-adler32 v0.3.10
+  Downloaded static_assertions v1.1.0
+  Downloaded toml_datetime v1.1.1+spec-1.1.0
+  Downloaded toml_writer v1.1.2+spec-1.1.0
+  Downloaded zbus_names v4.3.4
+  Downloaded zvariant_derive v5.13.1
+  Downloaded zvariant_utils v3.5.0
+  Downloaded gdk4-sys v0.11.4
+  Downloaded encoding_rs v0.8.35
+  Downloaded zune-core v0.5.1
+  Downloaded signal-hook-registry v1.4.8
+  Downloaded pin-project-lite v0.2.17
+  Downloaded pango-sys v0.22.0
+  Downloaded system-deps v7.0.8
+  Downloaded memmap2 v0.9.11
+  Downloaded once_cell v1.21.4
+  Downloaded ouroboros_macro v0.18.5
+  Downloaded rmp-serde v1.3.1
+  Downloaded zune-inflate v0.2.54
+  Downloaded smallvec v1.15.2
+  Downloaded tracing-attributes v0.1.31
+  Downloaded thiserror-impl v2.0.19
+  Downloaded tracing-log v0.2.0
+  Downloaded slab v0.4.12
+  Downloaded zbus_macros v5.18.0
+  Downloaded target-lexicon v0.13.5
+  Downloaded rmp v0.8.15
+  Downloaded weezl v0.1.12
+  Downloaded gdk4 v0.11.4
+  Downloaded jpeg-encoder v0.7.1
+  Downloaded log v0.4.33
+  Downloaded toml v1.1.4+spec-1.1.0
+  Downloaded polling v3.11.0
+  Downloaded unicode-ident v1.0.24
+  Downloaded serde_core v1.0.229
+  Downloaded toml_parser v1.1.3+spec-1.1.0
+  Downloaded xml v1.3.0
+  Downloaded serde_derive v1.0.229
+  Downloaded libseccomp v0.4.0
+  Downloaded num-traits v0.2.19
+  Downloaded sharded-slab v0.1.7
+  Downloaded miniz_oxide v0.8.9
+  Downloaded rayon-core v1.13.0
+  Downloaded yansi v1.0.1
+  Downloaded uuid v1.24.0
+  Downloaded toml_edit v0.25.13+spec-1.1.0
+  Downloaded tracing-core v0.1.36
+  Downloaded miniz_oxide v0.9.1
+  Downloaded proc-macro2 v1.0.107
+  Downloaded qoi v0.4.1
+  Downloaded pango v0.22.8
+  Downloaded memchr v2.8.3
+  Downloaded serde v1.0.229
+  Downloaded zvariant v5.13.1
+  Downloaded tiff v0.11.3
+  Downloaded libm v0.2.16
+  Downloaded raw-cpuid v11.6.0
+  Downloaded zerocopy-derive v0.8.55
+  Downloaded png v0.18.1
+  Downloaded pulp v0.22.3
+  Downloaded regex v1.13.1
+  Downloaded zbus v5.18.0
+  Downloaded moxcms v0.8.1
+  Downloaded winnow v1.0.4
+  Downloaded image v0.25.10
+  Downloaded rayon v1.12.0
+  Downloaded tracing-subscriber v0.3.23
+  Downloaded syn v3.0.3
+  Downloaded zerocopy v0.8.55
+  Downloaded syn v2.0.119
+  Downloaded nix v0.31.3
+  Downloaded regex-syntax v0.8.11
+  Downloaded rustix v1.1.4
+  Downloaded tracing v0.1.44
+  Downloaded jiff v0.2.35
+  Downloaded regex-automata v0.4.16
+  Downloaded libc v0.2.189
+  Downloaded pxfm v0.1.30
+  Downloaded linux-raw-sys v0.12.1
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling winnow v1.0.4
+   Compiling unicode-ident v1.0.24
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling pkg-config v0.3.33
+   Compiling target-lexicon v0.13.5
+   Compiling syn v2.0.119
+   Compiling toml_parser v1.1.3+spec-1.1.0
+   Compiling smallvec v1.15.2
+   Compiling serde_spanned v1.1.1
+   Compiling heck v0.5.0
+   Compiling toml v1.1.4+spec-1.1.0
+   Compiling cfg-expr v0.20.8
+   Compiling version-compare v0.2.1
+   Compiling system-deps v7.0.8
+   Compiling pin-project-lite v0.2.17
+   Compiling libc v0.2.189
+   Compiling syn v3.0.3
+   Compiling serde_core v1.0.229
+   Compiling futures-core v0.3.33
+   Compiling serde v1.0.229
+   Compiling glib-sys v0.22.8
+   Compiling bitflags v2.13.1
+   Compiling slab v0.4.12
+   Compiling crossbeam-utils v0.8.22
+   Compiling cfg-if v1.0.4
+   Compiling gobject-sys v0.22.6
+   Compiling futures-io v0.3.33
+   Compiling hashbrown v0.17.1
+   Compiling serde_derive v1.0.229
+   Compiling equivalent v1.0.2
+   Compiling indexmap v2.14.0
+   Compiling autocfg v1.5.1
+   Compiling parking v2.2.1
+   Compiling toml_edit v0.25.13+spec-1.1.0
+   Compiling enumflags2_derive v0.7.12
+   Compiling gio-sys v0.22.8
+   Compiling proc-macro-crate v3.5.0
+   Compiling zvariant_utils v3.5.0
+   Compiling zvariant_derive v5.13.1
+   Compiling futures-macro v0.3.33
+   Compiling fastrand v2.5.0
+   Compiling futures-task v0.3.33
+   Compiling futures-util v0.3.33
+   Compiling event-listener v5.4.2
+   Compiling concurrent-queue v2.5.0
+   Compiling futures-executor v0.3.33
+   Compiling event-listener-strategy v0.5.4
+   Compiling futures-lite v2.6.1
+   Compiling enumflags2 v0.7.12
+   Compiling glib-macros v0.22.6
+   Compiling futures-channel v0.3.33
+   Compiling rustix v1.1.4
+   Compiling endi v1.1.1
+   Compiling once_cell v1.21.4
+   Compiling memchr v2.8.3
+   Compiling zvariant v5.13.1
+   Compiling glib v0.22.8
+   Compiling paste v1.0.15
+   Compiling linux-raw-sys v0.12.1
+   Compiling thiserror v2.0.19
+   Compiling tracing-core v0.1.36
+   Compiling async-io v2.6.0
+   Compiling num-traits v0.2.19
+   Compiling thiserror-impl v2.0.19
+   Compiling version_check v0.9.5
+   Compiling zerocopy v0.8.55
+   Compiling async-task v4.7.1
+   Compiling proc-macro2-diagnostics v0.10.1
+   Compiling async-channel v2.5.0
+   Compiling zerocopy-derive v0.8.55
+   Compiling polling v3.11.0
+   Compiling tracing-attributes v0.1.31
+   Compiling crossbeam-epoch v0.9.20
+   Compiling atomic-waker v1.1.2
+   Compiling piper v0.2.5
+   Compiling tracing v0.1.44
+   Compiling gufo-common v2.0.0
+   Compiling async-lock v3.4.2
+   Compiling errno v0.3.14
+   Compiling pango-sys v0.22.0
+   Compiling gdk-pixbuf-sys v0.22.0
+   Compiling cairo-sys-rs v0.22.0
+   Compiling crossbeam-deque v0.8.7
+   Compiling yansi v1.0.1
+   Compiling getrandom v0.4.3
+   Compiling log v0.4.33
+   Compiling cfg_aliases v0.2.2
+   Compiling nix v0.31.3
+   Compiling signal-hook-registry v1.4.8
+   Compiling blocking v1.6.2
+   Compiling gio v0.22.8
+   Compiling libseccomp-sys v0.3.0
+   Compiling heck v0.4.1
+   Compiling rayon-core v1.13.0
+   Compiling zbus_names v4.3.4
+   Compiling ouroboros_macro v0.18.5
+   Compiling async-signal v0.2.14
+   Compiling rmp v0.8.15
+   Compiling async-executor v1.14.0
+   Compiling gio-unix-sys v0.22.0
+   Compiling gdk4-sys v0.11.4
+   Compiling libseccomp v0.4.0
+   Compiling regex-syntax v0.8.11
+   Compiling static_assertions v1.1.0
+   Compiling aliasable v0.1.3
+   Compiling jiff-core v0.1.0
+   Compiling jiff v0.2.35
+   Compiling regex-automata v0.4.16
+   Compiling ouroboros v0.18.5
+   Compiling rmp-serde v1.3.1
+   Compiling uuid v1.24.0
+   Compiling zbus_macros v5.18.0
+   Compiling async-process v2.5.0
+   Compiling half v2.7.1
+   Compiling env_filter v2.0.0
+   Compiling async-broadcast v0.7.2
+   Compiling async-trait v0.1.91
+   Compiling serde_repr v0.1.21
+   Compiling async-recursion v1.1.1
+   Compiling libloading v0.8.9
+   Compiling ordered-stream v0.2.0
+   Compiling memmap2 v0.9.11
+   Compiling yeslogic-fontconfig-sys v6.0.1
+   Compiling xml v1.3.0
+   Compiling either v1.17.0
+   Compiling hex v0.4.3
+   Compiling lazy_static v1.5.0
+   Compiling sharded-slab v0.1.7
+   Compiling gufo-xmp v0.5.0
+   Compiling zbus v5.18.0
+   Compiling rayon v1.12.0
+   Compiling glycin-common v2.0.0
+   Compiling dlib v0.5.3
+   Compiling env_logger v0.11.11
+   Compiling pango v0.22.8
+   Compiling gdk-pixbuf v0.22.0
+   Compiling gufo-exif v0.5.3
+   Compiling matchers v0.2.0
+   Compiling cairo-rs v0.22.0
+   Compiling tracing-log v0.2.0
+   Compiling thread_local v1.1.10
+   Compiling pxfm v0.1.30
+   Compiling nu-ansi-term v0.50.3
+   Compiling futures-timer v3.0.4
+   Compiling glycin-utils v5.0.1
+   Compiling moxcms v0.8.1
+   Compiling tracing-subscriber v0.3.23
+   Compiling gdk4 v0.11.4
+   Compiling gufo v0.5.0
+   Compiling gio-unix v0.22.8
+   Compiling async-global-executor v3.1.0
+   Compiling async-fs v2.2.0
+   Compiling bytemuck v1.25.2
+   Compiling libglycin-gtk4 v2.2.3 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.3/libglycin/libglycin-gtk4)
+   Compiling glycin-core v4.0.3
+   Compiling glycin-external v4.0.3
+   Compiling glycin v4.0.3
+    Finished `release` profile [optimized] target(s) in 7m 33s
+[2/7] Generating libglycin/libglycin-gtk4-copy-library2 with a custom command
+[3/7] Linking target libglycin/libglycin-gtk4-2.so.0
+[4/7] Generating libglycin/libglycin-gtk4-copy-library with a custom command
+[5/7] Generating libglycin/GlyGtk4-2.gir with a custom command (wrapped by meson to set env)
+[6/7] Generating libglycin/GlyGtk4-2.typelib with a custom command
+[7/7] Generating libglycin/glycin-gtk4-2.vapi with a custom command
+[0/8] Generating libglycin/libglycin-gtk4-cargo with a custom command (wrapped by meson to set env)
+   Compiling zerocopy v0.8.55
+   Compiling half v2.7.1
+   Compiling gufo-exif v0.5.3
+   Compiling glycin-common v2.0.0
+   Compiling glycin-utils v5.0.1
+   Compiling gufo v0.5.0
+   Compiling glycin-core v4.0.3
+   Compiling glycin-external v4.0.3
+   Compiling glycin v4.0.3
+   Compiling libglycin-gtk4 v2.2.3 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.3/libglycin/libglycin-gtk4)
+    Finished `release` profile [optimized] target(s) in 1m 49s
+[2/8] Generating libglycin/libglycin-gtk4-copy-library2 with a custom command
+[3/8] Linking target libglycin/libglycin-gtk4-2.so.0
+[4/8] Generating libglycin/libglycin-gtk4-copy-library with a custom command
+[5/8] Generating libglycin/GlyGtk4-2.gir with a custom command (wrapped by meson to set env)
+[6/8] Generating libglycin/GlyGtk4-2.typelib with a custom command
+[7/8] Generating libglycin/glycin-gtk4-2.vapi with a custom command
+[7/8] Installing files
+Installing libglycin/libglycin-gtk4-2.so.0 to /usr/lib
+Installing libglycin/GlyGtk4-2.gir to /usr/share/gir-1.0
+Installing libglycin/GlyGtk4-2.typelib to /usr/lib/girepository-1.0
+Installing libglycin/glycin-gtk4-2.vapi to /usr/share/vala/vapi
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.3/libglycin/include/glycin-gtk4.h to /usr/include/glycin-gtk4-2
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.3/build/meson-private/glycin-gtk4-2.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.3/build/meson-private/glycin-gtk4-2.deps to /usr/share/vala/vapi
+Installing symlink pointing to libglycin-gtk4-2.so.0 to /usr/lib/libglycin-gtk4-2.so
+2.2.3
+Updated registry for glycin to version 2.2.3
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package glycin in /var/lib/custom-packages/
+Building book package julia...
+[01:22:27] Found custom package for julia, bypassing BLFS aliases.
+[01:22:27] Custom package detected at /home/fusion809/lfs_packaging/julia
+[01:22:27] Extracting dependencies for custom package 'julia'...
+[01:22:27] Required deps: blas-lapack gcc glibc gmp libopenssl3 libssh2 lz4 mpfr nghttp2 openssl pcre2 suitesparse xz zlib zstd 
+[01:22:27] Dependency 'blas-lapack' already installed.
+[01:22:27] Dependency 'gcc' already installed.
+[01:22:27] Dependency 'glibc' already installed.
+[01:22:27] Dependency 'gmp' already installed.
+[01:22:27] Dependency 'libopenssl3' already installed.
+[01:22:27] Dependency 'libssh2' already installed.
+[01:22:27] Dependency 'lz4' already installed.
+[01:22:27] Dependency 'mpfr' already installed.
+[01:22:27] Dependency 'nghttp2' already installed.
+[01:22:27] Dependency 'openssl' already installed.
+[01:22:27] Dependency 'pcre2' already installed.
+[01:22:27] Dependency 'suitesparse' already installed.
+[01:22:27] Dependency 'xz' already installed.
+[01:22:27] Dependency 'zlib' already installed.
+[01:22:27] Dependency 'zstd' already installed.
+[01:22:27] Starting remote custom build for julia...
+--2026-10-16 01:22:31--  https://github.com/julialang/julia/archive/v1.13.2.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/JuliaLang/julia/tar.gz/refs/tags/v1.13.2 [following]
+--2026-10-16 01:22:32--  https://codeload.github.com/JuliaLang/julia/tar.gz/refs/tags/v1.13.2
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘julia-1.13.2.tar.gz’
+
+julia-1.13.2.tar.gz     [<=>                 ]       0  --.-KB/s               julia-1.13.2.tar.gz     [ <=>                ]   1.03M  5.16MB/s               julia-1.13.2.tar.gz     [  <=>               ]   3.24M  8.10MB/s               julia-1.13.2.tar.gz     [   <=>              ]   5.45M  9.08MB/s               julia-1.13.2.tar.gz     [    <=>             ]   7.68M  9.59MB/s               julia-1.13.2.tar.gz     [     <=>            ]   8.23M  9.44MB/s    in 0.9s    
+
+2026-10-16 01:22:33 (9.44 MB/s) - ‘julia-1.13.2.tar.gz’ saved [8627138]
+
+--2026-10-16 01:22:37--  https://aur.archlinux.org/cgit/aur.git/plain/system-zstd.patch?h=julia-git
+Resolving aur.archlinux.org (aur.archlinux.org)... 209.126.35.78, 2604:cac0:a104:d::2
+Connecting to aur.archlinux.org (aur.archlinux.org)|209.126.35.78|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 880 [text/plain]
+Saving to: ‘system-zstd.patch’
+
+system-zstd.patch     0%[                    ]       0  --.-KB/s               system-zstd.patch   100%[===================>]     880  --.-KB/s    in 0s      
+
+2026-10-16 01:22:39 (830 MB/s) - ‘system-zstd.patch’ saved [880/880]
+
+patching file base/Makefile
+Reversed (or previously applied) patch detected!  Assume -R? [n] 
+Apply anyway? [n] 
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file base/Makefile.rej
+Patching failed, continuing build anyway
+Warning: git information unavailable; versioning information limited
+mkdir -p /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/share/julia/
+/home/fusion809/lfs_packaging/julia/julia-1.13.2/contrib/install.sh 755 /home/fusion809/lfs_packaging/julia/julia-1.13.2/contrib/julia-config.jl /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/share/julia/
+Warning: git information unavailable; versioning information limited
+Creating usr/etc/julia/startup.jl
+Copying in usr/share/man/man1/julia.1
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    439 100    439   0      0    461      0                              0100    439 100    439   0      0    461      0                              0
+100    495 100    495   0      0    494      0   00:01   00:01              0100    495 100    495   0      0    494      0   00:01   00:01              0
+100    477 100    477   0      0    448      0   00:01   00:01              0100    477 100    477   0      0    448      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0  0      0   0      0   0      0      0      0           00:01              0  0      0   0      0   0      0      0      0           00:01              0  8 968.6k    45 184.4k  45  86414   0      0  34342      0   00:05   00:02   00:03  814698  86302   0      0  34260      0   00:28   00:02   00:26  84771 46 182.6k  46  86332   0      0  31431      0   00:05   00:02   00:03  72833100 182.6k 100 182.6k   0      0  62646      0   00:02   00:02          72833100 182.6k 100 182.6k   0      0  62645      0   00:02   00:02          72833100 182.6k 100 182.6k   0      0  62644      0   00:02   00:02          72833
+100 184.4k 100 184.4k   0      0  63155      0   00:02   00:02          81469100 184.4k 100 184.4k   0      0  63154      0   00:02   00:02          81469100 184.4k 100 184.4k   0      0  63154      0   00:02   00:02          81469
+100 968.6k 100 968.6k   0      0 280.1k      0   00:03   00:03          84771100 968.6k 100 968.6k   0      0 280.1k      0   00:03   00:03          84771100 968.6k 100 968.6k   0      0 280.1k      0   00:03   00:03          84771
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    533 100    533   0      0    537      0                              0100    533 100    533   0      0    537      0                              0
+100    469 100    469   0      0    460      0   00:01   00:01              0100    469 100    469   0      0    459      0   00:01   00:01              0
+100    477 100    477   0      0    519      0                              0100    477 100    477   0      0    519      0                              0
+  0      0   0      0   0      0      0      0           00:01              0  0      0   0      0   0      0      0      0           00:01              0  0      0   0      0   0      0      0      0           00:01              0  0 27.30M   0 169.2k   0      0  68583      0   06:57   00:02   06:55 163.9k 25 672.8k  25 169.3k   0      0  66797      0   00:10   00:02   00:08 159.5k100 672.8k 100 672.8k   0      0 235.1k      0   00:02   00:02         159.5k100 672.8k 100 672.8k   0      0 235.1k      0   00:02   00:02         159.5k100 672.8k 100 672.8k   0      0 235.1k      0   00:02   00:02         159.5k
+ 17  1.35M  17 237.3k   0      0 98.11k      0   00:14   00:02   00:12 237.2k100  1.35M 100  1.35M   0      0 469.3k      0   00:02   00:02         237.2k100  1.35M 100  1.35M   0      0 469.3k      0   00:02   00:02         237.2k100  1.35M 100  1.35M   0      0 469.3k      0   00:02   00:02         237.2k
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0 10 27.30M  10  2.91M   0      0 817.9k      0   00:34   00:03   00:31  1.35M100    443 100    443   0      0    453      0                              0100    443 100    443   0      0    453      0                              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0           00:01              0100    475 100    475   0      0    469      0   00:01   00:01              0100    475 100    475   0      0    469      0   00:01   00:01              0
+ 42 27.30M  42 11.52M   0      0  2.48M      0   00:11   00:04   00:07  3.65M  0      0   0      0   0      0      0      0           00:01              0 85 198.3k  85 169.3k   0      0  69102      0   00:02   00:02         165.6k100 198.3k 100 198.3k   0      0  80709      0   00:02   00:02         165.6k100 198.3k 100 198.3k   0      0  80708      0   00:02   00:02         165.6k100 198.3k 100 198.3k   0      0  80695      0   00:02   00:02         165.6k
+ 66 27.30M  66 18.05M   0      0  3.19M      0   00:08   00:05   00:03  4.34M 42 276.4k  42 118.3k   0      0  48051      0   00:05   00:02   00:03 116.4k  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100 276.4k 100 276.4k   0      0 107.8k      0   00:02   00:02         116.4k100 276.4k 100 276.4k   0      0 107.8k      0   00:02   00:02         116.4k100 276.4k 100 276.4k   0      0 107.8k      0   00:02   00:02         116.4k
+100    469 100    469   0      0    483      0                              0100    469 100    469   0      0    483      0                              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0 89 27.30M  89 24.51M   0      0  3.61M      0   00:07   00:06   00:01  4.63M  0      0   0      0   0      0      0      0           00:01              0100 27.30M 100 27.30M   0      0  3.89M      0   00:07   00:07          4.63M100 27.30M 100 27.30M   0      0  3.89M      0   00:07   00:07          4.63M100 27.30M 100 27.30M   0      0  3.89M      0   00:07   00:07          4.63M
+100    519 100    519   0      0    478      0   00:01   00:01              0100    519 100    519   0      0    478      0   00:01   00:01              0
+100   6617 100   6617   0      0   3752      0   00:01   00:01              0100   6617 100   6617   0      0   3750      0   00:01   00:01              0100   6617 100   6617   0      0   3750      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0           00:01              0  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    511 100    511   0      0    521      0                              0100    511 100    511   0      0    521      0                              0
+100    475 100    475   0      0    497      0                              0100    475 100    475   0      0    497      0                              0
+  0      0   0      0   0      0      0      0           00:01              0  0      0   0      0   0      0      0      0           00:01              0  0 102.6M   0 169.2k   0      0  64119      0   27:59   00:02   27:57 152.2k  2  5.90M   2 169.3k   0      0  67863      0   01:31   00:02   01:29 159.7k 14 911.4k  14 135.3k   0      0  52649      0   00:17   00:02   00:15 115.9k  2 102.6M   2  2.87M   0      0 763.9k      0   02:17   00:03   02:14  1.26M 17  5.90M  17  1.01M   0      0 290.1k      0   00:20   00:03   00:17 499.0k 10 102.6M  10 11.11M   0      0  2.28M      0   00:44   00:04   00:40  3.40M 61 911.4k  61 560.3k   0      0 153.6k      0   00:05   00:03   00:02 256.9k 39  5.90M  39  2.32M   0      0 517.1k      0   00:11   00:04   00:07 766.0k100 911.4k 100 911.4k   0      0 202.0k      0   00:04   00:04         256.9k100 911.4k 100 911.4k   0      0 202.0k      0   00:04   00:04         256.9k100 911.4k 100 911.4k   0      0 202.0k      0   00:04   00:04         256.9k
+ 16 102.6M  16 17.42M   0      0  2.97M      0   00:34   00:05   00:29  4.08M  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0 62  5.90M  62  3.70M   0      0 672.8k      0   00:08   00:05   00:03 915.8k100    473 100    473   0      0    517      0                              0100    473 100    473   0      0    517      0                              0
+ 23 102.6M  23 24.17M   0      0  3.52M      0   00:29   00:06   00:23  4.59M  0      0   0      0   0      0      0      0           00:01              0 90  5.90M  90  5.34M   0      0 821.1k      0   00:07   00:06   00:01  1.03M 30 102.6M  30 31.01M   0      0  3.94M      0   00:26   00:07   00:19  5.97M100  5.90M 100  5.90M   0      0 874.6k      0   00:06   00:06          1.03M100  5.90M 100  5.90M   0      0 874.6k      0   00:06   00:06          1.03M100  5.90M 100  5.90M   0      0 874.6k      0   00:06   00:06          1.03M
+ 18 929.6k  18 169.3k   0      0  70724      0   00:13   00:02   00:11 165.2k100 929.6k 100 929.6k   0      0 316.4k      0   00:02   00:02         165.2k100 929.6k 100 929.6k   0      0 316.4k      0   00:02   00:02         165.2k100 929.6k 100 929.6k   0      0 316.4k      0   00:02   00:02         165.2k
+ 36 102.6M  36 37.74M   0      0  4.25M      0   00:24   00:08   00:16  6.95M  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0 43 102.6M  43 44.99M   0      0  4.55M      0   00:22   00:09   00:13  6.76M100    477 100    477   0      0    416      0   00:01   00:01              0100    477 100    477   0      0    416      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0           00:01              0100    471 100    471   0      0    471      0   00:01           00:01      0100    471 100    471   0      0    471      0   00:01           00:01      0
+ 50 102.6M  50 52.02M   0      0  4.78M      0   00:21   00:10   00:11  6.90M  0      0   0      0   0      0      0      0           00:01              0 85 197.8k  85 169.2k   0      0  63662      0   00:03   00:02   00:01 160.0k100 197.8k 100 197.8k   0      0  74309      0   00:02   00:02         160.0k100 197.8k 100 197.8k   0      0  74309      0   00:02   00:02         160.0k100 197.8k 100 197.8k   0      0  74309      0   00:02   00:02         160.0k
+ 57 102.6M  57 59.44M   0      0  5.00M      0   00:20   00:11   00:09  7.03M  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0 22 738.9k  22 169.3k   0      0  68195      0   00:11   00:02   00:09 164.8k100 738.9k 100 738.9k   0      0 261.8k      0   00:02   00:02         164.8k100 738.9k 100 738.9k   0      0 261.8k      0   00:02   00:02         164.8k100 738.9k 100 738.9k   0      0 261.8k      0   00:02   00:02         164.8k
+100    461 100    461   0      0    516      0                              0100    461 100    461   0      0    516      0                              0
+ 64 102.6M  64 66.40M   0      0  5.15M      0   00:19   00:12   00:07  7.07M  0      0   0      0   0      0      0      0           00:01              0  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    477 100    477   0      0    634      0                              0100    477 100    477   0      0    634      0                              0
+  0      0   0      0   0      0      0      0           00:01              0 71 102.6M  71 73.55M   0      0  5.30M      0   00:19   00:13   00:06  7.16M100   7691 100   7691   0      0   5000      0   00:01   00:01              0100   7691 100   7691   0      0   5000      0   00:01   00:01              0100   7691 100   7691   0      0   5000      0   00:01   00:01              0
+ 76 464.9k  76 356.3k   0      0 139.3k      0   00:03   00:02   00:01 304.6k100 464.9k 100 464.9k   0      0 180.5k      0   00:02   00:02         304.6k100 464.9k 100 464.9k   0      0 180.5k      0   00:02   00:02         304.6k100 464.9k 100 464.9k   0      0 180.5k      0   00:02   00:02         304.6k
+ 78 102.6M  78 80.77M   0      0  5.43M      0   00:18   00:14   00:04  7.15Mmkdir -p . lib lib/gcc lib/gcc/x86_64-linux-gnu lib/gcc/x86_64-linux-gnu/15 share share/licenses share/licenses/CompilerSupportLibraries
+ 85 102.6M  85 87.95M   0      0  5.54M      0   00:18   00:15   00:03  7.17Mmkdir -p . include include/libblastrampoline include/libblastrampoline/ILP64 include/libblastrampoline/ILP64/aarch64-linux-gnu include/libblastrampoline/ILP64/aarch64-linux-musl include/libblastrampoline/ILP64/armv7l-linux-gnueabihf include/libblastrampoline/ILP64/armv7l-linux-musleabihf include/libblastrampoline/ILP64/common include/libblastrampoline/ILP64/i686-linux-gnu include/libblastrampoline/ILP64/i686-linux-musl include/libblastrampoline/ILP64/i686-w64-mingw32 include/libblastrampoline/ILP64/powerpc64le-linux-gnu include/libblastrampoline/ILP64/riscv64-linux-gnu include/libblastrampoline/ILP64/riscv64-linux-musl include/libblastrampoline/ILP64/x86_64-apple-darwin include/libblastrampoline/ILP64/x86_64-linux-gnu include/libblastrampoline/ILP64/x86_64-linux-musl include/libblastrampoline/ILP64/x86_64-unknown-freebsd include/libblastrampoline/ILP64/x86_64-w64-mingw32 include/libblastrampoline/LP64 include/libblastrampoline/LP64/aarch64-linux-gnu include/libblastrampoline/LP64/aarch64-linux-musl include/libblastrampoline/LP64/armv7l-linux-gnueabihf include/libblastrampoline/LP64/armv7l-linux-musleabihf include/libblastrampoline/LP64/common include/libblastrampoline/LP64/i686-linux-gnu include/libblastrampoline/LP64/i686-linux-musl include/libblastrampoline/LP64/i686-w64-mingw32 include/libblastrampoline/LP64/powerpc64le-linux-gnu include/libblastrampoline/LP64/riscv64-linux-gnu include/libblastrampoline/LP64/riscv64-linux-musl include/libblastrampoline/LP64/x86_64-apple-darwin include/libblastrampoline/LP64/x86_64-linux-gnu include/libblastrampoline/LP64/x86_64-linux-musl include/libblastrampoline/LP64/x86_64-unknown-freebsd include/libblastrampoline/LP64/x86_64-w64-mingw32 include/libblastrampoline/common lib share share/licenses share/licenses/libblastrampoline
+ 92 102.6M  92 95.23M   0      0  5.64M      0   00:18   00:16   00:02  7.15Mmkdir -p . include include/uv lib lib/pkgconfig share share/licenses share/licenses/LibUV
+mkdir -p . include lib lib/pkgconfig share share/licenses share/licenses/LibUnwind
+ 99 102.6M  99 102.6M   0      0  5.74M      0   00:17   00:17          7.24M100 102.6M 100 102.6M   0      0  5.74M      0   00:17   00:17          7.24M100 102.6M 100 102.6M   0      0  5.74M      0   00:17   00:17          7.24M100 102.6M 100 102.6M   0      0  5.74M      0   00:17   00:17          7.24M
+mkdir -p . include include/openlibm lib lib/pkgconfig share share/licenses share/licenses/OpenLibm
+mkdir -p . lib share share/licenses share/licenses/dSFMT
+mkdir -p . include include/lld include/lld/Common lib lib/cmake lib/cmake/lld share share/licenses share/licenses/LLD tools
+mkdir -p . include include/git2 include/git2/sys lib lib/cmake lib/cmake/libgit2 lib/pkgconfig share share/licenses share/licenses/LibGit2
+mkdir -p . bin include include/curl lib lib/pkgconfig share share/aclocal share/licenses share/licenses/LibCURL share/man share/man/man1 share/man/man3
+mkdir -p . bin share share/licenses share/licenses/p7zip
+mkdir -p . include include/llvm include/llvm-c include/llvm-c/Transforms include/llvm/ADT include/llvm/Analysis include/llvm/Analysis/Utils include/llvm/AsmParser include/llvm/BinaryFormat include/llvm/BinaryFormat/ELFRelocs include/llvm/Bitcode include/llvm/Bitstream include/llvm/CGData include/llvm/CodeGen include/llvm/CodeGen/GlobalISel include/llvm/CodeGen/MIRParser include/llvm/CodeGen/PBQP include/llvm/CodeGenTypes include/llvm/Config include/llvm/DWARFLinker include/llvm/DWARFLinker/Classic include/llvm/DWARFLinker/Parallel include/llvm/DWP include/llvm/DebugInfo include/llvm/DebugInfo/BTF include/llvm/DebugInfo/CodeView include/llvm/DebugInfo/DWARF include/llvm/DebugInfo/GSYM include/llvm/DebugInfo/LogicalView include/llvm/DebugInfo/LogicalView/Core include/llvm/DebugInfo/LogicalView/Readers include/llvm/DebugInfo/MSF include/llvm/DebugInfo/PDB include/llvm/DebugInfo/PDB/DIA include/llvm/DebugInfo/PDB/Native include/llvm/DebugInfo/Symbolize include/llvm/Debuginfod include/llvm/Demangle include/llvm/ExecutionEngine include/llvm/ExecutionEngine/JITLink include/llvm/ExecutionEngine/Orc include/llvm/ExecutionEngine/Orc/Debugging include/llvm/ExecutionEngine/Orc/Shared include/llvm/ExecutionEngine/Orc/TargetProcess include/llvm/FileCheck include/llvm/Frontend include/llvm/Frontend/Atomic include/llvm/Frontend/Debug include/llvm/Frontend/Directive include/llvm/Frontend/Driver include/llvm/Frontend/HLSL include/llvm/Frontend/Offloading include/llvm/Frontend/OpenACC include/llvm/Frontend/OpenMP include/llvm/FuzzMutate include/llvm/IR include/llvm/IRPrinter include/llvm/IRReader include/llvm/InterfaceStub include/llvm/LTO include/llvm/LTO/legacy include/llvm/LineEditor include/llvm/Linker include/llvm/MC include/llvm/MC/MCDisassembler include/llvm/MC/MCParser include/llvm/MCA include/llvm/MCA/HardwareUnits include/llvm/MCA/Stages include/llvm/ObjCopy include/llvm/ObjCopy/COFF include/llvm/ObjCopy/ELF include/llvm/ObjCopy/MachO include/llvm/ObjCopy/XCOFF include/llvm/ObjCopy/wasm include/llvm/Object include/llvm/ObjectYAML include/llvm/Option include/llvm/Passes include/llvm/ProfileData include/llvm/ProfileData/Coverage include/llvm/Remarks include/llvm/SandboxIR include/llvm/Support include/llvm/Support/FileSystem include/llvm/Support/Solaris include/llvm/Support/Solaris/sys include/llvm/Support/SystemZ include/llvm/Support/Windows include/llvm/TableGen include/llvm/Target include/llvm/Target/GlobalISel include/llvm/TargetParser include/llvm/Telemetry include/llvm/Testing include/llvm/Testing/ADT include/llvm/Testing/Annotations include/llvm/Testing/Support include/llvm/TextAPI include/llvm/ToolDrivers include/llvm/ToolDrivers/llvm-dlltool include/llvm/ToolDrivers/llvm-lib include/llvm/Transforms include/llvm/Transforms/AggressiveInstCombine include/llvm/Transforms/Coroutines include/llvm/Transforms/HipStdPar include/llvm/Transforms/IPO include/llvm/Transforms/InstCombine include/llvm/Transforms/Instrumentation include/llvm/Transforms/Scalar include/llvm/Transforms/Utils include/llvm/Transforms/Vectorize include/llvm/Transforms/Vectorize/SandboxVectorizer include/llvm/Transforms/Vectorize/SandboxVectorizer/Passes include/llvm/WindowsDriver include/llvm/WindowsManifest include/llvm/WindowsResource include/llvm/XRay lib lib/cmake lib/cmake/llvm share share/licenses share/licenses/libLLVM tools
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for strip... strip
+checking for objdump... objdump
+checking for objcopy... objcopy
+checking for readelf... readelf
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc -march=native -mtune=native -m64 
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc -march=native -mtune=native -m64  accepts -g... yes
+checking for gcc -march=native -mtune=native -m64  option to enable C11 features... none needed
+checking whether gcc -march=native -mtune=native -m64  understands -c and -o together... yes
+checking dependency style of gcc -march=native -mtune=native -m64 ... gcc3
+checking whether the compiler supports GNU C++... yes
+checking whether g++ -march=native -mtune=native -m64  accepts -g... yes
+checking for g++ -march=native -mtune=native -m64  option to enable C++11 features... none needed
+checking dependency style of g++ -march=native -mtune=native -m64 ... gcc3
+checking dependency style of gcc -march=native -mtune=native -m64 ... gcc3
+checking whether g++ -march=native -mtune=native -m64  supports C++17 features with -std=c++17... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating patchelf.spec
+config.status: executing depfiles commands
+Making all in src
+Making all in tests
+Making install in src
+ /usr/bin/mkdir -p '/home/fusion809/lfs_packaging/julia/julia-1.13.2/usr-staging/patchelf-0.17.2/home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/tools'
+  /usr/bin/install -c patchelf '/home/fusion809/lfs_packaging/julia/julia-1.13.2/usr-staging/patchelf-0.17.2/home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/tools'
+Making install in tests
+ /usr/bin/mkdir -p '/home/fusion809/lfs_packaging/julia/julia-1.13.2/usr-staging/patchelf-0.17.2/home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/share/doc/patchelf'
+ /usr/bin/mkdir -p '/home/fusion809/lfs_packaging/julia/julia-1.13.2/usr-staging/patchelf-0.17.2/home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/share/man/man1'
+ /usr/bin/install -c -m 644 /home/fusion809/lfs_packaging/julia/julia-1.13.2/deps/srccache/patchelf-0.17.2/README.md '/home/fusion809/lfs_packaging/julia/julia-1.13.2/usr-staging/patchelf-0.17.2/home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/share/doc/patchelf'
+ /usr/bin/install -c -m 644 /home/fusion809/lfs_packaging/julia/julia-1.13.2/deps/srccache/patchelf-0.17.2/patchelf.1 '/home/fusion809/lfs_packaging/julia/julia-1.13.2/usr-staging/patchelf-0.17.2/home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/share/man/man1'
+Warning: git information unavailable; versioning information limited
+Warning: git information unavailable; versioning information limited
+Warning: git information unavailable; versioning information limited
+    [34mCC[0m [33mcli/loader_exe.o[0m
+    [34mCC[0m [33mcli/loader_lib.o[0m
+Warning: git information unavailable; versioning information limited
+    [34mCC[0m [33mcli/loader_symbol_probe.o[0m
+    [34mCC[0m [33mcli/loader_library_probe.o[0m
+    [34mCC[0m [33mcli/loader_trampolines.o[0m
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0    [34;1mLINK[0m [37;1musr/lib/libjulia.so.1.13.2[0m
+    [34;1mLINK[0m [37;1musr/lib/libjulia.so.1.13[0m
+    [34;1mLINK[0m [37;1musr/lib/libjulia.so[0m
+    [34;1mLINK[0m [37;1musr/bin/julia[0m
+Warning: git information unavailable; versioning information limited
+100    477 100    477   0      0    412      0   00:01   00:01              0100    477 100    477   0      0    412      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0100  22610 100  22610   0      0  11399      0   00:01   00:01              0100  22610 100  22610   0      0  11399      0   00:01   00:01              0100  22610 100  22610   0      0  11399      0   00:01   00:01              0
+    [34mCC[0m [33msrc/support/hashing.o[0m
+    [34mCC[0m [33msrc/support/timefuncs.o[0m
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0    [34mCC[0m [33msrc/support/ptrhash.o[0m
+    [34mCC[0m [33msrc/support/operators.o[0m
+100    477 100    477   0      0    472      0   00:01   00:01              0100    477 100    477   0      0    472      0   00:01   00:01              0
+    [34mCC[0m [33msrc/support/utf8.o[0m
+  0      0   0      0   0      0      0      0           00:01              0    [35mPERL[0m [37;1mbase/pcre_h.jl[0m
+    [35mPERL[0m [37;1mbase/errno_h.jl[0m
+100   4710 100   4710   0      0   2582      0   00:01   00:01              0100   4710 100   4710   0      0   2582      0   00:01   00:01              0100   4710 100   4710   0      0   2582      0   00:01   00:01              0
+    [35mPERL[0m [37;1mbase/build_h.jl.phony[0m
+    [35mPERL[0m [37;1mbase/features_h.jl[0m
+    [34mCC[0m [33msrc/support/ios.o[0m
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0    [35mPERL[0m [37;1mbase/features_h.jl[0m
+    [35mPERL[0m [37;1mbase/features_h.jl[0m
+    [35mPERL[0m [37;1mbase/file_constants.jl[0m
+Makefile:114: "WARNING: Generating boilerplate git version info"
+    [35mPERL[0m [37;1mbase/uv_constants.jl[0m
+ln -sf /usr/lib/libpcre2-8.so.0 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libpcre2-8.so
+ln -sf /usr/lib/libblas.so.3 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libblas.so
+100    477 100    477   0      0    453      0   00:01   00:01              0100    477 100    477   0      0    453      0   00:01   00:01              0
+ln -sf /usr/lib/liblapack.so.3 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/liblapack.so
+ln -sf /usr/lib/libgmp.so.10 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libgmp.so
+ln -sf /usr/lib/libmpfr.so.6 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libmpfr.so
+ln -sf /usr/lib/libcrypto.so.4 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libcrypto.so
+ln -sf /usr/lib/libssl.so.4 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libssl.so
+ln -sf /usr/lib/libssh2.so.1 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libssh2.so
+ln -sf /usr/lib/libnghttp2.so.14 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libnghttp2.so
+  0      0   0      0   0      0      0      0           00:01              0ln -sf /usr/lib/libamd.so.3 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libamd.so
+ln -sf /usr/lib/libcamd.so.3 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libcamd.so
+ln -sf /usr/lib/libccolamd.so.3 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libccolamd.so
+    [34mCC[0m [33msrc/support/htable.o[0m
+ln -sf /usr/lib/libcholmod.so.5 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libcholmod.so
+ln -sf /usr/lib/libcolamd.so.3 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libcolamd.so
+ln -sf /usr/lib/libumfpack.so.6 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libumfpack.so
+100  30126 100  30126   0      0  14170      0   00:02   00:02              0100  30126 100  30126   0      0  14169      0   00:02   00:02              0100  30126 100  30126   0      0  14169      0   00:02   00:02              0
+    [34mCC[0m [33msrc/support/bitvector.o[0m
+ln -sf /usr/lib/libspqr.so.4 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libspqr.so
+ln -sf /usr/lib/libsuitesparseconfig.so.7 /home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/lib/julia/libsuitesparseconfig.so
+    [34mCC[0m [33msrc/support/int2str.o[0m
+    [34mCC[0m [33msrc/support/libsupportinit.o[0m
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0    [34mCC[0m [33msrc/support/arraylist.o[0m
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0    [34mCC[0m [33msrc/support/strtod.o[0m
+100    477 100    477   0      0    465      0   00:01   00:01              0100    477 100    477   0      0    465      0   00:01   00:01              0
+    [34mCC[0m [33msrc/support/rle.o[0m
+100    477 100    477   0      0    432      0   00:01   00:01              0100    477 100    477   0      0    432      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0100  15515 100  15515   0      0   8377      0   00:01   00:01              0100  15515 100  15515   0      0   8377      0   00:01   00:01              0100  15515 100  15515   0      0   8377      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0    [34;1mLINK[0m [37;1msrc/support/libsupport.a[0m
+Warning: git information unavailable; versioning information limited
+100  30260 100  30260   0      0  13811      0   00:02   00:02              0100  30260 100  30260   0      0  13811      0   00:02   00:02              0100  30260 100  30260   0      0  13811      0   00:02   00:02              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0Warning: git information unavailable; versioning information limited
+100    477 100    477   0      0    474      0   00:01   00:01              0100    477 100    477   0      0    474      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0100  10500 100  10500   0      0   5701      0   00:01   00:01              0100  10500 100  10500   0      0   5701      0   00:01   00:01              0100  10500 100  10500   0      0   5701      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0    [34mCC[0m [33msrc/flisp/flisp.o[0m
+100    477 100    477   0      0    283      0   00:01   00:01            406100    477 100    477   0      0    283      0   00:01   00:01            406
+  0      0   0      0   0      0      0      0           00:02              0    [34mCC[0m [33musr/lib/libccalltest.so[0m
+100  41713 100  41713   0      0  15290      0   00:02   00:02              0100  41713 100  41713   0      0  15290      0   00:02   00:02              0100  41713 100  41713   0      0  15290      0   00:02   00:02              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0    [34;1mLINK[0m [37;1musr/lib/libccalltest.so[0m
+100    477 100    477   0      0    473      0   00:01   00:01              0100    477 100    477   0      0    473      0   00:01   00:01              0
+    [34mCC[0m [33msrc/flisp/builtins.o[0m
+  0      0   0      0   0      0      0      0           00:01              0100  13262 100  13262   0      0   7347      0   00:01   00:01              0100  13262 100  13262   0      0   7347      0   00:01   00:01              0100  13262 100  13262   0      0   7347      0   00:01   00:01              0
+    [34mCC[0m [33msrc/flisp/string.o[0m
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0Warning: git information unavailable; versioning information limited
+100    477 100    477   0      0    617      0                              0100    477 100    477   0      0    616      0                              0
+  0      0   0      0   0      0      0      0           00:01              0100   2762 100   2762   0      0   1788      0   00:01   00:01              0100   2762 100   2762   0      0   1786      0   00:01   00:01              0100   2762 100   2762   0      0   1786      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    477 100    477   0      0    418      0   00:01   00:01              0100    477 100    477   0      0    418      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0    [34mCC[0m [33musr/lib/libccalllazyfoo.so[0m
+    [34;1mLINK[0m [37;1musr/lib/libccalllazyfoo.so[0m
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0 59 257.7k  59 152.3k   0      0  58535      0   00:04   00:02   00:02 148.9k100 257.7k 100 257.7k   0      0  98743      0   00:02   00:02         148.9k100 257.7k 100 257.7k   0      0  98742      0   00:02   00:02         148.9k100 257.7k 100 257.7k   0      0  98742      0   00:02   00:02         148.9k
+    [34mCC[0m [33msrc/flisp/equalhash.o[0m
+Warning: git information unavailable; versioning information limited
+100    477 100    477   0      0    423      0   00:01   00:01              0100    477 100    477   0      0    423      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0100  50084 100  50084   0      0  22783      0   00:02   00:02              0100  50084 100  50084   0      0  22783      0   00:02   00:02              0100  50084 100  50084   0      0  22783      0   00:02   00:02              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    477 100    477   0      0    459      0   00:01   00:01              0100    477 100    477   0      0    459      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0    [34mCC[0m [33musr/lib/libllvmcalltest.so[0m
+100  28017 100  28017   0      0  13409      0   00:02   00:02              0100  28017 100  28017   0      0  13408      0   00:02   00:02              0100  28017 100  28017   0      0  13408      0   00:02   00:02              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    477 100    477   0      0    364      0   00:01   00:01              0100    477 100    477   0      0    364      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0100  71498 100  71498   0      0  30544      0   00:02   00:02              0100  71498 100  71498   0      0  30544      0   00:02   00:02              0100  71498 100  71498   0      0  30543      0   00:02   00:02              0
+    [34mCC[0m [33msrc/flisp/table.o[0m
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0    [34mCC[0m [33msrc/flisp/iostream.o[0m
+100    477 100    477   0      0    482      0                              0100    477 100    477   0      0    482      0                              0
+  0      0   0      0   0      0      0      0           00:01              0100   9083 100   9083   0      0   5032      0   00:01   00:01              0100   9083 100   9083   0      0   5032      0   00:01   00:01              0100   9083 100   9083   0      0   5032      0   00:01   00:01              0
+    [34mCC[0m [33msrc/flisp/julia_extensions.o[0m
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    477 100    477   0      0    456      0   00:01   00:01              0100    477 100    477   0      0    456      0   00:01   00:01              0
+    [34mCC[0m [33msrc/flisp/flmain.o[0m
+  0      0   0      0   0      0      0      0           00:01              0    [34;1mLINK[0m [37;1msrc/flisp/libflisp.a[0m
+    [34;1mLINK[0m [37;1msrc/flisp/flisp[0m
+Warning: git information unavailable; versioning information limited
+ 36 461.4k  36 169.3k   0      0  65937      0   00:07   00:02   00:05 159.0k100 461.4k 100 461.4k   0      0 159.8k      0   00:02   00:02         159.0k100 461.4k 100 461.4k   0      0 159.8k      0   00:02   00:02         159.0k100 461.4k 100 461.4k   0      0 159.8k      0   00:02   00:02         159.0k
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    551      0                              0100    425 100    425   0      0    551      0                              0
+  0      0   0      0   0      0      0      0           00:01              0100   6757 100   6757   0      0   4338      0   00:01   00:01              0100   6757 100   6757   0      0   4338      0   00:01   00:01              0100   6757 100   6757   0      0   4337      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0    [34;1mLINK[0m [37;1musr/lib/libllvmcalltest.so[0m
+100    425 100    425   0      0    401      0   00:01   00:01              0100    425 100    425   0      0    401      0   00:01   00:01              0
+    [32mFLISP[0m [37;1msrc/julia_flisp.boot[0m
+  0      0   0      0   0      0      0      0           00:01              0100  12297 100  12297   0      0   6686      0   00:01   00:01              0100  12297 100  12297   0      0   6683      0   00:01   00:01              0100  12297 100  12297   0      0   6682      0   00:01   00:01              0
+    [32mFLISP[0m [37;1msrc/julia_flisp.boot.inc[0m
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    549      0                              0100    425 100    425   0      0    549      0                              0
+Warning: git information unavailable; versioning information limited
+  0      0   0      0   0      0      0      0           00:01              0100   6985 100   6985   0      0   4464      0   00:01   00:01              0100   6985 100   6985   0      0   4464      0   00:01   00:01              0100   6985 100   6985   0      0   4464      0   00:01   00:01              0
+Warning: git information unavailable; versioning information limited
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    526      0                              0100    425 100    425   0      0    526      0                              0
+  0      0   0      0   0      0      0      0           00:01              0100   6947 100   6947   0      0   4389      0   00:01   00:01              0100   6947 100   6947   0      0   4389      0   00:01   00:01              0100   6947 100   6947   0      0   4389      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0    [34mCC[0m [33musr/lib/libccalllazybar.so[0m
+    [34;1mLINK[0m [37;1musr/lib/libccalllazybar.so[0m
+100    425 100    425   0      0    344      0   00:01   00:01              0100    425 100    425   0      0    344      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0           00:01              0100    425 100    425   0      0    562      0                              0100    425 100    425   0      0    562      0                              0
+100  15676 100  15676   0      0   7757      0   00:02   00:02              0100  15676 100  15676   0      0   7752      0   00:02   00:02              0100  15676 100  15676   0      0   7752      0   00:02   00:02              0
+  0      0   0      0   0      0      0      0           00:01              0100   7061 100   7061   0      0   4607      0   00:01   00:01              0100   7061 100   7061   0      0   4607      0   00:01   00:01              0100   7061 100   7061   0      0   4607      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    401      0   00:01   00:01              0100    425 100    425   0      0    401      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0    [34mCC[0m [33msrc/codegen.o[0m
+  0      0   0      0   0      0      0      0           00:01              0100    425 100    425   0      0    351      0   00:01   00:01              0100    425 100    425   0      0    351      0   00:01   00:01              0
+100   6776 100   6776   0      0   3682      0   00:01   00:01              0100   6776 100   6776   0      0   3680      0   00:01   00:01              0100   6776 100   6776   0      0   3680      0   00:01   00:01              0
+    [34mCC[0m [33msrc/jitlayers.o[0m
+  0      0   0      0   0      0      0      0           00:01              0100   6550 100   6550   0      0   3254      0   00:02   00:02              0100   6550 100   6550   0      0   3254      0   00:02   00:02              0100   6550 100   6550   0      0   3254      0   00:02   00:02              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    393      0   00:01   00:01              0100    425 100    425   0      0    393      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0100   6662 100   6662   0      0   3540      0   00:01   00:01              0100   6662 100   6662   0      0   3540      0   00:01   00:01              0100   6662 100   6662   0      0   3540      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    576      0                              0100    425 100    425   0      0    576      0                              0
+  0      0   0      0   0      0      0      0           00:01              0100   6985 100   6985   0      0   4604      0   00:01   00:01              0100   6985 100   6985   0      0   4604      0   00:01   00:01              0100   6985 100   6985   0      0   4604      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0           00:01              0100    425 100    425   0      0    187      0   00:02   00:02            241100    425 100    425   0      0    187      0   00:02   00:02            241
+  0      0   0      0   0      0      0      0           00:02              0100   7935 100   7935   0      0   2599      0   00:03   00:03              0100   7935 100   7935   0      0   2599      0   00:03   00:03              0100   7935 100   7935   0      0   2599      0   00:03   00:03              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    370      0   00:01   00:01              0100    425 100    425   0      0    370      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0100   7854 100   7854   0      0   4011      0   00:01   00:01              0100   7854 100   7854   0      0   4011      0   00:01   00:01              0100   7854 100   7854   0      0   4011      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    381      0   00:01   00:01              0100    425 100    425   0      0    381      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0100   7042 100   7042   0      0   3687      0   00:01   00:01              0100   7042 100   7042   0      0   3687      0   00:01   00:01              0100   7042 100   7042   0      0   3687      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    387      0   00:01   00:01              0100    425 100    425   0      0    387      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0100   6406 100   6406   0      0   3444      0   00:01   00:01              0100   6406 100   6406   0      0   3444      0   00:01   00:01              0100   6406 100   6406   0      0   3444      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    396      0   00:01   00:01              0100    425 100    425   0      0    396      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0100   6833 100   6833   0      0   3517      0   00:01   00:01              0100   6833 100   6833   0      0   3517      0   00:01   00:01              0100   6833 100   6833   0      0   3517      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    376      0   00:01   00:01              0100    425 100    425   0      0    375      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0100   6946 100   6946   0      0   3631      0   00:01   00:01              0100   6946 100   6946   0      0   3631      0   00:01   00:01              0100   6946 100   6946   0      0   3630      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    558      0                              0100    425 100    425   0      0    558      0                              0
+  0      0   0      0   0      0      0      0           00:01              0100   6662 100   6662   0      0   4204      0   00:01   00:01              0100   6662 100   6662   0      0   4204      0   00:01   00:01              0100   6662 100   6662   0      0   4204      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    561      0                              0100    425 100    425   0      0    561      0                              0
+  0      0   0      0   0      0      0      0           00:01              0100   6280 100   6280   0      0   4057      0   00:01   00:01              0100   6280 100   6280   0      0   4057      0   00:01   00:01              0100   6280 100   6280   0      0   4057      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    554      0                              0100    425 100    425   0      0    554      0                              0
+  0      0   0      0   0      0      0      0           00:01              0100   6731 100   6731   0      0   4357      0   00:01   00:01              0100   6731 100   6731   0      0   4357      0   00:01   00:01              0100   6731 100   6731   0      0   4357      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    323      0   00:01   00:01              0100    425 100    425   0      0    323      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0100   8854 100   8854   0      0   4210      0   00:02   00:02              0100   8854 100   8854   0      0   4210      0   00:02   00:02              0100   8854 100   8854   0      0   4210      0   00:02   00:02              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    550      0                              0100    425 100    425   0      0    550      0                              0
+  0      0   0      0   0      0      0      0           00:01              0100   5701 100   5701   0      0   3648      0   00:01   00:01              0100   5701 100   5701   0      0   3647      0   00:01   00:01              0100   5701 100   5701   0      0   3647      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    425 100    425   0      0    398      0   00:01   00:01              0100    425 100    425   0      0    398      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0100  14956 100  14956   0      0   8043      0   00:01   00:01              0100  14956 100  14956   0      0   8043      0   00:01   00:01              0100  14956 100  14956   0      0   8043      0   00:01   00:01              0
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    477 100    477   0      0    443      0   00:01   00:01              0100    477 100    477   0      0    443      0   00:01   00:01              0
+  0      0   0      0   0      0      0      0           00:01              0 25 723.2k  25 186.3k   0      0  71354      0   00:10   00:02   00:08 173.6k100 723.2k 100 723.2k   0      0 245.7k      0   00:02   00:02         173.6k100 723.2k 100 723.2k   0      0 245.7k      0   00:02   00:02         173.6k100 723.2k 100 723.2k   0      0 245.7k      0   00:02   00:02         173.6k
+    [34mCC[0m [33msrc/aotcompile.o[0m
+    [34mCC[0m [33msrc/debuginfo.o[0m
+    [34mCC[0m [33msrc/disasm.o[0m
+    [34mCC[0m [33msrc/llvm-simdloop.o[0m
+    [34mCC[0m [33msrc/llvm-pass-helpers.o[0m
+    [34mCC[0m [33msrc/llvm-ptls.o[0m
+    [34mCC[0m [33msrc/llvm-propagate-addrspaces.o[0m
+    [34mCC[0m [33msrc/llvm-multiversioning.o[0m
+    [34mCC[0m [33msrc/llvm-alloc-opt.o[0m
+    [34mCC[0m [33msrc/llvm-alloc-helpers.o[0m
+    [34mCC[0m [33msrc/cgmemmgr.o[0m
+    [34mCC[0m [33msrc/llvm-remove-addrspaces.o[0m
+    [34mCC[0m [33msrc/llvm-remove-ni.o[0m
+    [34mCC[0m [33msrc/llvm-julia-licm.o[0m
+    [34mCC[0m [33msrc/llvm-demote-float16.o[0m
+    [34mCC[0m [33msrc/llvm-cpufeatures.o[0m
+    [34mCC[0m [33msrc/llvm-expand-atomic-modify.o[0m
+    [34mCC[0m [33msrc/pipeline.o[0m
+    [34mCC[0m [33msrc/llvm_api.o[0m
+    [34mCC[0m [33msrc/llvm-linker.o[0m
+    [34mCC[0m [33msrc/llvm-final-gc-lowering.o[0m
+    [34mCC[0m [33msrc/llvm-late-gc-lowering.o[0m
+    [34mCC[0m [33msrc/llvm-gc-invariant-verifier.o[0m
+    [34mCC[0m [33msrc/llvm-late-gc-lowering-stock.o[0m
+    [34mCC[0m [33msrc/jltypes.o[0m
+    [34mCC[0m [33msrc/gf.o[0m
+    [34mCC[0m [33msrc/typemap.o[0m
+    [34mCC[0m [33msrc/smallintset.o[0m
+    [34mCC[0m [33msrc/ast.o[0m
+    [34mCC[0m [33msrc/builtins.o[0m
+    [34mCC[0m [33msrc/module.o[0m
+    [34mCC[0m [33msrc/interpreter.o[0m
+    [34mCC[0m [33msrc/symbol.o[0m
+    [34mCC[0m [33msrc/dlload.o[0m
+    [34mCC[0m [33msrc/sys.o[0m
+    [34mCC[0m [33msrc/init.o[0m
+    [34mCC[0m [33msrc/task.o[0m
+    [34mCC[0m [33msrc/array.o[0m
+    [34mCC[0m [33msrc/genericmemory.o[0m
+    [34mCC[0m [33msrc/staticdata.o[0m
+    [34mCC[0m [33msrc/toplevel.o[0m
+    [34mCC[0m [33msrc/jl_uv.o[0m
+    [34mCC[0m [33msrc/datatype.o[0m
+    [34mCC[0m [33msrc/simplevector.o[0m
+    [34mCC[0m [33msrc/runtime_intrinsics.o[0m
+    [34mCC[0m [33msrc/precompile.o[0m
+    [34mCC[0m [33msrc/jloptions.o[0m
+    [34mCC[0m [33msrc/mtarraylist.o[0m
+    [34mCC[0m [33msrc/threading.o[0m
+    [34mCC[0m [33msrc/scheduler.o[0m
+    [34mCC[0m [33msrc/stackwalk.o[0m
+    [34mCC[0m [33msrc/null_sysimage.o[0m
+    [34mCC[0m [33msrc/method.o[0m
+    [34mCC[0m [33msrc/jlapi.o[0m
+    [34mCC[0m [33msrc/signal-handling.o[0m
+    [34mCC[0m [33msrc/safepoint.o[0m
+    [34mCC[0m [33msrc/timing.o[0m
+    [34mCC[0m [33msrc/subtype.o[0m
+    [34mCC[0m [33msrc/rtutils.o[0m
+    [34mCC[0m [33msrc/crc32c.o[0m
+    [34mCC[0m [33msrc/APInt-C.o[0m
+    [34mCC[0m [33msrc/processor.o[0m
+    [34mCC[0m [33msrc/ircode.o[0m
+    [34mCC[0m [33msrc/opaque_closure.o[0m
+    [34mCC[0m [33msrc/codegen-stubs.o[0m
+    [34mCC[0m [33msrc/coverage.o[0m
+    [34mCC[0m [33msrc/runtime_ccall.o[0m
+    [34mCC[0m [33msrc/engine.o[0m
+    [34mCC[0m [33msrc/gc-common.o[0m
+    [34mCC[0m [33msrc/gc-stacks.o[0m
+    [34mCC[0m [33msrc/gc-alloc-profiler.o[0m
+    [34mCC[0m [33msrc/gc-heap-snapshot.o[0m
+    [34mCC[0m [33msrc/gc-stock.o[0m
+    [34mCC[0m [33msrc/gc-debug.o[0m
+    [34mCC[0m [33msrc/gc-pages.o[0m
+    [34mCC[0m [33msrc/gc-page-profiler.o[0m
+    [34;1mLINK[0m [37;1musr/lib/libjulia-internal.so.1.13.2[0m
+    [34;1mLINK[0m [37;1musr/lib/libjulia-internal.so.1.13[0m
+    [34;1mLINK[0m [37;1musr/lib/libjulia-internal.so[0m
+    [34;1mLINK[0m [37;1musr/lib/libjulia-codegen.so.1.13.2[0m
+    [34;1mLINK[0m [37;1musr/lib/libjulia-codegen.so[0m
+    [34;1mLINK[0m [37;1musr/lib/libjulia-codegen.so.1.13[0m
+Warning: git information unavailable; versioning information limited
+find: '/home/fusion809/lfs_packaging/julia/julia-1.13.2/JuliaSyntax/src': No such file or directory
+find: '/home/fusion809/lfs_packaging/julia/julia-1.13.2/usr/share/julia/JuliaLowering/src': No such file or directory
+    [32;1mJULIA[0m [37;1musr/lib/julia/basecompiler-o.a[0m
+coreio.jl
+exports.jl
+docs/core.jl
+public.jl
+essentials.jl
+ctypes.jl
+gcutils.jl
+generator.jl
+runtime_internals.jl
+options.jl
+promotion.jl
+tuple.jl
+expr.jl
+pair.jl
+traits.jl
+range.jl
+error.jl
+bool.jl
+number.jl
+int.jl
+operators.jl
+pointer.jl
+refvalue.jl
+cmem.jl
+rounding.jl
+float.jl
+strings/lazy.jl
+checked.jl
+indices.jl
+genericmemory.jl
+array.jl
+abstractarray.jl
+baseext.jl
+c.jl
+abstractset.jl
+bitarray.jl
+bitset.jl
+abstractdict.jl
+iddict.jl
+idset.jl
+ntuple.jl
+iterators.jl
+namedtuple.jl
+anyall.jl
+ordering.jl
+coreir.jl
+module.jl
+../usr/share/julia/Compiler/src/Compiler.jl
+../usr/share/julia/Compiler/src/timing.jl
+../usr/share/julia/Compiler/src/sort.jl
+../usr/share/julia/Compiler/src/cicache.jl
+../usr/share/julia/Compiler/src/methodtable.jl
+../usr/share/julia/Compiler/src/effects.jl
+../usr/share/julia/Compiler/src/types.jl
+../usr/share/julia/Compiler/src/utilities.jl
+../usr/share/julia/Compiler/src/validation.jl
+../usr/share/julia/Compiler/src/ssair/basicblock.jl
+../usr/share/julia/Compiler/src/ssair/domtree.jl
+../usr/share/julia/Compiler/src/ssair/ir.jl
+../usr/share/julia/Compiler/src/ssair/tarjan.jl
+../usr/share/julia/Compiler/src/abstractlattice.jl
+../usr/share/julia/Compiler/src/stmtinfo.jl
+../usr/share/julia/Compiler/src/inferenceresult.jl
+../usr/share/julia/Compiler/src/inferencestate.jl
+../usr/share/julia/Compiler/src/typeutils.jl
+../usr/share/julia/Compiler/src/typelimits.jl
+../usr/share/julia/Compiler/src/typelattice.jl
+../usr/share/julia/Compiler/src/tfuncs.jl
+../usr/share/julia/Compiler/src/abstractinterpretation.jl
+../usr/share/julia/Compiler/src/typeinfer.jl
+../usr/share/julia/Compiler/src/optimize.jl
+../usr/share/julia/Compiler/src/ssair/heap.jl
+../usr/share/julia/Compiler/src/ssair/slot2ssa.jl
+../usr/share/julia/Compiler/src/ssair/inlining.jl
+../usr/share/julia/Compiler/src/ssair/verify.jl
+../usr/share/julia/Compiler/src/ssair/legacy.jl
+../usr/share/julia/Compiler/src/ssair/EscapeAnalysis.jl
+../usr/share/julia/Compiler/src/ssair/disjoint_set.jl
+../usr/share/julia/Compiler/src/ssair/passes.jl
+../usr/share/julia/Compiler/src/ssair/irinterp.jl
+../usr/share/julia/Compiler/src/bootstrap.jl
+../usr/share/julia/Compiler/src/precompile.jl
+../usr/share/julia/Compiler/src/reflection_interface.jl
+../usr/share/julia/Compiler/src/opaque_closure.jl
+../usr/share/julia/Compiler/src/reinfer.jl
+../usr/share/julia/Compiler/src/bindinginvalidations.jl
+Compiling the compiler. This may take several minutes ...
+Base.Compiler ──── 883.66371703147888 seconds
+flfrontend.jl
+    [34;1mLINK[0m [37;1musr/lib/julia/basecompiler.so[0m
+    [32;1mJULIA[0m [37;1musr/lib/julia/sysbase-o.a[0m
+Base.jl
+reflection.jl
+refpointer.jl
+./build_h.jl
+./version_git.jl
+meta.jl
+multimedia.jl
+char.jl
+strings/basic.jl
+strings/string.jl
+strings/substring.jl
+strings/cstring.jl
+cartesian.jl
+hashing.jl
+osutils.jl
+subarray.jl
+views.jl
+div.jl
+twiceprecision.jl
+complex.jl
+rational.jl
+multinverses.jl
+abstractarraymath.jl
+arraymath.jl
+slicearray.jl
+simdloop.jl
+reduce.jl
+reshapedarray.jl
+reinterpretarray.jl
+some.jl
+dict.jl
+hamt.jl
+set.jl
+io.jl
+iobuffer.jl
+linked_list.jl
+condition.jl
+threads.jl
+threadingconstructs.jl
+locks-mt.jl
+lock.jl
+intfuncs.jl
+strings/strings.jl
+strings/annotated.jl
+strings/search.jl
+strings/unicode.jl
+strings/util.jl
+strings/io.jl
+strings/annotated_io.jl
+regex.jl
+pcre.jl
+./pcre_h.jl
+parse.jl
+shell.jl
+stacktraces.jl
+show.jl
+../usr/share/julia/Compiler/src/ssair/show.jl
+../usr/share/julia/Compiler/src/verifytrim.jl
+arrayshow.jl
+methodshow.jl
+multidimensional.jl
+broadcast.jl
+missing.jl
+version.jl
+sysinfo.jl
+libc.jl
+./errno_h.jl
+libdl.jl
+atomics.jl
+channels.jl
+partr.jl
+task.jl
+threads_overloads.jl
+weakkeydict.jl
+scopedvalues.jl
+logging/logging.jl
+logging/ConsoleLogger.jl
+env.jl
+libuv.jl
+./uv_constants.jl
+asyncevent.jl
+iostream.jl
+stream.jl
+filesystem.jl
+path.jl
+stat.jl
+file.jl
+./file_constants.jl
+cmd.jl
+process.jl
+terminfo.jl
+terminfo_data.jl
+Terminals.jl
+secretbuffer.jl
+floatfuncs.jl
+math.jl
+special/cbrt.jl
+special/exp.jl
+special/hyperbolic.jl
+special/trig.jl
+special/rem_pio2.jl
+special/rem2pi.jl
+special/log.jl
+special/pow.jl
+reducedim.jl
+accumulate.jl
+permuteddimsarray.jl
+sort.jl
+fastmath.jl
+Enums.jl
+gmp.jl
+ryu/Ryu.jl
+ryu/utils.jl
+ryu/shortest.jl
+ryu/fixed.jl
+ryu/exp.jl
+mpfr.jl
+rawbigfloats.jl
+combinatorics.jl
+irrationals.jl
+mathconstants.jl
+experimental.jl
+opaque_closure.jl
+deepcopy.jl
+download.jl
+summarysize.jl
+errorshow.jl
+util.jl
+initdefs.jl
+threadcall.jl
+uuid.jl
+pkgid.jl
+toml/toml.jl
+toml/parser.jl
+toml/printer.jl
+linking.jl
+loading.jl
+binaryplatforms.jl
+cpuid.jl
+features_h.jl
+timing.jl
+client.jl
+asyncmap.jl
+deprecated.jl
+docs/basedocs.jl
+docs/intrinsicsdocs.jl
+docs/Docs.jl
+docs/bindings.jl
+docs/utils.jl
+precompilation.jl
+JuliaSyntax/src/JuliaSyntax.jl
+Base  ────────── 78.853887 seconds
+FileWatching  ── 11.168635 seconds
+Libdl  ─────────  0.003115 seconds
+Artifacts  ─────  0.630602 seconds
+SHA  ───────────  0.676014 seconds
+Sockets  ───────  0.626201 seconds
+LinearAlgebra  ─ 16.137072 seconds
+Random  ────────  2.803653 seconds
+Stdlibs total  ─ 32.066748 seconds
+Sysimage built. Summary:
+Base ────────  78.853887 seconds 71.0855%
+Stdlibs ─────  32.066748 seconds 28.9077%
+Total ─────── 110.928171 seconds
+    [34;1mLINK[0m [37;1musr/lib/julia/sysbase.so[0m
+    [32;1mJULIA[0m [37;1musr/lib/julia/sys-o.a[0m
+Collecting precompile statements
+Executing precompile statements
+Executed 324 precompile statements
+Precompilation complete. Summary:
+Total ───────  37.810839 seconds
+Outputting sysimage file...
+Error: Build failed for julia. Aborting update loop.
+/home/fusion809/lfs-scripts/updates_check_and_run.sh: line 96: 502946 Killed                     zsh -ic 'updatec'
+===== ERROR: updatec exited with status 137 =====
+Finished: 2026-10-16 02:09:44 AEST
+Exit status: 137

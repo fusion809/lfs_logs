@@ -1,0 +1,3333 @@
+===== Update check started: 2026-10-16 10:19:11 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261016_101911
+Packages needing attention: gtkmm pkgconf polkit rust vim
+===== Starting updatec: 2026-10-16 10:19:18 AEST =====
+Checking for packages with missing file inventories...
+Packages with missing inventories that will be force-rebuilt: gtkmm
+name=pkgconf
+local_ver=3.0.8
+remote_ver=3.0.9
+name=polkit
+local_ver=127
+remote_ver=128
+name=rust
+local_ver=1.99.0
+remote_ver=1.99.1
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - gtkmm
+  - pkgconf
+  - polkit
+  - rust
+
+Building custom package gtkmm...
+[10:21:28] [LFS-AUTOBUILD] Script initialization complete. Version 2026.04.02.1
+[10:21:30] Searching for 'gtkmm' in BLFS index...
+[10:21:41] Found package page: https://linuxfromscratch.org/blfs/view/systemd/x/gtkmm3.html
+[10:21:41] Fetching content from https://linuxfromscratch.org/blfs/view/systemd/x/gtkmm3.html...
+[10:21:42] Extracting required dependencies from page...
+[10:21:42] Required deps: atkmm gtk3 
+[10:21:42] Dependency 'atkmm' already installed.
+[10:21:42] Dependency 'gtk3' already installed.
+[10:21:43] Extracted commands: # __BEGIN_USER__
+mkdir gtkmm3-build &&
+cd    gtkmm3-build &&
+meson setup --prefix=/usr --buildtype=release .. &&
+ninja -j$(nproc)
+
+# __END_USER__
+# __BEGIN_ROOT__
+ninja -j$(nproc) install
+
+# __END_ROOT__
+# __BEGIN_ROOT__
+mv -v /usr/share/doc/gtkmm-3.0 /usr/share/doc/gtkmm-3.24.11
+
+# __END_ROOT__
+
+[10:21:43] [INFO] Documentation building (doxygen/texlive/asciidoc) is explicitly suppressed.
+[10:21:43] Fetching latest upstream GNOME version for gtkmm from download.gnome.org...
+[10:21:44] Found upstream GNOME version for gtkmm: 4.24.0
+[10:21:45] Package base name for search: gtkmm
+[10:21:45] Identified main archive: https://download.gnome.org/sources/gtkmm/4.24/gtkmm-4.24.0.tar.xz
+[10:21:45] Extracted version from URL: 4.24.0
+[10:21:45] Total files to download: 1
+[10:21:45] Replacing LFS GNOME version 4.24.0 with 4.24.0 in commands and URLs...
+[10:21:45] Filtering redundant stable archives (keeping version 4.24.0)...
+[10:21:46] Starting remote build for gtkmm...
+Cleaning up old versions...
+Extracting gtkmm-4.24.0.tar.xz...
+Using tar with strip-components
+Marking build start time...
+Running build commands (user blocks as fusion809, root blocks as root)...
+The Meson build system
+Version: 1.12.1
+Source dir: /sources/gtkmm-4.24.0
+Build dir: /sources/gtkmm-4.24.0/gtkmm3-build
+Build type: native build
+Project name: gtkmm
+Project version: 4.24.0
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+C++ compiler for the host machine: c++ (gcc 16.2.0 "c++ (GCC) 16.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program python3 found: YES (/usr/bin/python3.15)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.8
+Run-time dependency gtk4 found: YES 4.24.1
+Run-time dependency cairomm-1.16 found: YES 1.19.1
+Run-time dependency pangomm-2.48 found: YES 2.58.0
+Run-time dependency gdk-pixbuf-2.0 found: YES 2.44.8
+Run-time dependency epoxy found: YES 1.5.10
+Run-time dependency vulkan found: YES 1.4.363
+Run-time dependency glibmm-2.68 found: YES 2.90.0
+Run-time dependency giomm-2.68 found: YES 2.90.0
+Run-time dependency gtk4-unix-print found: YES 4.24.1
+Program mm-common-get found: YES (/usr/bin/mm-common-get)
+Program m4 found: YES (/usr/bin/m4)
+Program doxygen found: NO
+Program dot found: YES (/usr/bin/dot)
+Program xsltproc found: YES (/usr/bin/xsltproc)
+Program perl found: YES (/usr/bin/perl)
+Compiler for C supports arguments -Wno-overlength-strings: YES 
+Library glibmm_generate_extra_defs-2.68 found: YES
+Configuring gdkmmconfig.h using configuration
+Configuring gdkmmconfig.h using configuration
+Configuring gskmmconfig.h using configuration
+Configuring gskmmconfig.h using configuration
+Configuring gtkmmconfig.h using configuration
+Configuring gtkmm.rc using configuration
+Configuring gtkmmconfig.h using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.8
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.8
+Run-time dependency gio-2.0 found: YES 2.90.1
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Run-time dependency mm-common-libstdc++ found: YES 1.0.8
+Run-time dependency sigc++-3.0 found: YES 3.8.1
+Dependency glibmm-2.68 for host machine found: YES 2.90.0 (cached)
+Dependency cairomm-1.16 for host machine found: YES 1.19.1 (cached)
+Dependency pangomm-2.48 for host machine found: YES 2.58.0 (cached)
+Configuring Doxyfile using configuration
+Message: 
+------
+gtkmm 4.24.0
+
+         Maintainer mode: if-git-build (false)
+       Compiler warnings: min (warning_level: 1, werror: false)
+    Build deprecated API: true
+Build HTML documentation: if-maintainer-mode (false)
+     Build demo programs: true
+     Build test programs: true
+Directories:
+                  prefix: /usr
+              includedir: /usr/include
+         includegtkmmdir: /usr/include/gtkmm-4.0
+                  libdir: /usr/lib
+          gtkmmconfigdir: /usr/lib/gtkmm-4.0/include
+                   m4dir: /usr/lib/gtkmm-4.0/proc/m4
+            pkgconfigdir: /usr/lib/pkgconfig
+                 datadir: /usr/share
+                  docdir: /usr/share/doc/gtkmm-4.0
+              devhelpdir: /usr/share/devhelp/books/gtkmm-4.0
+------
+Build targets in project: 28
+
+gtkmm 4.24.0
+
+  User defined options
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_applaunchcontext.cc.o
+[2/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_wrap_init.cc.o
+[3/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_cairocontext.cc.o
+[4/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_colorstate.cc.o
+[5/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_cicpparams.cc.o
+[6/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_clipboard.cc.o
+[7/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_contentformatsbuilder.cc.o
+[8/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_contentformats.cc.o
+[9/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_contentprovider.cc.o
+[10/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_cursor.cc.o
+[11/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_devicepad.cc.o
+[12/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_device.cc.o
+[13/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_devicetool.cc.o
+[14/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_dmabufformats.cc.o
+[15/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_displaymanager.cc.o
+[16/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_display.cc.o
+[17/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_dmabuftexture.cc.o
+[18/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_dmabuftexturebuilder.cc.o
+[19/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_drag.cc.o
+[20/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_dragsurface.cc.o
+[21/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_dragsurfacesize.cc.o
+[22/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_drawcontext.cc.o
+[23/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_enums.cc.o
+[24/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_drop.cc.o
+[25/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_frameclock.cc.o
+[26/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_frametimings.cc.o
+[27/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_event.cc.o
+[28/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_glcontext.cc.o
+[29/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_gltexture.cc.o
+[30/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_gltexturebuilder.cc.o
+[31/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_graphene_point.cc.o
+[32/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_graphene_size.cc.o
+[33/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_graphene_rect.cc.o
+[34/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_graphene_vec2.cc.o
+[35/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_keymapkey.cc.o
+[36/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_memorytexture.cc.o
+[37/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_monitor.cc.o
+[38/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_memorytexturebuilder.cc.o
+[39/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_paintable.cc.o
+[40/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_pixbufformat.cc.o
+[41/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_pixbuf.cc.o
+[42/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_pixbufloader.cc.o
+[43/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_popuplayout.cc.o
+[44/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_popup.cc.o
+[45/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_rectangle.cc.o
+[46/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_rgba.cc.o
+[47/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_seat.cc.o
+[48/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_snapshot.cc.o
+[49/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_texturedownloader.cc.o
+[50/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_texture.cc.o
+[51/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_timecoord.cc.o
+[52/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_toplevel.cc.o
+[53/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_toplevellayout.cc.o
+[54/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_surface.cc.o
+[55/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_pixbufanimationiter.cc.o
+[56/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_toplevelsize.cc.o
+[57/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/.._.._untracked_gdk_gdkmm_pixbufanimation.cc.o
+[58/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/cairoutils.cc.o
+[59/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/devicewithpad.cc.o
+[60/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/dragsurfaceimpl.cc.o
+[61/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/general.cc.o
+[62/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/slot_async.cc.o
+[63/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/popupsurfaceimpl.cc.o
+[64/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/value_cairo.cc.o
+[65/450] Compiling C++ object gdk/gdkmm/libgdkmm.a.p/toplevelsurfaceimpl.cc.o
+[66/450] Compiling C++ object gsk/gskmm/libgskmm.a.p/.._.._untracked_gsk_gskmm_wrap_init.cc.o
+[67/450] Compiling C++ object gsk/gskmm/libgskmm.a.p/.._.._untracked_gsk_gskmm_enums.cc.o
+[68/450] Compiling C++ object gsk/gskmm/libgskmm.a.p/.._.._untracked_gsk_gskmm_path.cc.o
+[69/450] Compiling C++ object gsk/gskmm/libgskmm.a.p/.._.._untracked_gsk_gskmm_pathbuilder.cc.o
+[70/450] Compiling C++ object gsk/gskmm/libgskmm.a.p/.._.._untracked_gsk_gskmm_pathmeasure.cc.o
+[71/450] Compiling C++ object gsk/gskmm/libgskmm.a.p/.._.._untracked_gsk_gskmm_pathpoint.cc.o
+[72/450] Compiling C++ object gsk/gskmm/libgskmm.a.p/.._.._untracked_gsk_gskmm_roundedrect.cc.o
+[73/450] Compiling C++ object gsk/gskmm/libgskmm.a.p/.._.._untracked_gsk_gskmm_stroke.cc.o
+[74/450] Linking static target gdk/gdkmm/libgdkmm.a
+[75/450] Compiling C++ object gsk/gskmm/libgskmm.a.p/.._.._untracked_gsk_gskmm_transform.cc.o
+[76/450] Linking static target gsk/gskmm/libgskmm.a
+[77/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_accessible.cc.o
+[78/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_aboutdialog.cc.o
+[79/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_accessiblehyperlink.cc.o
+[80/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_accessiblehypertext.cc.o
+[81/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_wrap_init.cc.o
+[82/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_actionable.cc.o
+[83/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_accessibletext.cc.o
+[84/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_actionbar.cc.o
+[85/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_adjustment.cc.o
+[86/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_alertdialog.cc.o
+[87/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_application.cc.o
+[88/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_applicationwindow.cc.o
+[89/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_aspectframe.cc.o
+[90/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_atcontext.cc.o
+[91/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_binlayout.cc.o
+[92/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_bitset.cc.o
+[93/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_boolfilter.cc.o
+[94/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_border.cc.o
+[95/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_box.cc.o
+[96/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_boxlayout.cc.o
+[97/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_buildable.cc.o
+[98/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_buildercscope.cc.o
+[99/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_builder.cc.o
+[100/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_builderscope.cc.o
+[101/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_button.cc.o
+[102/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_calendar.cc.o
+[103/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_celleditable.cc.o
+[104/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_centerbox.cc.o
+[105/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_centerlayout.cc.o
+[106/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_checkbutton.cc.o
+[107/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_colordialog.cc.o
+[108/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_colordialogbutton.cc.o
+[109/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_columnview.cc.o
+[110/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_columnviewcell.cc.o
+[111/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_columnviewcolumn.cc.o
+[112/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_columnviewrow.cc.o
+[113/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_columnviewsorter.cc.o
+[114/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_constraint.cc.o
+[115/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_constraintguide.cc.o
+[116/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_constraintlayout.cc.o
+[117/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_constrainttarget.cc.o
+[118/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_csslocation.cc.o
+[119/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_cssprovider.cc.o
+[120/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_csssection.cc.o
+[121/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_dialog.cc.o
+[122/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_directorylist.cc.o
+[123/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_dragicon.cc.o
+[124/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_dragsource.cc.o
+[125/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_drawingarea.cc.o
+[126/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_dropcontrollermotion.cc.o
+[127/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_dropdown.cc.o
+[128/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_droptarget.cc.o
+[129/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_droptargetasync.cc.o
+[130/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_editable.cc.o
+[131/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_editablelabel.cc.o
+[132/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_emojichooser.cc.o
+[133/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_entrybuffer.cc.o
+[134/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_enumlist.cc.o
+[135/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_entry.cc.o
+[136/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_enumlistitem.cc.o
+[137/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_enums.cc.o
+[138/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_error.cc.o
+[139/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_eventcontroller.cc.o
+[140/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_eventcontrollerfocus.cc.o
+[141/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_eventcontrollerkey.cc.o
+[142/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_eventcontrollerlegacy.cc.o
+[143/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_eventcontrollermotion.cc.o
+[144/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_eventcontrollerscroll.cc.o
+[145/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_expander.cc.o
+[146/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_expression.cc.o
+[147/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_expressionwatch.cc.o
+[148/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_filefilter.cc.o
+[149/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_filelauncher.cc.o
+[150/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_filedialog.cc.o
+[151/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_filter.cc.o
+[152/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_filterlistmodel.cc.o
+[153/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_fixed.cc.o
+[154/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_fixedlayout.cc.o
+[155/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_flowbox.cc.o
+FAILED: [code=1] gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_flowbox.cc.o 
+c++ -Igtk/gtkmm/libgtkmm-4.0.so.0.0.0.p -Igtk -I../gtk -I../untracked/gtk -Igdk -I../gdk -I../untracked/gdk -Igsk -I../gsk -I../untracked/gsk -I/usr/include/giomm-2.68 -I/usr/lib/giomm-2.68/include -I/usr/include/glibmm-2.68 -I/usr/lib/glibmm-2.68/include -I/usr/include/sigc++-3.0 -I/usr/lib/sigc++-3.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib/graphene-1.0/include -I/usr/include/cairomm-1.16 -I/usr/lib/cairomm-1.16/include -I/usr/include/pangomm-2.48 -I/usr/lib/pangomm-2.48/include -I/usr/include/gtk-4.0/unix-print -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O3 -fPIC -mfpmath=sse -msse -msse2 -pthread -mfpmath=sse -msse -msse2 -DGTKMM_BUILD=1 -MD -MQ gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_flowbox.cc.o -MF gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_flowbox.cc.o.d -o gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_flowbox.cc.o -c ../untracked/gtk/gtkmm/flowbox.cc
+In file included from gsk/gskmmconfig.h:4,
+                 from gtk/gtkmmconfig.h:4,
+                 from ../untracked/gtk/gtkmm/widget.h:5,
+                 from ../untracked/gtk/gtkmm/flowbox.h:25,
+                 from ../untracked/gtk/gtkmm/flowbox.cc:6:
+gdk/gdkmmconfig.h:4:10: fatal error: pangommconfig.h: No such file or directory
+    4 | #include <pangommconfig.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+[156/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_fixedlayoutchild.cc.o
+[157/450] Compiling C++ object gtk/gtkmm/libgtkmm-4.0.so.0.0.0.p/.._.._untracked_gtk_gtkmm_flattenlistmodel.cc.o
+ninja: build stopped: subcommand failed.
+[ERROR] Build script failed for gtkmm.
+Building custom package pkgconf...
+[10:39:53] Found custom package for pkgconf, bypassing BLFS aliases.
+[10:39:53] Custom package detected at /home/fusion809/lfs_packaging/pkgconf
+[10:39:53] Extracting dependencies for custom package 'pkgconf'...
+[10:39:53] Required deps: bash coreutils glibc meson ninja tar xz 
+[10:39:53] Dependency 'bash' already installed.
+[10:39:54] Dependency 'coreutils' already installed.
+[10:39:55] Dependency 'glibc' already installed.
+[10:39:55] Dependency 'meson' already installed.
+[10:39:55] Dependency 'ninja' already installed.
+[10:39:56] Dependency 'tar' already installed.
+[10:39:56] Dependency 'xz' already installed.
+[10:39:56] Starting remote custom build for pkgconf...
+--2026-10-16 10:40:15--  https://github.com/pkgconf/pkgconf/releases/download/pkgconf-3.0.9/pkgconf-3.0.9.tar.xz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/4180110/942aabbc-50f2-4751-b273-895f26ec34bd?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-16T01%3A23%3A19Z&rscd=attachment%3B+filename%3Dpkgconf-3.0.9.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-16T00%3A23%3A17Z&ske=2026-10-16T01%3A23%3A19Z&sks=b&skv=2018-11-09&sig=g5dxH%2BWGpQ2YJuNOeEFPqzGk4uYLTzcwEvCUH06U0j4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MjExMTUxNiwibmJmIjoxNzkyMTExMjE2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Vor913d8EIvRNLKqlsCm5g4PqsjjHXXnGBuauuXaXSQ&response-content-disposition=attachment%3B%20filename%3Dpkgconf-3.0.9.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2026-10-16 10:40:15--  https://release-assets.githubusercontent.com/github-production-release-asset/4180110/942aabbc-50f2-4751-b273-895f26ec34bd?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-16T01%3A23%3A19Z&rscd=attachment%3B+filename%3Dpkgconf-3.0.9.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-16T00%3A23%3A17Z&ske=2026-10-16T01%3A23%3A19Z&sks=b&skv=2018-11-09&sig=g5dxH%2BWGpQ2YJuNOeEFPqzGk4uYLTzcwEvCUH06U0j4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MjExMTUxNiwibmJmIjoxNzkyMTExMjE2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Vor913d8EIvRNLKqlsCm5g4PqsjjHXXnGBuauuXaXSQ&response-content-disposition=attachment%3B%20filename%3Dpkgconf-3.0.9.tar.xz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.108.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 429300 (419K) [application/octet-stream]
+Saving to: ‘pkgconf-3.0.9.tar.xz’
+
+pkgconf-3.0.9.tar.x   0%[                    ]       0  --.-KB/s               pkgconf-3.0.9.tar.x 100%[===================>] 419.24K  --.-KB/s    in 0.1s    
+
+2026-10-16 10:40:16 (3.46 MB/s) - ‘pkgconf-3.0.9.tar.xz’ saved [429300/429300]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9
+Build dir: /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/build
+Build type: native build
+Project name: pkgconf
+Project version: 3.0.8
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -Wdate-time: YES 
+Compiler for C supports arguments -Wformat=2: YES 
+Compiler for C supports arguments -Wimplicit-function-declaration: YES 
+Compiler for C supports arguments -Wmisleading-indentation: YES 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wmissing-variable-declarations: YES 
+Compiler for C supports arguments -Wnested-externs: YES 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Checking for function "getc_unlocked" : YES 
+Header "stdio.h" has symbol "getc_unlocked" : YES 
+Checking for function "strndup" : YES 
+Header "string.h" has symbol "strndup" : YES 
+Checking for function "strdup" : YES 
+Header "string.h" has symbol "strdup" : YES 
+Checking for function "strncasecmp" : YES 
+Header "strings.h" has symbol "strncasecmp" : YES 
+Checking for function "strcasecmp" : YES 
+Header "strings.h" has symbol "strcasecmp" : YES 
+Checking for function "reallocarray" : YES 
+Header "stdlib.h" has symbol "reallocarray" : YES 
+Checking for function "pledge" : NO 
+Checking for function "unveil" : NO 
+Checking for function "readlinkat" : YES 
+Header "unistd.h" has symbol "readlinkat" : YES 
+Checking for function "mkdtemp" : YES 
+Header "stdlib.h" has symbol "mkdtemp" : YES 
+Checking for function "nl_langinfo_l" : YES 
+Header "langinfo.h" has symbol "nl_langinfo_l" : YES 
+Configuring config.h using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.8
+Compiler for C supports link arguments -Wl,--wrap=calloc: YES 
+Build targets in project: 25
+
+pkgconf 3.0.8
+
+  User defined options
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_audit.c.o
+[2/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_argvsplit.c.o
+[3/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_bufferset.c.o
+[4/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_bsdstubs.c.o
+[5/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_buffer.c.o
+[6/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_bytecode.c.o
+[7/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_cache.c.o
+[8/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_fileio.c.o
+[9/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_client.c.o
+[10/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_dependency.c.o
+[11/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_output.c.o
+[12/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_license.c.o
+[13/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_parser.c.o
+[14/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_fragment.c.o
+[15/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_path.c.o
+[16/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_personality.c.o
+[17/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_queue.c.o
+[18/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_tuple.c.o
+[19/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_variable.c.o
+[20/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_version.c.o
+[21/66] Compiling C object pkgconf.p/cli_main.c.o
+[22/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_pkg.c.o
+[23/66] Linking target libpkgconf.so.8.0.0
+[24/66] Compiling C object pkgconf.p/cli_getopt_long.c.o
+[25/66] Compiling C object pkgconf.p/cli_renderer-msvc.c.o
+[26/66] Generating symbol file libpkgconf.so.8.0.0.p/libpkgconf.so.8.0.0.symbols
+[27/66] Compiling C object pkgconf.p/cli_core.c.o
+[28/66] Compiling C object bomtool.p/cli_getopt_long.c.o
+[29/66] Compiling C object spdxtool.p/cli_spdxtool_main.c.o
+[30/66] Compiling C object bomtool.p/cli_bomtool_main.c.o
+[31/66] Compiling C object spdxtool.p/cli_spdxtool_core.c.o
+[32/66] Compiling C object spdxtool.p/cli_spdxtool_software.c.o
+[33/66] Compiling C object spdxtool.p/cli_spdxtool_serialize.c.o
+[34/66] Compiling C object spdxtool.p/cli_spdxtool_simplelicensing.c.o
+[35/66] Compiling C object spdxtool.p/cli_spdxtool_generate.c.o
+[36/66] Compiling C object spdxtool.p/cli_spdxtool_util.c.o
+[37/66] Compiling C object spdxtool.p/cli_getopt_long.c.o
+[38/66] Compiling C object pccritic.p/cli_pccritic_main.c.o
+[39/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_argvsplit.c.o
+[40/66] Compiling C object pccritic.p/cli_getopt_long.c.o
+[41/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_audit.c.o
+[42/66] Compiling C object pccritic.p/cli_pccritic_critic.c.o
+[43/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_bufferset.c.o
+[44/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_bsdstubs.c.o
+[45/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_bytecode.c.o
+[46/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_cache.c.o
+[47/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_dependency.c.o
+[48/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_buffer.c.o
+[49/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_fileio.c.o
+[50/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_client.c.o
+[51/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_license.c.o
+[52/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_output.c.o
+[53/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_parser.c.o
+[54/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_personality.c.o
+[55/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_path.c.o
+[56/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_fragment.c.o
+[57/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_queue.c.o
+[58/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_tuple.c.o
+[59/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_version.c.o
+[60/66] Linking target pkgconf
+[61/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_variable.c.o
+[62/66] Linking target bomtool
+[63/66] Linking target spdxtool
+[64/66] Linking target pccritic
+[65/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_pkg.c.o
+[66/66] Linking static target libpkgconf-fault.a
+[0/1] Installing files
+Installing libpkgconf.so.8.0.0 to /usr/lib
+Installing pkgconf to /usr/bin
+Installing bomtool to /usr/bin
+Installing spdxtool to /usr/bin
+Installing pccritic to /usr/bin
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/libpkgconf/libpkgconf.h to /usr/include/pkgconf/libpkgconf
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/libpkgconf/stdinc.h to /usr/include/pkgconf/libpkgconf
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/libpkgconf/iter.h to /usr/include/pkgconf/libpkgconf
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/libpkgconf/bsdstubs.h to /usr/include/pkgconf/libpkgconf
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/libpkgconf/libpkgconf-api.h to /usr/include/pkgconf/libpkgconf
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/man/bomtool.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/man/pkgconf.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/man/pkg.m4.7 to /usr/share/man/man7
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/man/pc.5 to /usr/share/man/man5
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/man/pkgconf-personality.5 to /usr/share/man/man5
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/man/spdxtool.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/man/pccritic.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/build/meson-private/libpkgconf.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/pkg.m4 to /usr/share/aclocal
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/AUTHORS to /usr/share/doc/pkgconf
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/README.md to /usr/share/doc/pkgconf
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.9/COPYING to /usr/share/doc/pkgconf
+Installing symlink pointing to libpkgconf.so.8.0.0 to /usr/lib/libpkgconf.so.8
+Installing symlink pointing to libpkgconf.so.8 to /usr/lib/libpkgconf.so
+3.0.9
+Updated registry for pkgconf to version 3.0.9
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package pkgconf in /var/lib/custom-packages/
+Building custom package polkit...
+[10:41:19] Found custom package for polkit, bypassing BLFS aliases.
+[10:41:19] Custom package detected at /home/fusion809/lfs_packaging/polkit
+[10:41:19] Extracting dependencies for custom package 'polkit'...
+[10:41:19] Required deps: duktape expat glib2 glibc libffi libxslt linux-pam pcre2 systemd util-linux zlib 
+[10:41:19] Dependency 'duktape' already installed.
+[10:41:19] Dependency 'expat' already installed.
+[10:41:20] Dependency 'glib2' already installed.
+[10:41:20] Dependency 'glibc' already installed.
+[10:41:20] Dependency 'libffi' already installed.
+[10:41:20] Dependency 'libxslt' already installed.
+[10:41:20] Dependency 'linux-pam' already installed.
+[10:41:20] Dependency 'pcre2' already installed.
+[10:41:21] Dependency 'systemd' already installed.
+[10:41:22] Dependency 'util-linux' already installed.
+[10:41:22] Dependency 'zlib' already installed.
+[10:41:22] Starting remote custom build for polkit...
+polkit-128.tar.gz is invalid or incomplete; removing it.
+--2026-10-16 10:41:34--  https://github.com/polkit-org/polkit/archive/128.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/polkit-org/polkit/tar.gz/refs/tags/128 [following]
+--2026-10-16 10:41:35--  https://codeload.github.com/polkit-org/polkit/tar.gz/refs/tags/128
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘polkit-128.tar.gz’
+
+polkit-128.tar.gz       [<=>                 ]       0  --.-KB/s               polkit-128.tar.gz       [ <=>                ] 500.19K  3.05MB/s    in 0.2s    
+
+2026-10-16 10:41:35 (3.05 MB/s) - ‘polkit-128.tar.gz’ saved [512196]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+meson_args: <-D>
+meson_args: <man=false>
+meson_args: <-D>
+meson_args: <session_tracking=logind>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <-D> <man=false> <-D> <session_tracking=logind> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/polkit/polkit-128
+Build dir: /home/fusion809/lfs_packaging/polkit/polkit-128/build
+Build type: native build
+Project name: polkit
+Project version: 128
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Checking for function "clearenv" : YES 
+Checking for function "fdatasync" : YES 
+Checking for function "setnetgrent" : YES 
+Compiler for C supports arguments -Wno-format-y2k: YES 
+Compiler for C supports arguments -Wno-declaration-after-statement: YES 
+Compiler for C supports arguments -Wno-unused-result: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.8
+Run-time dependency gio-2.0 found: YES 2.90.1
+Run-time dependency gio-unix-2.0 found: YES 2.90.1
+Run-time dependency glib-2.0 found: YES 2.90.1
+Run-time dependency gobject-2.0 found: YES 2.90.1
+Run-time dependency expat found: YES 2.9.0
+Has header "expat.h" with dependency expat: YES 
+Checking for function "XML_ParserCreate" with dependency expat: YES 
+Run-time dependency duktape found: YES 2.7.0
+Library m found: YES
+Run-time dependency threads found: YES
+Checking for function "pthread_condattr_setclock" : NO 
+Run-time dependency dbus-1 found: YES 1.16.2
+Has header "netgroup.h" : NO 
+Checking if "setnetgrent return support" compiles: YES 
+Run-time dependency libsystemd found: YES 262
+Checking for function "sd_uid_get_display" with dependency libsystemd: YES 
+Checking for function "sd_pidfd_get_session" with dependency libsystemd: YES 
+Fetching value of define "SYS_pidfd_open" : 434 
+Run-time dependency systemd found: YES 262
+Library pam found: YES
+Checking for function "pam_start" with dependency -lpam: YES 
+Message: how to call pam_strerror: unknown
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Configuring config.h using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Configuring org.freedesktop.PolicyKit1.service using configuration
+Configuring org.freedesktop.PolicyKit1.conf using configuration
+Configuring polkit-1 using configuration
+Configuring polkit.service using configuration
+Configuring polkit-agent-helper@.service using configuration
+Configuring polkit.conf using configuration
+Configuring polkit-tmpfiles.conf using configuration
+Compiler for C supports link arguments -Wl,--version-script,/home/fusion809/lfs_packaging/polkit/polkit-128/src/symbol.map: YES 
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.8
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.8
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-genmarshal found: YES (/usr/bin/glib-genmarshal)
+Program perl found: YES (/usr/bin/perl)
+Configuring 50-default.rules using configuration
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Message: 
+        polkit 128
+        ============
+
+        prefix:                   /usr
+        datadir:                  share
+
+        includedir:               include
+        libdir:                   lib
+        sysconfdir:               /etc
+        source code location:     /home/fusion809/lfs_packaging/polkit/polkit-128
+        compiler:                 gcc
+        c_flags:                  -Wno-format-y2k -Wno-declaration-after-statement -Wno-unused-result
+
+        introspection:            true
+        Distribution/OS:          lfs
+        Authentication framework: pam
+        Session tracking:         logind
+        system unit directory:    /usr/lib/systemd/system
+        sysusers.d directory:     /usr/lib/sysusers.d
+        tmpfiles.d directory:     /usr/lib/tmpfiles.d
+        polkitd user:             polkitd 
+        PAM support:              true
+
+        PAM file auth:            system-auth
+        PAM file acount:          system-account
+        PAM file password:        system-password
+        PAM file session:         system-session
+        PAM config location:      /usr/lib/pam.d
+
+        Building api docs:        false
+        Building man pages:       false
+        Building examples:        false
+        Building tests:           false
+Build targets in project: 52
+
+polkit 128
+
+  User defined options
+    buildtype       : release
+    man             : false
+    prefix          : /usr
+    session_tracking: logind
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/89] Generating glib marshaller header src/polkitagent/polkitagentmarshal_h
+[2/89] Generating GObject enum file src/polkit/polkitenumtypes.h (wrapped by meson because command contains newlines, to capture output)
+[3/89] Generating GObject enum file src/polkit/polkitenumtypes.c (wrapped by meson because command contains newlines, to capture output)
+[4/89] Generating GObject enum file src/polkitagent/polkitagentenumtypes.c (wrapped by meson because command contains newlines, to capture output)
+[5/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/meson-generated_.._polkitenumtypes.c.o
+[6/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitactiondescription.c.o
+[7/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitauthorityfeatures.c.o
+[8/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitauthorizationresult.c.o
+[9/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitcheckauthorizationflags.c.o
+[10/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkiterror.c.o
+[11/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitdetails.c.o
+[12/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitauthority.c.o
+[13/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitimplicitauthorization.c.o
+[14/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitidentity.c.o
+[15/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitpermission.c.o
+[16/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkittemporaryauthorization.c.o
+[17/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitsystembusname.c.o
+[18/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitsubject.c.o
+[19/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitunixgroup.c.o
+[20/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitunixnetgroup.c.o
+[21/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitunixuser.c.o
+[22/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitunixsession-systemd.c.o
+[23/89] Compiling C object src/polkit/libpolkit-gobject-1.so.0.0.0.p/polkitunixprocess.c.o
+[24/89] Generating glib marshaller source src/polkitagent/polkitagentmarshal_c
+[25/89] Generating GObject enum file src/polkitagent/polkitagentenumtypes.h (wrapped by meson because command contains newlines, to capture output)
+[26/89] Linking target src/polkit/libpolkit-gobject-1.so.0.0.0
+[27/89] Generating src/polkitbackend/initjs.h with a custom command (wrapped by meson to capture output)
+[28/89] Generating symbol file src/polkit/libpolkit-gobject-1.so.0.0.0.p/libpolkit-gobject-1.so.0.0.0.symbols
+[29/89] Compiling C object src/polkitagent/libpolkit-agent-1.so.0.0.0.p/meson-generated_.._polkitagentmarshal.c.o
+[30/89] Compiling C object src/polkitagent/libpolkit-agent-1.so.0.0.0.p/meson-generated_.._polkitagentenumtypes.c.o
+[31/89] Compiling C object src/polkitagent/libpolkit-agent-1.so.0.0.0.p/polkitagentlistener.c.o
+[32/89] Compiling C object src/polkitagent/libpolkit-agent-1.so.0.0.0.p/polkitagentsession.c.o
+[33/89] Compiling C object src/polkitagent/libpolkit-agent-1.so.0.0.0.p/polkitagenttextlistener.c.o
+[34/89] Linking target src/polkitagent/libpolkit-agent-1.so.0.0.0
+[35/89] Compiling C object src/polkitbackend/libpolkit-backend-1.a.p/polkitbackendactionlookup.c.o
+[36/89] Compiling C object src/polkitbackend/libpolkit-backend-1.a.p/polkitbackendactionpool.c.o
+../src/polkitbackend/polkitbackendactionpool.c: In function ‘_start’:
+../src/polkitbackend/polkitbackendactionpool.c:875:7: warning: ‘XML_GetCurrentLineNumber’ is deprecated: please use XML_GetCurrentLineNumber64 instead [-Wdeprecated-declarations]
+  875 |       g_warning ("skipping unknown tag <%s> at line %d",
+      |       ^~~~~~~~~
+In file included from ../src/polkitbackend/polkitbackendactionpool.c:25:
+/usr/include/expat.h:965:23: note: declared here
+  965 | XMLPARSEAPI(XML_Size) XML_GetCurrentLineNumber(XML_Parser parser);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/polkitbackend/polkitbackendactionpool.c: In function ‘process_policy_file’:
+../src/polkitbackend/polkitbackendactionpool.c:1167:24: warning: ‘XML_GetCurrentLineNumber’ is deprecated: please use XML_GetCurrentLineNumber64 instead [-Wdeprecated-declarations]
+ 1167 |                        (int) XML_GetCurrentLineNumber (pd.parser),
+      |                        ^
+/usr/include/expat.h:965:23: note: declared here
+  965 | XMLPARSEAPI(XML_Size) XML_GetCurrentLineNumber(XML_Parser parser);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~
+[37/89] Compiling C object src/polkitbackend/libpolkit-backend-1.a.p/polkitbackendauthority.c.o
+[38/89] Compiling C object src/polkitbackend/libpolkit-backend-1.a.p/polkitbackendcommon.c.o
+[39/89] Generating src/polkit/Polkit-1.0.gir with a custom command (wrapped by meson to set env)
+[40/89] Compiling C object src/polkitbackend/libpolkit-backend-1.a.p/polkitbackendsessionmonitor-systemd.c.o
+[41/89] Generating symbol file src/polkitagent/libpolkit-agent-1.so.0.0.0.p/libpolkit-agent-1.so.0.0.0.symbols
+[42/89] Compiling C object src/polkitbackend/libpolkit-backend-1.a.p/polkitbackendduktapeauthority.c.o
+[43/89] Compiling C object src/polkitbackend/libpolkit-backend-1.a.p/polkitbackendinteractiveauthority.c.o
+[44/89] Compiling C object src/polkitagent/polkit-agent-helper-1.p/polkitagenthelperprivate.c.o
+[45/89] Linking static target src/polkitbackend/libpolkit-backend-1.a
+[46/89] Compiling C object src/polkitagent/polkit-agent-helper-1.p/polkitagenthelper-pam.c.o
+[47/89] Compiling C object src/polkitbackend/polkitd.p/polkitd.c.o
+[48/89] Compiling C object src/programs/pkexec.p/pkexec.c.o
+[49/89] Compiling C object src/programs/pkcheck.p/pkcheck.c.o
+[50/89] Generating src/polkitagent/PolkitAgent-1.0.gir with a custom command (wrapped by meson to set env)
+[51/89] Compiling C object src/programs/pkaction.p/pkaction.c.o
+[52/89] Generating src/polkit/Polkit-1.0.typelib with a custom command
+[53/89] Compiling C object src/programs/pkttyagent.p/pkttyagent.c.o
+[54/89] Merging translations for actions/org.freedesktop.policykit.policy
+[55/89] Linking target src/polkitagent/polkit-agent-helper-1
+[56/89] Linking target src/polkitbackend/polkitd
+[57/89] Linking target src/programs/pkexec
+[58/89] Linking target src/programs/pkaction
+[59/89] Linking target src/programs/pkcheck
+[60/89] Building translation po/bg/LC_MESSAGES/polkit-1-bg.mo
+[61/89] Building translation po/cs/LC_MESSAGES/polkit-1-cs.mo
+[62/89] Building translation po/da/LC_MESSAGES/polkit-1-da.mo
+[63/89] Building translation po/de/LC_MESSAGES/polkit-1-de.mo
+[64/89] Linking target src/programs/pkttyagent
+[65/89] Generating src/polkitagent/PolkitAgent-1.0.typelib with a custom command
+[66/89] Building translation po/hr/LC_MESSAGES/polkit-1-hr.mo
+[67/89] Building translation po/hi/LC_MESSAGES/polkit-1-hi.mo
+[68/89] Building translation po/hu/LC_MESSAGES/polkit-1-hu.mo
+[69/89] Building translation po/id/LC_MESSAGES/polkit-1-id.mo
+[70/89] Building translation po/it/LC_MESSAGES/polkit-1-it.mo
+[71/89] Building translation po/ka/LC_MESSAGES/polkit-1-ka.mo
+[72/89] Building translation po/kk/LC_MESSAGES/polkit-1-kk.mo
+[73/89] Building translation po/nl/LC_MESSAGES/polkit-1-nl.mo
+[74/89] Building translation po/nn/LC_MESSAGES/polkit-1-nn.mo
+[75/89] Building translation po/oc/LC_MESSAGES/polkit-1-oc.mo
+[76/89] Building translation po/pl/LC_MESSAGES/polkit-1-pl.mo
+[77/89] Building translation po/pt/LC_MESSAGES/polkit-1-pt.mo
+[78/89] Building translation po/pt_BR/LC_MESSAGES/polkit-1-pt_BR.mo
+[79/89] Building translation po/ro/LC_MESSAGES/polkit-1-ro.mo
+[80/89] Building translation po/ru/LC_MESSAGES/polkit-1-ru.mo
+[81/89] Building translation po/sk/LC_MESSAGES/polkit-1-sk.mo
+[82/89] Building translation po/sl/LC_MESSAGES/polkit-1-sl.mo
+[83/89] Building translation po/sr/LC_MESSAGES/polkit-1-sr.mo
+[84/89] Building translation po/sr@latin/LC_MESSAGES/polkit-1-sr@latin.mo
+[85/89] Building translation po/sv/LC_MESSAGES/polkit-1-sv.mo
+[86/89] Building translation po/tr/LC_MESSAGES/polkit-1-tr.mo
+[87/89] Building translation po/uk/LC_MESSAGES/polkit-1-uk.mo
+[88/89] Building translation po/zh_CN/LC_MESSAGES/polkit-1-zh_CN.mo
+[89/89] Building translation po/zh_TW/LC_MESSAGES/polkit-1-zh_TW.mo
+[0/1] Installing files
+Installing actions/org.freedesktop.policykit.policy to /usr/share/polkit-1/actions
+Installing src/polkit/polkitenumtypes.h to /usr/include/polkit-1/polkit
+Installing src/polkit/libpolkit-gobject-1.so.0.0.0 to /usr/lib
+Installing src/polkit/Polkit-1.0.gir to /usr/share/gir-1.0
+Installing src/polkit/Polkit-1.0.typelib to /usr/lib/girepository-1.0
+Installing src/polkitagent/polkitagentenumtypes.h to /usr/include/polkit-1/polkitagent
+Installing src/polkitagent/libpolkit-agent-1.so.0.0.0 to /usr/lib
+Installing src/polkitagent/PolkitAgent-1.0.gir to /usr/share/gir-1.0
+Installing src/polkitagent/PolkitAgent-1.0.typelib to /usr/lib/girepository-1.0
+Installing src/polkitagent/polkit-agent-helper-1 to /usr/lib/polkit-1
+Installing src/polkitbackend/polkitd to /usr/lib/polkit-1
+Installing src/programs/pkexec to /usr/bin
+Installing src/programs/pkcheck to /usr/bin
+Installing src/programs/pkaction to /usr/bin
+Installing src/programs/pkttyagent to /usr/bin
+Installing po/bg/LC_MESSAGES/polkit-1.mo to /usr/share/locale/bg/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/polkit-1.mo to /usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/polkit-1.mo to /usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/polkit-1.mo to /usr/share/locale/de/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/polkit-1.mo to /usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/polkit-1.mo to /usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/polkit-1.mo to /usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/polkit-1.mo to /usr/share/locale/id/LC_MESSAGES
+Installing po/it/LC_MESSAGES/polkit-1.mo to /usr/share/locale/it/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/polkit-1.mo to /usr/share/locale/ka/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/polkit-1.mo to /usr/share/locale/kk/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/polkit-1.mo to /usr/share/locale/nl/LC_MESSAGES
+Installing po/nn/LC_MESSAGES/polkit-1.mo to /usr/share/locale/nn/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/polkit-1.mo to /usr/share/locale/oc/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/polkit-1.mo to /usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/polkit-1.mo to /usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/polkit-1.mo to /usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/polkit-1.mo to /usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/polkit-1.mo to /usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/polkit-1.mo to /usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/polkit-1.mo to /usr/share/locale/sl/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/polkit-1.mo to /usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/polkit-1.mo to /usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/polkit-1.mo to /usr/share/locale/sv/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/polkit-1.mo to /usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/polkit-1.mo to /usr/share/locale/uk/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/polkit-1.mo to /usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/polkit-1.mo to /usr/share/locale/zh_TW/LC_MESSAGES
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitauthorityfeatures.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitcheckauthorizationflags.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkiterror.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitimplicitauthorization.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitactiondescription.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitauthority.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitauthorizationresult.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitdetails.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkit.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitidentity.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitpermission.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitsubject.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitsystembusname.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkittemporaryauthorization.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitunixgroup.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitunixnetgroup.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitunixprocess.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitunixsession.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitunixuser.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkitprivate.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkit/polkittypes.h to /usr/include/polkit-1/polkit
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkitagent/polkitagentlistener.h to /usr/include/polkit-1/polkitagent
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkitagent/polkitagent.h to /usr/include/polkit-1/polkitagent
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkitagent/polkitagentsession.h to /usr/include/polkit-1/polkitagent
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkitagent/polkitagenttextlistener.h to /usr/include/polkit-1/polkitagent
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/src/polkitagent/polkitagenttypes.h to /usr/include/polkit-1/polkitagent
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/gettext/its/polkit.its to /usr/share/gettext/its
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/gettext/its/polkit.loc to /usr/share/gettext/its
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/build/data/org.freedesktop.PolicyKit1.service to /usr/share/dbus-1/system-services
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/build/data/org.freedesktop.PolicyKit1.conf to /usr/share/dbus-1/system.d
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/build/data/polkit-1 to /usr/lib/pam.d
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/build/data/polkit.service to /usr/lib/systemd/system
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/build/data/polkit-agent-helper@.service to /usr/lib/systemd/system
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/data/polkit-agent-helper.socket to /usr/lib/systemd/system
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/build/data/polkit.conf to /usr/lib/sysusers.d
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/data/policyconfig-1.dtd to /usr/share/polkit-1
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/data/polkitd.conf to /usr/share/polkit-1
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/build/data/polkit-tmpfiles.conf to /usr/lib/tmpfiles.d
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/build/meson-private/polkit-gobject-1.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/build/meson-private/polkit-agent-1.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/polkit/polkit-128/build/src/polkitbackend/50-default.rules to /usr/share/polkit-1/rules.d
+Installing symlink pointing to libpolkit-gobject-1.so.0.0.0 to /usr/lib/libpolkit-gobject-1.so.0
+Installing symlink pointing to libpolkit-gobject-1.so.0 to /usr/lib/libpolkit-gobject-1.so
+Installing symlink pointing to libpolkit-agent-1.so.0.0.0 to /usr/lib/libpolkit-agent-1.so.0
+Installing symlink pointing to libpolkit-agent-1.so.0 to /usr/lib/libpolkit-agent-1.so
+Running custom install script '/usr/bin/python3.15 /home/fusion809/lfs_packaging/polkit/polkit-128/meson_post_install.py bin lib/polkit-1 /etc/polkit-1 polkitd'
+128
+Updated registry for polkit to version 128
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package polkit in /var/lib/custom-packages/
+Building custom package rust...
+[10:42:49] Found custom package for rust, bypassing BLFS aliases.
+[10:42:49] Custom package detected at /home/fusion809/lfs_packaging/rust
+[10:42:49] Extracting dependencies for custom package 'rust'...
+[10:42:50] Required deps: brotli cmake coreutils curl cyrus-sasl gcc glibc icu libffi libidn2 libpsl libunistring libxml2 llvm nghttp2 openldap openssl python zlib zstd 
+[10:42:50] Dependency 'brotli' already installed.
+[10:42:50] Dependency 'cmake' already installed.
+[10:42:50] Dependency 'coreutils' already installed.
+[10:42:50] Dependency 'curl' already installed.
+[10:42:50] Dependency 'cyrus-sasl' already installed.
+[10:42:50] Dependency 'gcc' already installed.
+[10:42:50] Dependency 'glibc' already installed.
+[10:42:51] Dependency 'icu' already installed.
+[10:42:51] Dependency 'libffi' already installed.
+[10:42:51] Dependency 'libidn2' already installed.
+[10:42:51] Dependency 'libpsl' already installed.
+[10:42:52] Dependency 'libunistring' already installed.
+[10:42:52] Dependency 'libxml2' already installed.
+[10:42:52] Dependency 'llvm' already installed.
+[10:42:52] Dependency 'nghttp2' already installed.
+[10:42:52] Dependency 'openldap' already installed.
+[10:42:53] Dependency 'openssl' already installed.
+[10:42:53] Dependency 'python' already installed.
+[10:42:53] Dependency 'zlib' already installed.
+[10:42:53] Dependency 'zstd' already installed.
+[10:42:53] Starting remote custom build for rust...
+rustc-1.99.1-src.tar.xz already present and appears valid.
+'/opt/rustc' -> 'rustc-1.99.1'
+     Locking 4 packages to highest compatible versions
+    Updating crossbeam-epoch v0.9.18 -> v0.9.20
+    Updating libc v0.2.186 -> v0.2.189
+    Updating memchr v2.8.2 -> v2.8.3
+    Updating rand v0.9.4 -> v0.9.5
+note: pass `--verbose` to see 1 unchanged dependencies behind latest
+downloading https://static.rust-lang.org/dist/2026-08-20/rust-std-1.98.0-x86_64-unknown-linux-gnu.tar.xz
+#                                                                          2.0%####                                                                       5.8%######                                                                     9.6%#########                                                                 13.4%############                                                              17.2%###############                                                           20.9%#################                                                         24.2%#####################                                                     29.5%#######################                                                   33.3%##########################                                                37.1%#############################                                             40.8%################################                                          44.6%##################################                                        47.6%####################################                                      50.0%#####################################                                     52.4%#######################################                                   54.8%##########################################                                58.6%############################################                              62.3%###############################################                           66.0%#################################################                         69.4%####################################################                      73.2%#######################################################                   76.7%#########################################################                 80.5%############################################################              84.2%###############################################################           88.0%##################################################################        91.8%####################################################################      95.6%#######################################################################   99.5%######################################################################## 100.0%
+downloading https://static.rust-lang.org/dist/2026-08-20/rustc-1.98.0-x86_64-unknown-linux-gnu.tar.xz
+                                                                           0.8%#                                                                          2.1%##                                                                         3.4%###                                                                        4.8%####                                                                       6.1%#####                                                                      7.4%######                                                                     8.8%#######                                                                   10.2%#######                                                                   10.7%#########                                                                 12.8%##########                                                                14.0%##########                                                                15.2%###########                                                               16.5%############                                                              17.8%#############                                                             19.2%##############                                                            20.7%###############                                                           22.1%################                                                          23.6%##################                                                        25.0%###################                                                       26.5%####################                                                      28.0%#####################                                                     29.4%######################                                                    30.9%#######################                                                   32.3%########################                                                  33.7%#########################                                                 35.1%##########################                                                36.5%###########################                                               37.9%############################                                              39.4%#############################                                             40.7%##############################                                            42.1%###############################                                           43.5%################################                                          44.9%#################################                                         46.1%##################################                                        48.5%###################################                                       49.5%####################################                                      50.5%#####################################                                     51.7%#####################################                                     52.8%#######################################                                   54.2%########################################                                  55.6%#########################################                                 57.1%#########################################                                 58.3%##########################################                                59.7%###########################################                               60.9%############################################                              62.3%#############################################                             63.2%##############################################                            64.5%###############################################                           65.4%###############################################                           66.2%################################################                          67.2%################################################                          68.0%#################################################                         68.9%##################################################                        69.8%###################################################                       71.2%####################################################                      72.5%#####################################################                     73.7%######################################################                    75.1%#######################################################                   76.5%########################################################                  77.9%########################################################                  79.1%#########################################################                 80.5%##########################################################                81.9%###########################################################               83.1%############################################################              84.5%#############################################################             85.9%##############################################################            87.4%###############################################################           88.8%################################################################          90.2%#################################################################         91.5%##################################################################        92.7%###################################################################       94.1%####################################################################      95.6%#####################################################################     97.1%######################################################################    98.5%#######################################################################   99.9%######################################################################## 100.0%
+downloading https://static.rust-lang.org/dist/2026-08-20/cargo-1.98.0-x86_64-unknown-linux-gnu.tar.xz
+###                                                                        5.2%########                                                                  12.1%###################                                                       27.4%##########################                                                37.2%#################################                                         46.9%########################################                                  56.4%###############################################                           66.4%######################################################                    76.4%##############################################################            86.3%#####################################################################     96.3%######################################################################## 100.0%
+extracting /home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/build/cache/2026-08-20/rust-std-1.98.0-x86_64-unknown-linux-gnu.tar.xz
+extracting /home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/build/cache/2026-08-20/rustc-1.98.0-x86_64-unknown-linux-gnu.tar.xz
+extracting /home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/build/cache/2026-08-20/cargo-1.98.0-x86_64-unknown-linux-gnu.tar.xz
+Building bootstrap
+   Compiling libc v0.2.186
+   Compiling memchr v2.7.6
+   Compiling proc-macro2 v1.0.89
+   Compiling typenum v1.17.0
+   Compiling version_check v0.9.5
+   Compiling unicode-ident v1.0.13
+   Compiling generic-array v0.14.7
+   Compiling find-msvc-tools v0.1.9
+   Compiling cfg-if v1.0.0
+   Compiling shlex v1.3.0
+   Compiling cc v1.2.62
+   Compiling quote v1.0.37
+   Compiling aho-corasick v1.1.3
+   Compiling regex-syntax v0.8.5
+   Compiling crossbeam-utils v0.8.20
+   Compiling regex-automata v0.4.9
+   Compiling syn v2.0.87
+   Compiling serde v1.0.215
+   Compiling getrandom v0.3.2
+   Compiling pkg-config v0.3.31
+   Compiling rustix v1.1.4
+   Compiling lzma-sys v0.1.20
+   Compiling heck v0.5.0
+   Compiling linux-raw-sys v0.12.1
+   Compiling bstr v1.10.0
+   Compiling anstyle v1.0.10
+   Compiling bitflags v2.6.0
+   Compiling clap_lex v0.7.2
+   Compiling clap_builder v4.5.20
+   Compiling clap_derive v4.5.18
+   Compiling crossbeam-epoch v0.9.18
+   Compiling crypto-common v0.1.6
+   Compiling block-buffer v0.10.4
+   Compiling same-file v1.0.6
+   Compiling fastrand v2.3.0
+   Compiling semver v1.0.23
+   Compiling once_cell v1.20.2
+   Compiling object v0.38.1
+   Compiling log v0.4.22
+   Compiling serde_json v1.0.132
+   Compiling globset v0.4.15
+   Compiling tempfile v3.27.0
+   Compiling walkdir v2.5.0
+   Compiling digest v0.10.7
+   Compiling clap v4.5.20
+   Compiling crossbeam-deque v0.8.5
+   Compiling filetime v0.2.27
+   Compiling cpufeatures v0.2.15
+   Compiling ryu v1.0.18
+   Compiling itoa v1.0.11
+   Compiling bootstrap v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/bootstrap)
+   Compiling sha2 v0.10.8
+   Compiling ignore v0.4.23
+   Compiling tar v0.4.46
+   Compiling toml v0.5.11
+   Compiling clap_complete v4.5.37
+   Compiling xz2 v0.1.7
+   Compiling shim_utils v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/shim_utils)
+   Compiling serde_derive v1.0.215
+   Compiling opener v0.8.4
+   Compiling cmake v0.1.54
+   Compiling termcolor v1.4.1
+   Compiling home v0.5.12
+   Compiling build_helper v0.1.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/build_helper)
+    Finished `dev` profile [unoptimized] target(s) in 2m 07s
+There have been changes to x.py since you last updated:
+  [WARNING] The `override-allocator` option has been renamed: The global setting is now `build.allocator` and the per-target setting is `target.<target>.allocator`. It can now be set to 'system' to explicitly request the system allocator.
+    - PR Link https://github.com/rust-lang/rust/pull/160100
+NOTE: to silence this warning, update `bootstrap.toml` to use `change-id = 160100` or `change-id = "ignore"` instead
+Building stage1 compiler artifacts (stage0 -> stage1, x86_64-unknown-linux-gnu)
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.45
+   Compiling cfg-if v1.0.4
+   Compiling libc v0.2.183
+   Compiling stable_deref_trait v1.2.1
+   Compiling memchr v2.8.0
+   Compiling syn v2.0.117
+   Compiling smallvec v1.15.1
+   Compiling bitflags v2.10.0
+   Compiling thiserror v2.0.17
+   Compiling once_cell v1.21.3
+   Compiling version_check v0.9.5
+   Compiling getrandom v0.3.3
+   Compiling generic-array v0.14.7
+   Compiling tracing-core v0.1.36
+   Compiling equivalent v1.0.2
+   Compiling parking_lot_core v0.9.12
+   Compiling hashbrown v0.17.0
+   Compiling shlex v1.3.0
+   Compiling log v0.4.28
+   Compiling scopeguard v1.2.0
+   Compiling typenum v1.20.0
+   Compiling indexmap v2.14.0
+   Compiling lock_api v0.4.14
+   Compiling cc v1.2.16
+   Compiling synstructure v0.13.2
+   Compiling crossbeam-utils v0.8.21
+   Compiling pin-project-lite v0.2.16
+   Compiling itoa v1.0.15
+   Compiling rustc-hash v2.1.1
+   Compiling type-map v0.5.1
+   Compiling parking_lot v0.12.5
+   Compiling crossbeam-epoch v0.9.20
+   Compiling displaydoc v0.2.5
+   Compiling zerofrom-derive v0.1.6
+   Compiling yoke-derive v0.8.2
+   Compiling tinystr v0.8.3
+   Compiling unic-langid-impl v0.9.6
+   Compiling zerovec-derive v0.11.3
+   Compiling thiserror-impl v2.0.17
+   Compiling zerofrom v0.1.6
+   Compiling yoke v0.8.2
+   Compiling unic-langid v0.9.6
+   Compiling tracing-attributes v0.1.31
+   Compiling zerovec v0.11.6
+   Compiling serde_core v1.0.228
+   Compiling tracing v0.1.44
+   Compiling rustix v1.1.2
+   Compiling fluent-syntax v0.12.0
+   Compiling intl-memoizer v0.5.3
+   Compiling fluent-langneg v0.13.1
+   Compiling intl_pluralrules v7.0.2
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.7
+   Compiling linux-raw-sys v0.11.0
+   Compiling rustc-stable-hash v0.1.2
+   Compiling self_cell v1.2.1
+   Compiling rustc_macros v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_macros)
+   Compiling fluent-bundle v0.16.0
+   Compiling rustc_hashes v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hashes)
+   Compiling digest v0.10.7
+   Compiling aho-corasick v1.1.4
+   Compiling rustc-hash v1.1.0
+   Compiling fastrand v2.3.0
+   Compiling proc-macro-hack v0.5.20+deprecated
+   Compiling thin-vec v0.2.19
+   Compiling regex-syntax v0.8.8
+   Compiling rustc_serialize v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_serialize)
+   Compiling tempfile v3.23.0
+   Compiling regex-automata v0.4.13
+   Compiling crossbeam-deque v0.8.6
+   Compiling rustc_index_macros v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_index_macros)
+   Compiling blake3 v1.8.2
+   Compiling perf-event-open-sys v3.0.0
+   Compiling memmap2 v0.2.3
+   Compiling serde v1.0.228
+   Compiling cpufeatures v0.2.17
+   Compiling either v1.15.0
+   Compiling arrayvec v0.7.6
+   Compiling unicode-width v0.2.2
+   Compiling measureme v12.0.3
+   Compiling rustc_index v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_index)
+   Compiling rustc_thread_pool v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_thread_pool)
+   Compiling serde_derive v1.0.228
+   Compiling ena v0.14.4
+   Compiling jobserver v0.1.34
+   Compiling rustc_arena v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_arena)
+   Compiling elsa v1.11.2
+   Compiling rustc_graphviz v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_graphviz)
+   Compiling writeable v0.6.2
+   Compiling constant_time_eq v0.3.1
+   Compiling arrayref v0.3.9
+   Compiling rustc_data_structures v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_data_structures)
+   Compiling unic-langid-macros-impl v0.9.6
+   Compiling sha2 v0.10.9
+   Compiling sha1 v0.10.6
+   Compiling md-5 v0.10.6
+   Compiling derive-where v1.6.1
+   Compiling scoped-tls v1.0.1
+   Compiling unic-langid-macros v0.9.6
+   Compiling litemap v0.8.1
+   Compiling serde_json v1.0.145
+   Compiling icu_locale_core v2.2.0
+   Compiling rustc_span v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_span)
+   Compiling zerotrie v0.2.4
+   Compiling icu_locale_data v2.2.0
+   Compiling ryu v1.0.20
+   Compiling icu_provider v2.2.0
+   Compiling potential_utf v0.1.4
+   Compiling utf8_iter v1.0.4
+   Compiling rustc-literal-escaper v0.0.8
+   Compiling icu_collections v2.2.0
+   Compiling zerocopy v0.8.27
+   Compiling ident_case v1.0.1
+   Compiling fnv v1.0.7
+   Compiling strsim v0.11.1
+   Compiling icu_locale v2.2.0
+   Compiling darling_core v0.20.11
+   Compiling icu_list v2.2.0
+   Compiling rustc_ast_ir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_ir)
+   Compiling rustc_ast v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast)
+   Compiling darling_macro v0.20.11
+   Compiling rustc_baked_icu_data v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_baked_icu_data)
+   Compiling rand_core v0.9.3
+   Compiling odht v0.3.1
+   Compiling utf8parse v0.2.2
+   Compiling anstyle v1.0.13
+   Compiling anstyle-parse v0.2.7
+   Compiling rustc_hir_id v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_id)
+   Compiling ppv-lite86 v0.2.21
+   Compiling rustc_error_messages v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_error_messages)
+   Compiling darling v0.20.11
+   Compiling crc32fast v1.5.0
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling anstyle-query v1.1.5
+   Compiling colorchoice v1.0.4
+   Compiling anstream v0.6.21
+   Compiling rustc_lint_defs v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_lint_defs)
+   Compiling derive_setters v0.1.8
+   Compiling rand_chacha v0.9.0
+   Compiling annotate-snippets v0.12.16
+   Compiling termize v0.2.1
+   Compiling foldhash v0.2.0
+   Compiling adler2 v2.0.1
+   Compiling rustc_error_codes v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_error_codes)
+   Compiling allocator-api2 v0.2.21
+   Compiling simd-adler32 v0.3.7
+   Compiling wasmparser v0.243.0
+   Compiling miniz_oxide v0.8.9
+   Compiling hashbrown v0.16.1
+   Compiling rustc_errors v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_errors)
+   Compiling rand v0.9.3
+   Compiling rand_xoshiro v0.7.0
+   Compiling object v0.38.1
+   Compiling twox-hash v2.1.2
+   Compiling ref-cast v1.0.25
+   Compiling ruzstd v0.8.2
+   Compiling flate2 v1.1.9
+   Compiling rustc_abi v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_abi)
+   Compiling ref-cast-impl v1.0.25
+   Compiling serde_derive_internals v0.29.1
+   Compiling unicode-properties v0.1.4
+   Compiling rustc_lexer v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_lexer)
+   Compiling schemars_derive v1.1.0
+   Compiling dyn-clone v1.0.20
+   Compiling schemars v1.1.0
+   Compiling rustc_fs_util v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_fs_util)
+   Compiling serde_path_to_error v0.1.20
+   Compiling rustc_ast_pretty v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_pretty)
+   Compiling rustc_feature v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_feature)
+   Compiling rustc_target v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_target)
+   Compiling getopts v0.2.24
+   Compiling rustc_type_ir_macros v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_type_ir_macros)
+   Compiling rustc_apfloat v0.2.3+llvm-462a31f5a5ab
+   Compiling rustc_type_ir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_type_ir)
+   Compiling datafrog v2.0.1
+   Compiling polonius-engine v0.13.0
+   Compiling gsgdt v0.1.2
+   Compiling itertools v0.15.0
+   Compiling rustc_attr_ir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_attr_ir)
+   Compiling tinyvec_macros v0.1.1
+   Compiling tinyvec v1.10.0
+   Compiling unicode-normalization v0.1.25
+   Compiling rustc_next_trait_solver v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_next_trait_solver)
+   Compiling rustc_session v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_session)
+   Compiling rustc_hir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir)
+   Compiling rustc_crate_store v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_crate_store)
+   Compiling rustc_middle v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_middle)
+   Compiling rustc_parse v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_parse)
+   Compiling rustc_parse_format v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_parse_format)
+   Compiling rustc_attr_parsing v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_attr_parsing)
+   Compiling rustc_infer v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_infer)
+   Compiling rustc_transmute v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_transmute)
+   Compiling rustc_hir_pretty v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_pretty)
+   Compiling rustc_trait_selection v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_trait_selection)
+   Compiling rustc_ast_passes v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_passes)
+   Compiling rustc_proc_macro v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_proc_macro)
+   Compiling regex v1.12.2
+   Compiling punycode v0.4.1
+   Compiling rustc-demangle v0.1.28
+   Compiling rustc_mir_dataflow v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_mir_dataflow)
+   Compiling rustc_symbol_mangling v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_symbol_mangling)
+   Compiling rustc_expand v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_expand)
+   Compiling object v0.37.3
+   Compiling libloading v0.8.9
+   Compiling gimli v0.33.0
+   Compiling rustc_metadata v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_metadata)
+   Compiling rustc_const_eval v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_const_eval)
+   Compiling rustc_ty_walk v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ty_walk)
+   Compiling rustc_llvm v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_llvm)
+   Compiling lazy_static v1.5.0
+   Compiling unicode-script v0.5.7
+   Compiling pulldown-cmark v0.11.3
+   Compiling cfg_aliases v0.2.1
+   Compiling static_assertions v1.1.0
+   Compiling leb128 v0.2.5
+   Compiling find-msvc-tools v0.1.5
+   Compiling rustc_windows_rc v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_windows_rc)
+   Compiling wasm-encoder v0.219.2
+   Compiling twox-hash v1.6.3
+   Compiling nix v0.30.1
+   Compiling unicode-security v0.1.2
+   Compiling sharded-slab v0.1.7
+   Compiling rustc_mir_transform v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_mir_transform)
+   Compiling ar_archive_writer v0.5.2
+   Compiling thorin-dwp v0.10.0
+   Compiling rustc_incremental v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_incremental)
+   Compiling tracing-serde v0.2.0
+   Compiling bstr v1.12.1
+   Compiling matchers v0.2.0
+   Compiling thread_local v1.1.9
+   Compiling nu-ansi-term v0.50.3
+   Compiling unicase v2.8.1
+   Compiling pulldown-cmark-escape v0.11.0
+   Compiling pathdiff v0.2.3
+   Compiling rustc_codegen_ssa v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_codegen_ssa)
+   Compiling tracing-subscriber v0.3.23
+   Compiling rustc_lint v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_lint)
+   Compiling rustc_sanitizers v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_sanitizers)
+   Compiling rustc_privacy v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_privacy)
+   Compiling rustc_hir_analysis v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_analysis)
+   Compiling rustc_pattern_analysis v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_pattern_analysis)
+   Compiling rustc_ast_lowering v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_lowering)
+   Compiling tracing-log v0.2.0
+   Compiling libloading v0.9.0
+   Compiling rustc_codegen_llvm v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_codegen_llvm)
+   Compiling rustc_hir_typeck v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_typeck)
+   Compiling rustc_passes v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_passes)
+   Compiling tracing-tree v0.4.1
+   Compiling rustc_mir_build v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_mir_build)
+   Compiling rustc_resolve v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_resolve)
+   Compiling rustc_ty_utils v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ty_utils)
+   Compiling rustc_builtin_macros v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_builtin_macros)
+   Compiling rustc_borrowck v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_borrowck)
+   Compiling rustc_monomorphize v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_monomorphize)
+   Compiling rustc_traits v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_traits)
+   Compiling rustc_public_bridge v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_public_bridge)
+   Compiling rustc_query_impl v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_query_impl)
+   Compiling rustc_public v0.1.0-preview (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_public)
+   Compiling ctrlc v3.5.1
+   Compiling rustc_log v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_log)
+   Compiling rustc_driver v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_driver)
+   Compiling jiff v0.2.16
+   Compiling rustc_interface v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_interface)
+   Compiling rustc_driver_impl v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_driver_impl)
+   Compiling rustc-main v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc)
+    Finished `release` profile [optimized] target(s) in 57m 42s
+Creating a sysroot for stage1 compiler (use `rustup toolchain link 'name' build/host/stage1`)
+Building stage1 library artifacts (stage1 -> stage1, x86_64-unknown-linux-gnu)
+   Compiling shlex v1.3.0
+   Compiling core v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/core)
+   Compiling libc v0.2.189
+   Compiling cc v1.2.0
+   Compiling object v0.39.1
+   Compiling std v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/std)
+   Compiling test v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/test)
+   Compiling compiler_builtins v0.1.160 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/compiler-builtins/compiler-builtins)
+   Compiling rustc-std-workspace-core v1.99.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/rustc-std-workspace-core)
+   Compiling alloc v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/alloc)
+   Compiling adler2 v2.0.1
+   Compiling memchr v2.8.3
+   Compiling unwind v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/unwind)
+   Compiling cfg-if v1.0.4
+   Compiling rustc-demangle v0.1.28
+   Compiling panic_abort v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/panic_abort)
+   Compiling rustc-literal-escaper v0.0.8
+   Compiling rustc-std-workspace-alloc v1.99.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/rustc-std-workspace-alloc)
+   Compiling panic_unwind v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/panic_unwind)
+   Compiling gimli v0.34.0
+   Compiling hashbrown v0.17.1
+   Compiling std_detect v0.1.5 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/std_detect)
+   Compiling miniz_oxide v0.9.1
+   Compiling addr2line v0.27.1
+   Compiling rustc-std-workspace-std v1.99.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/rustc-std-workspace-std)
+   Compiling proc_macro v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/proc_macro)
+   Compiling getopts v0.2.24
+   Compiling sysroot v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/sysroot)
+    Finished `dist` profile [optimized] target(s) in 3m 29s
+Building stage2 compiler artifacts (stage1 -> stage2, x86_64-unknown-linux-gnu)
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.45
+   Compiling cfg-if v1.0.4
+   Compiling libc v0.2.183
+   Compiling stable_deref_trait v1.2.1
+   Compiling memchr v2.8.0
+   Compiling syn v2.0.117
+   Compiling smallvec v1.15.1
+   Compiling bitflags v2.10.0
+   Compiling once_cell v1.21.3
+   Compiling thiserror v2.0.17
+   Compiling getrandom v0.3.3
+   Compiling version_check v0.9.5
+   Compiling tracing-core v0.1.36
+   Compiling generic-array v0.14.7
+   Compiling equivalent v1.0.2
+   Compiling parking_lot_core v0.9.12
+   Compiling scopeguard v1.2.0
+   Compiling shlex v1.3.0
+   Compiling hashbrown v0.17.0
+   Compiling log v0.4.28
+   Compiling typenum v1.20.0
+   Compiling indexmap v2.14.0
+   Compiling cc v1.2.16
+   Compiling lock_api v0.4.14
+   Compiling synstructure v0.13.2
+   Compiling pin-project-lite v0.2.16
+   Compiling rustc-hash v2.1.1
+   Compiling itoa v1.0.15
+   Compiling crossbeam-utils v0.8.21
+   Compiling type-map v0.5.1
+   Compiling parking_lot v0.12.5
+   Compiling serde_core v1.0.228
+   Compiling displaydoc v0.2.5
+   Compiling zerofrom-derive v0.1.6
+   Compiling tinystr v0.8.3
+   Compiling yoke-derive v0.8.2
+   Compiling unic-langid-impl v0.9.6
+   Compiling zerovec-derive v0.11.3
+   Compiling zerofrom v0.1.6
+   Compiling thiserror-impl v2.0.17
+   Compiling yoke v0.8.2
+   Compiling unic-langid v0.9.6
+   Compiling tracing-attributes v0.1.31
+   Compiling zerovec v0.11.6
+   Compiling tracing v0.1.44
+   Compiling crossbeam-epoch v0.9.20
+   Compiling rustix v1.1.2
+   Compiling fluent-syntax v0.12.0
+   Compiling fluent-langneg v0.13.1
+   Compiling intl_pluralrules v7.0.2
+   Compiling intl-memoizer v0.5.3
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.7
+   Compiling rustc_macros v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_macros)
+   Compiling linux-raw-sys v0.11.0
+   Compiling self_cell v1.2.1
+   Compiling rustc-stable-hash v0.1.2
+   Compiling fluent-bundle v0.16.0
+   Compiling rustc_hashes v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hashes)
+   Compiling digest v0.10.7
+   Compiling aho-corasick v1.1.4
+   Compiling proc-macro-hack v0.5.20+deprecated
+   Compiling thin-vec v0.2.19
+   Compiling fastrand v2.3.0
+   Compiling regex-syntax v0.8.8
+   Compiling rustc-hash v1.1.0
+   Compiling tempfile v3.23.0
+   Compiling rustc_serialize v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_serialize)
+   Compiling crossbeam-deque v0.8.6
+   Compiling rustc_index_macros v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_index_macros)
+   Compiling regex-automata v0.4.13
+   Compiling blake3 v1.8.2
+   Compiling memmap2 v0.2.3
+   Compiling perf-event-open-sys v3.0.0
+   Compiling either v1.15.0
+   Compiling arrayvec v0.7.6
+   Compiling unicode-width v0.2.2
+   Compiling cpufeatures v0.2.17
+   Compiling serde v1.0.228
+   Compiling measureme v12.0.3
+   Compiling rustc_index v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_index)
+   Compiling rustc_thread_pool v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_thread_pool)
+   Compiling serde_derive v1.0.228
+   Compiling ena v0.14.4
+   Compiling jobserver v0.1.34
+   Compiling rustc_arena v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_arena)
+   Compiling elsa v1.11.2
+   Compiling rustc_graphviz v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_graphviz)
+   Compiling constant_time_eq v0.3.1
+   Compiling arrayref v0.3.9
+   Compiling writeable v0.6.2
+   Compiling rustc_data_structures v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_data_structures)
+   Compiling unic-langid-macros-impl v0.9.6
+   Compiling sha2 v0.10.9
+   Compiling sha1 v0.10.6
+   Compiling md-5 v0.10.6
+   Compiling derive-where v1.6.1
+   Compiling scoped-tls v1.0.1
+   Compiling unic-langid-macros v0.9.6
+   Compiling serde_json v1.0.145
+   Compiling litemap v0.8.1
+   Compiling rustc_span v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_span)
+   Compiling icu_locale_core v2.2.0
+   Compiling zerotrie v0.2.4
+   Compiling icu_locale_data v2.2.0
+   Compiling ryu v1.0.20
+   Compiling icu_provider v2.2.0
+   Compiling potential_utf v0.1.4
+   Compiling rustc-literal-escaper v0.0.8
+   Compiling utf8_iter v1.0.4
+   Compiling icu_collections v2.2.0
+   Compiling fnv v1.0.7
+   Compiling strsim v0.11.1
+   Compiling ident_case v1.0.1
+   Compiling zerocopy v0.8.27
+   Compiling darling_core v0.20.11
+   Compiling icu_locale v2.2.0
+   Compiling icu_list v2.2.0
+   Compiling rustc_ast_ir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_ir)
+   Compiling rustc_ast v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast)
+   Compiling darling_macro v0.20.11
+   Compiling rustc_baked_icu_data v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_baked_icu_data)
+   Compiling rand_core v0.9.3
+   Compiling odht v0.3.1
+   Compiling anstyle v1.0.13
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-parse v0.2.7
+   Compiling rustc_hir_id v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_id)
+   Compiling rustc_error_messages v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_error_messages)
+   Compiling ppv-lite86 v0.2.21
+   Compiling darling v0.20.11
+   Compiling colorchoice v1.0.4
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling crc32fast v1.5.0
+   Compiling anstyle-query v1.1.5
+   Compiling anstream v0.6.21
+   Compiling rustc_lint_defs v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_lint_defs)
+   Compiling derive_setters v0.1.8
+   Compiling rand_chacha v0.9.0
+   Compiling annotate-snippets v0.12.16
+   Compiling termize v0.2.1
+   Compiling simd-adler32 v0.3.7
+   Compiling wasmparser v0.243.0
+   Compiling foldhash v0.2.0
+   Compiling rustc_error_codes v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_error_codes)
+   Compiling allocator-api2 v0.2.21
+   Compiling adler2 v2.0.1
+   Compiling miniz_oxide v0.8.9
+   Compiling hashbrown v0.16.1
+   Compiling rustc_errors v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_errors)
+   Compiling rand v0.9.3
+   Compiling rand_xoshiro v0.7.0
+   Compiling ref-cast v1.0.25
+   Compiling twox-hash v2.1.2
+   Compiling object v0.38.1
+   Compiling ruzstd v0.8.2
+   Compiling flate2 v1.1.9
+   Compiling rustc_abi v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_abi)
+   Compiling ref-cast-impl v1.0.25
+   Compiling serde_derive_internals v0.29.1
+   Compiling unicode-properties v0.1.4
+   Compiling rustc_lexer v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_lexer)
+   Compiling schemars_derive v1.1.0
+   Compiling dyn-clone v1.0.20
+   Compiling schemars v1.1.0
+   Compiling rustc_fs_util v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_fs_util)
+   Compiling serde_path_to_error v0.1.20
+   Compiling rustc_ast_pretty v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_pretty)
+   Compiling rustc_feature v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_feature)
+   Compiling rustc_target v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_target)
+   Compiling getopts v0.2.24
+   Compiling rustc_type_ir_macros v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_type_ir_macros)
+   Compiling rustc_apfloat v0.2.3+llvm-462a31f5a5ab
+   Compiling datafrog v2.0.1
+   Compiling polonius-engine v0.13.0
+   Compiling rustc_type_ir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_type_ir)
+   Compiling gsgdt v0.1.2
+   Compiling itertools v0.15.0
+   Compiling tinyvec_macros v0.1.1
+   Compiling tinyvec v1.10.0
+   Compiling unicode-normalization v0.1.25
+   Compiling rustc_parse_format v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_parse_format)
+   Compiling rustc_proc_macro v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_proc_macro)
+   Compiling regex v1.12.2
+   Compiling punycode v0.4.1
+   Compiling rustc-demangle v0.1.28
+   Compiling object v0.37.3
+   Compiling libloading v0.8.9
+   Compiling gimli v0.33.0
+   Compiling rustc_next_trait_solver v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_next_trait_solver)
+   Compiling rustc_llvm v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_llvm)
+   Compiling leb128 v0.2.5
+   Compiling static_assertions v1.1.0
+   Compiling lazy_static v1.5.0
+   Compiling cfg_aliases v0.2.1
+   Compiling pulldown-cmark v0.11.3
+   Compiling unicode-script v0.5.7
+   Compiling find-msvc-tools v0.1.5
+   Compiling rustc_windows_rc v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_windows_rc)
+   Compiling unicode-security v0.1.2
+   Compiling nix v0.30.1
+   Compiling sharded-slab v0.1.7
+   Compiling twox-hash v1.6.3
+   Compiling wasm-encoder v0.219.2
+   Compiling ar_archive_writer v0.5.2
+   Compiling rustc_attr_ir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_attr_ir)
+   Compiling rustc_session v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_session)
+   Compiling rustc_hir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir)
+   Compiling rustc_crate_store v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_crate_store)
+   Compiling rustc_parse v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_parse)
+   Compiling rustc_middle v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_middle)
+   Compiling rustc_attr_parsing v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_attr_parsing)
+   Compiling rustc_infer v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_infer)
+   Compiling rustc_transmute v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_transmute)
+   Compiling rustc_hir_pretty v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_pretty)
+   Compiling rustc_ast_passes v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_passes)
+   Compiling rustc_trait_selection v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_trait_selection)
+   Compiling rustc_expand v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_expand)
+   Compiling rustc_mir_dataflow v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_mir_dataflow)
+   Compiling rustc_symbol_mangling v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_symbol_mangling)
+   Compiling rustc_const_eval v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_const_eval)
+   Compiling rustc_metadata v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_metadata)
+   Compiling rustc_ty_walk v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ty_walk)
+   Compiling rustc_mir_transform v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_mir_transform)
+   Compiling rustc_incremental v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_incremental)
+   Compiling thorin-dwp v0.10.0
+   Compiling tracing-serde v0.2.0
+   Compiling matchers v0.2.0
+   Compiling bstr v1.12.1
+   Compiling thread_local v1.1.9
+   Compiling unicase v2.8.1
+   Compiling pulldown-cmark-escape v0.11.0
+   Compiling nu-ansi-term v0.50.3
+   Compiling pathdiff v0.2.3
+   Compiling rustc_codegen_ssa v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_codegen_ssa)
+   Compiling tracing-subscriber v0.3.23
+   Compiling rustc_privacy v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_privacy)
+   Compiling rustc_lint v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_lint)
+   Compiling rustc_sanitizers v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_sanitizers)
+   Compiling rustc_hir_analysis v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_analysis)
+   Compiling rustc_ast_lowering v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_lowering)
+   Compiling rustc_pattern_analysis v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_pattern_analysis)
+   Compiling tracing-log v0.2.0
+   Compiling libloading v0.9.0
+   Compiling rustc_codegen_llvm v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_codegen_llvm)
+   Compiling tracing-tree v0.4.1
+   Compiling rustc_mir_build v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_mir_build)
+   Compiling rustc_passes v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_passes)
+   Compiling rustc_hir_typeck v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_typeck)
+   Compiling rustc_resolve v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_resolve)
+   Compiling rustc_ty_utils v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ty_utils)
+   Compiling rustc_monomorphize v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_monomorphize)
+   Compiling rustc_borrowck v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_borrowck)
+   Compiling rustc_traits v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_traits)
+   Compiling rustc_builtin_macros v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_builtin_macros)
+   Compiling rustc_public_bridge v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_public_bridge)
+   Compiling rustc_query_impl v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_query_impl)
+   Compiling rustc_public v0.1.0-preview (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_public)
+   Compiling rustc_interface v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_interface)
+   Compiling ctrlc v3.5.1
+   Compiling rustc_log v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_log)
+   Compiling rustc_driver v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_driver)
+   Compiling jiff v0.2.16
+   Compiling rustc_driver_impl v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_driver_impl)
+   Compiling rustc-main v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc)
+    Finished `release` profile [optimized] target(s) in 124m 03s
+Creating a sysroot for stage2 compiler (use `rustup toolchain link 'name' build/host/stage2`)
+Uplifting library (stage1 -> stage2)
+Building stage2 cargo (stage1 -> stage2, x86_64-unknown-linux-gnu)
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.46
+   Compiling unicode-ident v1.0.24
+   Compiling libc v0.2.189
+   Compiling cfg-if v1.0.4
+   Compiling memchr v2.8.3
+   Compiling syn v2.0.118
+   Compiling aho-corasick v1.1.4
+   Compiling regex-syntax v0.8.11
+   Compiling regex-automata v0.4.14
+   Compiling typenum v1.20.1
+   Compiling smallvec v1.15.2
+   Compiling serde_core v1.0.228
+   Compiling version_check v0.9.5
+   Compiling thiserror v2.0.18
+   Compiling thiserror-impl v2.0.18
+   Compiling bstr v1.12.3
+   Compiling zeroize v1.9.0
+   Compiling stable_deref_trait v1.2.1
+   Compiling generic-array v0.14.9
+   Compiling bitflags v2.13.0
+   Compiling subtle v2.6.1
+   Compiling once_cell v1.21.4
+   Compiling crossbeam-utils v0.8.21
+   Compiling fastrand v2.4.1
+   Compiling const-oid v0.9.6
+   Compiling parking_lot_core v0.9.12
+   Compiling tinyvec_macros v0.1.1
+   Compiling gix-trace v0.1.20
+   Compiling tinyvec v1.11.0
+   Compiling gix-validate v0.11.2
+   Compiling scopeguard v1.2.0
+   Compiling unicode-normalization v0.1.25
+   Compiling lock_api v0.4.14
+   Compiling gix-path v0.12.1
+   Compiling gix-utils v0.3.3
+   Compiling crypto-common v0.1.6
+   Compiling block-buffer v0.10.4
+   Compiling same-file v1.0.6
+   Compiling walkdir v2.5.0
+   Compiling digest v0.10.7
+   Compiling parking_lot v0.12.5
+   Compiling bytes v1.12.0
+   Compiling crc32fast v1.5.0
+   Compiling jobserver v0.1.34
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.9
+   Compiling zlib-rs v0.6.4
+   Compiling cc v1.2.65
+   Compiling prodash v31.0.0
+   Compiling crossbeam-channel v0.5.15
+   Compiling itoa v1.0.18
+   Compiling gix-features v0.48.1
+   Compiling gix-error v0.2.4
+   Compiling foldhash v0.2.0
+   Compiling equivalent v1.0.2
+   Compiling allocator-api2 v0.2.21
+   Compiling heapless v0.8.0
+   Compiling cpufeatures v0.2.17
+   Compiling byteorder v1.5.0
+   Compiling hashbrown v0.17.1
+   Compiling hash32 v0.3.1
+   Compiling rustix v1.1.4
+   Compiling pkg-config v0.3.33
+   Compiling linux-raw-sys v0.12.1
+   Compiling sha1 v0.10.6
+   Compiling faster-hex v0.10.0
+   Compiling jiff v0.2.31
+   Compiling sha1-checked v0.10.0
+   Compiling vcpkg v0.2.15
+   Compiling rand_core v0.10.1
+   Compiling getrandom v0.4.3
+   Compiling gix-hash v0.25.1
+   Compiling gix-hashtable v0.15.2
+   Compiling synstructure v0.13.2
+   Compiling memmap2 v0.9.11
+   Compiling zerofrom-derive v0.1.7
+   Compiling tempfile v3.27.0
+   Compiling zerofrom v0.1.8
+   Compiling yoke-derive v0.8.2
+   Compiling hashbrown v0.14.5
+   Compiling gix-date v0.15.5
+   Compiling dashmap v6.2.1
+   Compiling gix-actor v0.41.1
+   Compiling gix-object v0.62.0
+   Compiling yoke v0.8.3
+   Compiling openssl-sys v0.9.117
+   Compiling libz-sys v1.1.29
+   Compiling gix-fs v0.21.2
+   Compiling gix-chunk v0.7.2
+   Compiling gix-tempfile v23.0.2
+   Compiling gix-quote v0.7.2
+   Compiling zerovec-derive v0.11.3
+   Compiling nonempty v0.12.0
+   Compiling displaydoc v0.2.6
+   Compiling percent-encoding v2.3.2
+   Compiling zerovec v0.11.6
+   Compiling gix-commitgraph v0.37.1
+   Compiling gix-glob v0.26.1
+   Compiling gix-revwalk v0.33.0
+   Compiling gix-lock v23.0.1
+   Compiling getrandom v0.2.17
+   Compiling rand_core v0.6.4
+   Compiling tinystr v0.8.3
+   Compiling libnghttp2-sys v0.1.13+1.68.1
+   Compiling gix-config-value v0.18.1
+   Compiling litemap v0.8.2
+   Compiling writeable v0.6.3
+   Compiling unicode-bom v2.0.3
+   Compiling icu_locale_core v2.2.0
+   Compiling potential_utf v0.1.5
+   Compiling zerotrie v0.2.4
+   Compiling static_assertions v1.1.0
+   Compiling log v0.4.33
+   Compiling utf8_iter v1.0.4
+   Compiling base64ct v1.8.3
+   Compiling serde v1.0.228
+   Compiling icu_properties_data v2.2.0
+   Compiling icu_normalizer_data v2.2.0
+   Compiling zmij v1.0.21
+   Compiling pem-rfc7468 v0.7.0
+   Compiling icu_collections v2.2.0
+   Compiling icu_provider v2.2.0
+   Compiling kstring v2.0.2
+   Compiling curl-sys v0.4.90+curl-8.21.0
+   Compiling gix-sec v0.14.1
+   Compiling serde_derive v1.0.228
+   Compiling filetime v0.2.29
+   Compiling serde_json v1.0.150
+   Compiling shell-words v1.1.1
+   Compiling gix-command v0.9.1
+   Compiling gix-attributes v0.33.2
+   Compiling der v0.7.10
+   Compiling hybrid-array v0.4.13
+   Compiling pin-project-lite v0.2.17
+   Compiling icu_normalizer v2.2.0
+   Compiling icu_properties v2.2.0
+   Compiling spki v0.7.3
+   Compiling gix-ref v0.65.0
+   Compiling libssh2-sys v0.3.2
+   Compiling hmac v0.12.1
+   Compiling cmov v0.5.4
+   Compiling cpufeatures v0.3.0
+   Compiling idna_adapter v1.2.2
+   Compiling pkcs8 v0.10.2
+   Compiling ctutils v0.4.2
+   Compiling crypto-common v0.2.2
+   Compiling block-buffer v0.12.1
+   Compiling ff v0.13.1
+   Compiling gix-traverse v0.59.0
+   Compiling gix-packetline v0.21.5
+   Compiling gix-bitmap v0.3.2
+   Compiling tracing-core v0.1.36
+   Compiling openssl-probe v0.1.6
+   Compiling anstyle v1.0.14
+   Compiling autocfg v1.5.1
+   Compiling anyhow v1.0.103
+   Compiling utf8parse v0.2.2
+   Compiling crossbeam-epoch v0.9.20
+   Compiling fnv v1.0.7
+   Compiling const-oid v0.10.2
+   Compiling base16ct v0.2.0
+   Compiling curl v0.4.50
+   Compiling digest v0.11.3
+   Compiling sec1 v0.7.3
+   Compiling gix-index v0.53.0
+   Compiling num-traits v0.2.19
+   Compiling anstyle-parse v1.0.0
+   Compiling group v0.13.0
+   Compiling idna v1.1.0
+   Compiling hkdf v0.12.4
+   Compiling gix-pathspec v0.18.1
+   Compiling gix-ignore v0.21.1
+   Compiling crypto-bigint v0.5.5
+   Compiling gix-url v0.36.1
+   Compiling form_urlencoded v1.2.2
+   Compiling libgit2-sys v0.18.7+1.9.6
+   Compiling tracing-attributes v0.1.31
+   Compiling socket2 v0.6.4
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling colorchoice v1.0.5
+   Compiling rustversion v1.0.22
+   Compiling typeid v1.0.3
+   Compiling anstyle-query v1.1.5
+   Compiling anstream v1.0.0
+   Compiling tracing v0.1.44
+   Compiling elliptic-curve v0.13.8
+   Compiling url v2.5.8
+   Compiling gix-worktree v0.54.0
+   Compiling gix-prompt v0.15.1
+   Compiling gix-revision v0.47.0
+   Compiling hashbrown v0.16.1
+   Compiling deranged v0.5.8
+   Compiling encoding_rs v0.8.35
+   Compiling powerfmt v0.2.0
+   Compiling futures-core v0.3.32
+   Compiling time-core v0.1.9
+   Compiling winnow v1.0.3
+   Compiling futures-sink v0.3.32
+   Compiling portable-atomic v1.13.1
+   Compiling num-conv v0.2.2
+   Compiling cfg_aliases v0.2.2
+   Compiling erased-serde v0.4.10
+   Compiling nix v0.31.3
+   Compiling time v0.3.52
+   Compiling futures-channel v0.3.32
+   Compiling toml_parser v1.1.2+spec-1.1.0
+   Compiling gix-filter v0.32.0
+   Compiling clru v0.6.3
+   Compiling gix-refspec v0.43.0
+   Compiling crossbeam-deque v0.8.6
+   Compiling gix-credentials v0.38.1
+   Compiling rfc6979 v0.4.0
+   Compiling gix-discover v0.53.0
+   Compiling globset v0.4.18
+   Compiling signature v2.2.0
+   Compiling terminal_size v0.4.4
+   Compiling libsqlite3-sys v0.38.1
+   Compiling indexmap v2.14.0
+   Compiling gix-imara-diff v0.2.3
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling serde_spanned v1.1.1
+   Compiling futures-macro v0.3.32
+   Compiling futures-task v0.3.32
+   Compiling clap_lex v1.1.0
+   Compiling base64 v0.22.1
+   Compiling strsim v0.11.1
+   Compiling lazy_static v1.5.0
+   Compiling slab v0.4.12
+   Compiling futures-io v0.3.32
+   Compiling minimal-lexical v0.2.1
+   Compiling toml_writer v1.1.1+spec-1.1.0
+   Compiling nom v7.1.3
+   Compiling flate2 v1.1.9
+   Compiling futures-util v0.3.32
+   Compiling sharded-slab v0.1.7
+   Compiling gix-transport v0.57.2
+   Compiling clap_builder v4.6.0
+   Compiling gix-diff v0.65.0
+   Compiling ecdsa v0.16.9
+   Compiling ignore v0.4.26
+   Compiling gix-dir v0.27.0
+   Compiling ordered-float v2.10.1
+   Compiling arc-swap v1.9.2
+   Compiling gix-pack v0.72.0
+   Compiling tar v0.4.46
+   Compiling primeorder v0.13.6
+   Compiling sha2 v0.11.0
+   Compiling tracing-log v0.2.0
+   Compiling gix-config v0.58.0
+   Compiling gix-shallow v0.12.1
+   Compiling gix-negotiate v0.33.0
+   Compiling sha2 v0.10.9
+   Compiling blake3 v1.8.5
+   Compiling matchers v0.2.0
+   Compiling im-rc v15.1.0
+   Compiling bitmaps v2.1.0
+   Compiling maybe-async v0.2.11
+   Compiling thread_local v1.1.9
+   Compiling nu-ansi-term v0.50.3
+   Compiling fiat-crypto v0.3.0
+   Compiling unicode-width v0.2.2
+   Compiling shell-escape v0.1.5
+   Compiling hex v0.4.3
+   Compiling cargo-util v0.2.32 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/crates/cargo-util)
+   Compiling annotate-snippets v0.12.16
+   Compiling orion v0.17.15
+   Compiling tracing-subscriber v0.3.23
+   Compiling gix-protocol v0.63.0
+   Compiling sized-chunks v0.6.5
+   Compiling p384 v0.13.1
+   Compiling gix-submodule v0.32.0
+   Compiling cargo v0.100.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo)
+   Compiling gix-odb v0.82.0
+   Compiling serde-untagged v0.1.9
+   Compiling serde-value v0.7.0
+   Compiling gix-status v0.32.0
+   Compiling git2 v0.21.0
+   Compiling clap v4.6.1
+   Compiling futures-executor v0.3.32
+   Compiling color-print-proc-macro v0.3.7
+   Compiling toml v1.1.2+spec-1.1.0
+   Compiling cargo-credential v0.4.11 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/credential/cargo-credential)
+   Compiling chacha20 v0.10.1
+   Compiling rand_xoshiro v0.6.0
+   Compiling anstyle-hyperlink v1.0.2
+   Compiling ed25519-compact v2.3.1
+   Compiling hashlink v0.12.0
+   Compiling http v1.4.2
+   Compiling semver v1.0.28
+   Compiling regex v1.12.4
+   Compiling libloading v0.9.0
+   Compiling is_executable v1.0.6
+   Compiling anstyle-progress v0.1.0
+   Compiling supports-hyperlinks v3.2.0
+   Compiling constant_time_eq v0.4.2
+   Compiling shlex v1.3.0
+   Compiling ct-codecs v1.1.7
+   Compiling arrayvec v0.7.7
+   Compiling either v1.16.0
+   Compiling supports-unicode v3.0.0
+   Compiling arrayref v0.3.9
+   Compiling fallible-streaming-iterator v0.1.9
+   Compiling fallible-iterator v0.3.0
+   Compiling rusqlite v0.40.1
+   Compiling cargo-util-terminal v0.1.2 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/crates/cargo-util-terminal)
+   Compiling cargo-util-schemas v0.14.3 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/crates/cargo-util-schemas)
+   Compiling itertools v0.15.0
+   Compiling pasetors v0.7.8
+   Compiling clap_complete v4.6.6
+   Compiling cargo-credential-libsecret v0.5.10 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/credential/cargo-credential-libsecret)
+   Compiling crates-io v0.41.2 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/crates/crates-io)
+   Compiling rand v0.10.1
+   Compiling git2-curl v0.22.0
+   Compiling color-print v0.3.7
+   Compiling futures v0.3.32
+   Compiling gix v0.85.0
+   Compiling os_info v3.15.0
+   Compiling tracing-chrome v0.7.2
+   Compiling toml_edit v0.25.12+spec-1.1.0
+   Compiling hmac v0.13.0
+   Compiling sha1 v0.11.0
+   Compiling rustfix v0.9.8 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/crates/rustfix)
+   Compiling serde_ignored v0.1.14
+   Compiling cargo-platform v0.3.3 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/crates/cargo-platform)
+   Compiling opener v0.8.5
+   Compiling async-trait v0.1.89
+   Compiling http-auth v0.1.10
+   Compiling pathdiff v0.2.3
+   Compiling rustc-hash v2.1.2
+   Compiling glob v0.3.3
+   Compiling heck v0.5.0
+   Compiling rustc-stable-hash v0.1.2
+   Compiling home v0.5.12
+   Compiling futures-timer v3.0.4
+   Compiling unicase v2.9.0
+    Finished `release` profile [optimized] target(s) in 91m 14s
+Building stage2 rustdoc_tool_binary (stage1 -> stage2, x86_64-unknown-linux-gnu)
+   Compiling proc-macro2 v1.0.106
+   Compiling serde_core v1.0.228
+   Compiling quote v1.0.45
+   Compiling unicode-ident v1.0.24
+   Compiling libc v0.2.183
+   Compiling cfg-if v1.0.4
+   Compiling version_check v0.9.5
+   Compiling generic-array v0.14.7
+   Compiling shlex v1.3.0
+   Compiling cc v1.2.16
+   Compiling syn v2.0.117
+   Compiling memchr v2.8.0
+   Compiling serde v1.0.228
+   Compiling typenum v1.20.0
+   Compiling once_cell v1.21.3
+   Compiling aho-corasick v1.1.4
+   Compiling regex-syntax v0.8.8
+   Compiling serde_derive v1.0.228
+   Compiling parking_lot_core v0.9.12
+   Compiling winnow v1.0.0
+   Compiling regex-automata v0.4.13
+   Compiling tracing-core v0.1.36
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.7
+   Compiling psm v0.1.26
+   Compiling smallvec v1.15.1
+   Compiling scopeguard v1.2.0
+   Compiling rustc-hash v2.1.1
+   Compiling askama_parser v0.16.0
+   Compiling lock_api v0.4.14
+   Compiling digest v0.10.7
+   Compiling tracing-attributes v0.1.31
+   Compiling basic-toml v0.1.10
+   Compiling stacker v0.1.21
+   Compiling cpufeatures v0.2.17
+   Compiling getrandom v0.3.3
+   Compiling glob v0.3.3
+   Compiling pin-project-lite v0.2.16
+   Compiling lazy_static v1.5.0
+   Compiling rustix v1.1.2
+   Compiling askama_derive v0.16.0
+   Compiling sharded-slab v0.1.7
+   Compiling tracing v0.1.44
+   Compiling sha2 v0.10.9
+   Compiling parking_lot v0.12.5
+   Compiling matchers v0.2.0
+   Compiling thread_local v1.1.9
+   Compiling serde_json v1.0.145
+   Compiling itoa v1.0.15
+   Compiling linux-raw-sys v0.11.0
+   Compiling log v0.4.28
+   Compiling nu-ansi-term v0.50.3
+   Compiling bitflags v2.10.0
+   Compiling minifier v0.4.0
+   Compiling rustdoc v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/librustdoc)
+   Compiling askama_macros v0.16.0
+   Compiling tracing-subscriber v0.3.23
+   Compiling tracing-log v0.2.0
+   Compiling num_cpus v1.17.0
+   Compiling fastrand v2.3.0
+   Compiling either v1.15.0
+   Compiling ryu v1.0.20
+   Compiling hashbrown v0.17.0
+   Compiling equivalent v1.0.2
+   Compiling indexmap v2.14.0
+   Compiling rustdoc-json-types v0.1.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/rustdoc-json-types)
+   Compiling itertools v0.15.0
+   Compiling tempfile v3.23.0
+   Compiling threadpool v1.8.1
+   Compiling stringdex v0.0.6
+   Compiling tracing-tree v0.4.1
+   Compiling askama v0.16.0
+   Compiling regex v1.12.2
+   Compiling pulldown-cmark-escape v0.11.0
+   Compiling arrayvec v0.7.6
+   Compiling unicode-segmentation v1.12.0
+   Compiling base64 v0.21.7
+   Compiling rustdoc-tool v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/rustdoc)
+    Finished `release` profile [optimized] target(s) in 19m 40s
+Building stage2 clippy-driver (stage1 -> stage2, x86_64-unknown-linux-gnu)
+   Compiling stable_deref_trait v1.2.1
+   Compiling serde_core v1.0.228
+   Compiling syn v2.0.117
+   Compiling smallvec v1.15.1
+   Compiling writeable v0.6.2
+   Compiling litemap v0.8.1
+   Compiling icu_properties_data v2.2.0
+   Compiling utf8_iter v1.0.4
+   Compiling icu_normalizer_data v2.2.0
+   Compiling rustc_apfloat v0.2.3+llvm-462a31f5a5ab
+   Compiling thiserror v2.0.17
+   Compiling winnow v1.0.0
+   Compiling serde_json v1.0.145
+   Compiling camino v1.2.1
+   Compiling bitflags v2.10.0
+   Compiling indexmap v2.14.0
+   Compiling toml_parser v1.1.0+spec-1.1.0
+   Compiling toml_datetime v1.1.0+spec-1.1.0
+   Compiling minimal-lexical v0.2.1
+   Compiling memchr v2.8.0
+   Compiling synstructure v0.13.2
+   Compiling percent-encoding v2.3.2
+   Compiling serde_spanned v1.1.0
+   Compiling tinyvec_macros v0.1.1
+   Compiling zerofrom-derive v0.1.6
+   Compiling yoke-derive v0.8.2
+   Compiling zerovec-derive v0.11.3
+   Compiling zerofrom v0.1.6
+   Compiling yoke v0.8.2
+   Compiling displaydoc v0.2.5
+   Compiling zerotrie v0.2.4
+   Compiling zerovec v0.11.6
+   Compiling serde_derive v1.0.228
+   Compiling thiserror-impl v2.0.17
+   Compiling tinystr v0.8.3
+   Compiling icu_locale_core v2.2.0
+   Compiling potential_utf v0.1.4
+   Compiling icu_collections v2.2.0
+   Compiling icu_provider v2.2.0
+   Compiling icu_properties v2.2.0
+   Compiling serde v1.0.228
+   Compiling icu_normalizer v2.2.0
+   Compiling idna_adapter v1.2.1
+   Compiling idna v1.1.0
+   Compiling cargo-platform v0.3.1
+   Compiling nom v7.1.3
+   Compiling tinyvec v1.10.0
+   Compiling toml v1.1.0+spec-1.1.0
+   Compiling form_urlencoded v1.2.2
+   Compiling clippy_utils v0.1.99 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/clippy/clippy_utils)
+   Compiling semver v1.0.27
+   Compiling rustc_tools_util v0.4.2 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/clippy/rustc_tools_util)
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-parse v0.2.7
+   Compiling clippy v0.1.99 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/clippy)
+   Compiling cargo_metadata v0.23.1
+   Compiling color-print-proc-macro v0.3.7
+   Compiling url v2.5.7
+   Compiling unicode-normalization v0.1.25
+   Compiling unicode-script v0.5.7
+   Compiling declare_clippy_lint v0.1.99 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/clippy/declare_clippy_lint)
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling anstyle-query v1.1.5
+   Compiling colorchoice v1.0.4
+   Compiling clippy_config v0.1.99 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/clippy/clippy_config)
+   Compiling quine-mc_cluskey v0.2.4
+   Compiling anstyle v1.0.13
+   Compiling anstream v0.6.21
+   Compiling clippy_lints v0.1.99 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/clippy/clippy_lints)
+   Compiling color-print v0.3.7
+    Finished `release` profile [optimized] target(s) in 12m 33s
+Building stage2 rustfmt (stage1 -> stage2, x86_64-unknown-linux-gnu)
+   Compiling syn v2.0.117
+   Compiling serde_core v1.0.228
+   Compiling aho-corasick v1.1.4
+   Compiling regex-automata v0.4.13
+   Compiling crossbeam-utils v0.8.21
+   Compiling anstyle-parse v1.0.0
+   Compiling crossbeam-epoch v0.9.20
+   Compiling anstream v1.0.0
+   Compiling serde_derive v1.0.228
+   Compiling strsim v0.11.1
+   Compiling clap_lex v1.1.0
+   Compiling heck v0.5.0
+   Compiling clap_derive v4.6.1
+   Compiling serde v1.0.228
+   Compiling clap_builder v4.6.0
+   Compiling thiserror-impl v2.0.17
+   Compiling bstr v1.12.1
+   Compiling thiserror v1.0.69
+   Compiling anyhow v1.0.102
+   Compiling unicode-width v0.2.2
+   Compiling same-file v1.0.6
+   Compiling option-ext v0.2.0
+   Compiling serde_json v1.0.145
+   Compiling dirs-sys v0.5.0
+   Compiling walkdir v2.5.0
+   Compiling tracing v0.1.44
+   Compiling clap v4.6.1
+   Compiling globset v0.4.18
+   Compiling thiserror v2.0.17
+   Compiling crossbeam-deque v0.8.6
+   Compiling camino v1.2.1
+   Compiling cargo-platform v0.3.1
+   Compiling matchers v0.2.0
+   Compiling thiserror-impl v1.0.69
+   Compiling toml_datetime v0.7.3
+   Compiling semver v1.0.27
+   Compiling serde_spanned v1.1.0
+   Compiling winnow v0.7.13
+   Compiling toml_writer v1.1.0+spec-1.1.0
+   Compiling rustfmt-nightly v1.10.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/rustfmt)
+   Compiling tracing-subscriber v0.3.23
+   Compiling cargo_metadata v0.23.1
+   Compiling toml v0.9.8
+   Compiling ignore v0.4.25
+   Compiling clap-cargo v0.18.3
+   Compiling dirs v6.0.0
+   Compiling getopts v0.2.24
+   Compiling annotate-snippets v0.11.5
+   Compiling regex v1.12.2
+   Compiling rustfmt-config_proc_macro v0.3.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/rustfmt/config_proc_macro)
+   Compiling unicode-properties v0.1.4
+   Compiling term v1.2.1
+   Compiling bytecount v0.6.9
+   Compiling diff v0.1.13
+   Compiling unicode-width v0.1.14
+    Finished `release` profile [optimized] target(s) in 5m 31s
+There have been changes to x.py since you last updated:
+  [WARNING] The `override-allocator` option has been renamed: The global setting is now `build.allocator` and the per-target setting is `target.<target>.allocator`. It can now be set to 'system' to explicitly request the system allocator.
+    - PR Link https://github.com/rust-lang/rust/pull/160100
+NOTE: to silence this warning, update `bootstrap.toml` to use `change-id = 160100` or `change-id = "ignore"` instead
+NOTE: this message was printed twice to make it more likely to be seen
+Build completed successfully in 5:17:04
+INFO: looks like you're trying to run this command as root
+      and so in order to preserve your $HOME this will now
+      use vendored sources by default.
+Building bootstrap
+    Finished `dev` profile [unoptimized] target(s) in 1.45s
+There have been changes to x.py since you last updated:
+  [WARNING] The `override-allocator` option has been renamed: The global setting is now `build.allocator` and the per-target setting is `target.<target>.allocator`. It can now be set to 'system' to explicitly request the system allocator.
+    - PR Link https://github.com/rust-lang/rust/pull/160100
+NOTE: to silence this warning, update `bootstrap.toml` to use `change-id = 160100` or `change-id = "ignore"` instead
+Building stage1 compiler artifacts (stage0 -> stage1, x86_64-unknown-linux-gnu)
+   Compiling libc v0.2.183
+   Compiling zerofrom v0.1.6
+   Compiling thiserror v2.0.17
+   Compiling fluent-syntax v0.12.0
+   Compiling yoke v0.8.2
+   Compiling zerovec v0.11.6
+   Compiling fluent-bundle v0.16.0
+   Compiling rustc_macros v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_macros)
+   Compiling getrandom v0.3.3
+   Compiling parking_lot_core v0.9.12
+   Compiling parking_lot v0.12.5
+   Compiling tinystr v0.8.3
+   Compiling tempfile v3.23.0
+   Compiling memmap2 v0.2.3
+   Compiling perf-event-open-sys v3.0.0
+   Compiling rustc_index v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_index)
+   Compiling measureme v12.0.3
+   Compiling jobserver v0.1.34
+   Compiling rustc_data_structures v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_data_structures)
+   Compiling unic-langid-impl v0.9.6
+   Compiling icu_locale_core v2.2.0
+   Compiling unic-langid-macros v0.9.6
+   Compiling rustc_span v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_span)
+   Compiling unic-langid v0.9.6
+   Compiling icu_provider v2.2.0
+   Compiling potential_utf v0.1.4
+   Compiling icu_collections v2.2.0
+   Compiling intl-memoizer v0.5.3
+   Compiling icu_locale v2.2.0
+   Compiling rustc_ast_ir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_ir)
+   Compiling icu_list v2.2.0
+   Compiling fluent-langneg v0.13.1
+   Compiling intl_pluralrules v7.0.2
+   Compiling rustc_baked_icu_data v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_baked_icu_data)
+   Compiling rustc_ast v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast)
+   Compiling rand_core v0.9.3
+   Compiling rustc_hir_id v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_id)
+   Compiling rustc_error_messages v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_error_messages)
+   Compiling rand_chacha v0.9.0
+   Compiling termize v0.2.1
+   Compiling wasmparser v0.243.0
+   Compiling rand v0.9.3
+   Compiling rand_xoshiro v0.7.0
+   Compiling rustc_fs_util v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_fs_util)
+   Compiling rustc_feature v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_feature)
+   Compiling rustc_lint_defs v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_lint_defs)
+   Compiling rustc_errors v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_errors)
+   Compiling object v0.38.1
+   Compiling rustc_abi v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_abi)
+   Compiling rustc_ast_pretty v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_pretty)
+   Compiling rustc_target v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_target)
+   Compiling rustc_type_ir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_type_ir)
+   Compiling rustc_llvm v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_llvm)
+   Compiling rustc_attr_ir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_attr_ir)
+   Compiling rustc_session v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_session)
+   Compiling rustc_hir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir)
+   Compiling rustc_crate_store v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_crate_store)
+   Compiling rustc_middle v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_middle)
+   Compiling rustc_next_trait_solver v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_next_trait_solver)
+   Compiling rustc_parse v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_parse)
+   Compiling rustc_hir_pretty v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_pretty)
+   Compiling rustc_attr_parsing v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_attr_parsing)
+   Compiling rustc_transmute v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_transmute)
+   Compiling rustc_infer v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_infer)
+   Compiling rustc_ast_passes v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_passes)
+   Compiling rustc_trait_selection v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_trait_selection)
+   Compiling rustc_expand v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_expand)
+   Compiling rustc_mir_dataflow v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_mir_dataflow)
+   Compiling rustc_symbol_mangling v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_symbol_mangling)
+   Compiling rustc_const_eval v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_const_eval)
+   Compiling rustc_metadata v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_metadata)
+   Compiling rustc_ty_walk v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ty_walk)
+   Compiling rustc_mir_transform v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_mir_transform)
+   Compiling rustc_incremental v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_incremental)
+   Compiling thorin-dwp v0.10.0
+   Compiling tracing-subscriber v0.3.23
+   Compiling rustc_codegen_ssa v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_codegen_ssa)
+   Compiling rustc_privacy v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_privacy)
+   Compiling rustc_lint v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_lint)
+   Compiling rustc_sanitizers v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_sanitizers)
+   Compiling rustc_hir_analysis v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_analysis)
+   Compiling rustc_ast_lowering v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_lowering)
+   Compiling rustc_pattern_analysis v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_pattern_analysis)
+   Compiling rustc_codegen_llvm v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_codegen_llvm)
+   Compiling tracing-tree v0.4.1
+   Compiling nix v0.30.1
+   Compiling rustc_mir_build v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_mir_build)
+   Compiling rustc_passes v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_passes)
+   Compiling rustc_hir_typeck v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_typeck)
+   Compiling rustc_resolve v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_resolve)
+   Compiling rustc_ty_utils v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ty_utils)
+   Compiling rustc_monomorphize v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_monomorphize)
+   Compiling rustc_borrowck v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_borrowck)
+   Compiling rustc_traits v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_traits)
+   Compiling rustc_builtin_macros v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_builtin_macros)
+   Compiling rustc_public_bridge v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_public_bridge)
+   Compiling rustc_query_impl v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_query_impl)
+   Compiling rustc_public v0.1.0-preview (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_public)
+   Compiling rustc_interface v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_interface)
+   Compiling ctrlc v3.5.1
+   Compiling rustc_log v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_log)
+   Compiling rustc_driver_impl v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_driver_impl)
+   Compiling rustc_driver v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_driver)
+   Compiling rustc-main v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc)
+    Finished `release` profile [optimized] target(s) in 35m 16s
+Creating a sysroot for stage1 compiler (use `rustup toolchain link 'name' build/host/stage1`)
+Building stage1 library artifacts (stage1 -> stage1, x86_64-unknown-linux-gnu)
+   Compiling shlex v1.3.0
+   Compiling core v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/core)
+   Compiling libc v0.2.189
+   Compiling cc v1.2.0
+   Compiling object v0.39.1
+   Compiling std v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/std)
+   Compiling test v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/test)
+   Compiling compiler_builtins v0.1.160 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/compiler-builtins/compiler-builtins)
+   Compiling rustc-std-workspace-core v1.99.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/rustc-std-workspace-core)
+   Compiling alloc v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/alloc)
+   Compiling adler2 v2.0.1
+   Compiling memchr v2.8.3
+   Compiling unwind v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/unwind)
+   Compiling cfg-if v1.0.4
+   Compiling rustc-demangle v0.1.28
+   Compiling panic_abort v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/panic_abort)
+   Compiling rustc-literal-escaper v0.0.8
+   Compiling rustc-std-workspace-alloc v1.99.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/rustc-std-workspace-alloc)
+   Compiling panic_unwind v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/panic_unwind)
+   Compiling gimli v0.34.0
+   Compiling hashbrown v0.17.1
+   Compiling miniz_oxide v0.9.1
+   Compiling std_detect v0.1.5 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/std_detect)
+   Compiling addr2line v0.27.1
+   Compiling rustc-std-workspace-std v1.99.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/rustc-std-workspace-std)
+   Compiling proc_macro v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/proc_macro)
+   Compiling getopts v0.2.24
+   Compiling sysroot v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/library/sysroot)
+    Finished `dist` profile [optimized] target(s) in 3m 20s
+Building stage1 rust-installer (stage0 -> stage1, x86_64-unknown-linux-gnu)
+   Compiling crossbeam-utils v0.8.21
+   Compiling libc v0.2.183
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.24
+   Compiling crossbeam-epoch v0.9.20
+   Compiling quote v1.0.45
+   Compiling shlex v1.3.0
+   Compiling cc v1.2.16
+   Compiling pkg-config v0.3.32
+   Compiling rustix v1.1.2
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-parse v1.0.0
+   Compiling lzma-sys v0.1.20
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling anstyle-query v1.1.5
+   Compiling linux-raw-sys v0.11.0
+   Compiling colorchoice v1.0.4
+   Compiling rayon-core v1.13.0
+   Compiling bitflags v2.10.0
+   Compiling anstyle v1.0.13
+   Compiling crossbeam-deque v0.8.6
+   Compiling anstream v1.0.0
+   Compiling syn v2.0.117
+   Compiling strsim v0.11.1
+   Compiling cfg-if v1.0.4
+   Compiling clap_lex v1.1.0
+   Compiling anyhow v1.0.102
+   Compiling heck v0.5.0
+   Compiling clap_builder v4.6.0
+   Compiling clap_derive v4.6.1
+   Compiling filetime v0.2.27
+   Compiling xattr v1.6.1
+   Compiling either v1.15.0
+   Compiling zlib-rs v0.6.3
+   Compiling same-file v1.0.6
+   Compiling walkdir v2.5.0
+   Compiling xz2 v0.1.7
+   Compiling flate2 v1.1.9
+   Compiling rayon v1.11.0
+   Compiling clap v4.6.1
+   Compiling tar v0.4.46
+   Compiling installer v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/rust-installer)
+    Finished `release` profile [optimized] target(s) in 1m 20s
+Dist rust-std-1.99.1-x86_64-unknown-linux-gnu
+	finished in 0.112 seconds
+Installing stage2 std (stage1 -> stage2, x86_64-unknown-linux-gnu)
+install: creating uninstall script at /opt/rustc-1.99.1/lib/rustlib/uninstall.sh
+install: installing component 'rust-std-x86_64-unknown-linux-gnu'
+
+    rust std installed.
+
+Building stage2 compiler artifacts (stage1 -> stage2, x86_64-unknown-linux-gnu)
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling unicode-ident v1.0.24
+   Compiling cfg-if v1.0.4
+   Compiling libc v0.2.183
+   Compiling stable_deref_trait v1.2.1
+   Compiling memchr v2.8.0
+   Compiling syn v2.0.117
+   Compiling smallvec v1.15.1
+   Compiling bitflags v2.10.0
+   Compiling once_cell v1.21.3
+   Compiling thiserror v2.0.17
+   Compiling getrandom v0.3.3
+   Compiling version_check v0.9.5
+   Compiling tracing-core v0.1.36
+   Compiling generic-array v0.14.7
+   Compiling equivalent v1.0.2
+   Compiling parking_lot_core v0.9.12
+   Compiling typenum v1.20.0
+   Compiling hashbrown v0.17.0
+   Compiling scopeguard v1.2.0
+   Compiling shlex v1.3.0
+   Compiling log v0.4.28
+   Compiling indexmap v2.14.0
+   Compiling cc v1.2.16
+   Compiling lock_api v0.4.14
+   Compiling synstructure v0.13.2
+   Compiling rustc-hash v2.1.1
+   Compiling itoa v1.0.15
+   Compiling crossbeam-utils v0.8.21
+   Compiling pin-project-lite v0.2.16
+   Compiling parking_lot v0.12.5
+   Compiling type-map v0.5.1
+   Compiling rustix v1.1.2
+   Compiling serde_core v1.0.228
+   Compiling crossbeam-epoch v0.9.20
+   Compiling displaydoc v0.2.5
+   Compiling zerofrom-derive v0.1.6
+   Compiling yoke-derive v0.8.2
+   Compiling tinystr v0.8.3
+   Compiling unic-langid-impl v0.9.6
+   Compiling zerovec-derive v0.11.3
+   Compiling thiserror-impl v2.0.17
+   Compiling zerofrom v0.1.6
+   Compiling yoke v0.8.2
+   Compiling unic-langid v0.9.6
+   Compiling tracing-attributes v0.1.31
+   Compiling zerovec v0.11.6
+   Compiling fluent-syntax v0.12.0
+   Compiling tracing v0.1.44
+   Compiling intl-memoizer v0.5.3
+   Compiling intl_pluralrules v7.0.2
+   Compiling fluent-langneg v0.13.1
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling rustc_macros v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_macros)
+   Compiling linux-raw-sys v0.11.0
+   Compiling rustc-stable-hash v0.1.2
+   Compiling self_cell v1.2.1
+   Compiling fluent-bundle v0.16.0
+   Compiling rustc_hashes v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hashes)
+   Compiling digest v0.10.7
+   Compiling aho-corasick v1.1.4
+   Compiling rustc-hash v1.1.0
+   Compiling regex-syntax v0.8.8
+   Compiling fastrand v2.3.0
+   Compiling proc-macro-hack v0.5.20+deprecated
+   Compiling thin-vec v0.2.19
+   Compiling rustc_serialize v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_serialize)
+   Compiling tempfile v3.23.0
+   Compiling regex-automata v0.4.13
+   Compiling crossbeam-deque v0.8.6
+   Compiling rustc_index_macros v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_index_macros)
+   Compiling blake3 v1.8.2
+   Compiling perf-event-open-sys v3.0.0
+   Compiling memmap2 v0.2.3
+   Compiling unicode-width v0.2.2
+   Compiling either v1.15.0
+   Compiling serde v1.0.228
+   Compiling cpufeatures v0.2.17
+   Compiling arrayvec v0.7.6
+   Compiling measureme v12.0.3
+   Compiling rustc_index v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_index)
+   Compiling rustc_thread_pool v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_thread_pool)
+   Compiling serde_derive v1.0.228
+   Compiling ena v0.14.4
+   Compiling jobserver v0.1.34
+   Compiling rustc_arena v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_arena)
+   Compiling elsa v1.11.2
+   Compiling arrayref v0.3.9
+   Compiling writeable v0.6.2
+   Compiling constant_time_eq v0.3.1
+   Compiling rustc_graphviz v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_graphviz)
+   Compiling rustc_data_structures v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_data_structures)
+   Compiling unic-langid-macros-impl v0.9.6
+   Compiling sha1 v0.10.6
+   Compiling sha2 v0.10.9
+   Compiling md-5 v0.10.6
+   Compiling derive-where v1.6.1
+   Compiling scoped-tls v1.0.1
+   Compiling unic-langid-macros v0.9.6
+   Compiling serde_json v1.0.145
+   Compiling litemap v0.8.1
+   Compiling icu_locale_core v2.2.0
+   Compiling rustc_span v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_span)
+   Compiling zerotrie v0.2.4
+   Compiling icu_locale_data v2.2.0
+   Compiling ryu v1.0.20
+   Compiling icu_provider v2.2.0
+   Compiling potential_utf v0.1.4
+   Compiling utf8_iter v1.0.4
+   Compiling rustc-literal-escaper v0.0.8
+   Compiling icu_collections v2.2.0
+   Compiling fnv v1.0.7
+   Compiling strsim v0.11.1
+   Compiling ident_case v1.0.1
+   Compiling zerocopy v0.8.27
+   Compiling darling_core v0.20.11
+   Compiling icu_locale v2.2.0
+   Compiling icu_list v2.2.0
+   Compiling rustc_ast_ir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_ir)
+   Compiling rustc_ast v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast)
+   Compiling darling_macro v0.20.11
+   Compiling rustc_baked_icu_data v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_baked_icu_data)
+   Compiling rand_core v0.9.3
+   Compiling odht v0.3.1
+   Compiling anstyle v1.0.13
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-parse v0.2.7
+   Compiling rustc_hir_id v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_id)
+   Compiling ppv-lite86 v0.2.21
+   Compiling rustc_error_messages v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_error_messages)
+   Compiling darling v0.20.11
+   Compiling anstyle-query v1.1.5
+   Compiling crc32fast v1.5.0
+   Compiling colorchoice v1.0.4
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling anstream v0.6.21
+   Compiling derive_setters v0.1.8
+   Compiling rand_chacha v0.9.0
+   Compiling annotate-snippets v0.12.16
+   Compiling rustc_lint_defs v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_lint_defs)
+   Compiling termize v0.2.1
+   Compiling foldhash v0.2.0
+   Compiling adler2 v2.0.1
+   Compiling wasmparser v0.243.0
+   Compiling allocator-api2 v0.2.21
+   Compiling rustc_error_codes v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_error_codes)
+   Compiling simd-adler32 v0.3.7
+   Compiling miniz_oxide v0.8.9
+   Compiling rustc_errors v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_errors)
+   Compiling hashbrown v0.16.1
+   Compiling rand v0.9.3
+   Compiling rand_xoshiro v0.7.0
+   Compiling ref-cast v1.0.25
+   Compiling object v0.38.1
+   Compiling twox-hash v2.1.2
+   Compiling ruzstd v0.8.2
+   Compiling rustc_abi v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_abi)
+   Compiling flate2 v1.1.9
+   Compiling ref-cast-impl v1.0.25
+   Compiling serde_derive_internals v0.29.1
+   Compiling unicode-properties v0.1.4
+   Compiling rustc_lexer v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_lexer)
+   Compiling schemars_derive v1.1.0
+   Compiling dyn-clone v1.0.20
+   Compiling rustc_fs_util v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_fs_util)
+   Compiling serde_path_to_error v0.1.20
+   Compiling rustc_ast_pretty v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_pretty)
+   Compiling schemars v1.1.0
+   Compiling rustc_target v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_target)
+   Compiling rustc_feature v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_feature)
+   Compiling getopts v0.2.24
+   Compiling rustc_type_ir_macros v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_type_ir_macros)
+   Compiling rustc_apfloat v0.2.3+llvm-462a31f5a5ab
+   Compiling datafrog v2.0.1
+   Compiling rustc_type_ir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_type_ir)
+   Compiling polonius-engine v0.13.0
+   Compiling gsgdt v0.1.2
+   Compiling rustc_attr_ir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_attr_ir)
+   Compiling rustc_session v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_session)
+   Compiling rustc_hir v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir)
+   Compiling rustc_crate_store v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_crate_store)
+   Compiling rustc_middle v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_middle)
+   Compiling itertools v0.15.0
+   Compiling tinyvec_macros v0.1.1
+   Compiling tinyvec v1.10.0
+   Compiling unicode-normalization v0.1.25
+   Compiling rustc_next_trait_solver v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_next_trait_solver)
+   Compiling rustc_parse v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_parse)
+   Compiling rustc_parse_format v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_parse_format)
+   Compiling rustc_attr_parsing v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_attr_parsing)
+   Compiling rustc_infer v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_infer)
+   Compiling rustc_transmute v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_transmute)
+   Compiling rustc_trait_selection v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_trait_selection)
+   Compiling rustc_hir_pretty v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_pretty)
+   Compiling rustc_ast_passes v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_passes)
+   Compiling rustc_proc_macro v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_proc_macro)
+   Compiling regex v1.12.2
+   Compiling rustc-demangle v0.1.28
+   Compiling punycode v0.4.1
+   Compiling rustc_symbol_mangling v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_symbol_mangling)
+   Compiling rustc_mir_dataflow v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_mir_dataflow)
+   Compiling rustc_expand v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_expand)
+   Compiling object v0.37.3
+   Compiling libloading v0.8.9
+   Compiling gimli v0.33.0
+   Compiling rustc_metadata v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_metadata)
+   Compiling rustc_const_eval v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_const_eval)
+   Compiling rustc_ty_walk v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ty_walk)
+   Compiling rustc_llvm v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_llvm)
+   Compiling cfg_aliases v0.2.1
+   Compiling unicode-script v0.5.7
+   Compiling static_assertions v1.1.0
+   Compiling lazy_static v1.5.0
+   Compiling leb128 v0.2.5
+   Compiling find-msvc-tools v0.1.5
+   Compiling pulldown-cmark v0.11.3
+   Compiling rustc_windows_rc v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_windows_rc)
+   Compiling wasm-encoder v0.219.2
+   Compiling sharded-slab v0.1.7
+   Compiling twox-hash v1.6.3
+   Compiling unicode-security v0.1.2
+   Compiling nix v0.30.1
+   Compiling rustc_mir_transform v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_mir_transform)
+   Compiling ar_archive_writer v0.5.2
+   Compiling thorin-dwp v0.10.0
+   Compiling rustc_incremental v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_incremental)
+   Compiling tracing-serde v0.2.0
+   Compiling matchers v0.2.0
+   Compiling bstr v1.12.1
+   Compiling thread_local v1.1.9
+   Compiling pulldown-cmark-escape v0.11.0
+   Compiling nu-ansi-term v0.50.3
+   Compiling unicase v2.8.1
+   Compiling pathdiff v0.2.3
+   Compiling rustc_codegen_ssa v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_codegen_ssa)
+   Compiling tracing-subscriber v0.3.23
+   Compiling rustc_lint v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_lint)
+   Compiling rustc_sanitizers v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_sanitizers)
+   Compiling rustc_privacy v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_privacy)
+   Compiling rustc_hir_analysis v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_analysis)
+   Compiling rustc_ast_lowering v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ast_lowering)
+   Compiling rustc_pattern_analysis v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_pattern_analysis)
+   Compiling tracing-log v0.2.0
+   Compiling libloading v0.9.0
+   Compiling rustc_codegen_llvm v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_codegen_llvm)
+   Compiling tracing-tree v0.4.1
+   Compiling rustc_mir_build v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_mir_build)
+   Compiling rustc_hir_typeck v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_hir_typeck)
+   Compiling rustc_passes v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_passes)
+   Compiling rustc_resolve v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_resolve)
+   Compiling rustc_ty_utils v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_ty_utils)
+   Compiling rustc_builtin_macros v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_builtin_macros)
+   Compiling rustc_borrowck v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_borrowck)
+   Compiling rustc_monomorphize v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_monomorphize)
+   Compiling rustc_traits v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_traits)
+   Compiling rustc_public_bridge v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_public_bridge)
+   Compiling rustc_query_impl v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_query_impl)
+   Compiling rustc_public v0.1.0-preview (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_public)
+   Compiling rustc_interface v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_interface)
+   Compiling ctrlc v3.5.1
+   Compiling rustc_log v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_log)
+   Compiling rustc_driver v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_driver)
+   Compiling jiff v0.2.16
+   Compiling rustc_driver_impl v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc_driver_impl)
+   Compiling rustc-main v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/compiler/rustc)
+    Finished `release` profile [optimized] target(s) in 59m 03s
+Creating a sysroot for stage2 compiler (use `rustup toolchain link 'name' build/host/stage2`)
+Building stage2 rustdoc_tool_binary (stage1 -> stage2, x86_64-unknown-linux-gnu)
+   Compiling proc-macro2 v1.0.106
+   Compiling serde_core v1.0.228
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.45
+   Compiling libc v0.2.183
+   Compiling cfg-if v1.0.4
+   Compiling version_check v0.9.5
+   Compiling generic-array v0.14.7
+   Compiling syn v2.0.117
+   Compiling shlex v1.3.0
+   Compiling cc v1.2.16
+   Compiling memchr v2.8.0
+   Compiling typenum v1.20.0
+   Compiling serde v1.0.228
+   Compiling once_cell v1.21.3
+   Compiling aho-corasick v1.1.4
+   Compiling parking_lot_core v0.9.12
+   Compiling serde_derive v1.0.228
+   Compiling regex-syntax v0.8.8
+   Compiling winnow v1.0.0
+   Compiling regex-automata v0.4.13
+   Compiling tracing-core v0.1.36
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling psm v0.1.26
+   Compiling scopeguard v1.2.0
+   Compiling smallvec v1.15.1
+   Compiling rustc-hash v2.1.1
+   Compiling askama_parser v0.16.0
+   Compiling lock_api v0.4.14
+   Compiling digest v0.10.7
+   Compiling tracing-attributes v0.1.31
+   Compiling basic-toml v0.1.10
+   Compiling stacker v0.1.21
+   Compiling rustix v1.1.2
+   Compiling cpufeatures v0.2.17
+   Compiling pin-project-lite v0.2.16
+   Compiling lazy_static v1.5.0
+   Compiling getrandom v0.3.3
+   Compiling glob v0.3.3
+   Compiling sharded-slab v0.1.7
+   Compiling askama_derive v0.16.0
+   Compiling sha2 v0.10.9
+   Compiling tracing v0.1.44
+   Compiling parking_lot v0.12.5
+   Compiling matchers v0.2.0
+   Compiling thread_local v1.1.9
+   Compiling linux-raw-sys v0.11.0
+   Compiling serde_json v1.0.145
+   Compiling itoa v1.0.15
+   Compiling log v0.4.28
+   Compiling minifier v0.4.0
+   Compiling bitflags v2.10.0
+   Compiling nu-ansi-term v0.50.3
+   Compiling tracing-subscriber v0.3.23
+   Compiling rustdoc v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/librustdoc)
+   Compiling tracing-log v0.2.0
+   Compiling askama_macros v0.16.0
+   Compiling num_cpus v1.17.0
+   Compiling hashbrown v0.17.0
+   Compiling equivalent v1.0.2
+   Compiling either v1.15.0
+   Compiling ryu v1.0.20
+   Compiling fastrand v2.3.0
+   Compiling indexmap v2.14.0
+   Compiling tempfile v3.23.0
+   Compiling itertools v0.15.0
+   Compiling rustdoc-json-types v0.1.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/rustdoc-json-types)
+   Compiling threadpool v1.8.1
+   Compiling tracing-tree v0.4.1
+   Compiling stringdex v0.0.6
+   Compiling askama v0.16.0
+   Compiling regex v1.12.2
+   Compiling base64 v0.21.7
+   Compiling pulldown-cmark-escape v0.11.0
+   Compiling arrayvec v0.7.6
+   Compiling unicode-segmentation v1.12.0
+   Compiling rustdoc-tool v0.0.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/rustdoc)
+    Finished `release` profile [optimized] target(s) in 10m 34s
+generate-copyright
+Building stage1 generate-copyright (stage0 -> stage1, x86_64-unknown-linux-gnu)
+   Compiling serde_core v1.0.228
+   Compiling stable_deref_trait v1.2.1
+   Compiling syn v2.0.117
+   Compiling serde v1.0.228
+   Compiling writeable v0.6.2
+   Compiling litemap v0.8.1
+   Compiling utf8_iter v1.0.4
+   Compiling icu_normalizer_data v2.2.0
+   Compiling icu_properties_data v2.2.0
+   Compiling autocfg v1.5.0
+   Compiling num-traits v0.2.19
+   Compiling smallvec v1.15.1
+   Compiling synstructure v0.13.2
+   Compiling typeid v1.0.3
+   Compiling hashbrown v0.17.0
+   Compiling zerofrom-derive v0.1.6
+   Compiling yoke-derive v0.8.2
+   Compiling serde_derive v1.0.228
+   Compiling zerovec-derive v0.11.3
+   Compiling zerofrom v0.1.6
+   Compiling yoke v0.8.2
+   Compiling displaydoc v0.2.5
+   Compiling zerotrie v0.2.4
+   Compiling zerovec v0.11.6
+   Compiling memchr v2.8.0
+   Compiling tinystr v0.8.3
+   Compiling icu_locale_core v2.2.0
+   Compiling potential_utf v0.1.4
+   Compiling icu_collections v2.2.0
+   Compiling equivalent v1.0.2
+   Compiling erased-serde v0.4.9
+   Compiling percent-encoding v2.3.2
+   Compiling icu_provider v2.2.0
+   Compiling indexmap v2.14.0
+   Compiling icu_properties v2.2.0
+   Compiling icu_normalizer v2.2.0
+   Compiling serde_spanned v0.6.9
+   Compiling idna_adapter v1.2.1
+   Compiling toml_datetime v0.6.11
+   Compiling winnow v1.0.0
+   Compiling winnow v0.7.13
+   Compiling toml_write v0.1.2
+   Compiling rustc-hash v2.1.1
+   Compiling thiserror v2.0.17
+   Compiling askama_parser v0.16.0
+   Compiling ordered-float v2.10.1
+   Compiling idna v1.1.0
+   Compiling toml_edit v0.22.27
+   Compiling form_urlencoded v1.2.2
+   Compiling basic-toml v0.1.10
+   Compiling thiserror-impl v2.0.17
+   Compiling itoa v1.0.15
+   Compiling serde_json v1.0.145
+   Compiling glob v0.3.3
+   Compiling camino v1.2.1
+   Compiling askama_derive v0.16.0
+   Compiling toml v0.8.23
+   Compiling url v2.5.7
+   Compiling serde-untagged v0.1.9
+   Compiling serde-value v0.7.0
+   Compiling semver v1.0.27
+   Compiling thiserror v1.0.69
+   Compiling ryu v1.0.20
+   Compiling unicode-xid v0.2.6
+   Compiling cargo-util-schemas v0.8.2
+   Compiling askama_macros v0.16.0
+   Compiling cargo-platform v0.2.0
+   Compiling thiserror-impl v1.0.69
+   Compiling cargo_metadata v0.21.0
+   Compiling askama v0.16.0
+   Compiling generate-copyright v0.1.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/generate-copyright)
+    Finished `release` profile [optimized] target(s) in 1m 41s
+Dist rustc-1.99.1-x86_64-unknown-linux-gnu
+	finished in 0.224 seconds
+Installing stage2 rustc (stage1 -> stage2, x86_64-unknown-linux-gnu)
+install: creating uninstall script at /opt/rustc-1.99.1/lib/rustlib/uninstall.sh
+install: installing component 'rustc'
+install: backing up existing file at /etc/target-spec-json-schema.json
+
+    rustc installed.
+
+Building stage2 cargo (stage1 -> stage2, x86_64-unknown-linux-gnu)
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.46
+   Compiling libc v0.2.189
+   Compiling cfg-if v1.0.4
+   Compiling memchr v2.8.3
+   Compiling syn v2.0.118
+   Compiling aho-corasick v1.1.4
+   Compiling regex-syntax v0.8.11
+   Compiling regex-automata v0.4.14
+   Compiling typenum v1.20.1
+   Compiling smallvec v1.15.2
+   Compiling serde_core v1.0.228
+   Compiling version_check v0.9.5
+   Compiling thiserror v2.0.18
+   Compiling thiserror-impl v2.0.18
+   Compiling bstr v1.12.3
+   Compiling zeroize v1.9.0
+   Compiling stable_deref_trait v1.2.1
+   Compiling generic-array v0.14.9
+   Compiling crossbeam-utils v0.8.21
+   Compiling bitflags v2.13.0
+   Compiling once_cell v1.21.4
+   Compiling subtle v2.6.1
+   Compiling fastrand v2.4.1
+   Compiling const-oid v0.9.6
+   Compiling parking_lot_core v0.9.12
+   Compiling gix-trace v0.1.20
+   Compiling tinyvec_macros v0.1.1
+   Compiling tinyvec v1.11.0
+   Compiling gix-validate v0.11.2
+   Compiling scopeguard v1.2.0
+   Compiling lock_api v0.4.14
+   Compiling unicode-normalization v0.1.25
+   Compiling gix-path v0.12.1
+   Compiling gix-utils v0.3.3
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.6
+   Compiling same-file v1.0.6
+   Compiling digest v0.10.7
+   Compiling walkdir v2.5.0
+   Compiling parking_lot v0.12.5
+   Compiling bytes v1.12.0
+   Compiling crc32fast v1.5.0
+   Compiling jobserver v0.1.34
+   Compiling shlex v2.0.1
+   Compiling zlib-rs v0.6.4
+   Compiling find-msvc-tools v0.1.9
+   Compiling cc v1.2.65
+   Compiling prodash v31.0.0
+   Compiling crossbeam-channel v0.5.15
+   Compiling itoa v1.0.18
+   Compiling gix-error v0.2.4
+   Compiling gix-features v0.48.1
+   Compiling foldhash v0.2.0
+   Compiling allocator-api2 v0.2.21
+   Compiling equivalent v1.0.2
+   Compiling heapless v0.8.0
+   Compiling byteorder v1.5.0
+   Compiling cpufeatures v0.2.17
+   Compiling hashbrown v0.17.1
+   Compiling hash32 v0.3.1
+   Compiling rustix v1.1.4
+   Compiling pkg-config v0.3.33
+   Compiling linux-raw-sys v0.12.1
+   Compiling sha1 v0.10.6
+   Compiling faster-hex v0.10.0
+   Compiling jiff v0.2.31
+   Compiling sha1-checked v0.10.0
+   Compiling getrandom v0.4.3
+   Compiling vcpkg v0.2.15
+   Compiling rand_core v0.10.1
+   Compiling gix-hash v0.25.1
+   Compiling gix-hashtable v0.15.2
+   Compiling synstructure v0.13.2
+   Compiling memmap2 v0.9.11
+   Compiling zerofrom-derive v0.1.7
+   Compiling tempfile v3.27.0
+   Compiling zerofrom v0.1.8
+   Compiling yoke-derive v0.8.2
+   Compiling gix-date v0.15.5
+   Compiling gix-actor v0.41.1
+   Compiling gix-object v0.62.0
+   Compiling hashbrown v0.14.5
+   Compiling dashmap v6.2.1
+   Compiling yoke v0.8.3
+   Compiling openssl-sys v0.9.117
+   Compiling libz-sys v1.1.29
+   Compiling gix-fs v0.21.2
+   Compiling gix-chunk v0.7.2
+   Compiling gix-tempfile v23.0.2
+   Compiling gix-quote v0.7.2
+   Compiling zerovec-derive v0.11.3
+   Compiling nonempty v0.12.0
+   Compiling displaydoc v0.2.6
+   Compiling percent-encoding v2.3.2
+   Compiling zerovec v0.11.6
+   Compiling gix-commitgraph v0.37.1
+   Compiling gix-glob v0.26.1
+   Compiling gix-revwalk v0.33.0
+   Compiling gix-lock v23.0.1
+   Compiling getrandom v0.2.17
+   Compiling rand_core v0.6.4
+   Compiling tinystr v0.8.3
+   Compiling libnghttp2-sys v0.1.13+1.68.1
+   Compiling gix-config-value v0.18.1
+   Compiling litemap v0.8.2
+   Compiling writeable v0.6.3
+   Compiling unicode-bom v2.0.3
+   Compiling icu_locale_core v2.2.0
+   Compiling potential_utf v0.1.5
+   Compiling zerotrie v0.2.4
+   Compiling serde v1.0.228
+   Compiling zmij v1.0.21
+   Compiling log v0.4.33
+   Compiling utf8_iter v1.0.4
+   Compiling base64ct v1.8.3
+   Compiling static_assertions v1.1.0
+   Compiling icu_properties_data v2.2.0
+   Compiling icu_normalizer_data v2.2.0
+   Compiling kstring v2.0.2
+   Compiling pem-rfc7468 v0.7.0
+   Compiling icu_collections v2.2.0
+   Compiling icu_provider v2.2.0
+   Compiling curl-sys v0.4.90+curl-8.21.0
+   Compiling gix-sec v0.14.1
+   Compiling serde_derive v1.0.228
+   Compiling filetime v0.2.29
+   Compiling serde_json v1.0.150
+   Compiling shell-words v1.1.1
+   Compiling gix-command v0.9.1
+   Compiling der v0.7.10
+   Compiling gix-attributes v0.33.2
+   Compiling hybrid-array v0.4.13
+   Compiling pin-project-lite v0.2.17
+   Compiling icu_normalizer v2.2.0
+   Compiling icu_properties v2.2.0
+   Compiling spki v0.7.3
+   Compiling gix-ref v0.65.0
+   Compiling libssh2-sys v0.3.2
+   Compiling hmac v0.12.1
+   Compiling cmov v0.5.4
+   Compiling cpufeatures v0.3.0
+   Compiling ctutils v0.4.2
+   Compiling idna_adapter v1.2.2
+   Compiling pkcs8 v0.10.2
+   Compiling crypto-common v0.2.2
+   Compiling block-buffer v0.12.1
+   Compiling ff v0.13.1
+   Compiling gix-traverse v0.59.0
+   Compiling gix-packetline v0.21.5
+   Compiling gix-bitmap v0.3.2
+   Compiling tracing-core v0.1.36
+   Compiling utf8parse v0.2.2
+   Compiling curl v0.4.50
+   Compiling anyhow v1.0.103
+   Compiling fnv v1.0.7
+   Compiling openssl-probe v0.1.6
+   Compiling const-oid v0.10.2
+   Compiling anstyle v1.0.14
+   Compiling crossbeam-epoch v0.9.20
+   Compiling autocfg v1.5.1
+   Compiling base16ct v0.2.0
+   Compiling sec1 v0.7.3
+   Compiling num-traits v0.2.19
+   Compiling digest v0.11.3
+   Compiling gix-index v0.53.0
+   Compiling anstyle-parse v1.0.0
+   Compiling group v0.13.0
+   Compiling idna v1.1.0
+   Compiling hkdf v0.12.4
+   Compiling gix-pathspec v0.18.1
+   Compiling gix-ignore v0.21.1
+   Compiling crypto-bigint v0.5.5
+   Compiling gix-url v0.36.1
+   Compiling form_urlencoded v1.2.2
+   Compiling libgit2-sys v0.18.7+1.9.6
+   Compiling tracing-attributes v0.1.31
+   Compiling socket2 v0.6.4
+   Compiling rustversion v1.0.22
+   Compiling anstyle-query v1.1.5
+   Compiling typeid v1.0.3
+   Compiling colorchoice v1.0.5
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling anstream v1.0.0
+   Compiling tracing v0.1.44
+   Compiling elliptic-curve v0.13.8
+   Compiling url v2.5.8
+   Compiling gix-worktree v0.54.0
+   Compiling gix-prompt v0.15.1
+   Compiling gix-revision v0.47.0
+   Compiling hashbrown v0.16.1
+   Compiling deranged v0.5.8
+   Compiling encoding_rs v0.8.35
+   Compiling futures-core v0.3.32
+   Compiling cfg_aliases v0.2.2
+   Compiling futures-sink v0.3.32
+   Compiling portable-atomic v1.13.1
+   Compiling winnow v1.0.3
+   Compiling erased-serde v0.4.10
+   Compiling num-conv v0.2.2
+   Compiling powerfmt v0.2.0
+   Compiling time-core v0.1.9
+   Compiling time v0.3.52
+   Compiling toml_parser v1.1.2+spec-1.1.0
+   Compiling futures-channel v0.3.32
+   Compiling nix v0.31.3
+   Compiling gix-filter v0.32.0
+   Compiling clru v0.6.3
+   Compiling gix-refspec v0.43.0
+   Compiling gix-credentials v0.38.1
+   Compiling crossbeam-deque v0.8.6
+   Compiling gix-discover v0.53.0
+   Compiling rfc6979 v0.4.0
+   Compiling globset v0.4.18
+   Compiling signature v2.2.0
+   Compiling terminal_size v0.4.4
+   Compiling libsqlite3-sys v0.38.1
+   Compiling gix-imara-diff v0.2.3
+   Compiling indexmap v2.14.0
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling serde_spanned v1.1.1
+   Compiling futures-macro v0.3.32
+   Compiling base64 v0.22.1
+   Compiling slab v0.4.12
+   Compiling minimal-lexical v0.2.1
+   Compiling strsim v0.11.1
+   Compiling toml_writer v1.1.1+spec-1.1.0
+   Compiling lazy_static v1.5.0
+   Compiling futures-task v0.3.32
+   Compiling clap_lex v1.1.0
+   Compiling futures-io v0.3.32
+   Compiling futures-util v0.3.32
+   Compiling flate2 v1.1.9
+   Compiling clap_builder v4.6.0
+   Compiling sharded-slab v0.1.7
+   Compiling nom v7.1.3
+   Compiling gix-transport v0.57.2
+   Compiling gix-diff v0.65.0
+   Compiling ecdsa v0.16.9
+   Compiling ignore v0.4.26
+   Compiling gix-dir v0.27.0
+   Compiling ordered-float v2.10.1
+   Compiling arc-swap v1.9.2
+   Compiling gix-pack v0.72.0
+   Compiling tar v0.4.46
+   Compiling primeorder v0.13.6
+   Compiling sha2 v0.11.0
+   Compiling tracing-log v0.2.0
+   Compiling gix-config v0.58.0
+   Compiling gix-shallow v0.12.1
+   Compiling gix-negotiate v0.33.0
+   Compiling sha2 v0.10.9
+   Compiling blake3 v1.8.5
+   Compiling matchers v0.2.0
+   Compiling im-rc v15.1.0
+   Compiling bitmaps v2.1.0
+   Compiling maybe-async v0.2.11
+   Compiling thread_local v1.1.9
+   Compiling shell-escape v0.1.5
+   Compiling unicode-width v0.2.2
+   Compiling hex v0.4.3
+   Compiling nu-ansi-term v0.50.3
+   Compiling fiat-crypto v0.3.0
+   Compiling orion v0.17.15
+   Compiling git2 v0.21.0
+   Compiling tracing-subscriber v0.3.23
+   Compiling cargo-util v0.2.32 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/crates/cargo-util)
+   Compiling annotate-snippets v0.12.16
+   Compiling gix-protocol v0.63.0
+   Compiling sized-chunks v0.6.5
+   Compiling p384 v0.13.1
+   Compiling gix-submodule v0.32.0
+   Compiling cargo v0.100.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo)
+   Compiling gix-odb v0.82.0
+   Compiling serde-untagged v0.1.9
+   Compiling serde-value v0.7.0
+   Compiling gix-status v0.32.0
+   Compiling color-print-proc-macro v0.3.7
+   Compiling clap v4.6.1
+   Compiling futures-executor v0.3.32
+   Compiling toml v1.1.2+spec-1.1.0
+   Compiling cargo-credential v0.4.11 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/credential/cargo-credential)
+   Compiling chacha20 v0.10.1
+   Compiling rand_xoshiro v0.6.0
+   Compiling anstyle-hyperlink v1.0.2
+   Compiling ed25519-compact v2.3.1
+   Compiling hashlink v0.12.0
+   Compiling http v1.4.2
+   Compiling semver v1.0.28
+   Compiling regex v1.12.4
+   Compiling libloading v0.9.0
+   Compiling is_executable v1.0.6
+   Compiling arrayref v0.3.9
+   Compiling either v1.16.0
+   Compiling arrayvec v0.7.7
+   Compiling ct-codecs v1.1.7
+   Compiling shlex v1.3.0
+   Compiling anstyle-progress v0.1.0
+   Compiling fallible-iterator v0.3.0
+   Compiling constant_time_eq v0.4.2
+   Compiling supports-hyperlinks v3.2.0
+   Compiling supports-unicode v3.0.0
+   Compiling fallible-streaming-iterator v0.1.9
+   Compiling cargo-util-terminal v0.1.2 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/crates/cargo-util-terminal)
+   Compiling rusqlite v0.40.1
+   Compiling clap_complete v4.6.6
+   Compiling pasetors v0.7.8
+   Compiling itertools v0.15.0
+   Compiling cargo-util-schemas v0.14.3 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/crates/cargo-util-schemas)
+   Compiling cargo-credential-libsecret v0.5.10 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/credential/cargo-credential-libsecret)
+   Compiling crates-io v0.41.2 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/crates/crates-io)
+   Compiling rand v0.10.1
+   Compiling futures v0.3.32
+   Compiling color-print v0.3.7
+   Compiling gix v0.85.0
+   Compiling os_info v3.15.0
+   Compiling tracing-chrome v0.7.2
+   Compiling git2-curl v0.22.0
+   Compiling toml_edit v0.25.12+spec-1.1.0
+   Compiling sha1 v0.11.0
+   Compiling hmac v0.13.0
+   Compiling rustfix v0.9.8 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/crates/rustfix)
+   Compiling opener v0.8.5
+   Compiling cargo-platform v0.3.3 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/cargo/crates/cargo-platform)
+   Compiling serde_ignored v0.1.14
+   Compiling async-trait v0.1.89
+   Compiling http-auth v0.1.10
+   Compiling unicase v2.9.0
+   Compiling futures-timer v3.0.4
+   Compiling rustc-stable-hash v0.1.2
+   Compiling rustc-hash v2.1.2
+   Compiling pathdiff v0.2.3
+   Compiling home v0.5.12
+   Compiling glob v0.3.3
+   Compiling heck v0.5.0
+    Finished `release` profile [optimized] target(s) in 46m 58s
+Dist cargo-1.99.1-x86_64-unknown-linux-gnu
+	finished in 0.094 seconds
+Installing stage2 cargo (stage1 -> stage2, x86_64-unknown-linux-gnu)
+install: creating uninstall script at /opt/rustc-1.99.1/lib/rustlib/uninstall.sh
+install: installing component 'cargo'
+install: backing up existing file at /opt/rustc-1.99.1/share/doc/rustc-1.99.1/README.md
+
+    cargo installed.
+
+Building stage2 rustfmt (stage1 -> stage2, x86_64-unknown-linux-gnu)
+   Compiling serde_core v1.0.228
+   Compiling memchr v2.8.0
+   Compiling syn v2.0.117
+   Compiling aho-corasick v1.1.4
+   Compiling regex-automata v0.4.13
+   Compiling utf8parse v0.2.2
+   Compiling crossbeam-utils v0.8.21
+   Compiling anstyle v1.0.13
+   Compiling anstyle-parse v1.0.0
+   Compiling anstyle-query v1.1.5
+   Compiling crossbeam-epoch v0.9.20
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling colorchoice v1.0.4
+   Compiling anstream v1.0.0
+   Compiling serde_derive v1.0.228
+   Compiling serde_json v1.0.145
+   Compiling strsim v0.11.1
+   Compiling camino v1.2.1
+   Compiling thiserror v2.0.17
+   Compiling clap_lex v1.1.0
+   Compiling heck v0.5.0
+   Compiling clap_derive v4.6.1
+   Compiling serde v1.0.228
+   Compiling clap_builder v4.6.0
+   Compiling thiserror-impl v2.0.17
+   Compiling bstr v1.12.1
+   Compiling same-file v1.0.6
+   Compiling option-ext v0.2.0
+   Compiling thiserror v1.0.69
+   Compiling unicode-width v0.2.2
+   Compiling winnow v1.0.0
+   Compiling anyhow v1.0.102
+   Compiling tracing v0.1.44
+   Compiling toml_parser v1.1.0+spec-1.1.0
+   Compiling dirs-sys v0.5.0
+   Compiling clap v4.6.1
+   Compiling walkdir v2.5.0
+   Compiling globset v0.4.18
+   Compiling crossbeam-deque v0.8.6
+   Compiling cargo-platform v0.3.1
+   Compiling matchers v0.2.0
+   Compiling thiserror-impl v1.0.69
+   Compiling semver v1.0.27
+   Compiling toml_datetime v0.7.3
+   Compiling serde_spanned v1.1.0
+   Compiling winnow v0.7.13
+   Compiling toml_writer v1.1.0+spec-1.1.0
+   Compiling rustfmt-nightly v1.10.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/rustfmt)
+   Compiling tracing-subscriber v0.3.23
+   Compiling cargo_metadata v0.23.1
+   Compiling toml v0.9.8
+   Compiling ignore v0.4.25
+   Compiling clap-cargo v0.18.3
+   Compiling dirs v6.0.0
+   Compiling getopts v0.2.24
+   Compiling annotate-snippets v0.11.5
+   Compiling regex v1.12.2
+   Compiling rustfmt-config_proc_macro v0.3.0 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/rustfmt/config_proc_macro)
+   Compiling unicode-properties v0.1.4
+   Compiling diff v0.1.13
+   Compiling term v1.2.1
+   Compiling unicode-width v0.1.14
+   Compiling bytecount v0.6.9
+    Finished `release` profile [optimized] target(s) in 18m 19s
+Building stage2 cargo-fmt (stage1 -> stage2, x86_64-unknown-linux-gnu)
+    Finished `release` profile [optimized] target(s) in 4.50s
+Dist rustfmt-1.99.1-x86_64-unknown-linux-gnu
+	finished in 0.033 seconds
+Installing stage2 rustfmt (stage1 -> stage2, x86_64-unknown-linux-gnu)
+install: creating uninstall script at /opt/rustc-1.99.1/lib/rustlib/uninstall.sh
+install: installing component 'rustfmt-preview'
+install: backing up existing file at /opt/rustc-1.99.1/share/doc/rustc-1.99.1/LICENSE-APACHE
+install: backing up existing file at /opt/rustc-1.99.1/share/doc/rustc-1.99.1/LICENSE-MIT
+install: backing up existing file at /opt/rustc-1.99.1/share/doc/rustc-1.99.1/README.md
+
+    rustfmt installed.
+
+Building stage2 clippy-driver (stage1 -> stage2, x86_64-unknown-linux-gnu)
+   Compiling syn v2.0.117
+   Compiling stable_deref_trait v1.2.1
+   Compiling serde_core v1.0.228
+   Compiling litemap v0.8.1
+   Compiling smallvec v1.15.1
+   Compiling writeable v0.6.2
+   Compiling icu_normalizer_data v2.2.0
+   Compiling utf8_iter v1.0.4
+   Compiling icu_properties_data v2.2.0
+   Compiling rustc_apfloat v0.2.3+llvm-462a31f5a5ab
+   Compiling bitflags v2.10.0
+   Compiling indexmap v2.14.0
+   Compiling minimal-lexical v0.2.1
+   Compiling serde_spanned v1.1.0
+   Compiling memchr v2.8.0
+   Compiling percent-encoding v2.3.2
+   Compiling tinyvec_macros v0.1.1
+   Compiling toml_datetime v1.1.0+spec-1.1.0
+   Compiling clippy_utils v0.1.99 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/clippy/clippy_utils)
+   Compiling nom v7.1.3
+   Compiling synstructure v0.13.2
+   Compiling zerovec-derive v0.11.3
+   Compiling zerofrom-derive v0.1.6
+   Compiling yoke-derive v0.8.2
+   Compiling zerofrom v0.1.6
+   Compiling displaydoc v0.2.5
+   Compiling yoke v0.8.2
+   Compiling zerovec v0.11.6
+   Compiling zerotrie v0.2.4
+   Compiling serde_derive v1.0.228
+   Compiling tinystr v0.8.3
+   Compiling icu_locale_core v2.2.0
+   Compiling potential_utf v0.1.4
+   Compiling icu_collections v2.2.0
+   Compiling icu_provider v2.2.0
+   Compiling icu_normalizer v2.2.0
+   Compiling icu_properties v2.2.0
+   Compiling serde v1.0.228
+   Compiling thiserror-impl v2.0.17
+   Compiling idna_adapter v1.2.1
+   Compiling idna v1.1.0
+   Compiling thiserror v2.0.17
+   Compiling cargo-platform v0.3.1
+   Compiling toml v1.1.0+spec-1.1.0
+   Compiling tinyvec v1.10.0
+   Compiling serde_json v1.0.145
+   Compiling form_urlencoded v1.2.2
+   Compiling camino v1.2.1
+   Compiling semver v1.0.27
+   Compiling rustc_tools_util v0.4.2 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/clippy/rustc_tools_util)
+   Compiling clippy v0.1.99 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/clippy)
+   Compiling anstyle-parse v0.2.7
+   Compiling cargo_metadata v0.23.1
+   Compiling url v2.5.7
+   Compiling unicode-normalization v0.1.25
+   Compiling clippy_config v0.1.99 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/clippy/clippy_config)
+   Compiling color-print-proc-macro v0.3.7
+   Compiling quine-mc_cluskey v0.2.4
+   Compiling declare_clippy_lint v0.1.99 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/clippy/declare_clippy_lint)
+   Compiling unicode-script v0.5.7
+   Compiling anstream v0.6.21
+   Compiling clippy_lints v0.1.99 (/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/src/tools/clippy/clippy_lints)
+   Compiling color-print v0.3.7
+    Finished `release` profile [optimized] target(s) in 35m 42s
+Building stage2 cargo-clippy (stage1 -> stage2, x86_64-unknown-linux-gnu)
+    Finished `release` profile [optimized] target(s) in 8.04s
+Dist clippy-1.99.1-x86_64-unknown-linux-gnu
+	finished in 0.066 seconds
+Installing stage2 clippy (stage1 -> stage2, x86_64-unknown-linux-gnu)
+install: creating uninstall script at /opt/rustc-1.99.1/lib/rustlib/uninstall.sh
+install: installing component 'clippy-preview'
+install: backing up existing file at /opt/rustc-1.99.1/share/doc/rustc-1.99.1/LICENSE-APACHE
+install: backing up existing file at /opt/rustc-1.99.1/share/doc/rustc-1.99.1/LICENSE-MIT
+install: backing up existing file at /opt/rustc-1.99.1/share/doc/rustc-1.99.1/README.md
+
+    clippy installed.
+
+Skipping LlvmTools (x86_64-unknown-linux-gnu): external LLVM
+skipping llvm-tools (x86_64-unknown-linux-gnu): external LLVM
+Vendoring sources to "/home/fusion809/lfs_packaging/rust/rustc-1.99.1-src/build/tmp/tarball/rust-src/image/lib/rustlib/src/rust"
+To use vendored sources, add this to your .cargo/config.toml for this project:
+
+Dist rust-src-1.99.1
+	finished in 5.916 seconds
+Installing src for x86_64-unknown-linux-gnu
+install: creating uninstall script at /opt/rustc-1.99.1/lib/rustlib/uninstall.sh
+install: installing component 'rust-src'
+
+    rust src installed.
+
+There have been changes to x.py since you last updated:
+  [WARNING] The `override-allocator` option has been renamed: The global setting is now `build.allocator` and the per-target setting is `target.<target>.allocator`. It can now be set to 'system' to explicitly request the system allocator.
+    - PR Link https://github.com/rust-lang/rust/pull/160100
+NOTE: to silence this warning, update `bootstrap.toml` to use `change-id = 160100` or `change-id = "ignore"` instead
+NOTE: this message was printed twice to make it more likely to be seen
+Build completed successfully in 3:40:59
+removed '/opt/rustc-1.99.1/share/doc/rustc-1.99.1/LICENSE-APACHE.old'
+removed '/opt/rustc-1.99.1/share/doc/rustc-1.99.1/LICENSE-MIT.old'
+removed '/opt/rustc-1.99.1/share/doc/rustc-1.99.1/README.md.old'
+removed '/opt/rustc-1.99.1/share/doc/rustc-1.99.1/README.md'
+'README.md' -> '/opt/rustc-1.99.1/share/doc/rustc-1.99.1/README.md'
+'/usr/share/zsh/site-functions/_cargo' -> '/opt/rustc/share/zsh/site-functions/_cargo'
+renamed '/etc/bash_completion.d/cargo' -> '/usr/share/bash-completion/completions/cargo'
+1.99.1
+Updated registry for rust to version 1.99.1
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package rust in /var/lib/custom-packages/
+/home/fusion809/.lfs_autobuild.sh: line 4992: syntax error near unexpected token `else'
+/home/fusion809/.lfs_autobuild.sh: line 4992: `else'
+Updating Python packages via pip...
+Requirement already satisfied: tomlkit in /usr/lib/python3.15/site-packages (0.15.1)
+Collecting tomlkit
+  Downloading tomlkit-0.15.2-py3-none-any.whl.metadata (3.4 kB)
+Downloading tomlkit-0.15.2-py3-none-any.whl (52 kB)
+Installing collected packages: tomlkit
+  Attempting uninstall: tomlkit
+    Found existing installation: tomlkit 0.15.1
+    Uninstalling tomlkit-0.15.1:
+      Successfully uninstalled tomlkit-0.15.1
+Successfully installed tomlkit-0.15.2
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating and rebuilding packages
+[master b4bb5a7] Updating and rebuilding packages
+ 30 files changed, 28107 insertions(+), 18330 deletions(-)
+ create mode 100755 atkmm
+ create mode 100755 bdwgc
+ create mode 100755 cairomm
+ create mode 100755 glibmm
+ create mode 100755 glibmm24
+ create mode 100755 gsl
+ create mode 100755 gtkmm3
+ create mode 100755 libsigcpp2
+ create mode 100755 pangomm
+ create mode 100755 zed
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating and rebuilding packages
+[master 7919706] Updating and rebuilding packages
+ 30 files changed, 33 insertions(+)
+ create mode 100644 atkmm
+ create mode 100644 cairomm
+ create mode 100644 glibmm
+ create mode 100644 glibmm24
+ create mode 100644 gtkmm3
+ create mode 100644 libsigcpp2
+ create mode 100644 pangomm
+ create mode 100644 zed
+Pushing changes in ~/build_duration...
+r13.1-27
+r13.1-410
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/atkmm-1.6 (belongs to an installed package)
+Skipping registered directory: /usr/lib/cairomm-1.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/pangomm-1.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/sigc++-2.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+Removing stale: linux-7.2.10  (newer: linux-7.2.11)
+Removing stale: pkgconf-3.0.8  (newer: pkgconf-3.0.9)
+---
+Removed : 2
+Kept    : 0
+Deleting kernels older than 7.2.10...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.2.11-lfs-r13.1-21
+Found linux image: /boot/vmlinuz-7.2.10-lfs-r13.1-19
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
