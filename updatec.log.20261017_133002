@@ -1,0 +1,500 @@
+===== Update check started: 2026-10-17 13:30:02 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261017_133002
+Packages needing attention: simdutf
+===== Starting updatec: 2026-10-17 13:30:04 AEST =====
+Checking for packages with missing file inventories...
+name=nodejs-bin
+local_ver=26.12.0
+remote_ver=2026.10.14
+name=openpmix
+local_ver=5.0.11
+remote_ver=6.1.0
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - nodejs-bin
+  - openpmix
+  - simdutf
+
+Building custom package nodejs-bin...
+[13:31:44] Found custom package for nodejs-bin, bypassing BLFS aliases.
+[13:31:44] Custom package detected at /home/fusion809/lfs_packaging/nodejs-bin (package: nodejs-bin)
+[13:31:44] Extracting dependencies for custom package 'nodejs-bin'...
+[13:31:44] Required deps: gcc glibc 
+[13:31:44] Dependency 'gcc' already installed.
+[13:31:44] Dependency 'glibc' already installed.
+[13:31:44] Starting remote custom build for nodejs-bin...
+[13:31:44] [LFS-AUTOBUILD] Skipping custom package nodejs-bin: version 26.12.0 already installed (use -f to force build).
+Building custom package openpmix...
+[13:31:44] Found custom package for openpmix, bypassing BLFS aliases.
+[13:31:44] Custom package detected at /home/fusion809/lfs_packaging/openpmix (package: openpmix)
+[13:31:44] Extracting dependencies for custom package 'openpmix'...
+[13:31:44] Required deps: bash bzip2 coreutils glibc hwloc libevent make perl python sed systemd tar zlib 
+[13:31:44] Dependency 'bash' already installed.
+[13:31:44] Dependency 'bzip2' already installed.
+[13:31:44] Dependency 'coreutils' already installed.
+[13:31:44] Dependency 'glibc' already installed.
+[13:31:44] Dependency 'hwloc' already installed.
+[13:31:44] Dependency 'libevent' already installed.
+[13:31:44] Dependency 'make' already installed.
+[13:31:44] Dependency 'perl' already installed.
+[13:31:44] Dependency 'python' already installed.
+[13:31:44] Dependency 'sed' already installed.
+[13:31:44] Dependency 'systemd' already installed.
+[13:31:44] Dependency 'tar' already installed.
+[13:31:44] Dependency 'zlib' already installed.
+[13:31:44] Starting remote custom build for openpmix...
+[13:31:44] [LFS-AUTOBUILD] Skipping custom package openpmix: version 5.0.11 already installed (use -f to force build).
+Building custom package simdutf...
+[13:31:45] Found custom package for simdutf, bypassing BLFS aliases.
+[13:31:45] Custom package detected at /home/fusion809/lfs_packaging/simdutf (package: simdutf)
+[13:31:45] Extracting dependencies for custom package 'simdutf'...
+[13:31:45] Required deps: cmake gcc glibc 
+[13:31:45] Dependency 'cmake' already installed.
+[13:31:45] Dependency 'gcc' already installed.
+[13:31:45] Dependency 'glibc' already installed.
+[13:31:45] Starting remote custom build for simdutf...
+--2026-10-17 13:31:49--  https://github.com/simdutf/simdutf/archive/v9.3.2.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/simdutf/simdutf/tar.gz/refs/tags/v9.3.2 [following]
+--2026-10-17 13:31:49--  https://codeload.github.com/simdutf/simdutf/tar.gz/refs/tags/v9.3.2
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘simdutf-9.3.2.tar.gz’
+
+simdutf-9.3.2.tar.g     [<=>                 ]       0  --.-KB/s               simdutf-9.3.2.tar.g     [ <=>                ]   1.01M  5.05MB/s               simdutf-9.3.2.tar.g     [  <=>               ]   2.86M  7.14MB/s               simdutf-9.3.2.tar.g     [   <=>              ]   3.36M  7.49MB/s    in 0.4s    
+
+2026-10-17 13:31:50 (7.49 MB/s) - ‘simdutf-9.3.2.tar.gz’ saved [3524445]
+
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test HAVE_CXX_FLAG_NO_EXCEPTIONS
+-- Performing Test HAVE_CXX_FLAG_NO_EXCEPTIONS - Success
+-- Performing Test HAVE_CXX_FLAG_NO_RTTI
+-- Performing Test HAVE_CXX_FLAG_NO_RTTI - Success
+-- Performing Test HAVE_CXX_LINKER_FLAG_NO_STDLIBXX
+-- Performing Test HAVE_CXX_LINKER_FLAG_NO_STDLIBXX - Success
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.0") found components: Interpreter
+-- Python found, we are going to amalgamate.py.
+-- The tests are enabled.
+-- Performing Test Iconv_IS_BUILT_IN
+-- Performing Test Iconv_IS_BUILT_IN - Success
+-- Found Iconv: built in to C library
+-- Iconv was found!
+-- Iconv is part of the C library.
+-- looking for static C++ library in /usr/lib/gcc/x86_64-pc-linux-gnu/16.2.0
+-- libstdc++.a found
+-- The benchmarks can be enabled by setting SIMDUTF_BENCHMARKS, e.g., -D SIMDUTF_BENCHMARKS=ON.
+-- Compiling using the C++ standard:17
+-- Configuring done (2.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/simdutf/simdutf-9.3.2/build
+[1/208] Building CXX object tests/reference/CMakeFiles/simdutf_tests_reference.dir/encode_utf8.cpp.o
+[2/208] Building CXX object tests/reference/CMakeFiles/simdutf_tests_reference.dir/encode_utf32.cpp.o
+[3/208] Building CXX object tests/reference/CMakeFiles/simdutf_tests_reference.dir/encode_utf16.cpp.o
+[4/208] Building CXX object tests/reference/CMakeFiles/simdutf_tests_reference.dir/encode_latin1.cpp.o
+[5/208] Building CXX object tests/reference/CMakeFiles/simdutf_tests_reference.dir/validate_utf8_to_latin1.cpp.o
+[6/208] Building CXX object tests/reference/CMakeFiles/simdutf_tests_reference.dir/validate_utf16_to_latin1.cpp.o
+[7/208] Building CXX object tests/reference/CMakeFiles/simdutf_tests_reference.dir/validate_utf32_to_latin1.cpp.o
+[8/208] Building CXX object tests/reference/CMakeFiles/simdutf_tests_reference.dir/validate_utf8.cpp.o
+[9/208] Building CXX object tests/reference/CMakeFiles/simdutf_tests_reference.dir/validate_utf16.cpp.o
+[10/208] Building CXX object tests/reference/CMakeFiles/simdutf_tests_reference.dir/validate_utf32.cpp.o
+[11/208] Building CXX object src/CMakeFiles/simdutf-base64.dir/simdutf.cpp.o
+[12/208] Building CXX object src/CMakeFiles/simdutf-nobase64.dir/simdutf.cpp.o
+[13/208] Building CXX object tests/helpers/CMakeFiles/simdutf_tests_helpers.dir/test.cpp.o
+[14/208] Building CXX object tests/helpers/CMakeFiles/simdutf_tests_helpers.dir/random_int.cpp.o
+[15/208] Building CXX object tests/helpers/CMakeFiles/simdutf_tests_helpers.dir/transcode_test_base.cpp.o
+[16/208] Building CXX object tests/helpers/CMakeFiles/simdutf_tests_helpers.dir/random_utf8.cpp.o
+[17/208] Building CXX object tests/helpers/CMakeFiles/simdutf_tests_helpers.dir/random_utf16.cpp.o
+[18/208] Building CXX object tests/helpers/CMakeFiles/simdutf_tests_helpers.dir/random_utf32.cpp.o
+[19/208] Linking CXX static library src/libsimdutf-base64.a
+[20/208] Linking CXX static library src/libsimdutf-nobase64.a
+[21/208] Building CXX object tests/CMakeFiles/null_safety_tests.dir/null_safety_tests.cpp.o
+[22/208] Building CXX object tests/CMakeFiles/readme_tests.dir/readme_tests.cpp.o
+[23/208] Building CXX object src/CMakeFiles/simdutf.dir/simdutf.cpp.o
+[24/208] Linking CXX shared library src/libsimdutf.so.37.0.0
+[25/208] Creating library symlink src/libsimdutf.so.37 src/libsimdutf.so
+[26/208] Generating simdutf.cpp, simdutf.h, amalgamation_demo.cpp, README.md
+fatal: not a git repository (or any of the parent directories): .git
+using env variable AMALGAMATE_SOURCE_PATH=/home/fusion809/lfs_packaging/simdutf/simdutf-9.3.2/src
+using env variable AMALGAMATE_OUTPUT_PATH=/home/fusion809/lfs_packaging/simdutf/simdutf-9.3.2/build/singleheader
+SCRIPTPATH=/home/fusion809/lfs_packaging/simdutf/simdutf-9.3.2/singleheader PROJECTPATH=/home/fusion809/lfs_packaging/simdutf/simdutf-9.3.2
+We are about to amalgamate all simdutf files into one source file.
+See https://www.sqlite.org/amalgamation.html and https://en.wikipedia.org/wiki/Single_Compilation_Unit for rationale.
+git called resulted in non-zero exit code 128
+timestamp based on current time
+timestamp is 2026-10-17 13:32:44.283322
+Creating /home/fusion809/lfs_packaging/simdutf/simdutf-9.3.2/build/singleheader/simdutf.h
+Creating /home/fusion809/lfs_packaging/simdutf/simdutf-9.3.2/build/singleheader/simdutf.cpp
+Copying additional files to /home/fusion809/lfs_packaging/simdutf/simdutf-9.3.2/build/singleheader
+Creating /home/fusion809/lfs_packaging/simdutf/simdutf-9.3.2/build/singleheader/simdutf_c.h
+Processing amalgamation_demo.cpp
+Creating /home/fusion809/lfs_packaging/simdutf/simdutf-9.3.2/build/singleheader/amalgamation_demo.cpp
+Processing README.md
+Creating /home/fusion809/lfs_packaging/simdutf/simdutf-9.3.2/build/singleheader/README.md
+Processing amalgamation_demo.c
+Creating /home/fusion809/lfs_packaging/simdutf/simdutf-9.3.2/build/singleheader/amalgamation_demo.c
+Creating /home/fusion809/lfs_packaging/simdutf/simdutf-9.3.2/build/singleheader/singleheader.zip
+Done with all files generation.
+Files have been written to directory: /home/fusion809/lfs_packaging/simdutf/simdutf-9.3.2/build/singleheader
+
+Giving final instructions:
+
+
+
+While in the singleheader directory under a linux or macOS system with an install toolchain, try:
+
+```
+c++ -o amalgamation_demo amalgamation_demo.cpp -std=c++17 && ./amalgamation_demo
+```
+
+
+### C Demo
+
+You can compile both the simdutf library and the C program using a C++ compiler.
+
+```
+c++ -c simdutf.cpp -std=c++17
+cc -c amalgamation_demo.c
+c++  amalgamation_demo.o simdutf.o -o cdemo
+ ./cdemo
+```
+
+You may also build a C executable without a dependency on the C++ standard library.
+
+```
+c++ -c simdutf.cpp  -nostdlib++ -fno-rtti -fno-exceptions -DSIMDUTF_NO_LIBCXX=1 -std=c++17
+cc amalgamation_demo.c simdutf.o -o cdemo
+./cdemo
+```
+[27/208] Linking CXX static library tests/reference/libsimdutf_tests_reference.a
+[28/208] Building CXX object tests/CMakeFiles/random_fuzzer.dir/random_fuzzer.cpp.o
+[29/208] Building CXX object tests/CMakeFiles/special_tests.dir/special_tests.cpp.o
+[30/208] Building CXX object tests/CMakeFiles/validate_ascii_basic_tests.dir/validate_ascii_basic_tests.cpp.o
+[31/208] Building CXX object tests/CMakeFiles/validate_ascii_with_errors_tests.dir/validate_ascii_with_errors_tests.cpp.o
+[32/208] Building CXX object tests/CMakeFiles/bele_tests.dir/bele_tests.cpp.o
+[33/208] Building CXX object tests/CMakeFiles/validate_utf8_basic_tests.dir/validate_utf8_basic_tests.cpp.o
+[34/208] Building CXX object tests/CMakeFiles/select_implementation.dir/select_implementation.cpp.o
+[35/208] Building CXX object src/CMakeFiles/simdutf-nostdlibcxx.dir/simdutf.cpp.o
+[36/208] Linking CXX static library src/libsimdutf-nostdlibcxx.a
+[37/208] Building CXX object tests/CMakeFiles/validate_utf8_brute_force_tests.dir/validate_utf8_brute_force_tests.cpp.o
+[38/208] Building CXX object tests/CMakeFiles/validate_utf8_with_counts_brute_force_tests.dir/validate_utf8_with_counts_brute_force_tests.cpp.o
+[39/208] Building CXX object tests/CMakeFiles/validate_utf8_puzzler_tests.dir/validate_utf8_puzzler_tests.cpp.o
+[40/208] Building CXX object tests/CMakeFiles/validate_utf8_with_counts_boundary_tests.dir/validate_utf8_with_counts_boundary_tests.cpp.o
+[41/208] Building CXX object tests/CMakeFiles/validate_utf8_with_errors_tests.dir/validate_utf8_with_errors_tests.cpp.o
+[42/208] Building CXX object tests/CMakeFiles/validate_utf16le_basic_tests.dir/validate_utf16le_basic_tests.cpp.o
+[43/208] Building CXX object tests/CMakeFiles/validate_utf16be_basic_tests.dir/validate_utf16be_basic_tests.cpp.o
+[44/208] Building CXX object tests/CMakeFiles/validate_utf16le_with_errors_tests.dir/validate_utf16le_with_errors_tests.cpp.o
+[45/208] Building CXX object tests/CMakeFiles/validate_utf16be_with_errors_tests.dir/validate_utf16be_with_errors_tests.cpp.o
+[46/208] Building CXX object tests/CMakeFiles/validate_utf32_basic_tests.dir/validate_utf32_basic_tests.cpp.o
+[47/208] Building CXX object tests/CMakeFiles/validate_utf32_with_errors_tests.dir/validate_utf32_with_errors_tests.cpp.o
+[48/208] Building CXX object tests/CMakeFiles/find_tests.dir/find_tests.cpp.o
+[49/208] Building CXX object tests/CMakeFiles/convert_latin1_to_utf16le_tests.dir/convert_latin1_to_utf16le_tests.cpp.o
+[50/208] Building CXX object tests/CMakeFiles/convert_latin1_to_utf8_tests.dir/convert_latin1_to_utf8_tests.cpp.o
+[51/208] Building CXX object tests/CMakeFiles/convert_latin1_to_utf16be_tests.dir/convert_latin1_to_utf16be_tests.cpp.o
+[52/208] Building CXX object tests/CMakeFiles/convert_latin1_to_utf32_tests.dir/convert_latin1_to_utf32_tests.cpp.o
+[53/208] Building CXX object tests/CMakeFiles/convert_utf8_to_latin1_tests.dir/convert_utf8_to_latin1_tests.cpp.o
+[54/208] Building CXX object tests/CMakeFiles/convert_valid_utf8_to_latin1_tests.dir/convert_valid_utf8_to_latin1_tests.cpp.o
+[55/208] Building CXX object tests/CMakeFiles/convert_utf8_to_latin1_with_errors_tests.dir/convert_utf8_to_latin1_with_errors_tests.cpp.o
+[56/208] Building CXX object tests/CMakeFiles/convert_valid_utf8_to_utf16be_tests.dir/convert_valid_utf8_to_utf16be_tests.cpp.o
+[57/208] Building CXX object tests/CMakeFiles/convert_valid_utf8_to_utf16le_tests.dir/convert_valid_utf8_to_utf16le_tests.cpp.o
+[58/208] Building CXX object tests/CMakeFiles/convert_valid_utf8_to_utf32_tests.dir/convert_valid_utf8_to_utf32_tests.cpp.o
+[59/208] Building CXX object singleheader/CMakeFiles/amalgamation_demo.dir/amalgamation_demo.cpp.o
+[60/208] Building CXX object tests/CMakeFiles/convert_utf8_to_utf16le_tests.dir/convert_utf8_to_utf16le_tests.cpp.o
+[61/208] Building CXX object tests/CMakeFiles/convert_utf8_to_utf16be_tests.dir/convert_utf8_to_utf16be_tests.cpp.o
+[62/208] Building CXX object tests/CMakeFiles/convert_utf8_to_utf16le_with_errors_tests.dir/convert_utf8_to_utf16le_with_errors_tests.cpp.o
+[63/208] Building CXX object tests/CMakeFiles/convert_utf8_to_utf16be_with_errors_tests.dir/convert_utf8_to_utf16be_with_errors_tests.cpp.o
+[64/208] Building CXX object tests/CMakeFiles/convert_utf8_to_utf32_tests.dir/convert_utf8_to_utf32_tests.cpp.o
+[65/208] Building CXX object tests/CMakeFiles/convert_utf8_to_utf32_with_errors_tests.dir/convert_utf8_to_utf32_with_errors_tests.cpp.o
+[66/208] Building CXX object tests/CMakeFiles/convert_utf16le_to_latin1_tests.dir/convert_utf16le_to_latin1_tests.cpp.o
+[67/208] Building CXX object tests/CMakeFiles/convert_utf16be_to_latin1_tests.dir/convert_utf16be_to_latin1_tests.cpp.o
+[68/208] Building CXX object tests/CMakeFiles/convert_utf16le_to_latin1_tests_with_errors.dir/convert_utf16le_to_latin1_tests_with_errors.cpp.o
+[69/208] Building CXX object tests/CMakeFiles/convert_utf16be_to_latin1_tests_with_errors.dir/convert_utf16be_to_latin1_tests_with_errors.cpp.o
+[70/208] Building CXX object tests/CMakeFiles/convert_valid_utf16le_to_latin1_tests.dir/convert_valid_utf16le_to_latin1_tests.cpp.o
+[71/208] Building CXX object tests/CMakeFiles/convert_valid_utf16be_to_latin1_tests.dir/convert_valid_utf16be_to_latin1_tests.cpp.o
+[72/208] Building CXX object tests/CMakeFiles/convert_utf16le_to_utf8_tests.dir/convert_utf16le_to_utf8_tests.cpp.o
+[73/208] Building CXX object tests/CMakeFiles/convert_utf16_to_utf8_safe_tests.dir/convert_utf16_to_utf8_safe_tests.cpp.o
+[74/208] Building CXX object tests/CMakeFiles/convert_utf16be_to_utf8_tests.dir/convert_utf16be_to_utf8_tests.cpp.o
+[75/208] Building CXX object tests/CMakeFiles/convert_utf16le_to_utf8_with_errors_tests.dir/convert_utf16le_to_utf8_with_errors_tests.cpp.o
+[76/208] Building CXX object tests/CMakeFiles/convert_utf32_to_latin1_tests.dir/convert_utf32_to_latin1_tests.cpp.o
+[77/208] Building CXX object tests/CMakeFiles/convert_utf16be_to_utf8_with_errors_tests.dir/convert_utf16be_to_utf8_with_errors_tests.cpp.o
+[78/208] Building CXX object tests/CMakeFiles/convert_valid_utf32_to_latin1_tests.dir/convert_valid_utf32_to_latin1_tests.cpp.o
+[79/208] Building CXX object tests/CMakeFiles/convert_utf32_to_latin1_with_errors_tests.dir/convert_utf32_to_latin1_with_errors_tests.cpp.o
+[80/208] Building CXX object tests/CMakeFiles/convert_utf32_to_utf8_tests.dir/convert_utf32_to_utf8_tests.cpp.o
+[81/208] Building CXX object tests/CMakeFiles/convert_utf32_to_utf16be_tests.dir/convert_utf32_to_utf16be_tests.cpp.o
+[82/208] Building CXX object tests/CMakeFiles/convert_utf32_to_utf16le_tests.dir/convert_utf32_to_utf16le_tests.cpp.o
+[83/208] Building CXX object tests/CMakeFiles/convert_utf32_to_utf8_with_errors_tests.dir/convert_utf32_to_utf8_with_errors_tests.cpp.o
+[84/208] Building CXX object tests/CMakeFiles/convert_utf32_to_utf16be_with_errors_tests.dir/convert_utf32_to_utf16be_with_errors_tests.cpp.o
+[85/208] Building CXX object tests/CMakeFiles/convert_utf32_to_utf16le_with_errors_tests.dir/convert_utf32_to_utf16le_with_errors_tests.cpp.o
+[86/208] Building CXX object tests/CMakeFiles/convert_valid_utf16le_to_utf8_tests.dir/convert_valid_utf16le_to_utf8_tests.cpp.o
+[87/208] Building CXX object tests/CMakeFiles/convert_valid_utf16be_to_utf8_tests.dir/convert_valid_utf16be_to_utf8_tests.cpp.o
+[88/208] Building CXX object tests/CMakeFiles/convert_valid_utf32_to_utf8_tests.dir/convert_valid_utf32_to_utf8_tests.cpp.o
+[89/208] Building CXX object tests/CMakeFiles/convert_valid_utf32_to_utf16le_tests.dir/convert_valid_utf32_to_utf16le_tests.cpp.o
+[90/208] Building CXX object tests/CMakeFiles/convert_valid_utf32_to_utf16be_tests.dir/convert_valid_utf32_to_utf16be_tests.cpp.o
+[91/208] Building CXX object tests/CMakeFiles/convert_utf16le_to_utf32_tests.dir/convert_utf16le_to_utf32_tests.cpp.o
+[92/208] Building CXX object tests/CMakeFiles/convert_utf16be_to_utf32_tests.dir/convert_utf16be_to_utf32_tests.cpp.o
+[93/208] Building CXX object tests/CMakeFiles/convert_utf16le_to_utf32_with_errors_tests.dir/convert_utf16le_to_utf32_with_errors_tests.cpp.o
+[94/208] Building CXX object tests/CMakeFiles/convert_valid_utf16le_to_utf32_tests.dir/convert_valid_utf16le_to_utf32_tests.cpp.o
+[95/208] Building CXX object tests/CMakeFiles/convert_utf16be_to_utf32_with_errors_tests.dir/convert_utf16be_to_utf32_with_errors_tests.cpp.o
+[96/208] Building CXX object tests/CMakeFiles/count_utf8.dir/count_utf8.cpp.o
+[97/208] Building CXX object tests/CMakeFiles/convert_valid_utf16be_to_utf32_tests.dir/convert_valid_utf16be_to_utf32_tests.cpp.o
+[98/208] Building CXX object tests/CMakeFiles/count_utf16le.dir/count_utf16le.cpp.o
+[99/208] Building CXX object tests/CMakeFiles/count_utf16be.dir/count_utf16be.cpp.o
+[100/208] Building CXX object tests/CMakeFiles/text_encoding_tests.dir/text_encoding_tests.cpp.o
+[101/208] Building CXX object tests/CMakeFiles/detect_encodings_tests.dir/detect_encodings_tests.cpp.o
+[102/208] Building CXX object tests/CMakeFiles/constexpr_base64_tests.dir/constexpr_base64_tests.cpp.o
+[103/208] Building CXX object tests/CMakeFiles/span_tests.dir/span_tests.cpp.o
+[104/208] Building CXX object tests/CMakeFiles/basic_fuzzer.dir/basic_fuzzer.cpp.o
+[105/208] Building C object tests/CMakeFiles/straight_c_test.dir/straight_c_test.c.o
+[106/208] Building CXX object tests/CMakeFiles/internal_tests.dir/internal_tests.cpp.o
+[107/208] Building CXX object tests/CMakeFiles/utf8_length_from_utf16_tests.dir/utf8_length_from_utf16_tests.cpp.o
+[108/208] Building CXX object tests/CMakeFiles/simdutf_c_tests.dir/simdutf_c_tests.cpp.o
+[109/208] Building CXX object tests/CMakeFiles/to_well_formed_utf16_tests.dir/to_well_formed_utf16_tests.cpp.o
+[110/208] Building CXX object tests/CMakeFiles/convert_utf16_to_utf8_with_replacement_tests.dir/convert_utf16_to_utf8_with_replacement_tests.cpp.o
+[111/208] Building CXX object tests/CMakeFiles/fixed_string_tests.dir/fixed_string_tests.cpp.o
+[112/208] Building CXX object tests/CMakeFiles/convert_utf8_to_utf16_with_replacement_tests.dir/convert_utf8_to_utf16_with_replacement_tests.cpp.o
+[113/208] Building CXX object tests/CMakeFiles/embed_tests.dir/embed_tests.cpp.o
+[114/208] Linking CXX static library tests/helpers/libsimdutf_tests_helpers.a
+[115/208] Building C object tests/CMakeFiles/nostdlibcxx_c_api_test.dir/nostdlibcxx_c_api_test.c.o
+[116/208] Building CXX object tools/CMakeFiles/fastbase64.dir/fastbase64.cpp.o
+[117/208] Linking CXX executable singleheader/amalgamation_demo
+[118/208] Linking CXX executable tests/null_safety_tests
+[119/208] Linking CXX executable tests/readme_tests
+[120/208] Linking CXX executable tests/random_fuzzer
+[121/208] Building CXX object tools/CMakeFiles/sutf.dir/sutf.cpp.o
+[122/208] Linking CXX executable tests/special_tests
+[123/208] Linking CXX executable tests/validate_ascii_basic_tests
+[124/208] Linking CXX executable tests/validate_ascii_with_errors_tests
+[125/208] Linking CXX executable tests/bele_tests
+[126/208] Linking CXX executable tests/validate_utf8_basic_tests
+[127/208] Linking CXX executable tests/select_implementation
+[128/208] Linking CXX executable tests/validate_utf8_brute_force_tests
+[129/208] Linking CXX executable tests/validate_utf8_with_counts_brute_force_tests
+[130/208] Linking CXX executable tests/validate_utf8_with_counts_boundary_tests
+[131/208] Linking CXX executable tests/validate_utf8_puzzler_tests
+[132/208] Linking CXX executable tests/validate_utf8_with_errors_tests
+[133/208] Linking CXX executable tests/validate_utf16be_basic_tests
+[134/208] Linking CXX executable tests/validate_utf16le_basic_tests
+[135/208] Linking CXX executable tests/validate_utf16le_with_errors_tests
+[136/208] Linking CXX executable tests/validate_utf16be_with_errors_tests
+[137/208] Linking CXX executable tests/validate_utf32_basic_tests
+[138/208] Linking CXX executable tests/validate_utf32_with_errors_tests
+[139/208] Linking CXX executable tests/convert_latin1_to_utf8_tests
+[140/208] Linking CXX executable tests/find_tests
+[141/208] Linking CXX executable tests/convert_latin1_to_utf16le_tests
+[142/208] Linking CXX executable tests/convert_latin1_to_utf16be_tests
+[143/208] Linking CXX executable tests/convert_latin1_to_utf32_tests
+[144/208] Linking CXX executable tests/convert_utf8_to_latin1_tests
+[145/208] Linking CXX executable tests/convert_utf8_to_latin1_with_errors_tests
+[146/208] Linking CXX executable tests/convert_valid_utf8_to_latin1_tests
+[147/208] Linking CXX executable tests/convert_valid_utf8_to_utf16le_tests
+[148/208] Linking CXX executable tests/convert_valid_utf8_to_utf32_tests
+[149/208] Linking CXX executable tests/convert_valid_utf8_to_utf16be_tests
+[150/208] Linking CXX executable tests/convert_utf8_to_utf16be_tests
+[151/208] Linking CXX executable tests/convert_utf8_to_utf16le_tests
+[152/208] Linking CXX executable tests/convert_utf8_to_utf16le_with_errors_tests
+[153/208] Linking CXX executable tests/convert_utf8_to_utf16be_with_errors_tests
+[154/208] Linking CXX executable tests/convert_utf8_to_utf32_tests
+[155/208] Linking CXX executable tests/convert_utf8_to_utf32_with_errors_tests
+[156/208] Linking CXX executable tests/convert_utf16le_to_latin1_tests
+[157/208] Linking CXX executable tests/convert_utf16be_to_latin1_tests
+[158/208] Linking CXX executable tests/convert_utf16be_to_latin1_tests_with_errors
+[159/208] Linking CXX executable tests/convert_utf16le_to_latin1_tests_with_errors
+[160/208] Linking CXX executable tests/convert_valid_utf16le_to_latin1_tests
+[161/208] Linking CXX executable tests/convert_valid_utf16be_to_latin1_tests
+[162/208] Linking CXX executable tests/convert_utf16_to_utf8_safe_tests
+[163/208] Linking CXX executable tests/convert_utf16le_to_utf8_tests
+[164/208] Linking CXX executable tests/convert_utf16le_to_utf8_with_errors_tests
+[165/208] Linking CXX executable tests/convert_utf16be_to_utf8_tests
+[166/208] Linking CXX executable tests/convert_utf16be_to_utf8_with_errors_tests
+[167/208] Linking CXX executable tests/convert_utf32_to_latin1_tests
+[168/208] Linking CXX executable tests/convert_valid_utf32_to_latin1_tests
+[169/208] Linking CXX executable tests/convert_utf32_to_latin1_with_errors_tests
+[170/208] Linking CXX executable tests/convert_utf32_to_utf8_with_errors_tests
+[171/208] Linking CXX executable tests/convert_utf32_to_utf8_tests
+[172/208] Linking CXX executable tests/convert_utf32_to_utf16be_tests
+[173/208] Linking CXX executable tests/convert_utf32_to_utf16le_tests
+[174/208] Linking CXX executable tests/convert_utf32_to_utf16le_with_errors_tests
+[175/208] Linking CXX executable tests/convert_valid_utf16le_to_utf8_tests
+[176/208] Linking CXX executable tests/convert_utf32_to_utf16be_with_errors_tests
+[177/208] Linking CXX executable tests/convert_valid_utf16be_to_utf8_tests
+[178/208] Linking CXX executable tests/convert_valid_utf32_to_utf8_tests
+[179/208] Building CXX object tests/CMakeFiles/base64_tests.dir/base64_tests.cpp.o
+[180/208] Linking CXX executable tests/convert_utf16le_to_utf32_tests
+[181/208] Linking CXX executable tests/convert_valid_utf32_to_utf16le_tests
+[182/208] Linking CXX executable tests/convert_valid_utf32_to_utf16be_tests
+[183/208] Linking CXX executable tests/convert_utf16be_to_utf32_tests
+[184/208] Linking CXX executable tests/convert_utf16be_to_utf32_with_errors_tests
+[185/208] Linking CXX executable tests/convert_utf16le_to_utf32_with_errors_tests
+[186/208] Linking CXX executable tests/convert_valid_utf16le_to_utf32_tests
+[187/208] Linking CXX executable tests/convert_valid_utf16be_to_utf32_tests
+[188/208] Linking CXX executable tests/count_utf8
+[189/208] Linking CXX executable tests/count_utf16le
+[190/208] Linking CXX executable tests/count_utf16be
+[191/208] Linking CXX executable tests/detect_encodings_tests
+[192/208] Linking CXX executable tests/basic_fuzzer
+[193/208] Linking CXX executable tests/text_encoding_tests
+[194/208] Linking CXX executable tests/base64_tests
+[195/208] Linking CXX executable tests/constexpr_base64_tests
+[196/208] Linking CXX executable tests/span_tests
+[197/208] Linking CXX executable tests/simdutf_c_tests
+[198/208] Linking C executable tests/straight_c_test
+[199/208] Linking CXX executable tests/internal_tests
+[200/208] Linking CXX executable tests/to_well_formed_utf16_tests
+[201/208] Linking CXX executable tests/utf8_length_from_utf16_tests
+[202/208] Linking CXX executable tests/convert_utf16_to_utf8_with_replacement_tests
+[203/208] Linking CXX executable tests/convert_utf8_to_utf16_with_replacement_tests
+[204/208] Linking CXX executable tests/embed_tests
+[205/208] Linking CXX executable tests/fixed_string_tests
+[206/208] Linking CXX executable tests/nostdlibcxx_c_api_test
+[207/208] Linking CXX executable tools/sutf
+[208/208] Linking CXX executable tools/fastbase64
+[1/3] Building CXX object singleheader/CMakeFiles/amalgamation_demo.dir/amalgamation_demo.cpp.o
+[2/3] Linking CXX executable singleheader/amalgamation_demo
+[2/3] Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/bin/sutf
+-- Installing: /usr/bin/fastbase64
+-- Installing: /usr/share/man/man1/fastbase64.1
+-- Installing: /usr/share/man/man1/fastbase64.coreutils.1
+-- Installing: /usr/share/man/man1/sutf.1
+-- Installing: /usr/include/simdutf.h
+-- Installing: /usr/include/simdutf_c.h
+-- Up-to-date: /usr/include/simdutf
+-- Installing: /usr/include/simdutf/error.h
+-- Installing: /usr/include/simdutf/base64_implementation.h
+-- Installing: /usr/include/simdutf/compiler_check.h
+-- Installing: /usr/include/simdutf/portability.h
+-- Installing: /usr/include/simdutf/common_defs.h
+-- Up-to-date: /usr/include/simdutf/scalar
+-- Installing: /usr/include/simdutf/scalar/atomic_util.h
+-- Up-to-date: /usr/include/simdutf/scalar/utf8_to_latin1
+-- Installing: /usr/include/simdutf/scalar/utf8_to_latin1/valid_utf8_to_latin1.h
+-- Installing: /usr/include/simdutf/scalar/utf8_to_latin1/utf8_to_latin1.h
+-- Installing: /usr/include/simdutf/scalar/ascii.h
+-- Installing: /usr/include/simdutf/scalar/swap_bytes.h
+-- Up-to-date: /usr/include/simdutf/scalar/latin1_to_utf32
+-- Installing: /usr/include/simdutf/scalar/latin1_to_utf32/latin1_to_utf32.h
+-- Installing: /usr/include/simdutf/scalar/utf32.h
+-- Up-to-date: /usr/include/simdutf/scalar/latin1_to_utf8
+-- Installing: /usr/include/simdutf/scalar/latin1_to_utf8/latin1_to_utf8.h
+-- Up-to-date: /usr/include/simdutf/scalar/utf32_to_utf8
+-- Installing: /usr/include/simdutf/scalar/utf32_to_utf8/valid_utf32_to_utf8.h
+-- Installing: /usr/include/simdutf/scalar/utf32_to_utf8/utf32_to_utf8.h
+-- Installing: /usr/include/simdutf/scalar/latin1.h
+-- Up-to-date: /usr/include/simdutf/scalar/utf32_to_utf16
+-- Installing: /usr/include/simdutf/scalar/utf32_to_utf16/valid_utf32_to_utf16.h
+-- Installing: /usr/include/simdutf/scalar/utf32_to_utf16/utf32_to_utf16.h
+-- Up-to-date: /usr/include/simdutf/scalar/utf16_to_utf8
+-- Installing: /usr/include/simdutf/scalar/utf16_to_utf8/utf16_to_utf8.h
+-- Installing: /usr/include/simdutf/scalar/utf16_to_utf8/valid_utf16_to_utf8.h
+-- Up-to-date: /usr/include/simdutf/scalar/utf16_to_latin1
+-- Installing: /usr/include/simdutf/scalar/utf16_to_latin1/valid_utf16_to_latin1.h
+-- Installing: /usr/include/simdutf/scalar/utf16_to_latin1/utf16_to_latin1.h
+-- Up-to-date: /usr/include/simdutf/scalar/utf32_to_latin1
+-- Installing: /usr/include/simdutf/scalar/utf32_to_latin1/utf32_to_latin1.h
+-- Installing: /usr/include/simdutf/scalar/utf32_to_latin1/valid_utf32_to_latin1.h
+-- Up-to-date: /usr/include/simdutf/scalar/latin1_to_utf16
+-- Installing: /usr/include/simdutf/scalar/latin1_to_utf16/latin1_to_utf16.h
+-- Up-to-date: /usr/include/simdutf/scalar/utf16_to_utf32
+-- Installing: /usr/include/simdutf/scalar/utf16_to_utf32/valid_utf16_to_utf32.h
+-- Installing: /usr/include/simdutf/scalar/utf16_to_utf32/utf16_to_utf32.h
+-- Installing: /usr/include/simdutf/scalar/utf8.h
+-- Up-to-date: /usr/include/simdutf/scalar/utf8_to_utf16
+-- Installing: /usr/include/simdutf/scalar/utf8_to_utf16/utf8_to_utf16_with_replacement.h
+-- Installing: /usr/include/simdutf/scalar/utf8_to_utf16/valid_utf8_to_utf16.h
+-- Installing: /usr/include/simdutf/scalar/utf8_to_utf16/utf8_to_utf16.h
+-- Installing: /usr/include/simdutf/scalar/base64.h
+-- Installing: /usr/include/simdutf/scalar/utf16.h
+-- Up-to-date: /usr/include/simdutf/scalar/utf8_to_utf32
+-- Installing: /usr/include/simdutf/scalar/utf8_to_utf32/valid_utf8_to_utf32.h
+-- Installing: /usr/include/simdutf/scalar/utf8_to_utf32/utf8_to_utf32.h
+-- Installing: /usr/include/simdutf/avx512.h
+-- Installing: /usr/include/simdutf/implementation.h
+-- Up-to-date: /usr/include/simdutf/internal
+-- Installing: /usr/include/simdutf/internal/isadetection.h
+-- Installing: /usr/include/simdutf/constexpr_ptr.h
+-- Installing: /usr/include/simdutf/encoding_types.h
+-- Installing: /usr/include/simdutf/simdutf_version.h
+-- Installing: /usr/include/simdutf/base64_tables.h
+-- Installing: /usr/lib/libsimdutf.so.37.0.0
+-- Up-to-date: /usr/lib/libsimdutf.so.37
+-- Up-to-date: /usr/lib/libsimdutf.so
+-- Installing: /usr/lib/cmake/simdutf/simdutf-config.cmake
+-- Installing: /usr/lib/cmake/simdutf/simdutf-config-version.cmake
+-- Installing: /usr/lib/cmake/simdutf/simdutfTargets.cmake
+-- Installing: /usr/lib/cmake/simdutf/simdutfTargets-release.cmake
+-- Installing: /usr/lib/pkgconfig/simdutf.pc
+9.3.2
+Updated registry for simdutf to version 9.3.2
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package simdutf in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master 37b59a6] Updating packages
+ 8 files changed, 2009 insertions(+), 1 deletion(-)
+ create mode 100755 discount
+ create mode 100755 djvulibre
+ create mode 100755 ebook-tools
+ create mode 100755 libkexiv2
+ create mode 100755 libspectre
+ create mode 100755 libzip
+ create mode 100755 okular
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master affece6] Updating packages
+ 8 files changed, 10 insertions(+)
+ create mode 100644 discount
+ create mode 100644 djvulibre
+ create mode 100644 ebook-tools
+ create mode 100644 libkexiv2
+ create mode 100644 libspectre
+ create mode 100644 libzip
+ create mode 100644 okular
+Pushing changes in ~/build_duration...
+r13.1-27
+r13.1-410
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/atkmm-1.6 (belongs to an installed package)
+Skipping registered directory: /usr/lib/cairomm-1.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/pangomm-1.4 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.2.11...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.2.11-lfs-r13.1-21
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
