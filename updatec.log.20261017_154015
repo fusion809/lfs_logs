@@ -1,0 +1,263 @@
+===== Update check started: 2026-10-17 15:40:15 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261017_154015
+Packages needing attention: gdm
+===== Starting updatec: 2026-10-17 15:40:19 AEST =====
+Checking for packages with missing file inventories...
+name=gdm
+local_ver=51.0
+remote_ver=51.1
+Failed to check custom update version for: lzip
+name=lzip
+local_ver=1.26
+remote_ver=FAILED
+Failed to check custom update version for: perl-xml-parser
+name=perl-xml-parser
+local_ver=2.59
+remote_ver=FAILED
+Failed to check custom update version for: x264
+Applying updates in dependency order:
+  - gdm
+
+Building custom package gdm...
+[15:42:53] Found custom package for gdm, bypassing BLFS aliases.
+[15:42:53] Custom package detected at /home/fusion809/lfs_packaging/gdm (package: gdm)
+[15:42:53] Extracting dependencies for custom package 'gdm'...
+[15:42:53] Required deps: accountsservice glib2 glibc json-glib keyutils libffi libgudev libxau libxcrypt linux-pam pcre2 polkit systemd util-linux zlib 
+[15:42:53] Dependency 'accountsservice' already installed.
+[15:42:53] Dependency 'glib2' already installed.
+[15:42:53] Dependency 'glibc' already installed.
+[15:42:53] Dependency 'json-glib' already installed.
+[15:42:53] Dependency 'keyutils' already installed.
+[15:42:53] Dependency 'libffi' already installed.
+[15:42:53] Dependency 'libgudev' already installed.
+[15:42:53] Dependency 'libxau' already installed.
+[15:42:53] Dependency 'libxcrypt' already installed.
+[15:42:53] Dependency 'linux-pam' already installed.
+[15:42:53] Dependency 'pcre2' already installed.
+[15:42:53] Dependency 'polkit' already installed.
+[15:42:53] Dependency 'systemd' already installed.
+[15:42:53] Dependency 'util-linux' already installed.
+[15:42:53] Dependency 'zlib' already installed.
+[15:42:53] Starting remote custom build for gdm...
+--2026-10-17 15:42:58--  https://download.gnome.org/sources/gdm/51/gdm-51.1.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 143.244.62.9, 143.244.62.6, 2a02:6ea0:db00::11, ...
+Connecting to download.gnome.org (download.gnome.org)|143.244.62.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 478800 (468K) [application/octet-stream]
+Saving to: ‘gdm-51.1.tar.xz’
+
+gdm-51.1.tar.xz       0%[                    ]       0  --.-KB/s               gdm-51.1.tar.xz      47%[========>           ] 223.48K  1.07MB/s               gdm-51.1.tar.xz     100%[===================>] 467.58K  1.34MB/s    in 0.3s    
+
+2026-10-17 15:42:59 (1.34 MB/s) - ‘gdm-51.1.tar.xz’ saved [478800/478800]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+meson_args: <-D>
+meson_args: <gdm-xsession=true>
+meson_args: <-D>
+meson_args: <run-dir=/run/gdm>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <-D> <gdm-xsession=true> <-D> <run-dir=/run/gdm> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/gdm/gdm-51.1
+Build dir: /home/fusion809/lfs_packaging/gdm/gdm-51.1/build
+Build type: native build
+Project name: gdm
+Project version: 51.1
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.8
+Run-time dependency gudev-1.0 found: YES 238
+Library pam found: YES
+Header "security/pam_appl.h" has symbol "PAM_BINARY_PROMPT" with dependency -lpam: YES 
+Run-time dependency glib-2.0 found: YES 2.90.1
+Run-time dependency gobject-2.0 found: YES 2.90.1
+Run-time dependency gio-2.0 found: YES 2.90.1
+Run-time dependency gio-unix-2.0 found: YES 2.90.1
+Run-time dependency dconf found: YES 51.0
+Run-time dependency json-glib-1.0 found: YES 1.10.8
+Run-time dependency accountsservice found: YES 26.37.672
+Run-time dependency libkeyutils found: YES 1.6.3
+Run-time dependency libselinux found: YES 3.11
+Run-time dependency polkit-gobject-1 found: YES 128
+Run-time dependency xau found: YES 1.0.12
+Run-time dependency systemd found: YES 262
+Run-time dependency libsystemd found: YES 262
+../meson.build:81: WARNING: Project targets '>= 0.57' but uses feature introduced in '0.58.0': Positional argument to dependency.get_variable().
+../meson.build:82: WARNING: Project targets '>= 0.57' but uses feature introduced in '0.58.0': Positional argument to dependency.get_variable().
+Program nologin found: YES (/sbin/nologin)
+../meson.build:92: WARNING: Project targets '>= 0.57' but uses feature deprecated since '0.55.0': Program.path. use Program.full_path() instead
+Found CMake: /usr/bin/cmake (4.4.4)
+Run-time dependency ply-boot-client found: NO  (tried pkg-config and cmake)
+Header "bsm/adt.h" has symbol "ADT_USER" : NO 
+Run-time dependency audit found: NO  (tried pkg-config and cmake)
+Run-time dependency check found: NO  (tried pkg-config and cmake)
+Has header "security/pam_modutil.h" : YES 
+Has header "security/pam_ext.h" : YES 
+Checking for function "pam_syslog" : YES 
+Has header "utmpx.h" : YES 
+Has header "utmp.h" : YES 
+Checking whether type "struct utmpx" has member "ut_host" : YES 
+Checking whether type "struct utmpx" has member "ut_pid" : YES 
+Checking whether type "struct utmpx" has member "ut_id" : YES 
+Checking whether type "struct utmpx" has member "ut_name" : NO 
+Checking whether type "struct utmpx" has member "ut_type" : YES 
+Checking whether type "struct utmpx" has member "ut_exit.e_termination" : NO 
+Checking whether type "struct utmpx" has member "ut_user" : YES 
+Checking whether type "struct utmpx" has member "ut_time" : NO 
+Checking whether type "struct utmpx" has member "ut_tv" : YES 
+Checking whether type "struct utmpx" has member "ut_syslen" : NO 
+WARNING: You should add the boolean check kwarg to the run_command call.
+         It currently defaults to false,
+         but it will default to true in meson 2.0.
+         See also: https://github.com/mesonbuild/meson/issues/9300
+Checking for function "getutxent" : YES 
+Checking for function "updwtmp" : YES 
+Checking for function "updwtmpx" : YES 
+Checking for function "login" : YES 
+Checking for function "logout" : YES 
+Checking for function "logwtmp" : YES 
+Checking for function "explicit_bzero" : YES 
+Has header "sys/fsuid.h" : YES 
+Has header "sys/sockio.h" : NO 
+Configuring config.h using configuration
+Configuring mime-dummy-handler.desktop using configuration
+Configuring mimeapps.list using configuration
+Configuring gdm using configuration
+Program dconf found: YES (/usr/bin/dconf)
+Configuring gdm.conf using configuration
+Program dirname found: YES (/usr/bin/dirname)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Configuring gnome-greeter.desktop using configuration
+Configuring gnome-initial-setup.desktop using configuration
+Configuring gdm.service using configuration
+Configuring gnome-headless-session@.service using configuration
+Configuring Xsession using configuration
+Configuring 20-gdm.rules using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.8
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.8
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Build targets in project: 160
+WARNING: Project specifies a minimum meson_version '>= 0.57' but uses features which were added in newer versions:
+ * 0.58.0: {'Positional argument to dependency.get_variable()'}
+WARNING: Deprecated features used:
+ * 0.55.0: {'Program.path'}
+
+gdm 51.1
+
+  Paths
+    datadir                 : /usr/share
+    sysconfdir              : /etc
+    bindir                  : /usr/bin
+    libdir                  : /usr/lib
+    libexecdir              : /usr/libexec
+    logdir                  : /var/log/gdm
+    System DBus             : /etc/dbus-1/system.d
+    DM conf                 : /etc/dm
+    GDM conf                : /etc/gdm
+    GDM Run                 : /run/gdm
+    GDM Dynamic Homes       : /run/gdm/home
+    GDM PID file            : /run/gdm/gdm.pid
+    GDM Defaults config     : /usr/share/gdm/defaults.conf
+    GDM Custom config       : /etc/gdm/custom.conf
+    GDM Runtime config      : /run/gdm/custom.conf
+    GDM Session default path: /usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
+    GDM Working dir         : /var/lib/gdm
+    PAM Services dir        : /usr/lib/pam.d
+    PAM Services config dir : /etc/pam.d
+    PAM Modules dir         : /usr/lib/security
+    GNOME locale            : /usr/share/locale
+    AT SPI registryd        : /usr/libexec
+    Lang config file        : /etc/locale.conf
+
+  Features
+    ADT                     : NO
+    PAM Syslog              : YES
+    Supports PAM Extensions : YES
+    SeLinux                 : YES
+    Logind Provider         : systemd
+    Use GDM Xsession        : YES
+    Use SystemdJournal      : YES
+    Use X11Support          : YES
+    Use Profiling           : NO
+    Initial VT              : 1
+    Groupname               : gdm
+    Plymouth                : NO
+
+  User defined options
+    buildtype               : release
+    gdm-xsession            : true
+    prefix                  : /usr
+    run-dir                 : /run/gdm
+
+Found ninja-1.13.2 at /usr/bin/ninja
+
+ERROR: Clock skew detected. File /home/fusion809/lfs_packaging/gdm/gdm-51.1/build/meson-private/coredata.dat has a time stamp 0.5979s in the future.
+
+A full log can be found at /home/fusion809/lfs_packaging/gdm/gdm-51.1/build/meson-logs/meson-log.txt
+[ERROR] build.sh exited with code 1 for gdm
+[ERROR] Custom build failed for gdm
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-27
+r13.1-410
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/atkmm-1.6 (belongs to an installed package)
+Skipping registered directory: /usr/lib/cairomm-1.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/pangomm-1.4 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...

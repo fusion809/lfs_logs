@@ -1,0 +1,95 @@
+===== Update check started: 2026-10-17 15:50:09 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261017_155009
+Packages needing attention: gdm
+===== Starting updatec: 2026-10-17 15:50:13 AEST =====
+Checking for packages with missing file inventories...
+name=libcdio
+local_ver=2.4.0
+remote_ver=2026
+name=libical
+local_ver=4.0.6
+remote_ver=65
+name=libjpeg-turbo
+local_ver=3.2.0
+remote_ver=10
+Failed to check custom update version for: perl-class-inspector
+name=perl-class-inspector
+local_ver=1.36
+remote_ver=FAILED
+Failed to check custom update version for: perl-file-sharedir-install
+name=perl-file-sharedir-install
+local_ver=0.14
+remote_ver=FAILED
+Failed to check custom update version for: perl-parse-yapp
+name=perl-parse-yapp
+local_ver=1.21
+remote_ver=FAILED
+Failed to check custom update version for: x264
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - libcdio
+  - libical
+  - libjpeg-turbo
+
+Building custom package libcdio...
+[15:52:50] Found custom package for libcdio, bypassing BLFS aliases.
+[15:52:50] Custom package detected at /home/fusion809/lfs_packaging/libcdio (package: libcdio)
+[15:52:50] Extracting dependencies for custom package 'libcdio'...
+[15:52:50] Required deps: gcc glibc ncurses 
+[15:52:50] Dependency 'gcc' already installed.
+[15:52:50] Dependency 'glibc' already installed.
+[15:52:50] Dependency 'ncurses' already installed.
+[15:52:50] Starting remote custom build for libcdio...
+[15:52:52] [LFS-AUTOBUILD] Skipping custom package libcdio: version 2.4.0 already installed (use -f to force build).
+Building custom package libical...
+[15:52:52] Found custom package for libical, bypassing BLFS aliases.
+[15:52:52] Custom package detected at /home/fusion809/lfs_packaging/libical (package: libical)
+[15:52:52] Extracting dependencies for custom package 'libical'...
+[15:52:52] Required deps: cmake gcc glib2 glibc icu libffi libxml2 pcre2 vala 
+[15:52:52] Dependency 'cmake' already installed.
+[15:52:52] Dependency 'gcc' already installed.
+[15:52:52] Dependency 'glib2' already installed.
+[15:52:52] Dependency 'glibc' already installed.
+[15:52:52] Dependency 'icu' already installed.
+[15:52:52] Dependency 'libffi' already installed.
+[15:52:52] Dependency 'libxml2' already installed.
+[15:52:52] Dependency 'pcre2' already installed.
+[15:52:52] Dependency 'vala' already installed.
+[15:52:52] Starting remote custom build for libical...
+[15:52:53] [LFS-AUTOBUILD] Skipping custom package libical: version 4.0.6 already installed (use -f to force build).
+Building custom package libjpeg-turbo...
+[15:52:53] Found custom package for libjpeg-turbo, bypassing BLFS aliases.
+[15:52:53] Custom package detected at /home/fusion809/lfs_packaging/libjpeg-turbo (package: libjpeg-turbo)
+[15:52:53] Extracting dependencies for custom package 'libjpeg-turbo'...
+[15:52:53] Required deps: glibc 
+[15:52:53] Dependency 'glibc' already installed.
+[15:52:53] Starting remote custom build for libjpeg-turbo...
+[15:52:54] [LFS-AUTOBUILD] Skipping custom package libjpeg-turbo: version 3.2.0 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: gdm: 51.0->51.1; thunderbird-bin: 158.0 (NEW).
+[master b99b8a7] gdm: 51.0->51.1; thunderbird-bin: 158.0 (NEW).
+ 2 files changed, 79 insertions(+), 1 deletion(-)
+ create mode 100755 thunderbird-bin
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: gdm: 51.0->51.1; thunderbird-bin: 158.0 (NEW).
+[master 1c7561c] gdm: 51.0->51.1; thunderbird-bin: 158.0 (NEW).
+ 2 files changed, 2 insertions(+)
+ create mode 100644 thunderbird-bin
+Pushing changes in ~/build_duration...
+r13.1-27
+r13.1-410
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/atkmm-1.6 (belongs to an installed package)
+Skipping registered directory: /usr/lib/cairomm-1.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/pangomm-1.4 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
