@@ -1,0 +1,645 @@
+===== Update check started: 2026-10-18 12:00:21 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261018_120021
+/home/fusion809/lfs-scripts/updates_check_and_run.sh: line 107: ${(j: :)pkgs}: bad substitution
+===== Starting updatec: 2026-10-18 12:00:25 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - gridcraft
+
+Building custom package gridcraft...
+[12:02:03] Found custom package for gridcraft, bypassing BLFS aliases.
+[12:02:03] Custom package detected at /home/fusion809/lfs_packaging/gridcraft (package: gridcraft)
+[12:02:03] Extracting dependencies for custom package 'gridcraft'...
+[12:02:03] Required deps: gcc glibc 
+[12:02:03] Dependency 'gcc' already installed.
+[12:02:03] Dependency 'glibc' already installed.
+[12:02:03] Starting remote custom build for gridcraft...
+--2026-10-18 12:02:23--  https://github.com/storytold/gridcraft/archive/v0.8.0.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/storytold/gridcraft/tar.gz/refs/tags/v0.8.0 [following]
+--2026-10-18 12:02:24--  https://codeload.github.com/storytold/gridcraft/tar.gz/refs/tags/v0.8.0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘gridcraft-0.8.0.tar.gz’
+
+gridcraft-0.8.0.tar     [<=>                 ]       0  --.-KB/s               gridcraft-0.8.0.tar     [ <=>                ]   1.03M  5.11MB/s               gridcraft-0.8.0.tar     [  <=>               ]   2.87M  7.15MB/s               gridcraft-0.8.0.tar     [   <=>              ]   4.00M  7.89MB/s    in 0.5s    
+
+2026-10-18 12:02:25 (7.89 MB/s) - ‘gridcraft-0.8.0.tar.gz’ saved [4191698]
+
+    Updating crates.io index
+    Updating git repository `https://github.com/storytold/craft-libs`
+ Downloading crates ...
+  Downloaded accesskit v0.24.1
+  Downloaded accesskit_winit v0.32.2
+  Downloaded adler2 v2.0.1
+  Downloaded glutin-winit v0.5.0
+  Downloaded static_assertions v1.1.0
+  Downloaded calloop-wayland-source v0.4.1
+  Downloaded calloop-wayland-source v0.3.0
+  Downloaded byteorder-lite v0.1.0
+  Downloaded downcast-rs v1.2.1
+  Downloaded block-buffer v0.12.1
+  Downloaded dpi v0.1.2
+  Downloaded equivalent v1.0.2
+  Downloaded cpufeatures v0.3.1
+  Downloaded errno v0.3.14
+  Downloaded cpubits v0.1.1
+  Downloaded futures-io v0.3.34
+  Downloaded futures-task v0.3.34
+  Downloaded atomic-waker v1.1.2
+  Downloaded cfg_aliases v0.2.2
+  Downloaded dlib v0.5.3
+  Downloaded futures-macro v0.3.34
+  Downloaded crypto-common v0.2.2
+  Downloaded sys-locale v0.3.2
+  Downloaded termcolor v1.4.1
+  Downloaded gethostname v1.1.0
+  Downloaded futures-core v0.3.34
+  Downloaded cursor-icon v1.2.0
+  Downloaded spirv v0.4.0+sdk-1.4.341.0
+  Downloaded document-features v0.2.12
+  Downloaded enumflags2_derive v0.7.12
+  Downloaded as-raw-xcb-connection v1.0.1
+  Downloaded endi v1.1.1
+  Downloaded accesskit_unix v0.21.1
+  Downloaded async-channel v2.5.0
+  Downloaded async-trait v0.1.92
+  Downloaded ahash v0.8.12
+  Downloaded async-executor v1.14.0
+  Downloaded async-process v2.5.0
+  Downloaded cfg-if v1.0.5
+  Downloaded glutin_egl_sys v0.7.1
+  Downloaded linebender_resource_handle v0.1.1
+  Downloaded version_check v0.9.5
+  Downloaded accesskit_atspi_common v0.18.1
+  Downloaded atspi-proxies v0.13.0
+  Downloaded autocfg v1.5.1
+  Downloaded bit-vec v0.9.1
+  Downloaded gl_generator v0.14.0
+  Downloaded ecolor v0.36.2
+  Downloaded find-msvc-tools v0.1.14
+  Downloaded async-recursion v1.2.0
+  Downloaded cipher v0.5.2
+  Downloaded either v1.19.0
+  Downloaded fastrand v2.5.0
+  Downloaded fdeflate v0.3.7
+  Downloaded async-signal v0.2.14
+  Downloaded bytemuck_derive v1.12.1
+  Downloaded concurrent-queue v2.5.0
+  Downloaded event-listener-strategy v0.5.4
+  Downloaded font-types v0.12.6
+  Downloaded type-map v0.5.1
+  Downloaded fixedbitset v0.5.7
+  Downloaded atspi v0.29.0
+  Downloaded foldhash v0.1.5
+  Downloaded async-broadcast v0.7.2
+  Downloaded blocking v1.7.0
+  Downloaded fax v0.2.7
+  Downloaded lock_api v0.4.14
+  Downloaded os_pipe v1.2.3
+  Downloaded renderdoc-sys v1.1.0
+  Downloaded serde_spanned v1.1.1
+  Downloaded wayland-csd-frame v0.3.0
+  Downloaded accesskit_consumer v0.36.0
+  Downloaded arboard v3.6.1
+  Downloaded arrayvec v0.7.8
+  Downloaded async-task v4.7.1
+  Downloaded bit-set v0.10.0
+  Downloaded crc32fast v1.5.2
+  Downloaded crossbeam-utils v0.8.23
+  Downloaded digest v0.11.3
+  Downloaded enumflags2 v0.7.12
+  Downloaded foldhash v0.2.0
+  Downloaded futures-lite v2.6.1
+  Downloaded naga-types v30.0.1
+  Downloaded scoped-tls v1.0.1
+  Downloaded serde_repr v0.1.21
+  Downloaded siphasher v1.0.4
+  Downloaded wgpu-core-deps-windows-linux-android v30.0.1
+  Downloaded async-lock v3.4.2
+  Downloaded emath v0.36.2
+  Downloaded wayland-cursor v0.31.14
+  Downloaded pollster v0.4.0
+  Downloaded peniko v0.6.1
+  Downloaded phf_macros v0.13.1
+  Downloaded piper v0.2.5
+  Downloaded phf_generator v0.13.1
+  Downloaded rustc-hash v2.1.3
+  Downloaded async-io v2.6.0
+  Downloaded egui_glow v0.36.2
+  Downloaded tree_magic_mini v3.2.2
+  Downloaded wgpu-naga-bridge v30.0.1
+  Downloaded egui-winit v0.36.2
+  Downloaded getrandom v0.3.4
+  Downloaded smol_str v0.2.2
+  Downloaded percent-encoding v2.3.2
+  Downloaded bytemuck v1.25.2
+  Downloaded bitflags v2.13.2
+  Downloaded glifo v0.2.0
+  Downloaded once_cell v1.21.4
+  Downloaded allocator-api2 v0.2.21
+  Downloaded proc-macro-crate v3.5.0
+  Downloaded presser v0.3.1
+  Downloaded rustc-hash v1.1.0
+  Downloaded parking v2.2.1
+  Downloaded phf_shared v0.13.1
+  Downloaded calloop v0.13.0
+  Downloaded glutin v0.32.3
+  Downloaded zcheapstr v1.1.0
+  Downloaded shlex v2.0.1
+  Downloaded smithay-clipboard v0.7.3
+  Downloaded xkbcommon-dl v0.4.2
+  Downloaded simd-adler32 v0.3.10
+  Downloaded quote v1.0.47
+  Downloaded quick-error v2.0.1
+  Downloaded codespan-reporting v0.13.1
+  Downloaded calloop v0.14.5
+  Downloaded egui-wgpu v0.36.2
+  Downloaded parking_lot_core v0.9.12
+  Downloaded phf v0.13.1
+  Downloaded zbus-lockstep-macros v0.5.2
+  Downloaded scopeguard v1.2.0
+  Downloaded sha1 v0.11.0
+  Downloaded itoa v1.0.18
+  Downloaded event-listener v5.4.2
+  Downloaded slab v0.4.12
+  Downloaded proc-macro2 v1.0.107
+  Downloaded glutin_glx_sys v0.6.1
+  Downloaded ordered-float v5.5.0
+  Downloaded pin-project-lite v0.2.17
+  Downloaded polycool v0.4.0
+  Downloaded color v0.3.3
+  Downloaded euclid v0.22.14
+  Downloaded smallvec v1.16.2
+  Downloaded litrs v1.0.0
+  Downloaded zvariant_derive v5.15.0
+  Downloaded inout v0.2.2
+  Downloaded parking_lot v0.12.5
+  Downloaded memmap2 v0.9.11
+  Downloaded ordered-stream v0.2.0
+  Downloaded raw-window-handle v0.6.2
+  Downloaded zbus-lockstep v0.5.2
+  Downloaded xcursor v0.3.11
+  Downloaded self_cell v1.3.0
+  Downloaded bumpalo v3.20.3
+  Downloaded flate2 v1.1.10
+  Downloaded signal-hook-registry v1.4.8
+  Downloaded serde_core v1.0.229
+  Downloaded rfd v0.17.2
+  Downloaded thiserror v1.0.69
+  Downloaded thiserror v2.0.21
+  Downloaded cc v1.6.0
+  Downloaded aes v0.9.3
+  Downloaded log v0.4.34
+  Downloaded toml_datetime v1.1.1+spec-1.1.0
+  Downloaded wayland-protocols-misc v0.3.12
+  Downloaded serde_derive v1.0.229
+  Downloaded thiserror-impl v1.0.69
+  Downloaded sha2 v0.11.0
+  Downloaded polling v3.11.0
+  Downloaded nohash-hasher v0.2.0
+  Downloaded pollster v1.0.1
+  Downloaded profiling v1.0.18
+  Downloaded serde v1.0.229
+  Downloaded atspi-common v0.13.0
+  Downloaded web-time v1.1.0
+  Downloaded miniz_oxide v0.9.1
+  Downloaded num-traits v0.2.19
+  Downloaded eframe v0.36.2
+  Downloaded epaint v0.36.2
+  Downloaded glow v0.17.0
+  Downloaded zbus_names v4.3.4
+  Downloaded thiserror-impl v2.0.21
+  Downloaded wayland-protocols-wlr v0.3.12
+  Downloaded futures-util v0.3.34
+  Downloaded guillotiere v0.7.0
+  Downloaded jobserver v0.1.35
+  Downloaded hex v0.4.3
+  Downloaded smithay-client-toolkit v0.19.2
+  Downloaded regex v1.13.1
+  Downloaded smithay-client-toolkit v0.20.0
+  Downloaded libm v0.2.16
+  Downloaded aho-corasick v1.1.5
+  Downloaded png v0.18.1
+  Downloaded zmij v1.0.23
+  Downloaded nom v8.0.0
+  Downloaded wayland-sys v0.31.11
+  Downloaded khronos-egl v6.0.0
+  Downloaded serde_json v1.0.151
+  Downloaded zune-core v0.5.3
+  Downloaded fearless_simd v0.4.1
+  Downloaded moxcms v0.8.1
+  Downloaded toml_writer v1.1.2+spec-1.1.0
+  Downloaded wayland-protocols-experimental v20250721.0.1
+  Downloaded quick-xml v0.41.0
+  Downloaded tracing-attributes v0.1.31
+  Downloaded pkg-config v0.3.34
+  Downloaded toml_parser v1.1.3+spec-1.1.0
+  Downloaded unicode-general-category v1.1.0
+  Downloaded unicode-ident v1.0.26
+  Downloaded zvariant_utils v4.2.0
+  Downloaded zbus_macros v5.19.0
+  Downloaded wayland-scanner v0.31.11
+  Downloaded libloading v0.8.9
+  Downloaded skrifa v0.44.0
+  Downloaded wl-clipboard-rs v0.9.4
+  Downloaded zbus_xml v5.2.1
+  Downloaded tracing-core v0.1.36
+  Downloaded weezl v0.1.12
+  Downloaded ash v0.38.0+1.3.281
+  Downloaded regex-syntax v0.8.11
+  Downloaded egui v0.36.2
+  Downloaded rustix v0.38.44
+  Downloaded rustix v1.1.5
+  Downloaded xml-rs v0.8.29
+  Downloaded gpu-allocator v0.28.0
+  Downloaded half v2.7.1
+  Downloaded zopfli v0.8.3
+  Downloaded read-fonts v0.41.0
+  Downloaded toml v1.1.6+spec-1.1.0
+  Downloaded wayland-client v0.31.15
+  Downloaded toml_edit v0.25.15+spec-1.1.0
+  Downloaded uuid v1.27.0
+  Downloaded regex-automata v0.4.18
+  Downloaded winresource v0.1.31
+  Downloaded epaint_default_fonts v0.36.2
+  Downloaded x11-dl v2.21.0
+  Downloaded wayland-backend v0.3.17
+  Downloaded wayland-protocols-plasma v0.3.12
+  Downloaded miniz_oxide v0.8.9
+  Downloaded petgraph v0.8.3
+  Downloaded hybrid-array v0.4.15
+  Downloaded pxfm v0.1.30
+  Downloaded zune-jpeg v0.5.15
+  Downloaded typenum v1.20.1
+  Downloaded tiff v0.11.3
+  Downloaded xkeysym v0.2.1
+  Downloaded indexmap v2.14.2
+  Downloaded zvariant v5.15.0
+  Downloaded memchr v2.8.3
+  Downloaded linux-raw-sys v0.4.15
+  Downloaded linux-raw-sys v0.12.1
+  Downloaded unicode-segmentation v1.13.3
+  Downloaded vello_cpu v0.1.0
+  Downloaded vello_common v0.1.0
+  Downloaded zip v3.0.0
+  Downloaded zerocopy-derive v0.8.61
+  Downloaded hashbrown v0.15.5
+  Downloaded hashbrown v0.16.1
+  Downloaded wgpu-types v30.0.1
+  Downloaded itertools v0.15.0
+  Downloaded wayland-protocols v0.32.13
+  Downloaded hashbrown v0.17.1
+  Downloaded winnow v1.0.4
+  Downloaded kurbo v0.13.1
+  Downloaded zbus v5.19.0
+  Downloaded zlib-rs v0.6.8
+  Downloaded syn v2.0.119
+  Downloaded x11rb v0.13.2
+  Downloaded wgpu v30.0.1
+  Downloaded unicode-width v0.2.2
+  Downloaded harfrust v0.12.0
+  Downloaded zerocopy v0.8.61
+  Downloaded image v0.25.10
+  Downloaded syn v3.0.6
+  Downloaded wgpu-core v30.0.1
+  Downloaded wgpu-hal v30.0.1
+  Downloaded tracing v0.1.44
+  Downloaded x11rb-protocol v0.13.2
+  Downloaded winit v0.30.13
+  Downloaded khronos_api v3.1.0
+  Downloaded libc v0.2.190
+  Downloaded naga v30.0.1
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+   Compiling cfg-if v1.0.5
+   Compiling bitflags v2.13.2
+   Compiling log v0.4.34
+   Compiling once_cell v1.21.4
+   Compiling autocfg v1.5.1
+   Compiling libc v0.2.190
+   Compiling syn v3.0.6
+   Compiling syn v2.0.119
+   Compiling rustix v1.1.5
+   Compiling serde_core v1.0.229
+   Compiling linux-raw-sys v0.12.1
+   Compiling serde_derive v1.0.229
+   Compiling smallvec v1.16.2
+   Compiling thiserror v2.0.21
+   Compiling thiserror-impl v2.0.21
+   Compiling foldhash v0.2.0
+   Compiling libloading v0.8.9
+   Compiling bytemuck_derive v1.12.1
+   Compiling pkg-config v0.3.34
+   Compiling winnow v1.0.4
+   Compiling serde v1.0.229
+   Compiling pin-project-lite v0.2.17
+   Compiling bytemuck v1.25.2
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling equivalent v1.0.2
+   Compiling libm v0.2.16
+   Compiling toml_parser v1.1.3+spec-1.1.0
+   Compiling wayland-sys v0.31.11
+   Compiling dlib v0.5.3
+   Compiling num-traits v0.2.19
+   Compiling hashbrown v0.17.1
+   Compiling memchr v2.8.3
+   Compiling find-msvc-tools v0.1.14
+   Compiling shlex v2.0.1
+   Compiling cc v1.6.0
+   Compiling indexmap v2.14.2
+   Compiling polling v3.11.0
+   Compiling toml_edit v0.25.15+spec-1.1.0
+   Compiling wayland-backend v0.3.17
+   Compiling enumflags2_derive v0.7.12
+   Compiling downcast-rs v1.2.1
+   Compiling scoped-tls v1.0.1
+   Compiling zvariant_utils v4.2.0
+   Compiling proc-macro-crate v3.5.0
+   Compiling quick-xml v0.41.0
+   Compiling parking v2.2.1
+   Compiling cfg_aliases v0.2.2
+   Compiling wayland-client v0.31.15
+   Compiling wayland-scanner v0.31.11
+   Compiling zvariant_derive v5.15.0
+   Compiling slab v0.4.12
+   Compiling futures-core v0.3.34
+   Compiling crossbeam-utils v0.8.23
+   Compiling zerocopy v0.8.61
+   Compiling zerocopy-derive v0.8.61
+   Compiling arrayvec v0.7.8
+   Compiling typenum v1.20.1
+   Compiling hybrid-array v0.4.15
+   Compiling tracing-attributes v0.1.31
+   Compiling tracing-core v0.1.36
+   Compiling fastrand v2.5.0
+   Compiling futures-io v0.3.34
+   Compiling simd-adler32 v0.3.10
+   Compiling tracing v0.1.44
+   Compiling concurrent-queue v2.5.0
+   Compiling event-listener v5.4.2
+   Compiling enumflags2 v0.7.12
+   Compiling zcheapstr v1.1.0
+   Compiling endi v1.1.1
+   Compiling crc32fast v1.5.2
+   Compiling zvariant v5.15.0
+   Compiling event-listener-strategy v0.5.4
+   Compiling futures-lite v2.6.1
+   Compiling wayland-protocols v0.32.13
+   Compiling uuid v1.27.0
+   Compiling parking_lot_core v0.9.12
+   Compiling adler2 v2.0.1
+   Compiling version_check v0.9.5
+   Compiling static_assertions v1.1.0
+   Compiling zbus_names v4.3.4
+   Compiling crypto-common v0.2.2
+   Compiling async-io v2.6.0
+   Compiling scopeguard v1.2.0
+   Compiling lock_api v0.4.14
+   Compiling miniz_oxide v0.9.1
+   Compiling errno v0.3.14
+   Compiling allocator-api2 v0.2.21
+   Compiling zmij v1.0.23
+   Compiling async-task v4.7.1
+   Compiling zlib-rs v0.6.8
+   Compiling hashbrown v0.16.1
+   Compiling signal-hook-registry v1.4.8
+   Compiling parking_lot v0.12.5
+   Compiling flate2 v1.1.10
+   Compiling async-channel v2.5.0
+   Compiling block-buffer v0.12.1
+   Compiling gridcraft-core v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/crates/core)
+   Compiling atomic-waker v1.1.2
+   Compiling raw-window-handle v0.6.2
+   Compiling cpufeatures v0.3.1
+   Compiling getrandom v0.3.4
+   Compiling piper v0.2.5
+   Compiling digest v0.11.3
+   Compiling async-signal v0.2.14
+   Compiling ahash v0.8.12
+   Compiling async-lock v3.4.2
+   Compiling polycool v0.4.0
+   Compiling profiling v1.0.18
+   Compiling serde_json v1.0.151
+   Compiling async-process v2.5.0
+   Compiling kurbo v0.13.1
+   Compiling blocking v1.7.0
+   Compiling async-executor v1.14.0
+   Compiling wayland-protocols-wlr v0.3.12
+   Compiling zbus_macros v5.19.0
+   Compiling zbus_xml v5.2.1
+   Compiling miniz_oxide v0.8.9
+   Compiling accesskit v0.24.1
+   Compiling async-broadcast v0.7.2
+   Compiling fdeflate v0.3.7
+   Compiling ordered-stream v0.2.0
+   Compiling aho-corasick v1.1.5
+   Compiling euclid v0.22.14
+   Compiling color v0.3.3
+   Compiling font-types v0.12.6
+   Compiling serde_repr v0.1.21
+   Compiling async-recursion v1.2.0
+   Compiling async-trait v0.1.92
+   Compiling rustix v0.38.44
+   Compiling zune-core v0.5.3
+   Compiling regex-syntax v0.8.11
+   Compiling thiserror v1.0.69
+   Compiling pxfm v0.1.30
+   Compiling hex v0.4.3
+   Compiling rustc-hash v1.1.0
+   Compiling linebender_resource_handle v0.1.1
+   Compiling peniko v0.6.1
+   Compiling regex-automata v0.4.18
+   Compiling moxcms v0.8.1
+   Compiling naga-types v30.0.1
+   Compiling zbus v5.19.0
+   Compiling zune-jpeg v0.5.15
+   Compiling read-fonts v0.41.0
+   Compiling guillotiere v0.7.0
+   Compiling png v0.18.1
+   Compiling zbus-lockstep v0.5.2
+   Compiling sha2 v0.11.0
+   Compiling gridcraft-formula v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/crates/formula)
+   Compiling naga v30.0.1
+   Compiling thiserror-impl v1.0.69
+   Compiling fearless_simd v0.4.1
+   Compiling siphasher v1.0.4
+   Compiling xcursor v0.3.11
+   Compiling cursor-icon v1.2.0
+   Compiling bit-vec v0.9.1
+   Compiling unicode-width v0.2.2
+   Compiling xkeysym v0.2.1
+   Compiling byteorder-lite v0.1.0
+   Compiling unicode-general-category v1.1.0
+   Compiling linux-raw-sys v0.4.15
+   Compiling ash v0.38.0+1.3.281
+   Compiling vello_common v0.1.0
+   Compiling image v0.25.10
+   Compiling codespan-reporting v0.13.1
+   Compiling bit-set v0.10.0
+   Compiling wayland-csd-frame v0.3.0
+   Compiling wayland-cursor v0.31.14
+   Compiling phf_shared v0.13.1
+   Compiling gridcraft-model v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/crates/model)
+   Compiling zbus-lockstep-macros v0.5.2
+   Compiling regex v1.13.1
+   Compiling half v2.7.1
+   Compiling inout v0.2.2
+   Compiling emath v0.36.2
+   Compiling memmap2 v0.9.11
+   Compiling spirv v0.4.0+sdk-1.4.341.0
+   Compiling bumpalo v3.20.3
+   Compiling khronos-egl v6.0.0
+   Compiling zopfli v0.8.3
+   Compiling phf_generator v0.13.1
+   Compiling ecolor v0.36.2
+   Compiling cipher v0.5.2
+   Compiling gridcraft-functions v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/crates/functions)
+   Compiling atspi-common v0.13.0
+   Compiling calloop v0.13.0
+   Compiling vello_cpu v0.1.0
+   Compiling harfrust v0.12.0
+   Compiling skrifa v0.44.0
+   Compiling wgpu-types v30.0.1
+   Compiling gridcraft-numfmt v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/crates/numfmt)
+   Compiling wgpu-hal v30.0.1
+   Compiling x11-dl v2.21.0
+   Compiling serde_spanned v1.1.1
+   Compiling gethostname v1.1.0
+   Compiling presser v0.3.1
+   Compiling self_cell v1.3.0
+   Compiling as-raw-xcb-connection v1.0.1
+   Compiling foldhash v0.1.5
+   Compiling nohash-hasher v0.2.0
+   Compiling toml_writer v1.1.2+spec-1.1.0
+   Compiling either v1.19.0
+   Compiling epaint_default_fonts v0.36.2
+   Compiling unicode-segmentation v1.13.3
+   Compiling smithay-client-toolkit v0.19.2
+   Compiling x11rb-protocol v0.13.2
+   Compiling cpubits v0.1.1
+   Compiling percent-encoding v2.3.2
+   Compiling aes v0.9.3
+   Compiling epaint v0.36.2
+   Compiling itertools v0.15.0
+   Compiling toml v1.1.6+spec-1.1.0
+   Compiling hashbrown v0.15.5
+   Compiling gpu-allocator v0.28.0
+   Compiling gridcraft-calc v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/crates/calc)
+   Compiling wgpu-naga-bridge v30.0.1
+   Compiling calloop-wayland-source v0.3.0
+   Compiling phf_macros v0.13.1
+   Compiling zip v3.0.0
+   Compiling sha1 v0.11.0
+   Compiling winit v0.30.13
+   Compiling ordered-float v5.5.0
+   Compiling glow v0.17.0
+   Compiling itoa v1.0.18
+   Compiling renderdoc-sys v1.1.0
+   Compiling fixedbitset v0.5.7
+   Compiling x11rb v0.13.2
+   Compiling petgraph v0.8.3
+   Compiling gridcraft-xlsx v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/crates/xlsx)
+   Compiling phf v0.13.1
+   Compiling gridcraft-chart v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/crates/chart)
+   Compiling egui v0.36.2
+   Compiling atspi-proxies v0.13.0
+   Compiling xkbcommon-dl v0.4.2
+   Compiling accesskit_consumer v0.36.0
+   Compiling wayland-protocols-plasma v0.3.12
+   Compiling calloop v0.14.5
+   Compiling nom v8.0.0
+   Compiling wgpu-core v30.0.1
+   Compiling futures-macro v0.3.34
+   Compiling smithay-client-toolkit v0.20.0
+   Compiling smol_str v0.2.2
+   Compiling litrs v1.0.0
+   Compiling futures-task v0.3.34
+   Compiling gridcraft-pdf v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/crates/pdf)
+   Compiling dpi v0.1.2
+   Compiling tree_magic_mini v3.2.2
+   Compiling gridcraft-engine v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/crates/engine)
+   Compiling futures-util v0.3.34
+   Compiling document-features v0.2.12
+   Compiling calloop-wayland-source v0.4.1
+   Compiling accesskit_atspi_common v0.18.1
+   Compiling atspi v0.29.0
+   Compiling wgpu-core-deps-windows-linux-android v30.0.1
+   Compiling wayland-protocols-misc v0.3.12
+   Compiling wayland-protocols-experimental v20250721.0.1
+   Compiling wgpu v30.0.1
+   Compiling os_pipe v1.2.3
+   Compiling wl-clipboard-rs v0.9.4
+   Compiling accesskit_unix v0.21.1
+   Compiling web-time v1.1.0
+   Compiling rustc-hash v2.1.3
+   Compiling type-map v0.5.1
+   Compiling accesskit_winit v0.32.2
+   Compiling smithay-clipboard v0.7.3
+   Compiling gridcraft-ui-egui v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/crates/ui-egui)
+   Compiling arboard v3.6.1
+   Compiling winresource v0.1.31
+   Compiling rfd v0.17.2
+   Compiling gridcraft v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/apps/gridcraft)
+   Compiling egui-winit v0.36.2
+   Compiling egui-wgpu v0.36.2
+   Compiling craft-ui v0.1.0 (https://github.com/storytold/craft-libs?rev=d27646a5f7c8b4fc85d9dd3213b8c88b58e0088d#d27646a5)
+   Compiling sys-locale v0.3.2
+   Compiling pollster v0.4.0
+   Compiling pollster v1.0.1
+   Compiling eframe v0.36.2
+   Compiling gridcraft-mcp v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/crates/mcp)
+   Compiling craft-print v0.1.0 (https://github.com/storytold/craft-libs?rev=d27646a5f7c8b4fc85d9dd3213b8c88b58e0088d#d27646a5)
+   Compiling xtask v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/xtask)
+   Compiling gridcraft-cli v0.8.0 (/home/fusion809/lfs_packaging/gridcraft/gridcraft-0.8.0/apps/gridcraft-cli)
+    Finished `release` profile [optimized] target(s) in 23m 03s
+0.8.0
+Updated registry for gridcraft to version 0.8.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package gridcraft in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: gridcraft: 0.7.0->0.8.0.
+[master 873daf8] gridcraft: 0.7.0->0.8.0.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: gridcraft: 0.7.0->0.8.0.
+[master 50e934c] gridcraft: 0.7.0->0.8.0.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-28
+r13.1-416
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/atkmm-1.6 (belongs to an installed package)
+Skipping registered directory: /usr/lib/cairomm-1.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/pangomm-1.4 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.2.11...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.2.11-lfs-r13.1-21
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
