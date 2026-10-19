@@ -1,0 +1,761 @@
+===== Update check started: 2026-10-18 20:28:31 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261018_202831
+Packages needing attention: iana-etc
+===== Starting updatec: 2026-10-18 20:28:34 AEST =====
+Checking for packages with missing file inventories...
+name=flatpak
+local_ver=1.18.4
+remote_ver=1.19.2
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - flatpak
+  - iana-etc
+
+Building custom package flatpak...
+[20:30:28] Found custom package for flatpak, bypassing BLFS aliases.
+[20:30:28] Custom package detected at /home/fusion809/lfs_packaging/flatpak (package: flatpak)
+[20:30:28] Extracting dependencies for custom package 'flatpak'...
+[20:30:28] Required deps: acl appstream avahi bash brotli bubblewrap bzip2 coreutils curl cyrus-sasl dbus dconf e2fsprogs expat fontconfig freetype fuse gcab gcc gdk-pixbuf glib glib2 glibc glycin gpgme icu json-glib keyutils lcms2 libarchive libassuan libcap libffi libfyaml libgpg-error libidn2 libpng libpsl libseccomp libselinux libsoup libunistring libxau libxml2 libxmlb llvm lz4 meson mitkrb nghttp2 ninja openldap openssl ostree pcre2 polkit python socat sqlite systemd tar util-linux wayland webkitgtk xdg-dbus-proxy xdg-utils xz zlib zstd 
+[20:30:28] Dependency 'acl' already installed.
+[20:30:28] Dependency 'appstream' already installed.
+[20:30:28] Dependency 'avahi' already installed.
+[20:30:28] Dependency 'bash' already installed.
+[20:30:28] Dependency 'brotli' already installed.
+[20:30:28] Dependency 'bubblewrap' already installed.
+[20:30:28] Dependency 'bzip2' already installed.
+[20:30:28] Dependency 'coreutils' already installed.
+[20:30:28] Dependency 'curl' already installed.
+[20:30:28] Dependency 'cyrus-sasl' already installed.
+[20:30:28] Dependency 'dbus' already installed.
+[20:30:28] Dependency 'dconf' already installed.
+[20:30:28] Dependency 'e2fsprogs' already installed.
+[20:30:28] Dependency 'expat' already installed.
+[20:30:28] Dependency 'fontconfig' already installed.
+[20:30:28] Dependency 'freetype' already installed.
+[20:30:28] Dependency 'fuse' already installed.
+[20:30:28] Dependency 'gcab' already installed.
+[20:30:28] Dependency 'gcc' already installed.
+[20:30:28] Dependency 'gdk-pixbuf' already installed.
+[20:30:28] Required dep 'glib' not found — building it first...
+[20:30:28] Custom package detected at /home/fusion809/lfs_packaging/glib2 (package: glib2)
+[20:30:28] Extracting dependencies for custom package 'glib2'...
+[20:30:29] Required deps: bzip2 docutils elfutils glibc libelf libffi libxslt pcre2 systemd util-linux xz zlib zstd 
+[20:30:29] Dependency 'bzip2' already installed.
+[20:30:29] Required dep 'docutils' not found — building it first...
+[20:30:34] [LFS-AUTOBUILD] Script initialization complete. Version 2026.04.02.1
+[20:30:37] Searching for 'docutils' in BLFS index...
+[20:30:42] Found package page: https://linuxfromscratch.org/blfs/view/systemd/general/python-modules.html#docutils
+[20:30:42] Fetching content from https://linuxfromscratch.org/blfs/view/systemd/general/python-modules.html#docutils...
+[20:30:44] Slicing HTML content for fragment: docutils
+[20:30:44] Extracting required dependencies from page...
+[20:30:44] No required dependencies found on page.
+[20:30:44] Extracted commands: # __BEGIN_ROOT__
+for f in /usr/bin/rst*.py; do
+rm -fv /usr/bin/$(basename $f .py)
+done
+
+# __END_ROOT__
+# __BEGIN_USER__
+pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir $PWD
+
+# __END_USER__
+# __BEGIN_ROOT__
+pip3 install --no-index --find-links dist --no-user docutils
+
+# __END_ROOT__
+
+[20:30:44] Checking for generic upstream resolution via lfs_get_upstream_version...
+[20:30:44] Upstream flag ignored for package 'docutils' (no upstream fetching logic defined)
+[20:30:44] Package base name for search: docutils
+[20:30:44] Identified main archive: https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.23.tar.gz
+[20:30:44] Extracted version from URL: 0.23
+[20:30:44] Total files to download: 1
+[20:30:44] Starting remote build for docutils...
+Downloading docutils-0.23.tar.gz...
+2026-10-18 20:30:45 URL:https://files.pythonhosted.org/packages/39/a4/5180d9afc57e8fca05601dd652bdff19604c218814037fe90ffc7625a50a/docutils-0.23.tar.gz [2303823/2303823] -> "docutils-0.23.tar.gz" [1]
+Cleaning up old versions...
+Extracting docutils-0.23.tar.gz...
+Using tar with strip-components
+Marking build start time...
+Running build commands (user blocks as fusion809, root blocks as root)...
+removed '/usr/bin/rst2html'
+removed '/usr/bin/rst2html4'
+removed '/usr/bin/rst2html5'
+removed '/usr/bin/rst2latex'
+removed '/usr/bin/rst2man'
+removed '/usr/bin/rst2odt'
+removed '/usr/bin/rst2pseudoxml'
+removed '/usr/bin/rst2s5'
+removed '/usr/bin/rst2xetex'
+removed '/usr/bin/rst2xml'
+Processing ./.
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: docutils
+  Building wheel for docutils (pyproject.toml): started
+  Building wheel for docutils (pyproject.toml): finished with status 'done'
+  Created wheel for docutils: filename=docutils-0.23-py3-none-any.whl size=634715 sha256=cf9ac28b49267316e2c99214d532366f2af0e48a8f884ae80bf3ad717c2bd904
+  Stored in directory: /tmp/pip-ephem-wheel-cache-kmubilwh/wheels/e2/7c/b6/760f610ba0ce98084c68510ffe8e0b801ccb1fea806ba1cfd1
+Successfully built docutils
+[LFS-AUTOBUILD] Staging installation for full inventory...
+Looking in links: dist
+Processing ./dist/docutils-0.23-py3-none-any.whl
+Installing collected packages: docutils
+  WARNING: The scripts docutils, rst2html, rst2html4, rst2html5, rst2latex, rst2man, rst2odt, rst2pseudoxml, rst2s5, rst2xetex and rst2xml are installed in '/tmp/destdir_docutils/usr/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed docutils-0.23
+Looking in links: dist
+Processing ./dist/docutils-0.23-py3-none-any.whl
+Installing collected packages: docutils
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+sphinx 9.1.0 requires docutils<0.23,>=0.21, but you have docutils 0.23 which is incompatible.
+Successfully installed docutils-0.23
+Calculating installed files using state diff (before/after)...
+Enriching inventory from archive manifest (/sources/archives/docutils-0.23.tar.gz) for docutils...
+Recorded installed files for docutils in /var/lib/book-packages/docutils
+Skipping library cleanup (use --rm-libs flag to remove old library versions)
+Build and installation complete for docutils
+Cleaning up archives for docutils...
+[20:31:21] Dependency 'elfutils' already installed.
+[20:31:21] Dependency 'glibc' already installed.
+[20:31:21] Required dep 'libelf' not found — building it first...
+[20:31:27] [LFS-AUTOBUILD] Script initialization complete. Version 2026.04.02.1
+[20:31:28] Found package page: https://www.linuxfromscratch.org/lfs/view/development/chapter08/libelf.html
+[20:31:28] Fetching content from https://www.linuxfromscratch.org/lfs/view/development/chapter08/libelf.html...
+[20:31:29] Extracting required dependencies from page...
+[20:31:29] No required dependencies found on page.
+[20:31:29] Using hardcoded metadata for libelf (elfutils package)
+[20:31:29] Hardcoded commands for libelf injected into RAW_CONTENT.
+[20:31:29] Extracted commands: # __BEGIN_USER__
+./configure --prefix=/usr                \
+            --disable-debuginfod         \
+            --enable-libdebuginfod=dummy &&
+make -j$(nproc)
+
+# __END_USER__
+# __BEGIN_ROOT__
+make install
+
+# __END_ROOT__
+
+[20:31:29] Package base name for search: libelf
+[20:31:29] Searching LFS Chapter 3 for packages and patches...
+[20:31:31] Identified main archive: https://sourceware.org/elfutils/ftp/0.194/elfutils-0.194.tar.bz2
+[20:31:31] Extracted version from URL: 0.194
+[20:31:31] Total files to download: 1
+[20:31:31] Starting remote build for libelf...
+Downloading elfutils-0.194.tar.bz2...
+2026-10-18 20:31:46 URL:https://sourceware.org/elfutils/ftp/0.194/elfutils-0.194.tar.bz2 [12003321/12003321] -> "elfutils-0.194.tar.bz2" [1]
+Cleaning up old versions...
+Extracting elfutils-0.194.tar.bz2...
+Using tar with strip-components
+Marking build start time...
+Running build commands (user blocks as fusion809, root blocks as root)...
+configure: No --program-prefix given, using "eu-"
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... -std=gnu++11
+checking dependency style of g++ -std=gnu++11... gcc3
+checking for ranlib... ranlib
+checking for bison... bison -y
+checking for flex... flex
+checking for lex output file root... lex.yy
+checking for lex library... none needed
+checking whether yytext is a pointer... yes
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking for readelf... readelf
+checking for nm... nm
+checking whether gcc supports __attribute__((visibility()))... yes
+checking whether gcc supports __attribute__((gcc_struct))... yes
+checking whether gcc supports -fPIC... yes
+checking whether gcc supports -fPIE... yes
+checking whether gcc supports -Wl,-z,defs... yes
+checking whether the compiler generates build-ids... no
+configure: WARNING: compiler doesn't generate build-id by default
+checking whether gcc supports -Wl,-z,relro... yes
+checking for __thread support... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for stdatomic.h... yes
+checking for gcc option to enable large file support... none needed
+checking whether fts.h is bad when included (with LFS)... no
+checking whether to add -D_FORTIFY_SOURCE=2 or =3 to CFLAGS... yes -D_FORTIFY_SOURCE=3
+checking for openat2 with RESOLVE_IN_ROOT support... yes
+checking for library containing gzdirect... -lz
+checking for library containing BZ2_bzdopen... -lbz2
+checking for library containing lzma_auto_decoder... -llzma
+checking for library containing ZSTD_decompress... -lzstd
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libzstd >= 1.4.0... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether memrchr is declared... yes
+checking whether rawmemchr is declared... yes
+checking whether powerof2 is declared... yes
+checking whether mempcpy is declared... yes
+checking whether reallocarray is declared... yes
+checking for process_vm_readv... yes
+checking for mremap... yes
+checking for error.h... yes
+checking for error... yes
+checking for err.h... yes
+checking for sched.h... yes
+checking for sched_getaffinity... yes
+checking for sys/resource.h... yes
+checking for getrlimit... yes
+checking for malloc.h... yes
+checking for malloc_trim... yes
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking for __cxa_demangle in -lstdc++... yes
+checking whether symbol versioning is supported... yes
+checking whether gcc accepts -Wstack-usage... yes
+checking whether gcc has a sane -Wlogical-op... yes
+checking whether gcc accepts -Wduplicated-cond... yes
+checking whether gcc accepts -Wnull-dereference... yes
+checking whether gcc accepts -Wimplicit-fallthrough... yes
+checking whether the compiler accepts -Wimplicit-fallthrough=5... yes
+checking whether the compiler accepts -Wtrampolines... yes
+checking whether the compiler accepts -Wno-packed-not-aligned... yes
+checking whether the compiler accepts -Wuse-after-free=3... yes
+checking whether the compiler accepts -fno-addrsig... no
+checking for library containing argp_parse... none required
+checking for library containing fts_close... none required
+checking for library containing _obstack_free... none required
+checking for a sed that does not truncate output... /usr/bin/sed
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking how to run the C preprocessor... gcc -E
+checking for egrep -e... /usr/bin/grep -E
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking size of long... 8
+checking for struct user_regs_struct... yes
+checking for struct user_pac_mask... no
+checking gcc option for 32-bit word size... -m32
+checking for 64-bit host... yes
+checking whether gcc -m32 makes executables we can run... no
+configure: WARNING: not running biarch tests, gcc -m32 does not work
+checking for bunzip2... yes
+checking for zstd... yes
+checking whether g++ -std=gnu++11 supports C++11 features with -std=c++11... yes
+checking for execinfo.h... yes
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libcurl >= 7.29.0... yes
+checking for json-c >= 0.11... yes
+checking for libmicrohttpd >= 0.9.33... no
+checking for libmicrohttpd < 0.9.51... no
+checking for sqlite3 >= 3.7.17... yes
+checking for libarchive >= 3.1.2... yes
+checking for headerGet in -lrpm... no
+checking for EVP_MD_CTX_new in -lcrypto... yes
+checking for imaevm.h... no
+checking for pthread_setname_np in -lpthread... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating config/Makefile
+config.status: creating Makefile
+config.status: creating elfutils.spec
+config.status: creating debuginfod/Makefile
+config.status: creating debuginfod/debuginfod.h
+config.status: creating doc/Makefile
+config.status: creating lib/Makefile
+config.status: creating libelf/Makefile
+config.status: creating libebl/Makefile
+config.status: creating libdwelf/Makefile
+config.status: creating libdw/Makefile
+config.status: creating libdwfl/Makefile
+config.status: creating libdwfl_stacktrace/Makefile
+config.status: creating libcpu/Makefile
+config.status: creating libasm/Makefile
+config.status: creating backends/Makefile
+config.status: creating src/Makefile
+config.status: creating po/Makefile.in
+config.status: creating tests/Makefile
+config.status: creating config/libelf.pc
+config.status: creating config/libdw.pc
+config.status: creating config/libdebuginfod.pc
+config.status: creating version.h
+config.status: creating config/profile.sh
+config.status: creating config/profile.csh
+config.status: creating config/profile.fish
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+configure:
+=====================================================================
+        elfutils: 0.194 (eu_version: 194)
+=====================================================================
+
+    Prefix                             : /usr
+    Program prefix ("eu-" recommended) : eu-
+    Source code location               : .
+    Maintainer mode                    : 
+    build arch                         : x86_64-pc-linux-gnu
+
+    CFLAGS=-D_FORTIFY_SOURCE=3 -g -O2
+    CXXFLAGS=-D_FORTIFY_SOURCE=3 -g -O2
+
+  RECOMMENDED FEATURES (should all be yes)
+    gzip support                       : yes
+    bzip2 support                      : yes
+    lzma/xz support                    : yes
+    zstd support                       : yes
+    zstd compression support           : yes
+    libstdc++ demangle support         : yes
+    File textrel check                 : yes
+    Symbol versioning                  : yes
+
+  NOT RECOMMENDED FEATURES (should all be no)
+    Experimental thread safety         : no
+    install elf.h                      : no
+
+  OTHER FEATURES
+    Deterministic archives by default  : false
+    Native language support            : yes
+    Extra Valgrind annotations         : no
+    libdebuginfod client support       : dummy
+    Debuginfod server support          : no
+    Default DEBUGINFOD_URLS            : 
+    Debuginfod RPM sig checking        : no
+    Default DEBUGINFOD_IMA_CERT_PATH   : 
+    eu-stacktrace support              : no
+
+  EXTRA TEST FEATURES (used with make check)
+    have bunzip2 installed (required)  : yes
+    have zstd installed                : yes
+    C++11                              : yes
+    debug branch prediction            : no
+    gprof support                      : no
+    gcov support                       : no
+    run all tests under valgrind       : no
+    gcc undefined behaviour sanitizer  : no
+    gcc address sanitizer              : no
+    clang memory sanitizer             : no
+    use rpath in tests                 : no
+    test biarch                        : no
+
+make --no-print-directory all-recursive
+Making all in config
+sed -i 's/{prefix}/prefix/g' profile.fish
+Making all in lib
+  CC       xstrdup.o
+  CC       xasprintf.o
+  CC       xstrndup.o
+  CC       xmalloc.o
+  CC       crc32.o
+  CC       next_prime.o
+  CC       crc32_file.o
+  CC       eu-search.o
+  CC       color.o
+  CC       error.o
+  CC       printversion.o
+  GEN      libeu.manifest
+  AR       libeu.a
+Making all in libelf
+  CC       elf_version.o
+  CC       elf_hash.o
+  CC       elf_error.o
+  CC       elf_fill.o
+  CC       elf_begin.o
+  CC       elf_next.o
+  CC       elf_rand.o
+  CC       elf_end.o
+  CC       elf_kind.o
+  CC       gelf_getclass.o
+  CC       elf_getbase.o
+  CC       elf_getident.o
+  CC       elf32_fsize.o
+  CC       elf64_fsize.o
+  CC       gelf_fsize.o
+  CC       elf32_xlatetof.o
+  CC       elf32_xlatetom.o
+  CC       elf64_xlatetof.o
+  CC       elf64_xlatetom.o
+  CC       gelf_xlate.o
+  CC       elf32_getehdr.o
+  CC       elf64_getehdr.o
+  CC       gelf_getehdr.o
+  CC       elf32_newehdr.o
+  CC       elf64_newehdr.o
+  CC       gelf_newehdr.o
+  CC       gelf_update_ehdr.o
+  CC       elf32_getphdr.o
+  CC       elf64_getphdr.o
+  CC       gelf_getphdr.o
+  CC       elf32_newphdr.o
+  CC       elf64_newphdr.o
+  CC       gelf_newphdr.o
+  CC       gelf_update_phdr.o
+  CC       elf_getarhdr.o
+  CC       elf_getarsym.o
+  CC       elf_rawfile.o
+  CC       elf_readall.o
+  CC       elf_cntl.o
+  CC       elf_getscn.o
+  CC       elf_nextscn.o
+  CC       elf_ndxscn.o
+  CC       elf_newscn.o
+  CC       elf32_getshdr.o
+  CC       elf64_getshdr.o
+  CC       gelf_getshdr.o
+  CC       gelf_update_shdr.o
+  CC       elf_strptr.o
+  CC       elf_rawdata.o
+  CC       elf_getdata.o
+  CC       elf_newdata.o
+  CC       elf_getdata_rawchunk.o
+  CC       elf_flagelf.o
+  CC       elf_flagehdr.o
+  CC       elf_flagphdr.o
+  CC       elf_flagscn.o
+  CC       elf_flagshdr.o
+  CC       elf_flagdata.o
+  CC       elf_memory.o
+  CC       elf_update.o
+  CC       elf32_updatenull.o
+  CC       elf64_updatenull.o
+  CC       elf32_updatefile.o
+  CC       elf64_updatefile.o
+  CC       gelf_getsym.o
+  CC       gelf_update_sym.o
+  CC       gelf_getversym.o
+  CC       gelf_getverneed.o
+  CC       gelf_getvernaux.o
+  CC       gelf_getverdef.o
+  CC       gelf_getverdaux.o
+  CC       gelf_getrel.o
+  CC       gelf_getrela.o
+  CC       gelf_update_rel.o
+  CC       gelf_update_rela.o
+  CC       gelf_getdyn.o
+  CC       gelf_update_dyn.o
+  CC       gelf_getmove.o
+  CC       gelf_update_move.o
+  CC       gelf_getsyminfo.o
+  CC       gelf_update_syminfo.o
+  CC       gelf_getauxv.o
+  CC       gelf_update_auxv.o
+  CC       gelf_getnote.o
+  CC       gelf_xlatetof.o
+  CC       gelf_xlatetom.o
+  CC       nlist.o
+  CC       gelf_getsymshndx.o
+  CC       gelf_update_symshndx.o
+  CC       gelf_update_versym.o
+  CC       gelf_update_verneed.o
+  CC       gelf_update_vernaux.o
+  CC       gelf_update_verdef.o
+  CC       gelf_update_verdaux.o
+  CC       elf_getphdrnum.o
+  CC       elf_getshdrnum.o
+  CC       elf_getshdrstrndx.o
+  CC       gelf_checksum.o
+  CC       elf32_checksum.o
+  CC       elf64_checksum.o
+  CC       libelf_crc32.o
+  CC       libelf_next_prime.o
+  CC       elf_clone.o
+  CC       gelf_getlib.o
+  CC       gelf_update_lib.o
+  CC       elf32_offscn.o
+  CC       elf64_offscn.o
+  CC       gelf_offscn.o
+  CC       elf_getaroff.o
+  CC       elf_gnu_hash.o
+  CC       elf_scnshndx.o
+  CC       elf32_getchdr.o
+  CC       elf64_getchdr.o
+  CC       gelf_getchdr.o
+  CC       elf_compress.o
+  CC       elf_compress_gnu.o
+  CC       elf_version.os
+  CC       elf_hash.os
+  CC       elf_error.os
+  CC       elf_fill.os
+  CC       elf_begin.os
+  CC       elf_next.os
+  CC       elf_rand.os
+  CC       elf_end.os
+  CC       elf_kind.os
+  CC       gelf_getclass.os
+  CC       elf_getbase.os
+  CC       elf_getident.os
+  CC       elf32_fsize.os
+  CC       elf64_fsize.os
+  CC       gelf_fsize.os
+  CC       elf32_xlatetof.os
+  CC       elf32_xlatetom.os
+  CC       elf64_xlatetof.os
+  CC       elf64_xlatetom.os
+  CC       gelf_xlate.os
+  CC       elf32_getehdr.os
+  CC       elf64_getehdr.os
+  CC       gelf_getehdr.os
+  CC       elf32_newehdr.os
+  CC       elf64_newehdr.os
+  CC       gelf_newehdr.os
+  CC       gelf_update_ehdr.os
+  CC       elf32_getphdr.os
+  CC       elf64_getphdr.os
+  CC       gelf_getphdr.os
+  CC       elf32_newphdr.os
+  CC       elf64_newphdr.os
+  CC       gelf_newphdr.os
+  CC       gelf_update_phdr.os
+  CC       elf_getarhdr.os
+  CC       elf_getarsym.os
+  CC       elf_rawfile.os
+  CC       elf_readall.os
+  CC       elf_cntl.os
+  CC       elf_getscn.os
+  CC       elf_nextscn.os
+  CC       elf_ndxscn.os
+  CC       elf_newscn.os
+  CC       elf32_getshdr.os
+  CC       elf64_getshdr.os
+  CC       gelf_getshdr.os
+  CC       gelf_update_shdr.os
+  CC       elf_strptr.os
+  CC       elf_rawdata.os
+  CC       elf_getdata.os
+  CC       elf_newdata.os
+  CC       elf_getdata_rawchunk.os
+  CC       elf_flagelf.os
+  CC       elf_flagehdr.os
+  CC       elf_flagphdr.os
+  CC       elf_flagscn.os
+  CC       elf_flagshdr.os
+  CC       elf_flagdata.os
+  CC       elf_memory.os
+  CC       elf_update.os
+  CC       elf32_updatenull.os
+  CC       elf64_updatenull.os
+  CC       elf32_updatefile.os
+  CC       elf64_updatefile.os
+  CC       gelf_getsym.os
+  CC       gelf_update_sym.os
+  CC       gelf_getversym.os
+  CC       gelf_getverneed.os
+  CC       gelf_getvernaux.os
+  CC       gelf_getverdef.os
+  CC       gelf_getverdaux.os
+  CC       gelf_getrel.os
+  CC       gelf_getrela.os
+  CC       gelf_update_rel.os
+  CC       gelf_update_rela.os
+  CC       gelf_getdyn.os
+  CC       gelf_update_dyn.os
+  CC       gelf_getmove.os
+  CC       gelf_update_move.os
+  CC       gelf_getsyminfo.os
+  CC       gelf_update_syminfo.os
+  CC       gelf_getauxv.os
+  CC       gelf_update_auxv.os
+  CC       gelf_getnote.os
+  CC       gelf_xlatetof.os
+  CC       gelf_xlatetom.os
+  CC       nlist.os
+  CC       gelf_getsymshndx.os
+  CC       gelf_update_symshndx.os
+  CC       gelf_update_versym.os
+  CC       gelf_update_verneed.os
+  CC       gelf_update_vernaux.os
+  CC       gelf_update_verdaux.os
+  CC       gelf_update_verdef.os
+  CC       elf_getphdrnum.os
+  CC       elf_getshdrnum.os
+  CC       elf_getshdrstrndx.os
+  CC       gelf_checksum.os
+  CC       elf32_checksum.os
+  CC       elf64_checksum.os
+  CC       libelf_crc32.os
+  CC       libelf_next_prime.os
+  CC       elf_clone.os
+  CC       gelf_getlib.os
+  CC       gelf_update_lib.os
+  CC       elf32_offscn.os
+  CC       elf64_offscn.os
+  CC       gelf_offscn.os
+  CC       elf_getaroff.os
+  CC       elf_gnu_hash.os
+  CC       elf_scnshndx.os
+  CC       elf32_getchdr.os
+  CC       elf64_getchdr.os
+  CC       gelf_getchdr.os
+  CC       elf_compress.os
+  CC       elf_compress_gnu.os
+  GEN      libelf.manifest
+  AR       libelf.a
+  AR       libelf_pic.a
+  CCLD     libelf.so
+Making all in libcpu
+  GEN      x86_64_defs
+  CC       bpf_disasm.o
+  GEN      i386_defs
+  CC       riscv_disasm.o
+  GEN      x86_64.mnemonics
+  GEN      i386.mnemonics
+  CC       x86_64_disasm.o
+  CC       i386_disasm.o
+riscv_disasm.c: In function ‘riscv_disasm’:
+riscv_disasm.c:1262:46: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]
+ 1262 |                   struct known_csrs *found = bsearch (&key, known,
+      |                                              ^~~~~~~
+cc1: all warnings being treated as errors
+make[2]: *** [Makefile:576: riscv_disasm.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+rm x86_64_defs i386_defs
+make[1]: *** [Makefile:625: all-recursive] Error 1
+make: *** [Makefile:540: all] Error 2
+[ERROR] Build script failed for libelf.
+[20:32:29] [WARNING] Failed to build dep 'libelf'. Continuing with main build...
+[20:32:29] Dependency 'libffi' already installed.
+[20:32:29] Dependency 'libxslt' already installed.
+[20:32:29] Dependency 'pcre2' already installed.
+[20:32:29] Dependency 'systemd' already installed.
+[20:32:29] Dependency 'util-linux' already installed.
+[20:32:29] Dependency 'xz' already installed.
+[20:32:29] Dependency 'zlib' already installed.
+[20:32:29] Dependency 'zstd' already installed.
+[20:32:29] Starting remote custom build for glib2...
+[20:32:31] [LFS-AUTOBUILD] Skipping custom package glib2: version 2.90.1 already installed (use -f to force build).
+[20:32:31] Dependency 'glib2' already installed.
+[20:32:31] Dependency 'glibc' already installed.
+[20:32:31] Dependency 'glycin' already installed.
+[20:32:31] Dependency 'gpgme' already installed.
+[20:32:31] Dependency 'icu' already installed.
+[20:32:31] Dependency 'json-glib' already installed.
+[20:32:31] Dependency 'keyutils' already installed.
+[20:32:31] Dependency 'lcms2' already installed.
+[20:32:31] Dependency 'libarchive' already installed.
+[20:32:31] Dependency 'libassuan' already installed.
+[20:32:31] Dependency 'libcap' already installed.
+[20:32:31] Dependency 'libffi' already installed.
+[20:32:31] Dependency 'libfyaml' already installed.
+[20:32:31] Dependency 'libgpg-error' already installed.
+[20:32:32] Dependency 'libidn2' already installed.
+[20:32:32] Dependency 'libpng' already installed.
+[20:32:32] Dependency 'libpsl' already installed.
+[20:32:32] Dependency 'libseccomp' already installed.
+[20:32:32] Dependency 'libselinux' already installed.
+[20:32:32] Dependency 'libsoup' already installed.
+[20:32:32] Dependency 'libunistring' already installed.
+[20:32:32] Dependency 'libxau' already installed.
+[20:32:32] Dependency 'libxml2' already installed.
+[20:32:32] Dependency 'libxmlb' already installed.
+[20:32:32] Dependency 'llvm' already installed.
+[20:32:32] Dependency 'lz4' already installed.
+[20:32:32] Dependency 'meson' already installed.
+[20:32:32] Dependency 'mitkrb' already installed.
+[20:32:32] Dependency 'nghttp2' already installed.
+[20:32:32] Dependency 'ninja' already installed.
+[20:32:32] Dependency 'openldap' already installed.
+[20:32:32] Dependency 'openssl' already installed.
+[20:32:32] Dependency 'ostree' already installed.
+[20:32:32] Dependency 'pcre2' already installed.
+[20:32:32] Dependency 'polkit' already installed.
+[20:32:32] Dependency 'python' already installed.
+[20:32:32] Dependency 'socat' already installed.
+[20:32:32] Dependency 'sqlite' already installed.
+[20:32:32] Dependency 'systemd' already installed.
+[20:32:32] Dependency 'tar' already installed.
+[20:32:32] Dependency 'util-linux' already installed.
+[20:32:32] Dependency 'wayland' already installed.
+[20:32:32] Dependency 'webkitgtk' already installed.
+[20:32:32] Dependency 'xdg-dbus-proxy' already installed.
+[20:32:32] Dependency 'xdg-utils' already installed.
+[20:32:32] Dependency 'xz' already installed.
+[20:32:32] Dependency 'zlib' already installed.
+[20:32:32] Dependency 'zstd' already installed.
+[20:32:32] Starting remote custom build for flatpak...
+[20:32:32] [LFS-AUTOBUILD] Skipping custom package flatpak: version 1.18.4 already installed (use -f to force build).
+Building custom package iana-etc...
+[20:32:32] Found custom package for iana-etc, bypassing BLFS aliases.
+[20:32:32] Custom package detected at /home/fusion809/lfs_packaging/iana-etc (package: iana-etc)
+[20:32:32] Extracting dependencies for custom package 'iana-etc'...
+[20:32:32] Starting remote custom build for iana-etc...
+--2026-10-18 20:32:36--  https://github.com/Mic92/iana-etc/releases/download/20261015/iana-etc-20261015.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/84966990/120f608b-c21c-4b75-8c1b-e4d2149fe377?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-18T11%3A12%3A55Z&rscd=attachment%3B+filename%3Diana-etc-20261015.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-18T10%3A12%3A38Z&ske=2026-10-18T11%3A12%3A55Z&sks=b&skv=2018-11-09&sig=Qpkm6nJBXT6F6TCmnQRmp8ARq1%2FzjU21OQ5WPebC%2B5w%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MjMxOTg1NywibmJmIjoxNzkyMzE5NTU3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.IQLy7gvUW_1xwUoLTr0jn_-HcBatxdUgK18-HBo5JHQ&response-content-disposition=attachment%3B%20filename%3Diana-etc-20261015.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2026-10-18 20:32:37--  https://release-assets.githubusercontent.com/github-production-release-asset/84966990/120f608b-c21c-4b75-8c1b-e4d2149fe377?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-18T11%3A12%3A55Z&rscd=attachment%3B+filename%3Diana-etc-20261015.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-18T10%3A12%3A38Z&ske=2026-10-18T11%3A12%3A55Z&sks=b&skv=2018-11-09&sig=Qpkm6nJBXT6F6TCmnQRmp8ARq1%2FzjU21OQ5WPebC%2B5w%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MjMxOTg1NywibmJmIjoxNzkyMzE5NTU3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.IQLy7gvUW_1xwUoLTr0jn_-HcBatxdUgK18-HBo5JHQ&response-content-disposition=attachment%3B%20filename%3Diana-etc-20261015.tar.gz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.111.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 611076 (597K) [application/octet-stream]
+Saving to: ‘iana-etc-20261015.tar.gz’
+
+iana-etc-20261015.t   0%[                    ]       0  --.-KB/s               iana-etc-20261015.t 100%[===================>] 596.75K  --.-KB/s    in 0.08s   
+
+2026-10-18 20:32:37 (7.01 MB/s) - ‘iana-etc-20261015.tar.gz’ saved [611076/611076]
+
+'services' -> '/etc/services'
+'protocols' -> '/etc/protocols'
+20261015
+Updated registry for iana-etc to version 20261015
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package iana-etc in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+ERROR: Refusing to commit — the following packages have missing/broken inventories:
+libelf
+Fix them (re-run lfs_autobuild for each), then retry lfs_package_commit.
+r13.1-28
+r13.1-426
+Build failures or missing inventories detected for the following packages:
+libelf
+Skipping cleanup.
+===== updatec completed successfully =====
+Finished: 2026-10-18 20:33:11 AEST
+Exit status: 0

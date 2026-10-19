@@ -1,0 +1,1353 @@
+===== Update check started: 2026-10-19 00:30:22 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261019_003022
+Packages needing attention: libical
+===== Starting updatec: 2026-10-19 00:30:25 AEST =====
+Checking for packages with missing file inventories...
+Packages with missing inventories that will be force-rebuilt: libelf
+name=libical
+local_ver=4.0.6
+remote_ver=4.0.7
+name=tcl
+local_ver=9.1.0
+remote_ver=64
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - libelf
+  - libical
+  - tcl
+  - zed
+
+Building book package libelf...
+[00:32:16] [LFS-AUTOBUILD] Script initialization complete. Version 2026.04.02.1
+[00:32:17] Found package page: https://www.linuxfromscratch.org/lfs/view/development/chapter08/libelf.html
+[00:32:17] Fetching content from https://www.linuxfromscratch.org/lfs/view/development/chapter08/libelf.html...
+[00:32:17] Extracting required dependencies from page...
+[00:32:17] No required dependencies found on page.
+[00:32:17] Using hardcoded metadata for libelf (elfutils package)
+[00:32:17] Hardcoded commands for libelf injected into RAW_CONTENT.
+[00:32:17] Extracted commands: # __BEGIN_USER__
+./configure --prefix=/usr                \
+            --disable-debuginfod         \
+            --enable-libdebuginfod=dummy &&
+make -j$(nproc)
+
+# __END_USER__
+# __BEGIN_ROOT__
+make install
+
+# __END_ROOT__
+
+[00:32:17] Package base name for search: libelf
+[00:32:17] Searching LFS Chapter 3 for packages and patches...
+[00:32:20] Identified main archive: https://sourceware.org/elfutils/ftp/0.194/elfutils-0.194.tar.bz2
+[00:32:20] Extracted version from URL: 0.194
+[00:32:20] Total files to download: 1
+[00:32:20] Starting remote build for libelf...
+Cleaning up old versions...
+Extracting elfutils-0.194.tar.bz2...
+Using tar with strip-components
+Marking build start time...
+Running build commands (user blocks as fusion809, root blocks as root)...
+configure: No --program-prefix given, using "eu-"
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... -std=gnu++11
+checking dependency style of g++ -std=gnu++11... gcc3
+checking for ranlib... ranlib
+checking for bison... bison -y
+checking for flex... flex
+checking for lex output file root... lex.yy
+checking for lex library... none needed
+checking whether yytext is a pointer... yes
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking for readelf... readelf
+checking for nm... nm
+checking whether gcc supports __attribute__((visibility()))... yes
+checking whether gcc supports __attribute__((gcc_struct))... yes
+checking whether gcc supports -fPIC... yes
+checking whether gcc supports -fPIE... yes
+checking whether gcc supports -Wl,-z,defs... yes
+checking whether the compiler generates build-ids... no
+configure: WARNING: compiler doesn't generate build-id by default
+checking whether gcc supports -Wl,-z,relro... yes
+checking for __thread support... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for stdatomic.h... yes
+checking for gcc option to enable large file support... none needed
+checking whether fts.h is bad when included (with LFS)... no
+checking whether to add -D_FORTIFY_SOURCE=2 or =3 to CFLAGS... yes -D_FORTIFY_SOURCE=3
+checking for openat2 with RESOLVE_IN_ROOT support... yes
+checking for library containing gzdirect... -lz
+checking for library containing BZ2_bzdopen... -lbz2
+checking for library containing lzma_auto_decoder... -llzma
+checking for library containing ZSTD_decompress... -lzstd
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libzstd >= 1.4.0... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether memrchr is declared... yes
+checking whether rawmemchr is declared... yes
+checking whether powerof2 is declared... yes
+checking whether mempcpy is declared... yes
+checking whether reallocarray is declared... yes
+checking for process_vm_readv... yes
+checking for mremap... yes
+checking for error.h... yes
+checking for error... yes
+checking for err.h... yes
+checking for sched.h... yes
+checking for sched_getaffinity... yes
+checking for sys/resource.h... yes
+checking for getrlimit... yes
+checking for malloc.h... yes
+checking for malloc_trim... yes
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking for __cxa_demangle in -lstdc++... yes
+checking whether symbol versioning is supported... yes
+checking whether gcc accepts -Wstack-usage... yes
+checking whether gcc has a sane -Wlogical-op... yes
+checking whether gcc accepts -Wduplicated-cond... yes
+checking whether gcc accepts -Wnull-dereference... yes
+checking whether gcc accepts -Wimplicit-fallthrough... yes
+checking whether the compiler accepts -Wimplicit-fallthrough=5... yes
+checking whether the compiler accepts -Wtrampolines... yes
+checking whether the compiler accepts -Wno-packed-not-aligned... yes
+checking whether the compiler accepts -Wuse-after-free=3... yes
+checking whether the compiler accepts -fno-addrsig... no
+checking for library containing argp_parse... none required
+checking for library containing fts_close... none required
+checking for library containing _obstack_free... none required
+checking for a sed that does not truncate output... /usr/bin/sed
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking how to run the C preprocessor... gcc -E
+checking for egrep -e... /usr/bin/grep -E
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking size of long... 8
+checking for struct user_regs_struct... yes
+checking for struct user_pac_mask... no
+checking gcc option for 32-bit word size... -m32
+checking for 64-bit host... yes
+checking whether gcc -m32 makes executables we can run... no
+configure: WARNING: not running biarch tests, gcc -m32 does not work
+checking for bunzip2... yes
+checking for zstd... yes
+checking whether g++ -std=gnu++11 supports C++11 features with -std=c++11... yes
+checking for execinfo.h... yes
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libcurl >= 7.29.0... yes
+checking for json-c >= 0.11... yes
+checking for libmicrohttpd >= 0.9.33... no
+checking for libmicrohttpd < 0.9.51... no
+checking for sqlite3 >= 3.7.17... yes
+checking for libarchive >= 3.1.2... yes
+checking for headerGet in -lrpm... no
+checking for EVP_MD_CTX_new in -lcrypto... yes
+checking for imaevm.h... no
+checking for pthread_setname_np in -lpthread... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating config/Makefile
+config.status: creating Makefile
+config.status: creating elfutils.spec
+config.status: creating debuginfod/Makefile
+config.status: creating debuginfod/debuginfod.h
+config.status: creating doc/Makefile
+config.status: creating lib/Makefile
+config.status: creating libelf/Makefile
+config.status: creating libebl/Makefile
+config.status: creating libdwelf/Makefile
+config.status: creating libdw/Makefile
+config.status: creating libdwfl/Makefile
+config.status: creating libdwfl_stacktrace/Makefile
+config.status: creating libcpu/Makefile
+config.status: creating libasm/Makefile
+config.status: creating backends/Makefile
+config.status: creating src/Makefile
+config.status: creating po/Makefile.in
+config.status: creating tests/Makefile
+config.status: creating config/libelf.pc
+config.status: creating config/libdw.pc
+config.status: creating config/libdebuginfod.pc
+config.status: creating version.h
+config.status: creating config/profile.sh
+config.status: creating config/profile.csh
+config.status: creating config/profile.fish
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+configure:
+=====================================================================
+        elfutils: 0.194 (eu_version: 194)
+=====================================================================
+
+    Prefix                             : /usr
+    Program prefix ("eu-" recommended) : eu-
+    Source code location               : .
+    Maintainer mode                    : 
+    build arch                         : x86_64-pc-linux-gnu
+
+    CFLAGS=-D_FORTIFY_SOURCE=3 -g -O2
+    CXXFLAGS=-D_FORTIFY_SOURCE=3 -g -O2
+
+  RECOMMENDED FEATURES (should all be yes)
+    gzip support                       : yes
+    bzip2 support                      : yes
+    lzma/xz support                    : yes
+    zstd support                       : yes
+    zstd compression support           : yes
+    libstdc++ demangle support         : yes
+    File textrel check                 : yes
+    Symbol versioning                  : yes
+
+  NOT RECOMMENDED FEATURES (should all be no)
+    Experimental thread safety         : no
+    install elf.h                      : no
+
+  OTHER FEATURES
+    Deterministic archives by default  : false
+    Native language support            : yes
+    Extra Valgrind annotations         : no
+    libdebuginfod client support       : dummy
+    Debuginfod server support          : no
+    Default DEBUGINFOD_URLS            : 
+    Debuginfod RPM sig checking        : no
+    Default DEBUGINFOD_IMA_CERT_PATH   : 
+    eu-stacktrace support              : no
+
+  EXTRA TEST FEATURES (used with make check)
+    have bunzip2 installed (required)  : yes
+    have zstd installed                : yes
+    C++11                              : yes
+    debug branch prediction            : no
+    gprof support                      : no
+    gcov support                       : no
+    run all tests under valgrind       : no
+    gcc undefined behaviour sanitizer  : no
+    gcc address sanitizer              : no
+    clang memory sanitizer             : no
+    use rpath in tests                 : no
+    test biarch                        : no
+
+make --no-print-directory all-recursive
+Making all in config
+sed -i 's/{prefix}/prefix/g' profile.fish
+Making all in lib
+  CC       xstrndup.o
+  CC       xasprintf.o
+  CC       xstrdup.o
+  CC       xmalloc.o
+  CC       next_prime.o
+  CC       crc32.o
+  CC       crc32_file.o
+  CC       eu-search.o
+  CC       color.o
+  CC       error.o
+  CC       printversion.o
+  GEN      libeu.manifest
+  AR       libeu.a
+Making all in libelf
+  CC       elf_version.o
+  CC       elf_hash.o
+  CC       elf_error.o
+  CC       elf_fill.o
+  CC       elf_begin.o
+  CC       elf_next.o
+  CC       elf_rand.o
+  CC       elf_end.o
+  CC       elf_kind.o
+  CC       gelf_getclass.o
+  CC       elf_getbase.o
+  CC       elf_getident.o
+  CC       elf32_fsize.o
+  CC       elf64_fsize.o
+  CC       gelf_fsize.o
+  CC       elf32_xlatetof.o
+  CC       elf32_xlatetom.o
+  CC       elf64_xlatetof.o
+  CC       elf64_xlatetom.o
+  CC       gelf_xlate.o
+  CC       elf32_getehdr.o
+  CC       elf64_getehdr.o
+  CC       gelf_getehdr.o
+  CC       elf32_newehdr.o
+  CC       elf64_newehdr.o
+  CC       gelf_newehdr.o
+  CC       gelf_update_ehdr.o
+  CC       elf32_getphdr.o
+  CC       elf64_getphdr.o
+  CC       gelf_getphdr.o
+  CC       elf32_newphdr.o
+  CC       elf64_newphdr.o
+  CC       gelf_newphdr.o
+  CC       gelf_update_phdr.o
+  CC       elf_getarhdr.o
+  CC       elf_getarsym.o
+  CC       elf_rawfile.o
+  CC       elf_readall.o
+  CC       elf_cntl.o
+  CC       elf_getscn.o
+  CC       elf_nextscn.o
+  CC       elf_ndxscn.o
+  CC       elf_newscn.o
+  CC       elf32_getshdr.o
+  CC       elf64_getshdr.o
+  CC       gelf_getshdr.o
+  CC       gelf_update_shdr.o
+  CC       elf_strptr.o
+  CC       elf_rawdata.o
+  CC       elf_getdata.o
+  CC       elf_newdata.o
+  CC       elf_getdata_rawchunk.o
+  CC       elf_flagelf.o
+  CC       elf_flagehdr.o
+  CC       elf_flagphdr.o
+  CC       elf_flagscn.o
+  CC       elf_flagshdr.o
+  CC       elf_flagdata.o
+  CC       elf_memory.o
+  CC       elf_update.o
+  CC       elf32_updatenull.o
+  CC       elf64_updatenull.o
+  CC       elf32_updatefile.o
+  CC       elf64_updatefile.o
+  CC       gelf_getsym.o
+  CC       gelf_update_sym.o
+  CC       gelf_getversym.o
+  CC       gelf_getverneed.o
+  CC       gelf_getvernaux.o
+  CC       gelf_getverdef.o
+  CC       gelf_getverdaux.o
+  CC       gelf_getrel.o
+  CC       gelf_getrela.o
+  CC       gelf_update_rel.o
+  CC       gelf_update_rela.o
+  CC       gelf_getdyn.o
+  CC       gelf_update_dyn.o
+  CC       gelf_getmove.o
+  CC       gelf_update_move.o
+  CC       gelf_getsyminfo.o
+  CC       gelf_update_syminfo.o
+  CC       gelf_getauxv.o
+  CC       gelf_update_auxv.o
+  CC       gelf_getnote.o
+  CC       gelf_xlatetof.o
+  CC       gelf_xlatetom.o
+  CC       nlist.o
+  CC       gelf_getsymshndx.o
+  CC       gelf_update_symshndx.o
+  CC       gelf_update_versym.o
+  CC       gelf_update_verneed.o
+  CC       gelf_update_vernaux.o
+  CC       gelf_update_verdef.o
+  CC       gelf_update_verdaux.o
+  CC       elf_getphdrnum.o
+  CC       elf_getshdrnum.o
+  CC       elf_getshdrstrndx.o
+  CC       gelf_checksum.o
+  CC       elf32_checksum.o
+  CC       elf64_checksum.o
+  CC       libelf_crc32.o
+  CC       libelf_next_prime.o
+  CC       elf_clone.o
+  CC       gelf_getlib.o
+  CC       gelf_update_lib.o
+  CC       elf32_offscn.o
+  CC       elf64_offscn.o
+  CC       gelf_offscn.o
+  CC       elf_getaroff.o
+  CC       elf_gnu_hash.o
+  CC       elf_scnshndx.o
+  CC       elf32_getchdr.o
+  CC       elf64_getchdr.o
+  CC       gelf_getchdr.o
+  CC       elf_compress.o
+  CC       elf_compress_gnu.o
+  CC       elf_version.os
+  CC       elf_hash.os
+  CC       elf_error.os
+  CC       elf_fill.os
+  CC       elf_begin.os
+  CC       elf_next.os
+  CC       elf_rand.os
+  CC       elf_end.os
+  CC       elf_kind.os
+  CC       gelf_getclass.os
+  CC       elf_getbase.os
+  CC       elf_getident.os
+  CC       elf32_fsize.os
+  CC       elf64_fsize.os
+  CC       gelf_fsize.os
+  CC       elf32_xlatetof.os
+  CC       elf32_xlatetom.os
+  CC       elf64_xlatetof.os
+  CC       elf64_xlatetom.os
+  CC       gelf_xlate.os
+  CC       elf32_getehdr.os
+  CC       elf64_getehdr.os
+  CC       gelf_getehdr.os
+  CC       elf32_newehdr.os
+  CC       elf64_newehdr.os
+  CC       gelf_newehdr.os
+  CC       gelf_update_ehdr.os
+  CC       elf32_getphdr.os
+  CC       elf64_getphdr.os
+  CC       gelf_getphdr.os
+  CC       elf32_newphdr.os
+  CC       elf64_newphdr.os
+  CC       gelf_newphdr.os
+  CC       gelf_update_phdr.os
+  CC       elf_getarhdr.os
+  CC       elf_getarsym.os
+  CC       elf_rawfile.os
+  CC       elf_readall.os
+  CC       elf_cntl.os
+  CC       elf_getscn.os
+  CC       elf_nextscn.os
+  CC       elf_ndxscn.os
+  CC       elf_newscn.os
+  CC       elf32_getshdr.os
+  CC       elf64_getshdr.os
+  CC       gelf_getshdr.os
+  CC       gelf_update_shdr.os
+  CC       elf_strptr.os
+  CC       elf_rawdata.os
+  CC       elf_getdata.os
+  CC       elf_newdata.os
+  CC       elf_getdata_rawchunk.os
+  CC       elf_flagelf.os
+  CC       elf_flagehdr.os
+  CC       elf_flagphdr.os
+  CC       elf_flagscn.os
+  CC       elf_flagshdr.os
+  CC       elf_flagdata.os
+  CC       elf_memory.os
+  CC       elf_update.os
+  CC       elf32_updatenull.os
+  CC       elf64_updatenull.os
+  CC       elf32_updatefile.os
+  CC       elf64_updatefile.os
+  CC       gelf_getsym.os
+  CC       gelf_update_sym.os
+  CC       gelf_getversym.os
+  CC       gelf_getverneed.os
+  CC       gelf_getvernaux.os
+  CC       gelf_getverdef.os
+  CC       gelf_getverdaux.os
+  CC       gelf_getrel.os
+  CC       gelf_getrela.os
+  CC       gelf_update_rel.os
+  CC       gelf_update_rela.os
+  CC       gelf_getdyn.os
+  CC       gelf_update_dyn.os
+  CC       gelf_getmove.os
+  CC       gelf_update_move.os
+  CC       gelf_getsyminfo.os
+  CC       gelf_update_syminfo.os
+  CC       gelf_getauxv.os
+  CC       gelf_update_auxv.os
+  CC       gelf_getnote.os
+  CC       gelf_xlatetof.os
+  CC       gelf_xlatetom.os
+  CC       nlist.os
+  CC       gelf_getsymshndx.os
+  CC       gelf_update_symshndx.os
+  CC       gelf_update_versym.os
+  CC       gelf_update_verneed.os
+  CC       gelf_update_vernaux.os
+  CC       gelf_update_verdef.os
+  CC       gelf_update_verdaux.os
+  CC       elf_getphdrnum.os
+  CC       elf_getshdrnum.os
+  CC       elf_getshdrstrndx.os
+  CC       gelf_checksum.os
+  CC       elf32_checksum.os
+  CC       elf64_checksum.os
+  CC       libelf_crc32.os
+  CC       libelf_next_prime.os
+  CC       elf_clone.os
+  CC       gelf_getlib.os
+  CC       gelf_update_lib.os
+  CC       elf32_offscn.os
+  CC       elf64_offscn.os
+  CC       gelf_offscn.os
+  CC       elf_getaroff.os
+  CC       elf_gnu_hash.os
+  CC       elf_scnshndx.os
+  CC       elf32_getchdr.os
+  CC       elf64_getchdr.os
+  CC       gelf_getchdr.os
+  CC       elf_compress.os
+  CC       elf_compress_gnu.os
+  GEN      libelf.manifest
+  AR       libelf.a
+  AR       libelf_pic.a
+  CCLD     libelf.so
+Making all in libcpu
+  GEN      i386_defs
+  GEN      x86_64_defs
+  CC       bpf_disasm.o
+  CC       riscv_disasm.o
+  GEN      i386.mnemonics
+  GEN      x86_64.mnemonics
+  CC       i386_disasm.o
+riscv_disasm.c: In function ‘riscv_disasm’:
+riscv_disasm.c:1262:46: error: initialization discards ‘const’ qualifier from pointer target type [-Werror=discarded-qualifiers]
+ 1262 |                   struct known_csrs *found = bsearch (&key, known,
+      |                                              ^~~~~~~
+  CC       x86_64_disasm.o
+cc1: all warnings being treated as errors
+make[2]: *** [Makefile:576: riscv_disasm.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+rm x86_64_defs i386_defs
+make[1]: *** [Makefile:625: all-recursive] Error 1
+make: *** [Makefile:540: all] Error 2
+[ERROR] Build script failed for libelf.
+Building custom package libical...
+[00:32:50] Found custom package for libical, bypassing BLFS aliases.
+[00:32:50] Custom package detected at /home/fusion809/lfs_packaging/libical (package: libical)
+[00:32:50] Extracting dependencies for custom package 'libical'...
+[00:32:50] Required deps: cmake gcc glib2 glibc icu libffi libxml2 pcre2 vala 
+[00:32:50] Dependency 'cmake' already installed.
+[00:32:50] Dependency 'gcc' already installed.
+[00:32:50] Dependency 'glib2' already installed.
+[00:32:50] Dependency 'glibc' already installed.
+[00:32:50] Dependency 'icu' already installed.
+[00:32:50] Dependency 'libffi' already installed.
+[00:32:50] Dependency 'libxml2' already installed.
+[00:32:50] Dependency 'pcre2' already installed.
+[00:32:50] Dependency 'vala' already installed.
+[00:32:50] Starting remote custom build for libical...
+--2026-10-19 00:32:54--  https://github.com/libical/libical/releases/download/v4.0.7/libical-4.0.7.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/20364962/de0d161a-c0ed-49d0-adfe-5bdf94840c5a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-18T15%3A14%3A31Z&rscd=attachment%3B+filename%3Dlibical-4.0.7.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-18T14%3A13%3A35Z&ske=2026-10-18T15%3A14%3A31Z&sks=b&skv=2018-11-09&sig=mfdtZXyRDTYwPHEKiLyzekPAYAJzoGMOzbcgD94Y9vA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MjMzNDI3NiwibmJmIjoxNzkyMzMzOTc2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.INI4IiYLLVANqDJl-VFCVXtRuYnIflEpvZAOJKuYVYI&response-content-disposition=attachment%3B%20filename%3Dlibical-4.0.7.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2026-10-19 00:32:55--  https://release-assets.githubusercontent.com/github-production-release-asset/20364962/de0d161a-c0ed-49d0-adfe-5bdf94840c5a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-18T15%3A14%3A31Z&rscd=attachment%3B+filename%3Dlibical-4.0.7.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-18T14%3A13%3A35Z&ske=2026-10-18T15%3A14%3A31Z&sks=b&skv=2018-11-09&sig=mfdtZXyRDTYwPHEKiLyzekPAYAJzoGMOzbcgD94Y9vA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MjMzNDI3NiwibmJmIjoxNzkyMzMzOTc2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.INI4IiYLLVANqDJl-VFCVXtRuYnIflEpvZAOJKuYVYI&response-content-disposition=attachment%3B%20filename%3Dlibical-4.0.7.tar.gz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.111.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1921861 (1.8M) [application/octet-stream]
+Saving to: ‘libical-4.0.7.tar.gz’
+
+libical-4.0.7.tar.g   0%[                    ]       0  --.-KB/s               libical-4.0.7.tar.g 100%[===================>]   1.83M  9.62MB/s    in 0.2s    
+
+2026-10-19 00:32:56 (9.62 MB/s) - ‘libical-4.0.7.tar.gz’ saved [1921861/1921861]
+
+-- The C compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Perl: /usr/bin/perl (found version "5.44.0")
+-- Found ICU: /usr/include (found version "78.3") found components: i18n uc data
+-- Looking for include file byteswap.h
+-- Looking for include file byteswap.h - found
+-- Looking for include file dirent.h
+-- Looking for include file dirent.h - found
+-- Looking for include file endian.h
+-- Looking for include file endian.h - found
+-- Looking for include file inttypes.h
+-- Looking for include file inttypes.h - found
+-- Looking for include file pthread.h
+-- Looking for include file pthread.h - found
+-- Looking for include file sys/endian.h
+-- Looking for include file sys/endian.h - not found
+-- Looking for include file sys/param.h
+-- Looking for include file sys/param.h - found
+-- Looking for include file sys/utsname.h
+-- Looking for include file sys/utsname.h - found
+-- Looking for include file fcntl.h
+-- Looking for include file fcntl.h - found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for include file wctype.h
+-- Looking for include file wctype.h - found
+-- Looking for access
+-- Looking for access - found
+-- Looking for fork
+-- Looking for fork - found
+-- Looking for getopt
+-- Looking for getopt - found
+-- Looking for getpid
+-- Looking for getpid - found
+-- Looking for getpwent
+-- Looking for getpwent - found
+-- Looking for gmtime_r
+-- Looking for gmtime_r - found
+-- Looking for localtime_r
+-- Looking for localtime_r - found
+-- Looking for mkdir
+-- Looking for mkdir - found
+-- Looking for open
+-- Looking for open - found
+-- Looking for nanosleep
+-- Looking for nanosleep - found
+-- Looking for signal
+-- Looking for signal - found
+-- Looking for stat
+-- Looking for stat - found
+-- Looking for fstat
+-- Looking for fstat - found
+-- Looking for strdup
+-- Looking for strdup - found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - found
+-- Looking for strncasecmp
+-- Looking for strncasecmp - found
+-- Looking for read
+-- Looking for read - found
+-- Looking for unlink
+-- Looking for unlink - found
+-- Looking for usleep
+-- Looking for usleep - found
+-- Looking for waitpid
+-- Looking for waitpid - found
+-- Looking for write
+-- Looking for write - found
+-- Looking for alarm
+-- Looking for alarm - found
+-- Looking for backtrace
+-- Looking for backtrace - found
+-- Looking for iswspace
+-- Looking for iswspace - found
+-- Looking for setenv
+-- Looking for setenv - found
+-- Looking for unsetenv
+-- Looking for unsetenv - found
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of int
+-- Check size of int - done
+-- Check size of intptr_t
+-- Check size of intptr_t - done
+-- Check size of pid_t
+-- Check size of pid_t - done
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of ssize_t
+-- Check size of ssize_t - done
+-- Check size of time_t
+-- Check size of time_t - done
+-- Check size of __time64_t
+-- Check size of __time64_t - failed
+-- Check size of time_t
+-- Check size of time_t - done
+-- Check size of wint_t
+-- Check size of wint_t - failed
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for pthread_attr_get_np in pthread
+-- Looking for pthread_attr_get_np in pthread - not found
+-- Looking for pthread_getattr_np in pthread
+-- Looking for pthread_getattr_np in pthread - found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Looking for include files pthread.h, pthread_np.h
+-- Looking for include files pthread.h, pthread_np.h - not found
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.8")
+-- Checking for module 'gobject-introspection-1.0>=0.6.7'
+--   Found gobject-introspection-1.0, version 1.86.0
+-- Checking for one of the modules 'glib-2.0>=2.44'
+-- Checking for one of the modules 'gobject-2.0>=2.44'
+-- Found LibXml2: /usr/lib/libxml2.so (found suitable version "2.15.4", minimum required is "2.7.3")
+-- Performing Test C_SUPPORTS_UNUSED_BUT_SET
+-- Performing Test C_SUPPORTS_UNUSED_BUT_SET - Success
+-- Performing Test C_SUPPORTS_LOGICAL_OP
+-- Performing Test C_SUPPORTS_LOGICAL_OP - Success
+-- Performing Test C_SUPPORTS_POINTER_MEMACCESS
+-- Performing Test C_SUPPORTS_POINTER_MEMACCESS - Success
+-- Performing Test C_SUPPORTS_FORMAT_SECURITY
+-- Performing Test C_SUPPORTS_FORMAT_SECURITY - Success
+-- Performing Test C_SUPPORTS_REDUNDANT_DECLS
+-- Performing Test C_SUPPORTS_REDUNDANT_DECLS - Success
+-- Performing Test C_SUPPORTS_UNREACHABLE_CODE
+-- Performing Test C_SUPPORTS_UNREACHABLE_CODE - Success
+-- Performing Test C_SUPPORTS_VARARGS
+-- Performing Test C_SUPPORTS_VARARGS - Success
+-- Performing Test CXX_SUPPORTS_UNUSED_BUT_SET
+-- Performing Test CXX_SUPPORTS_UNUSED_BUT_SET - Success
+-- Performing Test CXX_SUPPORTS_LOGICAL_OP
+-- Performing Test CXX_SUPPORTS_LOGICAL_OP - Success
+-- Performing Test CXX_SUPPORTS_POINTER_MEMACCESS
+-- Performing Test CXX_SUPPORTS_POINTER_MEMACCESS - Success
+-- Performing Test CXX_SUPPORTS_REORDER
+-- Performing Test CXX_SUPPORTS_REORDER - Success
+-- Performing Test CXX_SUPPORTS_FORMAT_SECURITY
+-- Performing Test CXX_SUPPORTS_FORMAT_SECURITY - Success
+-- Performing Test CXX_SUPPORTS_REDUNDANT_DECLS
+-- Performing Test CXX_SUPPORTS_REDUNDANT_DECLS - Success
+-- Performing Test CXX_SUPPORTS_UNREACHABLE_CODE
+-- Performing Test CXX_SUPPORTS_UNREACHABLE_CODE - Success
+-- Performing Test CXX_SUPPORTS_VARARGS
+-- Performing Test CXX_SUPPORTS_VARARGS - Success
+-- Performing Test C_SUPPORTS_WALL
+-- Performing Test C_SUPPORTS_WALL - Success
+-- Performing Test C_SUPPORTS_WEXTRA
+-- Performing Test C_SUPPORTS_WEXTRA - Success
+-- Performing Test C_SUPPORTS_WFORMAT
+-- Performing Test C_SUPPORTS_WFORMAT - Success
+-- Performing Test C_SUPPORTS_WFORMAT2
+-- Performing Test C_SUPPORTS_WFORMAT2 - Success
+-- Performing Test C_SUPPORTS_WSIGNCONVERSION
+-- Performing Test C_SUPPORTS_WSIGNCONVERSION - Success
+-- Performing Test C_SUPPORTS_WTRAMPOLINES
+-- Performing Test C_SUPPORTS_WTRAMPOLINES - Success
+-- Performing Test C_SUPPORTS_WIMPLICIT_FALLTHROUGH
+-- Performing Test C_SUPPORTS_WIMPLICIT_FALLTHROUGH - Success
+-- Performing Test C_SUPPORTS_WBIDI_CHARS_ANY
+-- Performing Test C_SUPPORTS_WBIDI_CHARS_ANY - Success
+-- Performing Test C_SUPPORTS_WERROR_FORMAT_SECURITY
+-- Performing Test C_SUPPORTS_WERROR_FORMAT_SECURITY - Success
+-- Performing Test C_SUPPORTS_WERROR_IMPLICIT
+-- Performing Test C_SUPPORTS_WERROR_IMPLICIT - Success
+-- Performing Test C_SUPPORTS_WERROR_INCOMPATIBLE_POINTER_TYPES
+-- Performing Test C_SUPPORTS_WERROR_INCOMPATIBLE_POINTER_TYPES - Success
+-- Performing Test C_SUPPORTS_WERROR_INT_CONVERSION
+-- Performing Test C_SUPPORTS_WERROR_INT_CONVERSION - Success
+-- Performing Test C_SUPPORTS_FORTIFY_SOURCE
+-- Performing Test C_SUPPORTS_FORTIFY_SOURCE - Success
+-- Performing Test C_SUPPORTS_GLIBC_ASSERTIONS
+-- Performing Test C_SUPPORTS_GLIBC_ASSERTIONS - Success
+-- Performing Test C_SUPPORTS_FSTRICT_FLEX_ARRAYS3
+-- Performing Test C_SUPPORTS_FSTRICT_FLEX_ARRAYS3 - Success
+-- Performing Test C_SUPPORTS_FSTACK_CLASH_PROTECTION
+-- Performing Test C_SUPPORTS_FSTACK_CLASH_PROTECTION - Success
+-- Performing Test C_SUPPORTS_FSTACK_PROTECTOR_STRONG
+-- Performing Test C_SUPPORTS_FSTACK_PROTECTOR_STRONG - Success
+-- Performing Test C_SUPPORTS_FCF_PROTECTION_FULL
+-- Performing Test C_SUPPORTS_FCF_PROTECTION_FULL - Success
+-- Performing Test C_SUPPORTS_MBRANCH_PROTECTION_STANDARD
+-- Performing Test C_SUPPORTS_MBRANCH_PROTECTION_STANDARD - Failed
+-- Performing Test C_SUPPORTS_FNO_DELETE_NULL_POINTER_CHECKS
+-- Performing Test C_SUPPORTS_FNO_DELETE_NULL_POINTER_CHECKS - Success
+-- Performing Test C_SUPPORTS_FNO_STRICT_OVERFLOW
+-- Performing Test C_SUPPORTS_FNO_STRICT_OVERFLOW - Success
+-- Performing Test C_SUPPORTS_FNO_STRICT_ALIASING
+-- Performing Test C_SUPPORTS_FNO_STRICT_ALIASING - Success
+-- Performing Test C_SUPPORTS_FTRIVIAL_AUTO_VAR_INIT
+-- Performing Test C_SUPPORTS_FTRIVIAL_AUTO_VAR_INIT - Failed
+-- Performing Test C_LINKER_SUPPORTS_NOEXECSTACK
+-- Performing Test C_LINKER_SUPPORTS_NOEXECSTACK - Success
+-- Performing Test C_LINKER_SUPPORTS_RELRO
+-- Performing Test C_LINKER_SUPPORTS_RELRO - Success
+-- Performing Test C_LINKER_SUPPORTS_NOW
+-- Performing Test C_LINKER_SUPPORTS_NOW - Success
+-- Performing Test C_LINKER_SUPPORTS_AS_NEEDED
+-- Performing Test C_LINKER_SUPPORTS_AS_NEEDED - Success
+-- Performing Test C_LINKER_SUPPORTS_NO_COPY_DT_NEEDED_ENTRIES
+-- Performing Test C_LINKER_SUPPORTS_NO_COPY_DT_NEEDED_ENTRIES - Success
+-- Performing Test CXX_SUPPORTS_WALL
+-- Performing Test CXX_SUPPORTS_WALL - Success
+-- Performing Test CXX_SUPPORTS_WEXTRA
+-- Performing Test CXX_SUPPORTS_WEXTRA - Success
+-- Performing Test CXX_SUPPORTS_WFORMAT
+-- Performing Test CXX_SUPPORTS_WFORMAT - Success
+-- Performing Test CXX_SUPPORTS_WFORMAT2
+-- Performing Test CXX_SUPPORTS_WFORMAT2 - Success
+-- Performing Test CXX_SUPPORTS_WCONVERSION
+-- Performing Test CXX_SUPPORTS_WCONVERSION - Success
+-- Performing Test CXX_SUPPORTS_WSIGNCONVERSION
+-- Performing Test CXX_SUPPORTS_WSIGNCONVERSION - Success
+-- Performing Test CXX_SUPPORTS_WTRAMPOLINES
+-- Performing Test CXX_SUPPORTS_WTRAMPOLINES - Success
+-- Performing Test CXX_SUPPORTS_WIMPLICIT_FALLTHROUGH
+-- Performing Test CXX_SUPPORTS_WIMPLICIT_FALLTHROUGH - Success
+-- Performing Test CXX_SUPPORTS_WBIDI_CHARS_ANY
+-- Performing Test CXX_SUPPORTS_WBIDI_CHARS_ANY - Success
+-- Performing Test CXX_SUPPORTS_WERROR_FORMAT_SECURITY
+-- Performing Test CXX_SUPPORTS_WERROR_FORMAT_SECURITY - Success
+-- Performing Test CXX_SUPPORTS_WERROR_IMPLICIT
+-- Performing Test CXX_SUPPORTS_WERROR_IMPLICIT - Failed
+-- Performing Test CXX_SUPPORTS_WERROR_INCOMPATIBLE_POINTER_TYPES
+-- Performing Test CXX_SUPPORTS_WERROR_INCOMPATIBLE_POINTER_TYPES - Failed
+-- Performing Test CXX_SUPPORTS_WERROR_INT_CONVERSION
+-- Performing Test CXX_SUPPORTS_WERROR_INT_CONVERSION - Failed
+-- Performing Test CXX_SUPPORTS_FORTIFY_SOURCE
+-- Performing Test CXX_SUPPORTS_FORTIFY_SOURCE - Success
+-- Performing Test CXX_SUPPORTS_GLIBCXX_ASSERTIONS
+-- Performing Test CXX_SUPPORTS_GLIBCXX_ASSERTIONS - Success
+-- Performing Test CXX_SUPPORTS_FSTRICT_FLEX_ARRAYS3
+-- Performing Test CXX_SUPPORTS_FSTRICT_FLEX_ARRAYS3 - Success
+-- Performing Test CXX_SUPPORTS_FSTACK_CLASH_PROTECTION
+-- Performing Test CXX_SUPPORTS_FSTACK_CLASH_PROTECTION - Success
+-- Performing Test CXX_SUPPORTS_FSTACK_PROTECTOR_STRONG
+-- Performing Test CXX_SUPPORTS_FSTACK_PROTECTOR_STRONG - Success
+-- Performing Test CXX_SUPPORTS_FCF_PROTECTION_FULL
+-- Performing Test CXX_SUPPORTS_FCF_PROTECTION_FULL - Success
+-- Performing Test CXX_SUPPORTS_MBRANCH_PROTECTION_STANDARD
+-- Performing Test CXX_SUPPORTS_MBRANCH_PROTECTION_STANDARD - Failed
+-- Performing Test CXX_SUPPORTS_FNO_DELETE_NULL_POINTER_CHECKS
+-- Performing Test CXX_SUPPORTS_FNO_DELETE_NULL_POINTER_CHECKS - Success
+-- Performing Test CXX_SUPPORTS_FNO_STRICT_OVERFLOW
+-- Performing Test CXX_SUPPORTS_FNO_STRICT_OVERFLOW - Success
+-- Performing Test CXX_SUPPORTS_FNO_STRICT_ALIASING
+-- Performing Test CXX_SUPPORTS_FNO_STRICT_ALIASING - Success
+-- Performing Test CXX_SUPPORTS_FTRIVIAL_AUTO_VAR_INIT
+-- Performing Test CXX_SUPPORTS_FTRIVIAL_AUTO_VAR_INIT - Failed
+-- Performing Test CXX_LINKER_SUPPORTS_NOEXECSTACK
+-- Performing Test CXX_LINKER_SUPPORTS_NOEXECSTACK - Success
+-- Performing Test CXX_LINKER_SUPPORTS_RELRO
+-- Performing Test CXX_LINKER_SUPPORTS_RELRO - Success
+-- Performing Test CXX_LINKER_SUPPORTS_NOW
+-- Performing Test CXX_LINKER_SUPPORTS_NOW - Success
+-- Performing Test CXX_LINKER_SUPPORTS_AS_NEEDED
+-- Performing Test CXX_LINKER_SUPPORTS_AS_NEEDED - Success
+-- Performing Test CXX_LINKER_SUPPORTS_NO_COPY_DT_NEEDED_ENTRIES
+-- Performing Test CXX_LINKER_SUPPORTS_NO_COPY_DT_NEEDED_ENTRIES - Success
+-- Performing Test c_flag_Wswitch_enum_supported
+-- Performing Test c_flag_Wswitch_enum_supported - Success
+-- Performing Test c_flag_Wswitch_supported
+-- Performing Test c_flag_Wswitch_supported - Success
+-- The following features have been enabled:
+
+ * Option LIBICAL_CXX_BINDINGS, build the C++ bindings. Requires a C++ compiler
+ * RSCALE support (RFC7529), build in RSCALE support
+ * Option LIBICAL_GOBJECT_INTROSPECTION, Build GObject introspection "typelib" files.   Requires GObject Introspection development package 0.6.7 or higher.
+ * Option LIBICAL_GLIB_VAPI, Build Vala "vapi" files.
+ * Option LIBICAL_GLIB, Build libical-glib interface.   Requires glib 2.44 and libxml 2.7.3 development packages or higher.
+ * Option LIBICAL_GLIB_BUILD_DOCS, Build libical-glib documentation
+ * Option LIBICAL_BUILD_EXAMPLES, Build examples.
+
+-- The following OPTIONAL packages have been found:
+
+ * Threads
+ * GObjectIntrospection (required version >= 0.6.7), <https://wiki.gnome.org/Projects/GObjectIntrospection>
+   Needed in order to build the GObject introspection "typelib" files.
+ * PkgConfig
+ * LibXml2 (required version >= 2.7.3)
+
+-- The following RECOMMENDED packages have been found:
+
+ * ICU
+   For RSCALE (RFC7529) support
+
+-- The following REQUIRED packages have been found:
+
+ * Perl
+   Required by the libical build system.
+
+-- The following features have been disabled:
+
+ * Option LIBICAL_DEVMODE, Developer mode
+ * Option LIBICAL_STATIC, Build static versions of the libraries.
+ * Build type, build static libraries
+ * Option LIBICAL_JAVA_BINDINGS, build the Java bindings. Requires a java compiler
+ * Berkeley DB storage support, build in support for Berkeley DB storage
+ * Option LIBICAL_ENABLE_64BIT_ICALTIME_T, Redirect icaltime_t and related functions to a 64-bit version of time_t rather than to the   C standard library time_t. Intended for use on 32-bit systems which have a 64-bit time_t available.   May not be implemented on all platforms yet.
+ * Option LIBICAL_ENABLE_BUILTIN_TZDATA, (Careful) Build using libical's built-in timezone data, else use the system timezone data on non-Windows systems.   ALWAYS true on Windows. Non-Windows users should know what they're doing if they choose not to use system provided   timezone data. The libical project does not guarantee that the built-in timezone data is up-to-date.
+ * Option LIBICAL_GLIB_CHECK_API_FILES, Check libical-glib API files for completeness.
+ * Option LIBICAL_DEVMODE_ABI_DUMPER, (Developer-only) Build for abi-dumper.
+ * Option LIBICAL_DEVMODE_MEMORY_CONSISTENCY, (Developer-only) Build with memory consistency functions.
+ * Option LIBICAL_DEVMODE_ADDRESS_SANITIZER, (Developer-only) Build with the address sanitizer.
+ * Option LIBICAL_DEVMODE_LEAK_SANITIZER, (Developer-only) Build with the leak sanitizer.
+ * Option LIBICAL_DEVMODE_MEMORY_SANITIZER, (Developer-only) Build with the memory sanitizer.
+ * Option LIBICAL_DEVMODE_THREAD_SANITIZER, (Developer-only) Build with the thread sanitizer.
+ * Option LIBICAL_DEVMODE_UNDEFINED_SANITIZER, (Developer-only) Build with the undefined sanitizer.
+ * Option LIBICAL_DEVMODE_SYNCMODE_THREADLOCAL, Mark global variables as thread-local.
+ * Option CMAKE_INTERPROCEDURAL_OPTIMIZATION, Build a link-time optimized version.
+ * Option LIBICAL_BUILD_TESTING, Build tests.
+ * Option LIBICAL_BUILD_TESTING_BIGFUZZ, Build fuzzer tests
+ * Option LIBICAL_BUILD_TESTING_LONGRUNNING, Build long running tests
+ * Option LIBICAL_BUILD_DOCS, Build documentation
+ * Option LIBICAL_BUILD_VZIC, Build the vzic tool to generate zoneinfo files from the Olson timezone database
+
+-- The following OPTIONAL packages have not been found:
+
+ * BerkeleyDB
+   For Berkeley DB storage support
+
+-- Configuring done (17.6s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/libical/libical-4.0.7/build
+[  1%] Generate icalderivedproperty.c
+[  2%] Building C object src/libical-glib/CMakeFiles/ical-glib-src-generator.dir/tools/generator.c.o
+[  2%] Generate the aggregate libicalss header
+[  2%] Generate icalderivedparameter.c
+[  3%] Target to generate the aggregate libicalss header
+[  4%] Generate icalrestriction.c
+[  4%] Built target icalss-header
+[  4%] Building C object src/libical-glib/CMakeFiles/ical-glib-src-generator.dir/tools/header-parser.c.o
+[  5%] Generate icalderivedvalue.c
+[  5%] Generate icalderivedproperty.h
+[  6%] Generate icalderivedparameter.h
+[  6%] Generate icalderivedvalue.h
+[  7%] Building C object src/libical-glib/CMakeFiles/ical-glib-src-generator.dir/tools/xml-parser.c.o
+[  8%] Generate the aggregate ical.h header
+[  8%] Target to generate the aggregate ical.h header
+[  8%] Built target ical-header
+[  8%] Generate vcardderivedproperty.c
+[  9%] Generate vcardderivedparameter.c
+[ 10%] Generate vcardrestriction.c
+[ 10%] Generate vcardderivedvalue.c
+[ 11%] Generate vcardderivedproperty.h
+[ 12%] Generate vcardderivedparameter.h
+[ 13%] Generate vcardderivedvalue.h
+[ 13%] Generate the aggregate vcard.h header
+[ 14%] Target to generate the aggregate vcard.h header
+[ 14%] Built target icalvcard-header
+[ 14%] Building C object src/libical/CMakeFiles/ical.dir/icalderivedproperty.c.o
+[ 15%] Building C object src/libical/CMakeFiles/ical.dir/icalderivedparameter.c.o
+[ 16%] Linking C executable ../../bin/ical-glib-src-generator
+[ 16%] Built target ical-glib-src-generator
+[ 16%] Building C object src/libical/CMakeFiles/ical.dir/icalrestriction.c.o
+[ 17%] Building C object src/libical/CMakeFiles/ical.dir/icalderivedvalue.c.o
+[ 18%] Building C object src/libical/CMakeFiles/ical.dir/icalarray.c.o
+[ 18%] Building C object src/libical/CMakeFiles/ical.dir/icalattach.c.o
+[ 19%] Building C object src/libical/CMakeFiles/ical.dir/icalcomponent.c.o
+[ 19%] Building C object src/libical/CMakeFiles/ical.dir/icalenumarray.c.o
+[ 20%] Building C object src/libical/CMakeFiles/ical.dir/icalenums.c.o
+[ 21%] Building C object src/libical/CMakeFiles/ical.dir/icalerror_p.c.o
+[ 21%] Building C object src/libical/CMakeFiles/ical.dir/icalerror.c.o
+[ 21%] Building C object src/libical/CMakeFiles/ical.dir/icalmemory.c.o
+[ 22%] Building C object src/libical/CMakeFiles/ical.dir/icallimits.c.o
+[ 23%] Building C object src/libical/CMakeFiles/ical.dir/icalparameter.c.o
+[ 24%] Building C object src/libical/CMakeFiles/ical.dir/icalparser.c.o
+[ 24%] Building C object src/libical/CMakeFiles/ical.dir/icalproperty.c.o
+[ 25%] Building C object src/libical/CMakeFiles/ical.dir/icalrecur.c.o
+[ 25%] Building C object src/libical/CMakeFiles/ical.dir/icalstrarray.c.o
+[ 26%] Building C object src/libical/CMakeFiles/ical.dir/icaltime_p.c.o
+[ 27%] Building C object src/libical/CMakeFiles/ical.dir/icaltime.c.o
+[ 27%] Building C object src/libical/CMakeFiles/ical.dir/icaltimezone_p.c.o
+[ 28%] Building C object src/libical/CMakeFiles/ical.dir/icaltimezone.c.o
+[ 28%] Building C object src/libical/CMakeFiles/ical.dir/icalduration.c.o
+[ 29%] Building C object src/libical/CMakeFiles/ical.dir/icalperiod.c.o
+[ 30%] Building C object src/libical/CMakeFiles/ical.dir/icaltypes.c.o
+[ 30%] Building C object src/libical/CMakeFiles/ical.dir/icalvalue.c.o
+[ 31%] Building C object src/libical/CMakeFiles/ical.dir/icalpvl_p.c.o
+[ 31%] Building C object src/libical/CMakeFiles/ical.dir/qsort_gen.c.o
+[ 31%] Building C object src/libical/CMakeFiles/ical.dir/icaldate_p.c.o
+[ 32%] Building C object src/libical/CMakeFiles/ical.dir/icallangbind_p.c.o
+[ 33%] Building C object src/libical/CMakeFiles/ical.dir/byref.c.o
+[ 34%] Linking C shared library ../../lib/libical.so
+[ 34%] Built target ical
+[ 35%] Run the gobject introspection scanner
+[ 36%] Building CXX object src/libical/CMakeFiles/ical_cxx.dir/icalparameter_cxx.cpp.o
+[ 37%] Run the gobject introspection scanner
+g-ir-scanner: link: gcc -o /home/fusion809/lfs_packaging/libical/libical-4.0.7/build/src/libical/tmp-introspect7b65lr2f/ICal-4.0 /home/fusion809/lfs_packaging/libical/libical-4.0.7/build/src/libical/tmp-introspect7b65lr2f/ICal-4.0.o -L. -Wl,-rpath,. -Wl,--no-as-needed -L/home/fusion809/lfs_packaging/libical/libical-4.0.7/build/lib -Wl,-rpath,/home/fusion809/lfs_packaging/libical/libical-4.0.7/build/lib -lical -lgio-2.0 -lgobject-2.0 -Wl,--export-dynamic -lgmodule-2.0 -pthread -lglib-2.0
+g-ir-scanner: link: gcc -o /home/fusion809/lfs_packaging/libical/libical-4.0.7/build/src/libical/tmp-introspectbysude02/ICal-4.0 /home/fusion809/lfs_packaging/libical/libical-4.0.7/build/src/libical/tmp-introspectbysude02/ICal-4.0.o -L. -Wl,-rpath,. -Wl,--no-as-needed -L/home/fusion809/lfs_packaging/libical/libical-4.0.7/build/lib -Wl,-rpath,/home/fusion809/lfs_packaging/libical/libical-4.0.7/build/lib -lical -lgio-2.0 -lgobject-2.0 -Wl,--export-dynamic -lgmodule-2.0 -pthread -lglib-2.0
+[ 37%] Building CXX object src/libical/CMakeFiles/ical_cxx.dir/icalproperty_cxx.cpp.o
+g-ir-scanner: ICal: warning: 1208 warnings suppressed (use --warn-all to see them)
+g-ir-scanner: ICal: warning: 1208 warnings suppressed (use --warn-all to see them)
+[ 37%] Target for the gobject introspection compiler
+[ 37%] Built target gir-girs-ICal_4_0_gir
+[ 38%] Run the gobject introspection compiler
+[ 39%] Building C object src/libicalss/CMakeFiles/icalss.dir/icalcalendar.c.o
+[ 39%] Building C object src/libicalss/CMakeFiles/icalss.dir/icalclassify.c.o
+[ 40%] Building CXX object src/libical/CMakeFiles/ical_cxx.dir/icalvalue_cxx.cpp.o
+[ 40%] Target for the gobject introspection typelibs
+[ 40%] Built target gir-typelibs-ICal_4_0_gir
+[ 41%] Building C object src/libicalvcal/CMakeFiles/icalvcal.dir/icalvcal.c.o
+[ 42%] Building C object src/libicalss/CMakeFiles/icalss.dir/icalcluster.c.o
+[ 42%] Building C object src/libicalss/CMakeFiles/icalss.dir/icalgauge.c.o
+[ 43%] Building C object src/libicalss/CMakeFiles/icalss.dir/icaldirset.c.o
+[ 43%] Building CXX object src/libical/CMakeFiles/ical_cxx.dir/vcomponent_cxx.cpp.o
+[ 44%] Building C object src/libicalss/CMakeFiles/icalss.dir/icalfileset.c.o
+[ 45%] Building C object src/libicalvcal/CMakeFiles/icalvcal.dir/vobject.c.o
+[ 45%] Building C object src/libicalss/CMakeFiles/icalss.dir/icalset.c.o
+[ 46%] Building C object src/libicalss/CMakeFiles/icalss.dir/icalspanlist.c.o
+[ 46%] Building C object src/libicalss/CMakeFiles/icalss.dir/icalmessage.c.o
+[ 46%] Building C object src/libicalvcal/CMakeFiles/icalvcal.dir/vcaltmp.c.o
+[ 47%] Building C object src/libicalvcal/CMakeFiles/icalvcal.dir/vcc.c.o
+[ 48%] Building C object src/libicalss/CMakeFiles/icalss.dir/icalsslexer.c.o
+[ 49%] Linking CXX shared library ../../lib/libical_cxx.so
+[ 49%] Built target ical_cxx
+[ 50%] Building C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardderivedproperty.c.o
+[ 50%] Building C object src/libicalss/CMakeFiles/icalss.dir/icalssyacc.c.o
+[ 51%] Linking C shared library ../../lib/libicalss.so
+[ 51%] Linking C shared library ../../lib/libicalvcal.so
+[ 51%] Built target icalss
+[ 51%] Built target icalvcal
+[ 52%] Building C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardderivedparameter.c.o
+[ 53%] Building CXX object src/libicalss/CMakeFiles/icalss_cxx.dir/icalspanlist_cxx.cpp.o
+[ 53%] Building C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardrestriction.c.o
+[ 53%] Linking CXX shared library ../../lib/libicalss_cxx.so
+[ 54%] Building C object examples/CMakeFiles/doesnothing.dir/access_components.c.o
+[ 54%] Built target icalss_cxx
+[ 55%] Building C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardderivedvalue.c.o
+[ 55%] Building C object examples/CMakeFiles/doesnothing.dir/access_properties_and_parameters.c.o
+[ 56%] Building C object examples/CMakeFiles/doesnothing.dir/errors.c.o
+[ 56%] Building C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardcomponent.c.o
+[ 56%] Building C object examples/CMakeFiles/doesnothing.dir/main.c.o
+[ 57%] Building C object examples/CMakeFiles/doesnothing.dir/parse_text.c.o
+[ 58%] Building C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardparameter.c.o
+[ 59%] Linking CXX executable ../bin/doesnothing
+[ 59%] Built target doesnothing
+[ 60%] Building C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardparser.c.o
+[ 60%] Building C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardproperty.c.o
+[ 61%] Building C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardstructured.c.o
+[ 61%] Building C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardtextlist.c.o
+[ 62%] Building C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardtime.c.o
+[ 63%] Building C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardvalue.c.o
+[ 63%] Linking C shared library ../../lib/libicalvcard.so
+[ 63%] Built target icalvcard
+[ 63%] Generate the libical-glib sources
+[ 64%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-array.c.o
+[ 65%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-comp-iter.c.o
+[ 65%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-attach.c.o
+[ 66%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-component.c.o
+[ 66%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-datetimeperiod.c.o
+[ 67%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-derived-parameter.c.o
+[ 67%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-derived-property.c.o
+[ 68%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-derived-value.c.o
+[ 69%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-duration.c.o
+[ 69%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-enum-array.c.o
+[ 70%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-enums.c.o
+[ 70%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-error.c.o
+[ 71%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-geo.c.o
+[ 72%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-limits.c.o
+[ 72%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-memory.c.o
+[ 73%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-parameter.c.o
+[ 73%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-param-iter.c.o
+[ 74%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-parser.c.o
+[ 75%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-period.c.o
+[ 75%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-property.c.o
+[ 76%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-prop-iter.c.o
+[ 76%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-recur-iterator.c.o
+[ 77%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-recurrence.c.o
+[ 78%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-recur.c.o
+[ 78%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-reqstat.c.o
+[ 79%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-restriction.c.o
+[ 79%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-str-array.c.o
+[ 80%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-time-span.c.o
+[ 81%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-time.c.o
+[ 81%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-timezone.c.o
+[ 82%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-trigger.c.o
+[ 82%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-unknowntokenhandling.c.o
+[ 83%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-value.c.o
+[ 84%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-component.c.o
+[ 84%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-derived-parameter.c.o
+[ 85%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-derived-property.c.o
+[ 85%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-derived-value.c.o
+[ 86%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-enum-array.c.o
+[ 86%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-geo.c.o
+[ 87%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-parameter.c.o
+[ 88%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-parser.c.o
+[ 88%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-property.c.o
+[ 89%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-restriction.c.o
+[ 89%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-str-array.c.o
+[ 90%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-structured.c.o
+[ 91%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-time.c.o
+[ 91%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-tz.c.o
+[ 92%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-value.c.o
+[ 92%] Building C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-object.c.o
+[ 93%] Linking C shared library ../../lib/libical-glib.so
+[ 93%] Built target ical-glib
+[ 94%] Run the gobject introspection scanner
+[ 95%] Building C object src/libical-glib/CMakeFiles/ical-glib-build-check.dir/ical-glib-build-check.c.o
+[ 96%] Run the gobject introspection scanner
+[ 96%] Linking C executable ../../bin/ical-glib-build-check
+[ 96%] Built target ical-glib-build-check
+[ 97%] Run the gobject introspection scanner
+g-ir-scanner: link: gcc -o /home/fusion809/lfs_packaging/libical/libical-4.0.7/build/src/libical-glib/tmp-introspectqui1lclk/ICalGLib-4.0 /home/fusion809/lfs_packaging/libical/libical-4.0.7/build/src/libical-glib/tmp-introspectqui1lclk/ICalGLib-4.0.o -L. -Wl,-rpath,. -Wl,--no-as-needed -L/home/fusion809/lfs_packaging/libical/libical-4.0.7/build/lib -Wl,-rpath,/home/fusion809/lfs_packaging/libical/libical-4.0.7/build/lib -lical-glib -lgio-2.0 -lgobject-2.0 -Wl,--export-dynamic -lgmodule-2.0 -pthread -lglib-2.0
+g-ir-scanner: link: gcc -o /home/fusion809/lfs_packaging/libical/libical-4.0.7/build/src/libical-glib/tmp-introspect9c4i9jlw/ICalGLib-4.0 /home/fusion809/lfs_packaging/libical/libical-4.0.7/build/src/libical-glib/tmp-introspect9c4i9jlw/ICalGLib-4.0.o -L. -Wl,-rpath,. -Wl,--no-as-needed -L/home/fusion809/lfs_packaging/libical/libical-4.0.7/build/lib -Wl,-rpath,/home/fusion809/lfs_packaging/libical/libical-4.0.7/build/lib -lical-glib -lgio-2.0 -lgobject-2.0 -Wl,--export-dynamic -lgmodule-2.0 -pthread -lglib-2.0
+g-ir-scanner: link: gcc -o /home/fusion809/lfs_packaging/libical/libical-4.0.7/build/src/libical-glib/tmp-introspecty8sj_aly/ICalGLib-4.0 /home/fusion809/lfs_packaging/libical/libical-4.0.7/build/src/libical-glib/tmp-introspecty8sj_aly/ICalGLib-4.0.o -L. -Wl,-rpath,. -Wl,--no-as-needed -L/home/fusion809/lfs_packaging/libical/libical-4.0.7/build/lib -Wl,-rpath,/home/fusion809/lfs_packaging/libical/libical-4.0.7/build/lib -lical-glib -lgio-2.0 -lgobject-2.0 -Wl,--export-dynamic -lgmodule-2.0 -pthread -lglib-2.0
+[ 97%] Target for the gobject introspection compiler
+[ 97%] Built target gir-girs-ICalGLib_4_0_gir
+[ 97%] Run the gobject introspection compiler
+[ 98%] Run the gobject introspection compiler
+[ 99%] Target for the gobject introspection typelibs
+[ 99%] Built target gir-typelibs-ICalGLib_4_0_gir
+[ 99%] Run the tool to generate the Vala API
+Generation succeeded - 0 warning(s)
+[100%] Target to run valafile
+[100%] Built target valafile
+[100%] Built target vala
+[  0%] Target to generate the aggregate ical.h header
+[  5%] Built target ical-header
+[ 24%] Built target ical
+[ 24%] Target for the gobject introspection compiler
+[ 25%] Built target gir-girs-ICal_4_0_gir
+[ 25%] Target for the gobject introspection typelibs
+[ 27%] Built target gir-typelibs-ICal_4_0_gir
+[ 30%] Built target ical_cxx
+[ 31%] Target to generate the aggregate libicalss header
+[ 31%] Built target icalss-header
+[ 38%] Built target icalss
+[ 39%] Built target icalss_cxx
+[ 42%] Built target icalvcal
+[ 45%] Built target ical-glib-src-generator
+[ 46%] Target to generate the aggregate vcard.h header
+[ 51%] Built target icalvcard-header
+[ 59%] Built target icalvcard
+[ 89%] Built target ical-glib
+[ 90%] Built target ical-glib-build-check
+[ 90%] Target for the gobject introspection compiler
+[ 91%] Built target gir-girs-ICalGLib_4_0_gir
+[ 92%] Target for the gobject introspection typelibs
+[ 93%] Built target gir-typelibs-ICalGLib_4_0_gir
+[ 94%] Target to run valafile
+[ 96%] Built target valafile
+[ 96%] Built target vala
+[100%] Built target doesnothing
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/share/gir-1.0/ICal-4.0.gir
+-- Installing: /usr/lib/girepository-1.0/ICal-4.0.typelib
+-- Installing: /usr/lib/libical.so.4.0.7
+-- Installing: /usr/lib/libical.so.4.0
+-- Up-to-date: /usr/lib/libical.so
+-- Installing: /usr/lib/pkgconfig/libical.pc
+-- Installing: /usr/lib/libical_cxx.so.4.0.7
+-- Installing: /usr/lib/libical_cxx.so.4.0
+-- Set non-toolchain portion of runtime path of "/usr/lib/libical_cxx.so.4.0.7" to ""
+-- Up-to-date: /usr/lib/libical_cxx.so
+-- Installing: /usr/include/libical/ical.h
+-- Installing: /usr/include/libical/icalarray.h
+-- Installing: /usr/include/libical/icalattach.h
+-- Installing: /usr/include/libical/icalcomponent.h
+-- Installing: /usr/include/libical/icalversion.h
+-- Installing: /usr/include/libical/icalderivedproperty.h
+-- Installing: /usr/include/libical/icalderivedparameter.h
+-- Installing: /usr/include/libical/icalderivedvalue.h
+-- Installing: /usr/include/libical/icalduration.h
+-- Installing: /usr/include/libical/icalenumarray.h
+-- Installing: /usr/include/libical/icalenums.h
+-- Installing: /usr/include/libical/icalerror.h
+-- Installing: /usr/include/libical/icallimits.h
+-- Installing: /usr/include/libical/icalmemory.h
+-- Installing: /usr/include/libical/icalparameter.h
+-- Installing: /usr/include/libical/icalparser.h
+-- Installing: /usr/include/libical/icalperiod.h
+-- Installing: /usr/include/libical/icalproperty.h
+-- Installing: /usr/include/libical/icalrecur.h
+-- Installing: /usr/include/libical/icalrestriction.h
+-- Installing: /usr/include/libical/icalstrarray.h
+-- Installing: /usr/include/libical/icaltime_p.h
+-- Installing: /usr/include/libical/icaltime.h
+-- Installing: /usr/include/libical/icaltimezone.h
+-- Installing: /usr/include/libical/icaltypes.h
+-- Installing: /usr/include/libical/icalvalue.h
+-- Installing: /usr/include/libical/libical_deprecated.h
+-- Installing: /usr/include/libical/libical_sentinel.h
+-- Installing: /usr/include/libical/libical_ical_export.h
+-- Installing: /usr/include/libical/icalparameter_cxx.hpp
+-- Installing: /usr/include/libical/icalproperty_cxx.hpp
+-- Installing: /usr/include/libical/icalvalue_cxx.hpp
+-- Installing: /usr/include/libical/icptrholder_cxx.hpp
+-- Installing: /usr/include/libical/vcomponent_cxx.hpp
+-- Installing: /usr/lib/libicalss.so.4.0.7
+-- Installing: /usr/lib/libicalss.so.4.0
+-- Set non-toolchain portion of runtime path of "/usr/lib/libicalss.so.4.0.7" to ""
+-- Up-to-date: /usr/lib/libicalss.so
+-- Installing: /usr/lib/pkgconfig/libicalss.pc
+-- Installing: /usr/lib/libicalss_cxx.so.4.0.7
+-- Installing: /usr/lib/libicalss_cxx.so.4.0
+-- Set non-toolchain portion of runtime path of "/usr/lib/libicalss_cxx.so.4.0.7" to ""
+-- Up-to-date: /usr/lib/libicalss_cxx.so
+-- Installing: /usr/include/libical/icalss.h
+-- Installing: /usr/include/libical/icalcalendar.h
+-- Installing: /usr/include/libical/icalclassify.h
+-- Installing: /usr/include/libical/icalcluster.h
+-- Installing: /usr/include/libical/icaldirset.h
+-- Installing: /usr/include/libical/icaldirsetimpl.h
+-- Installing: /usr/include/libical/icalfileset.h
+-- Installing: /usr/include/libical/icalfilesetimpl.h
+-- Installing: /usr/include/libical/icalgauge.h
+-- Installing: /usr/include/libical/icalgaugeimpl.h
+-- Installing: /usr/include/libical/icalmessage.h
+-- Installing: /usr/include/libical/icalset.h
+-- Installing: /usr/include/libical/icalspanlist.h
+-- Installing: /usr/include/libical/icalssyacc.h
+-- Installing: /usr/include/libical/libical_icalss_export.h
+-- Installing: /usr/include/libical/icalspanlist_cxx.hpp
+-- Installing: /usr/lib/libicalvcal.so.4.0.7
+-- Installing: /usr/lib/libicalvcal.so.4.0
+-- Set non-toolchain portion of runtime path of "/usr/lib/libicalvcal.so.4.0.7" to ""
+-- Up-to-date: /usr/lib/libicalvcal.so
+-- Installing: /usr/lib/pkgconfig/libicalvcal.pc
+-- Installing: /usr/include/libical/icalvcal.h
+-- Installing: /usr/include/libical/vcaltmp.h
+-- Installing: /usr/include/libical/vcc.h
+-- Installing: /usr/include/libical/vobject.h
+-- Installing: /usr/include/libical/libical_vcal_export.h
+-- Installing: /usr/libexec/libical/ical-glib-src-generator
+-- Installing: /usr/lib/cmake/LibIcal/IcalGlibSrcGenerator.cmake
+-- Installing: /usr/lib/cmake/LibIcal/IcalGlibSrcGenerator-release.cmake
+-- Installing: /usr/share/gir-1.0/ICalGLib-4.0.gir
+-- Installing: /usr/lib/girepository-1.0/ICalGLib-4.0.typelib
+-- Installing: /usr/share/vala/vapi/libical-glib.vapi
+-- Installing: /usr/lib/libical-glib.so.4.0.7
+-- Installing: /usr/lib/libical-glib.so.4.0
+-- Set non-toolchain portion of runtime path of "/usr/lib/libical-glib.so.4.0.7" to ""
+-- Up-to-date: /usr/lib/libical-glib.so
+-- Installing: /usr/include/libical-glib/libical-glib.h
+-- Installing: /usr/include/libical-glib/i-cal-object.h
+-- Installing: /usr/include/libical-glib/i-cal-forward-declarations.h
+-- Installing: /usr/include/libical-glib/i-cal-array.h
+-- Installing: /usr/include/libical-glib/i-cal-attach.h
+-- Installing: /usr/include/libical-glib/i-cal-comp-iter.h
+-- Installing: /usr/include/libical-glib/i-cal-component.h
+-- Installing: /usr/include/libical-glib/i-cal-datetimeperiod.h
+-- Installing: /usr/include/libical-glib/i-cal-derived-parameter.h
+-- Installing: /usr/include/libical-glib/i-cal-derived-property.h
+-- Installing: /usr/include/libical-glib/i-cal-derived-value.h
+-- Installing: /usr/include/libical-glib/i-cal-duration.h
+-- Installing: /usr/include/libical-glib/i-cal-enum-array.h
+-- Installing: /usr/include/libical-glib/i-cal-enums.h
+-- Installing: /usr/include/libical-glib/i-cal-error.h
+-- Installing: /usr/include/libical-glib/i-cal-geo.h
+-- Installing: /usr/include/libical-glib/i-cal-limits.h
+-- Installing: /usr/include/libical-glib/i-cal-memory.h
+-- Installing: /usr/include/libical-glib/i-cal-parameter.h
+-- Installing: /usr/include/libical-glib/i-cal-param-iter.h
+-- Installing: /usr/include/libical-glib/i-cal-parser.h
+-- Installing: /usr/include/libical-glib/i-cal-period.h
+-- Installing: /usr/include/libical-glib/i-cal-property.h
+-- Installing: /usr/include/libical-glib/i-cal-prop-iter.h
+-- Installing: /usr/include/libical-glib/i-cal-recur-iterator.h
+-- Installing: /usr/include/libical-glib/i-cal-recurrence.h
+-- Installing: /usr/include/libical-glib/i-cal-recur.h
+-- Installing: /usr/include/libical-glib/i-cal-reqstat.h
+-- Installing: /usr/include/libical-glib/i-cal-restriction.h
+-- Installing: /usr/include/libical-glib/i-cal-str-array.h
+-- Installing: /usr/include/libical-glib/i-cal-time-span.h
+-- Installing: /usr/include/libical-glib/i-cal-time.h
+-- Installing: /usr/include/libical-glib/i-cal-timezone.h
+-- Installing: /usr/include/libical-glib/i-cal-trigger.h
+-- Installing: /usr/include/libical-glib/i-cal-unknowntokenhandling.h
+-- Installing: /usr/include/libical-glib/i-cal-value.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-component.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-derived-parameter.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-derived-property.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-derived-value.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-enum-array.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-geo.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-parameter.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-parser.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-property.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-restriction.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-str-array.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-structured.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-time.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-tz.h
+-- Installing: /usr/include/libical-glib/i-cal-vcard-value.h
+-- Installing: /usr/lib/pkgconfig/libical-glib.pc
+-- Installing: /usr/lib/libicalvcard.so.4.0.7
+-- Installing: /usr/lib/libicalvcard.so.4.0
+-- Set non-toolchain portion of runtime path of "/usr/lib/libicalvcard.so.4.0.7" to ""
+-- Up-to-date: /usr/lib/libicalvcard.so
+-- Installing: /usr/lib/pkgconfig/libicalvcard.pc
+-- Installing: /usr/include/libical/vcard.h
+-- Installing: /usr/include/libical/vcardderivedproperty.h
+-- Installing: /usr/include/libical/vcardderivedparameter.h
+-- Installing: /usr/include/libical/vcardderivedvalue.h
+-- Installing: /usr/include/libical/libical_vcard_export.h
+-- Installing: /usr/include/libical/vcardtime.h
+-- Installing: /usr/include/libical/vcardtypes.h
+-- Installing: /usr/include/libical/vcardcomponent.h
+-- Installing: /usr/include/libical/vcardenumarray.h
+-- Installing: /usr/include/libical/vcardparameter.h
+-- Installing: /usr/include/libical/vcardparser.h
+-- Installing: /usr/include/libical/vcardproperty.h
+-- Installing: /usr/include/libical/vcardstrarray.h
+-- Installing: /usr/include/libical/vcardstructured.h
+-- Installing: /usr/include/libical/vcardvalue.h
+-- Installing: /usr/lib/cmake/LibIcal/LibIcalConfigVersion.cmake
+-- Installing: /usr/lib/cmake/LibIcal/LibIcalConfig.cmake
+-- Installing: /usr/lib/cmake/LibIcal/LibIcalTargets.cmake
+-- Installing: /usr/lib/cmake/LibIcal/LibIcalTargets-release.cmake
+4.0.7
+Updated registry for libical to version 4.0.7
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package libical in /var/lib/custom-packages/
+Building custom package tcl...
+[00:33:56] Found custom package for tcl, bypassing BLFS aliases.
+[00:33:56] Custom package detected at /home/fusion809/lfs_packaging/tcl (package: tcl)
+[00:33:56] Extracting dependencies for custom package 'tcl'...
+[00:33:56] Required deps: bash coreutils gcc glibc gzip make tar zlib 
+[00:33:56] Dependency 'bash' already installed.
+[00:33:56] Dependency 'coreutils' already installed.
+[00:33:56] Dependency 'gcc' already installed.
+[00:33:56] Dependency 'glibc' already installed.
+[00:33:56] Dependency 'gzip' already installed.
+[00:33:56] Dependency 'make' already installed.
+[00:33:56] Dependency 'tar' already installed.
+[00:33:56] Dependency 'zlib' already installed.
+[00:33:56] Starting remote custom build for tcl...
+[00:33:56] [LFS-AUTOBUILD] Skipping custom package tcl: version 9.1.0 already installed (use -f to force build).
+Building custom package zed...
+[00:33:57] Found custom package for zed, bypassing BLFS aliases.
+[00:33:57] Custom package detected at /home/fusion809/lfs_packaging/zed (package: zed)
+[00:33:57] Extracting dependencies for custom package 'zed'...
+[00:33:57] Starting remote custom build for zed...
+[00:33:58] [LFS-AUTOBUILD] Skipping custom package zed: version 1.24.2 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+ERROR: Refusing to commit — the following packages have missing/broken inventories:
+libelf
+Fix them (re-run lfs_autobuild for each), then retry lfs_package_commit.
+r13.1-28
+r13.1-426
+Build failures or missing inventories detected for the following packages:
+libelf
+Skipping cleanup.
+===== updatec completed successfully =====
+Finished: 2026-10-19 00:34:25 AEST
+Exit status: 0
