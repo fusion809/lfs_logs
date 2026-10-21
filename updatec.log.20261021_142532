@@ -1,0 +1,351 @@
+===== Update check started: 2026-10-21 14:25:32 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261021_142532
+Packages needing attention: iproute2
+===== Starting updatec: 2026-10-21 14:25:34 AEST =====
+Checking for packages with missing file inventories...
+name=iproute2
+local_ver=7.2.0
+remote_ver=7.3.0
+name=nodejs-bin
+local_ver=26.12.0
+remote_ver=2026.10.14
+name=openpmix
+local_ver=5.0.11
+remote_ver=6.1.0
+name=portaudio
+local_ver=19.7.0
+remote_ver=190600.20161030
+name=prrte
+local_ver=3.0.14
+remote_ver=4.1.0
+name=pugixml
+local_ver=1.16
+remote_ver=2013
+name=spectacle
+local_ver=6.8.1
+remote_ver=24.12.3
+name=syndication
+local_ver=6.31.0
+remote_ver=18.08.3
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - iproute2
+  - nodejs-bin
+  - openpmix
+  - portaudio
+  - prrte
+  - pugixml
+  - spectacle
+  - syndication
+  - zed
+
+Building custom package iproute2...
+[14:27:19] Found custom package for iproute2, bypassing BLFS aliases.
+[14:27:19] Custom package detected at /home/fusion809/lfs_packaging/iproute2 (package: iproute2)
+[14:27:19] Extracting dependencies for custom package 'iproute2'...
+[14:27:19] Required deps: bash bzip2 coreutils elfutils gcc glibc iptables libcap libtirpc make tar xz zlib zstd 
+[14:27:19] Dependency 'bash' already installed.
+[14:27:19] Dependency 'bzip2' already installed.
+[14:27:19] Dependency 'coreutils' already installed.
+[14:27:19] Dependency 'elfutils' already installed.
+[14:27:19] Dependency 'gcc' already installed.
+[14:27:19] Dependency 'glibc' already installed.
+[14:27:19] Dependency 'iptables' already installed.
+[14:27:19] Dependency 'libcap' already installed.
+[14:27:19] Dependency 'libtirpc' already installed.
+[14:27:19] Dependency 'make' already installed.
+[14:27:19] Dependency 'tar' already installed.
+[14:27:19] Dependency 'xz' already installed.
+[14:27:19] Dependency 'zlib' already installed.
+[14:27:19] Dependency 'zstd' already installed.
+[14:27:19] Starting remote custom build for iproute2...
+[14:27:19] [LFS-AUTOBUILD] Skipping custom package iproute2: version 7.2.0 already installed (use -f to force build).
+Building custom package nodejs-bin...
+[14:27:20] Found custom package for nodejs-bin, bypassing BLFS aliases.
+[14:27:20] Custom package detected at /home/fusion809/lfs_packaging/nodejs-bin (package: nodejs-bin)
+[14:27:20] Extracting dependencies for custom package 'nodejs-bin'...
+[14:27:20] Required deps: gcc glibc 
+[14:27:20] Dependency 'gcc' already installed.
+[14:27:20] Dependency 'glibc' already installed.
+[14:27:20] Starting remote custom build for nodejs-bin...
+--2026-10-21 14:27:26--  https://nodejs.org/dist/v2026.10.14/node-v2026.10.14-linux-x64.tar.xz
+Resolving nodejs.org (nodejs.org)... 104.16.212.131, 104.16.213.131, 2606:4700::6810:d583, ...
+Connecting to nodejs.org (nodejs.org)|104.16.212.131|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-10-21 14:27:27 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for nodejs-bin
+[ERROR] Custom build failed for nodejs-bin
+Building custom package openpmix...
+[14:27:27] Found custom package for openpmix, bypassing BLFS aliases.
+[14:27:27] Custom package detected at /home/fusion809/lfs_packaging/openpmix (package: openpmix)
+[14:27:27] Extracting dependencies for custom package 'openpmix'...
+[14:27:27] Required deps: bash bzip2 coreutils glibc hwloc libevent make perl python sed systemd tar zlib 
+[14:27:27] Dependency 'bash' already installed.
+[14:27:27] Dependency 'bzip2' already installed.
+[14:27:27] Dependency 'coreutils' already installed.
+[14:27:27] Dependency 'glibc' already installed.
+[14:27:27] Dependency 'hwloc' already installed.
+[14:27:27] Dependency 'libevent' already installed.
+[14:27:27] Dependency 'make' already installed.
+[14:27:27] Dependency 'perl' already installed.
+[14:27:27] Dependency 'python' already installed.
+[14:27:27] Dependency 'sed' already installed.
+[14:27:27] Dependency 'systemd' already installed.
+[14:27:27] Dependency 'tar' already installed.
+[14:27:27] Dependency 'zlib' already installed.
+[14:27:27] Starting remote custom build for openpmix...
+[14:27:29] [LFS-AUTOBUILD] Skipping custom package openpmix: version 5.0.11 already installed (use -f to force build).
+Building custom package portaudio...
+[14:27:29] Found custom package for portaudio, bypassing BLFS aliases.
+[14:27:29] Custom package detected at /home/fusion809/lfs_packaging/portaudio (package: portaudio)
+[14:27:29] Extracting dependencies for custom package 'portaudio'...
+[14:27:29] Required deps: alsa-lib autoconf bash cmake coreutils gcc glibc gzip jack make opus sed tar wget 
+[14:27:29] Dependency 'alsa-lib' already installed.
+[14:27:29] Dependency 'autoconf' already installed.
+[14:27:29] Dependency 'bash' already installed.
+[14:27:29] Dependency 'cmake' already installed.
+[14:27:29] Dependency 'coreutils' already installed.
+[14:27:29] Dependency 'gcc' already installed.
+[14:27:29] Dependency 'glibc' already installed.
+[14:27:29] Dependency 'gzip' already installed.
+[14:27:29] Dependency 'jack' already installed.
+[14:27:29] Dependency 'make' already installed.
+[14:27:29] Dependency 'opus' already installed.
+[14:27:29] Dependency 'sed' already installed.
+[14:27:29] Dependency 'tar' already installed.
+[14:27:29] Dependency 'wget' already installed.
+[14:27:29] Starting remote custom build for portaudio...
+[14:27:29] [LFS-AUTOBUILD] Skipping custom package portaudio: version 19.7.0 already installed (use -f to force build).
+Building custom package prrte...
+[14:27:29] Found custom package for prrte, bypassing BLFS aliases.
+[14:27:29] Custom package detected at /home/fusion809/lfs_packaging/prrte (package: prrte)
+[14:27:29] Extracting dependencies for custom package 'prrte'...
+[14:27:29] Required deps: bash coreutils glibc gzip hwloc libevent libnl make openpmix perl sed systemd tar wget 
+[14:27:29] Dependency 'bash' already installed.
+[14:27:29] Dependency 'coreutils' already installed.
+[14:27:29] Dependency 'glibc' already installed.
+[14:27:29] Dependency 'gzip' already installed.
+[14:27:29] Dependency 'hwloc' already installed.
+[14:27:29] Dependency 'libevent' already installed.
+[14:27:29] Dependency 'libnl' already installed.
+[14:27:29] Dependency 'make' already installed.
+[14:27:29] Dependency 'openpmix' already installed.
+[14:27:29] Dependency 'perl' already installed.
+[14:27:29] Dependency 'sed' already installed.
+[14:27:29] Dependency 'systemd' already installed.
+[14:27:29] Dependency 'tar' already installed.
+[14:27:29] Dependency 'wget' already installed.
+[14:27:29] Starting remote custom build for prrte...
+[14:27:30] [LFS-AUTOBUILD] Skipping custom package prrte: version 3.0.14 already installed (use -f to force build).
+Building custom package pugixml...
+[14:27:30] Found custom package for pugixml, bypassing BLFS aliases.
+[14:27:30] Custom package detected at /home/fusion809/lfs_packaging/pugixml (package: pugixml)
+[14:27:30] Extracting dependencies for custom package 'pugixml'...
+[14:27:30] Starting remote custom build for pugixml...
+[14:27:31] [LFS-AUTOBUILD] Skipping custom package pugixml: version 1.16 already installed (use -f to force build).
+Building custom package spectacle...
+[14:27:31] Found custom package for spectacle, bypassing BLFS aliases.
+[14:27:32] Custom package detected at /home/fusion809/lfs_packaging/spectacle (package: spectacle)
+[14:27:32] Extracting dependencies for custom package 'spectacle'...
+[14:27:32] Required deps: acl attr breeze-icons brotli bzip2 curl cyrus-sasl dav1d dbus double-conversion e2fsprogs elfutils expat fdk-aac ffmpeg flac fontconfig freetype fribidi gcc giflib glib2 glibc graphite2 harfbuzz highway icu karchive kcodecs kcolorscheme kcompletion kconfig kconfigwidgets kcoreaddons kcrash kdbusaddons keyutils kglobalaccel kguiaddons ki18n kiconthemes kio kirigami kitemviews kjobwidgets knotifications kpipewire kquickimageeditor kservice kstatusnotifieritem kwidgetsaddons kwindowsystem kxmlgui lame layer-shell-qt leptonica libaom libarchive libass libcanberra libdrm libepoxy libffi libglvnd libidn2 libjpeg-turbo libogg libpciaccess libpng libpsl libsndfile libtool libunistring libva libvorbis libvpx libwebp libx11 libxau libxcb libxdmcp libxext libxfixes libxkbcommon libxml2 libxshmfence libxxf86vm llvm lm-sensors lz4 mesa mitkrb mpg123 nghttp2 numactl openblas opencv openjpeg openldap openssl opus pcre2 pipewire prison pulseaudio purpose qt6 solid spirv-tools svt-av1 systemd tesseract tiff util-linux wayland webkitgtk x264 xcb-util xcb-util-cursor xcb-util-image xcb-util-keysyms xcb-util-renderutil xdg-desktop-portal-kde xz zlib zstd zxing-cpp 
+[14:27:32] Dependency 'acl' already installed.
+[14:27:32] Dependency 'attr' already installed.
+[14:27:32] Dependency 'breeze-icons' already installed.
+[14:27:32] Dependency 'brotli' already installed.
+[14:27:32] Dependency 'bzip2' already installed.
+[14:27:32] Dependency 'curl' already installed.
+[14:27:32] Dependency 'cyrus-sasl' already installed.
+[14:27:32] Dependency 'dav1d' already installed.
+[14:27:32] Dependency 'dbus' already installed.
+[14:27:32] Dependency 'double-conversion' already installed.
+[14:27:32] Dependency 'e2fsprogs' already installed.
+[14:27:32] Dependency 'elfutils' already installed.
+[14:27:32] Dependency 'expat' already installed.
+[14:27:32] Dependency 'fdk-aac' already installed.
+[14:27:32] Dependency 'ffmpeg' already installed.
+[14:27:32] Dependency 'flac' already installed.
+[14:27:32] Dependency 'fontconfig' already installed.
+[14:27:32] Dependency 'freetype' already installed.
+[14:27:32] Dependency 'fribidi' already installed.
+[14:27:32] Dependency 'gcc' already installed.
+[14:27:32] Dependency 'giflib' already installed.
+[14:27:32] Dependency 'glib2' already installed.
+[14:27:32] Dependency 'glibc' already installed.
+[14:27:32] Dependency 'graphite2' already installed.
+[14:27:32] Dependency 'harfbuzz' already installed.
+[14:27:32] Dependency 'highway' already installed.
+[14:27:32] Dependency 'icu' already installed.
+[14:27:32] Dependency 'karchive' already installed.
+[14:27:32] Dependency 'kcodecs' already installed.
+[14:27:32] Dependency 'kcolorscheme' already installed.
+[14:27:32] Dependency 'kcompletion' already installed.
+[14:27:32] Dependency 'kconfig' already installed.
+[14:27:32] Dependency 'kconfigwidgets' already installed.
+[14:27:32] Dependency 'kcoreaddons' already installed.
+[14:27:32] Dependency 'kcrash' already installed.
+[14:27:32] Dependency 'kdbusaddons' already installed.
+[14:27:32] Dependency 'keyutils' already installed.
+[14:27:32] Dependency 'kglobalaccel' already installed.
+[14:27:32] Dependency 'kguiaddons' already installed.
+[14:27:32] Dependency 'ki18n' already installed.
+[14:27:32] Dependency 'kiconthemes' already installed.
+[14:27:32] Dependency 'kio' already installed.
+[14:27:32] Dependency 'kirigami' already installed.
+[14:27:32] Dependency 'kitemviews' already installed.
+[14:27:32] Dependency 'kjobwidgets' already installed.
+[14:27:32] Dependency 'knotifications' already installed.
+[14:27:32] Dependency 'kpipewire' already installed.
+[14:27:32] Dependency 'kquickimageeditor' already installed.
+[14:27:32] Dependency 'kservice' already installed.
+[14:27:32] Dependency 'kstatusnotifieritem' already installed.
+[14:27:32] Dependency 'kwidgetsaddons' already installed.
+[14:27:32] Dependency 'kwindowsystem' already installed.
+[14:27:32] Dependency 'kxmlgui' already installed.
+[14:27:32] Dependency 'lame' already installed.
+[14:27:32] Dependency 'layer-shell-qt' already installed.
+[14:27:32] Dependency 'leptonica' already installed.
+[14:27:32] Dependency 'libaom' already installed.
+[14:27:32] Dependency 'libarchive' already installed.
+[14:27:32] Dependency 'libass' already installed.
+[14:27:32] Dependency 'libcanberra' already installed.
+[14:27:32] Dependency 'libdrm' already installed.
+[14:27:32] Dependency 'libepoxy' already installed.
+[14:27:32] Dependency 'libffi' already installed.
+[14:27:32] Dependency 'libglvnd' already installed.
+[14:27:32] Dependency 'libidn2' already installed.
+[14:27:32] Dependency 'libjpeg-turbo' already installed.
+[14:27:32] Dependency 'libogg' already installed.
+[14:27:32] Dependency 'libpciaccess' already installed.
+[14:27:32] Dependency 'libpng' already installed.
+[14:27:32] Dependency 'libpsl' already installed.
+[14:27:32] Dependency 'libsndfile' already installed.
+[14:27:32] Dependency 'libtool' already installed.
+[14:27:32] Dependency 'libunistring' already installed.
+[14:27:32] Dependency 'libva' already installed.
+[14:27:32] Dependency 'libvorbis' already installed.
+[14:27:32] Dependency 'libvpx' already installed.
+[14:27:32] Dependency 'libwebp' already installed.
+[14:27:32] Dependency 'libx11' already installed.
+[14:27:32] Dependency 'libxau' already installed.
+[14:27:32] Dependency 'libxcb' already installed.
+[14:27:32] Dependency 'libxdmcp' already installed.
+[14:27:32] Dependency 'libxext' already installed.
+[14:27:32] Dependency 'libxfixes' already installed.
+[14:27:32] Dependency 'libxkbcommon' already installed.
+[14:27:32] Dependency 'libxml2' already installed.
+[14:27:32] Dependency 'libxshmfence' already installed.
+[14:27:32] Dependency 'libxxf86vm' already installed.
+[14:27:32] Dependency 'llvm' already installed.
+[14:27:32] Dependency 'lm-sensors' already installed.
+[14:27:32] Dependency 'lz4' already installed.
+[14:27:32] Dependency 'mesa' already installed.
+[14:27:32] Dependency 'mitkrb' already installed.
+[14:27:32] Dependency 'mpg123' already installed.
+[14:27:32] Dependency 'nghttp2' already installed.
+[14:27:32] Dependency 'numactl' already installed.
+[14:27:32] Dependency 'openblas' already installed.
+[14:27:32] Dependency 'opencv' already installed.
+[14:27:32] Dependency 'openjpeg' already installed.
+[14:27:32] Dependency 'openldap' already installed.
+[14:27:32] Dependency 'openssl' already installed.
+[14:27:32] Dependency 'opus' already installed.
+[14:27:32] Dependency 'pcre2' already installed.
+[14:27:32] Dependency 'pipewire' already installed.
+[14:27:32] Dependency 'prison' already installed.
+[14:27:32] Dependency 'pulseaudio' already installed.
+[14:27:32] Dependency 'purpose' already installed.
+[14:27:32] Dependency 'qt6' already installed.
+[14:27:32] Dependency 'solid' already installed.
+[14:27:32] Dependency 'spirv-tools' already installed.
+[14:27:32] Dependency 'svt-av1' already installed.
+[14:27:32] Dependency 'systemd' already installed.
+[14:27:32] Dependency 'tesseract' already installed.
+[14:27:32] Dependency 'tiff' already installed.
+[14:27:32] Dependency 'util-linux' already installed.
+[14:27:32] Dependency 'wayland' already installed.
+[14:27:32] Dependency 'webkitgtk' already installed.
+[14:27:32] Dependency 'x264' already installed.
+[14:27:32] Dependency 'xcb-util' already installed.
+[14:27:32] Dependency 'xcb-util-cursor' already installed.
+[14:27:32] Dependency 'xcb-util-image' already installed.
+[14:27:32] Dependency 'xcb-util-keysyms' already installed.
+[14:27:32] Dependency 'xcb-util-renderutil' already installed.
+[14:27:32] Dependency 'xdg-desktop-portal-kde' already installed.
+[14:27:32] Dependency 'xz' already installed.
+[14:27:32] Dependency 'zlib' already installed.
+[14:27:32] Dependency 'zstd' already installed.
+[14:27:32] Dependency 'zxing-cpp' already installed.
+[14:27:32] Starting remote custom build for spectacle...
+[14:27:33] [LFS-AUTOBUILD] Skipping custom package spectacle: version 6.8.1 already installed (use -f to force build).
+Building custom package syndication...
+[14:27:33] Found custom package for syndication, bypassing BLFS aliases.
+[14:27:33] Custom package detected at /home/fusion809/lfs_packaging/syndication (package: syndication)
+[14:27:33] Extracting dependencies for custom package 'syndication'...
+[14:27:33] Required deps: brotli double-conversion e2fsprogs gcc glib2 glibc icu kcodecs keyutils mitkrb openssl pcre2 qt6 systemd zlib zstd 
+[14:27:33] Dependency 'brotli' already installed.
+[14:27:33] Dependency 'double-conversion' already installed.
+[14:27:33] Dependency 'e2fsprogs' already installed.
+[14:27:33] Dependency 'gcc' already installed.
+[14:27:33] Dependency 'glib2' already installed.
+[14:27:33] Dependency 'glibc' already installed.
+[14:27:33] Dependency 'icu' already installed.
+[14:27:33] Dependency 'kcodecs' already installed.
+[14:27:33] Dependency 'keyutils' already installed.
+[14:27:33] Dependency 'mitkrb' already installed.
+[14:27:33] Dependency 'openssl' already installed.
+[14:27:33] Dependency 'pcre2' already installed.
+[14:27:33] Dependency 'qt6' already installed.
+[14:27:33] Dependency 'systemd' already installed.
+[14:27:33] Dependency 'zlib' already installed.
+[14:27:33] Dependency 'zstd' already installed.
+[14:27:33] Starting remote custom build for syndication...
+[14:27:33] [LFS-AUTOBUILD] Skipping custom package syndication: version 6.31.0 already installed (use -f to force build).
+Building custom package zed...
+[14:27:33] Found custom package for zed, bypassing BLFS aliases.
+[14:27:33] Custom package detected at /home/fusion809/lfs_packaging/zed (package: zed)
+[14:27:33] Extracting dependencies for custom package 'zed'...
+[14:27:33] Starting remote custom build for zed...
+[14:27:34] [LFS-AUTOBUILD] Skipping custom package zed: version 1.24.4 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master 3b92fce] Updating packages
+ 1 file changed, 4 insertions(+), 302 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master 2b76435] Updating packages
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-28
+r13.1-432
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/atkmm-1.6 (belongs to an installed package)
+Skipping registered directory: /usr/lib/cairomm-1.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/pangomm-1.4 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.0...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.0-lfs-r13.1-28
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
