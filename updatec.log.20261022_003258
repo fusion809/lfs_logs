@@ -1,0 +1,121 @@
+===== Update check started: 2026-10-22 00:32:58 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261022_003258
+Packages needing attention: nss
+===== Starting updatec: 2026-10-22 00:33:00 AEST =====
+Checking for packages with missing file inventories...
+name=libcdio
+local_ver=2.4.0
+remote_ver=2026
+name=libical
+local_ver=4.0.7
+remote_ver=65
+name=libjpeg-turbo
+local_ver=3.2.0
+remote_ver=10
+name=nss
+local_ver=3.131
+remote_ver=3.131.1
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - libcdio
+  - libical
+  - libjpeg-turbo
+  - nodejs-bin
+  - nss
+
+Building custom package libcdio...
+[00:34:52] Found custom package for libcdio, bypassing BLFS aliases.
+[00:34:52] Custom package detected at /home/fusion809/lfs_packaging/libcdio (package: libcdio)
+[00:34:52] Extracting dependencies for custom package 'libcdio'...
+[00:34:52] Required deps: gcc glibc ncurses 
+[00:34:52] Dependency 'gcc' already installed.
+[00:34:52] Dependency 'glibc' already installed.
+[00:34:52] Dependency 'ncurses' already installed.
+[00:34:52] Starting remote custom build for libcdio...
+[00:34:54] [LFS-AUTOBUILD] Skipping custom package libcdio: version 2.4.0 already installed (use -f to force build).
+Building custom package libical...
+[00:34:54] Found custom package for libical, bypassing BLFS aliases.
+[00:34:54] Custom package detected at /home/fusion809/lfs_packaging/libical (package: libical)
+[00:34:54] Extracting dependencies for custom package 'libical'...
+[00:34:54] Required deps: cmake gcc glib2 glibc icu libffi libxml2 pcre2 vala 
+[00:34:54] Dependency 'cmake' already installed.
+[00:34:54] Dependency 'gcc' already installed.
+[00:34:54] Dependency 'glib2' already installed.
+[00:34:54] Dependency 'glibc' already installed.
+[00:34:54] Dependency 'icu' already installed.
+[00:34:54] Dependency 'libffi' already installed.
+[00:34:54] Dependency 'libxml2' already installed.
+[00:34:54] Dependency 'pcre2' already installed.
+[00:34:54] Dependency 'vala' already installed.
+[00:34:54] Starting remote custom build for libical...
+[00:34:55] [LFS-AUTOBUILD] Skipping custom package libical: version 4.0.7 already installed (use -f to force build).
+Building custom package libjpeg-turbo...
+[00:34:55] Found custom package for libjpeg-turbo, bypassing BLFS aliases.
+[00:34:55] Custom package detected at /home/fusion809/lfs_packaging/libjpeg-turbo (package: libjpeg-turbo)
+[00:34:55] Extracting dependencies for custom package 'libjpeg-turbo'...
+[00:34:55] Required deps: glibc 
+[00:34:55] Dependency 'glibc' already installed.
+[00:34:55] Starting remote custom build for libjpeg-turbo...
+[00:34:56] [LFS-AUTOBUILD] Skipping custom package libjpeg-turbo: version 3.2.0 already installed (use -f to force build).
+Building custom package nodejs-bin...
+[00:34:56] Found custom package for nodejs-bin, bypassing BLFS aliases.
+[00:34:56] Custom package detected at /home/fusion809/lfs_packaging/nodejs-bin (package: nodejs-bin)
+[00:34:56] Extracting dependencies for custom package 'nodejs-bin'...
+[00:34:56] Required deps: gcc glibc 
+[00:34:57] Dependency 'gcc' already installed.
+[00:34:57] Dependency 'glibc' already installed.
+[00:34:57] Starting remote custom build for nodejs-bin...
+[00:34:58] [LFS-AUTOBUILD] Skipping custom package nodejs-bin: version 26.12.1 already installed (use -f to force build).
+Building custom package nss...
+[00:34:58] Found custom package for nss, bypassing BLFS aliases.
+[00:34:58] Custom package detected at /home/fusion809/lfs_packaging/nss (package: nss)
+[00:34:58] Extracting dependencies for custom package 'nss'...
+[00:34:58] Required deps: glibc libtasn1 nspr sqlite zlib 
+[00:34:58] Dependency 'glibc' already installed.
+[00:34:58] Dependency 'libtasn1' already installed.
+[00:34:58] Dependency 'nspr' already installed.
+[00:34:58] Dependency 'sqlite' already installed.
+[00:34:58] Dependency 'zlib' already installed.
+[00:34:58] Starting remote custom build for nss...
+--2026-10-22 00:35:13--  https://archive.mozilla.org/pub/security/nss/releases/NSS_3_131_RTM/src/nss-3.131.1.tar.gz
+Resolving archive.mozilla.org (archive.mozilla.org)... 151.101.195.19, 151.101.3.19, 151.101.131.19, ...
+Connecting to archive.mozilla.org (archive.mozilla.org)|151.101.195.19|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-10-22 00:35:13 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for nss
+[ERROR] Custom build failed for nss
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-28
+r13.1-441
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/atkmm-1.6 (belongs to an installed package)
+Skipping registered directory: /usr/lib/cairomm-1.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/pangomm-1.4 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.0...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.0-lfs-r13.1-28
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+/var/lib/custom-packages does not show any likely updates to the table.
+~/logs ~ ~/lfs_packaging
