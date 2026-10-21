@@ -1,0 +1,54 @@
+===== Update check started: 2026-10-22 00:18:26 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261022_001826
+Packages needing attention: nss
+===== Starting updatec: 2026-10-22 00:18:29 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - nss
+
+Building custom package nss...
+[00:20:22] Found custom package for nss, bypassing BLFS aliases.
+[00:20:22] Custom package detected at /home/fusion809/lfs_packaging/nss (package: nss)
+[00:20:22] Extracting dependencies for custom package 'nss'...
+[00:20:22] Required deps: glibc libtasn1 nspr sqlite zlib 
+[00:20:22] Dependency 'glibc' already installed.
+[00:20:22] Dependency 'libtasn1' already installed.
+[00:20:22] Dependency 'nspr' already installed.
+[00:20:22] Dependency 'sqlite' already installed.
+[00:20:22] Dependency 'zlib' already installed.
+[00:20:22] Starting remote custom build for nss...
+[00:20:22] [LFS-AUTOBUILD] Skipping custom package nss: version 3.131 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-28
+r13.1-441
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/atkmm-1.6 (belongs to an installed package)
+Skipping registered directory: /usr/lib/cairomm-1.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/pangomm-1.4 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.0...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.0-lfs-r13.1-28
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+/var/lib/custom-packages does not show any likely updates to the table.
+~/logs ~ ~/lfs_packaging
