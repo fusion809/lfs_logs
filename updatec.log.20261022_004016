@@ -1,0 +1,94 @@
+===== Update check started: 2026-10-22 00:40:16 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261022_004016
+Packages needing attention: nss
+===== Starting updatec: 2026-10-22 00:40:19 AEST =====
+Checking for packages with missing file inventories...
+name=nss
+local_ver=3.131
+remote_ver=3.131.1
+name=nodejs-bin
+local_ver=26.12.1
+remote_ver=2026.10.21
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - nodejs-bin
+  - nss
+  - tcl
+
+Building custom package nodejs-bin...
+[00:42:08] Found custom package for nodejs-bin, bypassing BLFS aliases.
+[00:42:08] Custom package detected at /home/fusion809/lfs_packaging/nodejs-bin (package: nodejs-bin)
+[00:42:08] Extracting dependencies for custom package 'nodejs-bin'...
+[00:42:08] Required deps: gcc glibc 
+[00:42:08] Dependency 'gcc' already installed.
+[00:42:08] Dependency 'glibc' already installed.
+[00:42:08] Starting remote custom build for nodejs-bin...
+[00:42:09] [LFS-AUTOBUILD] Skipping custom package nodejs-bin: version 26.12.1 already installed (use -f to force build).
+Building custom package nss...
+[00:42:09] Found custom package for nss, bypassing BLFS aliases.
+[00:42:09] Custom package detected at /home/fusion809/lfs_packaging/nss (package: nss)
+[00:42:09] Extracting dependencies for custom package 'nss'...
+[00:42:09] Required deps: glibc libtasn1 nspr sqlite zlib 
+[00:42:09] Dependency 'glibc' already installed.
+[00:42:09] Dependency 'libtasn1' already installed.
+[00:42:09] Dependency 'nspr' already installed.
+[00:42:09] Dependency 'sqlite' already installed.
+[00:42:09] Dependency 'zlib' already installed.
+[00:42:09] Starting remote custom build for nss...
+--2026-10-22 00:42:27--  https://archive.mozilla.org/pub/security/nss/releases/NSS_3_131_RTM/src/nss-3.131.1.tar.gz
+Resolving archive.mozilla.org (archive.mozilla.org)... 151.101.3.19, 151.101.195.19, 151.101.131.19, ...
+Connecting to archive.mozilla.org (archive.mozilla.org)|151.101.3.19|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-10-22 00:42:27 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for nss
+[ERROR] Custom build failed for nss
+Building custom package tcl...
+[00:42:28] Found custom package for tcl, bypassing BLFS aliases.
+[00:42:28] Custom package detected at /home/fusion809/lfs_packaging/tcl (package: tcl)
+[00:42:28] Extracting dependencies for custom package 'tcl'...
+[00:42:28] Required deps: bash coreutils gcc glibc gzip make tar zlib 
+[00:42:28] Dependency 'bash' already installed.
+[00:42:28] Dependency 'coreutils' already installed.
+[00:42:28] Dependency 'gcc' already installed.
+[00:42:28] Dependency 'glibc' already installed.
+[00:42:28] Dependency 'gzip' already installed.
+[00:42:28] Dependency 'make' already installed.
+[00:42:28] Dependency 'tar' already installed.
+[00:42:28] Dependency 'zlib' already installed.
+[00:42:28] Starting remote custom build for tcl...
+[00:42:28] [LFS-AUTOBUILD] Skipping custom package tcl: version 9.1.0 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-28
+r13.1-441
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/atkmm-1.6 (belongs to an installed package)
+Skipping registered directory: /usr/lib/cairomm-1.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/pangomm-1.4 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.0...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.0-lfs-r13.1-28
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+/var/lib/custom-packages does not show any likely updates to the table.
+~/logs ~ ~/lfs_packaging
