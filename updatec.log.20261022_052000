@@ -1,0 +1,716 @@
+===== Update check started: 2026-10-22 05:20:00 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261022_052000
+Packages needing attention: designcraft effectcraft figcraft lightcraft nss photocraft
+===== Starting updatec: 2026-10-22 05:20:19 AEST =====
+/home/fusion809/lfs-scripts/Shell/00-env.sh:6: no matches found: /opt/sage/var/lib/sage/venv-python*
+Checking for packages with missing file inventories...
+name=designcraft
+local_ver=0.10.0
+remote_ver=0.11.0
+name=effectcraft
+local_ver=0.13.0
+remote_ver=0.14.0
+name=figcraft
+local_ver=0.8.0
+remote_ver=0.9.0
+name=lightcraft
+local_ver=0.10.0
+remote_ver=0.11.0
+name=lmdb
+local_ver=1.0.2
+remote_ver=1.0.3
+name=nss
+local_ver=3.131.1
+remote_ver=3.132
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - designcraft
+  - effectcraft
+  - figcraft
+  - lightcraft
+  - lmdb
+  - nss
+  - photocraft
+
+Building custom package designcraft...
+[05:22:35] Found custom package for designcraft, bypassing BLFS aliases.
+[05:22:35] Custom package detected at /home/fusion809/lfs_packaging/designcraft (package: designcraft)
+[05:22:35] Extracting dependencies for custom package 'designcraft'...
+[05:22:35] Required deps: gcc glibc 
+[05:22:36] Dependency 'gcc' already installed.
+[05:22:36] Dependency 'glibc' already installed.
+[05:22:36] Starting remote custom build for designcraft...
+--2026-10-22 05:22:42--  https://github.com/storytold/designcraft/archive/v0.11.0.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/storytold/designcraft/tar.gz/refs/tags/v0.11.0 [following]
+--2026-10-22 05:22:43--  https://codeload.github.com/storytold/designcraft/tar.gz/refs/tags/v0.11.0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9119997 (8.7M) [application/x-gzip]
+Saving to: ‘designcraft-0.11.0.tar.gz’
+
+          designcra   0%[                    ]       0  --.-KB/s                        designcraf  11%[=>                  ] 993.36K  4.84MB/s                       designcraft  36%[======>             ]   3.20M  7.98MB/s                      designcraft-  62%[===========>        ]   5.40M  8.99MB/s                     designcraft-0  87%[================>   ]   7.61M  9.50MB/s               designcraft-0.11.0. 100%[===================>]   8.70M  9.67MB/s    in 0.9s    
+
+2026-10-22 05:22:43 (9.67 MB/s) - ‘designcraft-0.11.0.tar.gz’ saved [9119997/9119997]
+
+    Updating git repository `https://github.com/storytold/craft-libs`
+    Updating git repository `https://github.com/storytold/winit.git`
+    Updating crates.io index
+    Updating git repository `https://github.com/storytold/craft-libs`
+    Updating git repository `https://github.com/storytold/indd-utils`
+ Downloading crates ...
+  Downloaded heck v0.4.1
+  Downloaded hayro-postscript v0.1.0
+  Downloaded hex v0.4.3
+  Downloaded accesskit v0.24.1
+  Downloaded hayro-write v0.7.0
+  Downloaded icu_locale_core v2.3.0
+  Downloaded ordered-channel v1.2.0
+  Downloaded ouroboros v0.18.5
+  Downloaded idna_adapter v1.2.2
+  Downloaded itoa v1.0.18
+  Downloaded nohash-hasher v0.2.0
+  Downloaded quick-error v2.0.1
+  Downloaded qrcodegen v1.8.0
+  Downloaded renderdoc-sys v1.1.0
+  Downloaded pico-args v0.5.0
+  Downloaded futures-lite v2.6.1
+  Downloaded pollster v0.4.0
+  Downloaded linebender_resource_handle v0.1.1
+  Downloaded percent-encoding v2.3.2
+  Downloaded phf_generator v0.13.1
+  Downloaded phf_shared v0.13.1
+  Downloaded profiling v1.0.18
+  Downloaded rustc-hash v1.1.0
+  Downloaded proc-macro2-diagnostics v0.10.1
+  Downloaded naga-types v30.0.1
+  Downloaded equivalent v1.0.2
+  Downloaded futures-io v0.3.34
+  Downloaded enumflags2_derive v0.7.12
+  Downloaded float-cmp v0.9.0
+  Downloaded form_urlencoded v1.2.2
+  Downloaded futures-core v0.3.34
+  Downloaded futures-task v0.3.34
+  Downloaded parking v2.2.1
+  Downloaded futures-macro v0.3.34
+  Downloaded foldhash v0.2.0
+  Downloaded potential_utf v0.1.6
+  Downloaded pollster v1.0.1
+  Downloaded atomic-waker v1.1.2
+  Downloaded libloading v0.8.9
+  Downloaded proc-macro-crate v3.5.0
+  Downloaded ouroboros_macro v0.18.5
+  Downloaded phf_macros v0.13.1
+  Downloaded quote v1.0.47
+  Downloaded pkg-config v0.3.34
+  Downloaded strict-num v0.1.1
+  Downloaded rgb v0.8.53
+  Downloaded roots v0.0.8
+  Downloaded phf v0.13.1
+  Downloaded polycool v0.4.0
+  Downloaded presser v0.3.1
+  Downloaded imagesize v0.14.0
+  Downloaded lock_api v0.4.14
+  Downloaded unicode-vo v0.1.0
+  Downloaded utf8_iter v1.0.4
+  Downloaded piper v0.2.5
+  Downloaded glutin_glx_sys v0.6.1
+  Downloaded thread_local v1.1.10
+  Downloaded pin-project-lite v0.2.17
+  Downloaded peniko v0.6.1
+  Downloaded krilla-svg v0.8.1
+  Downloaded cfg_aliases v0.2.2
+  Downloaded cfg-if v1.0.5
+  Downloaded cursor-icon v1.2.0
+  Downloaded dlib v0.5.3
+  Downloaded endi v1.1.1
+  Downloaded zerofrom-derive v0.1.8
+  Downloaded zvariant_derive v5.15.0
+  Downloaded litemap v0.8.3
+  Downloaded once_cell v1.21.4
+  Downloaded ordered-stream v0.2.0
+  Downloaded parking_lot_core v0.9.12
+  Downloaded unicode-ccc v0.4.0
+  Downloaded khronos-egl v6.0.0
+  Downloaded raw-window-handle v0.6.2
+  Downloaded litrs v1.0.0
+  Downloaded version_check v0.9.5
+  Downloaded parking_lot v0.12.5
+  Downloaded ordered-float v5.5.0
+  Downloaded smol_str v0.2.2
+  Downloaded memmap2 v0.9.11
+  Downloaded gethostname v1.1.0
+  Downloaded autocfg v1.5.1
+  Downloaded type-map v0.5.1
+  Downloaded icu_collections v2.3.0
+  Downloaded unicode-bidi-mirroring v0.4.0
+  Downloaded either v1.18.0
+  Downloaded serde_repr v0.1.21
+  Downloaded adler2 v2.0.1
+  Downloaded byteorder-lite v0.1.0
+  Downloaded calloop-wayland-source v0.4.1
+  Downloaded polling v3.11.0
+  Downloaded num-traits v0.2.19
+  Downloaded icu_provider v2.3.1
+  Downloaded jobserver v0.1.35
+  Downloaded roxmltree v0.21.1
+  Downloaded roxmltree v0.20.0
+  Downloaded egui_glow v0.36.2
+  Downloaded emath v0.36.2
+  Downloaded self_cell v1.3.0
+  Downloaded accesskit_atspi_common v0.18.1
+  Downloaded alloc-no-stdlib v2.0.4
+  Downloaded async-broadcast v0.7.2
+  Downloaded async-channel v2.5.0
+  Downloaded async-trait v0.1.92
+  Downloaded atspi v0.29.0
+  Downloaded wgpu-naga-bridge v30.0.1
+  Downloaded xcursor v0.3.11
+  Downloaded zbus-lockstep-macros v0.5.2
+  Downloaded serde_spanned v1.1.1
+  Downloaded log v0.4.34
+  Downloaded stable_deref_trait v1.2.1
+  Downloaded resvg v0.47.0
+  Downloaded rfd v0.17.2
+  Downloaded image-webp v0.2.4
+  Downloaded proc-macro2 v1.0.107
+  Downloaded icu_normalizer_data v2.3.0
+  Downloaded miniz_oxide v0.8.9
+  Downloaded miniz_oxide v0.9.1
+  Downloaded bytemuck v1.25.2
+  Downloaded as-raw-xcb-connection v1.0.1
+  Downloaded fax v0.2.7
+  Downloaded wayland-csd-frame v0.3.0
+  Downloaded egui-winit v0.36.2
+  Downloaded async-task v4.7.1
+  Downloaded web-time v1.1.0
+  Downloaded zerovec-derive v0.11.6
+  Downloaded wayland-cursor v0.31.14
+  Downloaded wgpu-core-deps-windows-linux-android v30.0.1
+  Downloaded rayon-core v1.13.0
+  Downloaded bytemuck_derive v1.12.1
+  Downloaded crossbeam-utils v0.8.23
+  Downloaded concurrent-queue v2.5.0
+  Downloaded yoke v0.8.3
+  Downloaded glutin-winit v0.5.0
+  Downloaded fastrand v2.5.0
+  Downloaded rustc-hash v2.1.3
+  Downloaded scopeguard v1.2.0
+  Downloaded bit-set v0.8.0
+  Downloaded hayro-ccitt v0.3.0
+  Downloaded arrayref v0.3.9
+  Downloaded wayland-protocols-wlr v0.3.12
+  Downloaded memchr v2.8.3
+  Downloaded base64 v0.22.1
+  Downloaded calloop-wayland-source v0.3.0
+  Downloaded core_maths v0.1.1
+  Downloaded accesskit_winit v0.32.2
+  Downloaded font-types v0.12.5
+  Downloaded yoke-derive v0.8.4
+  Downloaded writeable v0.6.4
+  Downloaded document-features v0.2.12
+  Downloaded xmlwriter v0.1.0
+  Downloaded serde_derive v1.0.229
+  Downloaded signal-hook-registry v1.4.8
+  Downloaded atspi-proxies v0.13.0
+  Downloaded indexmap v2.14.2
+  Downloaded icu_properties v2.3.0
+  Downloaded bumpalo v3.20.3
+  Downloaded displaydoc v0.2.7
+  Downloaded color_quant v1.1.0
+  Downloaded fdeflate v0.3.7
+  Downloaded dpi v0.1.2
+  Downloaded zbus-lockstep v0.5.2
+  Downloaded scoped-tls v1.0.1
+  Downloaded downcast-rs v1.2.1
+  Downloaded wayland-protocols-plasma v0.3.12
+  Downloaded slab v0.4.12
+  Downloaded wayland-protocols-misc v0.3.12
+  Downloaded static_assertions v1.1.0
+  Downloaded gl_generator v0.14.0
+  Downloaded thiserror v1.0.69
+  Downloaded png v0.18.1
+  Downloaded alloc-stdlib v0.2.4
+  Downloaded synstructure v0.14.0
+  Downloaded thiserror-impl v2.0.21
+  Downloaded xkbcommon-dl v0.4.2
+  Downloaded siphasher v1.0.4
+  Downloaded smithay-clipboard v0.7.3
+  Downloaded weezl v0.1.12
+  Downloaded data-url v0.3.2
+  Downloaded guillotiere v0.7.0
+  Downloaded zopfli v0.8.3
+  Downloaded wayland-protocols-experimental v20250721.0.1
+  Downloaded errno v0.3.14
+  Downloaded zcheapstr v1.1.0
+  Downloaded thiserror-impl v1.0.69
+  Downloaded accesskit_consumer v0.36.0
+  Downloaded aliasable v0.1.3
+  Downloaded arrayvec v0.7.8
+  Downloaded idna v1.1.0
+  Downloaded toml_writer v1.1.2+spec-1.1.0
+  Downloaded zbus_names v4.3.4
+  Downloaded tinystr v0.8.4
+  Downloaded async-signal v0.2.14
+  Downloaded euclid v0.22.14
+  Downloaded ryu v1.0.23
+  Downloaded font-types v0.11.3
+  Downloaded blocking v1.7.0
+  Downloaded zvariant_utils v4.2.0
+  Downloaded crossbeam-deque v0.8.8
+  Downloaded wayland-sys v0.31.11
+  Downloaded regex v1.13.1
+  Downloaded thiserror v2.0.21
+  Downloaded itertools v0.15.0
+  Downloaded libm v0.2.16
+  Downloaded glutin_egl_sys v0.7.1
+  Downloaded termcolor v1.4.1
+  Downloaded bit-vec v0.9.1
+  Downloaded x11-dl v2.21.0
+  Downloaded webbrowser v1.2.4
+  Downloaded async-process v2.5.0
+  Downloaded event-listener-strategy v0.5.4
+  Downloaded simplecss v0.2.2
+  Downloaded itertools v0.14.0
+  Downloaded kurbo v0.13.1
+  Downloaded rayon v1.12.0
+  Downloaded serde_core v1.0.229
+  Downloaded calloop v0.13.0
+  Downloaded xkeysym v0.2.1
+  Downloaded zune-jpeg v0.5.15
+  Downloaded wayland-scanner v0.31.11
+  Downloaded simd-adler32 v0.3.10
+  Downloaded bit-set v0.10.0
+  Downloaded wayland-protocols v0.32.13
+  Downloaded zerovec v0.11.8
+  Downloaded icu_properties_data v2.3.0
+  Downloaded find-msvc-tools v0.1.14
+  Downloaded fontconfig-parser v0.5.8
+  Downloaded enumflags2 v0.7.12
+  Downloaded allocator-api2 v0.2.21
+  Downloaded yansi v1.0.1
+  Downloaded xmp-writer v0.3.3
+  Downloaded async-io v2.6.0
+  Downloaded egui-wgpu v0.36.2
+  Downloaded zune-core v0.5.3
+  Downloaded calloop v0.14.4
+  Downloaded atspi-common v0.13.0
+  Downloaded zbus_xml v5.2.1
+  Downloaded ecolor v0.36.2
+  Downloaded codespan-reporting v0.13.1
+  Downloaded bit-vec v0.8.0
+  Downloaded caseless v0.2.2
+  Downloaded brotli-decompressor v5.0.3
+  Downloaded bitflags v2.13.2
+  Downloaded winresource v0.1.31
+  Downloaded serde_json v1.0.151
+  Downloaded eframe v0.36.2
+  Downloaded zerofrom v0.1.8
+  Downloaded moxcms v0.8.1
+  Downloaded async-recursion v1.1.1
+  Downloaded epaint v0.36.2
+  Downloaded serde v1.0.229
+  Downloaded zerocopy-derive v0.8.59
+  Downloaded zvariant v5.15.0
+  Downloaded smallvec v1.16.2
+  Downloaded pic-scale v0.7.12
+  Downloaded tracing-attributes v0.1.31
+  Downloaded fearless_simd v0.4.1
+  Downloaded toml_parser v1.1.3+spec-1.1.0
+  Downloaded cc v1.5.1
+  Downloaded unicode-ident v1.0.26
+  Downloaded toml_datetime v1.1.1+spec-1.1.0
+  Downloaded tiny-skia-path v0.12.0
+  Downloaded quick-xml v0.41.0
+  Downloaded fancy-regex v0.19.2
+  Downloaded tempfile v3.27.0
+  Downloaded unicode-general-category v1.1.0
+  Downloaded wgpu v30.0.1
+  Downloaded zbus v5.19.0
+  Downloaded zlib-rs v0.6.8
+  Downloaded svgtypes v0.16.1
+  Downloaded gif v0.14.2
+  Downloaded spirv v0.4.0+sdk-1.4.341.0
+  Downloaded subsetter v0.2.6
+  Downloaded unicode-script v0.5.8
+  Downloaded image v0.25.10
+  Downloaded skrifa v0.42.1
+  Downloaded aho-corasick v1.1.5
+  Downloaded rustybuzz v0.20.1
+  Downloaded zerocopy v0.8.59
+  Downloaded crc32fast v1.5.2
+  Downloaded ahash v0.8.12
+  Downloaded async-lock v3.4.2
+  Downloaded crossbeam-epoch v0.9.21
+  Downloaded async-executor v1.14.0
+  Downloaded shlex v2.0.1
+  Downloaded accesskit_unix v0.21.1
+  Downloaded glifo v0.1.1
+  Downloaded skrifa v0.47.0
+  Downloaded tinyvec v1.13.3
+  Downloaded stringprep v0.1.5
+  Downloaded getrandom v0.3.4
+  Downloaded gpu-allocator v0.28.0
+  Downloaded toml v1.1.6+spec-1.1.0
+  Downloaded skrifa v0.44.0
+  Downloaded regex-syntax v0.8.11
+  Downloaded unicode-bidi v0.3.18
+  Downloaded write-fonts v0.48.1
+  Downloaded unicode-properties v0.1.4
+  Downloaded wgpu-core v30.0.1
+  Downloaded getrandom v0.4.3
+  Downloaded glifo v0.3.0
+  Downloaded slotmap v1.1.1
+  Downloaded xml-rs v0.8.29
+  Downloaded zbus_macros v5.19.0
+  Downloaded zmij v1.0.23
+  Downloaded event-listener v5.4.2
+  Downloaded half v2.7.1
+  Downloaded icu_normalizer v2.3.0
+  Downloaded glifo v0.2.0
+  Downloaded glutin v0.32.3
+  Downloaded rustix v0.38.44
+  Downloaded rustix v1.1.5
+  Downloaded x11rb-protocol v0.13.2
+  Downloaded wayland-client v0.31.15
+  Downloaded uuid v1.26.1
+  Downloaded wgpu-hal v30.0.1
+  Downloaded read-fonts v0.39.2
+  Downloaded toml_edit v0.25.15+spec-1.1.0
+  Downloaded ash v0.38.0+1.3.281
+  Downloaded read-fonts v0.41.0
+  Downloaded read-fonts v0.44.0
+  Downloaded tracing-core v0.1.36
+  Downloaded read-fonts v0.43.3
+  Downloaded wayland-backend v0.3.17
+  Downloaded khronos_api v3.1.0
+  Downloaded regex-automata v0.4.18
+  Downloaded hayro-jpeg2000 v0.3.5
+  Downloaded arboard v3.6.1
+  Downloaded color v0.3.3
+  Downloaded brotli v8.0.4
+  Downloaded hypher v0.1.8
+  Downloaded tiff v0.11.3
+  Downloaded libc v0.2.189
+  Downloaded epaint_default_fonts v0.36.2
+  Downloaded naga v30.0.1
+  Downloaded url v2.5.8
+  Downloaded pxfm v0.1.30
+  Downloaded flate2 v1.1.10
+  Downloaded flo_curves v0.8.1
+  Downloaded zerotrie v0.2.5
+  Downloaded crossbeam-channel v0.5.17
+  Downloaded vello_cpu v0.0.8
+  Downloaded fontdb v0.23.0
+  Downloaded unicode-segmentation v1.13.3
+  Downloaded zip v3.0.0
+  Downloaded unicode-normalization v0.1.25
+  Downloaded smithay-client-toolkit v0.19.2
+  Downloaded vello_common v0.2.0
+  Downloaded hashbrown v0.16.1
+  Downloaded vello_common v0.0.8
+  Downloaded vello_cpu v0.1.0
+  Downloaded vello_common v0.1.0
+  Downloaded vello_common v0.0.9
+  Downloaded pdf-writer v0.15.0
+  Downloaded smithay-client-toolkit v0.20.0
+  Downloaded usvg v0.47.0
+  Downloaded vello_cpu v0.2.0
+  Downloaded linux-raw-sys v0.4.15
+  Downloaded glow v0.17.0
+  Downloaded wgpu-types v30.0.1
+  Downloaded futures-util v0.3.34
+  Downloaded linux-raw-sys v0.12.1
+  Downloaded hashbrown v0.17.1
+  Downloaded winnow v1.0.4
+  Downloaded ttf-parser v0.25.1
+  Downloaded x11rb v0.13.2
+  Downloaded hayro-cmap v0.1.0
+  Downloaded tiny-skia v0.12.0
+  Downloaded unicode-width v0.2.2
+  Downloaded harfrust v0.12.0
+  Downloaded harfrust v0.13.3
+  Downloaded syn v2.0.119
+  Downloaded syn v3.0.6
+  Downloaded egui v0.36.2
+  Downloaded tracing v0.1.44
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling cfg-if v1.0.5
+   Compiling bitflags v2.13.2
+   Compiling log v0.4.34
+   Compiling syn v3.0.6
+   Compiling syn v2.0.119
+   Compiling once_cell v1.21.4
+   Compiling autocfg v1.5.1
+   Compiling libm v0.2.16
+   Compiling libc v0.2.189
+   Compiling num-traits v0.2.19
+   Compiling arrayvec v0.7.8
+   Compiling foldhash v0.2.0
+   Compiling thiserror v2.0.21
+   Compiling polycool v0.4.0
+   Compiling serde_derive v1.0.229
+   Compiling bytemuck_derive v1.12.1
+   Compiling thiserror-impl v2.0.21
+   Compiling bytemuck v1.25.2
+   Compiling version_check v0.9.5
+   Compiling rustix v1.1.5
+   Compiling crossbeam-utils v0.8.23
+   Compiling linux-raw-sys v0.12.1
+   Compiling simd-adler32 v0.3.10
+   Compiling adler2 v2.0.1
+   Compiling hashbrown v0.17.1
+   Compiling smallvec v1.16.2
+   Compiling kurbo v0.13.1
+   Compiling crc32fast v1.5.2
+   Compiling miniz_oxide v0.9.1
+   Compiling zlib-rs v0.6.8
+   Compiling equivalent v1.0.2
+   Compiling memchr v2.8.3
+   Compiling zerocopy v0.8.59
+   Compiling zerocopy-derive v0.8.59
+   Compiling libloading v0.8.9
+   Compiling static_assertions v1.1.0
+   Compiling flate2 v1.1.10
+   Compiling font-types v0.12.5
+   Compiling winnow v1.0.4
+   Compiling synstructure v0.14.0
+   Compiling pkg-config v0.3.34
+   Compiling toml_parser v1.1.3+spec-1.1.0
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling pin-project-lite v0.2.17
+   Compiling zerofrom-derive v0.1.8
+   Compiling miniz_oxide v0.8.9
+   Compiling fearless_simd v0.4.1
+   Compiling either v1.18.0
+   Compiling zerofrom v0.1.8
+   Compiling yoke-derive v0.8.4
+   Compiling indexmap v2.14.2
+   Compiling stable_deref_trait v1.2.1
+   Compiling yoke v0.8.3
+   Compiling wayland-sys v0.31.11
+   Compiling dlib v0.5.3
+   Compiling fdeflate v0.3.7
+   Compiling png v0.18.1
+   Compiling siphasher v1.0.4
+   Compiling half v2.7.1
+   Compiling zune-core v0.5.3
+   Compiling zune-jpeg v0.5.15
+   Compiling shlex v2.0.1
+   Compiling crossbeam-epoch v0.9.21
+   Compiling zmij v1.0.23
+   Compiling slab v0.4.12
+   Compiling find-msvc-tools v0.1.14
+   Compiling unicode-bidi v0.3.18
+   Compiling tinyvec v1.13.3
+   Compiling cc v1.5.1
+   Compiling color v0.3.3
+   Compiling euclid v0.22.14
+   Compiling memmap2 v0.9.11
+   Compiling linebender_resource_handle v0.1.1
+   Compiling crossbeam-deque v0.8.8
+   Compiling peniko v0.6.1
+   Compiling guillotiere v0.7.0
+   Compiling wayland-backend v0.3.17
+   Compiling toml_edit v0.25.15+spec-1.1.0
+   Compiling polling v3.11.0
+   Compiling enumflags2_derive v0.7.12
+   Compiling weezl v0.1.12
+   Compiling unicode-properties v0.1.4
+   Compiling quick-error v2.0.1
+   Compiling fastrand v2.5.0
+   Compiling cfg_aliases v0.2.2
+   Compiling rayon-core v1.13.0
+   Compiling serde_json v1.0.151
+   Compiling itoa v1.0.18
+   Compiling proc-macro-crate v3.5.0
+   Compiling zvariant_utils v4.2.0
+   Compiling proc-macro2-diagnostics v0.10.1
+   Compiling byteorder-lite v0.1.0
+   Compiling parking v2.2.1
+   Compiling color_quant v1.1.0
+   Compiling downcast-rs v1.2.1
+   Compiling scoped-tls v1.0.1
+   Compiling image-webp v0.2.4
+   Compiling zvariant_derive v5.15.0
+   Compiling gif v0.14.2
+   Compiling quick-xml v0.41.0
+   Compiling wayland-client v0.31.15
+   Compiling pxfm v0.1.30
+   Compiling futures-core v0.3.34
+   Compiling unicode-script v0.5.8
+   Compiling yansi v1.0.1
+   Compiling wayland-scanner v0.31.11
+   Compiling rayon v1.12.0
+   Compiling float-cmp v0.9.0
+   Compiling core_maths v0.1.1
+   Compiling unicode-bidi-mirroring v0.4.0
+   Compiling heck v0.4.1
+   Compiling ouroboros_macro v0.18.5
+   Compiling phf_shared v0.13.1
+   Compiling ttf-parser v0.25.1
+   Compiling strict-num v0.1.1
+   Compiling moxcms v0.8.1
+   Compiling read-fonts v0.44.0
+   Compiling rustc-hash v2.1.3
+   Compiling aliasable v0.1.3
+   Compiling fax v0.2.7
+   Compiling arrayref v0.3.9
+   Compiling tiny-skia-path v0.12.0
+   Compiling tiff v0.11.3
+   Compiling ouroboros v0.18.5
+   Compiling phf_generator v0.13.1
+   Compiling craft-cms v0.1.0 (https://github.com/storytold/craft-libs?rev=e9546e191dd62f2bc1d61eca45dbdc2f1b3c1d8e#e9546e19)
+   Compiling skrifa v0.47.0
+   Compiling itertools v0.14.0
+   Compiling slotmap v1.1.1
+   Compiling tracing-attributes v0.1.31
+   Compiling tracing-core v0.1.36
+   Compiling roots v0.0.8
+   Compiling futures-io v0.3.34
+   Compiling bumpalo v3.20.3
+   Compiling unicode-ccc v0.4.0
+   Compiling rustybuzz v0.20.1
+   Compiling flo_curves v0.8.1
+   Compiling tracing v0.1.44
+   Compiling designcraft-color v0.11.0 (/home/fusion809/lfs_packaging/designcraft/designcraft-0.11.0/crates/color)
+   Compiling phf_macros v0.13.1
+   Compiling image v0.25.10
+   Compiling event-listener v5.4.2
+   Compiling enumflags2 v0.7.12
+   Compiling unicode-normalization v0.1.25
+   Compiling zcheapstr v1.1.0
+   Compiling read-fonts v0.41.0
+   Compiling concurrent-queue v2.5.0
+   Compiling uuid v1.26.1
+   Compiling base64 v0.22.1
+   Compiling unicode-segmentation v1.13.3
+   Compiling parking_lot_core v0.9.12
+   Compiling qrcodegen v1.8.0
+   Compiling imagesize v0.14.0
+   Compiling roxmltree v0.20.0
+   Compiling endi v1.1.1
+   Compiling zvariant v5.15.0
+   Compiling fontconfig-parser v0.5.8
+   Compiling designcraft-geom v0.11.0 (/home/fusion809/lfs_packaging/designcraft/designcraft-0.11.0/crates/geom)
+   Compiling phf v0.13.1
+   Compiling event-listener-strategy v0.5.4
+   Compiling futures-lite v2.6.1
+   Compiling read-fonts v0.43.3
+   Compiling zerovec-derive v0.11.6
+   Compiling hayro-ccitt v0.3.0
+   Compiling scopeguard v1.2.0
+   Compiling designcraft-fonts v0.11.0 (/home/fusion809/lfs_packaging/designcraft/designcraft-0.11.0/crates/fonts)
+   Compiling lock_api v0.4.14
+   Compiling hayro-jbig2 v0.3.0 (https://github.com/storytold/craft-libs?rev=89dcbb3060377a26c99a6d80caa16084366704c4#89dcbb30)
+   Compiling zerovec v0.11.8
+   Compiling fontdb v0.23.0
+   Compiling harfrust v0.13.3
+   Compiling designcraft-doc v0.11.0 (/home/fusion809/lfs_packaging/designcraft/designcraft-0.11.0/crates/doc)
+   Compiling skrifa v0.44.0
+   Compiling zbus_names v4.3.4
+   Compiling stringprep v0.1.5
+   Compiling wayland-protocols v0.32.13
+   Compiling hayro-jpeg2000 v0.3.5
+   Compiling svgtypes v0.16.1
+   Compiling roxmltree v0.21.1
+   Compiling font-types v0.11.3
+   Compiling displaydoc v0.2.7
+   Compiling async-io v2.6.0
+   Compiling simplecss v0.2.2
+   Compiling alloc-no-stdlib v2.0.4
+   Compiling unicode-vo v0.1.0
+   Compiling data-url v0.3.2
+   Compiling pico-args v0.5.0
+   Compiling allocator-api2 v0.2.21
+   Compiling xmlwriter v0.1.0
+   Compiling usvg v0.47.0
+   Compiling alloc-stdlib v0.2.4
+   Compiling hashbrown v0.16.1
+   Compiling read-fonts v0.39.2
+   Compiling hayro-syntax v0.7.2 (https://github.com/storytold/craft-libs?rev=89dcbb3060377a26c99a6d80caa16084366704c4#89dcbb30)
+   Compiling parking_lot v0.12.5
+   Compiling tiny-skia v0.12.0
+   Compiling aho-corasick v1.1.5
+   Compiling rgb v0.8.53
+   Compiling errno v0.3.14
+   Compiling regex-syntax v0.8.11
+   Compiling getrandom v0.3.4
+   Compiling async-task v4.7.1
+   Compiling raw-window-handle v0.6.2
+   Compiling signal-hook-registry v1.4.8
+   Compiling resvg v0.47.0
+   Compiling regex-automata v0.4.18
+   Compiling brotli-decompressor v5.0.3
+   Compiling async-channel v2.5.0
+   Compiling ahash v0.8.12
+   Compiling ryu v1.0.23
+   Compiling profiling v1.0.18
+   Compiling bit-vec v0.8.0
+   Compiling atomic-waker v1.1.2
+   Compiling piper v0.2.5
+   Compiling bit-set v0.8.0
+   Compiling pdf-writer v0.15.0
+   Compiling brotli v8.0.4
+   Compiling async-signal v0.2.14
+   Compiling write-fonts v0.48.1
+   Compiling skrifa v0.42.1
+   Compiling tinystr v0.8.4
+   Compiling zbus_xml v5.2.1
+   Compiling async-lock v3.4.2
+   Compiling accesskit v0.24.1
+   Compiling zopfli v0.8.3
+   Compiling litemap v0.8.3
+   Compiling hayro-postscript v0.1.0
+   Compiling rustix v0.38.44
+   Compiling percent-encoding v2.3.2
+   Compiling rustc-hash v1.1.0
+   Compiling thiserror v1.0.69
+   Compiling writeable v0.6.4
+   Compiling icu_locale_core v2.3.0
+   Compiling naga-types v30.0.1
+   Compiling hayro-cmap v0.1.0
+   Compiling subsetter v0.2.6
+   Compiling zip v3.0.0
+   Compiling async-process v2.5.0
+   Compiling zbus-lockstep v0.5.2
+   Compiling hayro-write v0.7.0
+   Compiling fancy-regex v0.19.2
+   Compiling blocking v1.7.0
+   Compiling regex v1.13.1
+   Compiling designcraft-images v0.11.0 (/home/fusion809/lfs_packaging/designcraft/designcraft-0.11.0/crates/images)
+   Compiling async-executor v1.14.0
+   Compiling zerotrie v0.2.5
+   Compiling zbus_macros v5.19.0
+   Compiling potential_utf v0.1.6
+   Compiling async-broadcast v0.7.2
+   Compiling ordered-stream v0.2.0
+   Compiling naga v30.0.1
+   Compiling vello_common v0.0.8
+   Compiling async-trait v0.1.92
+   Compiling serde_repr v0.1.21
+   Compiling async-recursion v1.1.1
+   Compiling thiserror-impl v1.0.69
+   Compiling ash v0.38.0+1.3.281
+   Compiling hypher v0.1.8
+   Compiling bit-vec v0.9.1
+   Compiling xkeysym v0.2.1
+   Compiling xcursor v0.3.11
+   Compiling icu_properties_data v2.3.0
+   Compiling icu_normalizer_data v2.3.0
+   Compiling utf8_iter v1.0.4
+   Compiling hex v0.4.3
+   Compiling unicode-width v0.2.2
+   Compiling linux-raw-sys v0.4.15
+   Compiling xmp-writer v0.3.3
+   Compiling unicode-general-category v1.1.0
+   Compiling cursor-icon v1.2.0
+   Compiling wayland-csd-frame v0.3.0
+   Compiling krilla v0.8.2 (https://github.com/storytold/craft-libs?rev=89dcbb3060377a26c99a6d80caa16084366704c4#89dcbb30)
