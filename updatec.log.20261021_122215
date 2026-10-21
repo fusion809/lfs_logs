@@ -1,0 +1,125 @@
+===== Update check started: 2026-10-21 12:22:15 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261021_122215
+Packages needing attention: blas-lapack valgrind
+===== Starting updatec: 2026-10-21 12:22:23 AEST =====
+Checking for packages with missing file inventories...
+name=blas-lapack
+local_ver=9058a0b
+remote_ver=ef973b1
+name=hyfetch
+local_ver=2.1.0
+remote_ver=8.1.0
+name=icu
+local_ver=78.3
+remote_ver=79
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - blas-lapack
+  - hyfetch
+  - icu
+  - valgrind
+
+Building custom package blas-lapack...
+[12:24:09] Found custom package for blas-lapack, bypassing BLFS aliases.
+[12:24:09] Custom package detected at /home/fusion809/lfs_packaging/blas-lapack (package: blas-lapack)
+[12:24:09] Extracting dependencies for custom package 'blas-lapack'...
+[12:24:09] Required deps: bash cmake coreutils gcc glibc gzip make python sed tar wget 
+[12:24:09] Dependency 'bash' already installed.
+[12:24:09] Dependency 'cmake' already installed.
+[12:24:09] Dependency 'coreutils' already installed.
+[12:24:09] Dependency 'gcc' already installed.
+[12:24:09] Dependency 'glibc' already installed.
+[12:24:09] Dependency 'gzip' already installed.
+[12:24:09] Dependency 'make' already installed.
+[12:24:09] Dependency 'python' already installed.
+[12:24:09] Dependency 'sed' already installed.
+[12:24:09] Dependency 'tar' already installed.
+[12:24:09] Dependency 'wget' already installed.
+[12:24:09] Starting remote custom build for blas-lapack...
+lapack-ef973b1e0075ad37dbee9aab23030f845618667a.tar.gz already present and appears valid.
+rm: cannot remove 'lapack-ef973b1e0075ad37dbee9aab23030f845618667a': Directory not empty
+[ERROR] build.sh exited with code 1 for blas-lapack
+[ERROR] Custom build failed for blas-lapack
+Building custom package hyfetch...
+[12:24:15] Found custom package for hyfetch, bypassing BLFS aliases.
+[12:24:15] Custom package detected at /home/fusion809/lfs_packaging/hyfetch (package: hyfetch)
+[12:24:15] Extracting dependencies for custom package 'hyfetch'...
+[12:24:15] Required deps: bash coreutils fastfetch gcc glibc rust 
+[12:24:15] Dependency 'bash' already installed.
+[12:24:15] Dependency 'coreutils' already installed.
+[12:24:15] Dependency 'fastfetch' already installed.
+[12:24:15] Dependency 'gcc' already installed.
+[12:24:15] Dependency 'glibc' already installed.
+[12:24:15] Dependency 'rust' already installed.
+[12:24:15] Starting remote custom build for hyfetch...
+[12:24:16] [LFS-AUTOBUILD] Skipping custom package hyfetch: version 2.1.0 already installed (use -f to force build).
+Building custom package icu...
+[12:24:17] Found custom package for icu, bypassing BLFS aliases.
+[12:24:17] Custom package detected at /home/fusion809/lfs_packaging/icu (package: icu)
+[12:24:17] Extracting dependencies for custom package 'icu'...
+[12:24:17] Required deps: gcc glibc 
+[12:24:17] Dependency 'gcc' already installed.
+[12:24:17] Dependency 'glibc' already installed.
+[12:24:17] Starting remote custom build for icu...
+[12:24:18] [LFS-AUTOBUILD] Skipping custom package icu: version 78.3 already installed (use -f to force build).
+Building custom package valgrind...
+[12:24:18] Found custom package for valgrind, bypassing BLFS aliases.
+[12:24:18] Custom package detected at /home/fusion809/lfs_packaging/valgrind (package: valgrind)
+[12:24:18] Extracting dependencies for custom package 'valgrind'...
+[12:24:18] Required deps: glibc hwloc libevent libfabric numactl openmpi openpmix systemd 
+[12:24:18] Dependency 'glibc' already installed.
+[12:24:18] Dependency 'hwloc' already installed.
+[12:24:18] Dependency 'libevent' already installed.
+[12:24:18] Dependency 'libfabric' already installed.
+[12:24:18] Dependency 'numactl' already installed.
+[12:24:18] Dependency 'openmpi' already installed.
+[12:24:18] Dependency 'openpmix' already installed.
+[12:24:18] Dependency 'systemd' already installed.
+[12:24:18] Starting remote custom build for valgrind...
+--2026-10-21 12:24:24--  https://sourceware.org/pub/valgrind/valgrind-3.28.0.tar.bz2
+Resolving sourceware.org (sourceware.org)... 38.145.34.32, 2620:52:6:3111::32
+Connecting to sourceware.org (sourceware.org)|38.145.34.32|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-10-21 12:24:26 ERROR 404: Not Found.
+
+--2026-10-21 12:24:26--  https://sourceware.org/pub/valgrind/releases/valgrind-3.28.0.tar.bz2
+Resolving sourceware.org (sourceware.org)... 38.145.34.32, 2620:52:6:3111::32
+Connecting to sourceware.org (sourceware.org)|38.145.34.32|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-10-21 12:24:28 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for valgrind
+[ERROR] Custom build failed for valgrind
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-28
+r13.1-432
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/atkmm-1.6 (belongs to an installed package)
+Skipping registered directory: /usr/lib/cairomm-1.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/pangomm-1.4 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.0...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.0-lfs-r13.1-28
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
