@@ -1,0 +1,60 @@
+===== Update check started: 2026-10-22 02:01:03 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261022_020103
+Packages needing attention: nss
+===== Starting updatec: 2026-10-22 02:01:06 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - nss
+
+Building custom package nss...
+[02:03:20] Found custom package for nss, bypassing BLFS aliases.
+[02:03:20] Custom package detected at /home/fusion809/lfs_packaging/nss (package: nss)
+[02:03:20] Extracting dependencies for custom package 'nss'...
+[02:03:20] Required deps: glibc libtasn1 nspr sqlite zlib 
+[02:03:20] Dependency 'glibc' already installed.
+[02:03:20] Dependency 'libtasn1' already installed.
+[02:03:20] Dependency 'nspr' already installed.
+[02:03:20] Dependency 'sqlite' already installed.
+[02:03:20] Dependency 'zlib' already installed.
+[02:03:20] Starting remote custom build for nss...
+--2026-10-22 02:03:44--  https://archive.mozilla.org/pub/security/nss/releases/NSS_3_131_RTM/src/nss-3.131.1.tar.gz
+Resolving archive.mozilla.org (archive.mozilla.org)... 151.101.3.19, 151.101.131.19, 151.101.67.19, ...
+Connecting to archive.mozilla.org (archive.mozilla.org)|151.101.3.19|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-10-22 02:03:44 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for nss
+[ERROR] Custom build failed for nss
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-28
+r13.1-441
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/atkmm-1.6 (belongs to an installed package)
+Skipping registered directory: /usr/lib/cairomm-1.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/pangomm-1.4 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.0...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.0-lfs-r13.1-28
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
