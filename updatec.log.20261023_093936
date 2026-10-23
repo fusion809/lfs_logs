@@ -1,0 +1,1517 @@
+===== Update check started: 2026-10-23 09:39:36 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261023_093936
+Packages needing attention: cadcraft deckcraft designcraft effectcraft figcraft filmcraft glycin gridcraft harfbuzz jkqtplotter lightcraft pdfcraft photocraft soundcraft strace vectorcraft wordcraft
+===== Starting updatec: 2026-10-23 09:40:48 AEST =====
+Checking for packages with missing file inventories...
+name=cadcraft
+local_ver=0.10.0
+remote_ver=0.11.0
+name=deckcraft
+local_ver=0.9.0
+remote_ver=0.10.0
+Failed to check custom update version for: blas-lapack
+name=blas-lapack
+local_ver=1f523db
+remote_ver=FAILED
+name=designcraft
+local_ver=0.11.0
+remote_ver=0.12.0
+name=effectcraft
+local_ver=0.14.0
+remote_ver=0.15.0
+name=filmcraft
+local_ver=0.10.0
+remote_ver=0.11.0
+name=figcraft
+local_ver=0.9.0
+remote_ver=0.10.0
+name=glycin
+local_ver=2.2.3
+remote_ver=2.2.4
+name=gridcraft
+local_ver=0.10.0
+remote_ver=0.11.1
+name=harfbuzz
+local_ver=14.6.0
+remote_ver=15.0.0
+name=jkqtplotter
+local_ver=d9b6f18
+remote_ver=9e9f0af
+name=lightcraft
+local_ver=0.11.0
+remote_ver=0.12.0
+name=pdfcraft
+local_ver=0.11.0
+remote_ver=0.12.0
+name=photocraft
+local_ver=0.12.0
+remote_ver=0.13.0
+name=soundcraft
+local_ver=0.11.0
+remote_ver=0.12.1
+name=strace
+local_ver=7.2
+remote_ver=7.3
+name=vectorcraft
+local_ver=0.14.0
+remote_ver=0.15.0
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - cadcraft
+  - deckcraft
+  - designcraft
+  - effectcraft
+  - figcraft
+  - filmcraft
+  - gridcraft
+  - harfbuzz
+  - glycin
+  - jkqtplotter
+  - lightcraft
+  - pdfcraft
+  - photocraft
+  - soundcraft
+  - strace
+  - vectorcraft
+  - wordcraft
+
+Building custom package cadcraft...
+[09:43:22] Found custom package for cadcraft, bypassing BLFS aliases.
+[09:43:22] Custom package detected at /home/fusion809/lfs_packaging/cadcraft (package: cadcraft)
+[09:43:22] Extracting dependencies for custom package 'cadcraft'...
+[09:43:22] Required deps: gcc glibc 
+[09:43:22] Dependency 'gcc' already installed.
+[09:43:22] Dependency 'glibc' already installed.
+[09:43:22] Starting remote custom build for cadcraft...
+--2026-10-23 09:43:51--  https://github.com/storytold/cadcraft/archive/v0.11.0.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/storytold/cadcraft/tar.gz/refs/tags/v0.11.0 [following]
+--2026-10-23 09:43:51--  https://codeload.github.com/storytold/cadcraft/tar.gz/refs/tags/v0.11.0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘cadcraft-0.11.0.tar.gz’
+
+cadcraft-0.11.0.tar     [<=>                 ]       0  --.-KB/s               cadcraft-0.11.0.tar     [ <=>                ] 974.87K  4.75MB/s               cadcraft-0.11.0.tar     [  <=>               ]   2.86M  7.13MB/s               cadcraft-0.11.0.tar     [   <=>              ]   3.97M  7.82MB/s    in 0.5s    
+
+2026-10-23 09:43:52 (7.82 MB/s) - ‘cadcraft-0.11.0.tar.gz’ saved [4164090]
+
+    Updating crates.io index
+    Updating git repository `https://github.com/storytold/craft-libs`
+ Downloading crates ...
+  Downloaded icu_provider v2.3.1
+  Downloaded itoa v1.0.18
+  Downloaded idna_adapter v1.2.2
+  Downloaded phf_generator v0.13.1
+  Downloaded siphasher v1.0.4
+  Downloaded event-listener-strategy v0.5.4
+  Downloaded percent-encoding v2.3.2
+  Downloaded fastrand v2.5.0
+  Downloaded errno v0.3.14
+  Downloaded naga-types v30.0.1
+  Downloaded pollster v0.4.0
+  Downloaded serde_repr v0.1.21
+  Downloaded pollster v1.0.1
+  Downloaded quick-error v2.0.1
+  Downloaded nohash-hasher v0.2.0
+  Downloaded event-listener v5.4.2
+  Downloaded phf_shared v0.11.3
+  Downloaded serde_spanned v1.1.1
+  Downloaded profiling v1.0.18
+  Downloaded rustc-hash v1.1.0
+  Downloaded scoped-tls v1.0.1
+  Downloaded linebender_resource_handle v0.1.1
+  Downloaded renderdoc-sys v1.1.0
+  Downloaded potential_utf v0.1.6
+  Downloaded rustc-hash v2.1.3
+  Downloaded scopeguard v1.2.0
+  Downloaded multiversion_no_op v1.0.0
+  Downloaded phf_shared v0.13.1
+  Downloaded glutin-winit v0.5.0
+  Downloaded proc-macro-crate v3.5.0
+  Downloaded futures-core v0.3.34
+  Downloaded futures-macro v0.3.34
+  Downloaded utf8_iter v1.0.4
+  Downloaded peniko v0.6.1
+  Downloaded enumn v0.1.14
+  Downloaded litemap v0.8.3
+  Downloaded lock_api v0.4.14
+  Downloaded oem_cp v2.1.2
+  Downloaded pin-project-lite v0.2.17
+  Downloaded parking v2.2.1
+  Downloaded khronos-egl v6.0.0
+  Downloaded futures-io v0.3.34
+  Downloaded phf v0.11.3
+  Downloaded phf v0.13.1
+  Downloaded pkg-config v0.3.34
+  Downloaded presser v0.3.1
+  Downloaded float_next_after v1.0.0
+  Downloaded polycool v0.4.0
+  Downloaded rustversion v1.0.23
+  Downloaded typeid v1.0.3
+  Downloaded jobserver v0.1.35
+  Downloaded hex v0.4.3
+  Downloaded raw-window-handle v0.6.2
+  Downloaded libloading v0.8.9
+  Downloaded shlex v2.0.1
+  Downloaded wayland-protocols-misc v0.3.12
+  Downloaded ordered-stream v0.2.0
+  Downloaded signal-hook-registry v1.4.8
+  Downloaded gethostname v1.1.0
+  Downloaded strict-num v0.1.1
+  Downloaded dlib v0.5.3
+  Downloaded ecolor v0.36.2
+  Downloaded zbus-lockstep-macros v0.5.2
+  Downloaded yoke-derive v0.8.4
+  Downloaded zcheapstr v1.1.0
+  Downloaded once_cell v1.21.4
+  Downloaded ordered-float v5.5.0
+  Downloaded phf_macros v0.13.1
+  Downloaded self_cell v1.3.0
+  Downloaded litrs v1.0.0
+  Downloaded lyon_path v1.0.19
+  Downloaded memmap2 v0.9.11
+  Downloaded parking_lot v0.12.5
+  Downloaded rstar v0.12.2
+  Downloaded wgpu-core-deps-windows-linux-android v30.0.1
+  Downloaded xkbcommon-dl v0.4.2
+  Downloaded zbus-lockstep v0.5.2
+  Downloaded simdutf8 v0.1.5
+  Downloaded basic-udev v0.1.2
+  Downloaded equivalent v1.0.2
+  Downloaded indexmap v2.14.2
+  Downloaded slab v0.4.12
+  Downloaded smithay-clipboard v0.7.3
+  Downloaded static_assertions v1.1.0
+  Downloaded wayland-csd-frame v0.3.0
+  Downloaded lyon_geom v1.0.19
+  Downloaded type-map v0.5.1
+  Downloaded wayland-cursor v0.31.14
+  Downloaded log v0.4.34
+  Downloaded num-traits v0.2.19
+  Downloaded parking_lot_core v0.9.12
+  Downloaded piper v0.2.5
+  Downloaded polling v3.11.0
+  Downloaded proc-macro2 v1.0.107
+  Downloaded ryu v1.0.23
+  Downloaded simd-adler32 v0.3.10
+  Downloaded serde_derive v1.0.229
+  Downloaded serde_core v1.0.229
+  Downloaded quote v1.0.47
+  Downloaded wayland-sys v0.31.11
+  Downloaded accesskit_atspi_common v0.18.1
+  Downloaded async-broadcast v0.7.2
+  Downloaded emath v0.36.2
+  Downloaded termcolor v1.4.1
+  Downloaded async-process v2.5.0
+  Downloaded atspi v0.29.0
+  Downloaded cfg_aliases v0.2.2
+  Downloaded byteorder v1.5.0
+  Downloaded enumflags2 v0.7.12
+  Downloaded futures-task v0.3.34
+  Downloaded zerovec-derive v0.11.6
+  Downloaded zmij v1.0.23
+  Downloaded synstructure v0.14.0
+  Downloaded enumflags2_derive v0.7.12
+  Downloaded zerofrom-derive v0.1.8
+  Downloaded form_urlencoded v1.2.2
+  Downloaded rayon-core v1.13.0
+  Downloaded toml_writer v1.1.2+spec-1.1.0
+  Downloaded hash32 v0.3.1
+  Downloaded miniz_oxide v0.9.1
+  Downloaded rfd v0.17.2
+  Downloaded miniz_oxide v0.8.9
+  Downloaded toml_datetime v1.1.1+spec-1.1.0
+  Downloaded accesskit v0.24.1
+  Downloaded adler2 v2.0.1
+  Downloaded byteorder-lite v0.1.0
+  Downloaded downcast-rs v1.2.1
+  Downloaded accesskit_unix v0.21.1
+  Downloaded core_detect v1.0.0
+  Downloaded displaydoc v0.2.7
+  Downloaded smol_str v0.2.2
+  Downloaded arrayref v0.3.9
+  Downloaded zerofrom v0.1.8
+  Downloaded minimal-lexical v0.2.1
+  Downloaded serde v1.0.229
+  Downloaded tracing-core v0.1.36
+  Downloaded ahash v0.8.12
+  Downloaded arrayvec v0.7.8
+  Downloaded async-task v4.7.1
+  Downloaded bytemuck_derive v1.12.1
+  Downloaded atomic-waker v1.1.2
+  Downloaded blocking v1.7.0
+  Downloaded glutin_glx_sys v0.6.1
+  Downloaded spirv v0.4.0+sdk-1.4.341.0
+  Downloaded bitflags v2.13.2
+  Downloaded xcursor v0.3.11
+  Downloaded accesskit_winit v0.32.2
+  Downloaded async-channel v2.5.0
+  Downloaded async-executor v1.14.0
+  Downloaded async-recursion v1.2.0
+  Downloaded sys-locale v0.3.2
+  Downloaded cfg-if v1.0.5
+  Downloaded memchr v2.8.3
+  Downloaded wgpu-naga-bridge v30.0.1
+  Downloaded zvariant_derive v5.15.0
+  Downloaded async-trait v0.1.92
+  Downloaded autocfg v1.5.1
+  Downloaded async-signal v0.2.14
+  Downloaded bit-vec v0.9.1
+  Downloaded document-features v0.2.12
+  Downloaded version_check v0.9.5
+  Downloaded async-lock v3.4.2
+  Downloaded thiserror v1.0.69
+  Downloaded thiserror-impl v1.0.69
+  Downloaded bit-set v0.10.0
+  Downloaded bitflags v1.3.2
+  Downloaded either v1.19.0
+  Downloaded nom v7.1.3
+  Downloaded png v0.17.16
+  Downloaded endi v1.1.1
+  Downloaded thiserror-impl v2.0.21
+  Downloaded tinystr v0.8.4
+  Downloaded bytemuck v1.25.2
+  Downloaded calloop-wayland-source v0.3.0
+  Downloaded tracing-attributes v0.1.31
+  Downloaded toml_parser v1.1.3+spec-1.1.0
+  Downloaded accesskit_consumer v0.36.0
+  Downloaded calloop v0.14.5
+  Downloaded zvariant v5.15.0
+  Downloaded async-io v2.6.0
+  Downloaded as-raw-xcb-connection v1.0.1
+  Downloaded tiff v0.11.3
+  Downloaded png v0.18.1
+  Downloaded dpi v0.1.2
+  Downloaded allocator-api2 v0.2.21
+  Downloaded fax v0.2.7
+  Downloaded egui_glow v0.36.2
+  Downloaded idna v1.1.0
+  Downloaded itertools v0.15.0
+  Downloaded glutin_egl_sys v0.7.1
+  Downloaded crc32fast v1.5.2
+  Downloaded codespan-reporting v0.13.1
+  Downloaded gl_generator v0.14.0
+  Downloaded toml v1.1.6+spec-1.1.0
+  Downloaded guillotiere v0.7.0
+  Downloaded egui-winit v0.36.2
+  Downloaded icu_properties_data v2.3.0
+  Downloaded writeable v0.6.4
+  Downloaded libm v0.2.16
+  Downloaded toml_edit v0.25.15+spec-1.1.0
+  Downloaded serde_json v1.0.151
+  Downloaded ron v0.12.2
+  Downloaded wayland-protocols-wlr v0.3.12
+  Downloaded lyon_tessellation v1.0.22
+  Downloaded zerovec v0.11.8
+  Downloaded smithay-client-toolkit v0.19.2
+  Downloaded stable_deref_trait v1.2.1
+  Downloaded kurbo v0.13.1
+  Downloaded rayon v1.12.0
+  Downloaded moxcms v0.8.1
+  Downloaded smithay-client-toolkit v0.20.0
+  Downloaded atspi-common v0.13.0
+  Downloaded eframe v0.36.2
+  Downloaded cursor-icon v1.2.0
+  Downloaded calloop-wayland-source v0.4.1
+  Downloaded epaint v0.36.2
+  Downloaded find-msvc-tools v0.1.14
+  Downloaded tiny-skia v0.11.4
+  Downloaded foldhash v0.2.0
+  Downloaded font-types v0.12.6
+  Downloaded quick-xml v0.41.0
+  Downloaded image v0.25.10
+  Downloaded chrono v0.4.45
+  Downloaded wayland-protocols-experimental v20250721.0.1
+  Downloaded skrifa v0.44.0
+  Downloaded nix v0.30.1
+  Downloaded rustix v0.38.44
+  Downloaded thiserror v2.0.21
+  Downloaded atspi-proxies v0.13.0
+  Downloaded syn v3.0.6
+  Downloaded rustix v1.1.5
+  Downloaded wayland-scanner v0.31.11
+  Downloaded egui v0.36.2
+  Downloaded zbus_names v4.3.4
+  Downloaded zbus_xml v5.2.1
+  Downloaded zvariant_utils v4.2.0
+  Downloaded ash v0.38.0+1.3.281
+  Downloaded tracing v0.1.44
+  Downloaded crossbeam-deque v0.8.8
+  Downloaded zune-core v0.5.3
+  Downloaded concurrent-queue v2.5.0
+  Downloaded read-fonts v0.44.0
+  Downloaded read-fonts v0.41.0
+  Downloaded encoding_rs v0.8.42
+  Downloaded futures-lite v2.6.1
+  Downloaded khronos_api v3.1.0
+  Downloaded unicode-general-category v1.1.0
+  Downloaded epaint_default_fonts v0.36.2
+  Downloaded naga v30.0.1
+  Downloaded libc v0.2.190
+  Downloaded web-time v1.1.0
+  Downloaded pxfm v0.1.30
+  Downloaded crossbeam-utils v0.8.23
+  Downloaded fdeflate v0.3.7
+  Downloaded gpu-allocator v0.28.0
+  Downloaded yoke v0.8.3
+  Downloaded zbus_macros v5.19.0
+  Downloaded xml-rs v0.8.29
+  Downloaded webbrowser v1.2.4
+  Downloaded anyhow v1.0.104
+  Downloaded smallvec v1.16.2
+  Downloaded half v2.7.1
+  Downloaded linux-raw-sys v0.4.15
+  Downloaded glifo v0.2.0
+  Downloaded unicode-bidi v0.3.18
+  Downloaded getrandom v0.3.4
+  Downloaded unicode-ident v1.0.26
+  Downloaded weezl v0.1.12
+  Downloaded egui-wgpu v0.36.2
+  Downloaded tiny-skia-path v0.11.4
+  Downloaded crossbeam-epoch v0.9.21
+  Downloaded icu_normalizer_data v2.3.0
+  Downloaded linux-raw-sys v0.12.1
+  Downloaded x11-dl v2.21.0
+  Downloaded arboard v3.6.1
+  Downloaded acadrust v0.6.4
+  Downloaded flate2 v1.1.10
+  Downloaded glutin v0.32.3
+  Downloaded uuid v1.27.0
+  Downloaded wayland-client v0.31.15
+  Downloaded wayland-backend v0.3.17
+  Downloaded color v0.3.3
+  Downloaded euclid v0.22.14
+  Downloaded icu_locale_core v2.3.0
+  Downloaded icu_collections v2.3.0
+  Downloaded wayland-protocols-plasma v0.3.12
+  Downloaded heapless v0.8.0
+  Downloaded url v2.5.8
+  Downloaded winresource v0.1.31
+  Downloaded zerotrie v0.2.5
+  Downloaded calloop v0.13.0
+  Downloaded zune-jpeg v0.5.15
+  Downloaded vello_common v0.1.0
+  Downloaded xkeysym v0.2.1
+  Downloaded unicode-segmentation v1.13.3
+  Downloaded vello_cpu v0.1.0
+  Downloaded icu_properties v2.3.0
+  Downloaded hidapi v2.6.7
+  Downloaded cc v1.6.0
+  Downloaded wgpu-types v30.0.1
+  Downloaded zerocopy-derive v0.8.61
+  Downloaded hashbrown v0.16.1
+  Downloaded wayland-protocols v0.32.13
+  Downloaded hashbrown v0.17.1
+  Downloaded futures-util v0.3.34
+  Downloaded zbus v5.19.0
+  Downloaded glow v0.17.0
+  Downloaded winnow v1.0.4
+  Downloaded fearless_simd v0.4.1
+  Downloaded zlib-rs v0.6.8
+  Downloaded wgpu v30.0.1
+  Downloaded x11rb v0.13.2
+  Downloaded unicode-width v0.2.2
+  Downloaded harfrust v0.12.0
+  Downloaded skrifa v0.47.0
+  Downloaded zerocopy v0.8.61
+  Downloaded syn v2.0.119
+  Downloaded wgpu-core v30.0.1
+  Downloaded wgpu-hal v30.0.1
+  Downloaded x11rb-protocol v0.13.2
+  Downloaded icu_normalizer v2.3.0
+  Downloaded winit v0.30.13
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+   Compiling serde_core v1.0.229
+   Compiling serde v1.0.229
+   Compiling cfg-if v1.0.5
+   Compiling once_cell v1.21.4
+   Compiling log v0.4.34
+   Compiling autocfg v1.5.1
+   Compiling syn v3.0.6
+   Compiling syn v2.0.119
+   Compiling bitflags v2.13.2
+   Compiling libc v0.2.190
+   Compiling rustix v1.1.5
+   Compiling linux-raw-sys v0.12.1
+   Compiling serde_derive v1.0.229
+   Compiling bytemuck_derive v1.12.1
+   Compiling bytemuck v1.25.2
+   Compiling libm v0.2.16
+   Compiling num-traits v0.2.19
+   Compiling pkg-config v0.3.34
+   Compiling smallvec v1.16.2
+   Compiling libloading v0.8.9
+   Compiling thiserror v2.0.21
+   Compiling thiserror-impl v2.0.21
+   Compiling winnow v1.0.4
+   Compiling crossbeam-utils v0.8.23
+   Compiling pin-project-lite v0.2.17
+   Compiling toml_parser v1.1.3+spec-1.1.0
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling foldhash v0.2.0
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.14
+   Compiling cc v1.6.0
+   Compiling dlib v0.5.3
+   Compiling wayland-sys v0.31.11
+   Compiling arrayvec v0.7.8
+   Compiling cfg_aliases v0.2.2
+   Compiling equivalent v1.0.2
+   Compiling memchr v2.8.3
+   Compiling polling v3.11.0
+   Compiling hashbrown v0.17.1
+   Compiling scopeguard v1.2.0
+   Compiling wayland-backend v0.3.17
+   Compiling stable_deref_trait v1.2.1
+   Compiling downcast-rs v1.2.1
+   Compiling scoped-tls v1.0.1
+   Compiling quick-xml v0.41.0
+   Compiling indexmap v2.14.2
+   Compiling toml_edit v0.25.15+spec-1.1.0
+   Compiling enumflags2_derive v0.7.12
+   Compiling wayland-client v0.31.15
+   Compiling slab v0.4.12
+   Compiling proc-macro-crate v3.5.0
+   Compiling wayland-scanner v0.31.11
+   Compiling zvariant_utils v4.2.0
+   Compiling simd-adler32 v0.3.10
+   Compiling zerocopy v0.8.61
+   Compiling parking v2.2.1
+   Compiling euclid v0.22.14
+   Compiling zvariant_derive v5.15.0
+   Compiling font-types v0.12.6
+   Compiling zerocopy-derive v0.8.61
+   Compiling synstructure v0.14.0
+   Compiling adler2 v2.0.1
+   Compiling crc32fast v1.5.2
+   Compiling futures-core v0.3.34
+   Compiling tracing-attributes v0.1.31
+   Compiling tracing-core v0.1.36
+   Compiling zmij v1.0.23
+   Compiling tracing v0.1.44
+   Compiling miniz_oxide v0.9.1
+   Compiling zerofrom-derive v0.1.8
+   Compiling static_assertions v1.1.0
+   Compiling zerofrom v0.1.8
+   Compiling flate2 v1.1.10
+   Compiling yoke-derive v0.8.4
+   Compiling read-fonts v0.41.0
+   Compiling uuid v1.27.0
+   Compiling serde_json v1.0.151
+   Compiling either v1.19.0
+   Compiling fastrand v2.5.0
+   Compiling parking_lot_core v0.9.12
+   Compiling siphasher v1.0.4
+   Compiling futures-io v0.3.34
+   Compiling version_check v0.9.5
+   Compiling yoke v0.8.3
+   Compiling wayland-protocols v0.32.13
+   Compiling event-listener v5.4.2
+   Compiling enumflags2 v0.7.12
+   Compiling zcheapstr v1.1.0
+   Compiling concurrent-queue v2.5.0
+   Compiling memmap2 v0.9.11
+   Compiling endi v1.1.1
+   Compiling allocator-api2 v0.2.21
+   Compiling hashbrown v0.16.1
+   Compiling zvariant v5.15.0
+   Compiling event-listener-strategy v0.5.4
+   Compiling harfrust v0.12.0
+   Compiling futures-lite v2.6.1
+   Compiling miniz_oxide v0.8.9
+   Compiling fdeflate v0.3.7
+   Compiling lock_api v0.4.14
+   Compiling zerovec-derive v0.11.6
+   Compiling rustversion v1.0.23
+   Compiling raw-window-handle v0.6.2
+   Compiling crossbeam-epoch v0.9.21
+   Compiling zerovec v0.11.8
+   Compiling parking_lot v0.12.5
+   Compiling zbus_names v4.3.4
+   Compiling displaydoc v0.2.7
+   Compiling async-io v2.6.0
+   Compiling crossbeam-deque v0.8.8
+   Compiling itoa v1.0.18
+   Compiling getrandom v0.3.4
+   Compiling ahash v0.8.12
+   Compiling polycool v0.4.0
+   Compiling enumn v0.1.14
+   Compiling errno v0.3.14
+   Compiling percent-encoding v2.3.2
+   Compiling rayon-core v1.13.0
+   Compiling async-task v4.7.1
+   Compiling rustix v0.38.44
+   Compiling profiling v1.0.18
+   Compiling rustc-hash v1.1.0
+   Compiling thiserror v1.0.69
+   Compiling naga-types v30.0.1
+   Compiling accesskit v0.24.1
+   Compiling signal-hook-registry v1.4.8
+   Compiling kurbo v0.13.1
+   Compiling encoding_rs v0.8.42
+   Compiling async-channel v2.5.0
+   Compiling naga v30.0.1
+   Compiling color v0.3.3
+   Compiling thiserror-impl v1.0.69
+   Compiling atomic-waker v1.1.2
+   Compiling xkeysym v0.2.1
+   Compiling cursor-icon v1.2.0
+   Compiling xcursor v0.3.11
+   Compiling linebender_resource_handle v0.1.1
+   Compiling unicode-width v0.2.2
+   Compiling byteorder v1.5.0
+   Compiling linux-raw-sys v0.4.15
+   Compiling ash v0.38.0+1.3.281
+   Compiling bit-vec v0.9.1
+   Compiling codespan-reporting v0.13.1
+   Compiling bit-set v0.10.0
+   Compiling peniko v0.6.1
+   Compiling wayland-cursor v0.31.14
+   Compiling wayland-csd-frame v0.3.0
+   Compiling piper v0.2.5
+   Compiling async-signal v0.2.14
+   Compiling tinystr v0.8.4
+   Compiling zbus_xml v5.2.1
+   Compiling wayland-protocols-wlr v0.3.12
+   Compiling async-lock v3.4.2
+   Compiling half v2.7.1
+   Compiling guillotiere v0.7.0
+   Compiling cadcraft-geom v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/crates/geom)
+   Compiling spirv v0.4.0+sdk-1.4.341.0
+   Compiling litemap v0.8.3
+   Compiling multiversion_no_op v1.0.0
+   Compiling typeid v1.0.3
+   Compiling core_detect v1.0.0
+   Compiling web-time v1.1.0
+   Compiling fearless_simd v0.4.1
+   Compiling khronos-egl v6.0.0
+   Compiling simdutf8 v0.1.5
+   Compiling unicode-general-category v1.1.0
+   Compiling writeable v0.6.4
+   Compiling icu_locale_core v2.3.0
+   Compiling vello_common v0.1.0
+   Compiling async-process v2.5.0
+   Compiling calloop v0.13.0
+   Compiling zbus-lockstep v0.5.2
+   Compiling rayon v1.12.0
+   Compiling blocking v1.7.0
+   Compiling wgpu-types v30.0.1
+   Compiling async-executor v1.14.0
+   Compiling zerotrie v0.2.5
+   Compiling zbus_macros v5.19.0
+   Compiling potential_utf v0.1.6
+   Compiling async-broadcast v0.7.2
+   Compiling ordered-stream v0.2.0
+   Compiling read-fonts v0.44.0
+   Compiling lyon_geom v1.0.19
+   Compiling wgpu-hal v30.0.1
+   Compiling gethostname v1.1.0
+   Compiling emath v0.36.2
+   Compiling cadcraft-color v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/crates/color)
+   Compiling x11-dl v2.21.0
+   Compiling async-recursion v1.2.0
+   Compiling serde_repr v0.1.21
+   Compiling async-trait v0.1.92
+   Compiling hex v0.4.3
+   Compiling arrayref v0.3.9
+   Compiling icu_properties_data v2.3.0
+   Compiling smithay-client-toolkit v0.19.2
+   Compiling icu_normalizer_data v2.3.0
+   Compiling utf8_iter v1.0.4
+   Compiling x11rb-protocol v0.13.2
+   Compiling presser v0.3.1
+   Compiling bitflags v1.3.2
+   Compiling cadcraft-fonts v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/crates/fonts)
+   Compiling as-raw-xcb-connection v1.0.1
+   Compiling strict-num v0.1.1
+   Compiling tiny-skia-path v0.11.4
+   Compiling png v0.17.16
+   Compiling gpu-allocator v0.28.0
+   Compiling skrifa v0.47.0
+   Compiling icu_collections v2.3.0
+   Compiling phf_shared v0.13.1
+   Compiling zbus v5.19.0
+   Compiling x11rb v0.13.2
+   Compiling cadcraft-doc v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/crates/doc)
+   Compiling ecolor v0.36.2
+   Compiling lyon_path v1.0.19
+   Compiling icu_provider v2.3.1
+   Compiling wgpu-naga-bridge v30.0.1
+   Compiling zbus-lockstep-macros v0.5.2
+   Compiling calloop-wayland-source v0.3.0
+   Compiling vello_cpu v0.1.0
+   Compiling skrifa v0.44.0
+   Compiling phf_shared v0.11.3
+   Compiling winit v0.30.13
+   Compiling ordered-float v5.5.0
+   Compiling serde_spanned v1.1.1
+   Compiling float_next_after v1.0.0
+   Compiling anyhow v1.0.104
+   Compiling heapless v0.8.0
+   Compiling glow v0.17.0
+   Compiling nohash-hasher v0.2.0
+   Compiling self_cell v1.3.0
+   Compiling renderdoc-sys v1.1.0
+   Compiling toml_writer v1.1.2+spec-1.1.0
+   Compiling epaint_default_fonts v0.36.2
+   Compiling unicode-segmentation v1.13.3
+   Compiling unicode-bidi v0.3.18
+   Compiling phf_generator v0.13.1
+   Compiling epaint v0.36.2
+   Compiling toml v1.1.6+spec-1.1.0
+   Compiling lyon_tessellation v1.0.22
+   Compiling phf v0.11.3
+   Compiling ron v0.12.2
+   Compiling atspi-common v0.13.0
+   Compiling tiny-skia v0.11.4
+   Compiling hash32 v0.3.1
+   Compiling xkbcommon-dl v0.4.2
+   Compiling wayland-protocols-plasma v0.3.12
+   Compiling itertools v0.15.0
+   Compiling wgpu-core v30.0.1
+   Compiling minimal-lexical v0.2.1
+   Compiling litrs v1.0.0
+   Compiling zune-core v0.5.3
+   Compiling smol_str v0.2.2
+   Compiling pxfm v0.1.30
+   Compiling dpi v0.1.2
+   Compiling zune-jpeg v0.5.15
+   Compiling document-features v0.2.12
+   Compiling nom v7.1.3
+   Compiling moxcms v0.8.1
+   Compiling egui v0.36.2
+   Compiling cadcraft-render v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/crates/render)
+   Compiling icu_normalizer v2.3.0
+   Compiling icu_properties v2.3.0
+   Compiling oem_cp v2.1.2
+   Compiling wgpu-core-deps-windows-linux-android v30.0.1
+   Compiling phf_macros v0.13.1
+   Compiling cadcraft-dxf v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/crates/dxf)
+   Compiling png v0.18.1
+   Compiling wgpu v30.0.1
+   Compiling byteorder-lite v0.1.0
+   Compiling ryu v1.0.23
+   Compiling image v0.25.10
+   Compiling acadrust v0.6.4
+   Compiling phf v0.13.1
+   Compiling idna_adapter v1.2.2
+   Compiling rstar v0.12.2
+   Compiling atspi-proxies v0.13.0
+   Compiling cadcraft-constraints v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/crates/constraints)
+   Compiling accesskit_consumer v0.36.0
+   Compiling calloop v0.14.5
+   Compiling futures-macro v0.3.34
+   Compiling rustc-hash v2.1.3
+   Compiling smithay-client-toolkit v0.20.0
+   Compiling futures-task v0.3.34
+   Compiling craft-docpath v0.1.0 (https://github.com/storytold/craft-libs?rev=82a24b006eefa036b43c09a67fb9a3fbd17ffe63#82a24b00)
+   Compiling cadcraft-engine v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/crates/engine)
+   Compiling futures-util v0.3.34
+   Compiling type-map v0.5.1
+   Compiling calloop-wayland-source v0.4.1
+   Compiling accesskit_atspi_common v0.18.1
+   Compiling cadcraft-dwg v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/crates/dwg)
+   Compiling atspi v0.29.0
+   Compiling idna v1.1.0
+   Compiling form_urlencoded v1.2.2
+   Compiling wayland-protocols-experimental v20250721.0.1
+   Compiling wayland-protocols-misc v0.3.12
+   Compiling cadcraft-io v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/crates/io)
+   Compiling url v2.5.8
+   Compiling accesskit_unix v0.21.1
+   Compiling egui-wgpu v0.36.2
+   Compiling cadcraft-ui-egui v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/crates/ui-egui)
+   Compiling hidapi v2.6.7
+   Compiling nix v0.30.1
+   Compiling chrono v0.4.45
+   Compiling accesskit_winit v0.32.2
+   Compiling webbrowser v1.2.4
+   Compiling smithay-clipboard v0.7.3
+   Compiling arboard v3.6.1
+   Compiling craft-ui v0.1.0 (https://github.com/storytold/craft-libs?rev=5c874d51eeb3de70e735c8ce87a59a7dedd47675#5c874d51)
+   Compiling winresource v0.1.31
+   Compiling rfd v0.17.2
+   Compiling cadcraft v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/apps/cadcraft)
+   Compiling egui-winit v0.36.2
+   Compiling pollster v0.4.0
+   Compiling basic-udev v0.1.2
+   Compiling pollster v1.0.1
+   Compiling eframe v0.36.2
+   Compiling cadcraft-mcp v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/crates/mcp)
+   Compiling sys-locale v0.3.2
+   Compiling cadcraft-cli v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/apps/cadcraft-cli)
+   Compiling xtask v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/xtask)
+   Compiling cadcraft-web v0.11.0 (/home/fusion809/lfs_packaging/cadcraft/cadcraft-0.11.0/apps/cadcraft-web)
+    Finished `release` profile [optimized] target(s) in 85m 32s
+0.11.0
+Updated registry for cadcraft to version 0.12.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package cadcraft in /var/lib/custom-packages/
+Building custom package deckcraft...
+[11:10:23] Found custom package for deckcraft, bypassing BLFS aliases.
+[11:10:23] Custom package detected at /home/fusion809/lfs_packaging/deckcraft (package: deckcraft)
+[11:10:23] Extracting dependencies for custom package 'deckcraft'...
+[11:10:24] Required deps: alsa-lib gcc glibc 
+[11:10:24] Dependency 'alsa-lib' already installed.
+[11:10:24] Dependency 'gcc' already installed.
+[11:10:24] Dependency 'glibc' already installed.
+[11:10:24] Starting remote custom build for deckcraft...
+--2026-10-23 11:10:45--  https://github.com/storytold/deckcraft/archive/v0.10.0.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/storytold/deckcraft/tar.gz/refs/tags/v0.10.0 [following]
+--2026-10-23 11:10:46--  https://codeload.github.com/storytold/deckcraft/tar.gz/refs/tags/v0.10.0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4029946 (3.8M) [application/x-gzip]
+Saving to: ‘deckcraft-0.10.0.tar.gz’
+
+deckcraft-0.10.0.ta   0%[                    ]       0  --.-KB/s               deckcraft-0.10.0.ta  20%[===>                ] 799.90K  3.82MB/s               deckcraft-0.10.0.ta  54%[=========>          ]   2.08M  4.93MB/s               deckcraft-0.10.0.ta 100%[===================>]   3.84M  7.82MB/s    in 0.5s    
+
+2026-10-23 11:10:47 (7.82 MB/s) - ‘deckcraft-0.10.0.tar.gz’ saved [4029946/4029946]
+
+    Updating git repository `https://github.com/storytold/craft-libs`
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded fdeflate v0.3.7
+  Downloaded accesskit v0.24.1
+  Downloaded form_urlencoded v1.2.2
+  Downloaded futures-io v0.3.34
+  Downloaded gethostname v1.1.0
+  Downloaded float-cmp v0.9.0
+  Downloaded futures-macro v0.3.34
+  Downloaded glutin-winit v0.5.0
+  Downloaded glutin_glx_sys v0.6.1
+  Downloaded find-msvc-tools v0.1.14
+  Downloaded futures-core v0.3.34
+  Downloaded futures-task v0.3.34
+  Downloaded hex v0.4.3
+  Downloaded cfg-if v1.0.5
+  Downloaded calloop-wayland-source v0.4.1
+  Downloaded glutin_egl_sys v0.7.1
+  Downloaded i_tree v0.19.0
+  Downloaded idna_adapter v1.2.2
+  Downloaded multiversion_no_op v1.0.0
+  Downloaded phf_generator v0.13.1
+  Downloaded linebender_resource_handle v0.1.1
+  Downloaded naga-types v30.0.1
+  Downloaded nohash-hasher v0.2.0
+  Downloaded ordered-channel v1.2.0
+  Downloaded parking v2.2.1
+  Downloaded percent-encoding v2.3.2
+  Downloaded phf_shared v0.13.1
+  Downloaded color_quant v1.1.0
+  Downloaded foldhash v0.2.0
+  Downloaded gl_generator v0.14.0
+  Downloaded cursor-icon v1.2.0
+  Downloaded lazy_static v1.5.1
+  Downloaded fax v0.2.7
+  Downloaded guillotiere v0.7.0
+  Downloaded itoa v1.0.18
+  Downloaded font-types v0.12.6
+  Downloaded i_shape v5.0.0
+  Downloaded downcast-rs v1.2.1
+  Downloaded dpi v0.1.2
+  Downloaded font-types v0.11.3
+  Downloaded i_key_sort v0.11.0
+  Downloaded symphonia-codec-pcm v0.5.5
+  Downloaded arrayref v0.3.9
+  Downloaded core_maths v0.1.1
+  Downloaded dasp_sample v0.11.0
+  Downloaded fastrand v2.5.0
+  Downloaded jobserver v0.1.35
+  Downloaded khronos-egl v6.0.0
+  Downloaded ordered-stream v0.2.0
+  Downloaded peniko v0.6.1
+  Downloaded phf v0.13.1
+  Downloaded phf_macros v0.13.1
+  Downloaded pin-project-lite v0.2.17
+  Downloaded piper v0.2.5
+  Downloaded pkg-config v0.3.34
+  Downloaded pollster v0.4.0
+  Downloaded pollster v1.0.1
+  Downloaded imagesize v0.14.0
+  Downloaded document-features v0.2.12
+  Downloaded blocking v1.7.0
+  Downloaded byteorder-lite v0.1.0
+  Downloaded wgpu-core-deps-windows-linux-android v30.0.1
+  Downloaded enumflags2_derive v0.7.12
+  Downloaded gif v0.14.2
+  Downloaded iana-time-zone v0.1.65
+  Downloaded endi v1.1.1
+  Downloaded futures-lite v2.6.1
+  Downloaded extended v0.1.0
+  Downloaded unicode-ccc v0.4.0
+  Downloaded litemap v0.8.3
+  Downloaded libloading v0.8.9
+  Downloaded lock_api v0.4.14
+  Downloaded xcursor v0.3.11
+  Downloaded xkbcommon-dl v0.4.2
+  Downloaded parking_lot v0.12.5
+  Downloaded parking_lot_core v0.9.12
+  Downloaded potential_utf v0.1.6
+  Downloaded litrs v1.0.0
+  Downloaded memmap2 v0.9.11
+  Downloaded once_cell v1.21.4
+  Downloaded async-broadcast v0.7.2
+  Downloaded async-channel v2.5.0
+  Downloaded async-executor v1.14.0
+  Downloaded glifo v0.3.0
+  Downloaded rustc-hash v1.1.0
+  Downloaded rustc-hash v2.1.3
+  Downloaded scopeguard v1.2.0
+  Downloaded getrandom v0.3.4
+  Downloaded glifo v0.2.0
+  Downloaded gpu-allocator v0.28.0
+  Downloaded log v0.4.34
+  Downloaded num-traits v0.2.19
+  Downloaded symphonia-codec-vorbis v0.5.5
+  Downloaded thread_local v1.1.10
+  Downloaded unicode-bidi-mirroring v0.4.0
+  Downloaded xmp-writer v0.3.3
+  Downloaded polycool v0.4.0
+  Downloaded type-map v0.5.1
+  Downloaded flate2 v1.1.10
+  Downloaded icu_provider v2.3.1
+  Downloaded ordered-float v5.5.0
+  Downloaded symphonia v0.5.5
+  Downloaded symphonia-codec-adpcm v0.5.5
+  Downloaded symphonia-format-caf v0.5.5
+  Downloaded cfg_aliases v0.2.2
+  Downloaded symphonia-codec-alac v0.5.5
+  Downloaded adler2 v2.0.1
+  Downloaded glutin v0.32.3
+  Downloaded half v2.7.1
+  Downloaded icu_locale_core v2.3.0
+  Downloaded icu_normalizer_data v2.3.0
+  Downloaded image-webp v0.2.4
+  Downloaded polling v3.11.0
+  Downloaded quick-error v2.0.1
+  Downloaded smithay-clipboard v0.7.3
+  Downloaded strict-num v0.1.1
+  Downloaded equivalent v1.0.2
+  Downloaded event-listener-strategy v0.5.4
+  Downloaded yoke v0.8.3
+  Downloaded miniz_oxide v0.8.9
+  Downloaded miniz_oxide v0.9.1
+  Downloaded scoped-tls v1.0.1
+  Downloaded siphasher v1.0.4
+  Downloaded i_float v5.0.0
+  Downloaded symphonia-bundle-flac v0.5.5
+  Downloaded symphonia-codec-aac v0.5.5
+  Downloaded accesskit_unix v0.21.1
+  Downloaded async-io v2.6.0
+  Downloaded symphonia-utils-xiph v0.5.5
+  Downloaded wayland-cursor v0.31.14
+  Downloaded webbrowser v1.2.4
+  Downloaded xml-rs v0.8.29
+  Downloaded zune-core v0.5.3
+  Downloaded icu_collections v2.3.0
+  Downloaded rustversion v1.0.23
+  Downloaded self_cell v1.3.0
+  Downloaded wayland-csd-frame v0.3.0
+  Downloaded icu_properties v2.3.0
+  Downloaded proc-macro-crate v3.5.0
+  Downloaded ahash v0.8.12
+  Downloaded version_check v0.9.5
+  Downloaded zerofrom-derive v0.1.8
+  Downloaded accesskit_atspi_common v0.18.1
+  Downloaded accesskit_consumer v0.36.0
+  Downloaded accesskit_winit v0.32.2
+  Downloaded async-recursion v1.2.0
+  Downloaded async-signal v0.2.14
+  Downloaded bit-set v0.10.0
+  Downloaded bit-vec v0.9.1
+  Downloaded calloop v0.14.5
+  Downloaded unicode-linebreak v0.1.5
+  Downloaded utf8_iter v1.0.4
+  Downloaded web-time v1.1.0
+  Downloaded wayland-sys v0.31.11
+  Downloaded zcheapstr v1.1.0
+  Downloaded memchr v2.8.3
+  Downloaded presser v0.3.1
+  Downloaded zerovec-derive v0.11.6
+  Downloaded shlex v2.0.1
+  Downloaded simdutf8 v0.1.5
+  Downloaded static_assertions v1.1.0
+  Downloaded symphonia-bundle-mp3 v0.5.5
+  Downloaded symphonia-format-isomp4 v0.5.5
+  Downloaded arrayvec v0.7.8
+  Downloaded writeable v0.6.4
+  Downloaded serde_repr v0.1.21
+  Downloaded alsa-sys v0.3.1
+  Downloaded zbus-lockstep v0.5.2
+  Downloaded indexmap v2.14.2
+  Downloaded profiling v1.0.18
+  Downloaded rfd v0.17.2
+  Downloaded serde_spanned v1.1.1
+  Downloaded slab v0.4.12
+  Downloaded smol_str v0.2.2
+  Downloaded stable_deref_trait v1.2.1
+  Downloaded symphonia-core v0.5.5
+  Downloaded calloop-wayland-source v0.3.0
+  Downloaded concurrent-queue v2.5.0
+  Downloaded core_detect v1.0.0
+  Downloaded displaydoc v0.2.7
+  Downloaded dlib v0.5.3
+  Downloaded ecolor v0.36.2
+  Downloaded either v1.19.0
+  Downloaded weezl v0.1.12
+  Downloaded yoke-derive v0.8.4
+  Downloaded zbus_names v4.3.4
+  Downloaded zune-jpeg v0.5.15
+  Downloaded smallvec v1.16.2
+  Downloaded subsetter v0.2.6
+  Downloaded as-raw-xcb-connection v1.0.1
+  Downloaded atomic-waker v1.1.2
+  Downloaded wgpu-naga-bridge v30.0.1
+  Downloaded zbus-lockstep-macros v0.5.2
+  Downloaded zbus_xml v5.2.1
+  Downloaded zerofrom v0.1.8
+  Downloaded idna v1.1.0
+  Downloaded renderdoc-sys v1.1.0
+  Downloaded hashbrown v0.16.1
+  Downloaded xkeysym v0.2.1
+  Downloaded spirv v0.4.0+sdk-1.4.341.0
+  Downloaded crossbeam-deque v0.8.8
+  Downloaded errno v0.3.14
+  Downloaded quote v1.0.47
+  Downloaded enumflags2 v0.7.12
+  Downloaded toml_datetime v1.1.1+spec-1.1.0
+  Downloaded proc-macro2 v1.0.107
+  Downloaded raw-window-handle v0.6.2
+  Downloaded async-process v2.5.0
+  Downloaded synstructure v0.14.0
+  Downloaded wayland-protocols-misc v0.3.12
+  Downloaded serde_core v1.0.229
+  Downloaded serde_derive v1.0.229
+  Downloaded async-trait v0.1.92
+  Downloaded atspi v0.29.0
+  Downloaded atspi-proxies v0.13.0
+  Downloaded base64 v0.22.1
+  Downloaded glow v0.17.0
+  Downloaded symphonia-format-riff v0.5.5
+  Downloaded termcolor v1.4.1
+  Downloaded thiserror v1.0.69
+  Downloaded zbus_macros v5.19.0
+  Downloaded async-lock v3.4.2
+  Downloaded autocfg v1.5.1
+  Downloaded itertools v0.15.0
+  Downloaded zerotrie v0.2.5
+  Downloaded icu_properties_data v2.3.0
+  Downloaded async-task v4.7.1
+  Downloaded bitflags v1.3.2
+  Downloaded thiserror v2.0.21
+  Downloaded tinystr v0.8.4
+  Downloaded hashbrown v0.17.1
+  Downloaded symphonia-metadata v0.5.5
+  Downloaded bytemuck_derive v1.12.1
+  Downloaded kurbo v0.13.1
+  Downloaded libm v0.2.16
+  Downloaded thiserror-impl v2.0.21
+  Downloaded winresource v0.1.31
+  Downloaded x11-dl v2.21.0
+  Downloaded bitflags v2.13.2
+  Downloaded smithay-client-toolkit v0.20.0
+  Downloaded thiserror-impl v1.0.69
+  Downloaded symphonia-format-mkv v0.5.5
+  Downloaded toml_writer v1.1.2+spec-1.1.0
+  Downloaded ryu v1.0.23
+  Downloaded bytemuck v1.25.2
+  Downloaded futures-util v0.3.34
+  Downloaded symphonia-format-ogg v0.5.5
+  Downloaded wayland-protocols-experimental v20250721.0.1
+  Downloaded moxcms v0.8.1
+  Downloaded calloop v0.13.0
+  Downloaded zerovec v0.11.8
+  Downloaded egui_glow v0.36.2
+  Downloaded zvariant v5.15.0
+  Downloaded zvariant_derive v5.15.0
+  Downloaded fearless_simd v0.4.1
+  Downloaded crossbeam-utils v0.8.23
+  Downloaded smithay-client-toolkit v0.19.2
+  Downloaded crossbeam-epoch v0.9.21
+  Downloaded zerocopy-derive v0.8.61
+  Downloaded zip v3.0.0
+  Downloaded simd-adler32 v0.3.10
+  Downloaded signal-hook-registry v1.4.8
+  Downloaded crc32fast v1.5.2
+  Downloaded emath v0.36.2
+  Downloaded quick-xml v0.41.0
+  Downloaded toml_parser v1.1.3+spec-1.1.0
+  Downloaded tracing-attributes v0.1.31
+  Downloaded serde_json v1.0.151
+  Downloaded unicode-ident v1.0.26
+  Downloaded x11rb v0.13.2
+  Downloaded write-fonts v0.48.1
+  Downloaded harfrust v0.12.0
+  Downloaded event-listener v5.4.2
+  Downloaded rayon v1.12.0
+  Downloaded wayland-protocols-wlr v0.3.12
+  Downloaded wgpu v30.0.1
+  Downloaded image v0.25.10
+  Downloaded wayland-scanner v0.31.11
+  Downloaded harfrust v0.13.3
+  Downloaded tiny-skia-path v0.12.0
+  Downloaded unicode-properties v0.1.4
+  Downloaded unicode-script v0.5.8
+  Downloaded zmij v1.0.23
+  Downloaded egui-winit v0.36.2
+  Downloaded zvariant_utils v4.2.0
+  Downloaded zlib-rs v0.6.8
+  Downloaded i_overlay v9.0.0
+  Downloaded tracing-core v0.1.36
+  Downloaded unicode-bidi v0.3.18
+  Downloaded unicode-general-category v1.1.0
+  Downloaded rustybuzz v0.20.1
+  Downloaded skrifa v0.47.0
+  Downloaded zerocopy v0.8.61
+  Downloaded toml v1.1.6+spec-1.1.0
+  Downloaded wgpu-core v30.0.1
+  Downloaded egui-wgpu v0.36.2
+  Downloaded zopfli v0.8.3
+  Downloaded allocator-api2 v0.2.21
+  Downloaded arboard v3.6.1
+  Downloaded icu_normalizer v2.3.0
+  Downloaded codespan-reporting v0.13.1
+  Downloaded x11rb-protocol v0.13.2
+  Downloaded wgpu-hal v30.0.1
+  Downloaded ash v0.38.0+1.3.281
+  Downloaded wayland-client v0.31.15
+  Downloaded wayland-protocols-plasma v0.3.12
+  Downloaded uuid v1.27.0
+  Downloaded khronos_api v3.1.0
+  Downloaded toml_edit v0.25.15+spec-1.1.0
+  Downloaded winit v0.30.13
+  Downloaded read-fonts v0.44.0
+  Downloaded png v0.18.1
+  Downloaded alsa v0.9.1
+  Downloaded read-fonts v0.39.2
+  Downloaded read-fonts v0.43.3
+  Downloaded wayland-backend v0.3.17
+  Downloaded url v2.5.8
+  Downloaded color v0.3.3
+  Downloaded euclid v0.22.14
+  Downloaded libc v0.2.190
+  Downloaded naga v30.0.1
+  Downloaded pxfm v0.1.30
+  Downloaded rayon-core v1.13.0
+  Downloaded serde v1.0.229
+  Downloaded crossbeam-channel v0.5.17
+  Downloaded tiff v0.11.3
+  Downloaded bumpalo v3.20.3
+  Downloaded cc v1.6.0
+  Downloaded cpal v0.16.0
+  Downloaded unicode-segmentation v1.13.3
+  Downloaded vello_cpu v0.2.0
+  Downloaded atspi-common v0.13.0
+  Downloaded pdf-writer v0.15.0
+  Downloaded linux-raw-sys v0.4.15
+  Downloaded epaint v0.36.2
+  Downloaded vello_common v0.2.0
+  Downloaded vello_cpu v0.1.0
+  Downloaded vello_common v0.1.0
+  Downloaded eframe v0.36.2
+  Downloaded linux-raw-sys v0.12.1
+  Downloaded wgpu-types v30.0.1
+  Downloaded wayland-protocols v0.32.13
+  Downloaded zbus v5.19.0
+  Downloaded ttf-parser v0.25.1
+  Downloaded winnow v1.0.4
+  Downloaded chrono v0.4.45
+  Downloaded unicode-width v0.2.2
+  Downloaded skrifa v0.42.1
+  Downloaded syn v2.0.119
+  Downloaded syn v3.0.6
+  Downloaded skrifa v0.44.0
+  Downloaded rustix v0.38.44
+  Downloaded egui v0.36.2
+  Downloaded rustix v1.1.5
+  Downloaded tracing v0.1.44
+  Downloaded encoding_rs v0.8.42
+  Downloaded read-fonts v0.41.0
+  Downloaded epaint_default_fonts v0.36.2
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.26
+   Compiling cfg-if v1.0.5
+   Compiling serde_core v1.0.229
+   Compiling log v0.4.34
+   Compiling serde v1.0.229
+   Compiling bitflags v2.13.2
+   Compiling once_cell v1.21.4
+   Compiling syn v3.0.6
+   Compiling syn v2.0.119
+   Compiling arrayvec v0.7.8
+   Compiling autocfg v1.5.1
+   Compiling libm v0.2.16
+   Compiling thiserror v2.0.21
+   Compiling libc v0.2.190
+   Compiling num-traits v0.2.19
+   Compiling crossbeam-utils v0.8.23
+   Compiling rustix v1.1.5
+   Compiling foldhash v0.2.0
+   Compiling serde_derive v1.0.229
+   Compiling bytemuck_derive v1.12.1
+   Compiling thiserror-impl v2.0.21
+   Compiling bytemuck v1.25.2
+   Compiling linux-raw-sys v0.12.1
+   Compiling smallvec v1.16.2
+   Compiling pkg-config v0.3.34
+   Compiling libloading v0.8.9
+   Compiling winnow v1.0.4
+   Compiling hashbrown v0.17.1
+   Compiling polycool v0.4.0
+   Compiling equivalent v1.0.2
+   Compiling toml_parser v1.1.3+spec-1.1.0
+   Compiling kurbo v0.13.1
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling pin-project-lite v0.2.17
+   Compiling scopeguard v1.2.0
+   Compiling zerocopy v0.8.61
+   Compiling zerocopy-derive v0.8.61
+   Compiling simd-adler32 v0.3.10
+   Compiling wayland-sys v0.31.11
+   Compiling dlib v0.5.3
+   Compiling synstructure v0.14.0
+   Compiling crc32fast v1.5.2
+   Compiling adler2 v2.0.1
+   Compiling zerofrom-derive v0.1.8
+   Compiling memchr v2.8.3
+   Compiling miniz_oxide v0.9.1
+   Compiling zerofrom v0.1.8
+   Compiling yoke-derive v0.8.4
+   Compiling stable_deref_trait v1.2.1
+   Compiling find-msvc-tools v0.1.14
+   Compiling shlex v2.0.1
+   Compiling zlib-rs v0.6.8
+   Compiling cc v1.6.0
+   Compiling indexmap v2.14.2
+   Compiling yoke v0.8.3
+   Compiling font-types v0.12.6
+   Compiling wayland-backend v0.3.17
+   Compiling toml_edit v0.25.15+spec-1.1.0
+   Compiling polling v3.11.0
+   Compiling enumflags2_derive v0.7.12
+   Compiling flate2 v1.1.10
+   Compiling cfg_aliases v0.2.2
+   Compiling bitflags v1.3.2
+   Compiling rustversion v1.0.23
+   Compiling lazy_static v1.5.1
+   Compiling symphonia-core v0.5.5
+   Compiling proc-macro-crate v3.5.0
+   Compiling half v2.7.1
+   Compiling zvariant_utils v4.2.0
+   Compiling downcast-rs v1.2.1
+   Compiling scoped-tls v1.0.1
+   Compiling either v1.19.0
+   Compiling parking v2.2.1
+   Compiling zvariant_derive v5.15.0
+   Compiling quick-xml v0.41.0
+   Compiling wayland-client v0.31.15
+   Compiling crossbeam-epoch v0.9.21
+   Compiling zmij v1.0.23
+   Compiling futures-core v0.3.34
+   Compiling slab v0.4.12
+   Compiling wayland-scanner v0.31.11
+   Compiling encoding_rs v0.8.42
+   Compiling miniz_oxide v0.8.9
+   Compiling fdeflate v0.3.7
+   Compiling crossbeam-deque v0.8.8
+   Compiling png v0.18.1
+   Compiling color v0.3.3
+   Compiling euclid v0.22.14
+   Compiling multiversion_no_op v1.0.0
+   Compiling rayon-core v1.13.0
+   Compiling simdutf8 v0.1.5
+   Compiling serde_json v1.0.151
+   Compiling core_detect v1.0.0
+   Compiling linebender_resource_handle v0.1.1
+   Compiling peniko v0.6.1
+   Compiling guillotiere v0.7.0
+   Compiling tracing-attributes v0.1.31
+   Compiling tracing-core v0.1.36
+   Compiling zune-core v0.5.3
+   Compiling weezl v0.1.12
+   Compiling unicode-segmentation v1.13.3
+   Compiling fastrand v2.5.0
+   Compiling fearless_simd v0.4.1
+   Compiling quick-error v2.0.1
+   Compiling futures-io v0.3.34
+   Compiling tracing v0.1.44
+   Compiling zune-jpeg v0.5.15
+   Compiling symphonia-metadata v0.5.5
+   Compiling event-listener v5.4.2
+   Compiling enumflags2 v0.7.12
+   Compiling read-fonts v0.41.0
+   Compiling zcheapstr v1.1.0
+   Compiling concurrent-queue v2.5.0
+   Compiling endi v1.1.1
+   Compiling color_quant v1.1.0
+   Compiling byteorder-lite v0.1.0
+   Compiling static_assertions v1.1.0
+   Compiling itoa v1.0.18
+   Compiling image-webp v0.2.4
+   Compiling gif v0.14.2
+   Compiling zvariant v5.15.0
+   Compiling event-listener-strategy v0.5.4
+   Compiling rayon v1.12.0
+   Compiling futures-lite v2.6.1
+   Compiling zerovec-derive v0.11.6
+   Compiling uuid v1.27.0
+   Compiling version_check v0.9.5
+   Compiling siphasher v1.0.4
+   Compiling parking_lot_core v0.9.12
+   Compiling zerovec v0.11.8
+   Compiling skrifa v0.44.0
+   Compiling zbus_names v4.3.4
+   Compiling wayland-protocols v0.32.13
+   Compiling displaydoc v0.2.7
+   Compiling async-io v2.6.0
+   Compiling allocator-api2 v0.2.21
+   Compiling epaint_default_fonts v0.36.2
+   Compiling pxfm v0.1.30
+   Compiling fax v0.2.7
+   Compiling tiff v0.11.3
+   Compiling moxcms v0.8.1
+   Compiling hashbrown v0.16.1
+   Compiling lock_api v0.4.14
+   Compiling errno v0.3.14
+   Compiling async-task v4.7.1
+   Compiling raw-window-handle v0.6.2
+   Compiling signal-hook-registry v1.4.8
+   Compiling image v0.25.10
+   Compiling parking_lot v0.12.5
+   Compiling async-channel v2.5.0
+   Compiling symphonia-utils-xiph v0.5.5
+   Compiling deckcraft-geom v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/geom)
+   Compiling deckcraft-color v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/color)
+   Compiling font-types v0.11.3
+   Compiling rustc-hash v2.1.3
+   Compiling atomic-waker v1.1.2
+   Compiling bumpalo v3.20.3
+   Compiling getrandom v0.3.4
+   Compiling read-fonts v0.39.2
+   Compiling piper v0.2.5
+   Compiling deckcraft-model v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/model)
+   Compiling async-signal v0.2.14
+   Compiling tinystr v0.8.4
+   Compiling zbus_xml v5.2.1
+   Compiling ahash v0.8.12
+   Compiling async-lock v3.4.2
+   Compiling writeable v0.6.4
+   Compiling litemap v0.8.3
+   Compiling deckcraft-bitstream v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/bitstream)
+   Compiling percent-encoding v2.3.2
+   Compiling rustc-hash v1.1.0
+   Compiling profiling v1.0.18
+   Compiling thiserror v1.0.69
+   Compiling rustix v0.38.44
+   Compiling naga-types v30.0.1
+   Compiling async-process v2.5.0
+   Compiling icu_locale_core v2.3.0
+   Compiling zbus-lockstep v0.5.2
+   Compiling blocking v1.7.0
+   Compiling async-executor v1.14.0
+   Compiling zerotrie v0.2.5
+   Compiling zbus_macros v5.19.0
+   Compiling potential_utf v0.1.6
+   Compiling accesskit v0.24.1
+   Compiling async-broadcast v0.7.2
+   Compiling ordered-stream v0.2.0
+   Compiling naga v30.0.1
+   Compiling read-fonts v0.44.0
+   Compiling read-fonts v0.43.3
+   Compiling async-trait v0.1.92
+   Compiling serde_repr v0.1.21
+   Compiling async-recursion v1.2.0
+   Compiling thiserror-impl v1.0.69
+   Compiling core_maths v0.1.1
+   Compiling linux-raw-sys v0.4.15
+   Compiling ash v0.38.0+1.3.281
+   Compiling cursor-icon v1.2.0
+   Compiling hex v0.4.3
+   Compiling bit-vec v0.9.1
+   Compiling deckcraft-fonts v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/fonts)
+   Compiling icu_properties_data v2.3.0
+   Compiling xkeysym v0.2.1
+   Compiling icu_normalizer_data v2.3.0
+   Compiling utf8_iter v1.0.4
+   Compiling xcursor v0.3.11
+   Compiling unicode-width v0.2.2
+   Compiling codespan-reporting v0.13.1
+   Compiling wayland-cursor v0.31.14
+   Compiling icu_collections v2.3.0
+   Compiling skrifa v0.47.0
+   Compiling harfrust v0.13.3
+warning: deckcraft-fonts@0.10.0: building without craft-fonts: CRAFT_FONTS_DIR=/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/../craft-fonts: /home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/../craft-fonts/fonts/manifest.txt: No such file or directory (os error 2)
+   Compiling bit-set v0.10.0
+   Compiling phf_shared v0.13.1
+   Compiling zbus v5.19.0
+   Compiling wayland-csd-frame v0.3.0
+   Compiling ttf-parser v0.25.1
+   Compiling icu_provider v2.3.1
+   Compiling zbus-lockstep-macros v0.5.2
+   Compiling skrifa v0.42.1
+   Compiling write-fonts v0.48.1
+   Compiling wayland-protocols-wlr v0.3.12
+   Compiling vello_common v0.2.0
+   Compiling crossbeam-channel v0.5.17
+   Compiling memmap2 v0.9.11
+   Compiling spirv v0.4.0+sdk-1.4.341.0
+   Compiling unicode-script v0.5.8
+   Compiling unicode-general-category v1.1.0
+   Compiling unicode-ccc v0.4.0
+   Compiling ryu v1.0.23
+   Compiling unicode-bidi-mirroring v0.4.0
+   Compiling unicode-bidi v0.3.18
+   Compiling unicode-properties v0.1.4
+   Compiling arrayref v0.3.9
+   Compiling iana-time-zone v0.1.65
+   Compiling khronos-egl v6.0.0
+   Compiling strict-num v0.1.1
+   Compiling tiny-skia-path v0.12.0
+   Compiling chrono v0.4.45
+   Compiling rustybuzz v0.20.1
+   Compiling pdf-writer v0.15.0
+   Compiling phf_generator v0.13.1
+   Compiling ordered-channel v1.2.0
+   Compiling glifo v0.3.0
+   Compiling subsetter v0.2.6
+   Compiling atspi-common v0.13.0
+   Compiling calloop v0.13.0
+   Compiling wgpu-types v30.0.1
+   Compiling zopfli v0.8.3
+   Compiling vello_common v0.1.0
+   Compiling wgpu-hal v30.0.1
+   Compiling gethostname v1.1.0
+   Compiling x11-dl v2.21.0
+   Compiling serde_spanned v1.1.1
+   Compiling emath v0.36.2
+   Compiling float-cmp v0.9.0
+   Compiling thread_local v1.1.10
+   Compiling presser v0.3.1
+   Compiling base64 v0.22.1
+   Compiling smithay-client-toolkit v0.19.2
+   Compiling as-raw-xcb-connection v1.0.1
+   Compiling imagesize v0.14.0
+   Compiling xmp-writer v0.3.3
+   Compiling x11rb-protocol v0.13.2
+   Compiling unicode-linebreak v0.1.5
+   Compiling toml_writer v1.1.2+spec-1.1.0
+   Compiling extended v0.1.0
+   Compiling symphonia-format-riff v0.5.5
+   Compiling toml v1.1.6+spec-1.1.0
+   Compiling deckcraft-text v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/text)
+   Compiling krilla v0.8.2 (https://github.com/storytold/craft-libs?rev=c3487320b2d1de657b860b3c8abb44e1f2b32bd8#c3487320)
+   Compiling vello_cpu v0.2.0
+   Compiling x11rb v0.13.2
+   Compiling gpu-allocator v0.28.0
+   Compiling ecolor v0.36.2
+   Compiling vello_cpu v0.1.0
+   Compiling zip v3.0.0
+   Compiling wgpu-naga-bridge v30.0.1
+   Compiling icu_normalizer v2.3.0
+   Compiling icu_properties v2.3.0
+   Compiling calloop-wayland-source v0.3.0
+   Compiling phf_macros v0.13.1
+   Compiling deckcraft-anim v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/anim)
+   Compiling symphonia-codec-vorbis v0.5.5
+   Compiling symphonia-format-mkv v0.5.5
+   Compiling symphonia-format-ogg v0.5.5
+   Compiling symphonia-format-isomp4 v0.5.5
+   Compiling symphonia-bundle-flac v0.5.5
+   Compiling deckcraft-metafile v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/metafile)
+   Compiling harfrust v0.12.0
+   Compiling symphonia-format-caf v0.5.5
+   Compiling symphonia-bundle-mp3 v0.5.5
+   Compiling symphonia-codec-pcm v0.5.5
+   Compiling symphonia-codec-alac v0.5.5
+   Compiling symphonia-codec-adpcm v0.5.5
+   Compiling symphonia-codec-aac v0.5.5
+   Compiling winit v0.30.13
+   Compiling ordered-float v5.5.0
+   Compiling i_float v5.0.0
+   Compiling glow v0.17.0
+   Compiling self_cell v1.3.0
+   Compiling renderdoc-sys v1.1.0
+   Compiling nohash-hasher v0.2.0
+   Compiling epaint v0.36.2
+   Compiling i_shape v5.0.0
+   Compiling symphonia v0.5.5
+   Compiling deckcraft-render v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/render)
+   Compiling phf v0.13.1
+   Compiling idna_adapter v1.2.2
+   Compiling craft-pdf v0.1.0 (https://github.com/storytold/craft-libs?rev=c3487320b2d1de657b860b3c8abb44e1f2b32bd8#c3487320)
+   Compiling atspi-proxies v0.13.0
+   Compiling xkbcommon-dl v0.4.2
+   Compiling accesskit_consumer v0.36.0
+   Compiling deckcraft-isobmff v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/isobmff)
+   Compiling deckcraft-av1 v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/av1)
+   Compiling deckcraft-h264 v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/h264)
+   Compiling deckcraft-hevc v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/hevc)
+   Compiling deckcraft-vp9 v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/vp9)
+   Compiling wayland-protocols-plasma v0.3.12
+   Compiling calloop v0.14.5
+   Compiling itertools v0.15.0
+   Compiling wgpu-core v30.0.1
+   Compiling futures-macro v0.3.34
+   Compiling smol_str v0.2.2
+   Compiling deckcraft-opus v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/opus)
+   Compiling smithay-client-toolkit v0.20.0
+   Compiling deckcraft-ogg v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/ogg)
+   Compiling i_tree v0.19.0
+   Compiling i_key_sort v0.11.0
+   Compiling deckcraft-matroska v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/matroska)
+   Compiling futures-task v0.3.34
+   Compiling litrs v1.0.0
+   Compiling dpi v0.1.2
+   Compiling document-features v0.2.12
+   Compiling deckcraft-media v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/media)
+   Compiling futures-util v0.3.34
+   Compiling egui v0.36.2
+   Compiling i_overlay v9.0.0
+   Compiling deckcraft-pptx v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/pptx)
+   Compiling calloop-wayland-source v0.4.1
+   Compiling atspi v0.29.0
+   Compiling accesskit_atspi_common v0.18.1
+   Compiling deckcraft-pdf v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/pdf)
+   Compiling idna v1.1.0
+   Compiling wgpu-core-deps-windows-linux-android v30.0.1
+   Compiling deckcraft-format v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/format)
+   Compiling form_urlencoded v1.2.2
+   Compiling wayland-protocols-experimental v20250721.0.1
+   Compiling wayland-protocols-misc v0.3.12
+   Compiling wgpu v30.0.1
+   Compiling alsa-sys v0.3.1
+   Compiling url v2.5.8
+   Compiling deckcraft-engine v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/engine)
+   Compiling accesskit_unix v0.21.1
+   Compiling web-time v1.1.0
+   Compiling accesskit_winit v0.32.2
+   Compiling webbrowser v1.2.4
+   Compiling smithay-clipboard v0.7.3
+   Compiling deckcraft-ui-egui v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/ui-egui)
+   Compiling arboard v3.6.1
+   Compiling winresource v0.1.31
+   Compiling type-map v0.5.1
+   Compiling rfd v0.17.2
+   Compiling cpal v0.16.0
+   Compiling egui-wgpu v0.36.2
+   Compiling deckcraft v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/apps/deckcraft)
+   Compiling egui-winit v0.36.2
+   Compiling alsa v0.9.1
+   Compiling dasp_sample v0.11.0
+   Compiling pollster v1.0.1
+   Compiling pollster v0.4.0
+   Compiling eframe v0.36.2
+   Compiling deckcraft-mcp v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/crates/mcp)
+   Compiling deckcraft-cli v0.10.0 (/home/fusion809/lfs_packaging/deckcraft/deckcraft-0.10.0/apps/deckcraft-cli)
