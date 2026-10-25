@@ -1,0 +1,196 @@
+===== Update check started: 2026-10-25 07:45:00 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261025_074500
+Packages needing attention: avogadroapp avogadrolibs glycin jkqtplotter librsvg ocaml openssl ostree patch pspp ruby samba strace valgrind vim
+===== Starting updatec: 2026-10-25 07:46:03 AEST =====
+Checking for packages with missing file inventories...
+name=avogadroapp
+local_ver=2.0.0
+remote_ver=2.1.0
+name=avogadrolibs
+local_ver=2.0.0
+remote_ver=2.1.0
+name=glycin
+local_ver=2.2.3
+remote_ver=2.2.4
+name=jkqtplotter
+local_ver=d9b6f18
+remote_ver=9e9f0af
+name=librsvg
+local_ver=2.63.3
+remote_ver=2.63.4
+name=ocaml
+local_ver=5.5.1
+remote_ver=5.5.2
+name=openssl
+local_ver=4.0.3
+remote_ver=4.1.0
+name=ostree
+local_ver=2026.4
+remote_ver=2026.5
+name=patch
+local_ver=2.8
+remote_ver=2.8.1
+name=pspp
+local_ver=2.1.2
+remote_ver=2.1.3
+name=ruby
+local_ver=4.0.8
+remote_ver=4.0.9
+name=samba
+local_ver=4.25.0
+remote_ver=4.25.1
+name=strace
+local_ver=7.2
+remote_ver=7.3
+name=valgrind
+local_ver=3.27.1
+remote_ver=3.28.0
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - jkqtplotter
+  - avogadrolibs
+  - ocaml
+  - openssl
+  - avogadroapp
+  - ostree
+  - patch
+  - pspp
+  - ruby
+  - samba
+  - strace
+  - valgrind
+  - glycin
+  - librsvg
+  - vim
+
+Building custom package jkqtplotter...
+[07:52:34] Found custom package for jkqtplotter, bypassing BLFS aliases.
+[07:52:34] Custom package detected at /home/fusion809/lfs_packaging/jkqtplotter (package: jkqtplotter)
+[07:52:34] Extracting dependencies for custom package 'jkqtplotter'...
+[07:52:35] Starting remote custom build for jkqtplotter...
+JKQtPlotter-9e9f0af8b140192e3de7ff866a0013e7da5e1e93.tar.gz already present and appears valid.
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CImg: trying to locate CImg library
+-- Looking for j0
+-- Looking for j0 - found
+-- Looking for _j0
+-- Looking for _j0 - not found
+-- Looking for y0
+-- Looking for y0 - found
+-- Looking for _y0
+-- Looking for _y0 - not found
+-- Looking for jn
+-- Looking for jn - found
+-- Looking for _jn
+-- Looking for _jn - not found
+-- Looking for yn
+-- Looking for yn - found
+-- Looking for _yn
+-- Looking for _yn - not found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Cups: /usr/lib/libcups.so (found version "2.4.20")
+-- 
+-- =============================================================================
+-- == JKQTPlotterLib Build Information                                        ==
+-- =============================================================================
+-- Version:               5.0.0
+-- CMake Generator:       Unix Makefiles
+--    is multi-config:    NO
+-- Build type:            RelWithDebInfo
+-- Build types:           
+-- Build shared lib:      ON
+-- Using CMake:           4.4.4
+-- Using CMake Generator: Unix Makefiles
+-- Using compiler:        GNU 16.2.0, platform: Linux
+-- C++ Standard(default): C++ , required: 
+-- LIB-Architecture:      CXX:  / BASE: 
+-- bit depth:             64 bit
+-- System Name:           Linux
+-- Processor Name:        x86_64
+-- Using Qt:              6.12.0
+--                        [at /opt/qt6/lib/cmake/Qt6]
+-- XITS fonts:            LINKED IN
+-- FIRA fonts:            LINKED IN
+-- Print support:         ON
+-- Timing Info output:    ON
+-- Precompiled Header:    ON
+-- build JKQTMath:        ON
+-- build JKQTMathText:    ON
+-- build JKQTFastPlotter: ON
+-- build JKQTPlotter:     ON
+-- Installing to:         /usr
+-- =============================================================================
+-- 
+-- 
+-- .............................................................................
+-- .. BUILDING LIBRARIES
+-- .............................................................................
+-- -- Building JKQTCommon6
+-- -- Building JKQTMath6
+-- -- Building JKQTMathText6
+-- -- Building JKQTFastPlotter6
+CMake Warning at lib/jkqtfastplotter/CMakeLists.txt:7 (message):
+  -- You are building the sub-library JKQTFastPlotter, which is DEPRECTAED
+  and may be removed in future!
+
+
+-- -- Building JKQTPlotter6
+-- 
+-- .............................................................................
+-- .. BUILDING TOOLS
+-- .............................................................................
+-- ..   - Precompiled Header:  ON
+-- .............................................................................
+-- .. BUILDING TOOLS FOR JKQTMATHTEXT:
+-- ..   Building Tool jkqtmathtext_render
+-- ..   Building Tool jkqtplotter_doc_imagegenerator
+-- 
+-- .............................................................................
+-- .. BUILDING UNIT TESTS
+-- .............................................................................
+-- ..   - Precompiled Header:  ON
+-- .............................................................................
+-- .. BUILDING UNIT TESTS FOR JKQTCommon:
+-- ..   Building Unit Test JKQTPStringTools_test
+-- ..   Building Unit Test JKQTPCSSParser_test
+-- ..   Building Unit Test JKQTPDataCache_test
+-- ..   Building Unit Test JKQTPDataCache_benchmark
+-- ..   Building Unit Test jkqtpstatisticstools_test
+-- ..   Building Unit Test test_jkqtpdatastore
+-- Configuring done (22.5s)
+-- Generating done (1.9s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/jkqtplotter/JKQtPlotter-9e9f0af8b140192e3de7ff866a0013e7da5e1e93/build
+[  0%] Built target JKQTCommon6_autogen_timestamp_deps
+[  1%] Automatic MOC and UIC for target JKQTCommon6
+[  1%] Built target JKQTCommon6_autogen
+[  1%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/cmake_pch.hxx.gch
+[  2%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpmathtools.cpp.o
+[  3%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/JKQTCommon6_autogen/mocs_compilation.cpp.o
+[  3%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpdebuggingtools.cpp.o
+[  3%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpstringtools.cpp.o
+[  4%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpcodestructuring.cpp.o
+[  4%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpbasicimagetools.cpp.o
+[  5%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpconcurrencytools.cpp.o
+[  5%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpcachingtools.cpp.o
+[  6%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpgeometrytools.cpp.o
+[  6%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpdrawingtools.cpp.o
+[  8%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpenhancedpainter.cpp.o
+[  9%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtphighrestimer.cpp.o
+[  9%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqttools.cpp.o
+/home/fusion809/lfs-scripts/updates_check_and_run.sh: line 163: 2937592 Killed                     zsh -ic 'updatec'
+===== ERROR: updatec exited with status 137 =====
+Finished: 2026-10-25 07:57:13 AEST
+Exit status: 137

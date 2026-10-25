@@ -1,0 +1,123 @@
+===== Update check started: 2026-10-23 23:30:03 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261023_233003
+Packages needing attention: artcraft-launcher blas-lapack designcraft effectcraft figcraft filmcraft glycin gridcraft harfbuzz jkqtplotter lightcraft ocaml openssl patch pdfcraft photocraft ruby soundcraft strace vectorcraft webkitgtk wordcraft
+===== Starting updatec: 2026-10-23 23:30:22 AEST =====
+compinit:494: bad math expression: illegal character: '
+/home/fusion809/lfs-scripts/Shell/00-env.sh:30: ZSH_HIGHLIGHT_STYLES: assignment to invalid subscript range
+Checking for packages with missing file inventories...
+name=artcraft-launcher
+local_ver=0.6.1
+remote_ver=0.7.0
+name=blas-lapack
+local_ver=1f523db
+remote_ver=75188c2
+name=designcraft
+local_ver=0.11.0
+remote_ver=0.12.0
+name=effectcraft
+local_ver=0.14.0
+remote_ver=0.16.0
+name=figcraft
+local_ver=0.9.0
+remote_ver=0.10.0
+name=filmcraft
+local_ver=0.10.0
+remote_ver=0.12.0
+name=glycin
+local_ver=2.2.3
+remote_ver=2.2.4
+name=gridcraft
+local_ver=0.10.0
+remote_ver=0.11.1
+name=harfbuzz
+local_ver=14.6.0
+remote_ver=15.0.0
+name=jkqtplotter
+local_ver=d9b6f18
+remote_ver=9e9f0af
+name=lightcraft
+local_ver=0.11.0
+remote_ver=0.13.0
+name=ocaml
+local_ver=5.5.1
+remote_ver=5.5.2
+name=openssl
+local_ver=4.0.3
+remote_ver=4.1.0
+name=patch
+local_ver=2.8
+remote_ver=2.8.1
+name=pdfcraft
+local_ver=0.11.0
+remote_ver=0.13.0
+name=photocraft
+local_ver=0.12.0
+remote_ver=0.14.0
+name=ruby
+local_ver=4.0.8
+remote_ver=4.0.9
+name=soundcraft
+local_ver=0.11.0
+remote_ver=0.12.1
+name=strace
+local_ver=7.2
+remote_ver=7.3
+name=vectorcraft
+local_ver=0.14.0
+remote_ver=0.16.0
+name=wordcraft
+local_ver=0.9.0
+remote_ver=0.10.0
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - artcraft-launcher
+  - blas-lapack
+  - designcraft
+  - effectcraft
+  - figcraft
+  - filmcraft
+  - gridcraft
+  - harfbuzz
+  - glycin
+  - jkqtplotter
+  - lightcraft
+  - ocaml
+  - openssl
+  - patch
+  - pdfcraft
+  - photocraft
+  - ruby
+  - soundcraft
+  - strace
+  - vectorcraft
+  - webkitgtk
+  - wordcraft
+
+Building custom package artcraft-launcher...
+[23:32:36] Found custom package for artcraft-launcher, bypassing BLFS aliases.
+[23:32:36] Custom package detected at /home/fusion809/lfs_packaging/artcraft-launcher (package: artcraft-launcher)
+[23:32:36] Extracting dependencies for custom package 'artcraft-launcher'...
+[23:32:36] Required deps: gcc glibc 
+[23:32:36] Dependency 'gcc' already installed.
+[23:32:36] Dependency 'glibc' already installed.
+[23:32:36] Starting remote custom build for artcraft-launcher...
+--2026-10-23 23:32:52--  https://github.com/storytold/craft-launcher/archive/v0.7.0.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/storytold/craft-launcher/tar.gz/refs/tags/v0.7.0 [following]
+--2026-10-23 23:32:52--  https://codeload.github.com/storytold/craft-launcher/tar.gz/refs/tags/v0.7.0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2083467 (2.0M) [application/x-gzip]
+Saving to: ‘craft-launcher-0.7.0.tar.gz’
+
+          craft-lau   0%[                    ]       0  --.-KB/s                        craft-laun  42%[=======>            ] 861.44K  4.21MB/s               craft-launcher-0.7. 100%[===================>]   1.99M  6.37MB/s    in 0.3s    
+
+2026-10-23 23:32:53 (6.37 MB/s) - ‘craft-launcher-0.7.0.tar.gz’ saved [2083467/2083467]
+
+    Updating crates.io index
+warning: failed to write cache, path: /home/fusion809/lfs_packaging/artcraft-launcher/craft-launcher-0.7.0/registry/index/index.crates.io-1949cf8c6b5b557f/.cache/tr/ay/tray-icon, error: No space left on device (os error 28)
+warning: failed to save last-use data
+This may prevent cargo from accurately tracking what is being used in its global cache. This information is used for automatically removing un

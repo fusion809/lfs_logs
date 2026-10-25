@@ -1,0 +1,136 @@
+===== Update check started: 2026-10-24 00:27:01 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261024_002701
+Packages needing attention: artcraft-launcher designcraft effectcraft figcraft filmcraft glycin gridcraft harfbuzz jkqtplotter lightcraft ocaml openssl patch pdfcraft photocraft ruby soundcraft strace vectorcraft webkitgtk wordcraft zed
+===== Starting updatec: 2026-10-24 00:27:44 AEST =====
+compinit:494: bad math expression: illegal character: '
+/home/fusion809/lfs-scripts/Shell/00-env.sh:30: ZSH_HIGHLIGHT_STYLES: assignment to invalid subscript range
+Checking for packages with missing file inventories...
+Packages with missing inventories that will be force-rebuilt: blas-lapack
+name=artcraft-launcher
+local_ver=0.6.1
+remote_ver=0.7.0
+name=blas-lapack
+local_ver=75188c2
+remote_ver=75188c2
+name=designcraft
+local_ver=0.11.0
+remote_ver=0.12.0
+name=effectcraft
+local_ver=0.14.0
+remote_ver=0.16.0
+name=figcraft
+local_ver=0.9.0
+remote_ver=0.10.0
+name=filmcraft
+local_ver=0.10.0
+remote_ver=0.12.0
+name=glycin
+local_ver=2.2.3
+remote_ver=2.2.4
+name=gridcraft
+local_ver=0.10.0
+remote_ver=0.11.1
+name=harfbuzz
+local_ver=14.6.0
+remote_ver=15.0.0
+name=jkqtplotter
+local_ver=d9b6f18
+remote_ver=9e9f0af
+name=lightcraft
+local_ver=0.11.0
+remote_ver=0.13.0
+name=ocaml
+local_ver=5.5.1
+remote_ver=5.5.2
+name=openssl
+local_ver=4.0.3
+remote_ver=4.1.0
+name=pdfcraft
+local_ver=0.11.0
+remote_ver=0.13.0
+name=patch
+local_ver=2.8
+remote_ver=2.8.1
+name=photocraft
+local_ver=0.12.0
+remote_ver=0.14.0
+name=ruby
+local_ver=4.0.8
+remote_ver=4.0.9
+name=soundcraft
+local_ver=0.11.0
+remote_ver=0.12.1
+name=strace
+local_ver=7.2
+remote_ver=7.3
+name=tcl
+local_ver=9.1.0
+remote_ver=64
+name=vectorcraft
+local_ver=0.14.0
+remote_ver=0.16.0
+name=wordcraft
+local_ver=0.9.0
+remote_ver=0.10.0
+name=webkitgtk
+local_ver=2.54.1
+remote_ver=2.54.2
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - artcraft-launcher
+  - blas-lapack
+  - designcraft
+  - effectcraft
+  - figcraft
+  - filmcraft
+  - gridcraft
+  - harfbuzz
+  - glycin
+  - jkqtplotter
+  - lightcraft
+  - ocaml
+  - openssl
+  - patch
+  - pdfcraft
+  - photocraft
+  - ruby
+  - soundcraft
+  - strace
+  - tcl
+  - vectorcraft
+  - webkitgtk
+  - wordcraft
+  - zed
+
+Building custom package artcraft-launcher...
+[00:30:23] Found custom package for artcraft-launcher, bypassing BLFS aliases.
+tee: /home/fusion809/build_logs/artcraft-launcher: No space left on device
+[00:30:23] Custom package detected at /home/fusion809/lfs_packaging/artcraft-launcher (package: artcraft-launcher)
+[00:30:23] Extracting dependencies for custom package 'artcraft-launcher'...
+[00:30:23] Required deps: gcc glibc 
+[00:30:23] Dependency 'gcc' already installed.
+[00:30:23] Dependency 'glibc' already installed.
+[00:30:23] Starting remote custom build for artcraft-launcher...
+craft-launcher-0.7.0.tar.gz already present and appears valid.
+tee: /home/fusion809/build_logs/artcraft-launcher: No space left on device
+    Updating crates.io index
+warning: failed to write cache, path: /home/fusion809/lfs_packaging/artcraft-launcher/craft-launcher-0.7.0/registry/index/index.crates.io-1949cf8c6b5b557f/.cache/we/b-/web-sys, error: No space left on device (os error 28)
+warning: failed to save last-use data
+This may prevent cargo from accurately tracking what is being used in its global cache. This information is used for automatically removing unused data in the cache.
+
+database or disk is full
+
+Caused by:
+  Error code 13: database or disk is full
+ Downloading crates ...
+  Downloaded fastrand v2.5.0
+error: failed to create directory `/home/fusion809/lfs_packaging/artcraft-launcher/craft-launcher-0.7.0/registry/cache/index.crates.io-1949cf8c6b5b557f`
+
+Caused by:
+  No space left on device (os error 28)
+[ERROR] build.sh exited with code 101 for artcraft-launcher
+[ERROR] Custom build failed for artcraft-launcher
+Building book package blas-lapack...
+[00:30:44] Found custom package for blas-lapack, bypassing BLFS aliases.
+tee: /home/fusion809/build_logs/blas-lapack: No space left on device
+[00:30:44] Custom package detected at /home/fusion809

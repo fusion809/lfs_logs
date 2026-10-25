@@ -1,0 +1,402 @@
+===== Update check started: 2026-10-25 06:45:00 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261025_064500
+Packages needing attention: avogadroapp avogadrolibs blas-lapack gh glib-networking glycin jkqtplotter librsvg ocaml openssl ostree patch pspp ruby samba strace valgrind vim
+===== Starting updatec: 2026-10-25 06:46:07 AEST =====
+Checking for packages with missing file inventories...
+name=avogadroapp
+local_ver=2.0.0
+remote_ver=2.1.0
+name=blas-lapack
+local_ver=1f523db
+remote_ver=c9713d3
+name=avogadrolibs
+local_ver=2.0.0
+remote_ver=2.1.0
+name=gh
+local_ver=2.103.0
+remote_ver=2.103.2
+name=glib-networking
+local_ver=2.90.0
+remote_ver=2.90.1
+name=glycin
+local_ver=2.2.3
+remote_ver=2.2.4
+name=jkqtplotter
+local_ver=d9b6f18
+remote_ver=9e9f0af
+name=librsvg
+local_ver=2.63.3
+remote_ver=2.63.4
+name=ocaml
+local_ver=5.5.1
+remote_ver=5.5.2
+name=openssl
+local_ver=4.0.3
+remote_ver=4.1.0
+name=ostree
+local_ver=2026.4
+remote_ver=2026.5
+name=patch
+local_ver=2.8
+remote_ver=2.8.1
+name=pspp
+local_ver=2.1.2
+remote_ver=2.1.3
+name=ruby
+local_ver=4.0.8
+remote_ver=4.0.9
+name=samba
+local_ver=4.25.0
+remote_ver=4.25.1
+name=strace
+local_ver=7.2
+remote_ver=7.3
+name=valgrind
+local_ver=3.27.1
+remote_ver=3.28.0
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - blas-lapack
+  - gh
+  - glib-networking
+  - jkqtplotter
+  - avogadrolibs
+  - ocaml
+  - openssl
+  - avogadroapp
+  - ostree
+  - patch
+  - pspp
+  - ruby
+  - samba
+  - strace
+  - valgrind
+  - glycin
+  - librsvg
+  - vim
+
+Building custom package blas-lapack...
+[06:51:27] Found custom package for blas-lapack, bypassing BLFS aliases.
+[06:51:27] Custom package detected at /home/fusion809/lfs_packaging/blas-lapack (package: blas-lapack)
+[06:51:27] Extracting dependencies for custom package 'blas-lapack'...
+[06:51:27] Required deps: bash cmake coreutils gcc glibc gzip make python sed tar wget 
+[06:51:28] Dependency 'bash' already installed.
+[06:51:28] Dependency 'cmake' already installed.
+[06:51:28] Dependency 'coreutils' already installed.
+[06:51:28] Dependency 'gcc' already installed.
+[06:51:28] Dependency 'glibc' already installed.
+[06:51:28] Dependency 'gzip' already installed.
+[06:51:28] Dependency 'make' already installed.
+[06:51:28] Dependency 'python' already installed.
+[06:51:28] Dependency 'sed' already installed.
+[06:51:28] Dependency 'tar' already installed.
+[06:51:28] Dependency 'wget' already installed.
+[06:51:28] Starting remote custom build for blas-lapack...
+lapack-c9713d395544dfe34a8d9d5ee523fdf35868e73c.tar.gz already present and appears valid.
+rm: cannot remove 'lapack-c9713d395544dfe34a8d9d5ee523fdf35868e73c/shared/SRC': Directory not empty
+CMake Warning:
+  Ignoring extra path from command line:
+
+   ".."
+
+
+CMake Error: The source directory "/home/fusion809/lfs_packaging/blas-lapack/lapack-c9713d395544dfe34a8d9d5ee523fdf35868e73c" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.
+make: *** No targets specified and no makefile found.  Stop.
+make: *** No rule to make target 'install/strip'.  Stop.
+CMake Warning:
+  Ignoring extra path from command line:
+
+   ".."
+
+
+CMake Error: The source directory "/home/fusion809/lfs_packaging/blas-lapack/lapack-c9713d395544dfe34a8d9d5ee523fdf35868e73c" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.
+make: *** No targets specified and no makefile found.  Stop.
+make: *** No rule to make target 'install/strip'.  Stop.
+c9713d395544dfe34a8d9d5ee523fdf35868e73c
+Updated registry for blas-lapack to version c9713d395544dfe34a8d9d5ee523fdf35868e73c
+comm: /tmp/build_state_before_blas-lapack: No such file or directory
+Recorded installed files for custom package blas-lapack in /var/lib/custom-packages/
+Building custom package gh...
+[06:52:18] Found custom package for gh, bypassing BLFS aliases.
+[06:52:18] Custom package detected at /home/fusion809/lfs_packaging/gh (package: gh)
+[06:52:18] Extracting dependencies for custom package 'gh'...
+[06:52:18] Required deps: glibc 
+[06:52:18] Dependency 'glibc' already installed.
+[06:52:18] Starting remote custom build for gh...
+cli-2.103.2.tar.gz already present and appears valid.
+GOOS= GOARCH= GOARM= GOFLAGS= CGO_ENABLED= go build -o script/build script/build.go
+go build -trimpath -ldflags "-X github.com/cli/cli/v2/internal/build.Date=2026-10-25 -X github.com/cli/cli/v2/internal/build.Version=03af22c8 " -o bin/gh ./cmd/gh
+go: downloading github.com/itchyny/timefmt-go v0.1.8
+go: downloading dario.cat/mergo v1.0.2
+go: downloading github.com/Masterminds/goutils v1.1.1
+go: downloading github.com/Masterminds/semver/v3 v3.4.0
+go: downloading github.com/huandu/xstrings v1.5.0
+go: downloading github.com/mitchellh/copystructure v1.2.0
+go: downloading github.com/shopspring/decimal v1.4.0
+go: downloading github.com/spf13/cast v1.10.0
+go: downloading golang.org/x/crypto v0.58.0
+go: downloading github.com/aymanbagabas/go-osc52/v2 v2.0.1
+go: downloading github.com/gorilla/websocket v1.5.3
+go: downloading github.com/rodaine/table v1.3.0
+go: downloading github.com/yuin/goldmark v1.8.6
+go: downloading github.com/yuin/goldmark-emoji v1.0.6
+go: downloading github.com/xo/terminfo v1.0.0
+go: downloading github.com/clipperhouse/uax29/v2 v2.7.0
+go: downloading github.com/charmbracelet/x/termios v0.1.1
+go: downloading github.com/charmbracelet/x/windows v0.2.2
+go: downloading github.com/mitchellh/reflectwalk v1.0.2
+go: downloading github.com/vmihailenco/msgpack/v5 v5.4.1
+go: downloading github.com/klauspost/compress v1.20.3
+go: downloading github.com/sigstore/protobuf-specs v0.5.2
+go: downloading github.com/distribution/reference v0.6.0
+go: downloading github.com/google/go-containerregistry v0.22.1
+go: downloading github.com/cenkalti/backoff/v5 v5.0.3
+go: downloading github.com/theupdateframework/go-tuf/v2 v2.4.2
+go: downloading github.com/digitorus/pkcs7 v0.0.0-20260914070511-d678ea5ea03f
+go: downloading github.com/secure-systems-lab/go-securesystemslib v0.11.0
+go: downloading golang.org/x/mod v0.41.0
+go: downloading github.com/sigstore/sigstore v1.10.8
+go: downloading github.com/google/certificate-transparency-go v1.3.3
+go: downloading github.com/sigstore/rekor-tiles/v2 v2.3.0
+go: downloading golang.org/x/net v0.60.0
+go: downloading github.com/gabriel-vasile/mimetype v1.4.16
+go: downloading github.com/alecthomas/chroma/v2 v2.27.0
+go: downloading github.com/charmbracelet/x/exp/slice v0.0.0-20250630141444-821143405392
+go: downloading github.com/microcosm-cc/bluemonday v1.0.27
+go: downloading github.com/vmihailenco/tagparser/v2 v2.0.0
+go: downloading github.com/opencontainers/go-digest v1.0.0
+go: downloading google.golang.org/genproto/googleapis/api v0.0.0-20260706201446-f0a921348800
+go: downloading github.com/docker/cli v29.7.2+incompatible
+go: downloading github.com/sigstore/timestamp-authority/v2 v2.1.3
+go: downloading github.com/cyberphone/json-canonicalization v0.0.0-20241213102144-19d51d7fe467
+go: downloading github.com/go-openapi/runtime v0.33.0
+go: downloading github.com/go-openapi/strfmt v0.27.0
+go: downloading github.com/go-openapi/swag/conv v0.27.3
+go: downloading github.com/go-openapi/swag v0.26.1
+go: downloading github.com/sigstore/rekor v1.5.3
+go: downloading github.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78
+go: downloading github.com/transparency-dev/merkle v0.0.2
+go: downloading github.com/grpc-ecosystem/grpc-gateway/v2 v2.29.0
+go: downloading github.com/transparency-dev/formats v0.1.1
+go: downloading google.golang.org/genproto/googleapis/rpc v0.0.0-20260706201446-f0a921348800
+go: downloading github.com/dlclark/regexp2/v2 v2.2.1
+go: downloading github.com/aymerick/douceur v0.2.0
+go: downloading github.com/sirupsen/logrus v1.9.4
+go: downloading github.com/pkg/errors v0.9.1
+go: downloading github.com/go-openapi/errors v0.22.8
+go: downloading github.com/go-viper/mapstructure/v2 v2.5.0
+go: downloading github.com/oklog/ulid/v2 v2.1.1
+go: downloading github.com/go-openapi/swag/fileutils v0.27.3
+go: downloading github.com/go-openapi/swag/jsonutils v0.27.3
+go: downloading github.com/go-openapi/swag/stringutils v0.27.3
+go: downloading github.com/blang/semver v3.5.1+incompatible
+go: downloading github.com/in-toto/in-toto-golang v0.11.0
+go: downloading github.com/go-openapi/validate v0.26.1
+go: downloading k8s.io/klog/v2 v2.140.0
+go: downloading github.com/gorilla/css v1.0.1
+go: downloading github.com/opencontainers/image-spec v1.1.1
+go: downloading github.com/docker/docker-credential-helpers v0.9.3
+go: downloading github.com/go-openapi/swag/typeutils v0.27.3
+go: downloading github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2
+go: downloading github.com/go-openapi/swag/jsonname v0.26.1
+go: downloading github.com/go-openapi/swag/cmdutils v0.27.0
+go: downloading github.com/go-openapi/swag/loading v0.27.3
+go: downloading github.com/go-openapi/swag/mangling v0.27.3
+go: downloading github.com/go-openapi/swag/netutils v0.27.0
+go: downloading github.com/go-openapi/swag/yamlutils v0.27.3
+go: downloading github.com/shibumi/go-pathspec v1.3.0
+go: downloading github.com/go-openapi/analysis v0.25.5
+go: downloading github.com/go-openapi/jsonpointer v1.0.0
+go: downloading github.com/go-openapi/loads v0.25.0
+go: downloading github.com/go-openapi/spec v0.22.9
+go: downloading github.com/go-logr/logr v1.4.4
+go: downloading go.opentelemetry.io/otel v1.44.0
+go: downloading github.com/go-openapi/runtime/server-middleware v0.30.0
+go: downloading go.opentelemetry.io/otel/trace v1.44.0
+go: downloading github.com/go-openapi/jsonreference v1.0.0
+go: downloading github.com/go-openapi/swag/pools v0.27.3
+go: downloading go.opentelemetry.io/otel/metric v1.44.0
+go: downloading github.com/go-logr/stdr v1.2.2
+go: downloading go.opentelemetry.io/auto/sdk v1.2.1
+go: downloading github.com/cespare/xxhash/v2 v2.3.0
+build.go: `bin/gh` is up to date.
+go run ./cmd/gen-docs --man-page --doc-path ./share/man/man1/
+go: downloading github.com/digitorus/pkcs7 v0.0.0-20260914070511-d678ea5ea03f
+mkdir -p ./share/bash-completion/completions ./share/fish/vendor_completions.d ./share/zsh/site-functions ./share/zsh/vendor-completions
+bin/gh completion -s bash > ./share/bash-completion/completions/gh
+bin/gh completion -s fish > ./share/fish/vendor_completions.d/gh.fish
+bin/gh completion -s zsh > ./share/zsh/site-functions/_gh
+# On Debian/Ubuntu the default zsh fpath does not include /usr/share/zsh/site-functions
+# but does include /usr/share/zsh/vendor-completions, so we ship both paths in our
+# .deb and .rpm packages. See https://github.com/cli/cli/issues/13166
+cp ./share/zsh/site-functions/_gh ./share/zsh/vendor-completions/_gh
+install -d /usr/bin
+install -m755 bin/gh /usr/bin/
+install -d /usr/share/man/man1
+install -m644 ./share/man/man1/* /usr/share/man/man1/
+install -d /usr/share/bash-completion/completions
+install -m644 ./share/bash-completion/completions/gh /usr/share/bash-completion/completions/gh
+install -d /usr/share/fish/vendor_completions.d
+install -m644 ./share/fish/vendor_completions.d/gh.fish /usr/share/fish/vendor_completions.d/gh.fish
+install -d /usr/share/zsh/site-functions
+install -m644 ./share/zsh/site-functions/_gh /usr/share/zsh/site-functions/_gh
+2.103.2
+Updated registry for gh to version 2.103.2
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package gh in /var/lib/custom-packages/
+Building custom package glib-networking...
+[06:58:03] Found custom package for glib-networking, bypassing BLFS aliases.
+[06:58:03] Custom package detected at /home/fusion809/lfs_packaging/glib-networking (package: glib-networking)
+[06:58:03] Extracting dependencies for custom package 'glib-networking'...
+[06:58:04] Required deps: glib2 glibc gmp gnutls libffi libidn2 libtasn1 libunistring nettle p11-kit pcre2 systemd util-linux zlib 
+[06:58:04] Dependency 'glib2' already installed.
+[06:58:05] Dependency 'glibc' already installed.
+[06:58:05] Dependency 'gmp' already installed.
+[06:58:05] Dependency 'gnutls' already installed.
+[06:58:05] Dependency 'libffi' already installed.
+[06:58:05] Dependency 'libidn2' already installed.
+[06:58:05] Dependency 'libtasn1' already installed.
+[06:58:05] Dependency 'libunistring' already installed.
+[06:58:05] Dependency 'nettle' already installed.
+[06:58:05] Dependency 'p11-kit' already installed.
+[06:58:05] Dependency 'pcre2' already installed.
+[06:58:05] Dependency 'systemd' already installed.
+[06:58:05] Dependency 'util-linux' already installed.
+[06:58:05] Dependency 'zlib' already installed.
+[06:58:05] Starting remote custom build for glib-networking...
+[06:58:09] [LFS-AUTOBUILD] Skipping custom package glib-networking: version 2.90.1 already installed (use -f to force build).
+Building custom package jkqtplotter...
+[06:58:10] Found custom package for jkqtplotter, bypassing BLFS aliases.
+[06:58:10] Custom package detected at /home/fusion809/lfs_packaging/jkqtplotter (package: jkqtplotter)
+[06:58:10] Extracting dependencies for custom package 'jkqtplotter'...
+[06:58:10] Starting remote custom build for jkqtplotter...
+JKQtPlotter-9e9f0af8b140192e3de7ff866a0013e7da5e1e93.tar.gz already present and appears valid.
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CImg: trying to locate CImg library
+-- Looking for j0
+-- Looking for j0 - found
+-- Looking for _j0
+-- Looking for _j0 - not found
+-- Looking for y0
+-- Looking for y0 - found
+-- Looking for _y0
+-- Looking for _y0 - not found
+-- Looking for jn
+-- Looking for jn - found
+-- Looking for _jn
+-- Looking for _jn - not found
+-- Looking for yn
+-- Looking for yn - found
+-- Looking for _yn
+-- Looking for _yn - not found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Cups: /usr/lib/libcups.so (found version "2.4.20")
+-- 
+-- =============================================================================
+-- == JKQTPlotterLib Build Information                                        ==
+-- =============================================================================
+-- Version:               5.0.0
+-- CMake Generator:       Unix Makefiles
+--    is multi-config:    NO
+-- Build type:            RelWithDebInfo
+-- Build types:           
+-- Build shared lib:      ON
+-- Using CMake:           4.4.4
+-- Using CMake Generator: Unix Makefiles
+-- Using compiler:        GNU 16.2.0, platform: Linux
+-- C++ Standard(default): C++ , required: 
+-- LIB-Architecture:      CXX:  / BASE: 
+-- bit depth:             64 bit
+-- System Name:           Linux
+-- Processor Name:        x86_64
+-- Using Qt:              6.12.0
+--                        [at /opt/qt6/lib/cmake/Qt6]
+-- XITS fonts:            LINKED IN
+-- FIRA fonts:            LINKED IN
+-- Print support:         ON
+-- Timing Info output:    ON
+-- Precompiled Header:    ON
+-- build JKQTMath:        ON
+-- build JKQTMathText:    ON
+-- build JKQTFastPlotter: ON
+-- build JKQTPlotter:     ON
+-- Installing to:         /usr
+-- =============================================================================
+-- 
+-- 
+-- .............................................................................
+-- .. BUILDING LIBRARIES
+-- .............................................................................
+-- -- Building JKQTCommon6
+-- -- Building JKQTMath6
+-- -- Building JKQTMathText6
+-- -- Building JKQTFastPlotter6
+CMake Warning at lib/jkqtfastplotter/CMakeLists.txt:7 (message):
+  -- You are building the sub-library JKQTFastPlotter, which is DEPRECTAED
+  and may be removed in future!
+
+
+-- -- Building JKQTPlotter6
+-- 
+-- .............................................................................
+-- .. BUILDING TOOLS
+-- .............................................................................
+-- ..   - Precompiled Header:  ON
+-- .............................................................................
+-- .. BUILDING TOOLS FOR JKQTMATHTEXT:
+-- ..   Building Tool jkqtmathtext_render
+-- ..   Building Tool jkqtplotter_doc_imagegenerator
+-- 
+-- .............................................................................
+-- .. BUILDING UNIT TESTS
+-- .............................................................................
+-- ..   - Precompiled Header:  ON
+-- .............................................................................
+-- .. BUILDING UNIT TESTS FOR JKQTCommon:
+-- ..   Building Unit Test JKQTPStringTools_test
+-- ..   Building Unit Test JKQTPCSSParser_test
+-- ..   Building Unit Test JKQTPDataCache_test
+-- ..   Building Unit Test JKQTPDataCache_benchmark
+-- ..   Building Unit Test jkqtpstatisticstools_test
+-- ..   Building Unit Test test_jkqtpdatastore
+-- Configuring done (30.4s)
+-- Generating done (1.7s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/jkqtplotter/JKQtPlotter-9e9f0af8b140192e3de7ff866a0013e7da5e1e93/build
+[  0%] Built target JKQTCommon6_autogen_timestamp_deps
+[  1%] Automatic MOC and UIC for target JKQTCommon6
+[  1%] Built target JKQTCommon6_autogen
+[  1%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/cmake_pch.hxx.gch
+[  1%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpdebuggingtools.cpp.o
+[  2%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/JKQTCommon6_autogen/mocs_compilation.cpp.o
+[  3%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpmathtools.cpp.o
+[  3%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpstringtools.cpp.o
+[  4%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpcodestructuring.cpp.o
+[  4%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpbasicimagetools.cpp.o
+[  5%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpconcurrencytools.cpp.o
+[  5%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpcachingtools.cpp.o
+[  6%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpgeometrytools.cpp.o
+[  6%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpdrawingtools.cpp.o
+[  8%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpenhancedpainter.cpp.o
+[  9%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtphighrestimer.cpp.o
+[  9%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqttools.cpp.o
+[ 10%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpicons.cpp.o
+[ 10%] Building CXX object lib/jkqtcommon/CMakeFiles/JKQTCommon6.dir/jkqtpcsstools.cpp.o
+/home/fusion809/lfs-scripts/updates_check_and_run.sh: line 163: 1851244 Killed                     zsh -ic 'updatec'
+===== ERROR: updatec exited with status 137 =====
+Finished: 2026-10-25 07:03:34 AEST
+Exit status: 137
