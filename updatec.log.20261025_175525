@@ -1,0 +1,106 @@
+===== Update check started: 2026-10-25 17:55:25 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261025_175525
+Packages needing attention: iana-etc
+===== Starting updatec: 2026-10-25 17:55:29 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - iana-etc
+
+Building custom package iana-etc...
+[17:57:18] Found custom package for iana-etc, bypassing BLFS aliases.
+[17:57:18] Custom package detected at /home/fusion809/lfs_packaging/iana-etc (package: iana-etc)
+[17:57:18] Extracting dependencies for custom package 'iana-etc'...
+[17:57:18] Starting remote custom build for iana-etc...
+--2026-10-25 17:57:23--  https://github.com/Mic92/iana-etc/releases/download/20261022/iana-etc-20261022.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/84966990/ca3c2d54-9792-45b8-a10c-5195e96cfb79?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-25T08%3A45%3A05Z&rscd=attachment%3B+filename%3Diana-etc-20261022.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-25T07%3A45%3A03Z&ske=2026-10-25T08%3A45%3A05Z&sks=b&skv=2018-11-09&sig=TMonpJ7U2OsNAKZve7RbRWt3ad0mwoLodqOhayl99eA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MjkxNTM0NCwibmJmIjoxNzkyOTE1MDQ0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.9r3dcigjdIZsCRaJppWPEck11WIbETOCguhG5_45ldw&response-content-disposition=attachment%3B%20filename%3Diana-etc-20261022.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2026-10-25 17:57:24--  https://release-assets.githubusercontent.com/github-production-release-asset/84966990/ca3c2d54-9792-45b8-a10c-5195e96cfb79?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-25T08%3A45%3A05Z&rscd=attachment%3B+filename%3Diana-etc-20261022.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-25T07%3A45%3A03Z&ske=2026-10-25T08%3A45%3A05Z&sks=b&skv=2018-11-09&sig=TMonpJ7U2OsNAKZve7RbRWt3ad0mwoLodqOhayl99eA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MjkxNTM0NCwibmJmIjoxNzkyOTE1MDQ0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.9r3dcigjdIZsCRaJppWPEck11WIbETOCguhG5_45ldw&response-content-disposition=attachment%3B%20filename%3Diana-etc-20261022.tar.gz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.110.133, 185.199.108.133, 185.199.111.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 611177 (597K) [application/octet-stream]
+Saving to: ‘iana-etc-20261022.tar.gz’
+
+iana-etc-20261022.t   0%[                    ]       0  --.-KB/s               iana-etc-20261022.t  44%[=======>            ] 265.81K  1.25MB/s               iana-etc-20261022.t 100%[===================>] 596.85K  1.97MB/s    in 0.3s    
+
+2026-10-25 17:57:25 (1.97 MB/s) - ‘iana-etc-20261022.tar.gz’ saved [611177/611177]
+
+'services' -> '/etc/services'
+'protocols' -> '/etc/protocols'
+20261022
+Updated registry for iana-etc to version 20261022
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package iana-etc in /var/lib/custom-packages/
+Updating Python packages via pip...
+Requirement already satisfied: chardet in /usr/lib/python3.15/site-packages (5.2.0)
+Collecting chardet
+  Using cached chardet-7.7.0-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Requirement already satisfied: mpmath in /usr/lib/python3.15/site-packages (1.3.0)
+Collecting mpmath
+  Using cached mpmath-1.4.1-py3-none-any.whl.metadata (9.1 kB)
+Requirement already satisfied: setuptools in /usr/lib/python3.15/site-packages (80.10.2)
+Collecting setuptools
+  Using cached setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+Using cached chardet-7.7.0-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.7 MB)
+Downloading mpmath-1.4.1-py3-none-any.whl (567 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 567.8/567.8 kB 9.2 MB/s  0:00:00
+Using cached setuptools-84.2.1-py3-none-any.whl (876 kB)
+Installing collected packages: setuptools, mpmath, chardet
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 80.10.2
+    Uninstalling setuptools-80.10.2:
+      Successfully uninstalled setuptools-80.10.2
+  Attempting uninstall: mpmath
+    Found existing installation: mpmath 1.3.0
+    Uninstalling mpmath-1.3.0:
+      Successfully uninstalled mpmath-1.3.0
+  Attempting uninstall: chardet
+    Found existing installation: chardet 5.2.0
+    Uninstalling chardet-5.2.0:
+      Successfully uninstalled chardet-5.2.0
+
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+sympy 1.14.0 requires mpmath<1.4,>=1.1.0, but you have mpmath 1.4.1 which is incompatible.
+mathics3-notebook-frontends 1.0.1 requires chardet<6.0.0,>=3.0.2, but you have chardet 7.7.0 which is incompatible.
+Successfully installed chardet-7.7.0 mpmath-1.4.1 setuptools-84.2.1
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+fatal: Unable to create '/var/lib/custom-packages/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, or the lock file may be stale
+Committing updates in /var/lib/custom-packages: Updating and rebuilding packages
+Committing changes in ~/build_duration: Updating and rebuilding packages
+[master 16fe9ee] Updating and rebuilding packages
+ 3 files changed, 3 insertions(+)
+ create mode 100644 woxi
+Pushing changes in ~/build_duration...
+r13.1-29
+r13.1-482
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.0...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.0-lfs-r13.1-28
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
