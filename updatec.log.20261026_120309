@@ -1,0 +1,104 @@
+===== Update check started: 2026-10-26 12:03:09 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261026_120309
+Packages needing attention: gnuplot
+===== Starting updatec: 2026-10-26 12:03:13 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - gnuplot
+
+Building custom package gnuplot...
+[12:04:57] Found custom package for gnuplot, bypassing BLFS aliases.
+[12:04:57] Custom package detected at /home/fusion809/lfs_packaging/gnuplot (package: gnuplot)
+[12:04:57] Extracting dependencies for custom package 'gnuplot'...
+[12:04:57] Required deps: bash brotli bzip2 cairo coreutils expat fontconfig freetype fribidi gcc gd glib2 glibc graphite2 gtk3 gzip harfbuzz libffi libpng libwebp libx11 libxau libxcb libxdmcp libxext libxrender lua make ncurses pango pcre2 pixman qt6 readline systemd tar util-linux zlib 
+[12:04:57] Dependency 'bash' already installed.
+[12:04:57] Dependency 'brotli' already installed.
+[12:04:57] Dependency 'bzip2' already installed.
+[12:04:57] Dependency 'cairo' already installed.
+[12:04:57] Dependency 'coreutils' already installed.
+[12:04:57] Dependency 'expat' already installed.
+[12:04:57] Dependency 'fontconfig' already installed.
+[12:04:57] Dependency 'freetype' already installed.
+[12:04:57] Dependency 'fribidi' already installed.
+[12:04:57] Dependency 'gcc' already installed.
+[12:04:57] Required dep 'gd' not found — building it first...
+[12:05:12] [LFS-AUTOBUILD] Script initialization complete. Version 2026.04.02.1
+[12:05:14] Searching for 'gd' in BLFS index...
+[12:05:28] Searching prominent metapackages for component 'gd'...
+[ERROR] Could not find page for package 'gd'
+[12:05:35] ========================================
+[12:05:35] Build completed with 1 failure(s):
+[12:05:35]   - gd
+[12:05:35] ========================================
+[12:05:35] [WARNING] Failed to build dep 'gd'. Continuing with main build...
+[12:05:35] Dependency 'glib2' already installed.
+[12:05:35] Dependency 'glibc' already installed.
+[12:05:35] Dependency 'graphite2' already installed.
+[12:05:35] Dependency 'gtk3' already installed.
+[12:05:35] Dependency 'gzip' already installed.
+[12:05:35] Dependency 'harfbuzz' already installed.
+[12:05:35] Dependency 'libffi' already installed.
+[12:05:35] Dependency 'libpng' already installed.
+[12:05:35] Dependency 'libwebp' already installed.
+[12:05:35] Dependency 'libx11' already installed.
+[12:05:35] Dependency 'libxau' already installed.
+[12:05:35] Dependency 'libxcb' already installed.
+[12:05:35] Dependency 'libxdmcp' already installed.
+[12:05:35] Dependency 'libxext' already installed.
+[12:05:35] Dependency 'libxrender' already installed.
+[12:05:35] Dependency 'lua' already installed.
+[12:05:35] Dependency 'make' already installed.
+[12:05:35] Dependency 'ncurses' already installed.
+[12:05:35] Dependency 'pango' already installed.
+[12:05:35] Dependency 'pcre2' already installed.
+[12:05:35] Dependency 'pixman' already installed.
+[12:05:35] Dependency 'qt6' already installed.
+[12:05:35] Dependency 'readline' already installed.
+[12:05:35] Dependency 'systemd' already installed.
+[12:05:35] Dependency 'tar' already installed.
+[12:05:35] Dependency 'util-linux' already installed.
+[12:05:35] Dependency 'zlib' already installed.
+[12:05:35] Starting remote custom build for gnuplot...
+--2026-10-26 12:06:01--  https://sourceforge.net/projects/gnuplot/files/gnuplot/6.0.6/gnuplot-6.0.6.tar.gz
+Resolving sourceforge.net (sourceforge.net)... 104.18.13.149, 104.18.12.149, 2606:4700::6812:d95, ...
+Connecting to sourceforge.net (sourceforge.net)|104.18.13.149|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-10-26 12:06:01 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for gnuplot
+[ERROR] Custom build failed for gnuplot
+[12:06:01] ========================================
+[12:06:01] Build completed with 1 failure(s):
+[12:06:01]   - gnuplot
+[12:06:01] ========================================
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-29
+r13.1-482
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.0...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.0-lfs-r13.1-28
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+/var/lib/custom-packages does not show any likely updates to the table.
+~/logs ~ ~/lfs_packaging
