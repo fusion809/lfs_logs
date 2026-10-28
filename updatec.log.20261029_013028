@@ -1,0 +1,780 @@
+===== Update check started: 2026-10-29 01:30:28 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261029_013028
+/dev/fd/63: line 1: 6#: command not found
+Packages needing attention: pyqt6 tesseract
+===== Starting updatec: 2026-10-29 01:30:40 AEST =====
+Checking for packages with missing file inventories...
+name=chemcanvas
+local_ver=931b83d
+remote_ver=03ee775
+name=pyqt6
+local_ver=6.11.0
+remote_ver=6.12.0
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - pyqt6
+  - chemcanvas
+  - tesseract
+
+Building custom package pyqt6...
+[01:32:27] Found custom package for pyqt6, bypassing BLFS aliases.
+[01:32:27] Custom package detected at /home/fusion809/lfs_packaging/pyqt6 (package: pyqt6)
+[01:32:27] Extracting dependencies for custom package 'pyqt6'...
+[01:32:27] Required deps: bash brotli bzip2 coreutils dbus double-conversion e2fsprogs elfutils expat flac fontconfig freetype gcc glib2 glibc graphite2 harfbuzz icu keyutils lame libdrm libffi libglvnd libogg libpciaccess libpng libsndfile libvorbis libx11 libxau libxcb libxdmcp libxext libxkbcommon libxml2 libxshmfence libxxf86vm llvm lm-sensors make mesa mitkrb mpg123 openssl opus pcre2 pulseaudio python qt6 sed spirv-tools systemd tar wayland wget xz zlib zstd 
+[01:32:28] Dependency 'bash' already installed.
+[01:32:28] Dependency 'brotli' already installed.
+[01:32:28] Dependency 'bzip2' already installed.
+[01:32:28] Dependency 'coreutils' already installed.
+[01:32:28] Dependency 'dbus' already installed.
+[01:32:28] Dependency 'double-conversion' already installed.
+[01:32:28] Dependency 'e2fsprogs' already installed.
+[01:32:28] Dependency 'elfutils' already installed.
+[01:32:28] Dependency 'expat' already installed.
+[01:32:28] Dependency 'flac' already installed.
+[01:32:28] Dependency 'fontconfig' already installed.
+[01:32:28] Dependency 'freetype' already installed.
+[01:32:28] Dependency 'gcc' already installed.
+[01:32:28] Dependency 'glib2' already installed.
+[01:32:28] Dependency 'glibc' already installed.
+[01:32:28] Dependency 'graphite2' already installed.
+[01:32:28] Dependency 'harfbuzz' already installed.
+[01:32:28] Dependency 'icu' already installed.
+[01:32:28] Dependency 'keyutils' already installed.
+[01:32:28] Dependency 'lame' already installed.
+[01:32:28] Dependency 'libdrm' already installed.
+[01:32:28] Dependency 'libffi' already installed.
+[01:32:28] Dependency 'libglvnd' already installed.
+[01:32:28] Dependency 'libogg' already installed.
+[01:32:28] Dependency 'libpciaccess' already installed.
+[01:32:28] Dependency 'libpng' already installed.
+[01:32:28] Dependency 'libsndfile' already installed.
+[01:32:28] Dependency 'libvorbis' already installed.
+[01:32:28] Dependency 'libx11' already installed.
+[01:32:28] Dependency 'libxau' already installed.
+[01:32:28] Dependency 'libxcb' already installed.
+[01:32:28] Dependency 'libxdmcp' already installed.
+[01:32:28] Dependency 'libxext' already installed.
+[01:32:28] Dependency 'libxkbcommon' already installed.
+[01:32:28] Dependency 'libxml2' already installed.
+[01:32:28] Dependency 'libxshmfence' already installed.
+[01:32:28] Dependency 'libxxf86vm' already installed.
+[01:32:28] Dependency 'llvm' already installed.
+[01:32:28] Dependency 'lm-sensors' already installed.
+[01:32:28] Dependency 'make' already installed.
+[01:32:28] Dependency 'mesa' already installed.
+[01:32:28] Dependency 'mitkrb' already installed.
+[01:32:28] Dependency 'mpg123' already installed.
+[01:32:28] Dependency 'openssl' already installed.
+[01:32:28] Dependency 'opus' already installed.
+[01:32:28] Dependency 'pcre2' already installed.
+[01:32:28] Dependency 'pulseaudio' already installed.
+[01:32:28] Dependency 'python' already installed.
+[01:32:28] Dependency 'qt6' already installed.
+[01:32:28] Dependency 'sed' already installed.
+[01:32:28] Dependency 'spirv-tools' already installed.
+[01:32:28] Dependency 'systemd' already installed.
+[01:32:28] Dependency 'tar' already installed.
+[01:32:28] Dependency 'wayland' already installed.
+[01:32:28] Dependency 'wget' already installed.
+[01:32:28] Dependency 'xz' already installed.
+[01:32:28] Dependency 'zlib' already installed.
+[01:32:28] Dependency 'zstd' already installed.
+[01:32:28] Starting remote custom build for pyqt6...
+build.sh: line 1: 6#: command not found
+--2026-10-29 01:33:14--  https://pypi.python.org/packages/source/P/PyQt6/pyqt6-6.12.0.tar.gz
+Resolving pypi.python.org (pypi.python.org)... 151.101.192.223, 151.101.128.223, 151.101.0.223, ...
+Connecting to pypi.python.org (pypi.python.org)|151.101.192.223|:443... connected.
+HTTP request sent, awaiting response... 301 Redirect to Primary Domain
+Location: https://pypi.org/packages/source/P/PyQt6/pyqt6-6.12.0.tar.gz [following]
+--2026-10-29 01:33:14--  https://pypi.org/packages/source/P/PyQt6/pyqt6-6.12.0.tar.gz
+Resolving pypi.org (pypi.org)... 151.101.0.223, 151.101.192.223, 151.101.128.223, ...
+Connecting to pypi.org (pypi.org)|151.101.0.223|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://files.pythonhosted.org/packages/source/P/PyQt6/pyqt6-6.12.0.tar.gz [following]
+--2026-10-29 01:33:14--  https://files.pythonhosted.org/packages/source/P/PyQt6/pyqt6-6.12.0.tar.gz
+Resolving files.pythonhosted.org (files.pythonhosted.org)... 151.101.192.223, 151.101.0.223, 151.101.128.223, ...
+Connecting to files.pythonhosted.org (files.pythonhosted.org)|151.101.192.223|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://files.pythonhosted.org/packages/8b/77/73ae0fd2ce7915ce87269743fd11f14f009b8db60a58759afc1c402327f2/pyqt6-6.12.0.tar.gz [following]
+--2026-10-29 01:33:14--  https://files.pythonhosted.org/packages/8b/77/73ae0fd2ce7915ce87269743fd11f14f009b8db60a58759afc1c402327f2/pyqt6-6.12.0.tar.gz
+Reusing existing connection to files.pythonhosted.org:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1106528 (1.1M) [application/octet-stream]
+Saving to: ‘pyqt6-6.12.0.tar.gz’
+
+pyqt6-6.12.0.tar.gz   0%[                    ]       0  --.-KB/s               pyqt6-6.12.0.tar.gz 100%[===================>]   1.05M  --.-KB/s    in 0.1s    
+
+2026-10-29 01:33:14 (8.10 MB/s) - ‘pyqt6-6.12.0.tar.gz’ saved [1106528/1106528]
+
+/dev/fd/63: line 1: 6#: command not found
+--2026-10-29 01:33:24--  https://aur.archlinux.org/cgit/aur.git/plain/qt-6.12.patch?h=pyqt6-git
+Resolving aur.archlinux.org (aur.archlinux.org)... 209.126.35.78, 2604:cac0:a104:d::2
+Connecting to aur.archlinux.org (aur.archlinux.org)|209.126.35.78|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-10-29 01:33:26 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for pyqt6
+[ERROR] Custom build failed for pyqt6
+[01:33:26] ========================================
+[01:33:26] Build completed with 1 failure(s):
+[01:33:26]   - pyqt6
+[01:33:26] ========================================
+Building custom package chemcanvas...
+[01:33:26] Found custom package for chemcanvas, bypassing BLFS aliases.
+[01:33:26] Custom package detected at /home/fusion809/lfs_packaging/chemcanvas (package: chemcanvas)
+[01:33:26] Extracting dependencies for custom package 'chemcanvas'...
+[01:33:26] Required deps: pyqt6 python 
+[01:33:26] Dependency 'pyqt6' already installed.
+[01:33:26] Dependency 'python' already installed.
+[01:33:26] Starting remote custom build for chemcanvas...
+--2026-10-29 01:33:32--  https://github.com/ksharindam/chemcanvas/archive/03ee775e6a27ca9c6594f66f4687a2c2b7e00345.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/ksharindam/chemcanvas/tar.gz/03ee775e6a27ca9c6594f66f4687a2c2b7e00345 [following]
+--2026-10-29 01:33:32--  https://codeload.github.com/ksharindam/chemcanvas/tar.gz/03ee775e6a27ca9c6594f66f4687a2c2b7e00345
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘chemcanvas-03ee775e6a27ca9c6594f66f4687a2c2b7e00345.tar.gz’
+
+          chemcanva     [<=>                 ]       0  --.-KB/s               chemcanvas-03ee775e     [ <=>                ] 407.99K  --.-KB/s    in 0.1s    
+
+2026-10-29 01:33:33 (2.78 MB/s) - ‘chemcanvas-03ee775e6a27ca9c6594f66f4687a2c2b7e00345.tar.gz’ saved [417782]
+
+Processing ./.
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: chemcanvas
+  Building wheel for chemcanvas (pyproject.toml): started
+  Building wheel for chemcanvas (pyproject.toml): finished with status 'done'
+  Created wheel for chemcanvas: filename=chemcanvas-0.15.0-py3-none-any.whl size=343299 sha256=522455246b6087ef563ac395b7471294f56ff519aa1286fa877095703f13df37
+  Stored in directory: /tmp/pip-ephem-wheel-cache-yp8svf3n/wheels/1a/51/f0/c3988cc1a35583483c81a8161628767d8ea486104113cd9dd7
+Successfully built chemcanvas
+Installing collected packages: chemcanvas
+Successfully installed chemcanvas-0.15.0
+#!/bin/bash
+export PATH=$PATH:/opt/chemcanvas-qt6/bin
+export LD_LIBRARY_PATH=$PATH:/opt/chemcanvas-qt6/lib
+export PYTHONPATH=/opt/chemcanvas-qt6/lib/python3.15/site-packages/chemcanvas:/opt/chemcanvas-qt6/lib/python3.15/site-packages
+export QT_QPA_PLATFORM_PLUGIN_PATH=/opt/qt6/plugins/platforms
+/opt/chemcanvas-qt6/bin/chemcanvas "$@"
+[Desktop Entry]
+Type=Application
+Name=ChemCanvas Qt6
+Comment=A 2D Chemical Drawing Tool
+Exec=/usr/bin/chemcanvas-qt6 %f
+TryExec=/usr/bin/chemcanvas-qt6
+Icon=chemcanvas
+Categories=Science;Education;Chemistry;
+StartupWMClass=chemcanvas
+MimeType=image/svg+xml;application/vnd.ksharindam.ccdx+xml;
+Terminal=false
+StartupNotify=false
+03ee775e6a27ca9c6594f66f4687a2c2b7e00345
+Updated registry for chemcanvas to version 03ee775e6a27ca9c6594f66f4687a2c2b7e00345
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package chemcanvas in /var/lib/custom-packages/
+Building custom package tesseract...
+[01:33:47] Found custom package for tesseract, bypassing BLFS aliases.
+[01:33:47] Custom package detected at /home/fusion809/lfs_packaging/tesseract (package: tesseract)
+[01:33:47] Extracting dependencies for custom package 'tesseract'...
+[01:33:47] Required deps: acl bash brotli bzip2 coreutils curl cyrus-sasl gcc giflib glibc gzip icu leptonica libarchive libidn2 libjpeg-turbo libpng libpsl libunistring libwebp libxml2 lz4 make nghttp2 openjpeg openldap openssl pango tar tiff wget xz zlib zstd 
+[01:33:47] Dependency 'acl' already installed.
+[01:33:47] Dependency 'bash' already installed.
+[01:33:47] Dependency 'brotli' already installed.
+[01:33:47] Dependency 'bzip2' already installed.
+[01:33:47] Dependency 'coreutils' already installed.
+[01:33:47] Dependency 'curl' already installed.
+[01:33:47] Dependency 'cyrus-sasl' already installed.
+[01:33:47] Dependency 'gcc' already installed.
+[01:33:47] Dependency 'giflib' already installed.
+[01:33:47] Dependency 'glibc' already installed.
+[01:33:47] Dependency 'gzip' already installed.
+[01:33:47] Dependency 'icu' already installed.
+[01:33:47] Dependency 'leptonica' already installed.
+[01:33:47] Dependency 'libarchive' already installed.
+[01:33:47] Dependency 'libidn2' already installed.
+[01:33:47] Dependency 'libjpeg-turbo' already installed.
+[01:33:47] Dependency 'libpng' already installed.
+[01:33:47] Dependency 'libpsl' already installed.
+[01:33:47] Dependency 'libunistring' already installed.
+[01:33:47] Dependency 'libwebp' already installed.
+[01:33:47] Dependency 'libxml2' already installed.
+[01:33:47] Dependency 'lz4' already installed.
+[01:33:47] Dependency 'make' already installed.
+[01:33:47] Dependency 'nghttp2' already installed.
+[01:33:47] Dependency 'openjpeg' already installed.
+[01:33:47] Dependency 'openldap' already installed.
+[01:33:47] Dependency 'openssl' already installed.
+[01:33:47] Dependency 'pango' already installed.
+[01:33:47] Dependency 'tar' already installed.
+[01:33:47] Dependency 'tiff' already installed.
+[01:33:47] Dependency 'wget' already installed.
+[01:33:47] Dependency 'xz' already installed.
+[01:33:47] Dependency 'zlib' already installed.
+[01:33:47] Dependency 'zstd' already installed.
+[01:33:47] Starting remote custom build for tesseract...
+--2026-10-29 01:33:52--  https://github.com/tesseract-ocr/tesseract/archive/5.5.4.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/tesseract-ocr/tesseract/tar.gz/refs/tags/5.5.4 [following]
+--2026-10-29 01:33:53--  https://codeload.github.com/tesseract-ocr/tesseract/tar.gz/refs/tags/5.5.4
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1969431 (1.9M) [application/x-gzip]
+Saving to: ‘tesseract-5.5.4.tar.gz’
+
+tesseract-5.5.4.tar   0%[                    ]       0  --.-KB/s               tesseract-5.5.4.tar  50%[=========>          ] 962.48K  4.70MB/s               tesseract-5.5.4.tar 100%[===================>]   1.88M  6.57MB/s    in 0.3s    
+
+2026-10-29 01:33:53 (6.57 MB/s) - ‘tesseract-5.5.4.tar.gz’ saved [1969431/1969431]
+
+Running aclocal
+Running /usr/bin/libtoolize
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'config'.
+libtoolize: copying file 'config/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+Running aclocal
+Running autoconf
+Running autoheader
+Running automake --add-missing --copy
+configure.ac:386: installing 'config/compile'
+configure.ac:88: installing 'config/config.guess'
+configure.ac:88: installing 'config/config.sub'
+configure.ac:27: installing 'config/install-sh'
+configure.ac:27: installing 'config/missing'
+Makefile.am: installing 'config/depcomp'
+parallel-tests: installing 'config/test-driver'
+
+All done.
+To build the software now, do something like:
+
+$ ./configure [--enable-debug] [...other options]
+configure found
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '97' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking dependency style of g++... gcc3
+checking for a sed that does not truncate output... /usr/bin/sed
+checking Major version... 5
+checking Minor version... 5
+checking Point version... 4
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether C++ compiler accepts -Werror=unused-command-line-argument... no
+checking whether C++ compiler accepts -mavx... yes
+checking whether C++ compiler accepts -mavx2... yes
+checking whether C++ compiler accepts -mavx512f... yes
+checking whether C++ compiler accepts -mfma... yes
+checking whether C++ compiler accepts -msse4.1... yes
+checking for feenableexcept... yes
+checking whether C++ compiler accepts -fopenmp-simd... yes
+checking --enable-float32 argument... 
+checking --enable-graphics argument... 
+checking --enable-legacy argument... 
+checking for g++ option to support OpenMP... -fopenmp
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for tiffio.h... yes
+checking --enable-visibility argument... 
+checking whether to use tessdata-prefix... yes
+checking if compiling with clang... no
+checking whether to enable debugging... 
+checking how to print strings... printf
+checking for gcc... gcc
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C23 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether C++ compiler accepts -std=c++17... yes
+checking whether C++ compiler accepts -std=c++20... yes
+checking for library containing pthread_create... none required
+checking for brew... false
+checking for asciidoctor... false
+checking for asciidoctor-pdf... false
+checking for wchar_t... yes
+checking for long long int... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libcurl... yes
+checking for lept >= 1.80... yes
+checking for libarchive... yes
+checking for icu-uc >= 52.1... yes
+checking for icu-i18n >= 52.1... yes
+checking for pango >= 1.38.0... yes
+checking for cairo... yes
+checking for pangocairo... yes
+checking for pangoft2... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating include/tesseract/version.h
+config.status: creating Makefile
+config.status: creating tesseract.pc
+config.status: creating tessdata/Makefile
+config.status: creating tessdata/configs/Makefile
+config.status: creating tessdata/tessconfigs/Makefile
+config.status: creating java/Makefile
+config.status: creating java/com/Makefile
+config.status: creating java/com/google/Makefile
+config.status: creating java/com/google/scrollview/Makefile
+config.status: creating java/com/google/scrollview/events/Makefile
+config.status: creating java/com/google/scrollview/ui/Makefile
+config.status: creating nsis/Makefile
+config.status: creating include/config_auto.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+Configuration is done.
+You can now build and install tesseract by running:
+
+$ make
+$ sudo make install
+$ sudo ldconfig
+
+Documentation will not be built because asciidoctor is missing.
+
+Training tools can be built and installed with:
+
+$ make training
+$ sudo make training-install
+
+Making all in .
+make[1]: Entering directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4'
+  CXX      src/arch/libtesseract_avx_la-dotproductavx.lo
+  CXX      src/arch/libtesseract_native_la-dotproduct.lo
+  CXX      src/arch/libtesseract_avx2_la-intsimdmatrixavx2.lo
+  CXX      src/arch/libtesseract_avx512_la-dotproductavx512.lo
+  CXX      src/arch/libtesseract_fma_la-dotproductfma.lo
+  CXX      src/arch/libtesseract_sse_la-dotproductsse.lo
+  CXX      src/arch/libtesseract_sse_la-intsimdmatrixsse.lo
+  CXX      src/tesseract-tesseract.o
+  CXX      src/api/libtesseract_la-baseapi.lo
+  CXX      src/api/libtesseract_la-altorenderer.lo
+  CXX      src/api/libtesseract_la-pagerenderer.lo
+  CXX      src/api/libtesseract_la-capi.lo
+  CXX      src/api/libtesseract_la-hocrrenderer.lo
+  CXX      src/api/libtesseract_la-lstmboxrenderer.lo
+  CXX      src/api/libtesseract_la-pdfrenderer.lo
+  CXX      src/api/libtesseract_la-renderer.lo
+  CXX      src/api/libtesseract_la-wordstrboxrenderer.lo
+  CXX      src/arch/libtesseract_la-intsimdmatrix.lo
+  CXX      src/arch/libtesseract_la-simddetect.lo
+  CXX      src/ccmain/libtesseract_la-applybox.lo
+  CXX      src/ccmain/libtesseract_la-control.lo
+  CXX      src/ccmain/libtesseract_la-linerec.lo
+  CXX      src/ccmain/libtesseract_la-ltrresultiterator.lo
+  CXX      src/ccmain/libtesseract_la-mutableiterator.lo
+  CXX      src/ccmain/libtesseract_la-output.lo
+  CXX      src/ccmain/libtesseract_la-pageiterator.lo
+  CXX      src/ccmain/libtesseract_la-pagesegmain.lo
+  CXX      src/ccmain/libtesseract_la-pagewalk.lo
+  CXX      src/ccmain/libtesseract_la-paragraphs.lo
+  CXX      src/ccmain/libtesseract_la-paramsd.lo
+  CXX      src/ccmain/libtesseract_la-pgedit.lo
+  CXX      src/ccmain/libtesseract_la-reject.lo
+  CXX      src/ccmain/libtesseract_la-resultiterator.lo
+  CXX      src/ccmain/libtesseract_la-tessedit.lo
+  CXX      src/ccmain/libtesseract_la-tesseractclass.lo
+  CXX      src/ccmain/libtesseract_la-tessvars.lo
+  CXX      src/ccmain/libtesseract_la-thresholder.lo
+  CXX      src/ccmain/libtesseract_la-werdit.lo
+  CXX      src/ccmain/libtesseract_la-adaptions.lo
+  CXX      src/ccmain/libtesseract_la-docqual.lo
+  CXX      src/ccmain/libtesseract_la-equationdetect.lo
+  CXX      src/ccmain/libtesseract_la-fixspace.lo
+  CXX      src/ccmain/libtesseract_la-fixxht.lo
+  CXX      src/ccmain/libtesseract_la-osdetect.lo
+  CXX      src/ccmain/libtesseract_la-par_control.lo
+  CXX      src/ccmain/libtesseract_la-recogtraining.lo
+  CXX      src/ccmain/libtesseract_la-superscript.lo
+  CXX      src/ccmain/libtesseract_la-tessbox.lo
+  CXX      src/ccmain/libtesseract_la-tfacepp.lo
+  CXX      src/ccstruct/libtesseract_la-blamer.lo
+  CXX      src/ccstruct/libtesseract_la-blobbox.lo
+  CXX      src/ccstruct/libtesseract_la-blobs.lo
+  CXX      src/ccstruct/libtesseract_la-blread.lo
+  CXX      src/ccstruct/libtesseract_la-boxread.lo
+  CXX      src/ccstruct/libtesseract_la-boxword.lo
+  CXX      src/ccstruct/libtesseract_la-coutln.lo
+  CXX      src/ccstruct/libtesseract_la-detlinefit.lo
+  CXX      src/ccstruct/libtesseract_la-dppoint.lo
+  CXX      src/ccstruct/libtesseract_la-image.lo
+  CXX      src/ccstruct/libtesseract_la-imagedata.lo
+  CXX      src/ccstruct/libtesseract_la-linlsq.lo
+  CXX      src/ccstruct/libtesseract_la-matrix.lo
+  CXX      src/ccstruct/libtesseract_la-mod128.lo
+  CXX      src/ccstruct/libtesseract_la-normalis.lo
+  CXX      src/ccstruct/libtesseract_la-ocrblock.lo
+  CXX      src/ccstruct/libtesseract_la-ocrpara.lo
+  CXX      src/ccstruct/libtesseract_la-ocrrow.lo
+  CXX      src/ccstruct/libtesseract_la-otsuthr.lo
+  CXX      src/ccstruct/libtesseract_la-pageres.lo
+  CXX      src/ccstruct/libtesseract_la-pdblock.lo
+  CXX      src/ccstruct/libtesseract_la-points.lo
+  CXX      src/ccstruct/libtesseract_la-polyblk.lo
+  CXX      src/ccstruct/libtesseract_la-quadlsq.lo
+  CXX      src/ccstruct/libtesseract_la-quspline.lo
+  CXX      src/ccstruct/libtesseract_la-ratngs.lo
+  CXX      src/ccstruct/libtesseract_la-rect.lo
+  CXX      src/ccstruct/libtesseract_la-rejctmap.lo
+  CXX      src/ccstruct/libtesseract_la-seam.lo
+  CXX      src/ccstruct/libtesseract_la-split.lo
+  CXX      src/ccstruct/libtesseract_la-statistc.lo
+  CXX      src/ccstruct/libtesseract_la-stepblob.lo
+  CXX      src/ccstruct/libtesseract_la-werd.lo
+  CXX      src/ccstruct/libtesseract_la-fontinfo.lo
+  CXX      src/ccstruct/libtesseract_la-params_training_featdef.lo
+  CXX      src/ccutil/libtesseract_la-ccutil.lo
+  CXX      src/ccutil/libtesseract_la-errcode.lo
+  CXX      src/ccutil/libtesseract_la-serialis.lo
+  CXX      src/ccutil/libtesseract_la-scanutils.lo
+  CXX      src/ccutil/libtesseract_la-tessdatamanager.lo
+  CXX      src/ccutil/libtesseract_la-tprintf.lo
+  CXX      src/ccutil/libtesseract_la-unichar.lo
+  CXX      src/ccutil/libtesseract_la-unicharcompress.lo
+  CXX      src/ccutil/libtesseract_la-unicharmap.lo
+  CXX      src/ccutil/libtesseract_la-unicharset.lo
+  CXX      src/ccutil/libtesseract_la-params.lo
+  CXX      src/ccutil/libtesseract_la-ambigs.lo
+  CXX      src/ccutil/libtesseract_la-bitvector.lo
+  CXX      src/ccutil/libtesseract_la-indexmapbidi.lo
+  CXX      src/classify/libtesseract_la-classify.lo
+  CXX      src/classify/libtesseract_la-adaptive.lo
+  CXX      src/classify/libtesseract_la-adaptmatch.lo
+  CXX      src/classify/libtesseract_la-blobclass.lo
+  CXX      src/classify/libtesseract_la-cluster.lo
+  CXX      src/classify/libtesseract_la-clusttool.lo
+  CXX      src/classify/libtesseract_la-cutoffs.lo
+  CXX      src/classify/libtesseract_la-featdefs.lo
+  CXX      src/classify/libtesseract_la-float2int.lo
+  CXX      src/classify/libtesseract_la-fpoint.lo
+  CXX      src/classify/libtesseract_la-intfeaturespace.lo
+  CXX      src/classify/libtesseract_la-intfx.lo
+  CXX      src/classify/libtesseract_la-intmatcher.lo
+  CXX      src/classify/libtesseract_la-intproto.lo
+  CXX      src/classify/libtesseract_la-kdtree.lo
+  CXX      src/classify/libtesseract_la-mfoutline.lo
+  CXX      src/classify/libtesseract_la-mfx.lo
+  CXX      src/classify/libtesseract_la-normfeat.lo
+  CXX      src/classify/libtesseract_la-normmatch.lo
+  CXX      src/classify/libtesseract_la-ocrfeatures.lo
+  CXX      src/classify/libtesseract_la-outfeat.lo
+  CXX      src/classify/libtesseract_la-picofeat.lo
+  CXX      src/classify/libtesseract_la-protos.lo
+  CXX      src/classify/libtesseract_la-shapeclassifier.lo
+  CXX      src/classify/libtesseract_la-shapetable.lo
+  CXX      src/classify/libtesseract_la-tessclassifier.lo
+  CXX      src/classify/libtesseract_la-trainingsample.lo
+  CXX      src/cutil/libtesseract_la-oldlist.lo
+  CXX      src/dict/libtesseract_la-context.lo
+  CXX      src/dict/libtesseract_la-dawg.lo
+  CXX      src/dict/libtesseract_la-dawg_cache.lo
+  CXX      src/dict/libtesseract_la-dict.lo
+  CXX      src/dict/libtesseract_la-stopper.lo
+  CXX      src/dict/libtesseract_la-trie.lo
+  CXX      src/dict/libtesseract_la-hyphen.lo
+  CXX      src/dict/libtesseract_la-permdawg.lo
+  CXX      src/lstm/libtesseract_la-convolve.lo
+  CXX      src/lstm/libtesseract_la-fullyconnected.lo
+  CXX      src/lstm/libtesseract_la-functions.lo
+  CXX      src/lstm/libtesseract_la-input.lo
+  CXX      src/lstm/libtesseract_la-lstm.lo
+  CXX      src/lstm/libtesseract_la-lstmrecognizer.lo
+  CXX      src/lstm/libtesseract_la-maxpool.lo
+  CXX      src/lstm/libtesseract_la-network.lo
+  CXX      src/lstm/libtesseract_la-networkio.lo
+  CXX      src/lstm/libtesseract_la-parallel.lo
+  CXX      src/lstm/libtesseract_la-plumbing.lo
+  CXX      src/lstm/libtesseract_la-recodebeam.lo
+  CXX      src/lstm/libtesseract_la-reconfig.lo
+  CXX      src/lstm/libtesseract_la-reversed.lo
+  CXX      src/lstm/libtesseract_la-series.lo
+  CXX      src/lstm/libtesseract_la-stridemap.lo
+  CXX      src/lstm/libtesseract_la-weightmatrix.lo
+  CXX      src/textord/libtesseract_la-alignedblob.lo
+  CXX      src/textord/libtesseract_la-baselinedetect.lo
+  CXX      src/textord/libtesseract_la-bbgrid.lo
+  CXX      src/textord/libtesseract_la-blkocc.lo
+  CXX      src/textord/libtesseract_la-blobgrid.lo
+  CXX      src/textord/libtesseract_la-ccnontextdetect.lo
+  CXX      src/textord/libtesseract_la-cjkpitch.lo
+  CXX      src/textord/libtesseract_la-colfind.lo
+  CXX      src/textord/libtesseract_la-colpartition.lo
+  CXX      src/textord/libtesseract_la-colpartitionset.lo
+  CXX      src/textord/libtesseract_la-colpartitiongrid.lo
+  CXX      src/textord/libtesseract_la-devanagari_processing.lo
+  CXX      src/textord/libtesseract_la-drawtord.lo
+  CXX      src/textord/libtesseract_la-edgblob.lo
+  CXX      src/textord/libtesseract_la-edgloop.lo
+  CXX      src/textord/libtesseract_la-fpchop.lo
+  CXX      src/textord/libtesseract_la-gap_map.lo
+  CXX      src/textord/libtesseract_la-imagefind.lo
+  CXX      src/textord/libtesseract_la-linefind.lo
+  CXX      src/textord/libtesseract_la-makerow.lo
+  CXX      src/textord/libtesseract_la-oldbasel.lo
+  CXX      src/textord/libtesseract_la-pithsync.lo
+  CXX      src/textord/libtesseract_la-pitsync1.lo
+  CXX      src/textord/libtesseract_la-scanedg.lo
+  CXX      src/textord/libtesseract_la-sortflts.lo
+  CXX      src/textord/libtesseract_la-strokewidth.lo
+  CXX      src/textord/libtesseract_la-tabfind.lo
+  CXX      src/textord/libtesseract_la-tablefind.lo
+  CXX      src/textord/libtesseract_la-tabvector.lo
+  CXX      src/textord/libtesseract_la-tablerecog.lo
+  CXX      src/textord/libtesseract_la-textlineprojection.lo
+  CXX      src/textord/libtesseract_la-textord.lo
+  CXX      src/textord/libtesseract_la-topitch.lo
+  CXX      src/textord/libtesseract_la-tordmain.lo
+  CXX      src/textord/libtesseract_la-tospace.lo
+  CXX      src/textord/libtesseract_la-tovars.lo
+  CXX      src/textord/libtesseract_la-underlin.lo
+  CXX      src/textord/libtesseract_la-wordseg.lo
+  CXX      src/textord/libtesseract_la-workingpartset.lo
+  CXX      src/textord/libtesseract_la-equationdetectbase.lo
+  CXX      src/viewer/libtesseract_la-scrollview.lo
+  CXX      src/viewer/libtesseract_la-svmnode.lo
+  CXX      src/viewer/libtesseract_la-svutil.lo
+  CXX      src/wordrec/libtesseract_la-tface.lo
+  CXX      src/wordrec/libtesseract_la-wordrec.lo
+  CXX      src/wordrec/libtesseract_la-associate.lo
+  CXX      src/wordrec/libtesseract_la-chop.lo
+  CXX      src/wordrec/libtesseract_la-chopper.lo
+  CXX      src/wordrec/libtesseract_la-drawfx.lo
+  CXX      src/wordrec/libtesseract_la-findseam.lo
+  CXX      src/wordrec/libtesseract_la-gradechop.lo
+  CXX      src/wordrec/libtesseract_la-language_model.lo
+  CXX      src/wordrec/libtesseract_la-lm_consistency.lo
+  CXX      src/wordrec/libtesseract_la-lm_pain_points.lo
+  CXX      src/wordrec/libtesseract_la-lm_state.lo
+  CXX      src/wordrec/libtesseract_la-outlines.lo
+  CXX      src/wordrec/libtesseract_la-params_model.lo
+  CXX      src/wordrec/libtesseract_la-pieces.lo
+  CXX      src/wordrec/libtesseract_la-plotedges.lo
+  CXX      src/wordrec/libtesseract_la-render.lo
+  CXX      src/wordrec/libtesseract_la-segsearch.lo
+  CXX      src/wordrec/libtesseract_la-wordclass.lo
+  CXXLD    libtesseract_native.la
+  CXXLD    libtesseract_avx.la
+  CXXLD    libtesseract_avx2.la
+  CXXLD    libtesseract_avx512.la
+  CXXLD    libtesseract_fma.la
+  CXXLD    libtesseract_sse.la
+  CXXLD    libtesseract.la
+  CXXLD    tesseract
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4'
+Making all in tessdata
+make[1]: Entering directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata'
+Making all in configs
+make[2]: Entering directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata/configs'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata/configs'
+Making all in tessconfigs
+make[2]: Entering directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata/tessconfigs'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata/tessconfigs'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata'
+Making install in .
+make[1]: Entering directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4'
+ /usr/bin/mkdir -p '/usr/lib'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libtesseract.la '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libtesseract.so.5.0.5 /usr/lib/libtesseract.so.5.0.5
+libtool: install: (cd /usr/lib && { ln -s -f libtesseract.so.5.0.5 libtesseract.so.5 || { rm -f libtesseract.so.5 && ln -s libtesseract.so.5.0.5 libtesseract.so.5; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libtesseract.so.5.0.5 libtesseract.so || { rm -f libtesseract.so && ln -s libtesseract.so.5.0.5 libtesseract.so; }; })
+libtool: install: /usr/bin/install -c .libs/libtesseract.lai /usr/lib/libtesseract.la
+libtool: install: /usr/bin/install -c .libs/libtesseract.a /usr/lib/libtesseract.a
+libtool: install: chmod 644 /usr/lib/libtesseract.a
+libtool: install: ranlib /usr/lib/libtesseract.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+After a 'make install' for many GNU/Linux systems, 'ldconfig LIBDIR'
+may need to be executed to help locate newly installed libraries,
+but you should consult with a system administrator before updating
+the shared library cache as this should be done with great care
+and consideration. (See the 'Platform-specific configuration notes'
+section of the documentation for more information.)
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c tesseract '/usr/bin'
+libtool: install: /usr/bin/install -c .libs/tesseract /usr/bin/tesseract
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 tesseract.pc '/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/usr/include/tesseract'
+ /usr/bin/install -c -m 644 ./include/tesseract/version.h include/tesseract/baseapi.h include/tesseract/capi.h include/tesseract/export.h include/tesseract/ltrresultiterator.h include/tesseract/ocrclass.h include/tesseract/osdetect.h include/tesseract/pageiterator.h include/tesseract/publictypes.h include/tesseract/renderer.h include/tesseract/resultiterator.h include/tesseract/unichar.h '/usr/include/tesseract'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4'
+Making install in tessdata
+make[1]: Entering directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata'
+Making install in configs
+make[2]: Entering directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata/configs'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata/configs'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/tessdata/configs'
+ /usr/bin/install -c -m 644 inter makebox box.train unlv ambigs.train lstm.train lstmdebug api_config kannada box.train.stderr quiet logfile digits get.images lstmbox wordstrbox alto hocr page pdf tsv txt linebox rebox strokewidth bigram '/usr/share/tessdata/configs'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata/configs'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata/configs'
+Making install in tessconfigs
+make[2]: Entering directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata/tessconfigs'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata/tessconfigs'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/tessdata/tessconfigs'
+ /usr/bin/install -c -m 644 batch batch.nochop nobatch matdemo segdemo msdemo '/usr/share/tessdata/tessconfigs'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata/tessconfigs'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata/tessconfigs'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/tessdata'
+ /usr/bin/install -c -m 644 pdf.ttf '/usr/share/tessdata'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/tesseract/tesseract-5.5.4/tessdata'
+5.5.4
+Updated registry for tesseract to version 5.5.4
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package tesseract in /var/lib/custom-packages/
+Updating Python packages via pip...
+Requirement already satisfied: tzdata in /usr/lib/python3.15/site-packages (2026.5)
+Collecting tzdata
+  Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Installing collected packages: tzdata
+  Attempting uninstall: tzdata
+    Found existing installation: tzdata 2026.5
+    Uninstalling tzdata-2026.5:
+      Successfully uninstalled tzdata-2026.5
+Successfully installed tzdata-2026.6
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master 1d8e263] Updating packages
+ 2 files changed, 4 insertions(+), 13 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master 6f58318] Updating packages
+ 2 files changed, 2 insertions(+)
+Pushing changes in ~/build_duration...
+r13.1-32
+r13.1-508
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+/home/fusion809/lfs-scripts/updates_check_and_run.sh: line 163: 2631253 Killed                     zsh -ic 'updatec'
+===== ERROR: updatec exited with status 137 =====
