@@ -1,0 +1,38 @@
+===== Update check started: 2026-10-28 17:35:27 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261028_173527
+Packages needing attention: blas-lapack tzdata
+===== Starting updatec: 2026-10-28 17:35:50 AEST =====
+Checking for packages with missing file inventories...
+name=blas-lapack
+local_ver=6a1a8b8
+remote_ver=1d41940
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - blas-lapack
+  - tzdata
+
+Building custom package blas-lapack...
+[17:39:03] Found custom package for blas-lapack, bypassing BLFS aliases.
+[17:39:03] Custom package detected at /home/fusion809/lfs_packaging/blas-lapack (package: blas-lapack)
+[17:39:03] Extracting dependencies for custom package 'blas-lapack'...
+[17:39:03] Required deps: bash cmake coreutils gcc glibc gzip make python sed tar wget 
+[17:39:03] Dependency 'bash' already installed.
+[17:39:03] Dependency 'cmake' already installed.
+[17:39:03] Dependency 'coreutils' already installed.
+[17:39:03] Dependency 'gcc' already installed.
+[17:39:03] Dependency 'glibc' already installed.
+[17:39:03] Dependency 'gzip' already installed.
+[17:39:04] Dependency 'make' already installed.
+[17:39:04] Dependency 'python' already installed.
+[17:39:04] Dependency 'sed' already installed.
+[17:39:04] Dependency 'tar' already installed.
+[17:39:04] Dependency 'wget' already installed.
+[17:39:04] Starting remote custom build for blas-lapack...
+--2026-10-28 17:39:15--  https://github.com/Reference-LAPACK/lapack/archive/1d4194059ff7596ea48f941bf1eb7a507d86134d.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/Reference-LAPACK/lapack/tar.gz/1d4194059ff7596ea48f941bf1eb7a507d86134d [following]
+--2026-10-28 17:39:15--  https://codeload.github.com/Reference-LAPACK/lapack/tar.gz/1d4194059ff7596ea48f941bf1eb7a507d86134d
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
