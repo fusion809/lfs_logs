@@ -1,0 +1,792 @@
+===== Update check started: 2026-10-29 07:50:26 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261029_075026
+Packages needing attention: appstream
+===== Starting updatec: 2026-10-29 07:50:31 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - appstream
+
+Building custom package appstream...
+[07:52:09] Found custom package for appstream, bypassing BLFS aliases.
+[07:52:09] Custom package detected at /home/fusion809/lfs_packaging/appstream (package: appstream)
+[07:52:09] Extracting dependencies for custom package 'appstream'...
+[07:52:09] Required deps: brotli curl cyrus-sasl docbook-xsl-nons double-conversion freetype gcc glib2 glibc icu itstool libffi libfyaml libidn2 libpsl libunistring libxml2 libxmlb libxslt llvm nghttp2 openldap openssl pcre2 qt6 systemd util-linux webkitgtk xz zlib zstd 
+[07:52:09] Dependency 'brotli' already installed.
+[07:52:09] Dependency 'curl' already installed.
+[07:52:09] Dependency 'cyrus-sasl' already installed.
+[07:52:09] Dependency 'docbook-xsl-nons' already installed.
+[07:52:09] Dependency 'double-conversion' already installed.
+[07:52:09] Dependency 'freetype' already installed.
+[07:52:09] Dependency 'gcc' already installed.
+[07:52:09] Dependency 'glib2' already installed.
+[07:52:09] Dependency 'glibc' already installed.
+[07:52:09] Dependency 'icu' already installed.
+[07:52:09] Dependency 'itstool' already installed.
+[07:52:09] Dependency 'libffi' already installed.
+[07:52:09] Dependency 'libfyaml' already installed.
+[07:52:09] Dependency 'libidn2' already installed.
+[07:52:09] Dependency 'libpsl' already installed.
+[07:52:09] Dependency 'libunistring' already installed.
+[07:52:09] Dependency 'libxml2' already installed.
+[07:52:09] Dependency 'libxmlb' already installed.
+[07:52:09] Dependency 'libxslt' already installed.
+[07:52:09] Dependency 'llvm' already installed.
+[07:52:09] Dependency 'nghttp2' already installed.
+[07:52:09] Dependency 'openldap' already installed.
+[07:52:09] Dependency 'openssl' already installed.
+[07:52:09] Dependency 'pcre2' already installed.
+[07:52:09] Dependency 'qt6' already installed.
+[07:52:09] Dependency 'systemd' already installed.
+[07:52:09] Dependency 'util-linux' already installed.
+[07:52:09] Dependency 'webkitgtk' already installed.
+[07:52:09] Dependency 'xz' already installed.
+[07:52:09] Dependency 'zlib' already installed.
+[07:52:09] Dependency 'zstd' already installed.
+[07:52:09] Starting remote custom build for appstream...
+--2026-10-29 07:52:13--  https://www.freedesktop.org/software/appstream/releases/AppStream-1.2.2.tar.xz
+Resolving www.freedesktop.org (www.freedesktop.org)... 131.252.210.176
+Connecting to www.freedesktop.org (www.freedesktop.org)|131.252.210.176|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2987596 (2.8M) [application/x-xz]
+Saving to: ‘AppStream-1.2.2.tar.xz’
+
+AppStream-1.2.2.tar   0%[                    ]       0  --.-KB/s               AppStream-1.2.2.tar   1%[                    ]  46.79K   124KB/s               AppStream-1.2.2.tar   7%[>                   ] 210.85K   347KB/s               AppStream-1.2.2.tar  16%[==>                 ] 484.29K   512KB/s               AppStream-1.2.2.tar  38%[======>             ]   1.09M   975KB/s               AppStream-1.2.2.tar  76%[==============>     ]   2.18M  1.62MB/s               AppStream-1.2.2.tar 100%[===================>]   2.85M  2.03MB/s    in 1.4s    
+
+2026-10-29 07:52:16 (2.03 MB/s) - ‘AppStream-1.2.2.tar.xz’ saved [2987596/2987596]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+meson_args: <-D>
+meson_args: <apidocs=false>
+meson_args: <-D>
+meson_args: <qt=true>
+meson_args: <-D>
+meson_args: <bash-completion=false>
+meson_args: <-D>
+meson_args: <stemming=false>
+meson_args: <-D>
+meson_args: <man=false>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <-D> <apidocs=false> <-D> <qt=true> <-D> <bash-completion=false> <-D> <stemming=false> <-D> <man=false> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2
+Build dir: /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/build
+Build type: native build
+Project name: AppStream
+Project version: 1.2.2
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Has header "linux/openat2.h" : YES 
+Header "fcntl.h" has symbol "openat2" : YES 
+Header "dlfcn.h" has symbol "dladdr" : YES 
+Header "sys/mman.h" has symbol "memfd_create" : YES 
+Has header "linux/landlock.h" : YES 
+Header "sys/syscall.h" has symbol "SYS_landlock_create_ruleset" : YES 
+Compiler for C supports arguments -Werror=shadow: YES 
+Compiler for C supports arguments -Werror=empty-body: YES 
+Compiler for C supports arguments -Werror=strict-prototypes: YES 
+Compiler for C supports arguments -Werror=missing-prototypes: YES 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Compiler for C supports arguments -Werror=pointer-arith: YES 
+Compiler for C supports arguments -Werror=missing-declarations: YES 
+Compiler for C supports arguments -Werror=return-type: YES 
+Compiler for C supports arguments -Werror=int-conversion: YES 
+Compiler for C supports arguments -Werror=incompatible-pointer-types: YES 
+Compiler for C supports arguments -Werror=misleading-indentation: YES 
+Compiler for C supports arguments -Werror=missing-include-dirs: YES 
+Compiler for C supports arguments -Werror=declaration-after-statement: YES 
+Compiler for C supports arguments -Werror=format-security: NO 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C supports arguments -Wno-error=missing-field-initializers: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wno-error=unused-parameter: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency glib-2.0 found: YES 2.90.1
+Run-time dependency gobject-2.0 found: YES 2.90.1
+Run-time dependency gio-2.0 found: YES 2.90.1
+Run-time dependency gmodule-2.0 found: YES 2.90.1
+Run-time dependency gio-unix-2.0 found: YES 2.90.1
+Run-time dependency libcurl found: YES 8.23.0
+Run-time dependency libxml-2.0 found: YES 2.15.4
+Run-time dependency libfyaml found: YES 0.9.6
+Run-time dependency xmlb found: YES 0.3.29
+Library m found: YES
+Run-time dependency libzstd found: YES 1.5.7
+Run-time dependency libsystemd found: YES 262
+Run-time dependency wayland-client found: YES 1.26.0
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Program gperf found: YES (/usr/bin/gperf)
+Configuring config.h using configuration
+Configuring as-version.h using configuration
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Program sed found: YES (/usr/bin/sed)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Program itstool found: YES (/usr/bin/itstool)
+Configuring metainfo-validate.test using configuration
+C++ compiler for the host machine: c++ (gcc 16.2.0 "c++ (GCC) 16.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.47.20260726
+qmake6 found: YES (/opt/qt6/bin/qmake6) 6.12.0
+Run-time dependency qt6 (modules: Core) found: YES 6.12.0 (qmake)
+Detecting Qt6 tools
+qmake6 found: YES (/opt/qt6/bin/qmake6) 6.12.0
+Run-time dependency qt6 (modules: Core) found: YES 6.12.0 (qmake)
+Program /opt/qt6/bin/uic found: NO
+Program /opt/qt6/libexec/uic found: YES 6.12.0 6.12.0 (/opt/qt6/libexec/uic)
+Program /opt/qt6/bin/qmltyperegistrar found: NO
+Program /opt/qt6/libexec/qmltyperegistrar found: YES 6.12.0 6.12.0 (/opt/qt6/libexec/qmltyperegistrar)
+Program /opt/qt6/bin/lrelease found: YES 6.12.0 6.12.0 (/opt/qt6/bin/lrelease)
+Program /opt/qt6/bin/qmlcachegen found: NO
+Program /opt/qt6/libexec/qmlcachegen found: YES 6.12.0 6.12.0 (/opt/qt6/libexec/qmlcachegen)
+Program /opt/qt6/bin/moc found: NO
+Program /opt/qt6/libexec/moc found: YES 6.12.0 6.12.0 (/opt/qt6/libexec/moc)
+Program /opt/qt6/bin/rcc found: NO
+Program /opt/qt6/libexec/rcc found: YES 6.12.0 6.12.0 (/opt/qt6/libexec/rcc)
+Configuring version.h using configuration
+Configuring AppStreamQtConfig.cmake using configuration
+Configuring AppStreamQtConfigVersion.cmake using configuration
+../qt/meson.build:142: WARNING: '/home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/build/qt/AppStreamQtConfig.cmake' is a generated file, and should be passed by reference instead of string name. This will become a hard error in Meson 2.0
+../qt/meson.build:142: WARNING: '/home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/build/qt/AppStreamQtConfigVersion.cmake' is a generated file, and should be passed by reference instead of string name. This will become a hard error in Meson 2.0
+qmake6 found: YES (/opt/qt6/bin/qmake6) 6.12.0
+Run-time dependency qt6 (modules: Core, Test) found: YES 6.12.0 (qmake)
+Configuring testpaths.h using configuration
+Compiler for C++ supports link arguments -Wl,-rpath-link,/home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/build/src: YES 
+WARNING: Please do not define rpath with a linker argument, use install_rpath
+or build_rpath properties instead.
+This will become a hard error in a future Meson release.
+
+WARNING: Please do not define rpath with a linker argument, use install_rpath
+or build_rpath properties instead.
+This will become a hard error in a future Meson release.
+
+Build targets in project: 81
+
+AppStream 1.2.2
+
+  User defined options
+    apidocs        : false
+    bash-completion: false
+    buildtype      : release
+    man            : false
+    prefix         : /usr
+    qt             : true
+    stemming       : false
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/254] Generating src/as-resources_c with a custom command
+[2/254] Generating src/as-resources_h with a custom command
+[3/254] Generating src/gperf as-xml-tag with a custom command
+[4/254] Generating src/gperf as-yaml-tag with a custom command
+[5/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_appstreamqt_export.cpp'
+../qt/appstreamqt_export.h: note: No relevant classes found. No output generated.
+[6/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_agreement.cpp'
+[7/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_agreement-section.cpp'
+[8/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_artifact.cpp'
+[9/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_branding.cpp'
+[10/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_bundle.cpp'
+[11/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_category.cpp'
+[12/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_checksum.cpp'
+[13/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_component-box.cpp'
+[14/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_component.cpp'
+[15/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_contentrating.cpp'
+[16/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_developer.cpp'
+[17/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_icon.cpp'
+[18/254] Generating GObject enum file src/as-enum-types.h (wrapped by meson because command contains newlines, to capture output)
+[19/254] Generating GObject enum file src/as-enum-types.c (wrapped by meson because command contains newlines, to capture output)
+[20/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_image.cpp'
+[21/254] Compiling C object src/libappstream.so.1.2.2.p/meson-generated_.._as-resources.c.o
+[22/254] Compiling C object src/libappstream.so.1.2.2.p/meson-generated_.._as-enum-types.c.o
+[23/254] Compiling C object src/libappstream.so.1.2.2.p/as-curl.c.o
+[24/254] Compiling C object src/libappstream.so.1.2.2.p/as-cache.c.o
+[25/254] Compiling C object src/libappstream.so.1.2.2.p/as-utils.c.o
+[26/254] Compiling C object src/libappstream.so.1.2.2.p/as-desktop-entry.c.o
+[27/254] Compiling C object src/libappstream.so.1.2.2.p/as-distro-extras.c.o
+[28/254] Compiling C object src/libappstream.so.1.2.2.p/as-gcve.c.o
+[29/254] Compiling C object src/libappstream.so.1.2.2.p/as-file-monitor.c.o
+[30/254] Compiling C object src/libappstream.so.1.2.2.p/as-stemmer.c.o
+[31/254] Compiling C object src/libappstream.so.1.2.2.p/as-profile.c.o
+[32/254] Compiling C object src/libappstream.so.1.2.2.p/as-tag.c.o
+[33/254] Compiling C object src/libappstream.so.1.2.2.p/as-wayland-private.c.o
+[34/254] Compiling C object src/libappstream.so.1.2.2.p/as-yaml.c.o
+[35/254] Compiling C object src/libappstream.so.1.2.2.p/as-news-convert.c.o
+[36/254] Compiling C object src/libappstream.so.1.2.2.p/as-zstd-decompressor.c.o
+[37/254] Compiling C object src/libappstream.so.1.2.2.p/as-xml.c.o
+[38/254] Compiling C object src/libappstream.so.1.2.2.p/as-agreement.c.o
+[39/254] Compiling C object src/libappstream.so.1.2.2.p/as-agreement-section.c.o
+[40/254] Compiling C object src/libappstream.so.1.2.2.p/as-artifact.c.o
+[41/254] Compiling C object src/libappstream.so.1.2.2.p/as-category.c.o
+[42/254] Compiling C object src/libappstream.so.1.2.2.p/as-bundle.c.o
+[43/254] Compiling C object src/libappstream.so.1.2.2.p/as-branding.c.o
+[44/254] Compiling C object src/libappstream.so.1.2.2.p/as-component-box.c.o
+[45/254] Compiling C object src/libappstream.so.1.2.2.p/as-checksum.c.o
+[46/254] Compiling C object src/libappstream.so.1.2.2.p/as-context.c.o
+[47/254] Compiling C object src/libappstream.so.1.2.2.p/as-developer.c.o
+[48/254] Compiling C object src/libappstream.so.1.2.2.p/as-content-rating.c.o
+[49/254] Compiling C object src/libappstream.so.1.2.2.p/as-icon.c.o
+[50/254] Compiling C object src/libappstream.so.1.2.2.p/as-image.c.o
+[51/254] Compiling C object src/libappstream.so.1.2.2.p/as-issue.c.o
+[52/254] Compiling C object src/libappstream.so.1.2.2.p/as-launchable.c.o
+[53/254] Compiling C object src/libappstream.so.1.2.2.p/as-component.c.o
+[54/254] Compiling C object src/libappstream.so.1.2.2.p/as-provided.c.o
+[55/254] Compiling C object src/libappstream.so.1.2.2.p/as-metadata.c.o
+[56/254] Compiling C object src/libappstream.so.1.2.2.p/as-reference.c.o
+[57/254] Compiling C object src/libappstream.so.1.2.2.p/as-relation-check-result.c.o
+[58/254] Compiling C object src/libappstream.so.1.2.2.p/as-pool.c.o
+[59/254] Compiling C object src/libappstream.so.1.2.2.p/as-relation.c.o
+[60/254] Compiling C object src/libappstream.so.1.2.2.p/as-release-list.c.o
+[61/254] Compiling C object src/libappstream.so.1.2.2.p/as-review.c.o
+[62/254] Compiling C object src/libappstream.so.1.2.2.p/as-release.c.o
+[63/254] Compiling C object src/libappstream.so.1.2.2.p/as-screenshot.c.o
+[64/254] Compiling C object src/libappstream.so.1.2.2.p/as-spdx.c.o
+[65/254] Compiling C object src/libappstream.so.1.2.2.p/as-reviews-client.c.o
+[66/254] Compiling C object src/libappstream.so.1.2.2.p/as-suggested.c.o
+[67/254] Compiling C object src/libappstream.so.1.2.2.p/as-translation.c.o
+[68/254] Compiling C object src/libappstream.so.1.2.2.p/as-validator-issue.c.o
+[69/254] Compiling C object src/libappstream.so.1.2.2.p/as-system-info.c.o
+[70/254] Compiling C object src/libappstream.so.1.2.2.p/as-version.c.o
+[71/254] Compiling C object src/libappstream.so.1.2.2.p/as-vercmp.c.o
+[72/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_issue.cpp'
+[73/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_launchable.cpp'
+[74/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_metadata.cpp'
+[75/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_pool.cpp'
+[76/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_provided.cpp'
+[77/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_reference.cpp'
+[78/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_relation.cpp'
+[79/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_relation-check-result.cpp'
+[80/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_release.cpp'
+[81/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_review.cpp'
+[82/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_release-list.cpp'
+[83/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_screenshot.cpp'
+[84/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_spdx.cpp'
+../qt/spdx.h: note: No relevant classes found. No output generated.
+[85/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_suggested.cpp'
+[86/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_systeminfo.cpp'
+[87/254] Compiling C object src/libappstream.so.1.2.2.p/as-video.c.o
+[88/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_translation.cpp'
+[89/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_utils.cpp'
+../qt/utils.h: note: No relevant classes found. No output generated.
+[90/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_video.cpp'
+[91/254] Generating 'qt/libAppStreamQt.so.1.2.2.p/moc_chelpers.cpp'
+../qt/chelpers.h: note: No relevant classes found. No output generated.
+[92/254] Compiling C object tools/appstreamcli.p/ascli-utils.c.o
+[93/254] Compiling C object tools/appstreamcli.p/ascli-actions-pkgmgr.c.o
+[94/254] Compiling C object tools/appstreamcli.p/appstreamcli.c.o
+[95/254] Compiling C object src/libappstream.so.1.2.2.p/as-validator.c.o
+[96/254] Compiling C object tools/appstreamcli.p/ascli-actions-validate.c.o
+[97/254] Linking target src/libappstream.so.1.2.2
+[98/254] Generating symbol file src/libappstream.so.1.2.2.p/libappstream.so.1.2.2.symbols
+[99/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_appstreamqt_export.cpp.o
+[100/254] Compiling C object tools/appstreamcli.p/ascli-actions-mdata.c.o
+[101/254] Compiling C object tools/appstreamcli.p/ascli-actions-misc.c.o
+[102/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_agreement-section.cpp.o
+[103/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_agreement.cpp.o
+[104/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_artifact.cpp.o
+[105/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_bundle.cpp.o
+[106/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_branding.cpp.o
+[107/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_category.cpp.o
+[108/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_checksum.cpp.o
+[109/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_component.cpp.o
+[110/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_component-box.cpp.o
+[111/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_contentrating.cpp.o
+[112/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_developer.cpp.o
+[113/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_icon.cpp.o
+[114/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_image.cpp.o
+[115/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_launchable.cpp.o
+[116/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_issue.cpp.o
+[117/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_metadata.cpp.o
+[118/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_pool.cpp.o
+[119/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_provided.cpp.o
+[120/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_reference.cpp.o
+[121/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_relation-check-result.cpp.o
+[122/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_relation.cpp.o
+[123/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_release.cpp.o
+[124/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_release-list.cpp.o
+[125/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_spdx.cpp.o
+[126/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_review.cpp.o
+[127/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_screenshot.cpp.o
+[128/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_suggested.cpp.o
+[129/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_utils.cpp.o
+[130/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_systeminfo.cpp.o
+[131/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_chelpers.cpp.o
+[132/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_video.cpp.o
+[133/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/meson-generated_moc_translation.cpp.o
+[134/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/agreement.cpp.o
+[135/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/agreement-section.cpp.o
+[136/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/artifact.cpp.o
+[137/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/bundle.cpp.o
+[138/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/branding.cpp.o
+[139/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/checksum.cpp.o
+[140/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/category.cpp.o
+[141/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/component-box.cpp.o
+[142/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/contentrating.cpp.o
+[143/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/developer.cpp.o
+[144/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/icon.cpp.o
+[145/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/component.cpp.o
+[146/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/image.cpp.o
+[147/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/launchable.cpp.o
+[148/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/issue.cpp.o
+[149/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/metadata.cpp.o
+[150/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/provided.cpp.o
+[151/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/pool.cpp.o
+[152/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/reference.cpp.o
+[153/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/relation-check-result.cpp.o
+[154/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/relation.cpp.o
+[155/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/release.cpp.o
+[156/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/release-list.cpp.o
+[157/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/review.cpp.o
+[158/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/screenshot.cpp.o
+[159/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/spdx.cpp.o
+[160/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/suggested.cpp.o
+[161/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/translation.cpp.o
+[162/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/systeminfo.cpp.o
+[163/254] Linking target tools/appstreamcli
+[164/254] Generating 'qt/tests/as-test_qt-pool.p/asqt-pool-test.moc'
+[165/254] Generating 'qt/tests/as-test_qt-misc.p/asqt-misc-test.moc'
+[166/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/utils.cpp.o
+[167/254] Building translation po/ain/LC_MESSAGES/appstream-ain.mo
+[168/254] Building translation po/ar/LC_MESSAGES/appstream-ar.mo
+[169/254] Building translation po/bg/LC_MESSAGES/appstream-bg.mo
+[170/254] Building translation po/bn/LC_MESSAGES/appstream-bn.mo
+[171/254] Building translation po/bn_BD/LC_MESSAGES/appstream-bn_BD.mo
+[172/254] Building translation po/ca/LC_MESSAGES/appstream-ca.mo
+[173/254] Building translation po/ckb/LC_MESSAGES/appstream-ckb.mo
+[174/254] Building translation po/cs/LC_MESSAGES/appstream-cs.mo
+[175/254] Building translation po/da/LC_MESSAGES/appstream-da.mo
+[176/254] Building translation po/de/LC_MESSAGES/appstream-de.mo
+[177/254] Building translation po/en_GB/LC_MESSAGES/appstream-en_GB.mo
+[178/254] Building translation po/eo/LC_MESSAGES/appstream-eo.mo
+[179/254] Building translation po/es/LC_MESSAGES/appstream-es.mo
+[180/254] Building translation po/et/LC_MESSAGES/appstream-et.mo
+[181/254] Building translation po/eu/LC_MESSAGES/appstream-eu.mo
+[182/254] Building translation po/fi/LC_MESSAGES/appstream-fi.mo
+[183/254] Building translation po/fr/LC_MESSAGES/appstream-fr.mo
+[184/254] Building translation po/gd/LC_MESSAGES/appstream-gd.mo
+[185/254] Building translation po/gl/LC_MESSAGES/appstream-gl.mo
+[186/254] Building translation po/he/LC_MESSAGES/appstream-he.mo
+[187/254] Building translation po/hi/LC_MESSAGES/appstream-hi.mo
+[188/254] Building translation po/hr/LC_MESSAGES/appstream-hr.mo
+[189/254] Building translation po/hu/LC_MESSAGES/appstream-hu.mo
+[190/254] Building translation po/ia/LC_MESSAGES/appstream-ia.mo
+[191/254] Generating src/AppStream-1.0.gir with a custom command (wrapped by meson to set env)
+/home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-tag-xml.gperf:62: syntax error, unexpected '[' in '      [[fallthrough]];' at '['
+/home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-tag-yaml.gperf:62: syntax error, unexpected '[' in '      [[fallthrough]];' at '['
+[192/254] Building translation po/id/LC_MESSAGES/appstream-id.mo
+[193/254] Building translation po/it/LC_MESSAGES/appstream-it.mo
+[194/254] Building translation po/ja/LC_MESSAGES/appstream-ja.mo
+[195/254] Building translation po/ka/LC_MESSAGES/appstream-ka.mo
+[196/254] Building translation po/kk/LC_MESSAGES/appstream-kk.mo
+[197/254] Building translation po/ko/LC_MESSAGES/appstream-ko.mo
+[198/254] Building translation po/kw/LC_MESSAGES/appstream-kw.mo
+[199/254] Building translation po/nb/LC_MESSAGES/appstream-nb.mo
+[200/254] Building translation po/lt/LC_MESSAGES/appstream-lt.mo
+[201/254] Building translation po/nl/LC_MESSAGES/appstream-nl.mo
+[202/254] Building translation po/oc/LC_MESSAGES/appstream-oc.mo
+[203/254] Building translation po/nn/LC_MESSAGES/appstream-nn.mo
+[204/254] Building translation po/pl/LC_MESSAGES/appstream-pl.mo
+[205/254] Building translation po/pt/LC_MESSAGES/appstream-pt.mo
+[206/254] Building translation po/pt_BR/LC_MESSAGES/appstream-pt_BR.mo
+[207/254] Building translation po/ro/LC_MESSAGES/appstream-ro.mo
+[208/254] Building translation po/rom/LC_MESSAGES/appstream-rom.mo
+[209/254] Building translation po/ru/LC_MESSAGES/appstream-ru.mo
+[210/254] Building translation po/sl/LC_MESSAGES/appstream-sl.mo
+[211/254] Building translation po/sk/LC_MESSAGES/appstream-sk.mo
+[212/254] Building translation po/sr/LC_MESSAGES/appstream-sr.mo
+[213/254] Building translation po/sr@latin/LC_MESSAGES/appstream-sr@latin.mo
+[214/254] Building translation po/ta/LC_MESSAGES/appstream-ta.mo
+[215/254] Building translation po/sv/LC_MESSAGES/appstream-sv.mo
+[216/254] Building translation po/th/LC_MESSAGES/appstream-th.mo
+[217/254] Building translation po/tr/LC_MESSAGES/appstream-tr.mo
+[218/254] Building translation po/uk/LC_MESSAGES/appstream-uk.mo
+[219/254] Building translation po/zh_CN/LC_MESSAGES/appstream-zh_CN.mo
+[220/254] Building translation po/zh_TW/LC_MESSAGES/appstream-zh_TW.mo
+[221/254] Generating data/gen-output with a custom command
+[222/254] Compiling C object docs/gen-validator-tag-sections.p/.._compose_asc-hint-tags.c.o
+[223/254] Compiling C object docs/gen-validator-tag-sections.p/gen-valtag-sections.c.o
+[224/254] Compiling C++ object qt/libAppStreamQt.so.1.2.2.p/video.cpp.o
+[225/254] Compiling C object tests/as-test_basic.p/as-test-utils.c.o
+[226/254] Linking target qt/libAppStreamQt.so.1.2.2
+[227/254] Compiling C object tests/as-test_xml.p/as-test-utils.c.o
+[228/254] Compiling C object tests/as-test_basic.p/test-basics.c.o
+[229/254] Compiling C object tests/as-test_yaml.p/as-test-utils.c.o
+[230/254] Compiling C object tests/as-test_xml.p/test-xmldata.c.o
+[231/254] Compiling C object tests/as-test_yaml.p/test-yamldata.c.o
+[232/254] Compiling C object tests/as-test_pool.p/as-test-utils.c.o
+[233/254] Compiling C object tests/as-test_validate.p/as-test-utils.c.o
+[234/254] Compiling C object tests/as-test_pool.p/test-pool.c.o
+[235/254] Compiling C object tests/as-test_validate.p/test-validate.c.o
+[236/254] Compiling C object tests/as-test_perf.p/test-performance.c.o
+[237/254] Compiling C object tests/as-test_perf.p/as-test-utils.c.o
+[238/254] Generating symbol file qt/libAppStreamQt.so.1.2.2.p/libAppStreamQt.so.1.2.2.symbols
+[239/254] Compiling C object tests/as-test_misc.p/as-test-utils.c.o
+[240/254] Compiling C object tests/as-test_misc.p/test-misc.c.o
+[241/254] Generating src/AppStream-1.0.typelib with a custom command
+[242/254] Merging translations for data/org.freedesktop.appstream.cli.metainfo.xml
+[243/254] Linking target docs/gen-validator-tag-sections
+[244/254] Linking target tests/as-test_basic
+[245/254] Linking target tests/as-test_xml
+[246/254] Linking target tests/as-test_yaml
+[247/254] Linking target tests/as-test_pool
+[248/254] Linking target tests/as-test_validate
+[249/254] Linking target tests/as-test_perf
+[250/254] Linking target tests/as-test_misc
+[251/254] Compiling C++ object qt/tests/as-test_qt-pool.p/asqt-pool-test.cpp.o
+[252/254] Linking target qt/tests/as-test_qt-pool
+[253/254] Compiling C++ object qt/tests/as-test_qt-misc.p/asqt-misc-test.cpp.o
+[254/254] Linking target qt/tests/as-test_qt-misc
+[0/1] Installing files
+Installing subdir /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/re01.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/chap-AppStream-Misc.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-WebApplication.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-Runtime.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-Addon.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-OS.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-AppStream-IconCache.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/ix01.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-Driver.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-InputMethod.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/chap-Metadata.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/re02.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/chap-AppStream-About.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-AppStream-Misc-URIHandler.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-IconTheme.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/chap-CatalogData.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Quickstart-Releases.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/chap-Validation.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/chap-AppStream-API.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/index.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/chap-Quickstart.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-Codec.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Quickstart-Addons.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-Repository.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-Localization.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Quickstart-Distros.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-Service.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-Releases.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/chap-AppStream-ManualPages.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-Fonts.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-Application.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-Firmware.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Metadata-ConsoleApplication.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-Quickstart-Translation.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/sect-AppStream-YAML.html to /usr/share/doc/appstream/html
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/images/screxample_xterm-bad.png to /usr/share/doc/appstream/html/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/images/screxample_geany-good.png to /usr/share/doc/appstream/html/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/images/screxample_xmedcon-bad.png to /usr/share/doc/appstream/html/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/images/screxample_wireshark-good.png to /usr/share/doc/appstream/html/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/images/architecture.png to /usr/share/doc/appstream/html/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/images/appstream-button2.svg to /usr/share/doc/appstream/html/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/images/screxample_xonotic-good.png to /usr/share/doc/appstream/html/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/images/appstream-button1.svg to /usr/share/doc/appstream/html/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/images/screxample_gameconqueror-bad.png to /usr/share/doc/appstream/html/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/images/appstream-logo.svg to /usr/share/doc/appstream/html/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/css/style.css to /usr/share/doc/appstream/html/static/css
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/css/highlight.css to /usr/share/doc/appstream/html/static/css
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/images/dots-darkgray.png to /usr/share/doc/appstream/html/static/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/images/draft.png to /usr/share/doc/appstream/html/static/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/images/icons.png to /usr/share/doc/appstream/html/static/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/images/tick.png to /usr/share/doc/appstream/html/static/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/images/icon-note.png to /usr/share/doc/appstream/html/static/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/images/icon-warning.png to /usr/share/doc/appstream/html/static/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/images/arrow.png to /usr/share/doc/appstream/html/static/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/images/dots-gray.png to /usr/share/doc/appstream/html/static/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/images/icon-tip.png to /usr/share/doc/appstream/html/static/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/images/dots-red.png to /usr/share/doc/appstream/html/static/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/images/dots-orange.png to /usr/share/doc/appstream/html/static/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/images/dots-blue.png to /usr/share/doc/appstream/html/static/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/images/logo.png to /usr/share/doc/appstream/html/static/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/images/icon-important.png to /usr/share/doc/appstream/html/static/images
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/docs/html/static/js/INFO.md to /usr/share/doc/appstream/html/static/js
+Installing src/as-enum-types.h to /usr/include/appstream
+Installing src/libappstream.so.1.2.2 to /usr/lib
+Installing src/AppStream-1.0.gir to /usr/share/gir-1.0
+Installing src/AppStream-1.0.typelib to /usr/lib/girepository-1.0
+Installing tools/appstreamcli to /usr/bin
+Installing po/ain/LC_MESSAGES/appstream.mo to /usr/share/locale/ain/LC_MESSAGES
+Installing po/ar/LC_MESSAGES/appstream.mo to /usr/share/locale/ar/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/appstream.mo to /usr/share/locale/bg/LC_MESSAGES
+Installing po/bn/LC_MESSAGES/appstream.mo to /usr/share/locale/bn/LC_MESSAGES
+Installing po/bn_BD/LC_MESSAGES/appstream.mo to /usr/share/locale/bn_BD/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/appstream.mo to /usr/share/locale/ca/LC_MESSAGES
+Installing po/ckb/LC_MESSAGES/appstream.mo to /usr/share/locale/ckb/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/appstream.mo to /usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/appstream.mo to /usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/appstream.mo to /usr/share/locale/de/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/appstream.mo to /usr/share/locale/en_GB/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/appstream.mo to /usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/appstream.mo to /usr/share/locale/es/LC_MESSAGES
+Installing po/et/LC_MESSAGES/appstream.mo to /usr/share/locale/et/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/appstream.mo to /usr/share/locale/eu/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/appstream.mo to /usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/appstream.mo to /usr/share/locale/fr/LC_MESSAGES
+Installing po/gd/LC_MESSAGES/appstream.mo to /usr/share/locale/gd/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/appstream.mo to /usr/share/locale/gl/LC_MESSAGES
+Installing po/he/LC_MESSAGES/appstream.mo to /usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/appstream.mo to /usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/appstream.mo to /usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/appstream.mo to /usr/share/locale/hu/LC_MESSAGES
+Installing po/ia/LC_MESSAGES/appstream.mo to /usr/share/locale/ia/LC_MESSAGES
+Installing po/id/LC_MESSAGES/appstream.mo to /usr/share/locale/id/LC_MESSAGES
+Installing po/it/LC_MESSAGES/appstream.mo to /usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/appstream.mo to /usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/appstream.mo to /usr/share/locale/ka/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/appstream.mo to /usr/share/locale/kk/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/appstream.mo to /usr/share/locale/ko/LC_MESSAGES
+Installing po/kw/LC_MESSAGES/appstream.mo to /usr/share/locale/kw/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/appstream.mo to /usr/share/locale/lt/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/appstream.mo to /usr/share/locale/nb/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/appstream.mo to /usr/share/locale/nl/LC_MESSAGES
+Installing po/nn/LC_MESSAGES/appstream.mo to /usr/share/locale/nn/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/appstream.mo to /usr/share/locale/oc/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/appstream.mo to /usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/appstream.mo to /usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/appstream.mo to /usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/appstream.mo to /usr/share/locale/ro/LC_MESSAGES
+Installing po/rom/LC_MESSAGES/appstream.mo to /usr/share/locale/rom/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/appstream.mo to /usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/appstream.mo to /usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/appstream.mo to /usr/share/locale/sl/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/appstream.mo to /usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/appstream.mo to /usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/appstream.mo to /usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/appstream.mo to /usr/share/locale/ta/LC_MESSAGES
+Installing po/th/LC_MESSAGES/appstream.mo to /usr/share/locale/th/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/appstream.mo to /usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/appstream.mo to /usr/share/locale/uk/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/appstream.mo to /usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/appstream.mo to /usr/share/locale/zh_TW/LC_MESSAGES
+Installing data/org.freedesktop.appstream.cli.metainfo.xml to /usr/share/metainfo
+Installing qt/libAppStreamQt.so.1.2.2 to /usr/lib
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/appstream.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-agreement.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-agreement-section.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-artifact.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-branding.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-bundle.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-category.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-checksum.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-component.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-component-box.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-content-rating.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-context.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-developer.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-icon.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-image.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-issue.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-launchable.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-macros.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-metadata.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-pool.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-provided.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-reference.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-relation.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-relation-check-result.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-release.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-release-list.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-review.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-reviews-client.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-screenshot.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-spdx.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-suggested.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-system-info.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-translation.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-utils.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-validator.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-validator-issue.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-vercmp.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-video.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/src/as-category-gi.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/appstreamqt_export.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/agreement.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/agreement-section.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/artifact.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/branding.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/bundle.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/category.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/checksum.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/component-box.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/component.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/contentrating.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/developer.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/icon.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/image.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/issue.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/launchable.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/metadata.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/pool.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/provided.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/reference.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/relation.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/relation-check-result.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/release.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/review.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/release-list.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/screenshot.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/spdx.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/suggested.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/systeminfo.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/translation.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/utils.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/qt/video.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/build/src/as-version.h to /usr/include/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/build/meson-private/appstream.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/data/its/metainfo.its to /usr/share/gettext/its
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/data/its/metainfo.loc to /usr/share/gettext/its
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/data/appstream.conf to /usr/share/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/build/tests/installed-tests/metainfo-validate.test to /usr/share/installed-tests/appstream
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/build/qt/version.h to /usr/include/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/build/qt/AppStreamQtConfig.cmake to /usr/lib/cmake/AppStreamQt
+Installing /home/fusion809/lfs_packaging/appstream/AppStream-1.2.2/build/qt/AppStreamQtConfigVersion.cmake to /usr/lib/cmake/AppStreamQt
+Installing symlink pointing to libappstream.so.1.2.2 to /usr/lib/libappstream.so.5
+Installing symlink pointing to libappstream.so.5 to /usr/lib/libappstream.so
+Installing symlink pointing to libAppStreamQt.so.1.2.2 to /usr/lib/libAppStreamQt.so.3
+Installing symlink pointing to libAppStreamQt.so.3 to /usr/lib/libAppStreamQt.so
+renamed '/usr/share/doc/appstream' -> '/usr/share/doc/appstream-1.2.2'
+1.2.2
+Updated registry for appstream to version 1.2.2
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package appstream in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master 1b280da] Updating packages
+ 7 files changed, 936 insertions(+), 915 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master 91c2531] Updating packages
+ 7 files changed, 7 insertions(+)
+Pushing changes in ~/build_duration...
+r13.1-32
+r13.1-508
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libAppStreamQt.so.1.2.1
+cand_sobase=libAppStreamQt.so
+search_base=libAppStreamQt
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libappstream.so.1.2.1
+cand_sobase=libappstream.so
+search_base=libappstream
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libmozjs-140.so
+cand_sobase=libmozjs.so
+search_base=libmozjs
+replacement_found=false
+cand_dir=/usr/lib
+cand_base=libtbbbind_2_5.so.3.19
+cand_sobase=libtbbbind_.so
+search_base=libtbbbind_
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libtbbmalloc_proxy.so.2.19
+cand_sobase=libtbbmalloc_proxy.so
+search_base=libtbbmalloc_proxy
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libtbbmalloc.so.2.19
+cand_sobase=libtbbmalloc.so
+search_base=libtbbmalloc
+replacement_found=true
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libAppStreamQt.so.1.2.1
+Path: /usr/lib/libAppStreamQt.so.1.2.1
+Skipping generic/unsafe name 'libAppStreamQt.so.' to prevent false positive matches.
+i_dir=/usr/lib
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libAppStreamQt.so.1.2.1...
+------------------------------------------------
+Checking obsolete version (file): libappstream.so.1.2.1
+Path: /usr/lib/libappstream.so.1.2.1
+Skipping generic/unsafe name 'libappstream.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libAppStreamQt.so.1.2.1
+i_sobase=libAppStreamQt.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libappstream.so.1.2.1...
+------------------------------------------------
+Checking obsolete version (file): libtbbbind_2_5.so.3.19
+Path: /usr/lib/libtbbbind_2_5.so.3.19
+Skipping generic/unsafe name 'libtbbbind_2_5.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libappstream.so.1.2.1
+i_sobase=libappstream.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libtbbbind_2_5.so.3.19...
+------------------------------------------------
+Checking obsolete version (file): libtbbmalloc_proxy.so.2.19
+Path: /usr/lib/libtbbmalloc_proxy.so.2.19
+Skipping generic/unsafe name 'libtbbmalloc_proxy.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libtbbbind_2_5.so.3.19
+i_sobase=libtbbbind_.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libtbbmalloc_proxy.so.2.19...
+------------------------------------------------
+Checking obsolete version (file): libtbbmalloc.so.2.19
+Path: /usr/lib/libtbbmalloc.so.2.19
+Skipping generic/unsafe name 'libtbbmalloc.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libtbbmalloc.so.2 libtbbmalloc.so.2.19
+Example dependents: ./.julia/artifacts/1f25063346d3a567b532fbd2116a3f75864ddf57/lib/libtbbmalloc_proxy.so.2.17 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libtbbmalloc.so.2.19:
+  - ./.julia/artifacts/1f25063346d3a567b532fbd2116a3f75864ddf57/lib/libtbbmalloc_proxy.so.2.17
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libtbbmalloc.so.2.19.
+------------------------------------------------
+Checking obsolete version (file): libtbb.so.12.19
+Path: /usr/lib/libtbb.so.12.19
+Skipping generic/unsafe name 'libtbb.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libtbbmalloc_proxy.so.2.19
+i_sobase=libtbbmalloc_proxy.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libtbb.so.12.19...
+Scanning /usr/share/doc for stale old-version directories...
+Removing stale: appstream-1.2.1  (newer: appstream-1.2.2)
+---
+Removed : 1
+Kept    : 0
+Deleting kernels older than 7.3.0...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.0-lfs-r13.1-28
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
