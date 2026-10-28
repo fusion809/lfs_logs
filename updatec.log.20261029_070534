@@ -1,0 +1,512 @@
+===== Update check started: 2026-10-29 07:05:34 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261029_070534
+Packages needing attention: onetbb
+===== Starting updatec: 2026-10-29 07:05:38 AEST =====
+Checking for packages with missing file inventories...
+name=libical
+local_ver=4.0.7
+remote_ver=65
+name=libjpeg-turbo
+local_ver=3.2.1
+remote_ver=10
+name=nodejs-bin
+local_ver=26.13.0
+remote_ver=2026.10.28
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - libical
+  - libjpeg-turbo
+  - nodejs-bin
+  - onetbb
+
+Building custom package libical...
+[07:07:33] Found custom package for libical, bypassing BLFS aliases.
+[07:07:33] Custom package detected at /home/fusion809/lfs_packaging/libical (package: libical)
+[07:07:33] Extracting dependencies for custom package 'libical'...
+[07:07:33] Required deps: cmake gcc glib2 glibc icu libffi libxml2 pcre2 vala 
+[07:07:33] Dependency 'cmake' already installed.
+[07:07:33] Dependency 'gcc' already installed.
+[07:07:33] Dependency 'glib2' already installed.
+[07:07:33] Dependency 'glibc' already installed.
+[07:07:33] Dependency 'icu' already installed.
+[07:07:33] Dependency 'libffi' already installed.
+[07:07:33] Dependency 'libxml2' already installed.
+[07:07:33] Dependency 'pcre2' already installed.
+[07:07:33] Dependency 'vala' already installed.
+[07:07:33] Starting remote custom build for libical...
+[07:07:35] [LFS-AUTOBUILD] Skipping custom package libical: version 4.0.7 already installed (use -f to force build).
+Building custom package libjpeg-turbo...
+[07:07:35] Found custom package for libjpeg-turbo, bypassing BLFS aliases.
+[07:07:35] Custom package detected at /home/fusion809/lfs_packaging/libjpeg-turbo (package: libjpeg-turbo)
+[07:07:35] Extracting dependencies for custom package 'libjpeg-turbo'...
+[07:07:35] Required deps: glibc 
+[07:07:35] Dependency 'glibc' already installed.
+[07:07:35] Starting remote custom build for libjpeg-turbo...
+[07:07:36] [LFS-AUTOBUILD] Skipping custom package libjpeg-turbo: version 3.2.1 already installed (use -f to force build).
+Building custom package nodejs-bin...
+[07:07:36] Found custom package for nodejs-bin, bypassing BLFS aliases.
+[07:07:36] Custom package detected at /home/fusion809/lfs_packaging/nodejs-bin (package: nodejs-bin)
+[07:07:36] Checking conflicting package(s) for 'nodejs-bin': nodejs 
+[07:07:36] Extracting dependencies for custom package 'nodejs-bin'...
+[07:07:36] Required deps: gcc glibc 
+[07:07:36] Dependency 'gcc' already installed.
+[07:07:36] Dependency 'glibc' already installed.
+[07:07:36] Starting remote custom build for nodejs-bin...
+[07:07:37] [LFS-AUTOBUILD] Skipping custom package nodejs-bin: version 26.13.0 already installed (use -f to force build).
+Building custom package onetbb...
+[07:07:38] Found custom package for onetbb, bypassing BLFS aliases.
+[07:07:38] Custom package detected at /home/fusion809/lfs_packaging/onetbb (package: onetbb)
+[07:07:38] Extracting dependencies for custom package 'onetbb'...
+[07:07:38] Starting remote custom build for onetbb...
+oneTBB-2023.2.0.tar.gz already present and appears valid.
+--2026-10-29 07:08:01--  https://aur.archlinux.org/cgit/aur.git/plain/010-onetbb-fix-linkage-of-test-malloc-pure-c.patch?h=onetbb-git
+Resolving aur.archlinux.org (aur.archlinux.org)... 209.126.35.78, 2604:cac0:a104:d::2
+Connecting to aur.archlinux.org (aur.archlinux.org)|209.126.35.78|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-10-29 07:08:03 ERROR 404: Not Found.
+
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Checking for one of the modules 'hwloc'
+-- Looking for getcontext
+-- Looking for getcontext - found
+-- GNU Assembler version: 2.47  (2047)
+-- IPO enabled
+-- The C compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- The tbbbind_2_5 target will be configured using the HWLOC 2.15.0rc2-git
+-- Performing Test LINKER_HAS_NO_AS_NEEDED
+-- Performing Test LINKER_HAS_NO_AS_NEEDED - Success
+-- Enabling build of Thread Composability Manager (TCM). Specify -DTCM_BUILD=OFF to disable.
+-- Configuring done (2.1s)
+-- Generating done (0.4s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    TBBY4PY_BUILD
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/build
+[  0%] Building CXX object src/tbb/CMakeFiles/tbb.dir/address_waiter.cpp.o
+[  0%] Building CXX object src/tbbmalloc/CMakeFiles/tbbmalloc.dir/backend.cpp.o
+[  1%] Building CXX object src/tbbbind/CMakeFiles/tbbbind_2_5.dir/tbb_bind.cpp.o
+In file included from /usr/include/bits/libc-header-start.h:33,
+                 from /usr/include/string.h:26,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/backend.cpp:18:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/bits/requires_hosted.h:31,
+                 from /usr/include/c++/16.2.0/vector:62,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbbind/tbb_bind.cpp:18:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/type_traits:40,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_utils.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/address_waiter.cpp:17:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  1%] Building CXX object src/tbb/CMakeFiles/tbb.dir/allocator.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/version.h:23,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/allocator.cpp:18:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  1%] Linking CXX shared library ../../gnu_16.2_cxx11_64_none/libtbbbind_2_5.so
+[  1%] Building CXX object src/tbbmalloc/CMakeFiles/tbbmalloc.dir/backref.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/type_traits:40,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/../../include/oneapi/tbb/detail/_utils.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/Customize.h:29,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/TypeDefinitions.h:54,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/tbbmalloc_internal.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/backref.cpp:18:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  1%] Built target tbbbind_2_5
+[  2%] Building CXX object src/tbbmalloc/CMakeFiles/tbbmalloc.dir/frontend.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/type_traits:40,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/../../include/oneapi/tbb/detail/_utils.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/Customize.h:29,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/TypeDefinitions.h:54,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/tbbmalloc_internal.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/frontend.cpp:18:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  3%] Building CXX object src/tbb/CMakeFiles/tbb.dir/arena.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/type_traits:40,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_utils.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/task_dispatcher.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/arena.cpp:18:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  4%] Building CXX object test/CMakeFiles/stub_unsigned.dir/tbb/stub_unsigned_lib.cpp.o
+[  4%] Linking CXX shared library ../gnu_16.2_cxx11_64_none/libstub_unsigned.so
+[  4%] Built target stub_unsigned
+[  5%] Building CXX object test/CMakeFiles/test_handle_perror.dir/tbb/test_handle_perror.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/tbb/../../src/tbb/assert_impl.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/tbb/test_handle_perror.cpp:27:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  5%] Building CXX object src/tbbmalloc/CMakeFiles/tbbmalloc.dir/large_objects.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/type_traits:40,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/../../include/oneapi/tbb/detail/_utils.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/Customize.h:29,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/TypeDefinitions.h:54,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/tbbmalloc_internal.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/large_objects.cpp:18:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  5%] Building CXX object src/tbb/CMakeFiles/tbb.dir/arena_slot.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/arena_slot.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/arena_slot.cpp:18:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  5%] Building CXX object src/tbbmalloc/CMakeFiles/tbbmalloc.dir/tbbmalloc.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/type_traits:40,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/../../include/oneapi/tbb/detail/_utils.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/Customize.h:29,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/TypeDefinitions.h:54,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/tbbmalloc.cpp:17:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  5%] Building CXX object src/tbbmalloc/CMakeFiles/tbbmalloc.dir/__/tbb/itt_notify.cpp.o
+In file included from /usr/include/bits/libc-header-start.h:33,
+                 from /usr/include/stdint.h:26,
+                 from /usr/lib/gcc/x86_64-pc-linux-gnu/16.2.0/include/stdint.h:11,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/tools_api/ittnotify_config.h:98,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/tools_api/ittnotify_static.c:20,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/itt_notify.cpp:43:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  5%] Building CXX object src/tbb/CMakeFiles/tbb.dir/concurrent_bounded_queue.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/type_traits:40,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_utils.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/concurrent_bounded_queue.cpp:17:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  6%] Linking C shared library ../../gnu_16.2_cxx11_64_none/libtbbmalloc.so
+[  6%] Linking CXX executable ../gnu_16.2_cxx11_64_none/test_handle_perror
+[  6%] Built target test_handle_perror
+[  7%] Building CXX object src/tbb/CMakeFiles/tbb.dir/dynamic_link.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/dynamic_link.h:28,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/dynamic_link.cpp:18:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  7%] Built target tbbmalloc
+[  7%] Building CXX object src/tbb/CMakeFiles/tbb.dir/exception.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_exception.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/exception.cpp:17:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  7%] Building CXX object src/tbb/CMakeFiles/tbb.dir/governor.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/version.h:23,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/rml_tbb.h:22,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/governor.h:20,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/governor.cpp:18:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  7%] Building CXX object src/tbb/CMakeFiles/tbb.dir/global_control.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/global_control.cpp:18:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  8%] Building CXX object src/tbb/CMakeFiles/tbb.dir/itt_notify.cpp.o
+In file included from /usr/include/bits/libc-header-start.h:33,
+                 from /usr/include/stdint.h:26,
+                 from /usr/lib/gcc/x86_64-pc-linux-gnu/16.2.0/include/stdint.h:11,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/tools_api/ittnotify_config.h:98,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/tools_api/ittnotify_static.c:20,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/itt_notify.cpp:43:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  8%] Building CXX object test/CMakeFiles/test_cgroup_support.dir/tbb/test_cgroup_support.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/common/config.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/common/test.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/tbb/test_cgroup_support.cpp:22:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  8%] Building CXX object src/tbb/CMakeFiles/tbb.dir/main.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/main.cpp:17:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  8%] Building CXX object src/tbb/CMakeFiles/tbb.dir/market.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/bits/version.h:51,
+                 from /usr/include/c++/16.2.0/atomic:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/arena.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/market.cpp:17:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  8%] Building CXX object test/CMakeFiles/test_scalable_allocator.dir/tbbmalloc/test_scalable_allocator.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/common/config.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/common/test.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/tbbmalloc/test_scalable_allocator.cpp:34:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  8%] Building CXX object src/tbb/CMakeFiles/tbb.dir/numa_allocation.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/version.h:23,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/rml_tbb.h:22,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/governor.h:20,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/numa_allocation.cpp:17:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  9%] Building CXX object src/tbb/CMakeFiles/tbb.dir/tcm_adaptor.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/type_traits:40,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_utils.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_template_helpers.h:20,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/tcm_adaptor.cpp:19:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  9%] Linking CXX executable ../gnu_16.2_cxx11_64_none/test_cgroup_support
+[  9%] Built target test_cgroup_support
+[  9%] Building CXX object test/CMakeFiles/test_malloc_pools.dir/tbbmalloc/test_malloc_pools.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/common/config.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/common/test.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/tbbmalloc/test_malloc_pools.cpp:22:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  9%] Building CXX object src/tbb/CMakeFiles/tbb.dir/misc.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_exception.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/misc.cpp:21:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  9%] Building CXX object src/tbb/CMakeFiles/tbb.dir/misc_ex.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/misc.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/misc_ex.cpp:21:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[  9%] Linking CXX executable ../gnu_16.2_cxx11_64_none/test_scalable_allocator
+[  9%] Built target test_scalable_allocator
+[  9%] Building CXX object test/CMakeFiles/test_malloc_init_shutdown.dir/tbbmalloc/test_malloc_init_shutdown.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/common/config.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/common/test.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/tbbmalloc/test_malloc_init_shutdown.cpp:19:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[ 10%] Building CXX object src/tbb/CMakeFiles/tbb.dir/observer_proxy.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/observer_proxy.cpp:17:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[ 10%] Building CXX object src/tbb/CMakeFiles/tbb.dir/parallel_pipeline.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_pipeline_filters.h:20,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/parallel_pipeline.h:20,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/parallel_pipeline.cpp:17:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[ 10%] Linking CXX executable ../gnu_16.2_cxx11_64_none/test_malloc_pools
+[ 10%] Built target test_malloc_pools
+[ 10%] Building CXX object test/CMakeFiles/test_malloc_regression.dir/tbbmalloc/test_malloc_regression.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/common/config.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/common/test.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/tbbmalloc/test_malloc_regression.cpp:19:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[ 10%] Building CXX object src/tbb/CMakeFiles/tbb.dir/private_server.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/type_traits:40,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_utils.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/cache_aligned_allocator.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/private_server.cpp:17:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[ 11%] Linking CXX executable ../gnu_16.2_cxx11_64_none/test_malloc_init_shutdown
+[ 11%] Built target test_malloc_init_shutdown
+[ 12%] Building CXX object test/CMakeFiles/test_malloc_compliance.dir/tbbmalloc/test_malloc_compliance.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbbmalloc/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/common/config.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/common/test.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/tbbmalloc/test_malloc_compliance.cpp:25:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[ 12%] Building CXX object src/tbb/CMakeFiles/tbb.dir/profiling.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/profiling.cpp:18:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[ 12%] Linking CXX executable ../gnu_16.2_cxx11_64_none/test_malloc_regression
+[ 12%] Built target test_malloc_regression
+[ 12%] Building CXX object test/CMakeFiles/_test_malloc_used_by_lib.dir/tbbmalloc/test_malloc_used_by_lib.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstdlib:46,
+                 from /usr/include/c++/16.2.0/stdlib.h:36,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/tbbmalloc/test_malloc_used_by_lib.cpp:21:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[ 13%] Building CXX object src/tbb/CMakeFiles/tbb.dir/rml_tbb.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_assert.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/rml_tbb.cpp:17:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[ 13%] Building CXX object src/tbb/CMakeFiles/tbb.dir/rtm_mutex.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/../../include/oneapi/tbb/detail/_assert.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/src/tbb/rtm_mutex.cpp:17:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[ 13%] Linking CXX shared library ../gnu_16.2_cxx11_64_none/lib_test_malloc_used_by_lib.so
+[ 13%] Built target _test_malloc_used_by_lib
+[ 13%] Building CXX object test/CMakeFiles/_test_malloc_lib_unload.dir/tbbmalloc/test_malloc_lib_unload.cpp.o
+In file included from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/include/c++/16.2.0/x86_64-pc-linux-gnu/bits/c++config.h:733,
+                 from /usr/include/c++/16.2.0/cstddef:51,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/../include/oneapi/tbb/detail/_config.h:30,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/common/config.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/common/utils_assert.h:21,
+                 from /home/fusion809/lfs_packaging/onetbb/oneTBB-2023.2.0/test/tbbmalloc/test_malloc_lib_unload.cpp:21:
+/usr/include/features.h:451:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  451 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+[ 14%] Linking CXX shared library ../gnu_16.2_cxx11_64_none/lib_test_malloc_lib_unload.so
+[ 14%] Built target _test_malloc_lib_unload
+[ 15%] Building C object test/CMakeFiles/test_malloc_pure_c.dir/tbbmalloc/test_malloc_pure_c.c.o

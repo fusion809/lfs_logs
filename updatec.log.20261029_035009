@@ -1,0 +1,1474 @@
+===== Update check started: 2026-10-29 03:50:09 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261029_035009
+/dev/fd/63: line 1: 6#: command not found
+Packages needing attention: mesa nodejs-bin pyqt6 wordcraft-bin
+===== Starting updatec: 2026-10-29 03:50:22 AEST =====
+Checking for packages with missing file inventories...
+name=hyfetch
+local_ver=2.1.0
+remote_ver=8.1.0
+name=mesa
+local_ver=26.2.5
+remote_ver=26.2.6
+name=nodejs-bin
+local_ver=26.12.1
+remote_ver=26.13.0
+name=pyqt6
+local_ver=6.11.0
+remote_ver=6.12.0
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - hyfetch
+  - mesa
+  - nodejs-bin
+  - pyqt6
+  - wordcraft-bin
+
+Building custom package hyfetch...
+[03:52:06] Found custom package for hyfetch, bypassing BLFS aliases.
+[03:52:06] Custom package detected at /home/fusion809/lfs_packaging/hyfetch (package: hyfetch)
+[03:52:06] Extracting dependencies for custom package 'hyfetch'...
+[03:52:06] Required deps: bash coreutils fastfetch gcc glibc rust 
+[03:52:06] Dependency 'bash' already installed.
+[03:52:06] Dependency 'coreutils' already installed.
+[03:52:06] Dependency 'fastfetch' already installed.
+[03:52:06] Dependency 'gcc' already installed.
+[03:52:06] Dependency 'glibc' already installed.
+[03:52:06] Dependency 'rust' already installed.
+[03:52:06] Starting remote custom build for hyfetch...
+[03:52:07] [LFS-AUTOBUILD] Skipping custom package hyfetch: version 2.1.0 already installed (use -f to force build).
+Building custom package mesa...
+[03:52:07] Found custom package for mesa, bypassing BLFS aliases.
+[03:52:07] Custom package detected at /home/fusion809/lfs_packaging/mesa (package: mesa)
+[03:52:07] Extracting dependencies for custom package 'mesa'...
+[03:52:07] Required deps: bzip2 cbindgen coreutils elfutils expat gcc glibc glslang icu libclc libdisplay-info libdrm libffi libglvnd libpciaccess libva libx11 libxau libxcb libxdmcp libxext libxml2 libxshmfence libxxf86vm linux llvm lm-sensors make-ca mako meson ninja rust rust-bindgen spirv-llvm-translator spirv-tools systemd tar vulkan-loader wayland wayland-protocols xcb-util-keysyms xz zlib zstd 
+[03:52:07] Dependency 'bzip2' already installed.
+[03:52:07] Dependency 'cbindgen' already installed.
+[03:52:07] Dependency 'coreutils' already installed.
+[03:52:07] Dependency 'elfutils' already installed.
+[03:52:07] Dependency 'expat' already installed.
+[03:52:07] Dependency 'gcc' already installed.
+[03:52:07] Dependency 'glibc' already installed.
+[03:52:07] Dependency 'glslang' already installed.
+[03:52:07] Dependency 'icu' already installed.
+[03:52:07] Required dep 'libclc' not found — building it first...
+[03:52:13] [LFS-AUTOBUILD] Script initialization complete. Version 2026.04.02.1
+[03:52:17] Searching for 'libclc' in BLFS index...
+[03:52:59] Searching prominent metapackages for component 'libclc'...
+[ERROR] Could not find page for package 'libclc'
+[03:53:09] ========================================
+[03:53:09] Build completed with 1 failure(s):
+[03:53:09]   - libclc
+[03:53:09] ========================================
+[03:53:09] [WARNING] Failed to build dep 'libclc'. Continuing with main build...
+[03:53:09] Dependency 'libdisplay-info' already installed.
+[03:53:09] Dependency 'libdrm' already installed.
+[03:53:09] Dependency 'libffi' already installed.
+[03:53:09] Dependency 'libglvnd' already installed.
+[03:53:09] Dependency 'libpciaccess' already installed.
+[03:53:09] Dependency 'libva' already installed.
+[03:53:09] Dependency 'libx11' already installed.
+[03:53:09] Dependency 'libxau' already installed.
+[03:53:09] Dependency 'libxcb' already installed.
+[03:53:09] Dependency 'libxdmcp' already installed.
+[03:53:09] Dependency 'libxext' already installed.
+[03:53:09] Dependency 'libxml2' already installed.
+[03:53:09] Dependency 'libxshmfence' already installed.
+[03:53:09] Dependency 'libxxf86vm' already installed.
+[03:53:09] Dependency 'linux' already installed.
+[03:53:09] Dependency 'llvm' already installed.
+[03:53:09] Dependency 'lm-sensors' already installed.
+[03:53:09] Dependency 'make-ca' already installed.
+[03:53:09] Required dep 'mako' not found — building it first...
+[03:53:18] [LFS-AUTOBUILD] Script initialization complete. Version 2026.04.02.1
+[03:53:22] Searching for 'mako' in BLFS index...
+[03:53:34] Found package page: https://linuxfromscratch.org/blfs/view/systemd/general/python-modules.html#Mako
+[03:53:34] Fetching content from https://linuxfromscratch.org/blfs/view/systemd/general/python-modules.html#Mako...
+[03:53:38] Slicing HTML content for fragment: Mako
+[03:53:38] Extracting required dependencies from page...
+[03:53:38] Injecting custom dependency 'markupsafe' for mako...
+[03:53:38] Required deps: markupsafe 
+[03:53:38] Required dep 'markupsafe' not found — building it first...
+[03:53:48] [LFS-AUTOBUILD] Script initialization complete. Version 2026.04.02.1
+[03:53:49] Found package page: https://www.linuxfromscratch.org/lfs/view/development/chapter08/markupsafe.html
+[03:53:49] Fetching content from https://www.linuxfromscratch.org/lfs/view/development/chapter08/markupsafe.html...
+[03:53:51] Extracting required dependencies from page...
+[03:53:51] No required dependencies found on page.
+[03:53:51] Extracted commands: # __BEGIN_USER__
+pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps $PWD
+
+# __END_USER__
+# __BEGIN_USER__
+pip3 install --no-index --find-links dist Markupsafe
+
+# __END_USER__
+
+[03:53:51] Checking for generic upstream resolution via lfs_get_upstream_version...
+[03:53:51] Upstream flag ignored for package 'markupsafe' (no upstream fetching logic defined)
+[03:53:51] Package base name for search: markupsafe
+[03:53:51] Searching LFS Chapter 3 for packages and patches...
+[03:53:54] Identified main archive: https://pypi.org/packages/source/M/MarkupSafe/markupsafe-3.0.4.tar.gz
+[03:53:54] Extracted version from URL: 3.0.4
+[03:53:54] Total files to download: 1
+[03:53:54] Starting remote build for markupsafe...
+Cleaning up old versions...
+Extracting markupsafe-3.0.4.tar.gz...
+Using tar with strip-components
+Marking build start time...
+Running build commands (user blocks as fusion809, root blocks as root)...
+Processing ./.
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: MarkupSafe
+  Building wheel for MarkupSafe (pyproject.toml): started
+  Building wheel for MarkupSafe (pyproject.toml): finished with status 'done'
+  Created wheel for MarkupSafe: filename=markupsafe-3.0.4-cp315-cp315-linux_x86_64.whl size=22769 sha256=4262571ee46a79572c9cb481c2af29dc988e0972e5bd3bfe39e759c434f0abc6
+  Stored in directory: /tmp/pip-ephem-wheel-cache-tlckz9ti/wheels/ff/77/60/1f9337a48f4cf06fe86dce862623ff4bca88710d13432fa220
+Successfully built MarkupSafe
+[LFS-AUTOBUILD] Staging installation for full inventory...
+Looking in links: dist
+Processing ./dist/markupsafe-3.0.4-cp315-cp315-linux_x86_64.whl
+Installing collected packages: Markupsafe
+Successfully installed Markupsafe-3.0.4
+Looking in links: dist
+Processing ./dist/markupsafe-3.0.4-cp315-cp315-linux_x86_64.whl
+Installing collected packages: Markupsafe
+ERROR: Could not install packages due to an OSError: [Errno 13] Permission denied: '/usr/lib/python3.15/site-packages/markupsafe/__init__.py'
+Consider using the `--user` option or check the permissions.
+
+[ERROR] Build script failed for markupsafe.
+[03:54:05] ========================================
+[03:54:05] Build completed with 1 failure(s):
+[03:54:05]   - markupsafe
+[03:54:05] ========================================
+[03:54:05] [WARNING] Failed to build dep 'markupsafe'. Continuing with main build...
+[03:54:05] Extracted commands: # __BEGIN_USER__
+pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir $PWD
+
+# __END_USER__
+# __BEGIN_ROOT__
+pip3 install --no-index --find-links dist --no-user Mako
+
+# __END_ROOT__
+
+[03:54:05] Checking for generic upstream resolution via lfs_get_upstream_version...
+[03:54:05] Upstream flag ignored for package 'mako' (no upstream fetching logic defined)
+[03:54:05] Package base name for search: mako
+[03:54:05] Identified main archive: https://files.pythonhosted.org/packages/source/M/Mako/mako-1.4.3.tar.gz
+[03:54:05] Extracted version from URL: 1.4.3
+[03:54:05] Total files to download: 1
+[03:54:05] Starting remote build for mako...
+Cleaning up old versions...
+Extracting mako-1.4.3.tar.gz...
+Using tar with strip-components
+Marking build start time...
+Running build commands (user blocks as fusion809, root blocks as root)...
+Processing ./.
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: Mako
+  Building wheel for Mako (pyproject.toml): started
+  Building wheel for Mako (pyproject.toml): finished with status 'done'
+  Created wheel for Mako: filename=mako-1.4.3-py3-none-any.whl size=80429 sha256=885c12b72549f6fa9ac811301296d4810ea7a0d352cf77faf100d89a561323a2
+  Stored in directory: /tmp/pip-ephem-wheel-cache-7hbwea_8/wheels/7f/4c/95/e50353c16fc419b1fac65b50a91ec5dfec0a0e62fc18dcf05f
+Successfully built Mako
+[LFS-AUTOBUILD] Staging installation for full inventory...
+Looking in links: dist
+Processing ./dist/mako-1.4.3-py3-none-any.whl
+Installing collected packages: Mako
+  WARNING: The script mako-render is installed in '/tmp/destdir_mako/usr/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed Mako-1.4.3
+Looking in links: dist
+Processing ./dist/mako-1.4.3-py3-none-any.whl
+INFO: pip is looking at multiple versions of mako to determine which version is compatible with other requirements. This could take a while.
+ERROR: Could not find a version that satisfies the requirement MarkupSafe>=2.0 (from mako) (from versions: none)
+ERROR: No matching distribution found for MarkupSafe>=2.0
+[ERROR] Build script failed for mako.
+[03:54:14] ========================================
+[03:54:14] Build completed with 1 failure(s):
+[03:54:14]   - mako
+[03:54:14] ========================================
+[03:54:14] [WARNING] Failed to build dep 'mako'. Continuing with main build...
+[03:54:14] Dependency 'meson' already installed.
+[03:54:14] Dependency 'ninja' already installed.
+[03:54:14] Dependency 'rust' already installed.
+[03:54:14] Dependency 'rust-bindgen' already installed.
+[03:54:14] Dependency 'spirv-llvm-translator' already installed.
+[03:54:14] Dependency 'spirv-tools' already installed.
+[03:54:14] Dependency 'systemd' already installed.
+[03:54:14] Dependency 'tar' already installed.
+[03:54:14] Dependency 'vulkan-loader' already installed.
+[03:54:14] Dependency 'wayland' already installed.
+[03:54:14] Dependency 'wayland-protocols' already installed.
+[03:54:14] Dependency 'xcb-util-keysyms' already installed.
+[03:54:14] Dependency 'xz' already installed.
+[03:54:14] Dependency 'zlib' already installed.
+[03:54:14] Dependency 'zstd' already installed.
+[03:54:14] Starting remote custom build for mesa...
+mesa-26.2.6.tar.xz already present and appears valid.
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+meson_args: <-D>
+meson_args: <platforms=x11,wayland>
+meson_args: <-D>
+meson_args: <gallium-drivers=auto>
+meson_args: <-D>
+meson_args: <vulkan-drivers=auto>
+meson_args: <-D>
+meson_args: <valgrind=disabled>
+meson_args: <-D>
+meson_args: <video-codecs=all>
+meson_args: <-D>
+meson_args: <libunwind=disabled>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <-D> <platforms=x11,wayland> <-D> <gallium-drivers=auto> <-D> <vulkan-drivers=auto> <-D> <valgrind=disabled> <-D> <video-codecs=all> <-D> <libunwind=disabled> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/mesa/mesa-26.2.6
+Build dir: /home/fusion809/lfs_packaging/mesa/mesa-26.2.6/build
+Build type: native build
+Project name: mesa
+Project version: 26.2.6
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+C++ compiler for the host machine: c++ (gcc 16.2.0 "c++ (GCC) 16.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Checking for size of "void*" : 8 
+Checking if "-mtls-dialect=gnu2" runs: YES
+Checking if "split TLSDESC" links: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency libglvnd found: YES 1.7.0
+Program glslangValidator found: YES (/usr/bin/glslangValidator)
+Run-time dependency libva found: YES 1.24.0
+Header "va/va.h" has symbol "VASurfaceAttribDRMFormatModifiers" with dependency libva: YES 
+Fetching value of define "VA_VERSION" with dependency libva: 1.24.0 
+../meson.build:872: WARNING: add_languages is missing native:, assuming languages are wanted for both host and build.
+Rust compiler for the host machine: rustc -C linker=cc (rustc 1.99.1 "1.99.1")
+Rust linker for the host machine:  ld.bfd 2.47.20260726
+Program bindgen found: YES (/usr/bin/bindgen)
+Program python3.16 found: NO
+Program python3.15 found: YES 3.15.2 3.15.2 (/usr/bin/python3.15)
+Fetching value of define "ETIME" : 62 
+Compiler for C supports arguments -gsplit-dwarf: YES 
+Compiler for C supports link arguments -Wl,--gdb-index: NO 
+Checking for function "bswap32" : YES 
+Checking for function "bswap64" : YES 
+Checking for function "clz" : YES 
+Checking for function "clzll" : YES 
+Checking for function "ctz" : YES 
+Checking for function "expect" : YES 
+Checking for function "ffs" : YES 
+Checking for function "ffsll" : YES 
+Checking for function "popcount" : YES 
+Checking for function "popcountll" : YES 
+Checking for function "unreachable" : YES 
+Checking for function "types_compatible_p" : YES 
+Checking for function "__builtin_add_overflow" : YES 
+Checking for function "__builtin_add_overflow_p" : YES 
+Checking for function "__builtin_sub_overflow_p" : YES 
+Checking for function "__builtin_arm_get_fpscr" : NO 
+Checking for function "__builtin_arm_set_fpscr" : NO 
+Checking for function "__builtin_aarch64_get_fpcr" : NO 
+Checking for function "__builtin_aarch64_set_fpcr" : NO 
+Compiler for C supports function attribute const: YES 
+Compiler for C supports function attribute flatten: YES 
+Compiler for C supports function attribute malloc: YES 
+Compiler for C supports function attribute pure: YES 
+Compiler for C supports function attribute unused: YES 
+Compiler for C supports function attribute warn_unused_result: YES 
+Compiler for C supports function attribute weak: YES 
+Compiler for C supports function attribute format: YES 
+Compiler for C supports function attribute packed: YES 
+Compiler for C supports function attribute returns_nonnull: YES 
+Compiler for C supports function attribute alias: YES 
+Compiler for C supports function attribute noreturn: YES 
+Compiler for C supports function attribute optimize: YES 
+Compiler for C supports function attribute cold: YES 
+Compiler for C supports function attribute visibility:hidden: YES 
+Checking if "__uint128_t" compiles: YES 
+Checking for function "reallocarray" : YES 
+Checking for function "fmemopen" : YES 
+Checking if "gc-sections" links: YES 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Compiler for C supports arguments -Werror=missing-prototypes: YES 
+Compiler for C supports arguments -Werror=return-type: YES 
+Compiler for C supports arguments -Werror=empty-body: YES 
+Compiler for C supports arguments -Werror=incompatible-pointer-types: YES 
+Compiler for C supports arguments -Werror=int-conversion: YES 
+Compiler for C supports arguments -Wimplicit-fallthrough: YES 
+Compiler for C supports arguments -Wmisleading-indentation: YES 
+Compiler for C supports arguments -Wno-error=maybe-uninitialized: YES 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C supports arguments -Wno-format-truncation: YES 
+Compiler for C supports arguments -Wno-nonnull-compare: YES 
+Compiler for C supports arguments -fno-math-errno: YES 
+Compiler for C supports arguments -fno-trapping-math: YES 
+Compiler for C supports arguments -Qunused-arguments: NO 
+Compiler for C supports arguments -fno-common: YES 
+Compiler for C supports arguments -Wno-unknown-pragmas: YES 
+Compiler for C supports arguments -Wno-microsoft-enum-value: NO 
+Compiler for C supports arguments -Wno-unused-function: YES 
+Compiler for C supports arguments -Werror=format: YES 
+Compiler for C supports arguments -Wformat-security: YES 
+Compiler for C supports arguments -Werror=thread-safety: NO 
+Compiler for C supports arguments -ffunction-sections: YES 
+Compiler for C supports arguments -fdata-sections: YES 
+Compiler for C supports arguments -Wno-unused-variable: YES 
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES 
+Compiler for C supports arguments /wd4189: NO 
+Compiler for C++ supports arguments -Werror=return-type: YES 
+Compiler for C++ supports arguments -Werror=empty-body: YES 
+Compiler for C++ supports arguments -Wmisleading-indentation: YES 
+Compiler for C++ supports arguments -Wno-error=maybe-uninitialized: YES 
+Compiler for C++ supports arguments -Wno-non-virtual-dtor: YES 
+Compiler for C++ supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C++ supports arguments -Wno-format-truncation: YES 
+Compiler for C++ supports arguments -fno-math-errno: YES 
+Compiler for C++ supports arguments -fno-trapping-math: YES 
+Compiler for C++ supports arguments -Qunused-arguments: NO 
+Compiler for C++ supports arguments -flifetime-dse=1: YES 
+Compiler for C++ supports arguments -Wno-unknown-pragmas: YES 
+Compiler for C++ supports arguments -Wno-microsoft-enum-value: NO 
+Compiler for C++ supports arguments -Werror=format: YES 
+Compiler for C++ supports arguments -Wformat-security: YES 
+Compiler for C++ supports arguments -ffunction-sections: YES 
+Compiler for C++ supports arguments -fdata-sections: YES 
+Compiler for C++ supports arguments -Wno-unused-variable: YES 
+Compiler for C++ supports arguments -Wno-unused-but-set-variable: YES 
+Compiler for C++ supports arguments /wd4189: NO 
+Compiler for C supports arguments -Wno-override-init: YES 
+Compiler for C supports arguments -Wno-initializer-overrides: NO 
+Compiler for C supports arguments -Werror=pointer-arith: YES 
+Compiler for C supports arguments -Werror=vla: YES 
+Compiler for C supports arguments -Werror=gnu-empty-initializer: NO 
+Compiler for C supports arguments -Wgnu-pointer-arith: NO 
+Compiler for C++ supports arguments -Werror=pointer-arith: YES 
+Compiler for C++ supports arguments -Werror=vla: YES 
+Compiler for C++ supports arguments -Werror=gnu-empty-initializer: NO 
+Compiler for C++ supports arguments -Wgnu-pointer-arith: NO 
+Compiler for C supports arguments -Werror=date-time: YES 
+Compiler for C supports arguments -Werror=gnu-alignof-expression: NO 
+Compiler for C supports arguments -Werror=ignored-qualifiers: YES 
+Compiler for C supports arguments -Werror=implicit-fallthrough: YES 
+Compiler for C supports arguments -Werror=int-conversion: YES (cached)
+Compiler for C supports arguments -Werror=missing-prototypes: YES (cached)
+Compiler for C supports arguments -Werror=pragma-pack: NO 
+Compiler for C supports arguments -Werror=pragma-pack-suspicious-include: NO 
+Compiler for C supports arguments -Werror=sizeof-array-div: YES 
+Compiler for C supports arguments -Werror=string-plus-int: NO 
+Compiler for C supports arguments -Werror=unreachable-code-loop-increment: NO 
+Compiler for C++ supports arguments -D_LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS: YES 
+Compiler for C++ supports arguments -Werror=date-time: YES 
+Compiler for C++ supports arguments -Werror=gnu-alignof-expression: NO 
+Compiler for C++ supports arguments -Werror=ignored-qualifiers: YES 
+Compiler for C++ supports arguments -Werror=implicit-fallthrough: YES 
+Compiler for C++ supports arguments -Werror=pragma-pack: NO 
+Compiler for C++ supports arguments -Werror=pragma-pack-suspicious-include: NO 
+Compiler for C++ supports arguments -Werror=sizeof-array-div: YES 
+Compiler for C++ supports arguments -Werror=string-plus-int: NO 
+Compiler for C++ supports arguments -Werror=unreachable-code-loop-increment: NO 
+Compiler for C++ supports arguments -Werror=missing-declarations: YES 
+Checking for function "__builtin_ia32_clflushopt" : YES 
+Checking if "GCC atomic builtins" compiles: YES 
+Checking if "GCC atomic builtins required -latomic" links: YES 
+Checking if "GCC 64bit atomics" with dependency  links: YES 
+Library ws2_32 found: NO
+Header "sys/sysmacros.h" has symbol "major" : YES 
+Header "sys/sysmacros.h" has symbol "minor" : YES 
+Header "sys/sysmacros.h" has symbol "makedev" : YES 
+Header "sys/mkdev.h" has symbol "major" : NO 
+Check usable header "sched.h" : YES 
+Checking for function "sched_getaffinity" : YES 
+Check usable header "xlocale.h" : NO 
+Check usable header "linux/futex.h" : YES 
+Check usable header "endian.h" : YES 
+Check usable header "dlfcn.h" : YES 
+Check usable header "sys/shm.h" : YES 
+Check usable header "cet.h" : YES 
+Check usable header "pthread_np.h" : NO 
+Check usable header "poll.h" : YES 
+Check usable header "sys/inotify.h" : YES 
+Check usable header "linux/udmabuf.h" : YES 
+Checking for function "strtof" : YES 
+Checking for function "mkostemp" : YES 
+Checking for function "memfd_create" : YES 
+Checking for function "random_r" : YES 
+Checking for function "flock" : YES 
+Checking for function "strtok_r" : YES 
+Checking for function "getrandom" : YES 
+Checking for function "qsort_s" : NO 
+Checking for function "posix_fallocate" : YES 
+Checking for function "secure_getenv" : YES 
+Checking for function "sysconf" : YES 
+Compiler for C++ supports arguments -fno-permissive: YES 
+Checking if "GNU qsort_r" links: YES 
+Header "time.h" has symbol "struct timespec" : YES 
+Checking for function "thrd_create" : YES 
+Header "errno.h" has symbol "program_invocation_name" : YES 
+Header "math.h" has symbol "issignaling" : YES 
+Checking for function "posix_memalign" : YES 
+Checking whether type "struct dirent" has member "d_type" : YES 
+Checking if "strtod has locale support" links: YES 
+Checking if "Bsymbolic" links: YES 
+Checking if "version-script" links: YES 
+Checking if "dynamic-list" links: YES 
+Compiler for C supports link arguments -Wl,--build-id=sha1: YES 
+Checking for function "dlopen" : YES 
+Checking for function "dladdr" with dependency : YES 
+Checking for function "dl_iterate_phdr" : YES 
+Checking for function "clock_gettime" : YES 
+Run-time dependency zlib found: YES 1.3.2
+Run-time dependency libdisplay-info found: YES 0.4.0
+Run-time dependency libzstd found: YES 1.5.7
+Run-time dependency threads found: YES
+Checking for function "pthread_setaffinity_np" with dependency threads: YES 
+Run-time dependency expat found: YES 2.9.0
+Library m found: YES
+Message: libdrm 2.4.133 needed because amdgpu has the highest requirement
+Run-time dependency libdrm found: YES 2.4.134
+Run-time dependency libdrm_intel found: YES 2.4.134
+Run-time dependency libdrm_amdgpu found: YES 2.4.134
+Run-time dependency libudev found: YES 262
+llvm-config found: YES (/usr/bin/llvm-config) 23.1.4
+Run-time dependency LLVM (modules: amdgpu, bitreader, bitwriter, core, coverage, engine, executionengine, instcombine, ipo, irreader, libdriver, linker, lto, mcdisassembler, mcjit, native, option, scalaropts, target, transformutils, abi, all-targets, coroutines, frontenddriver, frontendhlsl, lto, windowsdriver) found: YES 23.1.4
+Run-time dependency llvmspirvlib found: YES 23.1.0.0
+Run-time dependency spirv-tools found: YES 2026.4.1
+Library clang-cpp found: YES
+Found CMake: /usr/bin/cmake (4.4.5)
+Run-time dependency lua54 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua5.4 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua-5.4 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua53 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua5.3 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua-5.3 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua found: YES 5.5.1
+Run-time dependency libelf found: YES 0.197
+Dependency valgrind for host machine skipped: feature valgrind disabled
+Program bison found: YES (/usr/bin/bison)
+Program bison found: YES 3.8.2 3.8.2 (/usr/bin/bison)
+Program flex found: YES (/usr/bin/flex)
+Program ln found: YES (/usr/bin/ln)
+Dependency libunwind for host machine skipped: feature libunwind disabled
+Run-time dependency wayland-protocols found: YES 1.49
+Run-time dependency wayland-client found: YES 1.26.0
+Run-time dependency wayland-server found: YES 1.26.0
+Run-time dependency wayland-egl-backend found: YES 3
+Checking for function "wl_display_dispatch_queue_timeout" with dependency wayland-client: YES 
+Checking for function "wl_display_create_queue_with_name" with dependency wayland-client: YES 
+Run-time dependency OpenMP found: YES 5.2
+Run-time dependency xcb found: YES 1.17.0
+Run-time dependency xcb-randr found: YES 1.17.0
+Run-time dependency x11 found: YES 1.8.13
+Run-time dependency xext found: YES 1.3.7
+Run-time dependency xcb-glx found: YES 1.17.0
+Run-time dependency xcb-shm found: YES 1.17.0
+Run-time dependency xcb-present found: YES 1.17.0
+Dependency xcb for host machine found: YES 1.17.0 (cached)
+Run-time dependency xcb-keysyms found: YES 0.4.1
+Run-time dependency x11-xcb found: YES 1.8.13
+Run-time dependency xcb-dri3 found: YES 1.17.0
+Dependency xcb-present for host machine found: YES 1.17.0 (cached)
+Dependency xcb-shm for host machine found: YES 1.17.0 (cached)
+Run-time dependency xcb-sync found: YES 1.17.0
+Run-time dependency xshmfence found: YES 1.3.3
+Run-time dependency glproto found: YES 1.4.17
+Run-time dependency xxf86vm found: YES 1.1.7
+Run-time dependency xcb-xfixes found: YES 1.17.0
+Dependency xcb-dri3 for host machine found: YES 1.17.0 (cached)
+Dependency xcb-present for host machine found: YES 1.17.0 (cached)
+Dependency xcb-shm for host machine found: YES 1.17.0 (cached)
+Dependency xshmfence for host machine found: YES 1.3.3 (cached)
+Dependency xcb-randr for host machine found: YES 1.17.0 (cached)
+Run-time dependency xrandr found: YES 1.5.5
+Library sensors found: YES
+Program nm found: YES (/usr/bin/nm)
+Program symbols-check.py found: YES (/usr/bin/python3.15 /home/fusion809/lfs_packaging/mesa/mesa-26.2.6/bin/symbols-check.py)
+Program install_megadrivers.py found: YES (/usr/bin/python3.15 /home/fusion809/lfs_packaging/mesa/mesa-26.2.6/bin/install_megadrivers.py)
+Checking for size of "void *" : 8 
+Compiler for C supports arguments -Wno-error: YES 
+Dependency wayland-protocols for host machine found: YES 1.49 (cached)
+Dependency wayland-client for host machine found: YES 1.26.0 (cached)
+Run-time dependency wayland-scanner found: YES 1.26.0
+Program /usr/bin/wayland-scanner found: YES (/usr/bin/wayland-scanner)
+Compiler for C supports arguments -Wno-misleading-indentation: YES 
+Checking whether type "spvtools::LinkerOptions" has member "SetAllowPtrTypeMismatch(true)" with dependency SPIRV-Tools: YES 
+Compiler for C supports link arguments -fPIC: YES 
+Program decode.py found: YES (/home/fusion809/lfs_packaging/mesa/mesa-26.2.6/src/compiler/isaspec/decode.py)
+Program encode.py found: YES (/home/fusion809/lfs_packaging/mesa/mesa-26.2.6/src/compiler/isaspec/encode.py)
+Program bindgen found: YES (/usr/bin/bindgen)
+Compiler for C supports arguments -Wno-missing-prototypes: YES 
+../src/compiler/rust/meson.build:117: WARNING: include_directories sandbox violation!
+The project is trying to access the directory '../../../build' which belongs to a different
+subproject. This is a problem as it hardcodes the relative paths of these two projects.
+This makes it impossible to compile the project in any other directory layout and also
+prevents the subproject from changing its own directory layout.
+
+Instead of poking directly at the internals the subproject should be executed and
+it should set a variable that the caller can then use. Something like:
+
+# In subproject
+some_dep = declare_dependency(include_directories: include_directories('include'))
+
+# In subproject wrap file
+[provide]
+some = some_dep
+
+# In parent project
+some_dep = dependency('some')
+executable(..., dependencies: [some_dep])
+
+This warning will become a hard error in a future Meson release.
+
+Run-time dependency syn found: NO  (tried pkg-config and cmake)
+Looking for a fallback subproject for the dependency syn
+Downloading syn-2-rs source from https://static.crates.io/crates/syn/2.0.87/download
+
+Executing subproject syn-2-rs for machine: host 
+
+syn-2-rs| Project name: syn
+syn-2-rs| Project version: 2.0.87
+syn-2-rs| Rust compiler for the host machine: rustc -C linker=cc (rustc 1.99.1 "1.99.1")
+syn-2-rs| Rust linker for the host machine:  ld.bfd 2.47.20260726
+syn-2-rs| Downloading unicode-ident-1-rs source from https://static.crates.io/crates/unicode-ident/1.0.12/download
+
+Executing subproject syn-2-rs:unicode-ident-1-rs for machine: host
+
+unicode-ident-1-rs| Project name: unicode-ident
+unicode-ident-1-rs| Project version: 1.0.12
+unicode-ident-1-rs| Rust compiler for the host machine: rustc -C linker=cc (rustc 1.99.1 "1.99.1")
+unicode-ident-1-rs| Rust linker for the host machine:  ld.bfd 2.47.20260726
+unicode-ident-1-rs| Build targets in project: 80
+unicode-ident-1-rs| Subproject unicode-ident-1-rs finished.
+
+syn-2-rs| Downloading quote-1-rs source from https://static.crates.io/crates/quote/1.0.35/download
+
+Executing subproject syn-2-rs:quote-1-rs for machine: host
+
+quote-1-rs| Project name: quote
+quote-1-rs| Project version: 1.0.35
+quote-1-rs| Rust compiler for the host machine: rustc -C linker=cc (rustc 1.99.1 "1.99.1")
+quote-1-rs| Rust linker for the host machine:  ld.bfd 2.47.20260726
+quote-1-rs| Downloading proc-macro2-1-rs source from https://static.crates.io/crates/proc-macro2/1.0.86/download
+
+Executing subproject syn-2-rs:quote-1-rs:proc-macro2-1-rs for machine: host
+
+proc-macro2-1-rs| Project name: proc-macro2
+proc-macro2-1-rs| Project version: 1.0.86
+proc-macro2-1-rs| Rust compiler for the host machine: rustc -C linker=cc (rustc 1.99.1 "1.99.1")
+proc-macro2-1-rs| Rust linker for the host machine:  ld.bfd 2.47.20260726
+proc-macro2-1-rs| Build targets in project: 81
+proc-macro2-1-rs| Subproject proc-macro2-1-rs finished.
+
+quote-1-rs| Build targets in project: 82
+quote-1-rs| Subproject quote-1-rs finished.
+
+syn-2-rs| Build targets in project: 83
+syn-2-rs| Subproject syn-2-rs finished.
+
+Dependency syn for host machine from subproject subprojects/syn-2.0.87 found: YES 2.0.87
+Compiler for C++ supports arguments -Wno-unused-variable: YES (cached)
+Compiler for C++ supports arguments -Wno-unused-local-typedefs: YES 
+Compiler for C++ supports arguments -Wno-unused-but-set-variable: YES (cached)
+Compiler for C++ supports arguments -Wno-maybe-uninitialized: YES 
+Compiler for C++ supports arguments -Wno-self-assign: NO 
+Compiler for C++ supports arguments /wd4189: NO (cached)
+Compiler for C++ supports arguments -Wno-uninitialized: YES 
+Compiler for C++ supports arguments -fno-exceptions: YES 
+Compiler for C++ supports arguments -fno-rtti: YES 
+Compiler for C++ supports arguments -Wimplicit-fallthrough: YES 
+Compiler for C++ supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wimplicit-fallthrough: YES (cached)
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wall: YES 
+Compiler for C supports arguments -Wextra: YES 
+Compiler for C supports arguments -Wno-unused: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wno-unused-command-line-argument: NO 
+Compiler for C supports arguments -Wno-ignored-qualifiers: YES 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES (cached)
+Compiler for C supports arguments -Wno-self-assign: NO 
+Compiler for C supports arguments -Wno-implicit-fallthrough: YES 
+Compiler for C supports arguments -Werror=comment: YES 
+Compiler for C supports arguments -Werror=missing-braces: YES 
+Compiler for C supports arguments -Werror=override-init: YES 
+Compiler for C supports arguments -Werror=enum-conversion: YES 
+Compiler for C supports arguments -Werror=enum-compare: YES 
+Compiler for C supports arguments -Werror=parentheses: YES 
+Compiler for C supports arguments -Wall: YES (cached)
+Compiler for C supports arguments -Wextra: YES (cached)
+Compiler for C supports arguments -Wno-unused: YES (cached)
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Compiler for C supports arguments -Wno-unused-command-line-argument: NO (cached)
+Compiler for C supports arguments -Wno-ignored-qualifiers: YES (cached)
+Compiler for C supports arguments -Wno-missing-field-initializers: YES (cached)
+Compiler for C supports arguments -Wno-self-assign: NO (cached)
+Compiler for C supports arguments -Wno-implicit-fallthrough: YES (cached)
+Compiler for C supports arguments -Werror=comment: YES (cached)
+Compiler for C supports arguments -Werror=missing-braces: YES (cached)
+Compiler for C supports arguments -Werror=override-init: YES (cached)
+Compiler for C supports arguments -Werror=enum-conversion: YES (cached)
+Compiler for C supports arguments -Werror=enum-compare: YES (cached)
+Compiler for C supports arguments -Wall: YES (cached)
+Compiler for C supports arguments -Wextra: YES (cached)
+Compiler for C supports arguments -Wno-unused: YES (cached)
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Compiler for C supports arguments -Wno-unused-command-line-argument: NO (cached)
+Compiler for C supports arguments -Wno-ignored-qualifiers: YES (cached)
+Compiler for C supports arguments -Wno-missing-field-initializers: YES (cached)
+Compiler for C supports arguments -Wno-self-assign: NO (cached)
+Compiler for C supports arguments -Wno-implicit-fallthrough: YES (cached)
+Compiler for C supports arguments -Werror=comment: YES (cached)
+Compiler for C supports arguments -Werror=missing-braces: YES (cached)
+Compiler for C supports arguments -Werror=override-init: YES (cached)
+Compiler for C supports arguments -Werror=enum-conversion: YES (cached)
+Compiler for C supports arguments -Werror=enum-compare: YES (cached)
+Compiler for C supports arguments -Wno-gnu-variable-sized-type-not-at-end: NO 
+Program cbindgen found: YES 0.29.4 0.29.4 (/usr/bin/cbindgen)
+Run-time dependency paste found: NO  (tried pkg-config and cmake)
+Looking for a fallback subproject for the dependency paste
+Downloading paste-1-rs source from https://static.crates.io/crates/paste/1.0.14/download
+
+Executing subproject paste-1-rs for machine: host 
+
+paste-1-rs| Project name: paste
+paste-1-rs| Project version: 1.0.14
+paste-1-rs| Rust compiler for the host machine: rustc -C linker=cc (rustc 1.99.1 "1.99.1")
+paste-1-rs| Rust linker for the host machine:  ld.bfd 2.47.20260726
+paste-1-rs| Build targets in project: 567
+paste-1-rs| Subproject paste-1-rs finished.
+
+Dependency paste for host machine from subproject subprojects/paste-1.0.14 found: YES 1.0.14
+Dependency paste for host machine found: YES 1.0.14 (cached)
+Run-time dependency rustc-hash found: NO  (tried pkg-config and cmake)
+Looking for a fallback subproject for the dependency rustc-hash
+Downloading rustc-hash-2-rs source from https://static.crates.io/crates/rustc-hash/2.1.1/download
+
+Executing subproject rustc-hash-2-rs for machine: host 
+
+rustc-hash-2-rs| Project name: rustc_hash
+rustc-hash-2-rs| Project version: 2.1.1
+rustc-hash-2-rs| Rust compiler for the host machine: rustc -C linker=cc (rustc 1.99.1 "1.99.1")
+rustc-hash-2-rs| Rust linker for the host machine:  ld.bfd 2.47.20260726
+rustc-hash-2-rs| Build targets in project: 577
+rustc-hash-2-rs| Subproject rustc-hash-2-rs finished.
+
+Dependency rustc-hash for host machine from subproject subprojects/rustc-hash-2.1.1 found: YES 2.1.1
+Checking for type "std::pmr::monotonic_buffer_resource" : YES 
+Compiler for C supports arguments -Wno-gnu-variable-sized-type-not-at-end: NO (cached)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Compiler for C supports link arguments -Wl,--default-symver: YES 
+Configuring dri.sym using configuration
+Checking for function "mincore" : YES 
+Configuring 50_mesa.json using configuration
+Configuring devenv_glvnd_egl.json using configuration
+Configuring dri.sym using configuration
+Program sphinx-build skipped: feature html-docs disabled
+Build targets in project: 776
+NOTICE: Future-deprecated features used:
+ * 1.12.0: {'"shared_library" keyword argument "name_prefix" of type list'}
+ * 1.8.0: {'module wayland has been stabilized'}
+
+mesa 26.2.6
+
+  Directories
+    prefix            : /usr
+    libdir            : lib
+    includedir        : include
+
+  Common C and C++ arguments
+    c_cpp_args        : -mtls-dialect=gnu2
+
+  OpenGL
+    OpenGL            : YES
+    ES1               : YES
+    ES2               : YES
+    GLVND             : YES
+
+  DRI
+    Platform          : drm
+    Driver dir        : /usr/lib/dri
+
+  GLX
+    Enabled           : YES
+    Provider          : dri
+
+  EGL
+    Enabled           : YES
+    Drivers           : builtin:egl_dri2 builtin:egl_dri3
+    Platforms         : x11 wayland surfaceless drm xcb
+    Native platform   : x11
+
+  GBM
+    Enabled           : YES
+    External libgbm   : NO
+    Backends path     : /usr/lib/gbm
+
+  Vulkan
+    Drivers           : amd intel intel_hasvk nouveau swrast
+    Platforms         : x11 wayland surfaceless drm xcb
+    ICD dir           : share/vulkan/icd.d
+    Intel Ray tracing : YES
+
+  Video
+    Codecs            : vc1dec h264dec h264enc h265dec h265enc av1dec av1enc
+                        vp9dec mpeg12dec jpegdec
+    APIs              : va vulkan
+    Encoding          : YES
+
+  LLVM
+    Required          : enabled
+    Version           : 23.1.4
+
+  Gallium
+    Enabled           : YES
+    Drivers           : r300 r600 radeonsi nouveau virgl svga llvmpipe softpipe
+                        iris crocus i915 zink
+    Platforms         : x11 wayland surfaceless drm xcb
+    Frontends         : mesa va
+    HUD lm-sensors    : YES
+    GFX/Compute       : YES
+
+  Perfetto
+    Enabled           : NO
+
+  Teflon (TensorFlow Lite delegate)
+    Enabled           : NO
+
+  Subprojects (for host machine)
+    paste-1-rs        : YES
+    proc-macro2-1-rs  : YES (from syn-2-rs => quote-1-rs)
+    quote-1-rs        : YES (from syn-2-rs)
+    rustc-hash-2-rs   : YES
+    syn-2-rs          : YES
+    unicode-ident-1-rs: YES (from syn-2-rs)
+
+  User defined options
+    buildtype         : release
+    gallium-drivers   : auto
+    libunwind         : disabled
+    platforms         : x11,wayland
+    prefix            : /usr
+    valgrind          : disabled
+    video-codecs      : all
+    vulkan-drivers    : auto
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/4053] Generating src/util/shader_stats.h with a custom command (wrapped by meson to capture output)
+[2/4053] Generating src/util/format/u_format_gen.h with a custom command (wrapped by meson to capture output)
+[3/4053] Generating src/util/format/u_format_pack.h with a custom command (wrapped by meson to capture output)
+[4/4053] Generating src/compiler/builtin_types.h with a custom command
+[5/4053] Generating src/util/format/u_format_table.c with a custom command (wrapped by meson to capture output)
+[6/4053] Generating src/compiler/builtin_types.c with a custom command
+[7/4053] Generating src/compiler/ir_expression_operation.h with a custom command (wrapped by meson to capture output)
+[8/4053] Generating src/compiler/nir/nir_builder_opcodes.h with a custom command (wrapped by meson to capture output)
+[9/4053] Generating src/compiler/nir/nir_constant_expressions.c with a custom command (wrapped by meson to capture output)
+[10/4053] Generating src/compiler/nir/nir_opcodes.h with a custom command (wrapped by meson to capture output)
+[11/4053] Generating src/compiler/nir/nir_opcodes.c with a custom command (wrapped by meson to capture output)
+[12/4053] Generating src/compiler/nir/nir_intrinsics.h with a custom command
+[13/4053] Generating src/util/format_srgb with a custom command (wrapped by meson to capture output)
+[14/4053] Generating src/compiler/nir/nir_intrinsics_indices.h with a custom command
+[15/4053] Generating src/compiler/nir/nir_intrinsic.c with a custom command
+[16/4053] Generating src/compiler/spirv/vtn_gather_types.c with a custom command
+[17/4053] Generating src/compiler/spirv/spirv_info with a custom command
+[18/4053] Compiling C object src/c11/impl/libmesa_util_c11.a.p/time.c.o
+[19/4053] Generating src/compiler/spirv/vtn_generator_ids.h with a custom command
+[20/4053] Compiling C object src/c11/impl/libmesa_util_c11.a.p/threads_posix.c.o
+[21/4053] Compiling C object src/util/blake3/libblake3.a.p/blake3.c.o
+[22/4053] Compiling C object src/util/blake3/libblake3.a.p/blake3_dispatch.c.o
+[23/4053] Compiling C object src/util/blake3/libblake3.a.p/blake3_sse2_x86-64_unix.S.o
+[24/4053] Compiling C object src/util/blake3/libblake3.a.p/blake3_sse41_x86-64_unix.S.o
+[25/4053] Compiling C object src/util/blake3/libblake3.a.p/blake3_avx2_x86-64_unix.S.o
+[26/4053] Compiling C object src/util/blake3/libblake3.a.p/blake3_avx512_x86-64_unix.S.o
+[27/4053] Compiling C object src/util/blake3/libblake3.a.p/blake3_portable.c.o
+[28/4053] Compiling C object src/util/libmesa_util_clflush.a.p/cache_ops_x86.c.o
+[29/4053] Compiling C object src/util/libmesa_util_clflushopt.a.p/cache_ops_x86_clflushopt.c.o
+[30/4053] Compiling C object src/util/libmesa_util_simd.a.p/streaming-load-memcpy.c.o
+[31/4053] Compiling C object src/util/libmesa_util.a.p/meson-generated_.._format_srgb.c.o
+[32/4053] Compiling C object src/util/libmesa_util.a.p/anon_file.c.o
+[33/4053] Compiling C object src/util/libmesa_util.a.p/bitscan.c.o
+[34/4053] Compiling C object src/util/libmesa_util.a.p/blob.c.o
+[35/4053] Compiling C object src/util/libmesa_util.a.p/build_id.c.o
+[36/4053] Compiling C object src/util/libmesa_util.a.p/cnd_monotonic.c.o
+[37/4053] Compiling C object src/util/libmesa_util.a.p/compress.c.o
+[38/4053] Compiling C object src/util/libmesa_util.a.p/thread_sched.c.o
+[39/4053] Compiling C object src/util/libmesa_util.a.p/crc32.c.o
+[40/4053] Compiling C object src/util/libmesa_util.a.p/dag.c.o
+[41/4053] Compiling C object src/util/libmesa_util.a.p/disk_cache.c.o
+[42/4053] Compiling C object src/util/libmesa_util.a.p/disk_cache_os.c.o
+[43/4053] Compiling C object src/util/libmesa_util.a.p/double.c.o
+[44/4053] Compiling C object src/util/libmesa_util.a.p/fast_idiv_by_const.c.o
+[45/4053] Compiling C object src/util/libmesa_util.a.p/float8.c.o
+[46/4053] Compiling C object src/util/libmesa_util.a.p/fossilize_db.c.o
+[47/4053] Compiling C object src/util/libmesa_util.a.p/futex.c.o
+[48/4053] Compiling C object src/util/libmesa_util.a.p/half_float.c.o
+[49/4053] Compiling C object src/util/libmesa_util.a.p/hash_table.c.o
+[50/4053] Compiling C object src/util/libmesa_util.a.p/helpers.c.o
+[51/4053] Compiling C object src/util/libmesa_util.a.p/u_idalloc.c.o
+[52/4053] Compiling C object src/util/libmesa_util.a.p/log.c.o
+[53/4053] Compiling C object src/util/libmesa_util.a.p/lut.c.o
+[54/4053] Compiling C object src/util/libmesa_util.a.p/memstream.c.o
+[55/4053] Compiling C object src/util/libmesa_util.a.p/mesa-blake3.c.o
+[56/4053] Compiling C object src/util/libmesa_util.a.p/os_time.c.o
+[57/4053] Compiling C object src/util/libmesa_util.a.p/os_file.c.o
+[58/4053] Compiling C object src/util/libmesa_util.a.p/os_file_notify.c.o
+[59/4053] Compiling C object src/util/libmesa_util.a.p/os_memory_fd.c.o
+[60/4053] Compiling C object src/util/libmesa_util.a.p/os_misc.c.o
+[61/4053] Compiling C object src/util/libmesa_util.a.p/os_socket.c.o
+[62/4053] Compiling C object src/util/libmesa_util.a.p/pb_slab.c.o
+[63/4053] Compiling C object src/util/libmesa_util.a.p/perf_u_trace.c.o
+[64/4053] Compiling C object src/util/libmesa_util.a.p/u_process.c.o
+[65/4053] Compiling C++ object src/util/libmesa_util.a.p/u_qsort.cpp.o
+[66/4053] Compiling C object src/util/libmesa_util.a.p/rwlock.c.o
+[67/4053] Compiling C object src/util/libmesa_util.a.p/ralloc.c.o
+[68/4053] Compiling C object src/util/libmesa_util.a.p/rand_xor.c.o
+[69/4053] Compiling C object src/util/libmesa_util.a.p/range_minimum_query.c.o
+[70/4053] Compiling C object src/util/libmesa_util.a.p/rb_tree.c.o
+[71/4053] Compiling C object src/util/libmesa_util.a.p/register_allocate.c.o
+[72/4053] Compiling C object src/util/libmesa_util.a.p/rgtc.c.o
+[73/4053] Compiling C object src/util/libmesa_util.a.p/set.c.o
+[74/4053] Compiling C object src/util/libmesa_util.a.p/simple_mtx.c.o
+[75/4053] Compiling C object src/util/libmesa_util.a.p/slab.c.o
+[76/4053] Compiling C object src/util/libmesa_util.a.p/softfloat.c.o
+[77/4053] Compiling C object src/util/libmesa_util.a.p/sparse_array.c.o
+[78/4053] Compiling C object src/util/libmesa_util.a.p/string_buffer.c.o
+[79/4053] Compiling C object src/util/libmesa_util.a.p/strndup.c.o
+[80/4053] Compiling C object src/util/libmesa_util.a.p/strtod.c.o
+[81/4053] Compiling C++ object src/util/libmesa_util.a.p/texcompress_astc_luts.cpp.o
+[82/4053] Compiling C++ object src/util/libmesa_util.a.p/texcompress_astc_luts_wrap.cpp.o
+[83/4053] Compiling C++ object src/util/libmesa_util.a.p/texcompress_astc.cpp.o
+[84/4053] Compiling C object src/util/libmesa_util.a.p/u_atomic.c.o
+[85/4053] Compiling C object src/util/libmesa_util.a.p/u_call_once.c.o
+[86/4053] Compiling C object src/util/libmesa_util.a.p/u_dl.c.o
+[87/4053] Compiling C object src/util/libmesa_util.a.p/u_dynarray.c.o
+[88/4053] Compiling C object src/util/libmesa_util.a.p/u_hash_table.c.o
+[89/4053] Compiling C object src/util/libmesa_util.a.p/u_queue.c.o
+[90/4053] Compiling C object src/util/libmesa_util.a.p/u_range_remap.c.o
+[91/4053] Compiling C object src/util/libmesa_util.a.p/u_shader_variant_cache.c.o
+[92/4053] Compiling C object src/util/libmesa_util.a.p/u_string.c.o
+[93/4053] Compiling C object src/util/libmesa_util.a.p/u_thread.c.o
+[94/4053] Compiling C object src/util/libmesa_util.a.p/u_vector.c.o
+[95/4053] Compiling C object src/util/libmesa_util.a.p/u_math.c.o
+[96/4053] Compiling C object src/util/libmesa_util.a.p/u_mm.c.o
+[97/4053] Compiling C object src/util/libmesa_util.a.p/u_debug.c.o
+[98/4053] Compiling C object src/util/libmesa_util.a.p/u_debug_memory.c.o
+[99/4053] Compiling C object src/util/libmesa_util.a.p/u_cpu_detect.c.o
+[100/4053] Compiling C object src/util/libmesa_util.a.p/u_printf.c.o
+[101/4053] Compiling C object src/util/libmesa_util.a.p/u_worklist.c.o
+[102/4053] Compiling C object src/util/libmesa_util.a.p/vl_zscan_data.c.o
+[103/4053] Compiling C object src/util/libmesa_util.a.p/vma.c.o
+[104/4053] Compiling C object src/util/libmesa_util.a.p/mesa_cache_db.c.o
+[105/4053] Compiling C object src/util/libmesa_util.a.p/mesa_cache_db_multipart.c.o
+[106/4053] Compiling C object src/util/libmesa_util.a.p/format_u_format.c.o
+[107/4053] Compiling C object src/util/libmesa_util.a.p/format_u_format_bptc.c.o
+[108/4053] Compiling C object src/util/libmesa_util.a.p/format_u_format_etc.c.o
+[109/4053] Compiling C object src/util/libmesa_util.a.p/format_u_format_fxt1.c.o
+[110/4053] Compiling C object src/util/libmesa_util.a.p/format_u_format_latc.c.o
+[111/4053] Compiling C object src/util/libmesa_util.a.p/format_u_format_other.c.o
+[112/4053] Compiling C object src/util/libmesa_util.a.p/format_u_format_rgtc.c.o
+[113/4053] Compiling C object src/util/libmesa_util.a.p/meson-generated_.._format_u_format_table.c.o
+[114/4053] Compiling C object src/util/libmesa_util.a.p/format_u_format_s3tc.c.o
+[115/4053] Compiling C object src/util/libmesa_util.a.p/format_u_format_unpack_neon.c.o
+[116/4053] Compiling C object src/util/libmesa_util.a.p/format_u_format_tests.c.o
+[117/4053] Compiling C object src/util/libmesa_util.a.p/format_u_format_zs.c.o
+[118/4053] Compiling C object src/util/libmesa_util.a.p/u_sync_provider.c.o
+[119/4053] Compiling C object src/util/libmesa_util.a.p/u_debug_stack.c.o
+[120/4053] Compiling C object src/util/libmesa_util.a.p/u_debug_symbol.c.o
+[121/4053] Compiling C object src/compiler/libcompiler.a.p/meson-generated_.._builtin_types.c.o
+[122/4053] Compiling C object src/util/libmesa_util.a.p/format_u_format_yuv.c.o
+[123/4053] Compiling C object src/compiler/libcompiler.a.p/shader_enums.c.o
+[124/4053] Compiling C object src/compiler/nir/libnir.a.p/meson-generated_.._nir_opcodes.c.o
+[125/4053] Compiling C object src/compiler/libcompiler.a.p/glsl_types.c.o
+[126/4053] Compiling C object src/compiler/nir/libnir.a.p/meson-generated_.._nir_intrinsics.c.o
+[127/4053] Compiling C object src/compiler/nir/libnir.a.p/nir.c.o
+[128/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_builder.c.o
+[129/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_builtin_builder.c.o
+[130/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_convert_address_format.c.o
+[131/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_clip_cull_distance_io_utils.c.o
+[132/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_clone.c.o
+[133/4053] Generating src/compiler/nir/nir_opt_algebraic with a custom command
+[134/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_control_flow.c.o
+[135/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_deref.c.o
+[136/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_divergence_analysis.c.o
+[137/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_dominance.c.o
+[138/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_dominance_lca.c.o
+[139/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_downgrade_pls_vars.c.o
+[140/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_fixup_is_exported.c.o
+[141/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_format_convert.c.o
+[142/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_from_ssa.c.o
+[143/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_functions.c.o
+[144/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_gather_info.c.o
+[145/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_gather_output_deps.c.o
+[146/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_gather_tcs_info.c.o
+[147/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_gather_types.c.o
+[148/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_gather_xfb_info.c.o
+[149/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_group_loads.c.o
+[150/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_gs_count_vertices.c.o
+[151/4053] Compiling C object src/compiler/nir/libnir.a.p/meson-generated_.._nir_constant_expressions.c.o
+[152/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_inline_sysval.c.o
+[153/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_inline_uniforms.c.o
+[154/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_io_add_xfb_info.c.o
+[155/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_instr_set.c.o
+[156/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_legacy.c.o
+[157/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_linking_helpers.c.o
+[158/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_liveness.c.o
+[159/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_abort.c.o
+[160/4053] Compiling C object src/compiler/nir/libnir.a.p/meson-generated_.._nir_opt_algebraic.c.o
+[161/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_alu.c.o
+[162/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_loop_analyze.c.o
+[163/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_amul.c.o
+[164/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_alu_width.c.o
+[165/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_alpha.c.o
+[166/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_atomics_to_ssbo.c.o
+[167/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_bitmap.c.o
+[168/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_array_deref_of_vec.c.o
+[169/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_bool_to_float.c.o
+[170/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_bool_to_int32.c.o
+[171/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_calls_to_builtins.c.o
+[172/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_cl_images.c.o
+[173/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_clamp_color_outputs.c.o
+[174/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_blend.c.o
+[175/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_clip_disable.c.o
+[176/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_clip.c.o
+[177/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_clip_halfz.c.o
+[178/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_const_arrays_to_uniforms.c.o
+[179/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_continue_constructs.c.o
+[180/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_convert_alu_types.c.o
+[181/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_variable_initializers.c.o
+[182/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_discard_if.c.o
+[183/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_cooperative_matrix.c.o
+[184/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_fb_read.c.o
+[185/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_flatshade.c.o
+[186/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_double_ops.c.o
+[187/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_floats.c.o
+[188/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_flrp.c.o
+[189/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_explicit_io.c.o
+[190/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_fragcoord_wtrans.c.o
+[191/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_frag_coord_to_pixel_coord.c.o
+[192/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_fp16_conv.c.o
+[193/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_frexp.c.o
+[194/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_fragcolor.c.o
+[195/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_global_vars_to_local.c.o
+[196/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_halt_to_return.c.o
+[197/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_gs_intrinsics.c.o
+[198/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_goto_ifs.c.o
+[199/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_helper_writes.c.o
+[200/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_load_const_to_scalar.c.o
+[201/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_idiv.c.o
+[202/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_locals_to_regs.c.o
+[203/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_image.c.o
+[204/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_image_atomics_to_global.c.o
+[205/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_indirect_derefs_to_if_else_trees.c.o
+[206/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_input_attachments.c.o
+[207/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_interpolation.c.o
+[208/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_int_to_float.c.o
+[209/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_int64.c.o
+[210/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_io_array_vars_to_elements.c.o
+[211/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_io.c.o
+[212/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_io_indirect_loads.c.o
+[213/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_io_vars_to_temporaries.c.o
+[214/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_io_to_scalar.c.o
+[215/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_io_vars_to_scalar.c.o
+[216/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_is_helper_invocation.c.o
+[217/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_multiview.c.o
+[218/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_mediump.c.o
+[219/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_memcpy.c.o
+[220/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_mem_access_bit_sizes.c.o
+[221/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_memory_model.c.o
+[222/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_packing.c.o
+[223/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_passthrough_edgeflags.c.o
+[224/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_non_uniform_access.c.o
+[225/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_patch_vertices.c.o
+[226/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_pntc_ytransform.c.o
+[227/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_phis_to_scalar.c.o
+[228/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_point_size.c.o
+[229/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_point_smooth.c.o
+[230/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_poly_line_smooth.c.o
+[231/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_reg_intrinsics_to_ssa.c.o
+[232/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_printf.c.o
+[233/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_readonly_images_to_tex.c.o
+[234/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_returns.c.o
+[235/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_robust_access.c.o
+[236/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_samplers.c.o
+[237/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_sample_shading.c.o
+[238/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_scratch_to_var.c.o
+[239/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_scratch.c.o
+[240/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_single_sampled.c.o
+[241/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_ssbo.c.o
+[242/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_system_values.c.o
+[243/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_task_shader.c.o
+[244/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_subgroups.c.o
+[245/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_terminate_to_demote.c.o
+[246/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_shader_calls.c.o
+[247/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_tess_coord_z.c.o
+[248/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_tex_shadow.c.o
+[249/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_texcoord_replace_late.c.o
+[250/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_texcoord_replace.c.o
+[251/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_two_sided_color.c.o
+[252/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_undef_to_zero.c.o
+[253/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_var_copies.c.o
+[254/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_vars_to_ssa.c.o
+[255/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_tex.c.o
+[256/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_vec_to_regs.c.o
+[257/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_vec3_to_vec4.c.o
+[258/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_view_index_to_device_index.c.o
+[259/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_wpos_center.c.o
+[260/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_viewport_transform.c.o
+[261/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_wpos_ytransform.c.o
+[262/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_wrmasks.c.o
+[263/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_bit_size.c.o
+[264/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_uniforms_to_ubo.c.o
+[265/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_ubo_vec4.c.o
+[266/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_sysvals_to_varyings.c.o
+[267/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_metadata.c.o
+[268/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_workgroup_size.c.o
+[269/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_mod_analysis.c.o
+[270/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_move_output_stores_to_end.c.o
+[271/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_move_vec_src_uses_to_dest.c.o
+[272/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_normalize_cubemap_coords.c.o
+[273/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_normalize_sin_cos.c.o
+[274/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_access.c.o
+[275/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_barriers.c.o
+[276/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_barycentric.c.o
+[277/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_clip_cull_const.c.o
+[278/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_call.c.o
+[279/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_combine_stores.c.o
+[280/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_comparison_pre.c.o
+[281/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_constant_folding.c.o
+[282/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_copy_propagate.c.o
+[283/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_cse.c.o
+[284/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_dead_cf.c.o
+[285/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_dce.c.o
+[286/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_copy_prop_vars.c.o
+[287/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_fp_math_ctrl.c.o
+[288/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_dead_write_vars.c.o
+[289/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_find_array_copies.c.o
+[290/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_frag_coord_to_pixel_coord.c.o
+[291/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_fragdepth.c.o
+[292/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_gcm.c.o
+[293/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_generate_bfi.c.o
+[294/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_idiv_const.c.o
+[295/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_if.c.o
+[296/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_large_constants.c.o
+[297/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_intrinsics.c.o
+[298/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_licm.c.o
+[299/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_load_skip_helpers.c.o
+[300/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_loop.c.o
+[301/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_loop_unroll.c.o
+[302/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_memcpy.c.o
+[303/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_move.c.o
+[304/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_load_store_vectorize.c.o
+[305/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_move_discards_to_top.c.o
+[306/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_mqsad.c.o
+[307/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_move_to_top.c.o
+[308/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_non_uniform_access.c.o
+[309/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_phi_precision.c.o
+[310/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_offsets.c.o
+[311/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_peephole_select.c.o
+[312/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_phi_to_bool.c.o
+[313/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_ray_queries.c.o
+[314/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_preamble.c.o
+[315/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_reassociate_bfi.c.o
+[316/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_reassociate.c.o
+[317/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_rematerialize_compares.c.o
+[318/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_remove_phis.c.o
+[319/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_shrink_stores.c.o
+[320/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_sink.c.o
+[321/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_shared_vars_to_subgroup.c.o
+[322/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_undef.c.o
+[323/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_shrink_vectors.c.o
+[324/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_uub.c.o
+[325/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_uniform_atomics.c.o
+[326/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_uniform_subgroup.c.o
+[327/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_vectorize.c.o
+[328/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_vectorize_io.c.o
+[329/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_vectorize_io_vars.c.o
+[330/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_passthrough_gs.c.o
+[331/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_phi_builder.c.o
+[332/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_passthrough_tcs.c.o
+[333/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_propagate_invariant.c.o
+[334/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_opt_varyings.c.o
+[335/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_recompute_io_bases.c.o
+[336/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_remove_dead_variables.c.o
+[337/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_print.c.o
+[338/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_range_analysis.c.o
+[339/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_remove_outputs.c.o
+[340/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_remove_tex_shadow.c.o
+[341/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_repair_ssa.c.o
+[342/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_scale_fdiv.c.o
+[343/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_separate_merged_clip_cull_io.c.o
+[344/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_schedule.c.o
+[345/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_search.c.o
+[346/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_shader_bisect.c.o
+[347/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_split_conversions.c.o
+[348/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_split_per_member_structs.c.o
+[349/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_split_64bit_vec3_and_vec4.c.o
+[350/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_serialize.c.o
+[351/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_split_var_copies.c.o
+[352/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_sweep.c.o
+[353/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_to_lcssa.c.o
+[354/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_trivialize_registers.c.o
+[355/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_split_vars.c.o
+[356/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_validate.c.o
+[357/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_use_dominance.c.o
+[358/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_worklist.c.o
+[359/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_lower_atomics.c.o
+[360/4053] Compiling C object src/compiler/spirv/libvtn.a.p/meson-generated_.._spirv_info.c.o
+[361/4053] Compiling C object src/compiler/nir/libnir.a.p/nir_unlower_io_to_vars.c.o
+[362/4053] Compiling C object src/compiler/spirv/libvtn.a.p/meson-generated_.._vtn_gather_types.c.o
+[363/4053] Compiling C object src/compiler/spirv/libvtn.a.p/gl_spirv.c.o
+[364/4053] Compiling C object src/compiler/spirv/libvtn.a.p/vtn_amd.c.o
+[365/4053] Compiling C object src/compiler/spirv/libvtn.a.p/vtn_alu.c.o
+[366/4053] Compiling C object src/compiler/spirv/libvtn.a.p/vtn_cfg.c.o
+[367/4053] Compiling C object src/compiler/spirv/libvtn.a.p/vtn_cmat.c.o
+[368/4053] Compiling C object src/compiler/spirv/libvtn.a.p/vtn_debug.c.o
+[369/4053] Compiling C object src/compiler/spirv/libvtn.a.p/vtn_glsl450.c.o
+[370/4053] Compiling C object src/compiler/spirv/libvtn.a.p/spirv_to_nir.c.o
+[371/4053] Compiling C object src/compiler/spirv/libvtn.a.p/vtn_structured_cfg.c.o
+[372/4053] Compiling C object src/compiler/spirv/libvtn.a.p/vtn_subgroup.c.o
+[373/4053] Compiling C object src/compiler/clc/liblibmesaclc.a.p/clc.c.o
+[374/4053] Compiling C object src/compiler/spirv/libvtn.a.p/vtn_opencl.c.o
+[375/4053] Linking static target src/c11/impl/libmesa_util_c11.a
+[376/4053] Linking static target src/util/blake3/libblake3.a
+[377/4053] Linking static target src/util/libmesa_util_clflush.a
+[378/4053] Linking static target src/util/libmesa_util_clflushopt.a
+[379/4053] Linking static target src/util/libmesa_util_simd.a
+[380/4053] Linking static target src/util/libmesa_util.a
+[381/4053] Linking static target src/compiler/libcompiler.a
+[382/4053] Linking static target src/compiler/nir/libnir.a
+[383/4053] Compiling C object src/compiler/clc/mesa_clc.p/mesa_clc.c.o
+[384/4053] Compiling C object src/compiler/spirv/vtn_bindgen2.p/vtn_bindgen2.c.o
+[385/4053] Compiling Rust source ../subprojects/unicode-ident-1.0.12/src/lib.rs
+[386/4053] Generating src/intel/genxml/gen40_cl_pack.h with a custom command (wrapped by meson to capture output)
+[387/4053] Compiling C object src/compiler/spirv/libvtn.a.p/vtn_variables.c.o
+[388/4053] Linking static target src/compiler/spirv/libvtn.a
+[389/4053] Generating src/intel/genxml/gen45_cl_pack.h with a custom command (wrapped by meson to capture output)
+[390/4053] Generating src/intel/genxml/gen50_cl_pack.h with a custom command (wrapped by meson to capture output)
+[391/4053] Generating src/intel/genxml/gen60_cl_pack.h with a custom command (wrapped by meson to capture output)
+[392/4053] Generating src/intel/genxml/gen70_cl_pack.h with a custom command (wrapped by meson to capture output)
+[393/4053] Generating src/intel/genxml/gen75_cl_pack.h with a custom command (wrapped by meson to capture output)
+[394/4053] Generating src/intel/genxml/gen80_cl_pack.h with a custom command (wrapped by meson to capture output)
+[395/4053] Generating src/intel/genxml/gen90_cl_pack.h with a custom command (wrapped by meson to capture output)
+[396/4053] Generating src/intel/genxml/gen110_cl_pack.h with a custom command (wrapped by meson to capture output)
+[397/4053] Generating src/intel/genxml/gen120_cl_pack.h with a custom command (wrapped by meson to capture output)
+[398/4053] Generating src/intel/genxml/gen125_cl_pack.h with a custom command (wrapped by meson to capture output)
+[399/4053] Generating src/intel/genxml/xe2_cl_pack.h with a custom command (wrapped by meson to capture output)
+[400/4053] Generating src/intel/genxml/xe3_cl_pack.h with a custom command (wrapped by meson to capture output)
+[401/4053] Generating src/intel/genxml/gen125_rt_cl_pack.h with a custom command (wrapped by meson to capture output)
+[402/4053] Generating src/intel/genxml/xe2_rt_cl_pack.h with a custom command (wrapped by meson to capture output)
+[403/4053] Generating src/intel/genxml/xe3_rt_cl_pack.h with a custom command (wrapped by meson to capture output)
+[404/4053] Generating src/intel/genxml/xe3p_cl_pack.h with a custom command (wrapped by meson to capture output)
+[405/4053] Generating src/intel/genxml/xe3p_rt_cl_pack.h with a custom command (wrapped by meson to capture output)
+[406/4053] Generating src/intel/dev/intel_wa.[ch] with a custom command
+[407/4053] Generating src/nouveau/headers/cl85b5.h with a custom command
+[408/4053] Generating src/nouveau/headers/cl902d.h with a custom command
+[409/4053] Generating src/nouveau/headers/cl9039.h with a custom command
+[410/4053] Generating src/nouveau/headers/cl906f.h with a custom command
+[411/4053] Generating src/nouveau/headers/cl9097.h with a custom command
+[412/4053] Generating src/nouveau/headers/cl90b5.h with a custom command
+[413/4053] Generating src/nouveau/headers/cl90c0.h with a custom command
+[414/4053] Generating src/nouveau/headers/cl91c0.h with a custom command
+[415/4053] Generating src/nouveau/headers/cl9297.h with a custom command
+[416/4053] Generating src/nouveau/headers/cla0b5.h with a custom command
+[417/4053] Generating src/nouveau/headers/cla040.h with a custom command
+[418/4053] Generating src/nouveau/headers/cla06f.h with a custom command
+[419/4053] Generating src/nouveau/headers/cla140.h with a custom command
+[420/4053] Generating src/nouveau/headers/cla097.h with a custom command
+[421/4053] Generating src/nouveau/headers/cla16f.h with a custom command
+[422/4053] Generating src/nouveau/headers/cla1c0.h with a custom command
+[423/4053] Generating src/nouveau/headers/cla26f.h with a custom command
+[424/4053] Generating src/nouveau/headers/cla197.h with a custom command
+[425/4053] Generating src/nouveau/headers/cla297.h with a custom command
+[426/4053] Generating src/nouveau/headers/clb06f.h with a custom command
+[427/4053] Generating src/nouveau/headers/clb097.h with a custom command
+[428/4053] Generating src/nouveau/headers/clb0b5.h with a custom command
+[429/4053] Generating src/nouveau/headers/clb0c0.h with a custom command
+[430/4053] Generating src/nouveau/headers/clb1c0.h with a custom command
+[431/4053] Generating src/nouveau/headers/clb197.h with a custom command
+[432/4053] Generating src/nouveau/headers/clc06f.h with a custom command
+[433/4053] Generating src/nouveau/headers/clc197.h with a custom command
+[434/4053] Generating src/nouveau/headers/clc097.h with a custom command
+[435/4053] Generating src/nouveau/headers/clc1b5.h with a custom command
+[436/4053] Generating src/nouveau/headers/clc1c0.h with a custom command
+[437/4053] Generating src/nouveau/headers/cla0c0.h with a custom command
+[438/4053] Generating src/nouveau/headers/clc0b5.h with a custom command
+[439/4053] Generating src/nouveau/headers/clc36f.h with a custom command
+[440/4053] Generating src/nouveau/headers/clc0c0.h with a custom command
+[441/4053] Generating src/nouveau/headers/clc3b5.h with a custom command
+[442/4053] Generating src/nouveau/headers/clc397.h with a custom command
+[443/4053] Generating src/nouveau/headers/clc3c0.h with a custom command
+[444/4053] Generating src/nouveau/headers/clc46f.h with a custom command
+[445/4053] Generating src/nouveau/headers/clc56f.h with a custom command
+[446/4053] Generating src/nouveau/headers/clc597.h with a custom command
+[447/4053] Generating src/nouveau/headers/clc5b0.h with a custom command
+[448/4053] Generating src/nouveau/headers/clc5b5.h with a custom command
+[449/4053] Generating src/nouveau/headers/clc5c0.h with a custom command
+[450/4053] Generating src/nouveau/headers/clc697.h with a custom command
+[451/4053] Generating src/nouveau/headers/clc6b5.h with a custom command
+[452/4053] Generating src/nouveau/headers/clc6c0.h with a custom command
+[453/4053] Generating src/nouveau/headers/clc797.h with a custom command
+[454/4053] Generating src/nouveau/headers/clc7b0.h with a custom command
+[455/4053] Generating src/nouveau/headers/clc7b5.h with a custom command
+[456/4053] Generating src/nouveau/headers/clc7c0.h with a custom command
+[457/4053] Generating src/nouveau/headers/clc86f.h with a custom command
+[458/4053] Generating src/nouveau/headers/clc8b5.h with a custom command
+[459/4053] Generating src/nouveau/headers/clc96f.h with a custom command
+[460/4053] Generating src/nouveau/headers/clc9b0.h with a custom command
+[461/4053] Generating src/nouveau/headers/clc997.h with a custom command
+[462/4053] Generating src/nouveau/headers/clc9b5.h with a custom command
+[463/4053] Generating src/nouveau/headers/clc9c0.h with a custom command
+[464/4053] Generating src/nouveau/headers/clca6f.h with a custom command
+[465/4053] Generating src/nouveau/headers/clcab5.h with a custom command
+[466/4053] Generating src/nouveau/headers/clcbc0.h with a custom command
+[467/4053] Generating src/nouveau/headers/clcb97.h with a custom command
+[468/4053] Generating src/nouveau/headers/clcd97.h with a custom command
+[469/4053] Generating src/nouveau/headers/clcdc0.h with a custom command
+[470/4053] Generating src/nouveau/headers/clce97.h with a custom command
+[471/4053] Generating src/nouveau/headers/clcec0.h with a custom command
+[472/4053] Generating src/nouveau/headers/nv_push_class_dump.h with a custom command
+[473/4053] Linking target src/compiler/spirv/vtn_bindgen2
+[474/4053] Generating bindings for Rust src/compiler/rust/rustmod-bindgen-bindings.h
+[475/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cl85b5.c.o
+[476/4053] Compiling Rust source ../subprojects/proc-macro2-1.0.86/src/lib.rs
+[477/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cl902d.c.o
+[478/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cl906f.c.o
+[479/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cl9039.c.o
+[480/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cl90b5.c.o
+[481/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cl90c0.c.o
+[482/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cl91c0.c.o
+[483/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cl9297.c.o
+[484/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cla040.c.o
+[485/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cla0b5.c.o
+[486/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cla06f.c.o
+[487/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cl9097.c.o
+[488/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cla140.c.o
+[489/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cla097.c.o
+[490/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cla16f.c.o
+[491/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cla197.c.o
+[492/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cla1c0.c.o
+[493/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cla26f.c.o
+[494/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clb06f.c.o
+[495/4053] Compiling C++ object src/compiler/clc/liblibmesaclc.a.p/clc_helpers.cpp.o
+[496/4053] Linking static target src/compiler/clc/liblibmesaclc.a
+[497/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clb097.c.o
+[498/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cla297.c.o
+[499/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clb0b5.c.o
+[500/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clb0c0.c.o
+[501/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clb1c0.c.o
+[502/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clb197.c.o
+[503/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc06f.c.o
+[504/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc097.c.o
+[505/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc1b5.c.o
+[506/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc197.c.o
+[507/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc1c0.c.o
+[508/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_cla0c0.c.o
+[509/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc0b5.c.o
+[510/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc36f.c.o
+[511/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc0c0.c.o
+[512/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc3b5.c.o
+[513/4053] Linking target src/compiler/clc/mesa_clc
+[514/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc3c0.c.o
+[515/4053] Generating src/intel/blorp/blorp_shaders.spv with a custom command
+[516/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc397.c.o
+[517/4053] Generating src/intel/shaders/intel_gfx80_shaders.spv with a custom command
+[518/4053] Generating src/intel/shaders/intel_gfx90_shaders.spv with a custom command
+[519/4053] Generating src/intel/shaders/intel_gfx110_shaders.spv with a custom command
+[520/4053] Generating src/intel/shaders/intel_gfx120_shaders.spv with a custom command
+[521/4053] Generating src/intel/shaders/intel_gfx125_shaders.spv with a custom command
+[522/4053] Generating src/intel/shaders/intel_gfx200_shaders.spv with a custom command
+[523/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc46f.c.o
+[524/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc56f.c.o
+[525/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc597.c.o
+[526/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc5b0.c.o
+[527/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc5b5.c.o
+[528/4053] Generating src/intel/shaders/intel_gfx300_shaders.spv with a custom command
+[529/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc5c0.c.o
+[530/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc6b5.c.o
+[531/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc6c0.c.o
+[532/4053] Generating src/intel/shaders/intel_gfx350_shaders.spv with a custom command
+[533/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc7b0.c.o
+[534/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc697.c.o
+[535/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc7b5.c.o
+[536/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc86f.c.o
+[537/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc8b5.c.o
+[538/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc96f.c.o
+[539/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc997.c.o
+[540/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc7c0.c.o
+[541/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc9b0.c.o
+[542/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc9c0.c.o
+[543/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc9b5.c.o
+[544/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clca6f.c.o
+[545/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clcab5.c.o
+[546/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clcb97.c.o
+[547/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clc797.c.o
+[548/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clcbc0.c.o
+[549/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clcec0.c.o
+[550/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clce97.c.o
+[551/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clcdc0.c.o
+[552/4053] Generating src/util/driconf_static.h with a custom command
+[553/4053] Generating src/git_sha1.h with a custom command
+[554/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/meson-generated_.._nv_push_clcd97.c.o
+[555/4053] Generating src/compiler/glsl/glcpp/glcpp-lex.c with a custom command
+[556/4053] Generating src/compiler/glsl/glcpp/glcpp-parse.[ch] with a custom command
+[557/4053] Generating src/compiler/glsl/glsl_lexer_cpp with a custom command
+[558/4053] Generating src/compiler/glsl/ir_expression_operation_constant.h with a custom command (wrapped by meson to capture output)
+[559/4053] Generating src/compiler/glsl/glsl_parser with a custom command
+[560/4053] Generating src/compiler/glsl/float64_glsl.h with a custom command
+[561/4053] Generating src/compiler/glsl/cross_platform_settings_piece_all.h with a custom command
+[562/4053] Generating src/compiler/glsl/ir_expression_operation_strings.h with a custom command (wrapped by meson to capture output)
+[563/4053] Generating src/compiler/glsl/bc1_glsl.h with a custom command
+[564/4053] Generating src/compiler/glsl/etc2_rgba_stitch_glsl.h with a custom command
+[565/4053] Generating src/compiler/glsl/bc4_glsl.h with a custom command
+[566/4053] Compiling C object src/compiler/rust/libcompiler_c_helpers.a.p/rust_helpers.c.o
+[567/4053] Generating src/compiler/glsl/astc_glsl.h with a custom command
+[568/4053] Compiling C object src/nouveau/headers/libnvidia_headers_c.a.p/nv_push.c.o
+[569/4053] Generating src/vulkan/util/vk_dispatch_table with a custom command
+[570/4053] Compiling Rust source ../subprojects/quote-1.0.35/src/lib.rs
+[571/4053] Generating src/vulkan/util/vk_enum_to_str with a custom command
+[572/4053] Generating src/vulkan/util/vk_extensions with a custom command
+[573/4053] Generating src/vulkan/util/vk_struct_type_cast with a custom command
+[574/4053] Generating src/amd/common/amd_cp_packets_gfx11.h with a custom command (wrapped by meson to capture output)
+[575/4053] Generating src/amd/common/amd_cp_print_packet_gfx11.c with a custom command (wrapped by meson to capture output)
+[576/4053] Generating src/amd/common/amd_cp_print_packet_gfx11.h with a custom command (wrapped by meson to capture output)
+[577/4053] Generating src/amd/common/amd_cp_packets_gfx12.h with a custom command (wrapped by meson to capture output)
+[578/4053] Generating src/amd/common/amd_cp_print_packet_gfx12.c with a custom command (wrapped by meson to capture output)
+[579/4053] Generating src/amd/common/amd_cp_print_packet_gfx12.h with a custom command (wrapped by meson to capture output)
+[580/4053] Compiling C object src/compiler/rust/libcompiler_bindings.a.p/meson-generated_.._bindings.c.o
+[581/4053] Generating src/amd/common/gfx10_format_table.c with a custom command (wrapped by meson to capture output)
+[582/4053] Generating src/amd/compiler/aco_opcodes.h with a custom command (wrapped by meson to capture output)
+[583/4053] Generating src/amd/compiler/aco_opcodes.cpp with a custom command (wrapped by meson to capture output)
+[584/4053] Generating src/amd/compiler/aco_builder.h with a custom command (wrapped by meson to capture output)
+[585/4053] Generating src/intel/genxml/genX_xml.h with a custom command (wrapped by meson to capture output)
+[586/4053] Generating src/intel/genxml/genX_bits.h with a custom command
+[587/4053] Generating src/intel/genxml/gen40_pack.h with a custom command (wrapped by meson to capture output)
+[588/4053] Generating src/intel/genxml/gen45_pack.h with a custom command (wrapped by meson to capture output)
+[589/4053] Generating src/intel/genxml/gen50_pack.h with a custom command (wrapped by meson to capture output)
+[590/4053] Generating src/intel/genxml/gen60_pack.h with a custom command (wrapped by meson to capture output)
+[591/4053] Generating src/intel/genxml/gen70_pack.h with a custom command (wrapped by meson to capture output)
+[592/4053] Generating src/amd/common/sid_tables_h with a custom command (wrapped by meson to capture output)
+[593/4053] Generating src/intel/genxml/gen75_pack.h with a custom command (wrapped by meson to capture output)
+[594/4053] Generating src/intel/genxml/gen80_pack.h with a custom command (wrapped by meson to capture output)
+[595/4053] Generating src/intel/genxml/gen90_pack.h with a custom command (wrapped by meson to capture output)
+[596/4053] Generating src/intel/genxml/gen110_pack.h with a custom command (wrapped by meson to capture output)
+[597/4053] Generating src/amd/common/amdgfxregs_h with a custom command (wrapped by meson to capture output)
+[598/4053] Generating src/intel/genxml/gen120_pack.h with a custom command (wrapped by meson to capture output)
+[599/4053] Generating src/intel/genxml/gen125_pack.h with a custom command (wrapped by meson to capture output)
+[600/4053] Generating src/intel/genxml/xe2_pack.h with a custom command (wrapped by meson to capture output)
+[601/4053] Generating src/intel/genxml/gen125_rt_pack.h with a custom command (wrapped by meson to capture output)
+[602/4053] Generating src/intel/genxml/xe3p_pack.h with a custom command (wrapped by meson to capture output)
+[603/4053] Generating src/intel/genxml/xe2_rt_pack.h with a custom command (wrapped by meson to capture output)
+[604/4053] Generating src/intel/genxml/xe3_pack.h with a custom command (wrapped by meson to capture output)
+[605/4053] Generating src/intel/genxml/xe3_rt_pack.h with a custom command (wrapped by meson to capture output)
+[606/4053] Generating src/intel/genxml/xe3p_rt_pack.h with a custom command (wrapped by meson to capture output)
+[607/4053] Generating src/intel/genxml/gen40_video_pack.h with a custom command (wrapped by meson to capture output)
+[608/4053] Generating src/intel/genxml/gen50_video_pack.h with a custom command (wrapped by meson to capture output)
+[609/4053] Generating src/intel/genxml/gen45_video_pack.h with a custom command (wrapped by meson to capture output)
+[610/4053] Generating src/intel/genxml/gen60_video_pack.h with a custom command (wrapped by meson to capture output)
+[611/4053] Generating src/intel/genxml/gen70_video_pack.h with a custom command (wrapped by meson to capture output)
+[612/4053] Generating src/intel/genxml/gen75_video_pack.h with a custom command (wrapped by meson to capture output)
+[613/4053] Generating src/intel/genxml/gen80_video_pack.h with a custom command (wrapped by meson to capture output)
+[614/4053] Generating src/intel/genxml/gen90_video_pack.h with a custom command (wrapped by meson to capture output)
+[615/4053] Generating src/intel/genxml/gen110_video_pack.h with a custom command (wrapped by meson to capture output)
+[616/4053] Generating src/intel/genxml/gen120_video_pack.h with a custom command (wrapped by meson to capture output)
+[617/4053] Generating src/intel/genxml/gen125_video_pack.h with a custom command (wrapped by meson to capture output)
+[618/4053] Generating src/intel/genxml/xe2_video_pack.h with a custom command (wrapped by meson to capture output)
+[619/4053] Generating src/intel/genxml/xe3_video_pack.h with a custom command (wrapped by meson to capture output)
+[620/4053] Generating src/intel/dev/intel_device_info_gen.h with a custom command
+[621/4053] Generating src/intel/isl/isl_format_layout.c with a custom command
+[622/4053] Generating src/intel/compiler/gen/gen_opcodes with a custom command
+[623/4053] Generating src/intel/compiler/brw_device_sha1_gen.c with a custom command
+[624/4053] Generating src/intel/compiler/brw/brw_nir_lower_fsign.c with a custom command (wrapped by meson to capture output)
+[625/4053] Generating src/intel/compiler/gen/gen_info_*.h with a custom command
+[626/4053] Generating src/intel/genxml/xe3p_video_pack.h with a custom command (wrapped by meson to capture output)
+[627/4053] Generating src/intel/compiler/jay/jay_opcodes.c with a custom command
+[628/4053] Generating src/intel/compiler/jay/jay_extra_info.h with a custom command
+[629/4053] Generating src/intel/compiler/brw/brw_nir_workarounds.c with a custom command (wrapped by meson to capture output)
+[630/4053] Generating src/intel/compiler/jay/jay_builder_opcodes.h with a custom command
+[631/4053] Generating src/intel/compiler/jay/jay_nir_algebraic.c with a custom command
+[632/4053] Generating src/intel/shaders/intel_gfx80_shaders_binding.cpp with a custom command
+[633/4053] Generating src/intel/compiler/elk/elk_nir_trig_workarounds.c with a custom command (wrapped by meson to capture output)
+[634/4053] Generating src/intel/shaders/intel_gfx110_shaders_binding.cpp with a custom command
+[635/4053] Generating src/intel/shaders/intel_gfx90_shaders_binding.cpp with a custom command
+[636/4053] Generating src/intel/shaders/intel_gfx120_shaders_binding.cpp with a custom command
+[637/4053] Generating src/intel/shaders/intel_gfx125_shaders_binding.cpp with a custom command
+[638/4053] Generating src/intel/shaders/intel_gfx200_shaders_binding.cpp with a custom command
+[639/4053] Generating src/intel/blorp/blorp_shaders.cpp with a custom command
+[640/4053] Generating src/intel/shaders/intel_gfx300_shaders_binding.cpp with a custom command
+[641/4053] Generating src/intel/shaders/intel_gfx350_shaders_binding.cpp with a custom command
+[642/4053] Linking static target src/nouveau/headers/libnvidia_headers_c.a
+[643/4053] Generating src/intel/ds/intel_tracepoints.[ch] with a custom command
+[644/4053] Generating src/mesa/glapi/glapi/gen/enums.c with a custom command (wrapped by meson to capture output)
+[645/4053] Generating src/mesa/glapi/glapi/gen/api_exec_init.c with a custom command (wrapped by meson to capture output)
+[646/4053] Generating src/mesa/glapi/glapi/gen/api_exec_decl.h with a custom command (wrapped by meson to capture output)
+[647/4053] Generating src/mesa/glapi/glapi/gen/api_save_init.h with a custom command (wrapped by meson to capture output)
+[648/4053] Generating src/mesa/glapi/glapi/gen/api_beginend_init.h with a custom command (wrapped by meson to capture output)
+[649/4053] Generating src/mesa/glapi/glapi/gen/api_save.h with a custom command (wrapped by meson to capture output)
+[650/4053] Generating src/mesa/glapi/glapi/gen/api_hw_select_init.h with a custom command (wrapped by meson to capture output)
+[651/4053] Generating src/mesa/glapi/glapi/gen/dispatch.h with a custom command (wrapped by meson to capture output)
+[652/4053] Generating src/mesa/glapi/glapi/gen/marshal_generated.h with a custom command (wrapped by meson to capture output)
+[653/4053] Generating src/mesa/glapi/glapi/gen/unmarshal_table.c with a custom command (wrapped by meson to capture output)
+[654/4053] Generating src/mesa/glapi/glapi/gen/api_trace.c with a custom command (wrapped by meson to capture output)
+[655/4053] Generating src/mesa/glapi/glapi/gen/marshal_generated0.c with a custom command (wrapped by meson to capture output)
+[656/4053] Generating src/mesa/glapi/glapi/gen/marshal_generated1.c with a custom command (wrapped by meson to capture output)
+[657/4053] Generating src/mesa/glapi/glapi/gen/marshal_generated2.c with a custom command (wrapped by meson to capture output)
+[658/4053] Generating src/mesa/glapi/glapi/gen/marshal_generated3.c with a custom command (wrapped by meson to capture output)
+[659/4053] Generating src/intel/perf/intel-perf-sources with a custom command
+[660/4053] Generating src/mesa/glapi/glapi/gen/marshal_generated5.c with a custom command (wrapped by meson to capture output)
+[661/4053] Generating src/mesa/glapi/glapi/gen/marshal_generated4.c with a custom command (wrapped by meson to capture output)
+[662/4053] Generating src/mesa/glapi/glapi/gen/marshal_generated6.c with a custom command (wrapped by meson to capture output)
+[663/4053] Generating src/mesa/program/mesa_lex with a custom command
+[664/4053] Generating src/mesa/glapi/shared-glapi/shared_glapi_mapi_tmp.h with a custom command (wrapped by meson to capture output)
+[665/4053] Generating src/mesa/glapi/glapi/gen/marshal_generated7.c with a custom command (wrapped by meson to capture output)
+[666/4053] Generating src/mesa/program/program_parse_tab.[ch] with a custom command
+[667/4053] Generating src/mesa/format_fallback.c with a custom command
+[668/4053] Generating src/mesa/format_info.h with a custom command (wrapped by meson to capture output)
+[669/4053] Generating src/gallium/auxiliary/lp_bld_nir_no_integer_algebraic.c with a custom command (wrapped by meson to capture output)
+[670/4053] Generating src/gallium/auxiliary/draw_nir_lower_opcodes.c with a custom command (wrapped by meson to capture output)
+[671/4053] Generating src/mesa/get_hash.h with a custom command (wrapped by meson to capture output)
+[672/4053] Generating src/gallium/auxiliary/tr_util.[ch] with a custom command
+[673/4053] Generating src/gallium/auxiliary/u_indices_gen.c with a custom command
+[674/4053] Generating src/gallium/auxiliary/u_unfilled_gen.c with a custom command
+[675/4053] Generating src/gallium/auxiliary/u_tracepoints.h with a custom command
+[676/4053] Generating src/gallium/auxiliary/u_tracepoints.c with a custom command
+[677/4053] Generating src/gallium/drivers/r600/egd_tables.h with a custom command (wrapped by meson to capture output)
+[678/4053] Generating src/gallium/drivers/r300/r300_nir_algebraic.c with a custom command
+[679/4053] Generating src/gallium/drivers/r600/sfn_nir_algebraic_c with a custom command (wrapped by meson to capture output)
+[680/4053] Generating src/gallium/drivers/radeonsi/si_tracepoints.[ch] with a custom command
+[681/4053] Generating src/gallium/drivers/zink/zink_nir_algebraic.c with a custom command (wrapped by meson to capture output)
+[682/4053] Generating src/gallium/drivers/zink/zink_instance.c with a custom command
+[683/4053] Compiling C object src/x11/libloader_x11.a.p/x11_display.c.o
+[684/4053] Compiling C object src/x11/libloader_x11.a.p/x11_dri3.c.o
+[685/4053] Generating src/gallium/drivers/zink/zink_device_info.c with a custom command
+[686/4053] Compiling C object src/util/libxmlconfig.a.p/xmlconfig.c.o
+[687/4053] Compiling C object src/loader/libloader.a.p/loader_dri_helper.c.o
+[688/4053] Compiling C object src/loader/libloader.a.p/loader.c.o
+[689/4053] Compiling C object src/compiler/glsl/glcpp/libglcpp.a.p/pp.c.o
+[690/4053] Compiling C object src/compiler/glsl/glcpp/libglcpp.a.p/meson-generated_.._glcpp-lex.c.o
+[691/4053] Compiling C object src/compiler/glsl/glcpp/libglcpp.a.p/meson-generated_.._glcpp-parse.c.o
+[692/4053] Compiling C++ object src/compiler/glsl/libglsl.a.p/ast_array_index.cpp.o
+[693/4053] Compiling C++ object src/compiler/glsl/libglsl.a.p/ast_expr.cpp.o
+[694/4053] Compiling C++ object src/compiler/glsl/libglsl.a.p/meson-generated_.._glsl_parser.cpp.o
+[695/4053] Compiling C++ object src/compiler/glsl/libglsl.a.p/ast_function.cpp.o
+[696/4053] Compiling C++ object src/compiler/glsl/libglsl.a.p/ast_type.cpp.o
+[697/4053] Compiling C++ object src/compiler/glsl/libglsl.a.p/meson-generated_.._glsl_lexer.cpp.o
+[698/4053] Compiling C++ object src/compiler/glsl/libglsl.a.p/builtin_types.cpp.o
+[699/4053] Compiling C++ object src/compiler/glsl/libglsl.a.p/ast_to_hir.cpp.o
+[700/4053] Compiling C object src/compiler/glsl/libglsl.a.p/gl_nir_detect_function_recursion.c.o
+[701/4053] Compiling C object src/compiler/glsl/libglsl.a.p/gl_nir_lower_atomics.c.o
+[702/4053] Compiling C++ object src/compiler/glsl/libglsl.a.p/builtin_variables.cpp.o
+[703/4053] Compiling C object src/compiler/glsl/libglsl.a.p/gl_nir_lower_images.c.o
+[704/4053] Compiling C object src/compiler/glsl/libglsl.a.p/gl_nir_lower_buffers.c.o
+[705/4053] Compiling C object src/compiler/glsl/libglsl.a.p/gl_nir_lower_blend_equation_advanced.c.o
+[706/4053] Compiling C object src/compiler/glsl/libglsl.a.p/gl_nir_lower_discard_flow.c.o
+[707/4053] Compiling C object src/compiler/glsl/libglsl.a.p/gl_nir_lower_named_interface_blocks.c.o
+[708/4053] Compiling C object src/compiler/glsl/libglsl.a.p/gl_nir_lower_samplers.c.o
+[709/4053] Compiling C object src/compiler/glsl/libglsl.a.p/gl_nir_lower_packed_varyings.c.o
+[710/4053] Compiling C object src/compiler/glsl/libglsl.a.p/gl_nir_lower_samplers_as_deref.c.o
+/home/fusion809/lfs-scripts/updates_check_and_run.sh: line 163: 1232364 Killed                     zsh -ic 'updatec'
+===== ERROR: updatec exited with status 137 =====
+Finished: 2026-10-29 03:59:24 AEST
+Exit status: 137
