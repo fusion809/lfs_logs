@@ -1,0 +1,266 @@
+===== Update check started: 2026-10-30 08:35:07 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261030_083507
+Packages needing attention: fribidi
+===== Starting updatec: 2026-10-30 08:35:11 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - fribidi
+
+Building custom package fribidi...
+[08:37:33] Found custom package for fribidi, bypassing BLFS aliases.
+[08:37:33] Custom package detected at /home/fusion809/lfs_packaging/fribidi (package: fribidi)
+[08:37:33] Extracting dependencies for custom package 'fribidi'...
+[08:37:33] Required deps: glibc 
+[08:37:33] Dependency 'glibc' already installed.
+[08:37:33] Starting remote custom build for fribidi...
+--2026-10-30 08:37:53--  https://github.com/fribidi/fribidi/releases/download/v1.0.18/fribidi-1.0.18.tar.xz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/5575048/8a9d89c9-6722-4b73-a392-79a6da0ff3c9?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-29T23%3A17%3A53Z&rscd=attachment%3B+filename%3Dfribidi-1.0.18.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-29T22%3A17%3A53Z&ske=2026-10-29T23%3A17%3A53Z&sks=b&skv=2018-11-09&sig=AxnhlB9jt11sd4pms5mwtJssf4I1IR7rkUG9GWTmcq0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzMxMzc3MywibmJmIjoxNzkzMzEzNDczLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.5bpNbC7mfd4PFWebfr59I7QrxwLewXcW0JHwWOKcWtY&response-content-disposition=attachment%3B%20filename%3Dfribidi-1.0.18.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2026-10-30 08:37:53--  https://release-assets.githubusercontent.com/github-production-release-asset/5575048/8a9d89c9-6722-4b73-a392-79a6da0ff3c9?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-29T23%3A17%3A53Z&rscd=attachment%3B+filename%3Dfribidi-1.0.18.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-29T22%3A17%3A53Z&ske=2026-10-29T23%3A17%3A53Z&sks=b&skv=2018-11-09&sig=AxnhlB9jt11sd4pms5mwtJssf4I1IR7rkUG9GWTmcq0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzMxMzc3MywibmJmIjoxNzkzMzEzNDczLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.5bpNbC7mfd4PFWebfr59I7QrxwLewXcW0JHwWOKcWtY&response-content-disposition=attachment%3B%20filename%3Dfribidi-1.0.18.tar.xz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.111.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1222656 (1.2M) [application/octet-stream]
+Saving to: ‘fribidi-1.0.18.tar.xz’
+
+fribidi-1.0.18.tar.   0%[                    ]       0  --.-KB/s               fribidi-1.0.18.tar. 100%[===================>]   1.17M  --.-KB/s    in 0.1s    
+
+2026-10-30 08:37:53 (8.70 MB/s) - ‘fribidi-1.0.18.tar.xz’ saved [1222656/1222656]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18
+Build dir: /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/build
+Build type: native build
+Project name: fribidi
+Project version: 1.0.18
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Checking for function "memmove" : YES 
+Checking for function "memset" : YES 
+Checking for function "strdup" : YES 
+Has header "stdlib.h" : YES 
+Has header "string.h" : YES 
+Has header "memory.h" : YES 
+Has header "strings.h" : YES 
+Has header "sys/times.h" : YES 
+Has header "strings.h" : YES (cached)
+Configuring config.h using configuration
+Has header "stdlib.h" : YES (cached)
+Has header "string.h" : YES (cached)
+Has header "strings.h" : YES (cached)
+Checking for size of "int" : 4 
+Configuring fribidi-config.h using configuration
+Program python3 found: YES (/usr/bin/python3.15)
+Message: Have pre-generated man pages: true
+Program test-runner.py found: YES (/home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/test/test-runner.py)
+Program python3 found: YES (/usr/bin/python3.15)
+Message: Have pre-generated man pages: true
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Build targets in project: 26
+
+fribidi 1.0.18
+
+  User defined options
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/73] Compiling C object gen.tab/gen-unicode-version.p/gen-unicode-version.c.o
+[2/73] Linking target gen.tab/gen-unicode-version
+[3/73] Generating gen.tab/fribidi-unicode-version.h with a custom command (wrapped by meson to capture output)
+[4/73] Compiling C object gen.tab/gen-bidi-type-tab.p/gen-bidi-type-tab.c.o
+[5/73] Compiling C object gen.tab/gen-joining-type-tab.p/gen-joining-type-tab.c.o
+[6/73] Compiling C object gen.tab/gen-arabic-shaping-tab.p/gen-arabic-shaping-tab.c.o
+[7/73] Compiling C object gen.tab/gen-bidi-type-tab.p/packtab.c.o
+[8/73] Compiling C object gen.tab/gen-mirroring-tab.p/gen-mirroring-tab.c.o
+[9/73] Compiling C object gen.tab/gen-joining-type-tab.p/packtab.c.o
+[10/73] Compiling C object gen.tab/gen-brackets-tab.p/gen-brackets-tab.c.o
+[11/73] Compiling C object gen.tab/gen-arabic-shaping-tab.p/packtab.c.o
+[12/73] Compiling C object gen.tab/gen-brackets-type-tab.p/gen-brackets-type-tab.c.o
+[13/73] Compiling C object gen.tab/gen-mirroring-tab.p/packtab.c.o
+[14/73] Linking target gen.tab/gen-bidi-type-tab
+[15/73] Linking target gen.tab/gen-joining-type-tab
+[16/73] Linking target gen.tab/gen-arabic-shaping-tab
+[17/73] Linking target gen.tab/gen-mirroring-tab
+[18/73] Compiling C object gen.tab/gen-brackets-tab.p/packtab.c.o
+[19/73] Linking target gen.tab/gen-brackets-tab
+[20/73] Compiling C object gen.tab/gen-brackets-type-tab.p/packtab.c.o
+[21/73] Linking target gen.tab/gen-brackets-type-tab
+[22/73] Generating gen.tab/gen-arabic-shaping-tab with a custom command (wrapped by meson to capture output)
+[23/73] Generating gen.tab/gen-joining-type-tab with a custom command (wrapped by meson to capture output)
+[24/73] Generating gen.tab/gen-mirroring-tab with a custom command (wrapped by meson to capture output)
+[25/73] Generating gen.tab/gen-bidi-type-tab with a custom command (wrapped by meson to capture output)
+[26/73] Generating gen.tab/gen-brackets-tab with a custom command (wrapped by meson to capture output)
+[27/73] Compiling C object bin/fribidi.p/getopt.c.o
+[28/73] Compiling C object bin/fribidi.p/getopt1.c.o
+[29/73] Generating gen.tab/gen-brackets-type-tab with a custom command (wrapped by meson to capture output)
+[30/73] Compiling C object bin/fribidi-benchmark.p/fribidi-benchmark.c.o
+[31/73] Compiling C object bin/fribidi.p/fribidi-main.c.o
+[32/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi.c.o
+../lib/fribidi.c: In function ‘fribidi_log2vis’:
+../lib/fribidi.c:253:7: warning: ‘memcpy’ specified bound between 18446744065119617024 and 18446744073709551612 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
+  253 |       memcpy (visual_str, str, len * sizeof (*visual_str));
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[33/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-arabic.c.o
+[34/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets.c.o
+[35/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-bidi-types.c.o
+[36/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cp1255.c.o
+[37/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cp1256.c.o
+[38/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cap-rtl.c.o
+[39/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-iso8859-6.c.o
+[40/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-iso8859-8.c.o
+[41/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-utf8.c.o
+[42/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-deprecated.c.o
+[43/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-joining.c.o
+[44/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-mirroring.c.o
+[45/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-joining-types.c.o
+[46/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-bidi.c.o
+[47/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-brackets.c.o
+[48/73] Compiling C object bin/fribidi-benchmark.p/getopt.c.o
+[49/73] Compiling C object bin/fribidi-benchmark.p/getopt1.c.o
+[50/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-shape.c.o
+[51/73] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-run.c.o
+[52/73] Compiling C object bin/fribidi-bidi-types.p/fribidi-bidi-types.c.o
+[53/73] Linking target lib/libfribidi.so.0.4.0
+[54/73] Compiling C object bin/fribidi-caprtl2utf8.p/fribidi-caprtl2utf8.c.o
+[55/73] Compiling C object test/test-reorder-nsm.p/test-reorder-nsm.c.o
+[56/73] Compiling C object test/test-par-direction.p/test-par-direction.c.o
+[57/73] Generating symbol file lib/libfribidi.so.0.4.0.p/libfribidi.so.0.4.0.symbols
+[58/73] Compiling C object test/test-debug-deep-levels.p/test-debug-deep-levels.c.o
+[59/73] Compiling C object test/test-isolate-chain.p/test-isolate-chain.c.o
+[60/73] Compiling C object test/test-charset-not-found.p/test-charset-not-found.c.o
+[61/73] Linking target bin/fribidi
+[62/73] Linking target bin/fribidi-benchmark
+[63/73] Linking target bin/fribidi-bidi-types
+[64/73] Linking target bin/fribidi-caprtl2utf8
+[65/73] Linking target test/test-reorder-nsm
+[66/73] Compiling C object test/unicode-conformance/BidiCharacterTest.p/BidiCharacterTest.c.o
+[67/73] Linking target test/test-par-direction
+[68/73] Compiling C object test/unicode-conformance/BidiTest.p/BidiTest.c.o
+[69/73] Linking target test/test-isolate-chain
+[70/73] Linking target test/test-debug-deep-levels
+[71/73] Linking target test/test-charset-not-found
+[72/73] Linking target test/unicode-conformance/BidiTest
+[73/73] Linking target test/unicode-conformance/BidiCharacterTest
+[1/9] Linking target gen.tab/gen-bidi-type-tab
+[2/9] Linking target gen.tab/gen-mirroring-tab
+[3/9] Linking target gen.tab/gen-arabic-shaping-tab
+[4/9] Linking target gen.tab/gen-joining-type-tab
+[5/9] Generating gen.tab/gen-mirroring-tab with a custom command (wrapped by meson to capture output)
+[6/9] Generating gen.tab/gen-arabic-shaping-tab with a custom command (wrapped by meson to capture output)
+[7/9] Generating gen.tab/gen-joining-type-tab with a custom command (wrapped by meson to capture output)
+[8/9] Generating gen.tab/gen-bidi-type-tab with a custom command (wrapped by meson to capture output)
+[8/9] Installing files
+Installing gen.tab/fribidi-unicode-version.h to /usr/include/fribidi
+Installing lib/libfribidi.so.0.4.0 to /usr/lib
+Installing bin/fribidi to /usr/bin
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-arabic.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-begindecls.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-bidi.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-bidi-types.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-bidi-types-list.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-char-sets.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-char-sets-list.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-common.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-deprecated.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-enddecls.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-flags.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-joining.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-joining-types.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-joining-types-list.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-mirroring.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-brackets.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-shape.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-types.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi-unicode.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/lib/fribidi.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/bin/fribidi.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_charset_to_unicode.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_debug_status.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_get_bidi_type.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_get_bidi_type_name.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_get_bidi_types.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_get_bracket.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_get_bracket_types.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_get_joining_type.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_get_joining_type_name.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_get_joining_types.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_get_mirror_char.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_get_par_direction.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_get_par_embedding_levels.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_get_par_embedding_levels_ex.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_get_type.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_get_type_internal.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_join_arabic.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_log2vis.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_log2vis_get_embedding_levels.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_mirroring_status.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_parse_charset.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_remove_bidi_marks.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_reorder_line.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_reorder_nsm_status.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_set_debug.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_set_mirroring.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_set_reorder_nsm.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_shape.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_shape_arabic.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_shape_mirroring.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/doc/fribidi_unicode_to_charset.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/build/lib/fribidi-config.h to /usr/include/fribidi
+Installing /home/fusion809/lfs_packaging/fribidi/fribidi-1.0.18/build/meson-private/fribidi.pc to /usr/lib/pkgconfig
+Installing symlink pointing to libfribidi.so.0.4.0 to /usr/lib/libfribidi.so.0
+Installing symlink pointing to libfribidi.so.0 to /usr/lib/libfribidi.so
+1.0.18
+Updated registry for fribidi to version 1.0.18
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package fribidi in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: fribidi: 1.0.17->1.0.18.
+[master 907e942] fribidi: 1.0.17->1.0.18.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: fribidi: 1.0.17->1.0.18.
+[master 36d0d31] fribidi: 1.0.17->1.0.18.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-32
+r13.1-520
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.0...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.0-lfs-r13.1-28
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
