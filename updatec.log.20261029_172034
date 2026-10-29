@@ -1,0 +1,97 @@
+===== Update check started: 2026-10-29 17:20:34 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261029_172034
+Packages needing attention: woxi-git
+===== Starting updatec: 2026-10-29 17:20:37 AEST =====
+Checking for packages with missing file inventories...
+name=nodejs-bin
+local_ver=26.13.0
+remote_ver=2026.10.28
+name=portaudio
+local_ver=19.7.0
+remote_ver=190600.20161030
+name=prrte
+local_ver=3.0.14
+remote_ver=4.1.0
+name=pugixml
+local_ver=1.16
+remote_ver=2013
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - nodejs-bin
+  - portaudio
+  - prrte
+  - pugixml
+  - woxi-git
+
+Building custom package nodejs-bin...
+[17:22:30] Found custom package for nodejs-bin, bypassing BLFS aliases.
+[17:22:30] Custom package detected at /home/fusion809/lfs_packaging/nodejs-bin (package: nodejs-bin)
+[17:22:30] Checking conflicting package(s) for 'nodejs-bin': nodejs 
+[17:22:30] Extracting dependencies for custom package 'nodejs-bin'...
+[17:22:30] Required deps: gcc glibc 
+[17:22:30] Dependency 'gcc' already installed.
+[17:22:30] Dependency 'glibc' already installed.
+[17:22:30] Starting remote custom build for nodejs-bin...
+[17:22:31] [LFS-AUTOBUILD] Skipping custom package nodejs-bin: version 26.13.0 already installed (use -f to force build).
+Building custom package portaudio...
+[17:22:31] Found custom package for portaudio, bypassing BLFS aliases.
+[17:22:31] Custom package detected at /home/fusion809/lfs_packaging/portaudio (package: portaudio)
+[17:22:31] Extracting dependencies for custom package 'portaudio'...
+[17:22:31] Required deps: alsa-lib autoconf bash cmake coreutils gcc glibc gzip jack make opus sed tar wget 
+[17:22:31] Dependency 'alsa-lib' already installed.
+[17:22:31] Dependency 'autoconf' already installed.
+[17:22:31] Dependency 'bash' already installed.
+[17:22:31] Dependency 'cmake' already installed.
+[17:22:31] Dependency 'coreutils' already installed.
+[17:22:31] Dependency 'gcc' already installed.
+[17:22:31] Dependency 'glibc' already installed.
+[17:22:31] Dependency 'gzip' already installed.
+[17:22:31] Dependency 'jack' already installed.
+[17:22:31] Dependency 'make' already installed.
+[17:22:31] Dependency 'opus' already installed.
+[17:22:31] Dependency 'sed' already installed.
+[17:22:31] Dependency 'tar' already installed.
+[17:22:31] Dependency 'wget' already installed.
+[17:22:31] Starting remote custom build for portaudio...
+[17:22:32] [LFS-AUTOBUILD] Skipping custom package portaudio: version 19.7.0 already installed (use -f to force build).
+Building custom package prrte...
+[17:22:32] Found custom package for prrte, bypassing BLFS aliases.
+[17:22:32] Custom package detected at /home/fusion809/lfs_packaging/prrte (package: prrte)
+[17:22:32] Extracting dependencies for custom package 'prrte'...
+[17:22:32] Required deps: bash coreutils glibc gzip hwloc libevent libnl make openpmix perl sed systemd tar wget 
+[17:22:32] Dependency 'bash' already installed.
+[17:22:32] Dependency 'coreutils' already installed.
+[17:22:32] Dependency 'glibc' already installed.
+[17:22:32] Dependency 'gzip' already installed.
+[17:22:32] Dependency 'hwloc' already installed.
+[17:22:32] Dependency 'libevent' already installed.
+[17:22:32] Dependency 'libnl' already installed.
+[17:22:32] Dependency 'make' already installed.
+[17:22:32] Dependency 'openpmix' already installed.
+[17:22:32] Dependency 'perl' already installed.
+[17:22:32] Dependency 'sed' already installed.
+[17:22:32] Dependency 'systemd' already installed.
+[17:22:32] Dependency 'tar' already installed.
+[17:22:32] Dependency 'wget' already installed.
+[17:22:32] Starting remote custom build for prrte...
+[17:22:33] [LFS-AUTOBUILD] Skipping custom package prrte: version 3.0.14 already installed (use -f to force build).
+Building custom package pugixml...
+[17:22:33] Found custom package for pugixml, bypassing BLFS aliases.
+[17:22:33] Custom package detected at /home/fusion809/lfs_packaging/pugixml (package: pugixml)
+[17:22:33] Extracting dependencies for custom package 'pugixml'...
+[17:22:33] Starting remote custom build for pugixml...
+[17:22:33] [LFS-AUTOBUILD] Skipping custom package pugixml: version 1.16 already installed (use -f to force build).
+Building custom package woxi-git...
+[17:22:34] Found custom package for woxi-git, bypassing BLFS aliases.
+[17:22:34] Custom package detected at /home/fusion809/lfs_packaging/woxi-git (package: woxi-git)
+[17:22:34] Checking conflicting package(s) for 'woxi-git': woxi 
+[17:22:34] Extracting dependencies for custom package 'woxi-git'...
+[17:22:34] Required deps: gcc glibc rust 
+[17:22:34] Dependency 'gcc' already installed.
+[17:22:34] Dependency 'glibc' already installed.
+[17:22:34] Dependency 'rust' already installed.
+[17:22:34] Starting remote custom build for woxi-git...
+/home/fusion809/lfs-scripts/updates_check_and_run.sh: line 163: 3933356 Killed                     zsh -ic 'updatec'
+===== ERROR: updatec exited with status 137 =====
+Finished: 2026-10-29 17:22:51 AEST
+Exit status: 137
