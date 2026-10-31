@@ -1,0 +1,322 @@
+===== Update check started: 2026-11-01 07:14:45 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261101_071445
+Packages needing attention: scotch
+===== Starting updatec: 2026-11-01 07:14:54 AEST =====
+Checking for packages with missing file inventories...
+name=libcdio
+local_ver=2.4.0
+remote_ver=2026
+name=libical
+local_ver=4.0.7
+remote_ver=65
+name=libjpeg-turbo
+local_ver=3.2.1
+remote_ver=10
+name=scalapack
+local_ver=2.2.3
+remote_ver=41
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - libcdio
+  - libical
+  - libjpeg-turbo
+  - scalapack
+  - scotch
+
+Building custom package libcdio...
+[07:17:41] Found custom package for libcdio, bypassing BLFS aliases.
+[07:17:41] Custom package detected at /home/fusion809/lfs_packaging/libcdio (package: libcdio)
+[07:17:41] Extracting dependencies for custom package 'libcdio'...
+[07:17:41] Required deps: gcc glibc ncurses 
+[07:17:41] Dependency 'gcc' already installed.
+[07:17:41] Dependency 'glibc' already installed.
+[07:17:41] Dependency 'ncurses' already installed.
+[07:17:41] Starting remote custom build for libcdio...
+[07:17:42] [LFS-AUTOBUILD] Skipping custom package libcdio: version 2.4.0 already installed (use -f to force build).
+Building custom package libical...
+[07:17:42] Found custom package for libical, bypassing BLFS aliases.
+[07:17:42] Custom package detected at /home/fusion809/lfs_packaging/libical (package: libical)
+[07:17:42] Extracting dependencies for custom package 'libical'...
+[07:17:42] Required deps: cmake gcc glib2 glibc icu libffi libxml2 pcre2 vala 
+[07:17:42] Dependency 'cmake' already installed.
+[07:17:42] Dependency 'gcc' already installed.
+[07:17:42] Dependency 'glib2' already installed.
+[07:17:42] Dependency 'glibc' already installed.
+[07:17:42] Dependency 'icu' already installed.
+[07:17:42] Dependency 'libffi' already installed.
+[07:17:42] Dependency 'libxml2' already installed.
+[07:17:42] Dependency 'pcre2' already installed.
+[07:17:42] Dependency 'vala' already installed.
+[07:17:42] Starting remote custom build for libical...
+[07:17:44] [LFS-AUTOBUILD] Skipping custom package libical: version 4.0.7 already installed (use -f to force build).
+Building custom package libjpeg-turbo...
+[07:17:44] Found custom package for libjpeg-turbo, bypassing BLFS aliases.
+[07:17:44] Custom package detected at /home/fusion809/lfs_packaging/libjpeg-turbo (package: libjpeg-turbo)
+[07:17:44] Extracting dependencies for custom package 'libjpeg-turbo'...
+[07:17:44] Required deps: glibc 
+[07:17:44] Dependency 'glibc' already installed.
+[07:17:44] Starting remote custom build for libjpeg-turbo...
+[07:17:46] [LFS-AUTOBUILD] Skipping custom package libjpeg-turbo: version 3.2.1 already installed (use -f to force build).
+Building custom package scalapack...
+[07:17:46] Found custom package for scalapack, bypassing BLFS aliases.
+[07:17:46] Custom package detected at /home/fusion809/lfs_packaging/scalapack (package: scalapack)
+[07:17:46] Extracting dependencies for custom package 'scalapack'...
+[07:17:46] Starting remote custom build for scalapack...
+[07:17:47] [LFS-AUTOBUILD] Skipping custom package scalapack: version 2.2.3 already installed (use -f to force build).
+Building custom package scotch...
+[07:17:47] Found custom package for scotch, bypassing BLFS aliases.
+[07:17:47] Custom package detected at /home/fusion809/lfs_packaging/scotch (package: scotch)
+[07:17:47] Extracting dependencies for custom package 'scotch'...
+[07:17:47] Starting remote custom build for scotch...
+--2026-11-01 07:18:29--  https://gitlab.inria.fr/scotch/scotch/-/archive/v7.0.18/scotch-v7.0.18.tar.gz
+Resolving gitlab.inria.fr (gitlab.inria.fr)... 128.93.193.18
+Connecting to gitlab.inria.fr (gitlab.inria.fr)|128.93.193.18|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8611521 (8.2M) [application/octet-stream]
+Saving to: ‘scotch-v7.0.18.tar.gz’
+
+scotch-v7.0.18.tar.   0%[                    ]       0  --.-KB/s               scotch-v7.0.18.tar.   0%[                    ]  13.95K  38.2KB/s               scotch-v7.0.18.tar.   0%[                    ]  41.91K  57.2KB/s               scotch-v7.0.18.tar.   1%[                    ]  96.84K  88.2KB/s               scotch-v7.0.18.tar.   1%[                    ] 152.16K   104KB/s               scotch-v7.0.18.tar.   3%[                    ] 316.94K   173KB/s               scotch-v7.0.18.tar.   7%[>                   ] 645.89K   294KB/s               scotch-v7.0.18.tar.  15%[==>                 ]   1.27M   508KB/s               scotch-v7.0.18.tar.  31%[=====>              ]   2.55M   893KB/s               scotch-v7.0.18.tar.  47%[========>           ]   3.94M  1.14MB/s    eta 4s     scotch-v7.0.18.tar.  62%[===========>        ]   5.11M  1.39MB/s    eta 4s     scotch-v7.0.18.tar.  86%[================>   ]   7.12M  1.84MB/s    eta 4s     scotch-v7.0.18.tar.  94%[=================>  ]   7.75M  1.81MB/s    eta 4s     scotch-v7.0.18.tar.  95%[==================> ]   7.85M  1.69MB/s    eta 0s     scotch-v7.0.18.tar.  97%[==================> ]   7.98M  1.59MB/s    eta 0s     scotch-v7.0.18.tar.  98%[==================> ]   8.10M  1.50MB/s    eta 0s     scotch-v7.0.18.tar. 100%[===================>]   8.21M  1.52MB/s    in 5.4s    
+
+2026-11-01 07:18:36 (1.52 MB/s) - ‘scotch-v7.0.18.tar.gz’ saved [8611521/8611521]
+
+--2026-11-01 07:18:44--  https://aur.archlinux.org/cgit/aur.git/plain/fortify-source.patch?h=scotch-git
+Resolving aur.archlinux.org (aur.archlinux.org)... 209.126.35.78, 2604:cac0:a104:d::2
+Connecting to aur.archlinux.org (aur.archlinux.org)|209.126.35.78|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-01 07:18:46 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for scotch
+[ERROR] Custom build failed for scotch
+[07:18:46] ========================================
+[07:18:46] Build completed with 1 failure(s):
+[07:18:46]   - scotch
+[07:18:46] ========================================
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-32
+r13.1-536
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libarchive.so.13.8.10
+cand_sobase=libarchive.so
+search_base=libarchive
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIex-3_5.so.34.3.5.2
+cand_sobase=libIex-.so
+search_base=libIex-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIlmThread-3_5.so.34.3.5.2
+cand_sobase=libIlmThread-.so
+search_base=libIlmThread-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXR-3_5.so.34.3.5.2
+cand_sobase=libOpenEXR-.so
+search_base=libOpenEXR-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXRCore-3_5.so.34.3.5.2
+cand_sobase=libOpenEXRCore-.so
+search_base=libOpenEXRCore-
+replacement_found=true
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libarchive.so.13.8.10
+Path: /usr/lib/libarchive.so.13.8.10
+Skipping generic/unsafe name 'libarchive.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libarchive.so.13 libarchive.so.13.8.10
+Example dependents: ./miniconda3/lib/libmamba.so.4.0.1 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libarchive.so.13.8.10:
+  - ./miniconda3/lib/libmamba.so.4.0.1
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libarchive.so.13.8.10.
+------------------------------------------------
+Checking obsolete version (file): libIex-3_5.so.34.3.5.2
+Path: /usr/lib/libIex-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libIex-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 24 remaining dependents.
+Names tracked: libIex-3_5.so.34 libIex-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ...
+Warning: No parent package found for ANY of the 24 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIex-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/IexTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/IlmThread/libIlmThread-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIex-3_5.so.34.3.5.2.
+------------------------------------------------
+Checking obsolete version (file): libIlmThread-3_5.so.34.3.5.2
+Path: /usr/lib/libIlmThread-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libIlmThread-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 22 remaining dependents.
+Names tracked: libIlmThread-3_5.so.34 libIlmThread-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ...
+Warning: No parent package found for ANY of the 22 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIlmThread-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIlmThread-3_5.so.34.3.5.2.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXR-3_5.so.34.3.5.2
+Path: /usr/lib/libOpenEXR-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libOpenEXR-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 21 remaining dependents.
+Names tracked: libOpenEXR-3_5.so.34 libOpenEXR-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ...
+Warning: No parent package found for ANY of the 21 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXR-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXR-3_5.so.34.3.5.2.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRCore-3_5.so.34.3.5.2
+Path: /usr/lib/libOpenEXRCore-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libOpenEXRCore-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 22 remaining dependents.
+Names tracked: libOpenEXRCore-3_5.so.34 libOpenEXRCore-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ...
+Warning: No parent package found for ANY of the 22 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRCore-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRCore-3_5.so.34.3.5.2.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRUtil-3_5.so.34.3.5.2
+Path: /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libOpenEXRUtil-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 13 remaining dependents.
+Names tracked: libOpenEXRUtil-3_5.so.34 libOpenEXRUtil-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ./lfs_packaging/openexr/openexr/build/bin/exrenvmap ...
+Warning: No parent package found for ANY of the 13 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.2.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
