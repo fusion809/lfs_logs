@@ -1,0 +1,1296 @@
+===== Update check started: 2026-10-30 22:52:22 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261030_225222
+/home/fusion809/lfs_packaging/freedesktop.sh: line 5: $2: unbound variable
+Packages needing attention: wireplumber woxi-git
+===== Starting updatec: 2026-10-30 22:52:28 AEST =====
+Checking for packages with missing file inventories...
+name=woxi-git
+local_ver=081e051
+remote_ver=5a40706
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - wireplumber
+  - woxi-git
+
+Building custom package wireplumber...
+[22:54:52] Found custom package for wireplumber, bypassing BLFS aliases.
+[22:54:52] Custom package detected at /home/fusion809/lfs_packaging/wireplumber (package: wireplumber)
+[22:54:52] Extracting dependencies for custom package 'wireplumber'...
+[22:54:52] Required deps: glib2 glibc libffi lua pcre2 pipewire systemd util-linux zlib 
+[22:54:52] Dependency 'glib2' already installed.
+[22:54:52] Dependency 'glibc' already installed.
+[22:54:52] Dependency 'libffi' already installed.
+[22:54:52] Dependency 'lua' already installed.
+[22:54:52] Dependency 'pcre2' already installed.
+[22:54:52] Dependency 'pipewire' already installed.
+[22:54:52] Dependency 'systemd' already installed.
+[22:54:52] Dependency 'util-linux' already installed.
+[22:54:52] Dependency 'zlib' already installed.
+[22:54:52] Starting remote custom build for wireplumber...
+--2026-10-30 22:55:23--  https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.19/wireplumber-0.5.19.tar.bz2
+Resolving gitlab.freedesktop.org (gitlab.freedesktop.org)... 151.101.67.52, 151.101.131.52, 151.101.195.52, ...
+Connecting to gitlab.freedesktop.org (gitlab.freedesktop.org)|151.101.67.52|:443... connected.
+HTTP request sent, awaiting response... 200 
+Length: unspecified [application/octet-stream]
+Saving to: ‘wireplumber-0.5.19.tar.bz2’
+
+          wireplumb     [<=>                 ]       0  --.-KB/s                        wireplumbe     [ <=>                ]   8.36K  25.5KB/s                       wireplumber     [  <=>               ]  32.31K  49.3KB/s                      wireplumber-     [   <=>              ]  86.86K  88.4KB/s                     wireplumber-0     [    <=>             ] 194.64K   148KB/s                    wireplumber-0.     [     <=>            ] 402.24K   245KB/s               wireplumber-0.5.19.     [      <=>           ] 539.41K   326KB/s    in 1.7s    
+
+2026-10-30 22:55:25 (326 KB/s) - ‘wireplumber-0.5.19.tar.bz2’ saved [552351]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+meson_args: <-D>
+meson_args: <system-lua=true>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <-D> <system-lua=true> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19
+Build dir: /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build
+Build type: native build
+Project name: wireplumber
+Project version: 0.5.19
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Checking if "check short_name" compiles: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency glib-2.0 found: YES 2.90.1
+Run-time dependency gobject-2.0 found: YES 2.90.1
+Run-time dependency gmodule-2.0 found: YES 2.90.1
+Run-time dependency gio-2.0 found: YES 2.90.1
+Run-time dependency gio-unix-2.0 found: YES 2.90.1
+Run-time dependency libspa-0.2 found: YES 0.2
+Run-time dependency libpipewire-0.3 found: YES 1.6.11
+Library m found: YES
+Run-time dependency threads found: YES
+Run-time dependency intl found: YES
+Found CMake: /usr/bin/cmake (4.4.5)
+Run-time dependency lua-5.5 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua5.5 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua55 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua-5.4 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua5.4 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua54 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua-5.3 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua5.3 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua53 found: NO  (tried pkg-config and cmake)
+Run-time dependency lua found: YES 5.5.1
+Run-time dependency systemd found: YES 262
+Run-time dependency libsystemd found: YES 262
+Run-time dependency libelogind found: NO  (tried pkg-config and cmake)
+Compiler for C supports arguments -fvisibility=hidden: YES 
+Compiler for C supports arguments -Wsuggest-attribute=format: YES 
+Compiler for C supports arguments -Wsign-compare: YES 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Compiler for C supports arguments -Wpointer-sign: YES 
+Compiler for C supports arguments -Wformat: YES 
+Compiler for C supports arguments -Wformat-security: YES 
+Compiler for C supports arguments -Wimplicit-fallthrough: YES 
+Compiler for C supports arguments -Wmissing-braces: YES 
+Compiler for C supports arguments -Wtype-limits: YES 
+Compiler for C supports arguments -Wvariadic-macros: YES 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wno-pedantic: YES 
+Compiler for C supports arguments -Wold-style-declaration: YES 
+Compiler for C supports arguments -Wunused-result: YES 
+Checking if "SPA_AUDIO_MAX_CHANNELS override" with dependency libspa-0.2 compiles: YES 
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Configuring wpversion.h using configuration
+Configuring wpbuildbasedirs.h using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Has header "sys/vfs.h" : YES 
+Configuring wireplumber.service using configuration
+Configuring wireplumber@.service using configuration
+Program python3 found: YES (/usr/bin/python3)
+Program spa-json-dump found: YES (/usr/bin/spa-json-dump)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Program python3 (sphinx, sphinx_rtd_theme, breathe, sphinx.ext.graphviz) found: NO modules: sphinx, sphinx.ext.graphviz
+Program python3 (lxml) found: YES (/usr/bin/python3) modules: lxml
+Program doxygen found: NO
+Program sphinx-build found: YES 9.1.0 9.1.0 (/usr/bin/sphinx-build)
+Program g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Program valgrind found: YES (/usr/bin/valgrind)
+Message: Using glib.supp: /usr/share/glib-2.0/valgrind/glib.supp
+Configuring wp-uninstalled.sh.in using configuration
+Build targets in project: 125
+
+wireplumber 0.5.19
+
+    Lua version                    : 5.5.1 (system)
+    systemd conf data              : YES
+    libsystemd                     : YES
+    libelogind                     : NO
+    SPA_AUDIO_MAX_CHANNELS         : 128
+
+  For documentation
+    Python 3 Sphinx related modules: NO
+    Doxygen                        : NO
+    sphinx-build                   : YES
+
+  For introspection
+    Python 3 lxml module           : YES
+    Doxygen                        : NO
+    g-ir-scanner                   : YES
+
+  User defined options
+    buildtype                      : release
+    prefix                         : /usr
+    system-lua                     : true
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/235] Generating modules/module-lua-scripting/wplua/wplua-resources_c with a custom command
+[2/235] Generating modules/module-lua-scripting/wplua/wplua-resources_h with a custom command
+[3/235] Generating GObject enum file lib/wp/wpenums.h (wrapped by meson because command contains newlines, to capture output)
+WARNING: Failed to parse "(WP_BASE_DIRS_ENV_CONFIG |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_CONFIG_HOME |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_CONFIG_DIRS |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_SYSCONFDIR |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_DATA_DIRS |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_DATADIR |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_SUBDIR_WIREPLUMBER)," in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "(WP_BASE_DIRS_ENV_DATA |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_DATA_HOME |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_DATA_DIRS |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_DATADIR |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_SUBDIR_WIREPLUMBER)," in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "(WP_BASE_DIRS_ENV_MODULE |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_LIBDIR |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_MODULE |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_SUBDIR_WIREPLUMBER)," in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "(WP_INTEREST_MATCH_GTYPE |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "WP_INTEREST_MATCH_PW_GLOBAL_PROPERTIES |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "WP_INTEREST_MATCH_PW_PROPERTIES |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "WP_INTEREST_MATCH_G_PROPERTIES)," in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "(WP_PROXY_FEATURE_BOUND | WP_PIPEWIRE_OBJECT_FEATURE_INFO)," in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/proxy.h
+WARNING: Failed to parse "(WP_PIPEWIRE_OBJECT_FEATURES_MINIMAL |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_PROPS |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_FORMAT |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_PROFILE |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_PORT_CONFIG |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_ROUTE)," in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/proxy.h
+
+[4/235] Generating GObject enum file lib/wp/wpenums.c (wrapped by meson because command contains newlines, to capture output)
+WARNING: Failed to parse "(WP_BASE_DIRS_ENV_CONFIG |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_CONFIG_HOME |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_CONFIG_DIRS |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_SYSCONFDIR |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_DATA_DIRS |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_DATADIR |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_SUBDIR_WIREPLUMBER)," in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "(WP_BASE_DIRS_ENV_DATA |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_DATA_HOME |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_DATA_DIRS |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_DATADIR |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_SUBDIR_WIREPLUMBER)," in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "(WP_BASE_DIRS_ENV_MODULE |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_LIBDIR |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_MODULE |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_SUBDIR_WIREPLUMBER)," in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "(WP_INTEREST_MATCH_GTYPE |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "WP_INTEREST_MATCH_PW_GLOBAL_PROPERTIES |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "WP_INTEREST_MATCH_PW_PROPERTIES |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "WP_INTEREST_MATCH_G_PROPERTIES)," in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "(WP_PROXY_FEATURE_BOUND | WP_PIPEWIRE_OBJECT_FEATURE_INFO)," in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/proxy.h
+WARNING: Failed to parse "(WP_PIPEWIRE_OBJECT_FEATURES_MINIMAL |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_PROPS |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_FORMAT |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_PROFILE |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_PORT_CONFIG |" in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_ROUTE)," in /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/../lib/wp/proxy.h
+
+[5/235] Generating GObject enum file modules/dbus-connection-enums.c (wrapped by meson because command contains newlines, to capture output)
+[6/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/meson-generated_.._wpenums.c.o
+[7/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/base-dirs.c.o
+[8/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/client.c.o
+[9/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/component-loader.c.o
+[10/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/dynamic-rules.c.o
+[11/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/conf.c.o
+[12/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/error.c.o
+[13/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/core.c.o
+[14/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/device.c.o
+[15/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/event.c.o
+[16/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/event-hook.c.o
+[17/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/event-dispatcher.c.o
+[18/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/factory.c.o
+[19/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/iterator.c.o
+[20/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/global-proxy.c.o
+[21/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/json-utils.c.o
+[22/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/link.c.o
+[23/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/metadata.c.o
+[24/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/module.c.o
+[25/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/log.c.o
+[26/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/settings.c.o
+[27/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/object.c.o
+[28/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/object-interest.c.o
+[29/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/node.c.o
+[30/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/object-manager.c.o
+[31/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/plugin.c.o
+[32/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/permission-manager.c.o
+[33/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/proc-utils.c.o
+[34/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/port.c.o
+[35/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/proxy-interfaces.c.o
+[36/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/properties.c.o
+[37/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/proxy.c.o
+[38/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/si-factory.c.o
+[39/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/session-item.c.o
+[40/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/si-interfaces.c.o
+[41/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/spa-type.c.o
+[42/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/spa-json.c.o
+[43/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/transition.c.o
+[44/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/state.c.o
+[45/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/wp.c.o
+[46/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/private_client-context.c.o
+[47/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/private_pipewire-object-mixin.c.o
+[48/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/private_internal-comp-loader.c.o
+[49/235] Generating GObject enum file modules/dbus-connection-enums.h (wrapped by meson because command contains newlines, to capture output)
+[50/235] Generating gdbus source modules/module-reserve-device/reserve-device-interface.c
+[51/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/private_registry.c.o
+[52/235] Generating gdbus header modules/module-reserve-device/reserve-device-interface.h
+[53/235] Generating GObject enum file modules/module-reserve-device/reserve-device-enums.c (wrapped by meson because command contains newlines, to capture output)
+[54/235] Generating GObject enum file modules/module-reserve-device/reserve-device-enums.h (wrapped by meson because command contains newlines, to capture output)
+[55/235] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/meson-generated_.._wplua-resources.c.o
+[56/235] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/boxed.c.o
+[57/235] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/closure.c.o
+[58/235] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/object.c.o
+[59/235] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/userdata.c.o
+[60/235] Compiling C object lib/wp/libwireplumber-0.5.so.0.519.0.p/spa-pod.c.o
+[61/235] Linking target lib/wp/libwireplumber-0.5.so.0.519.0
+[62/235] Generating modules/module-lua-scripting/api/m-lua-scripting-resources_c with a custom command
+[63/235] Generating modules/module-lua-scripting/api/m-lua-scripting-resources_h with a custom command
+[64/235] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/value.c.o
+[65/235] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/wplua.c.o
+[66/235] Compiling C object modules/libwireplumber-module-dbus-connection.so.p/meson-generated_.._dbus-connection-enums.c.o
+[67/235] Generating symbol file lib/wp/libwireplumber-0.5.so.0.519.0.p/libwireplumber-0.5.so.0.519.0.symbols
+[68/235] Compiling C object modules/libwireplumber-module-dbus-connection.so.p/module-dbus-connection.c.o
+[69/235] Compiling C object modules/libwireplumber-module-settings.so.p/module-settings.c.o
+[70/235] Compiling C object modules/libwireplumber-module-default-nodes-api.so.p/module-default-nodes-api.c.o
+[71/235] Compiling C object modules/libwireplumber-module-reserve-device.so.p/meson-generated_.._module-reserve-device_reserve-device-enums.c.o
+[72/235] Compiling C object modules/libwireplumber-module-reserve-device.so.p/module-reserve-device_plugin.c.o
+[73/235] Compiling C object modules/libwireplumber-module-reserve-device.so.p/meson-generated_.._module-reserve-device_reserve-device-interface.c.o
+[74/235] Compiling C object modules/libwireplumber-module-reserve-device.so.p/module-reserve-device_transitions.c.o
+[75/235] Compiling C object modules/libwireplumber-module-portal-permissionstore.so.p/module-portal-permissionstore.c.o
+[76/235] Compiling C object modules/libwireplumber-module-reserve-device.so.p/module-reserve-device_reserve-device.c.o
+[77/235] Compiling C object modules/libwireplumber-module-notifications-api.so.p/module-notifications-api.c.o
+[78/235] Compiling C object modules/libwireplumber-module-si-node.so.p/module-si-node.c.o
+[79/235] Linking static target modules/module-lua-scripting/wplua/libwplua-0.5.a
+[80/235] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/meson-generated_.._module-lua-scripting_api_m-lua-scripting-resources.c.o
+[81/235] Compiling C object modules/libwireplumber-module-si-audio-adapter.so.p/module-si-audio-adapter.c.o
+[82/235] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_module.c.o
+[83/235] Compiling C object modules/libwireplumber-module-si-standard-link.so.p/module-si-standard-link.c.o
+[84/235] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_script.c.o
+[85/235] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_api_json.c.o
+[86/235] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_api_pod.c.o
+[87/235] Compiling C object modules/libwireplumber-module-file-monitor-api.so.p/module-file-monitor-api.c.o
+[88/235] Compiling C object modules/libwireplumber-module-mixer-api.so.p/module-mixer-api.c.o
+[89/235] Compiling C object modules/libwireplumber-module-log-settings.so.p/module-log-settings.c.o
+[90/235] Compiling C object modules/libwireplumber-module-logind.so.p/module-logind.c.o
+[91/235] Compiling C object modules/libwireplumber-module-standard-event-source.so.p/module-standard-event-source.c.o
+[92/235] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_api_api.c.o
+[93/235] Compiling C object modules/libwireplumber-module-mpris.so.p/module-mpris.c.o
+[94/235] Compiling C object modules/libwireplumber-module-modem-manager.so.p/module-modem-manager.c.o
+[95/235] Compiling C object src/tools/wpexec.p/wpexec.c.o
+[96/235] Compiling C object src/wireplumber.p/main.c.o
+[97/235] Compiling C object tests/wp/test-component-loader.p/component-loader.c.o
+[98/235] Compiling C object tests/wp/test-core.p/core.c.o
+[99/235] Compiling C object src/tools/wpctl.p/wpctl.c.o
+[100/235] Compiling C object tests/wp/test-events.p/events.c.o
+[101/235] Compiling C object tests/wp/test-client-context.p/client-context.c.o
+[102/235] Compiling C object tests/wp/test-object-manager.p/object-manager.c.o
+[103/235] Compiling C object tests/wp/test-metadata.p/metadata.c.o
+[104/235] Compiling C object tests/wp/test-properties.p/properties.c.o
+[105/235] Compiling C object tests/wp/test-object-interest.p/object-interest.c.o
+[106/235] Compiling C object tests/wp/test-proxy.p/proxy.c.o
+[107/235] Compiling C object tests/wp/test-session-item.p/session-item.c.o
+[108/235] Compiling C object tests/wp/test-spa-type.p/spa-type.c.o
+[109/235] Compiling C object tests/wp/test-spa-json.p/spa-json.c.o
+[110/235] Compiling C object tests/wp/test-state.p/state.c.o
+[111/235] Compiling C object tests/wp/test-spa-pod.p/spa-pod.c.o
+[112/235] Compiling C object tests/wp/test-factory.p/factory.c.o
+[113/235] Compiling C object tests/wp/test-transition.p/transition.c.o
+[114/235] Compiling C object tests/wp/test-json-utils.p/json-utils.c.o
+[115/235] Compiling C object tests/wp/test-conf.p/conf.c.o
+[116/235] Compiling C object tests/wp/test-settings.p/settings.c.o
+[117/235] Compiling C object tests/wp/test-dynamic-rules.p/dynamic-rules.c.o
+[118/235] Compiling C object tests/wplua/test-wplua.p/wplua.c.o
+[119/235] Compiling C object tests/modules/test-dbus-connection.p/dbus-connection.c.o
+[120/235] Compiling C object tests/modules/test-reserve-device.p/reserve-device.c.o
+[121/235] Compiling C object tests/modules/test-file-monitor.p/file-monitor.c.o
+[122/235] Compiling C object tests/wplua/script-tester.p/.._script-tester.c.o
+[123/235] Compiling C object tests/scripts/script-tester.p/.._script-tester.c.o
+[124/235] Compiling C object tests/modules/test-si-audio-adapter.p/si-audio-adapter.c.o
+[125/235] Compiling C object tests/modules/test-si-node.p/si-node.c.o
+[126/235] Linking target modules/libwireplumber-module-settings.so
+[127/235] Linking target modules/libwireplumber-module-dbus-connection.so
+[128/235] Linking target modules/libwireplumber-module-default-nodes-api.so
+[129/235] Linking target modules/libwireplumber-module-reserve-device.so
+[130/235] Compiling C object tests/modules/test-si-standard-link.p/si-standard-link.c.o
+[131/235] Compiling C object tests/examples/node-extra-params.p/node-extra-params.c.o
+[132/235] Linking target modules/libwireplumber-module-notifications-api.so
+[133/235] Linking target modules/libwireplumber-module-si-audio-adapter.so
+[134/235] Linking target modules/libwireplumber-module-portal-permissionstore.so
+[135/235] Linking target modules/libwireplumber-module-si-standard-link.so
+[136/235] Linking target modules/libwireplumber-module-si-node.so
+[137/235] Linking target modules/libwireplumber-module-mixer-api.so
+[138/235] Linking target modules/libwireplumber-module-lua-scripting.so
+[139/235] Linking target modules/libwireplumber-module-file-monitor-api.so
+[140/235] Linking target modules/libwireplumber-module-log-settings.so
+[141/235] Linking target modules/libwireplumber-module-standard-event-source.so
+[142/235] Linking target modules/libwireplumber-module-logind.so
+[143/235] Linking target modules/libwireplumber-module-mpris.so
+[144/235] Linking target src/tools/wpctl
+[145/235] Linking target modules/libwireplumber-module-modem-manager.so
+[146/235] Linking target src/wireplumber
+[147/235] Linking target src/tools/wpexec
+[148/235] Building translation po/as/LC_MESSAGES/wireplumber-as.mo
+[149/235] Building translation po/af/LC_MESSAGES/wireplumber-af.mo
+[150/235] Building translation po/be/LC_MESSAGES/wireplumber-be.mo
+[151/235] Building translation po/bn_IN/LC_MESSAGES/wireplumber-bn_IN.mo
+[152/235] Building translation po/bg/LC_MESSAGES/wireplumber-bg.mo
+[153/235] Building translation po/ca/LC_MESSAGES/wireplumber-ca.mo
+[154/235] Building translation po/cs/LC_MESSAGES/wireplumber-cs.mo
+[155/235] Building translation po/de/LC_MESSAGES/wireplumber-de.mo
+[156/235] Building translation po/da/LC_MESSAGES/wireplumber-da.mo
+[157/235] Building translation po/de_CH/LC_MESSAGES/wireplumber-de_CH.mo
+[158/235] Building translation po/el/LC_MESSAGES/wireplumber-el.mo
+[159/235] Building translation po/eo/LC_MESSAGES/wireplumber-eo.mo
+[160/235] Generating po/conf.pot with a custom command (wrapped by meson to capture output)
+[161/235] Building translation po/fa/LC_MESSAGES/wireplumber-fa.mo
+[162/235] Building translation po/es/LC_MESSAGES/wireplumber-es.mo
+[163/235] Building translation po/fi/LC_MESSAGES/wireplumber-fi.mo
+[164/235] Building translation po/fr/LC_MESSAGES/wireplumber-fr.mo
+[165/235] Building translation po/gl/LC_MESSAGES/wireplumber-gl.mo
+[166/235] Building translation po/gu/LC_MESSAGES/wireplumber-gu.mo
+[167/235] Building translation po/he/LC_MESSAGES/wireplumber-he.mo
+[168/235] Building translation po/hi/LC_MESSAGES/wireplumber-hi.mo
+[169/235] Building translation po/hr/LC_MESSAGES/wireplumber-hr.mo
+[170/235] Building translation po/hu/LC_MESSAGES/wireplumber-hu.mo
+[171/235] Building translation po/ja/LC_MESSAGES/wireplumber-ja.mo
+[172/235] Building translation po/it/LC_MESSAGES/wireplumber-it.mo
+[173/235] Building translation po/id/LC_MESSAGES/wireplumber-id.mo
+[174/235] Building translation po/ka/LC_MESSAGES/wireplumber-ka.mo
+[175/235] Building translation po/kk/LC_MESSAGES/wireplumber-kk.mo
+[176/235] Building translation po/kn/LC_MESSAGES/wireplumber-kn.mo
+[177/235] Building translation po/ml/LC_MESSAGES/wireplumber-ml.mo
+[178/235] Building translation po/ko/LC_MESSAGES/wireplumber-ko.mo
+[179/235] Building translation po/lt/LC_MESSAGES/wireplumber-lt.mo
+[180/235] Building translation po/mr/LC_MESSAGES/wireplumber-mr.mo
+[181/235] Building translation po/my/LC_MESSAGES/wireplumber-my.mo
+[182/235] Building translation po/nb/LC_MESSAGES/wireplumber-nb.mo
+[183/235] Building translation po/nl/LC_MESSAGES/wireplumber-nl.mo
+[184/235] Building translation po/nn/LC_MESSAGES/wireplumber-nn.mo
+[185/235] Building translation po/oc/LC_MESSAGES/wireplumber-oc.mo
+[186/235] Building translation po/or/LC_MESSAGES/wireplumber-or.mo
+[187/235] Building translation po/pa/LC_MESSAGES/wireplumber-pa.mo
+[188/235] Building translation po/pt/LC_MESSAGES/wireplumber-pt.mo
+[189/235] Building translation po/pl/LC_MESSAGES/wireplumber-pl.mo
+[190/235] Building translation po/pt_BR/LC_MESSAGES/wireplumber-pt_BR.mo
+[191/235] Building translation po/ro/LC_MESSAGES/wireplumber-ro.mo
+[192/235] Building translation po/ru/LC_MESSAGES/wireplumber-ru.mo
+[193/235] Building translation po/si/LC_MESSAGES/wireplumber-si.mo
+[194/235] Building translation po/sk/LC_MESSAGES/wireplumber-sk.mo
+[195/235] Building translation po/sl/LC_MESSAGES/wireplumber-sl.mo
+[196/235] Building translation po/sr/LC_MESSAGES/wireplumber-sr.mo
+[197/235] Building translation po/sv/LC_MESSAGES/wireplumber-sv.mo
+[198/235] Building translation po/sr@latin/LC_MESSAGES/wireplumber-sr@latin.mo
+[199/235] Building translation po/ta/LC_MESSAGES/wireplumber-ta.mo
+[200/235] Building translation po/uk/LC_MESSAGES/wireplumber-uk.mo
+[201/235] Building translation po/te/LC_MESSAGES/wireplumber-te.mo
+[202/235] Building translation po/tr/LC_MESSAGES/wireplumber-tr.mo
+[203/235] Building translation po/zh_CN/LC_MESSAGES/wireplumber-zh_CN.mo
+[204/235] Building translation po/zh_TW/LC_MESSAGES/wireplumber-zh_TW.mo
+[205/235] Linking target tests/wp/test-component-loader
+[206/235] Linking target tests/wp/test-core
+[207/235] Linking target tests/wp/test-events
+[208/235] Linking target tests/wp/test-metadata
+[209/235] Linking target tests/wp/test-client-context
+[210/235] Linking target tests/wp/test-object-interest
+[211/235] Linking target tests/wp/test-object-manager
+[212/235] Linking target tests/wp/test-properties
+[213/235] Linking target tests/wp/test-proxy
+[214/235] Linking target tests/wp/test-session-item
+[215/235] Linking target tests/wp/test-spa-json
+[216/235] Linking target tests/wp/test-spa-pod
+[217/235] Linking target tests/wp/test-spa-type
+[218/235] Linking target tests/wp/test-state
+[219/235] Linking target tests/wp/test-settings
+[220/235] Linking target tests/wp/test-transition
+[221/235] Linking target tests/wp/test-factory
+[222/235] Linking target tests/wp/test-conf
+[223/235] Linking target tests/wp/test-json-utils
+[224/235] Linking target tests/wplua/script-tester
+[225/235] Linking target tests/wp/test-dynamic-rules
+[226/235] Linking target tests/wplua/test-wplua
+[227/235] Linking target tests/modules/test-dbus-connection
+[228/235] Linking target tests/scripts/script-tester
+[229/235] Linking target tests/modules/test-file-monitor
+[230/235] Linking target tests/modules/test-reserve-device
+[231/235] Linking target tests/modules/test-si-node
+[232/235] Linking target tests/modules/test-si-standard-link
+[233/235] Linking target tests/modules/test-si-audio-adapter
+[234/235] Generating wp-uninstalled with a custom command
+[235/235] Linking target tests/examples/node-extra-params
+[0/1] Installing files
+Installing subdir /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d to /usr/share/wireplumber/wireplumber.conf.d
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d/alsa-vm.conf to /usr/share/wireplumber/wireplumber.conf.d
+Installing subdir /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d.examples to /usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d.examples/v4l2.conf to /usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d.examples/device.conf to /usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d.examples/stream.conf to /usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d.examples/libcamera.conf to /usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d.examples/media-role-nodes.conf to /usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d.examples/log.conf to /usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d.examples/bluetooth.conf to /usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d.examples/filter-graph.conf to /usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d.examples/alsa.conf to /usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d.examples/access.conf to /usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d.examples/linking.conf to /usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d.examples/smart-equalizer.conf to /usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf.d.examples/profile.conf to /usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing subdir /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts to /usr/share/wireplumber/scripts
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/session-services.lua to /usr/share/wireplumber/scripts
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/metadata.lua to /usr/share/wireplumber/scripts
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/fallback-sink.lua to /usr/share/wireplumber/scripts
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/sm-objects.lua to /usr/share/wireplumber/scripts
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/default-nodes/find-best-default-node.lua to /usr/share/wireplumber/scripts/default-nodes
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/default-nodes/state-default-nodes.lua to /usr/share/wireplumber/scripts/default-nodes
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/default-nodes/rescan.lua to /usr/share/wireplumber/scripts/default-nodes
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/default-nodes/find-selected-default-node.lua to /usr/share/wireplumber/scripts/default-nodes
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/default-nodes/apply-default-node.lua to /usr/share/wireplumber/scripts/default-nodes
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/linking/find-defined-target.lua to /usr/share/wireplumber/scripts/linking
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/linking/prepare-link.lua to /usr/share/wireplumber/scripts/linking
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/linking/find-default-target.lua to /usr/share/wireplumber/scripts/linking
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/linking/rescan-media-role-links.lua to /usr/share/wireplumber/scripts/linking
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/linking/find-audio-group-target.lua to /usr/share/wireplumber/scripts/linking
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/linking/mpris-pause.lua to /usr/share/wireplumber/scripts/linking
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/linking/find-media-role-sink-target.lua to /usr/share/wireplumber/scripts/linking
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/linking/find-media-role-target.lua to /usr/share/wireplumber/scripts/linking
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/linking/rescan.lua to /usr/share/wireplumber/scripts/linking
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/linking/rescan-on-linkable.lua to /usr/share/wireplumber/scripts/linking
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/linking/find-filter-target.lua to /usr/share/wireplumber/scripts/linking
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/linking/find-best-target.lua to /usr/share/wireplumber/scripts/linking
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/linking/link-target.lua to /usr/share/wireplumber/scripts/linking
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/linking/get-filter-from-target.lua to /usr/share/wireplumber/scripts/linking
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/lib/common-utils.lua to /usr/share/wireplumber/scripts/lib
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/lib/audio-group-utils.lua to /usr/share/wireplumber/scripts/lib
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/lib/profile-utils.lua to /usr/share/wireplumber/scripts/lib
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/lib/monitor-utils.lua to /usr/share/wireplumber/scripts/lib
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/lib/filter-utils.lua to /usr/share/wireplumber/scripts/lib
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/lib/linking-utils.lua to /usr/share/wireplumber/scripts/lib
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/lib/node-utils.lua to /usr/share/wireplumber/scripts/lib
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/lib/device-info-cache.lua to /usr/share/wireplumber/scripts/lib
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/device/find-preferred-profile.lua to /usr/share/wireplumber/scripts/device
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/device/find-best-routes.lua to /usr/share/wireplumber/scripts/device
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/device/state-routes.lua to /usr/share/wireplumber/scripts/device
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/device/state-profile.lua to /usr/share/wireplumber/scripts/device
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/device/apply-profile.lua to /usr/share/wireplumber/scripts/device
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/device/find-best-profile.lua to /usr/share/wireplumber/scripts/device
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/device/select-routes.lua to /usr/share/wireplumber/scripts/device
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/device/automute-alsa-routes.lua to /usr/share/wireplumber/scripts/device
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/device/autoswitch-bluetooth-profile.lua to /usr/share/wireplumber/scripts/device
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/device/select-profile.lua to /usr/share/wireplumber/scripts/device
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/device/find-voice-call-profile.lua to /usr/share/wireplumber/scripts/device
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/device/apply-routes.lua to /usr/share/wireplumber/scripts/device
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/client/find-config-access.lua to /usr/share/wireplumber/scripts/client
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/client/find-snap-access.lua to /usr/share/wireplumber/scripts/client
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/client/apply-access.lua to /usr/share/wireplumber/scripts/client
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/client/find-default-access.lua to /usr/share/wireplumber/scripts/client
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/client/select-access.lua to /usr/share/wireplumber/scripts/client
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/client/find-portal-access.lua to /usr/share/wireplumber/scripts/client
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/client/find-flatpak-access.lua to /usr/share/wireplumber/scripts/client
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/node/create-item.lua to /usr/share/wireplumber/scripts/node
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/node/suspend-node.lua to /usr/share/wireplumber/scripts/node
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/node/state-stream.lua to /usr/share/wireplumber/scripts/node
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/node/filter-graph.lua to /usr/share/wireplumber/scripts/node
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/node/audio-group.lua to /usr/share/wireplumber/scripts/node
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/node/software-dsp.lua to /usr/share/wireplumber/scripts/node
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/node/find-media-role-default-volume.lua to /usr/share/wireplumber/scripts/node
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/alsa.lua to /usr/share/wireplumber/scripts/monitors
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/bluez-midi.lua to /usr/share/wireplumber/scripts/monitors
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/alsa-midi.lua to /usr/share/wireplumber/scripts/monitors
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/v4l2/create-node.lua to /usr/share/wireplumber/scripts/monitors/v4l2
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/v4l2/name-node.lua to /usr/share/wireplumber/scripts/monitors/v4l2
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/v4l2/name-device.lua to /usr/share/wireplumber/scripts/monitors/v4l2
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/v4l2/create-device.lua to /usr/share/wireplumber/scripts/monitors/v4l2
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/v4l2/enumerate-device.lua to /usr/share/wireplumber/scripts/monitors/v4l2
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/libcamera/create-node.lua to /usr/share/wireplumber/scripts/monitors/libcamera
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/libcamera/name-node.lua to /usr/share/wireplumber/scripts/monitors/libcamera
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/libcamera/name-device.lua to /usr/share/wireplumber/scripts/monitors/libcamera
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/libcamera/create-device.lua to /usr/share/wireplumber/scripts/monitors/libcamera
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/libcamera/enumerate-device.lua to /usr/share/wireplumber/scripts/monitors/libcamera
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/bluez/create-set-node.lua to /usr/share/wireplumber/scripts/monitors/bluez
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/bluez/create-loopback-node.lua to /usr/share/wireplumber/scripts/monitors/bluez
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/bluez/create-node.lua to /usr/share/wireplumber/scripts/monitors/bluez
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/bluez/name-node.lua to /usr/share/wireplumber/scripts/monitors/bluez
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/bluez/name-device.lua to /usr/share/wireplumber/scripts/monitors/bluez
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/bluez/remove-node.lua to /usr/share/wireplumber/scripts/monitors/bluez
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/bluez/create-offload-node.lua to /usr/share/wireplumber/scripts/monitors/bluez
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/bluez/create-device.lua to /usr/share/wireplumber/scripts/monitors/bluez
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/bluez/remove-device.lua to /usr/share/wireplumber/scripts/monitors/bluez
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/scripts/monitors/bluez/enumerate-device.lua to /usr/share/wireplumber/scripts/monitors/bluez
+Installing lib/wp/wpenums.h to /usr/include/wireplumber-0.5/wp
+Installing lib/wp/libwireplumber-0.5.so.0.519.0 to /usr/lib
+Installing modules/libwireplumber-module-settings.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-dbus-connection.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-default-nodes-api.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-reserve-device.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-portal-permissionstore.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-notifications-api.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-si-audio-adapter.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-si-node.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-si-standard-link.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-lua-scripting.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-mixer-api.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-file-monitor-api.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-log-settings.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-logind.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-standard-event-source.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-mpris.so to /usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-modem-manager.so to /usr/lib/wireplumber-0.5
+Installing src/tools/wpctl to /usr/bin
+Installing src/tools/wpexec to /usr/bin
+Installing src/wireplumber to /usr/bin
+Installing po/af/LC_MESSAGES/wireplumber.mo to /usr/share/locale/af/LC_MESSAGES
+Installing po/as/LC_MESSAGES/wireplumber.mo to /usr/share/locale/as/LC_MESSAGES
+Installing po/be/LC_MESSAGES/wireplumber.mo to /usr/share/locale/be/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/wireplumber.mo to /usr/share/locale/bg/LC_MESSAGES
+Installing po/bn_IN/LC_MESSAGES/wireplumber.mo to /usr/share/locale/bn_IN/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/wireplumber.mo to /usr/share/locale/ca/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/wireplumber.mo to /usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/wireplumber.mo to /usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/wireplumber.mo to /usr/share/locale/de/LC_MESSAGES
+Installing po/de_CH/LC_MESSAGES/wireplumber.mo to /usr/share/locale/de_CH/LC_MESSAGES
+Installing po/el/LC_MESSAGES/wireplumber.mo to /usr/share/locale/el/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/wireplumber.mo to /usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/wireplumber.mo to /usr/share/locale/es/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/wireplumber.mo to /usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/wireplumber.mo to /usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/wireplumber.mo to /usr/share/locale/fr/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/wireplumber.mo to /usr/share/locale/gl/LC_MESSAGES
+Installing po/gu/LC_MESSAGES/wireplumber.mo to /usr/share/locale/gu/LC_MESSAGES
+Installing po/he/LC_MESSAGES/wireplumber.mo to /usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/wireplumber.mo to /usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/wireplumber.mo to /usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/wireplumber.mo to /usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/wireplumber.mo to /usr/share/locale/id/LC_MESSAGES
+Installing po/it/LC_MESSAGES/wireplumber.mo to /usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/wireplumber.mo to /usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/wireplumber.mo to /usr/share/locale/ka/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/wireplumber.mo to /usr/share/locale/kk/LC_MESSAGES
+Installing po/kn/LC_MESSAGES/wireplumber.mo to /usr/share/locale/kn/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/wireplumber.mo to /usr/share/locale/ko/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/wireplumber.mo to /usr/share/locale/lt/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/wireplumber.mo to /usr/share/locale/ml/LC_MESSAGES
+Installing po/mr/LC_MESSAGES/wireplumber.mo to /usr/share/locale/mr/LC_MESSAGES
+Installing po/my/LC_MESSAGES/wireplumber.mo to /usr/share/locale/my/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/wireplumber.mo to /usr/share/locale/nb/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/wireplumber.mo to /usr/share/locale/nl/LC_MESSAGES
+Installing po/nn/LC_MESSAGES/wireplumber.mo to /usr/share/locale/nn/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/wireplumber.mo to /usr/share/locale/oc/LC_MESSAGES
+Installing po/or/LC_MESSAGES/wireplumber.mo to /usr/share/locale/or/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/wireplumber.mo to /usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/wireplumber.mo to /usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/wireplumber.mo to /usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/wireplumber.mo to /usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/wireplumber.mo to /usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/wireplumber.mo to /usr/share/locale/ru/LC_MESSAGES
+Installing po/si/LC_MESSAGES/wireplumber.mo to /usr/share/locale/si/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/wireplumber.mo to /usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/wireplumber.mo to /usr/share/locale/sl/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/wireplumber.mo to /usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/wireplumber.mo to /usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/wireplumber.mo to /usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/wireplumber.mo to /usr/share/locale/ta/LC_MESSAGES
+Installing po/te/LC_MESSAGES/wireplumber.mo to /usr/share/locale/te/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/wireplumber.mo to /usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/wireplumber.mo to /usr/share/locale/uk/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/wireplumber.mo to /usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/wireplumber.mo to /usr/share/locale/zh_TW/LC_MESSAGES
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/base-dirs.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/client.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/dynamic-rules.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/component-loader.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/conf.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/core.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/defs.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/device.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/error.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/event.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/event-dispatcher.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/event-hook.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/global-proxy.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/iterator.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/json-utils.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/link.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/log.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/metadata.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/settings.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/module.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/node.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/object.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/object-interest.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/object-manager.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/permission-manager.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/plugin.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/port.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/proc-utils.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/properties.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/proxy.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/proxy-interfaces.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/session-item.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/si-factory.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/si-interfaces.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/spa-json.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/spa-pod.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/spa-type.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/state.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/transition.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/wp.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/lib/wp/factory.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/lib/wp/wpversion.h to /usr/include/wireplumber-0.5/wp
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/meson-private/wireplumber-0.5.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/tools/shell-completion/wpctl.bash to /usr/share/bash-completion/completions
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/tools/shell-completion/wpctl.zsh to /usr/share/zsh/site-functions
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/src/config/wireplumber.conf to /usr/share/wireplumber
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/src/systemd/user/wireplumber.service to /usr/lib/systemd/user
+Installing /home/fusion809/lfs_packaging/wireplumber/wireplumber-0.5.19/build/src/systemd/user/wireplumber@.service to /usr/lib/systemd/user
+Installing symlink pointing to libwireplumber-0.5.so.0.519.0 to /usr/lib/libwireplumber-0.5.so.0
+Installing symlink pointing to libwireplumber-0.5.so.0 to /usr/lib/libwireplumber-0.5.so
+renamed '/usr/share/doc/wireplumber' -> '/usr/share/doc/wireplumber-0.5.19'
+0.5.19
+Updated registry for wireplumber to version 0.5.19
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package wireplumber in /var/lib/custom-packages/
+Building custom package woxi-git...
+[22:56:20] Found custom package for woxi-git, bypassing BLFS aliases.
+[22:56:20] Custom package detected at /home/fusion809/lfs_packaging/woxi-git (package: woxi-git)
+[22:56:20] Checking conflicting package(s) for 'woxi-git': woxi 
+[22:56:20] Extracting dependencies for custom package 'woxi-git'...
+[22:56:20] Required deps: gcc glibc rust 
+[22:56:20] Dependency 'gcc' already installed.
+[22:56:20] Dependency 'glibc' already installed.
+[22:56:20] Dependency 'rust' already installed.
+[22:56:20] Starting remote custom build for woxi-git...
+Woxi-5a4070656243ee480644427f4799e27138682481.tar.gz already present and appears valid.
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling cfg-if v1.0.5
+   Compiling libc v0.2.191
+   Compiling libm v0.2.16
+   Compiling memchr v2.8.3
+   Compiling syn v3.0.9
+   Compiling syn v2.0.119
+   Compiling log v0.4.34
+   Compiling autocfg v1.5.1
+   Compiling zerocopy v0.8.63
+   Compiling num-traits v0.2.19
+   Compiling smallvec v1.16.4
+   Compiling bytemuck_derive v1.12.1
+   Compiling zerocopy-derive v0.8.63
+   Compiling equivalent v1.0.3
+   Compiling typenum v1.20.1
+   Compiling simd-adler32 v0.3.10
+   Compiling hybrid-array v0.4.15
+   Compiling bytemuck v1.25.2
+   Compiling crc32fast v1.5.3
+   Compiling adler2 v2.0.1
+   Compiling serde_core v1.0.229
+   Compiling rand_core v0.10.1
+   Compiling miniz_oxide v0.9.1
+   Compiling getrandom v0.4.3
+   Compiling hashbrown v0.17.1
+   Compiling zlib-rs v0.6.8
+   Compiling indexmap v2.14.2
+   Compiling ppv-lite86 v0.2.21
+   Compiling flate2 v1.1.10
+   Compiling crypto-common v0.2.2
+   Compiling getrandom v0.2.17
+   Compiling find-msvc-tools v0.1.15
+   Compiling shlex v2.0.1
+   Compiling scopeguard v1.2.0
+   Compiling cc v1.10.0
+   Compiling serde v1.0.229
+   Compiling bitflags v2.13.2
+   Compiling rustversion v1.0.23
+   Compiling getrandom v0.3.4
+   Compiling arrayvec v0.7.8
+   Compiling futures-sink v0.3.34
+   Compiling futures-core v0.3.34
+   Compiling pin-project-lite v0.2.17
+   Compiling serde_derive v1.0.229
+   Compiling futures-io v0.3.34
+   Compiling futures-channel v0.3.34
+   Compiling rand_core v0.6.4
+   Compiling block-buffer v0.12.1
+   Compiling futures-macro v0.3.34
+   Compiling aho-corasick v1.1.5
+   Compiling futures-task v0.3.34
+   Compiling parking_lot_core v0.9.12
+   Compiling const-oid v0.10.2
+   Compiling slab v0.4.12
+   Compiling regex-syntax v0.8.11
+   Compiling futures-util v0.3.34
+   Compiling regex-automata v0.4.18
+   Compiling digest v0.11.3
+   Compiling rand_chacha v0.3.1
+   Compiling rand_core v0.9.5
+   Compiling tinyvec v1.13.3
+   Compiling bytes v1.12.1
+   Compiling foldhash v0.2.0
+   Compiling siphasher v1.0.4
+   Compiling cpufeatures v0.3.1
+   Compiling itoa v1.0.18
+   Compiling version_check v0.9.5
+   Compiling rand v0.8.8
+   Compiling slotmap v1.1.1
+   Compiling encoding_rs v0.8.42
+   Compiling lock_api v0.4.14
+   Compiling block-padding v0.4.2
+   Compiling miniz_oxide v0.8.9
+   Compiling fdeflate v0.3.7
+   Compiling core_maths v0.1.1
+   Compiling errno v0.3.14
+   Compiling zmij v1.0.23
+   Compiling utf8parse v0.2.2
+   Compiling thiserror v2.0.21
+   Compiling weezl v0.1.12
+   Compiling float-cmp v0.9.0
+   Compiling unicode-properties v0.1.4
+   Compiling crossbeam-utils v0.8.23
+   Compiling thiserror v1.0.69
+   Compiling strict-num v0.1.1
+   Compiling signal-hook-registry v1.4.8
+   Compiling ttf-parser v0.25.1
+   Compiling inout v0.2.5
+   Compiling parking_lot v0.12.5
+   Compiling regex v1.13.1
+   Compiling futures-executor v0.3.34
+   Compiling font-types v0.11.3
+   Compiling thiserror-impl v1.0.69
+   Compiling thiserror-impl v2.0.21
+   Compiling tokio-macros v2.7.2
+   Compiling socket2 v0.6.5
+   Compiling mio v1.2.4
+   Compiling sha1_smol v1.0.1
+   Compiling iana-time-zone v0.1.65
+   Compiling roxmltree v0.20.0
+   Compiling multiversion_no_op v1.0.0
+   Compiling color_quant v1.1.0
+   Compiling simdutf8 v0.1.5
+   Compiling saa v5.6.2
+   Compiling core_detect v1.0.0
+   Compiling unicode-bidi v0.3.18
+   Compiling ucd-trie v0.1.7
+   Compiling serde_json v1.0.154
+   Compiling option-ext v0.2.0
+   Compiling arrayref v0.3.9
+   Compiling quick-error v2.0.1
+   Compiling tiny-skia-path v0.11.4
+   Compiling dirs-sys v0.5.0
+   Compiling pest v2.8.8
+   Compiling sdd v4.8.11
+   Compiling fontconfig-parser v0.5.8
+   Compiling chrono v0.4.45
+   Compiling tokio v1.54.1
+   Compiling uuid v1.29.0
+   Compiling read-fonts v0.39.2
+   Compiling futures v0.3.34
+   Compiling cipher v0.5.2
+   Compiling anstyle-parse v1.0.0
+   Compiling rand_chacha v0.9.0
+   Compiling ring v0.17.14
+   Compiling polycool v0.4.0
+   Compiling kurbo v0.11.3
+   Compiling num-integer v0.1.47
+   Compiling async-trait v0.1.92
+   Compiling memmap2 v0.9.12
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling colorchoice v1.0.5
+   Compiling unicode-ccc v0.4.0
+   Compiling either v1.19.0
+   Compiling radium v0.7.0
+   Compiling bumpalo v3.20.3
+   Compiling bitflags v1.3.2
+   Compiling unicode-script v0.5.8
+   Compiling anstyle v1.0.14
+   Compiling once_cell v1.21.4
+   Compiling anstyle-query v1.1.5
+   Compiling unicode-bidi-mirroring v0.4.0
+   Compiling cfg_aliases v0.2.2
+   Compiling syn v1.0.109
+   Compiling byteorder-lite v0.1.0
+   Compiling itertools v0.10.5
+   Compiling nix v0.31.3
+   Compiling rustybuzz v0.20.1
+   Compiling anstream v1.0.0
+   Compiling png v0.17.16
+   Compiling zopfli v0.8.4
+   Compiling fontdb v0.23.0
+   Compiling num-bigint v0.4.8
+   Compiling svgtypes v0.15.3
+   Compiling tokio-util v0.7.20
+   Compiling kurbo v0.13.1
+   Compiling rand v0.9.5
+   Compiling crossbeam-queue v0.3.14
+   Compiling pest_meta v2.8.8
+   Compiling scc v3.8.8
+   Compiling chacha20 v0.10.2
+   Compiling asynchronous-codec v0.7.0
+   Compiling psm v0.1.24
+   Compiling simplecss v0.2.2
+   Compiling pico-args v0.5.0
+   Compiling untrusted v0.9.0
+   Compiling alloc-no-stdlib v2.0.4
+   Compiling unicode-vo v0.1.0
+   Compiling imagesize v0.13.0
+   Compiling tap v1.0.1
+   Compiling typed-path v0.13.0
+   Compiling zune-core v0.4.12
+   Compiling data-url v0.3.2
+   Compiling xmlwriter v0.1.0
+   Compiling base64 v0.22.1
+   Compiling zune-core v0.5.3
+   Compiling lazy_static v1.5.1
+   Compiling allocator-api2 v0.2.21
+   Compiling astro-float-num v0.3.7
+   Compiling hashbrown v0.16.1
+   Compiling zip v9.1.2
+   Compiling zune-jpeg v0.5.15
+   Compiling usvg v0.45.1
+   Compiling zune-jpeg v0.4.21
+   Compiling wyz v0.5.1
+   Compiling alloc-stdlib v0.2.4
+   Compiling zeromq v0.6.0
+   Compiling rand v0.10.3
+   Compiling jupyter-protocol v2.0.2
+   Compiling pest_generator v2.8.8
+   Compiling write-fonts v0.48.1
+   Compiling tiny-skia v0.11.4
+   Compiling image-webp v0.2.4
+   Compiling skrifa v0.42.1
+   Compiling dirs v6.0.0
+   Compiling gif v0.13.3
+   Compiling phf_shared v0.12.1
+   Compiling unicode-normalization v0.1.26
+   Compiling stacker v0.1.25
+   Compiling half v2.7.1
+   Compiling rgb v0.8.53
+   Compiling safe_arch v0.7.4
+   Compiling nibble_vec v0.1.0
+   Compiling jiff-core v0.1.1
+   Compiling data-encoding v2.11.1
+   Compiling clap_lex v1.1.1
+   Compiling foldhash v0.1.5
+   Compiling rustc-hash v2.1.3
+   Compiling cpubits v0.1.1
+   Compiling ryu v1.0.23
+   Compiling bit-vec v0.8.0
+   Compiling strsim v0.11.1
+   Compiling debug_unsafe v0.1.4
+   Compiling plotters-backend v0.3.7
+   Compiling ieee754 v0.2.6
+   Compiling fax v0.2.7
+   Compiling pxfm v0.1.30
+   Compiling heck v0.5.0
+   Compiling endian-type v0.2.0
+   Compiling anyhow v1.0.104
+   Compiling funty v2.0.0
+   Compiling chrono-tz v0.10.4
+   Compiling bitvec v1.1.1
+   Compiling radix_trie v0.3.0
+   Compiling clap_derive v4.6.7
+   Compiling tiff v0.11.3
+   Compiling plotters-svg v0.3.7
+   Compiling accurate v0.3.1
+   Compiling atoi_simd v0.18.1
+   Compiling pdf-writer v0.12.1
+   Compiling clap_builder v4.6.7
+   Compiling bit-set v0.8.0
+   Compiling aes v0.9.3
+   Compiling moxcms v0.8.1
+   Compiling subsetter v0.2.6
+   Compiling hashbrown v0.15.5
+   Compiling jupyter-zmq-client v1.0.1
+   Compiling jiff v0.2.38
+   Compiling wide v0.7.33
+   Compiling resvg v0.45.1
+   Compiling stringprep v0.1.5
+   Compiling phf v0.12.1
+   Compiling astro-float-macro v0.4.6
+   Compiling pest_derive v2.8.8
+   Compiling brotli-decompressor v5.0.3
+   Compiling lru v0.16.4
+   Compiling num-modular v0.6.5
+   Compiling cbc v0.2.1
+   Compiling ecb v0.2.1
+   Compiling codepage v0.1.3
+   Compiling quick-xml v0.42.0
+   Compiling gif v0.14.2
+   Compiling env_filter v2.0.0
+   Compiling png v0.18.1
+   Compiling sha2 v0.11.1
+   Compiling rand_xoshiro v0.7.0
+   Compiling md-5 v0.11.0
+   Compiling nom v8.0.0
+   Compiling keccak v0.2.2
+   Compiling rangemap v1.8.0
+   Compiling home v0.5.12
+   Compiling unicode_categories v0.1.1
+   Compiling woxi v0.3.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-5a4070656243ee480644427f4799e27138682481)
+   Compiling archery v1.2.3
+   Compiling unicode-width v0.2.2
+   Compiling sponge-cursor v0.1.0
+   Compiling fixedbitset v0.5.7
+   Compiling imbl-sized-chunks v0.2.0
+   Compiling fast-float2 v0.2.4
+   Compiling byteorder v1.5.0
+   Compiling weezl v0.2.1
+   Compiling unicode-segmentation v1.13.3
+   Compiling rustyline v19.0.0
+   Compiling calamine v0.37.0
+   Compiling lopdf v0.46.0
+   Compiling imbl v7.0.2
+   Compiling petgraph v0.8.3
+   Compiling sha3 v0.12.0
+   Compiling snailquote v0.3.1
+   Compiling image v0.25.10
+   Compiling env_logger v0.11.11
+   Compiling num-prime v0.7.0
+   Compiling woxi-parser v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-5a4070656243ee480644427f4799e27138682481/crates/woxi-parser)
+   Compiling astro-float v0.9.6
+   Compiling svg2pdf v0.13.0
+   Compiling runtimelib v3.0.0
+   Compiling clap v4.6.7
+   Compiling fancy-regex v0.20.0
+   Compiling geographiclib-rs v0.2.7
+   Compiling plotters v0.3.7
+   Compiling rand_distr v0.6.0
+   Compiling rust_xlsxwriter v0.101.0
+   Compiling woxi-reduce v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-5a4070656243ee480644427f4799e27138682481/crates/woxi-reduce)
+   Compiling dirs v7.0.0
+   Compiling sha1 v0.11.0
+   Compiling ripemd v0.2.0
+   Compiling md4 v0.11.0
+   Compiling rand_chacha v0.10.0
+   Compiling lz4_flex v0.14.0
+   Compiling base64 v0.23.1
+   Compiling web-time v1.1.0
+    Finished `release` profile [optimized] target(s) in 78m 40s
+   Compiling syn v3.0.9
+   Compiling syn v2.0.119
+   Compiling smallvec v1.16.4
+   Compiling libloading v0.8.9
+   Compiling rustix v1.1.6
+   Compiling linux-raw-sys v0.12.1
+   Compiling bytemuck_derive v1.12.1
+   Compiling zerocopy-derive v0.8.63
+   Compiling bytemuck v1.25.2
+   Compiling crossbeam-utils v0.8.23
+   Compiling thiserror-impl v2.0.21
+   Compiling zerocopy v0.8.63
+   Compiling pkg-config v0.3.34
+   Compiling arrayvec v0.7.8
+   Compiling thiserror v2.0.21
+   Compiling slab v0.4.12
+   Compiling serde_derive v1.0.229
+   Compiling wayland-sys v0.31.11
+   Compiling dlib v0.5.3
+   Compiling wayland-backend v0.3.17
+   Compiling downcast-rs v1.2.1
+   Compiling scoped-tls v1.0.1
+   Compiling ppv-lite86 v0.2.21
+   Compiling quick-xml v0.41.0
+   Compiling wayland-client v0.31.15
+   Compiling parking_lot_core v0.9.12
+   Compiling rand_chacha v0.3.1
+   Compiling parking_lot v0.12.5
+   Compiling futures-channel v0.3.34
+   Compiling rand v0.8.8
+   Compiling wayland-scanner v0.31.11
+   Compiling ttf-parser v0.25.1
+   Compiling futures-macro v0.3.34
+   Compiling unicode-ident v1.0.27
+   Compiling crossbeam-epoch v0.9.21
+   Compiling futures-util v0.3.34
+   Compiling serde v1.0.229
+   Compiling polling v3.11.0
+   Compiling crossbeam-deque v0.8.8
+   Compiling num-bigint v0.4.8
+   Compiling half v2.7.1
+   Compiling tracing-attributes v0.1.31
+   Compiling profiling-procmacros v1.0.18
+   Compiling tracing-core v0.1.36
+   Compiling raw-window-handle v0.6.2
+   Compiling rayon-core v1.13.0
+   Compiling tracing v0.1.44
+   Compiling profiling v1.0.18
+   Compiling futures-executor v0.3.34
+   Compiling equator-macro v0.4.2
+   Compiling tokio-macros v2.7.2
+   Compiling serde_core v1.0.229
+   Compiling tokio v1.54.1
+   Compiling equator v0.4.2
+   Compiling futures v0.3.34
+   Compiling paste v1.0.15
+   Compiling parking v2.2.1
+   Compiling fastrand v2.5.0
+   Compiling aligned-vec v0.6.4
+   Compiling smol_str v0.2.2
+   Compiling winnow v1.0.4
+   Compiling rustc-hash v1.1.0
+   Compiling stable_deref_trait v1.2.1
+   Compiling as-slice v0.2.1
+   Compiling fontdb v0.23.0
+   Compiling v_frame v0.3.9
+   Compiling rayon v1.12.0
+   Compiling num-rational v0.4.2
+   Compiling wayland-protocols v0.32.13
+   Compiling hashbrown v0.17.1
+   Compiling av-scenechange v0.14.1
+   Compiling built v0.8.1
+   Compiling equivalent v1.0.3
+   Compiling indexmap v2.14.2
+   Compiling rav1e v0.8.1
+   Compiling tiny-skia-path v0.11.4
+   Compiling aligned v0.4.3
+   Compiling toml_parser v1.1.5+spec-1.1.0
+   Compiling pulp v0.22.3
+   Compiling font-types v0.10.1
+   Compiling font-types v0.12.7
+   Compiling rgb v0.8.53
+   Compiling arg_enum_proc_macro v0.3.4
+   Compiling thiserror-impl v1.0.69
+   Compiling no_std_io2 v0.9.4
+   Compiling y4m v0.8.0
+   Compiling toml_datetime v1.1.2+spec-1.1.0
+   Compiling pastey v0.1.1
+   Compiling thiserror v1.0.69
+   Compiling toml_edit v0.25.17+spec-1.1.0
+   Compiling bitstream-io v4.10.0
+   Compiling read-fonts v0.41.0
+   Compiling read-fonts v0.35.0
+   Compiling lilt v0.8.2
+   Compiling av1-grain v0.2.5
+   Compiling maybe-rayon v0.1.1
+   Compiling itertools v0.14.0
+   Compiling num-complex v0.4.6
+   Compiling enumflags2_derive v0.7.12
+   Compiling num-derive v0.4.2
+   Compiling raw-cpuid v11.6.0
+   Compiling simd_helpers v0.1.0
+   Compiling imgref v1.12.3
+   Compiling new_debug_unreachable v1.0.6
+   Compiling noop_proc_macro v0.3.0
+   Compiling glam v0.25.0
+   Compiling reborrow v0.5.5
+   Compiling pulp-wasm-simd-flag v0.1.1
+   Compiling iced_core v0.14.0
+   Compiling loop9 v0.1.5
+   Compiling skrifa v0.44.0
+   Compiling proc-macro-crate v3.5.0
+   Compiling tiny-skia v0.11.4
+   Compiling zvariant_utils v4.2.0
+   Compiling event-listener v5.4.2
+   Compiling naga v27.0.3
+   Compiling zune-inflate v0.2.54
+   Compiling concurrent-queue v2.5.0
+   Compiling avif-serialize v0.8.9
+   Compiling proc-macro2 v1.0.107
+   Compiling bit_field v0.10.3
+   Compiling lebe v0.5.3
+   Compiling yazi v0.2.1
+   Compiling as-raw-xcb-connection v1.0.1
+   Compiling zeno v0.3.3
+   Compiling khronos-egl v6.0.0
+   Compiling ash v0.38.0+1.3.281
+   Compiling tiff v0.11.3
+   Compiling swash v0.2.10
+   Compiling exr v1.74.2
+   Compiling ravif v0.13.0
+   Compiling event-listener-strategy v0.5.4
+   Compiling zvariant_derive v5.15.1
+   Compiling iced_futures v0.14.0
+   Compiling skrifa v0.37.0
+   Compiling harfrust v0.3.2
+   Compiling codespan-reporting v0.12.0
+   Compiling futures-lite v2.6.1
+   Compiling wgpu-hal v27.0.4
+   Compiling kurbo v0.11.3
+   Compiling gethostname v1.1.0
+   Compiling qoi v0.4.1
+   Compiling async-trait v0.1.92
+   Compiling gpu-descriptor-types v0.2.0
+   Compiling gpu-alloc-types v0.3.1
+   Compiling spirv v0.3.0+sdk-1.3.268.0
+   Compiling quote v1.0.47
+   Compiling self_cell v1.3.0
+   Compiling xcursor v0.3.11
+   Compiling unicode-linebreak v0.1.5
+   Compiling hexf-parse v0.2.1
+   Compiling cursor-icon v1.2.0
+   Compiling x11rb-protocol v0.13.2
+   Compiling xkeysym v0.2.1
+   Compiling linebender_resource_handle v0.1.1
+   Compiling sys-locale v0.3.2
+   Compiling cosmic-text v0.15.0
+   Compiling wayland-csd-frame v0.3.0
+   Compiling rustybuzz v0.20.1
+   Compiling x11rb v0.13.2
+   Compiling wayland-cursor v0.31.14
+   Compiling gpu-alloc v0.6.2
+   Compiling gpu-descriptor v0.3.2
+   Compiling svgtypes v0.15.3
+   Compiling image v0.25.10
+   Compiling wayland-protocols-wlr v0.3.12
+   Compiling wgpu-types v27.0.1
+   Compiling ordered-float v5.5.1
+   Compiling async-io v2.6.0
+   Compiling glow v0.16.0
+   Compiling rustix v0.38.44
+   Compiling mutate_once v0.1.2
+   Compiling renderdoc-sys v1.1.0
+   Compiling usvg v0.45.1
+   Compiling kamadak-exif v0.6.1
+   Compiling enumflags2 v0.7.12
+   Compiling zcheapstr v1.1.0
+   Compiling wgpu-core v27.0.3
+   Compiling async-task v4.7.1
+   Compiling endi v1.1.1
+   Compiling litrs v1.0.1
+   Compiling linux-raw-sys v0.4.15
+   Compiling document-features v0.2.12
+   Compiling zvariant v5.15.1
+   Compiling resvg v0.45.1
+   Compiling iced_graphics v0.14.0
+   Compiling wgpu-core-deps-windows-linux-android v27.0.0
+   Compiling async-channel v2.5.0
+   Compiling calloop v0.14.5
+   Compiling wgpu v27.0.1
+   Compiling tiny-xlib v0.2.5
+   Compiling euclid v0.22.14
+   Compiling smithay-client-toolkit v0.20.0
+   Compiling svg_fmt v0.4.5
+   Compiling atomic-waker v1.1.2
+   Compiling piper v0.2.5
+   Compiling calloop-wayland-source v0.4.1
+   Compiling async-signal v0.2.14
+   Compiling calloop v0.13.0
+   Compiling zbus_names v4.3.5
+   Compiling iced_debug v0.14.0
+   Compiling async-lock v3.4.2
+   Compiling wayland-protocols-misc v0.3.12
+   Compiling wayland-protocols-experimental v20250721.0.1
+   Compiling font-types v0.11.3
+   Compiling static_assertions v1.1.0
+   Compiling smithay-client-toolkit v0.19.2
+   Compiling ctor v0.10.1
+   Compiling chrono v0.4.45
+   Compiling read-fonts v0.39.2
+   Compiling async-process v2.5.0
+   Compiling zbus_macros v5.19.0
+   Compiling calloop-wayland-source v0.3.0
+   Compiling blocking v1.7.0
+   Compiling etagere v0.2.15
+   Compiling async-executor v1.14.0
+   Compiling rand_chacha v0.9.0
+   Compiling async-broadcast v0.7.2
+   Compiling owned_ttf_parser v0.25.1
+   Compiling ahash v0.8.12
+   Compiling ordered-stream v0.2.0
+   Compiling polycool v0.4.0
+   Compiling x11-dl v2.21.0
+   Compiling async-recursion v1.2.0
+   Compiling serde_repr v0.1.21
+   Compiling ab_glyph_rasterizer v0.1.10
+   Compiling hex v0.4.3
+   Compiling android-build v0.1.4
+   Compiling zbus v5.19.0
+   Compiling mundy v0.2.3
+   Compiling ab_glyph v0.2.32
+   Compiling kurbo v0.13.1
+   Compiling rand v0.9.5
+   Compiling cryoglyph v0.1.0
+   Compiling smithay-clipboard v0.7.3
+   Compiling softbuffer v0.4.8
+   Compiling guillotiere v0.6.2
+   Compiling tokio-util v0.7.20
+   Compiling asynchronous-codec v0.7.0
+   Compiling winit v0.30.13
+   Compiling crossbeam-queue v0.3.14
+   Compiling kurbo v0.10.4
+   Compiling percent-encoding v2.3.2
+   Compiling zeromq v0.6.0
+   Compiling iced_tiny_skia v0.14.1
+   Compiling iced_wgpu v0.14.0
+   Compiling pest_generator v2.8.8
+   Compiling clipboard_wayland v0.2.2
+   Compiling sctk-adwaita v0.10.1
+   Compiling jupyter-protocol v2.0.2
+   Compiling write-fonts v0.48.1
+   Compiling skrifa v0.42.1
+   Compiling clipboard_x11 v0.4.3
+   Compiling xkbcommon-dl v0.4.2
+   Compiling iced_runtime v0.14.0
+   Compiling wayland-protocols-plasma v0.3.12
+   Compiling safe_arch v0.7.4
+   Compiling nibble_vec v0.1.0
+   Compiling dpi v0.1.2
+   Compiling clap_derive v4.6.7
+   Compiling radix_trie v0.3.0
+   Compiling astro-float-num v0.3.7
+   Compiling jupyter-zmq-client v1.0.1
+   Compiling wide v0.7.33
+   Compiling iced_program v0.14.0
+   Compiling subsetter v0.2.6
+   Compiling window_clipboard v0.5.1
+   Compiling pest_derive v2.8.8
+   Compiling iced_renderer v0.14.0
+   Compiling num-modular v0.6.5
+   Compiling dark-light v3.0.0
+   Compiling rfd v0.17.2
+   Compiling snailquote v0.3.1
+   Compiling rustyline v19.0.0
+   Compiling calamine v0.37.0
+   Compiling lopdf v0.46.0
+   Compiling imbl v7.0.2
+   Compiling woxi v0.3.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-5a4070656243ee480644427f4799e27138682481)
+   Compiling num-prime v0.7.0
+   Compiling iced_widget v0.14.2
+   Compiling woxi-parser v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-5a4070656243ee480644427f4799e27138682481/crates/woxi-parser)
+   Compiling iced_winit v0.14.1
+   Compiling astro-float v0.9.6
+   Compiling svg2pdf v0.13.0
+   Compiling chrono-tz v0.10.4
+   Compiling runtimelib v3.0.0
+   Compiling clap v4.6.7
+   Compiling woxi-reduce v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-5a4070656243ee480644427f4799e27138682481/crates/woxi-reduce)
+   Compiling rand_chacha v0.10.0
+   Compiling pollster v0.4.0
+   Compiling iced v0.14.0

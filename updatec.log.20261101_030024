@@ -1,0 +1,1255 @@
+===== Update check started: 2026-11-01 03:00:24 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261101_030024
+Packages needing attention: lcms2 openexr
+===== Starting updatec: 2026-11-01 03:00:31 AEST =====
+Checking for packages with missing file inventories...
+name=lcms2
+local_ver=2.19.1
+remote_ver=2.20
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - lcms2
+  - openexr
+
+Building custom package lcms2...
+[03:03:03] Found custom package for lcms2, bypassing BLFS aliases.
+[03:03:03] Custom package detected at /home/fusion809/lfs_packaging/lcms2 (package: lcms2)
+[03:03:03] Extracting dependencies for custom package 'lcms2'...
+[03:03:03] Required deps: glibc libjpeg-turbo libwebp tiff xz zlib zstd 
+[03:03:03] Dependency 'glibc' already installed.
+[03:03:03] Dependency 'libjpeg-turbo' already installed.
+[03:03:03] Dependency 'libwebp' already installed.
+[03:03:03] Dependency 'tiff' already installed.
+[03:03:03] Dependency 'xz' already installed.
+[03:03:03] Dependency 'zlib' already installed.
+[03:03:03] Dependency 'zstd' already installed.
+[03:03:03] Starting remote custom build for lcms2...
+--2026-11-01 03:03:10--  https://github.com/mm2/Little-CMS/releases/download/lcms2.20/lcms2-2.20.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/507969/e2aeecb2-59e8-4974-b51b-9aff846390c1?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-31T17%3A59%3A52Z&rscd=attachment%3B+filename%3Dlcms2-2.20.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-31T16%3A59%3A39Z&ske=2026-10-31T17%3A59%3A52Z&sks=b&skv=2018-11-09&sig=B%2FRST6tB%2FZnO7PuXAx8BkU6vJ1WKlNN2qBuI6tggDVI%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzQ2NjQ5MiwibmJmIjoxNzkzNDY2MTkyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.w7IVeZV8vi5wCbiPgr7c3klH7eNCbK8AiOXyc26TYs4&response-content-disposition=attachment%3B%20filename%3Dlcms2-2.20.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2026-11-01 03:03:11--  https://release-assets.githubusercontent.com/github-production-release-asset/507969/e2aeecb2-59e8-4974-b51b-9aff846390c1?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-31T17%3A59%3A52Z&rscd=attachment%3B+filename%3Dlcms2-2.20.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-31T16%3A59%3A39Z&ske=2026-10-31T17%3A59%3A52Z&sks=b&skv=2018-11-09&sig=B%2FRST6tB%2FZnO7PuXAx8BkU6vJ1WKlNN2qBuI6tggDVI%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzQ2NjQ5MiwibmJmIjoxNzkzNDY2MTkyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.w7IVeZV8vi5wCbiPgr7c3klH7eNCbK8AiOXyc26TYs4&response-content-disposition=attachment%3B%20filename%3Dlcms2-2.20.tar.gz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.109.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 5477898 (5.2M) [application/octet-stream]
+Saving to: ‘lcms2-2.20.tar.gz’
+
+lcms2-2.20.tar.gz     0%[                    ]       0  --.-KB/s               lcms2-2.20.tar.gz    36%[======>             ]   1.92M  9.40MB/s               lcms2-2.20.tar.gz    78%[==============>     ]   4.09M  10.1MB/s               lcms2-2.20.tar.gz   100%[===================>]   5.22M  9.45MB/s    in 0.6s    
+
+2026-11-01 03:03:12 (9.45 MB/s) - ‘lcms2-2.20.tar.gz’ saved [5477898/5477898]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/lcms2/lcms2-2.20
+Build dir: /home/fusion809/lfs_packaging/lcms2/lcms2-2.20/build
+Build type: native build
+Project name: Little-CMS
+Project version: 2.20
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports function attribute visibility:hidden: YES 
+Header "time.h" has symbol "gmtime_r" : YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency libjpeg found: YES 3.2.1
+Run-time dependency libtiff-4 found: YES 4.7.2
+Checking if "supports SSE2 intrinsics" compiles: YES 
+Library m found: YES
+Run-time dependency threads found: YES
+Checking for function "pthread_mutex_lock" with dependency threads: YES 
+Header "time.h" has symbol "timespec_get" : YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Build targets in project: 2
+
+Little-CMS 2.20
+
+  User defined options
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/32] Compiling C object src/liblcms2.so.2.0.20.p/cmscam02.c.o
+[2/32] Compiling C object src/liblcms2.so.2.0.20.p/cmsalpha.c.o
+[3/32] Compiling C object src/liblcms2.so.2.0.20.p/cmserr.c.o
+[4/32] Compiling C object src/liblcms2.so.2.0.20.p/cmscnvrt.c.o
+[5/32] Compiling C object src/liblcms2.so.2.0.20.p/cmsgmt.c.o
+[6/32] Compiling C object src/liblcms2.so.2.0.20.p/cmscgats.c.o
+[7/32] Compiling C object src/liblcms2.so.2.0.20.p/cmshalf.c.o
+[8/32] Compiling C object src/liblcms2.so.2.0.20.p/cmsgamma.c.o
+[9/32] Compiling C object src/liblcms2.so.2.0.20.p/cmsio1.c.o
+[10/32] Compiling C object src/liblcms2.so.2.0.20.p/cmsio0.c.o
+[11/32] Compiling C object src/liblcms2.so.2.0.20.p/cmsmd5.c.o
+[12/32] Compiling C object src/liblcms2.so.2.0.20.p/cmsmtrx.c.o
+[13/32] Compiling C object src/liblcms2.so.2.0.20.p/cmsintrp.c.o
+[14/32] Compiling C object src/liblcms2.so.2.0.20.p/cmslut.c.o
+[15/32] Compiling C object src/liblcms2.so.2.0.20.p/cmsnamed.c.o
+[16/32] Compiling C object src/liblcms2.so.2.0.20.p/cmsopt.c.o
+[17/32] Compiling C object src/liblcms2.so.2.0.20.p/cmspcs.c.o
+[18/32] Compiling C object src/liblcms2.so.2.0.20.p/cmsps2.c.o
+[19/32] Compiling C object src/liblcms2.so.2.0.20.p/cmsplugin.c.o
+[20/32] Compiling C object src/liblcms2.so.2.0.20.p/cmssamp.c.o
+[21/32] Compiling C object src/liblcms2.so.2.0.20.p/cmssm.c.o
+[22/32] Compiling C object src/liblcms2.so.2.0.20.p/cmspack.c.o
+[23/32] Compiling C object src/liblcms2.so.2.0.20.p/cmsvirt.c.o
+[24/32] Compiling C object src/liblcms2.so.2.0.20.p/cmswtpnt.c.o
+[25/32] Compiling C object src/liblcms2.so.2.0.20.p/cmsxform.c.o
+[26/32] Compiling C object src/liblcms2.so.2.0.20.p/cmstypes.c.o
+[27/32] Linking target src/liblcms2.so.2.0.20
+[28/32] Compiling C object testbed/testcms.p/testplugin.c.o
+[29/32] Compiling C object testbed/testcms.p/zoo_icc.c.o
+[30/32] Generating symbol file src/liblcms2.so.2.0.20.p/liblcms2.so.2.0.20.symbols
+[31/32] Compiling C object testbed/testcms.p/testcms2.c.o
+../testbed/testcms2.c: In function ‘Check1D’:
+../testbed/testcms2.c:1033:9: warning: ‘<unknown>’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1033 |     p = _cmsComputeInterpParams(DbgThread(), nNodesToCheck, 1, 1, Tab, CMS_LERP_FLAGS_16BITS);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../testbed/testcms2.h:30,
+                 from ../testbed/testcms2.c:27:
+../src/lcms2_internal.h:887:42: note: by argument 5 of type ‘const void *’ to ‘_cmsComputeInterpParams’ declared here
+  887 | CMSCHECKPOINT cmsInterpParams* CMSEXPORT _cmsComputeInterpParams(cmsContext ContextID, cmsUInt32Number nSamples, cmsUInt32Number InputChan, cmsUInt32Number OutputChan, const void* Table, cmsUInt32Number dwFlags);
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~
+[32/32] Linking target testbed/testcms
+[0/1] Installing files
+Installing src/liblcms2.so.2.0.20 to /usr/lib
+Installing /home/fusion809/lfs_packaging/lcms2/lcms2-2.20/include/lcms2.h to /usr/include
+Installing /home/fusion809/lfs_packaging/lcms2/lcms2-2.20/include/lcms2_plugin.h to /usr/include
+Installing /home/fusion809/lfs_packaging/lcms2/lcms2-2.20/build/meson-private/lcms2.pc to /usr/lib/pkgconfig
+Installing symlink pointing to liblcms2.so.2.0.20 to /usr/lib/liblcms2.so.2
+Installing symlink pointing to liblcms2.so.2 to /usr/lib/liblcms2.so
+2.20
+Updated registry for lcms2 to version 2.20
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package lcms2 in /var/lib/custom-packages/
+Building custom package openexr...
+[03:04:00] Found custom package for openexr, bypassing BLFS aliases.
+[03:04:00] Custom package detected at /home/fusion809/lfs_packaging/openexr (package: openexr)
+[03:04:00] Extracting dependencies for custom package 'openexr'...
+[03:04:00] Required deps: cmake gcc git imath libdeflate openjph 
+[03:04:00] Dependency 'cmake' already installed.
+[03:04:00] Dependency 'gcc' already installed.
+[03:04:00] Dependency 'git' already installed.
+[03:04:00] Dependency 'imath' already installed.
+[03:04:00] Dependency 'libdeflate' already installed.
+[03:04:00] Dependency 'openjph' already installed.
+[03:04:00] Starting remote custom build for openexr...
+Cloning into 'openexr'...
+Note: switching to 'v3.5.3'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 39502905 ci: replace retired macos-14 runner with macos-26 (#2795)
+Auto-merging src/wrappers/python/CMakeLists.txt
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building against C++ Standard: 17
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Using libdeflate from /usr/lib64/cmake/libdeflate
+-- Using externally provided libdeflate: 1.26
+-- Using OpenJPH 0.32.0 from /usr/lib64/cmake/openjph
+-- Using Imath 3.2.3 from /usr/lib64/cmake/Imath
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.10")
+-- Using zstd 1.5.7 from /usr/lib/libzstd.so
+-- Performing Test OPENEXR_IMF_HAVE_SYSCONF_NPROCESSORS_ONLN
+-- Performing Test OPENEXR_IMF_HAVE_SYSCONF_NPROCESSORS_ONLN - Success
+-- Performing Test OPENEXR_IMF_HAVE_GCC_INLINE_ASM_AVX
+-- Performing Test OPENEXR_IMF_HAVE_GCC_INLINE_ASM_AVX - Success
+-- Looking for include file ucontext.h
+-- Looking for include file ucontext.h - found
+-- Performing Test IEX_HAVE_CONTROL_REGISTER_SUPPORT
+-- Performing Test IEX_HAVE_CONTROL_REGISTER_SUPPORT - Success
+-- Looking for include file semaphore.h
+-- Looking for include file semaphore.h - found
+-- OpenEXR pkg-config generation enabled
+-- Configure OpenEXR 3.5.3, library API version: 34.3.5.3
+-- Building OpenEXR libraries
+-- Building OpenEXR tools
+-- Building OpenEXR examples
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+-- adding bin tests
+-- clang-format found: /usr/bin/clang-format
+-- Building OpenEXR python bindings
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter Development.Module
+-- Performing Test HAS_FLTO_AUTO
+-- Performing Test HAS_FLTO_AUTO - Success
+-- Found pybind11: /usr/include (found version "3.1.0")
+-- Installing Python module to /usr/lib/python3.15/site-packages
+-- Configuring done (5.2s)
+-- Generating done (0.4s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/openexr/openexr/build
+[  0%] Building CXX object src/lib/Iex/CMakeFiles/Iex.dir/IexBaseExc.cpp.o
+[  0%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_zip.c.o
+[  0%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_rle.c.o
+[  0%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_pxr24.c.o
+[  1%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_b44.c.o
+[  1%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_b44_table.c.o
+[  1%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_b44_table_init.c.o
+[  2%] Building CXX object src/lib/Iex/CMakeFiles/Iex.dir/IexMathFloatExc.cpp.o
+[  3%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_piz.c.o
+[  3%] Building CXX object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_ht.cpp.o
+[  3%] Building CXX object src/lib/Iex/CMakeFiles/Iex.dir/IexMathFpu.cpp.o
+[  3%] Building CXX object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_ht_common.cpp.o
+[  3%] Building CXX object src/lib/Iex/CMakeFiles/Iex.dir/IexThrowErrnoExc.cpp.o
+[  3%] Linking CXX shared library libIex-3_5.so
+[  3%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_dwa.c.o
+[  4%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_dwa_table.c.o
+[  4%] Built target Iex
+[  4%] Building CXX object src/lib/IlmThread/CMakeFiles/IlmThread.dir/IlmThread.cpp.o
+[  5%] Building CXX object src/test/IexTest/CMakeFiles/IexTest.dir/main.cpp.o
+[  5%] Building CXX object src/test/IexTest/CMakeFiles/IexTest.dir/testBaseExc.cpp.o
+[  5%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_dwa_table_init.c.o
+[  5%] Building CXX object src/lib/IlmThread/CMakeFiles/IlmThread.dir/IlmThreadPool.cpp.o
+[  5%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_huf.c.o
+[  5%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_zstd.c.o
+[  6%] Building CXX object src/lib/IlmThread/CMakeFiles/IlmThread.dir/IlmThreadSemaphore.cpp.o
+[  6%] Building CXX object src/lib/IlmThread/CMakeFiles/IlmThread.dir/IlmThreadSemaphoreOSX.cpp.o
+[  6%] Building CXX object src/lib/IlmThread/CMakeFiles/IlmThread.dir/IlmThreadSemaphorePosix.cpp.o
+[  7%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_zstd_delta.c.o
+[  8%] Building CXX object src/lib/IlmThread/CMakeFiles/IlmThread.dir/IlmThreadSemaphorePosixCompat.cpp.o
+[  8%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_zstd_shuffle.c.o
+[  8%] Building CXX object src/lib/IlmThread/CMakeFiles/IlmThread.dir/IlmThreadSemaphoreWin32.cpp.o
+[  8%] Linking CXX shared library libIlmThread-3_5.so
+[  8%] Built target IlmThread
+[  8%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/attributes.c.o
+[  9%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/string.c.o
+[  9%] Building CXX object src/test/IexTest/CMakeFiles/IexTest.dir/testMathExc.cpp.o
+[  9%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/string_vector.c.o
+[  9%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/float_vector.c.o
+[  9%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/channel_list.c.o
+[ 10%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/opaque.c.o
+[ 11%] Building CXX object src/test/IexTest/CMakeFiles/IexTest.dir/mathFuncs.cpp.o
+[ 11%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/bytes.c.o
+[ 11%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/preview.c.o
+[ 12%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/base.c.o
+[ 12%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/context.c.o
+[ 12%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/memory.c.o
+[ 12%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/internal_structs.c.o
+[ 13%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/part.c.o
+[ 13%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/part_attr.c.o
+[ 13%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/std_attr.c.o
+[ 13%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/color_metadata.c.o
+[ 14%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/parse_header.c.o
+[ 14%] Linking CXX executable ../../../bin/IexTest
+[ 14%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/write_header.c.o
+[ 14%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/chunk.c.o
+[ 15%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/coding.c.o
+[ 15%] Built target IexTest
+[ 15%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/compression.c.o
+[ 15%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/decoding.c.o
+[ 15%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/encoding.c.o
+[ 16%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/pack.c.o
+[ 16%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/unpack.c.o
+[ 16%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/validation.c.o
+[ 17%] Building C object src/lib/OpenEXRCore/CMakeFiles/OpenEXRCore.dir/debug.c.o
+[ 17%] Linking CXX shared library libOpenEXRCore-3_5.so
+[ 17%] Built target OpenEXRCore
+[ 17%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfB44Compressor.cpp.o
+[ 17%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfAcesFile.cpp.o
+[ 18%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfAttribute.cpp.o
+[ 18%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfBoxAttribute.cpp.o
+[ 18%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfBytesAttribute.cpp.o
+[ 19%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfCRgbaFile.cpp.o
+[ 19%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfChannelList.cpp.o
+[ 19%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfChannelListAttribute.cpp.o
+[ 20%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfChromaticities.cpp.o
+[ 20%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfChromaticitiesAttribute.cpp.o
+[ 20%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfColorMetadata.cpp.o
+[ 20%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfCompositeDeepScanLine.cpp.o
+[ 21%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfCompression.cpp.o
+[ 21%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfCompressionAttribute.cpp.o
+[ 21%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfCompressor.cpp.o
+[ 22%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfContext.cpp.o
+[ 22%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfContextInit.cpp.o
+[ 22%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfConvert.cpp.o
+[ 22%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfDeepCompositing.cpp.o
+[ 23%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfDeepFrameBuffer.cpp.o
+[ 23%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfDeepImageStateAttribute.cpp.o
+[ 23%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfDeepScanLineInputFile.cpp.o
+[ 23%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfDeepScanLineInputPart.cpp.o
+[ 24%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfDeepScanLineOutputFile.cpp.o
+[ 24%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfDeepScanLineOutputPart.cpp.o
+[ 24%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfDeepTiledInputFile.cpp.o
+[ 25%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfDeepTiledInputPart.cpp.o
+[ 25%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfDeepTiledOutputFile.cpp.o
+[ 25%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfDeepTiledOutputPart.cpp.o
+[ 25%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfDoubleAttribute.cpp.o
+[ 26%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfDwaCompressor.cpp.o
+[ 26%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfEnvmap.cpp.o
+[ 26%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfEnvmapAttribute.cpp.o
+[ 27%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfFastHuf.cpp.o
+[ 27%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfFloatAttribute.cpp.o
+[ 27%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfFloatVectorAttribute.cpp.o
+[ 27%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfFrameBuffer.cpp.o
+[ 28%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfFramesPerSecond.cpp.o
+[ 28%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfGenericInputFile.cpp.o
+[ 28%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfGenericOutputFile.cpp.o
+[ 28%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfHeader.cpp.o
+[ 29%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfHTCompressor.cpp.o
+[ 29%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfHuf.cpp.o
+[ 29%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfIDManifest.cpp.o
+[ 30%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfIDManifestAttribute.cpp.o
+[ 30%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfIO.cpp.o
+[ 30%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfInputFile.cpp.o
+[ 30%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfInputPart.cpp.o
+[ 31%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfInputPartData.cpp.o
+[ 31%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfIntAttribute.cpp.o
+[ 31%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfKeyCode.cpp.o
+[ 32%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfKeyCodeAttribute.cpp.o
+[ 32%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfLineOrderAttribute.cpp.o
+[ 32%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfLut.cpp.o
+[ 32%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfMatrixAttribute.cpp.o
+[ 33%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfMisc.cpp.o
+[ 33%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfMultiPartInputFile.cpp.o
+[ 33%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfMultiPartOutputFile.cpp.o
+/home/fusion809/lfs_packaging/openexr/openexr/src/lib/OpenEXR/ImfMisc.cpp: In function ‘std::wstring Imf_3_5::WidenFilename(const char*)’:
+/home/fusion809/lfs_packaging/openexr/openexr/src/lib/OpenEXR/ImfMisc.cpp:2002:10: warning: ‘template<class _Codecvt, class _Elem, class _Wide_alloc, class _Byte_alloc> class std::__cxx11::wstring_convert’ is deprecated [-Wdeprecated-declarations]
+ 2002 |     std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> converter;
+      |          ^~~~~~~~~~~~~~~
+In file included from /usr/include/c++/16.2.0/locale:47,
+                 from /home/fusion809/lfs_packaging/openexr/openexr/src/lib/OpenEXR/ImfMisc.cpp:27:
+/usr/include/c++/16.2.0/bits/locale_conv.h:265:33: note: declared here
+  265 |     class _GLIBCXX17_DEPRECATED wstring_convert
+      |                                 ^~~~~~~~~~~~~~~
+[ 33%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfMultiView.cpp.o
+[ 34%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfOpaqueAttribute.cpp.o
+[ 34%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfOutputFile.cpp.o
+[ 34%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfOutputPart.cpp.o
+[ 35%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfOutputPartData.cpp.o
+[ 35%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfPartType.cpp.o
+[ 35%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfPizCompressor.cpp.o
+[ 35%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfPreviewImage.cpp.o
+[ 36%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfPreviewImageAttribute.cpp.o
+[ 36%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfPxr24Compressor.cpp.o
+[ 36%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfRational.cpp.o
+[ 37%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfRationalAttribute.cpp.o
+[ 37%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfRgbaFile.cpp.o
+[ 37%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfRgbaYca.cpp.o
+[ 37%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfRle.cpp.o
+[ 38%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfRleCompressor.cpp.o
+[ 38%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfScanLineInputFile.cpp.o
+[ 38%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfStandardAttributes.cpp.o
+[ 38%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfStdIO.cpp.o
+[ 39%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfStringAttribute.cpp.o
+[ 39%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfStringVectorAttribute.cpp.o
+[ 39%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfSystemSpecific.cpp.o
+[ 40%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfTestFile.cpp.o
+[ 40%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfThreading.cpp.o
+[ 40%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfTileDescriptionAttribute.cpp.o
+[ 40%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfTileOffsets.cpp.o
+[ 41%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfTiledInputFile.cpp.o
+[ 41%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfTiledInputPart.cpp.o
+[ 41%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfTiledMisc.cpp.o
+[ 42%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfTiledOutputFile.cpp.o
+[ 42%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfTiledOutputPart.cpp.o
+[ 42%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfTiledRgbaFile.cpp.o
+[ 42%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfTimeCode.cpp.o
+[ 43%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfTimeCodeAttribute.cpp.o
+[ 43%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfVecAttribute.cpp.o
+[ 43%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfVersion.cpp.o
+[ 43%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfWav.cpp.o
+[ 44%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfZip.cpp.o
+[ 44%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfZipCompressor.cpp.o
+[ 44%] Building CXX object src/lib/OpenEXR/CMakeFiles/OpenEXR.dir/ImfZstdCompressor.cpp.o
+[ 45%] Linking CXX shared library libOpenEXR-3_5.so
+[ 45%] Built target OpenEXR
+[ 45%] Building CXX object src/examples/CMakeFiles/OpenEXRExamples.dir/drawImage.cpp.o
+[ 46%] Building CXX object src/examples/CMakeFiles/deepidexample.dir/deepidexample.cpp.o
+[ 46%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfCheckFile.cpp.o
+[ 47%] Building CXX object src/examples/CMakeFiles/OpenEXRExamples.dir/generalInterfaceExamples.cpp.o
+[ 47%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfDeepImage.cpp.o
+[ 47%] Linking CXX executable deepidexample
+[ 47%] Built target deepidexample
+[ 47%] Building CXX object src/examples/CMakeFiles/deepidselect.dir/deepidselect.cpp.o
+[ 47%] Building CXX object src/examples/CMakeFiles/OpenEXRExamples.dir/generalInterfaceTiledExamples.cpp.o
+[ 47%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfDeepImageChannel.cpp.o
+[ 48%] Linking CXX executable deepidselect
+[ 48%] Built target deepidselect
+[ 48%] Building CXX object src/examples/CMakeFiles/OpenEXRExamples.dir/lowLevelIoExamples.cpp.o
+[ 49%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfDeepImageIO.cpp.o
+[ 50%] Building CXX object src/examples/CMakeFiles/OpenEXRExamples.dir/main.cpp.o
+[ 50%] Building CXX object src/examples/CMakeFiles/OpenEXRExamples.dir/previewImageExamples.cpp.o
+[ 50%] Building CXX object src/test/OpenEXRCoreTest/CMakeFiles/OpenEXRCoreTest.dir/base_units.cpp.o
+[ 50%] Building CXX object src/examples/CMakeFiles/OpenEXRExamples.dir/rgbaInterfaceExamples.cpp.o
+[ 50%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfDeepImageLevel.cpp.o
+[ 50%] Building CXX object src/test/OpenEXRCoreTest/CMakeFiles/OpenEXRCoreTest.dir/buffer.cpp.o
+[ 50%] Building CXX object src/examples/CMakeFiles/OpenEXRExamples.dir/rgbaInterfaceTiledExamples.cpp.o
+[ 51%] Building CXX object src/test/OpenEXRCoreTest/CMakeFiles/OpenEXRCoreTest.dir/color_metadata.cpp.o
+[ 51%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfFlatImage.cpp.o
+[ 51%] Building CXX object src/test/OpenEXRCoreTest/CMakeFiles/OpenEXRCoreTest.dir/compression.cpp.o
+[ 52%] Building CXX object src/examples/CMakeFiles/OpenEXRExamples.dir/deepExamples.cpp.o
+[ 52%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfFlatImageChannel.cpp.o
+[ 52%] Building CXX object src/examples/CMakeFiles/OpenEXRExamples.dir/deepTiledExamples.cpp.o
+[ 53%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfFlatImageIO.cpp.o
+[ 53%] Building CXX object src/test/OpenEXRCoreTest/CMakeFiles/OpenEXRCoreTest.dir/compressionTables.cpp.o
+[ 53%] Building CXX object src/examples/CMakeFiles/OpenEXRExamples.dir/multipartExamples.cpp.o
+[ 53%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfFlatImageLevel.cpp.o
+[ 53%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfImage.cpp.o
+[ 53%] Building CXX object src/test/OpenEXRCoreTest/CMakeFiles/OpenEXRCoreTest.dir/deep.cpp.o
+[ 53%] Linking CXX executable ../../bin/OpenEXRExamples
+[ 53%] Built target OpenEXRExamples
+[ 53%] Building CXX object src/test/OpenEXRCoreTest/CMakeFiles/CorePerfTest.dir/performance.cpp.o
+[ 54%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfImageChannel.cpp.o
+[ 55%] Building CXX object src/test/OpenEXRCoreTest/CMakeFiles/OpenEXRCoreTest.dir/general_attr.cpp.o
+[ 55%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfImageDataWindow.cpp.o
+[ 55%] Linking CXX executable ../../../bin/CorePerfTest
+[ 55%] Built target CorePerfTest
+[ 56%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/compareB44.cpp.o
+[ 56%] Building CXX object src/test/OpenEXRCoreTest/CMakeFiles/OpenEXRCoreTest.dir/initializer_compat.cpp.o
+[ 56%] Building CXX object src/test/OpenEXRCoreTest/CMakeFiles/OpenEXRCoreTest.dir/main.cpp.o
+[ 56%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfImageIO.cpp.o
+[ 56%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/compareDwa.cpp.o
+[ 57%] Building CXX object src/test/OpenEXRCoreTest/CMakeFiles/OpenEXRCoreTest.dir/read.cpp.o
+[ 57%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/compareLJ2K.cpp.o
+[ 57%] Building CXX object src/test/OpenEXRCoreTest/CMakeFiles/OpenEXRCoreTest.dir/write.cpp.o
+[ 57%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfImageLevel.cpp.o
+[ 58%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/compareFloat.cpp.o
+[ 59%] Building CXX object src/lib/OpenEXRUtil/CMakeFiles/OpenEXRUtil.dir/ImfSampleCountChannel.cpp.o
+[ 59%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/main.cpp.o
+[ 59%] Linking CXX executable ../../../bin/OpenEXRCoreTest
+[ 59%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/random.cpp.o
+[ 59%] Built target OpenEXRCoreTest
+[ 59%] Building CXX object website/src/CMakeFiles/website_src.dir/C_IStream_read.cpp.o
+[ 59%] Linking CXX shared library libOpenEXRUtil-3_5.so
+[ 59%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testAttributes.cpp.o
+[ 59%] Building CXX object website/src/CMakeFiles/website_src.dir/C_IStream_seekg.cpp.o
+[ 59%] Built target OpenEXRUtil
+[ 60%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testBackwardCompatibility.cpp.o
+[ 60%] Building CXX object website/src/CMakeFiles/website_src.dir/C_IStream_tellg.cpp.o
+[ 61%] Building CXX object website/src/CMakeFiles/website_src.dir/C_IStream_clear.cpp.o
+[ 61%] Building CXX object website/src/CMakeFiles/website_src.dir/compression.cpp.o
+[ 61%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testBadTypeAttributes.cpp.o
+[ 61%] Building CXX object website/src/CMakeFiles/website_src.dir/envmap.cpp.o
+[ 62%] Building CXX object website/src/CMakeFiles/website_src.dir/multithreading.cpp.o
+[ 62%] Building CXX object website/src/CMakeFiles/website_src.dir/mergeOverlappingSamples.cpp.o
+[ 62%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testChannels.cpp.o
+[ 62%] Building CXX object website/src/CMakeFiles/website_src.dir/readDeepScanLineFile.cpp.o
+[ 62%] Building CXX object src/wrappers/python/CMakeFiles/PyOpenEXR.dir/PyOpenEXR.cpp.o
+[ 63%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testCompositeDeepScanLine.cpp.o
+[ 63%] Building CXX object website/src/CMakeFiles/website_src.dir/readDeepTiledFile.cpp.o
+[ 64%] Building CXX object website/src/CMakeFiles/website_src.dir/readGZ1.cpp.o
+[ 64%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testCompressionApi.cpp.o
+[ 64%] Building CXX object website/src/CMakeFiles/website_src.dir/readGZ2.cpp.o
+[ 64%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testCompression.cpp.o
+[ 64%] Building CXX object website/src/CMakeFiles/website_src.dir/readHeader.cpp.o
+[ 64%] Building CXX object website/src/CMakeFiles/website_src.dir/readComments1.cpp.o
+[ 64%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testConversion.cpp.o
+[ 65%] Building CXX object website/src/CMakeFiles/website_src.dir/readComments2.cpp.o
+[ 66%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testCopyDeepScanLine.cpp.o
+[ 66%] Building CXX object website/src/CMakeFiles/website_src.dir/readRgba1.cpp.o
+[ 66%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testCopyDeepTiled.cpp.o
+[ 66%] Building CXX object website/src/CMakeFiles/website_src.dir/readRgba2.cpp.o
+[ 66%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testCopyMultiPartFile.cpp.o
+[ 67%] Building CXX object website/src/CMakeFiles/website_src.dir/readRgbaFILE.cpp.o
+[ 67%] Building CXX object website/src/CMakeFiles/website_src.dir/readTiled1.cpp.o
+[ 67%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testCopyPixels.cpp.o
+[ 67%] Building CXX object website/src/CMakeFiles/website_src.dir/readTiledRgba1.cpp.o
+[ 68%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testCpuId.cpp.o
+[ 68%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testCustomAttributes.cpp.o
+[ 68%] Building CXX object website/src/CMakeFiles/website_src.dir/readChannels1.cpp.o
+[ 68%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testDeepScanLineBasic.cpp.o
+[ 69%] Building CXX object website/src/CMakeFiles/website_src.dir/readChannels2.cpp.o
+[ 69%] Building CXX object website/src/CMakeFiles/website_src.dir/readLayers.cpp.o
+[ 70%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testDeepScanLineHuge.cpp.o
+[ 70%] Building CXX object website/src/CMakeFiles/website_src.dir/splitVolumeSample.cpp.o
+[ 71%] Building CXX object website/src/CMakeFiles/website_src.dir/writeDeepScanLineFile.cpp.o
+[ 71%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testDeepScanLineMultipleRead.cpp.o
+[ 71%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testDeepTiledBasic.cpp.o
+[ 71%] Building CXX object website/src/CMakeFiles/website_src.dir/writeDeepTiledFile.cpp.o
+[ 71%] Building CXX object src/wrappers/python/CMakeFiles/PyOpenEXR.dir/PyOpenEXR_old.cpp.o
+[ 71%] Building CXX object website/src/CMakeFiles/website_src.dir/writeGZ1.cpp.o
+[ 71%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testExistingStreams.cpp.o
+[ 71%] Building CXX object website/src/CMakeFiles/website_src.dir/writeGZ2.cpp.o
+[ 72%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testFutureProofing.cpp.o
+[ 73%] Building CXX object website/src/CMakeFiles/website_src.dir/writeRgba1.cpp.o
+[ 73%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testHeader.cpp.o
+[ 73%] Building CXX object website/src/CMakeFiles/website_src.dir/writeRgba2.cpp.o
+[ 73%] Building CXX object website/src/CMakeFiles/website_src.dir/writeRgba3.cpp.o
+[ 73%] Linking CXX shared module OpenEXR.cpython-315-x86_64-linux-gnu.so
+[ 73%] Built target PyOpenEXR
+[ 73%] Building CXX object src/bin/exr2aces/CMakeFiles/exr2aces.dir/main.cpp.o
+[ 73%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testHuf.cpp.o
+[ 74%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testIDManifest.cpp.o
+[ 74%] Building CXX object website/src/CMakeFiles/website_src.dir/writeRgbaMT.cpp.o
+[ 74%] Linking CXX executable ../../../bin/exr2aces
+[ 74%] Built target exr2aces
+[ 74%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testInputPart.cpp.o
+[ 75%] Building CXX object website/src/CMakeFiles/website_src.dir/writeTiledRgbaONE1.cpp.o
+[ 75%] Building CXX object website/src/CMakeFiles/website_src.dir/writeRgbaWithPreview1.cpp.o
+[ 75%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testIsComplete.cpp.o
+[ 75%] Building CXX object website/src/CMakeFiles/website_src.dir/writeTiled1.cpp.o
+[ 76%] Building CXX object website/src/CMakeFiles/website_src.dir/tileDescription.cpp.o
+[ 76%] Building CXX object website/src/CMakeFiles/website_src.dir/validExrFile.cpp.o
+[ 76%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testLargeDataWindowOffsets.cpp.o
+[ 76%] Building CXX object website/src/CMakeFiles/website_src.dir/previewImageExamples.cpp.o
+[ 76%] Building CXX object website/src/CMakeFiles/website_src.dir/MemoryMappedIStream_isMemoryMapped.cpp.o
+[ 77%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testLineOrder.cpp.o
+[ 78%] Building CXX object website/src/CMakeFiles/website_src.dir/MemoryMappedIStream_destructor.cpp.o
+[ 78%] Building CXX object src/bin/exrheader/CMakeFiles/exrheader.dir/main.cpp.o
+[ 78%] Building CXX object website/src/CMakeFiles/website_src.dir/MemoryMappedIStream_constructor.cpp.o
+[ 78%] Building CXX object website/src/CMakeFiles/website_src.dir/MemoryMappedIStream_read.cpp.o
+[ 79%] Building CXX object website/src/CMakeFiles/website_src.dir/MemoryMappedIStream_readMemoryMapped.cpp.o
+[ 79%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testLut.cpp.o
+[ 79%] Built target website_src
+[ 80%] Building C object src/bin/exrinfo/CMakeFiles/exrinfo.dir/main.c.o
+[ 80%] Linking C executable ../../../bin/exrinfo
+[ 80%] Built target exrinfo
+[ 80%] Linking CXX executable ../../../bin/exrheader
+[ 80%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testMagic.cpp.o
+[ 80%] Built target exrheader
+[ 80%] Building CXX object src/bin/exrmaketiled/CMakeFiles/exrmaketiled.dir/Image.cpp.o
+[ 80%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testMalformedImages.cpp.o
+[ 80%] Building CXX object src/bin/exrmaketiled/CMakeFiles/exrmaketiled.dir/main.cpp.o
+[ 81%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testMultiPartApi.cpp.o
+[ 81%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testMultiPartFileMixingBasic.cpp.o
+[ 82%] Building CXX object src/bin/exrmaketiled/CMakeFiles/exrmaketiled.dir/makeTiled.cpp.o
+[ 82%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testMultiPartSharedAttributes.cpp.o
+[ 83%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testMultiPartThreading.cpp.o
+[ 83%] Linking CXX executable ../../../bin/exrmaketiled
+[ 83%] Built target exrmaketiled
+[ 83%] Building CXX object src/bin/exrmetrics/CMakeFiles/exrmetrics.dir/main.cpp.o
+[ 83%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testMultiScanlinePartThreading.cpp.o
+[ 83%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testMultiTiledPartThreading.cpp.o
+[ 83%] Building CXX object src/bin/exrmetrics/CMakeFiles/exrmetrics.dir/exrmetrics.cpp.o
+[ 83%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testMultiView.cpp.o
+[ 84%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testNativeFormat.cpp.o
+[ 84%] Building CXX object src/bin/exrstdattr/CMakeFiles/exrstdattr.dir/main.cpp.o
+[ 84%] Linking CXX executable ../../../bin/exrmetrics
+[ 84%] Built target exrmetrics
+[ 84%] Building CXX object src/bin/exrmakepreview/CMakeFiles/exrmakepreview.dir/main.cpp.o
+[ 84%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testOptimizedInterleavePatterns.cpp.o
+[ 85%] Linking CXX executable ../../../bin/exrstdattr
+[ 85%] Built target exrstdattr
+[ 85%] Building CXX object src/bin/exrenvmap/CMakeFiles/exrenvmap.dir/blurImage.cpp.o
+[ 86%] Building CXX object src/bin/exrmakepreview/CMakeFiles/exrmakepreview.dir/makePreview.cpp.o
+[ 86%] Building CXX object src/bin/exrenvmap/CMakeFiles/exrenvmap.dir/EnvmapImage.cpp.o
+[ 86%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testPartHelper.cpp.o
+[ 86%] Linking CXX executable ../../../bin/exrmakepreview
+[ 86%] Built target exrmakepreview
+[ 86%] Building CXX object src/bin/exrmultiview/CMakeFiles/exrmultiview.dir/Image.cpp.o
+[ 87%] Building CXX object src/bin/exrenvmap/CMakeFiles/exrenvmap.dir/main.cpp.o
+[ 87%] Building CXX object src/bin/exrmultiview/CMakeFiles/exrmultiview.dir/main.cpp.o
+[ 88%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testPreviewImage.cpp.o
+[ 88%] Building CXX object src/bin/exrenvmap/CMakeFiles/exrenvmap.dir/makeCubeMap.cpp.o
+[ 89%] Building CXX object src/bin/exrmultiview/CMakeFiles/exrmultiview.dir/makeMultiView.cpp.o
+[ 89%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testRgba.cpp.o
+[ 89%] Building CXX object src/bin/exrenvmap/CMakeFiles/exrenvmap.dir/makeLatLongMap.cpp.o
+[ 89%] Linking CXX executable ../../../bin/exrmultiview
+[ 89%] Built target exrmultiview
+[ 90%] Building CXX object src/bin/exrmultipart/CMakeFiles/exrmultipart.dir/exrmultipart.cpp.o
+[ 90%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testCRgba.cpp.o
+[ 90%] Building CXX object src/bin/exrenvmap/CMakeFiles/exrenvmap.dir/readInputImage.cpp.o
+[ 90%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testRgbaThreading.cpp.o
+[ 91%] Building CXX object src/bin/exrenvmap/CMakeFiles/exrenvmap.dir/resizeImage.cpp.o
+[ 91%] Linking CXX executable ../../../bin/exrmultipart
+[ 91%] Built target exrmultipart
+[ 91%] Building CXX object src/bin/exrcheck/CMakeFiles/exrcheck.dir/main.cpp.o
+[ 91%] Linking CXX executable ../../../bin/exrenvmap
+[ 91%] Built target exrenvmap
+[ 92%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testRle.cpp.o
+[ 92%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testSampleImages.cpp.o
+[ 92%] Building CXX object src/bin/exrmanifest/CMakeFiles/exrmanifest.dir/main.cpp.o
+[ 93%] Linking CXX executable ../../../bin/exrcheck
+[ 93%] Built target exrcheck
+[ 93%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testScanLineApi.cpp.o
+[ 93%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testSharedFrameBuffer.cpp.o
+[ 94%] Linking CXX executable ../../../bin/exrmanifest
+[ 94%] Built target exrmanifest
+[ 94%] Building CXX object src/test/OpenEXRUtilTest/CMakeFiles/OpenEXRUtilTest.dir/main.cpp.o
+[ 95%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testStandardAttributes.cpp.o
+[ 96%] Building CXX object src/test/OpenEXRUtilTest/CMakeFiles/OpenEXRUtilTest.dir/testFlatImage.cpp.o
+[ 96%] Building CXX object src/test/OpenEXRUtilTest/CMakeFiles/OpenEXRUtilTest.dir/testDeepImage.cpp.o
+[ 96%] Building CXX object src/test/OpenEXRUtilTest/CMakeFiles/OpenEXRUtilTest.dir/testIO.cpp.o
+[ 96%] Building CXX object src/test/OpenEXRUtilTest/CMakeFiles/OpenEXRUtilTest.dir/testImageChannel.cpp.o
+[ 96%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testTiledCompression.cpp.o
+[ 96%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testLJ2KBoundary.cpp.o
+[ 97%] Linking CXX executable ../../../bin/OpenEXRUtilTest
+[ 97%] Built target OpenEXRUtilTest
+[ 98%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testTiledCopyPixels.cpp.o
+[ 98%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testTiledLineOrder.cpp.o
+[ 98%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testTiledRgba.cpp.o
+[ 98%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testTiledYa.cpp.o
+[ 99%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testWav.cpp.o
+[ 99%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testXdr.cpp.o
+[ 99%] Building CXX object src/test/OpenEXRTest/CMakeFiles/OpenEXRTest.dir/testYca.cpp.o
+[100%] Linking CXX executable ../../../bin/OpenEXRTest
+[100%] Built target OpenEXRTest
+[  1%] Built target Iex
+[  3%] Built target IlmThread
+[ 15%] Built target OpenEXRCore
+[ 43%] Built target OpenEXR
+[ 47%] Built target OpenEXRUtil
+[ 47%] Built target exr2aces
+[ 47%] Built target exrheader
+[ 48%] Built target exrinfo
+[ 49%] Built target exrmaketiled
+[ 49%] Built target exrmetrics
+[ 50%] Built target exrstdattr
+[ 51%] Built target exrmakepreview
+[ 53%] Built target exrenvmap
+[ 54%] Built target exrmultiview
+make[2]: Warning: File 'src/bin/exrmultipart/CMakeFiles/exrmultipart.dir/compiler_depend.make' has modification time 0.068 s in the future
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[ 55%] Built target exrmultipart
+[ 56%] Built target exrcheck
+[ 57%] Built target exrmanifest
+[ 60%] Built target OpenEXRExamples
+[ 61%] Built target deepidexample
+[ 62%] Built target deepidselect
+[ 64%] Built target IexTest
+[ 67%] Built target OpenEXRCoreTest
+[ 67%] Linking CXX executable ../../../bin/CorePerfTest
+[ 67%] Built target CorePerfTest
+[ 86%] Built target OpenEXRTest
+[ 88%] Built target OpenEXRUtilTest
+[100%] Built target website_src
+make[2]: Warning: File 'src/wrappers/python/CMakeFiles/PyOpenEXR.dir/compiler_depend.make' has modification time 0.16 s in the future
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[100%] Built target PyOpenEXR
+Install the project...
+-- Install configuration: "None"
+-- Installing: /usr/include/OpenEXR/OpenEXRConfig.h
+-- Installing: /usr/include/OpenEXR/IexConfig.h
+-- Installing: /usr/include/OpenEXR/IlmThreadConfig.h
+-- Installing: /usr/lib/pkgconfig/OpenEXR.pc
+-- Installing: /usr/lib/cmake/OpenEXR/OpenEXRConfig.cmake
+-- Installing: /usr/lib/cmake/OpenEXR/OpenEXRConfigVersion.cmake
+-- Installing: /usr/lib/cmake/OpenEXR/OpenEXRTargets.cmake
+-- Installing: /usr/lib/cmake/OpenEXR/OpenEXRTargets-none.cmake
+-- Installing: /usr/lib/libIex-3_5.so.34.3.5.3
+-- Installing: /usr/lib/libIex-3_5.so.34
+-- Up-to-date: /usr/lib/libIex-3_5.so
+-- Installing: /usr/include/OpenEXR/Iex.h
+-- Installing: /usr/include/OpenEXR/IexBaseExc.h
+-- Installing: /usr/include/OpenEXR/IexErrnoExc.h
+-- Installing: /usr/include/OpenEXR/IexExport.h
+-- Installing: /usr/include/OpenEXR/IexForward.h
+-- Installing: /usr/include/OpenEXR/IexMacros.h
+-- Installing: /usr/include/OpenEXR/IexMathExc.h
+-- Installing: /usr/include/OpenEXR/IexMathFloatExc.h
+-- Installing: /usr/include/OpenEXR/IexMathIeeeExc.h
+-- Installing: /usr/include/OpenEXR/IexNamespace.h
+-- Installing: /usr/include/OpenEXR/IexThrowErrnoExc.h
+-- Up-to-date: /usr/lib/libIex.so
+-- Creating symlink lib/libIex.so -> libIex-3_5.so
+-- Installing: /usr/lib/libIlmThread-3_5.so.34.3.5.3
+-- Installing: /usr/lib/libIlmThread-3_5.so.34
+-- Set non-toolchain portion of runtime path of "/usr/lib/libIlmThread-3_5.so.34.3.5.3" to ""
+-- Up-to-date: /usr/lib/libIlmThread-3_5.so
+-- Installing: /usr/include/OpenEXR/IlmThread.h
+-- Installing: /usr/include/OpenEXR/IlmThreadExport.h
+-- Installing: /usr/include/OpenEXR/IlmThreadForward.h
+-- Installing: /usr/include/OpenEXR/IlmThreadMutex.h
+-- Installing: /usr/include/OpenEXR/IlmThreadNamespace.h
+-- Installing: /usr/include/OpenEXR/IlmThreadPool.h
+-- Installing: /usr/include/OpenEXR/IlmThreadProcessGroup.h
+-- Installing: /usr/include/OpenEXR/IlmThreadSemaphore.h
+-- Up-to-date: /usr/lib/libIlmThread.so
+-- Creating symlink lib/libIlmThread.so -> libIlmThread-3_5.so
+-- Installing: /usr/lib/libOpenEXRCore-3_5.so.34.3.5.3
+-- Installing: /usr/lib/libOpenEXRCore-3_5.so.34
+-- Up-to-date: /usr/lib/libOpenEXRCore-3_5.so
+-- Installing: /usr/include/OpenEXR/openexr.h
+-- Installing: /usr/include/OpenEXR/openexr_attr.h
+-- Installing: /usr/include/OpenEXR/openexr_base.h
+-- Installing: /usr/include/OpenEXR/openexr_chunkio.h
+-- Installing: /usr/include/OpenEXR/openexr_coding.h
+-- Installing: /usr/include/OpenEXR/openexr_color_metadata.h
+-- Installing: /usr/include/OpenEXR/openexr_compression.h
+-- Installing: /usr/include/OpenEXR/openexr_config.h
+-- Installing: /usr/include/OpenEXR/openexr_context.h
+-- Installing: /usr/include/OpenEXR/openexr_decode.h
+-- Installing: /usr/include/OpenEXR/openexr_debug.h
+-- Installing: /usr/include/OpenEXR/openexr_encode.h
+-- Installing: /usr/include/OpenEXR/openexr_errors.h
+-- Installing: /usr/include/OpenEXR/openexr_part.h
+-- Installing: /usr/include/OpenEXR/openexr_std_attr.h
+-- Installing: /usr/include/OpenEXR/openexr_version.h
+-- Up-to-date: /usr/lib/libOpenEXRCore.so
+-- Creating symlink lib/libOpenEXRCore.so -> libOpenEXRCore-3_5.so
+-- Installing: /usr/lib/libOpenEXR-3_5.so.34.3.5.3
+-- Installing: /usr/lib/libOpenEXR-3_5.so.34
+-- Set non-toolchain portion of runtime path of "/usr/lib/libOpenEXR-3_5.so.34.3.5.3" to ""
+-- Up-to-date: /usr/lib/libOpenEXR-3_5.so
+-- Installing: /usr/include/OpenEXR/ImfAcesFile.h
+-- Installing: /usr/include/OpenEXR/ImfArray.h
+-- Installing: /usr/include/OpenEXR/ImfAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfBoxAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfBytesAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfCRgbaFile.h
+-- Installing: /usr/include/OpenEXR/ImfChannelList.h
+-- Installing: /usr/include/OpenEXR/ImfChannelListAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfChromaticities.h
+-- Installing: /usr/include/OpenEXR/ImfChromaticitiesAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfColorMetadata.h
+-- Installing: /usr/include/OpenEXR/ImfCompositeDeepScanLine.h
+-- Installing: /usr/include/OpenEXR/ImfCompression.h
+-- Installing: /usr/include/OpenEXR/ImfCompressionAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfCompressor.h
+-- Installing: /usr/include/OpenEXR/ImfContext.h
+-- Installing: /usr/include/OpenEXR/ImfContextInit.h
+-- Installing: /usr/include/OpenEXR/ImfConvert.h
+-- Installing: /usr/include/OpenEXR/ImfDeepCompositing.h
+-- Installing: /usr/include/OpenEXR/ImfDeepFrameBuffer.h
+-- Installing: /usr/include/OpenEXR/ImfDeepImageState.h
+-- Installing: /usr/include/OpenEXR/ImfDeepImageStateAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfDeepScanLineInputFile.h
+-- Installing: /usr/include/OpenEXR/ImfDeepScanLineInputPart.h
+-- Installing: /usr/include/OpenEXR/ImfDeepScanLineOutputFile.h
+-- Installing: /usr/include/OpenEXR/ImfDeepScanLineOutputPart.h
+-- Installing: /usr/include/OpenEXR/ImfDeepTiledInputFile.h
+-- Installing: /usr/include/OpenEXR/ImfDeepTiledInputPart.h
+-- Installing: /usr/include/OpenEXR/ImfDeepTiledOutputFile.h
+-- Installing: /usr/include/OpenEXR/ImfDeepTiledOutputPart.h
+-- Installing: /usr/include/OpenEXR/ImfDoubleAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfEnvmap.h
+-- Installing: /usr/include/OpenEXR/ImfEnvmapAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfExport.h
+-- Installing: /usr/include/OpenEXR/ImfFloatAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfFloatVectorAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfForward.h
+-- Installing: /usr/include/OpenEXR/ImfFrameBuffer.h
+-- Installing: /usr/include/OpenEXR/ImfFramesPerSecond.h
+-- Installing: /usr/include/OpenEXR/ImfGenericInputFile.h
+-- Installing: /usr/include/OpenEXR/ImfGenericOutputFile.h
+-- Installing: /usr/include/OpenEXR/ImfHeader.h
+-- Installing: /usr/include/OpenEXR/ImfHTCompressor.h
+-- Installing: /usr/include/OpenEXR/ImfHuf.h
+-- Installing: /usr/include/OpenEXR/ImfIDManifest.h
+-- Installing: /usr/include/OpenEXR/ImfIDManifestAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfIO.h
+-- Installing: /usr/include/OpenEXR/ImfInputFile.h
+-- Installing: /usr/include/OpenEXR/ImfInputPart.h
+-- Installing: /usr/include/OpenEXR/ImfInt64.h
+-- Installing: /usr/include/OpenEXR/ImfIntAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfKeyCode.h
+-- Installing: /usr/include/OpenEXR/ImfKeyCodeAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfLineOrder.h
+-- Installing: /usr/include/OpenEXR/ImfLineOrderAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfLut.h
+-- Installing: /usr/include/OpenEXR/ImfMatrixAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfMisc.h
+-- Installing: /usr/include/OpenEXR/ImfMultiPartInputFile.h
+-- Installing: /usr/include/OpenEXR/ImfMultiPartOutputFile.h
+-- Installing: /usr/include/OpenEXR/ImfMultiView.h
+-- Installing: /usr/include/OpenEXR/ImfName.h
+-- Installing: /usr/include/OpenEXR/ImfNamespace.h
+-- Installing: /usr/include/OpenEXR/ImfOpaqueAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfOutputFile.h
+-- Installing: /usr/include/OpenEXR/ImfOutputPart.h
+-- Installing: /usr/include/OpenEXR/ImfPartHelper.h
+-- Installing: /usr/include/OpenEXR/ImfPartType.h
+-- Installing: /usr/include/OpenEXR/ImfPixelType.h
+-- Installing: /usr/include/OpenEXR/ImfPreviewImage.h
+-- Installing: /usr/include/OpenEXR/ImfPreviewImageAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfRational.h
+-- Installing: /usr/include/OpenEXR/ImfRationalAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfRgba.h
+-- Installing: /usr/include/OpenEXR/ImfRgbaFile.h
+-- Installing: /usr/include/OpenEXR/ImfRgbaYca.h
+-- Installing: /usr/include/OpenEXR/ImfStandardAttributes.h
+-- Installing: /usr/include/OpenEXR/ImfStdIO.h
+-- Installing: /usr/include/OpenEXR/ImfStringAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfStringVectorAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfTestFile.h
+-- Installing: /usr/include/OpenEXR/ImfThreading.h
+-- Installing: /usr/include/OpenEXR/ImfTileDescription.h
+-- Installing: /usr/include/OpenEXR/ImfTileDescriptionAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfTiledInputFile.h
+-- Installing: /usr/include/OpenEXR/ImfTiledInputPart.h
+-- Installing: /usr/include/OpenEXR/ImfTiledOutputFile.h
+-- Installing: /usr/include/OpenEXR/ImfTiledOutputPart.h
+-- Installing: /usr/include/OpenEXR/ImfTiledRgbaFile.h
+-- Installing: /usr/include/OpenEXR/ImfTimeCode.h
+-- Installing: /usr/include/OpenEXR/ImfTimeCodeAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfVecAttribute.h
+-- Installing: /usr/include/OpenEXR/ImfVersion.h
+-- Installing: /usr/include/OpenEXR/ImfWav.h
+-- Installing: /usr/include/OpenEXR/ImfXdr.h
+-- Up-to-date: /usr/lib/libOpenEXR.so
+-- Creating symlink lib/libOpenEXR.so -> libOpenEXR-3_5.so
+-- Installing: /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.3
+-- Installing: /usr/lib/libOpenEXRUtil-3_5.so.34
+-- Set non-toolchain portion of runtime path of "/usr/lib/libOpenEXRUtil-3_5.so.34.3.5.3" to ""
+-- Up-to-date: /usr/lib/libOpenEXRUtil-3_5.so
+-- Installing: /usr/include/OpenEXR/ImfCheckFile.h
+-- Installing: /usr/include/OpenEXR/ImfDeepImage.h
+-- Installing: /usr/include/OpenEXR/ImfDeepImageChannel.h
+-- Installing: /usr/include/OpenEXR/ImfDeepImageIO.h
+-- Installing: /usr/include/OpenEXR/ImfDeepImageLevel.h
+-- Installing: /usr/include/OpenEXR/ImfFlatImage.h
+-- Installing: /usr/include/OpenEXR/ImfFlatImageChannel.h
+-- Installing: /usr/include/OpenEXR/ImfFlatImageIO.h
+-- Installing: /usr/include/OpenEXR/ImfFlatImageLevel.h
+-- Installing: /usr/include/OpenEXR/ImfImage.h
+-- Installing: /usr/include/OpenEXR/ImfImageChannel.h
+-- Installing: /usr/include/OpenEXR/ImfImageChannelRenaming.h
+-- Installing: /usr/include/OpenEXR/ImfImageDataWindow.h
+-- Installing: /usr/include/OpenEXR/ImfImageIO.h
+-- Installing: /usr/include/OpenEXR/ImfImageLevel.h
+-- Installing: /usr/include/OpenEXR/ImfSampleCountChannel.h
+-- Installing: /usr/include/OpenEXR/ImfUtilExport.h
+-- Up-to-date: /usr/lib/libOpenEXRUtil.so
+-- Creating symlink lib/libOpenEXRUtil.so -> libOpenEXRUtil-3_5.so
+-- Installing: /usr/bin/exr2aces
+-- Set non-toolchain portion of runtime path of "/usr/bin/exr2aces" to ""
+-- Installing: /usr/bin/exrheader
+-- Set non-toolchain portion of runtime path of "/usr/bin/exrheader" to ""
+-- Installing: /usr/bin/exrinfo
+-- Set non-toolchain portion of runtime path of "/usr/bin/exrinfo" to ""
+-- Installing: /usr/bin/exrmaketiled
+-- Set non-toolchain portion of runtime path of "/usr/bin/exrmaketiled" to ""
+-- Installing: /usr/bin/exrmetrics
+-- Set non-toolchain portion of runtime path of "/usr/bin/exrmetrics" to ""
+-- Installing: /usr/bin/exrstdattr
+-- Set non-toolchain portion of runtime path of "/usr/bin/exrstdattr" to ""
+-- Installing: /usr/bin/exrmakepreview
+-- Set non-toolchain portion of runtime path of "/usr/bin/exrmakepreview" to ""
+-- Installing: /usr/bin/exrenvmap
+-- Set non-toolchain portion of runtime path of "/usr/bin/exrenvmap" to ""
+-- Installing: /usr/bin/exrmultiview
+-- Set non-toolchain portion of runtime path of "/usr/bin/exrmultiview" to ""
+-- Installing: /usr/bin/exrmultipart
+-- Set non-toolchain portion of runtime path of "/usr/bin/exrmultipart" to ""
+-- Installing: /usr/bin/exrmanifest
+-- Set non-toolchain portion of runtime path of "/usr/bin/exrmanifest" to ""
+-- Installing: /usr/share/doc/OpenEXR/examples/drawImage.cpp
+-- Installing: /usr/share/doc/OpenEXR/examples/drawImage.h
+-- Installing: /usr/share/doc/OpenEXR/examples/generalInterfaceExamples.cpp
+-- Installing: /usr/share/doc/OpenEXR/examples/generalInterfaceExamples.h
+-- Installing: /usr/share/doc/OpenEXR/examples/generalInterfaceTiledExamples.cpp
+-- Installing: /usr/share/doc/OpenEXR/examples/generalInterfaceTiledExamples.h
+-- Installing: /usr/share/doc/OpenEXR/examples/lowLevelIoExamples.cpp
+-- Installing: /usr/share/doc/OpenEXR/examples/lowLevelIoExamples.h
+-- Installing: /usr/share/doc/OpenEXR/examples/main.cpp
+-- Installing: /usr/share/doc/OpenEXR/examples/namespaceAlias.h
+-- Installing: /usr/share/doc/OpenEXR/examples/previewImageExamples.cpp
+-- Installing: /usr/share/doc/OpenEXR/examples/previewImageExamples.h
+-- Installing: /usr/share/doc/OpenEXR/examples/rgbaInterfaceExamples.cpp
+-- Installing: /usr/share/doc/OpenEXR/examples/rgbaInterfaceExamples.h
+-- Installing: /usr/share/doc/OpenEXR/examples/rgbaInterfaceTiledExamples.cpp
+-- Installing: /usr/share/doc/OpenEXR/examples/rgbaInterfaceTiledExamples.h
+-- Installing: /usr/share/doc/OpenEXR/examples/deepExamples.cpp
+-- Installing: /usr/share/doc/OpenEXR/examples/deepExamples.h
+-- Installing: /usr/share/doc/OpenEXR/examples/deepTiledExamples.cpp
+-- Installing: /usr/share/doc/OpenEXR/examples/deepTiledExamples.h
+-- Installing: /usr/share/doc/OpenEXR/examples/multipartExamples.cpp
+-- Installing: /usr/share/doc/OpenEXR/examples/multipartExamples.h
+-- Installing: /usr/lib/python3.15/site-packages/OpenEXR.cpython-315-x86_64-linux-gnu.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/python3.15/site-packages/OpenEXR.cpython-315-x86_64-linux-gnu.so" to ""
+-- Installing: /usr/lib/python3.15/site-packages/Imath.py
+3.5.3
+Updated registry for openexr to version 3.5.3
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package openexr in /var/lib/custom-packages/
+Updating Python packages via pip...
+Requirement already satisfied: docutils in /usr/lib/python3.15/site-packages (0.22.4)
+Collecting docutils
+  Using cached docutils-0.23-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: mpmath in /usr/lib/python3.15/site-packages (1.3.0)
+Collecting mpmath
+  Using cached mpmath-1.4.1-py3-none-any.whl.metadata (9.1 kB)
+Requirement already satisfied: platformdirs in /usr/lib/python3.15/site-packages (4.14.0)
+Collecting platformdirs
+  Downloading platformdirs-4.14.2-py3-none-any.whl.metadata (5.4 kB)
+Using cached docutils-0.23-py3-none-any.whl (634 kB)
+Using cached mpmath-1.4.1-py3-none-any.whl (567 kB)
+Downloading platformdirs-4.14.2-py3-none-any.whl (35 kB)
+Installing collected packages: platformdirs, mpmath, docutils
+  Attempting uninstall: platformdirs
+    Found existing installation: platformdirs 4.14.0
+    Uninstalling platformdirs-4.14.0:
+      Successfully uninstalled platformdirs-4.14.0
+  Attempting uninstall: mpmath
+    Found existing installation: mpmath 1.3.0
+    Uninstalling mpmath-1.3.0:
+      Successfully uninstalled mpmath-1.3.0
+  Attempting uninstall: docutils
+    Found existing installation: docutils 0.22.4
+    Uninstalling docutils-0.22.4:
+      Successfully uninstalled docutils-0.22.4
+
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+sphinx 9.1.0 requires docutils<0.23,>=0.21, but you have docutils 0.23 which is incompatible.
+sympy 1.14.0 requires mpmath<1.4,>=1.1.0, but you have mpmath 1.4.1 which is incompatible.
+Successfully installed docutils-0.23 mpmath-1.4.1 platformdirs-4.14.2
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating and rebuilding packages
+[master a78fd04] Updating and rebuilding packages
+ 50 files changed, 21175 insertions(+), 18772 deletions(-)
+ create mode 100755 catch2
+ create mode 100755 frei0r-plugins
+ create mode 100755 gavl
+ create mode 100755 immer
+ create mode 100755 krita
+ create mode 100755 kseexpr
+ create mode 100755 ladspa
+ create mode 100755 lager
+ create mode 100755 libebur128
+ create mode 100755 libunibreak
+ create mode 100755 lilv
+ create mode 100755 lv2
+ create mode 100755 minizip-ng
+ create mode 100755 mlt
+ create mode 100755 movit
+ create mode 100755 opencolorio
+ create mode 100755 photocraft-bin
+ create mode 100755 pystring
+ create mode 100755 quazip
+ create mode 100644 rnnoise
+ create mode 100755 rtaudio
+ create mode 100755 rubberband
+ create mode 100755 sdl12-compat
+ create mode 100755 sdl_image
+ create mode 100755 serd
+ create mode 100755 sord
+ create mode 100755 sratom
+ create mode 100755 vamp-plugin-sdk
+ create mode 100755 vid.stab
+ create mode 100755 xsimd
+ create mode 100755 yaml-cpp
+ create mode 100755 zix
+ create mode 100755 zlib-ng
+ create mode 100755 zug
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating and rebuilding packages
+[master d9343d7] Updating and rebuilding packages
+ 50 files changed, 51 insertions(+)
+ create mode 100644 catch2
+ create mode 100644 frei0r-plugins
+ create mode 100644 gavl
+ create mode 100644 immer
+ create mode 100644 krita
+ create mode 100644 kseexpr
+ create mode 100644 ladspa
+ create mode 100644 lager
+ create mode 100644 libebur128
+ create mode 100644 libunibreak
+ create mode 100644 lilv
+ create mode 100644 lv2
+ create mode 100644 minizip-ng
+ create mode 100644 mlt
+ create mode 100644 movit
+ create mode 100644 opencolorio
+ create mode 100644 openjpeg2
+ create mode 100644 photocraft-bin
+ create mode 100644 pystring
+ create mode 100644 quazip
+ create mode 100644 rtaudio
+ create mode 100644 rubberband
+ create mode 100644 sdl12-compat
+ create mode 100644 sdl_image
+ create mode 100644 serd
+ create mode 100644 sord
+ create mode 100644 sratom
+ create mode 100644 vamp-plugin-sdk
+ create mode 100644 vid.stab
+ create mode 100644 xsimd
+ create mode 100644 yaml-cpp
+ create mode 100644 zix
+ create mode 100644 zlib-ng
+ create mode 100644 zug
+Pushing changes in ~/build_duration...
+r13.1-32
+r13.1-536
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libaom.so.3.15.2
+cand_sobase=libaom.so
+search_base=libaom
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libarchive.so.13.8.10
+cand_sobase=libarchive.so
+search_base=libarchive
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIex-3_5.so.34.3.5.2
+cand_sobase=libIex-.so
+search_base=libIex-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIlmThread-3_5.so.34.3.5.2
+cand_sobase=libIlmThread-.so
+search_base=libIlmThread-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=liblcms2.so.2.0.19
+cand_sobase=liblcms.so
+search_base=liblcms
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXR-3_5.so.34.3.5.2
+cand_sobase=libOpenEXR-.so
+search_base=libOpenEXR-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXRCore-3_5.so.34.3.5.2
+cand_sobase=libOpenEXRCore-.so
+search_base=libOpenEXRCore-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXRUtil-3_5.so.34.3.5.2
+cand_sobase=libOpenEXRUtil-.so
+search_base=libOpenEXRUtil-
+replacement_found=true
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libaom.so.3.15.2
+Path: /usr/lib/libaom.so.3.15.2
+Skipping generic/unsafe name 'libaom.so.' to prevent false positive matches.
+i_dir=/usr/lib
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libaom.so.3.15.2...
+------------------------------------------------
+Checking obsolete version (file): libarchive.so.13.8.10
+Path: /usr/lib/libarchive.so.13.8.10
+Skipping generic/unsafe name 'libarchive.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libarchive.so.13 libarchive.so.13.8.10
+Example dependents: ./miniconda3/lib/libmamba.so.4.0.1 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libarchive.so.13.8.10:
+  - ./miniconda3/lib/libmamba.so.4.0.1
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libarchive.so.13.8.10.
+------------------------------------------------
+Checking obsolete version (file): libIex-3_5.so.34.3.5.2
+Path: /usr/lib/libIex-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libIex-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 24 remaining dependents.
+Names tracked: libIex-3_5.so.34 libIex-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ...
+Warning: No parent package found for ANY of the 24 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIex-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/IexTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/IlmThread/libIlmThread-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIex-3_5.so.34.3.5.2.
+------------------------------------------------
+Checking obsolete version (file): libIlmThread-3_5.so.34.3.5.2
+Path: /usr/lib/libIlmThread-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libIlmThread-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 22 remaining dependents.
+Names tracked: libIlmThread-3_5.so.34 libIlmThread-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ...
+Warning: No parent package found for ANY of the 22 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIlmThread-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIlmThread-3_5.so.34.3.5.2.
+------------------------------------------------
+Checking obsolete version (file): liblcms2.so.2.0.19
+Path: /usr/lib/liblcms2.so.2.0.19
+Skipping generic/unsafe name 'liblcms2.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libaom.so.3.15.2
+i_sobase=libaom.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/liblcms2.so.2.0.19...
+------------------------------------------------
+Checking obsolete version (file): libOpenEXR-3_5.so.34.3.5.2
+Path: /usr/lib/libOpenEXR-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libOpenEXR-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 21 remaining dependents.
+Names tracked: libOpenEXR-3_5.so.34 libOpenEXR-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ...
+Warning: No parent package found for ANY of the 21 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXR-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXR-3_5.so.34.3.5.2.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRCore-3_5.so.34.3.5.2
+Path: /usr/lib/libOpenEXRCore-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libOpenEXRCore-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 22 remaining dependents.
+Names tracked: libOpenEXRCore-3_5.so.34 libOpenEXRCore-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ...
+Warning: No parent package found for ANY of the 22 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRCore-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRCore-3_5.so.34.3.5.2.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRUtil-3_5.so.34.3.5.2
+Path: /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libOpenEXRUtil-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 13 remaining dependents.
+Names tracked: libOpenEXRUtil-3_5.so.34 libOpenEXRUtil-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ./lfs_packaging/openexr/openexr/build/bin/exrenvmap ...
+Warning: No parent package found for ANY of the 13 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.2.
+------------------------------------------------
+Checking obsolete version (file): libwireplumber-0.5.so.0.518.0
+Path: /usr/lib/libwireplumber-0.5.so.0.518.0
+Skipping generic/unsafe name 'libwireplumber-0.5.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=liblcms2.so.2.0.19
+i_sobase=liblcms.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libwireplumber-0.5.so.0.518.0...
+Scanning /usr/share/doc for stale old-version directories...
+Removing stale: libostree-2026.5  (newer: libostree-2026.6)
+Removing stale: linux-7.3.0  (newer: linux-7.3.1)
+Removing stale: wireplumber-0.5.18  (newer: wireplumber-0.5.19)
+---
+Removed : 3
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging

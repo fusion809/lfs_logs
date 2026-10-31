@@ -1,0 +1,1437 @@
+===== Update check started: 2026-10-31 07:56:05 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261031_075605
+/dev/fd/63: line 10: lfs_vers: unbound variable
+Could not query Anitya for project libarchive: <urlopen error [Errno -3] Temporary failure in name resolution>
+Could not find Anitya project for libarchive
+Packages needing attention: libaom woxi-git
+===== Starting updatec: 2026-10-31 07:56:08 AEST =====
+Checking for packages with missing file inventories...
+name=libaom
+local_ver=3.15.2
+remote_ver=3.15.3
+name=libarchive
+local_ver=3.8.10
+remote_ver=3.8.11
+name=nodejs-bin
+local_ver=26.13.0
+remote_ver=2026.10.28
+name=povray
+local_ver=3.7.0.10
+remote_ver=3.8.0
+name=portaudio
+local_ver=19.7.0
+remote_ver=190600.20161030
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - libaom
+  - libarchive
+  - nodejs-bin
+  - portaudio
+  - povray
+  - woxi-git
+
+Building custom package libaom...
+[07:58:40] Found custom package for libaom, bypassing BLFS aliases.
+[07:58:40] Custom package detected at /home/fusion809/lfs_packaging/libaom (package: libaom)
+[07:58:40] Extracting dependencies for custom package 'libaom'...
+[07:58:40] Required deps: gcc glibc yasm 
+[07:58:40] Dependency 'gcc' already installed.
+[07:58:40] Dependency 'glibc' already installed.
+[07:58:40] Dependency 'yasm' already installed.
+[07:58:40] Starting remote custom build for libaom...
+--2026-10-31 07:59:24--  https://storage.googleapis.com/aom-releases/libaom-3.15.3.tar.gz
+Resolving storage.googleapis.com (storage.googleapis.com)... 142.250.183.59, 142.250.195.251, 142.250.195.187, ...
+Connecting to storage.googleapis.com (storage.googleapis.com)|142.250.183.59|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6632070 (6.3M) [application/x-tar]
+Saving to: ‘libaom-3.15.3.tar.gz’
+
+libaom-3.15.3.tar.g   0%[                    ]       0  --.-KB/s               libaom-3.15.3.tar.g   0%[                    ]  48.12K   169KB/s               libaom-3.15.3.tar.g   1%[                    ] 112.11K   223KB/s               libaom-3.15.3.tar.g   3%[                    ] 245.50K   349KB/s               libaom-3.15.3.tar.g   9%[>                   ] 592.11K   655KB/s               libaom-3.15.3.tar.g  19%[==>                 ]   1.20M  1.08MB/s               libaom-3.15.3.tar.g  29%[====>               ]   1.87M  1.42MB/s               libaom-3.15.3.tar.g  40%[=======>            ]   2.55M  1.68MB/s               libaom-3.15.3.tar.g  51%[=========>          ]   3.28M  1.91MB/s               libaom-3.15.3.tar.g  62%[===========>        ]   3.98M  2.07MB/s               libaom-3.15.3.tar.g  74%[=============>      ]   4.69M  2.20MB/s               libaom-3.15.3.tar.g  85%[================>   ]   5.39M  2.31MB/s               libaom-3.15.3.tar.g  96%[==================> ]   6.09M  2.41MB/s               libaom-3.15.3.tar.g 100%[===================>]   6.32M  2.44MB/s    in 2.6s    
+
+2026-10-31 07:59:28 (2.44 MB/s) - ‘libaom-3.15.3.tar.gz’ saved [6632070/6632070]
+
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+--- aom_configure: Detected CPU: x86_64
+-- The ASM_NASM compiler identification is YASM
+-- Found assembler: /usr/bin/yasm
+Running C compiler test: unistd_check
+-- Performing Test C_TEST_COMPILED
+-- Performing Test C_TEST_COMPILED - Success
+Running CXX compiler test: unistd_check
+-- Performing Test CXX_TEST_COMPILED
+-- Performing Test CXX_TEST_COMPILED - Success
+-- Looking for pthread_setname_np
+-- Looking for pthread_setname_np - found
+Running C compiler test: fenv_check
+-- Performing Test C_TEST_COMPILED
+-- Performing Test C_TEST_COMPILED - Success
+Checking C compiler flag support for: -std=c11
+-- Performing Test HAVE_C_FLAG
+-- Performing Test HAVE_C_FLAG - Success
+Checking C++ compiler flag support for: -std=c++17
+-- Performing Test HAVE_CXX_FLAG
+-- Performing Test HAVE_CXX_FLAG - Success
+Checking C compiler flag support for: -Wall
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wall
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wdisabled-optimization
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wdisabled-optimization
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wextra
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wextra
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wextra-semi
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Failed
+Checking C++ compiler flag support for: -Wextra-semi
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wextra-semi-stmt
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Failed
+Checking C++ compiler flag support for: -Wextra-semi-stmt
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Failed
+Checking C compiler flag support for: -Wfloat-conversion
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wfloat-conversion
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wformat=2
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wformat=2
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wimplicit-function-declaration
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wlogical-op
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wlogical-op
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wmissing-declarations
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wmissing-declarations
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wmissing-prototypes
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wpointer-arith
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wpointer-arith
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wshadow
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wshadow
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wshorten-64-to-32
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Failed
+Checking C++ compiler flag support for: -Wshorten-64-to-32
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Failed
+Checking C compiler flag support for: -Wsign-compare
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wsign-compare
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wstring-conversion
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Failed
+Checking C++ compiler flag support for: -Wstring-conversion
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Failed
+Checking C compiler flag support for: -Wtype-limits
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wtype-limits
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wundef
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wundef
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wuninitialized
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wuninitialized
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wunreachable-code-aggressive
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Failed
+Checking C++ compiler flag support for: -Wunreachable-code-aggressive
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Failed
+Checking C compiler flag support for: -Wunused
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wunused
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wvla
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wvla
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wc23-extensions
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Failed
+Checking C++ compiler flag support for: -Wc++20-extensions
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wc++23-extensions
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -Wstack-usage=100000
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -Wstack-usage=240000
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -D_LARGEFILE_SOURCE
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -D_LARGEFILE_SOURCE
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -D_FILE_OFFSET_BITS=64
+-- Performing Test C_FLAG_SUPPORTED
+-- Performing Test C_FLAG_SUPPORTED - Success
+Checking C++ compiler flag support for: -D_FILE_OFFSET_BITS=64
+-- Performing Test CXX_FLAG_SUPPORTED
+-- Performing Test CXX_FLAG_SUPPORTED - Success
+-- Found Git: /usr/bin/git (found version "2.56.0")
+-- Found Perl: /usr/bin/perl (found version "5.44.0")
+-- Performing Test FLAG_SUPPORTED
+-- Performing Test FLAG_SUPPORTED - Success
+Checking C compiler flag support for: -msse2
+-- Performing Test HAVE_C_FLAG
+-- Performing Test HAVE_C_FLAG - Success
+Checking C++ compiler flag support for: -msse2
+-- Performing Test HAVE_CXX_FLAG
+-- Performing Test HAVE_CXX_FLAG - Success
+Checking C compiler flag support for: -msse3
+-- Performing Test HAVE_C_FLAG
+-- Performing Test HAVE_C_FLAG - Success
+Checking C++ compiler flag support for: -msse3
+-- Performing Test HAVE_CXX_FLAG
+-- Performing Test HAVE_CXX_FLAG - Success
+Checking C compiler flag support for: -mssse3
+-- Performing Test HAVE_C_FLAG
+-- Performing Test HAVE_C_FLAG - Success
+Checking C++ compiler flag support for: -mssse3
+-- Performing Test HAVE_CXX_FLAG
+-- Performing Test HAVE_CXX_FLAG - Success
+Checking C compiler flag support for: -msse4.1
+-- Performing Test HAVE_C_FLAG
+-- Performing Test HAVE_C_FLAG - Success
+Checking C++ compiler flag support for: -msse4.1
+-- Performing Test HAVE_CXX_FLAG
+-- Performing Test HAVE_CXX_FLAG - Success
+Checking C compiler flag support for: -msse4.2
+-- Performing Test HAVE_C_FLAG
+-- Performing Test HAVE_C_FLAG - Success
+Checking C++ compiler flag support for: -msse4.2
+-- Performing Test HAVE_CXX_FLAG
+-- Performing Test HAVE_CXX_FLAG - Success
+Checking C compiler flag support for: -mavx2
+-- Performing Test HAVE_C_FLAG
+-- Performing Test HAVE_C_FLAG - Success
+Checking C++ compiler flag support for: -mavx2
+-- Performing Test HAVE_CXX_FLAG
+-- Performing Test HAVE_CXX_FLAG - Success
+-- Configuring done (25.9s)
+-- Generating done (0.4s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/libaom/libaom-3.15.3/build2
+[1/490] Updating version info if necessary.
+[2/490] cd /home/fusion809/lfs_packaging/libaom/libaom-3.15.3/build2 && /usr/bin/cmake -DAOM_ROOT="/home/fusion809/lfs_packaging/libaom/libaom-3.15.3" -DAOM_CONFIG_DIR="/home/fusion809/lfs_packaging/libaom/libaom-3.15.3/build2" -DAOM_TARGET_SYSTEM=Linux -DAOM_SYM_FILE="/home/fusion809/lfs_packaging/libaom/libaom-3.15.3/build2/libaom.ver" -DAOM_MSVC= -DAOM_XCODE= -DCMAKE_SHARED_LIBRARY_PREFIX="lib" -DCONFIG_NAME=Release -DCONFIG_AV1_DECODER=1 -DCONFIG_AV1_ENCODER=1 -DCONFIG_INSPECTION=0 -DENABLE_TESTS=ON -P /home/fusion809/lfs_packaging/libaom/libaom-3.15.3/cmake/generate_exports.cmake
+[3/490] Writing aom_version.h
+[4/490] Building C object CMakeFiles/aom_version.dir/gen_src/aom_version_no_op.c.o
+[5/490] Building C object CMakeFiles/aom_common_app_util.dir/av1/arg_defs.c.o
+[6/490] Linking C shared library libaom_version.so
+[7/490] Building C object CMakeFiles/aom_common_app_util.dir/common/args_helper.c.o
+[8/490] Generating /home/fusion809/lfs_packaging/libaom/libaom-3.15.3/build2/config/aom_scale_rtcd.h
+[9/490] Generating /home/fusion809/lfs_packaging/libaom/libaom-3.15.3/build2/config/av1_rtcd.h
+[10/490] Writing aom.pc
+[11/490] Generating /home/fusion809/lfs_packaging/libaom/libaom-3.15.3/build2/config/aom_dsp_rtcd.h
+[12/490] Building C object CMakeFiles/aom_common_app_util.dir/common/args.c.o
+[13/490] Building C object CMakeFiles/aom_rtcd.dir/aom_scale/aom_scale_rtcd.c.o
+[14/490] Building C object CMakeFiles/aom_rtcd.dir/av1/common/av1_rtcd.c.o
+[15/490] Building C object CMakeFiles/aom_obj.dir/config/aom_config.c.o
+[16/490] Building C object CMakeFiles/aom_obj.dir/aom/src/aom_codec.c.o
+[17/490] Building C object CMakeFiles/aom_obj.dir/aom/src/aom_decoder.c.o
+[18/490] Building C object CMakeFiles/aom_obj.dir/aom/src/aom_encoder.c.o
+[19/490] Building C object CMakeFiles/aom_obj.dir/aom/src/aom_image.c.o
+[20/490] Building C object CMakeFiles/aom_obj.dir/aom/src/aom_integer.c.o
+[21/490] Building C object CMakeFiles/aom_dsp_common.dir/aom_dsp/aom_convolve.c.o
+[22/490] Building C object CMakeFiles/aom_dsp_common.dir/aom_dsp/bitreader_buffer.c.o
+[23/490] Building C object CMakeFiles/aom_rtcd.dir/aom_dsp/aom_dsp_rtcd.c.o
+[24/490] Building C object CMakeFiles/aom_dsp_common.dir/aom_dsp/bitwriter_buffer.c.o
+[25/490] Building C object CMakeFiles/aom_dsp_common.dir/aom_dsp/blend_a64_hmask.c.o
+[26/490] Building C object CMakeFiles/aom_dsp_common.dir/aom_dsp/blend_a64_vmask.c.o
+[27/490] Building C object CMakeFiles/aom_dsp_common.dir/aom_dsp/entcode.c.o
+[28/490] Building C object CMakeFiles/aom_dsp_common.dir/aom_dsp/blend_a64_mask.c.o
+[29/490] Building C object CMakeFiles/aom_dsp_common.dir/aom_dsp/loopfilter.c.o
+[30/490] Building C object CMakeFiles/aom_dsp_common.dir/aom_dsp/odintrin.c.o
+[31/490] Building C object CMakeFiles/aom_dsp.dir/gen_src/aom_av1_no_op.c.o
+[32/490] Building C object CMakeFiles/aom_dsp.dir/gen_src/aom_dsp_no_op.c.o
+[33/490] Building C object CMakeFiles/aom_dsp_decoder.dir/aom_dsp/binary_codes_reader.c.o
+[34/490] Building C object CMakeFiles/aom_dsp_decoder.dir/aom_dsp/bitreader.c.o
+[35/490] Building C object CMakeFiles/aom_dsp_decoder.dir/aom_dsp/entdec.c.o
+[36/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/avg.c.o
+[37/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/bitwriter.c.o
+[38/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/blk_sse_sum.c.o
+[39/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/entenc.c.o
+[40/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/fft.c.o
+[41/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/fwd_txfm.c.o
+[42/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/psnr.c.o
+[43/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/quantize.c.o
+[44/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/sad.c.o
+[45/490] Building C object CMakeFiles/aom_dsp_common.dir/aom_dsp/intrapred.c.o
+[46/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/subtract.c.o
+[47/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/sse.c.o
+[48/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/ssim.c.o
+[49/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/sum_squares.c.o
+[50/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/sad_av1.c.o
+[51/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/pyramid.c.o
+[52/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/binary_codes_writer.c.o
+[53/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/flow_estimation/corner_detect.c.o
+[54/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/flow_estimation/corner_match.c.o
+[55/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/flow_estimation/disflow.c.o
+[56/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/flow_estimation/flow_estimation.c.o
+[57/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/grain_table.c.o
+[58/490] Building CXX object CMakeFiles/aom_gtest.dir/third_party/googletest/src/googletest/src/gtest-all.cc.o
+[59/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/noise_util.c.o
+[60/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/flow_estimation/ransac.c.o
+[61/490] Building ASM_NASM object CMakeFiles/aom_dsp_common_sse2.dir/aom_dsp/x86/intrapred_asm_sse2.asm.o
+[62/490] Building ASM_NASM object CMakeFiles/aom_dsp_common_sse2.dir/aom_dsp/x86/aom_high_subpixel_8t_sse2.asm.o
+[63/490] Building ASM_NASM object CMakeFiles/aom_dsp_common_sse2.dir/aom_dsp/x86/aom_high_subpixel_bilinear_sse2.asm.o
+[64/490] Building ASM_NASM object CMakeFiles/aom_dsp_common_sse2.dir/aom_dsp/x86/highbd_intrapred_asm_sse2.asm.o
+[65/490] Building C object CMakeFiles/aom_dsp_common_sse2_intrinsics.dir/aom_dsp/x86/aom_convolve_copy_sse2.c.o
+[66/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/noise_model.c.o
+[67/490] Building C object CMakeFiles/aom_dsp_common_sse2_intrinsics.dir/aom_dsp/x86/intrapred_sse2.c.o
+[68/490] Building C object CMakeFiles/aom_dsp_common_sse2_intrinsics.dir/aom_dsp/x86/loopfilter_sse2.c.o
+[69/490] Building C object CMakeFiles/aom_dsp_common_sse2_intrinsics.dir/aom_dsp/x86/highbd_convolve_sse2.c.o
+[70/490] Building C object CMakeFiles/aom_dsp_common_sse2_intrinsics.dir/aom_dsp/x86/highbd_intrapred_sse2.c.o
+[71/490] Building ASM_NASM object CMakeFiles/aom_dsp_encoder_sse2.dir/aom_dsp/x86/sad4d_sse2.asm.o
+[72/490] Building ASM_NASM object CMakeFiles/aom_dsp_encoder_sse2.dir/aom_dsp/x86/sad_sse2.asm.o
+[73/490] Building ASM_NASM object CMakeFiles/aom_dsp_encoder_sse2.dir/aom_dsp/x86/subtract_sse2.asm.o
+[74/490] Building C object CMakeFiles/aom_dsp_common_sse2_intrinsics.dir/aom_dsp/x86/highbd_loopfilter_sse2.c.o
+[75/490] Building ASM_NASM object CMakeFiles/aom_dsp_encoder_sse2.dir/aom_dsp/x86/highbd_sad_sse2.asm.o
+[76/490] Building ASM_NASM object CMakeFiles/aom_dsp_encoder_sse2.dir/aom_dsp/x86/highbd_subpel_variance_impl_sse2.asm.o
+[77/490] Building ASM_NASM object CMakeFiles/aom_dsp_encoder_sse2.dir/aom_dsp/x86/highbd_variance_impl_sse2.asm.o
+[78/490] Building ASM_NASM object CMakeFiles/aom_dsp_encoder_sse2.dir/aom_dsp/x86/ssim_sse2_x86_64.asm.o
+[79/490] Building C object CMakeFiles/aom_dsp_encoder_sse2_intrinsics.dir/aom_dsp/x86/avg_intrin_sse2.c.o
+[80/490] Building C object CMakeFiles/aom_dsp_encoder_sse2_intrinsics.dir/aom_dsp/x86/fft_sse2.c.o
+[81/490] Building C object CMakeFiles/aom_dsp_encoder_sse2_intrinsics.dir/aom_dsp/x86/fwd_txfm_sse2.c.o
+[82/490] Building C object CMakeFiles/aom_dsp_encoder_sse2_intrinsics.dir/aom_dsp/x86/quantize_sse2.c.o
+[83/490] Building C object CMakeFiles/aom_dsp_encoder_sse2_intrinsics.dir/aom_dsp/x86/adaptive_quantize_sse2.c.o
+[84/490] Building C object CMakeFiles/aom_dsp_encoder_sse2_intrinsics.dir/aom_dsp/x86/blk_sse_sum_sse2.c.o
+[85/490] Building C object CMakeFiles/aom_dsp_encoder_sse2_intrinsics.dir/aom_dsp/x86/sum_squares_sse2.c.o
+[86/490] Building C object CMakeFiles/aom_dsp_encoder_sse2_intrinsics.dir/aom_dsp/x86/variance_sse2.c.o
+[87/490] Building C object CMakeFiles/aom_dsp_encoder_sse2_intrinsics.dir/aom_dsp/x86/highbd_adaptive_quantize_sse2.c.o
+[88/490] Building C object CMakeFiles/aom_dsp_encoder_sse2_intrinsics.dir/aom_dsp/x86/highbd_quantize_intrin_sse2.c.o
+[89/490] Building C object CMakeFiles/aom_dsp_encoder_sse2_intrinsics.dir/aom_dsp/x86/highbd_subtract_sse2.c.o
+[90/490] Building C object CMakeFiles/aom_dsp_encoder_sse2_intrinsics.dir/aom_dsp/x86/highbd_variance_sse2.c.o
+[91/490] Building ASM_NASM object CMakeFiles/aom_dsp_common_ssse3.dir/aom_dsp/x86/aom_subpixel_8t_ssse3.asm.o
+[92/490] Building ASM_NASM object CMakeFiles/aom_dsp_common_ssse3.dir/aom_dsp/x86/aom_subpixel_bilinear_ssse3.asm.o
+[93/490] Building C object CMakeFiles/aom_dsp_common_ssse3_intrinsics.dir/aom_dsp/x86/aom_subpixel_8t_intrin_ssse3.c.o
+[94/490] Building C object CMakeFiles/aom_dsp_encoder.dir/aom_dsp/variance.c.o
+[95/490] Building C object CMakeFiles/aom_dsp_common_ssse3_intrinsics.dir/aom_dsp/x86/highbd_convolve_ssse3.c.o
+[96/490] Building ASM_NASM object CMakeFiles/aom_dsp_encoder_ssse3.dir/aom_dsp/x86/subpel_variance_ssse3.asm.o
+[97/490] Building ASM_NASM object CMakeFiles/aom_dsp_encoder_ssse3.dir/aom_dsp/x86/fwd_txfm_ssse3_x86_64.asm.o
+[98/490] Building ASM_NASM object CMakeFiles/aom_dsp_encoder_ssse3.dir/aom_dsp/x86/quantize_ssse3_x86_64.asm.o
+[99/490] Building C object CMakeFiles/aom_dsp_common_ssse3_intrinsics.dir/aom_dsp/x86/intrapred_ssse3.c.o
+[100/490] Building C object CMakeFiles/aom_dsp_encoder_ssse3_intrinsics.dir/aom_dsp/x86/masked_sad_intrin_ssse3.c.o
+[101/490] Building C object CMakeFiles/aom_dsp_encoder_ssse3_intrinsics.dir/aom_dsp/x86/quantize_ssse3.c.o
+[102/490] Building C object CMakeFiles/aom_dsp_encoder_ssse3_intrinsics.dir/aom_dsp/x86/variance_impl_ssse3.c.o
+[103/490] Building ASM_NASM object CMakeFiles/aom_dsp_encoder_sse2.dir/aom_dsp/x86/highbd_sad4d_sse2.asm.o
+[104/490] Building C object CMakeFiles/aom_dsp_common_sse4_1_intrinsics.dir/aom_dsp/x86/blend_a64_hmask_sse4.c.o
+[105/490] Building C object CMakeFiles/aom_dsp_encoder_ssse3_intrinsics.dir/aom_dsp/x86/variance_ssse3.c.o
+[106/490] Building C object CMakeFiles/aom_dsp_common_sse4_1_intrinsics.dir/aom_dsp/x86/blend_a64_vmask_sse4.c.o
+[107/490] Building C object CMakeFiles/aom_dsp_common_sse4_1_intrinsics.dir/aom_dsp/x86/blend_a64_mask_sse4.c.o
+[108/490] Building C object CMakeFiles/aom_dsp_encoder_sse4_1_intrinsics.dir/aom_dsp/flow_estimation/x86/corner_match_sse4.c.o
+[109/490] Building C object CMakeFiles/aom_dsp_encoder_sse4_1_intrinsics.dir/aom_dsp/flow_estimation/x86/disflow_sse4.c.o
+[110/490] Building C object CMakeFiles/aom_dsp_encoder_sse4_1_intrinsics.dir/aom_dsp/x86/avg_intrin_sse4.c.o
+[111/490] Building C object CMakeFiles/aom_dsp_encoder_sse4_1_intrinsics.dir/aom_dsp/x86/sse_sse4.c.o
+[112/490] Building C object CMakeFiles/aom_dsp_common_sse4_1_intrinsics.dir/aom_dsp/x86/intrapred_sse4.c.o
+[113/490] Building C object CMakeFiles/aom_dsp_encoder_sse4_1_intrinsics.dir/aom_dsp/x86/obmc_sad_sse4.c.o
+[114/490] Building C object CMakeFiles/aom_dsp_encoder_sse4_1_intrinsics.dir/aom_dsp/x86/highbd_variance_sse4.c.o
+[115/490] Building C object CMakeFiles/aom_dsp_encoder_avx_intrinsics.dir/aom_dsp/x86/aom_quantize_avx.c.o
+[116/490] Building C object CMakeFiles/aom_dsp_common_avx2_intrinsics.dir/aom_dsp/x86/aom_convolve_copy_avx2.c.o
+[117/490] Building C object CMakeFiles/aom_dsp_encoder_sse4_1_intrinsics.dir/aom_dsp/x86/obmc_variance_sse4.c.o
+[118/490] Building C object CMakeFiles/aom_dsp_common_avx2_intrinsics.dir/aom_dsp/x86/aom_subpixel_8t_intrin_avx2.c.o
+[119/490] Building C object CMakeFiles/aom_dsp_encoder_ssse3_intrinsics.dir/aom_dsp/x86/masked_variance_intrin_ssse3.c.o
+[120/490] Building C object CMakeFiles/aom_dsp_common_avx2_intrinsics.dir/aom_dsp/x86/loopfilter_avx2.c.o
+[121/490] Building C object CMakeFiles/aom_dsp_common_avx2_intrinsics.dir/aom_dsp/x86/blend_a64_mask_avx2.c.o
+[122/490] Building C object CMakeFiles/aom_dsp_common_avx2_intrinsics.dir/aom_dsp/x86/highbd_loopfilter_avx2.c.o
+[123/490] Building C object CMakeFiles/aom_dsp_common_avx2_intrinsics.dir/aom_dsp/x86/highbd_convolve_avx2.c.o
+[124/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/flow_estimation/x86/corner_match_avx2.c.o
+[125/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/flow_estimation/x86/disflow_avx2.c.o
+[126/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/avg_intrin_avx2.c.o
+[127/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/fft_avx2.c.o
+[128/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/subtract_avx2.c.o
+[129/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/adaptive_quantize_avx2.c.o
+[130/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/masked_sad_intrin_avx2.c.o
+[131/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/quantize_avx2.c.o
+[132/490] Building C object CMakeFiles/aom_dsp_common_avx2_intrinsics.dir/aom_dsp/x86/intrapred_avx2.c.o
+[133/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sad_avx2.c.o
+[134/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sad_impl_avx2.c.o
+[135/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sad4d_avx2.c.o
+[136/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sse_avx2.c.o
+[137/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/variance_avx2.c.o
+[138/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/obmc_sad_avx2.c.o
+[139/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/obmc_variance_avx2.c.o
+[140/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/blk_sse_sum_avx2.c.o
+[141/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/variance_impl_avx2.c.o
+[142/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/sum_squares_avx2.c.o
+[143/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/highbd_adaptive_quantize_avx2.c.o
+[144/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/highbd_quantize_intrin_avx2.c.o
+[145/490] Building C object CMakeFiles/aom_mem.dir/aom_mem/aom_mem.c.o
+[146/490] Building C object CMakeFiles/aom_util.dir/aom_util/aom_thread.c.o
+[147/490] Building C object CMakeFiles/aom_scale.dir/aom_scale/generic/yv12config.c.o
+[148/490] Building C object CMakeFiles/aom_scale.dir/aom_scale/generic/yv12extend.c.o
+[149/490] Building C object CMakeFiles/aom_av1_common.dir/common/args_helper.c.o
+[150/490] Building C object CMakeFiles/aom_av1_common.dir/av1/arg_defs.c.o
+[151/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/alloccommon.c.o
+[152/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/highbd_variance_avx2.c.o
+[153/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/av1_inv_txfm2d.c.o
+[154/490] Building C object CMakeFiles/aom_dsp_encoder_avx2_intrinsics.dir/aom_dsp/x86/highbd_sad_avx2.c.o
+[155/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/av1_txfm.c.o
+[156/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/blockd.c.o
+[157/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/cdef.c.o
+[158/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/av1_loopfilter.c.o
+[159/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/cdef_block.c.o
+[160/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/common_data.c.o
+[161/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/av1_inv_txfm1d.c.o
+[162/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/debugmodes.c.o
+[163/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/entropy.c.o
+[164/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/entropymode.c.o
+[165/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/entropymv.c.o
+[166/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/frame_buffers.c.o
+[167/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/idct.c.o
+[168/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/convolve.c.o
+[169/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/obu_util.c.o
+[170/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/pred_common.c.o
+[171/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/mvref_common.c.o
+[172/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/quant_common.c.o
+[173/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/reconinter.c.o
+[174/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/cfl.c.o
+[175/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/reconintra.c.o
+[176/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/scale.c.o
+[177/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/scan.c.o
+[178/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/seg_common.c.o
+[179/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/resize.c.o
+[180/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/tile_common.c.o
+[181/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/timing.c.o
+[182/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/txb_common.c.o
+[183/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/restoration.c.o
+[184/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/thread_common.c.o
+[185/490] Building C object CMakeFiles/aom_av1_common.dir/av1/common/warped_motion.c.o
+[186/490] Building C object CMakeFiles/aom_av1_decoder.dir/av1/av1_dx_iface.c.o
+[187/490] Building C object CMakeFiles/aom_av1_decoder.dir/av1/decoder/decoder.c.o
+[188/490] Building C object CMakeFiles/aom_av1_decoder.dir/av1/decoder/decodetxb.c.o
+[189/490] Building C object CMakeFiles/aom_av1_decoder.dir/av1/decoder/detokenize.c.o
+[190/490] Building C object CMakeFiles/aom_av1_decoder.dir/av1/decoder/decodemv.c.o
+[191/490] Building C object CMakeFiles/aom_av1_decoder.dir/av1/decoder/obu.c.o
+[192/490] Building C object CMakeFiles/aom_av1_decoder.dir/av1/decoder/decodeframe.c.o
+[193/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/aq_complexity.c.o
+[194/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/aq_cyclicrefresh.c.o
+[195/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/aq_variance.c.o
+[196/490] Building C object CMakeFiles/aom_av1_decoder.dir/av1/decoder/grain_synthesis.c.o
+[197/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/av1_ext_ratectrl.c.o
+[198/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/allintra_vis.c.o
+[199/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/av1_cx_iface.c.o
+[200/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/av1_fwd_txfm1d.c.o
+[201/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/av1_quantize.c.o
+[202/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/av1_fwd_txfm2d.c.o
+[203/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/cnn.c.o
+[204/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/compound_type.c.o
+[205/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/cost.c.o
+[206/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/context_tree.c.o
+[207/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/bitstream.c.o
+[208/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/encodeframe.c.o
+[209/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/encodemb.c.o
+[210/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/encodemv.c.o
+[211/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/encodeframe_utils.c.o
+[212/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/encoder_utils.c.o
+[213/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/encode_strategy.c.o
+[214/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/ethread.c.o
+[215/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/encodetxb.c.o
+[216/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/external_partition.c.o
+[217/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/extend.c.o
+[218/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/global_motion.c.o
+[219/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/firstpass.c.o
+[220/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/global_motion_facade.c.o
+[221/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/hash.c.o
+[222/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/gop_structure.c.o
+[223/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/hybrid_fwd_txfm.c.o
+[224/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/hash_motion.c.o
+[225/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/encoder.c.o
+[226/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/interp_search.c.o
+[227/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/lookahead.c.o
+[228/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/level.c.o
+[229/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/ml.c.o
+[230/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/motion_search_facade.c.o
+[231/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/mv_prec.c.o
+[232/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/palette.c.o
+[233/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/mcomp.c.o
+[234/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/partition_strategy.c.o
+[235/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/pickcdef.c.o
+[236/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/picklpf.c.o
+[237/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/partition_search.c.o
+[238/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/pass2_strategy.c.o
+[239/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/pickrst.c.o
+[240/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/rd.c.o
+[241/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/ratectrl.c.o
+[242/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/nonrd_opt.c.o
+[243/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/reconinter_enc.c.o
+[244/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/segmentation.c.o
+[245/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/speed_features.c.o
+[246/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/superres_scale.c.o
+[247/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/nonrd_pickmode.c.o
+[248/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/svc_layercontext.c.o
+[249/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/tokenize.c.o
+[250/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/temporal_filter.c.o
+[251/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/tpl_model.c.o
+[252/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/rdopt.c.o
+[253/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/txb_rdopt.c.o
+[254/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/wedge_utils.c.o
+[255/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/intra_mode_search.c.o
+[256/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/tx_search.c.o
+[257/490] Building C object CMakeFiles/aom_av1_encoder.dir/third_party/fastfeat/fast.c.o
+[258/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/av1_noise_estimate.c.o
+[259/490] Building C object CMakeFiles/aom_av1_encoder.dir/third_party/fastfeat/nonmax.c.o
+[260/490] Building C object CMakeFiles/aom_av1_encoder.dir/third_party/vector/vector.c.o
+[261/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/dwt.c.o
+[262/490] Building C object CMakeFiles/aom_av1_common_sse2_intrinsics.dir/av1/common/x86/cfl_sse2.c.o
+[263/490] Building C object CMakeFiles/aom_av1_common_sse2_intrinsics.dir/av1/common/x86/convolve_2d_sse2.c.o
+[264/490] Building C object CMakeFiles/aom_av1_common_sse2_intrinsics.dir/av1/common/x86/convolve_sse2.c.o
+[265/490] Building C object CMakeFiles/aom_av1_encoder.dir/av1/encoder/var_based_part.c.o
+[266/490] Building C object CMakeFiles/aom_av1_common_sse2_intrinsics.dir/av1/common/x86/jnt_convolve_sse2.c.o
+[267/490] Building C object CMakeFiles/aom_av1_common_sse2_intrinsics.dir/av1/common/x86/wiener_convolve_sse2.c.o
+[268/490] Building ASM_NASM object CMakeFiles/aom_av1_encoder_sse2.dir/av1/encoder/x86/dct_sse2.asm.o
+[269/490] Building ASM_NASM object CMakeFiles/aom_av1_encoder_sse2.dir/av1/encoder/x86/error_sse2.asm.o
+[270/490] Building C object CMakeFiles/aom_av1_common_sse2_intrinsics.dir/av1/common/x86/resize_sse2.c.o
+[271/490] Building C object CMakeFiles/aom_av1_encoder_sse2_intrinsics.dir/av1/encoder/x86/av1_k_means_sse2.c.o
+[272/490] Building C object CMakeFiles/aom_av1_encoder_sse2_intrinsics.dir/av1/encoder/x86/av1_quantize_sse2.c.o
+[273/490] Building C object CMakeFiles/aom_av1_encoder_sse2_intrinsics.dir/av1/encoder/x86/encodetxb_sse2.c.o
+[274/490] Building C object CMakeFiles/aom_av1_encoder_sse2_intrinsics.dir/av1/encoder/x86/error_intrin_sse2.c.o
+[275/490] Building C object CMakeFiles/aom_av1_encoder_sse2_intrinsics.dir/av1/encoder/x86/model_rd_sse2.c.o
+[276/490] Building C object CMakeFiles/aom_av1_encoder_sse2_intrinsics.dir/av1/encoder/x86/reconinter_enc_sse2.c.o
+[277/490] Building C object CMakeFiles/aom_av1_encoder_sse2_intrinsics.dir/av1/encoder/x86/temporal_filter_sse2.c.o
+[278/490] Building C object CMakeFiles/aom_av1_encoder_sse2_intrinsics.dir/av1/encoder/x86/wedge_utils_sse2.c.o
+[279/490] Building C object CMakeFiles/aom_av1_encoder_sse2_intrinsics.dir/av1/encoder/x86/highbd_block_error_intrin_sse2.c.o
+[280/490] Building C object CMakeFiles/aom_av1_encoder_sse2_intrinsics.dir/av1/encoder/x86/highbd_temporal_filter_sse2.c.o
+[281/490] Building C object CMakeFiles/aom_av1_encoder_sse2_intrinsics.dir/av1/encoder/x86/av1_fwd_txfm_sse2.c.o
+[282/490] Building C object CMakeFiles/aom_av1_encoder_sse3_intrinsics.dir/av1/encoder/x86/ml_sse3.c.o
+[283/490] Building C object CMakeFiles/aom_av1_common_ssse3_intrinsics.dir/av1/common/x86/cfl_ssse3.c.o
+[284/490] Building C object CMakeFiles/aom_av1_common_ssse3_intrinsics.dir/av1/common/x86/jnt_convolve_ssse3.c.o
+[285/490] Building C object CMakeFiles/aom_av1_common_ssse3_intrinsics.dir/av1/common/x86/resize_ssse3.c.o
+[286/490] Building C object CMakeFiles/aom_av1_common_ssse3_intrinsics.dir/av1/common/x86/highbd_convolve_2d_ssse3.c.o
+[287/490] Building C object CMakeFiles/aom_av1_common_ssse3_intrinsics.dir/av1/common/x86/highbd_wiener_convolve_ssse3.c.o
+[288/490] Building C object CMakeFiles/aom_av1_common_ssse3_intrinsics.dir/av1/common/x86/reconinter_ssse3.c.o
+[289/490] Building C object CMakeFiles/aom_av1_common_sse4_intrinsics.dir/av1/common/x86/av1_convolve_horiz_rs_sse4.c.o
+[290/490] Building C object CMakeFiles/aom_av1_common_ssse3_intrinsics.dir/av1/common/x86/av1_inv_txfm_ssse3.c.o
+[291/490] Building C object CMakeFiles/aom_av1_common_sse4_intrinsics.dir/av1/common/x86/av1_txfm_sse4.c.o
+[292/490] Building C object CMakeFiles/aom_av1_common_sse4_intrinsics.dir/av1/common/x86/av1_convolve_scale_sse4.c.o
+[293/490] Building C object CMakeFiles/aom_av1_common_sse4_intrinsics.dir/av1/common/x86/filterintra_sse4.c.o
+[294/490] Building C object CMakeFiles/aom_av1_common_sse4_intrinsics.dir/av1/common/x86/cdef_block_sse4.c.o
+[295/490] Building C object CMakeFiles/aom_av1_common_sse4_intrinsics.dir/av1/common/x86/intra_edge_sse4.c.o
+[296/490] Building C object CMakeFiles/aom_av1_common_sse4_intrinsics.dir/av1/common/x86/reconinter_sse4.c.o
+[297/490] Building C object CMakeFiles/aom_av1_common_sse4_intrinsics.dir/av1/common/x86/selfguided_sse4.c.o
+[298/490] Building C object CMakeFiles/aom_av1_common_sse4_intrinsics.dir/av1/common/x86/warp_plane_sse4.c.o
+[299/490] Building C object CMakeFiles/aom_av1_common_sse4_intrinsics.dir/av1/common/x86/highbd_convolve_2d_sse4.c.o
+[300/490] Building C object CMakeFiles/aom_av1_common_sse4_intrinsics.dir/av1/common/x86/highbd_jnt_convolve_sse4.c.o
+[301/490] Building C object CMakeFiles/aom_av1_common_sse4_intrinsics.dir/av1/common/x86/highbd_inv_txfm_sse4.c.o
+[302/490] Building ASM_NASM object CMakeFiles/aom_av1_encoder_ssse3.dir/av1/encoder/x86/av1_quantize_ssse3_x86_64.asm.o
+[303/490] Building C object CMakeFiles/aom_av1_common_sse4_intrinsics.dir/av1/common/x86/highbd_warp_plane_sse4.c.o
+[304/490] Building C object CMakeFiles/aom_av1_encoder_sse4_intrinsics.dir/av1/encoder/x86/av1_fwd_txfm1d_sse4.c.o
+[305/490] Building C object CMakeFiles/aom_av1_encoder_sse4_intrinsics.dir/av1/encoder/x86/encodetxb_sse4.c.o
+[306/490] Building C object CMakeFiles/aom_av1_encoder_sse4_intrinsics.dir/av1/encoder/x86/av1_fwd_txfm2d_sse4.c.o
+[307/490] Building C object CMakeFiles/aom_av1_encoder_sse4_intrinsics.dir/av1/encoder/x86/rdopt_sse4.c.o
+[308/490] Building C object CMakeFiles/aom_av1_encoder_sse4_intrinsics.dir/av1/encoder/x86/highbd_fwd_txfm_sse4.c.o
+[309/490] Building C object CMakeFiles/aom_av1_encoder_sse4_intrinsics.dir/av1/encoder/x86/av1_highbd_quantize_sse4.c.o
+[310/490] Building C object CMakeFiles/aom_av1_encoder_sse42_intrinsics.dir/av1/encoder/x86/hash_sse42.c.o
+[311/490] Building C object CMakeFiles/aom_av1_encoder_sse4_intrinsics.dir/av1/encoder/x86/pickrst_sse4.c.o
+[312/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/cdef_block_avx2.c.o
+[313/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/av1_inv_txfm_avx2.c.o
+[314/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/cfl_avx2.c.o
+[315/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/convolve_2d_avx2.c.o
+[316/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/convolve_avx2.c.o
+[317/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/jnt_convolve_avx2.c.o
+[318/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/reconinter_avx2.c.o
+[319/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/highbd_inv_txfm_avx2.c.o
+[320/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/resize_avx2.c.o
+[321/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/selfguided_avx2.c.o
+[322/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/wiener_convolve_avx2.c.o
+[323/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/highbd_convolve_2d_avx2.c.o
+[324/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/warp_plane_avx2.c.o
+[325/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/highbd_jnt_convolve_avx2.c.o
+[326/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/highbd_wiener_convolve_avx2.c.o
+[327/490] Building C object CMakeFiles/aom_av1_common_avx2_intrinsics.dir/av1/common/x86/highbd_warp_affine_avx2.c.o
+[328/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/av1_quantize_avx2.c.o
+[329/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/error_intrin_avx2.c.o
+[330/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/av1_fwd_txfm2d_avx2.c.o
+[331/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/highbd_fwd_txfm_avx2.c.o
+[332/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/wedge_utils_avx2.c.o
+[333/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/encodetxb_avx2.c.o
+[334/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/av1_k_means_avx2.c.o
+[335/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/rdopt_avx2.c.o
+[336/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/temporal_filter_avx2.c.o
+[337/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/cnn_avx2.c.o
+[338/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/ml_avx2.c.o
+[339/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/av1_highbd_quantize_avx2.c.o
+[340/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/highbd_block_error_intrin_avx2.c.o
+[341/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/pickrst_avx2.c.o
+[342/490] Building C object CMakeFiles/aom_av1_encoder_avx2_intrinsics.dir/av1/encoder/x86/highbd_temporal_filter_avx2.c.o
+[343/490] Linking CXX static library libaom_gtest.a
+[344/490] Building C object CMakeFiles/aom_encoder_stats.dir/stats/aomstats.c.o
+[345/490] Building C object CMakeFiles/aom_encoder_stats.dir/stats/rate_hist.c.o
+[346/490] Building C object CMakeFiles/aom_common_app_util.dir/common/av1_config.c.o
+[347/490] Building C object CMakeFiles/aom_common_app_util.dir/common/md5_utils.c.o
+[348/490] Building CXX object CMakeFiles/aom_av1_rc.dir/av1/ratectrl_rtc.cc.o
+[349/490] Building C object CMakeFiles/aom_common_app_util.dir/common/rawenc.c.o
+[350/490] Building C object CMakeFiles/aom_common_app_util.dir/common/y4menc.c.o
+[351/490] Building C object CMakeFiles/aom_common_app_util.dir/common/ivfdec.c.o
+[352/490] Building C object CMakeFiles/aom_usage_exit.dir/gen_src/usage_exit.c.o
+[353/490] Building C object CMakeFiles/aom_decoder_app_util.dir/common/obudec.c.o
+[354/490] Building C object CMakeFiles/aom_common_app_util.dir/common/tools_common.c.o
+[355/490] Building C object CMakeFiles/aom_decoder_app_util.dir/common/video_reader.c.o
+[356/490] Building C object CMakeFiles/aom_encoder_app_util.dir/common/ivfenc.c.o
+[357/490] Building CXX object CMakeFiles/aom_decoder_app_util.dir/common/webmdec.cc.o
+[358/490] Building C object CMakeFiles/aom_encoder_app_util.dir/common/video_writer.c.o
+[359/490] Building C object CMakeFiles/aom_encoder_app_util.dir/common/warnings.c.o
+[360/490] Building C object CMakeFiles/aom_encoder_app_util.dir/examples/encoder_util.c.o
+[361/490] Building C object CMakeFiles/aom_encoder_app_util.dir/common/y4minput.c.o
+[362/490] Building CXX object CMakeFiles/aom_encoder_app_util.dir/common/webmenc.cc.o
+[363/490] Building CXX object CMakeFiles/aom_encoder_app_util.dir/examples/multilayer_metadata.cc.o
+[364/490] Building C object CMakeFiles/decode_to_md5.dir/examples/decode_to_md5.c.o
+[365/490] Building C object CMakeFiles/aomdec.dir/apps/aomdec.c.o
+[366/490] Building C object CMakeFiles/decode_with_drops.dir/examples/decode_with_drops.c.o
+[367/490] Building C object CMakeFiles/scalable_decoder.dir/examples/scalable_decoder.c.o
+[368/490] Building C object CMakeFiles/simple_decoder.dir/examples/simple_decoder.c.o
+[369/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/cpu_id.cc.o
+[370/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/convert_argb.cc.o
+[371/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/planar_functions.cc.o
+[372/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/row_any.cc.o
+[373/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/row_gcc.cc.o
+[374/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/row_mips.cc.o
+[375/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/row_neon.cc.o
+[376/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/row_neon64.cc.o
+[377/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/row_win.cc.o
+[378/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/scale.cc.o
+[379/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/scale_any.cc.o
+[380/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/scale_common.cc.o
+[381/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/scale_gcc.cc.o
+[382/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/scale_mips.cc.o
+[383/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/scale_neon.cc.o
+[384/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/scale_neon64.cc.o
+[385/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/scale_win.cc.o
+[386/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/scale_uv.cc.o
+[387/490] Building CXX object CMakeFiles/yuv.dir/third_party/libyuv/source/row_common.cc.o
+[388/490] Building C object CMakeFiles/lossless_encoder.dir/examples/lossless_encoder.c.o
+[389/490] Building C object CMakeFiles/set_maps.dir/examples/set_maps.c.o
+[390/490] Building C object CMakeFiles/simple_encoder.dir/examples/simple_encoder.c.o
+[391/490] Building C object CMakeFiles/twopass_encoder.dir/examples/twopass_encoder.c.o
+[392/490] Building C object CMakeFiles/scalable_encoder.dir/examples/scalable_encoder.c.o
+[393/490] Building C object CMakeFiles/aomenc.dir/apps/aomenc.c.o
+[394/490] Building CXX object CMakeFiles/dump_obu.dir/tools/dump_obu.cc.o
+[395/490] Building CXX object CMakeFiles/dump_obu.dir/tools/obu_parser.cc.o
+[396/490] Building C object CMakeFiles/aom_cx_set_ref.dir/examples/aom_cx_set_ref.c.o
+[397/490] Building CXX object CMakeFiles/svc_encoder_rtc.dir/examples/svc_encoder_rtc.cc.o
+[398/490] Building C object CMakeFiles/lightfield_encoder.dir/examples/lightfield_encoder.c.o
+[399/490] Building C object CMakeFiles/lightfield_tile_list_decoder.dir/examples/lightfield_tile_list_decoder.c.o
+[400/490] Building C object CMakeFiles/lightfield_bitstream_parsing.dir/examples/lightfield_bitstream_parsing.c.o
+[401/490] Building C object CMakeFiles/lightfield_decoder.dir/examples/lightfield_decoder.c.o
+[402/490] Building C object CMakeFiles/low_complexity_mode_encoder.dir/examples/low_complexity_mode_encoder.c.o
+[403/490] Building CXX object CMakeFiles/webm.dir/third_party/libwebm/common/hdr_util.cc.o
+[404/490] Building CXX object CMakeFiles/webm.dir/third_party/libwebm/mkvmuxer/mkvmuxerutil.cc.o
+[405/490] Building CXX object CMakeFiles/webm.dir/third_party/libwebm/mkvmuxer/mkvwriter.cc.o
+[406/490] Building CXX object CMakeFiles/webm.dir/third_party/libwebm/mkvmuxer/mkvmuxer.cc.o
+[407/490] Building CXX object CMakeFiles/webm.dir/third_party/libwebm/mkvparser/mkvreader.cc.o
+[408/490] Building CXX object CMakeFiles/webm.dir/third_party/libwebm/mkvparser/mkvparser.cc.o
+[409/490] Building C object CMakeFiles/aom_av1_encoder.dir/third_party/fastfeat/fast_9.c.o
+[410/490] Linking C shared library libaom.so.3.15.3
+[411/490] Linking C static library libaom.a
+[412/490] Creating library symlink libaom.so.3 libaom.so
+[413/490] Building CXX object CMakeFiles/test_aom_common.dir/test/aom_image_test.cc.o
+[414/490] Linking CXX shared library libaom_av1_rc.so
+[415/490] Building CXX object CMakeFiles/test_aom_common.dir/test/aom_integer_test.cc.o
+[416/490] Building CXX object CMakeFiles/test_aom_common.dir/test/av1_config_test.cc.o
+[417/490] Building CXX object CMakeFiles/test_aom_common.dir/test/av1_key_value_api_test.cc.o
+[418/490] Building CXX object CMakeFiles/test_aom_common.dir/test/test_vectors.cc.o
+[419/490] Building CXX object CMakeFiles/test_aom_common.dir/test/log2_test.cc.o
+[420/490] Building CXX object CMakeFiles/test_aom_common.dir/test/decode_test_driver.cc.o
+[421/490] Building CXX object CMakeFiles/test_aom_decoder.dir/test/decode_api_test.cc.o
+[422/490] Building CXX object CMakeFiles/test_aom_common.dir/test/block_test.cc.o
+[423/490] Building CXX object CMakeFiles/test_aom_decoder.dir/test/decode_scalability_test.cc.o
+[424/490] Building CXX object CMakeFiles/test_aom_decoder.dir/test/decode_frame_size_limit_test.cc.o
+[425/490] Building CXX object CMakeFiles/test_aom_decoder.dir/test/external_frame_buffer_test.cc.o
+[426/490] Building CXX object CMakeFiles/test_aom_decoder.dir/test/invalid_file_test.cc.o
+[427/490] Building CXX object CMakeFiles/test_aom_decoder.dir/test/test_vector_test.cc.o
+[428/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/active_map_test.cc.o
+[429/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/aq_segment_test.cc.o
+[430/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/avif_progressive_test.cc.o
+[431/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/av1_external_partition_test.cc.o
+[432/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/borders_test.cc.o
+[433/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/cpu_speed_test.cc.o
+[434/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/cpu_used_firstpass_test.cc.o
+[435/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/deltaq_mode_test.cc.o
+[436/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/dropframe_encode_test.cc.o
+[437/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/datarate_test.cc.o
+[438/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/encode_large_width_height_test.cc.o
+[439/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/svc_datarate_test.cc.o
+[440/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/encode_small_width_height_test.cc.o
+[441/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/encode_test_driver.cc.o
+[442/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/encode_api_test.cc.o
+[443/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/ext_ratectrl_test.cc.o
+[444/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/end_to_end_psnr_test.cc.o
+[445/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/force_key_frame_test.cc.o
+[446/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/forced_max_frame_width_height_test.cc.o
+[447/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/gf_pyr_height_test.cc.o
+[448/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/allintra_end_to_end_test.cc.o
+[449/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/rt_end_to_end_test.cc.o
+[450/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/loopfilter_control_test.cc.o
+[451/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/horz_superres_test.cc.o
+[452/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/frame_size_tests.cc.o
+[453/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/level_test.cc.o
+[454/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/postproc_filters_test.cc.o
+[455/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/monochrome_test.cc.o
+[456/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/roi_map_test.cc.o
+[457/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/scalability_test.cc.o
+[458/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/y4m_test.cc.o
+[459/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/sharpness_test.cc.o
+[460/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/resize_test.cc.o
+[461/490] Building CXX object CMakeFiles/test_libaom.dir/test/test_libaom.cc.o
+[462/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/multilayer_metadata_test.cc.o
+[463/490] Building CXX object CMakeFiles/test_aom_rc.dir/test/decode_test_driver.cc.o
+[464/490] Building CXX object CMakeFiles/test_aom_encoder.dir/test/time_stamp_test.cc.o
+[465/490] Building CXX object CMakeFiles/test_aom_rc.dir/test/test_aom_rc.cc.o
+[466/490] Building C object CMakeFiles/aom_pc.dir/gen_src/aom_pc_no_op.c.o
+[467/490] Linking CXX executable aomdec
+[468/490] Linking CXX executable decode_to_md5
+[469/490] Linking CXX executable decode_with_drops
+[470/490] Linking CXX executable simple_decoder
+[471/490] Linking CXX executable scalable_decoder
+[472/490] Linking CXX executable aomenc
+[473/490] Linking CXX executable lossless_encoder
+[474/490] Linking CXX executable set_maps
+[475/490] Linking CXX executable simple_encoder
+[476/490] Linking CXX executable twopass_encoder
+[477/490] Linking CXX executable scalable_encoder
+[478/490] Building CXX object CMakeFiles/test_aom_rc.dir/test/encode_test_driver.cc.o
+[479/490] Linking CXX executable svc_encoder_rtc
+[480/490] Linking CXX executable dump_obu
+[481/490] Linking CXX executable aom_cx_set_ref
+[482/490] Linking CXX executable lightfield_tile_list_decoder
+[483/490] Linking CXX executable lightfield_encoder
+[484/490] Linking CXX executable lightfield_decoder
+[485/490] Linking CXX executable lightfield_bitstream_parsing
+[486/490] Linking CXX executable low_complexity_mode_encoder
+[487/490] Linking C shared library libaom_pc.so
+[488/490] Linking CXX executable test_libaom
+[489/490] Building CXX object CMakeFiles/test_aom_rc.dir/test/ratectrl_rtc_test.cc.o
+FAILED: [code=1] CMakeFiles/test_aom_rc.dir/test/ratectrl_rtc_test.cc.o 
+/usr/bin/c++ -DGTEST_HAS_PTHREAD=1 -I/home/fusion809/lfs_packaging/libaom/libaom-3.15.3 -I/home/fusion809/lfs_packaging/libaom/libaom-3.15.3/build2 -I/home/fusion809/lfs_packaging/libaom/libaom-3.15.3/apps -I/home/fusion809/lfs_packaging/libaom/libaom-3.15.3/common -I/home/fusion809/lfs_packaging/libaom/libaom-3.15.3/examples -I/home/fusion809/lfs_packaging/libaom/libaom-3.15.3/stats -I/home/fusion809/lfs_packaging/libaom/libaom-3.15.3/third_party/libyuv/include -I/home/fusion809/lfs_packaging/libaom/libaom-3.15.3/third_party/libwebm -isystem /home/fusion809/lfs_packaging/libaom/libaom-3.15.3/third_party/googletest/src/googletest/include -O3 -DNDEBUG -std=c++17 -Wall -Wdisabled-optimization -Wextra -Wextra-semi -Wfloat-conversion -Wformat=2 -Wlogical-op -Wmissing-declarations -Wpointer-arith -Wshadow -Wsign-compare -Wtype-limits -Wundef -Wuninitialized -Wunused -Wvla -Wc++20-extensions -Wc++23-extensions -Wstack-usage=240000 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIE -MD -MT CMakeFiles/test_aom_rc.dir/test/ratectrl_rtc_test.cc.o -MF CMakeFiles/test_aom_rc.dir/test/ratectrl_rtc_test.cc.o.d -o CMakeFiles/test_aom_rc.dir/test/ratectrl_rtc_test.cc.o -c /home/fusion809/lfs_packaging/libaom/libaom-3.15.3/test/ratectrl_rtc_test.cc
+/home/fusion809/lfs_packaging/libaom/libaom-3.15.3/test/ratectrl_rtc_test.cc:771:1: fatal error: opening dependency file CMakeFiles/test_aom_rc.dir/test/ratectrl_rtc_test.cc.o.d: No such file or directory
+  771 | }  // namespace
+      | ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+[ERROR] build.sh exited with code 1 for libaom
+[ERROR] Custom build failed for libaom
+[08:25:07] ========================================
+[08:25:07] Build completed with 1 failure(s):
+[08:25:07]   - libaom
+[08:25:07] ========================================
+Building custom package libarchive...
+[08:25:07] Found custom package for libarchive, bypassing BLFS aliases.
+[08:25:07] Custom package detected at /home/fusion809/lfs_packaging/libarchive (package: libarchive)
+[08:25:07] Extracting dependencies for custom package 'libarchive'...
+[08:25:07] Required deps: acl bzip2 coreutils gcc glibc icu libxml2 lz4 make openssl tar wget xz zlib zstd 
+[08:25:07] Dependency 'acl' already installed.
+[08:25:07] Dependency 'bzip2' already installed.
+[08:25:07] Dependency 'coreutils' already installed.
+[08:25:07] Dependency 'gcc' already installed.
+[08:25:07] Dependency 'glibc' already installed.
+[08:25:07] Dependency 'icu' already installed.
+[08:25:07] Dependency 'libxml2' already installed.
+[08:25:07] Dependency 'lz4' already installed.
+[08:25:07] Dependency 'make' already installed.
+[08:25:07] Dependency 'openssl' already installed.
+[08:25:07] Dependency 'tar' already installed.
+[08:25:07] Dependency 'wget' already installed.
+[08:25:07] Dependency 'xz' already installed.
+[08:25:07] Dependency 'zlib' already installed.
+[08:25:07] Dependency 'zstd' already installed.
+[08:25:07] Starting remote custom build for libarchive...
+--2026-10-31 08:25:15--  https://github.com/libarchive/libarchive/releases/download/v3.8.11/libarchive-3.8.11.tar.xz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/3219804/41c56f68-afc6-4108-9cf5-6262e0c97d19?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-30T23%3A13%3A17Z&rscd=attachment%3B+filename%3Dlibarchive-3.8.11.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-30T22%3A13%3A09Z&ske=2026-10-30T23%3A13%3A17Z&sks=b&skv=2018-11-09&sig=EBZH%2BHbauAbe47sEp6dmZYosUU%2FNRgiiEAvzplWm0Gs%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzM5OTQxNiwibmJmIjoxNzkzMzk5MTE2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.pEW2ukZXuqdcuxtvvi41yQIUgz6TzWmqr0Pj4JhNoCU&response-content-disposition=attachment%3B%20filename%3Dlibarchive-3.8.11.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2026-10-31 08:25:16--  https://release-assets.githubusercontent.com/github-production-release-asset/3219804/41c56f68-afc6-4108-9cf5-6262e0c97d19?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-30T23%3A13%3A17Z&rscd=attachment%3B+filename%3Dlibarchive-3.8.11.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-30T22%3A13%3A09Z&ske=2026-10-30T23%3A13%3A17Z&sks=b&skv=2018-11-09&sig=EBZH%2BHbauAbe47sEp6dmZYosUU%2FNRgiiEAvzplWm0Gs%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzM5OTQxNiwibmJmIjoxNzkzMzk5MTE2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.pEW2ukZXuqdcuxtvvi41yQIUgz6TzWmqr0Pj4JhNoCU&response-content-disposition=attachment%3B%20filename%3Dlibarchive-3.8.11.tar.xz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.110.133, 185.199.109.133, 185.199.108.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6754236 (6.4M) [application/octet-stream]
+Saving to: ‘libarchive-3.8.11.tar.xz’
+
+libarchive-3.8.11.t   0%[                    ]       0  --.-KB/s               libarchive-3.8.11.t  26%[====>               ]   1.69M  8.40MB/s               libarchive-3.8.11.t  57%[==========>         ]   3.70M  9.23MB/s               libarchive-3.8.11.t  91%[=================>  ]   5.92M  9.85MB/s               libarchive-3.8.11.t 100%[===================>]   6.44M  9.91MB/s    in 0.7s    
+
+2026-10-31 08:25:17 (9.91 MB/s) - ‘libarchive-3.8.11.tar.xz’ saved [6754236/6754236]
+
+configure found
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/time.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for strip... (cached) strip
+checking if Windows libtool -bindir is needed... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for acl/libacl.h... yes
+checking for attr/xattr.h... sed: can't read conftest.c: No such file or directory
+no
+checking for copyfile.h... no
+checking for ctype.h... cat: confdefs.h: No such file or directory
+yes
+checking for direct.h... no
+checking for errno.h... yes
+checking for ext2fs/ext2_fs.h... yes
+checking for fcntl.h... yes
+checking for fnmatch.h... yes
+checking for grp.h... yes
+checking whether EXT2_IOC_GETFLAGS is usable... yes
+checking for inttypes.h... (cached) yes
+checking for io.h... no
+checking for langinfo.h... yes
+checking for limits.h... yes
+checking for linux/fiemap.h... yes
+checking for linux/fs.h... yes
+checking for linux/magic.h... yes
+checking for linux/types.h... yes
+checking whether FS_IOC_GETFLAGS is usable... yes
+checking for intsafe.h... no
+checking for locale.h... yes
+checking for membership.h... no
+checking for paths.h... yes
+checking for poll.h... yes
+checking for pthread.h... yes
+checking for pwd.h... yes
+checking for readpassphrase.h... no
+checking for signal.h... yes
+checking for spawn.h... yes
+checking for stdarg.h... yes
+checking for stdckdint.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/acl.h... yes
+checking for sys/cdefs.h... yes
+checking for sys/ea.h... no
+checking for sys/extattr.h... no
+checking for sys/ioctl.h... yes
+checking for sys/mkdev.h... no
+checking for sys/mount.h... yes
+checking for sys/param.h... yes
+checking for sys/poll.h... yes
+checking for sys/richacl.h... no
+checking for sys/select.h... yes
+checking for sys/single_threaded.h... yes
+checking for sys/statfs.h... yes
+checking for sys/statvfs.h... yes
+checking for sys/sysctl.h... no
+checking for sys/sysmacros.h... yes
+checking for sys/time.h... (cached) yes
+checking for sys/utime.h... no
+checking for sys/utsname.h... yes
+checking for sys/vfs.h... yes
+checking for sys/xattr.h... yes
+checking for time.h... yes
+checking for unistd.h... (cached) yes
+checking for utime.h... yes
+checking for wchar.h... (cached) yes
+checking for wctype.h... yes
+checking for suseconds_t... yes
+checking for windows.h... no
+checking for winioctl.h... no
+found a suitable version of zlib (>= 1.2.1)
+checking for bzlib.h... yes
+checking for BZ2_bzDecompressInit in -lbz2... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for blake2.h... no
+checking for blake2sp_init in -lb2... no
+Package libb2 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libb2.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libb2' not found
+checking for ld used by GCC... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... /bin/sh: ./build/autoconf//config.rpath: No such file or directory
+done
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for iconv.h... yes
+checking for localcharset.h... no
+checking for locale_charset... no
+checking for locale_charset in -lcharset... no
+checking for lz4.h... yes
+checking for lz4hc.h... yes
+checking for LZ4_decompress_safe in -llz4... yes
+checking for zstd.h... yes
+checking for ZSTD_decompressStream in -lzstd... yes
+checking for ZSTD_compressStream in -lzstd... yes
+checking for ZSTD_minCLevel in -lzstd... yes
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for liblzma... yes
+checking for lzma.h... yes
+checking whether we have multithread support in lzma... yes
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libxml-2.0 >= 2.7.3... yes
+checking for xmlInitParser in -lxml2... yes
+checking for libxml/xmlreader.h... yes
+checking for libxml/xmlwriter.h... yes
+checking for libxml/xmlversion.h... yes
+checking for regex.h... yes
+checking for regcomp... yes
+checking whether C compiler accepts -Wall... yes
+checking whether C compiler accepts -Wformat... yes
+checking whether C compiler accepts -Wformat-security... yes
+checking whether ld supports --gc-sections... yes
+checking whether C compiler accepts -ffunction-sections... yes
+checking whether C compiler accepts -fdata-sections... yes
+checking for an ANSI C-conforming const... yes
+checking for uid_t in sys/types.h... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for size_t... yes
+checking for id_t... yes
+checking for uintptr_t... yes
+checking for struct tm.tm_gmtoff... yes
+checking for struct tm.__tm_gmtoff... no
+checking for struct statfs.f_namemax... no
+checking for struct statfs.f_iosize... no
+checking for struct statvfs.f_iosize... no
+checking for struct stat.st_birthtime... no
+checking for struct stat.st_birthtimespec.tv_nsec... no
+checking for struct stat.st_mtimespec.tv_nsec... no
+checking for struct stat.st_mtim.tv_nsec... no
+checking for struct stat.st_mtime_n... no
+checking for struct stat.st_umtime... no
+checking for struct stat.st_mtime_usec... no
+checking for struct stat.st_blksize... no
+checking for struct stat.st_flags... no
+checking for uintmax_t... yes
+checking for unsigned long long... yes
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for intmax_t... yes
+checking for uintmax_t... (cached) yes
+checking for int64_t... yes
+checking for uint64_t... yes
+checking for int32_t... yes
+checking for uint32_t... yes
+checking for int16_t... yes
+checking for uint16_t... yes
+checking for uint8_t... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether SIZE_MAX is declared... yes
+checking whether INT32_MAX is declared... yes
+checking whether INT32_MIN is declared... yes
+checking whether INT64_MAX is declared... yes
+checking whether INT64_MIN is declared... yes
+checking whether UINT64_MAX is declared... yes
+checking whether UINT32_MAX is declared... yes
+checking whether INTMAX_MAX is declared... yes
+checking whether INTMAX_MIN is declared... yes
+checking whether UINTMAX_MAX is declared... yes
+checking whether SSIZE_MAX is declared... yes
+checking whether EFTYPE is declared... no
+checking whether EILSEQ is declared... yes
+checking for wchar_t... yes
+checking size of wchar_t... 4
+checking size of int... 4
+checking size of long... 8
+checking for sys/mkdev.h... (cached) no
+checking for sys/sysmacros.h... (cached) yes
+checking for declarations of fseeko and ftello... yes
+checking for working memcmp... yes
+checking whether lstat correctly handles trailing slash... no
+checking whether lstat accepts an empty string... yes
+checking whether stat accepts an empty string... yes
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... no
+checking for strftime... yes
+checking for vprintf... yes
+checking for CreateHardLinkA... no
+checking for arc4random_buf... yes
+checking for chflags... no
+checking for chown... yes
+checking for chroot... yes
+checking for closefrom... yes
+checking for close_range... yes
+checking for ctime_r... yes
+checking for explicit_bzero... yes
+checking for fchdir... yes
+checking for fchflags... no
+checking for fchmod... yes
+checking for fchown... yes
+checking for fcntl... yes
+checking for fdopendir... yes
+checking for fnmatch... yes
+checking for fork... yes
+checking for fstat... yes
+checking for fstatat... yes
+checking for fstatfs... yes
+checking for fstatvfs... yes
+checking for ftruncate... yes
+checking for futimens... yes
+checking for futimes... yes
+checking for futimesat... yes
+checking for getegid... yes
+checking for geteuid... yes
+checking for getline... yes
+checking for getpid... yes
+checking for getresgid... yes
+checking for getresuid... yes
+checking for getgrgid_r... yes
+checking for getgrnam_r... yes
+checking for getpwnam_r... yes
+checking for getpwuid_r... yes
+checking for gettimeofday... yes
+checking for getvfsbyname... no
+checking for gmtime_r... yes
+checking for issetugid... no
+checking for lchflags... no
+checking for lchmod... yes
+checking for lchown... yes
+checking for link... yes
+checking for linkat... yes
+checking for localtime_r... yes
+checking for lstat... yes
+checking for lutimes... yes
+checking for mbrtowc... yes
+checking for memmove... yes
+checking for memset... yes
+checking for memset_explicit... yes
+checking for mkdir... yes
+checking for mkfifo... yes
+checking for mknod... yes
+checking for mkstemp... yes
+checking for nl_langinfo... yes
+checking for openat... yes
+checking for pipe... yes
+checking for poll... yes
+checking for posix_spawn... yes
+checking for posix_spawnp... yes
+checking for readlink... yes
+checking for readlinkat... yes
+checking for readpassphrase... no
+checking for select... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for sigaction... yes
+checking for statfs... yes
+checking for statvfs... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strncpy_s... no
+checking for strnlen... yes
+checking for strrchr... yes
+checking for symlink... yes
+checking for sysconf... yes
+checking for tcgetattr... yes
+checking for tcsetattr... yes
+checking for timegm... yes
+checking for tzset... yes
+checking for unlinkat... yes
+checking for unsetenv... yes
+checking for utime... yes
+checking for utimensat... yes
+checking for utimes... yes
+checking for vfork... yes
+checking for waitpid... yes
+checking for wcrtomb... yes
+checking for wcscmp... yes
+checking for wcscpy... yes
+checking for wcslen... yes
+checking for wctomb... yes
+checking for wmemcmp... yes
+checking for wmemcpy... yes
+checking for wmemmove... yes
+checking for _fseeki64... no
+checking for _get_timezone... no
+checking whether ctime_s is declared... no
+checking whether gmtime_s is declared... no
+checking for localtime_s... no
+checking whether _mkgmtime is declared... no
+checking for cygwin_conv_path... no
+checking for struct vfsconf... no
+checking for struct xvfsconf... no
+checking for struct statfs... no
+checking whether D_MD_ORDER is declared... no
+checking for struct dirent.d_namlen... no
+checking for library containing setxattr... none required
+checking whether EXTATTR_NAMESPACE_USER is declared... no
+checking whether XATTR_NOFOLLOW is declared... no
+checking for fgetxattr... yes
+checking for flistxattr... yes
+checking for fsetxattr... yes
+checking for getxattr... yes
+checking for lgetxattr... yes
+checking for listxattr... yes
+checking for llistxattr... yes
+checking for lsetxattr... yes
+checking for extended attributes support... Linux
+checking for acl_get_file in -lacl... yes
+checking for acl_t... yes
+checking for acl_entry_t... yes
+checking for acl_permset_t... yes
+checking for acl_tag_t... yes
+checking for richacl_get_file in -lrichacl... no
+Package librichacl was not found in the pkg-config search path.
+Perhaps you should add the directory containing `librichacl.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'librichacl' not found
+checking for struct richace... no
+checking for struct richacl... no
+checking for acl... no
+checking for facl... no
+checking for acl_add_perm... yes
+checking for acl_clear_perms... yes
+checking for acl_create_entry... yes
+checking for acl_delete_def_file... yes
+checking for acl_free... yes
+checking for acl_get_entry... yes
+checking for acl_get_fd... yes
+checking for acl_get_file... yes
+checking for acl_get_permset... yes
+checking for acl_get_qualifier... yes
+checking for acl_get_tag_type... yes
+checking for acl_init... yes
+checking for acl_set_fd... yes
+checking for acl_set_file... yes
+checking for acl_set_qualifier... yes
+checking for acl_set_tag_type... yes
+checking for acl_get_perm... yes
+checking for ACL support... libacl (POSIX.1e)
+checking for   -I/usr/include/libxml2 option for large files... none needed
+checking support for ARCHIVE_CRYPTO_MD5_LIBC... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_RMD160_LIBC... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA1_LIBC... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA256_LIBC... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA256_LIBC2... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA256_LIBC3... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA384_LIBC... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA384_LIBC2... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA384_LIBC3... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA512_LIBC... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA512_LIBC2... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA512_LIBC3... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking for bcrypt.h... no
+checking for openssl/evp.h... yes
+checking for openssl/opensslv.h... yes
+checking for OPENSSL_config in -lcrypto... yes
+checking support for ARCHIVE_CRYPTO_MD5_OPENSSL... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_RMD160_OPENSSL... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA1_OPENSSL... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA256_OPENSSL... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA384_OPENSSL... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA512_OPENSSL... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking for PKCS5_PBKDF2_HMAC_SHA1... yes
+checking for MD5Init in -lmd... no
+checking support for ARCHIVE_CRYPTO_MD5_LIBMD... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_RMD160_LIBMD... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA1_LIBMD... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA256_LIBMD... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking support for ARCHIVE_CRYPTO_SHA512_LIBMD... cat: ./libarchive/archive_digest.c: No such file or directory
+no
+checking whether the -Werror option is usable... yes
+checking for simple visibility declarations... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: error: cannot find input file: 'Makefile.in'
+[ERROR] build.sh exited with code 1 for libarchive
+[ERROR] Custom build failed for libarchive
+[08:26:50] ========================================
+[08:26:50] Build completed with 1 failure(s):
+[08:26:50]   - libarchive
+[08:26:50] ========================================
+Building custom package nodejs-bin...
+[08:26:50] Found custom package for nodejs-bin, bypassing BLFS aliases.
+[08:26:50] Custom package detected at /home/fusion809/lfs_packaging/nodejs-bin (package: nodejs-bin)
+[08:26:50] Checking conflicting package(s) for 'nodejs-bin': nodejs 
+[08:26:50] Extracting dependencies for custom package 'nodejs-bin'...
+[08:26:50] Required deps: gcc glibc 
+[08:26:51] Dependency 'gcc' already installed.
+[08:26:51] Dependency 'glibc' already installed.
+[08:26:51] Starting remote custom build for nodejs-bin...
+[08:26:51] [LFS-AUTOBUILD] Skipping custom package nodejs-bin: version 26.13.0 already installed (use -f to force build).
+Building custom package portaudio...
+[08:26:51] Found custom package for portaudio, bypassing BLFS aliases.
+[08:26:51] Custom package detected at /home/fusion809/lfs_packaging/portaudio (package: portaudio)
+[08:26:51] Extracting dependencies for custom package 'portaudio'...
+[08:26:52] Required deps: alsa-lib autoconf bash cmake coreutils gcc glibc gzip jack-git make opus sed tar wget 
+[08:26:53] Dependency 'alsa-lib' already installed.
+[08:26:53] Dependency 'autoconf' already installed.
+[08:26:53] Dependency 'bash' already installed.
+[08:26:53] Dependency 'cmake' already installed.
+[08:26:53] Dependency 'coreutils' already installed.
+[08:26:53] Dependency 'gcc' already installed.
+[08:26:53] Dependency 'glibc' already installed.
+[08:26:53] Dependency 'gzip' already installed.
+[08:26:53] Dependency 'jack-git' already installed.
+[08:26:53] Dependency 'make' already installed.
+[08:26:53] Dependency 'opus' already installed.
+[08:26:53] Dependency 'sed' already installed.
+[08:26:53] Dependency 'tar' already installed.
+[08:26:53] Dependency 'wget' already installed.
+[08:26:53] Starting remote custom build for portaudio...
+[08:26:54] [LFS-AUTOBUILD] Skipping custom package portaudio: version 19.7.0 already installed (use -f to force build).
+Building custom package povray...
+[08:26:55] Found custom package for povray, bypassing BLFS aliases.
+[08:26:55] Custom package detected at /home/fusion809/lfs_packaging/povray (package: povray)
+[08:26:55] Extracting dependencies for custom package 'povray'...
+[08:26:55] Required deps: boost imath libpng openexr tiff 
+[08:26:55] Dependency 'boost' already installed.
+[08:26:55] Dependency 'imath' already installed.
+[08:26:55] Dependency 'libpng' already installed.
+[08:26:55] Dependency 'openexr' already installed.
+[08:26:55] Dependency 'tiff' already installed.
+[08:26:55] Starting remote custom build for povray...
+[08:26:55] [LFS-AUTOBUILD] Skipping custom package povray: version 3.7.0.10 already installed (use -f to force build).
+Building custom package woxi-git...
+[08:26:56] Found custom package for woxi-git, bypassing BLFS aliases.
+[08:26:56] Custom package detected at /home/fusion809/lfs_packaging/woxi-git (package: woxi-git)
+[08:26:56] Checking conflicting package(s) for 'woxi-git': woxi 
+[08:26:56] Extracting dependencies for custom package 'woxi-git'...
+[08:26:56] Required deps: gcc glibc rust 
+[08:26:56] Dependency 'gcc' already installed.
+[08:26:56] Dependency 'glibc' already installed.
+[08:26:56] Dependency 'rust' already installed.
+[08:26:56] Starting remote custom build for woxi-git...
+Woxi-5a4070656243ee480644427f4799e27138682481.tar.gz already present and appears valid.
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling cfg-if v1.0.5
+   Compiling libc v0.2.191
+   Compiling libm v0.2.16
+   Compiling memchr v2.8.3
+   Compiling syn v3.0.9
+   Compiling syn v2.0.119
+   Compiling log v0.4.34
+   Compiling autocfg v1.5.1
+   Compiling zerocopy v0.8.63
+   Compiling num-traits v0.2.19
+   Compiling smallvec v1.16.4
+   Compiling bytemuck_derive v1.12.1
+   Compiling zerocopy-derive v0.8.63
+   Compiling typenum v1.20.1
+   Compiling simd-adler32 v0.3.10
+   Compiling equivalent v1.0.3
+   Compiling bytemuck v1.25.2
+   Compiling crc32fast v1.5.3
+   Compiling hybrid-array v0.4.15
+   Compiling adler2 v2.0.1
+   Compiling serde_core v1.0.229
+   Compiling rand_core v0.10.1
+   Compiling miniz_oxide v0.9.1
+   Compiling zlib-rs v0.6.8
+   Compiling hashbrown v0.17.1
+   Compiling getrandom v0.4.3
+   Compiling indexmap v2.14.2
+   Compiling ppv-lite86 v0.2.21
+   Compiling flate2 v1.1.10
+   Compiling crypto-common v0.2.2
+   Compiling getrandom v0.2.17
+   Compiling find-msvc-tools v0.1.15
+   Compiling scopeguard v1.2.0
+   Compiling shlex v2.0.1
+   Compiling cc v1.10.0
+   Compiling bitflags v2.13.2
+   Compiling futures-sink v0.3.34
+   Compiling futures-core v0.3.34
+   Compiling pin-project-lite v0.2.17
+   Compiling rustversion v1.0.23
+   Compiling serde v1.0.229
+   Compiling getrandom v0.3.4
+   Compiling arrayvec v0.7.8
+   Compiling serde_derive v1.0.229
+   Compiling futures-io v0.3.34
+   Compiling futures-channel v0.3.34
+   Compiling rand_core v0.6.4
+   Compiling block-buffer v0.12.1
+   Compiling futures-macro v0.3.34
+   Compiling aho-corasick v1.1.5
+   Compiling const-oid v0.10.2
+   Compiling slab v0.4.12
+   Compiling parking_lot_core v0.9.12
+   Compiling regex-syntax v0.8.11
+   Compiling futures-task v0.3.34
+   Compiling futures-util v0.3.34
+   Compiling regex-automata v0.4.18
+   Compiling digest v0.11.3
+   Compiling rand_chacha v0.3.1
+   Compiling rand_core v0.9.5
+   Compiling version_check v0.9.5
+   Compiling tinyvec v1.13.3
+   Compiling bytes v1.12.1
+   Compiling foldhash v0.2.0
+   Compiling siphasher v1.0.4
+   Compiling cpufeatures v0.3.1
+   Compiling itoa v1.0.18
+   Compiling slotmap v1.1.1
+   Compiling rand v0.8.8
+/home/fusion809/lfs-scripts/updates_check_and_run.sh: line 163:  1394 Killed                     zsh -ic 'updatec'
+===== ERROR: updatec exited with status 137 =====
