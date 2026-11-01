@@ -1,0 +1,268 @@
+===== Update check started: 2026-11-02 05:43:54 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261102_054354
+Packages needing attention: photocraft-bin wordcraft-bin
+===== Starting updatec: 2026-11-02 05:44:00 AEST =====
+Checking for packages with missing file inventories...
+name=photocraft-bin
+local_ver=0.18.0
+remote_ver=0.19.0
+name=vectorcraft-bin
+local_ver=0.19.0
+remote_ver=0.20.0
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - photocraft-bin
+  - vectorcraft-bin
+  - wordcraft-bin
+
+Building custom package photocraft-bin...
+[05:45:55] Found custom package for photocraft-bin, bypassing BLFS aliases.
+[05:45:55] Custom package detected at /home/fusion809/lfs_packaging/photocraft-bin (package: photocraft-bin)
+[05:45:55] Checking conflicting package(s) for 'photocraft-bin': photocraft 
+[05:45:55] Extracting dependencies for custom package 'photocraft-bin'...
+[05:45:55] Starting remote custom build for photocraft-bin...
+--2026-11-02 05:46:28--  https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-linux-x86_64.AppImage
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/1398080271/5a6eb251-78f5-4d70-9e7f-bf23196e20c0?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-01T20%3A40%3A01Z&rscd=attachment%3B+filename%3Dphotocraft-0.19.0-linux-x86_64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-01T19%3A39%3A58Z&ske=2026-11-01T20%3A40%3A01Z&sks=b&skv=2018-11-09&sig=mF%2FBZ9PDxPRBxHV6bVfM%2BfS2zMA4pgnxreYK2Yx7wHo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzU2NTk4OSwibmJmIjoxNzkzNTYyMzg5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.0h8xuOsr6HCYD5f8Vvq6O6Yr-uoDanUNyG7dqco-6fg&response-content-disposition=attachment%3B%20filename%3Dphotocraft-0.19.0-linux-x86_64.AppImage&response-content-type=application%2Foctet-stream [following]
+--2026-11-02 05:46:29--  https://release-assets.githubusercontent.com/github-production-release-asset/1398080271/5a6eb251-78f5-4d70-9e7f-bf23196e20c0?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-01T20%3A40%3A01Z&rscd=attachment%3B+filename%3Dphotocraft-0.19.0-linux-x86_64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-01T19%3A39%3A58Z&ske=2026-11-01T20%3A40%3A01Z&sks=b&skv=2018-11-09&sig=mF%2FBZ9PDxPRBxHV6bVfM%2BfS2zMA4pgnxreYK2Yx7wHo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzU2NTk4OSwibmJmIjoxNzkzNTYyMzg5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.0h8xuOsr6HCYD5f8Vvq6O6Yr-uoDanUNyG7dqco-6fg&response-content-disposition=attachment%3B%20filename%3Dphotocraft-0.19.0-linux-x86_64.AppImage&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.109.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 118979064 (113M) [application/octet-stream]
+Saving to: ‘photocraft-0.19.0-linux-x86_64.AppImage’
+
+          photocraf   0%[                    ]       0  --.-KB/s                        photocraft   1%[                    ]   1.87M  9.33MB/s                       photocraft-   3%[                    ]   4.09M  10.2MB/s                      photocraft-0   5%[>                   ]   6.32M  10.5MB/s                     photocraft-0.   7%[>                   ]   8.56M  10.7MB/s                    photocraft-0.1   9%[>                   ]  10.26M  10.2MB/s                   photocraft-0.19  10%[=>                  ]  11.39M  9.45MB/s                  photocraft-0.19.  11%[=>                  ]  13.56M  9.65MB/s                 photocraft-0.19.0  13%[=>                  ]  15.76M  9.82MB/s                photocraft-0.19.0-  15%[==>                 ]  18.01M  9.97MB/s               photocraft-0.19.0-l  17%[==>                 ]  20.01M  9.94MB/s               hotocraft-0.19.0-li  19%[==>                 ]  22.16M  10.0MB/s               otocraft-0.19.0-lin  21%[===>                ]  24.36M  10.1MB/s               tocraft-0.19.0-linu  23%[===>                ]  26.56M  10.2MB/s               ocraft-0.19.0-linux  25%[====>               ]  28.78M  10.2MB/s               craft-0.19.0-linux-  26%[====>               ]  30.48M  10.1MB/s    eta 8s     raft-0.19.0-linux-x  28%[====>               ]  32.72M  10.2MB/s    eta 8s     aft-0.19.0-linux-x8  30%[=====>              ]  34.92M  10.2MB/s    eta 8s     ft-0.19.0-linux-x86  32%[=====>              ]  37.11M  10.2MB/s    eta 8s     t-0.19.0-linux-x86_  34%[=====>              ]  39.36M  10.2MB/s    eta 8s     -0.19.0-linux-x86_6  36%[======>             ]  41.25M  10.4MB/s    eta 7s     0.19.0-linux-x86_64  38%[======>             ]  43.40M  10.3MB/s    eta 7s     .19.0-linux-x86_64.  39%[======>             ]  44.87M  10.4MB/s    eta 7s     19.0-linux-x86_64.A  42%[=======>            ]  47.70M  10.6MB/s    eta 7s     9.0-linux-x86_64.Ap  44%[=======>            ]  49.93M  10.6MB/s    eta 7s     .0-linux-x86_64.App  45%[========>           ]  51.72M  10.5MB/s    eta 6s     0-linux-x86_64.AppI  47%[========>           ]  53.90M  10.6MB/s    eta 6s     -linux-x86_64.AppIm  49%[========>           ]  56.15M  10.6MB/s    eta 6s     linux-x86_64.AppIma  51%[=========>          ]  58.31M  10.5MB/s    eta 6s     inux-x86_64.AppImag  53%[=========>          ]  60.22M  10.5MB/s    eta 6s     nux-x86_64.AppImage  54%[=========>          ]  62.17M  10.4MB/s    eta 5s     ux-x86_64.AppImage   56%[==========>         ]  64.39M  10.5MB/s    eta 5s     x-x86_64.AppImage    58%[==========>         ]  66.61M  10.5MB/s    eta 5s     -x86_64.AppImage     60%[===========>        ]  68.65M  10.5MB/s    eta 5s     x86_64.AppImage      62%[===========>        ]  70.66M  10.4MB/s    eta 5s     86_64.AppImage       64%[===========>        ]  72.84M  10.5MB/s    eta 4s     6_64.AppImage        65%[============>       ]  74.67M  10.4MB/s    eta 4s     _64.AppImage         67%[============>       ]  76.78M  10.4MB/s    eta 4s     64.AppImage          69%[============>       ]  78.84M  10.4MB/s    eta 4s     4.AppImage           71%[=============>      ]  80.90M  10.3MB/s    eta 4s     .AppImage            73%[=============>      ]  83.09M  10.4MB/s    eta 3s     AppImage             75%[==============>     ]  85.25M  10.4MB/s    eta 3s     ppImage              76%[==============>     ]  87.31M  10.4MB/s    eta 3s     pImage               78%[==============>     ]  89.37M  10.3MB/s    eta 3s     Image                80%[===============>    ]  91.20M  10.2MB/s    eta 3s     mage                 81%[===============>    ]  93.03M  10.2MB/s    eta 2s     age                  83%[===============>    ]  95.12M  10.2MB/s    eta 2s     ge                   85%[================>   ]  97.31M  10.2MB/s    eta 2s     e                    87%[================>   ]  99.36M  10.2MB/s    eta 2s                          89%[================>   ] 101.33M  10.2MB/s    eta 2s                       p  91%[=================>  ] 103.56M  10.2MB/s    eta 1s                      ph  93%[=================>  ] 105.69M  10.2MB/s    eta 1s                     pho  94%[=================>  ] 107.72M  10.5MB/s    eta 1s                    phot  96%[==================> ] 109.84M  10.3MB/s    eta 1s                   photo  98%[==================> ] 111.59M  10.2MB/s    eta 1s     photocraft-0.19.0-l 100%[===================>] 113.47M  10.2MB/s    in 11s     
+
+2026-11-02 05:46:39 (10.3 MB/s) - ‘photocraft-0.19.0-linux-x86_64.AppImage’ saved [118979064/118979064]
+
+'usr/./bin/photocraft' -> '/usr/./bin/photocraft'
+'usr/./bin/photocraft-cli' -> '/usr/./bin/photocraft-cli'
+'usr/./share/applications/ai.storyteller.photocraft.desktop' -> '/usr/./share/applications/ai.storyteller.photocraft.desktop'
+'usr/./share/bash-completion/completions/photocraft-cli' -> '/usr/./share/bash-completion/completions/photocraft-cli'
+'usr/./share/doc/photocraft' -> '/usr/./share/doc/photocraft'
+'usr/./share/doc/photocraft/ATTRIBUTION.md' -> '/usr/./share/doc/photocraft/ATTRIBUTION.md'
+'usr/./share/doc/photocraft/LICENSE-APACHE' -> '/usr/./share/doc/photocraft/LICENSE-APACHE'
+'usr/./share/doc/photocraft/LICENSE-MIT' -> '/usr/./share/doc/photocraft/LICENSE-MIT'
+'usr/./share/doc/photocraft/NOTICE' -> '/usr/./share/doc/photocraft/NOTICE'
+'usr/./share/doc/photocraft/OFL-biz-ud-mincho.txt' -> '/usr/./share/doc/photocraft/OFL-biz-ud-mincho.txt'
+'usr/./share/doc/photocraft/OFL-biz-ud-pgothic.txt' -> '/usr/./share/doc/photocraft/OFL-biz-ud-pgothic.txt'
+'usr/./share/doc/photocraft/OFL-lxgw-wenkai-lite.txt' -> '/usr/./share/doc/photocraft/OFL-lxgw-wenkai-lite.txt'
+'usr/./share/doc/photocraft/OFL-nanum-gothic.txt' -> '/usr/./share/doc/photocraft/OFL-nanum-gothic.txt'
+'usr/./share/doc/photocraft/OFL-noto-sans-arabic.txt' -> '/usr/./share/doc/photocraft/OFL-noto-sans-arabic.txt'
+'usr/./share/doc/photocraft/OFL-noto-sans-cjk-sc.txt' -> '/usr/./share/doc/photocraft/OFL-noto-sans-cjk-sc.txt'
+'usr/./share/doc/photocraft/OFL-noto-sans-devanagari.txt' -> '/usr/./share/doc/photocraft/OFL-noto-sans-devanagari.txt'
+'usr/./share/doc/photocraft/OFL-noto-sans-georgian.txt' -> '/usr/./share/doc/photocraft/OFL-noto-sans-georgian.txt'
+'usr/./share/doc/photocraft/OFL-noto-sans-hebrew.txt' -> '/usr/./share/doc/photocraft/OFL-noto-sans-hebrew.txt'
+'usr/./share/doc/photocraft/OFL-noto-sans-symbols-2.txt' -> '/usr/./share/doc/photocraft/OFL-noto-sans-symbols-2.txt'
+'usr/./share/doc/photocraft/OFL-noto-sans-symbols.txt' -> '/usr/./share/doc/photocraft/OFL-noto-sans-symbols.txt'
+'usr/./share/doc/photocraft/OFL-noto-sans-thai.txt' -> '/usr/./share/doc/photocraft/OFL-noto-sans-thai.txt'
+'usr/./share/doc/photocraft/OFL-shippori-mincho.txt' -> '/usr/./share/doc/photocraft/OFL-shippori-mincho.txt'
+'usr/./share/doc/photocraft/README.md' -> '/usr/./share/doc/photocraft/README.md'
+'usr/./share/fish/vendor_completions.d/photocraft-cli.fish' -> '/usr/./share/fish/vendor_completions.d/photocraft-cli.fish'
+'usr/./share/icons/hicolor/128x128/apps/ai.storyteller.photocraft.png' -> '/usr/./share/icons/hicolor/128x128/apps/ai.storyteller.photocraft.png'
+'usr/./share/icons/hicolor/16x16/apps/ai.storyteller.photocraft.png' -> '/usr/./share/icons/hicolor/16x16/apps/ai.storyteller.photocraft.png'
+'usr/./share/icons/hicolor/24x24/apps/ai.storyteller.photocraft.png' -> '/usr/./share/icons/hicolor/24x24/apps/ai.storyteller.photocraft.png'
+'usr/./share/icons/hicolor/256x256/apps/ai.storyteller.photocraft.png' -> '/usr/./share/icons/hicolor/256x256/apps/ai.storyteller.photocraft.png'
+'usr/./share/icons/hicolor/32x32/apps/ai.storyteller.photocraft.png' -> '/usr/./share/icons/hicolor/32x32/apps/ai.storyteller.photocraft.png'
+'usr/./share/icons/hicolor/48x48/apps/ai.storyteller.photocraft.png' -> '/usr/./share/icons/hicolor/48x48/apps/ai.storyteller.photocraft.png'
+'usr/./share/icons/hicolor/512x512/apps/ai.storyteller.photocraft.png' -> '/usr/./share/icons/hicolor/512x512/apps/ai.storyteller.photocraft.png'
+'usr/./share/icons/hicolor/64x64/apps/ai.storyteller.photocraft.png' -> '/usr/./share/icons/hicolor/64x64/apps/ai.storyteller.photocraft.png'
+'usr/./share/icons/hicolor/scalable/apps/ai.storyteller.photocraft.svg' -> '/usr/./share/icons/hicolor/scalable/apps/ai.storyteller.photocraft.svg'
+'usr/./share/man/man1/photocraft-cli-batch.1' -> '/usr/./share/man/man1/photocraft-cli-batch.1'
+'usr/./share/man/man1/photocraft-cli-commands.1' -> '/usr/./share/man/man1/photocraft-cli-commands.1'
+'usr/./share/man/man1/photocraft-cli-convert.1' -> '/usr/./share/man/man1/photocraft-cli-convert.1'
+'usr/./share/man/man1/photocraft-cli-droplet.1' -> '/usr/./share/man/man1/photocraft-cli-droplet.1'
+'usr/./share/man/man1/photocraft-cli-info.1' -> '/usr/./share/man/man1/photocraft-cli-info.1'
+'usr/./share/man/man1/photocraft-cli-mcp.1' -> '/usr/./share/man/man1/photocraft-cli-mcp.1'
+'usr/./share/man/man1/photocraft-cli-run.1' -> '/usr/./share/man/man1/photocraft-cli-run.1'
+'usr/./share/man/man1/photocraft-cli-serve.1' -> '/usr/./share/man/man1/photocraft-cli-serve.1'
+'usr/./share/man/man1/photocraft-cli.1' -> '/usr/./share/man/man1/photocraft-cli.1'
+'usr/./share/metainfo/ai.storyteller.photocraft.metainfo.xml' -> '/usr/./share/metainfo/ai.storyteller.photocraft.metainfo.xml'
+'usr/./share/mime/packages/ai.storyteller.photocraft.xml' -> '/usr/./share/mime/packages/ai.storyteller.photocraft.xml'
+'usr/./share/zsh/site-functions/_photocraft-cli' -> '/usr/./share/zsh/site-functions/_photocraft-cli'
+'/usr/share/pixmaps/ai.storyteller.photocraft.png' -> '/usr/share/icons/hicolor/512x512/apps/ai.storyteller.photocraft.png'
+0.19.0
+Updated registry for photocraft-bin to version 0.19.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package photocraft-bin in /var/lib/custom-packages/
+Building custom package vectorcraft-bin...
+[05:46:52] Found custom package for vectorcraft-bin, bypassing BLFS aliases.
+[05:46:52] Custom package detected at /home/fusion809/lfs_packaging/vectorcraft-bin (package: vectorcraft-bin)
+[05:46:52] Checking conflicting package(s) for 'vectorcraft-bin': vectorcraft 
+[05:46:52] Extracting dependencies for custom package 'vectorcraft-bin'...
+[05:46:52] Starting remote custom build for vectorcraft-bin...
+--2026-11-02 05:46:58--  https://github.com/storytold/vectorcraft/releases/download/v0.20.0/vectorcraft-0.20.0-linux-x86_64.AppImage
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/1398097510/11fef237-f296-4a6e-9444-57f8ab9ce90e?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-01T20%3A37%3A35Z&rscd=attachment%3B+filename%3Dvectorcraft-0.20.0-linux-x86_64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-01T19%3A37%3A11Z&ske=2026-11-01T20%3A37%3A35Z&sks=b&skv=2018-11-09&sig=vuP3RUD%2FNGVKixC5%2BdVsCyscjZH6%2FIXwSXYTlY4WMxw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzU2NjAxOSwibmJmIjoxNzkzNTYyNDE5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.9ywGG_7rNgsyZcUfGJJjfMQEWziz9kzZETSC85xSpRw&response-content-disposition=attachment%3B%20filename%3Dvectorcraft-0.20.0-linux-x86_64.AppImage&response-content-type=application%2Foctet-stream [following]
+--2026-11-02 05:46:59--  https://release-assets.githubusercontent.com/github-production-release-asset/1398097510/11fef237-f296-4a6e-9444-57f8ab9ce90e?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-01T20%3A37%3A35Z&rscd=attachment%3B+filename%3Dvectorcraft-0.20.0-linux-x86_64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-01T19%3A37%3A11Z&ske=2026-11-01T20%3A37%3A35Z&sks=b&skv=2018-11-09&sig=vuP3RUD%2FNGVKixC5%2BdVsCyscjZH6%2FIXwSXYTlY4WMxw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzU2NjAxOSwibmJmIjoxNzkzNTYyNDE5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.9ywGG_7rNgsyZcUfGJJjfMQEWziz9kzZETSC85xSpRw&response-content-disposition=attachment%3B%20filename%3Dvectorcraft-0.20.0-linux-x86_64.AppImage&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.110.133, 185.199.108.133, 185.199.109.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 132172280 (126M) [application/octet-stream]
+Saving to: ‘vectorcraft-0.20.0-linux-x86_64.AppImage’
+
+          vectorcra   0%[                    ]       0  --.-KB/s                        vectorcraf   0%[                    ]  91.09K   413KB/s                       vectorcraft   0%[                    ] 235.09K   547KB/s                      vectorcraft-   0%[                    ] 543.09K   849KB/s                     vectorcraft-0   0%[                    ]   1.14M  1.34MB/s                    vectorcraft-0.   1%[                    ]   2.36M  2.21MB/s                   vectorcraft-0.2   3%[                    ]   4.56M  3.60MB/s                  vectorcraft-0.20   5%[>                   ]   6.56M  4.26MB/s                 vectorcraft-0.20.   7%[>                   ]   9.33M  5.36MB/s                vectorcraft-0.20.0   9%[>                   ]  11.39M  5.86MB/s               vectorcraft-0.20.0-  10%[=>                  ]  13.64M  6.36MB/s               ectorcraft-0.20.0-l  12%[=>                  ]  15.81M  6.75MB/s               ctorcraft-0.20.0-li  14%[=>                  ]  17.98M  7.07MB/s               torcraft-0.20.0-lin  15%[==>                 ]  20.02M  7.23MB/s               orcraft-0.20.0-linu  17%[==>                 ]  22.12M  7.45MB/s               rcraft-0.20.0-linux  19%[==>                 ]  24.25M  7.65MB/s    eta 13s    craft-0.20.0-linux-  20%[===>                ]  26.37M  7.82MB/s    eta 13s    raft-0.20.0-linux-x  22%[===>                ]  27.80M  8.27MB/s    eta 13s    aft-0.20.0-linux-x8  23%[===>                ]  30.02M  8.80MB/s    eta 13s    ft-0.20.0-linux-x86  25%[====>               ]  32.23M  9.84MB/s    eta 13s    t-0.20.0-linux-x86_  27%[====>               ]  34.36M  10.2MB/s    eta 11s    -0.20.0-linux-x86_6  28%[====>               ]  36.51M  10.2MB/s    eta 11s    0.20.0-linux-x86_64  30%[=====>              ]  38.74M  10.5MB/s    eta 11s    .20.0-linux-x86_64.  32%[=====>              ]  40.45M  10.1MB/s    eta 11s    20.0-linux-x86_64.A  33%[=====>              ]  42.65M  10.2MB/s    eta 11s    0.0-linux-x86_64.Ap  35%[======>             ]  44.87M  10.2MB/s    eta 9s     .0-linux-x86_64.App  37%[======>             ]  46.92M  10.1MB/s    eta 9s     0-linux-x86_64.AppI  38%[======>             ]  48.90M  10.1MB/s    eta 9s     -linux-x86_64.AppIm  40%[=======>            ]  50.84M  10.0MB/s    eta 9s     linux-x86_64.AppIma  42%[=======>            ]  53.08M  10.1MB/s    eta 9s     inux-x86_64.AppImag  43%[=======>            ]  55.26M  10.2MB/s    eta 8s     nux-x86_64.AppImage  45%[========>           ]  57.34M  10.2MB/s    eta 8s     ux-x86_64.AppImage   47%[========>           ]  59.47M  10.4MB/s    eta 8s     x-x86_64.AppImage    48%[========>           ]  61.26M  10.1MB/s    eta 8s     -x86_64.AppImage     50%[=========>          ]  63.42M  10.4MB/s    eta 8s     x86_64.AppImage      51%[=========>          ]  65.51M  10.3MB/s    eta 7s     86_64.AppImage       53%[=========>          ]  67.72M  10.4MB/s    eta 7s     6_64.AppImage        55%[==========>         ]  69.91M  10.4MB/s    eta 7s     _64.AppImage         56%[==========>         ]  71.67M  10.4MB/s    eta 7s     64.AppImage          58%[==========>         ]  73.83M  10.4MB/s    eta 7s     4.AppImage           60%[===========>        ]  75.77M  10.3MB/s    eta 5s     .AppImage            61%[===========>        ]  77.49M  10.1MB/s    eta 5s     AppImage             63%[===========>        ]  79.55M  10.2MB/s    eta 5s     ppImage              64%[===========>        ]  80.84M  9.92MB/s    eta 5s     pImage               65%[============>       ]  82.98M  10.0MB/s    eta 5s     Image                67%[============>       ]  85.12M  9.94MB/s    eta 4s     mage                 69%[============>       ]  87.33M  9.98MB/s    eta 4s     age                  71%[=============>      ]  89.51M  10.0MB/s    eta 4s     ge                   72%[=============>      ]  91.34M  10.0MB/s    eta 4s     e                    74%[=============>      ]  93.47M  10.0MB/s    eta 4s                          75%[==============>     ]  95.47M  9.97MB/s    eta 3s                       v  77%[==============>     ]  97.19M  9.81MB/s    eta 3s                      ve  78%[==============>     ]  99.05M  9.72MB/s    eta 3s                     vec  80%[===============>    ] 100.97M  9.77MB/s    eta 3s                    vect  81%[===============>    ] 103.12M  9.74MB/s    eta 3s                   vecto  83%[===============>    ] 105.25M  9.78MB/s    eta 2s                  vector  85%[================>   ] 107.44M  9.87MB/s    eta 2s                 vectorc  86%[================>   ] 109.50M  9.94MB/s    eta 2s                vectorcr  88%[================>   ] 111.34M  10.1MB/s    eta 2s               vectorcra  90%[=================>  ] 113.56M  10.2MB/s    eta 2s              vectorcraf  91%[=================>  ] 115.78M  10.2MB/s    eta 1s             vectorcraft  93%[=================>  ] 117.72M  10.1MB/s    eta 1s            vectorcraft-  94%[=================>  ] 119.73M  10.1MB/s    eta 1s           vectorcraft-0  95%[==================> ] 120.11M  9.31MB/s    eta 1s          vectorcraft-0.  95%[==================> ] 120.28M  8.67MB/s    eta 1s         vectorcraft-0.2  95%[==================> ] 120.69M  8.16MB/s    eta 1s        vectorcraft-0.20  96%[==================> ] 121.48M  7.80MB/s    eta 1s       vectorcraft-0.20.  97%[==================> ] 123.11M  7.75MB/s    eta 1s      vectorcraft-0.20.0  99%[==================> ] 125.36M  7.88MB/s    eta 1s     vectorcraft-0.20.0- 100%[===================>] 126.05M  7.87MB/s    in 14s     
+
+2026-11-02 05:47:14 (8.97 MB/s) - ‘vectorcraft-0.20.0-linux-x86_64.AppImage’ saved [132172280/132172280]
+
+'usr/./bin/vectorcraft' -> '/usr/./bin/vectorcraft'
+'usr/./bin/vectorcraft-cli' -> '/usr/./bin/vectorcraft-cli'
+'usr/./share/applications/ai.storyteller.vectorcraft.desktop' -> '/usr/./share/applications/ai.storyteller.vectorcraft.desktop'
+'usr/./share/doc/vectorcraft' -> '/usr/./share/doc/vectorcraft'
+'usr/./share/doc/vectorcraft/ASSETS.md' -> '/usr/./share/doc/vectorcraft/ASSETS.md'
+'usr/./share/doc/vectorcraft/LICENSE-APACHE' -> '/usr/./share/doc/vectorcraft/LICENSE-APACHE'
+'usr/./share/doc/vectorcraft/LICENSE-MIT' -> '/usr/./share/doc/vectorcraft/LICENSE-MIT'
+'usr/./share/doc/vectorcraft/NOTICE' -> '/usr/./share/doc/vectorcraft/NOTICE'
+'usr/./share/doc/vectorcraft/OFL-biz-ud-mincho.txt' -> '/usr/./share/doc/vectorcraft/OFL-biz-ud-mincho.txt'
+'usr/./share/doc/vectorcraft/OFL-biz-ud-pgothic.txt' -> '/usr/./share/doc/vectorcraft/OFL-biz-ud-pgothic.txt'
+'usr/./share/doc/vectorcraft/OFL-lxgw-wenkai-lite.txt' -> '/usr/./share/doc/vectorcraft/OFL-lxgw-wenkai-lite.txt'
+'usr/./share/doc/vectorcraft/OFL-nanum-gothic.txt' -> '/usr/./share/doc/vectorcraft/OFL-nanum-gothic.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-arabic.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-arabic.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-cjk-sc.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-cjk-sc.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-devanagari.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-devanagari.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-georgian.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-georgian.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-hebrew.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-hebrew.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-symbols-2.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-symbols-2.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-symbols.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-symbols.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-thai.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-thai.txt'
+'usr/./share/doc/vectorcraft/OFL-shippori-mincho.txt' -> '/usr/./share/doc/vectorcraft/OFL-shippori-mincho.txt'
+'usr/./share/doc/vectorcraft/README.md' -> '/usr/./share/doc/vectorcraft/README.md'
+'usr/./share/doc/vectorcraft/licenses' -> '/usr/./share/doc/vectorcraft/licenses'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap/LICENSE-APACHE' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap/LICENSE-APACHE'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap/LICENSE-MIT' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap/LICENSE-MIT'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap/LICENSE.txt' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap/LICENSE.txt'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/LICENSE-APACHE' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/LICENSE-APACHE'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/LICENSE-MIT' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/LICENSE-MIT'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/assets' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/assets'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/assets/CGATS_LICENSE.txt' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/assets/CGATS_LICENSE.txt'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/assets/LICENSE_FOXIT' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/assets/LICENSE_FOXIT'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-jbig2' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-jbig2'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-jbig2/LICENSE-APACHE' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-jbig2/LICENSE-APACHE'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-jbig2/LICENSE-MIT' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-jbig2/LICENSE-MIT'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-syntax' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-syntax'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-syntax/LICENSE-APACHE' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-syntax/LICENSE-APACHE'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-syntax/LICENSE-MIT' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-syntax/LICENSE-MIT'
+'usr/./share/icons/hicolor/128x128/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/128x128/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/16x16/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/16x16/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/24x24/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/24x24/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/256x256/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/256x256/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/32x32/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/32x32/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/48x48/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/48x48/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/512x512/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/512x512/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/64x64/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/64x64/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/scalable/apps/ai.storyteller.vectorcraft.svg' -> '/usr/./share/icons/hicolor/scalable/apps/ai.storyteller.vectorcraft.svg'
+'usr/./share/metainfo/ai.storyteller.vectorcraft.metainfo.xml' -> '/usr/./share/metainfo/ai.storyteller.vectorcraft.metainfo.xml'
+'usr/./share/mime/packages/ai.storyteller.vectorcraft.xml' -> '/usr/./share/mime/packages/ai.storyteller.vectorcraft.xml'
+'/usr/share/pixmaps/ai.storyteller.vectorcraft.png' -> '/usr/share/icons/hicolor/512x512/apps/ai.storyteller.vectorcraft.png'
+0.20.0
+Updated registry for vectorcraft-bin to version 0.20.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package vectorcraft-bin in /var/lib/custom-packages/
+Building custom package wordcraft-bin...
+[05:47:26] Found custom package for wordcraft-bin, bypassing BLFS aliases.
+[05:47:26] Custom package detected at /home/fusion809/lfs_packaging/wordcraft-bin (package: wordcraft-bin)
+[05:47:26] Checking conflicting package(s) for 'wordcraft-bin': wordcraft 
+[05:47:26] Extracting dependencies for custom package 'wordcraft-bin'...
+[05:47:26] Required deps: gcc glibc 
+[05:47:26] Dependency 'gcc' already installed.
+[05:47:26] Dependency 'glibc' already installed.
+[05:47:26] Starting remote custom build for wordcraft-bin...
+--2026-11-02 05:47:33--  https://github.com/storytold/wordcraft/releases/download/v0.14.0/wordcraft-0.14.0-linux-x86_64.AppImage
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/1408489772/a6a3be80-581e-4d39-bdfa-676f8bcff3ec?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-01T20%3A36%3A30Z&rscd=attachment%3B+filename%3Dwordcraft-0.14.0-linux-x86_64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-01T19%3A36%3A03Z&ske=2026-11-01T20%3A36%3A30Z&sks=b&skv=2018-11-09&sig=RWWSJrzUXUQSFUSeKlhSABvX8gZ99h2dscfqP5YsMq4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzU2NDI1NCwibmJmIjoxNzkzNTYyNDU0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Q8cRtSpL-TdQ8CvsK-r9i5Yn1aU9lUMA3paKIpvAakA&response-content-disposition=attachment%3B%20filename%3Dwordcraft-0.14.0-linux-x86_64.AppImage&response-content-type=application%2Foctet-stream [following]
+--2026-11-02 05:47:33--  https://release-assets.githubusercontent.com/github-production-release-asset/1408489772/a6a3be80-581e-4d39-bdfa-676f8bcff3ec?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-01T20%3A36%3A30Z&rscd=attachment%3B+filename%3Dwordcraft-0.14.0-linux-x86_64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-01T19%3A36%3A03Z&ske=2026-11-01T20%3A36%3A30Z&sks=b&skv=2018-11-09&sig=RWWSJrzUXUQSFUSeKlhSABvX8gZ99h2dscfqP5YsMq4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzU2NDI1NCwibmJmIjoxNzkzNTYyNDU0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Q8cRtSpL-TdQ8CvsK-r9i5Yn1aU9lUMA3paKIpvAakA&response-content-disposition=attachment%3B%20filename%3Dwordcraft-0.14.0-linux-x86_64.AppImage&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.108.133, 185.199.111.133, 185.199.109.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 104241656 (99M) [application/octet-stream]
+Saving to: ‘wordcraft-0.14.0-linux-x86_64.AppImage’
+
+          wordcraft   0%[                    ]       0  --.-KB/s                        wordcraft-   1%[                    ]   1.78M  8.78MB/s                       wordcraft-0   4%[                    ]   4.01M  9.96MB/s                      wordcraft-0.   6%[>                   ]   6.22M  10.3MB/s                     wordcraft-0.1   8%[>                   ]   8.43M  10.5MB/s                    wordcraft-0.14  10%[=>                  ]  10.01M  9.92MB/s                   wordcraft-0.14.  12%[=>                  ]  12.50M  10.3MB/s                  wordcraft-0.14.0  14%[=>                  ]  14.37M  10.2MB/s                 wordcraft-0.14.0-  16%[==>                 ]  16.50M  10.2MB/s                wordcraft-0.14.0-l  18%[==>                 ]  18.70M  10.3MB/s               wordcraft-0.14.0-li  20%[===>                ]  20.78M  10.3MB/s               ordcraft-0.14.0-lin  22%[===>                ]  22.78M  10.3MB/s               rdcraft-0.14.0-linu  24%[===>                ]  24.84M  10.3MB/s               dcraft-0.14.0-linux  27%[====>               ]  27.09M  10.4MB/s               craft-0.14.0-linux-  29%[====>               ]  29.20M  10.4MB/s               raft-0.14.0-linux-x  31%[=====>              ]  31.45M  10.4MB/s    eta 7s     aft-0.14.0-linux-x8  33%[=====>              ]  33.67M  10.6MB/s    eta 7s     ft-0.14.0-linux-x86  36%[======>             ]  35.86M  10.6MB/s    eta 7s     t-0.14.0-linux-x86_  37%[======>             ]  37.36M  10.3MB/s    eta 7s     -0.14.0-linux-x86_6  40%[=======>            ]  40.14M  10.5MB/s    eta 7s     0.14.0-linux-x86_64  42%[=======>            ]  42.36M  10.8MB/s    eta 5s     .14.0-linux-x86_64.  44%[=======>            ]  44.37M  10.5MB/s    eta 5s     14.0-linux-x86_64.A  46%[========>           ]  46.34M  10.6MB/s    eta 5s     4.0-linux-x86_64.Ap  48%[========>           ]  48.37M  10.6MB/s    eta 5s     .0-linux-x86_64.App  50%[=========>          ]  50.37M  10.5MB/s    eta 5s     0-linux-x86_64.AppI  52%[=========>          ]  52.48M  10.5MB/s    eta 4s     -linux-x86_64.AppIm  54%[=========>          ]  54.65M  10.5MB/s    eta 4s     linux-x86_64.AppIma  57%[==========>         ]  56.87M  10.6MB/s    eta 4s     inux-x86_64.AppImag  59%[==========>         ]  58.97M  10.6MB/s    eta 4s     nux-x86_64.AppImage  61%[===========>        ]  61.06M  10.6MB/s    eta 4s     ux-x86_64.AppImage   63%[===========>        ]  63.09M  10.5MB/s    eta 3s     x-x86_64.AppImage    65%[============>       ]  65.00M  10.4MB/s    eta 3s     -x86_64.AppImage     67%[============>       ]  66.73M  10.2MB/s    eta 3s     x86_64.AppImage      68%[============>       ]  68.58M  10.1MB/s    eta 3s     86_64.AppImage       70%[=============>      ]  70.41M  10.1MB/s    eta 3s     6_64.AppImage        72%[=============>      ]  72.20M  9.92MB/s    eta 3s     _64.AppImage         74%[=============>      ]  74.28M  9.95MB/s    eta 3s     64.AppImage          76%[==============>     ]  76.34M  9.93MB/s    eta 3s     4.AppImage           78%[==============>     ]  78.31M  9.94MB/s    eta 3s     .AppImage            80%[===============>    ]  80.34M  9.93MB/s    eta 3s     AppImage             83%[===============>    ]  82.53M  9.98MB/s    eta 2s     ppImage              85%[================>   ]  84.67M  9.97MB/s    eta 2s     pImage               87%[================>   ]  86.72M  9.93MB/s    eta 2s     Image                89%[================>   ]  88.64M  9.87MB/s    eta 2s     mage                 91%[=================>  ]  90.73M  9.85MB/s    eta 2s     age                  93%[=================>  ]  92.83M  9.88MB/s    eta 1s     ge                   95%[==================> ]  94.89M  9.89MB/s    eta 1s     e                    97%[==================> ]  96.76M  10.1MB/s    eta 1s                          98%[==================> ]  98.25M  9.75MB/s    eta 1s     wordcraft-0.14.0-li 100%[===================>]  99.41M  10.0MB/s    in 9.7s    
+
+2026-11-02 05:47:43 (10.2 MB/s) - ‘wordcraft-0.14.0-linux-x86_64.AppImage’ saved [104241656/104241656]
+
+'usr/./bin/wordcraft' -> '/usr/./bin/wordcraft'
+'usr/./bin/wordcraft-cli' -> '/usr/./bin/wordcraft-cli'
+'usr/./share/applications/ai.storyteller.wordcraft.desktop' -> '/usr/./share/applications/ai.storyteller.wordcraft.desktop'
+'usr/./share/doc/wordcraft' -> '/usr/./share/doc/wordcraft'
+'usr/./share/doc/wordcraft/ATTRIBUTION.md' -> '/usr/./share/doc/wordcraft/ATTRIBUTION.md'
+'usr/./share/doc/wordcraft/LICENSE-APACHE' -> '/usr/./share/doc/wordcraft/LICENSE-APACHE'
+'usr/./share/doc/wordcraft/LICENSE-MIT' -> '/usr/./share/doc/wordcraft/LICENSE-MIT'
+'usr/./share/doc/wordcraft/NOTICE' -> '/usr/./share/doc/wordcraft/NOTICE'
+'usr/./share/doc/wordcraft/OFL-biz-ud-mincho.txt' -> '/usr/./share/doc/wordcraft/OFL-biz-ud-mincho.txt'
+'usr/./share/doc/wordcraft/OFL-biz-ud-pgothic.txt' -> '/usr/./share/doc/wordcraft/OFL-biz-ud-pgothic.txt'
+'usr/./share/doc/wordcraft/OFL-lxgw-wenkai-lite.txt' -> '/usr/./share/doc/wordcraft/OFL-lxgw-wenkai-lite.txt'
+'usr/./share/doc/wordcraft/OFL-nanum-gothic.txt' -> '/usr/./share/doc/wordcraft/OFL-nanum-gothic.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-arabic.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-arabic.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-cjk-sc.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-cjk-sc.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-devanagari.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-devanagari.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-georgian.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-georgian.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-hebrew.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-hebrew.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-symbols-2.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-symbols-2.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-symbols.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-symbols.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-thai.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-thai.txt'
+'usr/./share/doc/wordcraft/OFL-shippori-mincho.txt' -> '/usr/./share/doc/wordcraft/OFL-shippori-mincho.txt'
+'usr/./share/doc/wordcraft/README.md' -> '/usr/./share/doc/wordcraft/README.md'
+'usr/./share/icons/hicolor/128x128/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/128x128/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/16x16/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/16x16/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/24x24/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/24x24/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/256x256/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/256x256/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/32x32/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/32x32/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/48x48/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/48x48/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/512x512/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/512x512/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/64x64/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/64x64/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/scalable/apps/ai.storyteller.wordcraft.svg' -> '/usr/./share/icons/hicolor/scalable/apps/ai.storyteller.wordcraft.svg'
+'usr/./share/metainfo/ai.storyteller.wordcraft.metainfo.xml' -> '/usr/./share/metainfo/ai.storyteller.wordcraft.metainfo.xml'
+'usr/./share/mime/packages/ai.storyteller.wordcraft.xml' -> '/usr/./share/mime/packages/ai.storyteller.wordcraft.xml'
+'/usr/share/pixmaps/ai.storyteller.wordcraft.png' -> '/usr/share/icons/hicolor/512x512/apps/ai.storyteller.wordcraft.png'
+0.14.0
+Updated registry for wordcraft-bin to version 0.14.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package wordcraft-bin in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master 0be669d] Updating packages
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master dd6b107] Updating packages
+ 3 files changed, 3 insertions(+)
+Pushing changes in ~/build_duration...
+r13.1-34
+r13.1-543
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
