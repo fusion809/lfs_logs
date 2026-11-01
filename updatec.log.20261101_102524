@@ -1,0 +1,484 @@
+===== Update check started: 2026-11-01 10:25:24 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261101_102524
+Packages needing attention: spirv-llvm-translator
+===== Starting updatec: 2026-11-01 10:25:31 AEST =====
+Checking for packages with missing file inventories...
+Failed to check custom update version for: gf2x
+name=gf2x
+local_ver=1.3.0
+remote_ver=FAILED
+Failed to check custom update version for: giac
+name=giac
+local_ver=2.1.0-1
+remote_ver=FAILED
+Failed to check custom update version for: gmp-ecm
+name=gmp-ecm
+local_ver=7.0.7
+remote_ver=FAILED
+Failed to check custom update version for: graphviz
+name=graphviz
+local_ver=16.1.0
+remote_ver=FAILED
+Failed to check custom update version for: grep
+name=grep
+local_ver=3.12
+remote_ver=FAILED
+Failed to check custom update version for: groff
+name=groff
+local_ver=1.24.2
+remote_ver=FAILED
+Failed to check custom update version for: grub
+name=grub
+local_ver=2.16
+remote_ver=FAILED
+Failed to check custom update version for: gsettings-desktop-schemas
+name=gsettings-desktop-schemas
+local_ver=51.0
+remote_ver=FAILED
+Failed to check custom update version for: gsl
+name=gsl
+local_ver=2.8
+remote_ver=FAILED
+Failed to check custom update version for: gsound
+name=gsound
+local_ver=1.0.3
+remote_ver=FAILED
+Applying updates in dependency order:
+  - spirv-llvm-translator
+
+Building custom package spirv-llvm-translator...
+[10:31:02] Found custom package for spirv-llvm-translator, bypassing BLFS aliases.
+[10:31:03] Custom package detected at /home/fusion809/lfs_packaging/spirv-llvm-translator (package: spirv-llvm-translator)
+[10:31:03] Extracting dependencies for custom package 'spirv-llvm-translator'...
+[10:31:03] Required deps: gcc glibc icu libffi libxml2 llvm spirv-tools zlib zstd 
+[10:31:04] Dependency 'gcc' already installed.
+[10:31:04] Dependency 'glibc' already installed.
+[10:31:04] Dependency 'icu' already installed.
+[10:31:04] Dependency 'libffi' already installed.
+[10:31:04] Dependency 'libxml2' already installed.
+[10:31:04] Dependency 'llvm' already installed.
+[10:31:04] Dependency 'spirv-tools' already installed.
+[10:31:04] Dependency 'zlib' already installed.
+[10:31:04] Dependency 'zstd' already installed.
+[10:31:04] Starting remote custom build for spirv-llvm-translator...
+--2026-11-01 10:31:41--  https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v23.1.3.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/KhronosGroup/SPIRV-LLVM-Translator/tar.gz/refs/tags/v23.1.3 [following]
+--2026-11-01 10:31:41--  https://codeload.github.com/KhronosGroup/SPIRV-LLVM-Translator/tar.gz/refs/tags/v23.1.3
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘SPIRV-LLVM-Translator-23.1.3.tar.gz’
+
+          SPIRV-LLV     [<=>                 ]       0  --.-KB/s                        SPIRV-LLVM     [ <=>                ] 885.77K  4.28MB/s               SPIRV-LLVM-Translat     [  <=>               ]   1.85M  5.87MB/s    in 0.3s    
+
+2026-11-01 10:31:42 (5.87 MB/s) - ‘SPIRV-LLVM-Translator-23.1.3.tar.gz’ saved [1943271]
+
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.10")
+-- Using SPIR-V Headers from
+          /usr
+-- The CXX compiler identification is GNU 16.2.0
+-- The C compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test HAVE_FFI_CALL
+-- Performing Test HAVE_FFI_CALL - Success
+-- Found FFI: /usr/lib/libffi.so
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.2")
+-- Found zstd: /usr/lib/libzstd.so
+-- Found LibXml2: /usr/lib/libxml2.so (found version "2.15.4")
+-- Linker detection: GNU ld
+-- Performing Test LLVM_USES_LIBSTDCXX
+-- Performing Test LLVM_USES_LIBSTDCXX - Success
+-- Performing Test LLVM_DEFAULT_TO_GLIBCXX_USE_CXX11_ABI
+-- Performing Test LLVM_DEFAULT_TO_GLIBCXX_USE_CXX11_ABI - Success
+-- Performing Test C_SUPPORTS_FPIC
+-- Performing Test C_SUPPORTS_FPIC - Success
+-- Performing Test CXX_SUPPORTS_FPIC
+-- Performing Test CXX_SUPPORTS_FPIC - Success
+-- Building with -fPIC
+-- Performing Test C_SUPPORTS_FNO_SEMANTIC_INTERPOSITION
+-- Performing Test C_SUPPORTS_FNO_SEMANTIC_INTERPOSITION - Success
+-- Performing Test CXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION
+-- Performing Test CXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION - Success
+-- Performing Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG
+-- Performing Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG - Success
+-- Performing Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG
+-- Performing Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG - Success
+-- Performing Test CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL
+-- Performing Test CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL - Success
+CMake Warning (policy) at /usr/lib64/cmake/llvm/HandleLLVMOptions.cmake:945 (CHECK_C_SOURCE_COMPILES):
+  Policy CMP0219 is not set: Macro invocations preserve backslashes in
+  arguments.  Run "cmake --help-policy CMP0219" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  Command "CHECK_C_SOURCE_COMPILES" called with arguments containing
+  backslashes.
+
+  Since the policy is not set, backslashes in the arguments:
+
+   "// \\\n//\nint main(void) {return 0;}"
+
+  will be interpreted as escape sequences for compatibility.
+
+  Set the policy to NEW to instead pass
+
+   "// \\\\\\n//\\nint main(void) {return 0;}"
+
+  so that argument parsing will preserve the original values.
+Call Stack (most recent call first):
+  CMakeLists.txt:100 (include)
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+
+-- Performing Test C_WCOMMENT_ALLOWS_LINE_WRAP
+-- Performing Test C_WCOMMENT_ALLOWS_LINE_WRAP - Failed
+-- Performing Test C_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG
+-- Performing Test C_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG - Failed
+-- Performing Test CXX_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG
+-- Performing Test CXX_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG - Success
+-- Performing Test LINKER_SUPPORTS_COLOR_DIAGNOSTICS
+-- Performing Test LINKER_SUPPORTS_COLOR_DIAGNOSTICS - Failed
+Precompiled headers are disabled by default with GCC. Pass -DCMAKE_DISABLE_PRECOMPILE_HEADERS=OFF to override.
+-- Precompiled headers disabled.
+-- Looking for os_signpost_interval_begin
+-- Looking for os_signpost_interval_begin - not found
+-- Looking for flock
+-- Looking for flock - found
+-- Found LLVM: 23.1.4
+-- Checking for one of the modules 'SPIRV-Tools'
+-- Performing Test LLVM_LINKER_SUPPORTS_B_SYMBOLIC_FUNCTIONS
+-- Performing Test LLVM_LINKER_SUPPORTS_B_SYMBOLIC_FUNCTIONS - Success
+-- Configuring done (7.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/build
+[1/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/FunctionDescriptor.cpp.o
+[2/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/Mangler.cpp.o
+[3/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/ManglingUtils.cpp.o
+[4/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/ParameterType.cpp.o
+[5/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMSPIRVOpts.cpp.o
+FAILED: [code=1] lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMSPIRVOpts.cpp.o 
+/usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/include -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/Mangler -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-dangling-reference -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-dangling-pointer -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=gnu++17 -fPIC -fno-exceptions -funwind-tables -MD -MT lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMSPIRVOpts.cpp.o -MF lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMSPIRVOpts.cpp.o.d -o lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMSPIRVOpts.cpp.o -c /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/LLVMSPIRVOpts.cpp
+In file included from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEnum.h:44,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/LLVMSPIRVOpts.cpp:43:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCodeEnum.h: In member function ‘void SPIRV::SPIRVMap<Ty1, Ty2, Identifier>::init() [with Ty1 = spv::Op; Ty2 = std::__cxx11::basic_string<char>; Identifier = void]’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCode.h:52:31: error: ‘OpSubgroupBitcastShuffleINTEL’ was not declared in this scope
+   52 | #define _SPIRV_OP(x, ...) add(Op##x, #x);
+      |                               ^~
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCodeEnum.h:581:1: note: in expansion of macro ‘_SPIRV_OP’
+  581 | _SPIRV_OP(SubgroupBitcastShuffleINTEL, 6208)
+      | ^~~~~~~~~
+[6/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMToSPIRVDbgTran.cpp.o
+FAILED: [code=1] lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMToSPIRVDbgTran.cpp.o 
+/usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/include -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/Mangler -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-dangling-reference -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-dangling-pointer -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=gnu++17 -fPIC -fno-exceptions -funwind-tables -MD -MT lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMToSPIRVDbgTran.cpp.o -MF lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMToSPIRVDbgTran.cpp.o.d -o lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMToSPIRVDbgTran.cpp.o -c /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/LLVMToSPIRVDbgTran.cpp
+In file included from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEnum.h:44,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEntry.h:43,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVModule.h:44,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/LLVMToSPIRVDbgTran.h:42,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/LLVMToSPIRVDbgTran.cpp:38:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCodeEnum.h: In member function ‘void SPIRV::SPIRVMap<Ty1, Ty2, Identifier>::init() [with Ty1 = spv::Op; Ty2 = std::__cxx11::basic_string<char>; Identifier = void]’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCode.h:52:31: error: ‘OpSubgroupBitcastShuffleINTEL’ was not declared in this scope
+   52 | #define _SPIRV_OP(x, ...) add(Op##x, #x);
+      |                               ^~
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCodeEnum.h:581:1: note: in expansion of macro ‘_SPIRV_OP’
+  581 | _SPIRV_OP(SubgroupBitcastShuffleINTEL, 6208)
+      | ^~~~~~~~~
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEntry.h: In member function ‘virtual std::optional<SPIRV::ExtensionID> SPIRV::SPIRVCapability::getRequiredExtension() const’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEntry.h:948:10: error: ‘CapabilitySubgroupBitcastShuffleINTEL’ was not declared in this scope
+  948 |     case CapabilitySubgroupBitcastShuffleINTEL:
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/SPIRVInternal.h:45,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/OCLUtil.h:43,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/SPIRVWriter.h:47,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/LLVMToSPIRVDbgTran.cpp:40:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVNameMapEnum.h: In member function ‘void SPIRV::SPIRVMap<Ty1, Ty2, Identifier>::init() [with Ty1 = spv::Capability; Ty2 = std::__cxx11::basic_string<char>; Identifier = void]’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVNameMapEnum.h:568:7: error: ‘CapabilitySubgroupBitcastShuffleINTEL’ was not declared in this scope
+  568 |   add(CapabilitySubgroupBitcastShuffleINTEL, "SubgroupBitcastShuffleINTEL");
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/SPIRVWriter.h:53:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVInstruction.h: In member function ‘virtual SPIRV::SPIRVCapVec SPIRV::SPIRVSubgroupBitcastShuffleINTELInst::getRequiredCapability() const’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVInstruction.h:4865:19: error: ‘CapabilitySubgroupBitcastShuffleINTEL’ was not declared in this scope
+ 4865 |     return getVec(CapabilitySubgroupBitcastShuffleINTEL);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVInstruction.h: At global scope:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVInstruction.h:4870:27: error: ‘OpSubgroupBitcastShuffleINTEL’ was not declared in this scope; did you mean ‘SPIRVSubgroupBitcastShuffleINTELInst’?
+ 4870 |                           OpSubgroupBitcastShuffleINTEL, true, 4>
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                           SPIRVSubgroupBitcastShuffleINTELInst
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVInstruction.h:4870:65: error: template argument 2 is invalid
+ 4870 |                           OpSubgroupBitcastShuffleINTEL, true, 4>
+      |                                                                 ^
+[7/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLToSPIRV.cpp.o
+FAILED: [code=1] lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLToSPIRV.cpp.o 
+/usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/include -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/Mangler -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-dangling-reference -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-dangling-pointer -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=gnu++17 -fPIC -fno-exceptions -funwind-tables -MD -MT lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLToSPIRV.cpp.o -MF lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLToSPIRV.cpp.o.d -o lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLToSPIRV.cpp.o -c /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/OCLToSPIRV.cpp
+In file included from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEnum.h:44,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/SPIRVInternal.h:43,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/OCLUtil.h:43,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/OCLToSPIRV.h:43,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/OCLToSPIRV.cpp:40:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCodeEnum.h: In member function ‘void SPIRV::SPIRVMap<Ty1, Ty2, Identifier>::init() [with Ty1 = spv::Op; Ty2 = std::__cxx11::basic_string<char>; Identifier = void]’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCode.h:52:31: error: ‘OpSubgroupBitcastShuffleINTEL’ was not declared in this scope
+   52 | #define _SPIRV_OP(x, ...) add(Op##x, #x);
+      |                               ^~
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCodeEnum.h:581:1: note: in expansion of macro ‘_SPIRV_OP’
+  581 | _SPIRV_OP(SubgroupBitcastShuffleINTEL, 6208)
+      | ^~~~~~~~~
+In file included from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/SPIRVInternal.h:45:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVNameMapEnum.h: In member function ‘void SPIRV::SPIRVMap<Ty1, Ty2, Identifier>::init() [with Ty1 = spv::Capability; Ty2 = std::__cxx11::basic_string<char>; Identifier = void]’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVNameMapEnum.h:568:7: error: ‘CapabilitySubgroupBitcastShuffleINTEL’ was not declared in this scope
+  568 |   add(CapabilitySubgroupBitcastShuffleINTEL, "SubgroupBitcastShuffleINTEL");
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVType.h:47,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/SPIRVInternal.h:46:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEntry.h: In member function ‘virtual std::optional<SPIRV::ExtensionID> SPIRV::SPIRVCapability::getRequiredExtension() const’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEntry.h:948:10: error: ‘CapabilitySubgroupBitcastShuffleINTEL’ was not declared in this scope
+  948 |     case CapabilitySubgroupBitcastShuffleINTEL:
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+[ERROR] build.sh exited with code 1 for spirv-llvm-translator
+[ERROR] Custom build failed for spirv-llvm-translator
+[10:32:22] ========================================
+[10:32:22] Build completed with 1 failure(s):
+[10:32:22]   - spirv-llvm-translator
+[10:32:22] ========================================
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-32
+r13.1-536
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libarchive.so.13.8.10
+cand_sobase=libarchive.so
+search_base=libarchive
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIex-3_5.so.34.3.5.2
+cand_sobase=libIex-.so
+search_base=libIex-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIlmThread-3_5.so.34.3.5.2
+cand_sobase=libIlmThread-.so
+search_base=libIlmThread-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXR-3_5.so.34.3.5.2
+cand_sobase=libOpenEXR-.so
+search_base=libOpenEXR-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXRCore-3_5.so.34.3.5.2
+cand_sobase=libOpenEXRCore-.so
+search_base=libOpenEXRCore-
+replacement_found=true
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libarchive.so.13.8.10
+Path: /usr/lib/libarchive.so.13.8.10
+Skipping generic/unsafe name 'libarchive.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libarchive.so.13 libarchive.so.13.8.10
+Example dependents: ./miniconda3/lib/libmamba.so.4.0.1 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libarchive.so.13.8.10:
+  - ./miniconda3/lib/libmamba.so.4.0.1
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libarchive.so.13.8.10.
+------------------------------------------------
+Checking obsolete version (file): libIex-3_5.so.34.3.5.2
+Path: /usr/lib/libIex-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libIex-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 24 remaining dependents.
+Names tracked: libIex-3_5.so.34 libIex-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ...
+Warning: No parent package found for ANY of the 24 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIex-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/IexTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/IlmThread/libIlmThread-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIex-3_5.so.34.3.5.2.
+------------------------------------------------
+Checking obsolete version (file): libIlmThread-3_5.so.34.3.5.2
+Path: /usr/lib/libIlmThread-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libIlmThread-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 22 remaining dependents.
+Names tracked: libIlmThread-3_5.so.34 libIlmThread-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ...
+Warning: No parent package found for ANY of the 22 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIlmThread-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIlmThread-3_5.so.34.3.5.2.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXR-3_5.so.34.3.5.2
+Path: /usr/lib/libOpenEXR-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libOpenEXR-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 21 remaining dependents.
+Names tracked: libOpenEXR-3_5.so.34 libOpenEXR-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ...
+Warning: No parent package found for ANY of the 21 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXR-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXR-3_5.so.34.3.5.2.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRCore-3_5.so.34.3.5.2
+Path: /usr/lib/libOpenEXRCore-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libOpenEXRCore-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 22 remaining dependents.
+Names tracked: libOpenEXRCore-3_5.so.34 libOpenEXRCore-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ...
+Warning: No parent package found for ANY of the 22 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRCore-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.3
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRCore-3_5.so.34.3.5.2.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRUtil-3_5.so.34.3.5.2
+Path: /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.2
+Skipping generic/unsafe name 'libOpenEXRUtil-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 13 remaining dependents.
+Names tracked: libOpenEXRUtil-3_5.so.34 libOpenEXRUtil-3_5.so.34.3.5.2
+Example dependents: ./lfs_packaging/openexr/openexr/build/bin/exr2aces ./lfs_packaging/openexr/openexr/build/bin/exrcheck ./lfs_packaging/openexr/openexr/build/bin/exrenvmap ...
+Warning: No parent package found for ANY of the 13 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.2:
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.2.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
