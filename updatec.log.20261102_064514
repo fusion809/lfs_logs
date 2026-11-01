@@ -1,0 +1,261 @@
+===== Update check started: 2026-11-02 06:45:14 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261102_064514
+Packages needing attention: inih
+===== Starting updatec: 2026-11-02 06:45:22 AEST =====
+Checking for packages with missing file inventories...
+name=inih
+local_ver=62
+remote_ver=63
+name=nodejs-bin
+local_ver=26.13.0
+remote_ver=2026.10.28
+name=portaudio
+local_ver=19.7.0
+remote_ver=190600.20161030
+name=povray
+local_ver=3.7.0.10
+remote_ver=3.8.0
+name=prrte
+local_ver=3.0.14
+remote_ver=4.1.0
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - inih
+  - nodejs-bin
+  - portaudio
+  - povray
+  - prrte
+  - pugixml
+
+Building custom package inih...
+[06:47:31] Found custom package for inih, bypassing BLFS aliases.
+[06:47:31] Custom package detected at /home/fusion809/lfs_packaging/inih (package: inih)
+[06:47:31] Extracting dependencies for custom package 'inih'...
+[06:47:31] Required deps: gcc glibc 
+[06:47:31] Dependency 'gcc' already installed.
+[06:47:31] Dependency 'glibc' already installed.
+[06:47:31] Starting remote custom build for inih...
+--2026-11-02 06:48:03--  https://github.com/benhoyt/inih/archive/r63.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/benhoyt/inih/tar.gz/refs/tags/r63 [following]
+--2026-11-02 06:48:03--  https://codeload.github.com/benhoyt/inih/tar.gz/refs/tags/r63
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘inih-r63.tar.gz’
+
+inih-r63.tar.gz         [<=>                 ]       0  --.-KB/s               inih-r63.tar.gz         [ <=>                ]  22.48K  --.-KB/s    in 0.03s   
+
+2026-11-02 06:48:04 (771 KB/s) - ‘inih-r63.tar.gz’ saved [23021]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/inih/inih-r63
+Build dir: /home/fusion809/lfs_packaging/inih/inih-r63/build
+Build type: native build
+Project name: inih
+Project version: 63
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Program runtest.sh found: YES (/home/fusion809/lfs_packaging/inih/inih-r63/tests/runtest.sh)
+C++ compiler for the host machine: c++ (gcc 16.2.0 "c++ (GCC) 16.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.47.20260726
+Build targets in project: 19
+
+inih 63
+
+  User defined options
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/57] Compiling C object tests/unittest_multi.p/unittest.c.o
+[2/57] Compiling C object libinih.so.0.p/ini.c.o
+[3/57] Compiling C object tests/unittest_multi_max_line.p/.._ini.c.o
+[4/57] Compiling C object tests/unittest_multi.p/.._ini.c.o
+[5/57] Linking target libinih.so.0
+[6/57] Compiling C object tests/unittest_multi_max_line.p/unittest.c.o
+[7/57] Compiling C object tests/unittest_single.p/.._ini.c.o
+[8/57] Generating symbol file libinih.so.0.p/libinih.so.0.symbols
+[9/57] Compiling C object tests/unittest_single.p/unittest.c.o
+[10/57] Compiling C object tests/unittest_disallow_inline_comments.p/.._ini.c.o
+[11/57] Compiling C object tests/unittest_disallow_inline_comments.p/unittest.c.o
+[12/57] Compiling C object tests/unittest_stop_on_first_error.p/unittest.c.o
+[13/57] Compiling C object tests/unittest_stop_on_first_error.p/.._ini.c.o
+[14/57] Compiling C object tests/unittest_handler_lineno.p/.._ini.c.o
+[15/57] Compiling C object tests/unittest_handler_lineno.p/unittest.c.o
+[16/57] Compiling C object tests/unittest_string.p/unittest_string.c.o
+[17/57] Compiling C object tests/unittest_string.p/.._ini.c.o
+[18/57] Compiling C object tests/unittest_heap.p/unittest.c.o
+[19/57] Compiling C object tests/unittest_heap.p/.._ini.c.o
+[20/57] Compiling C object tests/unittest_heap_max_line.p/unittest.c.o
+[21/57] Compiling C object tests/unittest_heap_realloc.p/unittest.c.o
+[22/57] Compiling C object tests/unittest_heap_max_line.p/.._ini.c.o
+[23/57] Compiling C object tests/unittest_heap_realloc.p/.._ini.c.o
+[24/57] Compiling C object tests/unittest_heap_realloc_max_line.p/unittest.c.o
+[25/57] Compiling C object tests/unittest_heap_string.p/unittest_string.c.o
+[26/57] Compiling C object tests/unittest_heap_realloc_max_line.p/.._ini.c.o
+[27/57] Compiling C object tests/unittest_call_handler_on_new_section.p/unittest.c.o
+[28/57] Compiling C object tests/unittest_heap_string.p/.._ini.c.o
+[29/57] Compiling C object tests/unittest_call_handler_on_new_section.p/.._ini.c.o
+[30/57] Compiling C object tests/unittest_allow_no_value.p/unittest.c.o
+[31/57] Compiling C object tests/unittest_alloc.p/unittest_alloc.c.o
+[32/57] Compiling C object tests/unittest_allow_no_value.p/.._ini.c.o
+[33/57] Compiling C object tests/unittest_file_error.p/unittest_file_error.c.o
+[34/57] Compiling C object tests/unittest_alloc.p/.._ini.c.o
+[35/57] Compiling C object tests/unittest_file_error.p/.._ini.c.o
+[36/57] Compiling C object examples/unittest_INIReaderExample.p/.._ini.c.o
+[37/57] Compiling C++ object examples/unittest_INIReaderExample.p/INIReaderExample.cpp.o
+[38/57] Linking target tests/unittest_multi
+[39/57] Linking target tests/unittest_multi_max_line
+[40/57] Linking target tests/unittest_single
+[41/57] Linking target tests/unittest_disallow_inline_comments
+[42/57] Linking target tests/unittest_stop_on_first_error
+[43/57] Linking target tests/unittest_handler_lineno
+[44/57] Linking target tests/unittest_string
+[45/57] Linking target tests/unittest_heap
+[46/57] Linking target tests/unittest_heap_max_line
+[47/57] Linking target tests/unittest_heap_realloc
+[48/57] Compiling C++ object libINIReader.so.0.p/cpp_INIReader.cpp.o
+[49/57] Linking target tests/unittest_heap_realloc_max_line
+[50/57] Compiling C++ object examples/unittest_INIReaderExample.p/.._cpp_INIReader.cpp.o
+[51/57] Linking target tests/unittest_call_handler_on_new_section
+[52/57] Linking target tests/unittest_heap_string
+[53/57] Linking target tests/unittest_allow_no_value
+[54/57] Linking target tests/unittest_file_error
+[55/57] Linking target tests/unittest_alloc
+[56/57] Linking target libINIReader.so.0
+[57/57] Linking target examples/unittest_INIReaderExample
+[0/1] Installing files
+Installing libinih.so.0 to /usr/lib
+Installing libINIReader.so.0 to /usr/lib
+Installing /home/fusion809/lfs_packaging/inih/inih-r63/ini.h to /usr/include
+Installing /home/fusion809/lfs_packaging/inih/inih-r63/cpp/INIReader.h to /usr/include
+Installing /home/fusion809/lfs_packaging/inih/inih-r63/build/meson-private/inih.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/inih/inih-r63/build/meson-private/INIReader.pc to /usr/lib/pkgconfig
+Installing symlink pointing to libinih.so.0 to /usr/lib/libinih.so
+Installing symlink pointing to libINIReader.so.0 to /usr/lib/libINIReader.so
+63
+Updated registry for inih to version 63
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package inih in /var/lib/custom-packages/
+Building custom package nodejs-bin...
+[06:48:22] Found custom package for nodejs-bin, bypassing BLFS aliases.
+[06:48:22] Custom package detected at /home/fusion809/lfs_packaging/nodejs-bin (package: nodejs-bin)
+[06:48:22] Checking conflicting package(s) for 'nodejs-bin': nodejs 
+[06:48:22] Extracting dependencies for custom package 'nodejs-bin'...
+[06:48:22] Required deps: gcc glibc 
+[06:48:22] Dependency 'gcc' already installed.
+[06:48:22] Dependency 'glibc' already installed.
+[06:48:22] Starting remote custom build for nodejs-bin...
+[06:48:23] [LFS-AUTOBUILD] Skipping custom package nodejs-bin: version 26.13.0 already installed (use -f to force build).
+Building custom package portaudio...
+[06:48:23] Found custom package for portaudio, bypassing BLFS aliases.
+[06:48:23] Custom package detected at /home/fusion809/lfs_packaging/portaudio (package: portaudio)
+[06:48:23] Extracting dependencies for custom package 'portaudio'...
+[06:48:23] Required deps: alsa-lib autoconf bash cmake coreutils gcc glibc gzip jack-git make opus sed tar wget 
+[06:48:23] Dependency 'alsa-lib' already installed.
+[06:48:23] Dependency 'autoconf' already installed.
+[06:48:23] Dependency 'bash' already installed.
+[06:48:23] Dependency 'cmake' already installed.
+[06:48:23] Dependency 'coreutils' already installed.
+[06:48:23] Dependency 'gcc' already installed.
+[06:48:23] Dependency 'glibc' already installed.
+[06:48:23] Dependency 'gzip' already installed.
+[06:48:23] Dependency 'jack-git' already installed.
+[06:48:23] Dependency 'make' already installed.
+[06:48:23] Dependency 'opus' already installed.
+[06:48:23] Dependency 'sed' already installed.
+[06:48:23] Dependency 'tar' already installed.
+[06:48:23] Dependency 'wget' already installed.
+[06:48:23] Starting remote custom build for portaudio...
+[06:48:25] [LFS-AUTOBUILD] Skipping custom package portaudio: version 19.7.0 already installed (use -f to force build).
+Building custom package povray...
+[06:48:25] Found custom package for povray, bypassing BLFS aliases.
+[06:48:25] Custom package detected at /home/fusion809/lfs_packaging/povray (package: povray)
+[06:48:25] Extracting dependencies for custom package 'povray'...
+[06:48:25] Required deps: boost imath libpng openexr tiff 
+[06:48:25] Dependency 'boost' already installed.
+[06:48:25] Dependency 'imath' already installed.
+[06:48:25] Dependency 'libpng' already installed.
+[06:48:25] Dependency 'openexr' already installed.
+[06:48:25] Dependency 'tiff' already installed.
+[06:48:25] Starting remote custom build for povray...
+[06:48:26] [LFS-AUTOBUILD] Skipping custom package povray: version 3.7.0.10 already installed (use -f to force build).
+Building custom package prrte...
+[06:48:26] Found custom package for prrte, bypassing BLFS aliases.
+[06:48:26] Custom package detected at /home/fusion809/lfs_packaging/prrte (package: prrte)
+[06:48:26] Extracting dependencies for custom package 'prrte'...
+[06:48:26] Required deps: bash coreutils glibc gzip hwloc libevent libnl make openpmix perl sed systemd tar wget 
+[06:48:26] Dependency 'bash' already installed.
+[06:48:26] Dependency 'coreutils' already installed.
+[06:48:26] Dependency 'glibc' already installed.
+[06:48:26] Dependency 'gzip' already installed.
+[06:48:26] Dependency 'hwloc' already installed.
+[06:48:26] Dependency 'libevent' already installed.
+[06:48:26] Dependency 'libnl' already installed.
+[06:48:26] Dependency 'make' already installed.
+[06:48:26] Dependency 'openpmix' already installed.
+[06:48:26] Dependency 'perl' already installed.
+[06:48:26] Dependency 'sed' already installed.
+[06:48:26] Dependency 'systemd' already installed.
+[06:48:26] Dependency 'tar' already installed.
+[06:48:26] Dependency 'wget' already installed.
+[06:48:26] Starting remote custom build for prrte...
+[06:48:28] [LFS-AUTOBUILD] Skipping custom package prrte: version 3.0.14 already installed (use -f to force build).
+Building custom package pugixml...
+[06:48:28] Found custom package for pugixml, bypassing BLFS aliases.
+[06:48:28] Custom package detected at /home/fusion809/lfs_packaging/pugixml (package: pugixml)
+[06:48:28] Extracting dependencies for custom package 'pugixml'...
+[06:48:28] Starting remote custom build for pugixml...
+[06:48:29] [LFS-AUTOBUILD] Skipping custom package pugixml: version 1.16 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: inih: 62->63.
+[master a1e04fb] inih: 62->63.
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: inih: 62->63.
+[master ddc86bf] inih: 62->63.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-34
+r13.1-543
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
