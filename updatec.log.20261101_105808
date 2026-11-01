@@ -1,0 +1,222 @@
+===== Update check started: 2026-11-01 10:58:08 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261101_105808
+Packages needing attention: spirv-llvm-translator
+===== Starting updatec: 2026-11-01 10:58:28 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - spirv-llvm-translator
+
+Building custom package spirv-llvm-translator...
+[11:02:02] Found custom package for spirv-llvm-translator, bypassing BLFS aliases.
+[11:02:02] Custom package detected at /home/fusion809/lfs_packaging/spirv-llvm-translator (package: spirv-llvm-translator)
+[11:02:02] Extracting dependencies for custom package 'spirv-llvm-translator'...
+[11:02:02] Required deps: gcc glibc icu libffi libxml2 llvm spirv-tools zlib zstd 
+[11:02:02] Dependency 'gcc' already installed.
+[11:02:02] Dependency 'glibc' already installed.
+[11:02:02] Dependency 'icu' already installed.
+[11:02:02] Dependency 'libffi' already installed.
+[11:02:02] Dependency 'libxml2' already installed.
+[11:02:02] Dependency 'llvm' already installed.
+[11:02:02] Dependency 'spirv-tools' already installed.
+[11:02:02] Dependency 'zlib' already installed.
+[11:02:02] Dependency 'zstd' already installed.
+[11:02:02] Starting remote custom build for spirv-llvm-translator...
+--2026-11-01 11:03:06--  https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v23.1.3.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/KhronosGroup/SPIRV-LLVM-Translator/tar.gz/refs/tags/v23.1.3 [following]
+--2026-11-01 11:03:07--  https://codeload.github.com/KhronosGroup/SPIRV-LLVM-Translator/tar.gz/refs/tags/v23.1.3
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘SPIRV-LLVM-Translator-23.1.3.tar.gz’
+
+          SPIRV-LLV     [<=>                 ]       0  --.-KB/s                        SPIRV-LLVM     [ <=>                ] 949.61K  4.55MB/s               SPIRV-LLVM-Translat     [  <=>               ]   1.85M  6.48MB/s    in 0.3s    
+
+2026-11-01 11:03:07 (6.48 MB/s) - ‘SPIRV-LLVM-Translator-23.1.3.tar.gz’ saved [1943271]
+
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.10")
+-- Using SPIR-V Headers from
+          /usr
+-- The CXX compiler identification is GNU 16.2.0
+-- The C compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test HAVE_FFI_CALL
+-- Performing Test HAVE_FFI_CALL - Success
+-- Found FFI: /usr/lib/libffi.so
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.2")
+-- Found zstd: /usr/lib/libzstd.so
+-- Found LibXml2: /usr/lib/libxml2.so (found version "2.15.4")
+-- Linker detection: GNU ld
+-- Performing Test LLVM_USES_LIBSTDCXX
+-- Performing Test LLVM_USES_LIBSTDCXX - Success
+-- Performing Test LLVM_DEFAULT_TO_GLIBCXX_USE_CXX11_ABI
+-- Performing Test LLVM_DEFAULT_TO_GLIBCXX_USE_CXX11_ABI - Success
+-- Performing Test C_SUPPORTS_FPIC
+-- Performing Test C_SUPPORTS_FPIC - Success
+-- Performing Test CXX_SUPPORTS_FPIC
+-- Performing Test CXX_SUPPORTS_FPIC - Success
+-- Building with -fPIC
+-- Performing Test C_SUPPORTS_FNO_SEMANTIC_INTERPOSITION
+-- Performing Test C_SUPPORTS_FNO_SEMANTIC_INTERPOSITION - Success
+-- Performing Test CXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION
+-- Performing Test CXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION - Success
+-- Performing Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG
+-- Performing Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG - Success
+-- Performing Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG
+-- Performing Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG - Success
+-- Performing Test CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL
+-- Performing Test CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL - Success
+CMake Warning (policy) at /usr/lib64/cmake/llvm/HandleLLVMOptions.cmake:945 (CHECK_C_SOURCE_COMPILES):
+  Policy CMP0219 is not set: Macro invocations preserve backslashes in
+  arguments.  Run "cmake --help-policy CMP0219" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  Command "CHECK_C_SOURCE_COMPILES" called with arguments containing
+  backslashes.
+
+  Since the policy is not set, backslashes in the arguments:
+
+   "// \\\n//\nint main(void) {return 0;}"
+
+  will be interpreted as escape sequences for compatibility.
+
+  Set the policy to NEW to instead pass
+
+   "// \\\\\\n//\\nint main(void) {return 0;}"
+
+  so that argument parsing will preserve the original values.
+Call Stack (most recent call first):
+  CMakeLists.txt:100 (include)
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+
+-- Performing Test C_WCOMMENT_ALLOWS_LINE_WRAP
+-- Performing Test C_WCOMMENT_ALLOWS_LINE_WRAP - Failed
+-- Performing Test C_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG
+-- Performing Test C_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG - Failed
+-- Performing Test CXX_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG
+-- Performing Test CXX_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG - Success
+-- Performing Test LINKER_SUPPORTS_COLOR_DIAGNOSTICS
+-- Performing Test LINKER_SUPPORTS_COLOR_DIAGNOSTICS - Failed
+Precompiled headers are disabled by default with GCC. Pass -DCMAKE_DISABLE_PRECOMPILE_HEADERS=OFF to override.
+-- Precompiled headers disabled.
+-- Looking for os_signpost_interval_begin
+-- Looking for os_signpost_interval_begin - not found
+-- Looking for flock
+-- Looking for flock - found
+-- Found LLVM: 23.1.4
+-- Checking for one of the modules 'SPIRV-Tools'
+-- Performing Test LLVM_LINKER_SUPPORTS_B_SYMBOLIC_FUNCTIONS
+-- Performing Test LLVM_LINKER_SUPPORTS_B_SYMBOLIC_FUNCTIONS - Success
+-- Configuring done (13.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/build
+[1/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/FunctionDescriptor.cpp.o
+[2/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/Mangler.cpp.o
+[3/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/ManglingUtils.cpp.o
+[4/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/ParameterType.cpp.o
+[5/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMSPIRVOpts.cpp.o
+FAILED: [code=1] lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMSPIRVOpts.cpp.o 
+/usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/include -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/Mangler -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-dangling-reference -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-dangling-pointer -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=gnu++17 -fPIC -fno-exceptions -funwind-tables -MD -MT lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMSPIRVOpts.cpp.o -MF lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMSPIRVOpts.cpp.o.d -o lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMSPIRVOpts.cpp.o -c /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/LLVMSPIRVOpts.cpp
+In file included from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEnum.h:44,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/LLVMSPIRVOpts.cpp:43:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCodeEnum.h: In member function ‘void SPIRV::SPIRVMap<Ty1, Ty2, Identifier>::init() [with Ty1 = spv::Op; Ty2 = std::__cxx11::basic_string<char>; Identifier = void]’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCode.h:52:31: error: ‘OpSubgroupBitcastShuffleINTEL’ was not declared in this scope
+   52 | #define _SPIRV_OP(x, ...) add(Op##x, #x);
+      |                               ^~
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCodeEnum.h:581:1: note: in expansion of macro ‘_SPIRV_OP’
+  581 | _SPIRV_OP(SubgroupBitcastShuffleINTEL, 6208)
+      | ^~~~~~~~~
+[6/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMToSPIRVDbgTran.cpp.o
+FAILED: [code=1] lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMToSPIRVDbgTran.cpp.o 
+/usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/include -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/Mangler -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-dangling-reference -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-dangling-pointer -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=gnu++17 -fPIC -fno-exceptions -funwind-tables -MD -MT lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMToSPIRVDbgTran.cpp.o -MF lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMToSPIRVDbgTran.cpp.o.d -o lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMToSPIRVDbgTran.cpp.o -c /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/LLVMToSPIRVDbgTran.cpp
+In file included from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEnum.h:44,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEntry.h:43,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVModule.h:44,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/LLVMToSPIRVDbgTran.h:42,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/LLVMToSPIRVDbgTran.cpp:38:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCodeEnum.h: In member function ‘void SPIRV::SPIRVMap<Ty1, Ty2, Identifier>::init() [with Ty1 = spv::Op; Ty2 = std::__cxx11::basic_string<char>; Identifier = void]’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCode.h:52:31: error: ‘OpSubgroupBitcastShuffleINTEL’ was not declared in this scope
+   52 | #define _SPIRV_OP(x, ...) add(Op##x, #x);
+      |                               ^~
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCodeEnum.h:581:1: note: in expansion of macro ‘_SPIRV_OP’
+  581 | _SPIRV_OP(SubgroupBitcastShuffleINTEL, 6208)
+      | ^~~~~~~~~
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEntry.h: In member function ‘virtual std::optional<SPIRV::ExtensionID> SPIRV::SPIRVCapability::getRequiredExtension() const’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEntry.h:948:10: error: ‘CapabilitySubgroupBitcastShuffleINTEL’ was not declared in this scope
+  948 |     case CapabilitySubgroupBitcastShuffleINTEL:
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/SPIRVInternal.h:45,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/OCLUtil.h:43,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/SPIRVWriter.h:47,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/LLVMToSPIRVDbgTran.cpp:40:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVNameMapEnum.h: In member function ‘void SPIRV::SPIRVMap<Ty1, Ty2, Identifier>::init() [with Ty1 = spv::Capability; Ty2 = std::__cxx11::basic_string<char>; Identifier = void]’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVNameMapEnum.h:568:7: error: ‘CapabilitySubgroupBitcastShuffleINTEL’ was not declared in this scope
+  568 |   add(CapabilitySubgroupBitcastShuffleINTEL, "SubgroupBitcastShuffleINTEL");
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/SPIRVWriter.h:53:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVInstruction.h: In member function ‘virtual SPIRV::SPIRVCapVec SPIRV::SPIRVSubgroupBitcastShuffleINTELInst::getRequiredCapability() const’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVInstruction.h:4865:19: error: ‘CapabilitySubgroupBitcastShuffleINTEL’ was not declared in this scope
+ 4865 |     return getVec(CapabilitySubgroupBitcastShuffleINTEL);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVInstruction.h: At global scope:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVInstruction.h:4870:27: error: ‘OpSubgroupBitcastShuffleINTEL’ was not declared in this scope; did you mean ‘SPIRVSubgroupBitcastShuffleINTELInst’?
+ 4870 |                           OpSubgroupBitcastShuffleINTEL, true, 4>
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                           SPIRVSubgroupBitcastShuffleINTELInst
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVInstruction.h:4870:65: error: template argument 2 is invalid
+ 4870 |                           OpSubgroupBitcastShuffleINTEL, true, 4>
+      |                                                                 ^
+[7/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLToSPIRV.cpp.o
+FAILED: [code=1] lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLToSPIRV.cpp.o 
+/usr/bin/c++ -D_GLIBCXX_USE_CXX11_ABI=1 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/include -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV -I/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/Mangler -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-dangling-reference -Wno-redundant-move -Wno-pessimizing-move -Wno-array-bounds -Wno-stringop-overread -Wno-dangling-pointer -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections -O3 -DNDEBUG -std=gnu++17 -fPIC -fno-exceptions -funwind-tables -MD -MT lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLToSPIRV.cpp.o -MF lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLToSPIRV.cpp.o.d -o lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLToSPIRV.cpp.o -c /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/OCLToSPIRV.cpp
+In file included from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEnum.h:44,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/SPIRVInternal.h:43,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/OCLUtil.h:43,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/OCLToSPIRV.h:43,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/OCLToSPIRV.cpp:40:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCodeEnum.h: In member function ‘void SPIRV::SPIRVMap<Ty1, Ty2, Identifier>::init() [with Ty1 = spv::Op; Ty2 = std::__cxx11::basic_string<char>; Identifier = void]’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCode.h:52:31: error: ‘OpSubgroupBitcastShuffleINTEL’ was not declared in this scope
+   52 | #define _SPIRV_OP(x, ...) add(Op##x, #x);
+      |                               ^~
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVOpCodeEnum.h:581:1: note: in expansion of macro ‘_SPIRV_OP’
+  581 | _SPIRV_OP(SubgroupBitcastShuffleINTEL, 6208)
+      | ^~~~~~~~~
+In file included from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/SPIRVInternal.h:45:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVNameMapEnum.h: In member function ‘void SPIRV::SPIRVMap<Ty1, Ty2, Identifier>::init() [with Ty1 = spv::Capability; Ty2 = std::__cxx11::basic_string<char>; Identifier = void]’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVNameMapEnum.h:568:7: error: ‘CapabilitySubgroupBitcastShuffleINTEL’ was not declared in this scope
+  568 |   add(CapabilitySubgroupBitcastShuffleINTEL, "SubgroupBitcastShuffleINTEL");
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVType.h:47,
+                 from /home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/SPIRVInternal.h:46:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEntry.h: In member function ‘virtual std::optional<SPIRV::ExtensionID> SPIRV::SPIRVCapability::getRequiredExtension() const’:
+/home/fusion809/lfs_packaging/spirv-llvm-translator/SPIRV-LLVM-Translator-23.1.3/lib/SPIRV/libSPIRV/SPIRVEntry.h:948:10: error: ‘CapabilitySubgroupBitcastShuffleINTEL’ was not declared in this scope
+  948 |     case CapabilitySubgroupBitcastShuffleINTEL:
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+[ERROR] build.sh exited with code 1 for spirv-llvm-translator
+[ERROR] Custom build failed for spirv-llvm-translator
+[11:04:40] ========================================
+[11:04:40] Build completed with 1 failure(s):
+[11:04:40]   - spirv-llvm-translator
+[11:04:40] ========================================
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-32
+r13.1-536
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
