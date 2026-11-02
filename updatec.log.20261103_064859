@@ -1,0 +1,187 @@
+===== Update check started: 2026-11-03 06:48:59 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261103_064859
+Packages needing attention: gimp
+===== Starting updatec: 2026-11-03 06:49:02 AEST =====
+Checking for packages with missing file inventories...
+name=gimp
+local_ver=3.2.6
+remote_ver=3.2.8
+name=libcdio
+local_ver=2.4.0
+remote_ver=2026
+name=libical
+local_ver=4.0.7
+remote_ver=65
+name=libjpeg-turbo
+local_ver=3.2.1
+remote_ver=10
+name=tcl
+local_ver=9.1.0
+remote_ver=64
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - gimp
+  - libcdio
+  - libical
+  - libjpeg-turbo
+  - tcl
+  - vamp-plugin-sdk
+
+Building custom package gimp...
+[06:50:58] Found custom package for gimp, bypassing BLFS aliases.
+[06:50:58] Custom package detected at /home/fusion809/lfs_packaging/gimp (package: gimp)
+[06:50:58] Extracting dependencies for custom package 'gimp'...
+[06:50:58] Required deps: appstream gegl gexiv2 ghostscript glib-networking graphviz gtk3 harfbuzz iso-codes lcms2 libgudev libmypaint librsvg libxml2 mypaint-brushes poppler tiff xdg-utils 
+[06:50:58] Dependency 'appstream' already installed.
+[06:50:58] Dependency 'gegl' already installed.
+[06:50:58] Dependency 'gexiv2' already installed.
+[06:50:58] Dependency 'ghostscript' already installed.
+[06:50:58] Dependency 'glib-networking' already installed.
+[06:50:58] Dependency 'graphviz' already installed.
+[06:50:59] Dependency 'gtk3' already installed.
+[06:50:59] Dependency 'harfbuzz' already installed.
+[06:50:59] Dependency 'iso-codes' already installed.
+[06:50:59] Dependency 'lcms2' already installed.
+[06:50:59] Dependency 'libgudev' already installed.
+[06:50:59] Dependency 'libmypaint' already installed.
+[06:50:59] Dependency 'librsvg' already installed.
+[06:50:59] Dependency 'libxml2' already installed.
+[06:50:59] Dependency 'mypaint-brushes' already installed.
+[06:50:59] Dependency 'poppler' already installed.
+[06:50:59] Dependency 'tiff' already installed.
+[06:50:59] Dependency 'xdg-utils' already installed.
+[06:50:59] Starting remote custom build for gimp...
+--2026-11-03 06:51:16--  https://download.gimp.org/gimp/v3.2/gimp-3.2.8.tar.xz
+Resolving download.gimp.org (download.gimp.org)... 140.211.167.248
+Connecting to download.gimp.org (download.gimp.org)|140.211.167.248|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-03 06:51:16 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for gimp
+[ERROR] Custom build failed for gimp
+[06:51:16] ========================================
+[06:51:16] Build completed with 1 failure(s):
+[06:51:16]   - gimp
+[06:51:16] ========================================
+Building custom package libcdio...
+[06:51:16] Found custom package for libcdio, bypassing BLFS aliases.
+[06:51:16] Custom package detected at /home/fusion809/lfs_packaging/libcdio (package: libcdio)
+[06:51:16] Extracting dependencies for custom package 'libcdio'...
+[06:51:16] Required deps: gcc glibc ncurses 
+[06:51:16] Dependency 'gcc' already installed.
+[06:51:16] Dependency 'glibc' already installed.
+[06:51:16] Dependency 'ncurses' already installed.
+[06:51:16] Starting remote custom build for libcdio...
+[06:51:17] [LFS-AUTOBUILD] Skipping custom package libcdio: version 2.4.0 already installed (use -f to force build).
+Building custom package libical...
+[06:51:18] Found custom package for libical, bypassing BLFS aliases.
+[06:51:18] Custom package detected at /home/fusion809/lfs_packaging/libical (package: libical)
+[06:51:18] Extracting dependencies for custom package 'libical'...
+[06:51:18] Required deps: cmake gcc glib2 glibc icu libffi libxml2 pcre2 vala 
+[06:51:18] Dependency 'cmake' already installed.
+[06:51:18] Dependency 'gcc' already installed.
+[06:51:18] Dependency 'glib2' already installed.
+[06:51:18] Dependency 'glibc' already installed.
+[06:51:18] Dependency 'icu' already installed.
+[06:51:18] Dependency 'libffi' already installed.
+[06:51:18] Dependency 'libxml2' already installed.
+[06:51:18] Dependency 'pcre2' already installed.
+[06:51:18] Dependency 'vala' already installed.
+[06:51:18] Starting remote custom build for libical...
+[06:51:19] [LFS-AUTOBUILD] Skipping custom package libical: version 4.0.7 already installed (use -f to force build).
+Building custom package libjpeg-turbo...
+[06:51:19] Found custom package for libjpeg-turbo, bypassing BLFS aliases.
+[06:51:19] Custom package detected at /home/fusion809/lfs_packaging/libjpeg-turbo (package: libjpeg-turbo)
+[06:51:19] Extracting dependencies for custom package 'libjpeg-turbo'...
+[06:51:19] Required deps: glibc 
+[06:51:19] Dependency 'glibc' already installed.
+[06:51:19] Starting remote custom build for libjpeg-turbo...
+[06:51:20] [LFS-AUTOBUILD] Skipping custom package libjpeg-turbo: version 3.2.1 already installed (use -f to force build).
+Building custom package tcl...
+[06:51:20] Found custom package for tcl, bypassing BLFS aliases.
+[06:51:20] Custom package detected at /home/fusion809/lfs_packaging/tcl (package: tcl)
+[06:51:20] Extracting dependencies for custom package 'tcl'...
+[06:51:20] Required deps: bash coreutils gcc glibc gzip make tar zlib 
+[06:51:21] Dependency 'bash' already installed.
+[06:51:21] Dependency 'coreutils' already installed.
+[06:51:21] Dependency 'gcc' already installed.
+[06:51:21] Dependency 'glibc' already installed.
+[06:51:21] Dependency 'gzip' already installed.
+[06:51:21] Dependency 'make' already installed.
+[06:51:21] Dependency 'tar' already installed.
+[06:51:21] Dependency 'zlib' already installed.
+[06:51:21] Starting remote custom build for tcl...
+[06:51:22] [LFS-AUTOBUILD] Skipping custom package tcl: version 9.1.0 already installed (use -f to force build).
+Building custom package vamp-plugin-sdk...
+[06:51:22] Found custom package for vamp-plugin-sdk, bypassing BLFS aliases.
+[06:51:22] Custom package detected at /home/fusion809/lfs_packaging/vamp-plugin-sdk (package: vamp-plugin-sdk)
+[06:51:22] Extracting dependencies for custom package 'vamp-plugin-sdk'...
+[06:51:22] Starting remote custom build for vamp-plugin-sdk...
+[06:51:23] [LFS-AUTOBUILD] Skipping custom package vamp-plugin-sdk: version 2.10 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-34
+r13.1-545
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libexpat.so.1.13.0
+cand_sobase=libexpat.so
+search_base=libexpat
+replacement_found=true
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libexpat.so.1.13.0
+Path: /usr/lib/libexpat.so.1.13.0
+Skipping generic/unsafe name 'libexpat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libexpat.so.1 libexpat.so.1.13.0
+Example dependents: ./miniconda3/bin/dbus-daemon ./miniconda3/bin/xmlwf ./miniconda3/libexec/dbus-daemon-launch-helper ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libexpat.so.1.13.0:
+  - ./miniconda3/bin/dbus-daemon
+  - ./miniconda3/bin/xmlwf
+  - ./miniconda3/libexec/dbus-daemon-launch-helper
+  - ./miniconda3/lib/python3.14/lib-dynload/pyexpat.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libexpat.so.1.13.0.
+------------------------------------------------
+Checking obsolete version (file): libnghttp2.so.14.29.5
+Path: /usr/lib/libnghttp2.so.14.29.5
+Skipping generic/unsafe name 'libnghttp2.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libnghttp2.so.14 libnghttp2.so.14.29.5
+Example dependents: ./miniconda3/bin/nghttp ./miniconda3/bin/nghttpd ./miniconda3/bin/nghttpx ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libnghttp2.so.14.29.5:
+  - ./miniconda3/bin/nghttp
+  - ./miniconda3/bin/nghttpd
+  - ./miniconda3/bin/nghttpx
+  - ./miniconda3/lib/libcurl.so.4.8.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libnghttp2.so.14.29.5.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+/var/lib/custom-packages does not show any likely updates to the table.
+~/logs ~ ~/lfs_packaging
