@@ -1,0 +1,1697 @@
+===== Update check started: 2026-11-02 23:20:06 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261102_232006
+Packages needing attention: elmerfem-git nghttp2 woxi-git
+===== Starting updatec: 2026-11-02 23:20:11 AEST =====
+Checking for packages with missing file inventories...
+name=elmerfem-git
+local_ver=31f541c
+remote_ver=56b16bd
+name=nghttp2
+local_ver=1.70.0
+remote_ver=1.71.0
+name=portaudio
+local_ver=19.7.0
+remote_ver=190600.20161030
+name=povray
+local_ver=3.7.0.10
+remote_ver=3.8.0
+name=prrte
+local_ver=3.0.14
+remote_ver=4.1.0
+name=pugixml
+local_ver=1.16
+remote_ver=2013
+name=reshiki
+local_ver=0.13.1
+remote_ver=0.13.1.1
+name=scalapack
+local_ver=2.2.3
+remote_ver=41
+name=tcl
+local_ver=9.1.0
+remote_ver=64
+name=vamp-plugin-sdk
+local_ver=2.10
+remote_ver=2.10.0
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - elmerfem-git
+  - nghttp2
+  - portaudio
+  - povray
+  - prrte
+  - pugixml
+  - reshiki
+  - scalapack
+  - tcl
+  - vamp-plugin-sdk
+  - woxi-git
+
+Building custom package elmerfem-git...
+[23:22:14] Found custom package for elmerfem-git, bypassing BLFS aliases.
+[23:22:14] Custom package detected at /home/fusion809/lfs_packaging/elmerfem-git (package: elmerfem-git)
+[23:22:15] Extracting dependencies for custom package 'elmerfem-git'...
+[23:22:15] Required deps: cli11 mumps netcdf-fortran openmpi qwt 
+[23:22:15] Dependency 'cli11' already installed.
+[23:22:15] Dependency 'mumps' already installed.
+[23:22:15] Dependency 'netcdf-fortran' already installed.
+[23:22:15] Dependency 'openmpi' already installed.
+[23:22:15] Dependency 'qwt' already installed.
+[23:22:15] Starting remote custom build for elmerfem-git...
+--2026-11-02 23:22:21--  https://github.com/elmercsc/elmerfem/archive/56b16bd49564d5b16fdc57862ccda024043b0f39.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/ElmerCSC/elmerfem/tar.gz/56b16bd49564d5b16fdc57862ccda024043b0f39 [following]
+--2026-11-02 23:22:22--  https://codeload.github.com/ElmerCSC/elmerfem/tar.gz/56b16bd49564d5b16fdc57862ccda024043b0f39
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39.tar.gz’
+
+          elmerfem-     [<=>                 ]       0  --.-KB/s                        elmerfem-5     [ <=>                ] 996.17K  4.86MB/s                       elmerfem-56     [  <=>               ]   2.25M  5.47MB/s                      elmerfem-56b     [   <=>              ]   3.25M  5.23MB/s                     elmerfem-56b1     [    <=>             ]   4.26M  5.02MB/s                    elmerfem-56b16     [     <=>            ]   5.26M  4.85MB/s                   elmerfem-56b16b     [      <=>           ]   6.63M  5.15MB/s                  elmerfem-56b16bd     [       <=>          ]   7.51M  4.98MB/s                 elmerfem-56b16bd4     [        <=>         ]   8.25M  4.75MB/s                elmerfem-56b16bd49     [         <=>        ]   9.00M  4.59MB/s               elmerfem-56b16bd495     [          <=>       ]   9.98M  4.62MB/s               lmerfem-56b16bd4956     [           <=>      ]  10.67M  4.51MB/s               merfem-56b16bd49564     [            <=>     ]  11.59M  4.52MB/s               erfem-56b16bd49564d     [             <=>    ]  13.65M  4.94MB/s               rfem-56b16bd49564d5     [              <=>   ]  15.72M  5.30MB/s               fem-56b16bd49564d5b     [               <=>  ]  17.25M  5.44MB/s               em-56b16bd49564d5b1     [                <=> ]  18.22M  5.52MB/s               m-56b16bd49564d5b16     [                 <=>]  19.25M  5.32MB/s               -56b16bd49564d5b16f     [                <=> ]  20.25M  5.37MB/s               56b16bd49564d5b16fd     [               <=>  ]  21.00M  5.30MB/s               6b16bd49564d5b16fdc     [              <=>   ]  22.44M  5.46MB/s               b16bd49564d5b16fdc5     [             <=>    ]  23.50M  5.44MB/s               16bd49564d5b16fdc57     [            <=>     ]  24.56M  5.48MB/s               6bd49564d5b16fdc578     [           <=>      ]  25.75M  5.58MB/s               bd49564d5b16fdc5786     [          <=>       ]  26.88M  5.70MB/s               d49564d5b16fdc57862     [         <=>        ]  28.13M  5.93MB/s               49564d5b16fdc57862c     [        <=>         ]  29.28M  6.03MB/s               9564d5b16fdc57862cc     [       <=>          ]  30.26M  6.05MB/s               564d5b16fdc57862ccd     [      <=>           ]  31.31M  5.93MB/s               64d5b16fdc57862ccda     [     <=>            ]  32.26M  5.63MB/s               4d5b16fdc57862ccda0     [    <=>             ]  33.25M  5.36MB/s               d5b16fdc57862ccda02     [   <=>              ]  34.29M  5.29MB/s               5b16fdc57862ccda024     [  <=>               ]  35.31M  5.31MB/s               b16fdc57862ccda0240     [ <=>                ]  36.31M  5.28MB/s               16fdc57862ccda02404     [<=>                 ]  37.25M  5.32MB/s               6fdc57862ccda024043     [ <=>                ]  38.51M  5.34MB/s               fdc57862ccda024043b     [  <=>               ]  39.54M  5.23MB/s               dc57862ccda024043b0     [   <=>              ]  40.73M  5.30MB/s               c57862ccda024043b0f     [    <=>             ]  41.87M  5.30MB/s               57862ccda024043b0f3     [     <=>            ]  42.85M  5.25MB/s               7862ccda024043b0f39     [      <=>           ]  43.91M  5.24MB/s               862ccda024043b0f39.     [       <=>          ]  45.00M  5.12MB/s               62ccda024043b0f39.t     [        <=>         ]  46.25M  5.19MB/s               2ccda024043b0f39.ta     [         <=>        ]  47.64M  5.31MB/s               ccda024043b0f39.tar     [          <=>       ]  49.07M  5.45MB/s               cda024043b0f39.tar.     [           <=>      ]  50.25M  5.53MB/s               da024043b0f39.tar.g     [            <=>     ]  51.22M  5.52MB/s               a024043b0f39.tar.gz     [             <=>    ]  52.05M  5.46MB/s               024043b0f39.tar.gz      [              <=>   ]  53.00M  5.44MB/s               24043b0f39.tar.gz       [               <=>  ]  54.00M  5.42MB/s               4043b0f39.tar.gz        [                <=> ]  55.00M  5.40MB/s               043b0f39.tar.gz         [                 <=>]  56.00M  5.33MB/s               43b0f39.tar.gz          [                <=> ]  57.08M  5.29MB/s               3b0f39.tar.gz           [               <=>  ]  58.11M  5.31MB/s               b0f39.tar.gz            [              <=>   ]  59.00M  5.16MB/s               0f39.tar.gz             [             <=>    ]  60.00M  5.15MB/s               f39.tar.gz              [            <=>     ]  60.95M  5.09MB/s               39.tar.gz               [           <=>      ]  62.26M  5.16MB/s               9.tar.gz                [          <=>       ]  63.28M  5.04MB/s               .tar.gz                 [         <=>        ]  64.72M  5.05MB/s               tar.gz                  [        <=>         ]  66.22M  5.12MB/s               elmerfem-56b16bd495     [       <=>          ]  66.23M  5.12MB/s    in 12s     
+
+2026-11-02 23:22:34 (5.34 MB/s) - ‘elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39.tar.gz’ saved [69448027]
+
+Updated cmake/Modules/FindMumps.cmake
+-- The Fortran compiler identification is GNU 16.2.0
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting Fortran compiler ABI info
+-- Detecting Fortran compiler ABI info - done
+-- Check for working Fortran compiler: /usr/bin/gfortran - skipped
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Checking whether GFortran version >= 7 -- yes
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- Found OpenMP_Fortran: -fopenmp (found version "5.2")
+-- Found OpenMP: TRUE (found version "5.2")
+-- Found MPI_C: /usr/lib/libmpi.so (found version "3.1")
+-- Found MPI_CXX: /usr/lib/libmpi.so (found version "3.1")
+-- Found MPI_Fortran: /usr/lib/libmpi_usempif08.so (found version "3.1")
+-- Found MPI: TRUE (found version "3.1")
+-- Checking whether MPI_IN_PLACE is supported with /usr/bin/mpif90
+-- Checking whether MPI_IN_PLACE is supported with /usr/bin/mpif90 -- yes
+-- ------------------------------------------------
+-- Looking for Fortran sgemm
+-- Looking for Fortran sgemm - not found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for Fortran sgemm
+-- Looking for Fortran sgemm - found
+-- Found BLAS: /usr/lib/libopenblas.so
+-- Looking for Fortran cheev
+-- Looking for Fortran cheev - found
+-- Found LAPACK: /usr/lib/libopenblas.so;-lm;-ldl
+-- Could NOT find MUMPS (missing: MUMPS_DIR)
+-- Finding Mumps
+-- Finding SCALAPACK
+-- Checking if BLACS library is needed by SCALAPACK
+-- Looking for Fortran blacs_gridinit
+-- Looking for Fortran blacs_gridinit - found
+-- Checking if BLACS library is needed by SCALAPACK -- no
+-- Checking if Metis library is needed by Mumps
+-- Checking if Metis library is needed by Mumps -- no
+-- Checking if ParMetis library is needed by Mumps
+-- Checking if ParMetis library is needed by Mumps -- no
+-- Found Mumps:
+--   Include dirs: /usr/include
+--   Libraries:    /lib/libdmumps.so;/lib/libzmumps.so;/lib/libsmumps.so;/lib/libcmumps.so;/lib/libmumps_common.so;/lib/libpord.so;/lib/libscalapack.so;/usr/lib/libesmumps.so;/usr/lib/libscotch.so;/usr/lib/libscotcherr.so
+-- Mumps has the distributed right-hand side
+-- Checking whether /usr/bin/gfortran supports PROCEDURE POINTER
+-- Checking whether /usr/bin/gfortran supports PROCEDURE POINTER -- yes
+-- Checking whether /usr/bin/gfortran supports CONTIGUOUS
+-- Checking whether /usr/bin/gfortran supports CONTIGUOUS -- yes
+-- Checking whether /usr/bin/gfortran supports EXECUTE_COMMAND_LINE
+-- Checking whether /usr/bin/gfortran supports EXECUTE_COMMAND_LINE -- yes
+-- Looking for include file inttypes.h
+-- Looking for include file inttypes.h - found
+-- Using built-in UMFPACK
+-- Found LATEX: /opt/texlive/2026/bin/x86_64-linux/latex  found components: PDFLATEX
+-- PdfLaTeX found, use fhutiter_docs target to generate documentation
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of long
+-- Check size of long - done
+-- Found 143 modules from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/modules
+--  ELMERSOLVER_RPATH_STRING_MOD $ORIGIN/../lib/elmersolver
+--  ELMERLIB_RPATH_STRING $ORIGIN/
+-- Skipping test ExtrudedMeshSlices with 12 procs
+-- Skipping test PoissonDG with 16 procs
+-- Skipping test WinkelPoissonMetisKwayDual with 16 procs
+-- Skipping test WinkelPoissonMetisKwayNodal with 16 procs
+-- Found 1092 tests
+-- Looking for execinfo.h
+CMake Warning (policy) at /usr/share/cmake-4.4/Modules/CheckIncludeFile.cmake:148 (cmake_policy):
+  Policy CMP0075 is not set: Include file check macros honor
+  CMAKE_REQUIRED_LIBRARIES.  Run "cmake --help-policy CMP0075" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  CMAKE_REQUIRED_LIBRARIES is set to:
+
+    /usr/lib/libopenblas.so;/usr/lib/libopenblas.so;-lm;-ldl
+
+  For compatibility with CMake 3.11 and below this check is ignoring it.
+Call Stack (most recent call first):
+  elmergrid/src/metis-5.1.0/GKlib/GKlibSystem.cmake:97 (check_include_file)
+  elmergrid/src/metis-5.1.0/CMakeLists.txt:21 (include)
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+
+-- Looking for execinfo.h - found
+-- Looking for getline
+-- Looking for getline - found
+-- checking for thread-local storage - found
+-- Adding optional package ElmerIce
+-- ------------------------------------------------
+-- Elmer/Ice package: Looking for [NetCDF] & [NetCDF Fortran] libraries
+-- Found HDF5: hdf5-shared (found version "2.2.0")
+--   NetCDF:           1
+--   NetCDF_INC:       
+--   NetCDF_LIBS:     
+-- ------------------------------------------------
+-- Elmer/Ice package: Looking for [HDF5] & [HDF5 Fortran] libraries
+--   HDF5:           TRUE
+--   HDF5_INC:       /usr/include
+--   HDF5_LIBS:     /lib/libhdf5.so;/lib/libhdf5_hl.so
+--   Building ElmerGUI
+-- ------------------------------------------------
+-- ------------------------------------------------
+-- Qt6 non-Windows packaging
+-- Found WrapVulkanHeaders: /usr/include
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found Cups: /usr/lib/libcups.so (found version "2.4.20")
+--   [ElmerGUI] Qt6:               1
+--   [ElmerGUI] Qt6 Libraries: Qt6::OpenGL Qt6::OpenGLWidgets Qt6::Qml Qt6::Xml Qt6::Gui Qt6::Core
+-- ------------------------------------------------
+--   [ElmerGUI] Qwt:             TRUE
+--   [ElmerGUI] QWT_LIBRARY:     /usr/lib/libqwt.so
+--   [ElmerGUI] QWT_INCLUDE_DIR: /usr/include/qwt
+-- ------------------------------------------------
+-- ------------------------------------------------
+--   BLAS library:   /usr/lib/libopenblas.so
+--   LAPACK library: /usr/lib/libopenblas.so;-lm;-ldl
+-- ------------------------------------------------
+--  UMFPACK library: Using internal Elmer library
+--  ARPACK library: Using internal Elmer library
+--  PARPACK library: Using internal Elmer library
+-- ------------------------------------------------
+--   Fortran compiler:        /usr/bin/gfortran
+--   Fortran flags:            -fopenmp -fallow-argument-mismatch -O3
+-- ------------------------------------------------
+--   C compiler:              /usr/bin/cc
+--   C flags:                  -fopenmp -O3 -DNDEBUG
+-- ------------------------------------------------
+--   CXX compiler:            /usr/bin/c++
+--   CXX flags:                -fopenmp -O3 -DNDEBUG
+-- ------------------------------------------------
+--   MPI Fortran:             TRUE
+--   MPI Fortran compiler:    /usr/bin/mpif90
+--   MPI Fortran flags:       
+--   MPI Fortran include dir: /usr/include;/usr/lib
+--   MPI Fortran libraries:   /usr/lib/libmpi_usempif08.so;/usr/lib/libmpi_usempi_ignore_tkr.so;/usr/lib/libmpi_mpifh.so;/usr/lib/libmpi.so
+--   MPI Fortran link flags:  -Wl,-rpath -Wl,/usr/lib -Wl,--enable-new-dtags
+-- ------------------------------------------------
+--   MPI C:             TRUE
+--   MPI C compiler:    /usr/bin/mpicc
+--   MPI C flags:       
+--   MPI C include dir: /usr/include
+--   MPI C libraries:   /usr/lib/libmpi.so
+--   MPI C flags:       -Wl,-rpath -Wl,/usr/lib -Wl,--enable-new-dtags
+-- ------------------------------------------------
+--   Mumps:             TRUE
+--   Mumps include:     /usr/include
+--   Mumps libraries:   /lib/libdmumps.so;/lib/libzmumps.so;/lib/libsmumps.so;/lib/libcmumps.so;/lib/libmumps_common.so;/lib/libpord.so;/lib/libscalapack.so;/usr/lib/libesmumps.so;/usr/lib/libscotch.so;/usr/lib/libscotcherr.so
+-- ------------------------------------------------
+-- ------------------------------------------------
+--   Package filename: elmerfem-26.2-3856ee9e-20261102_Linux-x86_64 
+--   Patch version: 26.2-3856ee9e 
+-- Configuring done (20.3s)
+-- Generating done (4.2s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/build
+make[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 0.19 s in the future
+[  0%] Building C object matc/src/CMakeFiles/matc.dir/c3d.c.o
+[  0%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_i.dir/umf_analyze.c.o
+[  0%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_l.dir/umf_analyze.c.o
+[  0%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_i.dir/umf_apply_order.c.o
+[  0%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_l.dir/umf_apply_order.c.o
+[  0%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_i.dir/umf_colamd.c.o
+[  0%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_l.dir/umf_colamd.c.o
+[  0%] Building C object matc/src/CMakeFiles/matc.dir/clip.c.o
+[  0%] Building C object matc/src/CMakeFiles/matc.dir/dri_ps.c.o
+[  0%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_l.dir/umf_free.c.o
+[  0%] Building C object matc/src/CMakeFiles/matc.dir/eig.c.o
+[  0%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_i.dir/umf_free.c.o
+[  0%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_l.dir/umf_fsize.c.o
+[  1%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_i.dir/umf_fsize.c.o
+[  1%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_l.dir/umf_is_permutation.c.o
+[  1%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_i.dir/umf_is_permutation.c.o
+[  1%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_l.dir/umf_malloc.c.o
+[  1%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_i.dir/umf_malloc.c.o
+[  1%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_l.dir/umf_realloc.c.o
+[  1%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_i.dir/umf_realloc.c.o
+[  1%] Building C object matc/src/CMakeFiles/matc.dir/error.c.o
+[  1%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_l.dir/umf_report_perm.c.o
+[  1%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_i.dir/umf_report_perm.c.o
+[  1%] Building C object matc/src/CMakeFiles/matc.dir/eval.c.o
+[  1%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_l.dir/umf_singletons.c.o
+[  1%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_i.dir/umf_singletons.c.o
+[  1%] Built target umfpack_l
+[  1%] Building C object matc/src/CMakeFiles/matc.dir/files.c.o
+[  1%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_2by2.c.o
+[  1%] Built target umfpack_i
+[  2%] Building C object matc/src/CMakeFiles/matc.dir/funcs.c.o
+[  2%] Building C object matc/src/CMakeFiles/matc.dir/gra.c.o
+[  2%] Building C object matc/src/CMakeFiles/matc.dir/gra_com.c.o
+[  2%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_assemble.c.o
+[  2%] Building C object matc/src/CMakeFiles/matc.dir/jacobi.c.o
+[  2%] Building C object matc/src/CMakeFiles/matc.dir/lists.c.o
+[  2%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_2by2.c.o
+[  2%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_blas3_update.c.o
+[  2%] Building C object matc/src/CMakeFiles/matc.dir/lu.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_assemble.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_build_tuples.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_create_element.c.o
+[  3%] Building C object matc/src/CMakeFiles/matc.dir/matc.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_blas3_update.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_dump.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_build_tuples.c.o
+[  3%] Building C object matc/src/CMakeFiles/matc.dir/matrix.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_extend_front.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_create_element.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_garbage_collection.c.o
+[  3%] Building C object matc/src/CMakeFiles/matc.dir/oper.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_dump.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_extend_front.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_get_memory.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_garbage_collection.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_grow_front.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_init_front.c.o
+[  3%] Building C object matc/src/CMakeFiles/matc.dir/optim.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_kernel.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_get_memory.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_grow_front.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_kernel_init.c.o
+[  3%] Building C object matc/src/CMakeFiles/matc.dir/parser.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_init_front.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_kernel.c.o
+[  3%] Building C object matc/src/CMakeFiles/matc.dir/str.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_kernel_init.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_kernel_wrapup.c.o
+[  3%] Building C object matc/src/CMakeFiles/matc.dir/urand.c.o
+[  3%] Building C object matc/src/CMakeFiles/matc.dir/variable.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_local_search.c.o
+[  3%] Linking C shared library libmatc.so
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_kernel_wrapup.c.o
+[  3%] Built target matc
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_2by2.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_lsolve.c.o
+[  3%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_local_search.c.o
+[  4%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_ltsolve.c.o
+[  5%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_assemble.c.o
+[  5%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_mem_alloc_element.c.o
+[  5%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_mem_alloc_head_block.c.o
+[  5%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_lsolve.c.o
+[  5%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_mem_alloc_tail_block.c.o
+[  5%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_mem_free_tail_block.c.o
+[  5%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_ltsolve.c.o
+[  5%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_blas3_update.c.o
+[  5%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_mem_init_memoryspace.c.o
+[  5%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_mem_alloc_element.c.o
+[  5%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_report_vector.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_mem_alloc_head_block.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_build_tuples.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_row_search.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_mem_alloc_tail_block.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_create_element.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_mem_free_tail_block.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_scale.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_mem_init_memoryspace.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_scale_column.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_report_vector.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_dump.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_extend_front.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_row_search.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_set_stats.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_garbage_collection.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_solve.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_scale.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_scale_column.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_get_memory.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_grow_front.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_set_stats.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_solve.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_init_front.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_kernel.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_kernel_init.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_start_front.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_store_lu.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_kernel_wrapup.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_symbolic_usage.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_start_front.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_transpose.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_store_lu.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_local_search.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_triplet.c.o
+[  6%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_symbolic_usage.c.o
+[  7%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_tuple_lengths.c.o
+[  7%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_lsolve.c.o
+[  7%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_usolve.c.o
+[  7%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_transpose.c.o
+[  7%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_ltsolve.c.o
+[  7%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_utsolve.c.o
+[  7%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_triplet.c.o
+[  7%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_mem_alloc_element.c.o
+[  7%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_tuple_lengths.c.o
+[  7%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_valid_numeric.c.o
+[  8%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_mem_alloc_head_block.c.o
+[  8%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umf_valid_symbolic.c.o
+[  8%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_usolve.c.o
+[  8%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_mem_alloc_tail_block.c.o
+[  8%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_col_to_triplet.c.o
+[  8%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_mem_free_tail_block.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_utsolve.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_defaults.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_mem_init_memoryspace.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_free_numeric.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_report_vector.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_free_symbolic.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_valid_numeric.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_get_determinant.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_row_search.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umf_valid_symbolic.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_col_to_triplet.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_get_lunz.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_defaults.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_scale.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_get_numeric.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_free_numeric.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_scale_column.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_free_symbolic.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_get_determinant.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_set_stats.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_solve.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_get_lunz.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_get_numeric.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_get_symbolic.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_load_numeric.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_load_symbolic.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_get_symbolic.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_numeric.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_load_numeric.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_qsymbolic.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_load_symbolic.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_numeric.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_qsymbolic.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_start_front.c.o
+[  9%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_store_lu.c.o
+[ 10%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_report_control.c.o
+[ 10%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_report_info.c.o
+[ 10%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_symbolic_usage.c.o
+[ 10%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_transpose.c.o
+[ 10%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_report_control.c.o
+[ 10%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_report_info.c.o
+[ 10%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_report_matrix.c.o
+[ 10%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_triplet.c.o
+[ 10%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_report_numeric.c.o
+[ 10%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_tuple_lengths.c.o
+[ 10%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_usolve.c.o
+[ 10%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_report_matrix.c.o
+[ 11%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_report_numeric.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_utsolve.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_report_perm.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_report_status.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_report_symbolic.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_valid_numeric.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_report_triplet.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umf_valid_symbolic.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_report_perm.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_col_to_triplet.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_report_vector.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_report_status.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_defaults.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_save_numeric.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_report_symbolic.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_free_numeric.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_save_symbolic.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_free_symbolic.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_report_triplet.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_get_determinant.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_scale.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_report_vector.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_solve.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_save_numeric.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_symbolic.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_get_lunz.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_save_symbolic.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_transpose.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_get_numeric.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_scale.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_di.dir/umfpack_triplet_to_col.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_solve.c.o
+[ 12%] Built target umfpack_di
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_2by2.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_symbolic.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_transpose.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_dl.dir/umfpack_triplet_to_col.c.o
+[ 12%] Built target umfpack_dl
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_get_symbolic.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/hsolve_di.dir/umf_ltsolve.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_assemble.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_load_numeric.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/hsolve_di.dir/umf_utsolve.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_load_symbolic.c.o
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_numeric.c.o
+[ 12%] Built target hsolve_di
+[ 12%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_blas3_update.c.o
+[ 13%] Building C object umfpack/src/umfpack/CMakeFiles/hsolve_dl.dir/umf_ltsolve.c.o
+[ 13%] Building C object umfpack/src/umfpack/CMakeFiles/hsolve_dl.dir/umf_utsolve.c.o
+[ 13%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_qsymbolic.c.o
+[ 14%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_build_tuples.c.o
+[ 14%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_create_element.c.o
+[ 14%] Built target hsolve_dl
+[ 14%] Building C object umfpack/src/umfpack/CMakeFiles/hsolve_zi.dir/umf_ltsolve.c.o
+[ 14%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_dump.c.o
+[ 14%] Building C object umfpack/src/umfpack/CMakeFiles/hsolve_zi.dir/umf_utsolve.c.o
+[ 14%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_extend_front.c.o
+[ 14%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_garbage_collection.c.o
+[ 14%] Built target hsolve_zi
+[ 14%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_report_control.c.o
+[ 14%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_report_info.c.o
+[ 14%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_get_memory.c.o
+[ 14%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_grow_front.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_report_matrix.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_init_front.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_kernel.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/hsolve_zl.dir/umf_ltsolve.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_report_numeric.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_kernel_init.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/hsolve_zl.dir/umf_utsolve.c.o
+[ 15%] Built target hsolve_zl
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_kernel_wrapup.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/triplet_map_nox_di.dir/umf_triplet.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_report_perm.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_report_status.c.o
+[ 15%] Built target triplet_map_nox_di
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_local_search.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_report_symbolic.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_report_triplet.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_lsolve.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_report_vector.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_save_numeric.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_ltsolve.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_save_symbolic.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_scale.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/triplet_map_nox_dl.dir/umf_triplet.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_mem_alloc_element.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_solve.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_mem_alloc_head_block.c.o
+[ 15%] Built target triplet_map_nox_dl
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_symbolic.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_mem_alloc_tail_block.c.o
+[ 15%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_transpose.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_mem_free_tail_block.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_mem_init_memoryspace.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zi.dir/umfpack_triplet_to_col.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/triplet_map_nox_zi.dir/umf_triplet.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_report_vector.c.o
+[ 16%] Built target umfpack_zi
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/triplet_map_nox_zl.dir/umf_triplet.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_row_search.c.o
+[ 16%] Built target triplet_map_nox_zi
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_scale.c.o
+[ 16%] Built target triplet_map_nox_zl
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_scale_column.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/triplet_nomap_x_di.dir/umf_triplet.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_set_stats.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_solve.c.o
+[ 16%] Built target triplet_nomap_x_di
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/triplet_nomap_x_dl.dir/umf_triplet.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_start_front.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_store_lu.c.o
+[ 16%] Built target triplet_nomap_x_dl
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/triplet_nomap_x_zi.dir/umf_triplet.c.o
+[ 16%] Built target triplet_nomap_x_zi
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/triplet_nomap_x_zl.dir/umf_triplet.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_symbolic_usage.c.o
+[ 16%] Built target triplet_nomap_x_zl
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_transpose.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/triplet_map_x_di.dir/umf_triplet.c.o
+[ 16%] Built target triplet_map_x_di
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/triplet_map_x_dl.dir/umf_triplet.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_triplet.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_tuple_lengths.c.o
+[ 16%] Built target triplet_map_x_dl
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/triplet_map_x_zi.dir/umf_triplet.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_usolve.c.o
+[ 16%] Built target triplet_map_x_zi
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/triplet_map_x_zl.dir/umf_triplet.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_utsolve.c.o
+[ 16%] Built target triplet_map_x_zl
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/assemble_fixq_di.dir/umf_assemble.c.o
+[ 16%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_valid_numeric.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umf_valid_symbolic.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/assemble_fixq_dl.dir/umf_assemble.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_col_to_triplet.c.o
+[ 17%] Built target assemble_fixq_di
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_defaults.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/assemble_fixq_zi.dir/umf_assemble.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_free_numeric.c.o
+[ 17%] Built target assemble_fixq_dl
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_free_symbolic.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/assemble_fixq_zl.dir/umf_assemble.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_get_determinant.c.o
+[ 17%] Built target assemble_fixq_zi
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/store_lu_drop_di.dir/umf_store_lu.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_get_lunz.c.o
+[ 17%] Built target assemble_fixq_zl
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_get_numeric.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_get_symbolic.c.o
+[ 17%] Built target store_lu_drop_di
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_load_numeric.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/store_lu_drop_dl.dir/umf_store_lu.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_load_symbolic.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_numeric.c.o
+[ 17%] Built target store_lu_drop_dl
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_qsymbolic.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/store_lu_drop_zi.dir/umf_store_lu.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_report_control.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/store_lu_drop_zl.dir/umf_store_lu.c.o
+[ 17%] Built target store_lu_drop_zi
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/wsolve_di.dir/umfpack_solve.c.o
+[ 17%] Built target wsolve_di
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/wsolve_dl.dir/umfpack_solve.c.o
+[ 17%] Built target store_lu_drop_zl
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_report_info.c.o
+[ 17%] Built target wsolve_dl
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_report_matrix.c.o
+[ 17%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_report_numeric.c.o
+[ 18%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_report_perm.c.o
+[ 18%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_report_status.c.o
+[ 18%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_report_symbolic.c.o
+[ 18%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_report_triplet.c.o
+[ 18%] Building C object umfpack/src/umfpack/CMakeFiles/wsolve_zi.dir/umfpack_solve.c.o
+[ 19%] Building C object umfpack/src/umfpack/CMakeFiles/wsolve_zl.dir/umfpack_solve.c.o
+[ 19%] Built target wsolve_zi
+[ 19%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_report_vector.c.o
+[ 19%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_save_numeric.c.o
+[ 19%] Built target wsolve_zl
+[ 19%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_save_symbolic.c.o
+[ 19%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_scale.c.o
+[ 19%] Building C object umfpack/src/amd/CMakeFiles/amd_i.dir/amd_aat.c.o
+[ 19%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_solve.c.o
+[ 19%] Building C object umfpack/src/amd/CMakeFiles/amd_l.dir/amd_aat.c.o
+[ 19%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_symbolic.c.o
+[ 20%] Building C object umfpack/src/amd/CMakeFiles/amd_i.dir/amd_1.c.o
+[ 20%] Building C object umfpack/src/amd/CMakeFiles/amd_i.dir/amd_2.c.o
+[ 20%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_transpose.c.o
+[ 20%] Building C object umfpack/src/amd/CMakeFiles/amd_l.dir/amd_1.c.o
+[ 20%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack_zl.dir/umfpack_triplet_to_col.c.o
+[ 20%] Building C object umfpack/src/amd/CMakeFiles/amd_l.dir/amd_2.c.o
+[ 20%] Built target umfpack_zl
+[ 20%] Building Fortran object umfpack/src/amd/CMakeFiles/amdf77.dir/amd.f.o
+[ 20%] Building C object umfpack/src/amd/CMakeFiles/amd_i.dir/amd_dump.c.o
+[ 20%] Building C object umfpack/src/amd/CMakeFiles/amd_i.dir/amd_postorder.c.o
+[ 20%] Building C object umfpack/src/amd/CMakeFiles/amd_i.dir/amd_post_tree.c.o
+[ 20%] Building C object umfpack/src/amd/CMakeFiles/amd_l.dir/amd_dump.c.o
+[ 20%] Building Fortran object umfpack/src/amd/CMakeFiles/amdf77.dir/amdbar.f.o
+[ 20%] Building C object umfpack/src/amd/CMakeFiles/amd_i.dir/amd_defaults.c.o
+[ 20%] Building C object umfpack/src/amd/CMakeFiles/amd_l.dir/amd_postorder.c.o
+[ 20%] Building C object umfpack/src/amd/CMakeFiles/amd_i.dir/amd_order.c.o
+[ 20%] Building C object umfpack/src/amd/CMakeFiles/amd_l.dir/amd_post_tree.c.o
+[ 20%] Building C object umfpack/src/amd/CMakeFiles/amd_i.dir/amd_control.c.o
+[ 21%] Building C object umfpack/src/amd/CMakeFiles/amd_l.dir/amd_defaults.c.o
+[ 21%] Building C object umfpack/src/amd/CMakeFiles/amd_i.dir/amd_info.c.o
+[ 21%] Building C object umfpack/src/amd/CMakeFiles/amd_l.dir/amd_order.c.o
+[ 21%] Building C object umfpack/src/amd/CMakeFiles/amd_i.dir/amd_valid.c.o
+[ 21%] Building C object umfpack/src/amd/CMakeFiles/amd_l.dir/amd_control.c.o
+[ 21%] Linking Fortran static library libamdf77.a
+[ 21%] Building C object umfpack/src/amd/CMakeFiles/amd_i.dir/amd_preprocess.c.o
+[ 21%] Building C object umfpack/src/amd/CMakeFiles/amd_l.dir/amd_info.c.o
+[ 21%] Built target amdf77
+[ 21%] Building Fortran object fhutiter/src/CMakeFiles/fhuti.dir/huti_aux.F90.o
+[ 21%] Built target amd_i
+[ 21%] Building C object umfpack/src/amd/CMakeFiles/amd_l.dir/amd_valid.c.o
+[ 21%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/BGGridMesh.cpp.o
+[ 21%] Building C object umfpack/src/amd/CMakeFiles/amd_l.dir/amd_preprocess.c.o
+[ 21%] Built target amd_l
+[ 21%] Building Fortran object fhutiter/src/CMakeFiles/fhuti.dir/huti_interfaces.F90.o
+[ 22%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/BGTriangleMesh.cpp.o
+[ 22%] Building Fortran object fhutiter/src/CMakeFiles/fhuti.dir/huti_bicgstab.F90.o
+[ 22%] Building C object fem/src/CMakeFiles/elmerf90_bin.dir/elmerf90.c.o
+[ 22%] Linking C executable elmerf90
+[ 22%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/BGVertex.cpp.o
+[ 22%] Built target elmerf90_bin
+[ 22%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/Body.cpp.o
+[ 22%] Building Fortran object fhutiter/src/CMakeFiles/fhuti.dir/huti_bicgstab_2.F90.o
+[ 22%] Building C object fem/src/CMakeFiles/elmerld_bin.dir/elmerld.c.o
+[ 22%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/BoundaryElement.cpp.o
+[ 22%] Linking C executable elmerld
+[ 22%] Built target elmerld_bin
+[ 22%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/BoundaryLayer.cpp.o
+[ 22%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/Connect.cpp.o
+[ 22%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/Element.cpp.o
+[ 23%] Building Fortran object fhutiter/src/CMakeFiles/fhuti.dir/huti_cg.F90.o
+[ 23%] Building Fortran object fem/src/CMakeFiles/mpi_stubs.dir/mpif_stubs.F90.o
+[ 23%] Linking Fortran shared library libmpi_stubs.so
+[ 23%] Built target mpi_stubs
+[ 23%] Building Fortran object fhutiter/src/CMakeFiles/fhuti.dir/huti_cgs.F90.o
+[ 23%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/GeometryEdge.cpp.o
+[ 23%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/main.cpp.o
+[ 23%] Building Fortran object fhutiter/src/CMakeFiles/fhuti.dir/huti_gmres.F90.o
+[ 23%] Building Fortran object fhutiter/src/CMakeFiles/fhuti.dir/huti_qmr.F90.o
+[ 23%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/Mesh.cpp.o
+[ 23%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/cgetv0.f.o
+[ 23%] Building Fortran object fhutiter/src/CMakeFiles/fhuti.dir/huti_tfqmr.F90.o
+[ 23%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/cnaitr.f.o
+[ 23%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/cnapps.f.o
+[ 23%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/cnaup2.f.o
+[ 23%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/MeshNode.cpp.o
+[ 23%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/cnaupd.f.o
+[ 23%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/cneigh.f.o
+[ 23%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/cneupd.f.o
+[ 23%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/MeshParser.cpp.o
+[ 23%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/cngets.f.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/csortc.f.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/cstatn.f.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dgetv0.f.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dlaqrb.f.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dnaitr.f.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dnapps.f.o
+[ 24%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/Node.cpp.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dnaup2.f.o
+[ 24%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/PQ.cpp.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dnaupd.f.o
+[ 24%] Building Fortran object fhutiter/src/CMakeFiles/fhuti.dir/huti_sfe.F90.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dnconv.f.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dneigh.f.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dneupd.f.o
+[ 24%] Linking Fortran shared library libfhuti.so
+[ 24%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/QuadElement.cpp.o
+[ 24%] Built target fhuti
+[ 24%] Building Fortran object fem/src/binio/CMakeFiles/binio.dir/kinds.f90.o
+[ 24%] Building C object fem/src/binio/CMakeFiles/binio.dir/binio.c.o
+[ 24%] Building Fortran object fem/src/binio/CMakeFiles/binio.dir/biniomod.f90.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dngets.f.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dsaitr.f.o
+[ 24%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/QuadLayer.cpp.o
+[ 24%] Linking Fortran static library libbinio.a
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dsapps.f.o
+[ 24%] Built target binio
+[ 24%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/ViewFactors.c.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dsaup2.f.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dsaupd.f.o
+[ 24%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dsconv.f.o
+[ 25%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dseigt.f.o
+[ 25%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dsesrt.f.o
+[ 25%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dseupd.f.o
+[ 25%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/SSSFVoronoiSegment.cpp.o
+[ 25%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dsgets.f.o
+[ 25%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dsortc.f.o
+[ 25%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dsortr.f.o
+[ 25%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dstatn.f.o
+[ 25%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dstats.f.o
+[ 25%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dstqrb.f.o
+[ 26%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/SSMFVoronoiSegment.cpp.o
+[ 26%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/sgetv0.f.o
+[ 26%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/slaqrb.f.o
+[ 26%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/TestModel.c.o
+[ 26%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/snaitr.f.o
+[ 26%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/LineUtil.c.o
+[ 26%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/snapps.f.o
+[ 26%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/TriangleElement.cpp.o
+[ 26%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/TriangleUtil.c.o
+[ 26%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/snaup2.f.o
+[ 26%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/TriangleNELayer.cpp.o
+[ 26%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/snaupd.f.o
+[ 26%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/BiLinearUtil.c.o
+[ 26%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/snconv.f.o
+[ 26%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/sneigh.f.o
+[ 27%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/sneupd.f.o
+[ 28%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/BiQuadraticUtil.c.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/sngets.f.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/ssaitr.f.o
+[ 28%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/BiCubicUtil.c.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/ssapps.f.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/ssaup2.f.o
+[ 28%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/RayTrace.c.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/ssaupd.f.o
+[ 28%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/Vertex.cpp.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/ssconv.f.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/sseigt.f.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/ssesrt.f.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/sseupd.f.o
+[ 28%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/VoronoiSegment.cpp.o
+[ 28%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/VectorUtil.c.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/ssgets.f.o
+[ 28%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/LUDecomp.c.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/ssortc.f.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/ssortr.f.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/sstatn.f.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/sstats.f.o
+[ 28%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/2d_4node.c.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/sstqrb.f.o
+[ 28%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/16node_quad.c.o
+[ 28%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/VoronoiVertex.cpp.o
+[ 28%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/zgetv0.f.o
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/znaitr.f.o
+[ 29%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/second.c.o
+[ 29%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/ContourInteg.c.o
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/znapps.f.o
+[ 29%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/ShaftCull.c.o
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/znaup2.f.o
+[ 29%] Building CXX object meshgen2d/src/CMakeFiles/Mesh2D.dir/VSVertex.cpp.o
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/znaupd.f.o
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/zneigh.f.o
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/zneupd.f.o
+[ 29%] Building C object fem/src/view3d/CMakeFiles/view3d.dir/ClipShadow.c.o
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/zngets.f.o
+[ 29%] Linking CXX executable Mesh2D
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/zsortc.f.o
+[ 29%] Linking C static library libview3d.a
+[ 29%] Built target view3d
+[ 29%] Built target Mesh2D
+[ 29%] Building CXX object fem/src/viewaxis/CMakeFiles/viewaxis.dir/viewfact.cpp.o
+[ 29%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/b64.c.o
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/zstatn.f.o
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/cmout.f.o
+[ 29%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/blas.c.o
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/cvout.f.o
+[ 29%] Linking CXX static library libviewaxis.a
+[ 29%] Built target viewaxis
+[ 29%] Building C object elmergrid/src/CMakeFiles/elmergrid_core.dir/egconvert.c.o
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dmout.f.o
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/dvout.f.o
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/icnteq.f.o
+[ 29%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/icopy.f.o
+[ 30%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/csr.c.o
+[ 30%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/iset.f.o
+[ 30%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/iswap.f.o
+[ 31%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/ivout.f.o
+[ 31%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/second.f.o
+[ 31%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/smout.f.o
+[ 31%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/svout.f.o
+[ 31%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/zmout.f.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/error.c.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/evaluate.c.o
+[ 31%] Building Fortran object mathlibs/src/arpack/CMakeFiles/arpack.dir/zvout.f.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/fkvkselect.c.o
+[ 31%] Linking Fortran shared library libarpack.so
+[ 31%] Built target arpack
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/fs.c.o
+[ 31%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/opti/linopt.cpp.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/getopt.c.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/gkregex.c.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/graph.c.o
+[ 31%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/opti/bfgs.cpp.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/htable.c.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/io.c.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/itemsets.c.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/mcore.c.o
+[ 31%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/opti/linsearch.cpp.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/memory.c.o
+[ 31%] Building C object elmergrid/src/CMakeFiles/elmergrid_core.dir/egmesh.c.o
+[ 31%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/global.cpp.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/omp.c.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/pdb.c.o
+[ 31%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/bisect.cpp.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/pqueue.c.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/random.c.o
+[ 31%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/rw.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/seq.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/sort.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/string.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/timers.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/tokenizer.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/__/GKlib/util.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/auxapi.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/balance.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/bucketsort.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/checkgraph.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/coarsen.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/compress.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/contig.c.o
+[ 32%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/meshtool.cpp.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/debug.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/fm.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/fortran.c.o
+[ 32%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/frename.c.o
+[ 33%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/gklib.c.o
+[ 33%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/refine.cpp.o
+[ 33%] Building C object elmergrid/src/CMakeFiles/elmergrid_core.dir/egnative.c.o
+[ 33%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/graph.c.o
+[ 33%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/initpart.c.o
+[ 33%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/kmetis.c.o
+[ 33%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/kwayfm.c.o
+[ 33%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/ruler3.cpp.o
+[ 33%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/kwayrefine.c.o
+[ 33%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/mcutil.c.o
+[ 33%] Building C object elmergrid/src/CMakeFiles/elmergrid_core.dir/egutils.c.o
+[ 33%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/mesh.c.o
+[ 33%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/meshpart.c.o
+[ 33%] Linking C static library libelmergrid_core.a
+[ 33%] Built target elmergrid_core
+[ 33%] Building C object matc/src/CMakeFiles/Matc_bin.dir/main.c.o
+[ 33%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/minconn.c.o
+[ 33%] Linking C executable matc
+[ 33%] Built target Matc_bin
+[ 33%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack.dir/umfpack_timer.c.o
+[ 33%] Building C object umfpack/src/umfpack/CMakeFiles/umfpack.dir/umfpack_tictoc.c.o
+[ 34%] Linking C static library libumfpack.a
+[ 34%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/mincover.c.o
+[ 34%] Built target umfpack
+[ 35%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/improve3.cpp.o
+[ 35%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/mmd.c.o
+[ 35%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/ometis.c.o
+[ 35%] Linking C static library libamd.a
+[ 35%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/options.c.o
+[ 35%] Built target amd
+[ 35%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pcgetv0.f.o
+[ 35%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/parmetis.c.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/mathlibs/src/parpack/pcgetv0.f:366:38:
+
+  335 |           call MPI_ALLREDUCE( cnorm_buf, cnorm, 1,
+      |                                         2
+......
+  366 |       call MPI_ALLREDUCE( workl(j+1), workl, j-1,
+      |                                      1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+[ 35%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pclarnv.f.o
+[ 35%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pcnaitr.f.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/mathlibs/src/parpack/pcnaitr.f:587:32:
+
+  334 |       call MPI_ALLREDUCE( first0, first, 1, MPI_LOGICAL,
+      |                          2      
+......
+  587 |             call MPI_ALLREDUCE( cnorm_buf, cnorm, 1,
+      |                                1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(4)/LOGICAL(4)).
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/mathlibs/src/parpack/pcnaitr.f:587:43:
+
+  334 |       call MPI_ALLREDUCE( first0, first, 1, MPI_LOGICAL,
+      |                                  2         
+......
+  587 |             call MPI_ALLREDUCE( cnorm_buf, cnorm, 1,
+      |                                           1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(4)/LOGICAL(4)).
+[ 35%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/pmetis.c.o
+[ 35%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pcnapps.f.o
+[ 35%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/refine.c.o
+In file included from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/interface/../general/myadt.hpp:28,
+                 from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/meshing/../include/myadt.hpp:1,
+                 from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/meshing/meshing.hpp:9,
+                 from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/meshing/improve3.cpp:3:
+In member function ‘void netgen::ARRAY<T, BASE>::ReSize(int) [with T = netgen::PointIndex; int BASE = 0]’,
+    inlined from ‘void netgen::ARRAY<T, BASE>::SetSize(int) [with T = netgen::PointIndex; int BASE = 0]’ at /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/interface/../general/array.hpp:228:14,
+    inlined from ‘netgen::ArrayMem<T, S>::ArrayMem(int) [with T = netgen::PointIndex; int S = 50]’ at /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/interface/../general/array.hpp:381:19,
+    inlined from ‘void netgen::MeshOptimize3d::SwapImprove(netgen::Mesh&, netgen::OPTIMIZEGOAL, const netgen::BitArray*)’ at /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/meshing/improve3.cpp:1229:52:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/interface/../general/array.hpp:354:11: warning: ‘void operator delete [](void*)’ called on unallocated object ‘suroundpts’ [-Wfree-nonheap-object]
+  354 |           delete [] this->data;
+      |           ^~~~~~~~~~~~~~~~~~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/meshing/improve3.cpp: In member function ‘void netgen::MeshOptimize3d::SwapImprove(netgen::Mesh&, netgen::OPTIMIZEGOAL, const netgen::BitArray*)’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/meshing/improve3.cpp:1229:40: note: declared here
+ 1229 |               ArrayMem<PointIndex, 50> suroundpts(nsuround);
+      |                                        ^~~~~~~~~~
+In member function ‘void netgen::ARRAY<T, BASE>::ReSize(int) [with T = char; int BASE = 0]’,
+    inlined from ‘void netgen::ARRAY<T, BASE>::SetSize(int) [with T = char; int BASE = 0]’ at /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/interface/../general/array.hpp:228:14,
+    inlined from ‘netgen::ArrayMem<T, S>::ArrayMem(int) [with T = char; int S = 50]’ at /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/interface/../general/array.hpp:381:19,
+    inlined from ‘void netgen::MeshOptimize3d::SwapImprove(netgen::Mesh&, netgen::OPTIMIZEGOAL, const netgen::BitArray*)’ at /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/meshing/improve3.cpp:1230:43:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/interface/../general/array.hpp:354:11: warning: ‘void operator delete [](void*)’ called on unallocated object ‘tetused’ [-Wfree-nonheap-object]
+  354 |           delete [] this->data;
+      |           ^~~~~~~~~~~~~~~~~~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/meshing/improve3.cpp: In member function ‘void netgen::MeshOptimize3d::SwapImprove(netgen::Mesh&, netgen::OPTIMIZEGOAL, const netgen::BitArray*)’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/meshing/improve3.cpp:1230:34: note: declared here
+ 1230 |               ArrayMem<char, 50> tetused(nsuround);
+      |                                  ^~~~~~~
+[ 36%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/separator.c.o
+[ 36%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/sfm.c.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pcnaup2.f.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pcnaupd.f.o
+[ 37%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/srefine.c.o
+[ 37%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/stat.c.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pcneigh.f.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pcneupd.f.o
+[ 37%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/timing.c.o
+[ 37%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/util.c.o
+[ 37%] Building C object elmergrid/src/metis-5.1.0/libmetis/CMakeFiles/metis.dir/wspace.c.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pcngets.f.o
+[ 37%] Linking C static library libmetis.a
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdgetv0.f.o
+[ 37%] Built target metis
+[ 37%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/smoothing3.cpp.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/mathlibs/src/parpack/pdgetv0.f:352:38:
+
+  321 |           call MPI_ALLREDUCE( rnorm_buf, rnorm0, 1,
+      |                                         2
+......
+  352 |       call MPI_ALLREDUCE( workl(j+1), workl, j-1,
+      |                                      1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdlamch.f.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdlarnv.f.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdnaitr.f.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/mathlibs/src/parpack/pdnaitr.f:577:32:
+
+  324 |       call MPI_ALLREDUCE( first0, first, 1, MPI_LOGICAL,
+      |                          2      
+......
+  577 |             call MPI_ALLREDUCE( rnorm_buf, wnorm, 1,
+      |                                1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/LOGICAL(4)).
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/mathlibs/src/parpack/pdnaitr.f:577:43:
+
+  324 |       call MPI_ALLREDUCE( first0, first, 1, MPI_LOGICAL,
+      |                                  2         
+......
+  577 |             call MPI_ALLREDUCE( rnorm_buf, wnorm, 1,
+      |                                           1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(8)/LOGICAL(4)).
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdnapps.f.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdnaup2.f.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdnaupd.f.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdneigh.f.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdneupd.f.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdngets.f.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdnorm2.f.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdsaitr.f.o
+[ 37%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdsapps.f.o
+[ 37%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/adfront3.cpp.o
+[ 37%] Building C object elmergrid/src/CMakeFiles/ElmerGrid.dir/egparallel.c.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdsaup2.f.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdsaupd.f.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdseigt.f.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdseupd.f.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdsgets.f.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdznorm2.f.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pscnorm2.f.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/psgetv0.f.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/mathlibs/src/parpack/psgetv0.f:352:38:
+
+  321 |           call MPI_ALLREDUCE( rnorm_buf, rnorm0, 1,
+      |                                         2
+......
+  352 |       call MPI_ALLREDUCE( workl(j+1), workl, j-1,
+      |                                      1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pslamch.f.o
+[ 38%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/tetrarls.cpp.o
+[ 38%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/prism2rls.cpp.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pslarnv.f.o
+[ 38%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/pyramidrls.cpp.o
+[ 38%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/pyramid2rls.cpp.o
+[ 38%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/netrule3.cpp.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/psnaitr.f.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/mathlibs/src/parpack/psnaitr.f:576:32:
+
+  323 |       call MPI_ALLREDUCE( first0, first, 1, MPI_LOGICAL,
+      |                          2      
+......
+  576 |             call MPI_ALLREDUCE( rnorm_buf, wnorm, 1,
+      |                                1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(4)/LOGICAL(4)).
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/mathlibs/src/parpack/psnaitr.f:576:43:
+
+  323 |       call MPI_ALLREDUCE( first0, first, 1, MPI_LOGICAL,
+      |                                  2         
+......
+  576 |             call MPI_ALLREDUCE( rnorm_buf, wnorm, 1,
+      |                                           1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (REAL(4)/LOGICAL(4)).
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/psnapps.f.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/psnaup2.f.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/psnaupd.f.o
+[ 38%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/ruler2.cpp.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/psneigh.f.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/psneupd.f.o
+[ 38%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/psngets.f.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/psnorm2.f.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pssaitr.f.o
+[ 39%] Building C object elmergrid/src/CMakeFiles/ElmerGrid.dir/egnative.c.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pssapps.f.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pssaup2.f.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pssaupd.f.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/psseigt.f.o
+[ 39%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/meshclass.cpp.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/psseupd.f.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pssgets.f.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pzgetv0.f.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/meshing/meshclass.cpp: In member function ‘void netgen::Mesh::Load(std::istream&)’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/meshing/meshclass.cpp:887:41: warning: casting ‘netgen::PointIndex’ to ‘int&’ does not use ‘netgen::PointIndex::operator int() const’ [-Wcast-user-defined]
+  887 |                   infile >> (int&)(el[j]);
+      |                                         ^
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/meshing/meshclass.cpp: In member function ‘void netgen::Mesh::Merge(std::istream&, int)’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/netgen/libsrc/meshing/meshclass.cpp:1325:43: warning: casting ‘netgen::PointIndex’ to ‘int&’ does not use ‘netgen::PointIndex::operator int() const’ [-Wcast-user-defined]
+ 1325 |                     infile >> (int&)(el[j]);
+      |                                           ^
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/mathlibs/src/parpack/pzgetv0.f:366:38:
+
+  335 |           call MPI_ALLREDUCE( cnorm_buf, cnorm, 1,
+      |                                         2
+......
+  366 |       call MPI_ALLREDUCE( workl(j+1), workl, j-1,
+      |                                      1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pzlarnv.f.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pznaitr.f.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/mathlibs/src/parpack/pznaitr.f:588:32:
+
+  335 |       call MPI_ALLREDUCE( first0, first, 1, MPI_LOGICAL,
+      |                          2      
+......
+  588 |             call MPI_ALLREDUCE( cnorm_buf, cnorm, 1,
+      |                                1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/LOGICAL(4)).
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/mathlibs/src/parpack/pznaitr.f:588:43:
+
+  335 |       call MPI_ALLREDUCE( first0, first, 1, MPI_LOGICAL,
+      |                                  2         
+......
+  588 |             call MPI_ALLREDUCE( cnorm_buf, cnorm, 1,
+      |                                           1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/LOGICAL(4)).
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pznapps.f.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pznaup2.f.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pznaupd.f.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pzneigh.f.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pzneupd.f.o
+[ 39%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pzngets.f.o
+[ 40%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pcmout.f.o
+[ 40%] Building C object elmergrid/src/CMakeFiles/ElmerGrid.dir/egconvert.c.o
+[ 40%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pcvout.f.o
+[ 40%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdmout.f.o
+[ 40%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pdvout.f.o
+[ 40%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pivout.f.o
+[ 40%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/psmout.f.o
+[ 40%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/psvout.f.o
+[ 40%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pzmout.f.o
+[ 40%] Building Fortran object mathlibs/src/parpack/CMakeFiles/parpack.dir/pzvout.f.o
+[ 40%] Linking Fortran shared library libparpack.so
+[ 40%] Built target parpack
+[ 40%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/improve2.cpp.o
+[ 40%] Building C object elmergrid/src/CMakeFiles/ElmerGrid.dir/egexport.c.o
+[ 40%] Building C object elmergrid/src/CMakeFiles/ElmerGrid.dir/egextra.c.o
+[ 40%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/smoothing2.cpp.o
+[ 40%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/smoothing2.5.cpp.o
+[ 40%] Building C object elmergrid/src/CMakeFiles/ElmerGrid.dir/egmesh.c.o
+[ 41%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/Messages.F90.o
+[ 41%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/Lua.F90.o
+[ 41%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/ExchangeCorrelations.F90.o
+[ 41%] Building C object fem/src/CMakeFiles/elmersolver.dir/fft.c.o
+[ 41%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/adfront2.cpp.o
+[ 41%] Building C object fem/src/CMakeFiles/elmersolver.dir/Load.c.o
+[ 41%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/Walls.F90.o
+[ 41%] Building C object fem/src/CMakeFiles/elmersolver.dir/CPUTime.c.o
+[ 41%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/solve_real.F90.o
+[ 41%] Building C object fem/src/CMakeFiles/elmersolver.dir/f_stubs.c.o
+[ 41%] Building C object fem/src/CMakeFiles/elmersolver.dir/GFortranLocaleFix.c.o
+[ 42%] Building C object fem/src/CMakeFiles/elmersolver.dir/SolveHypre.c.o
+[ 42%] Building C object fem/src/CMakeFiles/elmersolver.dir/amgx.c.o
+[ 42%] Building CXX object fem/src/CMakeFiles/elmersolver.dir/rocalution.cpp.o
+[ 42%] Building C object fem/src/CMakeFiles/elmersolver.dir/SolveSuperLU.c.o
+[ 42%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/netrule2.cpp.o
+[ 42%] Building C object fem/src/CMakeFiles/elmersolver.dir/SolveCUDSS.c.o
+[ 42%] Building C object fem/src/CMakeFiles/elmersolver.dir/umf4_f77wrapper.c.o
+[ 42%] Building C object fem/src/CMakeFiles/elmersolver.dir/cholmod.c.o
+[ 42%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/Types.F90.o
+[ 42%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/triarls.cpp.o
+[ 42%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/geomsearch.cpp.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/secondorder.cpp.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/LoadMod.F90.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/meshtype.cpp.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/IpFieldInterface.F90.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/SParIterGlobals.F90.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/LinearAlgebra.F90.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/parser3.cpp.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/PermonInterface.F90.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/CoordinateSystems.F90.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/H1Basis.F90.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/H1Basis.F90:505:32:
+
+  505 |     ELMER_OMP ELMER_LINEAR_REF(u) ELMER_LINEAR_REF(v) NOTINBRANCH
+      |                                1
+Warning: Specification of the list items as arguments to the modifiers at (1) is deprecated; since OpenMP 5.2, use ‘linear(v : ref)’ [-Wdeprecated-openmp]
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/H1Basis.F90:820:30:
+
+  820 |     ELMER_OMP_DECLARE_SIMD ELMER_LINEAR_REF(x) UNIFORM(j) NOTINBRANCH
+      |                              1
+Warning: Specification of the list items as arguments to the modifiers at (1) is deprecated; since OpenMP 5.2, use ‘linear(x : ref)’ [-Wdeprecated-openmp]
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/H1Basis.F90:1329:32:
+
+ 1329 |     ELMER_OMP ELMER_LINEAR_REF(u) ELMER_LINEAR_REF(v) NOTINBRANCH
+      |                                1
+Warning: Specification of the list items as arguments to the modifiers at (1) is deprecated; since OpenMP 5.2, use ‘linear(v : ref)’ [-Wdeprecated-openmp]
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/H1Basis.F90:1405:47:
+
+ 1405 |     ELMER_OMP ELMER_LINEAR_REF(u) ELMER_LINEAR_REF(v) ELMER_LINEAR_REF(w) NOTINBRANCH
+      |                                               1
+Warning: Specification of the list items as arguments to the modifiers at (1) is deprecated; since OpenMP 5.2, use ‘linear(w : ref)’ [-Wdeprecated-openmp]
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/H1Basis.F90:2359:32:
+
+ 2359 |     ELMER_OMP ELMER_LINEAR_REF(u) ELMER_LINEAR_REF(v) NOTINBRANCH
+      |                                1
+Warning: Specification of the list items as arguments to the modifiers at (1) is deprecated; since OpenMP 5.2, use ‘linear(v : ref)’ [-Wdeprecated-openmp]
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/H1Basis.F90:2399:44:
+
+ 2399 |     ELMER_OMP_DECLARE_SIMD UNIFORM(node) ELMER_LINEAR_REF(w) NOTINBRANCH
+      |                                            1
+Warning: Specification of the list items as arguments to the modifiers at (1) is deprecated; since OpenMP 5.2, use ‘linear(w : ref)’ [-Wdeprecated-openmp]
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/H1Basis.F90:3646:32:
+
+ 3646 |     ELMER_OMP ELMER_LINEAR_REF(v) ELMER_LINEAR_REF(w) NOTINBRANCH
+      |                                1
+Warning: Specification of the list items as arguments to the modifiers at (1) is deprecated; since OpenMP 5.2, use ‘linear(w : ref)’ [-Wdeprecated-openmp]
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/H1Basis.F90:3704:48:
+
+ 3704 |     ELMER_OMP ELMER_LINEAR_REF(w) ELMER_LINEAR_REF(La) ELMER_LINEAR_REF(Lb) NOTINBRANCH
+      |                                                1
+Warning: Specification of the list items as arguments to the modifiers at (1) is deprecated; since OpenMP 5.2, use ‘linear(lb : ref)’ [-Wdeprecated-openmp]
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/H1Basis.F90:4347:41:
+
+ 4347 |     ELMER_OMP_DECLARE_SIMD UNIFORM(k) ELMER_LINEAR_REF(x) NOTINBRANCH
+      |                                         1
+Warning: Specification of the list items as arguments to the modifiers at (1) is deprecated; since OpenMP 5.2, use ‘linear(x : ref)’ [-Wdeprecated-openmp]
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/H1Basis.F90:4418:41:
+
+ 4418 |     ELMER_OMP_DECLARE_SIMD UNIFORM(k) ELMER_LINEAR_REF(x) NOTINBRANCH
+      |                                         1
+Warning: Specification of the list items as arguments to the modifiers at (1) is deprecated; since OpenMP 5.2, use ‘linear(x : ref)’ [-Wdeprecated-openmp]
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/H1Basis.F90:4471:41:
+
+ 4471 |     ELMER_OMP_DECLARE_SIMD UNIFORM(k) ELMER_LINEAR_REF(x) NOTINBRANCH
+      |                                         1
+Warning: Specification of the list items as arguments to the modifiers at (1) is deprecated; since OpenMP 5.2, use ‘linear(x : ref)’ [-Wdeprecated-openmp]
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/H1Basis.F90:4523:41:
+
+ 4523 |     ELMER_OMP_DECLARE_SIMD UNIFORM(k) ELMER_LINEAR_REF(x) NOTINBRANCH
+      |                                         1
+Warning: Specification of the list items as arguments to the modifiers at (1) is deprecated; since OpenMP 5.2, use ‘linear(x : ref)’ [-Wdeprecated-openmp]
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/H1Basis.F90:4573:41:
+
+ 4573 |     ELMER_OMP_DECLARE_SIMD UNIFORM(k) ELMER_LINEAR_REF(x) NOTINBRANCH
+      |                                         1
+Warning: Specification of the list items as arguments to the modifiers at (1) is deprecated; since OpenMP 5.2, use ‘linear(x : ref)’ [-Wdeprecated-openmp]
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/H1Basis.F90:4644:41:
+
+ 4644 |     ELMER_OMP_DECLARE_SIMD UNIFORM(k) ELMER_LINEAR_REF(x) NOTINBRANCH
+      |                                         1
+Warning: Specification of the list items as arguments to the modifiers at (1) is deprecated; since OpenMP 5.2, use ‘linear(x : ref)’ [-Wdeprecated-openmp]
+[ 43%] Building C object elmergrid/src/CMakeFiles/ElmerGrid.dir/fempre.c.o
+[ 43%] Building C object elmergrid/src/CMakeFiles/ElmerGrid.dir/egutils.c.o
+[ 43%] Linking C executable ElmerGrid
+[ 43%] Built target ElmerGrid
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/LinearForms.F90.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/LinearForms.F90:419:31:
+
+  419 |     CALL DGEMV('N', m, n, 1D0, U, SIZE(U,1), F, 1, 0D0, ProjectToU, 1)
+      |                               1
+......
+  485 |               1D0, U(ii,1), SIZE(U,1), wrk, 1, 1D0, UdotF, 1)
+      |                   2            
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-2)
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/LinearForms.F90:406:20:
+
+  406 |                1D0, U(ii,1), ldbasis, &
+      |                    1
+......
+  429 |     CALL DGEMM('N', 'N', m, SIZE(F,2), n, 1D0, U, SIZE(U,1), F, SIZE(F,1), &
+      |                                               2
+Warning: Element of assumed-shape or pointer array as actual argument at (1) cannot correspond to actual argument at (2)
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/LinearForms.F90:333:20:
+
+  333 |                1D0, U(ii,1), ldbasis, &
+      |                    1
+......
+  429 |     CALL DGEMM('N', 'N', m, SIZE(F,2), n, 1D0, U, SIZE(U,1), F, SIZE(F,1), &
+      |                                               2
+Warning: Element of assumed-shape or pointer array as actual argument at (1) cannot correspond to actual argument at (2)
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/LinearForms.F90:258:21:
+
+  258 |                 1D0, U(ii,1), lbasis, &
+      |                     1
+......
+  429 |     CALL DGEMM('N', 'N', m, SIZE(F,2), n, 1D0, U, SIZE(U,1), F, SIZE(F,1), &
+      |                                               2
+Warning: Element of assumed-shape or pointer array as actual argument at (1) cannot correspond to actual argument at (2)
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/LinearForms.F90:135:21:
+
+  135 |                 1D0, GradU(ii,1,k), ldbasis, &
+      |                     1
+......
+  429 |     CALL DGEMM('N', 'N', m, SIZE(F,2), n, 1D0, U, SIZE(U,1), F, SIZE(F,1), &
+      |                                               2
+Warning: Element of assumed-shape or pointer array as actual argument at (1) cannot correspond to actual argument at (2)
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/meshing2.cpp.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/AddrFunc.F90.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/SolveBand.F90.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/SolveSBand.F90.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/solve_cmplx.F90.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/quadrls.cpp.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/specials.cpp.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/parser2.cpp.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/meshing3.cpp.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/Constitutive.F90.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/GeneralUtils.F90.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/meshfunc.cpp.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/localh.cpp.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/improve2gen.cpp.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/PElementMaps.F90.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/delaunay.cpp.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/BandMatrix.F90.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/SParIterComm.F90.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/boundarylayer.cpp.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/msghandler.cpp.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/meshfunc2d.cpp.o
+[ 43%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/ListMatrixArray.F90.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/topology.cpp.o
+[ 43%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/clusters.cpp.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/curvedelems_new.cpp.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/hprefinement.cpp.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/meshing/validate.cpp.o
+[ 44%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/Integration.F90.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/interface/nglib.cpp.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/gprim/geomtest3d.cpp.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/gprim/geom2d.cpp.o
+[ 44%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/PElementBase.F90.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/gprim/geom3d.cpp.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/gprim/adtree.cpp.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/gprim/transform3d.cpp.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/gprim/geomfuncs.cpp.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/linalg/polynomial.cpp.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/linalg/densemat.cpp.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/linalg/vector.cpp.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/algprim.cpp.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/brick.cpp.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/manifold.cpp.o
+[ 44%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/Lists.F90.o
+[ 44%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/bspline2d.cpp.o
+[ 44%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/SParIterPrecond.F90.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/meshsurf.cpp.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/csgeom.cpp.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/polyhedra.cpp.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/curve2d.cpp.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/singularref.cpp.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/edgeflw.cpp.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/solid.cpp.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/explicitcurve2d.cpp.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/specpoin.cpp.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/gencyl.cpp.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/revolution.cpp.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/genmesh.cpp.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/spline3d.cpp.o
+[ 45%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/CRSMatrix.F90.o
+[ 45%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/ElementBasis.F90.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/surface.cpp.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/identify.cpp.o
+[ 45%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/HashTable.F90.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/triapprox.cpp.o
+[ 45%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/TimeIntegrate.F90.o
+[ 45%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/csgparser.cpp.o
+[ 46%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/csg/extrusion.cpp.o
+[ 46%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/geom2d/geom2dmesh.cpp.o
+[ 47%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/ListMatrix.F90.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/geom2d/spline.cpp.o
+[ 47%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/IterativeMethods.F90.o
+[ 47%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/ElementGeometry.F90.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/geom2d/splinegeometry.cpp.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/geom2d/genmesh2d.cpp.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/stlgeom/meshstlsurface.cpp.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/stlgeom/stlline.cpp.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/stlgeom/stltopology.cpp.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/stlgeom/stltool.cpp.o
+[ 47%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/BandwidthOptimize.F90.o
+[ 47%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/MatrixAssembly.F90.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/stlgeom/stlgeom.cpp.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/stlgeom/stlgeomchart.cpp.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/stlgeom/stlgeommesh.cpp.o
+[ 47%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/IterSolve.F90.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/IterSolve.F90:1452:42:
+
+  903 |           StopcProc = AddrFunc(ComponentwiseBackwardError)
+      |                               2           
+......
+ 1452 |         IF(dotProc==0) dotProc = AddrFunc(MaskedDotProd)
+      |                                          1
+Warning: Interface mismatch in dummy procedure at (1) conflicts with (2): 'maskeddotprod' is not a subroutine
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/IterSolve.F90:1453:44:
+
+  903 |           StopcProc = AddrFunc(ComponentwiseBackwardError)
+      |                               2             
+......
+ 1453 |         IF(normProc==0) normproc = AddrFunc(MaskedNorm)
+      |                                            1
+Warning: Interface mismatch in dummy procedure at (1) conflicts with (2): 'maskednorm' is not a subroutine
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/IterSolve.F90:1460:32:
+
+  903 |           StopcProc = AddrFunc(ComponentwiseBackwardError)
+      |                               2 
+......
+ 1460 |             dotProc = AddrFunc( PseudoZDotProd )
+      |                                1
+Warning: Interface mismatch in dummy procedure at (1) conflicts with (2): 'pseudozdotprod' is not a subroutine
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/IterSolve.F90:1463:32:
+
+  903 |           StopcProc = AddrFunc(ComponentwiseBackwardError)
+      |                               2 
+......
+ 1463 |             dotProc = AddrFunc( PseudoZDotProd2 )
+      |                                1
+Warning: Interface mismatch in dummy procedure at (1) conflicts with (2): 'pseudozdotprod2' is not a subroutine
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/IterSolve.F90:1468:49:
+
+  903 |           StopcProc = AddrFunc(ComponentwiseBackwardError)
+      |                               2                  
+......
+ 1468 |         IF ( normProc == 0 ) normproc = AddrFunc(dnrm2)
+      |                                                 1
+Warning: Interface mismatch in dummy procedure at (1) conflicts with (2): 'dnrm2' is not a subroutine
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/IterSolve.F90:1472:46:
+
+  903 |           StopcProc = AddrFunc(ComponentwiseBackwardError)
+      |                               2               
+......
+ 1472 |       IF ( dotProc  == 0 ) dotProc = AddrFunc(Otmp_ddot)
+      |                                              1
+Warning: Interface mismatch in dummy procedure at (1) conflicts with (2): 'otmp_ddot' is not a subroutine
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/IterSolve.F90:1507:49:
+
+  903 |           StopcProc = AddrFunc(ComponentwiseBackwardError)
+      |                               2                  
+......
+ 1507 |         IF ( normProc == 0 ) normproc = AddrFunc(dznrm2)
+      |                                                 1
+Warning: Interface mismatch in dummy procedure at (1) conflicts with (2): 'dznrm2' is not a subroutine
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/IterSolve.F90:1522:29:
+
+  903 |           StopcProc = AddrFunc(ComponentwiseBackwardError)
+      |                               2
+......
+ 1522 |           dotProc = AddrFunc(Otmp_zdotu)
+      |                             1
+Warning: Interface mismatch in dummy procedure at (1) conflicts with (2): 'otmp_zdotu' is not a subroutine
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/IterSolve.F90:1525:27:
+
+  903 |           StopcProc = AddrFunc(ComponentwiseBackwardError)
+      |                               2
+......
+ 1525 |         dotProc = AddrFunc(Otmp_zdotc)
+      |                           1
+Warning: Interface mismatch in dummy procedure at (1) conflicts with (2): 'otmp_zdotc' is not a subroutine
+[ 47%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/ElemInfo.F90.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/general/moveablemem.cpp.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/general/ngexception.cpp.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/general/table.cpp.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/general/optmem.cpp.o
+[ 47%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/general/spbita2d.cpp.o
+[ 48%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/general/hashtabl.cpp.o
+[ 48%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/general/sort.cpp.o
+[ 48%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/general/flags.cpp.o
+[ 48%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/general/seti.cpp.o
+[ 48%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/general/bitarray.cpp.o
+[ 48%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/general/symbolta.cpp.o
+[ 48%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/general/mystring.cpp.o
+[ 48%] Building CXX object ElmerGUI/netgen/CMakeFiles/ng.dir/libsrc/general/profiler.cpp.o
+[ 48%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/SParIterSolver.F90.o
+[ 48%] Linking CXX static library libng.a
+[ 48%] Built target ng
+[ 48%] Built target ElmerGUI_autogen_timestamp_deps
+[ 48%] Automatic MOC for target ElmerGUI
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/SParIterSolver.F90:2667:27:
+
+ 2666 |           TmpRHSVec, Solver, DotF=AddrFunc(MaskedSParDotProd), NormF=AddrFunc(MaskedSParNorm), &
+      |                                           2
+ 2667 |           matVecF=AddrFunc(SParMatrixVector) )
+      |                           1
+Warning: Interface mismatch in dummy procedure at (1) conflicts with (2): 'sparmatrixvector' is not a function
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/SParIterSolver.F90:2671:27:
+
+ 2666 |           TmpRHSVec, Solver, DotF=AddrFunc(MaskedSParDotProd), NormF=AddrFunc(MaskedSParNorm), &
+      |                                           2
+......
+ 2671 |           matVecF=AddrFunc(SParMatrixVector) )
+      |                           1
+Warning: Interface mismatch in dummy procedure at (1) conflicts with (2): 'sparmatrixvector' is not a function
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/SParIterSolver.F90:2690:42:
+
+ 2666 |           TmpRHSVec, Solver, DotF=AddrFunc(MaskedSParDotProd), NormF=AddrFunc(MaskedSParNorm), &
+      |                                           2
+......
+ 2690 |          TmpRHSVec, Solver, DotF=AddrFunc(SParCDotProd), NormF=AddrFunc(SParCNorm), &
+      |                                          1
+Warning: Interface mismatch in dummy procedure at (1) conflicts with (2): Type mismatch in function result (REAL(8)/COMPLEX(8))
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/SParIterSolver.F90:2691:26:
+
+ 2666 |           TmpRHSVec, Solver, DotF=AddrFunc(MaskedSParDotProd), NormF=AddrFunc(MaskedSParNorm), &
+      |                                           2
+......
+ 2691 |          MatVecF=AddrFunc(SParCMatrixVector), MatvecReadsNoValues = .TRUE., &
+      |                          1
+Warning: Interface mismatch in dummy procedure at (1) conflicts with (2): 'sparcmatrixvector' is not a function
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/fem/src/SParIterSolver.F90:2692:24:
+
+ 2666 |           TmpRHSVec, Solver, DotF=AddrFunc(MaskedSParDotProd), NormF=AddrFunc(MaskedSParNorm), &
+      |                                           2
+......
+ 2692 |          DotFU=AddrFunc(SParCDotProdU) )
+      |                        1
+Warning: Interface mismatch in dummy procedure at (1) conflicts with (2): Type mismatch in function result (REAL(8)/COMPLEX(8))
+[ 48%] Built target ElmerGUI_autogen
+[ 48%] Generating ui_summaryeditor.h
+[ 48%] Generating qrc_ElmerGUI.cpp
+[ 48%] Generating ui_bodypropertyeditor.h
+[ 48%] Generating ui_boundarydivision.h
+[ 48%] Generating ui_boundarypropertyeditor.h
+[ 48%] Generating ui_generalsetup.h
+[ 48%] Generating ui_glcontrol.h
+[ 48%] Generating ui_materiallibrary.h
+[ 48%] Generating ui_meshcontrol.h
+[ 48%] Generating ui_newproject.h
+[ 48%] Generating ui_parallel.h
+[ 48%] Generating ui_solverparameters.h
+[ 49%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/ElmerGUI_autogen/mocs_compilation.cpp.o
+[ 49%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/bodypropertyeditor.cpp.o
+[ 49%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/boundarydivision.cpp.o
+[ 49%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/boundarypropertyeditor.cpp.o
+[ 49%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/ParallelUtils.F90.o
+[ 49%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/ElementDescription.F90.o
+[ 49%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/BackwardError.F90.o
+[ 49%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/MatrixScaling.F90.o
+[ 49%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/DirectSolve.F90.o
+[ 49%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/checkmpi.cpp.o
+[ 49%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/dynamiceditor.cpp.o
+[ 49%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/edfeditor.cpp.o
+[ 49%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/Interpolation.F90.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/edfeditor.cpp: In member function ‘void EdfEditor::saveAsButtonClicked()’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/edfeditor.cpp:547:12: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  547 |   file.open(QIODevice::WriteOnly);
+      |   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/qt6/include/QtCore/qdir.h:11,
+                 from /opt/qt6/include/QtCore/QtCore:93,
+                 from /opt/qt6/include/QtGui/QtGuiDepends:3,
+                 from /opt/qt6/include/QtGui/QtGui:3,
+                 from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/edfeditor.cpp:41:
+/opt/qt6/include/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/edfeditor.cpp: In member function ‘void EdfEditor::openButtonClicked()’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/edfeditor.cpp:588:12: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  588 |   file.open(QIODevice::ReadOnly);
+      |   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/opt/qt6/include/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/edfeditor.cpp:594:28: warning: ‘bool QDomDocument::setContent(QIODevice*, bool, QString*, int*, int*)’ is deprecated: Use the overload taking ParseOptions instead. [-Wdeprecated-declarations]
+  594 |   if(!elmerDefs->setContent(&file, true, &errStr, &errRow, &errCol)) {
+      |       ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/qt6/include/QtXml/QDomDocument:1,
+                 from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/edfeditor.h:45,
+                 from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/edfeditor.cpp:54:
+/opt/qt6/include/QtXml/qdom.h:400:10: note: declared here
+  400 |     bool setContent(QIODevice *dev, bool namespaceProcessing, QString *errorMsg = nullptr, int *errorLine = nullptr, int *errorColumn = nullptr);
+      |          ^~~~~~~~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/edfeditor.cpp: In member function ‘void EdfEditor::appendButtonClicked()’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/edfeditor.cpp:636:12: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  636 |   file.open(QIODevice::ReadOnly);
+      |   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/opt/qt6/include/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/edfeditor.cpp:644:24: warning: ‘bool QDomDocument::setContent(QIODevice*, bool, QString*, int*, int*)’ is deprecated: Use the overload taking ParseOptions instead. [-Wdeprecated-declarations]
+  644 |   if(!tmpDoc.setContent(&file, true, &errStr, &errRow, &errCol)) {
+      |       ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/qt6/include/QtXml/qdom.h:400:10: note: declared here
+  400 |     bool setContent(QIODevice *dev, bool namespaceProcessing, QString *errorMsg = nullptr, int *errorLine = nullptr, int *errorColumn = nullptr);
+      |          ^~~~~~~~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/edfeditor.cpp: In member function ‘bool EdfEditor::appendFrom(QString)’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/edfeditor.cpp:791:12: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  791 |   file.open(QIODevice::ReadOnly);
+      |   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/opt/qt6/include/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/edfeditor.cpp:799:24: warning: ‘bool QDomDocument::setContent(QIODevice*, bool, QString*, int*, int*)’ is deprecated: Use the overload taking ParseOptions instead. [-Wdeprecated-declarations]
+  799 |   if(!tmpDoc.setContent(&file, true, &errStr, &errRow, &errCol)) {
+      |       ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/qt6/include/QtXml/qdom.h:400:10: note: declared here
+  400 |     bool setContent(QIODevice *dev, bool namespaceProcessing, QString *errorMsg = nullptr, int *errorLine = nullptr, int *errorColumn = nullptr);
+      |          ^~~~~~~~~~
+[ 50%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/Differentials.F90.o
+[ 50%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/egini.cpp.o
+[ 50%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/StressGeneral.F90.o
+[ 50%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/generalsetup.cpp.o
+[ 50%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/ElementUtils.F90.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/egini.cpp: In constructor ‘EgIni::EgIni(QWidget*)’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/egini.cpp:88:26: warning: ‘bool QDomDocument::setContent(QIODevice*, bool, QString*, int*, int*)’ is deprecated: Use the overload taking ParseOptions instead. [-Wdeprecated-declarations]
+   88 |     if(!iniDoc.setContent(&file, true, &errStr, &errRow, &errCol)) {
+      |         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/qt6/include/QtXml/QDomDocument:1,
+                 from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/egini.h:45,
+                 from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/egini.cpp:42:
+/opt/qt6/include/QtXml/qdom.h:400:10: note: declared here
+  400 |     bool setContent(QIODevice *dev, bool namespaceProcessing, QString *errorMsg = nullptr, int *errorLine = nullptr, int *errorColumn = nullptr);
+      |          ^~~~~~~~~~
+[ 50%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/glcontrol.cpp.o
+[ 50%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/VectorHelmholtzUtils.F90.o
+[ 50%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/glwidget.cpp.o
+[ 50%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/GeometryFitting.F90.o
+[ 50%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/MeshAllocations.F90.o
+[ 50%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/LumpingUtils.F90.o
+[ 50%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/helpers.cpp.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/glwidget.cpp: In member function ‘void GLWidget::drawBgImage()’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/glwidget.cpp:1960:60: warning: ‘QImage QImage::mirrored(bool, bool) &&’ is deprecated: Use flipped(Qt::Orientations) instead [-Wdeprecated-declarations]
+ 1960 |     QOpenGLTexture texture(QImage(bgImageFileName).mirrored());
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /opt/qt6/include/QtGui/qpixmap.h:14,
+                 from /opt/qt6/include/QtGui/qicon.h:11,
+                 from /opt/qt6/include/QtGui/qabstractfileiconprovider.h:11,
+                 from /opt/qt6/include/QtGui/QtGui:5,
+                 from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/glwidget.cpp:41:
+/opt/qt6/include/QtGui/qimage.h:224:26: note: declared here
+  224 |     [[nodiscard]] QImage mirrored(bool horizontally = false, bool vertically = true) &&
+      |                          ^~~~~~~~
+[ 50%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/main.cpp.o
+[ 50%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/MeshIO.F90.o
+[ 50%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/mainwindow.cpp.o
+[ 51%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/MortarUtils.F90.o
+[ 51%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/materiallibrary.cpp.o
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp: In member function ‘bool MainWindow::saveProject(QString)’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp:2155:19: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+ 2155 |   projectFile.open(QIODevice::WriteOnly);
+      |   ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/qt6/include/QtCore/qdir.h:11,
+                 from /opt/qt6/include/QtCore/QDir:1,
+                 from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp:43:
+/opt/qt6/include/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp: In member function ‘void MainWindow::loadProject(QString)’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp:2277:31: warning: ‘bool QDomDocument::setContent(QIODevice*, bool, QString*, int*, int*)’ is deprecated: Use the overload taking ParseOptions instead. [-Wdeprecated-declarations]
+ 2277 |     if (!projectDoc.setContent(&projectFile, true, &errStr, &errRow, &errCol)) {
+      |          ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/qt6/include/QtXml/QDomDocument:1,
+                 from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.h:44,
+                 from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp:59:
+/opt/qt6/include/QtXml/qdom.h:400:10: note: declared here
+  400 |     bool setContent(QIODevice *dev, bool namespaceProcessing, QString *errorMsg = nullptr, int *errorLine = nullptr, int *errorColumn = nullptr);
+      |          ^~~~~~~~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp: In member function ‘void MainWindow::saveElmerMesh(QString)’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp:2782:12: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+ 2782 |   file.open(QIODevice::WriteOnly);
+      |   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/opt/qt6/include/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp:2794:12: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+ 2794 |   file.open(QIODevice::WriteOnly);
+      |   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/opt/qt6/include/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp: In member function ‘void MainWindow::meshUnifierFinishedSlot(int)’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp:6799:12: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+ 6799 |   file.open(QIODevice::ReadOnly);
+      |   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/opt/qt6/include/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp: In member function ‘void MainWindow::resultsSlot()’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp:7122:12: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+ 7122 |   file.open(QIODevice::ReadOnly);
+      |   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/opt/qt6/include/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp: In member function ‘void MainWindow::loadDefinitions()’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp:7572:31: warning: ‘bool QDomDocument::setContent(QIODevice*, bool, QString*, int*, int*)’ is deprecated: Use the overload taking ParseOptions instead. [-Wdeprecated-declarations]
+ 7572 |     if (!elmerDefs->setContent(&file, true, &errStr, &errRow, &errCol)) {
+      |          ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/qt6/include/QtXml/qdom.h:400:10: note: declared here
+  400 |     bool setContent(QIODevice *dev, bool namespaceProcessing, QString *errorMsg = nullptr, int *errorLine = nullptr, int *errorColumn = nullptr);
+      |          ^~~~~~~~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp:7642:29: warning: ‘bool QDomDocument::setContent(QIODevice*, bool, QString*, int*, int*)’ is deprecated: Use the overload taking ParseOptions instead. [-Wdeprecated-declarations]
+ 7642 |       if (!tmpDoc.setContent(&file, true, &errStr, &errRow, &errCol)) {
+      |            ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/qt6/include/QtXml/qdom.h:400:10: note: declared here
+  400 |     bool setContent(QIODevice *dev, bool namespaceProcessing, QString *errorMsg = nullptr, int *errorLine = nullptr, int *errorColumn = nullptr);
+      |          ^~~~~~~~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/mainwindow.cpp:7696:17: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+ 7696 |     qssFile.open(QFile::ReadOnly);
+      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/opt/qt6/include/QtCore/qfile.h:271:32: note: declared here
+  271 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/materiallibrary.cpp: In member function ‘void MaterialLibrary::appendDocument(QString)’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/materiallibrary.cpp:239:31: warning: ‘bool QDomDocument::setContent(QIODevice*, bool, QString*, int*, int*)’ is deprecated: Use the overload taking ParseOptions instead. [-Wdeprecated-declarations]
+  239 |     if(!materialDoc.setContent(&materialFile, true, &errStr, &errRow, &errCol)) {
+      |         ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/qt6/include/QtXml/QDomDocument:1,
+                 from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/materiallibrary.h:45,
+                 from /home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/materiallibrary.cpp:43:
+/opt/qt6/include/QtXml/qdom.h:400:10: note: declared here
+  400 |     bool setContent(QIODevice *dev, bool namespaceProcessing, QString *errorMsg = nullptr, int *errorLine = nullptr, int *errorColumn = nullptr);
+      |          ^~~~~~~~~~
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/materiallibrary.cpp: In member function ‘void MaterialLibrary::appendFileToComboBox(QString)’:
+/home/fusion809/lfs_packaging/elmerfem-git/elmerfem-56b16bd49564d5b16fdc57862ccda024043b0f39/ElmerGUI/Application/src/materiallibrary.cpp:303:23: warning: ‘bool QDomDocument::setContent(QIODevice*, bool, QString*, int*, int*)’ is deprecated: Use the overload taking ParseOptions instead. [-Wdeprecated-declarations]
+  303 |     if(!doc.setContent(&materialFile, true, &errStr, &errRow, &errCol)) {
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/qt6/include/QtXml/qdom.h:400:10: note: declared here
+  400 |     bool setContent(QIODevice *dev, bool namespaceProcessing, QString *errorMsg = nullptr, int *errorLine = nullptr, int *errorColumn = nullptr);
+      |          ^~~~~~~~~~
+[ 51%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/maxlimits.cpp.o
+[ 51%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/meshcontrol.cpp.o
+[ 51%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/meshingthread.cpp.o
+[ 52%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/meshtype.cpp.o
+[ 52%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/meshutils.cpp.o
+[ 52%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/MeshBasics.F90.o
+[ 52%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/operation.cpp.o
+[ 52%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/parallel.cpp.o
+[ 52%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/projectio.cpp.o
+[ 52%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/sifgenerator.cpp.o
+[ 52%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/MeshGraph.F90.o
+[ 52%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/sifwindow.cpp.o
+[ 52%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/MeshSplit.F90.o
+[ 52%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/MeshTagging.F90.o
+[ 52%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/MeshTransform.F90.o
+[ 52%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/solverparameters.cpp.o
+[ 52%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/PElementVisual.F90.o
+[ 52%] Building CXX object ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/src/summaryeditor.cpp.o
+[ 52%] Building Fortran object fem/src/CMakeFiles/elmersolver.dir/ViewUtils.F90.o

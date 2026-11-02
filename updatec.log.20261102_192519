@@ -1,0 +1,567 @@
+===== Update check started: 2026-11-02 19:25:19 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261102_192519
+Packages needing attention: expat
+===== Starting updatec: 2026-11-02 19:25:23 AEST =====
+Checking for packages with missing file inventories...
+name=expat
+local_ver=2.9.0
+remote_ver=2.10.0
+name=nodejs-bin
+local_ver=26.13.0
+remote_ver=2026.10.28
+name=portaudio
+local_ver=19.7.0
+remote_ver=190600.20161030
+name=povray
+local_ver=3.7.0.10
+remote_ver=3.8.0
+name=prrte
+local_ver=3.0.14
+remote_ver=4.1.0
+name=pugixml
+local_ver=1.16
+remote_ver=2013
+name=reshiki
+local_ver=0.13.1
+remote_ver=0.13.1.1
+name=scalapack
+local_ver=2.2.3
+remote_ver=41
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - expat
+  - nodejs-bin
+  - portaudio
+  - povray
+  - prrte
+  - pugixml
+  - reshiki
+  - scalapack
+  - spectacle
+
+Building custom package expat...
+[19:27:31] Found custom package for expat, bypassing BLFS aliases.
+[19:27:31] Custom package detected at /home/fusion809/lfs_packaging/expat (package: expat)
+[19:27:31] Extracting dependencies for custom package 'expat'...
+[19:27:31] Required deps: coreutils gcc glibc make tar xz 
+[19:27:31] Dependency 'coreutils' already installed.
+[19:27:31] Dependency 'gcc' already installed.
+[19:27:31] Dependency 'glibc' already installed.
+[19:27:31] Dependency 'make' already installed.
+[19:27:31] Dependency 'tar' already installed.
+[19:27:31] Dependency 'xz' already installed.
+[19:27:31] Starting remote custom build for expat...
+--2026-11-02 19:27:47--  https://github.com/libexpat/libexpat/archive/R_2_10_0.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/libexpat/libexpat/tar.gz/refs/tags/R_2_10_0 [following]
+--2026-11-02 19:27:48--  https://codeload.github.com/libexpat/libexpat/tar.gz/refs/tags/R_2_10_0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘expat-2.10.0.tar.xz’
+
+expat-2.10.0.tar.xz     [<=>                 ]       0  --.-KB/s               expat-2.10.0.tar.xz     [ <=>                ] 257.33K   696KB/s               expat-2.10.0.tar.xz     [  <=>               ]   1.11M  1.96MB/s               expat-2.10.0.tar.xz     [   <=>              ]   2.26M  2.92MB/s               expat-2.10.0.tar.xz     [    <=>             ]   2.76M  2.68MB/s               expat-2.10.0.tar.xz     [     <=>            ]   4.00M  3.21MB/s               expat-2.10.0.tar.xz     [      <=>           ]   5.00M  3.39MB/s               expat-2.10.0.tar.xz     [       <=>          ]   6.42M  3.83MB/s               expat-2.10.0.tar.xz     [        <=>         ]   7.93M  4.23MB/s               expat-2.10.0.tar.xz     [         <=>        ]   8.10M  4.28MB/s    in 1.9s    
+
+2026-11-02 19:27:51 (4.28 MB/s) - ‘expat-2.10.0.tar.xz’ saved [8498836]
+
+pwd=/home/fusion809/lfs_packaging/expat/libexpat-R_2_10_0/expat
+-- The C compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - found
+-- Looking for fcntl.h
+-- Looking for fcntl.h - found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for memory.h
+-- Looking for memory.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stdlib.h
+-- Looking for stdlib.h - found
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for sys/stat.h
+-- Looking for sys/stat.h - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Looking for getpagesize
+-- Looking for getpagesize - not found
+-- Looking for mmap
+-- Looking for mmap - found
+-- Looking for getrandom
+-- Looking for getrandom - found
+-- Performing Test HAVE_ARC4RANDOM_BUF
+-- Performing Test HAVE_ARC4RANDOM_BUF - Success
+-- Performing Test HAVE_ARC4RANDOM
+-- Performing Test HAVE_ARC4RANDOM - Success
+-- Looking for 4 include files stdlib.h, ..., float.h
+-- Looking for 4 include files stdlib.h, ..., float.h - found
+-- Performing Test HAVE_OFF_T
+-- Performing Test HAVE_OFF_T - Success
+-- Performing Test HAVE_GETENTROPY
+-- Performing Test HAVE_GETENTROPY - Success
+-- Performing Test HAVE_SYSCALL_GETRANDOM
+-- Performing Test HAVE_SYSCALL_GETRANDOM - Success
+-- Performing Test _FLAG_DETECTION_UNUSABLE
+-- Performing Test _FLAG_DETECTION_UNUSABLE - Failed
+-- Performing Test FLAG_WSTRICT_ALIASING
+-- Performing Test FLAG_WSTRICT_ALIASING - Success
+-- Performing Test FLAG_WIMPLICIT_FALLTHROUGH
+-- Performing Test FLAG_WIMPLICIT_FALLTHROUGH - Success
+-- Performing Test FLAG_VISIBILITY
+-- Performing Test FLAG_VISIBILITY - Success
+-- Looking for cos in m
+-- Looking for cos in m - found
+-- ===========================================================================
+-- 
+-- CMake version in use ......... 4.4.5
+-- 
+-- Configuration
+--   Generator .................. Unix Makefiles
+--   Build type ................. NoConfig
+--   Prefix ..................... /usr
+--   Shared libraries ........... ON
+--   Character type ............. char (UTF-8)
+--   Library name postfix ....... 
+-- 
+--   Build documentation ........ OFF
+--   Build examples ............. ON
+--   Build fuzzers .............. OFF
+--   Build tests ................ ON
+--   Build tools (xmlwf) ........ ON
+--   Build pkg-config file ...... ON
+--   Install files .............. ON
+-- 
+--   Features
+--     // Advanced options, changes not advised
+--     Context bytes ............ 1024
+--     DTD support .............. ON
+--     General entities ......... ON
+--     Large size ............... OFF
+--     Namespace support ........ ON
+-- 
+--   Entropy sources
+--     arc4random ............... 1
+--     arc4random_buf ........... 1
+--     getentropy ............... 1
+--     getrandom ................ 1
+--     syscall SYS_getrandom .... 1
+--     /dev/urandom ............. OFF
+-- 
+-- Continue with
+--   make
+--   make test
+--   sudo make install
+-- 
+-- ===========================================================================
+-- Configuring done (3.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/expat/libexpat-R_2_10_0/expat/build
+[  2%] Building C object CMakeFiles/runtests.dir/tests/acc_tests.c.o
+[  4%] Building C object CMakeFiles/runtests.dir/tests/alloc_tests.c.o
+[  6%] Building C object CMakeFiles/expat.dir/lib/xcs.c.o
+[  8%] Building C object CMakeFiles/expat.dir/lib/xmlparse.c.o
+[ 10%] Building C object CMakeFiles/runtests.dir/tests/basic_tests.c.o
+[ 12%] Building C object CMakeFiles/runtests.dir/tests/chardata.c.o
+[ 14%] Building C object CMakeFiles/expat.dir/lib/xmlrole.c.o
+[ 16%] Building C object CMakeFiles/expat.dir/lib/xmltok.c.o
+[ 18%] Building C object CMakeFiles/runtests.dir/tests/common.c.o
+[ 20%] Building C object CMakeFiles/runtests.dir/tests/dummy.c.o
+[ 22%] Building C object CMakeFiles/runtests.dir/tests/handlers.c.o
+[ 24%] Building C object CMakeFiles/expat.dir/lib/random_arc4random.c.o
+[ 26%] Building C object CMakeFiles/expat.dir/lib/random_arc4random_buf.c.o
+[ 28%] Building C object CMakeFiles/runtests.dir/tests/hash_tests.c.o
+[ 30%] Building C object CMakeFiles/expat.dir/lib/random_getentropy.c.o
+[ 32%] Building C object CMakeFiles/runtests.dir/tests/entities_tests.c.o
+[ 34%] Building C object CMakeFiles/runtests.dir/tests/memcheck.c.o
+[ 36%] Building C object CMakeFiles/expat.dir/lib/random_getrandom.c.o
+[ 38%] Building C object CMakeFiles/runtests.dir/tests/minicheck.c.o
+[ 40%] Building C object CMakeFiles/runtests.dir/tests/misc_tests.c.o
+[ 42%] Linking C shared library libexpat.so
+[ 42%] Built target expat
+[ 44%] Building C object CMakeFiles/runtests.dir/tests/ns_tests.c.o
+[ 46%] Building C object CMakeFiles/xmlwf.dir/lib/xcs.c.o
+[ 48%] Building C object CMakeFiles/runtests.dir/tests/nsalloc_tests.c.o
+[ 50%] Building C object CMakeFiles/xmlwf.dir/xmlwf/codepage.c.o
+[ 52%] Building C object CMakeFiles/runtests.dir/tests/props_tests.c.o
+[ 54%] Building C object CMakeFiles/xmlwf.dir/xmlwf/readfilemap.c.o
+[ 56%] Building C object CMakeFiles/runtests.dir/tests/runtests.c.o
+[ 58%] Building C object CMakeFiles/runtests.dir/tests/structdata.c.o
+[ 60%] Building C object CMakeFiles/xmlwf.dir/xmlwf/xmlfile.c.o
+[ 62%] Building C object CMakeFiles/runtests.dir/tests/xcs_tests.c.o
+[ 64%] Building C object CMakeFiles/runtests.dir/lib/xcs.c.o
+[ 66%] Building C object CMakeFiles/xmlwf.dir/xmlwf/xmlwf.c.o
+[ 68%] Building C object CMakeFiles/runtests.dir/lib/xmlparse.c.o
+[ 70%] Building C object CMakeFiles/element_declarations.dir/examples/element_declarations.c.o
+[ 72%] Linking C executable examples/element_declarations
+[ 74%] Linking C executable xmlwf/xmlwf
+[ 74%] Built target element_declarations
+[ 74%] Built target xmlwf
+[ 76%] Building C object CMakeFiles/elements.dir/examples/elements.c.o
+[ 78%] Linking C executable examples/elements
+[ 80%] Building C object CMakeFiles/outline.dir/examples/outline.c.o
+[ 80%] Built target elements
+[ 82%] Linking C executable examples/outline
+[ 84%] Building C object CMakeFiles/benchmark.dir/tests/benchmark/benchmark.c.o
+[ 84%] Built target outline
+[ 86%] Linking C executable tests/benchmark/benchmark
+[ 88%] Building C object CMakeFiles/runtests.dir/lib/xmlrole.c.o
+[ 88%] Built target benchmark
+[ 90%] Building C object CMakeFiles/runtests.dir/lib/xmltok.c.o
+[ 92%] Building C object CMakeFiles/runtests.dir/lib/random_arc4random.c.o
+[ 94%] Building C object CMakeFiles/runtests.dir/lib/random_arc4random_buf.c.o
+[ 96%] Building C object CMakeFiles/runtests.dir/lib/random_getentropy.c.o
+[ 98%] Building C object CMakeFiles/runtests.dir/lib/random_getrandom.c.o
+[100%] Linking C executable tests/runtests
+[100%] Built target runtests
+[ 18%] Built target expat
+[ 30%] Built target xmlwf
+[ 34%] Built target element_declarations
+[ 38%] Built target elements
+[ 42%] Built target outline
+[ 44%] Linking C executable tests/runtests
+[ 96%] Built target runtests
+[100%] Built target benchmark
+Install the project...
+-- Install configuration: "NoConfig"
+-- Installing: /usr/include/expat_config.h
+-- Installing: /usr/lib/libexpat.so.1.13.1
+-- Installing: /usr/lib/libexpat.so.1
+-- Up-to-date: /usr/lib/libexpat.so
+-- Installing: /usr/include/expat.h
+-- Installing: /usr/include/expat_external.h
+-- Installing: /usr/lib/pkgconfig/expat.pc
+-- Installing: /usr/bin/xmlwf
+-- Set non-toolchain portion of runtime path of "/usr/bin/xmlwf" to ""
+-- Installing: /usr/share/doc/expat/AUTHORS
+-- Installing: /usr/share/doc/expat/changelog
+-- Installing: /usr/lib/cmake/expat-2.10.0/expat-config.cmake
+-- Installing: /usr/lib/cmake/expat-2.10.0/expat-config-version.cmake
+-- Installing: /usr/lib/cmake/expat-2.10.0/expat.cmake
+-- Installing: /usr/lib/cmake/expat-2.10.0/expat-noconfig.cmake
+'doc/reference.html' -> '/usr/share/doc/expat-2.10.0/reference.html'
+'doc/ok.min.css' -> '/usr/share/doc/expat-2.10.0/ok.min.css'
+'doc/style.css' -> '/usr/share/doc/expat-2.10.0/style.css'
+2.10.0
+Updated registry for expat to version 2.10.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package expat in /var/lib/custom-packages/
+Building custom package nodejs-bin...
+[19:28:04] Found custom package for nodejs-bin, bypassing BLFS aliases.
+[19:28:04] Custom package detected at /home/fusion809/lfs_packaging/nodejs-bin (package: nodejs-bin)
+[19:28:04] Checking conflicting package(s) for 'nodejs-bin': nodejs 
+[19:28:04] Extracting dependencies for custom package 'nodejs-bin'...
+[19:28:04] Required deps: gcc glibc 
+[19:28:04] Dependency 'gcc' already installed.
+[19:28:04] Dependency 'glibc' already installed.
+[19:28:04] Starting remote custom build for nodejs-bin...
+[19:28:06] [LFS-AUTOBUILD] Skipping custom package nodejs-bin: version 26.13.0 already installed (use -f to force build).
+Building custom package portaudio...
+[19:28:06] Found custom package for portaudio, bypassing BLFS aliases.
+[19:28:06] Custom package detected at /home/fusion809/lfs_packaging/portaudio (package: portaudio)
+[19:28:06] Extracting dependencies for custom package 'portaudio'...
+[19:28:06] Required deps: alsa-lib autoconf bash cmake coreutils gcc glibc gzip jack-git make opus sed tar wget 
+[19:28:06] Dependency 'alsa-lib' already installed.
+[19:28:06] Dependency 'autoconf' already installed.
+[19:28:06] Dependency 'bash' already installed.
+[19:28:06] Dependency 'cmake' already installed.
+[19:28:06] Dependency 'coreutils' already installed.
+[19:28:06] Dependency 'gcc' already installed.
+[19:28:06] Dependency 'glibc' already installed.
+[19:28:06] Dependency 'gzip' already installed.
+[19:28:06] Dependency 'jack-git' already installed.
+[19:28:06] Dependency 'make' already installed.
+[19:28:06] Dependency 'opus' already installed.
+[19:28:06] Dependency 'sed' already installed.
+[19:28:06] Dependency 'tar' already installed.
+[19:28:06] Dependency 'wget' already installed.
+[19:28:06] Starting remote custom build for portaudio...
+[19:28:07] [LFS-AUTOBUILD] Skipping custom package portaudio: version 19.7.0 already installed (use -f to force build).
+Building custom package povray...
+[19:28:07] Found custom package for povray, bypassing BLFS aliases.
+[19:28:07] Custom package detected at /home/fusion809/lfs_packaging/povray (package: povray)
+[19:28:07] Extracting dependencies for custom package 'povray'...
+[19:28:07] Required deps: boost imath libpng openexr tiff 
+[19:28:07] Dependency 'boost' already installed.
+[19:28:07] Dependency 'imath' already installed.
+[19:28:07] Dependency 'libpng' already installed.
+[19:28:07] Dependency 'openexr' already installed.
+[19:28:07] Dependency 'tiff' already installed.
+[19:28:07] Starting remote custom build for povray...
+[19:28:08] [LFS-AUTOBUILD] Skipping custom package povray: version 3.7.0.10 already installed (use -f to force build).
+Building custom package prrte...
+[19:28:08] Found custom package for prrte, bypassing BLFS aliases.
+[19:28:08] Custom package detected at /home/fusion809/lfs_packaging/prrte (package: prrte)
+[19:28:08] Extracting dependencies for custom package 'prrte'...
+[19:28:08] Required deps: bash coreutils glibc gzip hwloc libevent libnl make openpmix perl sed systemd tar wget 
+[19:28:08] Dependency 'bash' already installed.
+[19:28:08] Dependency 'coreutils' already installed.
+[19:28:08] Dependency 'glibc' already installed.
+[19:28:08] Dependency 'gzip' already installed.
+[19:28:08] Dependency 'hwloc' already installed.
+[19:28:08] Dependency 'libevent' already installed.
+[19:28:08] Dependency 'libnl' already installed.
+[19:28:08] Dependency 'make' already installed.
+[19:28:08] Dependency 'openpmix' already installed.
+[19:28:08] Dependency 'perl' already installed.
+[19:28:08] Dependency 'sed' already installed.
+[19:28:08] Dependency 'systemd' already installed.
+[19:28:09] Dependency 'tar' already installed.
+[19:28:09] Dependency 'wget' already installed.
+[19:28:09] Starting remote custom build for prrte...
+[19:28:10] [LFS-AUTOBUILD] Skipping custom package prrte: version 3.0.14 already installed (use -f to force build).
+Building custom package pugixml...
+[19:28:10] Found custom package for pugixml, bypassing BLFS aliases.
+[19:28:10] Custom package detected at /home/fusion809/lfs_packaging/pugixml (package: pugixml)
+[19:28:10] Extracting dependencies for custom package 'pugixml'...
+[19:28:10] Starting remote custom build for pugixml...
+[19:28:11] [LFS-AUTOBUILD] Skipping custom package pugixml: version 1.16 already installed (use -f to force build).
+Building custom package reshiki...
+[19:28:12] Found custom package for reshiki, bypassing BLFS aliases.
+[19:28:12] Custom package detected at /home/fusion809/lfs_packaging/reshiki (package: reshiki)
+[19:28:12] Extracting dependencies for custom package 'reshiki'...
+[19:28:12] Required deps: acl at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz libcanberra libepoxy libffi libice libogg libpng libseccomp libselinux libsm libtool libvorbis libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres libxt ncurses pango pcre2 pixman systemd util-linux wayland zlib 
+[19:28:12] Dependency 'acl' already installed.
+[19:28:12] Dependency 'at-spi2-core' already installed.
+[19:28:12] Dependency 'brotli' already installed.
+[19:28:12] Dependency 'bzip2' already installed.
+[19:28:12] Dependency 'cairo' already installed.
+[19:28:12] Dependency 'dbus' already installed.
+[19:28:12] Dependency 'expat' already installed.
+[19:28:12] Dependency 'fontconfig' already installed.
+[19:28:12] Dependency 'freetype' already installed.
+[19:28:12] Dependency 'fribidi' already installed.
+[19:28:12] Dependency 'gcc' already installed.
+[19:28:12] Dependency 'gdk-pixbuf' already installed.
+[19:28:12] Dependency 'glib2' already installed.
+[19:28:12] Dependency 'glibc' already installed.
+[19:28:12] Dependency 'glycin' already installed.
+[19:28:12] Dependency 'graphite2' already installed.
+[19:28:12] Dependency 'gtk3' already installed.
+[19:28:12] Dependency 'harfbuzz' already installed.
+[19:28:12] Dependency 'libcanberra' already installed.
+[19:28:12] Dependency 'libepoxy' already installed.
+[19:28:12] Dependency 'libffi' already installed.
+[19:28:12] Dependency 'libice' already installed.
+[19:28:12] Dependency 'libogg' already installed.
+[19:28:12] Dependency 'libpng' already installed.
+[19:28:12] Dependency 'libseccomp' already installed.
+[19:28:12] Dependency 'libselinux' already installed.
+[19:28:12] Dependency 'libsm' already installed.
+[19:28:12] Dependency 'libtool' already installed.
+[19:28:12] Dependency 'libvorbis' already installed.
+[19:28:12] Dependency 'libx11' already installed.
+[19:28:12] Dependency 'libxau' already installed.
+[19:28:12] Dependency 'libxcb' already installed.
+[19:28:12] Dependency 'libxcomposite' already installed.
+[19:28:12] Dependency 'libxcursor' already installed.
+[19:28:12] Dependency 'libxdamage' already installed.
+[19:28:12] Dependency 'libxdmcp' already installed.
+[19:28:12] Dependency 'libxext' already installed.
+[19:28:12] Dependency 'libxfixes' already installed.
+[19:28:12] Dependency 'libxi' already installed.
+[19:28:12] Dependency 'libxinerama' already installed.
+[19:28:12] Dependency 'libxkbcommon' already installed.
+[19:28:12] Dependency 'libxrandr' already installed.
+[19:28:12] Dependency 'libxrender' already installed.
+[19:28:12] Dependency 'libxres' already installed.
+[19:28:12] Dependency 'libxt' already installed.
+[19:28:12] Dependency 'ncurses' already installed.
+[19:28:12] Dependency 'pango' already installed.
+[19:28:12] Dependency 'pcre2' already installed.
+[19:28:12] Dependency 'pixman' already installed.
+[19:28:12] Dependency 'systemd' already installed.
+[19:28:12] Dependency 'util-linux' already installed.
+[19:28:12] Dependency 'wayland' already installed.
+[19:28:12] Dependency 'zlib' already installed.
+[19:28:12] Starting remote custom build for reshiki...
+[19:28:13] [LFS-AUTOBUILD] Skipping custom package reshiki: version 0.13.1 already installed (use -f to force build).
+Building custom package scalapack...
+[19:28:13] Found custom package for scalapack, bypassing BLFS aliases.
+[19:28:13] Custom package detected at /home/fusion809/lfs_packaging/scalapack (package: scalapack)
+[19:28:13] Extracting dependencies for custom package 'scalapack'...
+[19:28:13] Starting remote custom build for scalapack...
+[19:28:15] [LFS-AUTOBUILD] Skipping custom package scalapack: version 2.2.3 already installed (use -f to force build).
+Building custom package spectacle...
+[19:28:15] Found custom package for spectacle, bypassing BLFS aliases.
+[19:28:15] Custom package detected at /home/fusion809/lfs_packaging/spectacle (package: spectacle)
+[19:28:15] Extracting dependencies for custom package 'spectacle'...
+[19:28:15] Required deps: acl attr breeze-icons brotli bzip2 curl cyrus-sasl dav1d dbus double-conversion e2fsprogs elfutils expat fdk-aac ffmpeg flac fontconfig freetype fribidi gcc giflib glib2 glibc graphite2 harfbuzz highway icu karchive kcodecs kcolorscheme kcompletion kconfig kconfigwidgets kcoreaddons kcrash kdbusaddons keyutils kglobalaccel kguiaddons ki18n kiconthemes kio kirigami kitemviews kjobwidgets knotifications kpipewire kquickimageeditor kservice kstatusnotifieritem kwidgetsaddons kwindowsystem kxmlgui lame layer-shell-qt leptonica libaom libarchive libass libcanberra libdrm libepoxy libffi libglvnd libidn2 libjpeg-turbo libogg libpciaccess libpng libpsl libsndfile libtool libunistring libva libvorbis libvpx libwebp libx11 libxau libxcb libxdmcp libxext libxfixes libxkbcommon libxml2 libxshmfence libxxf86vm llvm lm-sensors lz4 mesa mitkrb mpg123 nghttp2 numactl openblas opencv openjpeg openldap openssl opus pcre2 pipewire prison pulseaudio purpose qt6 solid spirv-tools svt-av1 systemd tesseract tiff util-linux wayland webkitgtk x264 xcb-util xcb-util-cursor xcb-util-image xcb-util-keysyms xcb-util-renderutil xdg-desktop-portal-kde xz zlib zstd zxing-cpp 
+[19:28:15] Dependency 'acl' already installed.
+[19:28:15] Dependency 'attr' already installed.
+[19:28:15] Dependency 'breeze-icons' already installed.
+[19:28:15] Dependency 'brotli' already installed.
+[19:28:15] Dependency 'bzip2' already installed.
+[19:28:15] Dependency 'curl' already installed.
+[19:28:15] Dependency 'cyrus-sasl' already installed.
+[19:28:15] Dependency 'dav1d' already installed.
+[19:28:15] Dependency 'dbus' already installed.
+[19:28:15] Dependency 'double-conversion' already installed.
+[19:28:15] Dependency 'e2fsprogs' already installed.
+[19:28:15] Dependency 'elfutils' already installed.
+[19:28:15] Dependency 'expat' already installed.
+[19:28:15] Dependency 'fdk-aac' already installed.
+[19:28:15] Dependency 'ffmpeg' already installed.
+[19:28:15] Dependency 'flac' already installed.
+[19:28:15] Dependency 'fontconfig' already installed.
+[19:28:15] Dependency 'freetype' already installed.
+[19:28:15] Dependency 'fribidi' already installed.
+[19:28:15] Dependency 'gcc' already installed.
+[19:28:15] Dependency 'giflib' already installed.
+[19:28:15] Dependency 'glib2' already installed.
+[19:28:15] Dependency 'glibc' already installed.
+[19:28:15] Dependency 'graphite2' already installed.
+[19:28:15] Dependency 'harfbuzz' already installed.
+[19:28:15] Dependency 'highway' already installed.
+[19:28:15] Dependency 'icu' already installed.
+[19:28:15] Dependency 'karchive' already installed.
+[19:28:15] Dependency 'kcodecs' already installed.
+[19:28:15] Dependency 'kcolorscheme' already installed.
+[19:28:15] Dependency 'kcompletion' already installed.
+[19:28:15] Dependency 'kconfig' already installed.
+[19:28:15] Dependency 'kconfigwidgets' already installed.
+[19:28:15] Dependency 'kcoreaddons' already installed.
+[19:28:15] Dependency 'kcrash' already installed.
+[19:28:15] Dependency 'kdbusaddons' already installed.
+[19:28:15] Dependency 'keyutils' already installed.
+[19:28:15] Dependency 'kglobalaccel' already installed.
+[19:28:15] Dependency 'kguiaddons' already installed.
+[19:28:15] Dependency 'ki18n' already installed.
+[19:28:15] Dependency 'kiconthemes' already installed.
+[19:28:15] Dependency 'kio' already installed.
+[19:28:15] Dependency 'kirigami' already installed.
+[19:28:15] Dependency 'kitemviews' already installed.
+[19:28:15] Dependency 'kjobwidgets' already installed.
+[19:28:15] Dependency 'knotifications' already installed.
+[19:28:15] Dependency 'kpipewire' already installed.
+[19:28:15] Dependency 'kquickimageeditor' already installed.
+[19:28:15] Dependency 'kservice' already installed.
+[19:28:15] Dependency 'kstatusnotifieritem' already installed.
+[19:28:15] Dependency 'kwidgetsaddons' already installed.
+[19:28:15] Dependency 'kwindowsystem' already installed.
+[19:28:15] Dependency 'kxmlgui' already installed.
+[19:28:15] Dependency 'lame' already installed.
+[19:28:15] Dependency 'layer-shell-qt' already installed.
+[19:28:15] Dependency 'leptonica' already installed.
+[19:28:15] Dependency 'libaom' already installed.
+[19:28:15] Dependency 'libarchive' already installed.
+[19:28:15] Dependency 'libass' already installed.
+[19:28:15] Dependency 'libcanberra' already installed.
+[19:28:15] Dependency 'libdrm' already installed.
+[19:28:15] Dependency 'libepoxy' already installed.
+[19:28:15] Dependency 'libffi' already installed.
+[19:28:15] Dependency 'libglvnd' already installed.
+[19:28:15] Dependency 'libidn2' already installed.
+[19:28:15] Dependency 'libjpeg-turbo' already installed.
+[19:28:15] Dependency 'libogg' already installed.
+[19:28:15] Dependency 'libpciaccess' already installed.
+[19:28:15] Dependency 'libpng' already installed.
+[19:28:15] Dependency 'libpsl' already installed.
+[19:28:15] Dependency 'libsndfile' already installed.
+[19:28:15] Dependency 'libtool' already installed.
+[19:28:15] Dependency 'libunistring' already installed.
+[19:28:15] Dependency 'libva' already installed.
+[19:28:15] Dependency 'libvorbis' already installed.
+[19:28:15] Dependency 'libvpx' already installed.
+[19:28:15] Dependency 'libwebp' already installed.
+[19:28:15] Dependency 'libx11' already installed.
+[19:28:15] Dependency 'libxau' already installed.
+[19:28:15] Dependency 'libxcb' already installed.
+[19:28:15] Dependency 'libxdmcp' already installed.
+[19:28:15] Dependency 'libxext' already installed.
+[19:28:15] Dependency 'libxfixes' already installed.
+[19:28:15] Dependency 'libxkbcommon' already installed.
+[19:28:15] Dependency 'libxml2' already installed.
+[19:28:15] Dependency 'libxshmfence' already installed.
+[19:28:15] Dependency 'libxxf86vm' already installed.
+[19:28:15] Dependency 'llvm' already installed.
+[19:28:15] Dependency 'lm-sensors' already installed.
+[19:28:15] Dependency 'lz4' already installed.
+[19:28:15] Dependency 'mesa' already installed.
+[19:28:15] Dependency 'mitkrb' already installed.
+[19:28:15] Dependency 'mpg123' already installed.
+[19:28:15] Dependency 'nghttp2' already installed.
+[19:28:15] Dependency 'numactl' already installed.
+[19:28:15] Dependency 'openblas' already installed.
+[19:28:15] Dependency 'opencv' already installed.
+[19:28:15] Dependency 'openjpeg' already installed.
+[19:28:15] Dependency 'openldap' already installed.
+[19:28:15] Dependency 'openssl' already installed.
+[19:28:15] Dependency 'opus' already installed.
+[19:28:15] Dependency 'pcre2' already installed.
+[19:28:15] Dependency 'pipewire' already installed.
+[19:28:15] Dependency 'prison' already installed.
+[19:28:15] Dependency 'pulseaudio' already installed.
+[19:28:15] Dependency 'purpose' already installed.
+[19:28:15] Dependency 'qt6' already installed.
+[19:28:15] Dependency 'solid' already installed.
+[19:28:15] Dependency 'spirv-tools' already installed.
+[19:28:15] Dependency 'svt-av1' already installed.
+[19:28:15] Dependency 'systemd' already installed.
+[19:28:15] Dependency 'tesseract' already installed.
+[19:28:15] Dependency 'tiff' already installed.
+[19:28:15] Dependency 'util-linux' already installed.
+[19:28:15] Dependency 'wayland' already installed.
+[19:28:15] Dependency 'webkitgtk' already installed.
+[19:28:15] Dependency 'x264' already installed.
+[19:28:15] Dependency 'xcb-util' already installed.
+[19:28:15] Dependency 'xcb-util-cursor' already installed.
+[19:28:15] Dependency 'xcb-util-image' already installed.
+[19:28:15] Dependency 'xcb-util-keysyms' already installed.
+[19:28:15] Dependency 'xcb-util-renderutil' already installed.
+[19:28:15] Dependency 'xdg-desktop-portal-kde' already installed.
+[19:28:15] Dependency 'xz' already installed.
+[19:28:15] Dependency 'zlib' already installed.
+[19:28:15] Dependency 'zstd' already installed.
+[19:28:15] Dependency 'zxing-cpp' already installed.
+[19:28:15] Starting remote custom build for spectacle...
+[19:28:16] [LFS-AUTOBUILD] Skipping custom package spectacle: version 6.8.2 already installed (use -f to force build).
+Updating Python packages via pip...
+Requirement already satisfied: ipython in /usr/lib/python3.15/site-packages (9.18.0)
+Collecting ipython
+  Downloading ipython-9.18.1-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: ipython-pygments-lexers>=1.0.0 in /usr/lib/python3.15/site-packages (from ipython) (1.1.1)
+Requirement already satisfied: jedi>=0.18.2 in /usr/lib/python3.15/site-packages (from ipython) (0.20.1)
+Requirement already satisfied: matplotlib-inline>=0.1.6 in /usr/lib/python3.15/site-packages (from ipython) (0.2.2)
+Requirement already satisfied: pexpect>4.6 in /usr/lib/python3.15/site-packages (from ipython) (4.9.0)
+Requirement already satisfied: prompt_toolkit<3.1.0,>=3.0.41 in /usr/lib/python3.15/site-packages (from ipython) (3.0.53)
+Requirement already satisfied: psutil>=7 in /usr/lib/python3.15/site-packages (from ipython) (7.2.2)
+Requirement already satisfied: pygments>=2.14.0 in /usr/lib/python3.15/site-packages (from ipython) (2.21.0)
+Requirement already satisfied: stack_data>=0.6.0 in /usr/lib/python3.15/site-packages (from ipython) (0.6.3)
+Requirement already satisfied: traitlets>=5.13.0 in /usr/lib/python3.15/site-packages (from ipython) (5.16.1)
+Requirement already satisfied: wcwidth>=0.1.4 in /usr/lib/python3.15/site-packages (from prompt_toolkit<3.1.0,>=3.0.41->ipython) (0.9.4)
+Requirement already satisfied: parso<0.9.0,>=0.8.7 in /usr/lib/python3.15/site-packages (from jedi>=0.18.2->ipython) (0.8.7)
+Requirement already satisfied: ptyprocess>=0.5 in /usr/lib/python3.15/site-packages (from pexpect>4.6->ipython) (0.7.0)
+Requirement already satisfied: executing>=1.2.0 in /usr/lib/python3.15/site-packages (from stack_data>=0.6.0->ipython) (2.3.0)
+Requirement already satisfied: asttokens>=2.1.0 in /usr/lib/python3.15/site-packages (from stack_data>=0.6.0->ipython) (3.0.2)
+Requirement already satisfied: pure-eval in /usr/lib/python3.15/site-packages (from stack_data>=0.6.0->ipython) (0.2.4)
+Downloading ipython-9.18.1-py3-none-any.whl (649 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 649.8/649.8 kB 5.2 MB/s  0:00:00
+Installing collected packages: ipython
+  Attempting uninstall: ipython
+    Found existing installation: ipython 9.18.0
+    Uninstalling ipython-9.18.0:
+      Successfully uninstalled ipython-9.18.0
+Successfully installed ipython-9.18.1
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: expat: 2.9.0->2.10.0.
+[master acafb8b] expat: 2.9.0->2.10.0.
+ 1 file changed, 22 insertions(+), 22 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+/home/fusion809/lfs-scripts/updates_check_and_run.sh: line 163: 1140769 Killed                     zsh -ic 'updatec'
+===== ERROR: updatec exited with status 137 =====
+Finished: 2026-11-02 19:28:55 AEST
+Exit status: 137
