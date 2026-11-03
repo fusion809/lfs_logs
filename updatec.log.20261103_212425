@@ -1,0 +1,232 @@
+===== Update check started: 2026-11-03 21:24:25 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261103_212425
+Packages needing attention: chemcanvas-git hwdata
+===== Starting updatec: 2026-11-03 21:24:33 AEST =====
+Checking for packages with missing file inventories...
+name=chemcanvas-git
+local_ver=87a7d50
+remote_ver=7393a5b
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - chemcanvas-git
+  - hwdata
+
+Building custom package chemcanvas-git...
+[21:26:42] Found custom package for chemcanvas-git, bypassing BLFS aliases.
+[21:26:42] Custom package detected at /home/fusion809/lfs_packaging/chemcanvas-git (package: chemcanvas-git)
+[21:26:42] Extracting dependencies for custom package 'chemcanvas-git'...
+[21:26:42] Required deps: pyqt6 python 
+[21:26:43] Dependency 'pyqt6' already installed.
+[21:26:43] Dependency 'python' already installed.
+[21:26:43] Starting remote custom build for chemcanvas-git...
+--2026-11-03 21:27:04--  https://github.com/ksharindam/chemcanvas/archive/7393a5bf2118889529de17eafec930ee62c53304.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/ksharindam/chemcanvas/tar.gz/7393a5bf2118889529de17eafec930ee62c53304 [following]
+--2026-11-03 21:27:04--  https://codeload.github.com/ksharindam/chemcanvas/tar.gz/7393a5bf2118889529de17eafec930ee62c53304
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘chemcanvas-7393a5bf2118889529de17eafec930ee62c53304.tar.gz’
+
+          chemcanva     [<=>                 ]       0  --.-KB/s                        chemcanvas     [ <=>                ] 255.99K  1.09MB/s               chemcanvas-7393a5bf     [  <=>               ] 408.90K  1.21MB/s    in 0.3s    
+
+2026-11-03 21:27:05 (1.21 MB/s) - ‘chemcanvas-7393a5bf2118889529de17eafec930ee62c53304.tar.gz’ saved [418713]
+
+Processing ./.
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: chemcanvas
+  Building wheel for chemcanvas (pyproject.toml): started
+  Building wheel for chemcanvas (pyproject.toml): finished with status 'done'
+  /usr/lib/python3.15/site-packages/setuptools/command/build_py.py:215: BuildBackendWarning: Package 'chemcanvas.templates' is absent from the `packages` configuration.
+  !!
+  
+          ********************************************************************************
+          ############################
+          # Package would be ignored #
+          ############################
+          Python recognizes 'chemcanvas.templates' as an importable package[^1],
+          but it is absent from setuptools' `packages` configuration.
+  
+          This leads to an ambiguous overall configuration. If you want to distribute this
+          package, please make sure that 'chemcanvas.templates' is explicitly added
+          to the `packages` configuration field.
+  
+          Alternatively, you can also rely on setuptools' discovery methods
+          (for example by using `find_namespace_packages(...)`/`find_namespace:`
+          instead of `find_packages(...)`/`find:`).
+  
+          You can read more about "package discovery" on setuptools documentation page:
+  
+          - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+  
+          If you don't want 'chemcanvas.templates' to be distributed and are
+          already explicitly excluding 'chemcanvas.templates' via
+          `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+          you can try to use `exclude_package_data`, or `include-package-data=False` in
+          combination with a more fine grained `package-data` configuration.
+  
+          You can read more about "package data files" on setuptools documentation page:
+  
+          - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+  
+  
+          [^1]: For Python, any directory (with suitable naming) can be imported,
+                even if it does not contain any `.py` files.
+                On the other hand, currently there is no concept of package data
+                directory, all directories are treated like packages.
+          ********************************************************************************
+  
+  !!
+    check.warn(importable)
+  Created wheel for chemcanvas: filename=chemcanvas-0.15.2-py3-none-any.whl size=344493 sha256=19de07b662471c12591a9b78f8d5f1537d49305524d994998853b148688c43b3
+  Stored in directory: /tmp/pip-ephem-wheel-cache-p3zr3482/wheels/0d/c6/1a/0231e3d38abbed84d7519d58e85e52bd84a5e58fc740a74775
+Successfully built chemcanvas
+Installing collected packages: chemcanvas
+Successfully installed chemcanvas-0.15.2
+#!/bin/bash
+export PATH=$PATH:/opt/chemcanvas-qt6/bin
+export LD_LIBRARY_PATH=$PATH:/opt/chemcanvas-qt6/lib
+export PYTHONPATH=/opt/chemcanvas-qt6/lib/python3.15/site-packages/chemcanvas:/opt/chemcanvas-qt6/lib/python3.15/site-packages
+export QT_QPA_PLATFORM_PLUGIN_PATH=/opt/qt6/plugins/platforms
+/opt/chemcanvas-qt6/bin/chemcanvas "$@"
+[Desktop Entry]
+Type=Application
+Name=ChemCanvas Qt6
+Comment=A 2D Chemical Drawing Tool
+Exec=/usr/bin/chemcanvas-qt6 %f
+TryExec=/usr/bin/chemcanvas-qt6
+Icon=chemcanvas
+Categories=Science;Education;Chemistry;
+StartupWMClass=chemcanvas
+MimeType=application/vnd.ksharindam.ccdx+xml;image/svg+xml;application/vnd.chemdraw+xml;chemical/x-chemaxon-marvinfile;chemical/x-mdl-molfile;chemical/x-mdl-sdfile;chemical/x-daylight-smiles;
+Terminal=false
+StartupNotify=false
+7393a5bf2118889529de17eafec930ee62c53304
+Updated registry for chemcanvas-git to version 7393a5bf2118889529de17eafec930ee62c53304
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package chemcanvas-git in /var/lib/custom-packages/
+Building custom package hwdata...
+[21:27:23] Found custom package for hwdata, bypassing BLFS aliases.
+[21:27:23] Custom package detected at /home/fusion809/lfs_packaging/hwdata (package: hwdata)
+[21:27:23] Extracting dependencies for custom package 'hwdata'...
+[21:27:23] Starting remote custom build for hwdata...
+--2026-11-03 21:27:30--  https://github.com/vcrhonek/hwdata/archive/v0.413.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/vcrhonek/hwdata/tar.gz/refs/tags/v0.413 [following]
+--2026-11-03 21:27:30--  https://codeload.github.com/vcrhonek/hwdata/tar.gz/refs/tags/v0.413
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘hwdata-0.413.tar.gz’
+
+hwdata-0.413.tar.gz     [<=>                 ]       0  --.-KB/s               hwdata-0.413.tar.gz     [ <=>                ] 754.98K  3.67MB/s               hwdata-0.413.tar.gz     [  <=>               ]   2.54M  6.74MB/s    in 0.4s    
+
+2026-11-03 21:27:31 (6.74 MB/s) - ‘hwdata-0.413.tar.gz’ saved [2668896]
+
+configure found
+make: Warning: File 'Makefile.inc' has modification time 0.13 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Warning: File 'Makefile.inc' has modification time 0.014 s in the future
+datadir="/usr/share"; \
+if [ "${datadir#/usr}" != "$datadir" ]; then \
+	datadir="\${prefix}${datadir#/usr}"; \
+fi; \
+sed -e 's|@prefix@|/usr|g' \
+	-e "s|@datadir@|$datadir|g" \
+	-e 's|@pkgdatadir@|${datadir}/hwdata|g' \
+	-e 's|@VERSION@|0.413|g' \
+	-e 's|@NAME@|hwdata|g' \
+	hwdata.pc.in > hwdata.pc
+mkdir -p -m 755 /usr/share/hwdata
+for foo in pci.ids usb.ids oui.txt iab.txt pnp.ids ; do \
+	install -m 644 $foo /usr/share/hwdata ;\
+done
+mkdir -p -m 755 /usr/share/pkgconfig
+install -m 644 hwdata.pc /usr/share/pkgconfig/
+make: warning:  Clock skew detected.  Your build may be incomplete.
+0.413
+Updated registry for hwdata to version 0.413
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package hwdata in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master f1b28e7] Updating packages
+ 2 files changed, 18 insertions(+), 41 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master 32be3f7] Updating packages
+ 2 files changed, 2 insertions(+)
+Pushing changes in ~/build_duration...
+r13.1-35
+r13.1-547
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libexpat.so.1.13.0
+cand_sobase=libexpat.so
+search_base=libexpat
+replacement_found=true
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libexpat.so.1.13.0
+Path: /usr/lib/libexpat.so.1.13.0
+Skipping generic/unsafe name 'libexpat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libexpat.so.1 libexpat.so.1.13.0
+Example dependents: ./miniconda3/bin/dbus-daemon ./miniconda3/bin/xmlwf ./miniconda3/libexec/dbus-daemon-launch-helper ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libexpat.so.1.13.0:
+  - ./miniconda3/bin/dbus-daemon
+  - ./miniconda3/bin/xmlwf
+  - ./miniconda3/libexec/dbus-daemon-launch-helper
+  - ./miniconda3/lib/python3.14/lib-dynload/pyexpat.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libexpat.so.1.13.0.
+------------------------------------------------
+Checking obsolete version (file): libnghttp2.so.14.29.5
+Path: /usr/lib/libnghttp2.so.14.29.5
+Skipping generic/unsafe name 'libnghttp2.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libnghttp2.so.14 libnghttp2.so.14.29.5
+Example dependents: ./miniconda3/bin/nghttp ./miniconda3/bin/nghttpd ./miniconda3/bin/nghttpx ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libnghttp2.so.14.29.5:
+  - ./miniconda3/bin/nghttp
+  - ./miniconda3/bin/nghttpd
+  - ./miniconda3/bin/nghttpx
+  - ./miniconda3/lib/libcurl.so.4.8.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libnghttp2.so.14.29.5.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
