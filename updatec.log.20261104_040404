@@ -1,0 +1,2118 @@
+===== Update check started: 2026-11-04 04:04:04 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261104_040404
+Packages needing attention: woxi-git
+===== Starting updatec: 2026-11-04 04:04:08 AEST =====
+Checking for packages with missing file inventories...
+name=sdl3
+local_ver=3.4.18
+remote_ver=3.4.20
+name=tcl
+local_ver=9.1.0
+remote_ver=64
+name=vamp-plugin-sdk
+local_ver=2.10
+remote_ver=2.10.0
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - sdl3
+  - tcl
+  - vamp-plugin-sdk
+  - woxi-git
+
+Building custom package sdl3...
+[04:06:13] Found custom package for sdl3, bypassing BLFS aliases.
+[04:06:13] Custom package detected at /home/fusion809/lfs_packaging/sdl3 (package: sdl3)
+[04:06:13] Extracting dependencies for custom package 'sdl3'...
+[04:06:13] Required deps: glibc 
+[04:06:13] Dependency 'glibc' already installed.
+[04:06:13] Starting remote custom build for sdl3...
+--2026-11-04 04:06:45--  https://www.libsdl.org/release/SDL3-3.4.20.tar.gz
+Resolving www.libsdl.org (www.libsdl.org)... 135.181.166.85, 2a01:4f9:3a:1de0::3
+Connecting to www.libsdl.org (www.libsdl.org)|135.181.166.85|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15656494 (15M) [application/x-gzip]
+Saving to: ‘SDL3-3.4.20.tar.gz’
+
+SDL3-3.4.20.tar.gz    0%[                    ]       0  --.-KB/s               SDL3-3.4.20.tar.gz    0%[                    ]  15.47K  47.3KB/s               SDL3-3.4.20.tar.gz    0%[                    ]  46.72K  70.7KB/s               SDL3-3.4.20.tar.gz    0%[                    ] 109.22K   110KB/s               SDL3-3.4.20.tar.gz    1%[                    ] 234.22K   176KB/s               SDL3-3.4.20.tar.gz    2%[                    ] 437.35K   263KB/s               SDL3-3.4.20.tar.gz    5%[>                   ] 882.66K   441KB/s               SDL3-3.4.20.tar.gz   11%[=>                  ]   1.73M   761KB/s               SDL3-3.4.20.tar.gz   20%[===>                ]   3.07M  1.08MB/s               SDL3-3.4.20.tar.gz   31%[=====>              ]   4.68M  1.50MB/s    eta 7s     SDL3-3.4.20.tar.gz   40%[=======>            ]   6.10M  1.83MB/s    eta 7s     SDL3-3.4.20.tar.gz   46%[========>           ]   6.90M  1.84MB/s    eta 7s     SDL3-3.4.20.tar.gz   62%[===========>        ]   9.26M  2.32MB/s    eta 7s     SDL3-3.4.20.tar.gz   67%[============>       ]  10.04M  2.39MB/s    eta 2s     SDL3-3.4.20.tar.gz   69%[============>       ]  10.40M  2.27MB/s    eta 2s     SDL3-3.4.20.tar.gz   82%[===============>    ]  12.34M  2.55MB/s    eta 2s     SDL3-3.4.20.tar.gz   89%[================>   ]  13.42M  2.66MB/s    eta 2s     SDL3-3.4.20.tar.gz   93%[=================>  ]  13.90M  2.64MB/s    eta 0s     SDL3-3.4.20.tar.gz   97%[==================> ]  14.60M  2.65MB/s    eta 0s     SDL3-3.4.20.tar.gz  100%[===================>]  14.93M  2.69MB/s    in 5.6s    
+
+2026-11-04 04:06:52 (2.69 MB/s) - ‘SDL3-3.4.20.tar.gz’ saved [15656494/15656494]
+
+Getting and applying SDL3-3.4.18-upstream_fixes-1.patch
+--2026-11-04 04:06:55--  https://www.linuxfromscratch.org/patches/lfs/development/SDL3-3.4.18-upstream_fixes-1.patch
+Resolving www.linuxfromscratch.org (www.linuxfromscratch.org)... 208.118.68.85
+Connecting to www.linuxfromscratch.org (www.linuxfromscratch.org)|208.118.68.85|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-04 04:06:55 ERROR 404: Not Found.
+
+--2026-11-04 04:06:55--  https://www.linuxfromscratch.org/patches/blfs/svn/SDL3-3.4.18-upstream_fixes-1.patch
+Resolving www.linuxfromscratch.org (www.linuxfromscratch.org)... 208.118.68.85
+Connecting to www.linuxfromscratch.org (www.linuxfromscratch.org)|208.118.68.85|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2154 (2.1K)
+Saving to: ‘SDL3-3.4.18-upstream_fixes-1.patch’
+
+          SDL3-3.4.   0%[                    ]       0  --.-KB/s               SDL3-3.4.18-upstrea 100%[===================>]   2.10K  --.-KB/s    in 0s      
+
+2026-11-04 04:06:56 (1.42 GB/s) - ‘SDL3-3.4.18-upstream_fixes-1.patch’ saved [2154/2154]
+
+patching file src/core/unix/SDL_gtk.c
+-- The C compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.10")
+-- Detecting Target CPU Architecture
+-- Detecting Target CPU Architecture - X64
+-- Performing Test HAVE_GCC_WALL
+-- Performing Test HAVE_GCC_WALL - Success
+-- Performing Test HAVE_GCC_WUNDEF
+-- Performing Test HAVE_GCC_WUNDEF - Success
+-- Performing Test HAVE_GCC_WFLOAT_CONVERSION
+-- Performing Test HAVE_GCC_WFLOAT_CONVERSION - Success
+-- Performing Test HAVE_GCC_NO_STRICT_ALIASING
+-- Performing Test HAVE_GCC_NO_STRICT_ALIASING - Success
+-- Performing Test HAVE_GCC_WDOCUMENTATION
+-- Performing Test HAVE_GCC_WDOCUMENTATION - Failed
+-- Performing Test HAVE_GCC_WDOCUMENTATION_UNKNOWN_COMMAND
+-- Performing Test HAVE_GCC_WDOCUMENTATION_UNKNOWN_COMMAND - Failed
+-- Performing Test HAVE_GCC_COMMENT_BLOCK_COMMANDS
+-- Performing Test HAVE_GCC_COMMENT_BLOCK_COMMANDS - Failed
+-- Performing Test HAVE_CLANG_COMMENT_BLOCK_COMMANDS
+-- Performing Test HAVE_CLANG_COMMENT_BLOCK_COMMANDS - Failed
+-- Performing Test HAVE_GCC_WSHADOW
+-- Performing Test HAVE_GCC_WSHADOW - Success
+-- Performing Test HAVE_GCC_WUNUSED_LOCAL_TYPEDEFS
+-- Performing Test HAVE_GCC_WUNUSED_LOCAL_TYPEDEFS - Success
+-- Performing Test HAVE_GCC_WIMPLICIT_FALLTHROUGH
+-- Performing Test HAVE_GCC_WIMPLICIT_FALLTHROUGH - Success
+-- Performing Test COMPILER_SUPPORTS_FDIAGNOSTICS_COLOR_ALWAYS
+-- Performing Test COMPILER_SUPPORTS_FDIAGNOSTICS_COLOR_ALWAYS - Success
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test HAVE_WL_VERSION_SCRIPT
+-- Performing Test HAVE_WL_VERSION_SCRIPT - Success
+-- Performing Test COMPILER_SUPPORTS_GCC_ATOMICS
+-- Performing Test COMPILER_SUPPORTS_GCC_ATOMICS - Success
+-- Performing Test HAVE_GCC_FVISIBILITY
+-- Performing Test HAVE_GCC_FVISIBILITY - Success
+-- Performing Test LINKER_SUPPORTS_WL_NO_UNDEFINED
+-- Performing Test LINKER_SUPPORTS_WL_NO_UNDEFINED - Success
+-- Performing Test COMPILER_SUPPORTS_MMX
+-- Performing Test COMPILER_SUPPORTS_MMX - Success
+-- Performing Test COMPILER_SUPPORTS_SSE
+-- Performing Test COMPILER_SUPPORTS_SSE - Success
+-- Performing Test COMPILER_SUPPORTS_SSE2
+-- Performing Test COMPILER_SUPPORTS_SSE2 - Success
+-- Performing Test COMPILER_SUPPORTS_SSE3
+-- Performing Test COMPILER_SUPPORTS_SSE3 - Success
+-- Performing Test COMPILER_SUPPORTS_SSE4_1
+-- Performing Test COMPILER_SUPPORTS_SSE4_1 - Success
+-- Performing Test COMPILER_SUPPORTS_SSE4_2
+-- Performing Test COMPILER_SUPPORTS_SSE4_2 - Success
+-- Performing Test COMPILER_SUPPORTS_AVX
+-- Performing Test COMPILER_SUPPORTS_AVX - Success
+-- Performing Test COMPILER_SUPPORTS_AVX2
+-- Performing Test COMPILER_SUPPORTS_AVX2 - Success
+-- Performing Test COMPILER_SUPPORTS_AVX512F
+-- Performing Test COMPILER_SUPPORTS_AVX512F - Success
+-- Looking for alloca.h
+-- Looking for alloca.h - found
+-- Looking for float.h
+-- Looking for float.h - found
+-- Looking for iconv.h
+-- Looking for iconv.h - found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for limits.h
+-- Looking for limits.h - found
+-- Looking for malloc.h
+-- Looking for malloc.h - found
+-- Looking for math.h
+-- Looking for math.h - found
+-- Looking for memory.h
+-- Looking for memory.h - found
+-- Looking for signal.h
+-- Looking for signal.h - found
+-- Looking for stdarg.h
+-- Looking for stdarg.h - found
+-- Looking for stdbool.h
+-- Looking for stdbool.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stdio.h
+-- Looking for stdio.h - found
+-- Looking for stdlib.h
+-- Looking for stdlib.h - found
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for time.h
+-- Looking for time.h - found
+-- Looking for wchar.h
+-- Looking for wchar.h - found
+-- Looking for pow in m
+-- Looking for pow in m - found
+-- Looking for abs
+-- Looking for abs - found
+-- Looking for acos
+-- Looking for acos - found
+-- Looking for acosf
+-- Looking for acosf - found
+-- Looking for asin
+-- Looking for asin - found
+-- Looking for asinf
+-- Looking for asinf - found
+-- Looking for atan
+-- Looking for atan - found
+-- Looking for atan2
+-- Looking for atan2 - found
+-- Looking for atan2f
+-- Looking for atan2f - found
+-- Looking for atanf
+-- Looking for atanf - found
+-- Looking for atof
+-- Looking for atof - found
+-- Looking for atoi
+-- Looking for atoi - found
+-- Looking for bcopy
+-- Looking for bcopy - found
+-- Looking for ceil
+-- Looking for ceil - found
+-- Looking for ceilf
+-- Looking for ceilf - found
+-- Looking for copysign
+-- Looking for copysign - found
+-- Looking for copysignf
+-- Looking for copysignf - found
+-- Looking for cos
+-- Looking for cos - found
+-- Looking for cosf
+-- Looking for cosf - found
+-- Looking for _Exit
+-- Looking for _Exit - found
+-- Looking for exp
+-- Looking for exp - found
+-- Looking for expf
+-- Looking for expf - found
+-- Looking for fabs
+-- Looking for fabs - found
+-- Looking for fabsf
+-- Looking for fabsf - found
+-- Looking for floor
+-- Looking for floor - found
+-- Looking for floorf
+-- Looking for floorf - found
+-- Looking for fmod
+-- Looking for fmod - found
+-- Looking for fmodf
+-- Looking for fmodf - found
+-- Looking for fopen64
+-- Looking for fopen64 - found
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for fseeko64
+-- Looking for fseeko64 - found
+-- Looking for getenv
+-- Looking for getenv - found
+-- Looking for _i64toa
+-- Looking for _i64toa - not found
+-- Looking for index
+-- Looking for index - found
+-- Looking for itoa
+-- Looking for itoa - not found
+-- Looking for log
+-- Looking for log - found
+-- Looking for log10
+-- Looking for log10 - found
+-- Looking for log10f
+-- Looking for log10f - found
+-- Looking for logf
+-- Looking for logf - found
+-- Looking for lround
+-- Looking for lround - found
+-- Looking for lroundf
+-- Looking for lroundf - found
+-- Looking for _ltoa
+-- Looking for _ltoa - not found
+-- Looking for malloc
+-- Looking for malloc - found
+-- Looking for memcmp
+-- Looking for memcmp - found
+-- Looking for memcpy
+-- Looking for memcpy - found
+-- Looking for memmove
+-- Looking for memmove - found
+-- Looking for memset
+-- Looking for memset - found
+-- Looking for modf
+-- Looking for modf - found
+-- Looking for modff
+-- Looking for modff - found
+-- Looking for pow
+-- Looking for pow - found
+-- Looking for powf
+-- Looking for powf - found
+-- Looking for putenv
+-- Looking for putenv - found
+-- Looking for rindex
+-- Looking for rindex - found
+-- Looking for round
+-- Looking for round - found
+-- Looking for roundf
+-- Looking for roundf - found
+-- Looking for scalbn
+-- Looking for scalbn - found
+-- Looking for scalbnf
+-- Looking for scalbnf - found
+-- Looking for setenv
+-- Looking for setenv - found
+-- Looking for sin
+-- Looking for sin - found
+-- Looking for sinf
+-- Looking for sinf - found
+-- Looking for sqr
+-- Looking for sqr - not found
+-- Looking for sqrt
+-- Looking for sqrt - found
+-- Looking for sqrtf
+-- Looking for sqrtf - found
+-- Looking for sscanf
+-- Looking for sscanf - found
+-- Looking for strchr
+-- Looking for strchr - found
+-- Looking for strcmp
+-- Looking for strcmp - found
+-- Looking for strlcat
+-- Looking for strlcat - found
+-- Looking for strlcpy
+-- Looking for strlcpy - found
+-- Looking for strlen
+-- Looking for strlen - found
+-- Looking for strncmp
+-- Looking for strncmp - found
+-- Looking for strnlen
+-- Looking for strnlen - found
+-- Looking for strpbrk
+-- Looking for strpbrk - found
+-- Looking for strrchr
+-- Looking for strrchr - found
+-- Looking for strstr
+-- Looking for strstr - found
+-- Looking for strnstr
+-- Looking for strnstr - not found
+-- Looking for strtod
+-- Looking for strtod - found
+-- Looking for strtok_r
+-- Looking for strtok_r - found
+-- Looking for strtol
+-- Looking for strtol - found
+-- Looking for strtoll
+-- Looking for strtoll - found
+-- Looking for strtoul
+-- Looking for strtoul - found
+-- Looking for strtoull
+-- Looking for strtoull - found
+-- Looking for tan
+-- Looking for tan - found
+-- Looking for tanf
+-- Looking for tanf - found
+-- Looking for trunc
+-- Looking for trunc - found
+-- Looking for truncf
+-- Looking for truncf - found
+-- Looking for unsetenv
+-- Looking for unsetenv - found
+-- Looking for vsnprintf
+-- Looking for vsnprintf - found
+-- Looking for vsscanf
+-- Looking for vsscanf - found
+-- Looking for wcsnlen
+-- Looking for wcsnlen - found
+-- Looking for wcscmp
+-- Looking for wcscmp - found
+-- Looking for wcsdup
+-- Looking for wcsdup - found
+-- Looking for wcslcat
+-- Looking for wcslcat - found
+-- Looking for wcslcpy
+-- Looking for wcslcpy - found
+-- Looking for wcslen
+-- Looking for wcslen - found
+-- Looking for wcsncmp
+-- Looking for wcsncmp - found
+-- Looking for wcsstr
+-- Looking for wcsstr - found
+-- Looking for wcstol
+-- Looking for wcstol - found
+-- Looking for strcasestr
+-- Looking for strcasestr - found
+-- Performing Test LIBC_HAS_ISINF
+-- Performing Test LIBC_HAS_ISINF - Success
+-- Performing Test LIBC_ISINF_HANDLES_FLOAT
+-- Performing Test LIBC_ISINF_HANDLES_FLOAT - Success
+-- Performing Test LIBC_HAS_ISINFF
+-- Performing Test LIBC_HAS_ISINFF - Success
+-- Performing Test LIBC_HAS_ISNAN
+-- Performing Test LIBC_HAS_ISNAN - Success
+-- Performing Test LIBC_ISNAN_HANDLES_FLOAT
+-- Performing Test LIBC_ISNAN_HANDLES_FLOAT - Success
+-- Performing Test LIBC_HAS_ISNANF
+-- Performing Test LIBC_HAS_ISNANF - Success
+-- Looking for fdatasync
+-- Looking for fdatasync - found
+-- Looking for gethostname
+-- Looking for gethostname - found
+-- Looking for getpagesize
+-- Looking for getpagesize - found
+-- Looking for getresgid
+-- Looking for getresgid - found
+-- Looking for getresuid
+-- Looking for getresuid - found
+-- Looking for sigaction
+-- Looking for sigaction - found
+-- Looking for sigtimedwait
+-- Looking for sigtimedwait - found
+-- Looking for setjmp
+-- Looking for setjmp - found
+-- Looking for nanosleep
+-- Looking for nanosleep - found
+-- Looking for gmtime_r
+-- Looking for gmtime_r - found
+-- Looking for localtime_r
+-- Looking for localtime_r - found
+-- Looking for nl_langinfo
+-- Looking for nl_langinfo - found
+-- Looking for sysconf
+-- Looking for sysconf - found
+-- Looking for sysctlbyname
+-- Looking for sysctlbyname - not found
+-- Looking for getauxval
+-- Looking for getauxval - found
+-- Looking for elf_aux_info
+-- Looking for elf_aux_info - not found
+-- Looking for ppoll
+-- Looking for ppoll - found
+-- Looking for memfd_create
+-- Looking for memfd_create - found
+-- Looking for posix_fallocate
+-- Looking for posix_fallocate - found
+-- Looking for posix_spawn_file_actions_addchdir
+-- Looking for posix_spawn_file_actions_addchdir - found
+-- Looking for posix_spawn_file_actions_addchdir_np
+-- Looking for posix_spawn_file_actions_addchdir_np - found
+-- Performing Test ICONV_IN_LIBC
+-- Performing Test ICONV_IN_LIBC - Success
+-- Performing Test ICONV_IN_LIBICONV
+-- Performing Test ICONV_IN_LIBICONV - Failed
+-- Performing Test HAVE_SA_SIGACTION
+-- Performing Test HAVE_SA_SIGACTION - Success
+-- Performing Test HAVE_ST_MTIM
+-- Performing Test HAVE_ST_MTIM - Success
+-- Looking for dlopen
+-- Looking for dlopen - found
+-- Performing Test HAVE_O_CLOEXEC
+-- Performing Test HAVE_O_CLOEXEC - Success
+-- Performing Test COMPILER_SUPPORTS_ELFNOTES
+-- Performing Test COMPILER_SUPPORTS_ELFNOTES - Success
+-- Found ALSA: /usr/lib/libasound.so (found version "1.2.16.1")
+-- dynamic libasound -> libasound.so.2
+-- Checking for module 'jack'
+--   Found jack, version 1.9.23
+-- dynamic libjack -> libjack.so.0
+-- Checking for module 'libpipewire-0.3>=0.3.44'
+--   Found libpipewire-0.3, version 1.6.11
+-- dynamic libpipewire-0.3 -> libpipewire-0.3.so.0
+-- Checking for module 'libpulse>=0.9.15'
+--   Found libpulse, version 17.0
+-- dynamic libpulse -> libpulse.so.0
+-- Checking for module 'sndio'
+--   Package 'sndio' not found
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- dynamic libX11 -> libX11.so.6
+-- dynamic libXext -> libXext.so.6
+-- dynamic libXcursor -> libXcursor.so.1
+-- dynamic libXi -> libXi.so.6
+-- dynamic libXfixes -> libXfixes.so.3
+-- dynamic libXrandr -> libXrandr.so.2
+-- dynamic libXrender -> libXrender.so.1
+-- dynamic libXss -> libXss.so.1
+-- dynamic libXtst -> libXtst.so.6
+-- Looking for shmat
+-- Looking for shmat - found
+-- Performing Test HAVE_XGENERICEVENT
+-- Performing Test HAVE_XGENERICEVENT - Success
+-- Looking for X11/XKBlib.h
+-- Looking for X11/XKBlib.h - found
+-- Performing Test HAVE_XINPUT2_SCROLLINFO
+-- Performing Test HAVE_XINPUT2_SCROLLINFO - Success
+-- Performing Test HAVE_XINPUT2_MULTITOUCH
+-- Performing Test HAVE_XINPUT2_MULTITOUCH - Success
+-- Performing Test HAVE_XINPUT2_GESTURE
+-- Performing Test HAVE_XINPUT2_GESTURE - Success
+-- Performing Test HAVE_XFIXES_H
+-- Performing Test HAVE_XFIXES_H - Success
+-- Checking for module 'fribidi'
+--   Found fribidi, version 1.0.18
+-- dynamic libfribidi -> libfribidi.so.0
+-- Checking for module 'libthai'
+--   Package 'libthai' not found
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Performing Test HAVE_OPENGL_EGL
+-- Performing Test HAVE_OPENGL_EGL - Success
+-- Checking for module 'libdrm'
+--   Found libdrm, version 2.4.134
+-- Checking for module 'gbm'
+--   Found gbm, version 26.2.6
+-- dynamic libdrm -> libdrm.so.2
+-- dynamic libgbm -> libgbm.so.1
+-- Performing Test HAVE_OPENGL_GLX
+-- Performing Test HAVE_OPENGL_GLX - Success
+-- Performing Test HAVE_OPENGL
+-- Performing Test HAVE_OPENGL - Success
+-- Performing Test HAVE_OPENGLES_V1
+-- Performing Test HAVE_OPENGLES_V1 - Success
+-- Performing Test HAVE_OPENGLES_V2
+-- Performing Test HAVE_OPENGLES_V2 - Success
+-- Checking for modules 'wayland-client>=1.18;wayland-egl;wayland-cursor;egl;xkbcommon>=0.5.0'
+--   Found wayland-client, version 1.26.0
+--   Found wayland-egl, version 18.1.0
+--   Found wayland-cursor, version 1.26.0
+--   Found egl, version 1.5
+--   Found xkbcommon, version 1.13.2
+-- dynamic libwayland-client -> libwayland-client.so.0
+-- dynamic libwayland-egl -> libwayland-egl.so.1
+-- dynamic libwayland-cursor -> libwayland-cursor.so.0
+-- dynamic libxkbcommon -> libxkbcommon.so.0
+-- Checking for module 'libdecor-0'
+--   Package 'libdecor-0' not found
+CMake Warning at cmake/sdlchecks.cmake:756 (message):
+  Unable to find the libdecor development library (required for window
+  decorations on GNOME and Weston)
+Call Stack (most recent call first):
+  CMakeLists.txt:1850 (CheckWayland)
+
+
+-- Performing Test HAVE_LINUX_INPUT_H
+-- Performing Test HAVE_LINUX_INPUT_H - Success
+-- Performing Test HAVE_INPUT_KD
+-- Performing Test HAVE_INPUT_KD - Success
+-- Performing Test HAVE_LINUX_VIDEODEV2_H
+-- Performing Test HAVE_LINUX_VIDEODEV2_H - Success
+-- Looking for libudev.h
+-- Looking for libudev.h - found
+-- dynamic libudev -> libudev.so.1
+-- Looking for sys/inotify.h
+-- Looking for sys/inotify.h - found
+-- Looking for inotify_init
+-- Looking for inotify_init - found
+-- Looking for inotify_init1
+-- Looking for inotify_init1 - found
+-- Checking for one of the modules 'dbus-1;dbus'
+-- Checking for one of the modules 'ibus-1.0;ibus'
+-- Checking for one of the modules 'liburing-ffi'
+-- Checking for module 'libusb-1.0>=1.0.16'
+--   Found libusb-1.0, version 1.0.30
+-- Found LibUSB: /usr/lib/libusb-1.0.so (found version "1.0.30")
+-- Performing Test HAVE_LIBUSB_H
+-- Performing Test HAVE_LIBUSB_H - Success
+-- Performing Test HAVE_PTHREADS
+-- Performing Test HAVE_PTHREADS - Success
+-- Performing Test HAVE_RECURSIVE_MUTEXES
+-- Performing Test HAVE_RECURSIVE_MUTEXES - Success
+-- Performing Test HAVE_PTHREADS_SEM
+-- Performing Test HAVE_PTHREADS_SEM - Success
+-- Performing Test COMPILER_HAS_SEM_CLOCKWAIT
+-- Performing Test COMPILER_HAS_SEM_CLOCKWAIT - Success
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_np.h
+-- Looking for pthread_np.h - not found
+-- Looking for pthread_condattr_setclock
+-- Looking for pthread_condattr_setclock - found
+-- Performing Test HAVE_PTHREAD_SETNAME_NP
+-- Performing Test HAVE_PTHREAD_SETNAME_NP - Success
+-- Looking for clock_gettime in c
+-- Looking for clock_gettime in c - found
+-- Performing Test HAVE_POSIX_SPAWN
+-- Performing Test HAVE_POSIX_SPAWN - Success
+-- Looking for vfork
+-- Looking for vfork - found
+-- 
+-- SDL3 was configured with the following options:
+-- 
+-- Platform: Linux-7.3.1
+-- 64-bit:   TRUE
+-- Compiler: /usr/bin/cc
+-- Revision: SDL-release-3.4.20-0-gf00dc919c
+-- Vendor:   
+-- 
+-- Subsystems:
+--   Audio:    ON
+--   Video:    ON
+--   GPU:      ON
+--   Render:   ON
+--   Camera:   ON
+--   Joystick: ON
+--   Haptic:   ON
+--   Hidapi:   ON
+--   Power:    ON
+--   Sensor:   ON
+--   Dialog:   ON
+--   Tray:     ON
+-- 
+-- Options:
+--   SDL_ALSA                    (Wanted: ON): ON
+--   SDL_ALSA_SHARED             (Wanted: ON): ON
+--   SDL_ALTIVEC                 (Wanted: OFF): OFF
+--   SDL_ARMNEON                 (Wanted: OFF): OFF
+--   SDL_ASAN                    (Wanted: OFF): OFF
+--   SDL_ASSEMBLY                (Wanted: ON): ON
+--   SDL_ASSERTIONS              (Wanted: auto): auto
+--   SDL_AVX                     (Wanted: ON): ON
+--   SDL_AVX2                    (Wanted: ON): ON
+--   SDL_AVX512F                 (Wanted: ON): ON
+--   SDL_BACKGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_CCACHE                  (Wanted: OFF): OFF
+--   SDL_CLANG_TIDY              (Wanted: OFF): OFF
+--   SDL_CLOCK_GETTIME           (Wanted: ON): ON
+--   SDL_COCOA                   (Wanted: OFF): OFF
+--   SDL_DBUS                    (Wanted: ON): ON
+--   SDL_DEPS_SHARED             (Wanted: ON): OFF
+--   SDL_DIRECTX                 (Wanted: OFF): OFF
+--   SDL_DISKAUDIO               (Wanted: ON): ON
+--   SDL_DLOPEN_NOTES            (Wanted: ON): ON
+--   SDL_DUMMYAUDIO              (Wanted: ON): ON
+--   SDL_DUMMYCAMERA             (Wanted: ON): ON
+--   SDL_DUMMYVIDEO              (Wanted: ON): ON
+--   SDL_EXAMPLES                (Wanted: OFF): OFF
+--   SDL_EXAMPLES_LINK_SHARED    (Wanted: ON): OFF
+--   SDL_FOREGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_FRIBIDI                 (Wanted: ON): ON
+--   SDL_FRIBIDI_SHARED          (Wanted: ON): ON
+--   SDL_GCC_ATOMICS             (Wanted: ON): ON
+--   SDL_HIDAPI                  (Wanted: ON): ON
+--   SDL_HIDAPI_JOYSTICK         (Wanted: ON): ON
+--   SDL_HIDAPI_LIBUSB           (Wanted: ON): ON
+--   SDL_HIDAPI_LIBUSB_SHARED    (Wanted: ON): ON
+--   SDL_IBUS                    (Wanted: ON): ON
+--   SDL_INSTALL                 (Wanted: ON): OFF
+--   SDL_INSTALL_TESTS           (Wanted: OFF): OFF
+--   SDL_JACK                    (Wanted: ON): ON
+--   SDL_JACK_SHARED             (Wanted: ON): ON
+--   SDL_KMSDRM                  (Wanted: ON): ON
+--   SDL_KMSDRM_SHARED           (Wanted: ON): ON
+--   SDL_LASX                    (Wanted: OFF): OFF
+--   SDL_LIBC                    (Wanted: ON): ON
+--   SDL_LIBICONV                (Wanted: OFF): OFF
+--   SDL_LIBTHAI                 (Wanted: ON): OFF
+--   SDL_LIBTHAI_SHARED          (Wanted: ON): OFF
+--   SDL_LIBUDEV                 (Wanted: ON): ON
+--   SDL_LIBURING                (Wanted: ON): OFF
+--   SDL_LSX                     (Wanted: OFF): OFF
+--   SDL_METAL                   (Wanted: OFF): OFF
+--   SDL_MMX                     (Wanted: ON): ON
+--   SDL_OFFSCREEN               (Wanted: ON): ON
+--   SDL_OPENGL                  (Wanted: ON): ON
+--   SDL_OPENGLES                (Wanted: ON): ON
+--   SDL_OPENVR                  (Wanted: OFF): OFF
+--   SDL_OSS                     (Wanted: OFF): OFF
+--   SDL_PIPEWIRE                (Wanted: ON): ON
+--   SDL_PIPEWIRE_SHARED         (Wanted: ON): ON
+--   SDL_PTHREADS                (Wanted: ON): ON
+--   SDL_PTHREADS_SEM            (Wanted: ON): ON
+--   SDL_PULSEAUDIO              (Wanted: ON): ON
+--   SDL_PULSEAUDIO_SHARED       (Wanted: ON): ON
+--   SDL_RENDER_D3D              (Wanted: OFF): OFF
+--   SDL_RENDER_D3D11            (Wanted: OFF): OFF
+--   SDL_RENDER_D3D12            (Wanted: OFF): OFF
+--   SDL_RENDER_GPU              (Wanted: ON): ON
+--   SDL_RENDER_METAL            (Wanted: OFF): OFF
+--   SDL_RENDER_VULKAN           (Wanted: ON): ON
+--   SDL_ROCKCHIP                (Wanted: OFF): OFF
+--   SDL_RPATH                   (Wanted: OFF): OFF
+--   SDL_RPI                     (Wanted: OFF): OFF
+--   SDL_SNDIO                   (Wanted: ON): OFF
+--   SDL_SNDIO_SHARED            (Wanted: ON): OFF
+--   SDL_SSE                     (Wanted: ON): ON
+--   SDL_SSE2                    (Wanted: ON): ON
+--   SDL_SSE3                    (Wanted: ON): ON
+--   SDL_SSE4_1                  (Wanted: ON): ON
+--   SDL_SSE4_2                  (Wanted: ON): ON
+--   SDL_SYSTEM_ICONV            (Wanted: ON): ON
+--   SDL_TESTS                   (Wanted: OFF): OFF
+--   SDL_TESTS_LINK_SHARED       (Wanted: ON): OFF
+--   SDL_UNINSTALL               (Wanted: ON): ON
+--   SDL_VIRTUAL_JOYSTICK        (Wanted: ON): ON
+--   SDL_VIVANTE                 (Wanted: OFF): OFF
+--   SDL_VULKAN                  (Wanted: ON): ON
+--   SDL_WASAPI                  (Wanted: OFF): OFF
+--   SDL_WAYLAND                 (Wanted: ON): ON
+--   SDL_WAYLAND_LIBDECOR        (Wanted: ON): OFF
+--   SDL_WAYLAND_LIBDECOR_SHARED (Wanted: ON): OFF
+--   SDL_WAYLAND_SHARED          (Wanted: ON): ON
+--   SDL_X11                     (Wanted: ON): ON
+--   SDL_X11_SHARED              (Wanted: ON): ON
+--   SDL_X11_XCURSOR             (Wanted: ON): ON
+--   SDL_X11_XDBE                (Wanted: ON): ON
+--   SDL_X11_XFIXES              (Wanted: ON): ON
+--   SDL_X11_XINPUT              (Wanted: ON): ON
+--   SDL_X11_XRANDR              (Wanted: ON): ON
+--   SDL_X11_XSCRNSAVER          (Wanted: ON): ON
+--   SDL_X11_XSHAPE              (Wanted: ON): ON
+--   SDL_X11_XSYNC               (Wanted: ON): ON
+--   SDL_X11_XTEST               (Wanted: ON): ON
+--   SDL_XINPUT                  (Wanted: OFF): OFF
+-- 
+--  Build Shared Library: ON
+--  Build Static Library: OFF
+-- 
+-- Enabled backends:
+--   Video drivers: dummy kmsdrm(dynamic) offscreen wayland(dynamic) x11(dynamic)
+--   X11 libraries: xcursor xdbe xfixes xinput2 xrandr xscrnsaver xshape xsync xtest
+--   Render drivers: gpu ogl ogl_es2 vulkan
+--   GPU drivers: vulkan
+--   Audio drivers: alsa(dynamic) disk dummy jack(dynamic) pipewire(dynamic) pulseaudio(dynamic)
+--   Joystick drivers: hidapi linux virtual
+--   Camera drivers: dummy pipewire(dynamic) v4l2
+-- 
+-- If something was not detected, although the libraries
+-- were installed, then make sure you have set the
+-- CMAKE_C_FLAGS and CMAKE_PREFIX_PATH CMake variables correctly.
+-- 
+-- Configuring done (53.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/sdl3/SDL3-3.4.20/build
+[0/2] Re-checking globbed directories...
+[1/2] Re-running CMake...
+-- dynamic libasound -> libasound.so.2
+-- Checking for module 'jack'
+--   Found jack, version 1.9.23
+-- dynamic libjack -> libjack.so.0
+-- Checking for module 'libpipewire-0.3>=0.3.44'
+--   Found libpipewire-0.3, version 1.6.11
+-- dynamic libpipewire-0.3 -> libpipewire-0.3.so.0
+-- Checking for module 'libpulse>=0.9.15'
+--   Found libpulse, version 17.0
+-- dynamic libpulse -> libpulse.so.0
+-- Checking for module 'sndio'
+--   Package 'sndio' not found
+-- dynamic libX11 -> libX11.so.6
+-- dynamic libXext -> libXext.so.6
+-- dynamic libXcursor -> libXcursor.so.1
+-- dynamic libXi -> libXi.so.6
+-- dynamic libXfixes -> libXfixes.so.3
+-- dynamic libXrandr -> libXrandr.so.2
+-- dynamic libXrender -> libXrender.so.1
+-- dynamic libXss -> libXss.so.1
+-- dynamic libXtst -> libXtst.so.6
+-- Checking for module 'fribidi'
+--   Found fribidi, version 1.0.18
+-- dynamic libfribidi -> libfribidi.so.0
+-- Checking for module 'libthai'
+--   Package 'libthai' not found
+-- Checking for module 'libdrm'
+--   Found libdrm, version 2.4.134
+-- Checking for module 'gbm'
+--   Found gbm, version 26.2.6
+-- dynamic libdrm -> libdrm.so.2
+-- dynamic libgbm -> libgbm.so.1
+-- Checking for modules 'wayland-client>=1.18;wayland-egl;wayland-cursor;egl;xkbcommon>=0.5.0'
+--   Found wayland-client, version 1.26.0
+--   Found wayland-egl, version 18.1.0
+--   Found wayland-cursor, version 1.26.0
+--   Found egl, version 1.5
+--   Found xkbcommon, version 1.13.2
+-- dynamic libwayland-client -> libwayland-client.so.0
+-- dynamic libwayland-egl -> libwayland-egl.so.1
+-- dynamic libwayland-cursor -> libwayland-cursor.so.0
+-- dynamic libxkbcommon -> libxkbcommon.so.0
+-- Checking for module 'libdecor-0'
+--   Package 'libdecor-0' not found
+CMake Warning at cmake/sdlchecks.cmake:756 (message):
+  Unable to find the libdecor development library (required for window
+  decorations on GNOME and Weston)
+Call Stack (most recent call first):
+  CMakeLists.txt:1850 (CheckWayland)
+
+
+-- dynamic libudev -> libudev.so.1
+-- Checking for one of the modules 'liburing-ffi'
+-- 
+-- SDL3 was configured with the following options:
+-- 
+-- Platform: Linux-7.3.1
+-- 64-bit:   TRUE
+-- Compiler: /usr/bin/cc
+-- Revision: SDL-release-3.4.20-0-gf00dc919c
+-- Vendor:   
+-- 
+-- Subsystems:
+--   Audio:    ON
+--   Video:    ON
+--   GPU:      ON
+--   Render:   ON
+--   Camera:   ON
+--   Joystick: ON
+--   Haptic:   ON
+--   Hidapi:   ON
+--   Power:    ON
+--   Sensor:   ON
+--   Dialog:   ON
+--   Tray:     ON
+-- 
+-- Options:
+--   SDL_ALSA                    (Wanted: ON): ON
+--   SDL_ALSA_SHARED             (Wanted: ON): ON
+--   SDL_ALTIVEC                 (Wanted: OFF): OFF
+--   SDL_ARMNEON                 (Wanted: OFF): OFF
+--   SDL_ASAN                    (Wanted: OFF): OFF
+--   SDL_ASSEMBLY                (Wanted: ON): ON
+--   SDL_ASSERTIONS              (Wanted: auto): auto
+--   SDL_AVX                     (Wanted: ON): ON
+--   SDL_AVX2                    (Wanted: ON): ON
+--   SDL_AVX512F                 (Wanted: ON): ON
+--   SDL_BACKGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_CCACHE                  (Wanted: OFF): OFF
+--   SDL_CLANG_TIDY              (Wanted: OFF): OFF
+--   SDL_CLOCK_GETTIME           (Wanted: ON): ON
+--   SDL_COCOA                   (Wanted: OFF): OFF
+--   SDL_DBUS                    (Wanted: ON): ON
+--   SDL_DEPS_SHARED             (Wanted: ON): OFF
+--   SDL_DIRECTX                 (Wanted: OFF): OFF
+--   SDL_DISKAUDIO               (Wanted: ON): ON
+--   SDL_DLOPEN_NOTES            (Wanted: ON): ON
+--   SDL_DUMMYAUDIO              (Wanted: ON): ON
+--   SDL_DUMMYCAMERA             (Wanted: ON): ON
+--   SDL_DUMMYVIDEO              (Wanted: ON): ON
+--   SDL_EXAMPLES                (Wanted: OFF): OFF
+--   SDL_EXAMPLES_LINK_SHARED    (Wanted: ON): OFF
+--   SDL_FOREGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_FRIBIDI                 (Wanted: ON): ON
+--   SDL_FRIBIDI_SHARED          (Wanted: ON): ON
+--   SDL_GCC_ATOMICS             (Wanted: ON): ON
+--   SDL_HIDAPI                  (Wanted: ON): ON
+--   SDL_HIDAPI_JOYSTICK         (Wanted: ON): ON
+--   SDL_HIDAPI_LIBUSB           (Wanted: ON): ON
+--   SDL_HIDAPI_LIBUSB_SHARED    (Wanted: ON): ON
+--   SDL_IBUS                    (Wanted: ON): ON
+--   SDL_INSTALL                 (Wanted: ON): OFF
+--   SDL_INSTALL_TESTS           (Wanted: OFF): OFF
+--   SDL_JACK                    (Wanted: ON): ON
+--   SDL_JACK_SHARED             (Wanted: ON): ON
+--   SDL_KMSDRM                  (Wanted: ON): ON
+--   SDL_KMSDRM_SHARED           (Wanted: ON): ON
+--   SDL_LASX                    (Wanted: OFF): OFF
+--   SDL_LIBC                    (Wanted: ON): ON
+--   SDL_LIBICONV                (Wanted: OFF): OFF
+--   SDL_LIBTHAI                 (Wanted: ON): OFF
+--   SDL_LIBTHAI_SHARED          (Wanted: ON): OFF
+--   SDL_LIBUDEV                 (Wanted: ON): ON
+--   SDL_LIBURING                (Wanted: ON): OFF
+--   SDL_LSX                     (Wanted: OFF): OFF
+--   SDL_METAL                   (Wanted: OFF): OFF
+--   SDL_MMX                     (Wanted: ON): ON
+--   SDL_OFFSCREEN               (Wanted: ON): ON
+--   SDL_OPENGL                  (Wanted: ON): ON
+--   SDL_OPENGLES                (Wanted: ON): ON
+--   SDL_OPENVR                  (Wanted: OFF): OFF
+--   SDL_OSS                     (Wanted: OFF): OFF
+--   SDL_PIPEWIRE                (Wanted: ON): ON
+--   SDL_PIPEWIRE_SHARED         (Wanted: ON): ON
+--   SDL_PTHREADS                (Wanted: ON): ON
+--   SDL_PTHREADS_SEM            (Wanted: ON): ON
+--   SDL_PULSEAUDIO              (Wanted: ON): ON
+--   SDL_PULSEAUDIO_SHARED       (Wanted: ON): ON
+--   SDL_RENDER_D3D              (Wanted: OFF): OFF
+--   SDL_RENDER_D3D11            (Wanted: OFF): OFF
+--   SDL_RENDER_D3D12            (Wanted: OFF): OFF
+--   SDL_RENDER_GPU              (Wanted: ON): ON
+--   SDL_RENDER_METAL            (Wanted: OFF): OFF
+--   SDL_RENDER_VULKAN           (Wanted: ON): ON
+--   SDL_ROCKCHIP                (Wanted: OFF): OFF
+--   SDL_RPATH                   (Wanted: OFF): OFF
+--   SDL_RPI                     (Wanted: OFF): OFF
+--   SDL_SNDIO                   (Wanted: ON): OFF
+--   SDL_SNDIO_SHARED            (Wanted: ON): OFF
+--   SDL_SSE                     (Wanted: ON): ON
+--   SDL_SSE2                    (Wanted: ON): ON
+--   SDL_SSE3                    (Wanted: ON): ON
+--   SDL_SSE4_1                  (Wanted: ON): ON
+--   SDL_SSE4_2                  (Wanted: ON): ON
+--   SDL_SYSTEM_ICONV            (Wanted: ON): ON
+--   SDL_TESTS                   (Wanted: OFF): OFF
+--   SDL_TESTS_LINK_SHARED       (Wanted: ON): OFF
+--   SDL_UNINSTALL               (Wanted: ON): ON
+--   SDL_VIRTUAL_JOYSTICK        (Wanted: ON): ON
+--   SDL_VIVANTE                 (Wanted: OFF): OFF
+--   SDL_VULKAN                  (Wanted: ON): ON
+--   SDL_WASAPI                  (Wanted: OFF): OFF
+--   SDL_WAYLAND                 (Wanted: ON): ON
+--   SDL_WAYLAND_LIBDECOR        (Wanted: ON): OFF
+--   SDL_WAYLAND_LIBDECOR_SHARED (Wanted: ON): OFF
+--   SDL_WAYLAND_SHARED          (Wanted: ON): ON
+--   SDL_X11                     (Wanted: ON): ON
+--   SDL_X11_SHARED              (Wanted: ON): ON
+--   SDL_X11_XCURSOR             (Wanted: ON): ON
+--   SDL_X11_XDBE                (Wanted: ON): ON
+--   SDL_X11_XFIXES              (Wanted: ON): ON
+--   SDL_X11_XINPUT              (Wanted: ON): ON
+--   SDL_X11_XRANDR              (Wanted: ON): ON
+--   SDL_X11_XSCRNSAVER          (Wanted: ON): ON
+--   SDL_X11_XSHAPE              (Wanted: ON): ON
+--   SDL_X11_XSYNC               (Wanted: ON): ON
+--   SDL_X11_XTEST               (Wanted: ON): ON
+--   SDL_XINPUT                  (Wanted: OFF): OFF
+-- 
+--  Build Shared Library: ON
+--  Build Static Library: OFF
+-- 
+-- Enabled backends:
+--   Video drivers: dummy kmsdrm(dynamic) offscreen wayland(dynamic) x11(dynamic)
+--   X11 libraries: xcursor xdbe xfixes xinput2 xrandr xscrnsaver xshape xsync xtest
+--   Render drivers: gpu ogl ogl_es2 vulkan
+--   GPU drivers: vulkan
+--   Audio drivers: alsa(dynamic) disk dummy jack(dynamic) pipewire(dynamic) pulseaudio(dynamic)
+--   Joystick drivers: hidapi linux virtual
+--   Camera drivers: dummy pipewire(dynamic) v4l2
+-- 
+-- If something was not detected, although the libraries
+-- were installed, then make sure you have set the
+-- CMAKE_C_FLAGS and CMAKE_PREFIX_PATH CMake variables correctly.
+-- 
+-- Configuring done (1.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/sdl3/SDL3-3.4.20/build
+[0/4] Re-checking globbed directories...
+[1/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/e_fmod.c.o
+[2/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/e_atan2.c.o
+[3/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/e_exp.c.o
+[4/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/e_log.c.o
+[5/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/e_log10.c.o
+[6/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/e_pow.c.o
+[7/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/e_rem_pio2.c.o
+[8/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/e_sqrt.c.o
+[9/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/k_cos.c.o
+[10/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/k_sin.c.o
+[11/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/k_rem_pio2.c.o
+[12/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/k_tan.c.o
+[13/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/s_atan.c.o
+[14/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/s_copysign.c.o
+[15/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/s_cos.c.o
+[16/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/s_isinf.c.o
+[17/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/s_fabs.c.o
+[18/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/s_floor.c.o
+[19/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/s_isinff.c.o
+[20/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/s_isnan.c.o
+[21/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/s_isnanf.c.o
+[22/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/s_scalbn.c.o
+[23/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/s_modf.c.o
+[24/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/s_sin.c.o
+[25/378] Building C object CMakeFiles/SDL_uclibc.dir/src/libm/s_tan.c.o
+[26/378] Linking C static library libSDL_uclibc.a
+[27/378] Generating wayland-generated-protocols/color-management-v1-client-protocol.h
+[28/378] Generating wayland-generated-protocols/alpha-modifier-v1-client-protocol.h
+[29/378] Generating wayland-generated-protocols/cursor-shape-v1-client-protocol.h
+[30/378] Generating wayland-generated-protocols/fractional-scale-v1-client-protocol.h
+[31/378] Generating wayland-generated-protocols/idle-inhibit-unstable-v1-client-protocol.h
+[32/378] Generating wayland-generated-protocols/frog-color-management-v1-client-protocol.h
+[33/378] Generating wayland-generated-protocols/input-timestamps-unstable-v1-client-protocol.h
+[34/378] Generating wayland-generated-protocols/pointer-constraints-unstable-v1-client-protocol.h
+[35/378] Generating wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-client-protocol.h
+[36/378] Generating wayland-generated-protocols/pointer-gestures-unstable-v1-client-protocol.h
+[37/378] Generating wayland-generated-protocols/pointer-warp-v1-client-protocol.h
+[38/378] Generating wayland-generated-protocols/primary-selection-unstable-v1-client-protocol.h
+[39/378] Generating wayland-generated-protocols/relative-pointer-unstable-v1-client-protocol.h
+[40/378] Generating wayland-generated-protocols/tablet-v2-client-protocol.h
+[41/378] Generating wayland-generated-protocols/viewporter-client-protocol.h
+[42/378] Generating wayland-generated-protocols/text-input-unstable-v3-client-protocol.h
+[43/378] Generating wayland-generated-protocols/xdg-activation-v1-client-protocol.h
+[44/378] Generating wayland-generated-protocols/wayland-client-protocol.h
+[45/378] Generating wayland-generated-protocols/xdg-decoration-unstable-v1-client-protocol.h
+[46/378] Generating wayland-generated-protocols/xdg-dialog-v1-client-protocol.h
+[47/378] Generating wayland-generated-protocols/xdg-foreign-unstable-v2-client-protocol.h
+[48/378] Generating wayland-generated-protocols/xdg-output-unstable-v1-client-protocol.h
+[49/378] Generating wayland-generated-protocols/xdg-shell-client-protocol.h
+[50/378] Generating wayland-generated-protocols/xdg-toplevel-icon-v1-client-protocol.h
+[51/378] Generating wayland-generated-protocols/alpha-modifier-v1-protocol.c
+[52/378] Generating wayland-generated-protocols/cursor-shape-v1-protocol.c
+[53/378] Generating wayland-generated-protocols/color-management-v1-protocol.c
+[54/378] Generating wayland-generated-protocols/frog-color-management-v1-protocol.c
+[55/378] Generating wayland-generated-protocols/fractional-scale-v1-protocol.c
+[56/378] Generating wayland-generated-protocols/idle-inhibit-unstable-v1-protocol.c
+[57/378] Generating wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-protocol.c
+[58/378] Generating wayland-generated-protocols/input-timestamps-unstable-v1-protocol.c
+[59/378] Generating wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c
+[60/378] Generating wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c
+[61/378] Generating wayland-generated-protocols/pointer-warp-v1-protocol.c
+[62/378] Generating wayland-generated-protocols/primary-selection-unstable-v1-protocol.c
+[63/378] Generating wayland-generated-protocols/tablet-v2-protocol.c
+[64/378] Generating wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c
+[65/378] Generating wayland-generated-protocols/text-input-unstable-v3-protocol.c
+[66/378] Generating wayland-generated-protocols/viewporter-protocol.c
+[67/378] Generating wayland-generated-protocols/xdg-activation-v1-protocol.c
+[68/378] Generating wayland-generated-protocols/wayland-protocol.c
+[69/378] Generating wayland-generated-protocols/xdg-decoration-unstable-v1-protocol.c
+[70/378] Generating wayland-generated-protocols/xdg-dialog-v1-protocol.c
+[71/378] Generating wayland-generated-protocols/xdg-foreign-unstable-v2-protocol.c
+[72/378] Generating wayland-generated-protocols/xdg-output-unstable-v1-protocol.c
+[73/378] Generating wayland-generated-protocols/xdg-shell-protocol.c
+[74/378] Generating wayland-generated-protocols/xdg-toplevel-icon-v1-protocol.c
+[75/378] Building C object CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
+[76/378] Building C object CMakeFiles/SDL3-shared.dir/src/SDL_assert.c.o
+[77/378] Building C object CMakeFiles/SDL3-shared.dir/src/SDL_error.c.o
+[78/378] Building C object CMakeFiles/SDL3-shared.dir/src/SDL.c.o
+[79/378] Building C object CMakeFiles/SDL3-shared.dir/src/SDL_guid.c.o
+[80/378] Building C object CMakeFiles/SDL3-shared.dir/src/SDL_hints.c.o
+[81/378] Building C object CMakeFiles/SDL3-shared.dir/src/SDL_hashtable.c.o
+[82/378] Building C object CMakeFiles/SDL3-shared.dir/src/SDL_list.c.o
+[83/378] Building C object CMakeFiles/SDL3-shared.dir/src/SDL_log.c.o
+[84/378] Building C object CMakeFiles/SDL3-shared.dir/src/SDL_properties.c.o
+[85/378] Building C object CMakeFiles/SDL3-shared.dir/src/SDL_utils.c.o
+[86/378] Building C object CMakeFiles/SDL3-shared.dir/src/atomic/SDL_atomic.c.o
+[87/378] Building C object CMakeFiles/SDL3-shared.dir/src/atomic/SDL_spinlock.c.o
+[88/378] Building C object CMakeFiles/SDL3-shared.dir/src/audio/SDL_audio.c.o
+[89/378] Building C object CMakeFiles/SDL3-shared.dir/src/audio/SDL_audiodev.c.o
+[90/378] Building C object CMakeFiles/SDL3-shared.dir/src/audio/SDL_audioqueue.c.o
+[91/378] Building C object CMakeFiles/SDL3-shared.dir/src/audio/SDL_audioresample.c.o
+[92/378] Building C object CMakeFiles/SDL3-shared.dir/src/audio/SDL_audiocvt.c.o
+[93/378] Building C object CMakeFiles/SDL3-shared.dir/src/audio/SDL_mixer.c.o
+[94/378] Building C object CMakeFiles/SDL3-shared.dir/src/audio/SDL_audiotypecvt.c.o
+[95/378] Building C object CMakeFiles/SDL3-shared.dir/src/audio/SDL_wave.c.o
+[96/378] Building C object CMakeFiles/SDL3-shared.dir/src/camera/SDL_camera.c.o
+[97/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/SDL_core_unsupported.c.o
+[98/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_categories.c.o
+[99/378] Building C object CMakeFiles/SDL3-shared.dir/src/cpuinfo/SDL_cpuinfo.c.o
+[100/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_clipboardevents.c.o
+[101/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_displayevents.c.o
+[102/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_dropevents.c.o
+[103/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_eventwatch.c.o
+[104/378] Building C object CMakeFiles/SDL3-shared.dir/src/dynapi/SDL_dynapi.c.o
+[105/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_keymap.c.o
+[106/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_keysym_to_keycode.c.o
+[107/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_keyboard.c.o
+[108/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_keysym_to_scancode.c.o
+[109/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_events.c.o
+[110/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_quit.c.o
+[111/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_pen.c.o
+[112/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_scancode_tables.c.o
+[113/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_windowevents.c.o
+[114/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/imKStoUCS.c.o
+[115/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_touch.c.o
+[116/378] Building C object CMakeFiles/SDL3-shared.dir/src/filesystem/SDL_filesystem.c.o
+[117/378] Building C object CMakeFiles/SDL3-shared.dir/src/events/SDL_mouse.c.o
+[118/378] Building C object CMakeFiles/SDL3-shared.dir/src/haptic/SDL_haptic.c.o
+[119/378] Building C object CMakeFiles/SDL3-shared.dir/src/io/SDL_asyncio.c.o
+[120/378] Building C object CMakeFiles/SDL3-shared.dir/src/gpu/SDL_gpu.c.o
+[121/378] Building C object CMakeFiles/SDL3-shared.dir/src/io/generic/SDL_asyncio_generic.c.o
+[122/378] Building C object CMakeFiles/SDL3-shared.dir/src/io/SDL_iostream.c.o
+[123/378] Building C object CMakeFiles/SDL3-shared.dir/src/hidapi/SDL_hidapi.c.o
+[124/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/SDL_steam_virtual_gamepad.c.o
+[125/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/controller_type.c.o
+[126/378] Building C object CMakeFiles/SDL3-shared.dir/src/locale/SDL_locale.c.o
+[127/378] Building C object CMakeFiles/SDL3-shared.dir/src/main/SDL_main_callbacks.c.o
+[128/378] Building C object CMakeFiles/SDL3-shared.dir/src/main/SDL_runapp.c.o
+[129/378] Building C object CMakeFiles/SDL3-shared.dir/src/misc/SDL_libusb.c.o
+[130/378] Building C object CMakeFiles/SDL3-shared.dir/src/misc/SDL_url.c.o
+[131/378] Building C object CMakeFiles/SDL3-shared.dir/src/power/SDL_power.c.o
+[132/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/SDL_gamepad.c.o
+[133/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/SDL_render_unsupported.c.o
+[134/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/SDL_yuv_sw.c.o
+[135/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/direct3d/SDL_render_d3d.c.o
+[136/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/SDL_joystick.c.o
+[137/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/direct3d/SDL_shaders_d3d.c.o
+[138/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/direct3d11/SDL_render_d3d11.c.o
+[139/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/direct3d11/SDL_shaders_d3d11.c.o
+[140/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/direct3d12/SDL_render_d3d12.c.o
+[141/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/direct3d12/SDL_shaders_d3d12.c.o
+[142/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/gpu/SDL_pipeline_gpu.c.o
+[143/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/gpu/SDL_shaders_gpu.c.o
+[144/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/ngage/SDL_render_ngage.c.o
+[145/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/gpu/SDL_render_gpu.c.o
+[146/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/opengl/SDL_shaders_gl.c.o
+[147/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/opengl/SDL_render_gl.c.o
+[148/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/opengles2/SDL_shaders_gles2.c.o
+[149/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/ps2/SDL_render_ps2.c.o
+[150/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/psp/SDL_render_psp.c.o
+[151/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/opengles2/SDL_render_gles2.c.o
+[152/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/SDL_render.c.o
+[153/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/software/SDL_blendpoint.c.o
+[154/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawline.c.o
+[155/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawpoint.c.o
+[156/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o
+[157/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/software/SDL_blendfillrect.c.o
+[158/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o
+[159/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o
+[160/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o
+[161/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o
+[162/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_shaders_vulkan.c.o
+[163/378] Building C object CMakeFiles/SDL3-shared.dir/src/sensor/SDL_sensor.c.o
+[164/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc16.c.o
+[165/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/software/SDL_blendline.c.o
+[166/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc32.c.o
+[167/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_getenv.c.o
+[168/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_iconv.c.o
+[169/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memcpy.c.o
+[170/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.o
+[171/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memmove.c.o
+[172/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_mslibc.c.o
+[173/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memset.c.o
+[174/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_murmur3.c.o
+[175/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_random.c.o
+[176/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_stdlib.c.o
+[177/378] Building C object CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_render_vulkan.c.o
+[178/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.o
+[179/378] Building C object CMakeFiles/SDL3-shared.dir/src/storage/SDL_storage.c.o
+[180/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_string.c.o
+[181/378] Building C object CMakeFiles/SDL3-shared.dir/src/thread/SDL_thread.c.o
+[182/378] Building C object CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_qsort.c.o
+[183/378] Building C object CMakeFiles/SDL3-shared.dir/src/time/SDL_time.c.o
+[184/378] Building C object CMakeFiles/SDL3-shared.dir/src/timer/SDL_timer.c.o
+[185/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_blit.c.o
+[186/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_1.c.o
+[187/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_RLEaccel.c.o
+[188/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_0.c.o
+[189/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_N.c.o
+[190/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_copy.c.o
+[191/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_A.c.o
+[192/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_slow.c.o
+[193/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_clipboard.c.o
+[194/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_bmp.c.o
+[195/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o
+[196/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_egl.c.o
+[197/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o
+[198/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o
+[199/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o
+[200/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_stretch.c.o
+[201/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_surface.c.o
+[202/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_video.c.o
+[203/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_video_unsupported.c.o
+[204/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_stb.c.o
+[205/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_vulkan_utils.c.o
+[206/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/yuv2rgb/yuv_rgb_lsx.c.o
+[207/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/yuv2rgb/yuv_rgb_sse.c.o
+[208/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_auto.c.o
+[209/378] Building C object CMakeFiles/SDL3-shared.dir/src/audio/dummy/SDL_dummyaudio.c.o
+[210/378] Building C object CMakeFiles/SDL3-shared.dir/src/audio/disk/SDL_diskaudio.c.o
+[211/378] Building C object CMakeFiles/SDL3-shared.dir/src/camera/dummy/SDL_camera_dummy.c.o
+[212/378] Building C object CMakeFiles/SDL3-shared.dir/src/loadso/dlopen/SDL_sysloadso.c.o
+[213/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/virtual/SDL_virtualjoystick.c.o
+[214/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/dummy/SDL_nullevents.c.o
+[215/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/yuv2rgb/yuv_rgb_std.c.o
+[216/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/dummy/SDL_nullframebuffer.c.o
+[217/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/dummy/SDL_nullvideo.c.o
+[218/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/SDL_yuv.c.o
+[219/378] Building C object CMakeFiles/SDL3-shared.dir/src/audio/jack/SDL_jackaudio.c.o
+[220/378] Building C object CMakeFiles/SDL3-shared.dir/src/audio/alsa/SDL_alsa_audio.c.o
+[221/378] Building C object CMakeFiles/SDL3-shared.dir/src/audio/pulseaudio/SDL_pulseaudio.c.o
+[222/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11clipboard.c.o
+[223/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11dyn.c.o
+[224/378] Building C object CMakeFiles/SDL3-shared.dir/src/camera/pipewire/SDL_camera_pipewire.c.o
+[225/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11framebuffer.c.o
+[226/378] Building C object CMakeFiles/SDL3-shared.dir/src/audio/pipewire/SDL_pipewire.c.o
+[227/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11messagebox.c.o
+[228/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11events.c.o
+[229/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11keyboard.c.o
+[230/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11modes.c.o
+[231/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11mouse.c.o
+[232/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11opengles.c.o
+[233/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11settings.c.o
+[234/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11pen.c.o
+[235/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11opengl.c.o
+[236/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11shape.c.o
+[237/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11touch.c.o
+[238/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11video.c.o
+[239/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11vulkan.c.o
+[240/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11xfixes.c.o
+[241/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11toolkit.c.o
+[242/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11xsync.c.o
+[243/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11xtest.c.o
+[244/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11xinput2.c.o
+[245/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11window.c.o
+[246/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/edid-parse.c.o
+[247/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmevents.c.o
+[248/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmdyn.c.o
+[249/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/x11/xsettings-client.c.o
+[250/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmopengles.c.o
+[251/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmmouse.c.o
+[252/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandclipboard.c.o
+[253/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmvulkan.c.o
+[254/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandcolor.c.o
+[255/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylanddatamanager.c.o
+[256/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmvideo.c.o
+[257/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandkeyboard.c.o
+[258/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmessagebox.c.o
+[259/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylanddyn.c.o
+[260/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandopengles.c.o
+[261/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandshmbuffer.c.o
+[262/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandutil.c.o
+[263/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmouse.c.o
+[264/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandvulkan.c.o
+[265/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandvideo.c.o
+[266/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/alpha-modifier-v1-protocol.c.o
+[267/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/color-management-v1-protocol.c.o
+[268/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandevents.c.o
+[269/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/cursor-shape-v1-protocol.c.o
+[270/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/fractional-scale-v1-protocol.c.o
+[271/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/frog-color-management-v1-protocol.c.o
+[272/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/idle-inhibit-unstable-v1-protocol.c.o
+[273/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/input-timestamps-unstable-v1-protocol.c.o
+[274/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-protocol.c.o
+[275/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c.o
+[276/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.o
+[277/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/primary-selection-unstable-v1-protocol.c.o
+[278/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-warp-v1-protocol.c.o
+[279/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c.o
+[280/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/text-input-unstable-v3-protocol.c.o
+[281/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/tablet-v2-protocol.c.o
+[282/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/viewporter-protocol.c.o
+[283/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/wayland-protocol.c.o
+[284/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-activation-v1-protocol.c.o
+[285/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-decoration-unstable-v1-protocol.c.o
+[286/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-dialog-v1-protocol.c.o
+[287/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-foreign-unstable-v2-protocol.c.o
+[288/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-output-unstable-v1-protocol.c.o
+[289/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-toplevel-icon-v1-protocol.c.o
+[290/378] Building C object CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-shell-protocol.c.o
+[291/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_appid.c.o
+[292/378] Building C object CMakeFiles/SDL3-shared.dir/src/tray/unix/SDL_tray.c.o
+[293/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_fribidi.c.o
+[294/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_libthai.c.o
+[295/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandwindow.c.o
+[296/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_poll.c.o
+[297/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_gtk.c.o
+[298/378] Building C object CMakeFiles/SDL3-shared.dir/src/camera/v4l2/SDL_camera_v4l2.c.o
+[299/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_dbus.c.o
+[300/378] Building C object CMakeFiles/SDL3-shared.dir/src/haptic/linux/SDL_syshaptic.c.o
+[301/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_system_theme.c.o
+[302/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_progressbar.c.o
+[303/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_ime.c.o
+[304/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_fcitx.c.o
+[305/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_udev.c.o
+[306/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_evdev.c.o
+[307/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_ibus.c.o
+[308/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_evdev_capabilities.c.o
+[309/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_threadprio.c.o
+[310/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_combined.c.o
+[311/378] Building C object CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_evdev_kbd.c.o
+[312/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_8bitdo.c.o
+[313/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_flydigi.c.o
+[314/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_gamecube.c.o
+[315/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_luna.c.o
+[316/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_lg4ff.c.o
+[317/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_gip.c.o
+[318/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_ps3.c.o
+[319/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_rumble.c.o
+[320/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_ps4.c.o
+[321/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_shield.c.o
+[322/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_stadia.c.o
+[323/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_sinput.c.o
+[324/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_steam_hori.c.o
+[325/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_ps5.c.o
+[326/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_steamdeck.c.o
+[327/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_steam_triton.c.o
+[328/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_steam.c.o
+[329/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_wii.c.o
+[330/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_switch2.c.o
+[331/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_xbox360.c.o
+[332/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_xbox360w.c.o
+[333/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_switch.c.o
+[334/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_zuiki.c.o
+[335/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_xboxone.c.o
+[336/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_report_descriptor.c.o
+[337/378] Building C object CMakeFiles/SDL3-shared.dir/src/haptic/hidapi/SDL_hidapihaptic.c.o
+[338/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapijoystick.c.o
+[339/378] Building C object CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_systhread.c.o
+[340/378] Building C object CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_sysmutex.c.o
+[341/378] Building C object CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_syscond.c.o
+[342/378] Building C object CMakeFiles/SDL3-shared.dir/src/haptic/hidapi/SDL_hidapihaptic_lg4ff.c.o
+[343/378] Building C object CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_sysrwlock.c.o
+[344/378] Building C object CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_systls.c.o
+[345/378] Building C object CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_syssem.c.o
+[346/378] Building C object CMakeFiles/SDL3-shared.dir/src/misc/unix/SDL_sysurl.c.o
+[347/378] Building C object CMakeFiles/SDL3-shared.dir/src/joystick/linux/SDL_sysjoystick.c.o
+[348/378] Building C object CMakeFiles/SDL3-shared.dir/src/locale/unix/SDL_syslocale.c.o
+[349/378] Building C object CMakeFiles/SDL3-shared.dir/src/filesystem/unix/SDL_sysfilesystem.c.o
+[350/378] Building C object CMakeFiles/SDL3-shared.dir/src/storage/generic/SDL_genericstorage.c.o
+[351/378] Building C object CMakeFiles/SDL3-shared.dir/src/power/linux/SDL_syspower.c.o
+[352/378] Building C object CMakeFiles/SDL3-shared.dir/src/filesystem/posix/SDL_sysfsops.c.o
+[353/378] Building C object CMakeFiles/SDL3-shared.dir/src/storage/steam/SDL_steamstorage.c.o
+[354/378] Building C object CMakeFiles/SDL3-shared.dir/src/time/unix/SDL_systime.c.o
+[355/378] Building C object CMakeFiles/SDL3-shared.dir/src/timer/unix/SDL_systimer.c.o
+[356/378] Building C object CMakeFiles/SDL3-shared.dir/src/dialog/SDL_dialog.c.o
+[357/378] Building C object CMakeFiles/SDL3-shared.dir/src/dialog/SDL_dialog_utils.c.o
+[358/378] Building C object CMakeFiles/SDL3-shared.dir/src/dialog/unix/SDL_unixdialog.c.o
+[359/378] Building C object CMakeFiles/SDL3-shared.dir/src/dialog/unix/SDL_zenitydialog.c.o
+[360/378] Building C object CMakeFiles/SDL3-shared.dir/src/dialog/unix/SDL_portaldialog.c.o
+[361/378] Building C object CMakeFiles/SDL3-shared.dir/src/dialog/unix/SDL_zenitymessagebox.c.o
+[362/378] Building C object CMakeFiles/SDL3-shared.dir/src/process/SDL_process.c.o
+[363/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenevents.c.o
+[364/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenframebuffer.c.o
+[365/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenopengles.c.o
+[366/378] Building C object CMakeFiles/SDL3-shared.dir/src/process/posix/SDL_posixprocess.c.o
+[367/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenvideo.c.o
+[368/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenwindow.c.o
+[369/378] Building C object CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenvulkan.c.o
+[370/378] Building C object CMakeFiles/SDL3-shared.dir/src/tray/SDL_tray_utils.c.o
+[371/378] Building C object CMakeFiles/SDL3-shared.dir/src/sensor/dummy/SDL_dummysensor.c.o
+[372/378] Building C object CMakeFiles/SDL3-shared.dir/src/main/generic/SDL_sysmain_callbacks.c.o
+[373/378] Building C object CMakeFiles/SDL3-shared.dir/src/gpu/vulkan/SDL_gpu_vulkan.c.o
+[374/378] Linking C shared library libSDL3.so.0.4.20
+[375/378] Creating library symlink libSDL3.so.0 libSDL3.so
+[0/2] Re-checking globbed directories...
+[0/2] Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/lib/pkgconfig/sdl3.pc
+-- Installing: /usr/lib/libSDL3.so.0.4.20
+-- Installing: /usr/lib/libSDL3.so.0
+-- Up-to-date: /usr/lib/libSDL3.so
+-- Installing: /usr/lib/cmake/SDL3/SDL3headersTargets.cmake
+-- Old export file "/usr/lib/cmake/SDL3/SDL3sharedTargets.cmake" will be replaced.  Removing files [/usr/lib/cmake/SDL3/SDL3sharedTargets-release.cmake].
+-- Installing: /usr/lib/cmake/SDL3/SDL3sharedTargets.cmake
+-- Installing: /usr/lib/cmake/SDL3/SDL3sharedTargets-release.cmake
+-- Installing: /usr/lib/cmake/SDL3/SDL3Config.cmake
+-- Installing: /usr/lib/cmake/SDL3/SDL3ConfigVersion.cmake
+-- Installing: /usr/include/SDL3/SDL.h
+-- Up-to-date: /usr/include/SDL3/SDL_assert.h
+-- Up-to-date: /usr/include/SDL3/SDL_asyncio.h
+-- Up-to-date: /usr/include/SDL3/SDL_atomic.h
+-- Installing: /usr/include/SDL3/SDL_audio.h
+-- Up-to-date: /usr/include/SDL3/SDL_begin_code.h
+-- Up-to-date: /usr/include/SDL3/SDL_bits.h
+-- Up-to-date: /usr/include/SDL3/SDL_blendmode.h
+-- Up-to-date: /usr/include/SDL3/SDL_camera.h
+-- Up-to-date: /usr/include/SDL3/SDL_clipboard.h
+-- Up-to-date: /usr/include/SDL3/SDL_close_code.h
+-- Up-to-date: /usr/include/SDL3/SDL_copying.h
+-- Up-to-date: /usr/include/SDL3/SDL_cpuinfo.h
+-- Up-to-date: /usr/include/SDL3/SDL_dialog.h
+-- Up-to-date: /usr/include/SDL3/SDL_dlopennote.h
+-- Up-to-date: /usr/include/SDL3/SDL_egl.h
+-- Up-to-date: /usr/include/SDL3/SDL_endian.h
+-- Up-to-date: /usr/include/SDL3/SDL_error.h
+-- Up-to-date: /usr/include/SDL3/SDL_events.h
+-- Up-to-date: /usr/include/SDL3/SDL_filesystem.h
+-- Up-to-date: /usr/include/SDL3/SDL_gamepad.h
+-- Up-to-date: /usr/include/SDL3/SDL_gpu.h
+-- Up-to-date: /usr/include/SDL3/SDL_guid.h
+-- Up-to-date: /usr/include/SDL3/SDL_haptic.h
+-- Up-to-date: /usr/include/SDL3/SDL_hidapi.h
+-- Installing: /usr/include/SDL3/SDL_hints.h
+-- Up-to-date: /usr/include/SDL3/SDL_init.h
+-- Up-to-date: /usr/include/SDL3/SDL_intrin.h
+-- Up-to-date: /usr/include/SDL3/SDL_iostream.h
+-- Up-to-date: /usr/include/SDL3/SDL_joystick.h
+-- Installing: /usr/include/SDL3/SDL_keyboard.h
+-- Up-to-date: /usr/include/SDL3/SDL_keycode.h
+-- Up-to-date: /usr/include/SDL3/SDL_loadso.h
+-- Up-to-date: /usr/include/SDL3/SDL_locale.h
+-- Up-to-date: /usr/include/SDL3/SDL_log.h
+-- Up-to-date: /usr/include/SDL3/SDL_main.h
+-- Up-to-date: /usr/include/SDL3/SDL_main_impl.h
+-- Up-to-date: /usr/include/SDL3/SDL_messagebox.h
+-- Up-to-date: /usr/include/SDL3/SDL_metal.h
+-- Up-to-date: /usr/include/SDL3/SDL_misc.h
+-- Up-to-date: /usr/include/SDL3/SDL_mouse.h
+-- Up-to-date: /usr/include/SDL3/SDL_mutex.h
+-- Up-to-date: /usr/include/SDL3/SDL_oldnames.h
+-- Up-to-date: /usr/include/SDL3/SDL_opengl.h
+-- Up-to-date: /usr/include/SDL3/SDL_opengl_glext.h
+-- Up-to-date: /usr/include/SDL3/SDL_opengles.h
+-- Up-to-date: /usr/include/SDL3/SDL_opengles2.h
+-- Up-to-date: /usr/include/SDL3/SDL_opengles2_gl2.h
+-- Up-to-date: /usr/include/SDL3/SDL_opengles2_gl2ext.h
+-- Up-to-date: /usr/include/SDL3/SDL_opengles2_gl2platform.h
+-- Up-to-date: /usr/include/SDL3/SDL_opengles2_khrplatform.h
+-- Up-to-date: /usr/include/SDL3/SDL_pen.h
+-- Up-to-date: /usr/include/SDL3/SDL_pixels.h
+-- Up-to-date: /usr/include/SDL3/SDL_platform.h
+-- Up-to-date: /usr/include/SDL3/SDL_platform_defines.h
+-- Up-to-date: /usr/include/SDL3/SDL_power.h
+-- Up-to-date: /usr/include/SDL3/SDL_process.h
+-- Up-to-date: /usr/include/SDL3/SDL_properties.h
+-- Up-to-date: /usr/include/SDL3/SDL_rect.h
+-- Up-to-date: /usr/include/SDL3/SDL_render.h
+-- Up-to-date: /usr/include/SDL3/SDL_scancode.h
+-- Up-to-date: /usr/include/SDL3/SDL_sensor.h
+-- Up-to-date: /usr/include/SDL3/SDL_stdinc.h
+-- Up-to-date: /usr/include/SDL3/SDL_storage.h
+-- Up-to-date: /usr/include/SDL3/SDL_surface.h
+-- Up-to-date: /usr/include/SDL3/SDL_system.h
+-- Up-to-date: /usr/include/SDL3/SDL_thread.h
+-- Up-to-date: /usr/include/SDL3/SDL_time.h
+-- Up-to-date: /usr/include/SDL3/SDL_timer.h
+-- Up-to-date: /usr/include/SDL3/SDL_touch.h
+-- Up-to-date: /usr/include/SDL3/SDL_tray.h
+-- Installing: /usr/include/SDL3/SDL_version.h
+-- Up-to-date: /usr/include/SDL3/SDL_video.h
+-- Up-to-date: /usr/include/SDL3/SDL_vulkan.h
+-- Installing: /usr/include/SDL3/SDL_revision.h
+-- Up-to-date: /usr/share/licenses/SDL3/LICENSE.txt
+3.4.20
+Updated registry for sdl3 to version 3.4.20
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package sdl3 in /var/lib/custom-packages/
+Building custom package tcl...
+[04:10:34] Found custom package for tcl, bypassing BLFS aliases.
+[04:10:34] Custom package detected at /home/fusion809/lfs_packaging/tcl (package: tcl)
+[04:10:35] Extracting dependencies for custom package 'tcl'...
+[04:10:35] Required deps: bash coreutils gcc glibc gzip make tar zlib 
+[04:10:35] Dependency 'bash' already installed.
+[04:10:35] Dependency 'coreutils' already installed.
+[04:10:35] Dependency 'gcc' already installed.
+[04:10:35] Dependency 'glibc' already installed.
+[04:10:35] Dependency 'gzip' already installed.
+[04:10:35] Dependency 'make' already installed.
+[04:10:35] Dependency 'tar' already installed.
+[04:10:35] Dependency 'zlib' already installed.
+[04:10:35] Starting remote custom build for tcl...
+[04:10:37] [LFS-AUTOBUILD] Skipping custom package tcl: version 9.1.0 already installed (use -f to force build).
+Building custom package vamp-plugin-sdk...
+[04:10:37] Found custom package for vamp-plugin-sdk, bypassing BLFS aliases.
+[04:10:37] Custom package detected at /home/fusion809/lfs_packaging/vamp-plugin-sdk (package: vamp-plugin-sdk)
+[04:10:37] Extracting dependencies for custom package 'vamp-plugin-sdk'...
+[04:10:37] Starting remote custom build for vamp-plugin-sdk...
+[04:10:39] [LFS-AUTOBUILD] Skipping custom package vamp-plugin-sdk: version 2.10 already installed (use -f to force build).
+Building custom package woxi-git...
+[04:10:40] Found custom package for woxi-git, bypassing BLFS aliases.
+[04:10:40] Custom package detected at /home/fusion809/lfs_packaging/woxi-git (package: woxi-git)
+[04:10:40] Checking conflicting package(s) for 'woxi-git': woxi 
+[04:10:40] Extracting dependencies for custom package 'woxi-git'...
+[04:10:40] Required deps: gcc glibc rust 
+[04:10:40] Dependency 'gcc' already installed.
+[04:10:40] Dependency 'glibc' already installed.
+[04:10:40] Dependency 'rust' already installed.
+[04:10:40] Starting remote custom build for woxi-git...
+--2026-11-04 04:10:46--  https://github.com/ad-si/Woxi/archive/5e3307265d4c3b34d114e0de0699dbf07b3c690c.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/ad-si/Woxi/tar.gz/5e3307265d4c3b34d114e0de0699dbf07b3c690c [following]
+--2026-11-04 04:10:47--  https://codeload.github.com/ad-si/Woxi/tar.gz/5e3307265d4c3b34d114e0de0699dbf07b3c690c
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘Woxi-5e3307265d4c3b34d114e0de0699dbf07b3c690c.tar.gz’
+
+          Woxi-5e33     [<=>                 ]       0  --.-KB/s                        Woxi-5e330     [ <=>                ] 958.87K  4.68MB/s                       Woxi-5e3307     [  <=>               ]   2.84M  7.11MB/s                      Woxi-5e33072     [   <=>              ]   4.70M  7.83MB/s                     Woxi-5e330726     [    <=>             ]   6.67M  8.33MB/s                    Woxi-5e3307265     [     <=>            ]   8.62M  8.62MB/s                   Woxi-5e3307265d     [      <=>           ]  10.66M  8.88MB/s                  Woxi-5e3307265d4     [       <=>          ]  12.78M  9.12MB/s                 Woxi-5e3307265d4c     [        <=>         ]  14.84M  9.26MB/s                Woxi-5e3307265d4c3     [         <=>        ]  17.02M  9.44MB/s               Woxi-5e3307265d4c3b     [          <=>       ]  19.13M  9.55MB/s               oxi-5e3307265d4c3b3     [           <=>      ]  20.50M  9.25MB/s               xi-5e3307265d4c3b34     [            <=>     ]  21.73M  8.99MB/s               i-5e3307265d4c3b34d     [             <=>    ]  22.50M  8.58MB/s               -5e3307265d4c3b34d1     [              <=>   ]  23.50M  8.27MB/s               5e3307265d4c3b34d11     [               <=>  ]  24.25M  7.93MB/s               e3307265d4c3b34d114     [                <=> ]  25.01M  7.82MB/s               3307265d4c3b34d114e     [                 <=>]  25.75M  7.44MB/s               307265d4c3b34d114e0     [                <=> ]  27.35M  7.39MB/s               07265d4c3b34d114e0d     [               <=>  ]  29.53M  7.42MB/s               Woxi-5e3307265d4c3b     [              <=>   ]  30.66M  7.53MB/s    in 4.0s    
+
+2026-11-04 04:10:51 (7.65 MB/s) - ‘Woxi-5e3307265d4c3b34d114e0de0699dbf07b3c690c.tar.gz’ saved [32153919]
+
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling cfg-if v1.0.5
+   Compiling libc v0.2.191
+   Compiling libm v0.2.16
+   Compiling memchr v2.8.3
+   Compiling syn v3.0.9
+   Compiling syn v2.0.119
+   Compiling zerocopy v0.8.63
+   Compiling log v0.4.34
+   Compiling autocfg v1.5.1
+   Compiling num-traits v0.2.19
+   Compiling smallvec v1.16.4
+   Compiling zerocopy-derive v0.8.63
+   Compiling bytemuck_derive v1.12.1
+   Compiling typenum v1.20.1
+   Compiling simd-adler32 v0.3.10
+   Compiling equivalent v1.0.3
+   Compiling hybrid-array v0.4.15
+   Compiling bytemuck v1.25.2
+   Compiling crc32fast v1.5.3
+   Compiling adler2 v2.0.1
+   Compiling serde_core v1.0.229
+   Compiling rand_core v0.10.1
+   Compiling miniz_oxide v0.9.1
+   Compiling hashbrown v0.17.1
+   Compiling zlib-rs v0.6.8
+   Compiling getrandom v0.4.3
+   Compiling indexmap v2.14.2
+   Compiling ppv-lite86 v0.2.21
+   Compiling flate2 v1.1.10
+   Compiling crypto-common v0.2.2
+   Compiling getrandom v0.2.17
+   Compiling find-msvc-tools v0.1.15
+   Compiling scopeguard v1.2.0
+   Compiling shlex v2.0.1
+   Compiling cc v1.10.0
+   Compiling futures-core v0.3.34
+   Compiling pin-project-lite v0.2.17
+   Compiling rustversion v1.0.23
+   Compiling getrandom v0.3.4
+   Compiling arrayvec v0.7.8
+   Compiling bitflags v2.13.2
+   Compiling serde v1.0.229
+   Compiling futures-sink v0.3.34
+   Compiling serde_derive v1.0.229
+   Compiling futures-io v0.3.34
+   Compiling futures-channel v0.3.34
+   Compiling rand_core v0.6.4
+   Compiling block-buffer v0.12.1
+   Compiling futures-macro v0.3.34
+   Compiling aho-corasick v1.1.5
+   Compiling slab v0.4.12
+   Compiling parking_lot_core v0.9.12
+   Compiling regex-syntax v0.8.11
+   Compiling futures-task v0.3.34
+   Compiling const-oid v0.10.2
+   Compiling digest v0.11.3
+   Compiling futures-util v0.3.34
+   Compiling regex-automata v0.4.18
+   Compiling rand_chacha v0.3.1
+   Compiling rand_core v0.9.5
+   Compiling foldhash v0.2.0
+   Compiling siphasher v1.0.4
+   Compiling cpufeatures v0.3.1
+   Compiling itoa v1.0.18
+   Compiling version_check v0.9.5
+   Compiling tinyvec v1.13.3
+   Compiling bytes v1.12.1
+   Compiling slotmap v1.1.1
+   Compiling rand v0.8.8
+   Compiling encoding_rs v0.8.42
+   Compiling lock_api v0.4.14
+   Compiling block-padding v0.4.2
+   Compiling miniz_oxide v0.8.9
+   Compiling fdeflate v0.3.7
+   Compiling core_maths v0.1.1
+   Compiling errno v0.3.14
+   Compiling crossbeam-utils v0.8.23
+   Compiling weezl v0.1.12
+   Compiling unicode-properties v0.1.4
+   Compiling thiserror v1.0.69
+   Compiling float-cmp v0.9.0
+   Compiling zmij v1.0.23
+   Compiling utf8parse v0.2.2
+   Compiling thiserror v2.0.21
+   Compiling strict-num v0.1.1
+   Compiling signal-hook-registry v1.4.8
+   Compiling ttf-parser v0.25.1
+   Compiling parking_lot v0.12.5
+   Compiling inout v0.2.5
+   Compiling regex v1.13.1
+   Compiling futures-executor v0.3.34
+   Compiling font-types v0.11.3
+   Compiling tokio-macros v2.7.2
+   Compiling thiserror-impl v2.0.21
+   Compiling thiserror-impl v1.0.69
+   Compiling socket2 v0.6.5
+   Compiling mio v1.2.4
+   Compiling roxmltree v0.20.0
+   Compiling core_detect v1.0.0
+   Compiling unicode-bidi v0.3.18
+   Compiling option-ext v0.2.0
+   Compiling serde_json v1.0.154
+   Compiling arrayref v0.3.9
+   Compiling quick-error v2.0.1
+   Compiling ucd-trie v0.1.7
+   Compiling sha1_smol v1.0.1
+   Compiling iana-time-zone v0.1.65
+   Compiling saa v5.6.2
+   Compiling color_quant v1.1.0
+   Compiling simdutf8 v0.1.5
+   Compiling multiversion_no_op v1.0.0
+   Compiling sdd v4.8.11
+   Compiling chrono v0.4.45
+   Compiling uuid v1.29.0
+   Compiling pest v2.8.8
+   Compiling tiny-skia-path v0.11.4
+   Compiling fontconfig-parser v0.5.8
+   Compiling dirs-sys v0.5.0
+   Compiling tokio v1.54.1
+   Compiling read-fonts v0.39.2
+   Compiling futures v0.3.34
+   Compiling cipher v0.5.2
+   Compiling anstyle-parse v1.0.0
+   Compiling rand_chacha v0.9.0
+   Compiling ring v0.17.14
+   Compiling polycool v0.4.0
+   Compiling kurbo v0.11.3
+   Compiling num-integer v0.1.47
+   Compiling async-trait v0.1.92
+   Compiling memmap2 v0.9.12
+   Compiling unicode-ccc v0.4.0
+   Compiling anstyle-query v1.1.5
+   Compiling cfg_aliases v0.2.2
+   Compiling bitflags v1.3.2
+   Compiling unicode-script v0.5.8
+   Compiling syn v1.0.109
+   Compiling byteorder-lite v0.1.0
+   Compiling either v1.19.0
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling colorchoice v1.0.5
+   Compiling unicode-bidi-mirroring v0.4.0
+   Compiling radium v0.7.0
+   Compiling once_cell v1.21.4
+   Compiling bumpalo v3.20.3
+   Compiling anstyle v1.0.14
+   Compiling zopfli v0.8.4
+   Compiling anstream v1.0.0
+   Compiling rustybuzz v0.20.1
+   Compiling itertools v0.10.5
+   Compiling png v0.17.16
+   Compiling nix v0.31.3
+   Compiling fontdb v0.23.0
+   Compiling num-bigint v0.4.8
+   Compiling svgtypes v0.15.3
+   Compiling tokio-util v0.7.20
+   Compiling kurbo v0.13.1
+   Compiling rand v0.9.5
+   Compiling crossbeam-queue v0.3.14
+   Compiling pest_meta v2.8.8
+   Compiling scc v3.8.8
+   Compiling asynchronous-codec v0.7.0
+   Compiling chacha20 v0.10.2
+   Compiling psm v0.1.24
+   Compiling simplecss v0.2.2
+   Compiling zune-core v0.5.3
+   Compiling allocator-api2 v0.2.21
+   Compiling zune-core v0.4.12
+   Compiling lazy_static v1.5.1
+   Compiling data-url v0.3.2
+   Compiling xmlwriter v0.1.0
+   Compiling base64 v0.22.1
+   Compiling pico-args v0.5.0
+   Compiling alloc-no-stdlib v2.0.4
+   Compiling tap v1.0.1
+   Compiling typed-path v0.13.0
+   Compiling untrusted v0.9.0
+   Compiling unicode-vo v0.1.0
+   Compiling imagesize v0.13.0
+   Compiling usvg v0.45.1
+   Compiling zip v9.1.2
+   Compiling wyz v0.5.1
+   Compiling alloc-stdlib v0.2.4
+   Compiling astro-float-num v0.3.7
+   Compiling zune-jpeg v0.4.21
+   Compiling hashbrown v0.16.1
+   Compiling zune-jpeg v0.5.15
+   Compiling zeromq v0.6.0
+   Compiling rand v0.10.3
+   Compiling pest_generator v2.8.8
+   Compiling jupyter-protocol v2.0.2
+   Compiling write-fonts v0.48.1
+   Compiling tiny-skia v0.11.4
+   Compiling image-webp v0.2.4
+   Compiling skrifa v0.42.1
+   Compiling dirs v6.0.0
+   Compiling gif v0.13.3
+   Compiling unicode-normalization v0.1.26
+   Compiling phf_shared v0.12.1
+   Compiling stacker v0.1.25
+   Compiling half v2.7.1
+   Compiling safe_arch v0.7.4
+   Compiling rgb v0.8.53
+   Compiling nibble_vec v0.1.0
+   Compiling data-encoding v2.11.1
+   Compiling strsim v0.11.1
+   Compiling plotters-backend v0.3.7
+   Compiling endian-type v0.2.0
+   Compiling anyhow v1.0.104
+   Compiling ieee754 v0.2.6
+   Compiling fax v0.2.7
+   Compiling pxfm v0.1.30
+   Compiling heck v0.5.0
+   Compiling debug_unsafe v0.1.4
+   Compiling funty v2.0.0
+   Compiling chrono-tz v0.10.4
+   Compiling jiff-core v0.1.1
+   Compiling rustc-hash v2.1.3
+   Compiling clap_lex v1.1.1
+   Compiling foldhash v0.1.5
+   Compiling cpubits v0.1.1
+   Compiling ryu v1.0.23
+   Compiling bit-vec v0.8.0
+   Compiling bit-set v0.8.0
+   Compiling pdf-writer v0.12.1
+   Compiling aes v0.9.3
+   Compiling hashbrown v0.15.5
+   Compiling clap_builder v4.6.7
+   Compiling subsetter v0.2.6
+   Compiling jiff v0.2.38
+   Compiling bitvec v1.1.1
+   Compiling atoi_simd v0.18.1
+   Compiling clap_derive v4.6.7
+   Compiling moxcms v0.8.1
+   Compiling tiff v0.11.3
+   Compiling accurate v0.3.1
+   Compiling radix_trie v0.3.0
+   Compiling plotters-svg v0.3.7
+   Compiling jupyter-zmq-client v1.0.1
+   Compiling resvg v0.45.1
+   Compiling wide v0.7.33
+   Compiling phf v0.12.1
+   Compiling stringprep v0.1.5
+   Compiling astro-float-macro v0.4.6
+   Compiling pest_derive v2.8.8
+   Compiling lru v0.16.4
+   Compiling brotli-decompressor v5.0.3
+   Compiling num-modular v0.6.5
+   Compiling ecb v0.2.1
+   Compiling cbc v0.2.1
+   Compiling quick-xml v0.42.0
+   Compiling codepage v0.1.3
+   Compiling gif v0.14.2
+   Compiling env_filter v2.0.0
+   Compiling png v0.18.1
+   Compiling sha2 v0.11.1
+   Compiling rand_xoshiro v0.7.0
+   Compiling md-5 v0.11.0
+   Compiling nom v8.0.0
+   Compiling keccak v0.2.2
+   Compiling woxi v0.3.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-5e3307265d4c3b34d114e0de0699dbf07b3c690c)
+   Compiling fixedbitset v0.5.7
+   Compiling imbl-sized-chunks v0.2.0
+   Compiling fast-float2 v0.2.4
+   Compiling unicode-segmentation v1.13.3
+   Compiling weezl v0.2.1
+   Compiling byteorder v1.5.0
+   Compiling home v0.5.12
+   Compiling rangemap v1.8.0
+   Compiling unicode_categories v0.1.1
+   Compiling unicode-width v0.2.2
+   Compiling sponge-cursor v0.1.0
+   Compiling archery v1.2.3
+   Compiling sha3 v0.12.0
+   Compiling imbl v7.0.2
+   Compiling lopdf v0.46.0
+   Compiling rustyline v19.0.0
+   Compiling snailquote v0.3.1
+   Compiling calamine v0.37.0
+   Compiling petgraph v0.8.3
+   Compiling image v0.25.10
+   Compiling env_logger v0.11.11
+   Compiling num-prime v0.7.0
+   Compiling woxi-parser v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-5e3307265d4c3b34d114e0de0699dbf07b3c690c/crates/woxi-parser)
+   Compiling astro-float v0.9.6
+   Compiling svg2pdf v0.13.0
+   Compiling runtimelib v3.0.0
+   Compiling plotters v0.3.7
+   Compiling geographiclib-rs v0.2.7
+   Compiling clap v4.6.7
+   Compiling fancy-regex v0.20.0
+   Compiling rand_distr v0.6.0
+   Compiling rust_xlsxwriter v0.101.0
+   Compiling woxi-reduce v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-5e3307265d4c3b34d114e0de0699dbf07b3c690c/crates/woxi-reduce)
+   Compiling dirs v7.0.0
+   Compiling sha1 v0.11.0
+   Compiling md4 v0.11.0
+   Compiling ripemd v0.2.0
+   Compiling rand_chacha v0.10.0
+   Compiling web-time v1.1.0
+   Compiling lz4_flex v0.14.0
+   Compiling base64 v0.23.1
+    Finished `release` profile [optimized] target(s) in 106m 16s
+   Compiling syn v3.0.9
+   Compiling syn v2.0.119
+   Compiling smallvec v1.16.4
+   Compiling libloading v0.8.9
+   Compiling rustix v1.1.6
+   Compiling linux-raw-sys v0.12.1
+   Compiling zerocopy-derive v0.8.63
+   Compiling bytemuck_derive v1.12.1
+   Compiling bytemuck v1.25.2
+   Compiling zerocopy v0.8.63
+   Compiling crossbeam-utils v0.8.23
+   Compiling thiserror-impl v2.0.21
+   Compiling pkg-config v0.3.34
+   Compiling arrayvec v0.7.8
+   Compiling thiserror v2.0.21
+   Compiling slab v0.4.12
+   Compiling serde_derive v1.0.229
+   Compiling wayland-sys v0.31.11
+   Compiling dlib v0.5.3
+   Compiling wayland-backend v0.3.17
+   Compiling downcast-rs v1.2.1
+   Compiling scoped-tls v1.0.1
+   Compiling ppv-lite86 v0.2.21
+   Compiling quick-xml v0.41.0
+   Compiling wayland-client v0.31.15
+   Compiling parking_lot_core v0.9.12
+   Compiling rand_chacha v0.3.1
+   Compiling parking_lot v0.12.5
+   Compiling wayland-scanner v0.31.11
+   Compiling futures-channel v0.3.34
+   Compiling rand v0.8.8
+   Compiling ttf-parser v0.25.1
+   Compiling futures-macro v0.3.34
+   Compiling unicode-ident v1.0.27
+   Compiling crossbeam-epoch v0.9.21
+   Compiling futures-util v0.3.34
+   Compiling serde v1.0.229
+   Compiling polling v3.11.0
+   Compiling crossbeam-deque v0.8.8
+   Compiling num-bigint v0.4.8
+   Compiling half v2.7.1
+   Compiling profiling-procmacros v1.0.18
+   Compiling tracing-attributes v0.1.31
+   Compiling tracing-core v0.1.36
+   Compiling rayon-core v1.13.0
+   Compiling raw-window-handle v0.6.2
+   Compiling profiling v1.0.18
+   Compiling futures-executor v0.3.34
+   Compiling tracing v0.1.44
+   Compiling tokio-macros v2.7.2
+   Compiling equator-macro v0.4.2
+   Compiling serde_core v1.0.229
+   Compiling tokio v1.54.1
+   Compiling equator v0.4.2
+   Compiling futures v0.3.34
+   Compiling paste v1.0.15
+   Compiling parking v2.2.1
+   Compiling fastrand v2.5.0
+   Compiling aligned-vec v0.6.4
+   Compiling stable_deref_trait v1.2.1
+   Compiling winnow v1.0.4
+   Compiling smol_str v0.2.2
+   Compiling rustc-hash v1.1.0
+   Compiling as-slice v0.2.1
+   Compiling fontdb v0.23.0
+   Compiling v_frame v0.3.9
+   Compiling rayon v1.12.0
+   Compiling num-rational v0.4.2
+   Compiling wayland-protocols v0.32.13
+   Compiling equivalent v1.0.3
+   Compiling hashbrown v0.17.1
+   Compiling av-scenechange v0.14.1
+   Compiling built v0.8.1
+   Compiling rav1e v0.8.1
+   Compiling indexmap v2.14.2
+   Compiling tiny-skia-path v0.11.4
+   Compiling aligned v0.4.3
+   Compiling toml_parser v1.1.5+spec-1.1.0
+   Compiling pulp v0.22.3
+   Compiling rgb v0.8.53
+   Compiling font-types v0.10.1
+   Compiling font-types v0.12.7
+   Compiling arg_enum_proc_macro v0.3.4
+   Compiling thiserror-impl v1.0.69
+   Compiling no_std_io2 v0.9.4
+   Compiling y4m v0.8.0
+   Compiling pastey v0.1.1
+   Compiling toml_datetime v1.1.2+spec-1.1.0
+   Compiling toml_edit v0.25.17+spec-1.1.0
+   Compiling thiserror v1.0.69
+   Compiling bitstream-io v4.10.0
+   Compiling read-fonts v0.41.0
+   Compiling read-fonts v0.35.0
+   Compiling lilt v0.8.2
+   Compiling av1-grain v0.2.5
+   Compiling maybe-rayon v0.1.1
+   Compiling itertools v0.14.0
+   Compiling num-complex v0.4.6
+   Compiling enumflags2_derive v0.7.12
+   Compiling num-derive v0.4.2
+   Compiling simd_helpers v0.1.0
+   Compiling raw-cpuid v11.6.0
+   Compiling reborrow v0.5.5
+   Compiling pulp-wasm-simd-flag v0.1.1
+   Compiling glam v0.25.0
+   Compiling imgref v1.12.3
+   Compiling new_debug_unreachable v1.0.6
+   Compiling noop_proc_macro v0.3.0
+   Compiling loop9 v0.1.5
+   Compiling iced_core v0.14.0
+   Compiling skrifa v0.44.0
+   Compiling tiny-skia v0.11.4
+   Compiling proc-macro-crate v3.5.0
+   Compiling zvariant_utils v4.2.0
+   Compiling event-listener v5.4.2
+   Compiling naga v27.0.3
+   Compiling concurrent-queue v2.5.0
+   Compiling zune-inflate v0.2.54
+   Compiling avif-serialize v0.8.9
+   Compiling proc-macro2 v1.0.107
+   Compiling zeno v0.3.3
+   Compiling khronos-egl v6.0.0
+   Compiling ash v0.38.0+1.3.281
+   Compiling yazi v0.2.1
+   Compiling as-raw-xcb-connection v1.0.1
+   Compiling bit_field v0.10.3
+   Compiling lebe v0.5.3
+   Compiling exr v1.74.2
+   Compiling swash v0.2.10
+   Compiling tiff v0.11.3
+   Compiling ravif v0.13.0
+   Compiling event-listener-strategy v0.5.4
+   Compiling zvariant_derive v5.15.1
+   Compiling iced_futures v0.14.0
+   Compiling harfrust v0.3.2
+   Compiling skrifa v0.37.0
+   Compiling codespan-reporting v0.12.0
+   Compiling futures-lite v2.6.1
+   Compiling wgpu-hal v27.0.4
+   Compiling kurbo v0.11.3
+   Compiling gethostname v1.1.0
+   Compiling qoi v0.4.1
+   Compiling async-trait v0.1.92
+   Compiling spirv v0.3.0+sdk-1.3.268.0
+   Compiling gpu-descriptor-types v0.2.0
+   Compiling gpu-alloc-types v0.3.1
+   Compiling quote v1.0.47
+   Compiling xkeysym v0.2.1
+   Compiling linebender_resource_handle v0.1.1
+   Compiling sys-locale v0.3.2
+   Compiling self_cell v1.3.0
+   Compiling xcursor v0.3.11
+   Compiling unicode-linebreak v0.1.5
+   Compiling hexf-parse v0.2.1
+   Compiling cursor-icon v1.2.0
+   Compiling x11rb-protocol v0.13.2
+   Compiling wayland-csd-frame v0.3.0
+   Compiling rustybuzz v0.20.1
+   Compiling cosmic-text v0.15.0
+   Compiling x11rb v0.13.2
+   Compiling wayland-cursor v0.31.14
+   Compiling gpu-alloc v0.6.2
+   Compiling gpu-descriptor v0.3.2
+   Compiling svgtypes v0.15.3
+   Compiling image v0.25.10
+   Compiling wayland-protocols-wlr v0.3.12
+   Compiling wgpu-types v27.0.1
+   Compiling ordered-float v5.5.1
+   Compiling async-io v2.6.0
+   Compiling renderdoc-sys v1.1.0
+   Compiling glow v0.16.0
+   Compiling rustix v0.38.44
+   Compiling mutate_once v0.1.2
+   Compiling usvg v0.45.1
+   Compiling kamadak-exif v0.6.1
+   Compiling enumflags2 v0.7.12
+   Compiling zcheapstr v1.1.0
+   Compiling wgpu-core v27.0.3
+   Compiling litrs v1.0.1
+   Compiling linux-raw-sys v0.4.15
+   Compiling async-task v4.7.1
+   Compiling endi v1.1.1
+   Compiling zvariant v5.15.1
+   Compiling document-features v0.2.12
+   Compiling resvg v0.45.1
+   Compiling iced_graphics v0.14.0
+   Compiling wgpu-core-deps-windows-linux-android v27.0.0
+   Compiling async-channel v2.5.0
+   Compiling calloop v0.14.5
+   Compiling wgpu v27.0.1
+   Compiling tiny-xlib v0.2.5
+   Compiling euclid v0.22.14
+   Compiling atomic-waker v1.1.2
+   Compiling smithay-client-toolkit v0.20.0
+   Compiling svg_fmt v0.4.5
+   Compiling piper v0.2.5
+   Compiling calloop-wayland-source v0.4.1
+   Compiling async-signal v0.2.14
+   Compiling calloop v0.13.0
+   Compiling zbus_names v4.3.5
+   Compiling iced_debug v0.14.0
+   Compiling async-lock v3.4.2
+   Compiling wayland-protocols-experimental v20250721.0.1
+   Compiling wayland-protocols-misc v0.3.12
+   Compiling font-types v0.11.3
+   Compiling static_assertions v1.1.0
+   Compiling smithay-client-toolkit v0.19.2
+   Compiling ctor v0.10.1
+   Compiling read-fonts v0.39.2
+   Compiling chrono v0.4.45
+   Compiling async-process v2.5.0
+   Compiling zbus_macros v5.19.0
+   Compiling calloop-wayland-source v0.3.0
+   Compiling blocking v1.7.0
+   Compiling etagere v0.2.15
+   Compiling async-executor v1.14.0
+   Compiling rand_chacha v0.9.0
+   Compiling async-broadcast v0.7.2
+   Compiling owned_ttf_parser v0.25.1
+   Compiling ahash v0.8.12
+   Compiling polycool v0.4.0
+   Compiling x11-dl v2.21.0
+   Compiling ordered-stream v0.2.0
+   Compiling serde_repr v0.1.21
+   Compiling async-recursion v1.2.0
+   Compiling android-build v0.1.4
+   Compiling ab_glyph_rasterizer v0.1.10
+   Compiling hex v0.4.3
+   Compiling ab_glyph v0.2.32
+   Compiling zbus v5.19.0
+   Compiling mundy v0.2.3
+   Compiling kurbo v0.13.1
+   Compiling rand v0.9.5
+   Compiling cryoglyph v0.1.0
+   Compiling smithay-clipboard v0.7.3
+   Compiling softbuffer v0.4.8
+   Compiling guillotiere v0.6.2
+   Compiling tokio-util v0.7.20
+   Compiling asynchronous-codec v0.7.0
+   Compiling winit v0.30.13
+   Compiling crossbeam-queue v0.3.14
+   Compiling kurbo v0.10.4
+   Compiling percent-encoding v2.3.2
+   Compiling zeromq v0.6.0
+   Compiling iced_tiny_skia v0.14.1
+   Compiling iced_wgpu v0.14.0
+   Compiling pest_generator v2.8.8
+   Compiling sctk-adwaita v0.10.1
+   Compiling clipboard_wayland v0.2.2
+   Compiling jupyter-protocol v2.0.2
+   Compiling write-fonts v0.48.1
+   Compiling skrifa v0.42.1
+   Compiling clipboard_x11 v0.4.3
+   Compiling xkbcommon-dl v0.4.2
+   Compiling iced_runtime v0.14.0
+   Compiling wayland-protocols-plasma v0.3.12
+   Compiling safe_arch v0.7.4
+   Compiling nibble_vec v0.1.0
+   Compiling dpi v0.1.2
+   Compiling radix_trie v0.3.0
+   Compiling astro-float-num v0.3.7
+   Compiling jupyter-zmq-client v1.0.1
+   Compiling clap_derive v4.6.7
+   Compiling wide v0.7.33
+   Compiling subsetter v0.2.6
+   Compiling iced_program v0.14.0
+   Compiling window_clipboard v0.5.1
+   Compiling pest_derive v2.8.8
+   Compiling iced_renderer v0.14.0
+   Compiling num-modular v0.6.5
+   Compiling rfd v0.17.2
+   Compiling dark-light v3.0.0
+   Compiling woxi v0.3.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-5e3307265d4c3b34d114e0de0699dbf07b3c690c)
+   Compiling imbl v7.0.2
+   Compiling snailquote v0.3.1
+   Compiling rustyline v19.0.0
+   Compiling calamine v0.37.0
+   Compiling lopdf v0.46.0
+   Compiling num-prime v0.7.0
+   Compiling iced_winit v0.14.1
+   Compiling iced_widget v0.14.2
+   Compiling woxi-parser v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-5e3307265d4c3b34d114e0de0699dbf07b3c690c/crates/woxi-parser)
+   Compiling astro-float v0.9.6
+   Compiling chrono-tz v0.10.4
+   Compiling svg2pdf v0.13.0
+   Compiling clap v4.6.7
+   Compiling runtimelib v3.0.0
+   Compiling woxi-reduce v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-5e3307265d4c3b34d114e0de0699dbf07b3c690c/crates/woxi-reduce)
+   Compiling rand_chacha v0.10.0
+   Compiling pollster v0.4.0
+   Compiling iced v0.14.0
+   Compiling woxi-studio v0.3.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-5e3307265d4c3b34d114e0de0699dbf07b3c690c/woxi-studio)
+    Finished `release` profile [optimized] target(s) in 97m 05s
+--2026-11-04 07:34:10--  https://woxi.ad-si.com/docs/favicon.png
+Resolving woxi.ad-si.com (woxi.ad-si.com)... 185.199.110.153, 185.199.108.153, 185.199.109.153, ...
+Connecting to woxi.ad-si.com (woxi.ad-si.com)|185.199.110.153|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 35750 (35K) [image/png]
+Saving to: ‘woxi.png’
+
+     0K .......... .......... .......... ....                 100% 6.75M=0.005s
+
+2026-11-04 07:34:10 (6.75 MB/s) - ‘woxi.png’ saved [35750/35750]
+
+5e3307265d4c3b34d114e0de0699dbf07b3c690c
+Updated registry for woxi-git to version 07f04db6d15587ecea23b6e79f9fdaaba8a5f18f
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package woxi-git in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master d78d7f4] Updating packages
+ 2 files changed, 70 insertions(+), 70 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master 94837d8] Updating packages
+ 2 files changed, 2 insertions(+)
+Pushing changes in ~/build_duration...
+r13.1-35
+r13.1-547
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libexpat.so.1.13.0
+cand_sobase=libexpat.so
+search_base=libexpat
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libnghttp2.so.14.29.5
+cand_sobase=libnghttp.so
+search_base=libnghttp
+replacement_found=true
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libexpat.so.1.13.0
+Path: /usr/lib/libexpat.so.1.13.0
+Skipping generic/unsafe name 'libexpat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libexpat.so.1 libexpat.so.1.13.0
+Example dependents: ./miniconda3/bin/dbus-daemon ./miniconda3/bin/xmlwf ./miniconda3/libexec/dbus-daemon-launch-helper ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libexpat.so.1.13.0:
+  - ./miniconda3/bin/dbus-daemon
+  - ./miniconda3/bin/xmlwf
+  - ./miniconda3/libexec/dbus-daemon-launch-helper
+  - ./miniconda3/lib/python3.14/lib-dynload/pyexpat.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libexpat.so.1.13.0.
+------------------------------------------------
+Checking obsolete version (file): libnghttp2.so.14.29.5
+Path: /usr/lib/libnghttp2.so.14.29.5
+Skipping generic/unsafe name 'libnghttp2.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libnghttp2.so.14 libnghttp2.so.14.29.5
+Example dependents: ./miniconda3/bin/nghttp ./miniconda3/bin/nghttpd ./miniconda3/bin/nghttpx ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libnghttp2.so.14.29.5:
+  - ./miniconda3/bin/nghttp
+  - ./miniconda3/bin/nghttpd
+  - ./miniconda3/bin/nghttpx
+  - ./miniconda3/lib/libcurl.so.4.8.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libnghttp2.so.14.29.5.
+------------------------------------------------
+Checking obsolete version (file): libSDL3.so.0.4.18
+Path: /usr/lib/libSDL3.so.0.4.18
+Skipping generic/unsafe name 'libSDL3.so.' to prevent false positive matches.
+i_dir=/usr/lib
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libSDL3.so.0.4.18...
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
