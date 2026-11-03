@@ -1,0 +1,155 @@
+===== Update check started: 2026-11-03 14:45:06 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261103_144506
+/dev/fd/63: line 11: lfs_vers: unbound variable
+Packages needing attention: firefox-bin
+===== Starting updatec: 2026-11-03 14:45:14 AEST =====
+Checking for packages with missing file inventories...
+name=firefox-bin
+local_ver=159.0
+remote_ver=159.0.1
+Failed to check custom update version for: kseexpr
+Applying updates in dependency order:
+  - firefox-bin
+
+Building custom package firefox-bin...
+[14:48:08] Found custom package for firefox-bin, bypassing BLFS aliases.
+[14:48:08] Custom package detected at /home/fusion809/lfs_packaging/firefox-bin (package: firefox-bin)
+[14:48:08] Checking conflicting package(s) for 'firefox-bin': firefox 
+[14:48:08] Extracting dependencies for custom package 'firefox-bin'...
+[14:48:08] Required deps: alsa-lib at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz libepoxy libffi libpng libseccomp libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres nspr nss pango pcre2 pixman systemd util-linux wayland zlib 
+[14:48:08] Dependency 'alsa-lib' already installed.
+[14:48:08] Dependency 'at-spi2-core' already installed.
+[14:48:08] Dependency 'brotli' already installed.
+[14:48:08] Dependency 'bzip2' already installed.
+[14:48:08] Dependency 'cairo' already installed.
+[14:48:08] Dependency 'dbus' already installed.
+[14:48:08] Dependency 'expat' already installed.
+[14:48:08] Dependency 'fontconfig' already installed.
+[14:48:08] Dependency 'freetype' already installed.
+[14:48:08] Dependency 'fribidi' already installed.
+[14:48:08] Dependency 'gcc' already installed.
+[14:48:08] Dependency 'gdk-pixbuf' already installed.
+[14:48:08] Dependency 'glib2' already installed.
+[14:48:08] Dependency 'glibc' already installed.
+[14:48:08] Dependency 'glycin' already installed.
+[14:48:08] Dependency 'graphite2' already installed.
+[14:48:08] Dependency 'gtk3' already installed.
+[14:48:08] Dependency 'harfbuzz' already installed.
+[14:48:08] Dependency 'libepoxy' already installed.
+[14:48:08] Dependency 'libffi' already installed.
+[14:48:08] Dependency 'libpng' already installed.
+[14:48:08] Dependency 'libseccomp' already installed.
+[14:48:08] Dependency 'libx11' already installed.
+[14:48:08] Dependency 'libxau' already installed.
+[14:48:08] Dependency 'libxcb' already installed.
+[14:48:08] Dependency 'libxcomposite' already installed.
+[14:48:08] Dependency 'libxcursor' already installed.
+[14:48:08] Dependency 'libxdamage' already installed.
+[14:48:08] Dependency 'libxdmcp' already installed.
+[14:48:08] Dependency 'libxext' already installed.
+[14:48:08] Dependency 'libxfixes' already installed.
+[14:48:08] Dependency 'libxi' already installed.
+[14:48:08] Dependency 'libxinerama' already installed.
+[14:48:08] Dependency 'libxkbcommon' already installed.
+[14:48:08] Dependency 'libxrandr' already installed.
+[14:48:08] Dependency 'libxrender' already installed.
+[14:48:08] Dependency 'libxres' already installed.
+[14:48:08] Dependency 'nspr' already installed.
+[14:48:08] Dependency 'nss' already installed.
+[14:48:08] Dependency 'pango' already installed.
+[14:48:08] Dependency 'pcre2' already installed.
+[14:48:08] Dependency 'pixman' already installed.
+[14:48:08] Dependency 'systemd' already installed.
+[14:48:08] Dependency 'util-linux' already installed.
+[14:48:08] Dependency 'wayland' already installed.
+[14:48:08] Dependency 'zlib' already installed.
+[14:48:08] Starting remote custom build for firefox-bin...
+--2026-11-03 14:48:46--  https://ftp.mozilla.org/pub/firefox/releases/159.0.1/linux-x86_64/en-GB/firefox-159.0.1.tar.xz
+Resolving ftp.mozilla.org (ftp.mozilla.org)... 151.101.3.19, 151.101.131.19, 151.101.67.19, ...
+Connecting to ftp.mozilla.org (ftp.mozilla.org)|151.101.3.19|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 93946780 (90M) [application/x-tar]
+Saving to: ‘firefox-159.0.1.tar.xz’
+
+firefox-159.0.1.tar   0%[                    ]       0  --.-KB/s               firefox-159.0.1.tar   0%[                    ] 125.85K   598KB/s               firefox-159.0.1.tar   0%[                    ] 397.85K   956KB/s               firefox-159.0.1.tar   1%[                    ] 989.85K  1.57MB/s               firefox-159.0.1.tar   2%[                    ]   2.20M  2.70MB/s               firefox-159.0.1.tar   4%[                    ]   3.84M  3.78MB/s               firefox-159.0.1.tar   6%[>                   ]   6.04M  4.96MB/s               firefox-159.0.1.tar   8%[>                   ]   8.03M  5.65MB/s               firefox-159.0.1.tar  11%[=>                  ]  10.04M  6.20MB/s               firefox-159.0.1.tar  13%[=>                  ]  12.15M  6.67MB/s               firefox-159.0.1.tar  15%[==>                 ]  14.25M  7.05MB/s               firefox-159.0.1.tar  17%[==>                 ]  16.11M  7.10MB/s               firefox-159.0.1.tar  21%[===>                ]  18.84M  7.64MB/s               firefox-159.0.1.tar  23%[===>                ]  20.76M  7.78MB/s               firefox-159.0.1.tar  25%[====>               ]  22.84M  7.96MB/s               firefox-159.0.1.tar  27%[====>               ]  24.95M  8.13MB/s    eta 8s     firefox-159.0.1.tar  29%[====>               ]  26.81M  8.20MB/s    eta 8s     firefox-159.0.1.tar  32%[=====>              ]  28.89M  8.74MB/s    eta 8s     firefox-159.0.1.tar  34%[=====>              ]  31.06M  9.73MB/s    eta 8s     firefox-159.0.1.tar  37%[======>             ]  33.15M  10.1MB/s    eta 8s     firefox-159.0.1.tar  39%[======>             ]  35.08M  10.2MB/s    eta 6s     firefox-159.0.1.tar  41%[=======>            ]  37.17M  10.2MB/s    eta 6s     firefox-159.0.1.tar  43%[=======>            ]  39.34M  10.2MB/s    eta 6s     firefox-159.0.1.tar  46%[========>           ]  41.22M  10.2MB/s    eta 6s     firefox-159.0.1.tar  48%[========>           ]  43.11M  10.1MB/s    eta 6s     firefox-159.0.1.tar  50%[=========>          ]  45.23M  10.2MB/s    eta 5s     firefox-159.0.1.tar  52%[=========>          ]  47.31M  10.1MB/s    eta 5s     firefox-159.0.1.tar  55%[==========>         ]  49.45M  10.2MB/s    eta 5s     firefox-159.0.1.tar  57%[==========>         ]  51.29M  10.1MB/s    eta 5s     firefox-159.0.1.tar  59%[==========>         ]  53.56M  10.2MB/s    eta 5s     firefox-159.0.1.tar  62%[===========>        ]  55.64M  10.2MB/s    eta 4s     firefox-159.0.1.tar  64%[===========>        ]  57.78M  10.2MB/s    eta 4s     firefox-159.0.1.tar  66%[============>       ]  59.88M  10.3MB/s    eta 4s     firefox-159.0.1.tar  68%[============>       ]  61.75M  10.2MB/s    eta 4s     firefox-159.0.1.tar  71%[=============>      ]  63.98M  10.2MB/s    eta 4s     firefox-159.0.1.tar  73%[=============>      ]  66.04M  10.2MB/s    eta 3s     firefox-159.0.1.tar  76%[==============>     ]  68.25M  10.3MB/s    eta 3s     firefox-159.0.1.tar  78%[==============>     ]  70.03M  10.2MB/s    eta 3s     firefox-159.0.1.tar  80%[===============>    ]  72.20M  10.2MB/s    eta 3s     firefox-159.0.1.tar  82%[===============>    ]  74.24M  10.3MB/s    eta 3s     firefox-159.0.1.tar  85%[================>   ]  76.47M  10.3MB/s    eta 1s     firefox-159.0.1.tar  87%[================>   ]  78.46M  10.3MB/s    eta 1s     firefox-159.0.1.tar  89%[================>   ]  80.37M  10.2MB/s    eta 1s     firefox-159.0.1.tar  92%[=================>  ]  82.55M  10.2MB/s    eta 1s     firefox-159.0.1.tar  94%[=================>  ]  84.64M  10.3MB/s    eta 1s     firefox-159.0.1.tar  96%[==================> ]  86.09M  10.0MB/s    eta 0s     firefox-159.0.1.tar  99%[==================> ]  88.70M  10.2MB/s    eta 0s     firefox-159.0.1.tar 100%[===================>]  89.59M  10.2MB/s    in 9.4s    
+
+2026-11-03 14:48:56 (9.52 MB/s) - ‘firefox-159.0.1.tar.xz’ saved [93946780/93946780]
+
+159.0.1
+Updated registry for firefox-bin to version 159.0.1
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package firefox-bin in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: firefox-bin: 159.0->159.0.1.
+[master 6999439] firefox-bin: 159.0->159.0.1.
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: firefox-bin: 159.0->159.0.1.
+[master 5160c30] firefox-bin: 159.0->159.0.1.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-34
+r13.1-545
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libexpat.so.1.13.0
+cand_sobase=libexpat.so
+search_base=libexpat
+replacement_found=true
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libexpat.so.1.13.0
+Path: /usr/lib/libexpat.so.1.13.0
+Skipping generic/unsafe name 'libexpat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libexpat.so.1 libexpat.so.1.13.0
+Example dependents: ./miniconda3/bin/dbus-daemon ./miniconda3/bin/xmlwf ./miniconda3/libexec/dbus-daemon-launch-helper ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libexpat.so.1.13.0:
+  - ./miniconda3/bin/dbus-daemon
+  - ./miniconda3/bin/xmlwf
+  - ./miniconda3/libexec/dbus-daemon-launch-helper
+  - ./miniconda3/lib/python3.14/lib-dynload/pyexpat.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libexpat.so.1.13.0.
+------------------------------------------------
+Checking obsolete version (file): libnghttp2.so.14.29.5
+Path: /usr/lib/libnghttp2.so.14.29.5
+Skipping generic/unsafe name 'libnghttp2.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libnghttp2.so.14 libnghttp2.so.14.29.5
+Example dependents: ./miniconda3/bin/nghttp ./miniconda3/bin/nghttpd ./miniconda3/bin/nghttpx ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libnghttp2.so.14.29.5:
+  - ./miniconda3/bin/nghttp
+  - ./miniconda3/bin/nghttpd
+  - ./miniconda3/bin/nghttpx
+  - ./miniconda3/lib/libcurl.so.4.8.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libnghttp2.so.14.29.5.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
