@@ -1,0 +1,2587 @@
+===== Update check started: 2026-11-04 03:05:56 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261104_030556
+Packages needing attention: glycin kgamma wacomtablet
+===== Starting updatec: 2026-11-04 03:06:03 AEST =====
+Checking for packages with missing file inventories...
+name=glycin
+local_ver=2.2.5
+remote_ver=2.2.6
+name=kgamma
+local_ver=6.7.5
+remote_ver=6.7.6
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - kgamma
+  - wacomtablet
+  - glycin
+
+Building custom package kgamma...
+[03:08:27] Found custom package for kgamma, bypassing BLFS aliases.
+[03:08:27] Custom package detected at /home/fusion809/lfs_packaging/kgamma (package: kgamma)
+[03:08:27] Extracting dependencies for custom package 'kgamma'...
+[03:08:27] Required deps: breeze-icons brotli bzip2 dbus double-conversion e2fsprogs elfutils expat fontconfig freetype gcc glib2 glibc graphite2 harfbuzz icu karchive kcmutils kcodecs kcolorscheme kconfig kconfigwidgets kcoreaddons keyutils kglobalaccel kguiaddons ki18n kiconthemes kitemviews kwidgetsaddons kxmlgui libdrm libffi libglvnd libice libpciaccess libpng libsm libx11 libxau libxcb libxdmcp libxext libxkbcommon libxml2 libxshmfence libxxf86vm llvm lm-sensors mesa mitkrb openssl pcre2 qt6 spirv-tools systemd util-linux wayland xz zlib zstd 
+[03:08:28] Dependency 'breeze-icons' already installed.
+[03:08:28] Dependency 'brotli' already installed.
+[03:08:28] Dependency 'bzip2' already installed.
+[03:08:28] Dependency 'dbus' already installed.
+[03:08:28] Dependency 'double-conversion' already installed.
+[03:08:28] Dependency 'e2fsprogs' already installed.
+[03:08:28] Dependency 'elfutils' already installed.
+[03:08:28] Dependency 'expat' already installed.
+[03:08:28] Dependency 'fontconfig' already installed.
+[03:08:28] Dependency 'freetype' already installed.
+[03:08:28] Dependency 'gcc' already installed.
+[03:08:29] Dependency 'glib2' already installed.
+[03:08:29] Dependency 'glibc' already installed.
+[03:08:29] Dependency 'graphite2' already installed.
+[03:08:29] Dependency 'harfbuzz' already installed.
+[03:08:29] Dependency 'icu' already installed.
+[03:08:29] Dependency 'karchive' already installed.
+[03:08:29] Dependency 'kcmutils' already installed.
+[03:08:29] Dependency 'kcodecs' already installed.
+[03:08:29] Dependency 'kcolorscheme' already installed.
+[03:08:29] Dependency 'kconfig' already installed.
+[03:08:29] Dependency 'kconfigwidgets' already installed.
+[03:08:29] Dependency 'kcoreaddons' already installed.
+[03:08:29] Dependency 'keyutils' already installed.
+[03:08:29] Dependency 'kglobalaccel' already installed.
+[03:08:29] Dependency 'kguiaddons' already installed.
+[03:08:29] Dependency 'ki18n' already installed.
+[03:08:29] Dependency 'kiconthemes' already installed.
+[03:08:29] Dependency 'kitemviews' already installed.
+[03:08:29] Dependency 'kwidgetsaddons' already installed.
+[03:08:29] Dependency 'kxmlgui' already installed.
+[03:08:29] Dependency 'libdrm' already installed.
+[03:08:29] Dependency 'libffi' already installed.
+[03:08:29] Dependency 'libglvnd' already installed.
+[03:08:29] Dependency 'libice' already installed.
+[03:08:29] Dependency 'libpciaccess' already installed.
+[03:08:29] Dependency 'libpng' already installed.
+[03:08:29] Dependency 'libsm' already installed.
+[03:08:29] Dependency 'libx11' already installed.
+[03:08:29] Dependency 'libxau' already installed.
+[03:08:29] Dependency 'libxcb' already installed.
+[03:08:29] Dependency 'libxdmcp' already installed.
+[03:08:29] Dependency 'libxext' already installed.
+[03:08:29] Dependency 'libxkbcommon' already installed.
+[03:08:29] Dependency 'libxml2' already installed.
+[03:08:29] Dependency 'libxshmfence' already installed.
+[03:08:29] Dependency 'libxxf86vm' already installed.
+[03:08:29] Dependency 'llvm' already installed.
+[03:08:29] Dependency 'lm-sensors' already installed.
+[03:08:29] Dependency 'mesa' already installed.
+[03:08:29] Dependency 'mitkrb' already installed.
+[03:08:29] Dependency 'openssl' already installed.
+[03:08:29] Dependency 'pcre2' already installed.
+[03:08:29] Dependency 'qt6' already installed.
+[03:08:29] Dependency 'spirv-tools' already installed.
+[03:08:29] Dependency 'systemd' already installed.
+[03:08:29] Dependency 'util-linux' already installed.
+[03:08:29] Dependency 'wayland' already installed.
+[03:08:29] Dependency 'xz' already installed.
+[03:08:29] Dependency 'zlib' already installed.
+[03:08:29] Dependency 'zstd' already installed.
+[03:08:29] Starting remote custom build for kgamma...
+--2026-11-04 03:08:59--  https://github.com/KDE/kgamma/archive/v6.7.6.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/KDE/kgamma/tar.gz/refs/tags/v6.7.6 [following]
+--2026-11-04 03:08:59--  https://codeload.github.com/KDE/kgamma/tar.gz/refs/tags/v6.7.6
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘kgamma-6.7.6.tar.gz’
+
+kgamma-6.7.6.tar.gz     [<=>                 ]       0  --.-KB/s               kgamma-6.7.6.tar.gz     [ <=>                ] 106.31K  --.-KB/s    in 0.09s   
+
+2026-11-04 03:08:59 (1.21 MB/s) - ‘kgamma-6.7.6.tar.gz’ saved [108864]
+
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:16 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/kgamma/kgamma-6.7.6/build/prefix.sh to set the environment for kgamma.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.31.0")
+-- Found KF6ConfigWidgets: /usr/lib64/cmake/KF6ConfigWidgets/KF6ConfigWidgetsConfig.cmake (found version "6.31.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.31.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.31.0")
+-- Found KF6: success (found suitable version "6.31.0", minimum required is "6.26.0") found components: Config ConfigWidgets I18n KCMUtils
+-- Found X11: /usr/include  found components: xf86vmode
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- The following features have been enabled:
+
+ * X11_xf86vmode, Required to build kgamma.
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.12.0)
+ * Qt6Core (required version >= 6.10.0)
+ * WrapVulkanHeaders
+ * Qt6Gui (required version >= 6.10.0)
+ * Qt6QmlTools (required version >= 6.12.0)
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6GuiTools (required version >= 6.12.0)
+ * Qt6WidgetsTools (required version >= 6.12.0)
+ * Qt6Widgets (required version >= 6.10.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Qt6 (required version >= 6.10.0)
+ * KF6Config (required version >= 6.31.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6ConfigWidgets (required version >= 6.31.0)
+ * KF6KCMUtils (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * KF6DocTools (required version >= 6.26.0), Tools to generate documentation
+ * X11
+
+-- Configuring done (9.9s)
+-- Generating done (0.1s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/kgamma/kgamma-6.7.6/build
+[  3%] Generating po/ca/docs/kcontrol/kgamma/index.cache.bz2
+[ 10%] Generating po/cs/docs/kcontrol/kgamma/index.cache.bz2
+[  7%] Generating po/de/docs/kcontrol/kgamma/index.cache.bz2
+[ 10%] Built target po-de-docs-kcontrol-kgamma-index-cache-bz2
+[ 14%] Generating po/es/docs/kcontrol/kgamma/index.cache.bz2
+[ 14%] Built target po-cs-docs-kcontrol-kgamma-index-cache-bz2
+[ 14%] Built target po-ca-docs-kcontrol-kgamma-index-cache-bz2
+[ 17%] Generating po/et/docs/kcontrol/kgamma/index.cache.bz2
+[ 21%] Generating po/fr/docs/kcontrol/kgamma/index.cache.bz2
+[ 21%] Built target po-fr-docs-kcontrol-kgamma-index-cache-bz2
+[ 21%] Built target po-es-docs-kcontrol-kgamma-index-cache-bz2
+[ 21%] Built target po-et-docs-kcontrol-kgamma-index-cache-bz2
+[ 25%] Generating po/id/docs/kcontrol/kgamma/index.cache.bz2
+[ 28%] Generating po/it/docs/kcontrol/kgamma/index.cache.bz2
+[ 32%] Generating po/nl/docs/kcontrol/kgamma/index.cache.bz2
+[ 32%] Built target po-id-docs-kcontrol-kgamma-index-cache-bz2
+[ 32%] Built target po-nl-docs-kcontrol-kgamma-index-cache-bz2
+[ 35%] Generating po/pt/docs/kcontrol/kgamma/index.cache.bz2
+[ 39%] Generating po/pt_BR/docs/kcontrol/kgamma/index.cache.bz2
+[ 39%] Built target po-it-docs-kcontrol-kgamma-index-cache-bz2
+[ 42%] Generating po/ru/docs/kcontrol/kgamma/index.cache.bz2
+[ 42%] Built target po-pt-docs-kcontrol-kgamma-index-cache-bz2
+[ 42%] Built target po-pt-BR-docs-kcontrol-kgamma-index-cache-bz2
+[ 46%] Generating po/sl/docs/kcontrol/kgamma/index.cache.bz2
+[ 46%] Built target po-ru-docs-kcontrol-kgamma-index-cache-bz2
+[ 50%] Generating po/sv/docs/kcontrol/kgamma/index.cache.bz2
+[ 53%] Generating po/tr/docs/kcontrol/kgamma/index.cache.bz2
+[ 53%] Built target po-sl-docs-kcontrol-kgamma-index-cache-bz2
+[ 53%] Built target po-tr-docs-kcontrol-kgamma-index-cache-bz2
+[ 57%] Generating po/uk/docs/kcontrol/kgamma/index.cache.bz2
+[ 60%] Generating mo...
+[ 60%] Built target po-sv-docs-kcontrol-kgamma-index-cache-bz2
+[ 64%] Generating ts...
+[ 64%] Built target tsfiles-83b9f7796c8258b959d897d8fe9679f0
+[ 64%] Built target kcm_kgamma-kcm-desktop-gen
+[ 67%] Generating index.cache.bz2
+[ 67%] Built target po-uk-docs-kcontrol-kgamma-index-cache-bz2
+[ 67%] Built target pofiles-83b9f7796c8258b959d897d8fe9679f0
+[ 67%] Built target kcm_kgamma_autogen_timestamp_deps
+[ 71%] Automatic MOC for target kcm_kgamma
+[ 71%] Built target doc-index-cache-bz2
+[ 71%] Built target kcm_kgamma_autogen
+[ 75%] Building CXX object kcmkgamma/CMakeFiles/kcm_kgamma.dir/xf86configpath.cpp.o
+[ 78%] Building CXX object kcmkgamma/CMakeFiles/kcm_kgamma.dir/kcm_kgamma_autogen/mocs_compilation.cpp.o
+[ 82%] Building CXX object kcmkgamma/CMakeFiles/kcm_kgamma.dir/xvidextwrap.cpp.o
+[ 85%] Building CXX object kcmkgamma/CMakeFiles/kcm_kgamma.dir/displaynumber.cpp.o
+[ 89%] Building CXX object kcmkgamma/CMakeFiles/kcm_kgamma.dir/gammactrl.cpp.o
+[ 92%] Building CXX object kcmkgamma/CMakeFiles/kcm_kgamma.dir/kgamma.cpp.o
+[ 96%] Linking CXX shared module ../bin/plasma/kcms/systemsettings_qwidgets/kcm_kgamma.so
+[100%] Built target kcm_kgamma
+[  3%] Built target po-ca-docs-kcontrol-kgamma-index-cache-bz2
+[  7%] Built target po-cs-docs-kcontrol-kgamma-index-cache-bz2
+[ 10%] Built target po-de-docs-kcontrol-kgamma-index-cache-bz2
+[ 14%] Built target po-es-docs-kcontrol-kgamma-index-cache-bz2
+[ 17%] Built target po-et-docs-kcontrol-kgamma-index-cache-bz2
+[ 21%] Built target po-fr-docs-kcontrol-kgamma-index-cache-bz2
+[ 25%] Built target po-id-docs-kcontrol-kgamma-index-cache-bz2
+[ 28%] Built target po-it-docs-kcontrol-kgamma-index-cache-bz2
+[ 32%] Built target po-nl-docs-kcontrol-kgamma-index-cache-bz2
+[ 35%] Built target po-pt-docs-kcontrol-kgamma-index-cache-bz2
+[ 39%] Built target po-pt-BR-docs-kcontrol-kgamma-index-cache-bz2
+[ 42%] Built target po-ru-docs-kcontrol-kgamma-index-cache-bz2
+[ 46%] Built target po-sl-docs-kcontrol-kgamma-index-cache-bz2
+[ 50%] Built target po-sv-docs-kcontrol-kgamma-index-cache-bz2
+[ 53%] Built target po-tr-docs-kcontrol-kgamma-index-cache-bz2
+[ 57%] Built target po-uk-docs-kcontrol-kgamma-index-cache-bz2
+[ 60%] Generating mo...
+[ 60%] Built target pofiles-83b9f7796c8258b959d897d8fe9679f0
+[ 64%] Generating ts...
+[ 64%] Built target tsfiles-83b9f7796c8258b959d897d8fe9679f0
+[ 64%] Built target kcm_kgamma-kcm-desktop-gen
+[ 64%] Built target kcm_kgamma_autogen_timestamp_deps
+[ 67%] Built target kcm_kgamma_autogen
+[ 96%] Built target kcm_kgamma
+[100%] Built target doc-index-cache-bz2
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/share/kgamma/pics/background.png
+-- Installing: /usr/share/kgamma/pics/cmyscale.png
+-- Installing: /usr/share/kgamma/pics/darkgrey.png
+-- Installing: /usr/share/kgamma/pics/greyscale.png
+-- Installing: /usr/share/kgamma/pics/lightgrey.png
+-- Installing: /usr/share/kgamma/pics/midgrey.png
+-- Installing: /usr/share/kgamma/pics/rgbscale.png
+-- Installing: /usr/lib/plugins/plasma/kcms/systemsettings_qwidgets/kcm_kgamma.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/plugins/plasma/kcms/systemsettings_qwidgets/kcm_kgamma.so" to "/opt/qt6/lib"
+-- Installing: /usr/share/applications/kcm_kgamma.desktop
+-- Up-to-date: /usr/lib/plugins/plasma/kcminit/kcm_kgamma_init.so
+-- Installing: /usr/share/doc/HTML/en/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/en/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/ca/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/ca/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/cs/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/cs/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/de/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/de/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/es/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/es/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/et/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/et/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/fr/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/fr/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/id/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/id/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/it/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/it/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/nl/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/nl/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/pt/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/pt/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/pt_BR/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/pt_BR/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/ru/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/ru/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/sl/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/sl/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/sv/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/sv/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/tr/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/tr/kcontrol/kgamma/index.docbook
+-- Installing: /usr/share/doc/HTML/uk/kcontrol/kgamma/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/uk/kcontrol/kgamma/index.docbook
+-- Up-to-date: /usr/share/locale
+-- Up-to-date: /usr/share/locale/ms
+-- Up-to-date: /usr/share/locale/ms/LC_MESSAGES
+-- Installing: /usr/share/locale/ms/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/nn
+-- Up-to-date: /usr/share/locale/nn/LC_MESSAGES
+-- Installing: /usr/share/locale/nn/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ja
+-- Up-to-date: /usr/share/locale/ja/LC_MESSAGES
+-- Installing: /usr/share/locale/ja/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/az
+-- Up-to-date: /usr/share/locale/az/LC_MESSAGES
+-- Installing: /usr/share/locale/az/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/vi
+-- Up-to-date: /usr/share/locale/vi/LC_MESSAGES
+-- Installing: /usr/share/locale/vi/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/fi
+-- Up-to-date: /usr/share/locale/fi/LC_MESSAGES
+-- Installing: /usr/share/locale/fi/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/it
+-- Up-to-date: /usr/share/locale/it/LC_MESSAGES
+-- Installing: /usr/share/locale/it/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/id
+-- Up-to-date: /usr/share/locale/id/LC_MESSAGES
+-- Installing: /usr/share/locale/id/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ta
+-- Up-to-date: /usr/share/locale/ta/LC_MESSAGES
+-- Installing: /usr/share/locale/ta/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/sa
+-- Up-to-date: /usr/share/locale/sa/LC_MESSAGES
+-- Installing: /usr/share/locale/sa/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/pt_BR
+-- Up-to-date: /usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /usr/share/locale/pt_BR/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/mk
+-- Up-to-date: /usr/share/locale/mk/LC_MESSAGES
+-- Installing: /usr/share/locale/mk/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/mr
+-- Up-to-date: /usr/share/locale/mr/LC_MESSAGES
+-- Installing: /usr/share/locale/mr/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/oc
+-- Up-to-date: /usr/share/locale/oc/LC_MESSAGES
+-- Installing: /usr/share/locale/oc/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/tr
+-- Up-to-date: /usr/share/locale/tr/LC_MESSAGES
+-- Installing: /usr/share/locale/tr/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/et
+-- Up-to-date: /usr/share/locale/et/LC_MESSAGES
+-- Installing: /usr/share/locale/et/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/nds
+-- Up-to-date: /usr/share/locale/nds/LC_MESSAGES
+-- Installing: /usr/share/locale/nds/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ro
+-- Up-to-date: /usr/share/locale/ro/LC_MESSAGES
+-- Installing: /usr/share/locale/ro/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/sr@ijekavian
+-- Up-to-date: /usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /usr/share/locale/sr@ijekavian/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/en_GB
+-- Up-to-date: /usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /usr/share/locale/en_GB/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/fr
+-- Up-to-date: /usr/share/locale/fr/LC_MESSAGES
+-- Installing: /usr/share/locale/fr/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/sr@latin
+-- Up-to-date: /usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /usr/share/locale/sr@latin/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/bs
+-- Up-to-date: /usr/share/locale/bs/LC_MESSAGES
+-- Installing: /usr/share/locale/bs/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/da
+-- Up-to-date: /usr/share/locale/da/LC_MESSAGES
+-- Installing: /usr/share/locale/da/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/eo
+-- Up-to-date: /usr/share/locale/eo/LC_MESSAGES
+-- Installing: /usr/share/locale/eo/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ga
+-- Up-to-date: /usr/share/locale/ga/LC_MESSAGES
+-- Installing: /usr/share/locale/ga/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/el
+-- Up-to-date: /usr/share/locale/el/LC_MESSAGES
+-- Installing: /usr/share/locale/el/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/uk
+-- Up-to-date: /usr/share/locale/uk/LC_MESSAGES
+-- Installing: /usr/share/locale/uk/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/sr@ijekavianlatin
+-- Up-to-date: /usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/de
+-- Up-to-date: /usr/share/locale/de/LC_MESSAGES
+-- Installing: /usr/share/locale/de/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/sl
+-- Up-to-date: /usr/share/locale/sl/LC_MESSAGES
+-- Installing: /usr/share/locale/sl/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/cs
+-- Up-to-date: /usr/share/locale/cs/LC_MESSAGES
+-- Installing: /usr/share/locale/cs/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/sr
+-- Up-to-date: /usr/share/locale/sr/LC_MESSAGES
+-- Installing: /usr/share/locale/sr/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/th
+-- Up-to-date: /usr/share/locale/th/LC_MESSAGES
+-- Installing: /usr/share/locale/th/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ar
+-- Up-to-date: /usr/share/locale/ar/LC_MESSAGES
+-- Installing: /usr/share/locale/ar/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/hr
+-- Up-to-date: /usr/share/locale/hr/LC_MESSAGES
+-- Installing: /usr/share/locale/hr/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ml
+-- Up-to-date: /usr/share/locale/ml/LC_MESSAGES
+-- Installing: /usr/share/locale/ml/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ast
+-- Up-to-date: /usr/share/locale/ast/LC_MESSAGES
+-- Installing: /usr/share/locale/ast/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/pa
+-- Up-to-date: /usr/share/locale/pa/LC_MESSAGES
+-- Installing: /usr/share/locale/pa/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/hne
+-- Up-to-date: /usr/share/locale/hne/LC_MESSAGES
+-- Installing: /usr/share/locale/hne/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/sq
+-- Up-to-date: /usr/share/locale/sq/LC_MESSAGES
+-- Installing: /usr/share/locale/sq/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/lv
+-- Up-to-date: /usr/share/locale/lv/LC_MESSAGES
+-- Installing: /usr/share/locale/lv/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/lt
+-- Up-to-date: /usr/share/locale/lt/LC_MESSAGES
+-- Installing: /usr/share/locale/lt/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/zh_CN
+-- Up-to-date: /usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /usr/share/locale/zh_CN/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/fa
+-- Up-to-date: /usr/share/locale/fa/LC_MESSAGES
+-- Installing: /usr/share/locale/fa/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/zh_HK
+-- Up-to-date: /usr/share/locale/zh_HK/LC_MESSAGES
+-- Installing: /usr/share/locale/zh_HK/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ca@valencia
+-- Up-to-date: /usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /usr/share/locale/ca@valencia/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/is
+-- Up-to-date: /usr/share/locale/is/LC_MESSAGES
+-- Installing: /usr/share/locale/is/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ia
+-- Up-to-date: /usr/share/locale/ia/LC_MESSAGES
+-- Installing: /usr/share/locale/ia/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/km
+-- Up-to-date: /usr/share/locale/km/LC_MESSAGES
+-- Installing: /usr/share/locale/km/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/fy
+-- Up-to-date: /usr/share/locale/fy/LC_MESSAGES
+-- Installing: /usr/share/locale/fy/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ka
+-- Up-to-date: /usr/share/locale/ka/LC_MESSAGES
+-- Installing: /usr/share/locale/ka/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/zh_TW
+-- Up-to-date: /usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /usr/share/locale/zh_TW/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/si
+-- Up-to-date: /usr/share/locale/si/LC_MESSAGES
+-- Installing: /usr/share/locale/si/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/nb
+-- Up-to-date: /usr/share/locale/nb/LC_MESSAGES
+-- Installing: /usr/share/locale/nb/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/es
+-- Up-to-date: /usr/share/locale/es/LC_MESSAGES
+-- Installing: /usr/share/locale/es/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ko
+-- Up-to-date: /usr/share/locale/ko/LC_MESSAGES
+-- Installing: /usr/share/locale/ko/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/tg
+-- Up-to-date: /usr/share/locale/tg/LC_MESSAGES
+-- Installing: /usr/share/locale/tg/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/he
+-- Up-to-date: /usr/share/locale/he/LC_MESSAGES
+-- Installing: /usr/share/locale/he/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/hu
+-- Up-to-date: /usr/share/locale/hu/LC_MESSAGES
+-- Installing: /usr/share/locale/hu/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/hi
+-- Up-to-date: /usr/share/locale/hi/LC_MESSAGES
+-- Installing: /usr/share/locale/hi/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/bg
+-- Up-to-date: /usr/share/locale/bg/LC_MESSAGES
+-- Installing: /usr/share/locale/bg/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/be
+-- Up-to-date: /usr/share/locale/be/LC_MESSAGES
+-- Installing: /usr/share/locale/be/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/nl
+-- Up-to-date: /usr/share/locale/nl/LC_MESSAGES
+-- Installing: /usr/share/locale/nl/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/se
+-- Up-to-date: /usr/share/locale/se/LC_MESSAGES
+-- Installing: /usr/share/locale/se/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/eu
+-- Up-to-date: /usr/share/locale/eu/LC_MESSAGES
+-- Installing: /usr/share/locale/eu/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/pt
+-- Up-to-date: /usr/share/locale/pt/LC_MESSAGES
+-- Installing: /usr/share/locale/pt/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/sk
+-- Up-to-date: /usr/share/locale/sk/LC_MESSAGES
+-- Installing: /usr/share/locale/sk/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/cy
+-- Up-to-date: /usr/share/locale/cy/LC_MESSAGES
+-- Installing: /usr/share/locale/cy/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ug
+-- Up-to-date: /usr/share/locale/ug/LC_MESSAGES
+-- Installing: /usr/share/locale/ug/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ca
+-- Up-to-date: /usr/share/locale/ca/LC_MESSAGES
+-- Installing: /usr/share/locale/ca/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/kk
+-- Up-to-date: /usr/share/locale/kk/LC_MESSAGES
+-- Installing: /usr/share/locale/kk/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ru
+-- Up-to-date: /usr/share/locale/ru/LC_MESSAGES
+-- Installing: /usr/share/locale/ru/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/gl
+-- Up-to-date: /usr/share/locale/gl/LC_MESSAGES
+-- Installing: /usr/share/locale/gl/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/ne
+-- Up-to-date: /usr/share/locale/ne/LC_MESSAGES
+-- Installing: /usr/share/locale/ne/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/br
+-- Up-to-date: /usr/share/locale/br/LC_MESSAGES
+-- Installing: /usr/share/locale/br/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/sv
+-- Up-to-date: /usr/share/locale/sv/LC_MESSAGES
+-- Installing: /usr/share/locale/sv/LC_MESSAGES/kcmkgamma.mo
+-- Up-to-date: /usr/share/locale/pl
+-- Up-to-date: /usr/share/locale/pl/LC_MESSAGES
+-- Installing: /usr/share/locale/pl/LC_MESSAGES/kcmkgamma.mo
+6.7.6
+Updated registry for kgamma to version 6.7.6
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package kgamma in /var/lib/custom-packages/
+Building custom package wacomtablet...
+[03:09:56] Found custom package for wacomtablet, bypassing BLFS aliases.
+[03:09:56] Custom package detected at /home/fusion809/lfs_packaging/wacomtablet (package: wacomtablet)
+[03:09:56] Extracting dependencies for custom package 'wacomtablet'...
+[03:09:56] Required deps: acl attr breeze-icons brotli bzip2 dbus double-conversion e2fsprogs elfutils expat fontconfig freetype gcc glib2 glibc graphite2 harfbuzz icu karchive kcmutils kcodecs kcolorscheme kconfig kconfigwidgets kcoreaddons kcrash kdbusaddons keyutils kglobalaccel kguiaddons ki18n kiconthemes kio kirigami kitemviews knotifications kpackage kservice ksvg kwidgetsaddons kwindowsystem kxmlgui libcanberra libdrm libevdev libffi libglvnd libgudev libice libogg libpciaccess libplasma libpng libsm libtool libvorbis libwacom libx11 libxau libxcb libxdmcp libxext libxfixes libxi libxkbcommon libxml2 libxshmfence libxxf86vm llvm lm-sensors mesa mitkrb openssl pcre2 plasma5support plasma-activities qt6 solid spirv-tools systemd util-linux wayland webkitgtk xcb-util-keysyms xz zlib zstd 
+[03:09:57] Dependency 'acl' already installed.
+[03:09:57] Dependency 'attr' already installed.
+[03:09:57] Dependency 'breeze-icons' already installed.
+[03:09:57] Dependency 'brotli' already installed.
+[03:09:57] Dependency 'bzip2' already installed.
+[03:09:57] Dependency 'dbus' already installed.
+[03:09:57] Dependency 'double-conversion' already installed.
+[03:09:57] Dependency 'e2fsprogs' already installed.
+[03:09:57] Dependency 'elfutils' already installed.
+[03:09:57] Dependency 'expat' already installed.
+[03:09:57] Dependency 'fontconfig' already installed.
+[03:09:57] Dependency 'freetype' already installed.
+[03:09:57] Dependency 'gcc' already installed.
+[03:09:57] Dependency 'glib2' already installed.
+[03:09:57] Dependency 'glibc' already installed.
+[03:09:57] Dependency 'graphite2' already installed.
+[03:09:57] Dependency 'harfbuzz' already installed.
+[03:09:57] Dependency 'icu' already installed.
+[03:09:57] Dependency 'karchive' already installed.
+[03:09:57] Dependency 'kcmutils' already installed.
+[03:09:57] Dependency 'kcodecs' already installed.
+[03:09:57] Dependency 'kcolorscheme' already installed.
+[03:09:57] Dependency 'kconfig' already installed.
+[03:09:57] Dependency 'kconfigwidgets' already installed.
+[03:09:57] Dependency 'kcoreaddons' already installed.
+[03:09:57] Dependency 'kcrash' already installed.
+[03:09:57] Dependency 'kdbusaddons' already installed.
+[03:09:57] Dependency 'keyutils' already installed.
+[03:09:57] Dependency 'kglobalaccel' already installed.
+[03:09:57] Dependency 'kguiaddons' already installed.
+[03:09:57] Dependency 'ki18n' already installed.
+[03:09:57] Dependency 'kiconthemes' already installed.
+[03:09:57] Dependency 'kio' already installed.
+[03:09:57] Dependency 'kirigami' already installed.
+[03:09:57] Dependency 'kitemviews' already installed.
+[03:09:57] Dependency 'knotifications' already installed.
+[03:09:57] Dependency 'kpackage' already installed.
+[03:09:57] Dependency 'kservice' already installed.
+[03:09:57] Dependency 'ksvg' already installed.
+[03:09:57] Dependency 'kwidgetsaddons' already installed.
+[03:09:57] Dependency 'kwindowsystem' already installed.
+[03:09:57] Dependency 'kxmlgui' already installed.
+[03:09:57] Dependency 'libcanberra' already installed.
+[03:09:57] Dependency 'libdrm' already installed.
+[03:09:57] Dependency 'libevdev' already installed.
+[03:09:57] Dependency 'libffi' already installed.
+[03:09:57] Dependency 'libglvnd' already installed.
+[03:09:57] Dependency 'libgudev' already installed.
+[03:09:57] Dependency 'libice' already installed.
+[03:09:57] Dependency 'libogg' already installed.
+[03:09:57] Dependency 'libpciaccess' already installed.
+[03:09:57] Dependency 'libplasma' already installed.
+[03:09:57] Dependency 'libpng' already installed.
+[03:09:57] Dependency 'libsm' already installed.
+[03:09:57] Dependency 'libtool' already installed.
+[03:09:57] Dependency 'libvorbis' already installed.
+[03:09:57] Dependency 'libwacom' already installed.
+[03:09:57] Dependency 'libx11' already installed.
+[03:09:57] Dependency 'libxau' already installed.
+[03:09:57] Dependency 'libxcb' already installed.
+[03:09:57] Dependency 'libxdmcp' already installed.
+[03:09:57] Dependency 'libxext' already installed.
+[03:09:57] Dependency 'libxfixes' already installed.
+[03:09:57] Dependency 'libxi' already installed.
+[03:09:57] Dependency 'libxkbcommon' already installed.
+[03:09:57] Dependency 'libxml2' already installed.
+[03:09:57] Dependency 'libxshmfence' already installed.
+[03:09:57] Dependency 'libxxf86vm' already installed.
+[03:09:57] Dependency 'llvm' already installed.
+[03:09:57] Dependency 'lm-sensors' already installed.
+[03:09:57] Dependency 'mesa' already installed.
+[03:09:57] Dependency 'mitkrb' already installed.
+[03:09:57] Dependency 'openssl' already installed.
+[03:09:57] Dependency 'pcre2' already installed.
+[03:09:57] Dependency 'plasma5support' already installed.
+[03:09:57] Dependency 'plasma-activities' already installed.
+[03:09:57] Dependency 'qt6' already installed.
+[03:09:58] Dependency 'solid' already installed.
+[03:09:58] Dependency 'spirv-tools' already installed.
+[03:09:58] Dependency 'systemd' already installed.
+[03:09:58] Dependency 'util-linux' already installed.
+[03:09:58] Dependency 'wayland' already installed.
+[03:09:58] Dependency 'webkitgtk' already installed.
+[03:09:58] Dependency 'xcb-util-keysyms' already installed.
+[03:09:58] Dependency 'xz' already installed.
+[03:09:58] Dependency 'zlib' already installed.
+[03:09:58] Dependency 'zstd' already installed.
+[03:09:58] Starting remote custom build for wacomtablet...
+--2026-11-04 03:10:03--  https://github.com/KDE/wacomtablet/archive/v6.7.6.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/KDE/wacomtablet/tar.gz/refs/tags/v6.7.6 [following]
+--2026-11-04 03:10:03--  https://codeload.github.com/KDE/wacomtablet/tar.gz/refs/tags/v6.7.6
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘wacomtablet-6.7.6.tar.gz’
+
+wacomtablet-6.7.6.t     [<=>                 ]       0  --.-KB/s               wacomtablet-6.7.6.t     [ <=>                ] 958.98K  4.68MB/s               wacomtablet-6.7.6.t     [  <=>               ]   1.23M  5.44MB/s    in 0.2s    
+
+2026-11-04 03:10:03 (5.44 MB/s) - ‘wacomtablet-6.7.6.tar.gz’ saved [1295027]
+
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:17 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/wacomtablet/wacomtablet-6.7.6/build/prefix.sh to set the environment for wacomtablet.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found XKB: /usr/lib/libxkbcommon.so (found suitable version "1.13.2", minimum required is "0.9.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.31.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.31.0")
+-- Found KF6GlobalAccel: /usr/lib64/cmake/KF6GlobalAccel/KF6GlobalAccelConfig.cmake (found version "6.31.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.31.0")
+-- Found KF6XmlGui: /usr/lib64/cmake/KF6XmlGui/KF6XmlGuiConfig.cmake (found version "6.31.0")
+-- Found KF6WidgetsAddons: /usr/lib64/cmake/KF6WidgetsAddons/KF6WidgetsAddonsConfig.cmake (found version "6.31.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.31.0")
+-- Found KF6Notifications: /usr/lib64/cmake/KF6Notifications/KF6NotificationsConfig.cmake (found version "6.31.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.31.0")
+-- Found KF6DocTools: /usr/lib64/cmake/KF6DocTools/KF6DocToolsConfig.cmake (found version "6.31.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.31.0")
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.31.0")
+-- Found KF6: success (found suitable version "6.31.0", minimum required is "6.26.0") found components: CoreAddons I18n GlobalAccel Config XmlGui WidgetsAddons WindowSystem Notifications DBusAddons DocTools KCMUtils KIO
+-- XCB: XINPUT requires XCB
+-- Found XCB_XCB: /usr/lib/libxcb.so (found version "1.17.0")
+-- Found XCB_XINPUT: /usr/lib/libxcb-xinput.so (found version "1.17.0")
+-- Found XCB: /usr/lib/libxcb.so;/usr/lib/libxcb-xinput.so (found version "1.17.0") found components: XINPUT
+Installing in /usr. Run /home/fusion809/lfs_packaging/wacomtablet/wacomtablet-6.7.6/build/prefix.sh to set the environment for wacomtablet.
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.10")
+-- Checking for module 'libwacom'
+--   Found libwacom, version 2.20.0
+-- Checking for module 'xorg-wacom'
+--   Found xorg-wacom, version 1.2.4
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.12.0)
+ * Qt6WidgetsTools (required version >= 6.12.0)
+ * Qt6Widgets (required version >= 6.10.0)
+ * Qt6QmlTools (required version >= 6.12.0)
+ * Qt6QuickTools (required version >= 6.12.0)
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6GuiTools (required version >= 6.12.0)
+ * Python3
+
+-- The following REQUIRED packages have been found:
+
+ * Qt6GuiPrivate (required version >= 6.10.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6GlobalAccel (required version >= 6.26.0)
+ * KF6XmlGui (required version >= 6.26.0)
+ * KF6WidgetsAddons (required version >= 6.26.0)
+ * KF6Notifications (required version >= 6.26.0)
+ * KF6DBusAddons (required version >= 6.26.0)
+ * KF6DocTools (required version >= 6.26.0)
+ * KF6KCMUtils (required version >= 6.26.0)
+ * KF6KIO (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * XCB, X protocol C-language Binding, <https://xcb.freedesktop.org/>
+ * Qt6Core (required version >= 6.10.0)
+ * Qt6Qml (required version >= 6.10.0)
+ * X11
+ * Plasma (required version >= 6.7.0)
+ * Qt6Gui (required version >= 6.11.0)
+ * ECM (required version >= 5.240.0)
+ * Qt6
+ * Plasma5Support
+ * PkgConfig
+
+-- Configuring done (8.3s)
+-- Generating done (0.6s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/wacomtablet/wacomtablet-6.7.6/build
+[  1%] Generating ts...
+[  1%] Generating mo...
+[  2%] Generating po/ca/docs/kcontrol/wacomtablet/index.cache.bz2
+[  2%] Built target tsfiles-bf4accb001172299f3dce20c6c5afce5
+[  3%] Generating po/de/docs/kcontrol/wacomtablet/index.cache.bz2
+[  3%] Built target po-de-docs-kcontrol-wacomtablet-index-cache-bz2
+[  3%] Built target po-ca-docs-kcontrol-wacomtablet-index-cache-bz2
+[  4%] Generating po/es/docs/kcontrol/wacomtablet/index.cache.bz2
+[  4%] Generating po/it/docs/kcontrol/wacomtablet/index.cache.bz2
+[  4%] Built target pofiles-bf4accb001172299f3dce20c6c5afce5
+[  5%] Generating po/ko/docs/kcontrol/wacomtablet/index.cache.bz2
+[  5%] Built target po-es-docs-kcontrol-wacomtablet-index-cache-bz2
+[  6%] Generating po/nl/docs/kcontrol/wacomtablet/index.cache.bz2
+[  6%] Built target po-ko-docs-kcontrol-wacomtablet-index-cache-bz2
+[  6%] Built target po-it-docs-kcontrol-wacomtablet-index-cache-bz2
+[  6%] Generating po/pt/docs/kcontrol/wacomtablet/index.cache.bz2
+[  7%] Generating po/pt_BR/docs/kcontrol/wacomtablet/index.cache.bz2
+[  7%] Built target po-nl-docs-kcontrol-wacomtablet-index-cache-bz2
+[  8%] Generating po/sl/docs/kcontrol/wacomtablet/index.cache.bz2
+[  8%] Built target po-pt-docs-kcontrol-wacomtablet-index-cache-bz2
+[  9%] Generating po/sv/docs/kcontrol/wacomtablet/index.cache.bz2
+[  9%] Built target po-pt-BR-docs-kcontrol-wacomtablet-index-cache-bz2
+[ 10%] Generating po/uk/docs/kcontrol/wacomtablet/index.cache.bz2
+[ 10%] Built target po-sl-docs-kcontrol-wacomtablet-index-cache-bz2
+[ 11%] Generating po/zh_CN/docs/kcontrol/wacomtablet/index.cache.bz2
+[ 11%] Built target po-sv-docs-kcontrol-wacomtablet-index-cache-bz2
+[ 11%] Built target wacom_common_autogen_timestamp_deps
+[ 11%] Built target kcm_wacomtablet-kcm-desktop-gen
+[ 11%] Built target po-uk-docs-kcontrol-wacomtablet-index-cache-bz2
+I/O warning : failed to load "/usr/share/kf6/kdoctools/customization/xsl/zh_cn.xml": No such file or directory
+No "zh_cn" localization of "footer-doc-comment" exists; using "en".
+No "zh_cn" localization of "footer-doc-feedback" exists; using "en".
+No "zh_cn" localization of "footer-doc-teamname" exists; using "en".
+[ 12%] Automatic MOC for target wacom_common
+No "zh_cn" localization of "footer-doc-comment" exists; using "en".
+No "zh_cn" localization of "footer-doc-feedback" exists; using "en".
+No "zh_cn" localization of "footer-doc-teamname" exists; using "en".
+[ 12%] Generating index.cache.bz2
+No "zh_cn" localization of "footer-doc-comment" exists; using "en".
+No "zh_cn" localization of "footer-doc-feedback" exists; using "en".
+No "zh_cn" localization of "footer-doc-teamname" exists; using "en".
+No "zh_cn" localization of "footer-doc-comment" exists; using "en".
+No "zh_cn" localization of "footer-doc-feedback" exists; using "en".
+No "zh_cn" localization of "footer-doc-teamname" exists; using "en".
+No "zh_cn" localization of "footer-doc-comment" exists; using "en".
+No "zh_cn" localization of "footer-doc-feedback" exists; using "en".
+No "zh_cn" localization of "footer-doc-teamname" exists; using "en".
+No "zh_cn" localization of "footer-doc-comment" exists; using "en".
+No "zh_cn" localization of "footer-doc-feedback" exists; using "en".
+No "zh_cn" localization of "footer-doc-teamname" exists; using "en".
+No "zh_cn" localization of "footer-doc-comment" exists; using "en".
+No "zh_cn" localization of "footer-doc-feedback" exists; using "en".
+No "zh_cn" localization of "footer-doc-teamname" exists; using "en".
+No "zh_cn" localization of "footer-doc-comment" exists; using "en".
+No "zh_cn" localization of "footer-doc-feedback" exists; using "en".
+No "zh_cn" localization of "footer-doc-teamname" exists; using "en".
+No "zh_cn" localization of "footer-doc-comment" exists; using "en".
+No "zh_cn" localization of "footer-doc-feedback" exists; using "en".
+No "zh_cn" localization of "footer-doc-teamname" exists; using "en".
+No "zh_cn" localization of "footer-doc-comment" exists; using "en".
+No "zh_cn" localization of "footer-doc-feedback" exists; using "en".
+No "zh_cn" localization of "footer-doc-teamname" exists; using "en".
+No "zh_cn" localization of "footer-doc-comment" exists; using "en".
+No "zh_cn" localization of "footer-doc-feedback" exists; using "en".
+No "zh_cn" localization of "footer-doc-teamname" exists; using "en".
+No "zh_cn" localization of "footer-doc-comment" exists; using "en".
+No "zh_cn" localization of "footer-doc-feedback" exists; using "en".
+No "zh_cn" localization of "footer-doc-teamname" exists; using "en".
+No "zh_cn" localization of "footer-doc-comment" exists; using "en".
+No "zh_cn" localization of "footer-doc-feedback" exists; using "en".
+No "zh_cn" localization of "footer-doc-teamname" exists; using "en".
+[ 12%] Built target wacom_common_autogen
+[ 12%] Built target po-zh-CN-docs-kcontrol-wacomtablet-index-cache-bz2
+[ 13%] Generating wacominterface.cpp, wacominterface.h
+[ 14%] Generating moc_wacominterface.cpp
+[ 15%] Building CXX object src/common/CMakeFiles/wacom_common.dir/wacom_common_autogen/mocs_compilation.cpp.o
+[ 16%] Building CXX object src/common/CMakeFiles/wacom_common.dir/aboutdata.cpp.o
+[ 17%] Building CXX object src/common/CMakeFiles/wacom_common.dir/buttonshortcut.cpp.o
+[ 17%] Built target doc-user-index-cache-bz2
+[ 17%] Building CXX object src/common/CMakeFiles/wacom_common.dir/dbustabletinterface.cpp.o
+[ 18%] Building CXX object src/common/CMakeFiles/wacom_common.dir/deviceinformation.cpp.o
+[ 19%] Building CXX object src/common/CMakeFiles/wacom_common.dir/deviceprofile.cpp.o
+[ 20%] Building CXX object src/common/CMakeFiles/wacom_common.dir/deviceprofileconfigadaptor.cpp.o
+[ 21%] Building CXX object src/common/CMakeFiles/wacom_common.dir/deviceprofiledefaults.cpp.o
+[ 21%] Building CXX object src/common/CMakeFiles/wacom_common.dir/deviceproperty.cpp.o
+[ 22%] Building CXX object src/common/CMakeFiles/wacom_common.dir/devicetype.cpp.o
+[ 23%] Building CXX object src/common/CMakeFiles/wacom_common.dir/libwacomwrapper.cpp.o
+[ 24%] Building CXX object src/common/CMakeFiles/wacom_common.dir/mainconfig.cpp.o
+/home/fusion809/lfs_packaging/wacomtablet/wacomtablet-6.7.6/src/common/libwacomwrapper.cpp: In member function ‘bool Wacom::libWacomWrapper::lookupTabletInfo(int, int, Wacom::TabletInformation&)’:
+/home/fusion809/lfs_packaging/wacomtablet/wacomtablet-6.7.6/src/common/libwacomwrapper.cpp:101:16: warning: enumeration value ‘WACOM_STATUS_LED_DIAL’ not handled in switch [-Wswitch]
+  101 |         switch (ledGroups[i]) {
+      |                ^
+/home/fusion809/lfs_packaging/wacomtablet/wacomtablet-6.7.6/src/common/libwacomwrapper.cpp:101:16: warning: enumeration value ‘WACOM_STATUS_LED_DIAL2’ not handled in switch [-Wswitch]
+/home/fusion809/lfs_packaging/wacomtablet/wacomtablet-6.7.6/src/common/libwacomwrapper.cpp:168:43: warning: ‘int libwacom_has_ring(const WacomDevice*)’ is deprecated [-Wdeprecated-declarations]
+  168 |     const bool hasRing = libwacom_has_ring(device.get()) != 0;
+      |                          ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+In file included from /home/fusion809/lfs_packaging/wacomtablet/wacomtablet-6.7.6/src/common/libwacomwrapper.cpp:27:
+/usr/include/libwacom-1.0/libwacom/libwacom.h:860:1: note: declared here
+  860 | libwacom_has_ring(const WacomDevice *device) LIBWACOM_DEPRECATED;
+      | ^~~~~~~~~~~~~~~~~
+[ 24%] Building CXX object src/common/CMakeFiles/wacom_common.dir/profilemanager.cpp.o
+[ 25%] Building CXX object src/common/CMakeFiles/wacom_common.dir/profilemanagement.cpp.o
+[ 26%] Building CXX object src/common/CMakeFiles/wacom_common.dir/property.cpp.o
+[ 27%] Building CXX object src/common/CMakeFiles/wacom_common.dir/propertyadaptor.cpp.o
+[ 27%] Building CXX object src/common/CMakeFiles/wacom_common.dir/screenrotation.cpp.o
+[ 28%] Building CXX object src/common/CMakeFiles/wacom_common.dir/screenmap.cpp.o
+[ 29%] Building CXX object src/common/CMakeFiles/wacom_common.dir/screensinfo.cpp.o
+[ 30%] Building CXX object src/common/CMakeFiles/wacom_common.dir/screenspace.cpp.o
+[ 31%] Building CXX object src/common/CMakeFiles/wacom_common.dir/stringutils.cpp.o
+[ 31%] Building CXX object src/common/CMakeFiles/wacom_common.dir/tabletarea.cpp.o
+[ 32%] Building CXX object src/common/CMakeFiles/wacom_common.dir/tabletdatabase.cpp.o
+[ 33%] Building CXX object src/common/CMakeFiles/wacom_common.dir/tabletinfo.cpp.o
+[ 34%] Building CXX object src/common/CMakeFiles/wacom_common.dir/tabletinformation.cpp.o
+[ 34%] Building CXX object src/common/CMakeFiles/wacom_common.dir/tabletprofile.cpp.o
+[ 35%] Building CXX object src/common/CMakeFiles/wacom_common.dir/tabletprofileconfigadaptor.cpp.o
+[ 36%] Building CXX object src/common/CMakeFiles/wacom_common.dir/x11input.cpp.o
+[ 37%] Building CXX object src/common/CMakeFiles/wacom_common.dir/x11inputdevice.cpp.o
+[ 37%] Building CXX object src/common/CMakeFiles/wacom_common.dir/x11wacom.cpp.o
+[ 38%] Building CXX object src/common/CMakeFiles/wacom_common.dir/logging.cpp.o
+[ 39%] Building CXX object src/common/CMakeFiles/wacom_common.dir/wacominterface.cpp.o
+[ 40%] Linking CXX static library ../../lib/libwacom_common.a
+[ 40%] Built target wacom_common
+[ 40%] Built target plasma_engine_wacomtablet_autogen_timestamp_deps
+[ 40%] Built target kcm_wacomtablet_autogen_timestamp_deps
+[ 40%] Built target kded_wacomtablet_autogen_timestamp_deps
+[ 40%] Built target kde_wacom_tabletfinder_autogen_timestamp_deps
+[ 41%] Automatic MOC for target kcm_wacomtablet
+[ 41%] Automatic MOC for target plasma_engine_wacomtablet
+[ 42%] Automatic MOC for target kded_wacomtablet
+[ 42%] Built target plasma_engine_wacomtablet_autogen
+[ 42%] Automatic MOC for target kde_wacom_tabletfinder
+[ 42%] Built target kded_wacomtablet_autogen
+[ 42%] Building CXX object src/dataengine/CMakeFiles/plasma_engine_wacomtablet.dir/plasma_engine_wacomtablet_autogen/mocs_compilation.cpp.o
+[ 43%] Building CXX object src/dataengine/CMakeFiles/plasma_engine_wacomtablet.dir/wacomtabletengine.cpp.o
+[ 43%] Built target kde_wacom_tabletfinder_autogen
+[ 44%] Generating wacomadaptor.cpp, wacomadaptor.h
+[ 45%] Generating moc_wacomadaptor.cpp
+[ 46%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/kded_wacomtablet_autogen/mocs_compilation.cpp.o
+[ 46%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/tabletdaemon.cpp.o
+[ 46%] Built target kcm_wacomtablet_autogen
+[ 47%] Building CXX object src/dataengine/CMakeFiles/plasma_engine_wacomtablet.dir/wacomtabletservice.cpp.o
+/home/fusion809/lfs_packaging/wacomtablet/wacomtablet-6.7.6/src/dataengine/wacomtabletengine.cpp: In constructor ‘WacomTabletEngine::WacomTabletEngine(QObject*, const QVariantList&)’:
+/home/fusion809/lfs_packaging/wacomtablet/wacomtablet-6.7.6/src/dataengine/wacomtabletengine.cpp:24:75: warning: unused parameter ‘args’ [-Wunused-parameter]
+   24 | WacomTabletEngine::WacomTabletEngine(QObject *parent, const QVariantList &args)
+      |                                                       ~~~~~~~~~~~~~~~~~~~~^~~~
+[ 48%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/dbustabletservice.cpp.o
+[ 49%] Generating ui_hwbuttondialog.h
+[ 49%] Generating ui_dialog.h
+[ 50%] Building CXX object src/tabletfinder/CMakeFiles/kde_wacom_tabletfinder.dir/kde_wacom_tabletfinder_autogen/mocs_compilation.cpp.o
+[ 50%] Building CXX object src/tabletfinder/CMakeFiles/kde_wacom_tabletfinder.dir/main.cpp.o
+[ 51%] Building CXX object src/dataengine/CMakeFiles/plasma_engine_wacomtablet.dir/multidbuspendingcallwatcher.cpp.o
+[ 52%] Building CXX object src/tabletfinder/CMakeFiles/kde_wacom_tabletfinder.dir/dialog.cpp.o
+[ 53%] Linking CXX shared module ../../bin/plasma_engine_wacomtablet.so
+[ 54%] Built target plasma_engine_wacomtablet
+[ 55%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/eventnotifier.cpp.o
+[ 56%] Generating ui_touchpagewidget.h
+[ 57%] Generating ui_buttonactionselectionwidget.h
+[ 58%] Generating ui_buttonactionselectorwidget.h
+[ 59%] Generating ui_buttonpagewidget.h
+[ 59%] Generating ui_errorwidget.h
+[ 60%] Generating ui_generalpagewidget.h
+[ 61%] Generating ui_kcmwacomtabletwidget.h
+[ 62%] Generating ui_pressurecurvedialog.h
+[ 62%] Generating ui_styluspagewidget.h
+[ 63%] Generating ui_tabletareaselectionview.h
+[ 64%] Generating ui_tabletpagewidget.h
+[ 64%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/kcm_wacomtablet_autogen/mocs_compilation.cpp.o
+[ 65%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/kcmwacomtablet.cpp.o
+[ 66%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/procsystemadaptor.cpp.o
+[ 67%] Building CXX object src/tabletfinder/CMakeFiles/kde_wacom_tabletfinder.dir/hwbuttondialog.cpp.o
+[ 67%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/procsystemproperty.cpp.o
+[ 68%] Linking CXX executable ../../bin/kde_wacom_tabletfinder
+[ 69%] Built target kde_wacom_tabletfinder
+[ 70%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/tabletbackend.cpp.o
+[ 71%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/tabletbackendfactory.cpp.o
+[ 72%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/areaselectionwidget.cpp.o
+[ 73%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/buttonactiondisplaywidget.cpp.o
+[ 74%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/tabletfinder.cpp.o
+[ 74%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/buttonactionselectiondialog.cpp.o
+[ 75%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/buttonactionselectionwidget.cpp.o
+[ 75%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/tablethandler.cpp.o
+[ 76%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/x11eventnotifier.cpp.o
+[ 77%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/buttonactionselectorwidget.cpp.o
+[ 78%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/x11tabletfinder.cpp.o
+[ 79%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/buttonpagewidget.cpp.o
+[ 80%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/xinputadaptor.cpp.o
+[ 81%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/xinputproperty.cpp.o
+[ 81%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/xsetwacomadaptor.cpp.o
+[ 82%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/xsetwacomproperty.cpp.o
+[ 83%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/__/common/globalactions.cpp.o
+[ 84%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/logging.cpp.o
+[ 84%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/calibrationdialog.cpp.o
+[ 84%] Building CXX object src/kded/CMakeFiles/kded_wacomtablet.dir/wacomadaptor.cpp.o
+[ 85%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/generalpagewidget.cpp.o
+[ 86%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/kcmwacomtabletwidget.cpp.o
+[ 87%] Linking CXX shared module ../../bin/wacomtablet.so
+[ 88%] Built target kded_wacomtablet
+[ 89%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/keysequenceinputbutton.cpp.o
+[ 90%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/keysequenceinputwidget.cpp.o
+[ 90%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/pressurecurvewidget.cpp.o
+[ 91%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/pressurecurvedialog.cpp.o
+[ 92%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/styluspagewidget.cpp.o
+[ 93%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/tabletareaselectioncontroller.cpp.o
+[ 93%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/tabletareaselectiondialog.cpp.o
+[ 94%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/tabletareaselectionview.cpp.o
+[ 95%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/tabletareaselectionwidget.cpp.o
+[ 96%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/tabletpagewidget.cpp.o
+[ 96%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/touchpagewidget.cpp.o
+[ 97%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/__/common/globalactions.cpp.o
+[ 98%] Building CXX object src/kcmodule/CMakeFiles/kcm_wacomtablet.dir/logging.cpp.o
+[ 99%] Linking CXX shared module ../../bin/kcm_wacomtablet.so
+[100%] Built target kcm_wacomtablet
+[  0%] Generating mo...
+[  0%] Built target pofiles-bf4accb001172299f3dce20c6c5afce5
+[  1%] Generating ts...
+[  1%] Built target tsfiles-bf4accb001172299f3dce20c6c5afce5
+[  2%] Built target po-ca-docs-kcontrol-wacomtablet-index-cache-bz2
+[  3%] Built target po-de-docs-kcontrol-wacomtablet-index-cache-bz2
+[  4%] Built target po-es-docs-kcontrol-wacomtablet-index-cache-bz2
+[  4%] Built target po-it-docs-kcontrol-wacomtablet-index-cache-bz2
+[  5%] Built target po-ko-docs-kcontrol-wacomtablet-index-cache-bz2
+[  6%] Built target po-nl-docs-kcontrol-wacomtablet-index-cache-bz2
+[  6%] Built target po-pt-docs-kcontrol-wacomtablet-index-cache-bz2
+[  7%] Built target po-pt-BR-docs-kcontrol-wacomtablet-index-cache-bz2
+[  8%] Built target po-sl-docs-kcontrol-wacomtablet-index-cache-bz2
+[  9%] Built target po-sv-docs-kcontrol-wacomtablet-index-cache-bz2
+[ 10%] Built target po-uk-docs-kcontrol-wacomtablet-index-cache-bz2
+[ 11%] Built target po-zh-CN-docs-kcontrol-wacomtablet-index-cache-bz2
+[ 11%] Built target wacom_common_autogen_timestamp_deps
+[ 12%] Built target wacom_common_autogen
+[ 40%] Built target wacom_common
+[ 40%] Built target plasma_engine_wacomtablet_autogen_timestamp_deps
+[ 40%] Built target plasma_engine_wacomtablet_autogen
+[ 45%] Built target plasma_engine_wacomtablet
+[ 45%] Built target kcm_wacomtablet-kcm-desktop-gen
+[ 45%] Built target kcm_wacomtablet_autogen_timestamp_deps
+[ 46%] Built target kcm_wacomtablet_autogen
+[ 75%] Built target kcm_wacomtablet
+[ 75%] Built target kded_wacomtablet_autogen_timestamp_deps
+[ 76%] Built target kded_wacomtablet_autogen
+[ 94%] Built target kded_wacomtablet
+[ 94%] Built target kde_wacom_tabletfinder_autogen_timestamp_deps
+[ 94%] Built target kde_wacom_tabletfinder_autogen
+[100%] Built target kde_wacom_tabletfinder
+[100%] Built target doc-user-index-cache-bz2
+Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /usr/share/plasma/plasmoids/org.kde.plasma.wacomtablet
+-- Up-to-date: /usr/share/plasma/plasmoids/org.kde.plasma.wacomtablet/contents
+-- Up-to-date: /usr/share/plasma/plasmoids/org.kde.plasma.wacomtablet/contents/ui
+-- Installing: /usr/share/plasma/plasmoids/org.kde.plasma.wacomtablet/contents/ui/FullRepresentation.qml
+-- Installing: /usr/share/plasma/plasmoids/org.kde.plasma.wacomtablet/contents/ui/RotationButton.qml
+-- Installing: /usr/share/plasma/plasmoids/org.kde.plasma.wacomtablet/contents/ui/main.qml
+-- Installing: /usr/share/plasma/plasmoids/org.kde.plasma.wacomtablet/metadata.json
+-- Installing: /usr/lib/plugins/plasma5support/dataengine/plasma_engine_wacomtablet.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/plugins/plasma5support/dataengine/plasma_engine_wacomtablet.so" to "/opt/qt6/lib"
+-- Installing: /usr/share/plasma5support/services/wacomtablet.operations
+-- Installing: /usr/share/applications/kcm_wacomtablet.desktop
+-- Installing: /usr/lib/plugins/plasma/kcms/systemsettings_qwidgets/kcm_wacomtablet.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/plugins/plasma/kcms/systemsettings_qwidgets/kcm_wacomtablet.so" to "/opt/qt6/lib"
+-- Installing: /usr/share/metainfo/org.kde.wacomtablet.metainfo.xml
+-- Installing: /usr/lib/plugins/kf6/kded/wacomtablet.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/plugins/kf6/kded/wacomtablet.so" to "/opt/qt6/lib"
+-- Installing: /usr/share/knotifications6/wacomtablet.notifyrc
+-- Installing: /usr/share/dbus-1/interfaces/org.kde.Wacom.xml
+-- Installing: /usr/bin/kde_wacom_tabletfinder
+-- Set non-toolchain portion of runtime path of "/usr/bin/kde_wacom_tabletfinder" to "/opt/qt6/lib"
+-- Installing: /usr/share/applications/kde_wacom_tabletfinder.desktop
+-- Installing: /usr/share/wacomtablet/data/companylist
+-- Installing: /usr/share/wacomtablet/data/aiptek_devicelist
+-- Installing: /usr/share/wacomtablet/data/default_devicelist
+-- Installing: /usr/share/wacomtablet/data/huion_devicelist
+-- Installing: /usr/share/wacomtablet/data/lenovo_devicelist
+-- Installing: /usr/share/wacomtablet/data/ntrig_devicelist
+-- Installing: /usr/share/wacomtablet/data/toshiba_devicelist
+-- Installing: /usr/share/wacomtablet/data/wacom_devicelist
+-- Installing: /usr/share/wacomtablet/data/waltop_devicelist
+-- Installing: /usr/share/wacomtablet/data/toshiba_devicelist
+-- Installing: /usr/share/wacomtablet/images/bl_1.png
+-- Installing: /usr/share/wacomtablet/images/bl_2.png
+-- Installing: /usr/share/wacomtablet/images/bl_3.png
+-- Installing: /usr/share/wacomtablet/images/bl_4.png
+-- Installing: /usr/share/wacomtablet/images/bl_5.png
+-- Installing: /usr/share/wacomtablet/images/bl_6.png
+-- Installing: /usr/share/wacomtablet/images/bl_7.png
+-- Installing: /usr/share/wacomtablet/images/bl_8.png
+-- Installing: /usr/share/wacomtablet/images/bl_9.png
+-- Installing: /usr/share/wacomtablet/images/bl_11.png
+-- Installing: /usr/share/wacomtablet/images/ek-remote.png
+-- Installing: /usr/share/wacomtablet/images/pen.png
+-- Up-to-date: /usr/share/locale
+-- Up-to-date: /usr/share/locale/nn
+-- Up-to-date: /usr/share/locale/nn/LC_MESSAGES
+-- Installing: /usr/share/locale/nn/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/nn/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/ja
+-- Up-to-date: /usr/share/locale/ja/LC_MESSAGES
+-- Installing: /usr/share/locale/ja/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/ja/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/fi
+-- Up-to-date: /usr/share/locale/fi/LC_MESSAGES
+-- Installing: /usr/share/locale/fi/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/fi/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/it
+-- Up-to-date: /usr/share/locale/it/LC_MESSAGES
+-- Installing: /usr/share/locale/it/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/it/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/id
+-- Up-to-date: /usr/share/locale/id/LC_MESSAGES
+-- Installing: /usr/share/locale/id/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/sa
+-- Up-to-date: /usr/share/locale/sa/LC_MESSAGES
+-- Installing: /usr/share/locale/sa/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/sa/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/pt_BR
+-- Up-to-date: /usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /usr/share/locale/pt_BR/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/pt_BR/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/mr
+-- Up-to-date: /usr/share/locale/mr/LC_MESSAGES
+-- Installing: /usr/share/locale/mr/LC_MESSAGES/wacomtablet.mo
+-- Up-to-date: /usr/share/locale/tr
+-- Up-to-date: /usr/share/locale/tr/LC_MESSAGES
+-- Installing: /usr/share/locale/tr/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/tr/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/et
+-- Up-to-date: /usr/share/locale/et/LC_MESSAGES
+-- Installing: /usr/share/locale/et/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/et/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/nds
+-- Up-to-date: /usr/share/locale/nds/LC_MESSAGES
+-- Installing: /usr/share/locale/nds/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/nds/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/ro
+-- Up-to-date: /usr/share/locale/ro/LC_MESSAGES
+-- Installing: /usr/share/locale/ro/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/ro/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/en_GB
+-- Up-to-date: /usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /usr/share/locale/en_GB/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/en_GB/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/fr
+-- Up-to-date: /usr/share/locale/fr/LC_MESSAGES
+-- Installing: /usr/share/locale/fr/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/fr/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/bs
+-- Up-to-date: /usr/share/locale/bs/LC_MESSAGES
+-- Installing: /usr/share/locale/bs/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/bs/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/da
+-- Up-to-date: /usr/share/locale/da/LC_MESSAGES
+-- Installing: /usr/share/locale/da/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/da/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/eo
+-- Up-to-date: /usr/share/locale/eo/LC_MESSAGES
+-- Installing: /usr/share/locale/eo/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/eo/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/ga
+-- Up-to-date: /usr/share/locale/ga/LC_MESSAGES
+-- Installing: /usr/share/locale/ga/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/ga/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/el
+-- Up-to-date: /usr/share/locale/el/LC_MESSAGES
+-- Installing: /usr/share/locale/el/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/el/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/uk
+-- Up-to-date: /usr/share/locale/uk/LC_MESSAGES
+-- Installing: /usr/share/locale/uk/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/uk/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/de
+-- Up-to-date: /usr/share/locale/de/LC_MESSAGES
+-- Installing: /usr/share/locale/de/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/de/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/sl
+-- Up-to-date: /usr/share/locale/sl/LC_MESSAGES
+-- Installing: /usr/share/locale/sl/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/sl/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/cs
+-- Up-to-date: /usr/share/locale/cs/LC_MESSAGES
+-- Installing: /usr/share/locale/cs/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/cs/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/mai
+-- Up-to-date: /usr/share/locale/mai/LC_MESSAGES
+-- Installing: /usr/share/locale/mai/LC_MESSAGES/wacomtablet.mo
+-- Up-to-date: /usr/share/locale/ar
+-- Up-to-date: /usr/share/locale/ar/LC_MESSAGES
+-- Installing: /usr/share/locale/ar/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/ar/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/ast
+-- Up-to-date: /usr/share/locale/ast/LC_MESSAGES
+-- Installing: /usr/share/locale/ast/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/ast/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/pa
+-- Up-to-date: /usr/share/locale/pa/LC_MESSAGES
+-- Installing: /usr/share/locale/pa/LC_MESSAGES/wacomtablet.mo
+-- Up-to-date: /usr/share/locale/lt
+-- Up-to-date: /usr/share/locale/lt/LC_MESSAGES
+-- Installing: /usr/share/locale/lt/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/lt/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/zh_CN
+-- Up-to-date: /usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /usr/share/locale/zh_CN/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/zh_CN/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/ca@valencia
+-- Up-to-date: /usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /usr/share/locale/ca@valencia/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/ca@valencia/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/is
+-- Up-to-date: /usr/share/locale/is/LC_MESSAGES
+-- Installing: /usr/share/locale/is/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/is/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/ia
+-- Up-to-date: /usr/share/locale/ia/LC_MESSAGES
+-- Installing: /usr/share/locale/ia/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/ia/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/km
+-- Up-to-date: /usr/share/locale/km/LC_MESSAGES
+-- Installing: /usr/share/locale/km/LC_MESSAGES/wacomtablet.mo
+-- Up-to-date: /usr/share/locale/ka
+-- Up-to-date: /usr/share/locale/ka/LC_MESSAGES
+-- Installing: /usr/share/locale/ka/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/ka/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/zh_TW
+-- Up-to-date: /usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /usr/share/locale/zh_TW/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/zh_TW/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/nb
+-- Up-to-date: /usr/share/locale/nb/LC_MESSAGES
+-- Installing: /usr/share/locale/nb/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/nb/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/es
+-- Up-to-date: /usr/share/locale/es/LC_MESSAGES
+-- Installing: /usr/share/locale/es/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/es/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/ko
+-- Up-to-date: /usr/share/locale/ko/LC_MESSAGES
+-- Installing: /usr/share/locale/ko/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/ko/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/he
+-- Up-to-date: /usr/share/locale/he/LC_MESSAGES
+-- Installing: /usr/share/locale/he/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/he/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/hu
+-- Up-to-date: /usr/share/locale/hu/LC_MESSAGES
+-- Installing: /usr/share/locale/hu/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/hu/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/hi
+-- Up-to-date: /usr/share/locale/hi/LC_MESSAGES
+-- Installing: /usr/share/locale/hi/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/hi/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/nl
+-- Up-to-date: /usr/share/locale/nl/LC_MESSAGES
+-- Installing: /usr/share/locale/nl/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/nl/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/eu
+-- Up-to-date: /usr/share/locale/eu/LC_MESSAGES
+-- Installing: /usr/share/locale/eu/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/eu/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/pt
+-- Up-to-date: /usr/share/locale/pt/LC_MESSAGES
+-- Installing: /usr/share/locale/pt/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/pt/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/sk
+-- Up-to-date: /usr/share/locale/sk/LC_MESSAGES
+-- Installing: /usr/share/locale/sk/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/sk/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/ug
+-- Up-to-date: /usr/share/locale/ug/LC_MESSAGES
+-- Installing: /usr/share/locale/ug/LC_MESSAGES/wacomtablet.mo
+-- Up-to-date: /usr/share/locale/ca
+-- Up-to-date: /usr/share/locale/ca/LC_MESSAGES
+-- Installing: /usr/share/locale/ca/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/ca/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/kk
+-- Up-to-date: /usr/share/locale/kk/LC_MESSAGES
+-- Installing: /usr/share/locale/kk/LC_MESSAGES/wacomtablet.mo
+-- Up-to-date: /usr/share/locale/ru
+-- Up-to-date: /usr/share/locale/ru/LC_MESSAGES
+-- Installing: /usr/share/locale/ru/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/ru/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/gl
+-- Up-to-date: /usr/share/locale/gl/LC_MESSAGES
+-- Installing: /usr/share/locale/gl/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/gl/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/sv
+-- Up-to-date: /usr/share/locale/sv/LC_MESSAGES
+-- Installing: /usr/share/locale/sv/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/sv/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Up-to-date: /usr/share/locale/pl
+-- Up-to-date: /usr/share/locale/pl/LC_MESSAGES
+-- Installing: /usr/share/locale/pl/LC_MESSAGES/wacomtablet.mo
+-- Installing: /usr/share/locale/pl/LC_MESSAGES/plasma_applet_org.kde.plasma.wacomtablet.mo
+-- Installing: /usr/share/doc/HTML/en/kcontrol/wacomtablet/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/en/kcontrol/wacomtablet/index.docbook
+-- Installing: /usr/share/doc/HTML/en/kcontrol/wacomtablet/presscurve.png
+-- Installing: /usr/share/doc/HTML/en/kcontrol/wacomtablet/tabletarea.png
+-- Installing: /usr/share/doc/HTML/ca/kcontrol/wacomtablet/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/ca/kcontrol/wacomtablet/index.docbook
+-- Installing: /usr/share/doc/HTML/de/kcontrol/wacomtablet/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/de/kcontrol/wacomtablet/index.docbook
+-- Installing: /usr/share/doc/HTML/es/kcontrol/wacomtablet/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/es/kcontrol/wacomtablet/index.docbook
+-- Installing: /usr/share/doc/HTML/it/kcontrol/wacomtablet/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/it/kcontrol/wacomtablet/index.docbook
+-- Installing: /usr/share/doc/HTML/ko/kcontrol/wacomtablet/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/ko/kcontrol/wacomtablet/index.docbook
+-- Installing: /usr/share/doc/HTML/nl/kcontrol/wacomtablet/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/nl/kcontrol/wacomtablet/index.docbook
+-- Installing: /usr/share/doc/HTML/pt/kcontrol/wacomtablet/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/pt/kcontrol/wacomtablet/index.docbook
+-- Installing: /usr/share/doc/HTML/pt_BR/kcontrol/wacomtablet/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/pt_BR/kcontrol/wacomtablet/index.docbook
+-- Installing: /usr/share/doc/HTML/sl/kcontrol/wacomtablet/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/sl/kcontrol/wacomtablet/index.docbook
+-- Installing: /usr/share/doc/HTML/sv/kcontrol/wacomtablet/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/sv/kcontrol/wacomtablet/index.docbook
+-- Installing: /usr/share/doc/HTML/uk/kcontrol/wacomtablet/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/uk/kcontrol/wacomtablet/index.docbook
+-- Installing: /usr/share/doc/HTML/uk/kcontrol/wacomtablet/presscurve.png
+-- Installing: /usr/share/doc/HTML/uk/kcontrol/wacomtablet/tabletarea.png
+-- Installing: /usr/share/doc/HTML/zh_CN/kcontrol/wacomtablet/index.cache.bz2
+-- Installing: /usr/share/doc/HTML/zh_CN/kcontrol/wacomtablet/index.docbook
+-- Installing: /usr/share/qlogging-categories6/wacomtablet.categories
+6.7.6
+Updated registry for wacomtablet to version 6.7.6
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package wacomtablet in /var/lib/custom-packages/
+Building custom package glycin...
+[03:15:44] Found custom package for glycin, bypassing BLFS aliases.
+[03:15:44] Custom package detected at /home/fusion809/lfs_packaging/glycin (package: glycin)
+[03:15:44] Extracting dependencies for custom package 'glycin'...
+[03:15:44] Required deps: brotli bubblewrap bzip2 cairo dav1d elfutils expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc graphene graphite2 gst-plugins-bad gst-plugins-base gstreamer gtk4 harfbuzz highway icu lcms2 libaom libde265 libdrm libepoxy libffi libglvnd libgudev libheif libjpeg-turbo libjxl libogg libpng librsvg libseccomp libunwind libwebp libx11 libxau libxcb libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxml2 libxrandr libxrender mesa numactl orc pango pcre2 pixman rust systemd tiff util-linux vala vulkan-loader wayland x264 x265 xz zlib zstd 
+[03:15:44] Dependency 'brotli' already installed.
+[03:15:44] Dependency 'bubblewrap' already installed.
+[03:15:44] Dependency 'bzip2' already installed.
+[03:15:44] Dependency 'cairo' already installed.
+[03:15:44] Dependency 'dav1d' already installed.
+[03:15:44] Dependency 'elfutils' already installed.
+[03:15:44] Dependency 'expat' already installed.
+[03:15:44] Dependency 'fontconfig' already installed.
+[03:15:44] Dependency 'freetype' already installed.
+[03:15:44] Dependency 'fribidi' already installed.
+[03:15:44] Dependency 'gcc' already installed.
+[03:15:44] Dependency 'gdk-pixbuf' already installed.
+[03:15:44] Dependency 'glib2' already installed.
+[03:15:44] Dependency 'glibc' already installed.
+[03:15:44] Dependency 'graphene' already installed.
+[03:15:44] Dependency 'graphite2' already installed.
+[03:15:44] Dependency 'gst-plugins-bad' already installed.
+[03:15:44] Dependency 'gst-plugins-base' already installed.
+[03:15:44] Dependency 'gstreamer' already installed.
+[03:15:44] Dependency 'gtk4' already installed.
+[03:15:44] Dependency 'harfbuzz' already installed.
+[03:15:44] Dependency 'highway' already installed.
+[03:15:44] Dependency 'icu' already installed.
+[03:15:44] Dependency 'lcms2' already installed.
+[03:15:44] Dependency 'libaom' already installed.
+[03:15:44] Dependency 'libde265' already installed.
+[03:15:44] Dependency 'libdrm' already installed.
+[03:15:44] Dependency 'libepoxy' already installed.
+[03:15:44] Dependency 'libffi' already installed.
+[03:15:44] Dependency 'libglvnd' already installed.
+[03:15:44] Dependency 'libgudev' already installed.
+[03:15:44] Dependency 'libheif' already installed.
+[03:15:44] Dependency 'libjpeg-turbo' already installed.
+[03:15:44] Dependency 'libjxl' already installed.
+[03:15:44] Dependency 'libogg' already installed.
+[03:15:44] Dependency 'libpng' already installed.
+[03:15:44] Dependency 'librsvg' already installed.
+[03:15:44] Dependency 'libseccomp' already installed.
+[03:15:44] Dependency 'libunwind' already installed.
+[03:15:44] Dependency 'libwebp' already installed.
+[03:15:44] Dependency 'libx11' already installed.
+[03:15:44] Dependency 'libxau' already installed.
+[03:15:44] Dependency 'libxcb' already installed.
+[03:15:44] Dependency 'libxcursor' already installed.
+[03:15:44] Dependency 'libxdamage' already installed.
+[03:15:44] Dependency 'libxdmcp' already installed.
+[03:15:44] Dependency 'libxext' already installed.
+[03:15:44] Dependency 'libxfixes' already installed.
+[03:15:44] Dependency 'libxi' already installed.
+[03:15:44] Dependency 'libxinerama' already installed.
+[03:15:44] Dependency 'libxkbcommon' already installed.
+[03:15:44] Dependency 'libxml2' already installed.
+[03:15:44] Dependency 'libxrandr' already installed.
+[03:15:44] Dependency 'libxrender' already installed.
+[03:15:44] Dependency 'mesa' already installed.
+[03:15:44] Dependency 'numactl' already installed.
+[03:15:44] Dependency 'orc' already installed.
+[03:15:44] Dependency 'pango' already installed.
+[03:15:44] Dependency 'pcre2' already installed.
+[03:15:44] Dependency 'pixman' already installed.
+[03:15:44] Dependency 'rust' already installed.
+[03:15:44] Dependency 'systemd' already installed.
+[03:15:44] Dependency 'tiff' already installed.
+[03:15:44] Dependency 'util-linux' already installed.
+[03:15:44] Dependency 'vala' already installed.
+[03:15:44] Dependency 'vulkan-loader' already installed.
+[03:15:44] Dependency 'wayland' already installed.
+[03:15:44] Dependency 'x264' already installed.
+[03:15:44] Dependency 'x265' already installed.
+[03:15:44] Dependency 'xz' already installed.
+[03:15:44] Dependency 'zlib' already installed.
+[03:15:44] Dependency 'zstd' already installed.
+[03:15:44] Starting remote custom build for glycin...
+--2026-11-04 03:15:53--  https://download.gnome.org/sources/glycin/2.2/glycin-2.2.6.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 143.244.62.9, 143.244.62.6, 2a02:6ea0:db00::1, ...
+Connecting to download.gnome.org (download.gnome.org)|143.244.62.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7768092 (7.4M) [application/octet-stream]
+Saving to: ‘glycin-2.2.6.tar.xz’
+
+glycin-2.2.6.tar.xz   0%[                    ]       0  --.-KB/s               glycin-2.2.6.tar.xz   9%[>                   ] 719.44K  3.49MB/s               glycin-2.2.6.tar.xz  30%[=====>              ]   2.30M  5.70MB/s               glycin-2.2.6.tar.xz  51%[=========>          ]   3.84M  6.08MB/s               glycin-2.2.6.tar.xz  93%[=================>  ]   6.94M  8.32MB/s               glycin-2.2.6.tar.xz 100%[===================>]   7.41M  8.46MB/s    in 0.9s    
+
+2026-11-04 03:15:53 (8.46 MB/s) - ‘glycin-2.2.6.tar.xz’ saved [7768092/7768092]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+meson_args: <-D>
+meson_args: <libglycin-gtk4=false>
+meson_args: <-D>
+meson_args: <tests=false>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <-D> <libglycin-gtk4=false> <-D> <tests=false> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/glycin/glycin-2.2.6
+Build dir: /home/fusion809/lfs_packaging/glycin/glycin-2.2.6/build
+Build type: native build
+Project name: glycin
+Project version: 2.2.6
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Rust compiler for the host machine: rustc -C linker=cc (rustc 1.99.1 "1.99.1")
+Rust linker for the host machine:  ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program cargo found: YES (/opt/rustc/bin/cargo)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency libseccomp found: YES 2.6.1
+Run-time dependency libheif found: YES 1.23.7
+Run-time dependency libjxl found: YES 0.12.0
+Run-time dependency librsvg-2.0 found: YES 2.63.4
+Run-time dependency cairo found: YES 1.18.6
+Configuring tmp-glycin-heif using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Configuring glycin-heif.thumbnailer using configuration
+Configuring tmp-glycin-image-rs using configuration
+Configuring glycin-image-rs.thumbnailer using configuration
+Configuring tmp-glycin-jxl using configuration
+Configuring glycin-jxl.thumbnailer using configuration
+Configuring tmp-glycin-svg using configuration
+Configuring glycin-svg.thumbnailer using configuration
+Run-time dependency gio-2.0 found: YES 2.90.1
+Run-time dependency fontconfig found: YES 2.18.3
+Dependency libseccomp for host machine found: YES 2.6.1 (cached)
+Message: /home/fusion809/lfs_packaging/glycin/glycin-2.2.6/build/cargo-target/release/glycin-2-0.dll
+WARNING: Build target glycin-2 has no sources. This was never supposed to be allowed but did because of a bug, support will be removed in a future release of Meson
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program vapigen found: YES (/usr/bin/vapigen)
+Build targets in project: 21
+
+glycin 2.2.6
+
+  User defined options
+    buildtype     : release
+    libglycin-gtk4: false
+    prefix        : /usr
+    tests         : false
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[0/21] Generating libglycin/libglycin-cargo with a custom command (wrapped by meson to set env)
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded adler2 v2.0.1
+  Downloaded aliasable v0.1.3
+  Downloaded async-broadcast v0.7.2
+  Downloaded async-global-executor v3.1.0
+  Downloaded async-recursion v1.1.1
+  Downloaded atomic-waker v1.1.2
+  Downloaded byteorder-lite v0.1.0
+  Downloaded bit_field v0.10.3
+  Downloaded async-fs v2.2.0
+  Downloaded futures-core v0.3.33
+  Downloaded defmt-parser v1.0.0
+  Downloaded endi v1.1.1
+  Downloaded enumflags2_derive v0.7.12
+  Downloaded jpeg-encoder v0.7.1
+  Downloaded cfg_aliases v0.2.2
+  Downloaded equivalent v1.0.2
+  Downloaded matchers v0.2.0
+  Downloaded futures-macro v0.3.33
+  Downloaded gio-unix v0.22.8
+  Downloaded gio-unix-sys v0.22.0
+  Downloaded futures-sink v0.3.33
+  Downloaded gufo-tiff v0.5.0
+  Downloaded heck v0.4.1
+  Downloaded cfg-if v1.0.4
+  Downloaded env_filter v2.0.0
+  Downloaded hex v0.4.3
+  Downloaded color_quant v1.1.0
+  Downloaded futures-io v0.3.33
+  Downloaded futures-task v0.3.33
+  Downloaded libseccomp-sys v0.3.0
+  Downloaded heck v0.5.0
+  Downloaded async-channel v2.5.0
+  Downloaded lazy_static v1.5.0
+  Downloaded async-executor v1.14.0
+  Downloaded async-signal v0.2.14
+  Downloaded autocfg v1.5.1
+  Downloaded bitflags v1.3.2
+  Downloaded blocking v1.6.2
+  Downloaded event-listener-strategy v0.5.4
+  Downloaded lebe v0.5.3
+  Downloaded fax v0.2.7
+  Downloaded glycin-common v2.0.0
+  Downloaded errno v0.3.14
+  Downloaded fastrand v2.5.0
+  Downloaded futures-executor v0.3.33
+  Downloaded dlib v0.5.3
+  Downloaded gufo-xmp v0.5.0
+  Downloaded concurrent-queue v2.5.0
+  Downloaded crossbeam-deque v0.8.7
+  Downloaded fdeflate v0.3.7
+  Downloaded futures-timer v3.0.4
+  Downloaded gufo-common v2.0.0
+  Downloaded gufo-webp v0.5.0
+  Downloaded glycin-external v4.0.5
+  Downloaded gufo v0.5.0
+  Downloaded defmt-macros v1.1.1
+  Downloaded either v1.17.0
+  Downloaded gufo-png v0.5.0
+  Downloaded enumflags2 v0.7.12
+  Downloaded gufo-jpeg v0.5.1
+  Downloaded miniz_oxide v0.9.1
+  Downloaded gobject-sys v0.22.6
+  Downloaded async-process v2.5.0
+  Downloaded async-task v4.7.1
+  Downloaded async-lock v3.4.2
+  Downloaded async-trait v0.1.91
+  Downloaded cfg-expr v0.20.8
+  Downloaded async-io v2.6.0
+  Downloaded crc32fast v1.5.0
+  Downloaded event-listener v5.4.2
+  Downloaded defmt v1.1.1
+  Downloaded glycin v4.0.5
+  Downloaded gufo-exif v0.5.5
+  Downloaded crossbeam-epoch v0.9.20
+  Downloaded futures-channel v0.3.33
+  Downloaded futures-lite v2.6.1
+  Downloaded env_logger v0.11.11
+  Downloaded glycin-builtin v4.0.5
+  Downloaded glycin-image-rs v2.2.4
+  Downloaded gif v0.14.2
+  Downloaded memmap2 v0.9.11
+  Downloaded bytemuck v1.25.2
+  Downloaded glycin-utils v5.0.1
+  Downloaded half v2.7.1
+  Downloaded image-extras v0.1.1
+  Downloaded libseccomp v0.4.0
+  Downloaded bitflags v2.13.1
+  Downloaded crossbeam-utils v0.8.22
+  Downloaded getrandom v0.4.3
+  Downloaded glib-sys v0.22.8
+  Downloaded image-webp v0.2.4
+  Downloaded flate2 v1.1.9
+  Downloaded glib-macros v0.22.6
+  Downloaded glycin-core v4.0.5
+  Downloaded hayro-jpeg2000 v0.3.5
+  Downloaded gio-sys v0.22.8
+  Downloaded parking v2.2.1
+  Downloaded aho-corasick v1.1.4
+  Downloaded indexmap v2.14.0
+  Downloaded jiff-core v0.1.0
+  Downloaded reborrow v0.5.5
+  Downloaded hashbrown v0.17.1
+  Downloaded libm v0.2.16
+  Downloaded futures-util v0.3.33
+  Downloaded fearless_simd v0.4.1
+  Downloaded gio v0.22.8
+  Downloaded exr v1.74.2
+  Downloaded glib v0.22.8
+  Downloaded image v0.25.10
+  Downloaded version-compare v0.2.1
+  Downloaded jiff v0.2.35
+  Downloaded proc-macro2-diagnostics v0.10.1
+  Downloaded serde_spanned v1.1.1
+  Downloaded ouroboros v0.18.5
+  Downloaded encoding_rs v0.8.35
+  Downloaded pulp-wasm-simd-flag v0.1.1
+  Downloaded serde_repr v0.1.21
+  Downloaded yeslogic-fontconfig-sys v6.0.1
+  Downloaded quick-error v2.0.1
+  Downloaded log v0.4.33
+  Downloaded ordered-stream v0.2.0
+  Downloaded piper v0.2.5
+  Downloaded thiserror-impl v2.0.19
+  Downloaded toml_datetime v1.1.1+spec-1.1.0
+  Downloaded zbus_names v4.3.4
+  Downloaded signal-hook-registry v1.4.8
+  Downloaded slab v0.4.12
+  Downloaded thread_local v1.1.10
+  Downloaded simd-adler32 v0.3.10
+  Downloaded zune-core v0.5.1
+  Downloaded zvariant_derive v5.13.1
+  Downloaded nu-ansi-term v0.50.3
+  Downloaded version_check v0.9.5
+  Downloaded paste v1.0.15
+  Downloaded num-complex v0.4.6
+  Downloaded pin-project-lite v0.2.17
+  Downloaded tracing-log v0.2.0
+  Downloaded quote v1.0.47
+  Downloaded ouroboros_macro v0.18.5
+  Downloaded target-lexicon v0.13.5
+  Downloaded zvariant_utils v3.5.0
+  Downloaded thiserror v2.0.19
+  Downloaded toml_writer v1.1.2+spec-1.1.0
+  Downloaded static_assertions v1.1.0
+  Downloaded proc-macro-crate v3.5.0
+  Downloaded system-deps v7.0.8
+  Downloaded miniz_oxide v0.8.9
+  Downloaded once_cell v1.21.4
+  Downloaded pkg-config v0.3.33
+  Downloaded rmp-serde v1.3.1
+  Downloaded rmp v0.8.15
+  Downloaded weezl v0.1.12
+  Downloaded zune-inflate v0.2.54
+  Downloaded tracing-attributes v0.1.31
+  Downloaded libloading v0.8.9
+  Downloaded smallvec v1.15.2
+  Downloaded xml v1.3.0
+  Downloaded serde_core v1.0.229
+  Downloaded toml_parser v1.1.3+spec-1.1.0
+  Downloaded zbus_macros v5.18.0
+  Downloaded toml v1.1.4+spec-1.1.0
+  Downloaded sharded-slab v0.1.7
+  Downloaded polling v3.11.0
+  Downloaded serde_derive v1.0.229
+  Downloaded unicode-ident v1.0.24
+  Downloaded memchr v2.8.3
+  Downloaded tracing-core v0.1.36
+  Downloaded qoi v0.4.1
+  Downloaded uuid v1.24.0
+  Downloaded rayon-core v1.13.0
+  Downloaded proc-macro2 v1.0.107
+  Downloaded toml_edit v0.25.13+spec-1.1.0
+  Downloaded zvariant v5.13.1
+  Downloaded serde v1.0.229
+  Downloaded zune-jpeg v0.5.15
+  Downloaded num-traits v0.2.19
+  Downloaded yansi v1.0.1
+  Downloaded zerocopy-derive v0.8.55
+  Downloaded tiff v0.11.3
+  Downloaded raw-cpuid v11.6.0
+  Downloaded png v0.18.1
+  Downloaded pulp v0.22.3
+  Downloaded regex v1.13.1
+  Downloaded rayon v1.12.0
+  Downloaded zbus v5.18.0
+  Downloaded moxcms v0.8.1
+  Downloaded winnow v1.0.4
+  Downloaded tracing-subscriber v0.3.23
+  Downloaded zerocopy v0.8.55
+  Downloaded syn v2.0.119
+  Downloaded syn v3.0.3
+  Downloaded nix v0.31.3
+  Downloaded regex-syntax v0.8.11
+  Downloaded tracing v0.1.44
+  Downloaded rustix v1.1.4
+  Downloaded regex-automata v0.4.16
+  Downloaded pxfm v0.1.30
+  Downloaded libc v0.2.189
+  Downloaded linux-raw-sys v0.12.1
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.24
+   Compiling winnow v1.0.4
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling pin-project-lite v0.2.17
+   Compiling serde_core v1.0.229
+   Compiling pkg-config v0.3.33
+   Compiling serde v1.0.229
+   Compiling syn v2.0.119
+   Compiling syn v3.0.3
+   Compiling toml_parser v1.1.3+spec-1.1.0
+   Compiling target-lexicon v0.13.5
+   Compiling libc v0.2.189
+   Compiling futures-core v0.3.33
+   Compiling serde_spanned v1.1.1
+   Compiling heck v0.5.0
+   Compiling smallvec v1.15.2
+   Compiling cfg-expr v0.20.8
+   Compiling serde_derive v1.0.229
+   Compiling toml v1.1.4+spec-1.1.0
+   Compiling version-compare v0.2.1
+   Compiling system-deps v7.0.8
+   Compiling crossbeam-utils v0.8.22
+   Compiling cfg-if v1.0.4
+   Compiling equivalent v1.0.2
+   Compiling hashbrown v0.17.1
+   Compiling indexmap v2.14.0
+   Compiling parking v2.2.1
+   Compiling autocfg v1.5.1
+   Compiling toml_edit v0.25.13+spec-1.1.0
+   Compiling enumflags2_derive v0.7.12
+   Compiling bitflags v2.13.1
+   Compiling zvariant_utils v3.5.0
+   Compiling proc-macro-crate v3.5.0
+   Compiling futures-io v0.3.33
+   Compiling slab v0.4.12
+   Compiling zvariant_derive v5.13.1
+   Compiling fastrand v2.5.0
+   Compiling concurrent-queue v2.5.0
+   Compiling event-listener v5.4.2
+   Compiling glib-sys v0.22.8
+   Compiling event-listener-strategy v0.5.4
+   Compiling enumflags2 v0.7.12
+   Compiling futures-lite v2.6.1
+   Compiling gobject-sys v0.22.6
+   Compiling rustix v1.1.4
+   Compiling endi v1.1.1
+   Compiling once_cell v1.21.4
+   Compiling gio-sys v0.22.8
+   Compiling linux-raw-sys v0.12.1
+   Compiling paste v1.0.15
+   Compiling thiserror v2.0.19
+   Compiling tracing-core v0.1.36
+   Compiling async-io v2.6.0
+   Compiling zvariant v5.13.1
+   Compiling num-traits v0.2.19
+   Compiling futures-macro v0.3.33
+   Compiling thiserror-impl v2.0.19
+   Compiling async-task v4.7.1
+   Compiling version_check v0.9.5
+   Compiling zerocopy v0.8.55
+   Compiling futures-task v0.3.33
+   Compiling futures-util v0.3.33
+   Compiling proc-macro2-diagnostics v0.10.1
+   Compiling polling v3.11.0
+   Compiling async-channel v2.5.0
+   Compiling tracing-attributes v0.1.31
+   Compiling zerocopy-derive v0.8.55
+   Compiling atomic-waker v1.1.2
+   Compiling crossbeam-epoch v0.9.20
+   Compiling piper v0.2.5
+   Compiling gufo-common v2.0.0
+   Compiling tracing v0.1.44
+   Compiling futures-executor v0.3.33
+   Compiling async-lock v3.4.2
+   Compiling glib-macros v0.22.6
+   Compiling errno v0.3.14
+   Compiling futures-channel v0.3.33
+   Compiling log v0.4.33
+   Compiling crossbeam-deque v0.8.7
+   Compiling memchr v2.8.3
+   Compiling cfg_aliases v0.2.2
+   Compiling yansi v1.0.1
+   Compiling getrandom v0.4.3
+   Compiling nix v0.31.3
+   Compiling signal-hook-registry v1.4.8
+   Compiling glib v0.22.8
+   Compiling blocking v1.6.2
+   Compiling rayon-core v1.13.0
+   Compiling libseccomp-sys v0.3.0
+   Compiling heck v0.4.1
+   Compiling ouroboros_macro v0.18.5
+   Compiling zbus_names v4.3.4
+   Compiling async-signal v0.2.14
+   Compiling rmp v0.8.15
+   Compiling async-executor v1.14.0
+   Compiling gio-unix-sys v0.22.0
+   Compiling libseccomp v0.4.0
+   Compiling jiff-core v0.1.0
+   Compiling static_assertions v1.1.0
+   Compiling regex-syntax v0.8.11
+   Compiling aliasable v0.1.3
+   Compiling ouroboros v0.18.5
+   Compiling jiff v0.2.35
+   Compiling regex-automata v0.4.16
+   Compiling rmp-serde v1.3.1
+   Compiling zbus_macros v5.18.0
+   Compiling uuid v1.24.0
+   Compiling async-process v2.5.0
+   Compiling half v2.7.1
+   Compiling env_filter v2.0.0
+   Compiling async-broadcast v0.7.2
+   Compiling libloading v0.8.9
+   Compiling async-recursion v1.1.1
+   Compiling async-trait v0.1.91
+   Compiling serde_repr v0.1.21
+   Compiling memmap2 v0.9.11
+   Compiling ordered-stream v0.2.0
+   Compiling yeslogic-fontconfig-sys v6.0.1
+   Compiling xml v1.3.0
+   Compiling hex v0.4.3
+   Compiling either v1.17.0
+   Compiling lazy_static v1.5.0
+   Compiling sharded-slab v0.1.7
+   Compiling rayon v1.12.0
+   Compiling gufo-xmp v0.5.0
+   Compiling zbus v5.18.0
+   Compiling glycin-common v2.0.0
+   Compiling dlib v0.5.3
+   Compiling env_logger v0.11.11
+   Compiling gufo-exif v0.5.5
+   Compiling matchers v0.2.0
+   Compiling gio v0.22.8
+   Compiling tracing-log v0.2.0
+   Compiling thread_local v1.1.10
+   Compiling nu-ansi-term v0.50.3
+   Compiling futures-timer v3.0.4
+   Compiling pxfm v0.1.30
+   Compiling moxcms v0.8.1
+   Compiling glycin-utils v5.0.1
+   Compiling tracing-subscriber v0.3.23
+   Compiling gio-unix v0.22.8
+   Compiling gufo v0.5.0
+   Compiling async-global-executor v3.1.0
+   Compiling async-fs v2.2.0
+   Compiling bytemuck v1.25.2
+   Compiling glycin-core v4.0.5
+   Compiling libglycin v2.2.6 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.6/libglycin)
+   Compiling glycin-external v4.0.5
+   Compiling glycin v4.0.5
+    Finished `release` profile [optimized] target(s) in 8m 42s
+[1/21] Merging translations for glycin-loaders/glycin-image-rs.conf
+/usr/bin/msgfmt: ../glycin-loaders/../po/LINGUAS does not exist
+[2/21] Merging translations for glycin-loaders/glycin-heif.conf
+/usr/bin/msgfmt: ../glycin-loaders/../po/LINGUAS does not exist
+[3/21] Merging translations for glycin-loaders/glycin-jxl.conf
+/usr/bin/msgfmt: ../glycin-loaders/../po/LINGUAS does not exist
+[4/21] Merging translations for glycin-loaders/glycin-svg.conf
+/usr/bin/msgfmt: ../glycin-loaders/../po/LINGUAS does not exist
+[5/21] Generating glycin-loaders/glycin-heif with a custom command (wrapped by meson to set env)
+ Downloading crates ...
+  Downloaded four-cc v0.4.0
+  Downloaded enumn v0.1.14
+  Downloaded safe-transmute v0.11.3
+  Downloaded libheif-rs v2.7.0
+  Downloaded libheif-sys v5.3.0+1.23.0
+   Compiling num-traits v0.2.19
+   Compiling tracing-core v0.1.36
+   Compiling libheif-sys v5.3.0+1.23.0
+   Compiling async-executor v1.14.0
+   Compiling tracing v0.1.44
+   Compiling futures-task v0.3.33
+   Compiling zbus v5.18.0
+   Compiling futures-util v0.3.33
+   Compiling rmp v0.8.15
+   Compiling rmp-serde v1.3.1
+   Compiling glycin-common v2.0.0
+   Compiling enumn v0.1.14
+   Compiling four-cc v0.4.0
+   Compiling libheif-rs v2.7.0
+   Compiling safe-transmute v0.11.3
+   Compiling glycin-utils v5.0.1
+   Compiling glycin-heif v2.2.0 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.6/glycin-loaders/glycin-heif)
+    Finished `release` profile [optimized] target(s) in 3m 02s
+[11/21] Generating libglycin/glycin-2.vapi with a custom command
+[12/21] Generating glycin-loaders/glycin-image-rs with a custom command (wrapped by meson to set env)
+   Compiling num-traits v0.2.19
+   Compiling adler2 v2.0.1
+   Compiling simd-adler32 v0.3.10
+   Compiling crc32fast v1.5.0
+   Compiling miniz_oxide v0.8.9
+   Compiling libm v0.2.16
+   Compiling bytemuck v1.25.2
+   Compiling pulp v0.22.3
+   Compiling num-complex v0.4.6
+   Compiling flate2 v1.1.9
+   Compiling raw-cpuid v11.6.0
+   Compiling zune-core v0.5.1
+   Compiling weezl v0.1.12
+   Compiling quick-error v2.0.1
+   Compiling reborrow v0.5.5
+   Compiling pulp-wasm-simd-flag v0.1.1
+   Compiling zune-jpeg v0.5.15
+   Compiling zune-inflate v0.2.54
+   Compiling fdeflate v0.3.7
+   Compiling bit_field v0.10.3
+   Compiling lebe v0.5.3
+   Compiling color_quant v1.1.0
+   Compiling byteorder-lite v0.1.0
+   Compiling fax v0.2.7
+   Compiling smallvec v1.15.2
+   Compiling tiff v0.11.3
+   Compiling image-webp v0.2.4
+   Compiling moxcms v0.8.1
+   Compiling gif v0.14.2
+   Compiling exr v1.74.2
+   Compiling png v0.18.1
+   Compiling qoi v0.4.1
+   Compiling rmp v0.8.15
+   Compiling rmp-serde v1.3.1
+   Compiling miniz_oxide v0.9.1
+   Compiling encoding_rs v0.8.35
+   Compiling image v0.25.10
+   Compiling jpeg-encoder v0.7.1
+   Compiling gufo-jpeg v0.5.1
+   Compiling gufo-png v0.5.0
+   Compiling glycin-common v2.0.0
+   Compiling gufo-exif v0.5.5
+   Compiling gufo-webp v0.5.0
+   Compiling gufo-tiff v0.5.0
+   Compiling fearless_simd v0.4.1
+   Compiling glycin-utils v5.0.1
+   Compiling hayro-jpeg2000 v0.3.5
+   Compiling gufo v0.5.0
+   Compiling image-extras v0.1.1
+   Compiling glycin-image-rs v2.2.4 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.6/glycin-loaders/glycin-image-rs)
+    Finished `release` profile [optimized] target(s) in 7m 12s
+[13/21] Generating glycin-loaders/glycin-heif-cp-binary with a custom command
+[14/21] Generating glycin-loaders/glycin-jxl with a custom command (wrapped by meson to set env)
+ Downloading crates ...
+  Downloaded rustversion v1.0.23
+  Downloaded darling_macro v0.23.0
+  Downloaded ident_case v1.0.1
+  Downloaded strsim v0.11.1
+  Downloaded prettyplease v0.2.37
+  Downloaded byteorder v1.5.0
+  Downloaded darling v0.23.0
+  Downloaded darling_core v0.23.0
+  Downloaded bon-macros v3.9.3
+  Downloaded jpegxl-rs v0.14.0+libjxl-0.11.2
+  Downloaded bon v3.9.3
+  Downloaded jpegxl-sys v0.12.1+libjxl-0.11.2
+   Compiling syn v2.0.119
+   Compiling strsim v0.11.1
+   Compiling ident_case v1.0.1
+   Compiling prettyplease v0.2.37
+   Compiling rustversion v1.0.23
+   Compiling jpegxl-sys v0.12.1+libjxl-0.11.2
+   Compiling byteorder v1.5.0
+   Compiling zvariant_utils v3.5.0
+   Compiling darling_core v0.23.0
+   Compiling enumflags2_derive v0.7.12
+   Compiling zvariant_derive v5.13.1
+   Compiling enumflags2 v0.7.12
+   Compiling zerocopy-derive v0.8.55
+   Compiling darling_macro v0.23.0
+   Compiling zvariant v5.13.1
+   Compiling zerocopy v0.8.55
+   Compiling zbus_names v4.3.4
+   Compiling darling v0.23.0
+   Compiling tracing-attributes v0.1.31
+   Compiling zbus_macros v5.18.0
+   Compiling tracing v0.1.44
+   Compiling bon-macros v3.9.3
+   Compiling half v2.7.1
+   Compiling gufo-common v2.0.0
+   Compiling async-recursion v1.1.1
+   Compiling futures-macro v0.3.33
+   Compiling glycin-common v2.0.0
+   Compiling futures-util v0.3.33
+   Compiling bon v3.9.3
+   Compiling zbus v5.18.0
+   Compiling jpegxl-rs v0.14.0+libjxl-0.11.2
+   Compiling glycin-utils v5.0.1
+   Compiling glycin-jxl v2.2.0 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.6/glycin-loaders/glycin-jxl)
+    Finished `release` profile [optimized] target(s) in 3m 40s
+[15/21] Generating glycin-loaders/glycin-image-rs-cp-binary with a custom command
+[16/21] Generating glycin-loaders/glycin-svg with a custom command (wrapped by meson to set env)
+ Downloading crates ...
+  Downloaded cairo-rs v0.22.0
+  Downloaded gdk-pixbuf-sys v0.22.0
+  Downloaded cairo-sys-rs v0.22.0
+  Downloaded librsvg-rebind v0.3.0
+  Downloaded gufo-svg v0.5.0
+  Downloaded librsvg-rebind-sys v0.3.0
+   Compiling glib-sys v0.22.8
+   Compiling gobject-sys v0.22.6
+   Compiling futures-executor v0.3.33
+   Compiling cairo-sys-rs v0.22.0
+   Compiling gdk-pixbuf-sys v0.22.0
+   Compiling librsvg-rebind-sys v0.3.0
+   Compiling gufo-svg v0.5.0
+   Compiling gio-sys v0.22.8
+   Compiling glib v0.22.8
+   Compiling gio-unix-sys v0.22.0
+   Compiling gio v0.22.8
+   Compiling cairo-rs v0.22.0
+   Compiling librsvg-rebind v0.3.0
+   Compiling gio-unix v0.22.8
+   Compiling glycin-svg v2.2.0 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.6/glycin-loaders/glycin-svg)
+    Finished `release` profile [optimized] target(s) in 2m 57s
+[17/21] Generating glycin-loaders/glycin-jxl-cp-binary with a custom command
+[18/21] Generating glycin-thumbnailer/glycin-thumbnailer with a custom command (wrapped by meson to set env)
+   Compiling winnow v1.0.4
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling libc v0.2.189
+   Compiling syn v2.0.119
+   Compiling toml_parser v1.1.3+spec-1.1.0
+   Compiling toml v1.1.4+spec-1.1.0
+   Compiling system-deps v7.0.8
+   Compiling futures-core v0.3.33
+   Compiling target-lexicon v0.13.5
+   Compiling slab v0.4.12
+   Compiling glib-sys v0.22.8
+   Compiling gobject-sys v0.22.6
+   Compiling gio-sys v0.22.8
+   Compiling bitflags v2.13.1
+   Compiling serde_spanned v1.1.1
+   Compiling cfg-expr v0.20.8
+   Compiling futures-macro v0.3.33
+   Compiling glib-macros v0.22.6
+   Compiling futures-util v0.3.33
+   Compiling libglycin-rebind-sys v0.2.0 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.6/libglycin-rebind/libglycin-rebind/sys)
+   Compiling futures-channel v0.3.33
+   Compiling version-compare v0.2.1
+   Compiling pkg-config v0.3.33
+   Compiling heck v0.5.0
+   Compiling futures-executor v0.3.33
+   Compiling moxcms v0.8.1
+   Compiling glib v0.22.8
+   Compiling bytemuck v1.25.2
+   Compiling png v0.18.1
+   Compiling image v0.25.10
+   Compiling gio v0.22.8
+   Compiling libglycin-rebind v0.2.0 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.6/libglycin-rebind/libglycin-rebind)
+   Compiling glycin-thumbnailer v2.2.0 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.6/glycin-thumbnailer)
+    Finished `release` profile [optimized] target(s) in 2m 48s
+[19/21] Generating glycin-loaders/glycin-svg-cp-binary with a custom command
+[21/21] Generating glycin-thumbnailer/glycin-thumbnailer-cp-binary with a custom command
+[0/18] Generating libglycin/libglycin-cargo with a custom command (wrapped by meson to set env)
+    Finished `release` profile [optimized] target(s) in 0.23s
+[1/18] Generating glycin-loaders/glycin-heif with a custom command (wrapped by meson to set env)
+    Finished `release` profile [optimized] target(s) in 0.14s
+[3/17] Generating libglycin/libglycin-copy-library with a custom command
+[4/14] Generating glycin-loaders/glycin-image-rs with a custom command (wrapped by meson to set env)
+    Finished `release` profile [optimized] target(s) in 0.23s
+[5/14] Generating glycin-loaders/glycin-heif-cp-binary with a custom command
+[6/14] Generating glycin-loaders/glycin-jxl with a custom command (wrapped by meson to set env)
+    Finished `release` profile [optimized] target(s) in 0.30s
+[7/14] Generating glycin-loaders/glycin-image-rs-cp-binary with a custom command
+[8/14] Generating glycin-loaders/glycin-svg with a custom command (wrapped by meson to set env)
+    Finished `release` profile [optimized] target(s) in 0.22s
+[9/14] Generating glycin-loaders/glycin-jxl-cp-binary with a custom command
+[10/14] Generating glycin-thumbnailer/glycin-thumbnailer with a custom command (wrapped by meson to set env)
+    Finished `release` profile [optimized] target(s) in 0.21s
+[11/14] Generating glycin-loaders/glycin-svg-cp-binary with a custom command
+[13/14] Generating glycin-thumbnailer/glycin-thumbnailer-cp-binary with a custom command
+[13/14] Installing files
+Installing glycin-loaders/glycin-heif to /usr/libexec/glycin-loaders/2+
+Installing glycin-loaders/glycin-heif.conf to /usr/share/glycin-loaders/2+/conf.d
+Installing glycin-loaders/glycin-image-rs to /usr/libexec/glycin-loaders/2+
+Installing glycin-loaders/glycin-image-rs.conf to /usr/share/glycin-loaders/2+/conf.d
+Installing glycin-loaders/glycin-jxl to /usr/libexec/glycin-loaders/2+
+Installing glycin-loaders/glycin-jxl.conf to /usr/share/glycin-loaders/2+/conf.d
+Installing glycin-loaders/glycin-svg to /usr/libexec/glycin-loaders/2+
+Installing glycin-loaders/glycin-svg.conf to /usr/share/glycin-loaders/2+/conf.d
+Installing libglycin/libglycin-2.so.0 to /usr/lib
+Installing libglycin/Gly-2.gir to /usr/share/gir-1.0
+Installing libglycin/Gly-2.typelib to /usr/lib/girepository-1.0
+Installing libglycin/glycin-2.vapi to /usr/share/vala/vapi
+Installing glycin-thumbnailer/glycin-thumbnailer to /usr/bin
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.6/libglycin/include/glycin.h to /usr/include/glycin-2
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.6/build/glycin-loaders/glycin-heif.thumbnailer to /usr/share/thumbnailers
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.6/build/glycin-loaders/glycin-image-rs.thumbnailer to /usr/share/thumbnailers
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.6/build/glycin-loaders/glycin-jxl.thumbnailer to /usr/share/thumbnailers
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.6/build/glycin-loaders/glycin-svg.thumbnailer to /usr/share/thumbnailers
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.6/build/meson-private/glycin-2.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.6/build/meson-private/glycin-2.deps to /usr/share/vala/vapi
+Installing symlink pointing to libglycin-2.so.0 to /usr/lib/libglycin-2.so
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+meson_args: <-D>
+meson_args: <libglycin=false>
+meson_args: <-D>
+meson_args: <libglycin-gtk4=true>
+meson_args: <-D>
+meson_args: <glycin-loaders=false>
+meson_args: <-D>
+meson_args: <glycin-thumbnailer=false>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <-D> <libglycin=false> <-D> <libglycin-gtk4=true> <-D> <glycin-loaders=false> <-D> <glycin-thumbnailer=false> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/glycin/glycin-2.2.6
+Build dir: /home/fusion809/lfs_packaging/glycin/glycin-2.2.6/build
+Build type: native build
+Project name: glycin
+Project version: 2.2.6
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Rust compiler for the host machine: rustc -C linker=cc (rustc 1.99.1 "1.99.1")
+Rust linker for the host machine:  ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program cargo found: YES (/opt/rustc/bin/cargo)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency gio-2.0 found: YES 2.90.1
+Run-time dependency fontconfig found: YES 2.18.3
+Run-time dependency libseccomp found: YES 2.6.1
+Run-time dependency gtk4 found: YES 4.24.1
+Run-time dependency glycin-2 found: YES 2.2.6
+Message: /home/fusion809/lfs_packaging/glycin/glycin-2.2.6/build/cargo-target/release/glycin-gtk4-2-0.dll
+WARNING: Build target glycin-gtk4-2 has no sources. This was never supposed to be allowed but did because of a bug, support will be removed in a future release of Meson
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program vapigen found: YES (/usr/bin/vapigen)
+Build targets in project: 7
+
+glycin 2.2.6
+
+  User defined options
+    buildtype         : release
+    glycin-loaders    : false
+    glycin-thumbnailer: false
+    libglycin         : false
+    libglycin-gtk4    : true
+    prefix            : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[0/7] Generating libglycin/libglycin-gtk4-cargo with a custom command (wrapped by meson to set env)
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded adler2 v2.0.1
+  Downloaded aliasable v0.1.3
+  Downloaded async-executor v1.14.0
+  Downloaded async-global-executor v3.1.0
+  Downloaded async-fs v2.2.0
+  Downloaded bit_field v0.10.3
+  Downloaded async-recursion v1.1.1
+  Downloaded libloading v0.8.9
+  Downloaded atomic-waker v1.1.2
+  Downloaded byteorder-lite v0.1.0
+  Downloaded async-channel v2.5.0
+  Downloaded cfg-if v1.0.4
+  Downloaded cfg_aliases v0.2.2
+  Downloaded endi v1.1.1
+  Downloaded event-listener-strategy v0.5.4
+  Downloaded gufo-tiff v0.5.0
+  Downloaded heck v0.4.1
+  Downloaded lebe v0.5.3
+  Downloaded libseccomp-sys v0.3.0
+  Downloaded lazy_static v1.5.0
+  Downloaded matchers v0.2.0
+  Downloaded color_quant v1.1.0
+  Downloaded defmt-parser v1.0.0
+  Downloaded enumflags2_derive v0.7.12
+  Downloaded env_filter v2.0.0
+  Downloaded equivalent v1.0.2
+  Downloaded errno v0.3.14
+  Downloaded futures-core v0.3.33
+  Downloaded futures-io v0.3.33
+  Downloaded futures-macro v0.3.33
+  Downloaded futures-sink v0.3.33
+  Downloaded futures-task v0.3.33
+  Downloaded gdk-pixbuf-sys v0.22.0
+  Downloaded gio-unix-sys v0.22.0
+  Downloaded heck v0.5.0
+  Downloaded hex v0.4.3
+  Downloaded dlib v0.5.3
+  Downloaded cairo-sys-rs v0.22.0
+  Downloaded async-signal v0.2.14
+  Downloaded bitflags v1.3.2
+  Downloaded autocfg v1.5.1
+  Downloaded blocking v1.6.2
+  Downloaded async-broadcast v0.7.2
+  Downloaded async-trait v0.1.91
+  Downloaded async-process v2.5.0
+  Downloaded gdk-pixbuf v0.22.0
+  Downloaded gufo-common v2.0.0
+  Downloaded futures-executor v0.3.33
+  Downloaded glycin-external v4.0.5
+  Downloaded gufo-png v0.5.0
+  Downloaded gio-unix v0.22.8
+  Downloaded gufo v0.5.0
+  Downloaded glycin-common v2.0.0
+  Downloaded gufo-webp v0.5.0
+  Downloaded ordered-stream v0.2.0
+  Downloaded env_logger v0.11.11
+  Downloaded fastrand v2.5.0
+  Downloaded crossbeam-deque v0.8.7
+  Downloaded either v1.17.0
+  Downloaded futures-timer v3.0.4
+  Downloaded num-complex v0.4.6
+  Downloaded gufo-xmp v0.5.0
+  Downloaded concurrent-queue v2.5.0
+  Downloaded jpeg-encoder v0.7.1
+  Downloaded defmt-macros v1.1.1
+  Downloaded enumflags2 v0.7.12
+  Downloaded fax v0.2.7
+  Downloaded async-task v4.7.1
+  Downloaded once_cell v1.21.4
+  Downloaded zvariant_utils v3.5.0
+  Downloaded futures-channel v0.3.33
+  Downloaded memmap2 v0.9.11
+  Downloaded gufo-jpeg v0.5.1
+  Downloaded zvariant_derive v5.13.1
+  Downloaded fdeflate v0.3.7
+  Downloaded glycin-image-rs v2.2.4
+  Downloaded event-listener v5.4.2
+  Downloaded glycin-utils v5.0.1
+  Downloaded crc32fast v1.5.0
+  Downloaded defmt v1.1.1
+  Downloaded yeslogic-fontconfig-sys v6.0.1
+  Downloaded glycin v4.0.5
+  Downloaded cfg-expr v0.20.8
+  Downloaded gufo-exif v0.5.5
+  Downloaded glycin-builtin v4.0.5
+  Downloaded proc-macro-crate v3.5.0
+  Downloaded crossbeam-epoch v0.9.20
+  Downloaded serde_spanned v1.1.1
+  Downloaded async-lock v3.4.2
+  Downloaded bitflags v2.13.1
+  Downloaded bytemuck v1.25.2
+  Downloaded reborrow v0.5.5
+  Downloaded parking v2.2.1
+  Downloaded getrandom v0.4.3
+  Downloaded gif v0.14.2
+  Downloaded gobject-sys v0.22.6
+  Downloaded half v2.7.1
+  Downloaded quick-error v2.0.1
+  Downloaded version_check v0.9.5
+  Downloaded crossbeam-utils v0.8.22
+  Downloaded futures-lite v2.6.1
+  Downloaded async-io v2.6.0
+  Downloaded cairo-rs v0.22.0
+  Downloaded image-extras v0.1.1
+  Downloaded gdk4-sys v0.11.4
+  Downloaded glib-sys v0.22.8
+  Downloaded version-compare v0.2.1
+  Downloaded ouroboros v0.18.5
+  Downloaded nu-ansi-term v0.50.3
+  Downloaded zune-jpeg v0.5.15
+  Downloaded hayro-jpeg2000 v0.3.5
+  Downloaded flate2 v1.1.9
+  Downloaded gio-sys v0.22.8
+  Downloaded glib-macros v0.22.6
+  Downloaded glycin-core v4.0.5
+  Downloaded image-webp v0.2.4
+  Downloaded aho-corasick v1.1.4
+  Downloaded serde_repr v0.1.21
+  Downloaded proc-macro2-diagnostics v0.10.1
+  Downloaded gdk4 v0.11.4
+  Downloaded indexmap v2.14.0
+  Downloaded hashbrown v0.17.1
+  Downloaded futures-util v0.3.33
+  Downloaded pulp-wasm-simd-flag v0.1.1
+  Downloaded thread_local v1.1.10
+  Downloaded libseccomp v0.4.0
+  Downloaded num-traits v0.2.19
+  Downloaded log v0.4.33
+  Downloaded gio v0.22.8
+  Downloaded simd-adler32 v0.3.10
+  Downloaded fearless_simd v0.4.1
+  Downloaded tracing-log v0.2.0
+  Downloaded pin-project-lite v0.2.17
+  Downloaded zbus_names v4.3.4
+  Downloaded thiserror v2.0.19
+  Downloaded glib v0.22.8
+  Downloaded exr v1.74.2
+  Downloaded slab v0.4.12
+  Downloaded signal-hook-registry v1.4.8
+  Downloaded quote v1.0.47
+  Downloaded toml_datetime v1.1.1+spec-1.1.0
+  Downloaded jiff-core v0.1.0
+  Downloaded paste v1.0.15
+  Downloaded zune-core v0.5.1
+  Downloaded toml_writer v1.1.2+spec-1.1.0
+  Downloaded ouroboros_macro v0.18.5
+  Downloaded system-deps v7.0.8
+  Downloaded thiserror-impl v2.0.19
+  Downloaded target-lexicon v0.13.5
+  Downloaded jiff v0.2.35
+  Downloaded miniz_oxide v0.8.9
+  Downloaded miniz_oxide v0.9.1
+  Downloaded toml_parser v1.1.3+spec-1.1.0
+  Downloaded pango-sys v0.22.0
+  Downloaded static_assertions v1.1.0
+  Downloaded rmp-serde v1.3.1
+  Downloaded weezl v0.1.12
+  Downloaded piper v0.2.5
+  Downloaded tracing-attributes v0.1.31
+  Downloaded rmp v0.8.15
+  Downloaded smallvec v1.15.2
+  Downloaded zbus_macros v5.18.0
+  Downloaded encoding_rs v0.8.35
+  Downloaded zune-inflate v0.2.54
+  Downloaded toml v1.1.4+spec-1.1.0
+  Downloaded unicode-ident v1.0.24
+  Downloaded pkg-config v0.3.33
+  Downloaded pango v0.22.8
+  Downloaded tracing-core v0.1.36
+  Downloaded polling v3.11.0
+  Downloaded proc-macro2 v1.0.107
+  Downloaded sharded-slab v0.1.7
+  Downloaded memchr v2.8.3
+  Downloaded toml_edit v0.25.13+spec-1.1.0
+  Downloaded xml v1.3.0
+  Downloaded rayon-core v1.13.0
+  Downloaded qoi v0.4.1
+  Downloaded serde_derive v1.0.229
+  Downloaded serde_core v1.0.229
+  Downloaded uuid v1.24.0
+  Downloaded zvariant v5.13.1
+  Downloaded yansi v1.0.1
+  Downloaded zerocopy-derive v0.8.55
+  Downloaded serde v1.0.229
+  Downloaded tiff v0.11.3
+  Downloaded raw-cpuid v11.6.0
+  Downloaded libm v0.2.16
+  Downloaded png v0.18.1
+  Downloaded pulp v0.22.3
+  Downloaded regex v1.13.1
+  Downloaded moxcms v0.8.1
+  Downloaded zbus v5.18.0
+  Downloaded rayon v1.12.0
+  Downloaded winnow v1.0.4
+  Downloaded tracing-subscriber v0.3.23
+  Downloaded image v0.25.10
+  Downloaded zerocopy v0.8.55
+  Downloaded nix v0.31.3
+  Downloaded syn v2.0.119
+  Downloaded syn v3.0.3
+  Downloaded regex-syntax v0.8.11
+  Downloaded rustix v1.1.4
+  Downloaded tracing v0.1.44
+  Downloaded regex-automata v0.4.16
+  Downloaded libc v0.2.189
+  Downloaded pxfm v0.1.30
+  Downloaded linux-raw-sys v0.12.1
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling winnow v1.0.4
+   Compiling unicode-ident v1.0.24
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling pkg-config v0.3.33
+   Compiling target-lexicon v0.13.5
+   Compiling syn v2.0.119
+   Compiling toml_parser v1.1.3+spec-1.1.0
+   Compiling serde_spanned v1.1.1
+   Compiling smallvec v1.15.2
+   Compiling heck v0.5.0
+   Compiling cfg-expr v0.20.8
+   Compiling toml v1.1.4+spec-1.1.0
+   Compiling version-compare v0.2.1
+   Compiling system-deps v7.0.8
+   Compiling pin-project-lite v0.2.17
+   Compiling libc v0.2.189
+   Compiling syn v3.0.3
+   Compiling serde_core v1.0.229
+   Compiling futures-core v0.3.33
+   Compiling serde v1.0.229
+   Compiling glib-sys v0.22.8
+   Compiling bitflags v2.13.1
+   Compiling crossbeam-utils v0.8.22
+   Compiling slab v0.4.12
+   Compiling cfg-if v1.0.4
+   Compiling gobject-sys v0.22.6
+   Compiling hashbrown v0.17.1
+   Compiling serde_derive v1.0.229
+   Compiling futures-io v0.3.33
+   Compiling equivalent v1.0.2
+   Compiling indexmap v2.14.0
+   Compiling autocfg v1.5.1
+   Compiling parking v2.2.1
+   Compiling toml_edit v0.25.13+spec-1.1.0
+   Compiling enumflags2_derive v0.7.12
+   Compiling gio-sys v0.22.8
+   Compiling proc-macro-crate v3.5.0
+   Compiling zvariant_utils v3.5.0
+   Compiling zvariant_derive v5.13.1
+   Compiling futures-macro v0.3.33
+   Compiling fastrand v2.5.0
+   Compiling futures-task v0.3.33
+   Compiling futures-util v0.3.33
+   Compiling event-listener v5.4.2
+   Compiling concurrent-queue v2.5.0
+   Compiling futures-executor v0.3.33
+   Compiling event-listener-strategy v0.5.4
+   Compiling futures-lite v2.6.1
+   Compiling enumflags2 v0.7.12
+   Compiling glib-macros v0.22.6
+   Compiling futures-channel v0.3.33
+   Compiling memchr v2.8.3
+   Compiling rustix v1.1.4
+   Compiling endi v1.1.1
+   Compiling once_cell v1.21.4
+   Compiling glib v0.22.8
+   Compiling zvariant v5.13.1
+   Compiling thiserror v2.0.19
+   Compiling linux-raw-sys v0.12.1
+   Compiling paste v1.0.15
+   Compiling tracing-core v0.1.36
+   Compiling num-traits v0.2.19
+   Compiling async-io v2.6.0
+   Compiling thiserror-impl v2.0.19
+   Compiling version_check v0.9.5
+   Compiling zerocopy v0.8.55
+   Compiling async-task v4.7.1
+   Compiling proc-macro2-diagnostics v0.10.1
+   Compiling async-channel v2.5.0
+   Compiling tracing-attributes v0.1.31
+   Compiling polling v3.11.0
+   Compiling zerocopy-derive v0.8.55
+   Compiling atomic-waker v1.1.2
+   Compiling crossbeam-epoch v0.9.20
+   Compiling piper v0.2.5
+   Compiling tracing v0.1.44
+   Compiling gufo-common v2.0.0
+   Compiling async-lock v3.4.2
+   Compiling errno v0.3.14
+   Compiling pango-sys v0.22.0
+   Compiling cairo-sys-rs v0.22.0
+   Compiling gdk-pixbuf-sys v0.22.0
+   Compiling log v0.4.33
+   Compiling crossbeam-deque v0.8.7
+   Compiling cfg_aliases v0.2.2
+   Compiling getrandom v0.4.3
+   Compiling yansi v1.0.1
+   Compiling nix v0.31.3
+   Compiling signal-hook-registry v1.4.8
+   Compiling blocking v1.6.2
+   Compiling gio v0.22.8
+   Compiling rayon-core v1.13.0
+   Compiling libseccomp-sys v0.3.0
+   Compiling heck v0.4.1
+   Compiling ouroboros_macro v0.18.5
+   Compiling zbus_names v4.3.4
+   Compiling async-signal v0.2.14
+   Compiling rmp v0.8.15
+   Compiling async-executor v1.14.0
+   Compiling gio-unix-sys v0.22.0
+   Compiling gdk4-sys v0.11.4
+   Compiling libseccomp v0.4.0
+   Compiling jiff-core v0.1.0
+   Compiling static_assertions v1.1.0
+   Compiling regex-syntax v0.8.11
+   Compiling aliasable v0.1.3
+   Compiling regex-automata v0.4.16
+   Compiling ouroboros v0.18.5
+   Compiling jiff v0.2.35
+   Compiling rmp-serde v1.3.1
+   Compiling uuid v1.24.0
+   Compiling async-process v2.5.0
+   Compiling zbus_macros v5.18.0
+   Compiling half v2.7.1
+   Compiling env_filter v2.0.0
+   Compiling async-broadcast v0.7.2
+   Compiling async-trait v0.1.91
+   Compiling serde_repr v0.1.21
+   Compiling async-recursion v1.1.1
+   Compiling libloading v0.8.9
+   Compiling ordered-stream v0.2.0
+   Compiling memmap2 v0.9.11
+   Compiling yeslogic-fontconfig-sys v6.0.1
+   Compiling hex v0.4.3
+   Compiling xml v1.3.0
+   Compiling either v1.17.0
+   Compiling lazy_static v1.5.0
+   Compiling sharded-slab v0.1.7
+   Compiling gufo-xmp v0.5.0
+   Compiling rayon v1.12.0
+   Compiling zbus v5.18.0
+   Compiling glycin-common v2.0.0
+   Compiling dlib v0.5.3
+   Compiling pango v0.22.8
+   Compiling gdk-pixbuf v0.22.0
+   Compiling env_logger v0.11.11
+   Compiling matchers v0.2.0
+   Compiling gufo-exif v0.5.5
+   Compiling cairo-rs v0.22.0
+   Compiling tracing-log v0.2.0
+   Compiling thread_local v1.1.10
+   Compiling pxfm v0.1.30
+   Compiling nu-ansi-term v0.50.3
+   Compiling futures-timer v3.0.4
+   Compiling glycin-utils v5.0.1
+   Compiling moxcms v0.8.1
+   Compiling tracing-subscriber v0.3.23
+   Compiling gdk4 v0.11.4
+   Compiling gufo v0.5.0
+   Compiling gio-unix v0.22.8
+   Compiling async-global-executor v3.1.0
+   Compiling async-fs v2.2.0
+   Compiling bytemuck v1.25.2
+   Compiling glycin-core v4.0.5
+   Compiling libglycin-gtk4 v2.2.6 (/home/fusion809/lfs_packaging/glycin/glycin-2.2.6/libglycin/libglycin-gtk4)
+   Compiling glycin-external v4.0.5
+   Compiling glycin v4.0.5
+    Finished `release` profile [optimized] target(s) in 7m 27s
+[2/7] Generating libglycin/libglycin-gtk4-copy-library2 with a custom command
+[3/7] Linking target libglycin/libglycin-gtk4-2.so.0
+[4/7] Generating libglycin/libglycin-gtk4-copy-library with a custom command
+[5/7] Generating libglycin/GlyGtk4-2.gir with a custom command (wrapped by meson to set env)
+[6/7] Generating libglycin/GlyGtk4-2.typelib with a custom command
+[7/7] Generating libglycin/glycin-gtk4-2.vapi with a custom command
+[0/8] Generating libglycin/libglycin-gtk4-cargo with a custom command (wrapped by meson to set env)
+    Finished `release` profile [optimized] target(s) in 0.40s
+[2/8] Generating libglycin/libglycin-gtk4-copy-library2 with a custom command
+[3/7] Generating libglycin/libglycin-gtk4-copy-library with a custom command
+[3/4] Installing files
+Installing libglycin/libglycin-gtk4-2.so.0 to /usr/lib
+Installing libglycin/GlyGtk4-2.gir to /usr/share/gir-1.0
+Installing libglycin/GlyGtk4-2.typelib to /usr/lib/girepository-1.0
+Installing libglycin/glycin-gtk4-2.vapi to /usr/share/vala/vapi
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.6/libglycin/include/glycin-gtk4.h to /usr/include/glycin-gtk4-2
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.6/build/meson-private/glycin-gtk4-2.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/glycin/glycin-2.2.6/build/meson-private/glycin-gtk4-2.deps to /usr/share/vala/vapi
+Installing symlink pointing to libglycin-gtk4-2.so.0 to /usr/lib/libglycin-gtk4-2.so
+2.2.6
+Updated registry for glycin to version 2.2.6
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package glycin in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: glycin: 2.2.5->2.2.6; kgamma: 6.7.5->6.7.6; wacomtablet: 6.7.5->6.7.6.
+[master 156bb67] glycin: 2.2.5->2.2.6; kgamma: 6.7.5->6.7.6; wacomtablet: 6.7.5->6.7.6.
+ 3 files changed, 499 insertions(+), 593 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: glycin: 2.2.5->2.2.6; kgamma: 6.7.5->6.7.6; wacomtablet: 6.7.5->6.7.6.
+[master b4721a1] glycin: 2.2.5->2.2.6; kgamma: 6.7.5->6.7.6; wacomtablet: 6.7.5->6.7.6.
+ 3 files changed, 3 insertions(+)
+Pushing changes in ~/build_duration...
+r13.1-35
+r13.1-547
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libexpat.so.1.13.0
+cand_sobase=libexpat.so
+search_base=libexpat
+replacement_found=true
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libexpat.so.1.13.0
+Path: /usr/lib/libexpat.so.1.13.0
+Skipping generic/unsafe name 'libexpat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libexpat.so.1 libexpat.so.1.13.0
+Example dependents: ./miniconda3/bin/dbus-daemon ./miniconda3/bin/xmlwf ./miniconda3/libexec/dbus-daemon-launch-helper ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libexpat.so.1.13.0:
+  - ./miniconda3/bin/dbus-daemon
+  - ./miniconda3/bin/xmlwf
+  - ./miniconda3/libexec/dbus-daemon-launch-helper
+  - ./miniconda3/lib/python3.14/lib-dynload/pyexpat.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libexpat.so.1.13.0.
+------------------------------------------------
+Checking obsolete version (file): libnghttp2.so.14.29.5
+Path: /usr/lib/libnghttp2.so.14.29.5
+Skipping generic/unsafe name 'libnghttp2.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libnghttp2.so.14 libnghttp2.so.14.29.5
+Example dependents: ./miniconda3/bin/nghttp ./miniconda3/bin/nghttpd ./miniconda3/bin/nghttpx ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libnghttp2.so.14.29.5:
+  - ./miniconda3/bin/nghttp
+  - ./miniconda3/bin/nghttpd
+  - ./miniconda3/bin/nghttpx
+  - ./miniconda3/lib/libcurl.so.4.8.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libnghttp2.so.14.29.5.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
