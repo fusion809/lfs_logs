@@ -1,0 +1,785 @@
+===== Update check started: 2026-11-03 17:10:06 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261103_171006
+Packages needing attention: woxi-git
+===== Starting updatec: 2026-11-03 17:10:11 AEST =====
+Checking for packages with missing file inventories...
+name=tcl
+local_ver=9.1.0
+remote_ver=64
+name=vamp-plugin-sdk
+local_ver=2.10
+remote_ver=2.10.0
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - tcl
+  - vamp-plugin-sdk
+  - woxi-git
+
+Building custom package tcl...
+[17:12:18] Found custom package for tcl, bypassing BLFS aliases.
+[17:12:18] Custom package detected at /home/fusion809/lfs_packaging/tcl (package: tcl)
+[17:12:18] Extracting dependencies for custom package 'tcl'...
+[17:12:18] Required deps: bash coreutils gcc glibc gzip make tar zlib 
+[17:12:18] Dependency 'bash' already installed.
+[17:12:18] Dependency 'coreutils' already installed.
+[17:12:18] Dependency 'gcc' already installed.
+[17:12:18] Dependency 'glibc' already installed.
+[17:12:18] Dependency 'gzip' already installed.
+[17:12:18] Dependency 'make' already installed.
+[17:12:18] Dependency 'tar' already installed.
+[17:12:18] Dependency 'zlib' already installed.
+[17:12:18] Starting remote custom build for tcl...
+[17:12:20] [LFS-AUTOBUILD] Skipping custom package tcl: version 9.1.0 already installed (use -f to force build).
+Building custom package vamp-plugin-sdk...
+[17:12:21] Found custom package for vamp-plugin-sdk, bypassing BLFS aliases.
+[17:12:21] Custom package detected at /home/fusion809/lfs_packaging/vamp-plugin-sdk (package: vamp-plugin-sdk)
+[17:12:21] Extracting dependencies for custom package 'vamp-plugin-sdk'...
+[17:12:21] Starting remote custom build for vamp-plugin-sdk...
+[17:12:23] [LFS-AUTOBUILD] Skipping custom package vamp-plugin-sdk: version 2.10 already installed (use -f to force build).
+Building custom package woxi-git...
+[17:12:23] Found custom package for woxi-git, bypassing BLFS aliases.
+[17:12:23] Custom package detected at /home/fusion809/lfs_packaging/woxi-git (package: woxi-git)
+[17:12:23] Checking conflicting package(s) for 'woxi-git': woxi 
+[17:12:23] Extracting dependencies for custom package 'woxi-git'...
+[17:12:23] Required deps: gcc glibc rust 
+[17:12:23] Dependency 'gcc' already installed.
+[17:12:23] Dependency 'glibc' already installed.
+[17:12:23] Dependency 'rust' already installed.
+[17:12:23] Starting remote custom build for woxi-git...
+--2026-11-03 17:12:54--  https://github.com/ad-si/Woxi/archive/cd62f287cab2709847ca63932635d5b4ce3c9ff1.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/ad-si/Woxi/tar.gz/cd62f287cab2709847ca63932635d5b4ce3c9ff1 [following]
+--2026-11-03 17:12:54--  https://codeload.github.com/ad-si/Woxi/tar.gz/cd62f287cab2709847ca63932635d5b4ce3c9ff1
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘Woxi-cd62f287cab2709847ca63932635d5b4ce3c9ff1.tar.gz’
+
+          Woxi-cd62     [<=>                 ]       0  --.-KB/s                        Woxi-cd62f     [ <=>                ] 395.17K  1.84MB/s                       Woxi-cd62f2     [  <=>               ] 864.00K  1.88MB/s                      Woxi-cd62f28     [   <=>              ]   1.03M  1.57MB/s                     Woxi-cd62f287     [    <=>             ]   1.18M  1.33MB/s                    Woxi-cd62f287c     [     <=>            ]   1.31M  1.20MB/s                   Woxi-cd62f287ca     [      <=>           ]   1.50M  1.14MB/s                  Woxi-cd62f287cab     [       <=>          ]   1.69M  1.09MB/s                 Woxi-cd62f287cab2     [        <=>         ]   1.81M  1.03MB/s                Woxi-cd62f287cab27     [         <=>        ]   1.94M  1004KB/s               Woxi-cd62f287cab270     [          <=>       ]   2.06M   962KB/s               oxi-cd62f287cab2709     [           <=>      ]   2.19M   919KB/s               xi-cd62f287cab27098     [            <=>     ]   2.31M   897KB/s               i-cd62f287cab270984     [             <=>    ]   2.44M   870KB/s               -cd62f287cab2709847     [              <=>   ]   2.56M   853KB/s               cd62f287cab2709847c     [               <=>  ]   2.70M   837KB/s               d62f287cab2709847ca     [                <=> ]   2.81M   787KB/s               62f287cab2709847ca6     [                 <=>]   2.97M   640KB/s               2f287cab2709847ca63     [                <=> ]   3.09M   629KB/s               f287cab2709847ca639     [               <=>  ]   3.20M   619KB/s               287cab2709847ca6393     [              <=>   ]   3.30M   603KB/s               87cab2709847ca63932     [             <=>    ]   3.39M   577KB/s               7cab2709847ca639326     [            <=>     ]   3.44M   525KB/s               cab2709847ca6393263     [           <=>      ]   3.45M   498KB/s               ab2709847ca63932635     [          <=>       ]   3.49M   467KB/s               b2709847ca63932635d     [         <=>        ]   3.55M   448KB/s               2709847ca63932635d5     [        <=>         ]   3.64M   425KB/s               709847ca63932635d5b     [       <=>          ]   3.73M   420KB/s               09847ca63932635d5b4     [      <=>           ]   3.78M   394KB/s               9847ca63932635d5b4c     [     <=>            ]   3.84M   382KB/s               847ca63932635d5b4ce     [    <=>             ]   3.92M   359KB/s               47ca63932635d5b4ce3     [   <=>              ]   4.00M   351KB/s               7ca63932635d5b4ce3c     [  <=>               ]   4.08M   341KB/s               ca63932635d5b4ce3c9     [ <=>                ]   4.20M   332KB/s               a63932635d5b4ce3c9f     [<=>                 ]   4.33M   340KB/s               63932635d5b4ce3c9ff     [ <=>                ]   4.44M   343KB/s               3932635d5b4ce3c9ff1     [  <=>               ]   4.54M   346KB/s               932635d5b4ce3c9ff1.     [   <=>              ]   4.66M   361KB/s               32635d5b4ce3c9ff1.t     [    <=>             ]   4.78M   383KB/s               2635d5b4ce3c9ff1.ta     [     <=>            ]   4.87M   405KB/s               635d5b4ce3c9ff1.tar     [      <=>           ]   4.96M   427KB/s               35d5b4ce3c9ff1.tar.     [       <=>          ]   5.07M   442KB/s               5d5b4ce3c9ff1.tar.g     [        <=>         ]   5.15M   448KB/s               d5b4ce3c9ff1.tar.gz     [         <=>        ]   5.23M   444KB/s               5b4ce3c9ff1.tar.gz      [          <=>       ]   5.28M   443KB/s               b4ce3c9ff1.tar.gz       [           <=>      ]   5.34M   445KB/s               4ce3c9ff1.tar.gz        [            <=>     ]   5.40M   439KB/s               ce3c9ff1.tar.gz         [             <=>    ]   5.46M   440KB/s               e3c9ff1.tar.gz          [              <=>   ]   5.56M   443KB/s               3c9ff1.tar.gz           [               <=>  ]   5.64M   439KB/s               c9ff1.tar.gz            [                <=> ]   5.69M   410KB/s               9ff1.tar.gz             [                 <=>]   5.73M   394KB/s               ff1.tar.gz              [                <=> ]   5.79M   376KB/s               f1.tar.gz               [               <=>  ]   5.86M   368KB/s               1.tar.gz                [              <=>   ]   5.93M   349KB/s               .tar.gz                 [             <=>    ]   6.02M   348KB/s               tar.gz                  [            <=>     ]   6.15M   354KB/s               ar.gz                   [           <=>      ]   6.25M   351KB/s               r.gz                    [          <=>       ]   6.30M   347KB/s               .gz                     [         <=>        ]   6.38M   347KB/s               gz                      [        <=>         ]   6.45M   355KB/s               z                       [       <=>          ]   6.52M   361KB/s                                       [      <=>           ]   6.60M   369KB/s                                 W     [     <=>            ]   6.71M   380KB/s                                Wo     [    <=>             ]   6.84M   388KB/s                               Wox     [   <=>              ]   6.97M   407KB/s                              Woxi     [  <=>               ]   7.11M   443KB/s                             Woxi-     [ <=>                ]   7.23M   465KB/s                            Woxi-c     [<=>                 ]   7.33M   473KB/s                           Woxi-cd     [ <=>                ]   7.40M   467KB/s                          Woxi-cd6     [  <=>               ]   7.51M   481KB/s                         Woxi-cd62     [   <=>              ]   7.62M   485KB/s                        Woxi-cd62f     [    <=>             ]   7.74M   483KB/s                       Woxi-cd62f2     [     <=>            ]   7.82M   490KB/s                      Woxi-cd62f28     [      <=>           ]   7.90M   491KB/s                     Woxi-cd62f287     [       <=>          ]   7.99M   490KB/s                    Woxi-cd62f287c     [        <=>         ]   8.07M   500KB/s                   Woxi-cd62f287ca     [         <=>        ]   8.14M   495KB/s                  Woxi-cd62f287cab     [          <=>       ]   8.20M   485KB/s                 Woxi-cd62f287cab2     [           <=>      ]   8.24M   465KB/s                Woxi-cd62f287cab27     [            <=>     ]   8.28M   430KB/s               Woxi-cd62f287cab270     [             <=>    ]   8.35M   415KB/s               oxi-cd62f287cab2709     [              <=>   ]   8.40M   392KB/s               xi-cd62f287cab27098     [               <=>  ]   8.48M   369KB/s               i-cd62f287cab270984     [                <=> ]   8.57M   376KB/s               -cd62f287cab2709847     [                 <=>]   8.64M   377KB/s               cd62f287cab2709847c     [                <=> ]   8.76M   382KB/s               d62f287cab2709847ca     [               <=>  ]   8.88M   373KB/s               62f287cab2709847ca6     [              <=>   ]   8.97M   378KB/s               2f287cab2709847ca63     [             <=>    ]   9.03M   366KB/s               f287cab2709847ca639     [            <=>     ]   9.10M   359KB/s               287cab2709847ca6393     [           <=>      ]   9.18M   357KB/s               87cab2709847ca63932     [          <=>       ]   9.28M   370KB/s               7cab2709847ca639326     [         <=>        ]   9.36M   372KB/s               cab2709847ca6393263     [        <=>         ]   9.47M   390KB/s               ab2709847ca63932635     [       <=>          ]   9.58M   417KB/s               b2709847ca63932635d     [      <=>           ]   9.71M   437KB/s               2709847ca63932635d5     [     <=>            ]   9.79M   443KB/s               709847ca63932635d5b     [    <=>             ]   9.89M   454KB/s               09847ca63932635d5b4     [   <=>              ]  10.00M   464KB/s               9847ca63932635d5b4c     [  <=>               ]  10.09M   462KB/s               847ca63932635d5b4ce     [ <=>                ]  10.14M   449KB/s               47ca63932635d5b4ce3     [<=>                 ]  10.19M   434KB/s               7ca63932635d5b4ce3c     [ <=>                ]  10.28M   415KB/s               ca63932635d5b4ce3c9     [  <=>               ]  10.36M   420KB/s               a63932635d5b4ce3c9f     [   <=>              ]  10.46M   434KB/s               63932635d5b4ce3c9ff     [    <=>             ]  10.61M   452KB/s               3932635d5b4ce3c9ff1     [     <=>            ]  10.78M   480KB/s               932635d5b4ce3c9ff1.     [      <=>           ]  10.97M   510KB/s               32635d5b4ce3c9ff1.t     [       <=>          ]  11.10M   523KB/s               2635d5b4ce3c9ff1.ta     [        <=>         ]  11.19M   516KB/s               635d5b4ce3c9ff1.tar     [         <=>        ]  11.30M   515KB/s               35d5b4ce3c9ff1.tar.     [          <=>       ]  11.44M   521KB/s               5d5b4ce3c9ff1.tar.g     [           <=>      ]  11.61M   547KB/s               d5b4ce3c9ff1.tar.gz     [            <=>     ]  11.81M   575KB/s               5b4ce3c9ff1.tar.gz      [             <=>    ]  11.96M   594KB/s               b4ce3c9ff1.tar.gz       [              <=>   ]  12.06M   615KB/s               4ce3c9ff1.tar.gz        [               <=>  ]  12.18M   623KB/s               ce3c9ff1.tar.gz         [                <=> ]  12.30M   637KB/s               e3c9ff1.tar.gz          [                 <=>]  12.38M   630KB/s               3c9ff1.tar.gz           [                <=> ]  12.42M   607KB/s               c9ff1.tar.gz            [               <=>  ]  12.45M   574KB/s               9ff1.tar.gz             [              <=>   ]  12.48M   523KB/s               ff1.tar.gz              [             <=>    ]  12.55M   494KB/s               f1.tar.gz               [            <=>     ]  12.61M   469KB/s               1.tar.gz                [           <=>      ]  12.63M   448KB/s               .tar.gz                 [          <=>       ]  12.66M   425KB/s               tar.gz                  [         <=>        ]  12.73M   395KB/s               ar.gz                   [        <=>         ]  12.82M   378KB/s               r.gz                    [       <=>          ]  12.95M   366KB/s               .gz                     [      <=>           ]  13.10M   355KB/s               gz                      [     <=>            ]  13.20M   356KB/s               z                       [    <=>             ]  13.28M   351KB/s                                       [   <=>              ]  13.40M   355KB/s                                 W     [  <=>               ]  13.51M   361KB/s                                Wo     [ <=>                ]  13.62M   378KB/s                               Wox     [<=>                 ]  13.75M   412KB/s                              Woxi     [ <=>                ]  13.92M   465KB/s                             Woxi-     [  <=>               ]  14.07M   492KB/s                            Woxi-c     [   <=>              ]  14.22M   513KB/s                           Woxi-cd     [    <=>             ]  14.38M   544KB/s                          Woxi-cd6     [     <=>            ]  14.51M   595KB/s                         Woxi-cd62     [      <=>           ]  14.61M   601KB/s                        Woxi-cd62f     [       <=>          ]  14.71M   604KB/s                       Woxi-cd62f2     [        <=>         ]  14.77M   598KB/s                      Woxi-cd62f28     [         <=>        ]  14.84M   580KB/s                     Woxi-cd62f287     [          <=>       ]  14.90M   554KB/s                    Woxi-cd62f287c     [           <=>      ]  14.95M   540KB/s                   Woxi-cd62f287ca     [            <=>     ]  15.02M   531KB/s                  Woxi-cd62f287cab     [             <=>    ]  15.09M   516KB/s                 Woxi-cd62f287cab2     [              <=>   ]  15.20M   513KB/s                Woxi-cd62f287cab27     [               <=>  ]  15.34M   517KB/s               Woxi-cd62f287cab270     [                <=> ]  15.42M   502KB/s               oxi-cd62f287cab2709     [                 <=>]  15.51M   473KB/s               xi-cd62f287cab27098     [                <=> ]  15.62M   463KB/s               i-cd62f287cab270984     [               <=>  ]  15.74M   451KB/s               -cd62f287cab2709847     [              <=>   ]  15.83M   433KB/s               cd62f287cab2709847c     [             <=>    ]  15.92M   422KB/s               d62f287cab2709847ca     [            <=>     ]  16.00M   417KB/s               62f287cab2709847ca6     [           <=>      ]  16.11M   429KB/s               2f287cab2709847ca63     [          <=>       ]  16.18M   432KB/s               f287cab2709847ca639     [         <=>        ]  16.27M   440KB/s               287cab2709847ca6393     [        <=>         ]  16.34M   439KB/s               87cab2709847ca63932     [       <=>          ]  16.41M   449KB/s               7cab2709847ca639326     [      <=>           ]  16.46M   436KB/s               cab2709847ca6393263     [     <=>            ]  16.54M   427KB/s               ab2709847ca63932635     [    <=>             ]  16.61M   415KB/s               b2709847ca63932635d     [   <=>              ]  16.72M   412KB/s               2709847ca63932635d5     [  <=>               ]  16.83M   416KB/s               709847ca63932635d5b     [ <=>                ]  16.92M   414KB/s               09847ca63932635d5b4     [<=>                 ]  17.01M   406KB/s               9847ca63932635d5b4c     [ <=>                ]  17.07M   392KB/s               847ca63932635d5b4ce     [  <=>               ]  17.15M   394KB/s               47ca63932635d5b4ce3     [   <=>              ]  17.23M   391KB/s               7ca63932635d5b4ce3c     [    <=>             ]  17.36M   396KB/s               ca63932635d5b4ce3c9     [     <=>            ]  17.47M   406KB/s               a63932635d5b4ce3c9f     [      <=>           ]  17.55M   406KB/s               63932635d5b4ce3c9ff     [       <=>          ]  17.65M   418KB/s               3932635d5b4ce3c9ff1     [        <=>         ]  17.75M   430KB/s               932635d5b4ce3c9ff1.     [         <=>        ]  17.86M   447KB/s               32635d5b4ce3c9ff1.t     [          <=>       ]  17.96M   458KB/s               2635d5b4ce3c9ff1.ta     [           <=>      ]  18.06M   466KB/s               635d5b4ce3c9ff1.tar     [            <=>     ]  18.13M   461KB/s               35d5b4ce3c9ff1.tar.     [             <=>    ]  18.22M   455KB/s               5d5b4ce3c9ff1.tar.g     [              <=>   ]  18.29M   448KB/s               d5b4ce3c9ff1.tar.gz     [               <=>  ]  18.39M   447KB/s               5b4ce3c9ff1.tar.gz      [                <=> ]  18.49M   453KB/s               b4ce3c9ff1.tar.gz       [                 <=>]  18.61M   473KB/s               4ce3c9ff1.tar.gz        [                <=> ]  18.74M   492KB/s               ce3c9ff1.tar.gz         [               <=>  ]  18.88M   509KB/s               e3c9ff1.tar.gz          [              <=>   ]  18.97M   499KB/s               3c9ff1.tar.gz           [             <=>    ]  19.06M   498KB/s               c9ff1.tar.gz            [            <=>     ]  19.15M   496KB/s               9ff1.tar.gz             [           <=>      ]  19.24M   492KB/s               ff1.tar.gz              [          <=>       ]  19.33M   491KB/s               f1.tar.gz               [         <=>        ]  19.46M   498KB/s               1.tar.gz                [        <=>         ]  19.61M   510KB/s               .tar.gz                 [       <=>          ]  19.74M   523KB/s               tar.gz                  [      <=>           ]  19.86M   540KB/s               ar.gz                   [     <=>            ]  19.96M   543KB/s               r.gz                    [    <=>             ]  20.03M   536KB/s               .gz                     [   <=>              ]  20.10M   528KB/s               gz                      [  <=>               ]  20.16M   522KB/s               z                       [ <=>                ]  20.24M   511KB/s                                       [<=>                 ]  20.31M   495KB/s                                 W     [ <=>                ]  20.36M   467KB/s                                Wo     [  <=>               ]  20.44M   456KB/s                               Wox     [   <=>              ]  20.50M   446KB/s                              Woxi     [    <=>             ]  20.57M   437KB/s                             Woxi-     [     <=>            ]  20.65M   430KB/s                            Woxi-c     [      <=>           ]  20.76M   434KB/s                           Woxi-cd     [       <=>          ]  20.88M   420KB/s                          Woxi-cd6     [        <=>         ]  21.02M   424KB/s                         Woxi-cd62     [         <=>        ]  21.11M   410KB/s                        Woxi-cd62f     [          <=>       ]  21.21M   406KB/s                       Woxi-cd62f2     [           <=>      ]  21.26M   396KB/s                      Woxi-cd62f28     [            <=>     ]  21.31M   390KB/s                     Woxi-cd62f287     [             <=>    ]  21.34M   377KB/s                    Woxi-cd62f287c     [              <=>   ]  21.38M   365KB/s                   Woxi-cd62f287ca     [               <=>  ]  21.43M   357KB/s                  Woxi-cd62f287cab     [                <=> ]  21.50M   354KB/s                 Woxi-cd62f287cab2     [                 <=>]  21.61M   367KB/s                Woxi-cd62f287cab27     [                <=> ]  21.72M   378KB/s               Woxi-cd62f287cab270     [               <=>  ]  21.83M   393KB/s               oxi-cd62f287cab2709     [              <=>   ]  21.97M   419KB/s               xi-cd62f287cab27098     [             <=>    ]  22.07M   416KB/s               i-cd62f287cab270984     [            <=>     ]  22.14M   391KB/s               -cd62f287cab2709847     [           <=>      ]  22.21M   382KB/s               cd62f287cab2709847c     [          <=>       ]  22.27M   372KB/s               d62f287cab2709847ca     [         <=>        ]  22.35M   360KB/s               62f287cab2709847ca6     [        <=>         ]  22.43M   369KB/s               2f287cab2709847ca63     [       <=>          ]  22.51M   374KB/s               f287cab2709847ca639     [      <=>           ]  22.61M   403KB/s               287cab2709847ca6393     [     <=>            ]  22.71M   419KB/s               87cab2709847ca63932     [    <=>             ]  22.78M   422KB/s               7cab2709847ca639326     [   <=>              ]  22.87M   432KB/s               cab2709847ca6393263     [  <=>               ]  22.93M   422KB/s               ab2709847ca63932635     [ <=>                ]  23.02M   417KB/s               b2709847ca63932635d     [<=>                 ]  23.10M   402KB/s               2709847ca63932635d5     [ <=>                ]  23.19M   391KB/s               709847ca63932635d5b     [  <=>               ]  23.26M   375KB/s               09847ca63932635d5b4     [   <=>              ]  23.32M   373KB/s               9847ca63932635d5b4c     [    <=>             ]  23.38M   370KB/s               847ca63932635d5b4ce     [     <=>            ]  23.44M   365KB/s               47ca63932635d5b4ce3     [      <=>           ]  23.52M   368KB/s               7ca63932635d5b4ce3c     [       <=>          ]  23.60M   371KB/s               ca63932635d5b4ce3c9     [        <=>         ]  23.70M   369KB/s               a63932635d5b4ce3c9f     [         <=>        ]  23.79M   373KB/s               63932635d5b4ce3c9ff     [          <=>       ]  23.88M   375KB/s               3932635d5b4ce3c9ff1     [           <=>      ]  23.95M   372KB/s               932635d5b4ce3c9ff1.     [            <=>     ]  24.02M   364KB/s               32635d5b4ce3c9ff1.t     [             <=>    ]  24.10M   367KB/s               2635d5b4ce3c9ff1.ta     [              <=>   ]  24.20M   371KB/s               635d5b4ce3c9ff1.tar     [               <=>  ]  24.32M   385KB/s               35d5b4ce3c9ff1.tar.     [                <=> ]  24.42M   384KB/s               5d5b4ce3c9ff1.tar.g     [                 <=>]  24.50M   392KB/s               d5b4ce3c9ff1.tar.gz     [                <=> ]  24.56M   395KB/s               5b4ce3c9ff1.tar.gz      [               <=>  ]  24.60M   386KB/s               b4ce3c9ff1.tar.gz       [              <=>   ]  24.67M   392KB/s               4ce3c9ff1.tar.gz        [             <=>    ]  24.77M   400KB/s               ce3c9ff1.tar.gz         [            <=>     ]  24.89M   416KB/s               e3c9ff1.tar.gz          [           <=>      ]  25.01M   421KB/s               3c9ff1.tar.gz           [          <=>       ]  25.12M   427KB/s               c9ff1.tar.gz            [         <=>        ]  25.21M   426KB/s               9ff1.tar.gz             [        <=>         ]  25.31M   433KB/s               ff1.tar.gz              [       <=>          ]  25.38M   429KB/s               f1.tar.gz               [      <=>           ]  25.42M   420KB/s               1.tar.gz                [     <=>            ]  25.47M   414KB/s               .tar.gz                 [    <=>             ]  25.54M   401KB/s               tar.gz                  [   <=>              ]  25.61M   392KB/s               ar.gz                   [  <=>               ]  25.67M   376KB/s               r.gz                    [ <=>                ]  25.76M   388KB/s               .gz                     [<=>                 ]  25.88M   412KB/s               gz                      [ <=>                ]  25.99M   430KB/s               z                       [  <=>               ]  26.10M   441KB/s                                       [   <=>              ]  26.21M   443KB/s                                 W     [    <=>             ]  26.34M   445KB/s                                Wo     [     <=>            ]  26.45M   442KB/s                               Wox     [      <=>           ]  26.56M   447KB/s                              Woxi     [       <=>          ]  26.64M   444KB/s                             Woxi-     [        <=>         ]  26.75M   451KB/s                            Woxi-c     [         <=>        ]  26.87M   471KB/s                           Woxi-cd     [          <=>       ]  26.99M   492KB/s                          Woxi-cd6     [           <=>      ]  27.11M   508KB/s                         Woxi-cd62     [            <=>     ]  27.22M   532KB/s                        Woxi-cd62f     [             <=>    ]  27.36M   551KB/s                       Woxi-cd62f2     [              <=>   ]  27.44M   551KB/s                      Woxi-cd62f28     [               <=>  ]  27.52M   538KB/s                     Woxi-cd62f287     [                <=> ]  27.59M   528KB/s                    Woxi-cd62f287c     [                 <=>]  27.68M   517KB/s                   Woxi-cd62f287ca     [                <=> ]  27.79M   506KB/s                  Woxi-cd62f287cab     [               <=>  ]  27.89M   501KB/s                 Woxi-cd62f287cab2     [              <=>   ]  27.98M   495KB/s                Woxi-cd62f287cab27     [             <=>    ]  28.04M   477KB/s               Woxi-cd62f287cab270     [            <=>     ]  28.09M   468KB/s               oxi-cd62f287cab2709     [           <=>      ]  28.16M   457KB/s               xi-cd62f287cab27098     [          <=>       ]  28.24M   442KB/s               i-cd62f287cab270984     [         <=>        ]  28.34M   435KB/s               -cd62f287cab2709847     [        <=>         ]  28.41M   421KB/s               cd62f287cab2709847c     [       <=>          ]  28.48M   400KB/s               d62f287cab2709847ca     [      <=>           ]  28.52M   378KB/s               62f287cab2709847ca6     [     <=>            ]  28.59M   371KB/s               2f287cab2709847ca63     [    <=>             ]  28.67M   368KB/s               f287cab2709847ca639     [   <=>              ]  28.73M   364KB/s               287cab2709847ca6393     [  <=>               ]  28.80M   362KB/s               87cab2709847ca63932     [ <=>                ]  28.86M   341KB/s               7cab2709847ca639326     [<=>                 ]  28.94M   340KB/s               cab2709847ca6393263     [ <=>                ]  29.03M   337KB/s               ab2709847ca63932635     [  <=>               ]  29.11M   341KB/s               b2709847ca63932635d     [   <=>              ]  29.20M   352KB/s               2709847ca63932635d5     [    <=>             ]  29.32M   366KB/s               709847ca63932635d5b     [     <=>            ]  29.47M   392KB/s               09847ca63932635d5b4     [      <=>           ]  29.63M   414KB/s               9847ca63932635d5b4c     [       <=>          ]  29.72M   423KB/s               847ca63932635d5b4ce     [        <=>         ]  29.82M   429KB/s               47ca63932635d5b4ce3     [         <=>        ]  29.94M   449KB/s               7ca63932635d5b4ce3c     [          <=>       ]  30.03M   463KB/s               ca63932635d5b4ce3c9     [           <=>      ]  30.14M   474KB/s               a63932635d5b4ce3c9f     [            <=>     ]  30.25M   484KB/s               63932635d5b4ce3c9ff     [             <=>    ]  30.33M   486KB/s               3932635d5b4ce3c9ff1     [              <=>   ]  30.42M   505KB/s               932635d5b4ce3c9ff1.     [               <=>  ]  30.53M   515KB/s               Woxi-cd62f287cab270     [                <=> ]  30.62M   531KB/s    in 69s     
+
+2026-11-03 17:14:04 (456 KB/s) - ‘Woxi-cd62f287cab2709847ca63932635d5b4ce3c9ff1.tar.gz’ saved [32107931]
+
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling cfg-if v1.0.5
+   Compiling libc v0.2.191
+   Compiling libm v0.2.16
+   Compiling memchr v2.8.3
+   Compiling syn v3.0.9
+   Compiling syn v2.0.119
+   Compiling autocfg v1.5.1
+   Compiling log v0.4.34
+   Compiling zerocopy v0.8.63
+   Compiling num-traits v0.2.19
+   Compiling smallvec v1.16.4
+   Compiling bytemuck_derive v1.12.1
+   Compiling zerocopy-derive v0.8.63
+   Compiling equivalent v1.0.3
+   Compiling typenum v1.20.1
+   Compiling simd-adler32 v0.3.10
+   Compiling bytemuck v1.25.2
+   Compiling hybrid-array v0.4.15
+   Compiling crc32fast v1.5.3
+   Compiling adler2 v2.0.1
+   Compiling serde_core v1.0.229
+   Compiling rand_core v0.10.1
+   Compiling miniz_oxide v0.9.1
+   Compiling getrandom v0.4.3
+   Compiling hashbrown v0.17.1
+   Compiling zlib-rs v0.6.8
+   Compiling indexmap v2.14.2
+   Compiling ppv-lite86 v0.2.21
+   Compiling flate2 v1.1.10
+   Compiling crypto-common v0.2.2
+   Compiling getrandom v0.2.17
+   Compiling shlex v2.0.1
+   Compiling scopeguard v1.2.0
+   Compiling find-msvc-tools v0.1.15
+   Compiling cc v1.10.0
+   Compiling rustversion v1.0.23
+   Compiling getrandom v0.3.4
+   Compiling arrayvec v0.7.8
+   Compiling bitflags v2.13.2
+   Compiling futures-sink v0.3.34
+   Compiling futures-core v0.3.34
+   Compiling serde v1.0.229
+   Compiling pin-project-lite v0.2.17
+   Compiling serde_derive v1.0.229
+   Compiling futures-io v0.3.34
+   Compiling futures-channel v0.3.34
+   Compiling rand_core v0.6.4
+   Compiling block-buffer v0.12.1
+   Compiling futures-macro v0.3.34
+   Compiling aho-corasick v1.1.5
+   Compiling futures-task v0.3.34
+   Compiling const-oid v0.10.2
+   Compiling slab v0.4.12
+   Compiling parking_lot_core v0.9.12
+   Compiling regex-syntax v0.8.11
+   Compiling futures-util v0.3.34
+   Compiling regex-automata v0.4.18
+   Compiling digest v0.11.3
+   Compiling rand_chacha v0.3.1
+   Compiling rand_core v0.9.5
+   Compiling version_check v0.9.5
+   Compiling tinyvec v1.13.3
+   Compiling bytes v1.12.1
+   Compiling foldhash v0.2.0
+   Compiling siphasher v1.0.4
+   Compiling cpufeatures v0.3.1
+   Compiling itoa v1.0.18
+   Compiling slotmap v1.1.1
+   Compiling rand v0.8.8
+   Compiling encoding_rs v0.8.42
+   Compiling lock_api v0.4.14
+   Compiling block-padding v0.4.2
+   Compiling miniz_oxide v0.8.9
+   Compiling fdeflate v0.3.7
+   Compiling core_maths v0.1.1
+   Compiling errno v0.3.14
+   Compiling float-cmp v0.9.0
+   Compiling zmij v1.0.23
+   Compiling utf8parse v0.2.2
+   Compiling thiserror v2.0.21
+   Compiling crossbeam-utils v0.8.23
+   Compiling weezl v0.1.12
+   Compiling unicode-properties v0.1.4
+   Compiling thiserror v1.0.69
+   Compiling strict-num v0.1.1
+   Compiling signal-hook-registry v1.4.8
+   Compiling ttf-parser v0.25.1
+   Compiling inout v0.2.5
+   Compiling parking_lot v0.12.5
+   Compiling regex v1.13.1
+   Compiling futures-executor v0.3.34
+   Compiling font-types v0.11.3
+   Compiling thiserror-impl v1.0.69
+   Compiling thiserror-impl v2.0.21
+   Compiling tokio-macros v2.7.2
+   Compiling mio v1.2.4
+   Compiling socket2 v0.6.5
+   Compiling core_detect v1.0.0
+   Compiling sha1_smol v1.0.1
+   Compiling iana-time-zone v0.1.65
+   Compiling saa v5.6.2
+   Compiling color_quant v1.1.0
+   Compiling ucd-trie v0.1.7
+   Compiling roxmltree v0.20.0
+   Compiling unicode-bidi v0.3.18
+   Compiling multiversion_no_op v1.0.0
+   Compiling option-ext v0.2.0
+   Compiling simdutf8 v0.1.5
+   Compiling serde_json v1.0.154
+   Compiling arrayref v0.3.9
+   Compiling quick-error v2.0.1
+   Compiling tiny-skia-path v0.11.4
+   Compiling fontconfig-parser v0.5.8
+   Compiling dirs-sys v0.5.0
+   Compiling pest v2.8.8
+   Compiling sdd v4.8.11
+   Compiling chrono v0.4.45
+   Compiling tokio v1.54.1
+   Compiling uuid v1.29.0
+   Compiling read-fonts v0.39.2
+   Compiling futures v0.3.34
+   Compiling cipher v0.5.2
+   Compiling anstyle-parse v1.0.0
+   Compiling rand_chacha v0.9.0
+   Compiling ring v0.17.14
+   Compiling kurbo v0.11.3
+   Compiling polycool v0.4.0
+   Compiling num-integer v0.1.47
+   Compiling async-trait v0.1.92
+   Compiling memmap2 v0.9.12
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling colorchoice v1.0.5
+   Compiling unicode-bidi-mirroring v0.4.0
+   Compiling either v1.19.0
+   Compiling radium v0.7.0
+   Compiling once_cell v1.21.4
+   Compiling bumpalo v3.20.3
+   Compiling anstyle v1.0.14
+   Compiling unicode-ccc v0.4.0
+   Compiling cfg_aliases v0.2.2
+   Compiling anstyle-query v1.1.5
+   Compiling bitflags v1.3.2
+   Compiling unicode-script v0.5.8
+   Compiling byteorder-lite v0.1.0
+   Compiling syn v1.0.109
+   Compiling rustybuzz v0.20.1
+   Compiling png v0.17.16
+   Compiling anstream v1.0.0
+   Compiling nix v0.31.3
+   Compiling zopfli v0.8.4
+   Compiling itertools v0.10.5
+   Compiling fontdb v0.23.0
+   Compiling num-bigint v0.4.8
+   Compiling kurbo v0.13.1
+   Compiling svgtypes v0.15.3
+   Compiling tokio-util v0.7.20
+   Compiling rand v0.9.5
+   Compiling crossbeam-queue v0.3.14
+   Compiling pest_meta v2.8.8
+   Compiling scc v3.8.8
+   Compiling chacha20 v0.10.2
+   Compiling asynchronous-codec v0.7.0
+   Compiling psm v0.1.24
+   Compiling simplecss v0.2.2
+   Compiling base64 v0.22.1
+   Compiling pico-args v0.5.0
+   Compiling alloc-no-stdlib v2.0.4
+   Compiling lazy_static v1.5.1
+   Compiling tap v1.0.1
+   Compiling typed-path v0.13.0
+   Compiling untrusted v0.9.0
+   Compiling unicode-vo v0.1.0
+   Compiling imagesize v0.13.0
+   Compiling zune-core v0.5.3
+   Compiling allocator-api2 v0.2.21
+   Compiling zune-core v0.4.12
+   Compiling data-url v0.3.2
+   Compiling xmlwriter v0.1.0
+   Compiling usvg v0.45.1
+   Compiling zip v9.1.2
+   Compiling zune-jpeg v0.4.21
+   Compiling hashbrown v0.16.1
+   Compiling zune-jpeg v0.5.15
+   Compiling wyz v0.5.1
+   Compiling astro-float-num v0.3.7
+   Compiling alloc-stdlib v0.2.4
+   Compiling zeromq v0.6.0
+   Compiling rand v0.10.3
+   Compiling pest_generator v2.8.8
+   Compiling jupyter-protocol v2.0.2
+   Compiling write-fonts v0.48.1
+   Compiling tiny-skia v0.11.4
+   Compiling image-webp v0.2.4
+   Compiling skrifa v0.42.1
+   Compiling dirs v6.0.0
+   Compiling gif v0.13.3
+   Compiling phf_shared v0.12.1
+   Compiling unicode-normalization v0.1.26
+   Compiling stacker v0.1.25
+   Compiling half v2.7.1
+   Compiling rgb v0.8.53
+   Compiling safe_arch v0.7.4
+   Compiling nibble_vec v0.1.0
+   Compiling funty v2.0.0
+   Compiling chrono-tz v0.10.4
+   Compiling rustc-hash v2.1.3
+   Compiling jiff-core v0.1.1
+   Compiling clap_lex v1.1.1
+   Compiling foldhash v0.1.5
+   Compiling cpubits v0.1.1
+   Compiling ryu v1.0.23
+   Compiling bit-vec v0.8.0
+   Compiling data-encoding v2.11.1
+   Compiling strsim v0.11.1
+   Compiling plotters-backend v0.3.7
+   Compiling endian-type v0.2.0
+   Compiling ieee754 v0.2.6
+   Compiling fax v0.2.7
+   Compiling anyhow v1.0.104
+   Compiling pxfm v0.1.30
+   Compiling heck v0.5.0
+   Compiling debug_unsafe v0.1.4
+   Compiling atoi_simd v0.18.1
+   Compiling clap_derive v4.6.7
+   Compiling moxcms v0.8.1
+   Compiling tiff v0.11.3
+   Compiling accurate v0.3.1
+   Compiling radix_trie v0.3.0
+   Compiling plotters-svg v0.3.7
+   Compiling clap_builder v4.6.7
+   Compiling jupyter-zmq-client v1.0.1
+   Compiling bit-set v0.8.0
+   Compiling pdf-writer v0.12.1
+   Compiling aes v0.9.3
+   Compiling hashbrown v0.15.5
+   Compiling jiff v0.2.38
+   Compiling subsetter v0.2.6
+   Compiling bitvec v1.1.1
+   Compiling wide v0.7.33
+   Compiling resvg v0.45.1
+   Compiling stringprep v0.1.5
+   Compiling phf v0.12.1
+   Compiling astro-float-macro v0.4.6
+   Compiling pest_derive v2.8.8
+   Compiling brotli-decompressor v5.0.3
+   Compiling lru v0.16.4
+   Compiling num-modular v0.6.5
+   Compiling cbc v0.2.1
+   Compiling ecb v0.2.1
+   Compiling quick-xml v0.42.0
+   Compiling codepage v0.1.3
+   Compiling gif v0.14.2
+   Compiling env_filter v2.0.0
+   Compiling png v0.18.1
+   Compiling sha2 v0.11.1
+   Compiling rand_xoshiro v0.7.0
+   Compiling md-5 v0.11.0
+   Compiling nom v8.0.0
+   Compiling keccak v0.2.2
+   Compiling home v0.5.12
+   Compiling rangemap v1.8.0
+   Compiling fast-float2 v0.2.4
+   Compiling unicode_categories v0.1.1
+   Compiling woxi v0.3.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-cd62f287cab2709847ca63932635d5b4ce3c9ff1)
+   Compiling byteorder v1.5.0
+   Compiling unicode-width v0.2.2
+   Compiling sponge-cursor v0.1.0
+   Compiling archery v1.2.3
+   Compiling fixedbitset v0.5.7
+   Compiling imbl-sized-chunks v0.2.0
+   Compiling unicode-segmentation v1.13.3
+   Compiling weezl v0.2.1
+   Compiling rustyline v19.0.0
+   Compiling imbl v7.0.2
+   Compiling lopdf v0.46.0
+   Compiling petgraph v0.8.3
+   Compiling sha3 v0.12.0
+   Compiling calamine v0.37.0
+   Compiling snailquote v0.3.1
+   Compiling image v0.25.10
+   Compiling env_logger v0.11.11
+   Compiling num-prime v0.7.0
+   Compiling woxi-parser v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-cd62f287cab2709847ca63932635d5b4ce3c9ff1/crates/woxi-parser)
+   Compiling astro-float v0.9.6
+   Compiling svg2pdf v0.13.0
+   Compiling fancy-regex v0.20.0
+   Compiling clap v4.6.7
+   Compiling runtimelib v3.0.0
+   Compiling plotters v0.3.7
+   Compiling geographiclib-rs v0.2.7
+   Compiling rand_distr v0.6.0
+   Compiling rust_xlsxwriter v0.101.0
+   Compiling woxi-reduce v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-cd62f287cab2709847ca63932635d5b4ce3c9ff1/crates/woxi-reduce)
+   Compiling dirs v7.0.0
+   Compiling sha1 v0.11.0
+   Compiling ripemd v0.2.0
+   Compiling md4 v0.11.0
+   Compiling rand_chacha v0.10.0
+   Compiling lz4_flex v0.14.0
+   Compiling base64 v0.23.1
+   Compiling web-time v1.1.0
+    Finished `release` profile [optimized] target(s) in 111m 20s
+   Compiling syn v3.0.9
+   Compiling libc v0.2.191
+   Compiling syn v2.0.119
+   Compiling smallvec v1.16.4
+   Compiling num-traits v0.2.19
+   Compiling libloading v0.8.9
+   Compiling rustix v1.1.6
+   Compiling linux-raw-sys v0.12.1
+   Compiling zerocopy-derive v0.8.63
+   Compiling bytemuck_derive v1.12.1
+   Compiling bytemuck v1.25.2
+   Compiling crossbeam-utils v0.8.23
+   Compiling zerocopy v0.8.63
+   Compiling thiserror-impl v2.0.21
+   Compiling pkg-config v0.3.34
+   Compiling arrayvec v0.7.8
+   Compiling thiserror v2.0.21
+   Compiling slab v0.4.12
+   Compiling serde_derive v1.0.229
+   Compiling ppv-lite86 v0.2.21
+   Compiling wayland-sys v0.31.11
+   Compiling dlib v0.5.3
+   Compiling getrandom v0.2.17
+   Compiling wayland-backend v0.3.17
+   Compiling downcast-rs v1.2.1
+   Compiling scoped-tls v1.0.1
+   Compiling quick-xml v0.41.0
+   Compiling wayland-client v0.31.15
+   Compiling parking_lot_core v0.9.12
+   Compiling rand_core v0.6.4
+   Compiling wayland-scanner v0.31.11
+   Compiling memmap2 v0.9.12
+   Compiling errno v0.3.14
+   Compiling signal-hook-registry v1.4.8
+   Compiling parking_lot v0.12.5
+   Compiling rand_chacha v0.3.1
+   Compiling futures-channel v0.3.34
+   Compiling rand v0.8.8
+   Compiling ttf-parser v0.25.1
+   Compiling futures-macro v0.3.34
+   Compiling unicode-ident v1.0.27
+   Compiling crossbeam-epoch v0.9.21
+   Compiling futures-util v0.3.34
+   Compiling serde v1.0.229
+   Compiling polling v3.11.0
+   Compiling num-integer v0.1.47
+   Compiling crossbeam-deque v0.8.8
+   Compiling num-bigint v0.4.8
+   Compiling half v2.7.1
+   Compiling profiling-procmacros v1.0.18
+   Compiling tracing-attributes v0.1.31
+   Compiling tracing-core v0.1.36
+   Compiling rayon-core v1.13.0
+   Compiling raw-window-handle v0.6.2
+   Compiling tracing v0.1.44
+   Compiling profiling v1.0.18
+   Compiling futures-executor v0.3.34
+   Compiling getrandom v0.4.3
+   Compiling tokio-macros v2.7.2
+   Compiling equator-macro v0.4.2
+   Compiling mio v1.2.4
+   Compiling socket2 v0.6.5
+   Compiling serde_core v1.0.229
+   Compiling tokio v1.54.1
+   Compiling equator v0.4.2
+   Compiling futures v0.3.34
+   Compiling paste v1.0.15
+   Compiling fastrand v2.5.0
+   Compiling parking v2.2.1
+   Compiling aligned-vec v0.6.4
+   Compiling stable_deref_trait v1.2.1
+   Compiling smol_str v0.2.2
+   Compiling winnow v1.0.4
+   Compiling rustc-hash v1.1.0
+   Compiling as-slice v0.2.1
+   Compiling v_frame v0.3.9
+   Compiling fontdb v0.23.0
+   Compiling rayon v1.12.0
+   Compiling num-rational v0.4.2
+   Compiling wayland-protocols v0.32.13
+   Compiling built v0.8.1
+   Compiling equivalent v1.0.3
+   Compiling hashbrown v0.17.1
+   Compiling av-scenechange v0.14.1
+   Compiling tiny-skia-path v0.11.4
+   Compiling indexmap v2.14.2
+   Compiling rav1e v0.8.1
+   Compiling aligned v0.4.3
+   Compiling getrandom v0.3.4
+   Compiling toml_parser v1.1.5+spec-1.1.0
+   Compiling pulp v0.22.3
+   Compiling rgb v0.8.53
+   Compiling font-types v0.10.1
+   Compiling font-types v0.12.7
+   Compiling thiserror-impl v1.0.69
+   Compiling arg_enum_proc_macro v0.3.4
+   Compiling no_std_io2 v0.9.4
+   Compiling y4m v0.8.0
+   Compiling toml_datetime v1.1.2+spec-1.1.0
+   Compiling pastey v0.1.1
+   Compiling toml_edit v0.25.17+spec-1.1.0
+   Compiling thiserror v1.0.69
+   Compiling bitstream-io v4.10.0
+   Compiling read-fonts v0.41.0
+   Compiling read-fonts v0.35.0
+   Compiling lilt v0.8.2
+   Compiling av1-grain v0.2.5
+   Compiling maybe-rayon v0.1.1
+   Compiling itertools v0.14.0
+   Compiling num-complex v0.4.6
+   Compiling num-derive v0.4.2
+   Compiling enumflags2_derive v0.7.12
+   Compiling raw-cpuid v11.6.0
+   Compiling simd_helpers v0.1.0
+   Compiling reborrow v0.5.5
+   Compiling pulp-wasm-simd-flag v0.1.1
+   Compiling imgref v1.12.3
+   Compiling glam v0.25.0
+   Compiling new_debug_unreachable v1.0.6
+   Compiling noop_proc_macro v0.3.0
+   Compiling loop9 v0.1.5
+   Compiling iced_core v0.14.0
+   Compiling skrifa v0.44.0
+   Compiling tiny-skia v0.11.4
+   Compiling proc-macro-crate v3.5.0
+   Compiling zvariant_utils v4.2.0
+   Compiling event-listener v5.4.2
+   Compiling naga v27.0.3
+   Compiling zune-inflate v0.2.54
+   Compiling concurrent-queue v2.5.0
+   Compiling avif-serialize v0.8.9
+   Compiling proc-macro2 v1.0.107
+   Compiling zeno v0.3.3
+   Compiling khronos-egl v6.0.0
+   Compiling ash v0.38.0+1.3.281
+   Compiling bit_field v0.10.3
+   Compiling lebe v0.5.3
+   Compiling yazi v0.2.1
+   Compiling as-raw-xcb-connection v1.0.1
+   Compiling swash v0.2.10
+   Compiling uuid v1.29.0
+   Compiling exr v1.74.2
+   Compiling tiff v0.11.3
+   Compiling moxcms v0.8.1
+   Compiling ravif v0.13.0
+   Compiling event-listener-strategy v0.5.4
+   Compiling zvariant_derive v5.15.1
+   Compiling iced_futures v0.14.0
+   Compiling harfrust v0.3.2
+   Compiling skrifa v0.37.0
+   Compiling codespan-reporting v0.12.0
+   Compiling futures-lite v2.6.1
+   Compiling wgpu-hal v27.0.4
+   Compiling gethostname v1.1.0
+   Compiling kurbo v0.11.3
+   Compiling qoi v0.4.1
+   Compiling async-trait v0.1.92
+   Compiling spirv v0.3.0+sdk-1.3.268.0
+   Compiling gpu-descriptor-types v0.2.0
+   Compiling gpu-alloc-types v0.3.1
+   Compiling quote v1.0.47
+   Compiling xkeysym v0.2.1
+   Compiling linebender_resource_handle v0.1.1
+   Compiling sys-locale v0.3.2
+   Compiling self_cell v1.3.0
+   Compiling xcursor v0.3.11
+   Compiling unicode-linebreak v0.1.5
+   Compiling hexf-parse v0.2.1
+   Compiling cursor-icon v1.2.0
+   Compiling x11rb-protocol v0.13.2
+   Compiling rustybuzz v0.20.1
+   Compiling wayland-csd-frame v0.3.0
+   Compiling cosmic-text v0.15.0
+   Compiling x11rb v0.13.2
+   Compiling wayland-cursor v0.31.14
+   Compiling gpu-alloc v0.6.2
+   Compiling gpu-descriptor v0.3.2
+   Compiling image v0.25.10
+   Compiling svgtypes v0.15.3
+   Compiling rustversion v1.0.23
+   Compiling wayland-protocols-wlr v0.3.12
+   Compiling wgpu-types v27.0.1
+   Compiling ordered-float v5.5.1
+   Compiling async-io v2.6.0
+   Compiling renderdoc-sys v1.1.0
+   Compiling glow v0.16.0
+   Compiling rustix v0.38.44
+   Compiling mutate_once v0.1.2
+   Compiling usvg v0.45.1
+   Compiling kamadak-exif v0.6.1
+   Compiling enumflags2 v0.7.12
+   Compiling rand_core v0.9.5
+   Compiling zcheapstr v1.1.0
+   Compiling wgpu-core v27.0.3
+   Compiling litrs v1.0.1
+   Compiling linux-raw-sys v0.4.15
+   Compiling endi v1.1.1
+   Compiling async-task v4.7.1
+   Compiling zvariant v5.15.1
+   Compiling document-features v0.2.12
+   Compiling resvg v0.45.1
+   Compiling iced_graphics v0.14.0
+   Compiling wgpu-core-deps-windows-linux-android v27.0.0
+   Compiling encoding_rs v0.8.42
+   Compiling async-channel v2.5.0
+   Compiling calloop v0.14.5
+   Compiling wgpu v27.0.1
+   Compiling tiny-xlib v0.2.5
+   Compiling euclid v0.22.14
+   Compiling svg_fmt v0.4.5
+   Compiling atomic-waker v1.1.2
+   Compiling smithay-client-toolkit v0.20.0
+   Compiling piper v0.2.5
+   Compiling calloop-wayland-source v0.4.1
+   Compiling async-signal v0.2.14
+   Compiling calloop v0.13.0
+   Compiling zbus_names v4.3.5
+   Compiling iced_debug v0.14.0
+   Compiling async-lock v3.4.2
+   Compiling wayland-protocols-experimental v20250721.0.1
+   Compiling wayland-protocols-misc v0.3.12
+   Compiling font-types v0.11.3
+   Compiling static_assertions v1.1.0
+   Compiling smithay-client-toolkit v0.19.2
+   Compiling ctor v0.10.1
+   Compiling chrono v0.4.45
+   Compiling dirs-sys v0.5.0
+   Compiling read-fonts v0.39.2
+   Compiling async-process v2.5.0
+   Compiling zbus_macros v5.19.0
+   Compiling calloop-wayland-source v0.3.0
+   Compiling blocking v1.7.0
+   Compiling etagere v0.2.15
+   Compiling async-executor v1.14.0
+   Compiling rand_chacha v0.9.0
+   Compiling async-broadcast v0.7.2
+   Compiling owned_ttf_parser v0.25.1
+   Compiling ahash v0.8.12
+   Compiling polycool v0.4.0
+   Compiling x11-dl v2.21.0
+   Compiling ordered-stream v0.2.0
+   Compiling serde_repr v0.1.21
+   Compiling async-recursion v1.2.0
+   Compiling hex v0.4.3
+   Compiling android-build v0.1.4
+   Compiling ab_glyph_rasterizer v0.1.10
+   Compiling ab_glyph v0.2.32
+   Compiling mundy v0.2.3
+   Compiling zbus v5.19.0
+   Compiling kurbo v0.13.1
+   Compiling rand v0.9.5
+   Compiling cryoglyph v0.1.0
+   Compiling smithay-clipboard v0.7.3
+   Compiling softbuffer v0.4.8
+   Compiling guillotiere v0.6.2
+   Compiling tokio-util v0.7.20
+   Compiling asynchronous-codec v0.7.0
+   Compiling winit v0.30.13
+   Compiling crossbeam-queue v0.3.14
+   Compiling kurbo v0.10.4
+   Compiling percent-encoding v2.3.2
+   Compiling ring v0.17.14
+   Compiling iced_tiny_skia v0.14.1
+   Compiling zip v9.1.2
+   Compiling zeromq v0.6.0
+   Compiling iced_wgpu v0.14.0
+   Compiling rand v0.10.3
+   Compiling pest_generator v2.8.8
+   Compiling clipboard_wayland v0.2.2
+   Compiling sctk-adwaita v0.10.1
+   Compiling jupyter-protocol v2.0.2
+   Compiling write-fonts v0.48.1
+   Compiling skrifa v0.42.1
+   Compiling dirs v6.0.0
+   Compiling clipboard_x11 v0.4.3
+   Compiling xkbcommon-dl v0.4.2
+   Compiling iced_runtime v0.14.0
+   Compiling wayland-protocols-plasma v0.3.12
+   Compiling safe_arch v0.7.4
+   Compiling nibble_vec v0.1.0
+   Compiling dpi v0.1.2
+   Compiling atoi_simd v0.18.1
+   Compiling radix_trie v0.3.0
+   Compiling astro-float-num v0.3.7
+   Compiling jupyter-zmq-client v1.0.1
+   Compiling clap_derive v4.6.7
+   Compiling accurate v0.3.1
+   Compiling wide v0.7.33
+   Compiling iced_program v0.14.0
+   Compiling window_clipboard v0.5.1
+   Compiling subsetter v0.2.6
+   Compiling pest_derive v2.8.8
+   Compiling iced_renderer v0.14.0
+   Compiling nix v0.31.3
+   Compiling codepage v0.1.3
+   Compiling quick-xml v0.42.0
+   Compiling rand_xoshiro v0.7.0
+   Compiling num-modular v0.6.5
+   Compiling dark-light v3.0.0
+   Compiling rfd v0.17.2
+   Compiling imbl v7.0.2
+   Compiling snailquote v0.3.1
+   Compiling num-prime v0.7.0
+   Compiling rustyline v19.0.0
+   Compiling calamine v0.37.0
+   Compiling lopdf v0.46.0
+   Compiling woxi v0.3.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-cd62f287cab2709847ca63932635d5b4ce3c9ff1)
+   Compiling stacker v0.1.25
+   Compiling iced_widget v0.14.2
+   Compiling woxi-parser v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-cd62f287cab2709847ca63932635d5b4ce3c9ff1/crates/woxi-parser)
+   Compiling astro-float v0.9.6
+   Compiling svg2pdf v0.13.0
+   Compiling iced_winit v0.14.1
+   Compiling chrono-tz v0.10.4
+   Compiling geographiclib-rs v0.2.7
+   Compiling plotters v0.3.7
+   Compiling clap v4.6.7
+   Compiling runtimelib v3.0.0
+   Compiling rand_distr v0.6.0
+   Compiling rust_xlsxwriter v0.101.0
+   Compiling dirs v7.0.0
+   Compiling woxi-reduce v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-cd62f287cab2709847ca63932635d5b4ce3c9ff1/crates/woxi-reduce)
+   Compiling rand_chacha v0.10.0
+   Compiling pollster v0.4.0
+   Compiling iced v0.14.0
+   Compiling woxi-studio v0.3.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-cd62f287cab2709847ca63932635d5b4ce3c9ff1/woxi-studio)
+    Finished `release` profile [optimized] target(s) in 126m 40s
+--2026-11-03 21:11:59--  https://woxi.ad-si.com/docs/favicon.png
+Resolving woxi.ad-si.com (woxi.ad-si.com)... 185.199.108.153, 185.199.111.153, 185.199.110.153, ...
+Connecting to woxi.ad-si.com (woxi.ad-si.com)|185.199.108.153|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 35750 (35K) [image/png]
+Saving to: ‘woxi.png’
+
+     0K .......... .......... .......... ....                 100% 5.52M=0.006s
+
+2026-11-03 21:12:00 (5.52 MB/s) - ‘woxi.png’ saved [35750/35750]
+
+cd62f287cab2709847ca63932635d5b4ce3c9ff1
+Updated registry for woxi-git to version 26a40dfd2a8bbee5aadfc0e95d2eaa3b5b325437
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package woxi-git in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master 7225013] Updating packages
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master 0a1c7a3] Updating packages
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-35
+r13.1-547
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libexpat.so.1.13.0
+cand_sobase=libexpat.so
+search_base=libexpat
+replacement_found=true
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libexpat.so.1.13.0
+Path: /usr/lib/libexpat.so.1.13.0
+Skipping generic/unsafe name 'libexpat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libexpat.so.1 libexpat.so.1.13.0
+Example dependents: ./miniconda3/bin/dbus-daemon ./miniconda3/bin/xmlwf ./miniconda3/libexec/dbus-daemon-launch-helper ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libexpat.so.1.13.0:
+  - ./miniconda3/bin/dbus-daemon
+  - ./miniconda3/bin/xmlwf
+  - ./miniconda3/libexec/dbus-daemon-launch-helper
+  - ./miniconda3/lib/python3.14/lib-dynload/pyexpat.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libexpat.so.1.13.0.
+------------------------------------------------
+Checking obsolete version (file): libnghttp2.so.14.29.5
+Path: /usr/lib/libnghttp2.so.14.29.5
+Skipping generic/unsafe name 'libnghttp2.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libnghttp2.so.14 libnghttp2.so.14.29.5
+Example dependents: ./miniconda3/bin/nghttp ./miniconda3/bin/nghttpd ./miniconda3/bin/nghttpx ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libnghttp2.so.14.29.5:
+  - ./miniconda3/bin/nghttp
+  - ./miniconda3/bin/nghttpd
+  - ./miniconda3/bin/nghttpx
+  - ./miniconda3/lib/libcurl.so.4.8.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libnghttp2.so.14.29.5.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
