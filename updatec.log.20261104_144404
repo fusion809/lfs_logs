@@ -1,0 +1,443 @@
+===== Update check started: 2026-11-04 14:44:04 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261104_144404
+Packages needing attention: rapidjson-git wordcraft-bin
+===== Starting updatec: 2026-11-04 14:44:09 AEST =====
+Checking for packages with missing file inventories...
+name=libcdio
+local_ver=2.4.0
+remote_ver=2026
+name=libical
+local_ver=4.0.7
+remote_ver=65
+name=libjpeg-turbo
+local_ver=3.2.1
+remote_ver=10
+name=rapidjson-git
+local_ver=24b5e7a
+remote_ver=297637b
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - libcdio
+  - libical
+  - libjpeg-turbo
+  - rapidjson-git
+  - wordcraft-bin
+
+Building custom package libcdio...
+[14:45:49] Found custom package for libcdio, bypassing BLFS aliases.
+[14:45:49] Custom package detected at /home/fusion809/lfs_packaging/libcdio (package: libcdio)
+[14:45:49] Extracting dependencies for custom package 'libcdio'...
+[14:45:49] Required deps: gcc glibc ncurses 
+[14:45:49] Dependency 'gcc' already installed.
+[14:45:49] Dependency 'glibc' already installed.
+[14:45:49] Dependency 'ncurses' already installed.
+[14:45:49] Starting remote custom build for libcdio...
+[14:45:50] [LFS-AUTOBUILD] Skipping custom package libcdio: version 2.4.0 already installed (use -f to force build).
+Building custom package libical...
+[14:45:50] Found custom package for libical, bypassing BLFS aliases.
+[14:45:50] Custom package detected at /home/fusion809/lfs_packaging/libical (package: libical)
+[14:45:50] Extracting dependencies for custom package 'libical'...
+[14:45:50] Required deps: cmake gcc glib2 glibc icu libffi libxml2 pcre2 vala 
+[14:45:50] Dependency 'cmake' already installed.
+[14:45:50] Dependency 'gcc' already installed.
+[14:45:50] Dependency 'glib2' already installed.
+[14:45:50] Dependency 'glibc' already installed.
+[14:45:50] Dependency 'icu' already installed.
+[14:45:50] Dependency 'libffi' already installed.
+[14:45:50] Dependency 'libxml2' already installed.
+[14:45:50] Dependency 'pcre2' already installed.
+[14:45:50] Dependency 'vala' already installed.
+[14:45:50] Starting remote custom build for libical...
+[14:45:51] [LFS-AUTOBUILD] Skipping custom package libical: version 4.0.7 already installed (use -f to force build).
+Building custom package libjpeg-turbo...
+[14:45:51] Found custom package for libjpeg-turbo, bypassing BLFS aliases.
+[14:45:51] Custom package detected at /home/fusion809/lfs_packaging/libjpeg-turbo (package: libjpeg-turbo)
+[14:45:51] Extracting dependencies for custom package 'libjpeg-turbo'...
+[14:45:51] Required deps: glibc 
+[14:45:51] Dependency 'glibc' already installed.
+[14:45:51] Starting remote custom build for libjpeg-turbo...
+[14:45:52] [LFS-AUTOBUILD] Skipping custom package libjpeg-turbo: version 3.2.1 already installed (use -f to force build).
+Building custom package rapidjson-git...
+[14:45:52] Found custom package for rapidjson-git, bypassing BLFS aliases.
+[14:45:52] Custom package detected at /home/fusion809/lfs_packaging/rapidjson-git (package: rapidjson-git)
+[14:45:52] Extracting dependencies for custom package 'rapidjson-git'...
+[14:45:52] Required deps: bash cmake coreutils git make sed 
+[14:45:52] Dependency 'bash' already installed.
+[14:45:52] Dependency 'cmake' already installed.
+[14:45:52] Dependency 'coreutils' already installed.
+[14:45:52] Dependency 'git' already installed.
+[14:45:52] Dependency 'make' already installed.
+[14:45:52] Dependency 'sed' already installed.
+[14:45:52] Starting remote custom build for rapidjson-git...
+--2026-11-04 14:46:08--  https://github.com/Tencent/rapidjson/archive/297637bc0a0f00dc504dbc1a47ebdaa577f8ae19.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/Tencent/rapidjson/tar.gz/297637bc0a0f00dc504dbc1a47ebdaa577f8ae19 [following]
+--2026-11-04 14:46:09--  https://codeload.github.com/Tencent/rapidjson/tar.gz/297637bc0a0f00dc504dbc1a47ebdaa577f8ae19
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19.tar.gz’
+
+          rapidjson     [<=>                 ]       0  --.-KB/s                        rapidjson-     [ <=>                ]   1.01M  5.07MB/s               rapidjson-297637bc0     [  <=>               ]   1.06M  5.18MB/s    in 0.2s    
+
+2026-11-04 14:46:10 (5.18 MB/s) - ‘rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19.tar.gz’ saved [1116683]
+
+CMake Warning (deprecated) at CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- No Doxygen found. Documentation won't be built
+CMake Warning (policy) at CMakeLists.txt:165 (add_custom_command):
+  Exactly one of PRE_BUILD, PRE_LINK, or POST_BUILD must be given.  Assuming
+  POST_BUILD to preserve backward compatibility.
+
+  Policy CMP0175 is not set: add_custom_command() rejects invalid arguments.
+  Run "cmake --help-policy CMP0175" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+
+CMake Warning (deprecated) at example/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Could NOT find GTestSrc (missing: GTEST_SOURCE_DIR) 
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/rapidjson-git/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/build
+[  2%] Building CXX object example/CMakeFiles/capitalize.dir/capitalize/capitalize.cpp.o
+[  5%] Building CXX object example/CMakeFiles/condense.dir/condense/condense.cpp.o
+[  7%] Building CXX object example/CMakeFiles/archivertest.dir/archiver/archiver.cpp.o
+[ 10%] Linking CXX executable ../bin/condense
+[ 12%] Linking CXX executable ../bin/capitalize
+[ 12%] Built target condense
+[ 15%] Building CXX object example/CMakeFiles/filterkey.dir/filterkey/filterkey.cpp.o
+[ 15%] Built target capitalize
+[ 17%] Building CXX object example/CMakeFiles/filterkeydom.dir/filterkeydom/filterkeydom.cpp.o
+[ 20%] Building CXX object example/CMakeFiles/archivertest.dir/archiver/archivertest.cpp.o
+[ 23%] Linking CXX executable ../bin/archivertest
+[ 23%] Built target archivertest
+[ 25%] Building CXX object example/CMakeFiles/jsonx.dir/jsonx/jsonx.cpp.o
+[ 28%] Linking CXX executable ../bin/filterkey
+[ 28%] Built target filterkey
+[ 30%] Building CXX object example/CMakeFiles/lookaheadparser.dir/lookaheadparser/lookaheadparser.cpp.o
+[ 33%] Linking CXX executable ../bin/filterkeydom
+[ 33%] Built target filterkeydom
+[ 35%] Building CXX object example/CMakeFiles/messagereader.dir/messagereader/messagereader.cpp.o
+[ 38%] Linking CXX executable ../bin/jsonx
+[ 38%] Built target jsonx
+[ 41%] Building CXX object example/CMakeFiles/parsebyparts.dir/parsebyparts/parsebyparts.cpp.o
+[ 43%] Linking CXX executable ../bin/lookaheadparser
+[ 43%] Built target lookaheadparser
+[ 46%] Building CXX object example/CMakeFiles/pretty.dir/pretty/pretty.cpp.o
+[ 48%] Linking CXX executable ../bin/messagereader
+[ 48%] Built target messagereader
+[ 51%] Building CXX object example/CMakeFiles/prettyauto.dir/prettyauto/prettyauto.cpp.o
+[ 53%] Linking CXX executable ../bin/pretty
+[ 53%] Built target pretty
+[ 56%] Building CXX object example/CMakeFiles/schemavalidator.dir/schemavalidator/schemavalidator.cpp.o
+[ 58%] Linking CXX executable ../bin/parsebyparts
+[ 58%] Built target parsebyparts
+[ 61%] Building CXX object example/CMakeFiles/serialize.dir/serialize/serialize.cpp.o
+[ 64%] Linking CXX executable ../bin/prettyauto
+[ 64%] Built target prettyauto
+[ 66%] Building CXX object example/CMakeFiles/simpledom.dir/simpledom/simpledom.cpp.o
+[ 69%] Linking CXX executable ../bin/serialize
+[ 69%] Built target serialize
+[ 71%] Building CXX object example/CMakeFiles/simplereader.dir/simplereader/simplereader.cpp.o
+[ 74%] Linking CXX executable ../bin/simplereader
+[ 76%] Linking CXX executable ../bin/simpledom
+[ 76%] Built target simplereader
+[ 76%] Built target simpledom
+[ 79%] Building CXX object example/CMakeFiles/simplepullreader.dir/simplepullreader/simplepullreader.cpp.o
+[ 82%] Building CXX object example/CMakeFiles/simplewriter.dir/simplewriter/simplewriter.cpp.o
+[ 84%] Linking CXX executable ../bin/simplewriter
+[ 84%] Built target simplewriter
+[ 87%] Building CXX object example/CMakeFiles/sortkeys.dir/sortkeys/sortkeys.cpp.o
+[ 89%] Linking CXX executable ../bin/simplepullreader
+[ 89%] Built target simplepullreader
+[ 92%] Building CXX object example/CMakeFiles/tutorial.dir/tutorial/tutorial.cpp.o
+[ 94%] Linking CXX executable ../bin/sortkeys
+[ 94%] Built target sortkeys
+[ 97%] Linking CXX executable ../bin/tutorial
+[ 97%] Built target tutorial
+[100%] Linking CXX executable ../bin/schemavalidator
+[100%] Built target schemavalidator
+[100%] Built target examples
+[  7%] Built target archivertest
+[ 12%] Built target capitalize
+[ 17%] Built target condense
+[ 23%] Built target filterkey
+[ 28%] Built target filterkeydom
+[ 33%] Built target jsonx
+[ 38%] Built target lookaheadparser
+[ 43%] Built target messagereader
+[ 48%] Built target parsebyparts
+[ 53%] Built target pretty
+[ 58%] Built target prettyauto
+[ 64%] Built target schemavalidator
+[ 69%] Built target serialize
+[ 74%] Built target simpledom
+[ 79%] Built target simplereader
+[ 84%] Built target simplepullreader
+[ 89%] Built target simplewriter
+[ 94%] Built target sortkeys
+[100%] Built target tutorial
+[100%] Built target examples
+Install the project...
+-- Install configuration: "None"
+-- Installing: /usr/lib/pkgconfig/RapidJSON.pc
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/readme.md
+-- Up-to-date: /usr/include/rapidjson
+-- Installing: /usr/include/rapidjson/filereadstream.h
+-- Installing: /usr/include/rapidjson/document.h
+-- Installing: /usr/include/rapidjson/cursorstreamwrapper.h
+-- Up-to-date: /usr/include/rapidjson/internal
+-- Installing: /usr/include/rapidjson/internal/stack.h
+-- Installing: /usr/include/rapidjson/internal/dtoa.h
+-- Installing: /usr/include/rapidjson/internal/strtod.h
+-- Installing: /usr/include/rapidjson/internal/clzll.h
+-- Installing: /usr/include/rapidjson/internal/regex.h
+-- Installing: /usr/include/rapidjson/internal/diyfp.h
+-- Installing: /usr/include/rapidjson/internal/swap.h
+-- Installing: /usr/include/rapidjson/internal/itoa.h
+-- Installing: /usr/include/rapidjson/internal/ieee754.h
+-- Installing: /usr/include/rapidjson/internal/meta.h
+-- Installing: /usr/include/rapidjson/internal/strfunc.h
+-- Installing: /usr/include/rapidjson/internal/pow10.h
+-- Installing: /usr/include/rapidjson/internal/biginteger.h
+-- Installing: /usr/include/rapidjson/istreamwrapper.h
+-- Installing: /usr/include/rapidjson/ostreamwrapper.h
+-- Installing: /usr/include/rapidjson/writer.h
+-- Installing: /usr/include/rapidjson/prettywriter.h
+-- Up-to-date: /usr/include/rapidjson/error
+-- Installing: /usr/include/rapidjson/error/error.h
+-- Installing: /usr/include/rapidjson/error/en.h
+-- Installing: /usr/include/rapidjson/reader.h
+-- Installing: /usr/include/rapidjson/pointer.h
+-- Installing: /usr/include/rapidjson/fwd.h
+-- Installing: /usr/include/rapidjson/memorystream.h
+-- Installing: /usr/include/rapidjson/encodings.h
+-- Installing: /usr/include/rapidjson/encodedstream.h
+-- Installing: /usr/include/rapidjson/uri.h
+-- Installing: /usr/include/rapidjson/stringbuffer.h
+-- Up-to-date: /usr/include/rapidjson/msinttypes
+-- Installing: /usr/include/rapidjson/msinttypes/stdint.h
+-- Installing: /usr/include/rapidjson/msinttypes/inttypes.h
+-- Installing: /usr/include/rapidjson/memorybuffer.h
+-- Installing: /usr/include/rapidjson/stream.h
+-- Installing: /usr/include/rapidjson/allocators.h
+-- Installing: /usr/include/rapidjson/filewritestream.h
+-- Installing: /usr/include/rapidjson/rapidjson.h
+-- Installing: /usr/include/rapidjson/schema.h
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/traverseaspointer.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/prettyauto
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/prettyauto/prettyauto.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/sortkeys
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/sortkeys/sortkeys.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/simplepullreader
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/simplepullreader/simplepullreader.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/schemavalidator
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/schemavalidator/schemavalidator.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/simpledom
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/simpledom/simpledom.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/simplereader
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/simplereader/simplereader.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/condense
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/condense/condense.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/filterkey
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/filterkey/filterkey.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/parsebyparts
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/parsebyparts/parsebyparts.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/CMakeLists.txt
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/serialize
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/serialize/serialize.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/pretty
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/pretty/pretty.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/capitalize
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/capitalize/capitalize.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/tutorial
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/tutorial/tutorial.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/jsonx
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/jsonx/jsonx.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/simplewriter
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/simplewriter/simplewriter.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/filterkeydom
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/filterkeydom/filterkeydom.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/messagereader
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/messagereader/messagereader.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/lookaheadparser
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/lookaheadparser/lookaheadparser.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/archiver
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/archiver/archiver.cpp
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/archiver/archiver.h
+-- Installing: /usr/share/doc/rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19/examples/archiver/archivertest.cpp
+-- Installing: /usr/lib/cmake/RapidJSON/RapidJSONConfig.cmake
+-- Up-to-date: /usr/lib/cmake/RapidJSON/RapidJSONConfig.cmake
+-- Installing: /usr/lib/cmake/RapidJSON/RapidJSONConfigVersion.cmake
+-- Installing: /usr/lib/cmake/RapidJSON/RapidJSON-targets.cmake
+297637bc0a0f00dc504dbc1a47ebdaa577f8ae19
+Updated registry for rapidjson-git to version 297637bc0a0f00dc504dbc1a47ebdaa577f8ae19
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package rapidjson-git in /var/lib/custom-packages/
+Building custom package wordcraft-bin...
+[14:46:37] Found custom package for wordcraft-bin, bypassing BLFS aliases.
+[14:46:37] Custom package detected at /home/fusion809/lfs_packaging/wordcraft-bin (package: wordcraft-bin)
+[14:46:37] Checking conflicting package(s) for 'wordcraft-bin': wordcraft 
+[14:46:37] Extracting dependencies for custom package 'wordcraft-bin'...
+[14:46:37] Required deps: gcc glibc 
+[14:46:37] Dependency 'gcc' already installed.
+[14:46:37] Dependency 'glibc' already installed.
+[14:46:37] Starting remote custom build for wordcraft-bin...
+--2026-11-04 14:46:42--  https://github.com/storytold/wordcraft/releases/download/v0.15.1/wordcraft-0.15.1-linux-x86_64.AppImage
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/1408489772/d65d015f-cd77-421f-96c8-8219a917fc8a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-04T05%3A45%3A03Z&rscd=attachment%3B+filename%3Dwordcraft-0.15.1-linux-x86_64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-04T04%3A44%3A28Z&ske=2026-11-04T05%3A45%3A03Z&sks=b&skv=2018-11-09&sig=qL7lL6u%2FGX%2FXq7dmywtd%2B5VnlP60y2ofcyeJuSsNYlE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5Mzc3MTIwMywibmJmIjoxNzkzNzY3NjAzLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.CJ4BZUEeVb9yAHHxl2-5p5HO2h833RssoEgvkYc1vao&response-content-disposition=attachment%3B%20filename%3Dwordcraft-0.15.1-linux-x86_64.AppImage&response-content-type=application%2Foctet-stream [following]
+--2026-11-04 14:46:42--  https://release-assets.githubusercontent.com/github-production-release-asset/1408489772/d65d015f-cd77-421f-96c8-8219a917fc8a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-04T05%3A45%3A03Z&rscd=attachment%3B+filename%3Dwordcraft-0.15.1-linux-x86_64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-04T04%3A44%3A28Z&ske=2026-11-04T05%3A45%3A03Z&sks=b&skv=2018-11-09&sig=qL7lL6u%2FGX%2FXq7dmywtd%2B5VnlP60y2ofcyeJuSsNYlE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5Mzc3MTIwMywibmJmIjoxNzkzNzY3NjAzLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.CJ4BZUEeVb9yAHHxl2-5p5HO2h833RssoEgvkYc1vao&response-content-disposition=attachment%3B%20filename%3Dwordcraft-0.15.1-linux-x86_64.AppImage&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.108.133, 185.199.111.133, 185.199.110.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 109246968 (104M) [application/octet-stream]
+Saving to: ‘wordcraft-0.15.1-linux-x86_64.AppImage’
+
+          wordcraft   0%[                    ]       0  --.-KB/s                        wordcraft-   1%[                    ]   1.72M  8.55MB/s                       wordcraft-0   3%[                    ]   3.89M  9.68MB/s                      wordcraft-0.   5%[>                   ]   6.01M  10.0MB/s                     wordcraft-0.1   7%[>                   ]   8.20M  10.2MB/s                    wordcraft-0.15   9%[>                   ]  10.23M  10.2MB/s                   wordcraft-0.15.  11%[=>                  ]  12.28M  10.2MB/s                  wordcraft-0.15.1  13%[=>                  ]  14.42M  10.3MB/s                 wordcraft-0.15.1-  15%[==>                 ]  16.58M  10.3MB/s                wordcraft-0.15.1-l  17%[==>                 ]  18.51M  10.2MB/s               wordcraft-0.15.1-li  19%[==>                 ]  20.23M  10.1MB/s               ordcraft-0.15.1-lin  21%[===>                ]  22.11M  10.0MB/s               rdcraft-0.15.1-linu  23%[===>                ]  24.29M  10.1MB/s               dcraft-0.15.1-linux  25%[====>               ]  26.44M  10.1MB/s               craft-0.15.1-linux-  27%[====>               ]  28.39M  10.1MB/s               raft-0.15.1-linux-x  29%[====>               ]  30.40M  10.1MB/s    eta 7s     aft-0.15.1-linux-x8  31%[=====>              ]  32.47M  10.4MB/s    eta 7s     ft-0.15.1-linux-x86  33%[=====>              ]  34.39M  10.1MB/s    eta 7s     t-0.15.1-linux-x86_  34%[=====>              ]  36.23M  10.1MB/s    eta 7s     -0.15.1-linux-x86_6  36%[======>             ]  38.43M  10.0MB/s    eta 7s     0.15.1-linux-x86_64  39%[======>             ]  40.67M  10.1MB/s    eta 6s     .15.1-linux-x86_64.  40%[=======>            ]  42.68M  10.1MB/s    eta 6s     15.1-linux-x86_64.A  42%[=======>            ]  44.67M  10.0MB/s    eta 6s     5.1-linux-x86_64.Ap  44%[=======>            ]  46.68M  10.0MB/s    eta 6s     .1-linux-x86_64.App  46%[========>           ]  48.72M  9.99MB/s    eta 6s     1-linux-x86_64.AppI  48%[========>           ]  50.93M  10.2MB/s    eta 5s     -linux-x86_64.AppIm  50%[=========>          ]  53.09M  10.3MB/s    eta 5s     linux-x86_64.AppIma  53%[=========>          ]  55.25M  10.3MB/s    eta 5s     inux-x86_64.AppImag  54%[=========>          ]  57.22M  10.2MB/s    eta 5s     nux-x86_64.AppImage  56%[==========>         ]  59.01M  10.1MB/s    eta 5s     ux-x86_64.AppImage   58%[==========>         ]  60.62M  10.0MB/s    eta 4s     x-x86_64.AppImage    60%[===========>        ]  62.59M  10.0MB/s    eta 4s     -x86_64.AppImage     62%[===========>        ]  64.67M  10.0MB/s    eta 4s     x86_64.AppImage      63%[===========>        ]  66.64M  10.0MB/s    eta 4s     86_64.AppImage       66%[============>       ]  68.82M  10.1MB/s    eta 4s     6_64.AppImage        68%[============>       ]  70.94M  10.1MB/s    eta 3s     _64.AppImage         70%[=============>      ]  73.11M  10.1MB/s    eta 3s     64.AppImage          72%[=============>      ]  75.09M  10.1MB/s    eta 3s     4.AppImage           74%[=============>      ]  77.15M  10.1MB/s    eta 3s     .AppImage            76%[==============>     ]  79.23M  10.1MB/s    eta 3s     AppImage             77%[==============>     ]  81.19M  10.1MB/s    eta 2s     ppImage              79%[==============>     ]  83.14M  9.97MB/s    eta 2s     pImage               81%[===============>    ]  85.14M  10.1MB/s    eta 2s     Image                83%[===============>    ]  87.34M  9.97MB/s    eta 2s     mage                 85%[================>   ]  89.51M  10.1MB/s    eta 2s     age                  87%[================>   ]  91.31M  10.2MB/s    eta 1s     ge                   89%[================>   ]  93.25M  10.2MB/s    eta 1s     e                    91%[=================>  ]  95.29M  10.2MB/s    eta 1s                          93%[=================>  ]  97.40M  10.3MB/s    eta 1s                       w  95%[==================> ]  99.51M  10.2MB/s    eta 1s                      wo  97%[==================> ] 101.65M  10.2MB/s    eta 0s                     wor  99%[==================> ] 103.75M  10.2MB/s    eta 0s     wordcraft-0.15.1-li 100%[===================>] 104.19M  10.2MB/s    in 10s     
+
+2026-11-04 14:46:53 (10.1 MB/s) - ‘wordcraft-0.15.1-linux-x86_64.AppImage’ saved [109246968/109246968]
+
+'usr/./bin/wordcraft' -> '/usr/./bin/wordcraft'
+'usr/./bin/wordcraft-cli' -> '/usr/./bin/wordcraft-cli'
+'usr/./share/applications/ai.storyteller.wordcraft.desktop' -> '/usr/./share/applications/ai.storyteller.wordcraft.desktop'
+'usr/./share/doc/wordcraft' -> '/usr/./share/doc/wordcraft'
+'usr/./share/doc/wordcraft/ATTRIBUTION.md' -> '/usr/./share/doc/wordcraft/ATTRIBUTION.md'
+'usr/./share/doc/wordcraft/LICENSE-APACHE' -> '/usr/./share/doc/wordcraft/LICENSE-APACHE'
+'usr/./share/doc/wordcraft/LICENSE-MIT' -> '/usr/./share/doc/wordcraft/LICENSE-MIT'
+'usr/./share/doc/wordcraft/NOTICE' -> '/usr/./share/doc/wordcraft/NOTICE'
+'usr/./share/doc/wordcraft/OFL-biz-ud-mincho.txt' -> '/usr/./share/doc/wordcraft/OFL-biz-ud-mincho.txt'
+'usr/./share/doc/wordcraft/OFL-biz-ud-pgothic.txt' -> '/usr/./share/doc/wordcraft/OFL-biz-ud-pgothic.txt'
+'usr/./share/doc/wordcraft/OFL-lxgw-wenkai-lite.txt' -> '/usr/./share/doc/wordcraft/OFL-lxgw-wenkai-lite.txt'
+'usr/./share/doc/wordcraft/OFL-nanum-gothic.txt' -> '/usr/./share/doc/wordcraft/OFL-nanum-gothic.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-arabic.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-arabic.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-cjk-sc.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-cjk-sc.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-devanagari.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-devanagari.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-georgian.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-georgian.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-hebrew.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-hebrew.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-symbols-2.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-symbols-2.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-symbols.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-symbols.txt'
+'usr/./share/doc/wordcraft/OFL-noto-sans-thai.txt' -> '/usr/./share/doc/wordcraft/OFL-noto-sans-thai.txt'
+'usr/./share/doc/wordcraft/OFL-shippori-mincho.txt' -> '/usr/./share/doc/wordcraft/OFL-shippori-mincho.txt'
+'usr/./share/doc/wordcraft/README.md' -> '/usr/./share/doc/wordcraft/README.md'
+'usr/./share/icons/hicolor/128x128/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/128x128/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/16x16/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/16x16/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/24x24/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/24x24/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/256x256/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/256x256/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/32x32/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/32x32/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/48x48/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/48x48/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/512x512/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/512x512/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/64x64/apps/ai.storyteller.wordcraft.png' -> '/usr/./share/icons/hicolor/64x64/apps/ai.storyteller.wordcraft.png'
+'usr/./share/icons/hicolor/scalable/apps/ai.storyteller.wordcraft.svg' -> '/usr/./share/icons/hicolor/scalable/apps/ai.storyteller.wordcraft.svg'
+'usr/./share/metainfo/ai.storyteller.wordcraft.metainfo.xml' -> '/usr/./share/metainfo/ai.storyteller.wordcraft.metainfo.xml'
+'usr/./share/mime/packages/ai.storyteller.wordcraft.xml' -> '/usr/./share/mime/packages/ai.storyteller.wordcraft.xml'
+'/usr/share/pixmaps/ai.storyteller.wordcraft.png' -> '/usr/share/icons/hicolor/512x512/apps/ai.storyteller.wordcraft.png'
+0.15.1
+Updated registry for wordcraft-bin to version 0.15.1
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package wordcraft-bin in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master 586c141] Updating packages
+ 2 files changed, 78 insertions(+), 76 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master da45396] Updating packages
+ 2 files changed, 2 insertions(+)
+Pushing changes in ~/build_duration...
+r13.1-35
+r13.1-547
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libexpat.so.1.13.0
+cand_sobase=libexpat.so
+search_base=libexpat
+replacement_found=true
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libexpat.so.1.13.0
+Path: /usr/lib/libexpat.so.1.13.0
+Skipping generic/unsafe name 'libexpat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libexpat.so.1 libexpat.so.1.13.0
+Example dependents: ./miniconda3/bin/dbus-daemon ./miniconda3/bin/xmlwf ./miniconda3/libexec/dbus-daemon-launch-helper ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libexpat.so.1.13.0:
+  - ./miniconda3/bin/dbus-daemon
+  - ./miniconda3/bin/xmlwf
+  - ./miniconda3/libexec/dbus-daemon-launch-helper
+  - ./miniconda3/lib/python3.14/lib-dynload/pyexpat.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libexpat.so.1.13.0.
+------------------------------------------------
+Checking obsolete version (file): libnghttp2.so.14.29.5
+Path: /usr/lib/libnghttp2.so.14.29.5
+Skipping generic/unsafe name 'libnghttp2.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libnghttp2.so.14 libnghttp2.so.14.29.5
+Example dependents: ./miniconda3/bin/nghttp ./miniconda3/bin/nghttpd ./miniconda3/bin/nghttpx ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libnghttp2.so.14.29.5:
+  - ./miniconda3/bin/nghttp
+  - ./miniconda3/bin/nghttpd
+  - ./miniconda3/bin/nghttpx
+  - ./miniconda3/lib/libcurl.so.4.8.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libnghttp2.so.14.29.5.
+Scanning /usr/share/doc for stale old-version directories...
+Removing stale: rapidjson-24b5e7a8b27f42fa16b96fc70aade9106cf7102f  (newer: rapidjson-297637bc0a0f00dc504dbc1a47ebdaa577f8ae19)
+---
+Removed : 1
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
