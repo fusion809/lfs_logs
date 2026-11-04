@@ -1,0 +1,914 @@
+===== Update check started: 2026-11-05 01:29:40 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261105_012940
+Packages needing attention: woxi-git
+===== Starting updatec: 2026-11-05 01:29:45 AEST =====
+Checking for packages with missing file inventories...
+name=libcloudproviders
+local_ver=0.4.1
+remote_ver=0.4.2
+name=libical
+local_ver=4.0.7
+remote_ver=65
+name=libjpeg-turbo
+local_ver=3.2.1
+remote_ver=10
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - libcloudproviders
+  - libical
+  - libjpeg-turbo
+  - woxi-git
+
+Building custom package libcloudproviders...
+[01:31:54] Found custom package for libcloudproviders, bypassing BLFS aliases.
+[01:31:54] Custom package detected at /home/fusion809/lfs_packaging/libcloudproviders (package: libcloudproviders)
+[01:31:54] Extracting dependencies for custom package 'libcloudproviders'...
+[01:31:54] Required deps: glib2 glibc libffi pcre2 systemd util-linux zlib 
+[01:31:54] Dependency 'glib2' already installed.
+[01:31:54] Dependency 'glibc' already installed.
+[01:31:54] Dependency 'libffi' already installed.
+[01:31:54] Dependency 'pcre2' already installed.
+[01:31:54] Dependency 'systemd' already installed.
+[01:31:54] Dependency 'util-linux' already installed.
+[01:31:54] Dependency 'zlib' already installed.
+[01:31:54] Starting remote custom build for libcloudproviders...
+--2026-11-05 01:32:10--  https://download.gnome.org/sources/libcloudproviders/0.4/libcloudproviders-0.4.2.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 143.244.62.9, 143.244.62.5, 2a02:6ea0:db00::11, ...
+Connecting to download.gnome.org (download.gnome.org)|143.244.62.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 24556 (24K) [application/octet-stream]
+Saving to: ‘libcloudproviders-0.4.2.tar.xz’
+
+          libcloudp   0%[                    ]       0  --.-KB/s               libcloudproviders-0 100%[===================>]  23.98K  --.-KB/s    in 0.02s   
+
+2026-11-05 01:32:12 (1.06 MB/s) - ‘libcloudproviders-0.4.2.tar.xz’ saved [24556/24556]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/libcloudproviders/libcloudproviders-0.4.2
+Build dir: /home/fusion809/lfs_packaging/libcloudproviders/libcloudproviders-0.4.2/build
+Build type: native build
+Project name: libcloudproviders
+Project version: 0.4.2
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Compiler for C supports arguments -Werror=pointer-arith: YES 
+Compiler for C supports arguments -Werror=init-self: YES 
+Compiler for C supports arguments -Werror=format-security -Werror=format=1: YES 
+Compiler for C supports arguments -Werror=date-time: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency glib-2.0 found: YES 2.90.1
+Run-time dependency gio-2.0 found: YES 2.90.1
+Run-time dependency gio-unix-2.0 found: YES 2.90.1
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program vapigen found: YES (/usr/bin/vapigen)
+Program vapigen found: YES (/usr/bin/vapigen)
+Build targets in project: 11
+
+libcloudproviders 0.4.2
+
+  Directories
+    bindir         : bin
+    libdir         : lib
+    libexecdir     : libexec
+    datadir        : share
+    includedir     : include
+
+  Configuration
+    Introspection  : true
+    Vala bindings  : true
+    Documentation  : false
+    Installed tests: false
+
+  User defined options
+    buildtype      : release
+    prefix         : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/21] Generating GObject enum file src/enums.h (wrapped by meson because command contains newlines, to capture output)
+[2/21] Generating GObject enum file src/enums.c (wrapped by meson because command contains newlines, to capture output)
+[3/21] Generating gdbus source src/cloudproviders-generated.c
+[4/21] Generating gdbus header src/cloudproviders-generated.h
+[5/21] Compiling C object test/testcloudprovidersclient.p/testcloudprovidersclient.c.o
+[6/21] Compiling C object test/testcloudprovidersserver.p/testcloudprovidersserver.c.o
+[7/21] Compiling C object src/libcloudproviders.so.0.4.2.p/meson-generated_.._enums.c.o
+[8/21] Compiling C object src/libcloudproviders.so.0.4.2.p/cloudproviderscollector.c.o
+[9/21] Compiling C object src/libcloudproviders.so.0.4.2.p/cloudprovidersaccount.c.o
+[10/21] Compiling C object src/libcloudproviders.so.0.4.2.p/meson-generated_.._cloudproviders-generated.c.o
+[11/21] Compiling C object src/libcloudproviders.so.0.4.2.p/cloudprovidersprovider.c.o
+[12/21] Compiling C object src/libcloudproviders.so.0.4.2.p/cloudprovidersaccountexporter.c.o
+[13/21] Generating gdbus markdown src/cloudproviders-generated-markdown
+[14/21] Compiling C object src/libcloudproviders.so.0.4.2.p/cloudprovidersproviderexporter.c.o
+[15/21] Linking target src/libcloudproviders.so.0.4.2
+[16/21] Generating symbol file src/libcloudproviders.so.0.4.2.p/libcloudproviders.so.0.4.2.symbols
+[17/21] Linking target test/testcloudprovidersserver
+[18/21] Linking target test/testcloudprovidersclient
+[19/21] Generating src/CloudProviders-0.3.gir with a custom command (wrapped by meson to set env)
+[20/21] Generating src/CloudProviders-0.3.typelib with a custom command
+[21/21] Generating src/cloudproviders.vapi with a custom command
+[1/2] Generating gdbus markdown src/cloudproviders-generated-markdown
+[1/2] Installing files
+Installing src/enums.h to /usr/include/cloudproviders
+Installing src/libcloudproviders.so.0.4.2 to /usr/lib
+Installing src/CloudProviders-0.3.gir to /usr/share/gir-1.0
+Installing src/CloudProviders-0.3.typelib to /usr/lib/girepository-1.0
+Installing src/cloudproviders.vapi to /usr/share/vala/vapi
+Installing /home/fusion809/lfs_packaging/libcloudproviders/libcloudproviders-0.4.2/src/cloudproviders.h to /usr/include/cloudproviders
+Installing /home/fusion809/lfs_packaging/libcloudproviders/libcloudproviders-0.4.2/src/cloudproviderscollector.h to /usr/include/cloudproviders
+Installing /home/fusion809/lfs_packaging/libcloudproviders/libcloudproviders-0.4.2/src/cloudprovidersaccount.h to /usr/include/cloudproviders
+Installing /home/fusion809/lfs_packaging/libcloudproviders/libcloudproviders-0.4.2/src/cloudprovidersaccountexporter.h to /usr/include/cloudproviders
+Installing /home/fusion809/lfs_packaging/libcloudproviders/libcloudproviders-0.4.2/src/cloudprovidersprovider.h to /usr/include/cloudproviders
+Installing /home/fusion809/lfs_packaging/libcloudproviders/libcloudproviders-0.4.2/src/cloudprovidersproviderexporter.h to /usr/include/cloudproviders
+Installing /home/fusion809/lfs_packaging/libcloudproviders/libcloudproviders-0.4.2/build/meson-private/cloudproviders.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/libcloudproviders/libcloudproviders-0.4.2/build/meson-private/cloudproviders.deps to /usr/share/vala/vapi
+Installing symlink pointing to libcloudproviders.so.0.4.2 to /usr/lib/libcloudproviders.so.0
+Installing symlink pointing to libcloudproviders.so.0 to /usr/lib/libcloudproviders.so
+0.4.2
+Updated registry for libcloudproviders to version 0.4.2
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package libcloudproviders in /var/lib/custom-packages/
+Building custom package libical...
+[01:32:25] Found custom package for libical, bypassing BLFS aliases.
+[01:32:25] Custom package detected at /home/fusion809/lfs_packaging/libical (package: libical)
+[01:32:25] Extracting dependencies for custom package 'libical'...
+[01:32:25] Required deps: cmake gcc glib2 glibc icu libffi libxml2 pcre2 vala 
+[01:32:25] Dependency 'cmake' already installed.
+[01:32:25] Dependency 'gcc' already installed.
+[01:32:25] Dependency 'glib2' already installed.
+[01:32:25] Dependency 'glibc' already installed.
+[01:32:25] Dependency 'icu' already installed.
+[01:32:25] Dependency 'libffi' already installed.
+[01:32:25] Dependency 'libxml2' already installed.
+[01:32:25] Dependency 'pcre2' already installed.
+[01:32:25] Dependency 'vala' already installed.
+[01:32:25] Starting remote custom build for libical...
+[01:32:26] [LFS-AUTOBUILD] Skipping custom package libical: version 4.0.7 already installed (use -f to force build).
+Building custom package libjpeg-turbo...
+[01:32:26] Found custom package for libjpeg-turbo, bypassing BLFS aliases.
+[01:32:26] Custom package detected at /home/fusion809/lfs_packaging/libjpeg-turbo (package: libjpeg-turbo)
+[01:32:26] Extracting dependencies for custom package 'libjpeg-turbo'...
+[01:32:26] Required deps: glibc 
+[01:32:26] Dependency 'glibc' already installed.
+[01:32:26] Starting remote custom build for libjpeg-turbo...
+[01:32:27] [LFS-AUTOBUILD] Skipping custom package libjpeg-turbo: version 3.2.1 already installed (use -f to force build).
+Building custom package woxi-git...
+[01:32:27] Found custom package for woxi-git, bypassing BLFS aliases.
+[01:32:27] Custom package detected at /home/fusion809/lfs_packaging/woxi-git (package: woxi-git)
+[01:32:27] Checking conflicting package(s) for 'woxi-git': woxi 
+[01:32:27] Extracting dependencies for custom package 'woxi-git'...
+[01:32:27] Required deps: gcc glibc rust 
+[01:32:27] Dependency 'gcc' already installed.
+[01:32:27] Dependency 'glibc' already installed.
+[01:32:27] Dependency 'rust' already installed.
+[01:32:27] Starting remote custom build for woxi-git...
+--2026-11-05 01:32:31--  https://github.com/ad-si/Woxi/archive/f597aff8c99a4064030f8b9a71ab77e93a335767.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/ad-si/Woxi/tar.gz/f597aff8c99a4064030f8b9a71ab77e93a335767 [following]
+--2026-11-05 01:32:32--  https://codeload.github.com/ad-si/Woxi/tar.gz/f597aff8c99a4064030f8b9a71ab77e93a335767
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘Woxi-f597aff8c99a4064030f8b9a71ab77e93a335767.tar.gz’
+
+          Woxi-f597     [<=>                 ]       0  --.-KB/s                        Woxi-f597a     [ <=>                ]   1011K  4.93MB/s                       Woxi-f597af     [  <=>               ]   3.19M  7.98MB/s                      Woxi-f597aff     [   <=>              ]   5.40M  9.00MB/s                     Woxi-f597aff8     [    <=>             ]   7.60M  9.50MB/s                    Woxi-f597aff8c     [     <=>            ]   9.80M  9.80MB/s                   Woxi-f597aff8c9     [      <=>           ]  12.01M  10.0MB/s                  Woxi-f597aff8c99     [       <=>          ]  14.07M  9.51MB/s                 Woxi-f597aff8c99a     [        <=>         ]  17.31M  10.3MB/s                Woxi-f597aff8c99a4     [         <=>        ]  19.37M  10.3MB/s               Woxi-f597aff8c99a40     [          <=>       ]  20.50M  9.81MB/s               oxi-f597aff8c99a406     [           <=>      ]  21.75M  9.48MB/s               xi-f597aff8c99a4064     [            <=>     ]  22.67M  9.09MB/s               i-f597aff8c99a40640     [             <=>    ]  23.68M  8.79MB/s               -f597aff8c99a406403     [              <=>   ]  24.50M  8.42MB/s               f597aff8c99a4064030     [               <=>  ]  25.37M  8.16MB/s               597aff8c99a4064030f     [                <=> ]  26.50M  8.24MB/s               97aff8c99a4064030f8     [                 <=>]  28.72M  8.29MB/s               Woxi-f597aff8c99a40     [                <=> ]  30.59M  8.18MB/s    in 3.7s    
+
+2026-11-05 01:32:36 (8.31 MB/s) - ‘Woxi-f597aff8c99a4064030f8b9a71ab77e93a335767.tar.gz’ saved [32072857]
+
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling cfg-if v1.0.5
+   Compiling libc v0.2.191
+   Compiling libm v0.2.16
+   Compiling memchr v2.8.3
+   Compiling syn v3.0.9
+   Compiling syn v2.0.119
+   Compiling log v0.4.34
+   Compiling autocfg v1.5.1
+   Compiling zerocopy v0.8.63
+   Compiling num-traits v0.2.19
+   Compiling zerocopy-derive v0.8.63
+   Compiling smallvec v1.16.4
+   Compiling bytemuck_derive v1.12.1
+   Compiling equivalent v1.0.3
+   Compiling typenum v1.20.1
+   Compiling simd-adler32 v0.3.10
+   Compiling bytemuck v1.25.2
+   Compiling crc32fast v1.5.3
+   Compiling adler2 v2.0.1
+   Compiling hybrid-array v0.4.15
+   Compiling serde_core v1.0.229
+   Compiling rand_core v0.10.1
+   Compiling miniz_oxide v0.9.1
+   Compiling getrandom v0.4.3
+   Compiling hashbrown v0.17.1
+   Compiling zlib-rs v0.6.8
+   Compiling indexmap v2.14.2
+   Compiling ppv-lite86 v0.2.21
+   Compiling crypto-common v0.2.2
+   Compiling flate2 v1.1.10
+   Compiling getrandom v0.2.17
+   Compiling shlex v2.0.1
+   Compiling scopeguard v1.2.0
+   Compiling find-msvc-tools v0.1.15
+   Compiling cc v1.10.0
+   Compiling rustversion v1.0.23
+   Compiling getrandom v0.3.4
+   Compiling arrayvec v0.7.8
+   Compiling serde v1.0.229
+   Compiling bitflags v2.13.2
+   Compiling futures-sink v0.3.34
+   Compiling futures-core v0.3.34
+   Compiling pin-project-lite v0.2.17
+   Compiling serde_derive v1.0.229
+   Compiling futures-io v0.3.34
+   Compiling futures-channel v0.3.34
+   Compiling rand_core v0.6.4
+   Compiling block-buffer v0.12.1
+   Compiling futures-macro v0.3.34
+   Compiling aho-corasick v1.1.5
+   Compiling futures-task v0.3.34
+   Compiling const-oid v0.10.2
+   Compiling slab v0.4.12
+   Compiling parking_lot_core v0.9.12
+   Compiling regex-syntax v0.8.11
+   Compiling futures-util v0.3.34
+   Compiling regex-automata v0.4.18
+   Compiling digest v0.11.3
+   Compiling rand_chacha v0.3.1
+   Compiling rand_core v0.9.5
+   Compiling version_check v0.9.5
+   Compiling tinyvec v1.13.3
+   Compiling bytes v1.12.1
+   Compiling foldhash v0.2.0
+   Compiling cpufeatures v0.3.1
+   Compiling itoa v1.0.18
+   Compiling siphasher v1.0.4
+   Compiling slotmap v1.1.1
+   Compiling rand v0.8.8
+   Compiling encoding_rs v0.8.42
+   Compiling lock_api v0.4.14
+   Compiling block-padding v0.4.2
+   Compiling miniz_oxide v0.8.9
+   Compiling fdeflate v0.3.7
+   Compiling core_maths v0.1.1
+   Compiling errno v0.3.14
+   Compiling zmij v1.0.23
+   Compiling utf8parse v0.2.2
+   Compiling thiserror v2.0.21
+   Compiling crossbeam-utils v0.8.23
+   Compiling weezl v0.1.12
+   Compiling unicode-properties v0.1.4
+   Compiling thiserror v1.0.69
+   Compiling float-cmp v0.9.0
+   Compiling strict-num v0.1.1
+   Compiling signal-hook-registry v1.4.8
+   Compiling ttf-parser v0.25.1
+   Compiling inout v0.2.5
+   Compiling parking_lot v0.12.5
+   Compiling regex v1.13.1
+   Compiling futures-executor v0.3.34
+   Compiling font-types v0.11.3
+   Compiling thiserror-impl v2.0.21
+   Compiling tokio-macros v2.7.2
+   Compiling thiserror-impl v1.0.69
+   Compiling mio v1.2.4
+   Compiling socket2 v0.6.5
+   Compiling iana-time-zone v0.1.65
+   Compiling simdutf8 v0.1.5
+   Compiling saa v5.6.2
+   Compiling color_quant v1.1.0
+   Compiling ucd-trie v0.1.7
+   Compiling roxmltree v0.20.0
+   Compiling multiversion_no_op v1.0.0
+   Compiling unicode-bidi v0.3.18
+   Compiling serde_json v1.0.154
+   Compiling option-ext v0.2.0
+   Compiling arrayref v0.3.9
+   Compiling core_detect v1.0.0
+   Compiling quick-error v2.0.1
+   Compiling sha1_smol v1.0.1
+   Compiling uuid v1.29.0
+   Compiling tiny-skia-path v0.11.4
+   Compiling fontconfig-parser v0.5.8
+   Compiling dirs-sys v0.5.0
+   Compiling pest v2.8.8
+   Compiling sdd v4.8.11
+   Compiling tokio v1.54.1
+   Compiling chrono v0.4.45
+   Compiling read-fonts v0.39.2
+   Compiling futures v0.3.34
+   Compiling cipher v0.5.2
+   Compiling anstyle-parse v1.0.0
+   Compiling rand_chacha v0.9.0
+   Compiling ring v0.17.14
+   Compiling kurbo v0.11.3
+   Compiling polycool v0.4.0
+   Compiling num-integer v0.1.47
+   Compiling async-trait v0.1.92
+   Compiling memmap2 v0.9.12
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling colorchoice v1.0.5
+   Compiling radium v0.7.0
+   Compiling either v1.19.0
+   Compiling once_cell v1.21.4
+   Compiling bumpalo v3.20.3
+   Compiling anstyle v1.0.14
+   Compiling unicode-ccc v0.4.0
+   Compiling cfg_aliases v0.2.2
+   Compiling anstyle-query v1.1.5
+   Compiling bitflags v1.3.2
+   Compiling unicode-script v0.5.8
+   Compiling byteorder-lite v0.1.0
+   Compiling syn v1.0.109
+   Compiling unicode-bidi-mirroring v0.4.0
+   Compiling rustybuzz v0.20.1
+   Compiling anstream v1.0.0
+   Compiling png v0.17.16
+   Compiling nix v0.31.3
+   Compiling zopfli v0.8.4
+   Compiling itertools v0.10.5
+   Compiling fontdb v0.23.0
+   Compiling num-bigint v0.4.8
+   Compiling kurbo v0.13.1
+   Compiling svgtypes v0.15.3
+   Compiling rand v0.9.5
+   Compiling crossbeam-queue v0.3.14
+   Compiling tokio-util v0.7.20
+   Compiling scc v3.8.8
+   Compiling pest_meta v2.8.8
+   Compiling asynchronous-codec v0.7.0
+   Compiling chacha20 v0.10.2
+   Compiling psm v0.1.24
+   Compiling simplecss v0.2.2
+   Compiling tap v1.0.1
+   Compiling lazy_static v1.5.1
+   Compiling untrusted v0.9.0
+   Compiling unicode-vo v0.1.0
+   Compiling typed-path v0.13.0
+   Compiling imagesize v0.13.0
+   Compiling zune-core v0.5.3
+   Compiling zune-core v0.4.12
+   Compiling allocator-api2 v0.2.21
+   Compiling data-url v0.3.2
+   Compiling xmlwriter v0.1.0
+   Compiling base64 v0.22.1
+   Compiling pico-args v0.5.0
+   Compiling alloc-no-stdlib v2.0.4
+   Compiling alloc-stdlib v0.2.4
+   Compiling usvg v0.45.1
+   Compiling hashbrown v0.16.1
+   Compiling zip v9.1.2
+   Compiling zune-jpeg v0.4.21
+   Compiling zune-jpeg v0.5.15
+   Compiling astro-float-num v0.3.7
+   Compiling wyz v0.5.1
+   Compiling pest_generator v2.8.8
+   Compiling rand v0.10.3
+   Compiling zeromq v0.6.0
+   Compiling jupyter-protocol v2.0.2
+   Compiling write-fonts v0.48.1
+   Compiling tiny-skia v0.11.4
+   Compiling image-webp v0.2.4
+   Compiling skrifa v0.42.1
+   Compiling dirs v6.0.0
+   Compiling gif v0.13.3
+   Compiling phf_shared v0.12.1
+   Compiling unicode-normalization v0.1.26
+   Compiling stacker v0.1.25
+   Compiling half v2.7.1
+   Compiling rgb v0.8.53
+   Compiling safe_arch v0.7.4
+   Compiling nibble_vec v0.1.0
+   Compiling bit-vec v0.8.0
+   Compiling clap_lex v1.1.1
+   Compiling cpubits v0.1.1
+   Compiling foldhash v0.1.5
+   Compiling ryu v1.0.23
+   Compiling anyhow v1.0.104
+   Compiling data-encoding v2.11.1
+   Compiling ieee754 v0.2.6
+   Compiling endian-type v0.2.0
+   Compiling strsim v0.11.1
+   Compiling fax v0.2.7
+   Compiling plotters-backend v0.3.7
+   Compiling pxfm v0.1.30
+   Compiling heck v0.5.0
+   Compiling debug_unsafe v0.1.4
+   Compiling jiff-core v0.1.1
+   Compiling funty v2.0.0
+   Compiling rustc-hash v2.1.3
+   Compiling chrono-tz v0.10.4
+   Compiling subsetter v0.2.6
+   Compiling bitvec v1.1.1
+   Compiling jiff v0.2.38
+   Compiling atoi_simd v0.18.1
+   Compiling clap_derive v4.6.7
+   Compiling moxcms v0.8.1
+   Compiling plotters-svg v0.3.7
+   Compiling tiff v0.11.3
+   Compiling clap_builder v4.6.7
+   Compiling radix_trie v0.3.0
+   Compiling accurate v0.3.1
+   Compiling jupyter-zmq-client v1.0.1
+   Compiling pdf-writer v0.12.1
+   Compiling hashbrown v0.15.5
+   Compiling aes v0.9.3
+   Compiling bit-set v0.8.0
+   Compiling wide v0.7.33
+   Compiling resvg v0.45.1
+   Compiling stringprep v0.1.5
+   Compiling phf v0.12.1
+   Compiling astro-float-macro v0.4.6
+   Compiling pest_derive v2.8.8
+   Compiling lru v0.16.4
+   Compiling brotli-decompressor v5.0.3
+   Compiling num-modular v0.6.5
+   Compiling cbc v0.2.1
+   Compiling ecb v0.2.1
+   Compiling codepage v0.1.3
+   Compiling quick-xml v0.42.0
+   Compiling gif v0.14.2
+   Compiling env_filter v2.0.0
+   Compiling png v0.18.1
+   Compiling sha2 v0.11.1
+   Compiling rand_xoshiro v0.7.0
+   Compiling md-5 v0.11.0
+   Compiling nom v8.0.0
+   Compiling keccak v0.2.2
+   Compiling unicode_categories v0.1.1
+   Compiling byteorder v1.5.0
+   Compiling woxi v0.3.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-f597aff8c99a4064030f8b9a71ab77e93a335767)
+   Compiling unicode-width v0.2.2
+   Compiling sponge-cursor v0.1.0
+   Compiling archery v1.2.3
+   Compiling fast-float2 v0.2.4
+   Compiling imbl-sized-chunks v0.2.0
+   Compiling fixedbitset v0.5.7
+   Compiling unicode-segmentation v1.13.3
+   Compiling weezl v0.2.1
+   Compiling home v0.5.12
+   Compiling rangemap v1.8.0
+   Compiling rustyline v19.0.0
+   Compiling lopdf v0.46.0
+   Compiling imbl v7.0.2
+   Compiling petgraph v0.8.3
+   Compiling calamine v0.37.0
+   Compiling sha3 v0.12.0
+   Compiling snailquote v0.3.1
+   Compiling image v0.25.10
+   Compiling env_logger v0.11.11
+   Compiling num-prime v0.7.0
+   Compiling woxi-parser v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-f597aff8c99a4064030f8b9a71ab77e93a335767/crates/woxi-parser)
+   Compiling astro-float v0.9.6
+   Compiling svg2pdf v0.13.0
+   Compiling fancy-regex v0.20.0
+   Compiling clap v4.6.7
+   Compiling runtimelib v3.0.0
+   Compiling geographiclib-rs v0.2.7
+   Compiling plotters v0.3.7
+   Compiling rand_distr v0.6.0
+   Compiling rust_xlsxwriter v0.101.0
+   Compiling woxi-reduce v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-f597aff8c99a4064030f8b9a71ab77e93a335767/crates/woxi-reduce)
+   Compiling dirs v7.0.0
+   Compiling sha1 v0.11.0
+   Compiling ripemd v0.2.0
+   Compiling md4 v0.11.0
+   Compiling rand_chacha v0.10.0
+   Compiling lz4_flex v0.14.0
+   Compiling base64 v0.23.1
+   Compiling web-time v1.1.0
+    Finished `release` profile [optimized] target(s) in 72m 13s
+   Compiling syn v3.0.9
+   Compiling syn v2.0.119
+   Compiling smallvec v1.16.4
+   Compiling libloading v0.8.9
+   Compiling rustix v1.1.6
+   Compiling linux-raw-sys v0.12.1
+   Compiling bytemuck_derive v1.12.1
+   Compiling zerocopy-derive v0.8.63
+   Compiling bytemuck v1.25.2
+   Compiling crossbeam-utils v0.8.23
+   Compiling thiserror-impl v2.0.21
+   Compiling zerocopy v0.8.63
+   Compiling pkg-config v0.3.34
+   Compiling arrayvec v0.7.8
+   Compiling thiserror v2.0.21
+   Compiling slab v0.4.12
+   Compiling serde_derive v1.0.229
+   Compiling wayland-sys v0.31.11
+   Compiling dlib v0.5.3
+   Compiling wayland-backend v0.3.17
+   Compiling scoped-tls v1.0.1
+   Compiling downcast-rs v1.2.1
+   Compiling ppv-lite86 v0.2.21
+   Compiling quick-xml v0.41.0
+   Compiling wayland-client v0.31.15
+   Compiling parking_lot_core v0.9.12
+   Compiling rand_chacha v0.3.1
+   Compiling parking_lot v0.12.5
+   Compiling futures-channel v0.3.34
+   Compiling wayland-scanner v0.31.11
+   Compiling rand v0.8.8
+   Compiling ttf-parser v0.25.1
+   Compiling futures-macro v0.3.34
+   Compiling crossbeam-epoch v0.9.21
+   Compiling unicode-ident v1.0.27
+   Compiling futures-util v0.3.34
+   Compiling serde v1.0.229
+   Compiling polling v3.11.0
+   Compiling crossbeam-deque v0.8.8
+   Compiling num-bigint v0.4.8
+   Compiling half v2.7.1
+   Compiling profiling-procmacros v1.0.18
+   Compiling tracing-attributes v0.1.31
+   Compiling tracing-core v0.1.36
+   Compiling rayon-core v1.13.0
+   Compiling raw-window-handle v0.6.2
+   Compiling profiling v1.0.18
+   Compiling futures-executor v0.3.34
+   Compiling tracing v0.1.44
+   Compiling equator-macro v0.4.2
+   Compiling tokio-macros v2.7.2
+   Compiling serde_core v1.0.229
+   Compiling equator v0.4.2
+   Compiling futures v0.3.34
+   Compiling tokio v1.54.1
+   Compiling paste v1.0.15
+   Compiling parking v2.2.1
+   Compiling fastrand v2.5.0
+   Compiling aligned-vec v0.6.4
+   Compiling stable_deref_trait v1.2.1
+   Compiling smol_str v0.2.2
+   Compiling winnow v1.0.4
+   Compiling rustc-hash v1.1.0
+   Compiling as-slice v0.2.1
+   Compiling v_frame v0.3.9
+   Compiling fontdb v0.23.0
+   Compiling rayon v1.12.0
+   Compiling num-rational v0.4.2
+   Compiling wayland-protocols v0.32.13
+   Compiling equivalent v1.0.3
+   Compiling hashbrown v0.17.1
+   Compiling av-scenechange v0.14.1
+   Compiling built v0.8.1
+   Compiling rav1e v0.8.1
+   Compiling indexmap v2.14.2
+   Compiling tiny-skia-path v0.11.4
+   Compiling aligned v0.4.3
+   Compiling toml_parser v1.1.5+spec-1.1.0
+   Compiling pulp v0.22.3
+   Compiling rgb v0.8.53
+   Compiling font-types v0.10.1
+   Compiling font-types v0.12.7
+   Compiling thiserror-impl v1.0.69
+   Compiling arg_enum_proc_macro v0.3.4
+   Compiling no_std_io2 v0.9.4
+   Compiling y4m v0.8.0
+   Compiling pastey v0.1.1
+   Compiling toml_datetime v1.1.2+spec-1.1.0
+   Compiling toml_edit v0.25.17+spec-1.1.0
+   Compiling thiserror v1.0.69
+   Compiling bitstream-io v4.10.0
+   Compiling read-fonts v0.41.0
+   Compiling read-fonts v0.35.0
+   Compiling lilt v0.8.2
+   Compiling av1-grain v0.2.5
+   Compiling maybe-rayon v0.1.1
+   Compiling itertools v0.14.0
+   Compiling num-complex v0.4.6
+   Compiling enumflags2_derive v0.7.12
+   Compiling num-derive v0.4.2
+   Compiling raw-cpuid v11.6.0
+   Compiling simd_helpers v0.1.0
+   Compiling imgref v1.12.3
+   Compiling reborrow v0.5.5
+   Compiling new_debug_unreachable v1.0.6
+   Compiling noop_proc_macro v0.3.0
+   Compiling pulp-wasm-simd-flag v0.1.1
+   Compiling glam v0.25.0
+   Compiling iced_core v0.14.0
+   Compiling loop9 v0.1.5
+   Compiling skrifa v0.44.0
+   Compiling tiny-skia v0.11.4
+   Compiling proc-macro-crate v3.5.0
+   Compiling zvariant_utils v4.2.0
+   Compiling event-listener v5.4.2
+   Compiling naga v27.0.3
+   Compiling zune-inflate v0.2.54
+   Compiling concurrent-queue v2.5.0
+   Compiling avif-serialize v0.8.9
+   Compiling proc-macro2 v1.0.107
+   Compiling ash v0.38.0+1.3.281
+   Compiling bit_field v0.10.3
+   Compiling zeno v0.3.3
+   Compiling lebe v0.5.3
+   Compiling as-raw-xcb-connection v1.0.1
+   Compiling yazi v0.2.1
+   Compiling khronos-egl v6.0.0
+   Compiling swash v0.2.10
+   Compiling tiff v0.11.3
+   Compiling exr v1.74.2
+   Compiling ravif v0.13.0
+   Compiling zvariant_derive v5.15.1
+   Compiling event-listener-strategy v0.5.4
+   Compiling iced_futures v0.14.0
+   Compiling harfrust v0.3.2
+   Compiling skrifa v0.37.0
+   Compiling codespan-reporting v0.12.0
+   Compiling futures-lite v2.6.1
+   Compiling wgpu-hal v27.0.4
+   Compiling kurbo v0.11.3
+   Compiling gethostname v1.1.0
+   Compiling qoi v0.4.1
+   Compiling async-trait v0.1.92
+   Compiling gpu-descriptor-types v0.2.0
+   Compiling gpu-alloc-types v0.3.1
+   Compiling spirv v0.3.0+sdk-1.3.268.0
+   Compiling quote v1.0.47
+   Compiling xcursor v0.3.11
+   Compiling hexf-parse v0.2.1
+   Compiling cursor-icon v1.2.0
+   Compiling linebender_resource_handle v0.1.1
+   Compiling sys-locale v0.3.2
+   Compiling x11rb-protocol v0.13.2
+   Compiling self_cell v1.3.0
+   Compiling unicode-linebreak v0.1.5
+   Compiling xkeysym v0.2.1
+   Compiling cosmic-text v0.15.0
+   Compiling rustybuzz v0.20.1
+   Compiling x11rb v0.13.2
+   Compiling wayland-csd-frame v0.3.0
+   Compiling wayland-cursor v0.31.14
+   Compiling gpu-alloc v0.6.2
+   Compiling gpu-descriptor v0.3.2
+   Compiling svgtypes v0.15.3
+   Compiling image v0.25.10
+   Compiling wayland-protocols-wlr v0.3.12
+   Compiling wgpu-types v27.0.1
+   Compiling ordered-float v5.5.1
+   Compiling async-io v2.6.0
+   Compiling glow v0.16.0
+   Compiling rustix v0.38.44
+   Compiling mutate_once v0.1.2
+   Compiling renderdoc-sys v1.1.0
+   Compiling usvg v0.45.1
+   Compiling kamadak-exif v0.6.1
+   Compiling enumflags2 v0.7.12
+   Compiling zcheapstr v1.1.0
+   Compiling wgpu-core v27.0.3
+   Compiling litrs v1.0.1
+   Compiling linux-raw-sys v0.4.15
+   Compiling async-task v4.7.1
+   Compiling endi v1.1.1
+   Compiling zvariant v5.15.1
+   Compiling document-features v0.2.12
+   Compiling resvg v0.45.1
+   Compiling iced_graphics v0.14.0
+   Compiling wgpu-core-deps-windows-linux-android v27.0.0
+   Compiling async-channel v2.5.0
+   Compiling calloop v0.14.5
+   Compiling wgpu v27.0.1
+   Compiling tiny-xlib v0.2.5
+   Compiling euclid v0.22.14
+   Compiling smithay-client-toolkit v0.20.0
+   Compiling svg_fmt v0.4.5
+   Compiling atomic-waker v1.1.2
+   Compiling piper v0.2.5
+   Compiling calloop-wayland-source v0.4.1
+   Compiling async-signal v0.2.14
+   Compiling calloop v0.13.0
+   Compiling zbus_names v4.3.5
+   Compiling iced_debug v0.14.0
+   Compiling async-lock v3.4.2
+   Compiling wayland-protocols-misc v0.3.12
+   Compiling wayland-protocols-experimental v20250721.0.1
+   Compiling font-types v0.11.3
+   Compiling static_assertions v1.1.0
+   Compiling smithay-client-toolkit v0.19.2
+   Compiling ctor v0.10.1
+   Compiling chrono v0.4.45
+   Compiling read-fonts v0.39.2
+   Compiling async-process v2.5.0
+   Compiling zbus_macros v5.19.0
+   Compiling calloop-wayland-source v0.3.0
+   Compiling blocking v1.7.0
+   Compiling etagere v0.2.15
+   Compiling async-executor v1.14.0
+   Compiling rand_chacha v0.9.0
+   Compiling async-broadcast v0.7.2
+   Compiling owned_ttf_parser v0.25.1
+   Compiling ahash v0.8.12
+   Compiling ordered-stream v0.2.0
+   Compiling polycool v0.4.0
+   Compiling x11-dl v2.21.0
+   Compiling serde_repr v0.1.21
+   Compiling async-recursion v1.2.0
+   Compiling android-build v0.1.4
+   Compiling hex v0.4.3
+   Compiling ab_glyph_rasterizer v0.1.10
+   Compiling zbus v5.19.0
+   Compiling ab_glyph v0.2.32
+   Compiling mundy v0.2.3
+   Compiling kurbo v0.13.1
+   Compiling rand v0.9.5
+   Compiling cryoglyph v0.1.0
+   Compiling smithay-clipboard v0.7.3
+   Compiling softbuffer v0.4.8
+   Compiling guillotiere v0.6.2
+   Compiling tokio-util v0.7.20
+   Compiling asynchronous-codec v0.7.0
+   Compiling winit v0.30.13
+   Compiling crossbeam-queue v0.3.14
+   Compiling kurbo v0.10.4
+   Compiling percent-encoding v2.3.2
+   Compiling zeromq v0.6.0
+   Compiling iced_tiny_skia v0.14.1
+   Compiling iced_wgpu v0.14.0
+   Compiling pest_generator v2.8.8
+   Compiling clipboard_wayland v0.2.2
+   Compiling sctk-adwaita v0.10.1
+   Compiling jupyter-protocol v2.0.2
+   Compiling write-fonts v0.48.1
+   Compiling skrifa v0.42.1
+   Compiling clipboard_x11 v0.4.3
+   Compiling xkbcommon-dl v0.4.2
+   Compiling iced_runtime v0.14.0
+   Compiling wayland-protocols-plasma v0.3.12
+   Compiling safe_arch v0.7.4
+   Compiling nibble_vec v0.1.0
+   Compiling dpi v0.1.2
+   Compiling clap_derive v4.6.7
+   Compiling radix_trie v0.3.0
+   Compiling astro-float-num v0.3.7
+   Compiling jupyter-zmq-client v1.0.1
+   Compiling wide v0.7.33
+   Compiling iced_program v0.14.0
+   Compiling subsetter v0.2.6
+   Compiling window_clipboard v0.5.1
+   Compiling pest_derive v2.8.8
+   Compiling iced_renderer v0.14.0
+   Compiling num-modular v0.6.5
+   Compiling rfd v0.17.2
+   Compiling dark-light v3.0.0
+   Compiling rustyline v19.0.0
+   Compiling calamine v0.37.0
+   Compiling lopdf v0.46.0
+   Compiling imbl v7.0.2
+   Compiling woxi v0.3.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-f597aff8c99a4064030f8b9a71ab77e93a335767)
+   Compiling snailquote v0.3.1
+   Compiling num-prime v0.7.0
+   Compiling iced_widget v0.14.2
+   Compiling iced_winit v0.14.1
+   Compiling woxi-parser v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-f597aff8c99a4064030f8b9a71ab77e93a335767/crates/woxi-parser)
+   Compiling astro-float v0.9.6
+   Compiling svg2pdf v0.13.0
+   Compiling chrono-tz v0.10.4
+   Compiling runtimelib v3.0.0
+   Compiling clap v4.6.7
+   Compiling woxi-reduce v0.1.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-f597aff8c99a4064030f8b9a71ab77e93a335767/crates/woxi-reduce)
+   Compiling rand_chacha v0.10.0
+   Compiling pollster v0.4.0
+   Compiling iced v0.14.0
+   Compiling woxi-studio v0.3.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi-f597aff8c99a4064030f8b9a71ab77e93a335767/woxi-studio)
+    Finished `release` profile [optimized] target(s) in 81m 48s
+--2026-11-05 04:06:34--  https://woxi.ad-si.com/docs/favicon.png
+Resolving woxi.ad-si.com (woxi.ad-si.com)... 185.199.111.153, 185.199.109.153, 185.199.108.153, ...
+Connecting to woxi.ad-si.com (woxi.ad-si.com)|185.199.111.153|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 35750 (35K) [image/png]
+Saving to: ‘woxi.png’
+
+     0K .......... .......... .......... ....                 100% 3.89M=0.009s
+
+2026-11-05 04:06:35 (3.89 MB/s) - ‘woxi.png’ saved [35750/35750]
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Woxi Studio
+Comment=Native notebook editor for the Wolfram Language
+Exec=/usr/bin/woxi-studio
+TryExec=/usr/bin/woxi-studio
+Icon=woxi
+Terminal=false
+Categories=Education;Science;Math;
+StartupNotify=true
+f597aff8c99a4064030f8b9a71ab77e93a335767
+Updated registry for woxi-git to version eb4e4b0698f31f6951a665bc144d4e9df580a87f
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package woxi-git in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master 0e2a9f0] Updating packages
+ 2 files changed, 22 insertions(+), 23 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master 9f3ed7c] Updating packages
+ 2 files changed, 2 insertions(+)
+Pushing changes in ~/build_duration...
+r13.1-35
+r13.1-550
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libcloudproviders.so.0.4.1
+cand_sobase=libcloudproviders.so
+search_base=libcloudproviders
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libexpat.so.1.13.0
+cand_sobase=libexpat.so
+search_base=libexpat
+replacement_found=true
+Skipping registered directory: /usr/lib/giomm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/glibmm-2.4 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libcloudproviders.so.0.4.1
+Path: /usr/lib/libcloudproviders.so.0.4.1
+Skipping generic/unsafe name 'libcloudproviders.so.' to prevent false positive matches.
+i_dir=/usr/lib
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libcloudproviders.so.0.4.1...
+------------------------------------------------
+Checking obsolete version (file): libexpat.so.1.13.0
+Path: /usr/lib/libexpat.so.1.13.0
+Skipping generic/unsafe name 'libexpat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libexpat.so.1 libexpat.so.1.13.0
+Example dependents: ./miniconda3/bin/dbus-daemon ./miniconda3/bin/xmlwf ./miniconda3/libexec/dbus-daemon-launch-helper ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libexpat.so.1.13.0:
+  - ./miniconda3/bin/dbus-daemon
+  - ./miniconda3/bin/xmlwf
+  - ./miniconda3/libexec/dbus-daemon-launch-helper
+  - ./miniconda3/lib/python3.14/lib-dynload/pyexpat.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libexpat.so.1.13.0.
+------------------------------------------------
+Checking obsolete version (file): libnghttp2.so.14.29.5
+Path: /usr/lib/libnghttp2.so.14.29.5
+Skipping generic/unsafe name 'libnghttp2.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libnghttp2.so.14 libnghttp2.so.14.29.5
+Example dependents: ./miniconda3/bin/nghttp ./miniconda3/bin/nghttpd ./miniconda3/bin/nghttpx ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libnghttp2.so.14.29.5:
+  - ./miniconda3/bin/nghttp
+  - ./miniconda3/bin/nghttpd
+  - ./miniconda3/bin/nghttpx
+  - ./miniconda3/lib/libcurl.so.4.8.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libnghttp2.so.14.29.5.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
