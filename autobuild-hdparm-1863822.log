@@ -1,0 +1,42 @@
+[10:19:43] [LFS-AUTOBUILD] Script initialization complete. Version 2026.04.02.1
+[10:19:46] Searching for 'hdparm' in BLFS index...
+[10:19:48] Found package page: https://linuxfromscratch.org/blfs/view/systemd/general/hdparm.html
+[10:19:48] Fetching content from https://linuxfromscratch.org/blfs/view/systemd/general/hdparm.html...
+[10:19:49] Extracting required dependencies from page...
+[10:19:49] No required dependencies found on page.
+[10:19:50] Extracted commands: # __BEGIN_USER__
+make -j$(nproc)
+
+# __END_USER__
+# __BEGIN_ROOT__
+make binprefix=/usr install
+
+# __END_ROOT__
+
+[10:19:50] Checking for generic upstream resolution via lfs_get_upstream_version...
+[10:19:50] Upstream flag ignored for package 'hdparm' (no upstream fetching logic defined)
+[10:19:50] Package base name for search: hdparm
+[10:19:50] Identified main archive: https://downloads.sourceforge.net/hdparm/hdparm-9.65.tar.gz
+[10:19:50] Extracted version from URL: 9.65
+[10:19:50] Total files to download: 1
+[VERSION] hdparm: 9.65
+[10:19:50] Installing hdparm version: 9.65
+------------------------------------------------------------
+DRY RUN: Download URLs for hdparm
+------------------------------------------------------------
+https://downloads.sourceforge.net/hdparm/hdparm-9.65.tar.gz
+------------------------------------------------------------
+DRY RUN: Commands for hdparm (annotated with privilege level)
+------------------------------------------------------------
+[USER] make -j$(nproc)
+[ROOT] echo "[LFS-AUTOBUILD] Staging installation for full inventory..."
+[ROOT] DDIR="/tmp/destdir_hdparm"
+[ROOT] rm -rf "$DDIR" && mkdir -p "$DDIR"
+[ROOT] make binprefix=/usr install DESTDIR="$DDIR" || true
+[ROOT] make binprefix=/usr install
+[ROOT] if [ -d "$DDIR" ] && [ "$(ls -A "$DDIR" 2>/dev/null)" ]; then
+[ROOT]   sudo mkdir -p "/tmp/pkg_inventory"
+[ROOT]   find "$DDIR" -mindepth 1 -printf "/%P\n" | sudo tee -a "/tmp/pkg_inventory/hdparm" > /dev/null
+[ROOT]   sudo rm -rf "$DDIR"
+[ROOT] fi
+------------------------------------------------------------
