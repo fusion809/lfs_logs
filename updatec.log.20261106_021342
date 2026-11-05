@@ -1,0 +1,65 @@
+===== Update check started: 2026-11-06 02:13:42 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261106_021342
+Packages needing attention: gwenview ketcher-desktop-git kweather libkdcraw libkexiv2 okular reshiki-git woxi-git
+===== Starting updatec: 2026-11-06 02:14:16 AEST =====
+Checking for packages with missing file inventories...
+Failed to check custom update version for: chemcanvas-git
+name=chemcanvas-git
+local_ver=c0a84b5
+remote_ver=FAILED
+name=gwenview
+local_ver=26.08.2
+remote_ver=26.08.3
+name=ketcher-desktop-git
+local_ver=ac03ddc
+remote_ver=3072ac4
+name=kweather
+local_ver=26.08.2
+remote_ver=26.08.3
+name=libkdcraw
+local_ver=26.08.2
+remote_ver=26.08.3
+name=libkexiv2
+local_ver=26.08.2
+remote_ver=26.08.3
+name=okular
+local_ver=26.08.2
+remote_ver=26.08.3
+name=reshiki-git
+local_ver=6e7f1dc
+remote_ver=b6984c5
+name=systemd
+local_ver=262.1
+remote_ver=262.2
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - ketcher-desktop-git
+  - okular
+  - systemd
+  - kweather
+  - libkdcraw
+  - gwenview
+  - libkexiv2
+  - reshiki-git
+  - woxi-git
+
+Building custom package ketcher-desktop-git...
+[02:18:59] Found custom package for ketcher-desktop-git, bypassing BLFS aliases.
+[02:19:00] Custom package detected at /home/fusion809/lfs_packaging/ketcher-desktop-git (package: ketcher-desktop-git)
+[02:19:00] Extracting dependencies for custom package 'ketcher-desktop-git'...
+[VERSION] ketcher-desktop-git: 3072ac4436e3e6da3174d3eb44f76b50e8e3b0ca
+[02:19:01] Installing ketcher-desktop-git version: 3072ac4436e3e6da3174d3eb44f76b50e8e3b0ca
+[02:19:01] Starting remote custom build for ketcher-desktop-git...
+Repository size: 1.32 MiB
+Expected one source patch anchor, found 0: 'function createWindow() {'
+[ERROR] build.sh exited with code 1 for ketcher-desktop-git
+[ERROR] Custom build failed for ketcher-desktop-git
+[02:19:33] ========================================
+[02:19:33] Build completed with 1 failure(s):
+[02:19:33]   - ketcher-desktop-git
+[02:19:33] ========================================
+Error: Build failed for ketcher-desktop-git. Aborting update loop.
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+/home/fusion809/lfs-scripts/updates_check_and_run.sh: line 163: 1321425 Killed                     zsh -ic 'updatec'
+===== ERROR: updatec exited with status 137 =====
