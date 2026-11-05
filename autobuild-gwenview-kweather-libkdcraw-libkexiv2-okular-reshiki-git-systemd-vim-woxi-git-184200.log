@@ -1,0 +1,695 @@
+[06:25:50] Build order resolved: okular systemd woxi-git vim reshiki-git libkexiv2 libkdcraw kweather gwenview
+[06:25:50] Found custom package for okular, bypassing BLFS aliases.
+[06:25:50] Custom package detected at /home/fusion809/lfs_packaging/okular (package: okular)
+[06:25:50] Extracting dependencies for custom package 'okular'...
+[VERSION] okular: 26.08.3
+[06:25:52] Installing okular version: 26.08.3
+[06:25:52] Starting remote custom build for okular...
+--2026-11-06 06:25:58--  https://github.com/KDE/okular/archive/v26.08.3.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/KDE/okular/tar.gz/refs/tags/v26.08.3 [following]
+--2026-11-06 06:25:59--  https://codeload.github.com/KDE/okular/tar.gz/refs/tags/v26.08.3
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘okular-26.08.3.tar.gz’
+
+okular-26.08.3.tar.     [<=>                 ]       0  --.-KB/s               okular-26.08.3.tar.     [ <=>                ] 752.00K  3.67MB/s               okular-26.08.3.tar.     [  <=>               ]   2.06M  5.15MB/s               okular-26.08.3.tar.     [   <=>              ]   3.48M  5.80MB/s               okular-26.08.3.tar.     [    <=>             ]   4.78M  5.96MB/s               okular-26.08.3.tar.     [     <=>            ]   6.39M  6.37MB/s               okular-26.08.3.tar.     [      <=>           ]   7.98M  6.63MB/s               okular-26.08.3.tar.     [       <=>          ]   9.48M  6.74MB/s               okular-26.08.3.tar.     [        <=>         ]  10.96M  7.08MB/s    in 1.5s    
+
+2026-11-06 06:26:01 (7.08 MB/s) - ‘okular-26.08.3.tar.gz’ saved [11490747]
+
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/okular/okular-26.08.3/build/prefix.sh to set the environment for okular.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Cups: /usr/lib/libcups.so (found version "2.4.20")
+-- Found KF6Archive: /usr/lib64/cmake/KF6Archive/KF6ArchiveConfig.cmake (found version "6.31.0")
+-- Found KF6Bookmarks: /usr/lib64/cmake/KF6Bookmarks/KF6BookmarksConfig.cmake (found version "6.31.0")
+-- Found KF6Completion: /usr/lib64/cmake/KF6Completion/KF6CompletionConfig.cmake (found version "6.31.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.31.0")
+-- Found KF6ConfigWidgets: /usr/lib64/cmake/KF6ConfigWidgets/KF6ConfigWidgetsConfig.cmake (found version "6.31.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.31.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.31.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.31.0")
+-- Found KF6ThreadWeaver: /usr/lib64/cmake/KF6ThreadWeaver/KF6ThreadWeaverConfig.cmake (found version "6.31.0")
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.31.0")
+-- Found KF6XmlGui: /usr/lib64/cmake/KF6XmlGui/KF6XmlGuiConfig.cmake (found version "6.31.0")
+-- Found KF6IconThemes: /usr/lib64/cmake/KF6IconThemes/KF6IconThemesConfig.cmake (found version "6.31.0")
+-- Found KF6: success (found suitable version "6.31.0", minimum required is "5.240.0") found components: Archive Bookmarks Completion Config ConfigWidgets CoreAddons I18n KIO ThreadWeaver WindowSystem XmlGui IconThemes
+-- Found KF6Parts: /usr/lib64/cmake/KF6Parts/KF6PartsConfig.cmake (found version "6.31.0")
+-- Found KF6ColorScheme: /usr/lib64/cmake/KF6ColorScheme/KF6ColorSchemeConfig.cmake (found version "6.31.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.31.0")
+-- Found KF6TextWidgets: /usr/lib64/cmake/KF6TextWidgets/KF6TextWidgetsConfig.cmake (found version "6.31.0")
+-- Found KF6WidgetsAddons: /usr/lib64/cmake/KF6WidgetsAddons/KF6WidgetsAddonsConfig.cmake (found version "6.31.0")
+-- Found KF6: success (found suitable version "6.31.0", minimum required is "5.240.0") found components: Parts ColorScheme Crash IconThemes TextWidgets WidgetsAddons
+-- Found XKB: /usr/lib/libxkbcommon.so (found suitable version "1.13.2", minimum required is "0.9.0")
+-- Found ZLIB: /usr/lib/libz.so (found version "1.4")
+-- Poppler: Qt6 requires Core
+-- Found Poppler_Core: /usr/lib/libpoppler.so (found version "26.10.0")
+-- Found Poppler_Qt6: /usr/lib/libpoppler-qt6.so (found version "26.10.0")
+-- Found Poppler: /usr/lib/libpoppler.so;/usr/lib/libpoppler-qt6.so (found suitable version "26.10.0", minimum required is "24.08.0") found components: Qt6
+-- Found Freetype: /usr/lib/libfreetype.so (found version "2.15.0")
+-- Found TIFF: /usr/lib64/cmake/tiff (found version "4.7.1")
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.10")
+-- Checking for module 'libspectre'
+--   Found libspectre, version 0.2.12
+-- Found LibSpectre: /usr/lib/libspectre.so (Required is at least version "0.2")
+-- Checking for module 'ddjvuapi'
+--   Found ddjvuapi, version 3.5.30
+-- Found DjVuLibre: /usr/include (Required is at least version "3.5.28")
+-- Found EPub: /usr/lib/libepub.so
+-- Could NOT find QMobipocket6 (missing: QMobipocket6_DIR)
+-- Checking for module 'libmarkdown'
+--   Found libmarkdown, version 3.0.2.0
+-- Found Discount: markdown
+-- not found icons_at_150px /home/fusion809/lfs_packaging/okular/okular-26.08.3/icons/150-apps-okular.png
+-- not found icons_at_22px /home/fusion809/lfs_packaging/okular/okular-26.08.3/icons/22-apps-okular.png
+-- not found icons_at_310px /home/fusion809/lfs_packaging/okular/okular-26.08.3/icons/310-apps-okular.png
+-- not found icons_at_44px /home/fusion809/lfs_packaging/okular/okular-26.08.3/icons/44-apps-okular.png
+-- Looking for malloc_trim
+-- Looking for malloc_trim - found
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Qt6Test (required version >= 6.6.0)
+ * OpenGL
+ * Cups
+ * Qt6PrintSupport (required version >= 6.6.0)
+ * Qt6Svg (required version >= 6.6.0)
+ * Qt6Xml (required version >= 6.10.0)
+ * Qt6QmlTools (required version >= 6.12.0)
+ * Qt6DBusTools (required version >= 6.12.0)
+ * Qt6WidgetsTools (required version >= 6.12.0)
+ * Qt6Widgets
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.12.0)
+ * PkgConfig
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 5.240.0)
+ * Python3
+ * Qt6 (required version >= 6.6.0)
+ * KF6Archive (required version >= 5.240.0)
+ * KF6Config (required version >= 6.31.0)
+ * KF6CoreAddons (required version >= 6.31.0)
+ * KF6Bookmarks (required version >= 6.31.0)
+ * KF6Completion (required version >= 6.31.0)
+ * KF6ThreadWeaver (required version >= 5.240.0)
+ * KF6WindowSystem (required version >= 5.240.0)
+ * KF6ConfigWidgets (required version >= 6.31.0)
+ * KF6Wallet (required version >= 5.240.0)
+   Required for document storing passwords in secure wallets. You can make the dependency optional adding KF6Wallet to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option
+ * KF6DocTools (required version >= 5.240.0)
+   Required for compiling and installing the user documentation. You can make the dependency optional adding KF6DocTools to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option
+ * Qt6Qml
+   Required for supporting JavaScript in PDF documents You can make the dependency optional adding Qt6Qml to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option
+ * Qt6DBus
+ * KF6KIO (required version >= 6.31.0)
+ * KF6XmlGui (required version >= 6.31.0)
+ * KF6Parts (required version >= 5.240.0)
+ * KF6ColorScheme (required version >= 5.240.0)
+ * KF6Crash (required version >= 5.240.0)
+ * KF6IconThemes (required version >= 5.240.0)
+ * Gettext
+ * KF6I18n (required version >= 6.31.0)
+ * KF6TextWidgets (required version >= 5.240.0)
+ * KF6WidgetsAddons (required version >= 5.240.0)
+ * KF6 (required version >= 5.240.0)
+ * KF6Purpose, A framework for services and actions integration
+   Required for enabling the share menu. You can make the dependency optional adding KF6Purpose to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option
+ * Qt6TextToSpeech (required version >= 6.6.0)
+   Enables speech features. You can make the dependency optional adding Qt6TextToSpeech to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option
+ * Qt6GuiPrivate
+ * Phonon4Qt6
+   Required for documents with audio or video elements You can make the dependency optional adding Phonon4Qt6 to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option
+ * ZLIB
+ * Poppler (required version >= 24.08.0), A PDF rendering library, <https://poppler.freedesktop.org/>
+   Support for PDF files in okular. You can make the dependency optional adding Poppler to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option
+ * Freetype, A font rendering engine, <https://www.freetype.org>
+   Provides freetype font support in the okular DVI generator. You can make the dependency optional adding Freetype to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option
+ * TIFF, A library for reading and writing TIFF formatted files,, <http://www.libtiff.org>
+   Support for TIFF files in okular. You can make the dependency optional adding TIFF to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option
+ * LibSpectre (required version >= 0.2), A PostScript rendering library, <https://libspectre.freedesktop.org>
+   Support for PS files in okular. You can make the dependency optional adding LibSpectre to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option
+ * Qt6Core (required version >= 6.5.0)
+ * Qt6CoreTools (required version >= 6.12.0)
+ * KExiv2Qt6, Wrapper around Exiv2 library, <https://commits.kde.org/libkexiv2>
+   Support for exif rotation in image files. You can make the dependency optional adding KExiv2Qt6 to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option
+ * DjVuLibre (required version >= 3.5.28), A library for dealing with DjVu formatted files, <https://djvulibre.djvuzone.org>
+   Support for DjVu files in okular. You can make the dependency optional adding DjVuLibre to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option
+ * EPub, A library for reading EPub documents, <http://sourceforge.net/projects/ebook-tools>
+   Support for EPub documents in Okular. You can make the dependency optional adding EPub to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option
+ * Discount, A library that gives you formatting functions suitable for marking down entire documents or lines of text, <https://www.pell.portland.or.us/~orc/Code/discount/>
+   Support for Markdown documents in Okular. You can make the dependency optional adding Discount to the FORCE_NOT_REQUIRED_DEPENDENCIES cmake option
+
+-- The following OPTIONAL packages have not been found:
+
+ * QMobipocket6 (required version >= 2)
+
+-- Building Desktop User Interface: ON
+-- Building Mobile Interface: OFF
+
+-- Configuring done (14.2s)
+-- Generating done (0.6s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/okular/okular-26.08.3/build
+[  1%] Generating ts...
+[  2%] Generating settings_core.h, settings_core.cpp
+[  2%] Generating mo...
+[  2%] Built target okularcore_autogen_timestamp_deps
+[  2%] Built target tsfiles-87295c4415980efbd248bbb88003809e
+[  2%] Generating po/ca/docs/okular/index.cache.bz2
+[  3%] Generating po/ca/docs/okular/okular.1
+Note: Writing okular.1
+[  3%] Built target po-ca-docs-okular-okular-1
+[  3%] Generating po/de/docs/okular/index.cache.bz2
+[  3%] Built target po-ca-docs-okular-index-cache-bz2
+[  3%] Generating po/de/docs/okular/okular.1
+[  3%] Built target po-de-docs-okular-index-cache-bz2
+[  4%] Generating po/es/docs/okular/index.cache.bz2
+Note: Writing okular.1
+[  4%] Built target po-de-docs-okular-okular-1
+[  4%] Generating po/es/docs/okular/okular.1
+Note: Writing okular.1
+[  4%] Built target po-es-docs-okular-okular-1
+[  4%] Generating po/et/docs/okular/okular.1
+Note: Writing okular.1
+[  4%] Built target po-et-docs-okular-okular-1
+[  4%] Built target po-es-docs-okular-index-cache-bz2
+[  5%] Generating po/fr/docs/okular/index.cache.bz2
+[  5%] Generating po/fr/docs/okular/okular.1
+Note: Writing okular.1
+[  5%] Built target po-fr-docs-okular-okular-1
+[  5%] Generating po/gl/docs/okular/index.cache.bz2
+[  5%] Built target po-fr-docs-okular-index-cache-bz2
+[  6%] Generating po/it/docs/okular/index.cache.bz2
+[  6%] Built target po-gl-docs-okular-index-cache-bz2
+[  6%] Generating po/it/docs/okular/okular.1
+Note: Writing okular.1
+[  6%] Built target po-it-docs-okular-okular-1
+[  6%] Generating po/ja/docs/okular/index.cache.bz2
+[  6%] Built target po-it-docs-okular-index-cache-bz2
+[  7%] Generating po/nl/docs/okular/index.cache.bz2
+I/O warning : failed to load "/usr/share/kf6/kdoctools/customization/xsl/ja.xml": No such file or directory
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+No "ja" localization of "footer-doc-comment" exists; using "en".
+No "ja" localization of "footer-doc-feedback" exists; using "en".
+No "ja" localization of "footer-doc-teamname" exists; using "en".
+[  7%] Built target po-ja-docs-okular-index-cache-bz2
+[  7%] Generating po/nl/docs/okular/okular.1
+Note: Writing okular.1
+[  7%] Built target po-nl-docs-okular-index-cache-bz2
+[  7%] Generating po/pl/docs/okular/index.cache.bz2
+[  7%] Built target po-nl-docs-okular-okular-1
+[  7%] Generating po/pt/docs/okular/index.cache.bz2
+[  7%] Built target po-pt-docs-okular-index-cache-bz2
+[  7%] Built target po-pl-docs-okular-index-cache-bz2
+[  8%] Generating po/pt/docs/okular/okular.1
+[  8%] Built target pofiles-87295c4415980efbd248bbb88003809e
+[  9%] Generating po/pt_BR/docs/okular/index.cache.bz2
+[  9%] Generating po/pt_BR/docs/okular/okular.1
+Note: Writing okular.1
+[  9%] Built target po-pt-docs-okular-okular-1
+[  9%] Generating po/ru/docs/okular/index.cache.bz2
+Note: Writing okular.1
+[  9%] Built target po-pt-BR-docs-okular-okular-1
+[  9%] Generating po/ru/docs/okular/okular.1
+Note: Writing okular.1
+[  9%] Built target po-ru-docs-okular-okular-1
+[ 10%] Generating po/sl/docs/okular/index.cache.bz2
+[ 10%] Built target po-pt-BR-docs-okular-index-cache-bz2
+[ 10%] Generating po/sl/docs/okular/okular.1
+Note: Writing okular.1
+[ 10%] Built target po-sl-docs-okular-okular-1
+[ 10%] Generating po/sv/docs/okular/index.cache.bz2
+[ 10%] Built target po-ru-docs-okular-index-cache-bz2
+[ 11%] Generating po/sv/docs/okular/okular.1
+Note: Writing okular.1
+[ 11%] Built target po-sl-docs-okular-index-cache-bz2
+[ 11%] Generating po/tr/docs/okular/index.cache.bz2
+[ 11%] Built target po-sv-docs-okular-okular-1
+[ 11%] Generating po/tr/docs/okular/okular.1
+Note: Writing okular.1
+[ 11%] Built target po-tr-docs-okular-okular-1
+[ 12%] Generating po/uk/docs/okular/index.cache.bz2
+[ 12%] Built target po-sv-docs-okular-index-cache-bz2
+[ 12%] Generating po/uk/docs/okular/okular.1
+Note: Writing okular.1
+[ 12%] Built target po-tr-docs-okular-index-cache-bz2
+[ 12%] Built target po-uk-docs-okular-okular-1
+[ 12%] Built target okular_autogen_timestamp_deps
+[ 12%] Generating index.cache.bz2
+[ 12%] Generating okular.1
+Note: Writing okular.1
+[ 12%] Built target doc-okular-1
+[ 12%] Automatic MOC for target okularcore
+[ 12%] Built target po-uk-docs-okular-index-cache-bz2
+[ 13%] Automatic MOC for target okular
+[ 13%] Built target doc-index-cache-bz2
+[ 13%] Built target okular_autogen
+[ 13%] Generating ui_welcomescreen.h
+[ 14%] Automatic RCC for shell.qrc
+[ 14%] Building CXX object shell/CMakeFiles/okular.dir/okular_autogen/mocs_compilation.cpp.o
+[ 14%] Building CXX object shell/CMakeFiles/okular.dir/main.cpp.o
+[ 14%] Built target okularcore_autogen
+[ 15%] Generating ui_textdocumentsettings.h
+[ 15%] Generating qrc_builtin.cpp
+[ 15%] Generating ui_chooseenginewidget.h
+[ 15%] Building CXX object CMakeFiles/okularcore.dir/okularcore_autogen/mocs_compilation.cpp.o
+[ 16%] Building CXX object CMakeFiles/okularcore.dir/core/action.cpp.o
+In file included from /home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularcore_autogen/TAC5DWH4SE/../../../core/generator.h:15,
+                 from /home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularcore_autogen/TAC5DWH4SE/moc_generator.cpp:9,
+                 from /home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularcore_autogen/mocs_compilation.cpp:5:
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularcore_autogen/TAC5DWH4SE/../../../core/action.h:468:25: warning: defining ‘Okular::MovieAction’, which previously failed to be complete in a SFINAE context [-Wsfinae-incomplete=]
+  468 | class OKULARCORE_EXPORT MovieAction : public Action
+      |                         ^~~~~~~~~~~
+In file included from /opt/qt6/include/QtCore/QMetaType:1,
+                 from /usr/include/KF6/KBookmarks/kbookmark.h:14,
+                 from /usr/include/KF6/KBookmarks/KBookmark:1,
+                 from /home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularcore_autogen/TAC5DWH4SE/../../../core/bookmarkmanager.h:10,
+                 from /home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularcore_autogen/TAC5DWH4SE/moc_bookmarkmanager.cpp:9,
+                 from /home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularcore_autogen/mocs_compilation.cpp:2:
+/opt/qt6/include/QtCore/qmetatype.h:344:64: note: here.  Use ‘-Wsfinae-incomplete=2’ for a diagnostic at that point
+  344 |         static auto check(U *) -> std::integral_constant<bool, sizeof(U) != 0>;
+      |                                                                ^~~~~~~~~
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularcore_autogen/TAC5DWH4SE/../../../core/action.h:522:25: warning: defining ‘Okular::RenditionAction’, which previously failed to be complete in a SFINAE context [-Wsfinae-incomplete=]
+  522 | class OKULARCORE_EXPORT RenditionAction : public Action
+      |                         ^~~~~~~~~~~~~~~
+/opt/qt6/include/QtCore/qmetatype.h:344:64: note: here.  Use ‘-Wsfinae-incomplete=2’ for a diagnostic at that point
+  344 |         static auto check(U *) -> std::integral_constant<bool, sizeof(U) != 0>;
+      |                                                                ^~~~~~~~~
+In file included from /home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularcore_autogen/TAC5DWH4SE/../../../core/generator.h:17:
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularcore_autogen/TAC5DWH4SE/../../../core/fontinfo.h:24:25: warning: defining ‘Okular::FontInfo’, which previously failed to be complete in a SFINAE context [-Wsfinae-incomplete=]
+   24 | class OKULARCORE_EXPORT FontInfo
+      |                         ^~~~~~~~
+/opt/qt6/include/QtCore/qmetatype.h:344:64: note: here.  Use ‘-Wsfinae-incomplete=2’ for a diagnostic at that point
+  344 |         static auto check(U *) -> std::integral_constant<bool, sizeof(U) != 0>;
+      |                                                                ^~~~~~~~~
+[ 17%] Building CXX object shell/CMakeFiles/okular.dir/okular_main.cpp.o
+[ 17%] Building CXX object shell/CMakeFiles/okular.dir/shell.cpp.o
+[ 17%] Building CXX object CMakeFiles/okularcore.dir/core/annotations.cpp.o
+[ 17%] Building CXX object CMakeFiles/okularcore.dir/core/area.cpp.o
+[ 17%] Building CXX object shell/CMakeFiles/okular.dir/shellutils.cpp.o
+[ 18%] Building CXX object shell/CMakeFiles/okular.dir/welcomescreen.cpp.o
+[ 18%] Building CXX object shell/CMakeFiles/okular.dir/__/gui/recentitemsmodel.cpp.o
+[ 19%] Building CXX object CMakeFiles/okularcore.dir/core/audioplayer.cpp.o
+[ 19%] Building CXX object shell/CMakeFiles/okular.dir/okular_autogen/EWIEGA46WW/qrc_shell.cpp.o
+[ 19%] Building CXX object CMakeFiles/okularcore.dir/core/bookmarkmanager.cpp.o
+[ 20%] Linking CXX executable ../bin/okular
+[ 20%] Built target okular
+[ 20%] Building CXX object CMakeFiles/okularcore.dir/core/chooseenginedialog.cpp.o
+[ 21%] Building CXX object CMakeFiles/okularcore.dir/core/document.cpp.o
+[ 21%] Building CXX object CMakeFiles/okularcore.dir/core/documentcommands.cpp.o
+[ 21%] Building CXX object CMakeFiles/okularcore.dir/core/fontinfo.cpp.o
+[ 22%] Building CXX object CMakeFiles/okularcore.dir/core/form.cpp.o
+[ 22%] Building CXX object CMakeFiles/okularcore.dir/core/generator.cpp.o
+[ 22%] Building CXX object CMakeFiles/okularcore.dir/core/generator_p.cpp.o
+[ 23%] Building CXX object CMakeFiles/okularcore.dir/core/misc.cpp.o
+[ 23%] Building CXX object CMakeFiles/okularcore.dir/core/movie.cpp.o
+[ 23%] Building CXX object CMakeFiles/okularcore.dir/core/observer.cpp.o
+[ 24%] Building CXX object CMakeFiles/okularcore.dir/core/debug.cpp.o
+[ 24%] Building CXX object CMakeFiles/okularcore.dir/core/page.cpp.o
+[ 24%] Building CXX object CMakeFiles/okularcore.dir/core/pagecontroller.cpp.o
+[ 25%] Building CXX object CMakeFiles/okularcore.dir/core/pagesize.cpp.o
+[ 25%] Building CXX object CMakeFiles/okularcore.dir/core/pagetransition.cpp.o
+[ 25%] Building CXX object CMakeFiles/okularcore.dir/core/rotationjob.cpp.o
+[ 26%] Building CXX object CMakeFiles/okularcore.dir/core/scripter.cpp.o
+[ 26%] Building CXX object CMakeFiles/okularcore.dir/core/sound.cpp.o
+[ 26%] Building CXX object CMakeFiles/okularcore.dir/core/sourcereference.cpp.o
+[ 27%] Building CXX object CMakeFiles/okularcore.dir/core/textdocumentgenerator.cpp.o
+[ 27%] Building CXX object CMakeFiles/okularcore.dir/core/textdocumentsettings.cpp.o
+[ 27%] Building CXX object CMakeFiles/okularcore.dir/core/textpage.cpp.o
+[ 28%] Building CXX object CMakeFiles/okularcore.dir/core/tilesmanager.cpp.o
+[ 28%] Building CXX object CMakeFiles/okularcore.dir/core/utils.cpp.o
+[ 28%] Building CXX object CMakeFiles/okularcore.dir/core/view.cpp.o
+[ 28%] Building CXX object CMakeFiles/okularcore.dir/core/fileprinter.cpp.o
+[ 29%] Building CXX object CMakeFiles/okularcore.dir/core/printoptionswidget.cpp.o
+[ 29%] Building CXX object CMakeFiles/okularcore.dir/core/signatureutils.cpp.o
+[ 29%] Building CXX object CMakeFiles/okularcore.dir/core/script/event.cpp.o
+[ 30%] Building C object CMakeFiles/okularcore.dir/core/synctex/synctex_parser.c.o
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/core/synctex/synctex_parser.c:1635:61: warning: missing initializer for field ‘page’ of ‘synctex_data_model_s’ {aka ‘const struct synctex_data_model_t’} [-Wmissing-field-initializers]
+ 1635 |                                                             synctex_data_ref_thv_max};
+      |                                                             ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/core/synctex/synctex_parser.c:141:9: note: ‘page’ declared here
+  141 |     int page;
+      |         ^~~~
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/core/synctex/synctex_parser.c: In function ‘_synctex_match_string’:
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/core/synctex/synctex_parser.c:3725:12: warning: variable ‘tested_len’ set but not used [-Wunused-but-set-variable=]
+ 3725 |     size_t tested_len = 0;    /*  the number of characters at the beginning of the_string that match */
+      |            ^~~~~~~~~~
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/core/synctex/synctex_parser.c: In function ‘synctex_updater_new_with_output_file’:
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/core/synctex/synctex_parser.c:8137:24: warning: assignment left-hand side might be a candidate for a format attribute [-Wsuggest-attribute=format]
+ 8137 |         updater->print = &_synctex_updater_print;
+      |                        ^
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/core/synctex/synctex_parser.c:8143:24: warning: assignment left-hand side might be a candidate for a format attribute [-Wsuggest-attribute=format]
+ 8143 |         updater->print = &_synctex_updater_print_gz;
+      |                        ^
+[ 30%] Building C object CMakeFiles/okularcore.dir/core/synctex/synctex_parser_utils.c.o
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/core/synctex/synctex_parser_utils.c: In function ‘_synctex_merge_strings’:
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/core/synctex/synctex_parser_utils.c:379:33: warning: ‘strncpy’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  379 |                     if (dest != strncpy(dest, temp, size)) {
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/core/synctex/synctex_parser_utils.c:377:29: note: length computed here
+  377 |                 if ((size = strlen(temp)) > 0) {
+      |                             ^~~~~~~~~~~~
+[ 30%] Building CXX object CMakeFiles/okularcore.dir/qrc_builtin.cpp.o
+[ 31%] Building CXX object CMakeFiles/okularcore.dir/settings_core.cpp.o
+[ 31%] Building CXX object CMakeFiles/okularcore.dir/core/script/executor_js.cpp.o
+[ 31%] Building CXX object CMakeFiles/okularcore.dir/core/script/js_app.cpp.o
+[ 32%] Building CXX object CMakeFiles/okularcore.dir/core/script/js_data.cpp.o
+[ 32%] Building CXX object CMakeFiles/okularcore.dir/core/script/js_display.cpp.o
+[ 32%] Building CXX object CMakeFiles/okularcore.dir/core/script/js_document.cpp.o
+[ 33%] Building CXX object CMakeFiles/okularcore.dir/core/script/js_field.cpp.o
+[ 33%] Building CXX object CMakeFiles/okularcore.dir/core/script/js_fullscreen.cpp.o
+[ 33%] Building CXX object CMakeFiles/okularcore.dir/core/script/js_spell.cpp.o
+[ 34%] Building CXX object CMakeFiles/okularcore.dir/core/script/js_util.cpp.o
+[ 34%] Building CXX object CMakeFiles/okularcore.dir/core/script/js_event.cpp.o
+[ 34%] Building CXX object CMakeFiles/okularcore.dir/core/script/js_ocg.cpp.o
+[ 35%] Building CXX object CMakeFiles/okularcore.dir/core/script/js_global.cpp.o
+[ 35%] Linking CXX shared library bin/libOkular6Core.so
+[ 35%] Built target okularcore
+[ 35%] Built target okularGenerator_ghostview_autogen_timestamp_deps
+[ 35%] Generating settings.h, settings.cpp
+[ 36%] Generating pdfsettings.h, pdfsettings.cpp
+[ 36%] Built target okularpart_autogen_timestamp_deps
+[ 36%] Built target okularGenerator_kimgio_autogen_timestamp_deps
+[ 36%] Built target okularGenerator_poppler_autogen_timestamp_deps
+[ 36%] Built target okularGenerator_djvu_autogen_timestamp_deps
+[ 36%] Built target okularGenerator_dvi_autogen_timestamp_deps
+[ 36%] Built target okularGenerator_tiff_autogen_timestamp_deps
+[ 36%] Built target okularGenerator_fb_autogen_timestamp_deps
+[ 36%] Built target okularGenerator_xps_autogen_timestamp_deps
+[ 36%] Built target okular_comicbook_autogen_timestamp_deps
+[ 36%] Built target okularGenerator_epub_autogen_timestamp_deps
+[ 36%] Built target okularGenerator_fax_autogen_timestamp_deps
+[ 36%] Built target okularGenerator_txt_autogen_timestamp_deps
+[ 36%] Built target okularGenerator_md_autogen_timestamp_deps
+[ 37%] Automatic MOC for target okularpart
+[ 37%] Automatic MOC for target okularGenerator_poppler
+[ 38%] Automatic MOC for target okularGenerator_ghostview
+[ 38%] Built target okularGenerator_ghostview_autogen
+[ 38%] Automatic MOC for target okularGenerator_kimgio
+[ 38%] Built target okularGenerator_poppler_autogen
+[ 38%] Built target okularGenerator_kimgio_autogen
+[ 38%] Automatic MOC for target okularGenerator_djvu
+[ 38%] Automatic MOC for target okularGenerator_dvi
+[ 38%] Built target okularGenerator_djvu_autogen
+[ 38%] Automatic MOC for target okularGenerator_tiff
+[ 38%] Built target okularGenerator_dvi_autogen
+[ 38%] Automatic MOC for target okularGenerator_xps
+[ 38%] Built target okularGenerator_tiff_autogen
+[ 38%] Automatic MOC for target okularGenerator_fb
+[ 38%] Built target okularGenerator_xps_autogen
+[ 38%] Automatic MOC for target okular_comicbook
+[ 38%] Built target okularGenerator_fb_autogen
+[ 38%] Automatic MOC for target okularGenerator_fax
+[ 38%] Built target okular_comicbook_autogen
+[ 38%] Automatic MOC for target okularGenerator_epub
+[ 38%] Built target okularGenerator_fax_autogen
+[ 39%] Automatic MOC for target okularGenerator_txt
+[ 39%] Built target okularGenerator_epub_autogen
+[ 39%] Automatic MOC for target okularGenerator_md
+[ 39%] Built target okularGenerator_txt_autogen
+[ 40%] Generating ui_pdfsettingswidget.h
+[ 41%] Building CXX object generators/poppler/CMakeFiles/okularGenerator_poppler.dir/okularGenerator_poppler_autogen/mocs_compilation.cpp.o
+[ 41%] Built target okularGenerator_md_autogen
+[ 41%] Building CXX object generators/poppler/CMakeFiles/okularGenerator_poppler.dir/generator_pdf.cpp.o
+[ 41%] Built target okularpart_autogen
+[ 41%] Building CXX object generators/poppler/CMakeFiles/okularGenerator_poppler.dir/formfields.cpp.o
+[ 42%] Generating ui_gssettingswidget.h
+[ 42%] Generating gssettings.h, gssettings.cpp
+[ 43%] Building CXX object generators/spectre/CMakeFiles/okularGenerator_ghostview.dir/okularGenerator_ghostview_autogen/mocs_compilation.cpp.o
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/generators/poppler/generator_pdf.cpp: In function ‘Okular::SigningResult fromPoppler(Poppler::PDFConverter::SigningResult)’:
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/generators/poppler/generator_pdf.cpp:2151:12: warning: enumeration value ‘UnsupportedSignatureType’ not handled in switch [-Wswitch]
+ 2151 |     switch (result) {
+      |            ^
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/generators/poppler/formfields.cpp: In function ‘Okular::SigningResult fromPoppler(Poppler::FormFieldSignature::SigningResult)’:
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/generators/poppler/formfields.cpp:504:12: warning: enumeration value ‘UnsupportedSignatureType’ not handled in switch [-Wswitch]
+  504 |     switch (r) {
+      |            ^
+[ 43%] Building CXX object generators/spectre/CMakeFiles/okularGenerator_ghostview.dir/generator_ghostview.cpp.o
+[ 43%] Building CXX object generators/poppler/CMakeFiles/okularGenerator_poppler.dir/annots.cpp.o
+[ 44%] Building CXX object generators/poppler/CMakeFiles/okularGenerator_poppler.dir/pdfsignatureutils.cpp.o
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/generators/poppler/annots.cpp: In function ‘Okular::SigningResult popplerToOkular(Poppler::SignatureAnnotation::SigningResult)’:
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/generators/poppler/annots.cpp:495:12: warning: enumeration value ‘UnsupportedSignatureType’ not handled in switch [-Wswitch]
+  495 |     switch (pResult) {
+      |            ^
+[ 44%] Building CXX object generators/spectre/CMakeFiles/okularGenerator_ghostview.dir/rendererthread.cpp.o
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/generators/poppler/pdfsignatureutils.cpp: In function ‘Okular::CertificateInfo fromPoppler(const Poppler::CertificateInfo&)’:
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/generators/poppler/pdfsignatureutils.cpp:107:39: warning: ‘QByteArray Poppler::CertificateInfo::publicKey() const’ is deprecated [-Wdeprecated-declarations]
+  107 |     oInfo.setPublicKey(pInfo.publicKey());
+      |                        ~~~~~~~~~~~~~~~^~
+In file included from /home/fusion809/lfs_packaging/okular/okular-26.08.3/generators/poppler/pdfsignatureutils.h:10,
+                 from /home/fusion809/lfs_packaging/okular/okular-26.08.3/generators/poppler/pdfsignatureutils.cpp:7:
+/usr/include/poppler/qt6/poppler-form.h:602:39: note: declared here
+  602 |     POPPLER_QT6_DEPRECATED QByteArray publicKey() const;
+      |                                       ^~~~~~~~~
+[ 44%] Building CXX object generators/kimgio/CMakeFiles/okularGenerator_kimgio.dir/okularGenerator_kimgio_autogen/mocs_compilation.cpp.o
+[ 45%] Building CXX object generators/spectre/CMakeFiles/okularGenerator_ghostview.dir/spectre_debug.cpp.o
+[ 45%] Building CXX object generators/poppler/CMakeFiles/okularGenerator_poppler.dir/pdfsettingswidget.cpp.o
+[ 45%] Building CXX object generators/spectre/CMakeFiles/okularGenerator_ghostview.dir/gssettings.cpp.o
+[ 46%] Building CXX object generators/kimgio/CMakeFiles/okularGenerator_kimgio.dir/generator_kimgio.cpp.o
+[ 46%] Building CXX object generators/poppler/CMakeFiles/okularGenerator_poppler.dir/imagescaling.cpp.o
+[ 46%] Linking CXX shared module ../../bin/okular_generators/okularGenerator_ghostview.so
+[ 46%] Built target okularGenerator_ghostview
+[ 47%] Building CXX object generators/poppler/CMakeFiles/okularGenerator_poppler.dir/pdfsettings.cpp.o
+[ 47%] Building CXX object generators/djvu/CMakeFiles/okularGenerator_djvu.dir/okularGenerator_djvu_autogen/mocs_compilation.cpp.o
+[ 47%] Linking CXX shared module ../../bin/okular_generators/okularGenerator_kimgio.so
+[ 47%] Built target okularGenerator_kimgio
+[ 47%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/okularGenerator_dvi_autogen/mocs_compilation.cpp.o
+[ 47%] Linking CXX shared module ../../bin/okular_generators/okularGenerator_poppler.so
+[ 47%] Built target okularGenerator_poppler
+[ 47%] Building CXX object generators/tiff/CMakeFiles/okularGenerator_tiff.dir/okularGenerator_tiff_autogen/mocs_compilation.cpp.o
+[ 47%] Building CXX object generators/djvu/CMakeFiles/okularGenerator_djvu.dir/generator_djvu.cpp.o
+[ 47%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/generator_dvi.cpp.o
+[ 48%] Building CXX object generators/tiff/CMakeFiles/okularGenerator_tiff.dir/generator_tiff.cpp.o
+[ 49%] Building CXX object generators/djvu/CMakeFiles/okularGenerator_djvu.dir/kdjvu.cpp.o
+[ 49%] Linking CXX shared module ../../bin/okular_generators/okularGenerator_tiff.so
+[ 49%] Built target okularGenerator_tiff
+[ 50%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/bigEndianByteReader.cpp.o
+[ 50%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/dviRenderer.cpp.o
+[ 50%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/dviRenderer_draw.cpp.o
+[ 50%] Linking CXX shared module ../../bin/okular_generators/okularGenerator_djvu.so
+[ 51%] Built target okularGenerator_djvu
+[ 51%] Building CXX object generators/xps/CMakeFiles/okularGenerator_xps.dir/okularGenerator_xps_autogen/mocs_compilation.cpp.o
+[ 52%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/dviRenderer_prescan.cpp.o
+[ 53%] Building CXX object generators/xps/CMakeFiles/okularGenerator_xps.dir/generator_xps.cpp.o
+[ 53%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/dviRenderer_dr.cpp.o
+[ 54%] Building CXX object generators/fictionbook/CMakeFiles/okularGenerator_fb.dir/okularGenerator_fb_autogen/mocs_compilation.cpp.o
+[ 54%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/special.cpp.o
+[ 54%] Building CXX object generators/fictionbook/CMakeFiles/okularGenerator_fb.dir/converter.cpp.o
+[ 55%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/dviFile.cpp.o
+[ 55%] Linking CXX shared module ../../bin/okular_generators/okularGenerator_xps.so
+[ 55%] Built target okularGenerator_xps
+[ 55%] Building CXX object generators/fictionbook/CMakeFiles/okularGenerator_fb.dir/document.cpp.o
+[ 55%] Building CXX object generators/comicbook/CMakeFiles/okular_comicbook.dir/okular_comicbook_autogen/mocs_compilation.cpp.o
+[ 55%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/dviPageInfo.cpp.o
+[ 56%] Building CXX object generators/fictionbook/CMakeFiles/okularGenerator_fb.dir/generator_fb.cpp.o
+[ 56%] Building CXX object generators/comicbook/CMakeFiles/okular_comicbook.dir/document.cpp.o
+[ 56%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/psgs.cpp.o
+[ 56%] Linking CXX shared module ../../bin/okular_generators/okularGenerator_fb.so
+[ 57%] Building CXX object generators/comicbook/CMakeFiles/okular_comicbook.dir/directory.cpp.o
+[ 57%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/glyph.cpp.o
+[ 57%] Built target okularGenerator_fb
+[ 57%] Building CXX object generators/fax/CMakeFiles/okularGenerator_fax.dir/okularGenerator_fax_autogen/mocs_compilation.cpp.o
+[ 58%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/TeXFont.cpp.o
+[ 58%] Building CXX object generators/comicbook/CMakeFiles/okular_comicbook.dir/unrar.cpp.o
+[ 58%] Building CXX object generators/fax/CMakeFiles/okularGenerator_fax.dir/generator_fax.cpp.o
+[ 58%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/TeXFontDefinition.cpp.o
+[ 58%] Building CXX object generators/comicbook/CMakeFiles/okular_comicbook.dir/qnatsort.cpp.o
+[ 59%] Building CXX object generators/fax/CMakeFiles/okularGenerator_fax.dir/faxdocument.cpp.o
+[ 60%] Building CXX object generators/comicbook/CMakeFiles/okular_comicbook.dir/unrarflavours.cpp.o
+[ 60%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/vf.cpp.o
+[ 60%] Building CXX object generators/fax/CMakeFiles/okularGenerator_fax.dir/faxexpand.cpp.o
+[ 60%] Linking CXX static library ../../lib/libokular_comicbook.a
+[ 60%] Built target okular_comicbook
+[ 61%] Building CXX object generators/epub/CMakeFiles/okularGenerator_epub.dir/okularGenerator_epub_autogen/mocs_compilation.cpp.o
+[ 62%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/TeXFont_PFB.cpp.o
+[ 62%] Building CXX object generators/fax/CMakeFiles/okularGenerator_fax.dir/faxinit.cpp.o
+[ 62%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/TeXFont_PK.cpp.o
+[ 62%] Building CXX object generators/epub/CMakeFiles/okularGenerator_epub.dir/converter.cpp.o
+[ 63%] Building CXX object generators/fax/CMakeFiles/okularGenerator_fax.dir/fax_debug.cpp.o
+[ 63%] Linking CXX shared module ../../bin/okular_generators/okularGenerator_fax.so
+[ 64%] Built target okularGenerator_fax
+[ 64%] Building CXX object generators/txt/CMakeFiles/okularGenerator_txt.dir/okularGenerator_txt_autogen/mocs_compilation.cpp.o
+[ 64%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/TeXFont_TFM.cpp.o
+[ 64%] Building CXX object generators/txt/CMakeFiles/okularGenerator_txt.dir/generator_txt.cpp.o
+[ 64%] Building CXX object generators/epub/CMakeFiles/okularGenerator_epub.dir/epubdocument.cpp.o
+[ 65%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/util.cpp.o
+[ 65%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/pageSize.cpp.o
+[ 66%] Building CXX object generators/txt/CMakeFiles/okularGenerator_txt.dir/converter.cpp.o
+[ 67%] Building CXX object generators/epub/CMakeFiles/okularGenerator_epub.dir/generator_epub.cpp.o
+[ 67%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/length.cpp.o
+[ 67%] Linking CXX shared module ../../bin/okular_generators/okularGenerator_epub.so
+[ 67%] Building CXX object generators/txt/CMakeFiles/okularGenerator_txt.dir/document.cpp.o
+[ 68%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/fontEncoding.cpp.o
+[ 68%] Built target okularGenerator_epub
+[ 68%] Building CXX object generators/markdown/CMakeFiles/okularGenerator_md.dir/okularGenerator_md_autogen/mocs_compilation.cpp.o
+[ 68%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/fontEncodingPool.cpp.o
+[ 68%] Linking CXX shared module ../../bin/okular_generators/okularGenerator_txt.so
+[ 69%] Built target okularGenerator_txt
+[ 69%] Generating ui_selectcertificatedialog.h
+[ 69%] Automatic RCC for part/part.qrc
+[ 70%] Building CXX object CMakeFiles/okularpart.dir/okularpart_autogen/mocs_compilation.cpp.o
+[ 70%] Building CXX object generators/markdown/CMakeFiles/okularGenerator_md.dir/converter.cpp.o
+[ 70%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/fontMap.cpp.o
+In file included from /home/fusion809/lfs_packaging/okular/okular-26.08.3/core/form.h:10,
+                 from /home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularpart_autogen/EAH7DXM7NH/../../../part/formwidgets.h:14,
+                 from /home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularpart_autogen/EAH7DXM7NH/moc_formwidgets.cpp:9,
+                 from /home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularpart_autogen/mocs_compilation.cpp:18:
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/core/annotations.h:99:25: warning: defining ‘Okular::Annotation’, which previously failed to be complete in a SFINAE context [-Wsfinae-incomplete=]
+   99 | class OKULARCORE_EXPORT Annotation
+      |                         ^~~~~~~~~~
+In file included from /opt/qt6/include/QtCore/qobject.h:19,
+                 from /opt/qt6/include/QtCore/qabstractitemmodel.h:12,
+                 from /opt/qt6/include/QtCore/QAbstractTableModel:1,
+                 from /home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularpart_autogen/DMHXEJ42XS/../../../gui/certificatemodel.h:10,
+                 from /home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularpart_autogen/DMHXEJ42XS/moc_certificatemodel.cpp:9,
+                 from /home/fusion809/lfs_packaging/okular/okular-26.08.3/build/okularpart_autogen/mocs_compilation.cpp:2:
+/opt/qt6/include/QtCore/qmetatype.h:344:64: note: here.  Use ‘-Wsfinae-incomplete=2’ for a diagnostic at that point
+  344 |         static auto check(U *) -> std::integral_constant<bool, sizeof(U) != 0>;
+      |                                                                ^~~~~~~~~
+[ 71%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/fontpool.cpp.o
+[ 72%] Building CXX object generators/markdown/CMakeFiles/okularGenerator_md.dir/generator_md.cpp.o
+[ 72%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/dvisourcesplitter.cpp.o
+[ 72%] Linking CXX shared module ../../bin/okular_generators/okularGenerator_md.so
+[ 73%] Built target okularGenerator_md
+[ 73%] Built target okularGenerator_comicbook_autogen_timestamp_deps
+[ 73%] Automatic MOC for target okularGenerator_comicbook
+[ 73%] Built target okularGenerator_comicbook_autogen
+[ 73%] Building CXX object generators/comicbook/CMakeFiles/okularGenerator_comicbook.dir/okularGenerator_comicbook_autogen/mocs_compilation.cpp.o
+[ 73%] Building CXX object generators/dvi/CMakeFiles/okularGenerator_dvi.dir/dviexport.cpp.o
+[ 73%] Building CXX object CMakeFiles/okularpart.dir/gui/certificatemodel.cpp.o
+[ 74%] Building CXX object generators/comicbook/CMakeFiles/okularGenerator_comicbook.dir/generator_comicbook.cpp.o
+[ 74%] Building CXX object CMakeFiles/okularpart.dir/gui/debug_ui.cpp.o
+[ 75%] Linking CXX shared module ../../bin/okular_generators/okularGenerator_dvi.so
+[ 76%] Built target okularGenerator_dvi
+[ 77%] Building CXX object CMakeFiles/okularpart.dir/gui/guiutils.cpp.o
+[ 77%] Linking CXX shared module ../../bin/okular_generators/okularGenerator_comicbook.so
+[ 77%] Built target okularGenerator_comicbook
+[ 77%] Building CXX object CMakeFiles/okularpart.dir/gui/pagepainter.cpp.o
+[ 77%] Building CXX object CMakeFiles/okularpart.dir/gui/signatureguiutils.cpp.o
+[ 78%] Building CXX object CMakeFiles/okularpart.dir/gui/signaturemodel.cpp.o
+[ 78%] Building CXX object CMakeFiles/okularpart.dir/gui/tocmodel.cpp.o
+[ 78%] Building CXX object CMakeFiles/okularpart.dir/part/preferencesdialog.cpp.o
+[ 78%] Building CXX object CMakeFiles/okularpart.dir/part/dlgaccessibility.cpp.o
+[ 79%] Building CXX object CMakeFiles/okularpart.dir/part/dlgdebug.cpp.o
+[ 79%] Building CXX object CMakeFiles/okularpart.dir/part/dlgeditor.cpp.o
+[ 79%] Building CXX object CMakeFiles/okularpart.dir/part/dlggeneral.cpp.o
+[ 80%] Building CXX object CMakeFiles/okularpart.dir/part/dlgannotations.cpp.o
+/home/fusion809/lfs_packaging/okular/okular-26.08.3/part/dlgeditor.cpp:100:1: fatal error: opening dependency file CMakeFiles/okularpart.dir/part/dlgeditor.cpp.o.d: No such file or directory
+compilation terminated.
+make[2]: *** [CMakeFiles/okularpart.dir/build.make:246: CMakeFiles/okularpart.dir/part/dlgeditor.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
