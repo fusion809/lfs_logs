@@ -1,0 +1,101 @@
+[17:08:56] Found custom package for chemcanvas-git, bypassing BLFS aliases.
+[17:08:56] Custom package detected at /home/fusion809/lfs_packaging/chemcanvas-git (package: chemcanvas-git)
+[17:08:56] Extracting dependencies for custom package 'chemcanvas-git'...
+[17:08:56] Required deps: pyqt6 python 
+[17:08:56] Dependency 'pyqt6' already installed.
+[17:08:56] Dependency 'python' already installed.
+[VERSION] chemcanvas-git: d05571410f66a30a6f5053a6c648cc5fd34f62f3
+[17:08:57] Installing chemcanvas-git version: d05571410f66a30a6f5053a6c648cc5fd34f62f3
+[17:08:57] Starting remote custom build for chemcanvas-git...
+--2026-11-06 17:09:19--  https://github.com/ksharindam/chemcanvas/archive/d05571410f66a30a6f5053a6c648cc5fd34f62f3.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/ksharindam/chemcanvas/tar.gz/d05571410f66a30a6f5053a6c648cc5fd34f62f3 [following]
+--2026-11-06 17:09:19--  https://codeload.github.com/ksharindam/chemcanvas/tar.gz/d05571410f66a30a6f5053a6c648cc5fd34f62f3
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘chemcanvas-d05571410f66a30a6f5053a6c648cc5fd34f62f3.tar.gz’
+
+          chemcanva     [<=>                 ]       0  --.-KB/s               chemcanvas-d0557141     [ <=>                ] 409.00K  --.-KB/s    in 0.1s    
+
+2026-11-06 17:09:20 (2.76 MB/s) - ‘chemcanvas-d05571410f66a30a6f5053a6c648cc5fd34f62f3.tar.gz’ saved [418820]
+
+Processing ./.
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: chemcanvas
+  Building wheel for chemcanvas (pyproject.toml): started
+  Building wheel for chemcanvas (pyproject.toml): finished with status 'done'
+  /usr/lib/python3.15/site-packages/setuptools/command/build_py.py:215: BuildBackendWarning: Package 'chemcanvas.templates' is absent from the `packages` configuration.
+  !!
+  
+          ********************************************************************************
+          ############################
+          # Package would be ignored #
+          ############################
+          Python recognizes 'chemcanvas.templates' as an importable package[^1],
+          but it is absent from setuptools' `packages` configuration.
+  
+          This leads to an ambiguous overall configuration. If you want to distribute this
+          package, please make sure that 'chemcanvas.templates' is explicitly added
+          to the `packages` configuration field.
+  
+          Alternatively, you can also rely on setuptools' discovery methods
+          (for example by using `find_namespace_packages(...)`/`find_namespace:`
+          instead of `find_packages(...)`/`find:`).
+  
+          You can read more about "package discovery" on setuptools documentation page:
+  
+          - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+  
+          If you don't want 'chemcanvas.templates' to be distributed and are
+          already explicitly excluding 'chemcanvas.templates' via
+          `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+          you can try to use `exclude_package_data`, or `include-package-data=False` in
+          combination with a more fine grained `package-data` configuration.
+  
+          You can read more about "package data files" on setuptools documentation page:
+  
+          - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+  
+  
+          [^1]: For Python, any directory (with suitable naming) can be imported,
+                even if it does not contain any `.py` files.
+                On the other hand, currently there is no concept of package data
+                directory, all directories are treated like packages.
+          ********************************************************************************
+  
+  !!
+    check.warn(importable)
+  Created wheel for chemcanvas: filename=chemcanvas-0.15.2-py3-none-any.whl size=344583 sha256=207376efbd0d324da50850b75ed2322d0a771402d15ed06f6fb68fce95d22904
+  Stored in directory: /tmp/pip-ephem-wheel-cache-bg8h_qdk/wheels/74/66/cf/2abd48473c17f6a3a40184dfe694a0c3d7602006fb8337057c
+Successfully built chemcanvas
+WARNING: Error parsing dependencies of soupsieve: No package metadata was found.
+Installing collected packages: chemcanvas
+Successfully installed chemcanvas-0.15.2
+#!/bin/bash
+export PATH=$PATH:/opt/chemcanvas-qt6/bin
+export LD_LIBRARY_PATH=$PATH:/opt/chemcanvas-qt6/lib
+export PYTHONPATH=/opt/chemcanvas-qt6/lib/python3.15/site-packages/chemcanvas:/opt/chemcanvas-qt6/lib/python3.15/site-packages
+export QT_QPA_PLATFORM_PLUGIN_PATH=/opt/qt6/plugins/platforms
+/opt/chemcanvas-qt6/bin/chemcanvas "$@"
+[Desktop Entry]
+Type=Application
+Name=ChemCanvas Qt6
+Comment=A 2D Chemical Drawing Tool
+Exec=/usr/bin/chemcanvas-qt6 %f
+TryExec=/usr/bin/chemcanvas-qt6
+Icon=chemcanvas
+Categories=Science;Education;Chemistry;
+StartupWMClass=chemcanvas
+MimeType=application/vnd.ksharindam.ccdx+xml;image/svg+xml;application/vnd.chemdraw+xml;chemical/x-chemaxon-marvinfile;chemical/x-mdl-molfile;chemical/x-mdl-sdfile;chemical/x-daylight-smiles;
+Terminal=false
+StartupNotify=false
+d05571410f66a30a6f5053a6c648cc5fd34f62f3
+Updated registry for chemcanvas-git to version d05571410f66a30a6f5053a6c648cc5fd34f62f3
+[VERSION] chemcanvas-git: d05571410f66a30a6f5053a6c648cc5fd34f62f3
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package chemcanvas-git in /var/lib/custom-packages/

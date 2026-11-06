@@ -1,0 +1,1079 @@
+===== Update check started: 2026-11-06 17:06:21 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261106_170621
+Packages needing attention: fastfetch gnome-extension-manager poppler reshiki-git woxi-git
+===== Starting updatec: 2026-11-06 17:06:32 AEST =====
+Checking for packages with missing file inventories...
+name=chemcanvas-git
+local_ver=c0a84b5
+remote_ver=d055714
+name=fastfetch
+local_ver=2.70.0
+remote_ver=2.71.0
+name=gnome-extension-manager
+local_ver=0.6.5
+remote_ver=0.7.0
+name=libsepol
+local_ver=3.11
+remote_ver=20131030.4
+name=libselinux
+local_ver=3.11
+remote_ver=20131030.4
+name=poppler
+local_ver=26.10.0
+remote_ver=26.11.0
+name=reshiki-git
+local_ver=aa2033a
+remote_ver=1604eba
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - chemcanvas-git
+  - fastfetch
+  - gnome-extension-manager
+  - libsepol
+  - libselinux
+  - poppler
+  - reshiki-git
+  - woxi-git
+
+Building custom package chemcanvas-git...
+[17:08:56] Found custom package for chemcanvas-git, bypassing BLFS aliases.
+[17:08:56] Custom package detected at /home/fusion809/lfs_packaging/chemcanvas-git (package: chemcanvas-git)
+[17:08:56] Extracting dependencies for custom package 'chemcanvas-git'...
+[17:08:56] Required deps: pyqt6 python 
+[17:08:56] Dependency 'pyqt6' already installed.
+[17:08:56] Dependency 'python' already installed.
+[VERSION] chemcanvas-git: d05571410f66a30a6f5053a6c648cc5fd34f62f3
+[17:08:57] Installing chemcanvas-git version: d05571410f66a30a6f5053a6c648cc5fd34f62f3
+[17:08:57] Starting remote custom build for chemcanvas-git...
+--2026-11-06 17:09:19--  https://github.com/ksharindam/chemcanvas/archive/d05571410f66a30a6f5053a6c648cc5fd34f62f3.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/ksharindam/chemcanvas/tar.gz/d05571410f66a30a6f5053a6c648cc5fd34f62f3 [following]
+--2026-11-06 17:09:19--  https://codeload.github.com/ksharindam/chemcanvas/tar.gz/d05571410f66a30a6f5053a6c648cc5fd34f62f3
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘chemcanvas-d05571410f66a30a6f5053a6c648cc5fd34f62f3.tar.gz’
+
+          chemcanva     [<=>                 ]       0  --.-KB/s               chemcanvas-d0557141     [ <=>                ] 409.00K  --.-KB/s    in 0.1s    
+
+2026-11-06 17:09:20 (2.76 MB/s) - ‘chemcanvas-d05571410f66a30a6f5053a6c648cc5fd34f62f3.tar.gz’ saved [418820]
+
+Processing ./.
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: chemcanvas
+  Building wheel for chemcanvas (pyproject.toml): started
+  Building wheel for chemcanvas (pyproject.toml): finished with status 'done'
+  /usr/lib/python3.15/site-packages/setuptools/command/build_py.py:215: BuildBackendWarning: Package 'chemcanvas.templates' is absent from the `packages` configuration.
+  !!
+  
+          ********************************************************************************
+          ############################
+          # Package would be ignored #
+          ############################
+          Python recognizes 'chemcanvas.templates' as an importable package[^1],
+          but it is absent from setuptools' `packages` configuration.
+  
+          This leads to an ambiguous overall configuration. If you want to distribute this
+          package, please make sure that 'chemcanvas.templates' is explicitly added
+          to the `packages` configuration field.
+  
+          Alternatively, you can also rely on setuptools' discovery methods
+          (for example by using `find_namespace_packages(...)`/`find_namespace:`
+          instead of `find_packages(...)`/`find:`).
+  
+          You can read more about "package discovery" on setuptools documentation page:
+  
+          - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+  
+          If you don't want 'chemcanvas.templates' to be distributed and are
+          already explicitly excluding 'chemcanvas.templates' via
+          `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+          you can try to use `exclude_package_data`, or `include-package-data=False` in
+          combination with a more fine grained `package-data` configuration.
+  
+          You can read more about "package data files" on setuptools documentation page:
+  
+          - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+  
+  
+          [^1]: For Python, any directory (with suitable naming) can be imported,
+                even if it does not contain any `.py` files.
+                On the other hand, currently there is no concept of package data
+                directory, all directories are treated like packages.
+          ********************************************************************************
+  
+  !!
+    check.warn(importable)
+  Created wheel for chemcanvas: filename=chemcanvas-0.15.2-py3-none-any.whl size=344583 sha256=207376efbd0d324da50850b75ed2322d0a771402d15ed06f6fb68fce95d22904
+  Stored in directory: /tmp/pip-ephem-wheel-cache-bg8h_qdk/wheels/74/66/cf/2abd48473c17f6a3a40184dfe694a0c3d7602006fb8337057c
+Successfully built chemcanvas
+WARNING: Error parsing dependencies of soupsieve: No package metadata was found.
+Installing collected packages: chemcanvas
+Successfully installed chemcanvas-0.15.2
+#!/bin/bash
+export PATH=$PATH:/opt/chemcanvas-qt6/bin
+export LD_LIBRARY_PATH=$PATH:/opt/chemcanvas-qt6/lib
+export PYTHONPATH=/opt/chemcanvas-qt6/lib/python3.15/site-packages/chemcanvas:/opt/chemcanvas-qt6/lib/python3.15/site-packages
+export QT_QPA_PLATFORM_PLUGIN_PATH=/opt/qt6/plugins/platforms
+/opt/chemcanvas-qt6/bin/chemcanvas "$@"
+[Desktop Entry]
+Type=Application
+Name=ChemCanvas Qt6
+Comment=A 2D Chemical Drawing Tool
+Exec=/usr/bin/chemcanvas-qt6 %f
+TryExec=/usr/bin/chemcanvas-qt6
+Icon=chemcanvas
+Categories=Science;Education;Chemistry;
+StartupWMClass=chemcanvas
+MimeType=application/vnd.ksharindam.ccdx+xml;image/svg+xml;application/vnd.chemdraw+xml;chemical/x-chemaxon-marvinfile;chemical/x-mdl-molfile;chemical/x-mdl-sdfile;chemical/x-daylight-smiles;
+Terminal=false
+StartupNotify=false
+d05571410f66a30a6f5053a6c648cc5fd34f62f3
+Updated registry for chemcanvas-git to version d05571410f66a30a6f5053a6c648cc5fd34f62f3
+[VERSION] chemcanvas-git: d05571410f66a30a6f5053a6c648cc5fd34f62f3
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package chemcanvas-git in /var/lib/custom-packages/
+Building custom package fastfetch...
+[17:09:33] Found custom package for fastfetch, bypassing BLFS aliases.
+[17:09:33] Custom package detected at /home/fusion809/lfs_packaging/fastfetch (package: fastfetch)
+[17:09:33] Extracting dependencies for custom package 'fastfetch'...
+[17:09:33] Required deps: bash coreutils gcc glibc yyjson zlib 
+[17:09:33] Dependency 'bash' already installed.
+[17:09:33] Dependency 'coreutils' already installed.
+[17:09:33] Dependency 'gcc' already installed.
+[17:09:33] Dependency 'glibc' already installed.
+[17:09:33] Dependency 'yyjson' already installed.
+[17:09:33] Dependency 'zlib' already installed.
+[VERSION] fastfetch: 2.71.0
+[17:09:34] Installing fastfetch version: 2.71.0
+[17:09:34] Starting remote custom build for fastfetch...
+--2026-11-06 17:09:38--  https://github.com/fastfetch-cli/fastfetch/archive/2.71.0.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/fastfetch-cli/fastfetch/tar.gz/refs/tags/2.71.0 [following]
+--2026-11-06 17:09:39--  https://codeload.github.com/fastfetch-cli/fastfetch/tar.gz/refs/tags/2.71.0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2009858 (1.9M) [application/x-gzip]
+Saving to: ‘fastfetch-2.71.0.tar.gz’
+
+fastfetch-2.71.0.ta   0%[                    ]       0  --.-KB/s               fastfetch-2.71.0.ta  49%[========>           ] 964.94K  4.71MB/s               fastfetch-2.71.0.ta 100%[===================>]   1.92M  6.66MB/s    in 0.3s    
+
+2026-11-06 17:09:40 (6.66 MB/s) - ‘fastfetch-2.71.0.tar.gz’ saved [2009858/2009858]
+
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The C compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Build for system processor: amd64
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.10")
+-- Looking for linux/version.h
+-- Looking for linux/version.h - found
+-- Build type: RelWithDebInfo
+-- Threads type: pthread
+-- Enabling LTO
+-- Target dirs: ROOT="" USR="/usr" HOME="/home" ETC="/etc"
+-- Found Python: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+-- Minifying 'help.json'
+-- Generating 'fastfetch.1'
+-- Looking for pipe2
+-- Looking for pipe2 - found
+-- Looking for memrchr
+-- Looking for memrchr - found
+-- System provided yyjson is used
+-- Performing Test COMPILER_SUPPORTS_COUNT_OF
+-- Performing Test COMPILER_SUPPORTS_COUNT_OF - Success
+-- C2Y _Countof is supported by the compiler
+-- Performing Test COMPILER_SUPPORTS_C23
+-- Performing Test COMPILER_SUPPORTS_C23 - Success
+-- Performing Test COMPILER_SUPPORTS_AUTO
+-- Performing Test COMPILER_SUPPORTS_AUTO - Success
+-- Looking for malloc_usable_size
+-- Looking for malloc_usable_size - found
+-- Library: found VULKAN by pkg-config
+-- Library: found WAYLAND by pkg-config
+-- Library: found XCB_RANDR by pkg-config
+-- Library: found XRANDR by pkg-config
+-- Library: found DRM by pkg-config
+-- Library: found VADRM by pkg-config
+-- Library: found VAX11 by pkg-config
+-- Library: missing: VDPAU
+-- Library: found GIO by pkg-config
+-- Library: found DCONF by pkg-config
+-- Library: missing: EET
+-- Library: found DBUS by pkg-config
+-- Library: found SQLITE3 by pkg-config
+-- Library: found IMAGEMAGICK7 by pkg-config
+-- Library: found ZLIB by pkg-config
+-- Library: missing: CHAFA
+-- Library: found EGL by pkg-config
+-- Library: found GLX by pkg-config
+-- Library: missing: OPENCL
+-- Library: found ELF by pkg-config
+-- Library: found LUA 5.5.1 by CMake
+-- Looking for linux/videodev2.h
+-- Looking for linux/videodev2.h - found
+-- Looking for utmpx.h
+-- Looking for utmpx.h - found
+-- Looking for wordexp.h
+-- Looking for wordexp.h - found
+-- wordexp.h found, wordexp support enabled
+-- Looking for pthread_np.h
+-- Looking for pthread_np.h - not found
+-- Looking for pthread_timedjoin_np
+-- Looking for pthread_timedjoin_np - found
+-- Disabled package managers: APK;DPKG;EMERGE;EOPKG;GUIX;LINGLONG;LPKG;LPKGBUILD;OPKG;PACSTALL;PALUDIS;PKG;PKGTOOL;RPM;SORCERY;WINGET;XBPS
+-- Configuring done (7.6s)
+-- Generating done (0.5s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    CMAKE_CXX_FLAGS
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/fastfetch/fastfetch-2.71.0/build
+[  1%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/commandoption.c.o
+[  1%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/debug.c.o
+[  2%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/duration.c.o
+[  2%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/font.c.o
+[  2%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/format.c.o
+[  3%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/frequency.c.o
+[  3%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/genconfig.c.o
+[  3%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/init.c.o
+[  4%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/jsonconfig.c.o
+[  4%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/library.c.o
+[  4%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/lua.c.o
+[  5%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/netif.c.o
+[  5%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/networking_common.c.o
+[  5%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/option.c.o
+[  6%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/parsing.c.o
+[  6%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/percent.c.o
+[  6%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/printing.c.o
+[  8%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/properties.c.o
+[  8%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/settings.c.o
+[  9%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/size.c.o
+[  9%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/temps.c.o
+[  9%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/time.c.o
+[ 10%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/edidHelper.c.o
+[ 10%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/base64.c.o
+[ 10%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/FFcache.c.o
+[ 11%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/FFlist.c.o
+[ 11%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/FFstrbuf.c.o
+[ 11%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/path.c.o
+[ 12%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/FFPlatform.c.o
+[ 12%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/smbios.c.o
+[ 12%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/strutil.c.o
+[ 13%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/zlib.c.o
+[ 13%] Building C object CMakeFiles/libfastfetch.dir/src/detection/bluetoothradio/bluetoothradio.c.o
+[ 15%] Building C object CMakeFiles/libfastfetch.dir/src/detection/bootmgr/bootmgr.c.o
+[ 15%] Building C object CMakeFiles/libfastfetch.dir/src/detection/chassis/chassis.c.o
+[ 15%] Building C object CMakeFiles/libfastfetch.dir/src/detection/codec/codec.c.o
+[ 16%] Building C object CMakeFiles/libfastfetch.dir/src/detection/codec/codec_vulkan.c.o
+[ 16%] Building C object CMakeFiles/libfastfetch.dir/src/detection/cpu/cpu.c.o
+[ 16%] Building C object CMakeFiles/libfastfetch.dir/src/detection/cpu/cpu_x86.c.o
+[ 17%] Building C object CMakeFiles/libfastfetch.dir/src/detection/cpuusage/cpuusage.c.o
+[ 17%] Building C object CMakeFiles/libfastfetch.dir/src/detection/command/command.c.o
+[ 17%] Building C object CMakeFiles/libfastfetch.dir/src/detection/disk/disk.c.o
+[ 18%] Building C object CMakeFiles/libfastfetch.dir/src/detection/diskio/diskio.c.o
+[ 18%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/displayserver.c.o
+[ 18%] Building C object CMakeFiles/libfastfetch.dir/src/detection/editor/editor.c.o
+[ 19%] Building C object CMakeFiles/libfastfetch.dir/src/detection/font/font.c.o
+[ 19%] Building C object CMakeFiles/libfastfetch.dir/src/detection/gpu/gpu.c.o
+[ 20%] Building C object CMakeFiles/libfastfetch.dir/src/detection/host/host_mac.c.o
+[ 20%] Building C object CMakeFiles/libfastfetch.dir/src/detection/media/media.c.o
+[ 20%] Building C object CMakeFiles/libfastfetch.dir/src/detection/netio/netio.c.o
+[ 22%] Building C object CMakeFiles/libfastfetch.dir/src/detection/opencl/opencl.c.o
+[ 22%] Building C object CMakeFiles/libfastfetch.dir/src/detection/opengl/opengl_shared.c.o
+[ 22%] Building C object CMakeFiles/libfastfetch.dir/src/detection/os/os.c.o
+[ 23%] Building C object CMakeFiles/libfastfetch.dir/src/detection/packages/packages.c.o
+[ 23%] Building C object CMakeFiles/libfastfetch.dir/src/detection/physicalmemory/physicalmemory.c.o
+[ 23%] Building C object CMakeFiles/libfastfetch.dir/src/detection/publicip/publicip.c.o
+[ 24%] Building C object CMakeFiles/libfastfetch.dir/src/detection/terminaltheme/terminaltheme.c.o
+[ 24%] Building C object CMakeFiles/libfastfetch.dir/src/detection/top/top.c.o
+[ 24%] Building C object CMakeFiles/libfastfetch.dir/src/detection/terminalfont/terminalfont.c.o
+[ 25%] Building C object CMakeFiles/libfastfetch.dir/src/detection/terminalshell/terminalshell.c.o
+[ 25%] Building C object CMakeFiles/libfastfetch.dir/src/detection/version/version.c.o
+[ 26%] Building C object CMakeFiles/libfastfetch.dir/src/detection/vulkan/vulkan.c.o
+[ 26%] Building C object CMakeFiles/libfastfetch.dir/src/detection/weather/weather.c.o
+[ 26%] Building C object CMakeFiles/libfastfetch.dir/src/detection/zpool/zpool.c.o
+[ 27%] Building C object CMakeFiles/libfastfetch.dir/src/logo/builtin.c.o
+[ 27%] Building C object CMakeFiles/libfastfetch.dir/src/logo/logo.c.o
+[ 27%] Building C object CMakeFiles/libfastfetch.dir/src/logo/spin/render.c.o
+[ 29%] Building C object CMakeFiles/libfastfetch.dir/src/logo/spin/spin.c.o
+[ 29%] Building C object CMakeFiles/libfastfetch.dir/src/modules/modules.c.o
+[ 29%] Building C object CMakeFiles/libfastfetch.dir/src/options/display.c.o
+[ 30%] Building C object CMakeFiles/libfastfetch.dir/src/options/logo.c.o
+[ 30%] Building C object CMakeFiles/libfastfetch.dir/src/options/general.c.o
+[ 30%] Building C object CMakeFiles/libfastfetch.dir/src/logo/image/image.c.o
+[ 31%] Building C object CMakeFiles/libfastfetch.dir/src/logo/image/im6.c.o
+[ 31%] Building C object CMakeFiles/libfastfetch.dir/src/logo/image/im7.c.o
+[ 31%] Building C object CMakeFiles/libfastfetch.dir/src/logo/image/sixel.c.o
+[ 32%] Building C object CMakeFiles/libfastfetch.dir/src/modules/battery/battery.c.o
+[ 32%] Building C object CMakeFiles/libfastfetch.dir/src/modules/bios/bios.c.o
+[ 33%] Building C object CMakeFiles/libfastfetch.dir/src/modules/bluetooth/bluetooth.c.o
+[ 33%] Building C object CMakeFiles/libfastfetch.dir/src/modules/bluetoothradio/bluetoothradio.c.o
+[ 33%] Building C object CMakeFiles/libfastfetch.dir/src/modules/board/board.c.o
+[ 34%] Building C object CMakeFiles/libfastfetch.dir/src/modules/bootmgr/bootmgr.c.o
+[ 34%] Building C object CMakeFiles/libfastfetch.dir/src/modules/break/break.c.o
+[ 34%] Building C object CMakeFiles/libfastfetch.dir/src/modules/brightness/brightness.c.o
+[ 36%] Building C object CMakeFiles/libfastfetch.dir/src/modules/btrfs/btrfs.c.o
+[ 36%] Building C object CMakeFiles/libfastfetch.dir/src/modules/camera/camera.c.o
+[ 36%] Building C object CMakeFiles/libfastfetch.dir/src/modules/chassis/chassis.c.o
+[ 37%] Building C object CMakeFiles/libfastfetch.dir/src/modules/codec/codec.c.o
+[ 37%] Building C object CMakeFiles/libfastfetch.dir/src/modules/colors/colors.c.o
+[ 37%] Building C object CMakeFiles/libfastfetch.dir/src/modules/command/command.c.o
+[ 38%] Building C object CMakeFiles/libfastfetch.dir/src/modules/cpu/cpu.c.o
+[ 38%] Building C object CMakeFiles/libfastfetch.dir/src/modules/cpucache/cpucache.c.o
+[ 39%] Building C object CMakeFiles/libfastfetch.dir/src/modules/cpuusage/cpuusage.c.o
+[ 39%] Building C object CMakeFiles/libfastfetch.dir/src/modules/cursor/cursor.c.o
+[ 39%] Building C object CMakeFiles/libfastfetch.dir/src/modules/custom/custom.c.o
+[ 40%] Building C object CMakeFiles/libfastfetch.dir/src/modules/datetime/datetime.c.o
+[ 40%] Building C object CMakeFiles/libfastfetch.dir/src/modules/de/de.c.o
+[ 40%] Building C object CMakeFiles/libfastfetch.dir/src/modules/disk/disk.c.o
+[ 41%] Building C object CMakeFiles/libfastfetch.dir/src/modules/diskio/diskio.c.o
+[ 41%] Building C object CMakeFiles/libfastfetch.dir/src/modules/display/display.c.o
+[ 41%] Building C object CMakeFiles/libfastfetch.dir/src/modules/dns/dns.c.o
+[ 43%] Building C object CMakeFiles/libfastfetch.dir/src/modules/editor/editor.c.o
+[ 43%] Building C object CMakeFiles/libfastfetch.dir/src/modules/font/font.c.o
+[ 43%] Building C object CMakeFiles/libfastfetch.dir/src/modules/gamepad/gamepad.c.o
+[ 44%] Building C object CMakeFiles/libfastfetch.dir/src/modules/gpu/gpu.c.o
+[ 44%] Building C object CMakeFiles/libfastfetch.dir/src/modules/host/host.c.o
+[ 45%] Building C object CMakeFiles/libfastfetch.dir/src/modules/icons/icons.c.o
+[ 45%] Building C object CMakeFiles/libfastfetch.dir/src/modules/initsystem/initsystem.c.o
+[ 45%] Building C object CMakeFiles/libfastfetch.dir/src/modules/kernel/kernel.c.o
+[ 46%] Building C object CMakeFiles/libfastfetch.dir/src/modules/keyboard/keyboard.c.o
+[ 46%] Building C object CMakeFiles/libfastfetch.dir/src/modules/lm/lm.c.o
+[ 46%] Building C object CMakeFiles/libfastfetch.dir/src/modules/loadavg/loadavg.c.o
+[ 47%] Building C object CMakeFiles/libfastfetch.dir/src/modules/locale/locale.c.o
+[ 47%] Building C object CMakeFiles/libfastfetch.dir/src/modules/localip/localip.c.o
+[ 47%] Building C object CMakeFiles/libfastfetch.dir/src/modules/logo/logo.c.o
+[ 48%] Building C object CMakeFiles/libfastfetch.dir/src/modules/media/media.c.o
+[ 48%] Building C object CMakeFiles/libfastfetch.dir/src/modules/memory/memory.c.o
+[ 48%] Building C object CMakeFiles/libfastfetch.dir/src/modules/monitor/monitor.c.o
+[ 50%] Building C object CMakeFiles/libfastfetch.dir/src/modules/mouse/mouse.c.o
+[ 50%] Building C object CMakeFiles/libfastfetch.dir/src/modules/netio/netio.c.o
+[ 51%] Building C object CMakeFiles/libfastfetch.dir/src/modules/opencl/opencl.c.o
+[ 51%] Building C object CMakeFiles/libfastfetch.dir/src/modules/opengl/opengl.c.o
+[ 51%] Building C object CMakeFiles/libfastfetch.dir/src/modules/os/os.c.o
+[ 52%] Building C object CMakeFiles/libfastfetch.dir/src/modules/packages/packages.c.o
+[ 52%] Building C object CMakeFiles/libfastfetch.dir/src/modules/physicaldisk/physicaldisk.c.o
+[ 52%] Building C object CMakeFiles/libfastfetch.dir/src/modules/physicalmemory/physicalmemory.c.o
+[ 53%] Building C object CMakeFiles/libfastfetch.dir/src/modules/player/player.c.o
+[ 53%] Building C object CMakeFiles/libfastfetch.dir/src/modules/poweradapter/poweradapter.c.o
+[ 53%] Building C object CMakeFiles/libfastfetch.dir/src/modules/processes/processes.c.o
+[ 54%] Building C object CMakeFiles/libfastfetch.dir/src/modules/publicip/publicip.c.o
+[ 54%] Building C object CMakeFiles/libfastfetch.dir/src/modules/separator/separator.c.o
+[ 54%] Building C object CMakeFiles/libfastfetch.dir/src/modules/shell/shell.c.o
+[ 55%] Building C object CMakeFiles/libfastfetch.dir/src/modules/sound/sound.c.o
+[ 55%] Building C object CMakeFiles/libfastfetch.dir/src/modules/swap/swap.c.o
+[ 55%] Building C object CMakeFiles/libfastfetch.dir/src/modules/terminal/terminal.c.o
+[ 56%] Building C object CMakeFiles/libfastfetch.dir/src/modules/terminalfont/terminalfont.c.o
+[ 56%] Building C object CMakeFiles/libfastfetch.dir/src/modules/terminalsize/terminalsize.c.o
+[ 58%] Building C object CMakeFiles/libfastfetch.dir/src/modules/terminaltheme/terminaltheme.c.o
+[ 58%] Building C object CMakeFiles/libfastfetch.dir/src/modules/theme/theme.c.o
+[ 58%] Building C object CMakeFiles/libfastfetch.dir/src/modules/title/title.c.o
+[ 59%] Building C object CMakeFiles/libfastfetch.dir/src/modules/top/top.c.o
+[ 59%] Building C object CMakeFiles/libfastfetch.dir/src/modules/tpm/tpm.c.o
+[ 59%] Building C object CMakeFiles/libfastfetch.dir/src/modules/uptime/uptime.c.o
+[ 60%] Building C object CMakeFiles/libfastfetch.dir/src/modules/users/users.c.o
+[ 60%] Building C object CMakeFiles/libfastfetch.dir/src/modules/version/version.c.o
+[ 60%] Building C object CMakeFiles/libfastfetch.dir/src/modules/vulkan/vulkan.c.o
+[ 61%] Building C object CMakeFiles/libfastfetch.dir/src/modules/wallpaper/wallpaper.c.o
+[ 61%] Building C object CMakeFiles/libfastfetch.dir/src/modules/weather/weather.c.o
+[ 61%] Building C object CMakeFiles/libfastfetch.dir/src/modules/wifi/wifi.c.o
+[ 62%] Building C object CMakeFiles/libfastfetch.dir/src/modules/wm/wm.c.o
+[ 62%] Building C object CMakeFiles/libfastfetch.dir/src/modules/wmtheme/wmtheme.c.o
+[ 63%] Building C object CMakeFiles/libfastfetch.dir/src/modules/zpool/zpool.c.o
+[ 63%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/dbus.c.o
+[ 63%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/io_unix.c.o
+[ 65%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/netif_linux.c.o
+[ 65%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/networking_linux.c.o
+[ 65%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/processing_linux.c.o
+[ 66%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/FFPlatform_unix.c.o
+[ 66%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/binary_linux.c.o
+[ 66%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/kmod_linux.c.o
+[ 67%] Building C object CMakeFiles/libfastfetch.dir/src/detection/battery/battery_linux.c.o
+[ 67%] Building C object CMakeFiles/libfastfetch.dir/src/detection/bios/bios_linux.c.o
+[ 67%] Building C object CMakeFiles/libfastfetch.dir/src/detection/board/board_linux.c.o
+[ 68%] Building C object CMakeFiles/libfastfetch.dir/src/detection/bootmgr/bootmgr_linux.c.o
+[ 68%] Building C object CMakeFiles/libfastfetch.dir/src/detection/brightness/brightness_linux.c.o
+[ 69%] Building C object CMakeFiles/libfastfetch.dir/src/detection/btrfs/btrfs_linux.c.o
+[ 69%] Building C object CMakeFiles/libfastfetch.dir/src/detection/chassis/chassis_linux.c.o
+[ 69%] Building C object CMakeFiles/libfastfetch.dir/src/detection/codec/codec_linux.c.o
+[ 70%] Building C object CMakeFiles/libfastfetch.dir/src/detection/cpu/cpu_linux.c.o
+[ 70%] Building C object CMakeFiles/libfastfetch.dir/src/detection/cpucache/cpucache_linux.c.o
+[ 70%] Building C object CMakeFiles/libfastfetch.dir/src/detection/cpuusage/cpuusage_linux.c.o
+[ 72%] Building C object CMakeFiles/libfastfetch.dir/src/detection/cursor/cursor_linux.c.o
+[ 72%] Building C object CMakeFiles/libfastfetch.dir/src/detection/bluetooth/bluetooth_linux.c.o
+[ 72%] Building C object CMakeFiles/libfastfetch.dir/src/detection/bluetoothradio/bluetoothradio_linux.c.o
+[ 73%] Building C object CMakeFiles/libfastfetch.dir/src/detection/disk/disk_linux.c.o
+[ 73%] Building C object CMakeFiles/libfastfetch.dir/src/detection/dns/dns_linux.c.o
+[ 73%] Building C object CMakeFiles/libfastfetch.dir/src/detection/physicaldisk/physicaldisk_linux.c.o
+[ 74%] Building C object CMakeFiles/libfastfetch.dir/src/detection/physicalmemory/physicalmemory_linux.c.o
+[ 74%] Building C object CMakeFiles/libfastfetch.dir/src/detection/diskio/diskio_linux.c.o
+[ 75%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/linux/displayserver_linux.c.o
+[ 75%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/linux/common.c.o
+[ 75%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/linux/drm.c.o
+[ 76%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/linux/wayland/wayland.c.o
+[ 76%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/linux/wayland/mutter.c.o
+[ 76%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/linux/wayland/global-output.c.o
+[ 77%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/linux/wayland/wl-output-protocol.c.o
+[ 77%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/linux/wayland/wp-color-management-v1-protocol.c.o
+[ 77%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/linux/wayland/kde-output.c.o
+[ 79%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/linux/wayland/kde-output-device-v2-protocol.c.o
+[ 79%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/linux/wayland/xdg-output-unstable-v1-protocol.c.o
+[ 79%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/linux/wmde.c.o
+[ 80%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/linux/xcb.c.o
+[ 80%] Building C object CMakeFiles/libfastfetch.dir/src/detection/displayserver/linux/xlib.c.o
+[ 80%] Building C object CMakeFiles/libfastfetch.dir/src/detection/font/font_linux.c.o
+[ 81%] Building C object CMakeFiles/libfastfetch.dir/src/detection/gpu/gpu_linux.c.o
+[ 81%] Building C object CMakeFiles/libfastfetch.dir/src/detection/gpu/gpu_drm.c.o
+[ 82%] Building C object CMakeFiles/libfastfetch.dir/src/detection/gpu/gpu_pci.c.o
+[ 82%] Building C object CMakeFiles/libfastfetch.dir/src/detection/gpu/gpu_windows.c.o
+[ 82%] Building C object CMakeFiles/libfastfetch.dir/src/detection/gtk_qt/gtk.c.o
+[ 83%] Building C object CMakeFiles/libfastfetch.dir/src/detection/host/host_linux.c.o
+[ 83%] Building C object CMakeFiles/libfastfetch.dir/src/detection/icons/icons_linux.c.o
+[ 83%] Building C object CMakeFiles/libfastfetch.dir/src/detection/initsystem/initsystem_linux.c.o
+[ 84%] Building C object CMakeFiles/libfastfetch.dir/src/detection/keyboard/keyboard_linux.c.o
+[ 84%] Building C object CMakeFiles/libfastfetch.dir/src/detection/libc/libc_linux.c.o
+[ 84%] Building C object CMakeFiles/libfastfetch.dir/src/detection/lm/lm_linux.c.o
+[ 86%] Building C object CMakeFiles/libfastfetch.dir/src/detection/loadavg/loadavg_linux.c.o
+[ 86%] Building C object CMakeFiles/libfastfetch.dir/src/detection/locale/locale_linux.c.o
+[ 86%] Building C object CMakeFiles/libfastfetch.dir/src/detection/localip/localip_linux.c.o
+[ 87%] Building C object CMakeFiles/libfastfetch.dir/src/detection/gamepad/gamepad_linux.c.o
+[ 87%] Building C object CMakeFiles/libfastfetch.dir/src/detection/media/media_linux.c.o
+[ 88%] Building C object CMakeFiles/libfastfetch.dir/src/detection/memory/memory_linux.c.o
+[ 88%] Building C object CMakeFiles/libfastfetch.dir/src/detection/mouse/mouse_linux.c.o
+[ 88%] Building C object CMakeFiles/libfastfetch.dir/src/detection/netio/netio_linux.c.o
+[ 89%] Building C object CMakeFiles/libfastfetch.dir/src/detection/opengl/opengl_linux.c.o
+[ 89%] Building C object CMakeFiles/libfastfetch.dir/src/detection/os/os_linux.c.o
+[ 89%] Building C object CMakeFiles/libfastfetch.dir/src/detection/packages/packages_linux.c.o
+[ 90%] Building C object CMakeFiles/libfastfetch.dir/src/detection/packages/packages_nix.c.o
+[ 90%] Building C object CMakeFiles/libfastfetch.dir/src/detection/poweradapter/poweradapter_linux.c.o
+[ 90%] Building C object CMakeFiles/libfastfetch.dir/src/detection/processes/processes_linux.c.o
+[ 91%] Building C object CMakeFiles/libfastfetch.dir/src/detection/gtk_qt/qt.c.o
+[ 91%] Building C object CMakeFiles/libfastfetch.dir/src/detection/sound/sound_linux.c.o
+[ 91%] Building C object CMakeFiles/libfastfetch.dir/src/detection/swap/swap_linux.c.o
+[ 93%] Building C object CMakeFiles/libfastfetch.dir/src/detection/terminalfont/terminalfont_linux.c.o
+[ 93%] Building C object CMakeFiles/libfastfetch.dir/src/detection/terminalshell/terminalshell_linux.c.o
+[ 94%] Building C object CMakeFiles/libfastfetch.dir/src/detection/terminalsize/terminalsize_linux.c.o
+[ 94%] Building C object CMakeFiles/libfastfetch.dir/src/detection/theme/theme_linux.c.o
+[ 94%] Building C object CMakeFiles/libfastfetch.dir/src/detection/top/top_linux.c.o
+[ 95%] Building C object CMakeFiles/libfastfetch.dir/src/detection/tpm/tpm_linux.c.o
+[ 95%] Building C object CMakeFiles/libfastfetch.dir/src/detection/uptime/uptime_linux.c.o
+[ 95%] Building C object CMakeFiles/libfastfetch.dir/src/detection/users/users_linux.c.o
+[ 96%] Building C object CMakeFiles/libfastfetch.dir/src/detection/wallpaper/wallpaper_linux.c.o
+[ 96%] Building C object CMakeFiles/libfastfetch.dir/src/detection/wifi/wifi_linux.c.o
+[ 96%] Building C object CMakeFiles/libfastfetch.dir/src/detection/wm/wm_linux.c.o
+[ 97%] Building C object CMakeFiles/libfastfetch.dir/src/detection/de/de_linux.c.o
+[ 97%] Building C object CMakeFiles/libfastfetch.dir/src/detection/wmtheme/wmtheme_linux.c.o
+[ 97%] Building C object CMakeFiles/libfastfetch.dir/src/detection/camera/camera_linux.c.o
+[ 98%] Building C object CMakeFiles/libfastfetch.dir/src/detection/gpu/gpu_nvidia.c.o
+[ 98%] Building C object CMakeFiles/libfastfetch.dir/src/detection/gpu/gpu_mthreads.c.o
+[100%] Building C object CMakeFiles/libfastfetch.dir/src/common/impl/wcwidth.c.o
+[100%] Built target libfastfetch
+[100%] Building C object CMakeFiles/fastfetch.dir/src/fastfetch.c.o
+[100%] Linking C executable fastfetch
+[100%] Built target fastfetch
+[ 86%] Built target libfastfetch
+[ 86%] Built target fastfetch
+[ 86%] Building C object CMakeFiles/fastfetch-test-cache.dir/tests/cache.c.o
+[ 87%] Linking C executable fastfetch-test-cache
+[ 87%] Built target fastfetch-test-cache
+[ 88%] Building C object CMakeFiles/fastfetch-test-logo.dir/tests/logo.c.o
+[ 88%] Linking C executable fastfetch-test-logo
+[ 88%] Built target fastfetch-test-logo
+[ 88%] Building C object CMakeFiles/fastfetch-test-spin.dir/tests/spin.c.o
+[ 88%] Linking C executable fastfetch-test-spin
+[ 88%] Built target fastfetch-test-spin
+[ 89%] Building C object CMakeFiles/fastfetch-test-strbuf.dir/tests/strbuf.c.o
+[ 89%] Linking C executable fastfetch-test-strbuf
+[ 89%] Built target fastfetch-test-strbuf
+[ 89%] Building C object CMakeFiles/fastfetch-test-list.dir/tests/list.c.o
+[ 89%] Linking C executable fastfetch-test-list
+[ 89%] Built target fastfetch-test-list
+[ 90%] Building C object CMakeFiles/fastfetch-test-format.dir/tests/format.c.o
+[ 90%] Linking C executable fastfetch-test-format
+[ 90%] Built target fastfetch-test-format
+[ 90%] Building C object CMakeFiles/fastfetch-test-color.dir/tests/color.c.o
+[ 90%] Linking C executable fastfetch-test-color
+[ 90%] Built target fastfetch-test-color
+[ 91%] Building C object CMakeFiles/fastfetch-test-duration.dir/tests/duration.c.o
+[ 91%] Linking C executable fastfetch-test-duration
+[ 91%] Built target fastfetch-test-duration
+[ 91%] Building C object CMakeFiles/fastfetch-test-strutil.dir/tests/strutil.c.o
+[ 92%] Linking C executable fastfetch-test-strutil
+[ 92%] Built target fastfetch-test-strutil
+[ 92%] Building C object CMakeFiles/fastfetch-test-networking.dir/tests/networking.c.o
+[ 93%] Linking C executable fastfetch-test-networking
+[ 93%] Built target fastfetch-test-networking
+[ 94%] Building C object CMakeFiles/fastfetch-test-base64.dir/tests/base64.c.o
+[ 94%] Linking C executable fastfetch-test-base64
+[ 94%] Built target fastfetch-test-base64
+[ 94%] Building C object CMakeFiles/fastfetch-test-parsing.dir/tests/parsing.c.o
+[ 94%] Linking C executable fastfetch-test-parsing
+[ 94%] Built target fastfetch-test-parsing
+[ 95%] Building C object CMakeFiles/fastfetch-test-properties.dir/tests/properties.c.o
+[ 95%] Linking C executable fastfetch-test-properties
+[ 95%] Built target fastfetch-test-properties
+[ 95%] Building C object CMakeFiles/fastfetch-test-size.dir/tests/size.c.o
+[ 96%] Linking C executable fastfetch-test-size
+[ 96%] Built target fastfetch-test-size
+[ 97%] Building C object CMakeFiles/fastfetch-test-frequency.dir/tests/frequency.c.o
+[ 97%] Linking C executable fastfetch-test-frequency
+[ 97%] Built target fastfetch-test-frequency
+[ 98%] Building C object CMakeFiles/fastfetch-test-percent.dir/tests/percent.c.o
+[ 98%] Linking C executable fastfetch-test-percent
+[ 98%] Built target fastfetch-test-percent
+[ 98%] Building C object CMakeFiles/fastfetch-test-temps.dir/tests/temps.c.o
+[ 98%] Linking C executable fastfetch-test-temps
+[ 98%] Built target fastfetch-test-temps
+[ 98%] Building C object CMakeFiles/fastfetch-test-endian.dir/tests/endian.c.o
+[ 99%] Linking C executable fastfetch-test-endian
+[ 99%] Built target fastfetch-test-endian
+[ 99%] Building C object CMakeFiles/fastfetch-test-endian-bigendian.dir/tests/endian-bigendian.c.o
+[ 99%] Linking C executable fastfetch-test-endian-bigendian
+[ 99%] Built target fastfetch-test-endian-bigendian
+[ 99%] Building C object CMakeFiles/fastfetch-test-gpu-pci.dir/tests/gpu_pci.c.o
+[100%] Linking C executable fastfetch-test-gpu-pci
+[100%] Built target fastfetch-test-gpu-pci
+Install the project...
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /usr/bin/fastfetch
+-- Installing: /usr/share/bash-completion/completions/fastfetch
+-- Installing: /usr/share/zsh/site-functions/_fastfetch
+-- Installing: /usr/share/fish/vendor_completions.d/fastfetch.fish
+-- Up-to-date: /usr/share/fastfetch/presets
+-- Installing: /usr/share/fastfetch/presets/archey.jsonc
+-- Up-to-date: /usr/share/fastfetch/presets/examples
+-- Installing: /usr/share/fastfetch/presets/examples/15.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/14.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/19.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/25.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/11.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/31.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/24.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/28.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/12.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/8.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/2.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/20.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/17.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/21.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/29.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/18.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/4.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/6.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/23.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/32.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/13.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/16.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/22.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/3.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/30.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/9.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/10.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/7.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/5.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/26.jsonc
+-- Installing: /usr/share/fastfetch/presets/examples/27.jsonc
+-- Installing: /usr/share/fastfetch/presets/screenfetch.jsonc
+-- Installing: /usr/share/fastfetch/presets/all.jsonc
+-- Installing: /usr/share/fastfetch/presets/ci.jsonc
+-- Installing: /usr/share/fastfetch/presets/paleofetch.jsonc
+-- Installing: /usr/share/fastfetch/presets/neofetch.jsonc
+-- Installing: /usr/share/licenses/fastfetch/LICENSE
+-- Installing: /usr/share/man/man1/fastfetch.1
+2.71.0
+Updated registry for fastfetch to version 2.71.0
+[VERSION] fastfetch: 2.71.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package fastfetch in /var/lib/custom-packages/
+Building custom package gnome-extension-manager...
+[17:13:03] Found custom package for gnome-extension-manager, bypassing BLFS aliases.
+[17:13:03] Custom package detected at /home/fusion809/lfs_packaging/gnome-extension-manager (package: gnome-extension-manager)
+[17:13:03] Extracting dependencies for custom package 'gnome-extension-manager'...
+[17:13:03] Required deps: brotli bzip2 cairo curl cyrus-sasl e2fsprogs elfutils expat fontconfig freetype fribidi gcc gdk-pixbuf gettext glib2 glibc glycin graphene graphite2 gst-plugins-bad gst-plugins-base gstreamer gtk4 harfbuzz icu json-glib keyutils lcms2 libadwaita libdrm libepoxy libffi libfyaml libglvnd libgudev libidn2 libjpeg-turbo libpciaccess libpng libpsl libseccomp libsoup libunistring libunwind libwebp libx11 libxau libxcb libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxml2 libxmlb libxrandr libxrender libxshmfence libxxf86vm llvm lm-sensors mesa mitkrb nghttp2 openldap openssl orc pango pcre2 pixman spirv-tools sqlite systemd tiff util-linux vulkan-loader wayland webkitgtk xz zlib zstd 
+[17:13:03] Dependency 'brotli' already installed.
+[17:13:03] Dependency 'bzip2' already installed.
+[17:13:03] Dependency 'cairo' already installed.
+[17:13:03] Dependency 'curl' already installed.
+[17:13:03] Dependency 'cyrus-sasl' already installed.
+[17:13:03] Dependency 'e2fsprogs' already installed.
+[17:13:03] Dependency 'elfutils' already installed.
+[17:13:03] Dependency 'expat' already installed.
+[17:13:03] Dependency 'fontconfig' already installed.
+[17:13:03] Dependency 'freetype' already installed.
+[17:13:03] Dependency 'fribidi' already installed.
+[17:13:03] Dependency 'gcc' already installed.
+[17:13:03] Dependency 'gdk-pixbuf' already installed.
+[17:13:03] Dependency 'gettext' already installed.
+[17:13:03] Dependency 'glib2' already installed.
+[17:13:03] Dependency 'glibc' already installed.
+[17:13:03] Dependency 'glycin' already installed.
+[17:13:03] Dependency 'graphene' already installed.
+[17:13:03] Dependency 'graphite2' already installed.
+[17:13:03] Dependency 'gst-plugins-bad' already installed.
+[17:13:03] Dependency 'gst-plugins-base' already installed.
+[17:13:03] Dependency 'gstreamer' already installed.
+[17:13:03] Dependency 'gtk4' already installed.
+[17:13:03] Dependency 'harfbuzz' already installed.
+[17:13:03] Dependency 'icu' already installed.
+[17:13:03] Dependency 'json-glib' already installed.
+[17:13:03] Dependency 'keyutils' already installed.
+[17:13:03] Dependency 'lcms2' already installed.
+[17:13:03] Dependency 'libadwaita' already installed.
+[17:13:03] Dependency 'libdrm' already installed.
+[17:13:03] Dependency 'libepoxy' already installed.
+[17:13:03] Dependency 'libffi' already installed.
+[17:13:03] Dependency 'libfyaml' already installed.
+[17:13:03] Dependency 'libglvnd' already installed.
+[17:13:03] Dependency 'libgudev' already installed.
+[17:13:03] Dependency 'libidn2' already installed.
+[17:13:03] Dependency 'libjpeg-turbo' already installed.
+[17:13:03] Dependency 'libpciaccess' already installed.
+[17:13:03] Dependency 'libpng' already installed.
+[17:13:03] Dependency 'libpsl' already installed.
+[17:13:03] Dependency 'libseccomp' already installed.
+[17:13:03] Dependency 'libsoup' already installed.
+[17:13:04] Dependency 'libunistring' already installed.
+[17:13:04] Dependency 'libunwind' already installed.
+[17:13:04] Dependency 'libwebp' already installed.
+[17:13:04] Dependency 'libx11' already installed.
+[17:13:04] Dependency 'libxau' already installed.
+[17:13:04] Dependency 'libxcb' already installed.
+[17:13:04] Dependency 'libxcursor' already installed.
+[17:13:04] Dependency 'libxdamage' already installed.
+[17:13:04] Dependency 'libxdmcp' already installed.
+[17:13:04] Dependency 'libxext' already installed.
+[17:13:04] Dependency 'libxfixes' already installed.
+[17:13:04] Dependency 'libxi' already installed.
+[17:13:04] Dependency 'libxinerama' already installed.
+[17:13:04] Dependency 'libxkbcommon' already installed.
+[17:13:04] Dependency 'libxml2' already installed.
+[17:13:04] Dependency 'libxmlb' already installed.
+[17:13:04] Dependency 'libxrandr' already installed.
+[17:13:04] Dependency 'libxrender' already installed.
+[17:13:04] Dependency 'libxshmfence' already installed.
+[17:13:04] Dependency 'libxxf86vm' already installed.
+[17:13:04] Dependency 'llvm' already installed.
+[17:13:04] Dependency 'lm-sensors' already installed.
+[17:13:04] Dependency 'mesa' already installed.
+[17:13:04] Dependency 'mitkrb' already installed.
+[17:13:04] Dependency 'nghttp2' already installed.
+[17:13:04] Dependency 'openldap' already installed.
+[17:13:04] Dependency 'openssl' already installed.
+[17:13:04] Dependency 'orc' already installed.
+[17:13:04] Dependency 'pango' already installed.
+[17:13:04] Dependency 'pcre2' already installed.
+[17:13:04] Dependency 'pixman' already installed.
+[17:13:04] Dependency 'spirv-tools' already installed.
+[17:13:04] Dependency 'sqlite' already installed.
+[17:13:04] Dependency 'systemd' already installed.
+[17:13:04] Dependency 'tiff' already installed.
+[17:13:04] Dependency 'util-linux' already installed.
+[17:13:04] Dependency 'vulkan-loader' already installed.
+[17:13:04] Dependency 'wayland' already installed.
+[17:13:04] Dependency 'webkitgtk' already installed.
+[17:13:04] Dependency 'xz' already installed.
+[17:13:04] Dependency 'zlib' already installed.
+[17:13:04] Dependency 'zstd' already installed.
+[VERSION] gnome-extension-manager: 0.7.0
+[17:13:04] Installing gnome-extension-manager version: 0.7.0
+[17:13:04] Starting remote custom build for gnome-extension-manager...
+--2026-11-06 17:13:09--  https://github.com/mjakeman/extension-manager/archive/v0.7.0.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/mjakeman/extension-manager/tar.gz/refs/tags/v0.7.0 [following]
+--2026-11-06 17:13:09--  https://codeload.github.com/mjakeman/extension-manager/tar.gz/refs/tags/v0.7.0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘extension-manager-0.7.0.tar.gz’
+
+          extension     [<=>                 ]       0  --.-KB/s                        extension-     [ <=>                ]   1.05M  5.22MB/s               extension-manager-0     [  <=>               ]   1.85M  6.78MB/s    in 0.3s    
+
+2026-11-06 17:13:10 (6.78 MB/s) - ‘extension-manager-0.7.0.tar.gz’ saved [1935425]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <-D>
+meson_args: <backtrace=false>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <-D> <backtrace=false> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/gnome-extension-manager/extension-manager-0.7.0
+Build dir: /home/fusion809/lfs_packaging/gnome-extension-manager/extension-manager-0.7.0/build
+Build type: native build
+Project name: extension-manager
+Project version: 0.7.0
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Configuring exm-config.h using configuration
+Configuring com.mattjakeman.ExtensionManager.desktop.in using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Configuring com.mattjakeman.ExtensionManager.metainfo.xml.in using configuration
+Program appstreamcli found: YES (/usr/bin/appstreamcli)
+Configuring com.mattjakeman.ExtensionManager.gschema.xml using configuration
+Program glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Configuring com.mattjakeman.ExtensionManager.search-provider.ini using configuration
+Configuring com.mattjakeman.ExtensionManager.service using configuration
+Library backtrace found: NO
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency gtk4 found: YES 4.24.1
+Run-time dependency libadwaita-1 found: YES 1.10.0
+Run-time dependency gio-unix-2.0 found: YES 2.90.1
+Run-time dependency json-glib-1.0 found: YES 1.10.8
+Run-time dependency libsoup-3.0 found: YES 3.8.1
+Run-time dependency libxml-2.0 found: YES 2.15.4
+Run-time dependency glycin-2 found: YES 2.2.6
+Run-time dependency glycin-gtk4-2 found: YES 2.2.6
+Run-time dependency gio-2.0 found: YES 2.90.1
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Program blueprint-compiler found: YES (/usr/bin/blueprint-compiler)
+Run-time dependency glib-2.0 found: YES 2.90.1
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Configuring exm.gresource.xml using configuration
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program update-desktop-database found: YES (/usr/bin/update-desktop-database)
+Build targets in project: 59
+
+extension-manager 0.7.0
+
+  User defined options
+    backtrace: false
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/101] Generating gdbus source src/exm-shell-search-provider-generated.c
+[2/101] Generating gdbus header src/exm-shell-search-provider-generated.h
+[3/101] Merging translations for data/com.mattjakeman.ExtensionManager.metainfo.xml
+[4/101] Generating GObject enum file src/exm-enums.c (wrapped by meson because command contains newlines, to capture output)
+[5/101] Generating GObject enum file src/exm-enums.h (wrapped by meson because command contains newlines, to capture output)
+[6/101] Building translation po/ar/LC_MESSAGES/extension-manager-ar.mo
+[7/101] Building translation po/az/LC_MESSAGES/extension-manager-az.mo
+[8/101] Building translation po/be/LC_MESSAGES/extension-manager-be.mo
+[9/101] Building translation po/bg/LC_MESSAGES/extension-manager-bg.mo
+[10/101] Building translation po/ca/LC_MESSAGES/extension-manager-ca.mo
+[11/101] Building translation po/cs/LC_MESSAGES/extension-manager-cs.mo
+[12/101] Merging translations for data/com.mattjakeman.ExtensionManager.desktop
+[13/101] Building translation po/da/LC_MESSAGES/extension-manager-da.mo
+[14/101] Building translation po/de/LC_MESSAGES/extension-manager-de.mo
+[15/101] Building translation po/es/LC_MESSAGES/extension-manager-es.mo
+[16/101] Building translation po/el/LC_MESSAGES/extension-manager-el.mo
+[17/101] Building translation po/et/LC_MESSAGES/extension-manager-et.mo
+[18/101] Building translation po/eu/LC_MESSAGES/extension-manager-eu.mo
+[19/101] Building translation po/fi/LC_MESSAGES/extension-manager-fi.mo
+[20/101] Building translation po/fa/LC_MESSAGES/extension-manager-fa.mo
+[21/101] Building translation po/fr/LC_MESSAGES/extension-manager-fr.mo
+[22/101] Building translation po/ga/LC_MESSAGES/extension-manager-ga.mo
+[23/101] Building translation po/gl/LC_MESSAGES/extension-manager-gl.mo
+[24/101] Building translation po/he/LC_MESSAGES/extension-manager-he.mo
+[25/101] Building translation po/hi/LC_MESSAGES/extension-manager-hi.mo
+[26/101] Building translation po/hr/LC_MESSAGES/extension-manager-hr.mo
+[27/101] Building translation po/hu/LC_MESSAGES/extension-manager-hu.mo
+[28/101] Building translation po/id_ID/LC_MESSAGES/extension-manager-id_ID.mo
+[29/101] Building translation po/it/LC_MESSAGES/extension-manager-it.mo
+[30/101] Building translation po/ka/LC_MESSAGES/extension-manager-ka.mo
+[31/101] Building translation po/ja/LC_MESSAGES/extension-manager-ja.mo
+[32/101] Building translation po/kk/LC_MESSAGES/extension-manager-kk.mo
+[33/101] Building translation po/ko/LC_MESSAGES/extension-manager-ko.mo
+[34/101] Building translation po/kw/LC_MESSAGES/extension-manager-kw.mo
+[35/101] Building translation po/nb/LC_MESSAGES/extension-manager-nb.mo
+[36/101] Building translation po/nl/LC_MESSAGES/extension-manager-nl.mo
+[37/101] Building translation po/nn/LC_MESSAGES/extension-manager-nn.mo
+[38/101] Building translation po/oc/LC_MESSAGES/extension-manager-oc.mo
+[39/101] Building translation po/pl/LC_MESSAGES/extension-manager-pl.mo
+[40/101] Building translation po/pt/LC_MESSAGES/extension-manager-pt.mo
+[41/101] Building translation po/pt_BR/LC_MESSAGES/extension-manager-pt_BR.mo
+[42/101] Building translation po/ro/LC_MESSAGES/extension-manager-ro.mo
+[43/101] Building translation po/ru/LC_MESSAGES/extension-manager-ru.mo
+[44/101] Building translation po/sk/LC_MESSAGES/extension-manager-sk.mo
+[45/101] Building translation po/sv/LC_MESSAGES/extension-manager-sv.mo
+[46/101] Generating src/blueprints with a custom command
+[47/101] Building translation po/ta/LC_MESSAGES/extension-manager-ta.mo
+[48/101] Building translation po/th/LC_MESSAGES/extension-manager-th.mo
+[49/101] Building translation po/tr/LC_MESSAGES/extension-manager-tr.mo
+[50/101] Building translation po/uk/LC_MESSAGES/extension-manager-uk.mo
+[51/101] Building translation po/vi_VN/LC_MESSAGES/extension-manager-vi_VN.mo
+[52/101] Building translation po/zh_CN/LC_MESSAGES/extension-manager-zh_CN.mo
+[53/101] Generating src/exm-resources_h with a custom command
+[54/101] Building translation po/zh_TW/LC_MESSAGES/extension-manager-zh_TW.mo
+[55/101] Generating src/exm-resources_c with a custom command
+[56/101] Compiling C object src/extension-manager.p/meson-generated_.._exm-enums.c.o
+[57/101] Compiling C object src/extension-manager.p/meson-generated_.._exm-resources.c.o
+[58/101] Compiling C object src/extension-manager.p/meson-generated_.._exm-shell-search-provider-generated.c.o
+[59/101] Compiling C object src/extension-manager.p/main.c.o
+[60/101] Compiling C object src/extension-manager.p/exm-application.c.o
+[61/101] Compiling C object src/extension-manager.p/exm-window.c.o
+[62/101] Compiling C object src/extension-manager.p/exm-gnome-shell-search-provider.c.o
+[63/101] Compiling C object src/extension-manager.p/exm-screenshot.c.o
+[64/101] Compiling C object src/extension-manager.p/exm-zoom-picture.c.o
+[65/101] Compiling C object src/extension-manager.p/exm-detail-view.c.o
+[66/101] Compiling C object src/extension-manager.p/exm-animated-paintable.c.o
+[67/101] Compiling C object src/extension-manager.p/exm-comment-tile.c.o
+[68/101] Compiling C object src/extension-manager.p/exm-comment-dialog.c.o
+[69/101] Compiling C object src/extension-manager.p/exm-rating.c.o
+[70/101] Compiling C object src/extension-manager.p/exm-versions-dialog.c.o
+[71/101] Compiling C object src/extension-manager.p/exm-screenshot-view.c.o
+[72/101] Compiling C object src/extension-manager.p/exm-author-page.c.o
+[73/101] Compiling C object src/extension-manager.p/exm-installed-page.c.o
+[74/101] Compiling C object src/extension-manager.p/exm-extension-toggle.c.o
+[75/101] Compiling C object src/extension-manager.p/exm-extension-row.c.o
+[76/101] Compiling C object src/extension-manager.p/exm-search-row.c.o
+[77/101] Compiling C object src/extension-manager.p/exm-error-dialog.c.o
+[78/101] Compiling C object src/extension-manager.p/exm-browse-page.c.o
+[79/101] Compiling C object src/extension-manager.p/exm-upgrade-result.c.o
+[80/101] Compiling C object src/extension-manager.p/exm-extension-error-dialog.c.o
+[81/101] Compiling C object src/extension-manager.p/exm-unified-data.c.o
+[82/101] Compiling C object src/extension-manager.p/exm-backtrace.c.o
+[83/101] Compiling C object src/extension-manager.p/exm-upgrade-assistant.c.o
+[84/101] Compiling C object src/extension-manager.p/exm-install-button.c.o
+[85/101] Compiling C object src/extension-manager.p/exm-utils.c.o
+[86/101] Compiling C object src/extension-manager.p/local_exm-extension.c.o
+[87/101] Compiling C object src/extension-manager.p/web_exm-comment-provider.c.o
+[88/101] Compiling C object src/extension-manager.p/local_exm-manager.c.o
+[89/101] Compiling C object src/extension-manager.p/web_exm-data-provider.c.o
+[90/101] Compiling C object src/extension-manager.p/local_shell-dbus-interface.c.o
+[91/101] Compiling C object src/extension-manager.p/web_exm-profile-provider.c.o
+[92/101] Compiling C object src/extension-manager.p/web_exm-request-handler.c.o
+[93/101] Compiling C object src/extension-manager.p/web_exm-image-resolver.c.o
+[94/101] Compiling C object src/extension-manager.p/web_exm-search-provider.c.o
+[95/101] Compiling C object src/extension-manager.p/web_exm-versions-provider.c.o
+[96/101] Compiling C object src/extension-manager.p/web_model_exm-comment.c.o
+[97/101] Compiling C object src/extension-manager.p/web_model_exm-shell-versions.c.o
+[98/101] Compiling C object src/extension-manager.p/web_model_exm-user-profile.c.o
+[99/101] Compiling C object src/extension-manager.p/web_model_exm-search-result.c.o
+[100/101] Compiling C object src/extension-manager.p/web_model_exm-version-result.c.o
+[101/101] Linking target src/extension-manager
+[1/5] Generating src/exm-resources_h with a custom command
+[2/5] Generating src/exm-resources_c with a custom command
+[3/5] Compiling C object src/extension-manager.p/meson-generated_.._exm-resources.c.o
+[4/5] Linking target src/extension-manager
+[4/5] Installing files
+Installing data/com.mattjakeman.ExtensionManager.desktop to /usr/share/applications
+Installing data/com.mattjakeman.ExtensionManager.metainfo.xml to /usr/share/metainfo
+Installing src/extension-manager to /usr/bin
+Installing po/ar/LC_MESSAGES/extension-manager.mo to /usr/share/locale/ar/LC_MESSAGES
+Installing po/az/LC_MESSAGES/extension-manager.mo to /usr/share/locale/az/LC_MESSAGES
+Installing po/be/LC_MESSAGES/extension-manager.mo to /usr/share/locale/be/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/extension-manager.mo to /usr/share/locale/bg/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/extension-manager.mo to /usr/share/locale/ca/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/extension-manager.mo to /usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/extension-manager.mo to /usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/extension-manager.mo to /usr/share/locale/de/LC_MESSAGES
+Installing po/el/LC_MESSAGES/extension-manager.mo to /usr/share/locale/el/LC_MESSAGES
+Installing po/es/LC_MESSAGES/extension-manager.mo to /usr/share/locale/es/LC_MESSAGES
+Installing po/et/LC_MESSAGES/extension-manager.mo to /usr/share/locale/et/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/extension-manager.mo to /usr/share/locale/eu/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/extension-manager.mo to /usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/extension-manager.mo to /usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/extension-manager.mo to /usr/share/locale/fr/LC_MESSAGES
+Installing po/ga/LC_MESSAGES/extension-manager.mo to /usr/share/locale/ga/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/extension-manager.mo to /usr/share/locale/gl/LC_MESSAGES
+Installing po/he/LC_MESSAGES/extension-manager.mo to /usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/extension-manager.mo to /usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/extension-manager.mo to /usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/extension-manager.mo to /usr/share/locale/hu/LC_MESSAGES
+Installing po/id_ID/LC_MESSAGES/extension-manager.mo to /usr/share/locale/id_ID/LC_MESSAGES
+Installing po/it/LC_MESSAGES/extension-manager.mo to /usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/extension-manager.mo to /usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/extension-manager.mo to /usr/share/locale/ka/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/extension-manager.mo to /usr/share/locale/kk/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/extension-manager.mo to /usr/share/locale/ko/LC_MESSAGES
+Installing po/kw/LC_MESSAGES/extension-manager.mo to /usr/share/locale/kw/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/extension-manager.mo to /usr/share/locale/nb/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/extension-manager.mo to /usr/share/locale/nl/LC_MESSAGES
+Installing po/nn/LC_MESSAGES/extension-manager.mo to /usr/share/locale/nn/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/extension-manager.mo to /usr/share/locale/oc/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/extension-manager.mo to /usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/extension-manager.mo to /usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/extension-manager.mo to /usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/extension-manager.mo to /usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/extension-manager.mo to /usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/extension-manager.mo to /usr/share/locale/sk/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/extension-manager.mo to /usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/extension-manager.mo to /usr/share/locale/ta/LC_MESSAGES
+Installing po/th/LC_MESSAGES/extension-manager.mo to /usr/share/locale/th/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/extension-manager.mo to /usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/extension-manager.mo to /usr/share/locale/uk/LC_MESSAGES
+Installing po/vi_VN/LC_MESSAGES/extension-manager.mo to /usr/share/locale/vi_VN/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/extension-manager.mo to /usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/extension-manager.mo to /usr/share/locale/zh_TW/LC_MESSAGES
+Installing /home/fusion809/lfs_packaging/gnome-extension-manager/extension-manager-0.7.0/build/data/com.mattjakeman.ExtensionManager.gschema.xml to /usr/share/glib-2.0/schemas
+Installing /home/fusion809/lfs_packaging/gnome-extension-manager/extension-manager-0.7.0/build/data/com.mattjakeman.ExtensionManager.search-provider.ini to /usr/share/gnome-shell/search-providers
+Installing /home/fusion809/lfs_packaging/gnome-extension-manager/extension-manager-0.7.0/build/data/com.mattjakeman.ExtensionManager.service to /usr/share/dbus-1/services
+Installing /home/fusion809/lfs_packaging/gnome-extension-manager/extension-manager-0.7.0/data/icons/com.mattjakeman.ExtensionManager.svg to /usr/share/icons/hicolor/scalable/apps
+Installing /home/fusion809/lfs_packaging/gnome-extension-manager/extension-manager-0.7.0/data/icons/com.mattjakeman.ExtensionManager-symbolic.svg to /usr/share/icons/hicolor/symbolic/apps
+Running custom install script '/usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas'
+Warning: Schema “org.gnome.crypto.cache” has path “/desktop/gnome/crypto/cache/”.  Paths starting with “/apps/”, “/desktop/” or “/system/” are deprecated.
+
+Running custom install script '/usr/bin/gtk4-update-icon-cache -q -t -f /usr/share/icons/hicolor'
+Running custom install script '/usr/bin/update-desktop-database -q /usr/share/applications'
+0.7.0
+Updated registry for gnome-extension-manager to version 0.7.0
+[VERSION] gnome-extension-manager: 0.7.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package gnome-extension-manager in /var/lib/custom-packages/
+Building custom package libsepol...
+[17:13:42] Found custom package for libsepol, bypassing BLFS aliases.
+[17:13:42] Custom package detected at /home/fusion809/lfs_packaging/libsepol (package: libsepol)
+[17:13:42] Extracting dependencies for custom package 'libsepol'...
+[17:13:43] Required deps: glibc 
+[17:13:43] Dependency 'glibc' already installed.
+[17:13:43] [LFS-AUTOBUILD] Skipping custom package libsepol: version 3.11 already installed (use -f to force build).
+Building custom package libselinux...
+[17:13:43] Found custom package for libselinux, bypassing BLFS aliases.
+[17:13:43] Custom package detected at /home/fusion809/lfs_packaging/libselinux (package: libselinux)
+[17:13:43] Extracting dependencies for custom package 'libselinux'...
+[17:13:43] Required deps: gcc glibc libsepol pcre2 
+[17:13:43] Dependency 'gcc' already installed.
+[17:13:43] Dependency 'glibc' already installed.
+[17:13:43] Dependency 'libsepol' already installed.
+[17:13:43] Dependency 'pcre2' already installed.
+[17:13:44] [LFS-AUTOBUILD] Skipping custom package libselinux: version 3.11 already installed (use -f to force build).
+Building custom package poppler...
+[17:13:44] Found custom package for poppler, bypassing BLFS aliases.
+[17:13:44] Custom package detected at /home/fusion809/lfs_packaging/poppler (package: poppler)
+[17:13:44] Extracting dependencies for custom package 'poppler'...
+[17:13:44] Required deps: brotli bzip2 cairo curl cyrus-sasl dbus double-conversion elfutils expat fontconfig freetype gcc glib2 glibc gpgme gpgmepp graphite2 harfbuzz icu lcms2 libassuan libdrm libffi libglvnd libgpg-error libidn2 libjpeg-turbo libpciaccess libpng libpsl libunistring libwebp libx11 libxau libxcb libxdmcp libxext libxkbcommon libxml2 libxrender libxshmfence libxxf86vm llvm lm-sensors mesa nghttp2 nspr nss openjpeg openldap openssl pcre2 pixman qt6 spirv-tools systemd texlive tiff util-linux wayland xz zlib zstd 
+[17:13:45] Dependency 'brotli' already installed.
+[17:13:45] Dependency 'bzip2' already installed.
+[17:13:45] Dependency 'cairo' already installed.
+[17:13:45] Dependency 'curl' already installed.
+[17:13:45] Dependency 'cyrus-sasl' already installed.
+[17:13:45] Dependency 'dbus' already installed.
+[17:13:45] Dependency 'double-conversion' already installed.
+[17:13:45] Dependency 'elfutils' already installed.
+[17:13:45] Dependency 'expat' already installed.
+[17:13:45] Dependency 'fontconfig' already installed.
+[17:13:45] Dependency 'freetype' already installed.
+[17:13:45] Dependency 'gcc' already installed.
+[17:13:45] Dependency 'glib2' already installed.
+[17:13:45] Dependency 'glibc' already installed.
+[17:13:45] Dependency 'gpgme' already installed.
+[17:13:45] Dependency 'gpgmepp' already installed.
+[17:13:45] Dependency 'graphite2' already installed.
+[17:13:45] Dependency 'harfbuzz' already installed.
+[17:13:45] Dependency 'icu' already installed.
+[17:13:45] Dependency 'lcms2' already installed.
+[17:13:45] Dependency 'libassuan' already installed.
+[17:13:45] Dependency 'libdrm' already installed.
+[17:13:45] Dependency 'libffi' already installed.
+[17:13:45] Dependency 'libglvnd' already installed.
+[17:13:45] Dependency 'libgpg-error' already installed.
+[17:13:45] Dependency 'libidn2' already installed.
+[17:13:45] Dependency 'libjpeg-turbo' already installed.
+[17:13:45] Dependency 'libpciaccess' already installed.
+[17:13:45] Dependency 'libpng' already installed.
+[17:13:45] Dependency 'libpsl' already installed.
+[17:13:45] Dependency 'libunistring' already installed.
+[17:13:45] Dependency 'libwebp' already installed.
+[17:13:45] Dependency 'libx11' already installed.
+[17:13:45] Dependency 'libxau' already installed.
+[17:13:45] Dependency 'libxcb' already installed.
+[17:13:45] Dependency 'libxdmcp' already installed.
+[17:13:45] Dependency 'libxext' already installed.
+[17:13:45] Dependency 'libxkbcommon' already installed.
+[17:13:45] Dependency 'libxml2' already installed.
+[17:13:45] Dependency 'libxrender' already installed.
+[17:13:45] Dependency 'libxshmfence' already installed.
+[17:13:45] Dependency 'libxxf86vm' already installed.
+[17:13:45] Dependency 'llvm' already installed.
+[17:13:45] Dependency 'lm-sensors' already installed.
+[17:13:45] Dependency 'mesa' already installed.
+[17:13:45] Dependency 'nghttp2' already installed.
+[17:13:45] Dependency 'nspr' already installed.
+[17:13:45] Dependency 'nss' already installed.
+[17:13:45] Dependency 'openjpeg' already installed.
+[17:13:45] Dependency 'openldap' already installed.
+[17:13:45] Dependency 'openssl' already installed.
+[17:13:45] Dependency 'pcre2' already installed.
+[17:13:45] Dependency 'pixman' already installed.
+[17:13:45] Dependency 'qt6' already installed.
+[17:13:45] Dependency 'spirv-tools' already installed.
+[17:13:45] Dependency 'systemd' already installed.
+[17:13:45] Dependency 'texlive' already installed.
+[17:13:45] Dependency 'tiff' already installed.
+[17:13:45] Dependency 'util-linux' already installed.
+[17:13:45] Dependency 'wayland' already installed.
+[17:13:45] Dependency 'xz' already installed.
+[17:13:45] Dependency 'zlib' already installed.
+[17:13:45] Dependency 'zstd' already installed.
+[VERSION] poppler: 26.11.0
+[17:13:49] Installing poppler version: 26.11.0
+[17:13:49] Starting remote custom build for poppler...
+--2026-11-06 17:13:56--  https://poppler.freedesktop.org/poppler-26.11.0.tar.xz
+Resolving poppler.freedesktop.org (poppler.freedesktop.org)... 151.101.3.52, 151.101.67.52, 151.101.131.52, ...
+Connecting to poppler.freedesktop.org (poppler.freedesktop.org)|151.101.3.52|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2059960 (2.0M) [application/x-xz]
+Saving to: ‘poppler-26.11.0.tar.xz’
+
+poppler-26.11.0.tar   0%[                    ]       0  --.-KB/s               poppler-26.11.0.tar  97%[==================> ]   1.92M  9.54MB/s               poppler-26.11.0.tar 100%[===================>]   1.96M  9.57MB/s    in 0.2s    
+
+2026-11-06 17:14:00 (9.57 MB/s) - ‘poppler-26.11.0.tar.xz’ saved [2059960/2059960]
+
+--2026-11-06 17:14:00--  https://poppler.freedesktop.org/poppler-data-.tar.gz
+Resolving poppler.freedesktop.org (poppler.freedesktop.org)... 151.101.3.52, 151.101.195.52, 151.101.131.52, ...
+Connecting to poppler.freedesktop.org (poppler.freedesktop.org)|151.101.3.52|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-06 17:14:01 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for poppler
+[ERROR] Custom build failed for poppler
+[17:14:01] ========================================
+[17:14:01] Build completed with 1 failure(s):
+[17:14:01]   - poppler
+[17:14:01] ========================================
+Error: Build failed for poppler. Aborting update loop.
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
