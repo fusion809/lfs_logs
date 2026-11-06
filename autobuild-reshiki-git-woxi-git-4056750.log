@@ -1,0 +1,141 @@
+[10:44:28] Build order resolved: reshiki-git woxi-git
+[10:44:28] Found custom package for reshiki-git, bypassing BLFS aliases.
+[10:44:28] Custom package detected at /home/fusion809/lfs_packaging/reshiki-git (package: reshiki-git)
+[10:44:28] Extracting dependencies for custom package 'reshiki-git'...
+[10:44:28] Required deps: acl at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz libcanberra libepoxy libffi libice libogg libpng libseccomp libselinux libsm libtool libvorbis libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres libxt ncurses pango pcre2 pixman systemd util-linux wayland zlib 
+[10:44:29] Dependency 'acl' already installed.
+[10:44:29] Dependency 'at-spi2-core' already installed.
+[10:44:29] Dependency 'brotli' already installed.
+[10:44:29] Dependency 'bzip2' already installed.
+[10:44:29] Dependency 'cairo' already installed.
+[10:44:29] Dependency 'dbus' already installed.
+[10:44:29] Dependency 'expat' already installed.
+[10:44:29] Dependency 'fontconfig' already installed.
+[10:44:29] Dependency 'freetype' already installed.
+[10:44:29] Dependency 'fribidi' already installed.
+[10:44:29] Dependency 'gcc' already installed.
+[10:44:29] Dependency 'gdk-pixbuf' already installed.
+[10:44:29] Dependency 'glib2' already installed.
+[10:44:29] Dependency 'glibc' already installed.
+[10:44:29] Dependency 'glycin' already installed.
+[10:44:29] Dependency 'graphite2' already installed.
+[10:44:29] Dependency 'gtk3' already installed.
+[10:44:29] Dependency 'harfbuzz' already installed.
+[10:44:29] Dependency 'libcanberra' already installed.
+[10:44:29] Dependency 'libepoxy' already installed.
+[10:44:29] Dependency 'libffi' already installed.
+[10:44:29] Dependency 'libice' already installed.
+[10:44:29] Dependency 'libogg' already installed.
+[10:44:29] Dependency 'libpng' already installed.
+[10:44:29] Dependency 'libseccomp' already installed.
+[10:44:29] Dependency 'libselinux' already installed.
+[10:44:29] Dependency 'libsm' already installed.
+[10:44:29] Dependency 'libtool' already installed.
+[10:44:29] Dependency 'libvorbis' already installed.
+[10:44:29] Dependency 'libx11' already installed.
+[10:44:29] Dependency 'libxau' already installed.
+[10:44:29] Dependency 'libxcb' already installed.
+[10:44:29] Dependency 'libxcomposite' already installed.
+[10:44:29] Dependency 'libxcursor' already installed.
+[10:44:29] Dependency 'libxdamage' already installed.
+[10:44:29] Dependency 'libxdmcp' already installed.
+[10:44:30] Dependency 'libxext' already installed.
+[10:44:30] Dependency 'libxfixes' already installed.
+[10:44:30] Dependency 'libxi' already installed.
+[10:44:30] Dependency 'libxinerama' already installed.
+[10:44:30] Dependency 'libxkbcommon' already installed.
+[10:44:30] Dependency 'libxrandr' already installed.
+[10:44:30] Dependency 'libxrender' already installed.
+[10:44:30] Dependency 'libxres' already installed.
+[10:44:30] Dependency 'libxt' already installed.
+[10:44:30] Dependency 'ncurses' already installed.
+[10:44:30] Dependency 'pango' already installed.
+[10:44:30] Dependency 'pcre2' already installed.
+[10:44:30] Dependency 'pixman' already installed.
+[10:44:30] Dependency 'systemd' already installed.
+[10:44:30] Dependency 'util-linux' already installed.
+[10:44:30] Dependency 'wayland' already installed.
+[10:44:30] Dependency 'zlib' already installed.
+[VERSION] reshiki-git: aa2033a949cd71b1b58d98d933b089b361815638
+[10:44:31] Installing reshiki-git version: aa2033a949cd71b1b58d98d933b089b361815638
+[10:44:31] Starting remote custom build for reshiki-git...
+From https://github.com/Ameyanagi/ReShiki
+ * [new branch]        feat/spirobi            -> origin/feat/spirobi
+ * [new branch]        fix/927-stereo-locants-xi -> origin/fix/927-stereo-locants-xi
+ * [new branch]        fix/934-rel-rac-scope   -> origin/fix/934-rel-rac-scope
+ * [new branch]        fix/946-tied-chain-protium -> origin/fix/946-tied-chain-protium
+ * [new branch]        fix/alkoxy-prefixes     -> origin/fix/alkoxy-prefixes
+ * [new branch]        fix/amine-oxide         -> origin/fix/amine-oxide
+ + b19480ec...adc68d54 fix/anion-parent-choice -> origin/fix/anion-parent-choice  (forced update)
+ * [new branch]        fix/indene-dione        -> origin/fix/indene-dione
+   e930c1d6..3f24c8ee  fix/ion-spelling        -> origin/fix/ion-spelling
+ * [new branch]        fix/onium-toluene-acids -> origin/fix/onium-toluene-acids
+ * [new branch]        fix/retained-names      -> origin/fix/retained-names
+   74116783..1496234d  fix/salt-anion-spelling -> origin/fix/salt-anion-spelling
+ * [new branch]        fix/zwitterion-suffix-order -> origin/fix/zwitterion-suffix-order
+   6e7f1dcc..aa2033a9  main                    -> origin/main
+Previous HEAD position was 6e7f1dcc Merge pull request #974 from Ameyanagi/fix/955-focus-tests
+HEAD is now at aa2033a9 Merge pull request #989 from Ameyanagi/fix/retained-names
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:586:55
+    |
+586 |         let event = if let Ok(event) = event_receiver.try_next() {
+    |                                                       ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:297:64
+    |
+297 |                     task::Poll::Pending => match self.receiver.try_next() {
+    |                                                                ^^^^^^^^
+
+warning: `iced_winit` (lib) generated 2 warnings
+   Compiling reshiki v0.13.1 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki)
+    Finished `release` profile [optimized] target(s) in 42m 09s
+[Desktop Entry]
+Name=ReShiki (git)
+Type=Application
+Exec=/usr/bin/reshiki-git %U
+TryExec=/usr/bin/reshiki-git
+Icon=reshiki-git
+MimeType=chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;chemical/x-smiles;chemical/x-cml;chemical/x-inchi;
+StartupNotify=true
+Categories=Education;Science;Chemistry;
+StartupWMClass=reshiki-git
+Saved working directory and index state WIP on (no branch): aa2033a9 Merge pull request #989 from Ameyanagi/fix/retained-names
+aa2033a949cd71b1b58d98d933b089b361815638
+Updated registry for reshiki-git to version aa2033a949cd71b1b58d98d933b089b361815638
+[VERSION] reshiki-git: aa2033a949cd71b1b58d98d933b089b361815638
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package reshiki-git in /var/lib/custom-packages/
+[11:27:13] Found custom package for woxi-git, bypassing BLFS aliases.
+[11:27:13] Custom package detected at /home/fusion809/lfs_packaging/woxi-git (package: woxi-git)
+[11:27:13] Checking conflicting package(s) for 'woxi-git': woxi 
+[11:27:13] Extracting dependencies for custom package 'woxi-git'...
+[11:27:14] Required deps: gcc glibc rust 
+[11:27:14] Dependency 'gcc' already installed.
+[11:27:14] Dependency 'glibc' already installed.
+[11:27:14] Dependency 'rust' already installed.
+[VERSION] woxi-git: 2683576e59a1d9e397271be180ee714b98a5211b
+[11:27:15] Installing woxi-git version: 2683576e59a1d9e397271be180ee714b98a5211b
+[11:27:15] Starting remote custom build for woxi-git...
+Repository size: 183.33 MiB
+From https://github.com/ad-si/Woxi
+ * [new branch]          claude/eager-bohr-99bdok -> origin/claude/eager-bohr-99bdok
+ * [new branch]          codex/2142-expression-sharing -> origin/codex/2142-expression-sharing
+   861173f2a..2683576e5  main       -> origin/main
+Previous HEAD position was 861173f2a Fix rendering issues found in graphics comparisons
+HEAD is now at 2683576e5 Fix clippy errors on main
+   Compiling woxi v0.3.0 (/home/fusion809/lfs_packaging/woxi-git/Woxi)
+error: could not compile `woxi` (lib)
+
+Caused by:
+  process didn't exit successfully: `rustc --crate-name woxi --edition=2024 src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type cdylib --crate-type rlib --emit=dep-info,link -C opt-level=3 -C codegen-units=1 '--warn=clippy::pedantic' '--allow=clippy::wildcard_imports' '--allow=clippy::unreadable_literal' --warn=unreachable_pub '--allow=clippy::type_complexity' '--allow=clippy::too_many_lines' '--allow=clippy::too_many_arguments' '--allow=clippy::similar_names' '--allow=clippy::option_option' '--allow=clippy::needless_raw_string_hashes' '--allow=clippy::needless_range_loop' '--allow=clippy::must_use_candidate' '--allow=clippy::missing_panics_doc' '--allow=clippy::missing_errors_doc' '--allow=clippy::match_same_arms' '--allow=clippy::many_single_char_names' '--allow=clippy::items_after_statements' '--allow=clippy::format_push_string' '--allow=clippy::float_cmp' '--allow=clippy::doc_markdown' '--allow=clippy::doc_link_with_quotes' '--allow=clippy::comparison_chain' '--allow=clippy::cast_sign_loss' '--allow=clippy::cast_precision_loss' '--allow=clippy::cast_possible_wrap' '--allow=clippy::cast_possible_truncation' '--allow=clippy::cast_lossless' -C overflow-checks=on --cfg 'feature="cli"' --cfg 'feature="default"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("cli", "default", "diff-fuzz", "slow-tests", "wasm"))' -C metadata=962585a63d11406f --out-dir /home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps -C strip=debuginfo -L dependency=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps --extern aho_corasick=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libaho_corasick-35fb2e7c433bf03b.rlib --extern anyhow=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libanyhow-f8c4da17cf82b627.rlib --extern astro_float=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libastro_float-640032f68feb1505.rlib --extern base64=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libbase64-28c26aeb55781b5d.rlib --extern bitflags=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libbitflags-7b6b9d5400c101b2.rlib --extern calamine=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libcalamine-cc54f7fb680e27a0.rlib --extern chrono=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libchrono-957cecf80e721810.rlib --extern chrono_tz=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libchrono_tz-005e073a507daea3.rlib --extern clap=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libclap-b75f73073d30a006.rlib --extern dirs=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libdirs-28fae019ca505f08.rlib --extern either=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libeither-150c41f92ff26d49.rlib --extern env_logger=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libenv_logger-ff71dac95c54cdfe.rlib --extern fancy_regex=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libfancy_regex-7f304106a9b4e6f3.rlib --extern flate2=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libflate2-357c79d2e4d23bc5.rlib --extern geographiclib_rs=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libgeographiclib_rs-26b7f3dba22a8adb.rlib --extern image=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libimage-7cce73783573ad74.rlib --extern imbl=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libimbl-13010e7c0c1fa37a.rlib --extern jupyter_protocol=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libjupyter_protocol-38366dc4d9602ad1.rlib --extern libc=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/liblibc-f69a3ce5f01fb2a3.rlib --extern libm=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/liblibm-0179e489d4a30f22.rlib --extern log=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/liblog-fbfa771f222e27e9.rlib --extern lopdf=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/liblopdf-bcf84259bf9560eb.rlib --extern lz4_flex=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/liblz4_flex-dc2bc8a668d65d3d.rlib --extern md5=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libmd5-5d1350731da989bd.rlib --extern md4=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libmd4-646c95ebbf11c872.rlib --extern num_bigint=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libnum_bigint-c6b2559763c71199.rlib --extern num_prime=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libnum_prime-7646dc89a101a070.rlib --extern num_traits=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libnum_traits-2b51d6819d5f9ce9.rlib --extern pest=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libpest-65f07a5e6bb20177.rlib --extern petgraph=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libpetgraph-73e8411be9221ddc.rlib --extern plotters=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libplotters-1a87ccf43be4578c.rlib --extern rand=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/librand-75835f8c2831cdbf.rlib --extern rand_chacha=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/librand_chacha-e20c724013049b33.rlib --extern rand_distr=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/librand_distr-195c0337b2f5f705.rlib --extern regex=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libregex-40eb07d1ef2b5f84.rlib --extern resvg=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libresvg-e4c15a3dc9fc7df0.rlib --extern ripemd=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libripemd-34bcad76b3ac9044.rlib --extern runtimelib=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libruntimelib-3f0bf6fd2d979745.rlib --extern rust_xlsxwriter=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/librust_xlsxwriter-1be0f9fb9637fc78.rlib --extern rustc_hash=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/librustc_hash-ad6948541a055f8b.rlib --extern rustyline=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/librustyline-f0b0349807984f48.rlib --extern serde=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libserde-a2902640a04117ce.rlib --extern serde_json=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libserde_json-a9957385e745754b.rlib --extern sha1=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libsha1-939f87f93ac0d08c.rlib --extern sha2=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libsha2-49d0231f68d7ac9a.rlib --extern sha3=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libsha3-f2d8269297e3183f.rlib --extern snailquote=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libsnailquote-a0601c481fdde428.rlib --extern stacker=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libstacker-997024567199b558.rlib --extern svg2pdf=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libsvg2pdf-b5fa2be0f7037a34.rlib --extern thiserror=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libthiserror-bd0f0333ff38253c.rlib --extern tokio=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libtokio-d6b547752e7cb3d8.rlib --extern ttf_parser=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libttf_parser-ef4e948dab0eea1c.rlib --extern unicode_normalization=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libunicode_normalization-86de86890d95b002.rlib --extern uuid=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libuuid-58bc71a40c404ae7.rlib --extern web_time=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libweb_time-b70b93f8aaccec06.rlib --extern woxi_parser=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libwoxi_parser-caddb2f74b3c8acf.rlib --extern woxi_reduce=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libwoxi_reduce-fb94902e1699111f.rlib --extern tee: /tmp/build_log_woxi-git.txt: Disk quota exceeded
+zeromq=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/deps/libzeromq-463cd53176fc0196.rlib -L native=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/build/ring-ba57171caa1d46af/out -L native=/home/fusion809/lfs_packaging/woxi-git/Woxi/target/release/build/psm-d5ba5979d474512f/out` (signal: 9, SIGKILL: kill)
+[ERROR] build.sh exited with code 101 for woxi-git
+[ERROR] Custom build failed for woxi-git
+[13:49:24] ========================================
+[13:49:24] Build completed with 1 failure(s):
+[13:49:24]   - woxi-git
+[13:49:24] ========================================
