@@ -1,0 +1,36 @@
+===== Update check started: 2026-11-06 16:52:58 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261106_165258
+Packages needing attention: fastfetch poppler reshiki-git woxi-git
+===== Starting updatec: 2026-11-06 16:53:12 AEST =====
+Checking for packages with missing file inventories...
+lfs_update:54: write failed: disk quota exceeded
+No updates found.
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+------------------------------------------------
+Checking obsolete version (file): libbluetooth.so.3.19.16
+Path: /usr/lib/libbluetooth.so.3.19.16
+Skipping generic/unsafe name 'libbluetooth.so.' to prevent false positive matches.
+i_dir=/usr/lib
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libbluetooth.so.3.19.16...
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+/var/lib/custom-packages does not show any likely updates to the table.
+~/logs ~ ~/lfs_packaging
