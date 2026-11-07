@@ -1,0 +1,265 @@
+===== Update check started: 2026-11-08 03:08:54 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261108_030854
+Packages needing attention: fmt primesieve
+===== Starting updatec: 2026-11-08 03:08:59 AEST =====
+Checking for packages with missing file inventories...
+name=fmt
+local_ver=12.2.0
+remote_ver=12.2.1
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - fmt
+  - primesieve
+
+Building custom package fmt...
+[03:12:51] Found custom package for fmt, bypassing BLFS aliases.
+[03:12:51] Custom package detected at /home/fusion809/lfs_packaging/fmt (package: fmt)
+[03:12:51] Extracting dependencies for custom package 'fmt'...
+[03:12:51] Required deps: cmake gcc glibc 
+[03:12:51] Dependency 'cmake' already installed.
+[03:12:51] Dependency 'gcc' already installed.
+[03:12:51] Dependency 'glibc' already installed.
+[VERSION] fmt: 12.2.1
+[03:12:51] Installing fmt version: 12.2.1
+[03:12:51] Starting remote custom build for fmt...
+--2026-11-08 03:13:07--  https://github.com/fmtlib/fmt/archive/12.2.1.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/fmtlib/fmt/tar.gz/refs/tags/12.2.1 [following]
+--2026-11-08 03:13:08--  https://codeload.github.com/fmtlib/fmt/tar.gz/refs/tags/12.2.1
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 738814 (721K) [application/x-gzip]
+Saving to: ‘fmt-12.2.1.tar.gz’
+
+fmt-12.2.1.tar.gz     0%[                    ]       0  --.-KB/s               fmt-12.2.1.tar.gz   100%[===================>] 721.50K  4.03MB/s    in 0.2s    
+
+2026-11-08 03:13:08 (4.03 MB/s) - ‘fmt-12.2.1.tar.gz’ saved [738814/738814]
+
+-- CMake version: 4.4.5
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- {fmt} version: 12.2.1
+-- Build type: Release
+-- Target 'doc' disabled because doxygen not found
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/fmt/fmt-12.2.1/build
+[1/6] Building CXX object CMakeFiles/fmt-c.dir/src/fmt-c.cc.o
+[2/6] Building CXX object CMakeFiles/fmt.dir/src/os.cc.o
+[3/6] Building CXX object CMakeFiles/fmt.dir/src/format.cc.o
+[4/6] Linking CXX shared library libfmt.so.12.2.1
+[5/6] Creating library symlink libfmt.so.12 libfmt.so
+[6/6] Linking CXX static library libfmt-c.a
+[0/1] Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/lib/libfmt.so.12.2.1
+-- Installing: /usr/lib/libfmt.so.12
+-- Up-to-date: /usr/lib/libfmt.so
+-- Installing: /usr/include/fmt/args.h
+-- Installing: /usr/include/fmt/base.h
+-- Installing: /usr/include/fmt/chrono.h
+-- Installing: /usr/include/fmt/color.h
+-- Installing: /usr/include/fmt/compile.h
+-- Installing: /usr/include/fmt/core.h
+-- Installing: /usr/include/fmt/format.h
+-- Installing: /usr/include/fmt/format-inl.h
+-- Installing: /usr/include/fmt/os.h
+-- Installing: /usr/include/fmt/ostream.h
+-- Installing: /usr/include/fmt/printf.h
+-- Installing: /usr/include/fmt/ranges.h
+-- Installing: /usr/include/fmt/std.h
+-- Installing: /usr/include/fmt/xchar.h
+-- Installing: /usr/lib/libfmt-c.a
+-- Installing: /usr/include/fmt/fmt-c.h
+-- Installing: /usr/lib/cmake/fmt/fmt-config.cmake
+-- Installing: /usr/lib/cmake/fmt/fmt-config-version.cmake
+-- Installing: /usr/lib/cmake/fmt/fmt-targets.cmake
+-- Installing: /usr/lib/cmake/fmt/fmt-targets-release.cmake
+-- Installing: /usr/lib/pkgconfig/fmt.pc
+12.2.1
+Updated registry for fmt to version 12.2.1
+[VERSION] fmt: 12.2.1
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package fmt in /var/lib/custom-packages/
+Building custom package primesieve...
+[03:13:23] Found custom package for primesieve, bypassing BLFS aliases.
+[03:13:23] Custom package detected at /home/fusion809/lfs_packaging/primesieve (package: primesieve)
+[03:13:23] Extracting dependencies for custom package 'primesieve'...
+[03:13:23] Required deps: gcc gmp libx11 libxau libxcb libxdmcp ncurses readline sagemath ssw 
+[03:13:23] Dependency 'gcc' already installed.
+[03:13:23] Dependency 'gmp' already installed.
+[03:13:23] Dependency 'libx11' already installed.
+[03:13:23] Dependency 'libxau' already installed.
+[03:13:23] Dependency 'libxcb' already installed.
+[03:13:23] Dependency 'libxdmcp' already installed.
+[03:13:23] Dependency 'ncurses' already installed.
+[03:13:23] Dependency 'readline' already installed.
+[03:13:23] Dependency 'sagemath' already installed.
+[03:13:23] Dependency 'ssw' already installed.
+[VERSION] primesieve: 12.17
+[03:13:24] Installing primesieve version: 12.17
+[03:13:24] Starting remote custom build for primesieve...
+--2026-11-08 03:13:28--  https://github.com/kimwalisch/primesieve/archive/v12.17.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/kimwalisch/primesieve/tar.gz/refs/tags/v12.17 [following]
+--2026-11-08 03:13:28--  https://codeload.github.com/kimwalisch/primesieve/tar.gz/refs/tags/v12.17
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘primesieve-12.17.tar.gz’
+
+primesieve-12.17.ta     [<=>                 ]       0  --.-KB/s               primesieve-12.17.ta     [ <=>                ]  68.17K   340KB/s               primesieve-12.17.ta     [  <=>               ] 100.01K   248KB/s               primesieve-12.17.ta     [   <=>              ] 130.67K   208KB/s               primesieve-12.17.ta     [    <=>             ] 191.85K   232KB/s               primesieve-12.17.ta     [     <=>            ] 226.83K   234KB/s    in 1.0s    
+
+2026-11-08 03:13:29 (234 KB/s) - ‘primesieve-12.17.tar.gz’ saved [232272]
+
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Setting CMAKE_BUILD_TYPE = Release
+-- Setting CMAKE_VISIBILITY_INLINES_HIDDEN = ON
+-- Performing Test PRIMESIEVE_MULTIARCH_X86_POPCNT
+-- Performing Test PRIMESIEVE_MULTIARCH_X86_POPCNT - Success
+-- Performing Test PRIMESIEVE_MULTIARCH_AVX2
+-- Performing Test PRIMESIEVE_MULTIARCH_AVX2 - Success
+-- Performing Test PRIMESIEVE_MULTIARCH_AVX512_BW
+-- Performing Test PRIMESIEVE_MULTIARCH_AVX512_BW - Success
+-- Performing Test PRIMESIEVE_MULTIARCH_AVX512_VBMI2
+-- Performing Test PRIMESIEVE_MULTIARCH_AVX512_VBMI2 - Success
+-- Performing Test PRIMESIEVE_ATOMIC64
+-- Performing Test PRIMESIEVE_ATOMIC64 - Success
+-- Configuring done (5.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/primesieve/primesieve-12.17/build
+[  3%] Building CXX object CMakeFiles/libprimesieve.dir/src/api-c.cpp.o
+[  6%] Building CXX object CMakeFiles/libprimesieve.dir/src/CountPrintPrimes.cpp.o
+[ 10%] Building CXX object CMakeFiles/libprimesieve.dir/src/api.cpp.o
+[ 13%] Building CXX object CMakeFiles/libprimesieve.dir/src/CpuInfo.cpp.o
+[ 16%] Building CXX object CMakeFiles/libprimesieve.dir/src/Erat.cpp.o
+[ 20%] Building CXX object CMakeFiles/libprimesieve.dir/src/EratSmall.cpp.o
+[ 23%] Building CXX object CMakeFiles/libprimesieve.dir/src/EratMedium.cpp.o
+[ 26%] Building CXX object CMakeFiles/libprimesieve.dir/src/EratBig.cpp.o
+[ 30%] Building CXX object CMakeFiles/libprimesieve.dir/src/iterator-c.cpp.o
+[ 33%] Building CXX object CMakeFiles/libprimesieve.dir/src/iterator.cpp.o
+[ 36%] Building CXX object CMakeFiles/libprimesieve.dir/src/IteratorHelper.cpp.o
+[ 40%] Building CXX object CMakeFiles/libprimesieve.dir/src/LookupTables.cpp.o
+[ 43%] Building CXX object CMakeFiles/libprimesieve.dir/src/MemoryPool.cpp.o
+[ 46%] Building CXX object CMakeFiles/libprimesieve.dir/src/PrimeGenerator.cpp.o
+[ 50%] Building CXX object CMakeFiles/libprimesieve.dir/src/nthPrime.cpp.o
+[ 53%] Building CXX object CMakeFiles/libprimesieve.dir/src/ParallelSieve.cpp.o
+[ 56%] Building CXX object CMakeFiles/libprimesieve.dir/src/popcount.cpp.o
+[ 60%] Building CXX object CMakeFiles/libprimesieve.dir/src/PreSieve.cpp.o
+[ 63%] Building CXX object CMakeFiles/libprimesieve.dir/src/PrimeSieveClass.cpp.o
+[ 66%] Building CXX object CMakeFiles/libprimesieve.dir/src/RiemannR.cpp.o
+[ 70%] Building CXX object CMakeFiles/libprimesieve.dir/src/SievingPrimes.cpp.o
+[ 73%] Building CXX object CMakeFiles/libprimesieve.dir/src/util.cpp.o
+[ 76%] Building CXX object CMakeFiles/libprimesieve.dir/src/arch/x86/cpuid.cpp.o
+[ 80%] Linking CXX shared library libprimesieve.so
+[ 80%] Built target libprimesieve
+[ 83%] Building CXX object CMakeFiles/primesieve.dir/src/app/CmdOptions.cpp.o
+[ 86%] Building CXX object CMakeFiles/primesieve.dir/src/app/main.cpp.o
+[ 90%] Building CXX object CMakeFiles/primesieve.dir/src/app/help.cpp.o
+[ 93%] Building CXX object CMakeFiles/primesieve.dir/src/app/stressTest.cpp.o
+[ 96%] Building CXX object CMakeFiles/primesieve.dir/src/app/test.cpp.o
+[100%] Linking CXX executable primesieve
+[100%] Built target primesieve
+[ 80%] Built target libprimesieve
+[100%] Built target primesieve
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/lib/libprimesieve.so.12.17
+-- Installing: /usr/lib/libprimesieve.so.12
+-- Up-to-date: /usr/lib/libprimesieve.so
+-- Installing: /usr/bin/primesieve
+-- Set non-toolchain portion of runtime path of "/usr/bin/primesieve" to ""
+-- Installing: /usr/include/primesieve.h
+-- Installing: /usr/include/primesieve.hpp
+-- Installing: /usr/include/primesieve/iterator.h
+-- Installing: /usr/include/primesieve/iterator.hpp
+-- Installing: /usr/include/primesieve/StorePrimes.hpp
+-- Installing: /usr/include/primesieve/primesieve_error.hpp
+-- Installing: /usr/lib/cmake/primesieve/primesieveConfig.cmake
+-- Installing: /usr/lib/cmake/primesieve/primesieveConfigVersion.cmake
+-- Installing: /usr/lib/cmake/primesieve/primesieveShared.cmake
+-- Installing: /usr/lib/cmake/primesieve/primesieveShared-release.cmake
+-- Installing: /usr/share/man/man1/primesieve.1
+-- Installing: /usr/lib/pkgconfig/primesieve.pc
+12.17
+Updated registry for primesieve to version 12.17
+[VERSION] primesieve: 12.17
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package primesieve in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: fmt: 12.2.0->12.2.1; primesieve: 12.16->12.17.
+[master 1bc7a70] fmt: 12.2.0->12.2.1; primesieve: 12.16->12.17.
+ 2 files changed, 29 insertions(+), 118 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: fmt: 12.2.0->12.2.1; primesieve: 12.16->12.17.
+[master 1547a88] fmt: 12.2.0->12.2.1; primesieve: 12.16->12.17.
+ 2 files changed, 2 insertions(+)
+Pushing changes in ~/build_duration...
+r13.1-39
+r13.1-569
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libfmt.so.12.2.0
+cand_sobase=libfmt.so
+search_base=libfmt
+replacement_found=true
+------------------------------------------------
+Checking obsolete version (file): libfmt.so.12.2.0
+Path: /usr/lib/libfmt.so.12.2.0
+Skipping generic/unsafe name 'libfmt.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 3 remaining dependents.
+Names tracked: libfmt.so.12 libfmt.so.12.2.0
+Example dependents: ./miniconda3/bin/mamba-package ./miniconda3/lib/libmamba.so.4.0.1 ./miniconda3/lib/python3.14/site-packages/libmambapy/bindings.cpython-314-x86_64-linux-gnu.so ...
+Warning: No parent package found for ANY of the 3 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libfmt.so.12.2.0:
+  - ./miniconda3/bin/mamba-package
+  - ./miniconda3/lib/libmamba.so.4.0.1
+  - ./miniconda3/lib/python3.14/site-packages/libmambapy/bindings.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libfmt.so.12.2.0.
+------------------------------------------------
+Checking obsolete version (file): libprimesieve.so.12.16
+Path: /usr/lib/libprimesieve.so.12.16
+Skipping generic/unsafe name 'libprimesieve.so.' to prevent false positive matches.
+i_dir=/usr/lib
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libprimesieve.so.12.16...
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.3-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.2-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging

@@ -1,0 +1,76 @@
+[03:12:51] Found custom package for fmt, bypassing BLFS aliases.
+[03:12:51] Custom package detected at /home/fusion809/lfs_packaging/fmt (package: fmt)
+[03:12:51] Extracting dependencies for custom package 'fmt'...
+[03:12:51] Required deps: cmake gcc glibc 
+[03:12:51] Dependency 'cmake' already installed.
+[03:12:51] Dependency 'gcc' already installed.
+[03:12:51] Dependency 'glibc' already installed.
+[VERSION] fmt: 12.2.1
+[03:12:51] Installing fmt version: 12.2.1
+[03:12:51] Starting remote custom build for fmt...
+--2026-11-08 03:13:07--  https://github.com/fmtlib/fmt/archive/12.2.1.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/fmtlib/fmt/tar.gz/refs/tags/12.2.1 [following]
+--2026-11-08 03:13:08--  https://codeload.github.com/fmtlib/fmt/tar.gz/refs/tags/12.2.1
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 738814 (721K) [application/x-gzip]
+Saving to: ‘fmt-12.2.1.tar.gz’
+
+fmt-12.2.1.tar.gz     0%[                    ]       0  --.-KB/s               fmt-12.2.1.tar.gz   100%[===================>] 721.50K  4.03MB/s    in 0.2s    
+
+2026-11-08 03:13:08 (4.03 MB/s) - ‘fmt-12.2.1.tar.gz’ saved [738814/738814]
+
+-- CMake version: 4.4.5
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- {fmt} version: 12.2.1
+-- Build type: Release
+-- Target 'doc' disabled because doxygen not found
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/fmt/fmt-12.2.1/build
+[1/6] Building CXX object CMakeFiles/fmt-c.dir/src/fmt-c.cc.o
+[2/6] Building CXX object CMakeFiles/fmt.dir/src/os.cc.o
+[3/6] Building CXX object CMakeFiles/fmt.dir/src/format.cc.o
+[4/6] Linking CXX shared library libfmt.so.12.2.1
+[5/6] Creating library symlink libfmt.so.12 libfmt.so
+[6/6] Linking CXX static library libfmt-c.a
+[0/1] Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/lib/libfmt.so.12.2.1
+-- Installing: /usr/lib/libfmt.so.12
+-- Up-to-date: /usr/lib/libfmt.so
+-- Installing: /usr/include/fmt/args.h
+-- Installing: /usr/include/fmt/base.h
+-- Installing: /usr/include/fmt/chrono.h
+-- Installing: /usr/include/fmt/color.h
+-- Installing: /usr/include/fmt/compile.h
+-- Installing: /usr/include/fmt/core.h
+-- Installing: /usr/include/fmt/format.h
+-- Installing: /usr/include/fmt/format-inl.h
+-- Installing: /usr/include/fmt/os.h
+-- Installing: /usr/include/fmt/ostream.h
+-- Installing: /usr/include/fmt/printf.h
+-- Installing: /usr/include/fmt/ranges.h
+-- Installing: /usr/include/fmt/std.h
+-- Installing: /usr/include/fmt/xchar.h
+-- Installing: /usr/lib/libfmt-c.a
+-- Installing: /usr/include/fmt/fmt-c.h
+-- Installing: /usr/lib/cmake/fmt/fmt-config.cmake
+-- Installing: /usr/lib/cmake/fmt/fmt-config-version.cmake
+-- Installing: /usr/lib/cmake/fmt/fmt-targets.cmake
+-- Installing: /usr/lib/cmake/fmt/fmt-targets-release.cmake
+-- Installing: /usr/lib/pkgconfig/fmt.pc
+12.2.1
+Updated registry for fmt to version 12.2.1
+[VERSION] fmt: 12.2.1
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package fmt in /var/lib/custom-packages/
