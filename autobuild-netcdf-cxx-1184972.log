@@ -1,0 +1,46 @@
+[09:18:27] Found custom package for netcdf-cxx, bypassing BLFS aliases.
+[09:18:27] Custom package detected at /home/fusion809/lfs_packaging/netcdf-cxx (package: netcdf-cxx)
+[09:18:27] Extracting dependencies for custom package 'netcdf-cxx'...
+[09:18:27] Required deps: curl gcc netcdf 
+[09:18:27] Dependency 'curl' already installed.
+[09:18:27] Dependency 'gcc' already installed.
+[09:18:27] Dependency 'netcdf' already installed.
+[VERSION] netcdf-cxx: 4.3.2
+[09:18:29] Installing netcdf-cxx version: 4.3.2
+[09:18:29] Starting remote custom build for netcdf-cxx...
+--2026-11-07 09:18:35--  https://github.com/Unidata/netcdf-cxx4/archive/v4.3.2.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/Unidata/netcdf-cxx4/tar.gz/refs/tags/v4.3.2 [following]
+--2026-11-07 09:18:36--  https://codeload.github.com/Unidata/netcdf-cxx4/tar.gz/refs/tags/v4.3.2
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘netcdf-cxx4-4.3.2.tar.gz’
+
+netcdf-cxx4-4.3.2.t     [<=>                 ]       0  --.-KB/s               netcdf-cxx4-4.3.2.t     [ <=>                ]   1.00M  4.99MB/s               netcdf-cxx4-4.3.2.t     [  <=>               ]   3.25M  8.10MB/s               netcdf-cxx4-4.3.2.t     [   <=>              ]   5.48M  9.10MB/s               netcdf-cxx4-4.3.2.t     [    <=>             ]   6.30M  9.35MB/s    in 0.7s    
+
+2026-11-07 09:18:37 (9.35 MB/s) - ‘netcdf-cxx4-4.3.2.tar.gz’ saved [6602472]
+
+--2026-11-07 09:18:38--  https://github.com/Unidata/netcdf-cxx4/commit/fe9511b4149fd6e7f71252f61657e03ce6ee01c6.patch
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1395 (1.4K) [text/plain]
+Saving to: ‘upstream.patch’
+
+     0K .                                                     100% 1.20G=0s
+
+2026-11-07 09:18:38 (1.20 GB/s) - ‘upstream.patch’ saved [1395/1395]
+
+patching file CMakeLists.txt
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file CMakeLists.txt.rej
+[ERROR] build.sh exited with code 1 for netcdf-cxx
+[ERROR] Custom build failed for netcdf-cxx
+[09:18:39] ========================================
+[09:18:39] Build completed with 1 failure(s):
+[09:18:39]   - netcdf-cxx
+[09:18:39] ========================================

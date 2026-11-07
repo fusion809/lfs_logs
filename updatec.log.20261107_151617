@@ -1,0 +1,760 @@
+===== Update check started: 2026-11-07 15:16:17 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261107_151617
+Packages needing attention: reshiki-git
+===== Starting updatec: 2026-11-07 15:16:19 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - reshiki-git
+
+Building custom package reshiki-git...
+[15:19:11] Found custom package for reshiki-git, bypassing BLFS aliases.
+[15:19:11] Custom package detected at /home/fusion809/lfs_packaging/reshiki-git (package: reshiki-git)
+[15:19:11] Extracting dependencies for custom package 'reshiki-git'...
+[15:19:11] Required deps: acl at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz libcanberra libepoxy libffi libice libogg libpng libseccomp libselinux libsm libtool libvorbis libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres libxt ncurses pango pcre2 pixman systemd util-linux wayland zlib 
+[15:19:11] Dependency 'acl' already installed.
+[15:19:11] Dependency 'at-spi2-core' already installed.
+[15:19:11] Dependency 'brotli' already installed.
+[15:19:11] Dependency 'bzip2' already installed.
+[15:19:11] Dependency 'cairo' already installed.
+[15:19:11] Dependency 'dbus' already installed.
+[15:19:11] Dependency 'expat' already installed.
+[15:19:11] Dependency 'fontconfig' already installed.
+[15:19:11] Dependency 'freetype' already installed.
+[15:19:11] Dependency 'fribidi' already installed.
+[15:19:11] Dependency 'gcc' already installed.
+[15:19:11] Dependency 'gdk-pixbuf' already installed.
+[15:19:11] Dependency 'glib2' already installed.
+[15:19:11] Dependency 'glibc' already installed.
+[15:19:11] Dependency 'glycin' already installed.
+[15:19:11] Dependency 'graphite2' already installed.
+[15:19:11] Dependency 'gtk3' already installed.
+[15:19:11] Dependency 'harfbuzz' already installed.
+[15:19:11] Dependency 'libcanberra' already installed.
+[15:19:11] Dependency 'libepoxy' already installed.
+[15:19:11] Dependency 'libffi' already installed.
+[15:19:11] Dependency 'libice' already installed.
+[15:19:11] Dependency 'libogg' already installed.
+[15:19:11] Dependency 'libpng' already installed.
+[15:19:11] Dependency 'libseccomp' already installed.
+[15:19:11] Dependency 'libselinux' already installed.
+[15:19:11] Dependency 'libsm' already installed.
+[15:19:11] Dependency 'libtool' already installed.
+[15:19:11] Dependency 'libvorbis' already installed.
+[15:19:11] Dependency 'libx11' already installed.
+[15:19:11] Dependency 'libxau' already installed.
+[15:19:11] Dependency 'libxcb' already installed.
+[15:19:11] Dependency 'libxcomposite' already installed.
+[15:19:11] Dependency 'libxcursor' already installed.
+[15:19:11] Dependency 'libxdamage' already installed.
+[15:19:11] Dependency 'libxdmcp' already installed.
+[15:19:11] Dependency 'libxext' already installed.
+[15:19:11] Dependency 'libxfixes' already installed.
+[15:19:11] Dependency 'libxi' already installed.
+[15:19:11] Dependency 'libxinerama' already installed.
+[15:19:11] Dependency 'libxkbcommon' already installed.
+[15:19:11] Dependency 'libxrandr' already installed.
+[15:19:11] Dependency 'libxrender' already installed.
+[15:19:11] Dependency 'libxres' already installed.
+[15:19:11] Dependency 'libxt' already installed.
+[15:19:11] Dependency 'ncurses' already installed.
+[15:19:11] Dependency 'pango' already installed.
+[15:19:11] Dependency 'pcre2' already installed.
+[15:19:11] Dependency 'pixman' already installed.
+[15:19:11] Dependency 'systemd' already installed.
+[15:19:11] Dependency 'util-linux' already installed.
+[15:19:11] Dependency 'wayland' already installed.
+[15:19:11] Dependency 'zlib' already installed.
+[VERSION] reshiki-git: 98602a75464f1ce97da793361f3c9528fb6c0b40
+[15:19:12] Installing reshiki-git version: 98602a75464f1ce97da793361f3c9528fb6c0b40
+[15:19:12] Starting remote custom build for reshiki-git...
+From https://github.com/Ameyanagi/ReShiki
+ * [new branch]        combine/naming-batch-4-6 -> origin/combine/naming-batch-4-6
+ * [new branch]        fix/carbonyl-double-bond-rotation -> origin/fix/carbonyl-double-bond-rotation
+   8d356249..e57c062c  fix/salt-ion-order -> origin/fix/salt-ion-order
+   723fed54..98602a75  main               -> origin/main
+Previous HEAD position was 723fed54 Merge pull request #1015 from Ameyanagi/fix/oxonium-tetrazolium
+HEAD is now at 98602a75 Merge pull request #1026 from Ameyanagi/combine/naming-batch-4-6
+   Compiling reshiki-model v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/model)
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:586:55
+    |
+586 |         let event = if let Ok(event) = event_receiver.try_next() {
+    |                                                       ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:297:64
+    |
+297 |                     task::Poll::Pending => match self.receiver.try_next() {
+    |                                                                ^^^^^^^^
+
+warning: `iced_winit` (lib) generated 2 warnings
+   Compiling reshiki-io v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/io)
+   Compiling reshiki-agent v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/agent)
+   Compiling reshiki-mcp v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/mcp)
+   Compiling reshiki v0.13.1 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki)
+    Finished `release` profile [optimized] target(s) in 15m 47s
+[Desktop Entry]
+Name=ReShiki (git)
+Type=Application
+Exec=/usr/bin/reshiki-git %U
+TryExec=/usr/bin/reshiki-git
+Icon=reshiki-git
+MimeType=chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;chemical/x-smiles;chemical/x-cml;chemical/x-inchi;
+StartupNotify=true
+Categories=Education;Science;Chemistry;
+StartupWMClass=reshiki-git
+Saved working directory and index state WIP on (no branch): 98602a75 Merge pull request #1026 from Ameyanagi/combine/naming-batch-4-6
+98602a75464f1ce97da793361f3c9528fb6c0b40
+Updated registry for reshiki-git to version 98602a75464f1ce97da793361f3c9528fb6c0b40
+[VERSION] reshiki-git: 98602a75464f1ce97da793361f3c9528fb6c0b40
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package reshiki-git in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master 95e965e] Updating packages
+ 17 files changed, 17169 insertions(+), 21818 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master d8b5783] Updating packages
+ 17 files changed, 21 insertions(+)
+Pushing changes in ~/build_duration...
+r13.1-37
+r13.1-561
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libgstadaptivedemux-1.0.so.0.2808.0
+cand_sobase=libgstadaptivedemux.so
+search_base=libgstadaptivedemux
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstallocators-1.0.so.0.2808.0
+cand_sobase=libgstallocators.so
+search_base=libgstallocators
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstanalytics-1.0.so.0.2808.0
+cand_sobase=libgstanalytics.so
+search_base=libgstanalytics
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstapp-1.0.so.0.2808.0
+cand_sobase=libgstapp.so
+search_base=libgstapp
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstaudio-1.0.so.0.2808.0
+cand_sobase=libgstaudio.so
+search_base=libgstaudio
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstbadaudio-1.0.so.0.2808.0
+cand_sobase=libgstbadaudio.so
+search_base=libgstbadaudio
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstbase-1.0.so.0.2808.0
+cand_sobase=libgstbase.so
+search_base=libgstbase
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstbasecamerabinsrc-1.0.so.0.2808.0
+cand_sobase=libgstbasecamerabinsrc.so
+search_base=libgstbasecamerabinsrc
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstcheck-1.0.so.0.2808.0
+cand_sobase=libgstcheck.so
+search_base=libgstcheck
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstcodecparsers-1.0.so.0.2808.0
+cand_sobase=libgstcodecparsers.so
+search_base=libgstcodecparsers
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstcodecs-1.0.so.0.2808.0
+cand_sobase=libgstcodecs.so
+search_base=libgstcodecs
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstcontroller-1.0.so.0.2808.0
+cand_sobase=libgstcontroller.so
+search_base=libgstcontroller
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstcuda-1.0.so.0.2808.0
+cand_sobase=libgstcuda.so
+search_base=libgstcuda
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstdxva-1.0.so.0.2808.0
+cand_sobase=libgstdxva.so
+search_base=libgstdxva
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstfft-1.0.so.0.2808.0
+cand_sobase=libgstfft.so
+search_base=libgstfft
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstgl-1.0.so.0.2808.0
+cand_sobase=libgstgl.so
+search_base=libgstgl
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgsthip-1.0.so.0.2808.0
+cand_sobase=libgsthip.so
+search_base=libgsthip
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstinsertbin-1.0.so.0.2808.0
+cand_sobase=libgstinsertbin.so
+search_base=libgstinsertbin
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstisoff-1.0.so.0.2808.0
+cand_sobase=libgstisoff.so
+search_base=libgstisoff
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstmpegts-1.0.so.0.2808.0
+cand_sobase=libgstmpegts.so
+search_base=libgstmpegts
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstmse-1.0.so.0.2808.0
+cand_sobase=libgstmse.so
+search_base=libgstmse
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstnet-1.0.so.0.2808.0
+cand_sobase=libgstnet.so
+search_base=libgstnet
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstpbutils-1.0.so.0.2808.0
+cand_sobase=libgstpbutils.so
+search_base=libgstpbutils
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstphotography-1.0.so.0.2808.0
+cand_sobase=libgstphotography.so
+search_base=libgstphotography
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstplay-1.0.so.0.2808.0
+cand_sobase=libgstplay.so
+search_base=libgstplay
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstplayer-1.0.so.0.2808.0
+cand_sobase=libgstplayer.so
+search_base=libgstplayer
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstreamer-1.0.so.0.2808.0
+cand_sobase=libgstreamer.so
+search_base=libgstreamer
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstriff-1.0.so.0.2808.0
+cand_sobase=libgstriff.so
+search_base=libgstriff
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstrtp-1.0.so.0.2808.0
+cand_sobase=libgstrtp.so
+search_base=libgstrtp
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstrtsp-1.0.so.0.2808.0
+cand_sobase=libgstrtsp.so
+search_base=libgstrtsp
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstsctp-1.0.so.0.2808.0
+cand_sobase=libgstsctp.so
+search_base=libgstsctp
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstsdp-1.0.so.0.2808.0
+cand_sobase=libgstsdp.so
+search_base=libgstsdp
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgsttag-1.0.so.0.2808.0
+cand_sobase=libgsttag.so
+search_base=libgsttag
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgsturidownloader-1.0.so.0.2808.0
+cand_sobase=libgsturidownloader.so
+search_base=libgsturidownloader
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstva-1.0.so.0.2808.0
+cand_sobase=libgstva.so
+search_base=libgstva
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstvideo-1.0.so.0.2808.0
+cand_sobase=libgstvideo.so
+search_base=libgstvideo
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstvulkan-1.0.so.0.2808.0
+cand_sobase=libgstvulkan.so
+search_base=libgstvulkan
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstwayland-1.0.so.0.2808.0
+cand_sobase=libgstwayland.so
+search_base=libgstwayland
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgstwebrtc-1.0.so.0.2808.0
+cand_sobase=libgstwebrtc.so
+search_base=libgstwebrtc
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgtk-4.so.1.2400.1
+cand_sobase=libgtk.so
+search_base=libgtk
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libKirigamiAddonsComponents.so.1.16.0
+cand_sobase=libKirigamiAddonsComponents.so
+search_base=libKirigamiAddonsComponents
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libKirigamiAddonsStatefulApp.so.1.16.0
+cand_sobase=libKirigamiAddonsStatefulApp.so
+search_base=libKirigamiAddonsStatefulApp
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libKirigamiApp.so.1.16.0
+cand_sobase=libKirigamiApp.so
+search_base=libKirigamiApp
+replacement_found=true
+------------------------------------------------
+Checking obsolete version (file): libgstadaptivedemux-1.0.so.0.2808.0
+Path: /usr/lib/libgstadaptivedemux-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstadaptivedemux-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstadaptivedemux-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstallocators-1.0.so.0.2808.0
+Path: /usr/lib/libgstallocators-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstallocators-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstadaptivedemux-1.0.so.0.2808.0
+i_sobase=libgstadaptivedemux.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstallocators-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstanalytics-1.0.so.0.2808.0
+Path: /usr/lib/libgstanalytics-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstanalytics-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstallocators-1.0.so.0.2808.0
+i_sobase=libgstallocators.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstanalytics-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstapp-1.0.so.0.2808.0
+Path: /usr/lib/libgstapp-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstapp-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstanalytics-1.0.so.0.2808.0
+i_sobase=libgstanalytics.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstapp-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstaudio-1.0.so.0.2808.0
+Path: /usr/lib/libgstaudio-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstaudio-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstapp-1.0.so.0.2808.0
+i_sobase=libgstapp.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstaudio-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstbadaudio-1.0.so.0.2808.0
+Path: /usr/lib/libgstbadaudio-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstbadaudio-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstaudio-1.0.so.0.2808.0
+i_sobase=libgstaudio.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstbadaudio-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstbase-1.0.so.0.2808.0
+Path: /usr/lib/libgstbase-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstbase-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstbadaudio-1.0.so.0.2808.0
+i_sobase=libgstbadaudio.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstbase-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstbasecamerabinsrc-1.0.so.0.2808.0
+Path: /usr/lib/libgstbasecamerabinsrc-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstbasecamerabinsrc-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstbase-1.0.so.0.2808.0
+i_sobase=libgstbase.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstbasecamerabinsrc-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstcheck-1.0.so.0.2808.0
+Path: /usr/lib/libgstcheck-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstcheck-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstbasecamerabinsrc-1.0.so.0.2808.0
+i_sobase=libgstbasecamerabinsrc.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstcheck-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstcodecparsers-1.0.so.0.2808.0
+Path: /usr/lib/libgstcodecparsers-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstcodecparsers-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstcheck-1.0.so.0.2808.0
+i_sobase=libgstcheck.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstcodecparsers-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstcodecs-1.0.so.0.2808.0
+Path: /usr/lib/libgstcodecs-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstcodecs-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstcodecparsers-1.0.so.0.2808.0
+i_sobase=libgstcodecparsers.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstcodecs-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstcontroller-1.0.so.0.2808.0
+Path: /usr/lib/libgstcontroller-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstcontroller-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstcodecs-1.0.so.0.2808.0
+i_sobase=libgstcodecs.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstcontroller-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstcuda-1.0.so.0.2808.0
+Path: /usr/lib/libgstcuda-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstcuda-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstcontroller-1.0.so.0.2808.0
+i_sobase=libgstcontroller.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstcuda-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstdxva-1.0.so.0.2808.0
+Path: /usr/lib/libgstdxva-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstdxva-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstcuda-1.0.so.0.2808.0
+i_sobase=libgstcuda.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstdxva-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstfft-1.0.so.0.2808.0
+Path: /usr/lib/libgstfft-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstfft-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstdxva-1.0.so.0.2808.0
+i_sobase=libgstdxva.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstfft-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstgl-1.0.so.0.2808.0
+Path: /usr/lib/libgstgl-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstgl-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstfft-1.0.so.0.2808.0
+i_sobase=libgstfft.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstgl-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgsthip-1.0.so.0.2808.0
+Path: /usr/lib/libgsthip-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgsthip-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstgl-1.0.so.0.2808.0
+i_sobase=libgstgl.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgsthip-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstinsertbin-1.0.so.0.2808.0
+Path: /usr/lib/libgstinsertbin-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstinsertbin-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgsthip-1.0.so.0.2808.0
+i_sobase=libgsthip.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstinsertbin-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstisoff-1.0.so.0.2808.0
+Path: /usr/lib/libgstisoff-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstisoff-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstinsertbin-1.0.so.0.2808.0
+i_sobase=libgstinsertbin.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstisoff-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstmpegts-1.0.so.0.2808.0
+Path: /usr/lib/libgstmpegts-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstmpegts-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstisoff-1.0.so.0.2808.0
+i_sobase=libgstisoff.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstmpegts-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstmse-1.0.so.0.2808.0
+Path: /usr/lib/libgstmse-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstmse-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstmpegts-1.0.so.0.2808.0
+i_sobase=libgstmpegts.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstmse-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstnet-1.0.so.0.2808.0
+Path: /usr/lib/libgstnet-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstnet-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstmse-1.0.so.0.2808.0
+i_sobase=libgstmse.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstnet-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstpbutils-1.0.so.0.2808.0
+Path: /usr/lib/libgstpbutils-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstpbutils-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstnet-1.0.so.0.2808.0
+i_sobase=libgstnet.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstpbutils-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstphotography-1.0.so.0.2808.0
+Path: /usr/lib/libgstphotography-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstphotography-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstpbutils-1.0.so.0.2808.0
+i_sobase=libgstpbutils.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstphotography-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstplay-1.0.so.0.2808.0
+Path: /usr/lib/libgstplay-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstplay-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstphotography-1.0.so.0.2808.0
+i_sobase=libgstphotography.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstplay-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstplayer-1.0.so.0.2808.0
+Path: /usr/lib/libgstplayer-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstplayer-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstplay-1.0.so.0.2808.0
+i_sobase=libgstplay.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstplayer-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstreamer-1.0.so.0.2808.0
+Path: /usr/lib/libgstreamer-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstreamer-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstplayer-1.0.so.0.2808.0
+i_sobase=libgstplayer.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstreamer-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstriff-1.0.so.0.2808.0
+Path: /usr/lib/libgstriff-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstriff-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstreamer-1.0.so.0.2808.0
+i_sobase=libgstreamer.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstriff-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstrtp-1.0.so.0.2808.0
+Path: /usr/lib/libgstrtp-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstrtp-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstriff-1.0.so.0.2808.0
+i_sobase=libgstriff.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstrtp-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstrtsp-1.0.so.0.2808.0
+Path: /usr/lib/libgstrtsp-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstrtsp-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstrtp-1.0.so.0.2808.0
+i_sobase=libgstrtp.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstrtsp-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstsctp-1.0.so.0.2808.0
+Path: /usr/lib/libgstsctp-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstsctp-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstrtsp-1.0.so.0.2808.0
+i_sobase=libgstrtsp.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstsctp-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstsdp-1.0.so.0.2808.0
+Path: /usr/lib/libgstsdp-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstsdp-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstsctp-1.0.so.0.2808.0
+i_sobase=libgstsctp.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstsdp-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgsttag-1.0.so.0.2808.0
+Path: /usr/lib/libgsttag-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgsttag-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstsdp-1.0.so.0.2808.0
+i_sobase=libgstsdp.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgsttag-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgsturidownloader-1.0.so.0.2808.0
+Path: /usr/lib/libgsturidownloader-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgsturidownloader-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgsttag-1.0.so.0.2808.0
+i_sobase=libgsttag.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgsturidownloader-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstva-1.0.so.0.2808.0
+Path: /usr/lib/libgstva-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstva-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgsturidownloader-1.0.so.0.2808.0
+i_sobase=libgsturidownloader.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstva-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstvideo-1.0.so.0.2808.0
+Path: /usr/lib/libgstvideo-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstvideo-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstva-1.0.so.0.2808.0
+i_sobase=libgstva.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstvideo-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstvulkan-1.0.so.0.2808.0
+Path: /usr/lib/libgstvulkan-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstvulkan-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstvideo-1.0.so.0.2808.0
+i_sobase=libgstvideo.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstvulkan-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstwayland-1.0.so.0.2808.0
+Path: /usr/lib/libgstwayland-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstwayland-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstvulkan-1.0.so.0.2808.0
+i_sobase=libgstvulkan.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstwayland-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgstwebrtc-1.0.so.0.2808.0
+Path: /usr/lib/libgstwebrtc-1.0.so.0.2808.0
+Skipping generic/unsafe name 'libgstwebrtc-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstwayland-1.0.so.0.2808.0
+i_sobase=libgstwayland.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgstwebrtc-1.0.so.0.2808.0...
+------------------------------------------------
+Checking obsolete version (file): libgtk-4.so.1.2400.1
+Path: /usr/lib/libgtk-4.so.1.2400.1
+Skipping generic/unsafe name 'libgtk-4.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgstwebrtc-1.0.so.0.2808.0
+i_sobase=libgstwebrtc.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libgtk-4.so.1.2400.1...
+------------------------------------------------
+Checking obsolete version (file): libKirigamiAddonsComponents.so.1.16.0
+Path: /usr/lib/libKirigamiAddonsComponents.so.1.16.0
+Skipping generic/unsafe name 'libKirigamiAddonsComponents.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libgtk-4.so.1.2400.1
+i_sobase=libgtk.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libKirigamiAddonsComponents.so.1.16.0...
+------------------------------------------------
+Checking obsolete version (file): libKirigamiAddonsStatefulApp.so.1.16.0
+Path: /usr/lib/libKirigamiAddonsStatefulApp.so.1.16.0
+Skipping generic/unsafe name 'libKirigamiAddonsStatefulApp.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libKirigamiAddonsComponents.so.1.16.0
+i_sobase=libKirigamiAddonsComponents.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libKirigamiAddonsStatefulApp.so.1.16.0...
+------------------------------------------------
+Checking obsolete version (file): libKirigamiApp.so.1.16.0
+Path: /usr/lib/libKirigamiApp.so.1.16.0
+Skipping generic/unsafe name 'libKirigamiApp.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libKirigamiAddonsStatefulApp.so.1.16.0
+i_sobase=libKirigamiAddonsStatefulApp.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libKirigamiApp.so.1.16.0...
+------------------------------------------------
+Checking obsolete version (file): libKWeatherCore.so.26.08.2
+Path: /usr/lib/libKWeatherCore.so.26.08.2
+Skipping generic/unsafe name 'libKWeatherCore.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libKirigamiApp.so.1.16.0
+i_sobase=libKirigamiApp.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libKWeatherCore.so.26.08.2...
+Scanning /usr/share/doc for stale old-version directories...
+Removing stale: linux-7.3.1  (newer: linux-7.3.3)
+Removing stale: linux-7.3.2  (newer: linux-7.3.3)
+---
+Removed : 2
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.3-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.2-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~/lfs-scripts
+~/logs ~/lfs-scripts ~/lfs_packaging
