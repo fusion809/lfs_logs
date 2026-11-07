@@ -1,0 +1,1900 @@
+[00:59:01] Build order resolved: automake groff reshiki-git
+[00:59:01] Found custom package for automake, bypassing BLFS aliases.
+[00:59:01] Custom package detected at /home/fusion809/lfs_packaging/automake (package: automake)
+[00:59:01] Extracting dependencies for custom package 'automake'...
+[00:59:01] Required deps: gcc glibc make tar wget xz 
+[00:59:01] Dependency 'gcc' already installed.
+[00:59:01] Dependency 'glibc' already installed.
+[00:59:01] Dependency 'make' already installed.
+[00:59:01] Dependency 'tar' already installed.
+[00:59:01] Dependency 'wget' already installed.
+[00:59:01] Dependency 'xz' already installed.
+[VERSION] automake: 1.20
+[00:59:03] Installing automake version: 1.20
+[00:59:03] Starting remote custom build for automake...
+--2026-11-08 00:59:38--  https://ftpmirror.gnu.org/automake/automake-1.20.tar.xz
+Resolving ftpmirror.gnu.org (ftpmirror.gnu.org)... 209.51.188.79, 2001:470:142::79
+Connecting to ftpmirror.gnu.org (ftpmirror.gnu.org)|209.51.188.79|:443... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://mirrors.middlendian.com/gnu//automake/automake-1.20.tar.xz [following]
+--2026-11-08 00:59:39--  https://mirrors.middlendian.com/gnu//automake/automake-1.20.tar.xz
+Resolving mirrors.middlendian.com (mirrors.middlendian.com)... 180.150.27.133, 159.196.205.74, 2403:5806:e8d0::dead:beef:cafe, ...
+Connecting to mirrors.middlendian.com (mirrors.middlendian.com)|180.150.27.133|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-08 00:59:40 ERROR 404: Not Found.
+
+--2026-11-08 00:59:40--  https://ftp.gnu.org/gnu/automake/automake-1.20.tar.xz
+Resolving ftp.gnu.org (ftp.gnu.org)... 209.51.188.20, 2001:470:142:3::b
+Connecting to ftp.gnu.org (ftp.gnu.org)|209.51.188.20|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1694140 (1.6M) [application/x-xz]
+Saving to: ‘automake-1.20.tar.xz’
+
+automake-1.20.tar.x   0%[                    ]       0  --.-KB/s               automake-1.20.tar.x   0%[                    ]  15.08K  55.2KB/s               automake-1.20.tar.x   2%[                    ]  46.33K  84.7KB/s               automake-1.20.tar.x   6%[>                   ] 108.83K   132KB/s               automake-1.20.tar.x  14%[=>                  ] 233.83K   213KB/s               automake-1.20.tar.x  29%[====>               ] 483.83K   353KB/s               automake-1.20.tar.x  59%[==========>         ] 983.83K   598KB/s               automake-1.20.tar.x 100%[===================>]   1.62M   971KB/s    in 1.7s    
+
+2026-11-08 00:59:43 (971 KB/s) - ‘automake-1.20.tar.xz’ saved [1694140/1694140]
+
+configure found
+checking whether make supports nested variables... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '97' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether ln -s works... yes
+checking for perl... /usr/bin/perl
+checking for tex... tex
+checking for yacc... yacc
+checking for lex... lex
+checking whether autoconf is installed... yes
+checking whether autoconf works... yes
+checking whether autoconf is recent enough... yes
+checking whether ln works... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+configure: will now look for a sturdy POSIX shell, for our testsuite
+checking for sh... /usr/bin/sh
+checking for sh5... no
+checking for dash... no
+checking for ash... no
+checking for bash... /usr/bin/bash
+checking for zsh... /usr/bin/zsh
+checking for ksh... no
+checking for pdksh... no
+checking whether /usr/bin/sh supports $(cmd)... yes
+checking whether /usr/bin/sh supports $((expr))... yes
+checking whether /usr/bin/sh supports ${#var}... yes
+checking whether /usr/bin/sh supports ${var#glob} and ${var%glob}... yes
+checking whether /usr/bin/sh preserves exit traps with "set -e"... yes
+checking whether /usr/bin/sh can define exit traps in a shell function... yes
+checking whether /usr/bin/sh corrupts stderr with "set -x"... no
+checking whether /usr/bin/sh can return early from "dot-sourced" files... yes
+checking whether /usr/bin/sh supports alias named like shell builtins... yes
+checking whether /usr/bin/sh supports "test -e"... yes
+configure: shell /usr/bin/sh is good enough, stop looking
+configure: will use /usr/bin/sh as the testsuite shell
+configure: will now look for generic compilers
+checking for cc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C23 features... none needed
+checking whether cc understands -c and -o together... yes
+checking for aCC... no
+checking for CC... no
+checking for FCC... no
+checking for KCC... no
+checking for RCC... no
+checking for xlC_r... no
+checking for xlC... no
+checking for c++... c++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether c++ accepts -g... yes
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgfortran... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking for nagfor... no
+checking for xlf90... no
+checking for f90... no
+checking for armflang... no
+checking for flang... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for g95... no
+checking for gfortran... gfortran
+checking whether the Fortran compiler works... yes
+checking for Fortran compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU Fortran... yes
+checking whether gfortran accepts -g... yes
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for g77... no
+checking for armflang... no
+checking for flang... no
+checking for gfortran... gfortran
+checking whether the Fortran 77 compiler works... yes
+checking for Fortran 77 compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU Fortran 77... yes
+checking whether gfortran accepts -g... yes
+configure: will now look for GNU compilers
+configure: cc is already a GNU C compiler
+configure: c++ is already a GNU C++ compiler
+configure: gfortran is already a GNU Fortran compiler
+configure: gfortran is already a GNU Fortran 77 compiler
+checking for ga68... no
+checking for gcj... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating pre-inst-env
+  GEN      bin/aclocal
+  GEN      bin/automake
+  GEN      t/ax/shell-no-trail-bslash
+  GEN      t/ax/cc-no-c-o
+  GEN      runtest
+  GEN      doc/aclocal.1
+  GEN      doc/automake.1
+  GEN      lib/Automake/Config.pm
+  GEN      bin/aclocal-1.19
+  GEN      t/ax/test-defs.sh
+  GEN      bin/automake-1.19
+  GEN      doc/automake-1.19.1
+  GEN      doc/aclocal-1.19.1
+make[1]: Entering directory '/home/fusion809/lfs_packaging/automake/automake-1.20'
+ /usr/bin/mkdir -p '/usr/bin'
+ /usr/bin/install -c bin/automake bin/aclocal '/usr/bin'
+make  install-exec-hook
+make[2]: Entering directory '/home/fusion809/lfs_packaging/automake/automake-1.20'
+ ln '/usr/bin/automake' '/usr/bin/automake-1.19'
+ ln '/usr/bin/aclocal' '/usr/bin/aclocal-1.19'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/automake/automake-1.20'
+ /usr/bin/mkdir -p '/usr/share/automake-1.19/am'
+ /usr/bin/install -c -m 644 lib/am/check.am lib/am/check2.am lib/am/clean-hdr.am lib/am/clean.am lib/am/compile.am lib/am/configure.am lib/am/data.am lib/am/dejagnu.am lib/am/depend.am lib/am/depend2.am lib/am/distdir.am lib/am/footer.am lib/am/header-vars.am lib/am/header.am lib/am/install.am lib/am/inst-vars.am lib/am/java.am lib/am/lang-compile.am lib/am/lex.am lib/am/library.am lib/am/libs.am lib/am/libtool.am lib/am/lisp.am lib/am/ltlib.am lib/am/ltlibrary.am lib/am/mans-vars.am lib/am/mans.am lib/am/program.am lib/am/progs.am lib/am/python.am lib/am/remake-hdr.am lib/am/scripts.am lib/am/subdirs.am lib/am/tags.am lib/am/texi-vers.am lib/am/texibuild.am lib/am/texinfos.am lib/am/vala.am lib/am/yacc.am '/usr/share/automake-1.19/am'
+ /usr/bin/mkdir -p '/usr/share/aclocal-1.19'
+ /usr/bin/install -c -m 644 m4/amversion.m4 m4/ar-lib.m4 m4/as.m4 m4/auxdir.m4 m4/cond.m4 m4/cond-if.m4 m4/depend.m4 m4/depout.m4 m4/dmalloc.m4 m4/extra-recurs.m4 m4/gcj.m4 m4/init.m4 m4/install-sh.m4 m4/jobserver.m4 m4/lead-dot.m4 m4/lex.m4 m4/lispdir.m4 m4/maintainer.m4 m4/make.m4 m4/missing.m4 m4/mkdirp.m4 m4/obsolete.m4 m4/optional.m4 m4/options.m4 m4/python.m4 m4/prog-cc-c-o.m4 m4/rmf.m4 m4/runlog.m4 m4/sanity.m4 m4/silent.m4 m4/strip.m4 m4/substnot.m4 m4/tar.m4 m4/upc.m4 m4/vala.m4 m4/xargsn.m4 '/usr/share/aclocal-1.19'
+ /usr/bin/mkdir -p '/usr/share/aclocal-1.19/internal'
+ /usr/bin/install -c -m 644 m4/internal/ac-config-macro-dirs.m4 '/usr/share/aclocal-1.19/internal'
+ /usr/bin/mkdir -p '/usr/share/doc/automake-1.20'
+ /usr/bin/install -c -m 644 ./doc/amhello-1.0.tar.gz '/usr/share/doc/automake-1.20'
+ /usr/bin/mkdir -p '/usr/share/automake-1.19/Automake'
+ /usr/bin/install -c -m 644 lib/Automake/ChannelDefs.pm lib/Automake/Channels.pm lib/Automake/Condition.pm lib/Automake/Configure_ac.pm lib/Automake/DisjConditions.pm lib/Automake/FileUtils.pm lib/Automake/General.pm lib/Automake/Getopt.pm lib/Automake/Item.pm lib/Automake/ItemDef.pm lib/Automake/Language.pm lib/Automake/Location.pm lib/Automake/Options.pm lib/Automake/Rule.pm lib/Automake/RuleDef.pm lib/Automake/Variable.pm lib/Automake/VarDef.pm lib/Automake/Version.pm lib/Automake/XFile.pm lib/Automake/Wrap.pm '/usr/share/automake-1.19/Automake'
+ /usr/bin/mkdir -p '/usr/share/automake-1.19'
+ /usr/bin/install -c -m 644 lib/COPYING lib/INSTALL lib/texinfo.tex '/usr/share/automake-1.19'
+ /usr/bin/mkdir -p '/usr/share/automake-1.19'
+ /usr/bin/install -c -m 644 lib/config.guess lib/config.sub lib/install-sh lib/mdate-sh lib/missing lib/mkinstalldirs lib/ylwrap lib/depcomp lib/compile lib/py-compile lib/ar-lib lib/test-driver lib/tap-driver.sh '/usr/share/automake-1.19'
+ /usr/bin/mkdir -p '/usr/share/aclocal'
+ /usr/bin/install -c -m 644 m4/acdir/README '/usr/share/aclocal'
+ /usr/bin/mkdir -p '/usr/share/info'
+ /usr/bin/install -c -m 644 ./doc/automake.info ./doc/automake.info-1 ./doc/automake.info-2 ./doc/automake.info-3 ./doc/automake-history.info '/usr/share/info'
+ install-info --info-dir='/usr/share/info' '/usr/share/info/automake.info'
+ install-info --info-dir='/usr/share/info' '/usr/share/info/automake-history.info'
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 doc/aclocal.1 doc/automake.1 doc/aclocal-1.19.1 doc/automake-1.19.1 '/usr/share/man/man1'
+ /usr/bin/mkdir -p '/usr/share/automake-1.19/Automake'
+ /usr/bin/install -c -m 644 lib/Automake/Config.pm '/usr/share/automake-1.19/Automake'
+make  install-data-hook
+make[2]: Entering directory '/home/fusion809/lfs_packaging/automake/automake-1.20'
+ chmod +x '/usr/share/automake-1.19/config.guess'
+ chmod +x '/usr/share/automake-1.19/config.sub'
+ chmod +x '/usr/share/automake-1.19/install-sh'
+ chmod +x '/usr/share/automake-1.19/mdate-sh'
+ chmod +x '/usr/share/automake-1.19/missing'
+ chmod +x '/usr/share/automake-1.19/mkinstalldirs'
+ chmod +x '/usr/share/automake-1.19/ylwrap'
+ chmod +x '/usr/share/automake-1.19/depcomp'
+ chmod +x '/usr/share/automake-1.19/compile'
+ chmod +x '/usr/share/automake-1.19/py-compile'
+ chmod +x '/usr/share/automake-1.19/ar-lib'
+ chmod +x '/usr/share/automake-1.19/test-driver'
+ chmod +x '/usr/share/automake-1.19/tap-driver.sh'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/automake/automake-1.20'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/automake/automake-1.20'
+1.20
+Updated registry for automake to version 1.20
+[VERSION] automake: 1.20
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package automake in /var/lib/custom-packages/
+[00:59:58] Found custom package for groff, bypassing BLFS aliases.
+[00:59:58] Custom package detected at /home/fusion809/lfs_packaging/groff (package: groff)
+[00:59:58] Extracting dependencies for custom package 'groff'...
+[00:59:58] Required deps: gcc glibc gzip libice libsm libx11 libxau libxaw libxcb libxdmcp libxext libxmu libxpm libxt make tar util-linux wget 
+[00:59:58] Dependency 'gcc' already installed.
+[00:59:58] Dependency 'glibc' already installed.
+[00:59:58] Dependency 'gzip' already installed.
+[00:59:58] Dependency 'libice' already installed.
+[00:59:58] Dependency 'libsm' already installed.
+[00:59:58] Dependency 'libx11' already installed.
+[00:59:58] Dependency 'libxau' already installed.
+[00:59:58] Dependency 'libxaw' already installed.
+[00:59:58] Dependency 'libxcb' already installed.
+[00:59:58] Dependency 'libxdmcp' already installed.
+[00:59:58] Dependency 'libxext' already installed.
+[00:59:58] Dependency 'libxmu' already installed.
+[00:59:58] Dependency 'libxpm' already installed.
+[00:59:58] Dependency 'libxt' already installed.
+[00:59:58] Dependency 'make' already installed.
+[00:59:58] Dependency 'tar' already installed.
+[00:59:58] Dependency 'util-linux' already installed.
+[00:59:58] Dependency 'wget' already installed.
+[VERSION] groff: 1.25.0
+[00:59:59] Installing groff version: 1.25.0
+[00:59:59] Starting remote custom build for groff...
+--2026-11-08 01:00:04--  https://ftpmirror.gnu.org/groff/groff-1.25.0.tar.gz
+Resolving ftpmirror.gnu.org (ftpmirror.gnu.org)... 209.51.188.79, 2001:470:142::79
+Connecting to ftpmirror.gnu.org (ftpmirror.gnu.org)|209.51.188.79|:443... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://mirrors.middlendian.com/gnu//groff/groff-1.25.0.tar.gz [following]
+--2026-11-08 01:00:05--  https://mirrors.middlendian.com/gnu//groff/groff-1.25.0.tar.gz
+Resolving mirrors.middlendian.com (mirrors.middlendian.com)... 159.196.205.74, 180.150.27.133, 2403:5806:e8d0::dead:beef:cafe, ...
+Connecting to mirrors.middlendian.com (mirrors.middlendian.com)|159.196.205.74|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-08 01:00:06 ERROR 404: Not Found.
+
+--2026-11-08 01:00:06--  https://ftp.gnu.org/gnu/groff/groff-1.25.0.tar.gz
+Resolving ftp.gnu.org (ftp.gnu.org)... 209.51.188.20, 2001:470:142:3::b
+Connecting to ftp.gnu.org (ftp.gnu.org)|209.51.188.20|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9456673 (9.0M) [application/x-gzip]
+Saving to: ‘groff-1.25.0.tar.gz’
+
+groff-1.25.0.tar.gz   0%[                    ]       0  --.-KB/s               groff-1.25.0.tar.gz   0%[                    ]  15.08K  55.2KB/s               groff-1.25.0.tar.gz   0%[                    ]  46.33K  84.6KB/s               groff-1.25.0.tar.gz   1%[                    ] 108.83K   132KB/s               groff-1.25.0.tar.gz   2%[                    ] 233.83K   213KB/s               groff-1.25.0.tar.gz   5%[>                   ] 483.83K   352KB/s               groff-1.25.0.tar.gz  10%[=>                  ] 983.83K   595KB/s               groff-1.25.0.tar.gz  21%[===>                ]   1.93M  1.00MB/s               groff-1.25.0.tar.gz  37%[======>             ]   3.36M  1.40MB/s               groff-1.25.0.tar.gz  62%[===========>        ]   5.61M  2.13MB/s               groff-1.25.0.tar.gz  80%[===============>    ]   7.27M  2.56MB/s               groff-1.25.0.tar.gz  82%[===============>    ]   7.44M  2.38MB/s    eta 1s     groff-1.25.0.tar.gz 100%[===================>]   9.02M  2.76MB/s    in 3.3s    
+
+2026-11-08 01:00:10 (2.76 MB/s) - ‘groff-1.25.0.tar.gz’ saved [9456673/9456673]
+
+configure found
+checking that groff version string has valid format... 1.25.0 valid
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C23 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether the compiler is clang... no
+checking for compiler option needed when checking for declarations... none
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for stdbool.h... yes
+checking for uchar.h... yes
+checking for features.h... yes
+checking for getopt.h... yes
+checking for threads.h... yes
+checking for limits.h... yes
+checking for crtdefs.h... no
+checking for wctype.h... yes
+checking for xlocale.h... no
+checking for math.h... yes
+checking for sys/mman.h... yes
+checking for sys/param.h... yes
+checking for pthread.h... yes
+checking for sys/time.h... yes
+checking for stdckdint.h... yes
+checking for stdcountof.h... yes
+checking for sys/socket.h... yes
+checking for sys/wait.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking dependency style of gcc... gcc3
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make supports nested variables... (cached) yes
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C23 features... (cached) unsupported
+checking for gcc option to enable C11 features... (cached) unsupported
+checking for gcc option to enable C99 features... none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking whether the compiler is clang... (cached) no
+checking for compiler option needed when checking for declarations... (cached) none
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to run the C preprocessor... gcc -E
+checking for egrep -e... /usr/bin/grep -E
+checking for Minix Amsterdam compiler... no
+checking for ar... ar
+checking for ranlib... ranlib
+checking for gcc option to support large files... none needed
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether the preprocessor supports include_next... yes
+checking whether source code line length is unlimited... yes
+checking whether char8_t is correctly defined... yes
+checking whether char16_t is correctly defined... yes
+checking whether char32_t is correctly defined... yes
+checking whether the C++ compiler has <uchar.h>... yes
+checking for bit size of wchar_t... 32
+checking for mbstate_t... yes
+checking for mbsinit... yes
+checking for mbrtowc... yes
+checking for symlink... yes
+checking for snprintf... yes
+checking for vasnprintf... no
+checking for iswcntrl... yes
+checking for lstat... yes
+checking for mprotect... yes
+checking for readlink... yes
+checking for vasprintf... yes
+checking for wcwidth... yes
+checking for getpagesize... yes
+checking for nl_langinfo and CODESET... yes
+checking for a traditional japanese locale... ja_JP
+checking for an english Unicode locale... en_US.UTF-8
+checking for a transitional chinese locale... zh_CN.GB18030
+checking whether mbrtowc handles incomplete characters... yes
+checking whether mbrtowc works as well as mbtowc... yes
+checking for gcc options to detect undeclared functions... none needed
+checking for gcc options to ignore future-version functions... none needed
+checking whether mbrtoc32 is declared... yes
+checking for mbrtoc32... yes
+checking for a traditional french locale... fr_FR
+checking whether mbrtoc32 works as well as mbrtowc... yes
+checking whether c32rtomb is declared... yes
+checking for c32rtomb... yes
+checking whether c32rtomb works as well as wcrtomb... yes
+checking for complete errno.h... yes
+checking whether ctype.h defines __header_inline... no
+checking for working fcntl.h... yes
+checking for pid_t... yes
+checking for mode_t... yes
+checking whether byte ordering is bigendian... no
+checking whether pow can be used without linking with libm... no
+checking whether pow can be used with libm... yes
+checking whether frexp() can be used without linking with libm... yes
+checking whether alarm is declared... yes
+checking whether frexp works... yes
+checking whether trunc is declared... yes
+checking whether isnan(double) can be used without linking with libm... yes
+checking whether ldexp() can be used without linking with libm... yes
+checking whether ldexp works... yes
+checking for stdint.h... yes
+checking for inttypes.h... yes
+checking whether printf supports size specifiers as in C99... yes
+checking whether printf supports size specifiers as in C23... yes
+checking whether printf supports 'long double' arguments... yes
+checking whether printf supports infinite 'double' arguments... yes
+checking whether long double and double are the same... no
+checking whether printf supports infinite 'long double' arguments... yes
+checking whether printf supports the 'a' and 'A' directives... yes
+checking whether printf supports the 'b' directive... yes
+checking whether printf supports the 'F' directive... yes
+checking whether printf supports the 'ls' directive... yes
+checking whether printf supports the 'lc' directive correctly... yes
+checking whether printf supports POSIX/XSI format strings with positions... yes
+checking whether printf supports the grouping flag... yes
+checking whether printf supports grouping on integers with a precision... yes
+checking whether printf supports grouping with a multibyte separator... yes
+checking whether printf supports the left-adjust flag correctly... yes
+checking whether printf supports the zero flag correctly... yes
+checking whether printf supports the alternative flag with a zero precision... yes
+checking whether printf supports large precisions... yes
+checking whether the compiler produces multi-arch binaries... no
+checking whether printf survives out-of-memory conditions... yes
+checking whether snprintf returns a byte count as in C99... yes
+checking whether snprintf truncates the result as in C99... yes
+checking for wint_t... yes
+checking whether wint_t is large enough... yes
+checking where to find the exponent in a 'double'... word 1 bit 20
+checking for wcslen... yes
+checking for snprintf... (cached) yes
+checking for strnlen... yes
+checking for wcrtomb... yes
+checking whether _snprintf is declared... no
+checking for intmax_t... yes
+checking for getopt.h... (cached) yes
+checking for getopt_long_only... yes
+checking whether getopt is POSIX compatible... yes
+checking for working GNU getopt function... yes
+checking for working GNU getopt_long function... yes
+checking for glibc-compatible sys/cdefs.h... yes
+checking for pthread.h... (cached) yes
+checking for pthread_kill in -lpthread... yes
+checking whether POSIX threads API is available... yes
+checking whether setlocale (LC_ALL, NULL) is thread-safe... yes
+checking whether setlocale (category, NULL) is thread-safe... yes
+checking whether limits.h has WORD_BIT, BOOL_WIDTH etc.... yes
+checking whether limits.h has SSIZE_MAX... yes
+checking whether stdint.h conforms to C99... yes
+checking whether stdint.h works without ISO C predefines... yes
+checking whether stdint.h has UINTMAX_WIDTH etc.... yes
+checking for C/C++ restrict keyword... __restrict__
+checking where to find the exponent in a 'long double'... word 2 bit 0
+checking where to find the exponent in a 'float'... word 0 bit 23
+checking whether iswcntrl works... yes
+checking for towlower... yes
+checking for wctype_t... yes
+checking for wctrans_t... yes
+checking for good max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking for unreachable in C... yes
+checking whether nullptr_t needs <stddef.h>... yes
+checking whether <stddef.h> is idempotent... guessing yes
+checking whether locale.h defines locale_t... yes
+checking whether locale.h defines _locale_t... no
+checking whether locale.h conforms to POSIX:2001... yes
+checking whether struct lconv is properly defined... yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether malloc is ptrdiff_t safe... yes
+checking whether malloc, calloc set errno on failure... yes
+checking whether malloc (0) returns nonnull... yes
+checking whether NAN macro works... yes
+checking whether HUGE_VAL works... yes
+checking for inline... inline
+checking for MAP_ANONYMOUS... yes
+checking whether memchr works... yes
+checking whether memeq is declared... no
+checking whether memmem is declared... yes
+checking for memmem... yes
+checking whether memmem works... yes
+checking whether imported symbols can be declared weak... yes
+checking for multithreading API to use... posix
+checking for pthread_t... yes
+checking for pthread_spinlock_t... yes
+checking for pthread_spin_init... yes
+checking for sched.h... yes
+checking for struct sched_param... yes
+checking whether snprintf is declared... yes
+checking whether stat file-mode macros are broken... no
+checking for nlink_t... yes
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99 or later... (cached) yes
+checking whether stdckdint.h can be included in C... yes
+checking checking for an ISO C23 compliant stdckdint.h in C... yes
+checking whether stdckdint.h can be included in C++... yes
+checking checking for an ISO C++26 compliant stdckdint.h in C++... no
+checking whether the C++ compiler has <stdcountof.h>... no
+checking whether fcloseall is declared... yes
+checking whether getw is declared... yes
+checking whether putw is declared... yes
+checking which flavor of printf attribute matches inttypes macros... system
+checking whether ecvt is declared... yes
+checking whether fcvt is declared... yes
+checking whether gcvt is declared... yes
+checking whether MB_CUR_MAX is correct... yes
+checking whether streq is declared... no
+checking whether strerror(0) succeeds... yes
+checking whether strsignal is declared... yes
+checking for off64_t... yes
+checking for blksize_t... yes
+checking for blkcnt_t... yes
+checking for struct timespec in <time.h>... yes
+checking for TIME_UTC in <time.h>... yes
+checking whether execvpe is declared... yes
+checking whether vsnprintf is declared... yes
+checking whether <wchar.h> uses 'inline' correctly... yes
+checking whether wcsdup is declared... yes
+checking for C compiler option to allow warnings... -Wno-error
+checking for alloca as a compiler built-in... yes
+checking for static_assert... yes, a keyword
+checking for bool, true, false... yes
+checking for __builtin_expect... yes
+checking whether fabs can be used without linking with libm... no
+checking whether fabs can be used with libm... yes
+checking whether float.h conforms to ISO C23... yes
+checking whether conversion from 'int' to 'long double' works... yes
+checking whether free is known to preserve errno... yes
+checking whether frexp works... (cached) yes
+checking whether frexpl is declared... yes
+checking whether frexpl() can be used without linking with libm... yes
+checking whether frexpl works... yes
+checking for __fseterr... no
+checking whether isfinite is declared... yes
+checking whether isfinite(long double) works... yes
+checking whether isinf is declared... yes
+checking whether isinf(long double) works... yes
+checking whether isnan(double) can be used without linking with libm... (cached) yes
+checking whether isnan(float) can be used without linking with libm... yes
+checking whether isnan(float) works... yes
+checking whether isnan(long double) can be used without linking with libm... yes
+checking whether isnanl works... yes
+checking for iswblank... yes
+checking whether iswblank is declared... yes
+checking whether iswdigit is ISO C compliant... yes
+checking whether iswpunct is consistent with ispunct... yes
+checking whether iswxdigit is ISO C compliant... yes
+checking whether ldexp works... (cached) yes
+checking whether localeconv works... yes
+checking whether mbrtoc32 works on empty input... yes
+checking whether the C locale is free of encoding errors... no
+checking whether mbrtoc32 works in an UTF-8 locale... yes
+checking whether mbrtowc handles a NULL pwc argument... yes
+checking whether mbrtowc has a correct return value... yes
+checking whether mbrtowc returns 0 when parsing a NUL character... yes
+checking whether mbrtowc stores incomplete characters... no
+checking whether mbrtowc works on empty input... yes
+checking whether the C locale is free of encoding errors... no
+checking whether mbrtowc recognizes invalid UTF-8... yes
+checking whether memmem works in linear time... yes
+checking for memmem... (cached) yes
+checking whether memmem works... (cached) yes
+checking whether frexp works... (cached) yes
+checking whether ldexp can be used without linking with libm... (cached) yes
+checking whether frexpl() can be used without linking with libm... (cached) yes
+checking whether frexpl works... (cached) yes
+checking whether frexpl is declared... (cached) yes
+checking whether ldexpl() can be used without linking with libm... yes
+checking whether ldexpl works... yes
+checking whether ldexpl is declared... yes
+checking for PTHREAD_CREATE_DETACHED... yes
+checking for PTHREAD_MUTEX_RECURSIVE... yes
+checking for PTHREAD_MUTEX_ROBUST... yes
+checking for PTHREAD_PROCESS_SHARED... yes
+checking whether pthread_once works... yes
+checking whether readlink signature is correct... yes
+checking whether readlink handles trailing slash correctly... yes
+checking whether readlink truncates results correctly... yes
+checking for signbit macro... yes
+checking for signbit compiler built-ins... yes
+checking for SIZE_MAX... yes
+checking for snprintf... (cached) yes
+checking whether snprintf respects a size of 1... yes
+checking for ssize_t... yes
+checking whether stat handles trailing slashes on files... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for struct stat.st_birthtimespec.tv_nsec... no
+checking for struct stat.st_birthtimensec... no
+checking for struct stat.st_birthtim.tv_nsec... no
+checking for strcasecmp... yes
+checking whether strcasecmp works... yes
+checking for working strerror function... yes
+checking for strncasecmp... yes
+checking whether strcasecmp works... (cached) yes
+checking whether strncasecmp is declared... yes
+checking for strsignal... yes
+checking whether strsignal always returns a string... yes
+checking whether trunc is declared... (cached) yes
+checking whether unlink honors trailing slashes... yes
+checking whether unlink of a parent directory fails as it should... guessing yes
+checking for variable-length arrays... yes
+checking for ptrdiff_t... yes
+checking for vsnprintf... yes
+checking whether snprintf respects a size of 1... (cached) yes
+checking whether wcwidth is declared... yes
+checking whether wcwidth works reasonably in UTF-8 locales... yes
+checking whether to install .cmd wrapper scripts for Windows... no
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking for Xaw library and header files... yes
+checking for Xmu library and header files... yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for perl... /usr/bin/perl
+checking for perl version... 5.44.0
+checking for lpr... lpr
+checking for lp... lp
+checking for lpq... lpq
+checking option to use when spooling DVI files... -d
+checking for egrep... /usr/bin/grep -E
+checking for bison... bison -y
+checking for m4... m4
+checking for makeinfo... makeinfo
+checking for makeinfo version... 7.3
+checking for texi2dvi... texi2dvi
+checking for tex... found
+checking for ranlib... (cached) ranlib
+checking for install-info... install-info
+checking whether ln -s works... yes
+checking for xpmtoppm... missing
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for uchardet >= 0.0.1... no
+checking for csh hash hack... no
+checking for stdbool.h... (cached) yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dirent.h... yes
+checking for limits.h... (cached) yes
+checking for sys/dir.h... yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for math.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for direct.h... no
+checking for process.h... no
+checking whether -D_POSIX_SOURCE is necessary... no
+checking for return type of srand... void
+checking whether gettimeofday must be declared... no
+checking whether popen must be declared... no
+checking whether pclose must be declared... no
+checking whether rand must be declared... no
+checking whether srand must be declared... no
+checking whether vfprintf must be declared... no
+checking for sys_nerr in <errno.h>, <stdio.h>, or <stdlib.h>... no
+checking for sys_errlist in <errno.h>, <stdio.h>, or <stdlib.h>... no
+checking C++ <osfcn.h>... no
+checking C++ <limits.h>... yes
+checking C++ <inttypes.h>... yes
+checking for unsigned long long... yes
+checking for declaration of time_t... yes
+checking for return type of signal handlers... void
+checking whether byte ordering is bigendian... (cached) no
+checking for main in -lc... yes
+checking for sin in -lm... yes
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking how to run the C++ preprocessor... g++ -E
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for working mmap... yes
+checking for getcwd... yes
+checking for strtol... yes
+checking for gettimeofday... yes
+checking for isatty... yes
+checking for kill... yes
+checking for rename... yes
+checking for setlocale... yes
+checking for strdup... yes
+checking for strsep... yes
+checking for mkstemp... yes
+checking whether getc_unlocked is declared... yes
+checking for nl_langinfo and CODESET... (cached) yes
+checking whether ISO C++98 array deletion syntax is supported... yes
+checking whether C preprocessor uses pre-ISO C90 syntax... no
+checking w_coredump... no
+checking default value for grops -b option... 0
+checking default paper format... A4
+checking whether a groff-incompatible troff is installed... no
+checking file name prefix of system macro packages... (none)
+checking for system macro packages to make available... (none)
+checking separator character to use in groff search paths... :
+checking for gs... gs
+checking for pnmcrop... missing
+checking for pamcut... missing
+checking for pnmtopng... missing
+checking for pnmtops... missing
+checking for ps2ps... found
+checking for URW fonts in Type 1/PFB format... none found
+checking whether 'make' defines 'RM'... yes
+checking for a diff program that supports option -D... diff
+checking whether 'test' supports '-ef' option... yes
+checking for gs version with good left sidebearing handling... got 10.08.0 (good)
+checking whether we are using the GNU C Library >= 2.1 or uClibc... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating test-groff
+config.status: creating src/include/config.h
+config.status: executing depfiles commands
+config.status: executing mkdir-bison-paths commands
+
+GNU roff version 1.25.0 configuration summary
+----------------------------------------------------------------------
+ installation directory prefix    : /usr
+ C++ compiler and options         : g++ -g -O2 
+ C compiler and options           : gcc -g -O2 
+ Perl interpreter version         : 5.44.0
+ Ghostscript command              : gs
+ gropdf service level             : intermediate
+ X11 support                      : enabled
+ X11 app defaults directory       : /usr/lib/X11/app-defaults
+ default paper format             : A4
+ 'groff -l' uses print spooler    : lpr
+ preconv can use uchardet library : no
+ can build groff.{info,html,txt}  : yes
+ can build groff.{dvi,pdf}        : yes
+----------------------------------------------------------------------
+configure: Default X11 application defaults directory assumed.
+
+  The application defaults files for gxditview (GXditview and
+  GXditview-color) will be installed in the following directory.
+
+    /usr/lib/X11/app-defaults
+
+  To install elsewhere, say, '/etc/X11/app-defaults', add
+  '--with-appdefdir=/etc/X11/app-defaults' to the configure script
+  command-line options and rerun it (the 'prefix' value has no effect on
+  a --with-appdefdir option).
+
+  If the gxditview app-defaults are installed in a directory that is not
+  one of the default X11 directories for this purpose (common defaults
+  are /usr/lib/X11/app-defaults, /usr/share/X11/app-defaults, and
+  /etc/X11/app-defaults), you will have to set the environment variable
+  XFILESEARCHPATH to this path.  More details can be found in the X(7)
+  manual page, or in the document "X Toolkit Intrinsics - C Language
+  Interface manual".
+       
+configure: The uchardet library was not found.
+
+  The 'preconv' preprocessor program will be unable to attempt automatic
+  inference of an input file's character encoding.  See the preconv(1)
+  man page.
+  
+configure: The programs 'pnmcrop', 'pamcut', 'pnmtopng', and 'pnmtops' were not found in $PATH.
+
+  Consequently, groff's HTML output driver, 'grohtml', will not work
+  properly.  It will not be possible to prepare or install
+  groff-generated documentation in HTML format.
+
+  GEN      lib/fcntl.h
+  GEN      lib/inttypes.h
+  GEN      lib/alloca.h
+  GEN      lib/limits.h
+  GEN      lib/locale.h
+  GEN      lib/math.h
+  GEN      lib/pthread.h
+  GEN      lib/sched.h
+  GEN      lib/stdckdint.h
+  GEN      lib/stdcountof.h
+  GEN      lib/stddef.h
+  GEN      lib/stdio.h
+  GEN      lib/stdlib.h
+  GEN      lib/string.h
+  GEN      lib/strings.h
+  GEN      lib/sys/stat.h
+  GEN      lib/sys/types.h
+  GEN      lib/sys/wait.h
+  GEN      lib/time.h
+  GEN      lib/uchar.h
+  GEN      lib/unicase.h
+  GEN      lib/unictype.h
+  GEN      lib/uninorm.h
+  GEN      lib/unistd.h
+  GEN      lib/unitypes.h
+  GEN      lib/uniwidth.h
+  GEN      lib/wchar.h
+  GEN      lib/wctype.h
+make  all-recursive
+make[1]: Entering directory '/home/fusion809/lfs_packaging/groff/groff-1.25.0'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/groff/groff-1.25.0'
+  GEN      .version
+  CC       lib/libgnu_a-unistd.o
+  CC       lib/libgnu_a-vfzprintf.o
+  CC       lib/libgnu_a-vsnzprintf.o
+  CC       lib/libgnu_a-wctype-h.o
+  CC       lib/libgnu_a-xsize.o
+  CC       lib/libgnu_a-asnprintf.o
+  CC       lib/libgnu_a-printf-args.o
+  CC       lib/libgnu_a-vasnprintf.o
+  CC       lib/libgnu_a-printf-parse.o
+  GEN      src/devices/xditview/GXditview-ad.h
+  GEN      src/devices/xditview/groff_version.h
+  GEN      src/roff/troff/majorminor.cpp
+  GEN      eqn2graph
+  GEN      gdiffmk
+  GEN      shdeps.sed
+  GEN      grap2graph
+  GEN      mmroff
+  GEN      pic2graph
+  GEN      gropdf
+  GEN      afmtodit
+  GEN      grog
+  GEN      pdfmom
+  GEN      chem
+  GEN      neqn
+  GEN      nroff
+  GEN      contrib/chem/chem.1
+  GEN      contrib/eqn2graph/eqn2graph.1
+  GEN      contrib/gdiffmk/gdiffmk.1
+  GEN      contrib/glilypond/glilypond.1
+  GEN      contrib/gperl/gperl.1
+  GEN      contrib/gpinyin/gpinyin.1
+  GEN      contrib/grap2graph/grap2graph.1
+  GEN      contrib/mm/mmroff.1
+  GEN      contrib/pic2graph/pic2graph.1
+  GEN      src/devices/grodvi/grodvi.1
+  GEN      src/devices/grohtml/grohtml.1
+  GEN      src/devices/grolbp/grolbp.1
+  GEN      src/devices/grolj4/grolj4.1
+  GEN      src/devices/gropdf/gropdf.1
+  GEN      src/devices/grops/grops.1
+  GEN      src/devices/grotty/grotty.1
+  GEN      src/devices/xditview/gxditview.1
+  GEN      src/preproc/preconv/preconv.1
+  GEN      src/roff/groff/groff.1
+  GEN      src/utils/addftinfo/addftinfo.1
+  GEN      src/utils/afmtodit/afmtodit.1
+  GEN      src/utils/grog/grog.1
+  GEN      src/utils/hpftodit/hpftodit.1
+  GEN      src/utils/lkbib/lkbib.1
+  GEN      src/utils/pdfmom/pdfmom.1
+  GEN      src/utils/pfbtops/pfbtops.1
+  GEN      src/utils/tfmtodit/tfmtodit.1
+  GEN      src/utils/xtotroff/xtotroff.1
+  GEN      src/preproc/eqn/eqn.1
+  GEN      src/preproc/eqn/neqn.1
+  GEN      src/preproc/grn/grn.1
+  GEN      src/preproc/pic/pic.1
+  GEN      src/preproc/refer/refer.1
+  GEN      src/preproc/soelim/soelim.1
+  GEN      src/preproc/tbl/tbl.1
+  GEN      src/roff/nroff/nroff.1
+  GEN      src/roff/troff/troff.1
+  GEN      src/utils/indxbib/indxbib.1
+  GEN      man/groff_font.5
+  GEN      src/utils/lookbib/lookbib.1
+  GEN      man/groff_out.5
+  GEN      man/groff_tmac.5
+  GEN      contrib/hdtbl/groff_hdtbl.7
+  GEN      contrib/mm/groff_mm.7
+  GEN      contrib/mm/groff_mmse.7
+  GEN      contrib/mom/groff_mom.7
+  GEN      contrib/rfc1345/groff_rfc1345.7
+  GEN      man/groff_char.7
+  GEN      man/groff_diff.7
+  GEN      man/roff.7
+  GEN      tmac/groff_ms.7
+  GEN      tmac/groff_me.7
+  GEN      tmac/groff_mdoc.7
+  GEN      tmac/groff_trace.7
+  GEN      tmac/groff_www.7
+  GEN      font/devascii/R
+  GEN      font/devascii/I
+  GEN      font/devascii/B
+  GEN      font/devascii/BI
+  GEN      font/devascii/DESC
+  GEN      font/devdvi/DESC
+  GEN      font/devhtml/R
+  GEN      font/devhtml/I
+  GEN      font/devhtml/B
+  GEN      font/devhtml/BI
+  GEN      font/devhtml/CR
+  GEN      font/devhtml/CI
+  GEN      font/devhtml/CB
+  GEN      font/devhtml/CBI
+  GEN      font/devhtml/S
+  GEN      font/devhtml/DESC
+  GEN      font/devlatin1/R
+  GEN      font/devlatin1/I
+  GEN      font/devlatin1/BI
+  GEN      font/devlatin1/B
+  GEN      font/devlatin1/DESC
+  GEN      font/devlbp/DESC
+  GEN      font/devpdf/DESC
+  GEN      font/devpdf/SS
+  GEN      font/devpdf/symbolsl.afm
+  GEN      font/devpdf/symbolsl.pfb
+  GEN      font/devpdf/Foundry
+  GEN      font/devpdf/util/BuildFoundries
+  GEN      font/devutf8/I
+  GEN      font/devutf8/R
+  GEN      font/devutf8/B
+  GEN      font/devutf8/DESC
+  GEN      font/devutf8/BI
+  GEN      font/devlj4/DESC
+  GEN      font/devps/DESC
+  GEN      font/devps/prologue
+  GEN      font/devps/freeeuro.pfa
+  GEN      font/devps/symbolsl.pfa
+  GEN      font/devps/zapfdr.pfa
+  GEN      tmac/www.tmac
+  GEN      doc/groff-man-pages-cover.groff
+  GEN      doc/ms.ms
+  GEN      contrib/hdtbl/examples/fonts_n.roff
+  GEN      contrib/hdtbl/examples/fonts_x.roff
+  GEN      doc/meref.me
+  GEN      doc/meintro.me
+  GEN      doc/meintro_fr.me
+  CXX      src/devices/grodvi/dvi.o
+  CXX      src/libs/libdriver/input.o
+  GEN      contrib/sboxes/msboxes.ms
+  CXX      src/libs/libdriver/printer.o
+src/libs/libdriver/printer.cpp: In member function ‘void printer::load_font(int, const char*)’:
+src/libs/libdriver/printer.cpp:151:23: warning: ‘void* __builtin_memset(void*, int, long unsigned int)’ writing between 16 and 25769803768 bytes into a region of size 0 overflows the destination [-Wstringop-overflow=]
+  151 |         font_table[i] = 0 /* nullptr */;
+      |         ~~~~~~~~~~~~~~^~~
+src/libs/libdriver/printer.cpp:141:39: note: at offset [-8589934592, -8] into destination object of size [8, 17179869176] allocated by ‘operator new []’
+  141 |         font_table = new font *[nfonts];
+      |                                       ^
+  CXX      src/libs/libgroff/libgroff_a-change_lf.o
+  CXX      src/libs/libgroff/libgroff_a-cmap.o
+  CXX      src/libs/libgroff/libgroff_a-color.o
+  CXX      src/libs/libgroff/libgroff_a-cset.o
+  CXX      src/libs/libgroff/libgroff_a-curtime.o
+  CXX      src/libs/libgroff/libgroff_a-device.o
+  CXX      src/libs/libgroff/libgroff_a-errarg.o
+  CXX      src/libs/libgroff/libgroff_a-error.o
+  CXX      src/libs/libgroff/libgroff_a-fatal.o
+  CXX      src/libs/libgroff/libgroff_a-filename.o
+  CXX      src/libs/libgroff/libgroff_a-font.o
+  CXX      src/libs/libgroff/libgroff_a-fontfile.o
+  CXX      src/libs/libgroff/libgroff_a-geometry.o
+  CXX      src/libs/libgroff/libgroff_a-glyphuni.o
+  CXX      src/libs/libgroff/libgroff_a-htmlhint.o
+  CC       src/libs/libgroff/libgroff_a-iftoa.o
+  CXX      src/libs/libgroff/libgroff_a-invalid.o
+  CC       src/libs/libgroff/libgroff_a-itoa.o
+  CXX      src/libs/libgroff/libgroff_a-json_encode.o
+  CXX      src/libs/libgroff/libgroff_a-lf.o
+  CXX      src/libs/libgroff/libgroff_a-lineno.o
+  CXX      src/libs/libgroff/libgroff_a-macropath.o
+  CXX      src/libs/libgroff/libgroff_a-maxfilename.o
+  CXX      src/libs/libgroff/libgroff_a-maxpathname.o
+  CXX      src/libs/libgroff/libgroff_a-mksdir.o
+  CXX      src/libs/libgroff/libgroff_a-nametoindex.o
+  CXX      src/libs/libgroff/libgroff_a-paper.o
+  CXX      src/libs/libgroff/libgroff_a-prime.o
+  CC       src/libs/libgroff/libgroff_a-progname.o
+  CXX      src/libs/libgroff/libgroff_a-ptable.o
+  CC       src/libs/libgroff/libgroff_a-quotearg.o
+  CXX      src/libs/libgroff/libgroff_a-relocate.o
+  CXX      src/libs/libgroff/libgroff_a-searchpath.o
+  CC       src/libs/libgroff/libgroff_a-spawnvp.o
+  CXX      src/libs/libgroff/libgroff_a-string.o
+  CXX      src/libs/libgroff/libgroff_a-strsave.o
+  CXX      src/libs/libgroff/libgroff_a-symbol.o
+  CXX      src/libs/libgroff/libgroff_a-tmpfile.o
+  CXX      src/libs/libgroff/libgroff_a-tmpname.o
+  CXX      src/libs/libgroff/libgroff_a-unicode.o
+  CXX      src/libs/libgroff/libgroff_a-uniglyph.o
+  CXX      src/libs/libgroff/libgroff_a-uniuni.o
+  GEN      src/libs/libgroff/version.cpp
+  CC       lib/libgnu_a-c32isalnum.o
+  CC       lib/libgnu_a-c32isalpha.o
+  CC       lib/libgnu_a-c32isblank.o
+  CC       lib/libgnu_a-c32iscntrl.o
+  CC       lib/libgnu_a-c32isdigit.o
+  CC       lib/libgnu_a-c32isgraph.o
+  CC       lib/libgnu_a-c32islower.o
+  CC       lib/libgnu_a-c32isprint.o
+  CC       lib/libgnu_a-c32ispunct.o
+  CC       lib/libgnu_a-c32isspace.o
+  CC       lib/libgnu_a-c32isupper.o
+  CC       lib/libgnu_a-c32isxdigit.o
+  CC       lib/libgnu_a-c32tolower.o
+  CC       lib/libgnu_a-c32width.o
+  CC       lib/libgnu_a-fseterr.o
+  CC       lib/libgnu_a-hard-locale.o
+  CC       lib/libgnu_a-issymlink.o
+  CC       lib/libgnu_a-localcharset.o
+  CC       lib/libgnu_a-malloca.o
+  CC       lib/libgnu_a-math.o
+  CC       lib/libgnu_a-mbchar.o
+  CC       lib/libgnu_a-mbiter-aux.o
+  CC       lib/libgnu_a-mbiterf.o
+  CC       lib/libgnu_a-mbrtoc32.o
+  CC       lib/libgnu_a-mbrtowc.o
+  CC       lib/libgnu_a-mbsnlen.o
+  CC       lib/libgnu_a-mbszero.o
+  CC       lib/libgnu_a-memeq.o
+  CC       lib/glthread/libgnu_a-once.o
+  CC       lib/libgnu_a-printf-frexp.o
+  CC       lib/libgnu_a-printf-frexpl.o
+  CC       lib/libgnu_a-setlocale_null.o
+  CC       lib/libgnu_a-setlocale_null-unlocked.o
+  CC       lib/libgnu_a-stat-time.o
+  CC       lib/libgnu_a-stdlib.o
+  CC       lib/libgnu_a-streq.o
+  CC       lib/glthread/libgnu_a-threadlib.o
+  CC       lib/glthread/libgnu_a-tls.o
+  CC       lib/unicase/libgnu_a-tolower.o
+  CC       lib/unictype/libgnu_a-ctype_alnum.o
+  CC       lib/unictype/libgnu_a-ctype_alpha.o
+  CC       lib/unictype/libgnu_a-ctype_blank.o
+  CC       lib/unictype/libgnu_a-ctype_cntrl.o
+  CC       lib/unictype/libgnu_a-ctype_digit.o
+  CC       lib/unictype/libgnu_a-ctype_graph.o
+  CC       lib/unictype/libgnu_a-ctype_lower.o
+  CC       lib/unictype/libgnu_a-ctype_print.o
+  CC       lib/unictype/libgnu_a-ctype_punct.o
+  CC       lib/unictype/libgnu_a-ctype_space.o
+  CC       lib/unictype/libgnu_a-ctype_upper.o
+  CC       lib/unictype/libgnu_a-ctype_xdigit.o
+  CC       lib/uniwidth/libgnu_a-width.o
+  CXX      src/devices/grohtml/post-html.o
+  CXX      src/devices/grohtml/html-table.o
+  CXX      src/devices/grohtml/html-text.o
+  CXX      src/devices/grohtml/output.o
+  CXX      src/devices/grolbp/lbp.o
+  CXX      src/devices/grolj4/lj4.o
+  CXX      src/devices/grops/ps.o
+  CXX      src/devices/grops/psrm.o
+  CXX      src/devices/grotty/tty.o
+  CC       src/devices/xditview/gxditview-device.o
+  CC       src/devices/xditview/gxditview-draw.o
+  CC       src/devices/xditview/gxditview-Dvi.o
+  CC       src/devices/xditview/gxditview-font.o
+  CC       src/devices/xditview/gxditview-lex.o
+  CC       src/devices/xditview/gxditview-page.o
+  CC       src/devices/xditview/gxditview-parse.o
+  CC       src/devices/xditview/gxditview-xditview.o
+  CC       src/libs/libxutil/libxutil_a-DviChar.o
+  CC       src/libs/libxutil/libxutil_a-XFontName.o
+  CC       src/libs/libxutil/libxutil_a-xmalloc.o
+  CXX      src/preproc/html/pre-html.o
+  CXX      src/preproc/html/pushback.o
+  CXX      src/preproc/preconv/preconv-preconv.o
+  CXX      src/roff/groff/groff.o
+  CC       src/roff/groff/pipeline.o
+  CXX      src/utils/addftinfo/addftinfo.o
+  CXX      src/utils/addftinfo/guess.o
+  CXX      src/utils/hpftodit/hpftodit.o
+  CXX      src/utils/hpftodit/hpuni.o
+  CXX      src/utils/lkbib/lkbib.o
+  CXX      src/libs/libbib/common.o
+  CXX      src/libs/libbib/index.o
+  CXX      src/libs/libbib/linear.o
+  CXX      src/libs/libbib/search.o
+  CC       src/libs/libbib/map.o
+  CC       src/utils/pfbtops/pfbtops.o
+  CXX      src/utils/tfmtodit/tfmtodit.o
+  CC       src/utils/xtotroff/xtotroff-xtotroff.o
+  CXX      src/preproc/eqn/eqn-main.o
+  CXX      src/preproc/eqn/eqn-lex.o
+  CXX      src/preproc/eqn/eqn-box.o
+  CXX      src/preproc/eqn/eqn-limit.o
+  CXX      src/preproc/eqn/eqn-list.o
+  CXX      src/preproc/eqn/eqn-over.o
+  CXX      src/preproc/eqn/eqn-text.o
+src/devices/xditview/xditview.c: In function ‘NewFile’:
+src/devices/xditview/xditview.c:371:34: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  371 |         if (name[0] != '/' && (n = strrchr (name, '/')))
+      |                                  ^
+  CXX      src/preproc/eqn/eqn-script.o
+  CXX      src/preproc/eqn/eqn-other.o
+  CXX      src/preproc/eqn/eqn-mark.o
+  CXX      src/preproc/eqn/eqn-delim.o
+  CXX      src/preproc/eqn/eqn-sqrt.o
+  CXX      src/preproc/eqn/eqn-pile.o
+  CXX      src/preproc/eqn/eqn-special.o
+  CXX      src/preproc/eqn/eqn-eqn.o
+  CXX      src/preproc/grn/hdb.o
+  CXX      src/preproc/grn/hpoint.o
+  CXX      src/preproc/grn/hgraph.o
+  CXX      src/preproc/grn/main.o
+  CXX      src/preproc/pic/pic-pic.o
+  CXX      src/preproc/pic/pic-lex.o
+  CXX      src/preproc/pic/pic-main.o
+  CXX      src/preproc/pic/pic-object.o
+  CXX      src/preproc/pic/pic-common.o
+  CXX      src/preproc/pic/pic-troff.o
+  CXX      src/preproc/pic/pic-tex.o
+  CXX      src/preproc/refer/refer-command.o
+  CXX      src/preproc/refer/refer-ref.o
+  CXX      src/preproc/refer/refer-refer.o
+  CXX      src/preproc/refer/refer-token.o
+  CXX      src/preproc/refer/refer-label.o
+  CXX      src/preproc/soelim/soelim.o
+  CXX      src/preproc/tbl/main.o
+  CXX      src/preproc/tbl/table.o
+  CXX      src/roff/troff/dictionary.o
+  CXX      src/roff/troff/div.o
+  CXX      src/roff/troff/env.o
+  CXX      src/roff/troff/input.o
+  CXX      src/roff/troff/mtsm.o
+  CXX      src/roff/troff/node.o
+src/roff/troff/node.cpp: In function ‘tfont* make_tfont(tfont_spec&)’:
+src/roff/troff/node.cpp:311:15: warning: C++20 says that these are ambiguous, even though the second is reversed:
+  311 |     if (*p == spec)
+      |               ^~~~
+src/roff/troff/node.cpp:218:8: note: candidate 1: ‘bool tfont_spec::operator==(const tfont_spec&)’
+  218 |   bool operator==(const tfont_spec &);
+      |        ^~~~~~~~
+src/roff/troff/node.cpp:218:8: note: candidate 2: ‘bool tfont_spec::operator==(const tfont_spec&)’ (reversed)
+src/roff/troff/node.cpp:218:8: note: try making the operator a ‘const’ member function
+src/roff/troff/node.cpp: In constructor ‘tfont::tfont(tfont_spec&)’:
+src/roff/troff/node.cpp:761:15: warning: C++20 says that these are ambiguous, even though the second is reversed:
+  761 |     if (*p == plain_spec) {
+      |               ^~~~~~~~~~
+src/roff/troff/node.cpp:537:6: note: candidate 1: ‘bool tfont_spec::operator==(const tfont_spec&)’
+  537 | bool tfont_spec::operator==(const tfont_spec &spec)
+      |      ^~~~~~~~~~
+src/roff/troff/node.cpp:537:6: note: candidate 2: ‘bool tfont_spec::operator==(const tfont_spec&)’ (reversed)
+src/roff/troff/node.cpp:537:6: note: try making the operator a ‘const’ member function
+  CXX      src/roff/troff/number.o
+  CXX      src/roff/troff/reg.o
+  CXX      src/roff/troff/majorminor.o
+  CXX      src/utils/indxbib/indxbib.o
+  CC       src/utils/indxbib/signal.o
+  CXX      src/utils/lookbib/lookbib.o
+  GEN      glilypond
+  GEN      gperl
+  GEN      gpinyin
+  GEN      tmac/groff_man.7.man
+  GEN      tmac/groff_man_style.7.man
+  GEN      font/devpdf/download
+BuildFoundries: notice: copied grops font description AB for gropdf
+BuildFoundries: notice: copied grops font description ABI for gropdf
+BuildFoundries: notice: copied grops font description AI for gropdf
+BuildFoundries: notice: copied grops font description AR for gropdf
+BuildFoundries: notice: copied grops font description BMB for gropdf
+BuildFoundries: notice: copied grops font description BMBI for gropdf
+BuildFoundries: notice: copied grops font description BMI for gropdf
+BuildFoundries: notice: copied grops font description BMR for gropdf
+BuildFoundries: notice: copied grops font description CB for gropdf
+BuildFoundries: notice: copied grops font description CBI for gropdf
+BuildFoundries: notice: copied grops font description CI for gropdf
+BuildFoundries: notice: copied grops font description CR for gropdf
+BuildFoundries: notice: copied grops font description HB for gropdf
+BuildFoundries: notice: copied grops font description HBI for gropdf
+BuildFoundries: notice: copied grops font description HI for gropdf
+BuildFoundries: notice: copied grops font description HNB for gropdf
+BuildFoundries: notice: copied grops font description HNBI for gropdf
+BuildFoundries: notice: copied grops font description HNI for gropdf
+BuildFoundries: notice: copied grops font description HNR for gropdf
+BuildFoundries: notice: copied grops font description HR for gropdf
+BuildFoundries: notice: copied grops font description NB for gropdf
+BuildFoundries: notice: copied grops font description NBI for gropdf
+BuildFoundries: notice: copied grops font description NI for gropdf
+BuildFoundries: notice: copied grops font description NR for gropdf
+BuildFoundries: notice: copied grops font description PB for gropdf
+BuildFoundries: notice: copied grops font description PBI for gropdf
+BuildFoundries: notice: copied grops font description PI for gropdf
+BuildFoundries: notice: copied grops font description PR for gropdf
+BuildFoundries: notice: copied grops font description S for gropdf
+BuildFoundries: notice: copied grops font description TB for gropdf
+BuildFoundries: notice: copied grops font description TBI for gropdf
+BuildFoundries: notice: copied grops font description TI for gropdf
+BuildFoundries: notice: copied grops font description TR for gropdf
+BuildFoundries: notice: copied grops font description ZCMI for gropdf
+BuildFoundries: notice: copied grops font description ZD for gropdf
+BuildFoundries: notice: copied grops font description EURO for gropdf
+  AR       libdriver.a
+  CXX      src/libs/libgroff/libgroff_a-version.o
+  AR       lib/libgnu.a
+  AR       libxutil.a
+  AR       libbib.a
+  GEN      tmac/groff_man.7
+  GEN      tmac/groff_man_style.7
+  AR       libgroff.a
+  CCLD     gxditview
+  CXXLD    pre-grohtml
+  CXXLD    preconv
+  CXXLD    groff
+  CXXLD    addftinfo
+  CXXLD    hpftodit
+  CXXLD    lkbib
+  CCLD     pfbtops
+  CXXLD    tfmtodit
+  CCLD     xtotroff
+  CXXLD    eqn
+  CXXLD    grn
+  CXXLD    pic
+  CXXLD    refer
+  CXXLD    soelim
+  CXXLD    tbl
+  CXXLD    indxbib
+  CXXLD    lookbib
+  CXXLD    grodvi
+  CXXLD    post-grohtml
+  CXXLD    grolbp
+  CXXLD    grolj4
+  CXXLD    grops
+  CXXLD    grotty
+  GEN      man/groff.7
+  CXXLD    troff
+  GROFF    doc/webpage.ps
+  GROFF    doc/automake.pdf
+  GROFF    doc/grnexmpl.ps
+  GROFF    doc/groff-man-pages.pdf
+  GROFF    doc/ms.pdf
+  GROFF    doc/pic.pdf
+  GROFF    doc/groff-pdf-features.pdf
+  GROFF    contrib/hdtbl/examples/chess_board.ps
+  GROFF    contrib/hdtbl/examples/color_boxes.ps
+  GROFF    contrib/hdtbl/examples/color_nested_tables.ps
+  GROFF    contrib/hdtbl/examples/color_table_cells.ps
+  GROFF    contrib/hdtbl/examples/color_transitions.ps
+  GROFF    contrib/hdtbl/examples/col_rowspan_colors.ps
+  GROFF    contrib/hdtbl/examples/fonts_n.ps
+fonts_n.roff: listing fonts in ./font/devps
+fonts_n.roff: listing glyphs in font 'AB' with hdtbl...
+  GROFF    contrib/hdtbl/examples/fonts_x.ps
+fonts_x.roff: listing fonts in ./font/devps
+fonts_n.roff: listing glyphs in font 'ABI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'AB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'AI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'ABI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'AR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'AI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'AR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'BMB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'BMB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'BMBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'BMBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'BMI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'BMI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'BMR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'BMR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CBI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CSH' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CSH' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CSS' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CSS' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CTH' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CTH' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CTS' with hdtbl...
+fonts_x.roff: listing glyphs in font 'EURO' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CTS' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'EURO' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HBI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HNB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HNBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HNI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HNB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HNR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HNBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HNI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'JPG' with hdtbl...
+fonts_x.roff: listing glyphs in font 'JPM' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HNR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'KOG' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'KOM' with hdtbl...
+fonts_n.roff: listing glyphs in font 'JPG' with hdtbl...
+fonts_x.roff: listing glyphs in font 'NB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'NBI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'JPM' with hdtbl...
+fonts_n.roff: listing glyphs in font 'KOG' with hdtbl...
+fonts_x.roff: listing glyphs in font 'NI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'KOM' with hdtbl...
+fonts_x.roff: listing glyphs in font 'NR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'PB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'NB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'NBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'PBI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'NI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'PI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'PR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'NR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'S' with hdtbl...
+fonts_n.roff: listing glyphs in font 'PB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'SS' with hdtbl...
+fonts_n.roff: listing glyphs in font 'PBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'TB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'PI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'PR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'TBI' with hdtbl...
+troff: backtrace: file 'man/groff_char.7':1075
+troff:man/groff_char.7:1075: warning: special character '.j' not defined [-w char]
+fonts_n.roff: listing glyphs in font 'S' with hdtbl...
+fonts_x.roff: listing glyphs in font 'TI' with hdtbl...
+troff: backtrace: file 'man/groff_char.7':1481
+troff:man/groff_char.7:1481: warning: special character 'vA' not defined [-w char]
+troff: backtrace: file 'man/groff_char.7':1611
+troff:man/groff_char.7:1611: warning: special character 'bs' not defined [-w char]
+troff: backtrace: file 'man/groff_char.7':1784
+troff:man/groff_char.7:1784: warning: special character '-+' not defined [-w char]
+troff: backtrace: file 'man/groff_char.7':1833
+troff:man/groff_char.7:1833: warning: special character 'coproduct' not defined [-w char]
+troff: backtrace: file 'man/groff_char.7':1933
+troff:man/groff_char.7:1933: warning: special character '+e' not defined [-w char]
+fonts_n.roff: listing glyphs in font 'SS' with hdtbl...
+fonts_x.roff: listing glyphs in font 'TR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'TB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'ZCMI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'TBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'ZD' with hdtbl...
+fonts_n.roff: listing glyphs in font 'TI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'ZDR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'TR' with hdtbl...
+  GROFF    contrib/hdtbl/examples/mixed_pickles.ps
+fonts_n.roff: listing glyphs in font 'ZCMI' with hdtbl...
+  GROFF    contrib/hdtbl/examples/rainbow.ps
+fonts_n.roff: listing glyphs in font 'ZD' with hdtbl...
+fonts_n.roff: listing glyphs in font 'ZDR' with hdtbl...
+  GROFF    contrib/hdtbl/examples/short_reference.ps
+  GROFF    contrib/mom/examples/letter.pdf
+  GROFF    contrib/mom/examples/mom-pdf.pdf
+  GROFF    contrib/mom/examples/mon_premier_doc.pdf
+  GROFF    contrib/mom/examples/sample_docs.pdf
+  GROFF    contrib/mom/examples/slide-demo.pdf
+  GROFF    contrib/mom/examples/copyright-default.pdf
+  GROFF    contrib/mom/examples/copyright-chapter.pdf
+  GROFF    contrib/mom/examples/typesetting.pdf
+  GROFF    doc/meref.ps
+  GROFF    doc/meintro.ps
+  GROFF    doc/meintro_fr.ps
+  GROFF    doc/groff-man-pages.utf8.txt
+  GROFF    contrib/sboxes/msboxes.pdf
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/groff/groff-1.25.0'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/groff/groff-1.25.0'
+make  install-recursive
+make[1]: Entering directory '/home/fusion809/lfs_packaging/groff/groff-1.25.0'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/groff/groff-1.25.0'
+  CC       lib/libgnu_a-unistd.o
+  CC       lib/libgnu_a-vfzprintf.o
+  CC       lib/libgnu_a-vsnzprintf.o
+  CC       lib/libgnu_a-wctype-h.o
+  CC       lib/libgnu_a-asnprintf.o
+  AR       lib/libgnu.a
+  CXXLD    grodvi
+  CXXLD    post-grohtml
+  CXXLD    grolbp
+  CXXLD    grolj4
+  CXXLD    grops
+  CXXLD    grotty
+  CCLD     gxditview
+  CXXLD    pre-grohtml
+  CXXLD    preconv
+  CXXLD    groff
+  CXXLD    addftinfo
+  CXXLD    hpftodit
+  CXXLD    lkbib
+  CCLD     pfbtops
+  CXXLD    tfmtodit
+  CCLD     xtotroff
+  CXXLD    eqn
+  CXXLD    grn
+  CXXLD    pic
+  CXXLD    refer
+  CXXLD    soelim
+  CXXLD    tbl
+  CXXLD    troff
+  CXXLD    indxbib
+  CXXLD    lookbib
+  GEN      man/groff.7
+  GROFF    doc/webpage.ps
+  GROFF    doc/grnexmpl.ps
+  GROFF    doc/automake.pdf
+  GROFF    doc/groff-man-pages.pdf
+troff: backtrace: file 'man/groff_char.7':1075
+troff:man/groff_char.7:1075: warning: special character '.j' not defined [-w char]
+troff: backtrace: file 'man/groff_char.7':1481
+troff:man/groff_char.7:1481: warning: special character 'vA' not defined [-w char]
+troff: backtrace: file 'man/groff_char.7':1611
+troff:man/groff_char.7:1611: warning: special character 'bs' not defined [-w char]
+troff: backtrace: file 'man/groff_char.7':1784
+troff:man/groff_char.7:1784: warning: special character '-+' not defined [-w char]
+troff: backtrace: file 'man/groff_char.7':1833
+troff:man/groff_char.7:1833: warning: special character 'coproduct' not defined [-w char]
+troff: backtrace: file 'man/groff_char.7':1933
+troff:man/groff_char.7:1933: warning: special character '+e' not defined [-w char]
+  GROFF    doc/ms.pdf
+  GROFF    doc/pic.pdf
+  GROFF    doc/groff-pdf-features.pdf
+  GROFF    contrib/hdtbl/examples/chess_board.ps
+  GROFF    contrib/hdtbl/examples/color_boxes.ps
+  GROFF    contrib/hdtbl/examples/color_nested_tables.ps
+  GROFF    contrib/hdtbl/examples/color_table_cells.ps
+  GROFF    contrib/hdtbl/examples/color_transitions.ps
+  GROFF    contrib/hdtbl/examples/col_rowspan_colors.ps
+  GROFF    contrib/hdtbl/examples/fonts_n.ps
+fonts_n.roff: listing fonts in ./font/devps
+fonts_n.roff: listing glyphs in font 'AB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'ABI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'AI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'AR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'BMB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'BMBI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'BMI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'BMR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CBI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CSH' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CSS' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CTH' with hdtbl...
+fonts_n.roff: listing glyphs in font 'CTS' with hdtbl...
+fonts_n.roff: listing glyphs in font 'EURO' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HBI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HNB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HNBI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HNI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HNR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'HR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'JPG' with hdtbl...
+fonts_n.roff: listing glyphs in font 'JPM' with hdtbl...
+fonts_n.roff: listing glyphs in font 'KOG' with hdtbl...
+fonts_n.roff: listing glyphs in font 'KOM' with hdtbl...
+fonts_n.roff: listing glyphs in font 'NB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'NBI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'NI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'NR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'PB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'PBI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'PI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'PR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'S' with hdtbl...
+fonts_n.roff: listing glyphs in font 'SS' with hdtbl...
+fonts_n.roff: listing glyphs in font 'TB' with hdtbl...
+fonts_n.roff: listing glyphs in font 'TBI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'TI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'TR' with hdtbl...
+fonts_n.roff: listing glyphs in font 'ZCMI' with hdtbl...
+fonts_n.roff: listing glyphs in font 'ZD' with hdtbl...
+fonts_n.roff: listing glyphs in font 'ZDR' with hdtbl...
+  GROFF    contrib/hdtbl/examples/fonts_x.ps
+fonts_x.roff: listing fonts in ./font/devps
+fonts_x.roff: listing glyphs in font 'AB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'ABI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'AI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'AR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'BMB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'BMBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'BMI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'BMR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CSH' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CSS' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CTH' with hdtbl...
+fonts_x.roff: listing glyphs in font 'CTS' with hdtbl...
+fonts_x.roff: listing glyphs in font 'EURO' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HNB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HNBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HNI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HNR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'HR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'JPG' with hdtbl...
+fonts_x.roff: listing glyphs in font 'JPM' with hdtbl...
+fonts_x.roff: listing glyphs in font 'KOG' with hdtbl...
+fonts_x.roff: listing glyphs in font 'KOM' with hdtbl...
+fonts_x.roff: listing glyphs in font 'NB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'NBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'NI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'NR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'PB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'PBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'PI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'PR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'S' with hdtbl...
+fonts_x.roff: listing glyphs in font 'SS' with hdtbl...
+fonts_x.roff: listing glyphs in font 'TB' with hdtbl...
+fonts_x.roff: listing glyphs in font 'TBI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'TI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'TR' with hdtbl...
+fonts_x.roff: listing glyphs in font 'ZCMI' with hdtbl...
+fonts_x.roff: listing glyphs in font 'ZD' with hdtbl...
+fonts_x.roff: listing glyphs in font 'ZDR' with hdtbl...
+  GROFF    contrib/hdtbl/examples/mixed_pickles.ps
+  GROFF    contrib/hdtbl/examples/rainbow.ps
+  GROFF    contrib/hdtbl/examples/short_reference.ps
+  GROFF    contrib/mom/examples/letter.pdf
+  GROFF    contrib/mom/examples/mom-pdf.pdf
+  GROFF    contrib/mom/examples/mon_premier_doc.pdf
+  GROFF    contrib/mom/examples/sample_docs.pdf
+  GROFF    contrib/mom/examples/slide-demo.pdf
+  GROFF    contrib/mom/examples/copyright-default.pdf
+  GROFF    contrib/mom/examples/copyright-chapter.pdf
+  GROFF    contrib/mom/examples/typesetting.pdf
+  GROFF    doc/meref.ps
+  GROFF    doc/meintro.ps
+  GROFF    doc/meintro_fr.ps
+  GROFF    doc/groff-man-pages.utf8.txt
+  GROFF    contrib/sboxes/msboxes.pdf
+make[3]: Entering directory '/home/fusion809/lfs_packaging/groff/groff-1.25.0'
+  CXXLD    post-grohtml
+  CXXLD    grolbp
+  CXXLD    grolj4
+ /usr/bin/mkdir -p '/usr/bin'
+  /usr/bin/install -c grodvi post-grohtml grolbp grolj4 grops grotty gxditview pre-grohtml preconv groff addftinfo hpftodit lkbib pfbtops tfmtodit xtotroff '/usr/bin'
+ /usr/bin/mkdir -p '/usr/bin'
+ /usr/bin/install -c eqn2graph gdiffmk glilypond gperl gpinyin grap2graph mmroff pic2graph gropdf afmtodit grog pdfmom '/usr/bin'
+ /usr/bin/mkdir -p '/usr/bin'
+  /usr/bin/install -c eqn grn pic refer soelim tbl troff indxbib lookbib '/usr/bin'
+ /usr/bin/mkdir -p '/usr/bin'
+ /usr/bin/install -c chem neqn nroff '/usr/bin'
+make  install-exec-hook
+make[4]: Entering directory '/home/fusion809/lfs_packaging/groff/groff-1.25.0'
+make[4]: Nothing to be done for 'install-exec-hook'.
+make[4]: Leaving directory '/home/fusion809/lfs_packaging/groff/groff-1.25.0'
+test -d /usr/share/doc/groff-1.25.0/examples/chem/cstr-122 \
+          || /bin/sh /home/fusion809/lfs_packaging/groff/groff-1.25.0/build-aux/install-sh -d /usr/share/doc/groff-1.25.0/examples/chem/cstr-122;
+for i in ./contrib/chem/examples/cstr-122/*; do \
+  n=`echo $i | sed 's|./contrib/chem/examples/cstr-122/||g'`; \
+  /usr/bin/install -c -m 644 $i /usr/share/doc/groff-1.25.0/examples/chem/cstr-122/$n; \
+done
+test -d /usr/share/groff/1.25.0/tmac || /bin/sh /home/fusion809/lfs_packaging/groff/groff-1.25.0/build-aux/install-sh -d /usr/share/groff/1.25.0/tmac
+test -d /usr/share/groff/1.25.0/tmac/mm || /bin/sh /home/fusion809/lfs_packaging/groff/groff-1.25.0/build-aux/install-sh -d /usr/share/groff/1.25.0/tmac/mm
+rm -f /usr/share/groff/1.25.0/tmac/tmac.`if test no = yes; then for i in  ""; do case "$i" in m) echo g;; esac; done; fi`m
+rm -f /usr/share/groff/1.25.0/tmac/`if test no = yes; then for i in  ""; do case "$i" in m) echo g;; esac; done; fi`m.tmac
+/usr/bin/install -c -m 644 ./contrib/mm/m.tmac \
+  /usr/share/groff/1.25.0/tmac/`if test no = yes; then for i in  ""; do case "$i" in m) echo g;; esac; done; fi`m.tmac
+LANG=C LC_ALL=C sed -e "s;^.mso m.tmac;.mso `if test no = yes; then for i in  ""; do case "$i" in m) echo g;; esac; done; fi`m.tmac;g" \
+  ./contrib/mm/mse.tmac > /usr/share/groff/1.25.0/tmac/`if test no = yes; then for i in  ""; do case "$i" in m) echo g;; esac; done; fi`mse.tmac
+test -d /usr/share/doc/groff-1.25.0 \
+  || /bin/sh /home/fusion809/lfs_packaging/groff/groff-1.25.0/build-aux/install-sh -d /usr/share/doc/groff-1.25.0
+for d in doc /home/fusion809/lfs_packaging/groff/groff-1.25.0/doc; do \
+  if [ -f "$d"/groff.txt ]; then \
+    cp "$d"/groff.txt /usr/share/doc/groff-1.25.0; \
+    break; \
+  fi; \
+done
+test -d /usr/share/info \
+  || /bin/sh /home/fusion809/lfs_packaging/groff/groff-1.25.0/build-aux/install-sh -d /usr/share/info
+rm -f /usr/share/info/groff.info*
+for d in doc /home/fusion809/lfs_packaging/groff/groff-1.25.0/doc; do \
+  if [ -f "$d"/groff.info ]; then \
+    cp "$d"/groff.info* /usr/share/info; \
+    install-info --info-file="$d"/groff.info \
+      --info-dir=/usr/share/info; \
+    break; \
+  fi; \
+done
+/usr/bin/mkdir -p /usr/share/groff/1.25.0/font
+/usr/bin/install -c -m 644 ./src/devices/xditview/FontMap-X11 \
+  /usr/share/groff/1.25.0/font/FontMap-X11
+test -d /usr/lib/X11/app-defaults \
+  || /bin/sh /home/fusion809/lfs_packaging/groff/groff-1.25.0/build-aux/install-sh -d /usr/lib/X11/app-defaults
+/usr/bin/install -c -m 644 ./src/devices/xditview/GXditview.ad \
+  /usr/lib/X11/app-defaults/GXditview
+/usr/bin/install -c -m 644 ./src/devices/xditview/GXditview-color.ad \
+  /usr/lib/X11/app-defaults/GXditview-color
+test -d /usr/share \
+  || /bin/sh /home/fusion809/lfs_packaging/groff/groff-1.25.0/build-aux/install-sh -d /usr/share
+test -d /usr/share/groff \
+  || /bin/sh /home/fusion809/lfs_packaging/groff/groff-1.25.0/build-aux/install-sh -d /usr/share/groff
+test -d /usr/share/groff/1.25.0 \
+  || /bin/sh /home/fusion809/lfs_packaging/groff/groff-1.25.0/build-aux/install-sh -d /usr/share/groff/1.25.0
+if test -f /usr/lib/eign; then \
+  rm -f /usr/share/groff/1.25.0/eign; \
+  ln -s /usr/lib/eign /usr/share/groff/1.25.0/eign 2>/dev/null \
+    || ln /usr/lib/eign /usr/share/groff/1.25.0/eign 2>/dev/null \
+    || cp /usr/lib/eign /usr/share/groff/1.25.0/eign; \
+else \
+  rm -f /usr/share/groff/1.25.0/eign; \
+  /usr/bin/install -c -m 644 ./src/utils/indxbib/eign /usr/share/groff/1.25.0/eign; \
+fi
+/usr/bin/mkdir -p /usr/lib/groff/site-tmac;
+if test "no" != "no"; then \
+  if test -n ""; then \
+    for m in ""; do \
+      /usr/bin/install -c -m 644 tmac/$m-wrap \
+        /usr/lib/groff/site-tmac/$m`if test no = manual; then echo "-os"; fi`.tmac; \
+    done; \
+  fi; \
+fi
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devX100-12'
+ /usr/bin/install -c -m 644 font/devX100-12/DESC font/devX100-12/TR font/devX100-12/TI font/devX100-12/TB font/devX100-12/TBI font/devX100-12/CR font/devX100-12/CI font/devX100-12/CB font/devX100-12/CBI font/devX100-12/HR font/devX100-12/HI font/devX100-12/HB font/devX100-12/HBI font/devX100-12/NR font/devX100-12/NI font/devX100-12/NB font/devX100-12/NBI font/devX100-12/S '/usr/share/groff/1.25.0/font/devX100-12'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devX100'
+ /usr/bin/install -c -m 644 font/devX100/DESC font/devX100/TR font/devX100/TI font/devX100/TB font/devX100/TBI font/devX100/CR font/devX100/CI font/devX100/CB font/devX100/CBI font/devX100/HR font/devX100/HI font/devX100/HB font/devX100/HBI font/devX100/NR font/devX100/NI font/devX100/NB font/devX100/NBI font/devX100/S '/usr/share/groff/1.25.0/font/devX100'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devX75-12'
+ /usr/bin/install -c -m 644 font/devX75-12/DESC font/devX75-12/TR font/devX75-12/TI font/devX75-12/TB font/devX75-12/TBI font/devX75-12/CR font/devX75-12/CI font/devX75-12/CB font/devX75-12/CBI font/devX75-12/HR font/devX75-12/HI font/devX75-12/HB font/devX75-12/HBI font/devX75-12/NR font/devX75-12/NI font/devX75-12/NB font/devX75-12/NBI font/devX75-12/S '/usr/share/groff/1.25.0/font/devX75-12'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devX75'
+ /usr/bin/install -c -m 644 font/devX75/DESC font/devX75/TR font/devX75/TI font/devX75/TB font/devX75/TBI font/devX75/CR font/devX75/CI font/devX75/CB font/devX75/CBI font/devX75/HR font/devX75/HI font/devX75/HB font/devX75/HBI font/devX75/NR font/devX75/NI font/devX75/NB font/devX75/NBI font/devX75/S '/usr/share/groff/1.25.0/font/devX75'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devascii'
+ /usr/bin/install -c -m 644 font/devascii/R font/devascii/I font/devascii/B font/devascii/BI font/devascii/DESC '/usr/share/groff/1.25.0/font/devascii'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devdvi'
+ /usr/bin/install -c -m 644 font/devdvi/TR font/devdvi/TI font/devdvi/TB font/devdvi/TBI font/devdvi/CW font/devdvi/CWI font/devdvi/HR font/devdvi/HI font/devdvi/HB font/devdvi/HBI font/devdvi/TREC font/devdvi/TIEC font/devdvi/TBEC font/devdvi/TBIEC font/devdvi/CWEC font/devdvi/CWIEC font/devdvi/HREC font/devdvi/HIEC font/devdvi/HBEC font/devdvi/HBIEC font/devdvi/TRTC font/devdvi/TITC font/devdvi/TBTC font/devdvi/TBITC font/devdvi/CWTC font/devdvi/CWITC font/devdvi/HRTC font/devdvi/HITC font/devdvi/HBTC font/devdvi/HBITC font/devdvi/MI font/devdvi/S font/devdvi/EX font/devdvi/SA font/devdvi/SB font/devdvi/SC font/devdvi/CSH font/devdvi/CSS font/devdvi/CTH font/devdvi/CTS '/usr/share/groff/1.25.0/font/devdvi'
+ /usr/bin/install -c -m 644 font/devdvi/JPG font/devdvi/JPM font/devdvi/KOG font/devdvi/KOM font/devdvi/DESC '/usr/share/groff/1.25.0/font/devdvi'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devdvi/generate'
+ /usr/bin/install -c -m 644 font/devdvi/generate/Makefile font/devdvi/generate/msam.map font/devdvi/generate/msbm.map font/devdvi/generate/texb.map font/devdvi/generate/texex.map font/devdvi/generate/texi.map font/devdvi/generate/texmi.map font/devdvi/generate/texr.map font/devdvi/generate/texsy.map font/devdvi/generate/textt.map font/devdvi/generate/textex.map font/devdvi/generate/ec.map font/devdvi/generate/tc.map font/devdvi/generate/CompileFonts '/usr/share/groff/1.25.0/font/devdvi/generate'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devhtml'
+ /usr/bin/install -c -m 644 font/devhtml/R font/devhtml/I font/devhtml/B font/devhtml/BI font/devhtml/CR font/devhtml/CI font/devhtml/CB font/devhtml/CBI font/devhtml/S font/devhtml/CSH font/devhtml/CSS font/devhtml/CTH font/devhtml/CTS font/devhtml/JPG font/devhtml/JPM font/devhtml/KOG font/devhtml/KOM font/devhtml/DESC '/usr/share/groff/1.25.0/font/devhtml'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devlatin1'
+ /usr/bin/install -c -m 644 font/devlatin1/R font/devlatin1/I font/devlatin1/B font/devlatin1/BI font/devlatin1/DESC '/usr/share/groff/1.25.0/font/devlatin1'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devlbp'
+ /usr/bin/install -c -m 644 font/devlbp/HB font/devlbp/HBI font/devlbp/HI font/devlbp/HR font/devlbp/HNB font/devlbp/HNBI font/devlbp/HNI font/devlbp/HNR font/devlbp/TB font/devlbp/TBI font/devlbp/TI font/devlbp/TR font/devlbp/CR font/devlbp/CB font/devlbp/CI font/devlbp/ER font/devlbp/EB font/devlbp/EI font/devlbp/DESC '/usr/share/groff/1.25.0/font/devlbp'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devpdf'
+ /usr/bin/install -c -m 644 font/devpdf/S font/devpdf/ZD font/devpdf/CB font/devpdf/CBI font/devpdf/CI font/devpdf/CR font/devpdf/HB font/devpdf/HBI font/devpdf/HI font/devpdf/HR font/devpdf/TB font/devpdf/TBI font/devpdf/TI font/devpdf/TR font/devpdf/EURO font/devpdf/AB font/devpdf/ABI font/devpdf/AI font/devpdf/AR font/devpdf/BMB font/devpdf/BMBI font/devpdf/BMI font/devpdf/BMR font/devpdf/HNB font/devpdf/HNBI font/devpdf/HNI font/devpdf/HNR font/devpdf/NB font/devpdf/NBI font/devpdf/NI font/devpdf/NR font/devpdf/PB font/devpdf/PBI font/devpdf/PI font/devpdf/PR font/devpdf/ZCMI font/devpdf/DESC font/devpdf/SS font/devpdf/symbolsl.afm font/devpdf/symbolsl.pfb '/usr/share/groff/1.25.0/font/devpdf'
+ /usr/bin/install -c -m 644 font/devpdf/download font/devpdf/Foundry '/usr/share/groff/1.25.0/font/devpdf'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devpdf/enc'
+ /usr/bin/install -c -m 644 font/devpdf/enc/text.enc '/usr/share/groff/1.25.0/font/devpdf/enc'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devpdf/map'
+ /usr/bin/install -c -m 644 font/devpdf/map/dingbats.map font/devpdf/map/symbol.map font/devpdf/map/text.map '/usr/share/groff/1.25.0/font/devpdf/map'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devutf8'
+ /usr/bin/install -c -m 644 font/devutf8/R font/devutf8/I font/devutf8/B font/devutf8/BI font/devutf8/CSH font/devutf8/CSS font/devutf8/CTH font/devutf8/CTS font/devutf8/JPG font/devutf8/JPM font/devutf8/KOG font/devutf8/KOM font/devutf8/DESC '/usr/share/groff/1.25.0/font/devutf8'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0/examples/chem'
+ /usr/bin/install -c -m 644 contrib/chem/examples/README contrib/chem/examples/atp.chem contrib/chem/examples/cholesterol.chem contrib/chem/examples/ethamivan.chem contrib/chem/examples/lsd.chem contrib/chem/examples/mepacrine.chem contrib/chem/examples/morphine.chem contrib/chem/examples/penicillin.chem contrib/chem/examples/reserpine.chem '/usr/share/doc/groff-1.25.0/examples/chem'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 ./contrib/chem/chem.pic '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devlj4'
+ /usr/bin/install -c -m 644 font/devlj4/AB font/devlj4/ABI font/devlj4/AI font/devlj4/AR font/devlj4/ALBB font/devlj4/ALBR font/devlj4/AOB font/devlj4/AOI font/devlj4/AOR font/devlj4/CB font/devlj4/CBI font/devlj4/CI font/devlj4/CR font/devlj4/GB font/devlj4/GBI font/devlj4/GI font/devlj4/GR font/devlj4/LGB font/devlj4/LGI font/devlj4/LGR font/devlj4/OB font/devlj4/OBI font/devlj4/OI font/devlj4/OR font/devlj4/TB font/devlj4/TBI font/devlj4/TI font/devlj4/TR font/devlj4/TNRB font/devlj4/TNRBI font/devlj4/TNRI font/devlj4/TNRR font/devlj4/UB font/devlj4/UBI font/devlj4/UI font/devlj4/UR font/devlj4/UCB font/devlj4/UCBI font/devlj4/UCI font/devlj4/UCR '/usr/share/groff/1.25.0/font/devlj4'
+ /usr/bin/install -c -m 644 font/devlj4/CLARENDON font/devlj4/CORONET font/devlj4/MARIGOLD font/devlj4/S font/devlj4/SYMBOL font/devlj4/WINGDINGS '/usr/share/groff/1.25.0/font/devlj4'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devlj4/generate'
+ /usr/bin/install -c -m 644 font/devlj4/generate/Makefile font/devlj4/generate/special.map font/devlj4/generate/symbol.map font/devlj4/generate/text.map font/devlj4/generate/wingdings.map font/devlj4/generate/special.awk '/usr/share/groff/1.25.0/font/devlj4/generate'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devps'
+ /usr/bin/install -c -m 644 font/devps/S font/devps/SS font/devps/ZD font/devps/ZDR font/devps/ZCMI font/devps/AB font/devps/ABI font/devps/AI font/devps/AR font/devps/BMB font/devps/BMBI font/devps/BMI font/devps/BMR font/devps/CB font/devps/CBI font/devps/CI font/devps/CR font/devps/HB font/devps/HBI font/devps/HI font/devps/HR font/devps/HNB font/devps/HNBI font/devps/HNI font/devps/HNR font/devps/NB font/devps/NBI font/devps/NI font/devps/NR font/devps/PB font/devps/PBI font/devps/PI font/devps/PR font/devps/TB font/devps/TBI font/devps/TI font/devps/TR font/devps/EURO font/devps/CSH font/devps/CSS '/usr/share/groff/1.25.0/font/devps'
+ /usr/bin/install -c -m 644 font/devps/CTH font/devps/CTS font/devps/JPG font/devps/JPM font/devps/KOG font/devps/KOM font/devps/freeeuro.afm font/devps/symbolsl.afm font/devps/text.enc font/devps/zapfdr.afm font/devps/download '/usr/share/groff/1.25.0/font/devps'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devps/generate'
+ /usr/bin/install -c -m 644 font/devps/generate/Makefile font/devps/generate/dingbats.map font/devps/generate/dingbats-reversed.map font/devps/generate/slanted-symbol.map font/devps/generate/symbol.map font/devps/generate/symbolsl.awk font/devps/generate/text.map font/devps/generate/afmname font/devps/generate/symbol.sed '/usr/share/groff/1.25.0/font/devps/generate'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0/examples'
+ /usr/bin/install -c -m 644 doc/webpage.ms doc/groff.css doc/grnexmpl.g doc/grnexmpl.me '/usr/share/doc/groff-1.25.0/examples'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 tmac/eqnrc '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 tmac/dvi.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 tmac/lbp.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 tmac/lj4.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 tmac/pdf.tmac tmac/pdfpic.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 tmac/europs.tmac tmac/ps.tmac tmac/psatk.tmac tmac/psfig.tmac tmac/psold.tmac tmac/pspic.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 tmac/tty.tmac tmac/tty-char.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0/examples/hdtbl'
+ /usr/bin/install -c -m 644 contrib/hdtbl/examples/common.roff contrib/hdtbl/examples/chess_board.roff contrib/hdtbl/examples/color_boxes.roff contrib/hdtbl/examples/color_nested_tables.roff contrib/hdtbl/examples/color_table_cells.roff contrib/hdtbl/examples/color_transitions.roff contrib/hdtbl/examples/col_rowspan_colors.roff contrib/hdtbl/examples/mixed_pickles.roff contrib/hdtbl/examples/rainbow.roff contrib/hdtbl/examples/short_reference.roff '/usr/share/doc/groff-1.25.0/examples/hdtbl'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 contrib/hdtbl/hdtbl.tmac contrib/hdtbl/hdmisc.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0/examples'
+ /usr/bin/install -c -m 644 contrib/install-font/install-font.bash '/usr/share/doc/groff-1.25.0/examples'
+ /usr/bin/mkdir -p '/usr/share/groff/site-tmac'
+ /usr/bin/install -c -m 644 tmac/man.local tmac/mdoc.local '/usr/share/groff/site-tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac/mdoc'
+ /usr/bin/install -c -m 644 tmac/mdoc/doc-common tmac/mdoc/doc-ditroff tmac/mdoc/doc-nroff tmac/mdoc/doc-syms '/usr/share/groff/1.25.0/tmac/mdoc'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac/mm'
+ /usr/bin/install -c -m 644 contrib/mm/mm/0.MT contrib/mm/mm/5.MT contrib/mm/mm/4.MT contrib/mm/mm/ms.cov contrib/mm/mm/se_ms.cov '/usr/share/groff/1.25.0/tmac/mm'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0/examples/mm'
+ /usr/bin/install -c -m 644 contrib/mm/examples/letter.mm contrib/mm/examples/memorandum.mm contrib/mm/examples/story.mm '/usr/share/doc/groff-1.25.0/examples/mm'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0/examples/mom'
+ /usr/bin/install -c -m 644 contrib/mom/examples/letter.mom contrib/mom/examples/mom-pdf.mom contrib/mom/examples/mon_premier_doc.mom contrib/mom/examples/sample_docs.mom contrib/mom/examples/typesetting.mom contrib/mom/examples/README.txt contrib/mom/examples/README-fr.txt contrib/mom/examples/elvis_syntax contrib/mom/examples/elvis_syntax.new contrib/mom/examples/penguin.ps contrib/mom/examples/penguin.pdf contrib/mom/examples/mom.vim contrib/mom/examples/slide-demo.mom contrib/mom/examples/copyright-default.mom contrib/mom/examples/copyright-chapter.mom '/usr/share/doc/groff-1.25.0/examples/mom'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 contrib/mom/mom.tmac contrib/mom/om.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/oldfont/devps'
+ /usr/bin/install -c -m 644 font/devps/old/S font/devps/old/SS font/devps/old/CB font/devps/old/CBI font/devps/old/CI font/devps/old/CR font/devps/old/HB font/devps/old/HBI font/devps/old/HI font/devps/old/HR font/devps/old/HNB font/devps/old/HNBI font/devps/old/HNI font/devps/old/HNR font/devps/old/NB font/devps/old/NBI font/devps/old/NI font/devps/old/NR font/devps/old/PB font/devps/old/PBI font/devps/old/PI font/devps/old/PR font/devps/old/TB font/devps/old/TBI font/devps/old/TI font/devps/old/TR font/devps/old/symbol.afm font/devps/old/symbolsl.afm font/devps/old/zapfdr.afm font/devps/old/zapfdr.ps '/usr/share/groff/1.25.0/oldfont/devps'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0'
+ /usr/bin/install -c -m 644 doc/me-revisions doc/pic.ms doc/groff-pdf-features.ms '/usr/share/doc/groff-1.25.0'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 tmac/pic.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 tmac/html.tmac tmac/html-end.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 tmac/refer.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 contrib/rfc1345/rfc1345.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 contrib/sboxes/sboxes.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 tmac/man.tmac tmac/mandoc.tmac tmac/andoc.tmac tmac/an-ext.tmac tmac/ms.tmac tmac/e.tmac tmac/me.tmac tmac/doc-old.tmac tmac/doc.tmac tmac/mdoc.tmac tmac/papersize.tmac tmac/62bit.tmac tmac/ec.tmac tmac/trace.tmac tmac/ptx.tmac tmac/latin1.tmac tmac/latin2.tmac tmac/latin5.tmac tmac/latin9.tmac tmac/koi8-r.tmac tmac/X.tmac tmac/Xps.tmac tmac/devtag.tmac tmac/composite.tmac tmac/fallbacks.tmac tmac/refer-me.tmac tmac/refer-ms.tmac tmac/troffrc tmac/troffrc-end tmac/trans.tmac tmac/en.tmac tmac/hyphen.en tmac/hyphenex.en tmac/es.tmac tmac/hyphen.es tmac/fr.tmac tmac/hyphen.fr tmac/it.tmac tmac/hyphen.it tmac/pl.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 tmac/hyphen.pl tmac/ru.tmac tmac/hyphen.ru tmac/sv.tmac tmac/hyphen.sv tmac/de.tmac tmac/den.tmac tmac/hyphen.det tmac/hyphen.den tmac/cs.tmac tmac/hyphen.cs tmac/hyphenex.cs tmac/ja.tmac tmac/zh.tmac tmac/an.tmac tmac/s.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 contrib/mm/refer-mm.tmac '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 contrib/chem/chem.1 contrib/eqn2graph/eqn2graph.1 contrib/gdiffmk/gdiffmk.1 contrib/glilypond/glilypond.1 contrib/gperl/gperl.1 contrib/gpinyin/gpinyin.1 contrib/grap2graph/grap2graph.1 contrib/mm/mmroff.1 contrib/pic2graph/pic2graph.1 src/devices/grodvi/grodvi.1 src/devices/grohtml/grohtml.1 src/devices/grolbp/grolbp.1 src/devices/grolj4/grolj4.1 src/devices/gropdf/gropdf.1 src/devices/grops/grops.1 src/devices/grotty/grotty.1 src/devices/xditview/gxditview.1 src/preproc/preconv/preconv.1 src/roff/groff/groff.1 src/utils/addftinfo/addftinfo.1 src/utils/afmtodit/afmtodit.1 src/utils/grog/grog.1 src/utils/hpftodit/hpftodit.1 src/utils/lkbib/lkbib.1 src/utils/pdfmom/pdfmom.1 src/utils/pfbtops/pfbtops.1 src/utils/tfmtodit/tfmtodit.1 src/utils/xtotroff/xtotroff.1 src/preproc/eqn/eqn.1 src/preproc/eqn/neqn.1 src/preproc/grn/grn.1 src/preproc/pic/pic.1 src/preproc/refer/refer.1 src/preproc/soelim/soelim.1 src/preproc/tbl/tbl.1 src/roff/nroff/nroff.1 src/roff/troff/troff.1 src/utils/indxbib/indxbib.1 src/utils/lookbib/lookbib.1 '/usr/share/man/man1'
+ /usr/bin/mkdir -p '/usr/share/man/man5'
+ /usr/bin/install -c -m 644 man/groff_font.5 man/groff_out.5 man/groff_tmac.5 '/usr/share/man/man5'
+ /usr/bin/mkdir -p '/usr/share/man/man7'
+ /usr/bin/install -c -m 644 contrib/hdtbl/groff_hdtbl.7 contrib/mm/groff_mm.7 contrib/mm/groff_mmse.7 contrib/mom/groff_mom.7 contrib/rfc1345/groff_rfc1345.7 man/groff_char.7 man/groff_diff.7 man/groff.7 man/roff.7 tmac/groff_ms.7 tmac/groff_man.7 tmac/groff_man_style.7 tmac/groff_me.7 tmac/groff_mdoc.7 tmac/groff_trace.7 tmac/groff_www.7 '/usr/share/man/man7'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0/html/mom'
+ /usr/bin/install -c -m 644 contrib/mom/momdoc/stylesheet.css contrib/mom/momdoc/appendices.html contrib/mom/momdoc/color.html contrib/mom/momdoc/cover.html contrib/mom/momdoc/definitions.html contrib/mom/momdoc/docelement.html contrib/mom/momdoc/docprocessing.html contrib/mom/momdoc/goodies.html contrib/mom/momdoc/graphical.html contrib/mom/momdoc/headfootpage.html contrib/mom/momdoc/images.html contrib/mom/momdoc/inlines.html contrib/mom/momdoc/intro.html contrib/mom/momdoc/letters.html contrib/mom/momdoc/macrolist.html contrib/mom/momdoc/rectoverso.html contrib/mom/momdoc/refer.html contrib/mom/momdoc/reserved.html contrib/mom/momdoc/tables-of-contents.html contrib/mom/momdoc/toc.html contrib/mom/momdoc/typesetting.html contrib/mom/momdoc/using.html contrib/mom/momdoc/version-2.html '/usr/share/doc/groff-1.25.0/html/mom'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devlj4'
+ /usr/bin/install -c -m 644 font/devlj4/DESC '/usr/share/groff/1.25.0/font/devlj4'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/font/devps'
+ /usr/bin/install -c -m 644 font/devps/DESC font/devps/prologue font/devps/freeeuro.pfa font/devps/zapfdr.pfa font/devps/symbolsl.pfa '/usr/share/groff/1.25.0/font/devps'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0/examples'
+ /usr/bin/install -c -m 644 doc/webpage.ps doc/grnexmpl.ps '/usr/share/doc/groff-1.25.0/examples'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0/pdf'
+ /usr/bin/install -c -m 644 doc/automake.pdf doc/groff-man-pages.pdf doc/ms.pdf doc/pic.pdf doc/groff-pdf-features.pdf '/usr/share/doc/groff-1.25.0/pdf'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0/examples/hdtbl'
+ /usr/bin/install -c -m 644 contrib/hdtbl/examples/fonts_n.roff contrib/hdtbl/examples/fonts_x.roff contrib/hdtbl/examples/chess_board.ps contrib/hdtbl/examples/color_boxes.ps contrib/hdtbl/examples/color_nested_tables.ps contrib/hdtbl/examples/color_table_cells.ps contrib/hdtbl/examples/color_transitions.ps contrib/hdtbl/examples/col_rowspan_colors.ps contrib/hdtbl/examples/fonts_n.ps contrib/hdtbl/examples/fonts_x.ps contrib/hdtbl/examples/mixed_pickles.ps contrib/hdtbl/examples/rainbow.ps contrib/hdtbl/examples/short_reference.ps doc/gnu.eps '/usr/share/doc/groff-1.25.0/examples/hdtbl'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0/examples/mom'
+ /usr/bin/install -c -m 644 contrib/mom/examples/letter.pdf contrib/mom/examples/mom-pdf.pdf contrib/mom/examples/mon_premier_doc.pdf contrib/mom/examples/sample_docs.pdf contrib/mom/examples/slide-demo.pdf contrib/mom/examples/copyright-default.pdf contrib/mom/examples/copyright-chapter.pdf contrib/mom/examples/typesetting.pdf '/usr/share/doc/groff-1.25.0/examples/mom'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0'
+ /usr/bin/install -c -m 644 doc/meref.ps doc/meintro.ps doc/meintro_fr.ps doc/groff-man-pages.utf8.txt doc/meintro.me doc/meintro_fr.me doc/meref.me doc/ms.ms '/usr/share/doc/groff-1.25.0'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0'
+ /usr/bin/install -c -m 644 contrib/sboxes/msboxes.ms '/usr/share/doc/groff-1.25.0'
+ /usr/bin/mkdir -p '/usr/share/doc/groff-1.25.0/pdf'
+ /usr/bin/install -c -m 644 contrib/sboxes/msboxes.pdf '/usr/share/doc/groff-1.25.0/pdf'
+ /usr/bin/mkdir -p '/usr/share/groff/1.25.0/tmac'
+ /usr/bin/install -c -m 644 tmac/www.tmac '/usr/share/groff/1.25.0/tmac'
+make  install-data-hook
+make[4]: Entering directory '/home/fusion809/lfs_packaging/groff/groff-1.25.0'
+for f in mom-pdf.pdf; do \
+  rm -f /usr/share/doc/groff-1.25.0/pdf/$f; \
+  ln -s /usr/share/doc/groff-1.25.0/examples/mom/$f /usr/share/doc/groff-1.25.0/pdf/$f; \
+done
+for d in doc /home/fusion809/lfs_packaging/groff/groff-1.25.0/doc; do \
+  if test -f "$d/gnu.eps"; then \
+    rm -f /usr/share/doc/groff-1.25.0/examples/gnu.eps; \
+    /usr/bin/install -c -m 644 \
+      $d/gnu.eps /usr/share/doc/groff-1.25.0/examples/gnu.eps; \
+    break; \
+  fi; \
+done
+for d in doc /home/fusion809/lfs_packaging/groff/groff-1.25.0/doc; do \
+  if test -f "$d/gnu.png"; then \
+    rm -f /usr/share/doc/groff-1.25.0/examples/gnu.png; \
+    /usr/bin/install -c -m 644 \
+      $d/gnu.png /usr/share/doc/groff-1.25.0/examples/gnu.png; \
+    break; \
+  fi; \
+done
+if test "no" = "yes"; then \
+  if test -n ""; then \
+    if test -f /usr/share/groff/1.25.0/tmac/s.tmac -a -n "`if test no = yes; then for i in  ""; do case "$i" in s) echo g;; esac; done; fi`"; \
+    then \
+      mv /usr/share/groff/1.25.0/tmac/s.tmac \
+         /usr/share/groff/1.25.0/tmac/`if test no = yes; then for i in  ""; do case "$i" in s) echo g;; esac; done; fi`s.tmac; \
+    fi; \
+    if test -f /usr/share/groff/1.25.0/tmac/an.tmac -a -n "`if test no = yes; then for i in  ""; do case "$i" in an) echo g;; esac; done; fi`"; \
+    then \
+      mv /usr/share/groff/1.25.0/tmac/an.tmac \
+         /usr/share/groff/1.25.0/tmac/`if test no = yes; then for i in  ""; do case "$i" in an) echo g;; esac; done; fi`an.tmac; \
+    fi; \
+  fi; \
+fi
+cd /usr/share/groff; \
+  rm -f current; \
+  ln -s 1.25.0 current
+test -d /usr/share/groff/site-font \
+  || /bin/sh /home/fusion809/lfs_packaging/groff/groff-1.25.0/build-aux/install-sh -d /usr/share/groff/site-font
+test -d /usr/lib/groff/site-tmac \
+  || /bin/sh /home/fusion809/lfs_packaging/groff/groff-1.25.0/build-aux/install-sh -d /usr/lib/groff/site-tmac
+make[4]: Leaving directory '/home/fusion809/lfs_packaging/groff/groff-1.25.0'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/groff/groff-1.25.0'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/groff/groff-1.25.0'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/groff/groff-1.25.0'
+1.25.0
+Updated registry for groff to version 1.25.0
+[VERSION] groff: 1.25.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package groff in /var/lib/custom-packages/
+[01:05:17] Found custom package for reshiki-git, bypassing BLFS aliases.
+[01:05:17] Custom package detected at /home/fusion809/lfs_packaging/reshiki-git (package: reshiki-git)
+[01:05:17] Extracting dependencies for custom package 'reshiki-git'...
+[01:05:17] Required deps: acl at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz libcanberra libepoxy libffi libice libogg libpng libseccomp libselinux libsm libtool libvorbis libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres libxt ncurses pango pcre2 pixman systemd util-linux wayland zlib 
+[01:05:17] Dependency 'acl' already installed.
+[01:05:17] Dependency 'at-spi2-core' already installed.
+[01:05:17] Dependency 'brotli' already installed.
+[01:05:17] Dependency 'bzip2' already installed.
+[01:05:17] Dependency 'cairo' already installed.
+[01:05:17] Dependency 'dbus' already installed.
+[01:05:17] Dependency 'expat' already installed.
+[01:05:17] Dependency 'fontconfig' already installed.
+[01:05:17] Dependency 'freetype' already installed.
+[01:05:17] Dependency 'fribidi' already installed.
+[01:05:17] Dependency 'gcc' already installed.
+[01:05:17] Dependency 'gdk-pixbuf' already installed.
+[01:05:17] Dependency 'glib2' already installed.
+[01:05:17] Dependency 'glibc' already installed.
+[01:05:17] Dependency 'glycin' already installed.
+[01:05:17] Dependency 'graphite2' already installed.
+[01:05:17] Dependency 'gtk3' already installed.
+[01:05:17] Dependency 'harfbuzz' already installed.
+[01:05:17] Dependency 'libcanberra' already installed.
+[01:05:17] Dependency 'libepoxy' already installed.
+[01:05:17] Dependency 'libffi' already installed.
+[01:05:17] Dependency 'libice' already installed.
+[01:05:17] Dependency 'libogg' already installed.
+[01:05:17] Dependency 'libpng' already installed.
+[01:05:17] Dependency 'libseccomp' already installed.
+[01:05:17] Dependency 'libselinux' already installed.
+[01:05:17] Dependency 'libsm' already installed.
+[01:05:17] Dependency 'libtool' already installed.
+[01:05:17] Dependency 'libvorbis' already installed.
+[01:05:17] Dependency 'libx11' already installed.
+[01:05:17] Dependency 'libxau' already installed.
+[01:05:17] Dependency 'libxcb' already installed.
+[01:05:17] Dependency 'libxcomposite' already installed.
+[01:05:17] Dependency 'libxcursor' already installed.
+[01:05:17] Dependency 'libxdamage' already installed.
+[01:05:17] Dependency 'libxdmcp' already installed.
+[01:05:17] Dependency 'libxext' already installed.
+[01:05:17] Dependency 'libxfixes' already installed.
+[01:05:17] Dependency 'libxi' already installed.
+[01:05:17] Dependency 'libxinerama' already installed.
+[01:05:17] Dependency 'libxkbcommon' already installed.
+[01:05:17] Dependency 'libxrandr' already installed.
+[01:05:17] Dependency 'libxrender' already installed.
+[01:05:17] Dependency 'libxres' already installed.
+[01:05:17] Dependency 'libxt' already installed.
+[01:05:17] Dependency 'ncurses' already installed.
+[01:05:17] Dependency 'pango' already installed.
+[01:05:17] Dependency 'pcre2' already installed.
+[01:05:17] Dependency 'pixman' already installed.
+[01:05:17] Dependency 'systemd' already installed.
+[01:05:17] Dependency 'util-linux' already installed.
+[01:05:17] Dependency 'wayland' already installed.
+[01:05:17] Dependency 'zlib' already installed.
+[VERSION] reshiki-git: 6654e6793c04f57a8801ff09d4a339dff6438e55
+[01:05:18] Installing reshiki-git version: 6654e6793c04f57a8801ff09d4a339dff6438e55
+[01:05:18] Starting remote custom build for reshiki-git...
+From https://github.com/Ameyanagi/ReShiki
+ * [new branch]        fix/1037-wedge-stereo -> origin/fix/1037-wedge-stereo
+ * [new branch]        fix/1043-rsmi-ez      -> origin/fix/1043-rsmi-ez
+ * [new branch]        fix/1044-tag-wins     -> origin/fix/1044-tag-wins
+ * [new branch]        fix/naming-small-pre-0.14 -> origin/fix/naming-small-pre-0.14
+   98602a75..6654e679  main                  -> origin/main
+ * [new branch]        release/0.14.0        -> origin/release/0.14.0
+ * [new branch]        test/1037-live-reference -> origin/test/1037-live-reference
+Previous HEAD position was 98602a75 Merge pull request #1026 from Ameyanagi/combine/naming-batch-4-6
+HEAD is now at 6654e679 Merge pull request #1045 from Ameyanagi/fix/1037-wedge-stereo
+   Compiling reshiki-io v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/io)
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:586:55
+    |
+586 |         let event = if let Ok(event) = event_receiver.try_next() {
+    |                                                       ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:297:64
+    |
+297 |                     task::Poll::Pending => match self.receiver.try_next() {
+    |                                                                ^^^^^^^^
+
+warning: `iced_winit` (lib) generated 2 warnings
+   Compiling reshiki-agent v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/agent)
+   Compiling reshiki-mcp v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/mcp)
+   Compiling reshiki v0.13.1 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki)
+    Finished `release` profile [optimized] target(s) in 11m 22s
+[Desktop Entry]
+Name=ReShiki (git)
+Type=Application
+Exec=/usr/bin/reshiki-git %U
+TryExec=/usr/bin/reshiki-git
+Icon=reshiki-git
+MimeType=chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;chemical/x-smiles;chemical/x-cml;chemical/x-inchi;
+StartupNotify=true
+Categories=Education;Science;Chemistry;
+StartupWMClass=reshiki-git
+Saved working directory and index state WIP on (no branch): 6654e679 Merge pull request #1045 from Ameyanagi/fix/1037-wedge-stereo
+6654e6793c04f57a8801ff09d4a339dff6438e55
+Updated registry for reshiki-git to version 6654e6793c04f57a8801ff09d4a339dff6438e55
+[VERSION] reshiki-git: 6654e6793c04f57a8801ff09d4a339dff6438e55
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package reshiki-git in /var/lib/custom-packages/
