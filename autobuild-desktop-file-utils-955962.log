@@ -1,0 +1,76 @@
+[07:22:34] Found custom package for desktop-file-utils, bypassing BLFS aliases.
+[07:22:34] Custom package detected at /home/fusion809/lfs_packaging/desktop-file-utils (package: desktop-file-utils)
+[07:22:34] Extracting dependencies for custom package 'desktop-file-utils'...
+[07:22:34] Required deps: glib2 glibc libffi pcre2 systemd util-linux zlib 
+[07:22:34] Dependency 'glib2' already installed.
+[07:22:34] Dependency 'glibc' already installed.
+[07:22:34] Dependency 'libffi' already installed.
+[07:22:34] Dependency 'pcre2' already installed.
+[07:22:34] Dependency 'systemd' already installed.
+[07:22:34] Dependency 'util-linux' already installed.
+[07:22:34] Dependency 'zlib' already installed.
+[VERSION] desktop-file-utils: 0.29
+[07:22:38] Installing desktop-file-utils version: 0.29
+[07:22:38] Starting remote custom build for desktop-file-utils...
+--2026-11-09 07:23:02--  https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.29.tar.xz
+Resolving www.freedesktop.org (www.freedesktop.org)... 131.252.210.176
+Connecting to www.freedesktop.org (www.freedesktop.org)|131.252.210.176|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 85296 (83K) [application/x-xz]
+Saving to: ‘desktop-file-utils-0.29.tar.xz’
+
+          desktop-f   0%[                    ]       0  --.-KB/s                        desktop-fi  28%[====>               ]  23.35K   107KB/s                       desktop-fil  65%[============>       ]  54.60K   123KB/s               desktop-file-utils- 100%[===================>]  83.30K   186KB/s    in 0.4s    
+
+2026-11-09 07:23:07 (186 KB/s) - ‘desktop-file-utils-0.29.tar.xz’ saved [85296/85296]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/desktop-file-utils/desktop-file-utils-0.29
+Build dir: /home/fusion809/lfs_packaging/desktop-file-utils/desktop-file-utils-0.29/build
+Build type: native build
+Project name: desktop-file-utils
+Project version: 0.29
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -Wchar-subscripts: YES 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wnested-externs: YES 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Compiler for C supports arguments -Wcast-align: YES 
+Compiler for C supports arguments -Wsign-compare: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Checking for function "pledge" : NO 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency glib-2.0 found: YES 2.90.1
+Run-time dependency gio-2.0 found: YES 2.90.1
+Configuring desktop-file-edit.1 with command
+Configuring config.h using configuration
+Program intent-cache.sh found: YES (/bin/bash /home/fusion809/lfs_packaging/desktop-file-utils/desktop-file-utils-0.29/tests/intent-cache.sh)
+Build targets in project: 5
+
+desktop-file-utils 0.29
+
+  User defined options
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+
+ERROR: Clock skew detected. File /home/fusion809/lfs_packaging/desktop-file-utils/desktop-file-utils-0.29/build/meson-private/coredata.dat has a time stamp 0.2955s in the future.
+
+A full log can be found at /home/fusion809/lfs_packaging/desktop-file-utils/desktop-file-utils-0.29/build/meson-logs/meson-log.txt
+[ERROR] build.sh exited with code 1 for desktop-file-utils
+[ERROR] Custom build failed for desktop-file-utils
+[07:23:08] ========================================
+[07:23:08] Build completed with 1 failure(s):
+[07:23:08]   - desktop-file-utils
+[07:23:08] ========================================

@@ -1,0 +1,81 @@
+[07:26:39] Found custom package for desktop-file-utils, bypassing BLFS aliases.
+[07:26:39] Custom package detected at /home/fusion809/lfs_packaging/desktop-file-utils (package: desktop-file-utils)
+[07:26:39] Extracting dependencies for custom package 'desktop-file-utils'...
+[07:26:39] Required deps: glib2 glibc libffi pcre2 systemd util-linux zlib 
+[07:26:39] Dependency 'glib2' already installed.
+[07:26:39] Dependency 'glibc' already installed.
+[07:26:39] Dependency 'libffi' already installed.
+[07:26:39] Dependency 'pcre2' already installed.
+[07:26:39] Dependency 'systemd' already installed.
+[07:26:39] Dependency 'util-linux' already installed.
+[07:26:39] Dependency 'zlib' already installed.
+[VERSION] desktop-file-utils: 0.29
+[07:26:44] Installing desktop-file-utils version: 0.29
+[07:26:44] Starting remote custom build for desktop-file-utils...
+desktop-file-utils-0.29.tar.xz already present and appears valid.
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/desktop-file-utils/desktop-file-utils-0.29
+Build dir: /home/fusion809/lfs_packaging/desktop-file-utils/desktop-file-utils-0.29/build
+Build type: native build
+Project name: desktop-file-utils
+Project version: 0.29
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -Wchar-subscripts: YES 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wnested-externs: YES 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Compiler for C supports arguments -Wcast-align: YES 
+Compiler for C supports arguments -Wsign-compare: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Checking for function "pledge" : NO 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency glib-2.0 found: YES 2.90.1
+Run-time dependency gio-2.0 found: YES 2.90.1
+Configuring desktop-file-edit.1 with command
+Configuring config.h using configuration
+Program intent-cache.sh found: YES (/bin/bash /home/fusion809/lfs_packaging/desktop-file-utils/desktop-file-utils-0.29/tests/intent-cache.sh)
+Build targets in project: 5
+
+desktop-file-utils 0.29
+
+  User defined options
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/10] Compiling C object src/libdesktop_file.a.p/keyfileutils.c.o
+[2/10] Compiling C object src/libdesktop_file.a.p/mimeutils.c.o
+[3/10] Compiling C object src/desktop-file-validate.p/validator.c.o
+[4/10] Compiling C object src/desktop-file-install.p/install.c.o
+[5/10] Compiling C object src/update-desktop-database.p/update-desktop-database.c.o
+[6/10] Compiling C object src/libdesktop_file.a.p/validate.c.o
+[7/10] Linking static target src/libdesktop_file.a
+[8/10] Linking target src/desktop-file-validate
+[9/10] Linking target src/update-desktop-database
+[10/10] Linking target src/desktop-file-install
+[0/1] Installing files
+Installing src/desktop-file-validate to /usr/bin
+Installing src/desktop-file-install to /usr/bin
+Installing src/update-desktop-database to /usr/bin
+Installing /home/fusion809/lfs_packaging/desktop-file-utils/desktop-file-utils-0.29/man/desktop-file-validate.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/desktop-file-utils/desktop-file-utils-0.29/man/desktop-file-install.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/desktop-file-utils/desktop-file-utils-0.29/man/update-desktop-database.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/desktop-file-utils/desktop-file-utils-0.29/build/man/desktop-file-edit.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/desktop-file-utils/desktop-file-utils-0.29/misc/desktop-entry-mode.el to /usr/share/emacs/site-lisp
+Installing symlink pointing to desktop-file-install to /usr/bin/desktop-file-edit
+0.29
+Updated registry for desktop-file-utils to version 0.29
+[VERSION] desktop-file-utils: 0.29
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package desktop-file-utils in /var/lib/custom-packages/
