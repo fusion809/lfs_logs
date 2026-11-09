@@ -1,0 +1,48 @@
+===== Update check started: 2026-11-09 08:35:10 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261109_083510
+Packages needing attention: openssh vim
+===== Starting updatec: 2026-11-09 08:35:14 AEST =====
+Checking for packages with missing file inventories...
+name=openssh
+local_ver=10.6p1
+remote_ver=10.6p2
+name=reshiki-git
+local_ver=51c7261
+remote_ver=eb16666
+name=vamp-plugin-sdk
+local_ver=2.10
+remote_ver=2.10.0
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - openssh
+  - reshiki-git
+  - vamp-plugin-sdk
+  - vim
+
+Building custom package openssh...
+[08:38:24] Found custom package for openssh, bypassing BLFS aliases.
+[08:38:25] Custom package detected at /home/fusion809/lfs_packaging/openssh (package: openssh)
+[08:38:25] Extracting dependencies for custom package 'openssh'...
+[08:38:25] Required deps: glibc libxcrypt openssl zlib 
+[08:38:25] Dependency 'glibc' already installed.
+[08:38:25] Dependency 'libxcrypt' already installed.
+[08:38:25] Dependency 'openssl' already installed.
+[08:38:25] Dependency 'zlib' already installed.
+[VERSION] openssh: 10.6p2
+[08:38:26] Installing openssh version: 10.6p2
+[08:38:26] Starting remote custom build for openssh...
+--2026-11-09 08:38:30--  https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p2.tar.gz
+Resolving ftp.openbsd.org (ftp.openbsd.org)... 199.185.178.81, 2620:3d:c000:178::81
+Connecting to ftp.openbsd.org (ftp.openbsd.org)|199.185.178.81|:443... connected.
+OpenSSL: error:0A00041A:SSL routines::tlsv1 alert decode error
+Unable to establish SSL connection.
+[ERROR] build.sh exited with code 4 for openssh
+[ERROR] Custom build failed for openssh
+[08:38:31] ========================================
+[08:38:31] Build completed with 1 failure(s):
+[08:38:31]   - openssh
+[08:38:31] ========================================
+Error: Build failed for openssh. Aborting update loop.
+===== ERROR: updatec exited with status 1 =====
+Finished: 2026-11-09 08:38:31 AEST
+Exit status: 1

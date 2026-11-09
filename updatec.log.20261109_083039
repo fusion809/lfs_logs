@@ -1,0 +1,52 @@
+===== Update check started: 2026-11-09 08:30:39 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261109_083039
+Packages needing attention: openssh vim
+===== Starting updatec: 2026-11-09 08:30:45 AEST =====
+Checking for packages with missing file inventories...
+Failed to check custom update version for: libical
+name=libical
+local_ver=4.0.7
+remote_ver=FAILED
+Failed to check custom update version for: libjpeg-turbo
+name=libjpeg-turbo
+local_ver=3.2.1
+remote_ver=FAILED
+name=openssh
+local_ver=10.6p1
+remote_ver=10.6p2
+Failed to check custom update version for: spice-vdagent
+name=spice-vdagent
+local_ver=0.23.0
+remote_ver=FAILED
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - openssh
+  - vim
+
+Building custom package openssh...
+[08:35:02] Found custom package for openssh, bypassing BLFS aliases.
+[08:35:02] Custom package detected at /home/fusion809/lfs_packaging/openssh (package: openssh)
+[08:35:02] Extracting dependencies for custom package 'openssh'...
+[08:35:02] Required deps: glibc libxcrypt openssl zlib 
+[08:35:02] Dependency 'glibc' already installed.
+[08:35:02] Dependency 'libxcrypt' already installed.
+[08:35:02] Dependency 'openssl' already installed.
+[08:35:02] Dependency 'zlib' already installed.
+[VERSION] openssh: 10.6p2
+[08:35:03] Installing openssh version: 10.6p2
+[08:35:03] Starting remote custom build for openssh...
+--2026-11-09 08:35:09--  https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p2.tar.gz
+Resolving ftp.openbsd.org (ftp.openbsd.org)... 199.185.178.81, 2620:3d:c000:178::81
+Connecting to ftp.openbsd.org (ftp.openbsd.org)|199.185.178.81|:443... connected.
+OpenSSL: error:0A00041A:SSL routines::tlsv1 alert decode error
+Unable to establish SSL connection.
+[ERROR] build.sh exited with code 4 for openssh
+[ERROR] Custom build failed for openssh
+[08:35:09] ========================================
+[08:35:09] Build completed with 1 failure(s):
+[08:35:09]   - openssh
+[08:35:09] ========================================
+Error: Build failed for openssh. Aborting update loop.
+===== ERROR: updatec exited with status 1 =====
+Finished: 2026-11-09 08:35:10 AEST
+Exit status: 1
