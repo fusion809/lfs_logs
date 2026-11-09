@@ -1,0 +1,39 @@
+===== Update check started: 2026-11-10 07:30:39 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261110_073039
+/dev/fd/63: line 13: majVer: unbound variable
+Packages needing attention: mitkrb
+===== Starting updatec: 2026-11-10 07:31:03 AEST =====
+Checking for packages with missing file inventories...
+name=mitkrb
+local_ver=1.22.2
+remote_ver=1.22.3
+Failed to check custom update version for: tzdata
+Applying updates in dependency order:
+  - mitkrb
+
+Building custom package mitkrb...
+[07:35:56] Found custom package for mitkrb, bypassing BLFS aliases.
+[07:35:56] Custom package detected at /home/fusion809/lfs_packaging/mitkrb (package: mitkrb)
+[07:35:56] Extracting dependencies for custom package 'mitkrb'...
+[07:35:56] Required deps: bash e2fsprogs glibc keyutils lmdb openssl 
+[07:35:57] Dependency 'bash' already installed.
+[07:35:57] Dependency 'e2fsprogs' already installed.
+[07:35:57] Dependency 'glibc' already installed.
+[07:35:57] Dependency 'keyutils' already installed.
+[07:35:57] Dependency 'lmdb' already installed.
+[07:35:57] Dependency 'openssl' already installed.
+[VERSION] mitkrb: 1.22.3
+[07:36:02] Installing mitkrb version: 1.22.3
+[07:36:02] Starting remote custom build for mitkrb...
+krb5-1.22.3.tar.gz already present and appears valid.
+patch: **** Can't open patch file ./openssl4.patch : No such file or directory
+[ERROR] build.sh exited with code 2 for mitkrb
+[ERROR] Custom build failed for mitkrb
+[07:36:12] ========================================
+[07:36:12] Build completed with 1 failure(s):
+[07:36:12]   - mitkrb
+[07:36:12] ========================================
+Error: Build failed for mitkrb. Aborting update loop.
+===== ERROR: updatec exited with status 1 =====
+Finished: 2026-11-10 07:36:12 AEST
+Exit status: 1

@@ -1,0 +1,62 @@
+[05:24:39] Found custom package for mitkrb, bypassing BLFS aliases.
+[05:24:39] Custom package detected at /home/fusion809/lfs_packaging/mitkrb (package: mitkrb)
+[05:24:39] Extracting dependencies for custom package 'mitkrb'...
+[05:24:39] Required deps: bash e2fsprogs glibc keyutils lmdb openssl 
+[05:24:39] Dependency 'bash' already installed.
+[05:24:39] Dependency 'e2fsprogs' already installed.
+[05:24:39] Dependency 'glibc' already installed.
+[05:24:39] Dependency 'keyutils' already installed.
+[05:24:39] Dependency 'lmdb' already installed.
+[05:24:39] Dependency 'openssl' already installed.
+[VERSION] mitkrb: 1.22.3
+[05:24:44] Installing mitkrb version: 1.22.3
+[05:24:44] Starting remote custom build for mitkrb...
+krb5-1.22.3.tar.gz already present and appears valid.
+Getting and applying mitkrb-1.22.2-upstream_fix-1.patch
+--2026-11-10 05:24:56--  https://www.linuxfromscratch.org/patches/lfs/development/mitkrb-1.22.2-upstream_fix-1.patch
+Resolving www.linuxfromscratch.org (www.linuxfromscratch.org)... 208.118.68.85
+Connecting to www.linuxfromscratch.org (www.linuxfromscratch.org)|208.118.68.85|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-10 05:24:57 ERROR 404: Not Found.
+
+--2026-11-10 05:24:57--  https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-upstream_fix-1.patch
+Resolving www.linuxfromscratch.org (www.linuxfromscratch.org)... 208.118.68.85
+Connecting to www.linuxfromscratch.org (www.linuxfromscratch.org)|208.118.68.85|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8180 (8.0K)
+Saving to: ‘mitkrb-1.22.2-upstream_fix-1.patch’
+
+          mitkrb-1.   0%[                    ]       0  --.-KB/s               mitkrb-1.22.2-upstr 100%[===================>]   7.99K  --.-KB/s    in 0s      
+
+2026-11-10 05:24:58 (67.7 MB/s) - ‘mitkrb-1.22.2-upstream_fix-1.patch’ saved [8180/8180]
+
+patching file src/lib/krb5/ccache/ccbase.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file src/lib/krb5/ccache/ccbase.c.rej
+patching file src/lib/krb5/os/expand_path.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file src/lib/krb5/os/expand_path.c.rej
+patching file src/lib/krb5/os/locate_kdc.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+4 out of 4 hunks ignored -- saving rejects to file src/lib/krb5/os/locate_kdc.c.rej
+patching file src/plugins/preauth/pkinit/pkinit_crypto.h
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file src/plugins/preauth/pkinit/pkinit_crypto.h.rej
+patching file src/plugins/preauth/pkinit/pkinit_crypto_openssl.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+3 out of 3 hunks ignored -- saving rejects to file src/plugins/preauth/pkinit/pkinit_crypto_openssl.c.rej
+patching file src/plugins/preauth/pkinit/pkinit_identity.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file src/plugins/preauth/pkinit/pkinit_identity.c.rej
+patching file src/plugins/preauth/pkinit/pkinit_matching.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file src/plugins/preauth/pkinit/pkinit_matching.c.rej
+patching file src/tests/responder.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file src/tests/responder.c.rej
+[ERROR] build.sh exited with code 1 for mitkrb
+[ERROR] Custom build failed for mitkrb
+[05:24:58] ========================================
+[05:24:58] Build completed with 1 failure(s):
+[05:24:58]   - mitkrb
+[05:24:58] ========================================

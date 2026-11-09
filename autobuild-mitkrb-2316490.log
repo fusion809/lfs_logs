@@ -1,0 +1,472 @@
+[07:44:37] Found custom package for mitkrb, bypassing BLFS aliases.
+[07:44:37] Custom package detected at /home/fusion809/lfs_packaging/mitkrb (package: mitkrb)
+[07:44:38] Extracting dependencies for custom package 'mitkrb'...
+[07:44:38] Required deps: bash e2fsprogs glibc keyutils lmdb openssl 
+[07:44:38] Dependency 'bash' already installed.
+[07:44:38] Dependency 'e2fsprogs' already installed.
+[07:44:38] Dependency 'glibc' already installed.
+[07:44:38] Dependency 'keyutils' already installed.
+[07:44:38] Dependency 'lmdb' already installed.
+[07:44:38] Dependency 'openssl' already installed.
+[VERSION] mitkrb: 1.22.3
+[07:44:46] Installing mitkrb version: 1.22.3
+[07:44:46] Starting remote custom build for mitkrb...
+krb5-1.22.3.tar.gz already present and appears valid.
+patching file src/plugins/tls/k5tls/openssl.c
+Getting and applying mitkrb-1.22.2-upstream_fix-1.patch
+--2026-11-10 07:45:16--  https://www.linuxfromscratch.org/patches/lfs/development/mitkrb-1.22.2-upstream_fix-1.patch
+Resolving www.linuxfromscratch.org (www.linuxfromscratch.org)... 208.118.68.85
+Connecting to www.linuxfromscratch.org (www.linuxfromscratch.org)|208.118.68.85|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-10 07:45:17 ERROR 404: Not Found.
+
+--2026-11-10 07:45:17--  https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-upstream_fix-1.patch
+Resolving www.linuxfromscratch.org (www.linuxfromscratch.org)... 208.118.68.85
+Connecting to www.linuxfromscratch.org (www.linuxfromscratch.org)|208.118.68.85|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8180 (8.0K)
+Saving to: ‘mitkrb-1.22.2-upstream_fix-1.patch’
+
+          mitkrb-1.   0%[                    ]       0  --.-KB/s               mitkrb-1.22.2-upstr 100%[===================>]   7.99K  --.-KB/s    in 0s      
+
+2026-11-10 07:45:18 (112 MB/s) - ‘mitkrb-1.22.2-upstream_fix-1.patch’ saved [8180/8180]
+
+patching file src/lib/krb5/ccache/ccbase.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file src/lib/krb5/ccache/ccbase.c.rej
+patching file src/lib/krb5/os/expand_path.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file src/lib/krb5/os/expand_path.c.rej
+patching file src/lib/krb5/os/locate_kdc.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+4 out of 4 hunks ignored -- saving rejects to file src/lib/krb5/os/locate_kdc.c.rej
+patching file src/plugins/preauth/pkinit/pkinit_crypto.h
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file src/plugins/preauth/pkinit/pkinit_crypto.h.rej
+patching file src/plugins/preauth/pkinit/pkinit_crypto_openssl.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+3 out of 3 hunks ignored -- saving rejects to file src/plugins/preauth/pkinit/pkinit_crypto_openssl.c.rej
+patching file src/plugins/preauth/pkinit/pkinit_identity.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file src/plugins/preauth/pkinit/pkinit_identity.c.rej
+patching file src/plugins/preauth/pkinit/pkinit_matching.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file src/plugins/preauth/pkinit/pkinit_matching.c.rej
+patching file src/tests/responder.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file src/tests/responder.c.rej
+Getting and applying mitkrb-1.22.2-security_fix-1.patch
+--2026-11-10 07:45:18--  https://www.linuxfromscratch.org/patches/lfs/development/mitkrb-1.22.2-security_fix-1.patch
+Resolving www.linuxfromscratch.org (www.linuxfromscratch.org)... 208.118.68.85
+Connecting to www.linuxfromscratch.org (www.linuxfromscratch.org)|208.118.68.85|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-10 07:45:19 ERROR 404: Not Found.
+
+--2026-11-10 07:45:20--  https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-security_fix-1.patch
+Resolving www.linuxfromscratch.org (www.linuxfromscratch.org)... 208.118.68.85
+Connecting to www.linuxfromscratch.org (www.linuxfromscratch.org)|208.118.68.85|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2813 (2.7K)
+Saving to: ‘mitkrb-1.22.2-security_fix-1.patch’
+
+          mitkrb-1.   0%[                    ]       0  --.-KB/s               mitkrb-1.22.2-secur 100%[===================>]   2.75K  --.-KB/s    in 0s      
+
+2026-11-10 07:45:21 (791 MB/s) - ‘mitkrb-1.22.2-security_fix-1.patch’ saved [2813/2813]
+
+patching file src/lib/gssapi/spnego/negoex_util.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+2 out of 2 hunks ignored -- saving rejects to file src/lib/gssapi/spnego/negoex_util.c.rej
+Getting and applying mitkrb-1.22.2-openssl_4_fixes-1.patch
+--2026-11-10 07:45:21--  https://www.linuxfromscratch.org/patches/lfs/development/mitkrb-1.22.2-openssl_4_fixes-1.patch
+Resolving www.linuxfromscratch.org (www.linuxfromscratch.org)... 208.118.68.85
+Connecting to www.linuxfromscratch.org (www.linuxfromscratch.org)|208.118.68.85|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-10 07:45:21 ERROR 404: Not Found.
+
+--2026-11-10 07:45:21--  https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-openssl_4_fixes-1.patch
+Resolving www.linuxfromscratch.org (www.linuxfromscratch.org)... 208.118.68.85
+Connecting to www.linuxfromscratch.org (www.linuxfromscratch.org)|208.118.68.85|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 21609 (21K)
+Saving to: ‘mitkrb-1.22.2-openssl_4_fixes-1.patch’
+
+          mitkrb-1.   0%[                    ]       0  --.-KB/s                        mitkrb-1.2  72%[=============>      ]  15.37K  53.5KB/s               mitkrb-1.22.2-opens 100%[===================>]  21.10K  73.4KB/s    in 0.3s    
+
+2026-11-10 07:45:23 (73.4 KB/s) - ‘mitkrb-1.22.2-openssl_4_fixes-1.patch’ saved [21609/21609]
+
+patching file src/plugins/tls/k5tls/openssl.c
+Hunk #1 FAILED at 71.
+1 out of 1 hunk FAILED -- saving rejects to file src/plugins/tls/k5tls/openssl.c.rej
+patching file .github/workflows/build.yml
+Reversed (or previously applied) patch detected!  Skipping patch.
+3 out of 3 hunks ignored -- saving rejects to file .github/workflows/build.yml.rej
+patching file src/plugins/preauth/pkinit/pkinit_crypto_openssl.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+15 out of 15 hunks ignored -- saving rejects to file src/plugins/preauth/pkinit/pkinit_crypto_openssl.c.rej
+patching file src/plugins/tls/k5tls/openssl.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+5 out of 5 hunks ignored -- saving rejects to file src/plugins/tls/k5tls/openssl.c.rej
+patching failed. Continuing
+configure found
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... -std=gnu++11
+checking if C compiler supports -Werror=unknown-warning-option... no
+checking how to run the C preprocessor... gcc -E
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for GNU linker... yes
+configure: adding extra warning flags for gcc
+configure: skipping pedantic warnings on Linux
+configure: adding extra warning flags for g++
+checking if C compiler supports -Wno-format-zero-length... yes
+checking if C compiler supports -Woverflow... yes
+checking if C compiler supports -Wstrict-overflow... yes
+checking if C compiler supports -Wmissing-format-attribute... yes
+checking if C compiler supports -Wmissing-prototypes... yes
+checking if C compiler supports -Wreturn-type... yes
+checking if C compiler supports -Wmissing-braces... yes
+checking if C compiler supports -Wparentheses... yes
+checking if C compiler supports -Wswitch... yes
+checking if C compiler supports -Wunused-function... yes
+checking if C compiler supports -Wunused-label... yes
+checking if C compiler supports -Wunused-variable... yes
+checking if C compiler supports -Wunused-value... yes
+checking if C compiler supports -Wunknown-pragmas... yes
+checking if C compiler supports -Wsign-compare... yes
+checking if C compiler supports -Wnewline-eof... no
+checking if C compiler supports -Werror=uninitialized... yes
+checking if C compiler supports -Wno-maybe-uninitialized... yes
+checking if C compiler supports -Werror=pointer-arith... yes
+checking if C compiler supports -Werror=int-conversion... yes
+checking if C compiler supports -Werror=incompatible-pointer-types... yes
+checking if C compiler supports -Werror=discarded-qualifiers... yes
+checking if C compiler supports -Werror=implicit-int... yes
+checking if C compiler supports -Werror=strict-prototypes... yes
+checking if C compiler supports -Werror=declaration-after-statement... yes
+checking if C compiler supports -Werror-implicit-function-declaration... yes
+checking which version of com_err to use... system
+checking for com_err... yes
+checking for add_error_table in -lcom_err... yes
+checking for remove_error_table in -lcom_err... yes
+checking for compile_et... compile_et
+checking whether compile_et is useful... yes
+checking whether compile_et supports --textdomain... no
+checking which version of subsystem package to use... system
+checking whether system ss package works... yes
+checking if ss_execute_command needs a prototype provided... yes
+checking for an ANSI C-conforming const... yes
+checking for gethostbyname... yes
+checking for socket... yes
+checking for main in -lresolv... yes
+checking for res_ninit... yes
+checking for res_nclose... yes
+checking for res_ndestroy... no
+checking for res_nsearch... yes
+checking for ns_initparse... yes
+checking for ns_name_uncompress... yes
+checking for dn_skipname... yes
+checking for res_search... yes
+checking whether pragma weak references are supported... yes
+checking for constructor/destructor attribute support... yes,yes
+configure: enabling thread support
+checking whether gcc is Clang... no
+checking whether pthreads work with "-pthread" and "-lpthread"... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking whether more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+configure: PTHREAD_CC = gcc
+configure: PTHREAD_CFLAGS = -pthread
+configure: PTHREAD_LIBS = -lpthread
+checking for pthread_once... yes
+checking for pthread_rwlock_init... yes
+configure: rechecking with PTHREAD_... options
+checking for pthread_rwlock_init in -lc... yes
+checking for library containing dlopen... none required
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for stdint.h... (cached) yes
+checking whether integers are two's complement... yes
+checking whether CHAR_BIT is 8... yes
+checking if va_copy is available... yes
+checking if va_list objects can be copied by assignment... no
+configure: using shared libraries
+checking whether ln -s works... yes
+checking for ranlib... ranlib
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ar... ar
+checking for perl... perl
+checking for mode_t... yes
+checking if daemon needs a prototype provided... no
+checking if getsockname() takes arguments struct sockaddr * and size_t *... no
+checking if getsockname() takes arguments struct sockaddr * and int *... no
+checking if getsockname() takes arguments struct sockaddr * and socklen_t *... yes
+checking for main in -lutil... yes
+checking for libintl.h... yes
+checking for library containing dgettext... none required
+checking for msgfmt... msgfmt
+checking for sys/sockio.h... no
+checking for ifaddrs.h... yes
+checking for unistd.h... (cached) yes
+checking for fnmatch.h... yes
+checking for vsprintf... yes
+checking for vasprintf... yes
+checking for vsnprintf... yes
+checking for strlcpy... yes
+checking for fnmatch... yes
+checking for secure_getenv... yes
+checking for strlcpy... (cached) yes
+checking for getopt... yes
+checking for getopt_long... yes
+checking for fnmatch... (cached) yes
+checking for vasprintf... (cached) yes
+checking if vasprintf needs a prototype provided... no
+checking if swab needs a prototype provided... no
+checking for secure_getenv... (cached) yes
+checking for gawk... gawk
+checking for struct sockaddr.sa_len... no
+checking for sys/types.h... (cached) yes
+checking for sys/socket.h... yes
+checking for netinet/in.h... yes
+checking for netdb.h... yes
+checking for inet_ntop... yes
+checking for inet_pton... yes
+checking for getnameinfo... yes
+checking for getaddrinfo... yes
+checking for IPv6 compile-time support without -DINET6... yes
+checking for struct sockaddr.sa_len... (cached) no
+checking for sigprocmask... yes
+checking for sigset_t and POSIX_SIGNALS... yes
+checking for SSL_CTX_new in -lssl... yes
+checking for OpenSSL... yes
+configure: TLS module will use OpenSSL
+checking for keyutils.h... yes
+checking for add_key in -lkeyutils... yes
+checking for keyctl_get_persistent in -lkeyutils... yes
+checking for EC_POINT_new in -lcrypto... yes
+checking for yasm... yasm
+checking for cpuid.h... yes
+configure: Building with AES-NI support
+checking for an ANSI C-conforming const... (cached) yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for gcc options needed to detect all undeclared functions... cat: confdefs.h: No such file or directory
+cat: confdefs.h: No such file or directory
+none needed
+checking whether strerror_r is declared... cat: confdefs.h: No such file or directory
+no
+checking whether strerror_r returns char *... no
+checking for strdup... yes
+checking for setvbuf... yes
+checking for seteuid... yes
+checking for setresuid... yes
+checking for setreuid... yes
+checking for setegid... yes
+checking for setresgid... yes
+checking for setregid... yes
+checking for setsid... yes
+checking for flock... yes
+checking for fchmod... yes
+checking for chmod... yes
+checking for strptime... yes
+checking for geteuid... yes
+checking for setenv... yes
+checking for unsetenv... yes
+checking for getenv... yes
+checking for gmtime_r... yes
+checking for localtime_r... yes
+checking for bswap16... no
+checking for bswap64... no
+checking for mkstemp... yes
+checking for getusershell... yes
+checking for access... yes
+checking for getcwd... yes
+checking for srand48... yes
+checking for srand... yes
+checking for srandom... yes
+checking for stat... yes
+checking for strchr... yes
+checking for strerror... yes
+checking for timegm... yes
+checking for explicit_bzero... yes
+checking for explicit_memset... no
+checking for getresuid... yes
+checking for getresgid... yes
+checking for getentropy... yes
+checking for mkstemp... (cached) yes
+checking for gettimeofday... yes
+checking for sys_errlist declaration... no
+checking for sys_errlist in libc... no
+configure: WARNING: sys_errlist is neither in errno.h nor in libc
+checking for unistd.h... (cached) yes
+checking for paths.h... yes
+checking for fcntl.h... yes
+checking for memory.h... yes
+checking for ifaddrs.h... (cached) yes
+checking for sys/filio.h... no
+checking for byteswap.h... yes
+checking for machine/endian.h... no
+checking for machine/byte_order.h... no
+checking for sys/bswap.h... no
+checking for endian.h... yes
+checking for pwd.h... yes
+checking for arpa/inet.h... yes
+checking for alloca.h... yes
+checking for dlfcn.h... yes
+checking for limits.h... yes
+checking for sys/random.h... yes
+checking for struct stat.st_mtimensec... no
+checking for struct stat.st_mtimespec.tv_nsec... no
+checking for struct stat.st_mtim.tv_nsec... yes
+checking for off_t... yes
+checking for perror declaration... no
+checking if strptime needs a prototype provided... yes
+checking if argument to wait is int *... no
+checking for use of sigprocmask... yes
+checking for uid_t in sys/types.h... yes
+checking type of array argument to getgroups... gid_t
+checking for sigsetjmp... no
+checking return type of setrpcent... int
+checking return type of endrpcent... void
+checking for bswap_16... yes
+checking for bswap_64... yes
+checking for gethostbyname_r... yes
+checking if gethostbyname_r returns an int... no
+checking if gethostbyname_r returns a pointer... no
+configure: WARNING: cannot determine return type of gethostbyname_r -- disabling
+checking for getpwnam_r... yes
+checking for getpwuid_r... yes
+checking return type of getpwnam_r... unknown
+configure: WARNING: Cannot determine getpwnam_r return type, disabling getpwnam_r
+configure: getpwnam_r not useful, so disabling getpwuid_r too
+checking whether gmtime_r returns int... unknown -- ignoring gmtime_r
+checking for getservbyname_r... yes
+checking if getservbyname_r returns an int... no
+checking if getservbyname_r returns a pointer... no
+configure: WARNING: cannot determine return type of getservbyname_r -- disabling
+checking for dirent.h... yes
+checking for uid_t in sys/types.h... (cached) yes
+checking for termios.h... yes
+checking for tcsetattr... yes
+checking for poll.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for stddef.h... yes
+checking for sys/types.h... (cached) yes
+checking for sys/file.h... yes
+checking for sys/param.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/time.h... yes
+checking for netinet/in.h... (cached) yes
+checking for sys/uio.h... yes
+checking for sys/filio.h... (cached) no
+checking for sys/select.h... yes
+checking for time.h... yes
+checking for paths.h... (cached) yes
+checking for errno.h... yes
+checking for in6addr_any definition in library... yes
+checking for time_t... yes
+checking size of time_t... 8
+checking for replay cache directory... /var/tmp
+checking for socklen_t... yes
+checking for struct lifconf... no
+checking for struct if_laddrconf... no
+checking for h_errno in netdb.h... yes
+checking for inline... inline
+checking for struct cmsghdr... yes
+checking for struct in_pktinfo... yes
+checking for struct in6_pktinfo... no
+checking for struct sockaddr_storage... yes
+checking for struct rt_msghdr... no
+checking size of size_t... 8
+checking for __int128_t... yes
+checking for __uint128_t... yes
+checking for ssize_t... yes
+checking for u_char... yes
+checking for u_int... yes
+checking for u_long... yes
+checking for u_int8_t... yes
+checking for u_int16_t... yes
+checking for u_int32_t... yes
+checking for int8_t... yes
+checking for int16_t... yes
+checking for int32_t... yes
+checking for sh... /usr/bin/sh
+checking for sh5... false
+checking for bash... /bin/sh
+checking if /usr/bin/sh supports functions... yes
+checking for POSIX printf positional specification support... yes
+checking for dig... false
+checking for nslookup... false
+checking for bison... bison -y
+checking whether to use priocntl hack... no
+checking for perl... (cached) perl
+checking for xom.h... no
+checking where struct rpcent is declared... rpc/netdb.h
+checking for sys/select.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for MAXHOSTNAMELEN in sys/param.h... yes
+checking for MAXHOSTNAMELEN in netdb.h... no
+checking for BSD type aliases... yes
+checking return type of setrpcent... (cached) int
+checking return type of endrpcent... (cached) void
+checking for a recent enough OpenSSL... yes
+checking for PKCS7_get_signer_info in -lcrypto... yes
+checking for EVP_PKEY_get_bn_param... yes
+checking for daemon... yes
+checking for python3... python3
+checking for cmocka.h... no
+checking for _cmocka_run_group_tests in -lcmocka... no
+configure: WARNING: Some functions that are needed for library thread
+configure: WARNING: safety appear to be missing.
+configure: WARNING:   missing thread-safe function: getpwnam_r
+configure: WARNING:   missing thread-safe function: getpwuid_r
+configure: WARNING:   missing thread-safe function: gethostbyname_r
+configure: WARNING:   missing thread-safe function: getservbyname_r
+configure: WARNING:   missing thread-safe function: gmtime_r
+configure: WARNING: Without these functions, the installed libraries
+configure: WARNING: may not be thread-safe.
+checking for SD_Init in -laceclnt... no
+checking for mdb_env_create in -llmdb... yes
+checking for libedit... no
+configure: Not using any readline support
+configure: Using built-in libverto
+checking for groff... /usr/bin/groff
+configure: Using krb5-config for build defaults
+configure: Default ccache name: FILE:/tmp/krb5cc_%{uid}
+configure: Default keytab name: FILE:/etc/krb5.keytab
+configure: Default client keytab name: FILE:/var/lib/krb5/user/%{euid}/client.keytab
+configure: Default PKCS11 module name: opensc-pkcs11.so
+configure: creating ./config.status
+config.status: error: cannot find input file: `././config/pre.in'
+[ERROR] build.sh exited with code 1 for mitkrb
+[ERROR] Custom build failed for mitkrb
+[07:46:38] ========================================
+[07:46:38] Build completed with 1 failure(s):
+[07:46:38]   - mitkrb
+[07:46:38] ========================================
