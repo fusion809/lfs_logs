@@ -1,0 +1,169 @@
+===== Update check started: 2026-11-09 23:45:39 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261109_234539
+Packages needing attention: reshiki-git
+===== Starting updatec: 2026-11-09 23:45:41 AEST =====
+Checking for packages with missing file inventories...
+name=reshiki-git
+local_ver=ab0903a
+remote_ver=560e46a
+Failed to check custom update version for: tzdata
+Applying updates in dependency order:
+  - reshiki-git
+
+Building custom package reshiki-git...
+[23:49:44] Found custom package for reshiki-git, bypassing BLFS aliases.
+[23:49:44] Custom package detected at /home/fusion809/lfs_packaging/reshiki-git (package: reshiki-git)
+[23:49:44] Extracting dependencies for custom package 'reshiki-git'...
+[23:49:44] Required deps: acl at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz libcanberra libepoxy libffi libice libogg libpng libseccomp libselinux libsm libtool libvorbis libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres libxt ncurses pango pcre2 pixman systemd util-linux wayland zlib 
+[23:49:44] Dependency 'acl' already installed.
+[23:49:44] Dependency 'at-spi2-core' already installed.
+[23:49:44] Dependency 'brotli' already installed.
+[23:49:44] Dependency 'bzip2' already installed.
+[23:49:44] Dependency 'cairo' already installed.
+[23:49:44] Dependency 'dbus' already installed.
+[23:49:44] Dependency 'expat' already installed.
+[23:49:44] Dependency 'fontconfig' already installed.
+[23:49:44] Dependency 'freetype' already installed.
+[23:49:44] Dependency 'fribidi' already installed.
+[23:49:44] Dependency 'gcc' already installed.
+[23:49:44] Dependency 'gdk-pixbuf' already installed.
+[23:49:44] Dependency 'glib2' already installed.
+[23:49:44] Dependency 'glibc' already installed.
+[23:49:44] Dependency 'glycin' already installed.
+[23:49:44] Dependency 'graphite2' already installed.
+[23:49:44] Dependency 'gtk3' already installed.
+[23:49:44] Dependency 'harfbuzz' already installed.
+[23:49:44] Dependency 'libcanberra' already installed.
+[23:49:44] Dependency 'libepoxy' already installed.
+[23:49:44] Dependency 'libffi' already installed.
+[23:49:44] Dependency 'libice' already installed.
+[23:49:44] Dependency 'libogg' already installed.
+[23:49:44] Dependency 'libpng' already installed.
+[23:49:44] Dependency 'libseccomp' already installed.
+[23:49:44] Dependency 'libselinux' already installed.
+[23:49:44] Dependency 'libsm' already installed.
+[23:49:44] Dependency 'libtool' already installed.
+[23:49:44] Dependency 'libvorbis' already installed.
+[23:49:44] Dependency 'libx11' already installed.
+[23:49:44] Dependency 'libxau' already installed.
+[23:49:44] Dependency 'libxcb' already installed.
+[23:49:44] Dependency 'libxcomposite' already installed.
+[23:49:44] Dependency 'libxcursor' already installed.
+[23:49:44] Dependency 'libxdamage' already installed.
+[23:49:44] Dependency 'libxdmcp' already installed.
+[23:49:44] Dependency 'libxext' already installed.
+[23:49:44] Dependency 'libxfixes' already installed.
+[23:49:44] Dependency 'libxi' already installed.
+[23:49:44] Dependency 'libxinerama' already installed.
+[23:49:44] Dependency 'libxkbcommon' already installed.
+[23:49:44] Dependency 'libxrandr' already installed.
+[23:49:44] Dependency 'libxrender' already installed.
+[23:49:44] Dependency 'libxres' already installed.
+[23:49:44] Dependency 'libxt' already installed.
+[23:49:44] Dependency 'ncurses' already installed.
+[23:49:44] Dependency 'pango' already installed.
+[23:49:44] Dependency 'pcre2' already installed.
+[23:49:44] Dependency 'pixman' already installed.
+[23:49:44] Dependency 'systemd' already installed.
+[23:49:44] Dependency 'util-linux' already installed.
+[23:49:44] Dependency 'wayland' already installed.
+[23:49:44] Dependency 'zlib' already installed.
+[VERSION] reshiki-git: 560e46af001adab36645d80b4f66a5ea8cb3adf4
+[23:49:44] Installing reshiki-git version: 560e46af001adab36645d80b4f66a5ea8cb3adf4
+[23:49:44] Starting remote custom build for reshiki-git...
+From https://github.com/Ameyanagi/ReShiki
+ * [new branch]        feat/naming-ir-protocol -> origin/feat/naming-ir-protocol
+ * [new branch]        fix/python-linux-font-fallback -> origin/fix/python-linux-font-fallback
+ * [new branch]        fix/s2n-baseline-helper -> origin/fix/s2n-baseline-helper
+   ab0903a2..560e46af  main                    -> origin/main
+Previous HEAD position was ab0903a2 Merge pull request #1080 from Ameyanagi/build/nazuchem-pin-ir
+HEAD is now at 560e46af Merge pull request #1083 from Ameyanagi/feat/naming-ir-protocol
+   Compiling reshiki-chemistry v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/chemistry)
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:586:55
+    |
+586 |         let event = if let Ok(event) = event_receiver.try_next() {
+    |                                                       ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:297:64
+    |
+297 |                     task::Poll::Pending => match self.receiver.try_next() {
+    |                                                                ^^^^^^^^
+
+warning: `iced_winit` (lib) generated 2 warnings
+   Compiling reshiki v0.14.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki)
+   Compiling reshiki-model v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/model)
+   Compiling reshiki-io v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/io)
+   Compiling reshiki-agent v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/agent)
+   Compiling reshiki-mcp v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/mcp)
+    Finished `release` profile [optimized] target(s) in 10m 55s
+[Desktop Entry]
+Name=ReShiki (git)
+Type=Application
+Exec=/usr/bin/reshiki-git %U
+TryExec=/usr/bin/reshiki-git
+Icon=reshiki-git
+MimeType=chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;chemical/x-smiles;chemical/x-cml;chemical/x-inchi;
+StartupNotify=true
+Categories=Education;Science;Chemistry;
+StartupWMClass=reshiki-git
+Saved working directory and index state WIP on (no branch): 560e46af Merge pull request #1083 from Ameyanagi/feat/naming-ir-protocol
+560e46af001adab36645d80b4f66a5ea8cb3adf4
+Updated registry for reshiki-git to version 560e46af001adab36645d80b4f66a5ea8cb3adf4
+[VERSION] reshiki-git: 560e46af001adab36645d80b4f66a5ea8cb3adf4
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package reshiki-git in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master bc72770] Updating packages
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master 75dc363] Updating packages
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-39
+r13.1-579
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+------------------------------------------------
+Checking obsolete version (file): libfmt.so.12.2.0
+Path: /usr/lib/libfmt.so.12.2.0
+Skipping generic/unsafe name 'libfmt.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 3 remaining dependents.
+Names tracked: libfmt.so.12 libfmt.so.12.2.0
+Example dependents: ./miniconda3/bin/mamba-package ./miniconda3/lib/libmamba.so.4.0.1 ./miniconda3/lib/python3.14/site-packages/libmambapy/bindings.cpython-314-x86_64-linux-gnu.so ...
+Warning: No parent package found for ANY of the 3 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libfmt.so.12.2.0:
+  - ./miniconda3/bin/mamba-package
+  - ./miniconda3/lib/libmamba.so.4.0.1
+  - ./miniconda3/lib/python3.14/site-packages/libmambapy/bindings.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libfmt.so.12.2.0.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.3-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.2-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
