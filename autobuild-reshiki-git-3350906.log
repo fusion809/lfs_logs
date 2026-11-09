@@ -1,0 +1,102 @@
+[01:58:47] Found custom package for reshiki-git, bypassing BLFS aliases.
+[01:58:47] Custom package detected at /home/fusion809/lfs_packaging/reshiki-git (package: reshiki-git)
+[01:58:47] Extracting dependencies for custom package 'reshiki-git'...
+[01:58:47] Required deps: acl at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz libcanberra libepoxy libffi libice libogg libpng libseccomp libselinux libsm libtool libvorbis libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres libxt ncurses pango pcre2 pixman systemd util-linux wayland zlib 
+[01:58:47] Dependency 'acl' already installed.
+[01:58:47] Dependency 'at-spi2-core' already installed.
+[01:58:47] Dependency 'brotli' already installed.
+[01:58:47] Dependency 'bzip2' already installed.
+[01:58:47] Dependency 'cairo' already installed.
+[01:58:47] Dependency 'dbus' already installed.
+[01:58:47] Dependency 'expat' already installed.
+[01:58:47] Dependency 'fontconfig' already installed.
+[01:58:47] Dependency 'freetype' already installed.
+[01:58:47] Dependency 'fribidi' already installed.
+[01:58:47] Dependency 'gcc' already installed.
+[01:58:47] Dependency 'gdk-pixbuf' already installed.
+[01:58:47] Dependency 'glib2' already installed.
+[01:58:47] Dependency 'glibc' already installed.
+[01:58:47] Dependency 'glycin' already installed.
+[01:58:47] Dependency 'graphite2' already installed.
+[01:58:47] Dependency 'gtk3' already installed.
+[01:58:47] Dependency 'harfbuzz' already installed.
+[01:58:47] Dependency 'libcanberra' already installed.
+[01:58:47] Dependency 'libepoxy' already installed.
+[01:58:47] Dependency 'libffi' already installed.
+[01:58:47] Dependency 'libice' already installed.
+[01:58:47] Dependency 'libogg' already installed.
+[01:58:47] Dependency 'libpng' already installed.
+[01:58:47] Dependency 'libseccomp' already installed.
+[01:58:47] Dependency 'libselinux' already installed.
+[01:58:47] Dependency 'libsm' already installed.
+[01:58:47] Dependency 'libtool' already installed.
+[01:58:47] Dependency 'libvorbis' already installed.
+[01:58:47] Dependency 'libx11' already installed.
+[01:58:47] Dependency 'libxau' already installed.
+[01:58:47] Dependency 'libxcb' already installed.
+[01:58:47] Dependency 'libxcomposite' already installed.
+[01:58:47] Dependency 'libxcursor' already installed.
+[01:58:47] Dependency 'libxdamage' already installed.
+[01:58:47] Dependency 'libxdmcp' already installed.
+[01:58:47] Dependency 'libxext' already installed.
+[01:58:47] Dependency 'libxfixes' already installed.
+[01:58:47] Dependency 'libxi' already installed.
+[01:58:47] Dependency 'libxinerama' already installed.
+[01:58:47] Dependency 'libxkbcommon' already installed.
+[01:58:47] Dependency 'libxrandr' already installed.
+[01:58:47] Dependency 'libxrender' already installed.
+[01:58:47] Dependency 'libxres' already installed.
+[01:58:47] Dependency 'libxt' already installed.
+[01:58:47] Dependency 'ncurses' already installed.
+[01:58:47] Dependency 'pango' already installed.
+[01:58:47] Dependency 'pcre2' already installed.
+[01:58:47] Dependency 'pixman' already installed.
+[01:58:47] Dependency 'systemd' already installed.
+[01:58:47] Dependency 'util-linux' already installed.
+[01:58:47] Dependency 'wayland' already installed.
+[01:58:47] Dependency 'zlib' already installed.
+[VERSION] reshiki-git: ca24cad668285517e14441776063fd23dd2393cb
+[01:58:48] Installing reshiki-git version: ca24cad668285517e14441776063fd23dd2393cb
+[01:58:48] Starting remote custom build for reshiki-git...
+From https://github.com/Ameyanagi/ReShiki
+   43a5a0b4..ff91345d  fix/python-linux-font-fallback -> origin/fix/python-linux-font-fallback
+   560e46af..ca24cad6  main       -> origin/main
+Previous HEAD position was 560e46af Merge pull request #1083 from Ameyanagi/feat/naming-ir-protocol
+HEAD is now at ca24cad6 Merge pull request #1081 from Ameyanagi/fix/python-linux-font-fallback
+   Compiling reshiki-model v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/model)
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:586:55
+    |
+586 |         let event = if let Ok(event) = event_receiver.try_next() {
+    |                                                       ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:297:64
+    |
+297 |                     task::Poll::Pending => match self.receiver.try_next() {
+    |                                                                ^^^^^^^^
+
+warning: `iced_winit` (lib) generated 2 warnings
+   Compiling reshiki-io v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/io)
+   Compiling reshiki-agent v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/agent)
+   Compiling reshiki-mcp v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/mcp)
+   Compiling reshiki v0.14.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki)
+    Finished `release` profile [optimized] target(s) in 10m 40s
+[Desktop Entry]
+Name=ReShiki (git)
+Type=Application
+Exec=/usr/bin/reshiki-git %U
+TryExec=/usr/bin/reshiki-git
+Icon=reshiki-git
+MimeType=chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;chemical/x-smiles;chemical/x-cml;chemical/x-inchi;
+StartupNotify=true
+Categories=Education;Science;Chemistry;
+StartupWMClass=reshiki-git
+Saved working directory and index state WIP on (no branch): ca24cad6 Merge pull request #1081 from Ameyanagi/fix/python-linux-font-fallback
+ca24cad668285517e14441776063fd23dd2393cb
+Updated registry for reshiki-git to version ca24cad668285517e14441776063fd23dd2393cb
+[VERSION] reshiki-git: ca24cad668285517e14441776063fd23dd2393cb
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package reshiki-git in /var/lib/custom-packages/
