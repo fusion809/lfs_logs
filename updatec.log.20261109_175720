@@ -1,0 +1,836 @@
+===== Update check started: 2026-11-09 17:57:20 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261109_175720
+Packages needing attention: bc ghostscript gpgmepp hyfetch kcalendarcore kgamma kholidays libselinux libunwind libva ocamlbuild povray
+===== Starting updatec: 2026-11-09 17:59:28 AEST =====
+Checking for packages with missing file inventories...
+name=ghostscript
+local_ver=10.08.0
+remote_ver=10..0.8.0
+name=gpgmepp
+local_ver=2.2.0
+remote_ver=15.12.3
+name=hyfetch
+local_ver=2.1.1
+remote_ver=8.1.0
+name=kcalendarcore
+local_ver=6.31.0
+remote_ver=19.08.3
+Failed to check custom update version for: json-c
+name=json-c
+local_ver=0.19
+remote_ver=FAILED
+name=kgamma
+local_ver=6.7.6
+remote_ver=15.07.80
+name=kholidays
+local_ver=6.31.0
+remote_ver=17.12.3
+name=libselinux
+local_ver=3.11
+remote_ver=20131030.4
+name=libsepol
+local_ver=3.11
+remote_ver=20131030.4
+name=libunwind
+local_ver=1.8.3
+remote_ver=4.0.10
+name=libva
+local_ver=2.24.1
+remote_ver=20110104.5.3.0.0035
+name=ocamlbuild
+local_ver=0.16.1
+remote_ver=4.02.3
+name=povray
+local_ver=3.7.0.10
+remote_ver=3.7.0.20140613
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - kholidays
+  - kcalendarcore
+  - kgamma
+  - ghostscript
+  - gpgmepp
+  - hyfetch
+  - libsepol
+  - libselinux
+  - libunwind
+  - libva
+  - ocamlbuild
+  - povray
+  - reshiki-git
+
+Building custom package kholidays...
+[18:13:19] Found custom package for kholidays, bypassing BLFS aliases.
+[18:13:19] Custom package detected at /home/fusion809/lfs_packaging/kholidays (package: kholidays)
+[18:13:19] Extracting dependencies for custom package 'kholidays'...
+[18:13:19] Required deps: brotli double-conversion e2fsprogs gcc glib2 glibc icu keyutils mitkrb openssl pcre2 qt6 systemd zlib zstd 
+[18:13:19] Dependency 'brotli' already installed.
+[18:13:19] Dependency 'double-conversion' already installed.
+[18:13:19] Dependency 'e2fsprogs' already installed.
+[18:13:19] Dependency 'gcc' already installed.
+[18:13:19] Dependency 'glib2' already installed.
+[18:13:19] Dependency 'glibc' already installed.
+[18:13:19] Dependency 'icu' already installed.
+[18:13:19] Dependency 'keyutils' already installed.
+[18:13:19] Dependency 'mitkrb' already installed.
+[18:13:19] Dependency 'openssl' already installed.
+[18:13:19] Dependency 'pcre2' already installed.
+[18:13:19] Dependency 'qt6' already installed.
+[18:13:19] Dependency 'systemd' already installed.
+[18:13:19] Dependency 'zlib' already installed.
+[18:13:19] Dependency 'zstd' already installed.
+[VERSION] kholidays: 17.12.3
+[18:13:25] Installing kholidays version: 17.12.3
+[18:13:25] Starting remote custom build for kholidays...
+--2026-11-09 18:13:30--  https://download.kde.org/stable/frameworks/6.31/kholidays-6.31.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://mirrors.xtom.au/kde/stable/frameworks/6.31/kholidays-6.31.0.tar.xz [following]
+--2026-11-09 18:13:32--  https://mirrors.xtom.au/kde/stable/frameworks/6.31/kholidays-6.31.0.tar.xz
+Resolving mirrors.xtom.au (mirrors.xtom.au)... 146.19.0.8, 2a11:3::8
+Connecting to mirrors.xtom.au (mirrors.xtom.au)|146.19.0.8|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 277632 (271K) [application/octet-stream]
+Saving to: ‘kholidays-6.31.0.tar.xz’
+
+kholidays-6.31.0.ta   0%[                    ]       0  --.-KB/s               kholidays-6.31.0.ta 100%[===================>] 271.12K  --.-KB/s    in 0.1s    
+
+2026-11-09 18:13:33 (2.45 MB/s) - ‘kholidays-6.31.0.tar.xz’ saved [277632/277632]
+
+kholidays-6.31.0.tar.xz already present and appears valid.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:10 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/kholidays/kholidays-6.31.0/build/prefix.sh to set the environment for KHolidays.
+fatal: no upstream configured for branch 'master'
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Found FLEX: /usr/bin/flex (found version "2.6.4")
+-- Found BISON: /usr/bin/bison (found suitable version "3.8.2", minimum required is "3.3.2")
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6Core
+ * Qt6QmlTools (required version >= 6.12.0)
+ * Qt6Qml
+ * Qt6LinguistTools
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.31.0)
+ * FLEX, Fast Lexical Analyzer, <https://github.com/westes/flex>
+   Required to generate the plan2 parser
+ * BISON (required version >= 3.3.2), general-purpose parser generator, <https://www.gnu.org/software/bison>
+   Required to generate the plan2 parser
+ * Qt6
+
+-- Configuring done (6.3s)
+-- Generating done (0.2s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_PYTHON_BINDINGS
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/kholidays/kholidays-6.31.0/build
+[  0%] Generating ECMPoQm/ar/libkholidays6_qt.qm
+[  1%] Generating ECMPoQm/az/libkholidays6_qt.qm
+[  2%] Generating ECMPoQm/ast/libkholidays6_qt.qm
+[  2%] Built target translations_2
+[  2%] Built target translations_1
+[  2%] Built target translations_3
+[  2%] Generating ECMPoQm/be/libkholidays6_qt.qm
+[  4%] Generating ECMPoQm/bg/libkholidays6_qt.qm
+[  4%] Generating ECMPoQm/br/libkholidays6_qt.qm
+[  4%] Built target translations_6
+[  4%] Built target translations_5
+[  4%] Built target translations_4
+[  4%] Generating ECMPoQm/bs/libkholidays6_qt.qm
+[  5%] Generating ECMPoQm/ca/libkholidays6_qt.qm
+[  6%] Generating ECMPoQm/ca@valencia/libkholidays6_qt.qm
+[  6%] Built target translations_8
+[  6%] Built target translations_7
+[  6%] Built target translations_9
+[  7%] Generating ECMPoQm/cs/libkholidays6_qt.qm
+[  8%] Generating ECMPoQm/da/libkholidays6_qt.qm
+[ 10%] Generating ECMPoQm/cy/libkholidays6_qt.qm
+[ 10%] Built target translations_10
+[ 10%] Built target translations_12
+[ 10%] Built target translations_11
+[ 11%] Generating ECMPoQm/de/libkholidays6_qt.qm
+[ 11%] Generating ECMPoQm/el/libkholidays6_qt.qm
+[ 12%] Generating ECMPoQm/en_GB/libkholidays6_qt.qm
+[ 12%] Built target translations_13
+[ 12%] Built target translations_14
+[ 12%] Built target translations_15
+[ 13%] Generating ECMPoQm/eo/libkholidays6_qt.qm
+[ 14%] Generating ECMPoQm/es/libkholidays6_qt.qm
+[ 15%] Generating ECMPoQm/et/libkholidays6_qt.qm
+[ 15%] Built target translations_16
+[ 15%] Built target translations_17
+[ 15%] Built target translations_18
+[ 16%] Generating ECMPoQm/fa/libkholidays6_qt.qm
+[ 16%] Generating ECMPoQm/eu/libkholidays6_qt.qm
+[ 17%] Generating ECMPoQm/fi/libkholidays6_qt.qm
+[ 17%] Built target translations_20
+[ 17%] Built target translations_21
+[ 17%] Built target translations_19
+[ 17%] Generating ECMPoQm/fr/libkholidays6_qt.qm
+[ 18%] Generating ECMPoQm/fy/libkholidays6_qt.qm
+[ 20%] Generating ECMPoQm/ga/libkholidays6_qt.qm
+[ 20%] Built target translations_22
+[ 20%] Built target translations_24
+[ 20%] Built target translations_23
+[ 21%] Generating ECMPoQm/gl/libkholidays6_qt.qm
+[ 22%] Generating ECMPoQm/he/libkholidays6_qt.qm
+[ 22%] Built target translations_25
+[ 22%] Generating ECMPoQm/hi/libkholidays6_qt.qm
+[ 23%] Generating ECMPoQm/hne/libkholidays6_qt.qm
+[ 23%] Built target translations_26
+[ 23%] Built target translations_27
+[ 23%] Built target translations_28
+[ 24%] Generating ECMPoQm/hu/libkholidays6_qt.qm
+[ 25%] Generating ECMPoQm/ia/libkholidays6_qt.qm
+[ 25%] Generating ECMPoQm/id/libkholidays6_qt.qm
+[ 25%] Built target translations_30
+[ 25%] Built target translations_31
+[ 25%] Built target translations_29
+[ 26%] Generating ECMPoQm/is/libkholidays6_qt.qm
+[ 27%] Generating ECMPoQm/ja/libkholidays6_qt.qm
+[ 28%] Generating ECMPoQm/it/libkholidays6_qt.qm
+[ 28%] Built target translations_32
+[ 28%] Built target translations_34
+[ 28%] Built target translations_33
+[ 28%] Generating ECMPoQm/ka/libkholidays6_qt.qm
+[ 30%] Generating ECMPoQm/kk/libkholidays6_qt.qm
+[ 31%] Generating ECMPoQm/km/libkholidays6_qt.qm
+[ 31%] Built target translations_35
+[ 31%] Built target translations_37
+[ 31%] Built target translations_36
+[ 32%] Generating ECMPoQm/ko/libkholidays6_qt.qm
+[ 33%] Generating ECMPoQm/lt/libkholidays6_qt.qm
+[ 34%] Generating ECMPoQm/lv/libkholidays6_qt.qm
+[ 34%] Built target translations_40
+[ 34%] Built target translations_39
+[ 34%] Built target translations_38
+[ 35%] Generating ECMPoQm/mk/libkholidays6_qt.qm
+[ 36%] Generating ECMPoQm/ml/libkholidays6_qt.qm
+[ 37%] Generating ECMPoQm/mr/libkholidays6_qt.qm
+[ 37%] Built target translations_41
+[ 37%] Built target translations_43
+[ 37%] Generating ECMPoQm/ms/libkholidays6_qt.qm
+[ 37%] Built target translations_42
+[ 38%] Generating ECMPoQm/nb/libkholidays6_qt.qm
+[ 38%] Built target translations_44
+[ 40%] Generating ECMPoQm/nds/libkholidays6_qt.qm
+[ 40%] Built target translations_45
+[ 41%] Generating ECMPoQm/ne/libkholidays6_qt.qm
+[ 41%] Built target translations_46
+[ 42%] Generating ECMPoQm/nl/libkholidays6_qt.qm
+[ 42%] Built target translations_47
+[ 42%] Generating ECMPoQm/nn/libkholidays6_qt.qm
+[ 43%] Generating ECMPoQm/pa/libkholidays6_qt.qm
+[ 43%] Built target translations_48
+[ 43%] Built target translations_49
+[ 43%] Built target translations_50
+[ 44%] Generating ECMPoQm/pl/libkholidays6_qt.qm
+[ 44%] Generating ECMPoQm/pt/libkholidays6_qt.qm
+[ 45%] Generating ECMPoQm/pt_BR/libkholidays6_qt.qm
+[ 45%] Built target translations_51
+[ 45%] Built target translations_52
+[ 46%] Generating ECMPoQm/ro/libkholidays6_qt.qm
+[ 47%] Generating ECMPoQm/ru/libkholidays6_qt.qm
+[ 47%] Built target translations_53
+[ 47%] Built target translations_54
+[ 48%] Generating ECMPoQm/sa/libkholidays6_qt.qm
+[ 48%] Built target translations_55
+[ 48%] Generating ECMPoQm/se/libkholidays6_qt.qm
+[ 50%] Generating ECMPoQm/sk/libkholidays6_qt.qm
+[ 50%] Built target translations_56
+[ 50%] Built target translations_58
+[ 50%] Built target translations_57
+[ 51%] Generating ECMPoQm/sl/libkholidays6_qt.qm
+[ 51%] Generating ECMPoQm/sr/libkholidays6_qt.qm
+[ 52%] Generating ECMPoQm/sq/libkholidays6_qt.qm
+[ 52%] Built target translations_59
+[ 52%] Built target translations_60
+[ 52%] Built target translations_61
+[ 53%] Generating ECMPoQm/sr@ijekavian/libkholidays6_qt.qm
+[ 54%] Generating ECMPoQm/sr@ijekavianlatin/libkholidays6_qt.qm
+[ 55%] Generating ECMPoQm/sr@latin/libkholidays6_qt.qm
+[ 55%] Built target translations_62
+[ 55%] Built target translations_63
+[ 55%] Built target translations_64
+[ 55%] Generating ECMPoQm/sv/libkholidays6_qt.qm
+[ 56%] Generating ECMPoQm/ta/libkholidays6_qt.qm
+[ 57%] Generating ECMPoQm/tg/libkholidays6_qt.qm
+[ 57%] Built target translations_65
+[ 57%] Built target translations_66
+[ 57%] Built target translations_67
+[ 58%] Generating ECMPoQm/th/libkholidays6_qt.qm
+[ 60%] Generating ECMPoQm/ug/libkholidays6_qt.qm
+[ 61%] Generating ECMPoQm/tr/libkholidays6_qt.qm
+[ 61%] Built target translations_68
+[ 61%] Built target translations_70
+[ 61%] Built target translations_69
+[ 62%] Generating ECMPoQm/uk/libkholidays6_qt.qm
+[ 63%] Generating ECMPoQm/uz/libkholidays6_qt.qm
+[ 64%] Generating ECMPoQm/uz@cyrillic/libkholidays6_qt.qm
+[ 64%] Built target translations_71
+[ 64%] Built target translations_72
+[ 64%] Built target translations_73
+[ 65%] Generating ECMPoQm/zh_CN/libkholidays6_qt.qm
+[ 65%] Generating ECMPoQm/wa/libkholidays6_qt.qm
+[ 66%] Generating ECMPoQm/zh_TW/libkholidays6_qt.qm
+[ 66%] Built target translations_74
+[ 66%] Built target translations_75
+[ 66%] Built target translations_76
+[ 67%] [BISON][KF6HolidaysParser] Building parser with bison 3.8.2
+[ 68%] Copying kholidaysdeclarativeplugin qml resources into build dir
+[ 70%] Populating .qmlls.build.ini file at /home/fusion809/lfs_packaging/kholidays/kholidays-6.31.0/build/.qt/.qmlls.build.ini
+[ 70%] Built target kholidaysdeclarativeplugin_copy_res
+[ 71%] Copying kholidaysdeclarativeplugin qml sources into build dir
+[ 71%] Built target kholidaysdeclarativeplugin_copy_qml
+[ 72%] [FLEX][KF6HolidaysLexer] Building scanner with flex 2.6.4
+[ 72%] Built target generate_qmlls_build_ini_file
+[ 72%] Built target KF6Holidays_autogen_timestamp_deps
+[ 73%] Automatic MOC for target KF6Holidays
+[ 73%] Built target KF6Holidays_autogen
+[ 73%] Automatic RCC for ../holidays/holidays.qrc
+[ 74%] Building CXX object src/CMakeFiles/KF6Holidays.dir/KF6Holidays_autogen/mocs_compilation.cpp.o
+[ 76%] Building CXX object src/CMakeFiles/KF6Holidays.dir/astroseasons.cpp.o
+[ 76%] Building CXX object src/CMakeFiles/KF6Holidays.dir/hebrewconverter.cpp.o
+[ 76%] Building CXX object src/CMakeFiles/KF6Holidays.dir/holiday.cpp.o
+[ 77%] Building CXX object src/CMakeFiles/KF6Holidays.dir/holidaycategories.cpp.o
+[ 78%] Building CXX object src/CMakeFiles/KF6Holidays.dir/holidayregion.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/KF6Holidays.dir/lunarphase.cpp.o
+[ 81%] Building CXX object src/CMakeFiles/KF6Holidays.dir/parsers/holidayparserdriver.cpp.o
+[ 81%] Building CXX object src/CMakeFiles/KF6Holidays.dir/parsers/plan2/holidayparserdriverplan.cpp.o
+[ 82%] Building CXX object src/CMakeFiles/KF6Holidays.dir/parsers/qcalendarsystem.cpp.o
+[ 83%] Building CXX object src/CMakeFiles/KF6Holidays.dir/sunevents.cpp.o
+[ 84%] Building CXX object src/CMakeFiles/KF6Holidays.dir/sunriseset.cpp.o
+[ 85%] Building CXX object src/CMakeFiles/KF6Holidays.dir/zodiac.cpp.o
+[ 85%] Building CXX object src/CMakeFiles/KF6Holidays.dir/holidayparserplan.cpp.o
+[ 86%] Building CXX object src/CMakeFiles/KF6Holidays.dir/holidayscannerplan.cpp.o
+[ 87%] Building CXX object src/CMakeFiles/KF6Holidays.dir/ECMQmLoader-libkholidays6_qt.cpp.o
+[ 88%] Building CXX object src/CMakeFiles/KF6Holidays.dir/kholidays_debug.cpp.o
+[ 88%] Building CXX object src/CMakeFiles/KF6Holidays.dir/KF6Holidays_autogen/FVH3S7AUNZ/qrc_holidays.cpp.o
+[ 90%] Linking CXX shared library ../bin/libKF6Holidays.so
+[ 90%] Built target KF6Holidays
+[ 90%] Built target kholidaysdeclarativeplugin_autogen_timestamp_deps
+[ 91%] Automatic MOC for target kholidaysdeclarativeplugin
+[ 91%] Built target kholidaysdeclarativeplugin_autogen
+[ 92%] Running AUTOMOC file extraction for target kholidaysdeclarativeplugin
+[ 93%] Running rcc for resource qmake_org_kde_kholidays
+[ 93%] Running moc --collect-json for target kholidaysdeclarativeplugin
+[ 94%] Generating meta_types/qt6kholidaysdeclarativeplugin_metatypes.json
+[ 95%] Automatic QML type registration for target kholidaysdeclarativeplugin
+[ 96%] Building CXX object src/declarative/CMakeFiles/kholidaysdeclarativeplugin.dir/kholidaysdeclarativeplugin_qmltyperegistrations.cpp.o
+[ 97%] Building CXX object src/declarative/CMakeFiles/kholidaysdeclarativeplugin.dir/.qt/rcc/qrc_qmake_org_kde_kholidays.cpp.o
+[ 97%] Building CXX object src/declarative/CMakeFiles/kholidaysdeclarativeplugin.dir/kholidaysdeclarativeplugin_autogen/mocs_compilation.cpp.o
+[ 98%] Building CXX object src/declarative/CMakeFiles/kholidaysdeclarativeplugin.dir/kholidaysdeclarativeplugin.cpp.o
+[100%] Building CXX object src/declarative/CMakeFiles/kholidaysdeclarativeplugin.dir/holidayregionsmodel.cpp.o
+[100%] Linking CXX shared module ../../bin/org/kde/kholidays/libkholidaysdeclarativeplugin.so
+[100%] Built target kholidaysdeclarativeplugin
+[  0%] Built target translations_1
+[  1%] Built target translations_2
+[  2%] Built target translations_3
+[  2%] Built target translations_4
+[  3%] Built target translations_5
+[  4%] Built target translations_6
+[  4%] Built target translations_7
+[  5%] Built target translations_8
+[  6%] Built target translations_9
+[  7%] Built target translations_10
+[  8%] Built target translations_11
+[ 10%] Built target translations_12
+[ 11%] Built target translations_13
+[ 11%] Built target translations_14
+[ 12%] Built target translations_15
+[ 13%] Built target translations_16
+[ 14%] Built target translations_17
+[ 15%] Built target translations_18
+[ 15%] Built target translations_19
+[ 16%] Built target translations_20
+[ 17%] Built target translations_21
+[ 17%] Built target translations_22
+[ 18%] Built target translations_23
+[ 20%] Built target translations_24
+[ 21%] Built target translations_25
+[ 22%] Built target translations_26
+[ 22%] Built target translations_27
+[ 23%] Built target translations_28
+[ 24%] Built target translations_29
+[ 25%] Built target translations_30
+[ 25%] Built target translations_31
+[ 26%] Built target translations_32
+[ 27%] Built target translations_33
+[ 28%] Built target translations_34
+[ 28%] Built target translations_35
+[ 30%] Built target translations_36
+[ 31%] Built target translations_37
+[ 32%] Built target translations_38
+[ 33%] Built target translations_39
+[ 34%] Built target translations_40
+[ 35%] Built target translations_41
+[ 36%] Built target translations_42
+[ 37%] Built target translations_43
+[ 37%] Built target translations_44
+[ 38%] Built target translations_45
+[ 40%] Built target translations_46
+[ 41%] Built target translations_47
+[ 42%] Built target translations_48
+[ 42%] Built target translations_49
+[ 43%] Built target translations_50
+[ 44%] Built target translations_51
+[ 44%] Built target translations_52
+[ 45%] Built target translations_53
+[ 46%] Built target translations_54
+[ 47%] Built target translations_55
+[ 48%] Built target translations_56
+[ 48%] Built target translations_57
+[ 50%] Built target translations_58
+[ 51%] Built target translations_59
+[ 52%] Built target translations_60
+[ 52%] Built target translations_61
+[ 53%] Built target translations_62
+[ 54%] Built target translations_63
+[ 55%] Built target translations_64
+[ 55%] Built target translations_65
+[ 56%] Built target translations_66
+[ 57%] Built target translations_67
+[ 58%] Built target translations_68
+[ 60%] Built target translations_69
+[ 61%] Built target translations_70
+[ 62%] Built target translations_71
+[ 63%] Built target translations_72
+[ 64%] Built target translations_73
+[ 64%] Built target translations_74
+[ 65%] Built target translations_75
+[ 66%] Built target translations_76
+[ 68%] Built target KF6Holidays_autogen_timestamp_deps
+[ 70%] Automatic MOC for target KF6Holidays
+[ 70%] Built target KF6Holidays_autogen
+[ 71%] Building CXX object src/CMakeFiles/KF6Holidays.dir/lunarphase.cpp.o
+[ 72%] Linking CXX shared library ../bin/libKF6Holidays.so
+[ 86%] Built target KF6Holidays
+[ 87%] Built target kholidaysdeclarativeplugin_copy_res
+[ 88%] Built target generate_qmlls_build_ini_file
+[ 90%] Built target kholidaysdeclarativeplugin_copy_qml
+[ 90%] Built target kholidaysdeclarativeplugin_autogen_timestamp_deps
+[ 91%] Built target kholidaysdeclarativeplugin_autogen
+[100%] Built target kholidaysdeclarativeplugin
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/lib/libKF6Holidays.so.6.31.0
+-- Up-to-date: /usr/lib/libKF6Holidays.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKF6Holidays.so.6.31.0" to ""
+-- Up-to-date: /usr/lib/libKF6Holidays.so
+-- Installing: /usr/include/KF6/KHolidays/kholidays/kholidays_export.h
+-- Up-to-date: /usr/include/KF6/KHolidays/kholidays/astroseasons.h
+-- Up-to-date: /usr/include/KF6/KHolidays/kholidays/hebrewconverter.h
+-- Up-to-date: /usr/include/KF6/KHolidays/kholidays/holiday.h
+-- Up-to-date: /usr/include/KF6/KHolidays/kholidays/holidaycategories.h
+-- Up-to-date: /usr/include/KF6/KHolidays/kholidays/holidayregion.h
+-- Up-to-date: /usr/include/KF6/KHolidays/kholidays/lunarphase.h
+-- Up-to-date: /usr/include/KF6/KHolidays/kholidays/sunevents.h
+-- Up-to-date: /usr/include/KF6/KHolidays/kholidays/sunriseset.h
+-- Up-to-date: /usr/include/KF6/KHolidays/kholidays/zodiac.h
+-- Installing: /usr/include/KF6/KHolidays/KHolidays/AstroSeasons
+-- Installing: /usr/include/KF6/KHolidays/KHolidays/HebrewConverter
+-- Installing: /usr/include/KF6/KHolidays/KHolidays/Holiday
+-- Installing: /usr/include/KF6/KHolidays/KHolidays/HolidayCategories
+-- Installing: /usr/include/KF6/KHolidays/KHolidays/HolidayRegion
+-- Installing: /usr/include/KF6/KHolidays/KHolidays/LunarPhase
+-- Installing: /usr/include/KF6/KHolidays/KHolidays/SunEvents
+-- Installing: /usr/include/KF6/KHolidays/KHolidays/SunRiseSet
+-- Installing: /usr/include/KF6/KHolidays/KHolidays/Zodiac
+-- Installing: /usr/lib/qml/org/kde/kholidays/libkholidaysdeclarativeplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kholidays/libkholidaysdeclarativeplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kholidays/qmldir
+-- Installing: /usr/lib/qml/org/kde/kholidays/kholidaysdeclarativeplugin.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kholidays/kde-qmlmodule.version
+-- Installing: /usr/share/qlogging-categories6/kholidays.categories
+-- Installing: /usr/share/locale/ar/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ast/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/az/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/be/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/bg/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/br/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/bs/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ca/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ca@valencia/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/cs/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/cy/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/da/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/de/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/el/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/en_GB/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/eo/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/es/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/et/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/eu/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/fa/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/fi/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/fr/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/fy/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ga/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/gl/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/he/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/hi/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/hne/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/hu/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ia/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/id/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/is/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/it/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ja/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ka/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/kk/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/km/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ko/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/lt/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/lv/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/mk/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ml/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/mr/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ms/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/nb/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/nds/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ne/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/nl/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/nn/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/pa/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/pl/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/pt/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/pt_BR/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ro/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ru/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/sa/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/se/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/sk/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/sl/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/sq/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/sr/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/sr@ijekavian/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/sr@latin/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/sv/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ta/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/tg/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/th/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/tr/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/ug/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/uk/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/uz/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/uz@cyrillic/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/wa/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/zh_CN/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/share/locale/zh_TW/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /usr/lib/cmake/KF6Holidays/KF6HolidaysConfig.cmake
+-- Installing: /usr/lib/cmake/KF6Holidays/KF6HolidaysConfigVersion.cmake
+-- Installing: /usr/lib/cmake/KF6Holidays/KF6HolidaysTargets.cmake
+-- Installing: /usr/lib/cmake/KF6Holidays/KF6HolidaysTargets-release.cmake
+-- Installing: /usr/include/KF6/KHolidays/kholidays_version.h
+6.31.0
+Updated registry for kholidays to version 17.12.3
+[VERSION] kholidays: 17.12.3
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package kholidays in /var/lib/custom-packages/
+Building custom package kcalendarcore...
+[18:14:55] Found custom package for kcalendarcore, bypassing BLFS aliases.
+[18:14:55] Custom package detected at /home/fusion809/lfs_packaging/kcalendarcore (package: kcalendarcore)
+[18:14:55] Extracting dependencies for custom package 'kcalendarcore'...
+[18:14:55] Required deps: brotli bzip2 dbus double-conversion e2fsprogs elfutils expat fontconfig freetype gcc glib2 glibc graphite2 harfbuzz icu keyutils libdrm libffi libglvnd libical libpciaccess libpng libx11 libxau libxcb libxdmcp libxext libxkbcommon libxml2 libxshmfence libxxf86vm llvm lm-sensors mesa mitkrb openssl pcre2 qt6 spirv-tools systemd wayland xz zlib zstd 
+[18:14:55] Dependency 'brotli' already installed.
+[18:14:55] Dependency 'bzip2' already installed.
+[18:14:55] Dependency 'dbus' already installed.
+[18:14:55] Dependency 'double-conversion' already installed.
+[18:14:55] Dependency 'e2fsprogs' already installed.
+[18:14:55] Dependency 'elfutils' already installed.
+[18:14:55] Dependency 'expat' already installed.
+[18:14:55] Dependency 'fontconfig' already installed.
+[18:14:55] Dependency 'freetype' already installed.
+[18:14:55] Dependency 'gcc' already installed.
+[18:14:55] Dependency 'glib2' already installed.
+[18:14:55] Dependency 'glibc' already installed.
+[18:14:56] Dependency 'graphite2' already installed.
+[18:14:56] Dependency 'harfbuzz' already installed.
+[18:14:56] Dependency 'icu' already installed.
+[18:14:56] Dependency 'keyutils' already installed.
+[18:14:56] Dependency 'libdrm' already installed.
+[18:14:56] Dependency 'libffi' already installed.
+[18:14:56] Dependency 'libglvnd' already installed.
+[18:14:56] Dependency 'libical' already installed.
+[18:14:56] Dependency 'libpciaccess' already installed.
+[18:14:56] Dependency 'libpng' already installed.
+[18:14:56] Dependency 'libx11' already installed.
+[18:14:56] Dependency 'libxau' already installed.
+[18:14:56] Dependency 'libxcb' already installed.
+[18:14:56] Dependency 'libxdmcp' already installed.
+[18:14:56] Dependency 'libxext' already installed.
+[18:14:56] Dependency 'libxkbcommon' already installed.
+[18:14:56] Dependency 'libxml2' already installed.
+[18:14:56] Dependency 'libxshmfence' already installed.
+[18:14:56] Dependency 'libxxf86vm' already installed.
+[18:14:56] Dependency 'llvm' already installed.
+[18:14:56] Dependency 'lm-sensors' already installed.
+[18:14:56] Dependency 'mesa' already installed.
+[18:14:56] Dependency 'mitkrb' already installed.
+[18:14:56] Dependency 'openssl' already installed.
+[18:14:56] Dependency 'pcre2' already installed.
+[18:14:56] Dependency 'qt6' already installed.
+[18:14:56] Dependency 'spirv-tools' already installed.
+[18:14:56] Dependency 'systemd' already installed.
+[18:14:56] Dependency 'wayland' already installed.
+[18:14:56] Dependency 'xz' already installed.
+[18:14:56] Dependency 'zlib' already installed.
+[18:14:56] Dependency 'zstd' already installed.
+[VERSION] kcalendarcore: 19.08.3
+[18:15:02] Installing kcalendarcore version: 19.08.3
+[18:15:02] Starting remote custom build for kcalendarcore...
+--2026-11-09 18:15:05--  https://download.kde.org/stable/frameworks/6.31/kcalendarcore-6.31.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://mirrors.xtom.au/kde/stable/frameworks/6.31/kcalendarcore-6.31.0.tar.xz [following]
+--2026-11-09 18:15:07--  https://mirrors.xtom.au/kde/stable/frameworks/6.31/kcalendarcore-6.31.0.tar.xz
+Resolving mirrors.xtom.au (mirrors.xtom.au)... 146.19.0.8, 2a11:3::8
+Connecting to mirrors.xtom.au (mirrors.xtom.au)|146.19.0.8|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 373372 (365K) [application/octet-stream]
+Saving to: ‘kcalendarcore-6.31.0.tar.xz’
+
+          kcalendar   0%[                    ]       0  --.-KB/s               kcalendarcore-6.31. 100%[===================>] 364.62K  --.-KB/s    in 0.1s    
+
+2026-11-09 18:15:07 (2.84 MB/s) - ‘kcalendarcore-6.31.0.tar.xz’ saved [373372/373372]
+
+kcalendarcore-6.31.0.tar.xz already present and appears valid.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:28 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/kcalendarcore/kcalendarcore-6.31.0/build/prefix.sh to set the environment for KCalendarCore.
+fatal: no upstream configured for branch 'master'
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found LibIcal: /usr/lib/libical.so;/usr/lib/libicalss.so;/usr/lib/libicalvcal.so (found suitable version "4.0.7", minimum required is "3.0")
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6Core
+ * Qt6QmlTools (required version >= 6.12.0)
+ * Qt6Qml
+ * OpenGL
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.12.0)
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6DBusTools (required version >= 6.12.0)
+ * Qt6Gui (required version >= 6.10.0)
+ * Qt6LinguistTools
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.31.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * LibIcal (required version >= 3.0), Implementation of iCalendar protocols and data formats, <https://github.com/libical/libical>
+ * Qt6
+
+-- The following features have been disabled:
+
+ * PYTHON_BINDINGS, Python bindings
+
+-- Configuring done (6.2s)
+-- Generating done (0.3s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/kcalendarcore/kcalendarcore-6.31.0/build
+[  2%] Generating ECMPoQm/ar/kcalendarcore6_qt.qm
+[  2%] Generating ECMPoQm/ca/kcalendarcore6_qt.qm
+[  3%] Generating ECMPoQm/ca@valencia/kcalendarcore6_qt.qm
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+[  3%] Built target translations_1
+make[2]: Warning: File 'CMakeFiles/translations_4.dir/progress.make' has modification time 0.1 s in the future
+[  3%] Built target translations_2
+make[2]: Warning: File 'CMakeFiles/translations_5.dir/progress.make' has modification time 0.1 s in the future
+[  3%] Built target translations_3
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: Warning: File 'CMakeFiles/translations_6.dir/progress.make' has modification time 0.063 s in the future
+make[2]: Warning: File 'CMakeFiles/translations_5.dir/progress.make' has modification time 0.062 s in the future
+make[2]: Warning: File 'CMakeFiles/translations_4.dir/progress.make' has modification time 0.062 s in the future
+[  4%] Generating ECMPoQm/en/kcalendarcore6_qt.qm
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[  6%] Generating ECMPoQm/de/kcalendarcore6_qt.qm
+make[2]: Warning: File 'CMakeFiles/translations_6.dir/progress.make' has modification time 0.025 s in the future
+[  7%] Generating ECMPoQm/es/kcalendarcore6_qt.qm
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[  7%] Built target translations_5
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[  7%] Built target translations_4
+[  7%] Built target translations_6
+[  9%] Generating ECMPoQm/eu/kcalendarcore6_qt.qm
+[  9%] Generating ECMPoQm/fr/kcalendarcore6_qt.qm
+[ 10%] Generating ECMPoQm/he/kcalendarcore6_qt.qm
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+[ 10%] Built target translations_7
+[ 10%] Built target translations_8
+[ 10%] Built target translations_9
+[ 13%] Generating ECMPoQm/it/kcalendarcore6_qt.qm
+[ 13%] Generating ECMPoQm/ka/kcalendarcore6_qt.qm
+[ 14%] Generating ECMPoQm/ko/kcalendarcore6_qt.qm
+[ 14%] Built target translations_11
+[ 14%] Built target translations_10
+[ 14%] Built target translations_12
+[ 15%] Generating ECMPoQm/pl/kcalendarcore6_qt.qm
+[ 16%] Generating ECMPoQm/nl/kcalendarcore6_qt.qm
+[ 18%] Generating ECMPoQm/pt_BR/kcalendarcore6_qt.qm
+[ 18%] Built target translations_14
+[ 18%] Built target translations_13
+[ 19%] Generating ECMPoQm/sk/kcalendarcore6_qt.qm
+[ 19%] Built target translations_15
+[ 20%] Generating ECMPoQm/sl/kcalendarcore6_qt.qm
+[ 20%] Built target translations_16
+[ 21%] Generating ECMPoQm/tr/kcalendarcore6_qt.qm
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+[ 21%] Built target translations_17
+[ 22%] Generating ECMPoQm/ug/kcalendarcore6_qt.qm
+[ 22%] Built target translations_18
+[ 24%] Generating ECMPoQm/uk/kcalendarcore6_qt.qm
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+[ 24%] Built target translations_19
+[ 24%] Built target translations_20
+[ 25%] Generating ECMPoQm/zh_CN/kcalendarcore6_qt.qm
+[ 26%] Generating ECMPoQm/zh_TW/kcalendarcore6_qt.qm
+[ 26%] Built target KF6CalendarCore_autogen_timestamp_deps
+[ 26%] Built target translations_21
+[ 26%] Built target translations_22
+[ 27%] Copying kcalendarcoreqml qml resources into build dir
+[ 28%] Populating .qmlls.build.ini file at /home/fusion809/lfs_packaging/kcalendarcore/kcalendarcore-6.31.0/build/.qt/.qmlls.build.ini
+[ 30%] Copying kcalendarcoreqml qml sources into build dir
+[ 30%] Built target kcalendarcoreqml_copy_res
+[ 30%] Built target kcalendarcoreqml_copy_qml
+[ 31%] Automatic MOC for target KF6CalendarCore
+[ 31%] Built target generate_qmlls_build_ini_file
+[ 31%] Built target KF6CalendarCore_autogen
+[ 32%] Running AUTOMOC file extraction for target KF6CalendarCore
+[ 33%] Running moc --collect-json for target KF6CalendarCore
+[ 34%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/KF6CalendarCore_autogen/mocs_compilation.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/attachment.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/alarm.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/attendee.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calendar.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calendarlistmodel.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calendarplugin.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calendarpluginloader.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calfilter.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calformat.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calstorage.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/compat.cpp.o
+[ 49%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/conference.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/customproperties.cpp.o
+[ 51%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/duration.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/event.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/exceptions.cpp.o
+[ 55%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/filestorage.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/freebusycache.cpp.o
+[ 57%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/freebusy.cpp.o
+[ 59%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/freebusyperiod.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/icalformat.cpp.o
+[ 61%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/icalformat_p.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/icaltimezones.cpp.o
+[ 63%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/incidencebase.cpp.o
+[ 65%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/incidence.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/journal.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/memorycalendar.cpp.o
+[ 68%] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/mimedata.cpp.o
+/home/fusion809/lfs-scripts/updates_check_and_run.sh: line 163: 3859828 Killed                     zsh -ic 'updatec'
+===== ERROR: updatec exited with status 137 =====
+Finished: 2026-11-09 18:17:01 AEST
+Exit status: 137

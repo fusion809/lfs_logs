@@ -1,0 +1,39 @@
+[18:16:13] Found custom package for bc, bypassing BLFS aliases.
+[18:16:14] Custom package detected at /home/fusion809/lfs_packaging/bc (package: bc)
+[18:16:14] Extracting dependencies for custom package 'bc'...
+[18:16:14] Required deps: coreutils gcc glibc make ncurses readline tar xz 
+[18:16:14] Dependency 'coreutils' already installed.
+[18:16:14] Dependency 'gcc' already installed.
+[18:16:14] Dependency 'glibc' already installed.
+[18:16:14] Dependency 'make' already installed.
+[18:16:14] Dependency 'ncurses' already installed.
+[18:16:14] Dependency 'readline' already installed.
+[18:16:14] Dependency 'tar' already installed.
+[18:16:14] Dependency 'xz' already installed.
+[VERSION] bc: 7.1.0
+[18:16:21] Installing bc version: 7.1.0
+[18:16:21] Starting remote custom build for bc...
+--2026-11-09 18:16:27--  https://github.com/gavinhoward/bc/archive/7.1.0.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/gavinhoward/bc/tar.gz/refs/tags/7.1.0 [following]
+--2026-11-09 18:16:28--  https://codeload.github.com/gavinhoward/bc/tar.gz/refs/tags/7.1.0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘bc-7.1.0.tar.gz’
+
+bc-7.1.0.tar.gz         [<=>                 ]       0  --.-KB/s               bc-7.1.0.tar.gz         [ <=>                ] 986.80K  4.81MB/s               bc-7.1.0.tar.gz         [  <=>               ]   1.39M  5.80MB/s    in 0.2s    
+
+2026-11-09 18:16:28 (5.80 MB/s) - ‘bc-7.1.0.tar.gz’ saved [1453938]
+
+tar: bc-7.1.0.tar.gz: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+[ERROR] build.sh exited with code 2 for bc
+[ERROR] Custom build failed for bc
+[18:16:29] ========================================
+[18:16:29] Build completed with 1 failure(s):
+[18:16:29]   - bc
+[18:16:29] ========================================

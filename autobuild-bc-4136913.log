@@ -1,0 +1,39 @@
+[18:17:03] Found custom package for bc, bypassing BLFS aliases.
+[18:17:03] Custom package detected at /home/fusion809/lfs_packaging/bc (package: bc)
+[18:17:03] Extracting dependencies for custom package 'bc'...
+[18:17:03] Required deps: coreutils gcc glibc make ncurses readline tar xz 
+[18:17:03] Dependency 'coreutils' already installed.
+[18:17:03] Dependency 'gcc' already installed.
+[18:17:03] Dependency 'glibc' already installed.
+[18:17:03] Dependency 'make' already installed.
+[18:17:03] Dependency 'ncurses' already installed.
+[18:17:03] Dependency 'readline' already installed.
+[18:17:03] Dependency 'tar' already installed.
+[18:17:03] Dependency 'xz' already installed.
+[VERSION] bc: 7.1.0
+[18:17:09] Installing bc version: 7.1.0
+[18:17:09] Starting remote custom build for bc...
+--2026-11-09 18:17:12--  https://github.com/gavinhoward/bc/archive/7.1.0.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/gavinhoward/bc/tar.gz/refs/tags/7.1.0 [following]
+--2026-11-09 18:17:12--  https://codeload.github.com/gavinhoward/bc/tar.gz/refs/tags/7.1.0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘bc-7.1.0.tar.gz’
+
+bc-7.1.0.tar.gz         [<=>                 ]       0  --.-KB/s               bc-7.1.0.tar.gz         [ <=>                ] 530.93K  2.53MB/s               bc-7.1.0.tar.gz         [  <=>               ] 927.99K  2.12MB/s               bc-7.1.0.tar.gz         [   <=>              ]   1.11M  1.71MB/s               bc-7.1.0.tar.gz         [    <=>             ]   1.25M  1.42MB/s               bc-7.1.0.tar.gz         [     <=>            ]   1.33M  1.20MB/s               bc-7.1.0.tar.gz         [      <=>           ]   1.39M  1.13MB/s    in 1.2s    
+
+2026-11-09 18:17:14 (1.13 MB/s) - ‘bc-7.1.0.tar.gz’ saved [1453938]
+
+tar: bc-7.1.0.tar.gz: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+[ERROR] build.sh exited with code 2 for bc
+[ERROR] Custom build failed for bc
+[18:17:14] ========================================
+[18:17:14] Build completed with 1 failure(s):
+[18:17:14]   - bc
+[18:17:14] ========================================

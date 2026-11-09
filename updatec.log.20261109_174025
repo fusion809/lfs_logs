@@ -1,0 +1,118 @@
+===== Update check started: 2026-11-09 17:40:25 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261109_174025
+Packages needing attention: bc c-ares ghostscript gpgmepp hyfetch kcalendarcore kgamma kholidays libselinux libsepol libunwind libva ocamlbuild povray
+===== Starting updatec: 2026-11-09 17:42:50 AEST =====
+Checking for packages with missing file inventories...
+name=c-ares
+local_ver=1.34.9
+remote_ver=7.19.4
+name=ghostscript
+local_ver=10.08.0
+remote_ver=10..0.8.0
+name=gpgmepp
+local_ver=2.2.0
+remote_ver=15.12.3
+name=hyfetch
+local_ver=2.1.1
+remote_ver=8.1.0
+name=kcalendarcore
+local_ver=6.31.0
+remote_ver=19.08.3
+Failed to check custom update version for: json-c
+name=json-c
+local_ver=0.19
+remote_ver=FAILED
+name=kgamma
+local_ver=6.7.6
+remote_ver=15.07.80
+name=kholidays
+local_ver=6.31.0
+remote_ver=17.12.3
+name=libselinux
+local_ver=3.11
+remote_ver=20131030.4
+name=libsepol
+local_ver=3.11
+remote_ver=20131030.4
+name=libunwind
+local_ver=1.8.3
+remote_ver=4.0.10
+name=libva
+local_ver=2.24.1
+remote_ver=20110104.5.3.0.0035
+name=ocamlbuild
+local_ver=0.16.1
+remote_ver=4.02.3
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - kholidays
+  - kcalendarcore
+  - kgamma
+  - c-ares
+  - ghostscript
+  - gpgmepp
+  - hyfetch
+  - libsepol
+  - libselinux
+  - libunwind
+  - libva
+  - ocamlbuild
+  - povray
+
+Building custom package kholidays...
+[17:56:55] Found custom package for kholidays, bypassing BLFS aliases.
+[17:56:55] Custom package detected at /home/fusion809/lfs_packaging/kholidays (package: kholidays)
+[17:56:55] Extracting dependencies for custom package 'kholidays'...
+[17:56:55] Required deps: brotli double-conversion e2fsprogs gcc glib2 glibc icu keyutils mitkrb openssl pcre2 qt6 systemd zlib zstd 
+[17:56:55] Dependency 'brotli' already installed.
+[17:56:55] Dependency 'double-conversion' already installed.
+[17:56:55] Dependency 'e2fsprogs' already installed.
+[17:56:55] Dependency 'gcc' already installed.
+[17:56:55] Dependency 'glib2' already installed.
+[17:56:55] Dependency 'glibc' already installed.
+[17:56:55] Dependency 'icu' already installed.
+[17:56:55] Dependency 'keyutils' already installed.
+[17:56:55] Dependency 'mitkrb' already installed.
+[17:56:56] Dependency 'openssl' already installed.
+[17:56:56] Dependency 'pcre2' already installed.
+[17:56:56] Dependency 'qt6' already installed.
+[17:56:56] Dependency 'systemd' already installed.
+[17:56:56] Dependency 'zlib' already installed.
+[17:56:56] Dependency 'zstd' already installed.
+[VERSION] kholidays: 17.12.3
+[17:57:02] Installing kholidays version: 17.12.3
+[17:57:02] Starting remote custom build for kholidays...
+--2026-11-09 17:57:17--  https://download.kde.org/stable/frameworks/17.12/kholidays-17.12.3.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-09 17:57:18 ERROR 404: Not Found.
+
+--2026-11-09 17:57:18--  https://github.com/KDE/kholidays/archive/v17.12.3.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/KDE/kholidays/tar.gz/refs/tags/v17.12.3 [following]
+--2026-11-09 17:57:18--  https://codeload.github.com/KDE/kholidays/tar.gz/refs/tags/v17.12.3
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘kholidays-17.12.3.tar.gz’
+
+kholidays-17.12.3.t     [<=>                 ]       0  --.-KB/s               kholidays-17.12.3.t     [ <=>                ] 206.79K  --.-KB/s    in 0.1s    
+
+2026-11-09 17:57:19 (1.80 MB/s) - ‘kholidays-17.12.3.tar.gz’ saved [211754]
+
+tar: kholidays-17.12.3.tar.xz: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+[ERROR] build.sh exited with code 2 for kholidays
+[ERROR] Custom build failed for kholidays
+[17:57:19] ========================================
+[17:57:19] Build completed with 1 failure(s):
+[17:57:19]   - kholidays
+[17:57:19] ========================================
+Error: Build failed for kholidays. Aborting update loop.
+===== ERROR: updatec exited with status 1 =====
+Finished: 2026-11-09 17:57:20 AEST
+Exit status: 1
