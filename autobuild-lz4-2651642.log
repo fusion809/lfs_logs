@@ -1,0 +1,85 @@
+[16:04:44] Found custom package for lz4, bypassing BLFS aliases.
+[16:04:44] Custom package detected at /home/fusion809/lfs_packaging/lz4 (package: lz4)
+[16:04:44] Extracting dependencies for custom package 'lz4'...
+[16:04:44] Required deps: coreutils gcc glibc gzip make tar 
+[16:04:44] Dependency 'coreutils' already installed.
+[16:04:44] Dependency 'gcc' already installed.
+[16:04:44] Dependency 'glibc' already installed.
+[16:04:44] Dependency 'gzip' already installed.
+[16:04:44] Dependency 'make' already installed.
+[16:04:44] Dependency 'tar' already installed.
+[VERSION] lz4: 1.11.1
+[16:04:45] Installing lz4 version: 1.11.1
+[16:04:45] Starting remote custom build for lz4...
+--2026-11-10 16:05:05--  https://github.com/lz4/lz4/archive/v1.11.1.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/lz4/lz4/tar.gz/refs/tags/v1.11.1 [following]
+--2026-11-10 16:05:06--  https://codeload.github.com/lz4/lz4/tar.gz/refs/tags/v1.11.1
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘lz4-1.11.1.tar.gz’
+
+lz4-1.11.1.tar.gz       [<=>                 ]       0  --.-KB/s               lz4-1.11.1.tar.gz       [ <=>                ]  86.68K   378KB/s               lz4-1.11.1.tar.gz       [  <=>               ] 188.14K   438KB/s               lz4-1.11.1.tar.gz       [   <=>              ] 352.00K   558KB/s               lz4-1.11.1.tar.gz       [    <=>             ] 530.98K   633KB/s               lz4-1.11.1.tar.gz       [     <=>            ] 540.39K   638KB/s    in 0.8s    
+
+2026-11-10 16:05:07 (638 KB/s) - ‘lz4-1.11.1.tar.gz’ saved [553363]
+
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/5d2bb26107b18a28e8ed91729a3bfb25/bench.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/5d2bb26107b18a28e8ed91729a3bfb25/lorem.o
+creating pkgconfig
+CC .cache/multiconf/260fc9b1f9eeb50d471e4c5b03457814/ced89da431c1d46f20779695322850bb/lz4.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/5d2bb26107b18a28e8ed91729a3bfb25/lz4cli.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/5d2bb26107b18a28e8ed91729a3bfb25/lz4io.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/5d2bb26107b18a28e8ed91729a3bfb25/threadpool.o
+CC .cache/multiconf/260fc9b1f9eeb50d471e4c5b03457814/ced89da431c1d46f20779695322850bb/lz4file.o
+CC .cache/multiconf/260fc9b1f9eeb50d471e4c5b03457814/ced89da431c1d46f20779695322850bb/lz4frame.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/5d2bb26107b18a28e8ed91729a3bfb25/timefn.o
+CC .cache/multiconf/260fc9b1f9eeb50d471e4c5b03457814/ced89da431c1d46f20779695322850bb/lz4hc.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/5d2bb26107b18a28e8ed91729a3bfb25/util.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/5d2bb26107b18a28e8ed91729a3bfb25/__/lib/lz4.o
+CC .cache/multiconf/260fc9b1f9eeb50d471e4c5b03457814/ced89da431c1d46f20779695322850bb/xxhash.o
+CC .cache/multiconf/260fc9b1f9eeb50d471e4c5b03457814/6600dd7286da21ba7d210cab42338634/lz4.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/5d2bb26107b18a28e8ed91729a3bfb25/__/lib/lz4file.o
+CC .cache/multiconf/260fc9b1f9eeb50d471e4c5b03457814/6600dd7286da21ba7d210cab42338634/lz4file.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/5d2bb26107b18a28e8ed91729a3bfb25/__/lib/lz4frame.o
+CC .cache/multiconf/260fc9b1f9eeb50d471e4c5b03457814/6600dd7286da21ba7d210cab42338634/lz4frame.o
+CC .cache/multiconf/260fc9b1f9eeb50d471e4c5b03457814/6600dd7286da21ba7d210cab42338634/lz4hc.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/5d2bb26107b18a28e8ed91729a3bfb25/__/lib/lz4hc.o
+CC .cache/multiconf/260fc9b1f9eeb50d471e4c5b03457814/6600dd7286da21ba7d210cab42338634/xxhash.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/5d2bb26107b18a28e8ed91729a3bfb25/__/lib/xxhash.o
+LD .cache/multiconf/260fc9b1f9eeb50d471e4c5b03457814/ced89da431c1d46f20779695322850bb/fbdc7b104d464c2503c8989bbacd1eb8/liblz4.so.1.11.1
+liblz4.so.1.11.1 created with multithreading support
+AR .cache/multiconf/260fc9b1f9eeb50d471e4c5b03457814/6600dd7286da21ba7d210cab42338634/c918aa2af637568a4cc1eb9121abe0d5/liblz4.a
+LD .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/5d2bb26107b18a28e8ed91729a3bfb25/a71001ee4d9740007365cb1a6531f347/lz4
+==> built with multithreading support
+lz4 build completed
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/c146141788d82531fccb183333d6e90b/__/lib/lz4.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/c146141788d82531fccb183333d6e90b/__/lib/lz4file.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/c146141788d82531fccb183333d6e90b/__/lib/lz4frame.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/c146141788d82531fccb183333d6e90b/__/lib/lz4hc.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/c146141788d82531fccb183333d6e90b/__/lib/xxhash.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/c146141788d82531fccb183333d6e90b/bench.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/c146141788d82531fccb183333d6e90b/lorem.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/c146141788d82531fccb183333d6e90b/lz4cli.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/c146141788d82531fccb183333d6e90b/lz4io.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/c146141788d82531fccb183333d6e90b/threadpool.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/c146141788d82531fccb183333d6e90b/timefn.o
+CC .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/c146141788d82531fccb183333d6e90b/util.o
+LD .cache/multiconf/a2c3899274b57f3102b2da1c6bf0e7f1/c146141788d82531fccb183333d6e90b/a71001ee4d9740007365cb1a6531f347/lz4
+==> built with multithreading support
+lz4 build completed
+creating pkgconfig
+Installing libraries in /usr/lib
+Installing headers in /usr/include
+lz4 libraries installed
+Installing binaries in /usr/bin
+Installing man pages in /usr/share/man/man1
+lz4 installation completed
+1.11.1
+Updated registry for lz4 to version 1.11.1
+[VERSION] lz4: 1.11.1
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package lz4 in /var/lib/custom-packages/
