@@ -1,0 +1,249 @@
+===== Update check started: 2026-11-11 07:45:14 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261111_074514
+Packages needing attention: postgresql vim
+===== Starting updatec: 2026-11-11 07:45:19 AEST =====
+Checking for packages with missing file inventories...
+name=postgresql
+local_ver=18.6
+remote_ver=18.7
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - postgresql
+  - vim
+
+Building custom package postgresql...
+[07:45:22] Found custom package for postgresql, bypassing BLFS aliases.
+[07:45:22] Custom package detected at /home/fusion809/lfs_packaging/postgresql (package: postgresql)
+[07:45:22] Extracting dependencies for custom package 'postgresql'...
+[07:45:22] Required deps: gcc icu ncurses readline ssw zlib 
+[07:45:22] Dependency 'gcc' already installed.
+[07:45:22] Dependency 'icu' already installed.
+[07:45:22] Dependency 'ncurses' already installed.
+[07:45:22] Dependency 'readline' already installed.
+[07:45:22] Dependency 'ssw' already installed.
+[07:45:22] Dependency 'zlib' already installed.
+[07:45:22] [LFS-AUTOBUILD] Skipping custom package postgresql: version 18.7 already installed (use -f to force build).
+Building custom package vim...
+[07:45:23] Found custom package for vim, bypassing BLFS aliases.
+[07:45:23] Custom package detected at /home/fusion809/lfs_packaging/vim (package: vim)
+[07:45:23] Extracting dependencies for custom package 'vim'...
+[07:45:23] Required deps: acl at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gawk gcc gdk-pixbuf glib2 glibc glycin gpm graphite2 gtk3 harfbuzz lcms2 libcanberra libepoxy libffi libgcrypt libice libogg libpng libseccomp libselinux libsm libtool libvorbis libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres libxt ncurses pango pcre2 pixman systemd util-linux wayland webkitgtk zlib 
+[07:45:23] Dependency 'acl' already installed.
+[07:45:23] Dependency 'at-spi2-core' already installed.
+[07:45:23] Dependency 'brotli' already installed.
+[07:45:23] Dependency 'bzip2' already installed.
+[07:45:23] Dependency 'cairo' already installed.
+[07:45:23] Dependency 'dbus' already installed.
+[07:45:23] Dependency 'expat' already installed.
+[07:45:23] Dependency 'fontconfig' already installed.
+[07:45:23] Dependency 'freetype' already installed.
+[07:45:23] Dependency 'fribidi' already installed.
+[07:45:23] Dependency 'gawk' already installed.
+[07:45:23] Dependency 'gcc' already installed.
+[07:45:23] Dependency 'gdk-pixbuf' already installed.
+[07:45:23] Dependency 'glib2' already installed.
+[07:45:23] Dependency 'glibc' already installed.
+[07:45:23] Dependency 'glycin' already installed.
+[07:45:23] Dependency 'gpm' already installed.
+[07:45:23] Dependency 'graphite2' already installed.
+[07:45:23] Dependency 'gtk3' already installed.
+[07:45:23] Dependency 'harfbuzz' already installed.
+[07:45:23] Dependency 'lcms2' already installed.
+[07:45:23] Dependency 'libcanberra' already installed.
+[07:45:23] Dependency 'libepoxy' already installed.
+[07:45:23] Dependency 'libffi' already installed.
+[07:45:23] Dependency 'libgcrypt' already installed.
+[07:45:23] Dependency 'libice' already installed.
+[07:45:23] Dependency 'libogg' already installed.
+[07:45:23] Dependency 'libpng' already installed.
+[07:45:23] Dependency 'libseccomp' already installed.
+[07:45:23] Dependency 'libselinux' already installed.
+[07:45:23] Dependency 'libsm' already installed.
+[07:45:23] Dependency 'libtool' already installed.
+[07:45:23] Dependency 'libvorbis' already installed.
+[07:45:23] Dependency 'libx11' already installed.
+[07:45:23] Dependency 'libxau' already installed.
+[07:45:23] Dependency 'libxcb' already installed.
+[07:45:23] Dependency 'libxcomposite' already installed.
+[07:45:23] Dependency 'libxcursor' already installed.
+[07:45:23] Dependency 'libxdamage' already installed.
+[07:45:23] Dependency 'libxdmcp' already installed.
+[07:45:23] Dependency 'libxext' already installed.
+[07:45:23] Dependency 'libxfixes' already installed.
+[07:45:23] Dependency 'libxi' already installed.
+[07:45:23] Dependency 'libxinerama' already installed.
+[07:45:23] Dependency 'libxkbcommon' already installed.
+[07:45:23] Dependency 'libxrandr' already installed.
+[07:45:23] Dependency 'libxrender' already installed.
+[07:45:23] Dependency 'libxres' already installed.
+[07:45:23] Dependency 'libxt' already installed.
+[07:45:23] Dependency 'ncurses' already installed.
+[07:45:23] Dependency 'pango' already installed.
+[07:45:23] Dependency 'pcre2' already installed.
+[07:45:23] Dependency 'pixman' already installed.
+[07:45:23] Dependency 'systemd' already installed.
+[07:45:23] Dependency 'util-linux' already installed.
+[07:45:23] Dependency 'wayland' already installed.
+[07:45:23] Dependency 'webkitgtk' already installed.
+[07:45:23] Dependency 'zlib' already installed.
+[07:45:28] [LFS-AUTOBUILD] Skipping custom package vim: version 9.2.1320 already installed (use -f to force build).
+Updating Python packages via pip...
+Requirement already satisfied: click in /usr/lib/python3.15/site-packages (8.5.0)
+Collecting click
+  Downloading click-8.5.1-py3-none-any.whl.metadata (2.6 kB)
+Requirement already satisfied: fastjsonschema in /usr/lib/python3.15/site-packages (2.22.2)
+Collecting fastjsonschema
+  Using cached fastjsonschema-2.22.3-py3-none-any.whl.metadata (2.1 kB)
+Requirement already satisfied: jsonpointer in /usr/lib/python3.15/site-packages (3.8)
+Collecting jsonpointer
+  Downloading jsonpointer-3.11-py3-none-any.whl.metadata (2.7 kB)
+Requirement already satisfied: jupyterlab in /usr/lib/python3.15/site-packages (4.6.5)
+Collecting jupyterlab
+  Downloading jupyterlab-4.6.6-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: platformdirs in /usr/lib/python3.15/site-packages (4.14.3)
+Collecting platformdirs
+  Downloading platformdirs-4.14.5-py3-none-any.whl.metadata (5.7 kB)
+Requirement already satisfied: pyzmq in /usr/lib/python3.15/site-packages (27.2.0)
+Collecting pyzmq
+  Downloading pyzmq-27.3.0-cp312-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Requirement already satisfied: soupsieve in /usr/lib/python3.15/site-packages (3.0.4)
+Collecting soupsieve
+  Downloading soupsieve-4.1-py3-none-any.whl.metadata (4.4 kB)
+Requirement already satisfied: tornado in /usr/lib/python3.15/site-packages (6.6)
+Collecting tornado
+  Downloading tornado-6.6.1-cp311-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (2.6 kB)
+Requirement already satisfied: async-lru>=1.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.4.0)
+Requirement already satisfied: httpx<1,>=0.25.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (0.28.1)
+Requirement already satisfied: ipykernel!=6.30.0,>=6.5.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (7.4.0)
+Requirement already satisfied: jinja2>=3.0.3 in /usr/lib/python3.15/site-packages (from jupyterlab) (3.1.6)
+Requirement already satisfied: jupyter-builder>=1.0.2 in /usr/lib/python3.15/site-packages (from jupyterlab) (1.2.4)
+Requirement already satisfied: jupyter-core in /usr/lib/python3.15/site-packages (from jupyterlab) (5.9.1)
+Requirement already satisfied: jupyter-lsp>=2.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.3.1)
+Requirement already satisfied: jupyter-server<3,>=2.19.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.21.1)
+Requirement already satisfied: jupyterlab-server<3,>=2.28.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.28.1)
+Requirement already satisfied: notebook-shim>=0.2 in /usr/lib/python3.15/site-packages (from jupyterlab) (0.2.4)
+Requirement already satisfied: packaging>=23.2 in /usr/lib/python3.15/site-packages (from jupyterlab) (26.3)
+Requirement already satisfied: traitlets in /usr/lib/python3.15/site-packages (from jupyterlab) (5.16.1)
+Requirement already satisfied: anyio in /usr/lib/python3.15/site-packages (from httpx<1,>=0.25.0->jupyterlab) (4.16.0)
+Requirement already satisfied: certifi in /usr/lib/python3.15/site-packages (from httpx<1,>=0.25.0->jupyterlab) (2026.10.23)
+Requirement already satisfied: httpcore==1.* in /usr/lib/python3.15/site-packages (from httpx<1,>=0.25.0->jupyterlab) (1.0.9)
+Requirement already satisfied: idna in /usr/lib/python3.15/site-packages (from httpx<1,>=0.25.0->jupyterlab) (3.20)
+Requirement already satisfied: h11>=0.16 in /usr/lib/python3.15/site-packages (from httpcore==1.*->httpx<1,>=0.25.0->jupyterlab) (0.16.0)
+Requirement already satisfied: argon2-cffi>=21.1 in /usr/lib/python3.15/site-packages (from jupyter-server<3,>=2.19.0->jupyterlab) (25.1.0)
+Requirement already satisfied: jupyter-client>=7.4.4 in /usr/lib/python3.15/site-packages (from jupyter-server<3,>=2.19.0->jupyterlab) (8.10.0)
+Requirement already satisfied: jupyter-events>=0.11.0 in /usr/lib/python3.15/site-packages (from jupyter-server<3,>=2.19.0->jupyterlab) (0.12.1)
+Requirement already satisfied: jupyter-server-terminals>=0.4.4 in /usr/lib/python3.15/site-packages (from jupyter-server<3,>=2.19.0->jupyterlab) (0.5.4)
+Requirement already satisfied: nbconvert>=6.4.4 in /usr/lib/python3.15/site-packages (from jupyter-server<3,>=2.19.0->jupyterlab) (7.17.2)
+Requirement already satisfied: nbformat>=5.3.0 in /usr/lib/python3.15/site-packages (from jupyter-server<3,>=2.19.0->jupyterlab) (5.11.1)
+Requirement already satisfied: prometheus-client>=0.9 in /usr/lib/python3.15/site-packages (from jupyter-server<3,>=2.19.0->jupyterlab) (0.26.0)
+Requirement already satisfied: send2trash>=1.8.2 in /usr/lib/python3.15/site-packages (from jupyter-server<3,>=2.19.0->jupyterlab) (2.1.0)
+Requirement already satisfied: terminado>=0.8.3 in /usr/lib/python3.15/site-packages (from jupyter-server<3,>=2.19.0->jupyterlab) (0.18.1)
+Requirement already satisfied: websocket-client>=1.7 in /usr/lib/python3.15/site-packages (from jupyter-server<3,>=2.19.0->jupyterlab) (1.9.2)
+Requirement already satisfied: babel>=2.10 in /usr/lib/python3.15/site-packages (from jupyterlab-server<3,>=2.28.0->jupyterlab) (2.18.0)
+Requirement already satisfied: json5>=0.9.0 in /usr/lib/python3.15/site-packages (from jupyterlab-server<3,>=2.28.0->jupyterlab) (0.17.3)
+Requirement already satisfied: jsonschema>=4.18.0 in /usr/lib/python3.15/site-packages (from jupyterlab-server<3,>=2.28.0->jupyterlab) (4.26.0)
+Requirement already satisfied: requests>=2.31 in /usr/lib/python3.15/site-packages (from jupyterlab-server<3,>=2.28.0->jupyterlab) (2.34.2)
+Requirement already satisfied: argon2-cffi-bindings in /usr/lib/python3.15/site-packages (from argon2-cffi>=21.1->jupyter-server<3,>=2.19.0->jupyterlab) (26.1.0)
+Requirement already satisfied: comm>=0.1.1 in /usr/lib/python3.15/site-packages (from ipykernel!=6.30.0,>=6.5.0->jupyterlab) (0.2.3)
+Requirement already satisfied: debugpy>=1.6.5 in /usr/lib/python3.15/site-packages (from ipykernel!=6.30.0,>=6.5.0->jupyterlab) (1.8.22)
+Requirement already satisfied: ipython>=7.23.1 in /usr/lib/python3.15/site-packages (from ipykernel!=6.30.0,>=6.5.0->jupyterlab) (9.18.1)
+Requirement already satisfied: matplotlib-inline>=0.1 in /usr/lib/python3.15/site-packages (from ipykernel!=6.30.0,>=6.5.0->jupyterlab) (0.2.2)
+Requirement already satisfied: nest-asyncio2>=1.7.0 in /usr/lib/python3.15/site-packages (from ipykernel!=6.30.0,>=6.5.0->jupyterlab) (1.7.4)
+Requirement already satisfied: ipython-pygments-lexers>=1.0.0 in /usr/lib/python3.15/site-packages (from ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab) (1.1.1)
+Requirement already satisfied: jedi>=0.18.2 in /usr/lib/python3.15/site-packages (from ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab) (0.20.1)
+Requirement already satisfied: pexpect>4.6 in /usr/lib/python3.15/site-packages (from ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab) (4.9.0)
+Requirement already satisfied: prompt_toolkit<3.1.0,>=3.0.41 in /usr/lib/python3.15/site-packages (from ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab) (3.0.53)
+Requirement already satisfied: psutil>=7 in /usr/lib/python3.15/site-packages (from ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab) (7.2.2)
+Requirement already satisfied: pygments>=2.14.0 in /usr/lib/python3.15/site-packages (from ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab) (2.21.0)
+Requirement already satisfied: stack_data>=0.6.0 in /usr/lib/python3.15/site-packages (from ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab) (0.6.3)
+Requirement already satisfied: wcwidth>=0.1.4 in /usr/lib/python3.15/site-packages (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab) (0.9.4)
+Requirement already satisfied: parso<0.9.0,>=0.8.7 in /usr/lib/python3.15/site-packages (from jedi>=0.18.2->ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab) (0.8.7)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/lib/python3.15/site-packages (from jinja2>=3.0.3->jupyterlab) (3.0.4)
+Requirement already satisfied: attrs>=22.2.0 in /usr/lib/python3.15/site-packages (from jsonschema>=4.18.0->jupyterlab-server<3,>=2.28.0->jupyterlab) (26.1.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /usr/lib/python3.15/site-packages (from jsonschema>=4.18.0->jupyterlab-server<3,>=2.28.0->jupyterlab) (2025.9.1)
+Requirement already satisfied: referencing>=0.28.4 in /usr/lib/python3.15/site-packages (from jsonschema>=4.18.0->jupyterlab-server<3,>=2.28.0->jupyterlab) (0.37.0)
+Requirement already satisfied: rpds-py>=0.25.0 in /usr/lib/python3.15/site-packages (from jsonschema>=4.18.0->jupyterlab-server<3,>=2.28.0->jupyterlab) (2026.9.1)
+Requirement already satisfied: python-dateutil>=2.8.2 in /usr/lib/python3.15/site-packages (from jupyter-client>=7.4.4->jupyter-server<3,>=2.19.0->jupyterlab) (3.0.0)
+Requirement already satisfied: typing-extensions>=4.13.0 in /usr/lib/python3.15/site-packages (from jupyter-client>=7.4.4->jupyter-server<3,>=2.19.0->jupyterlab) (4.16.0)
+Requirement already satisfied: python-json-logger>=2.0.4 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter-server<3,>=2.19.0->jupyterlab) (4.2.0)
+Requirement already satisfied: pyyaml>=5.3 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter-server<3,>=2.19.0->jupyterlab) (6.0.3)
+Requirement already satisfied: rfc3339-validator in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter-server<3,>=2.19.0->jupyterlab) (0.1.4)
+Requirement already satisfied: rfc3986-validator>=0.1.1 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter-server<3,>=2.19.0->jupyterlab) (0.1.1)
+Requirement already satisfied: fqdn in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.19.0->jupyterlab) (1.6.0)
+Requirement already satisfied: isoduration in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.19.0->jupyterlab) (20.11.0)
+Requirement already satisfied: rfc3987-syntax>=1.1.0 in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.19.0->jupyterlab) (1.1.0)
+Requirement already satisfied: uri-template in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.19.0->jupyterlab) (1.3.0)
+Requirement already satisfied: webcolors>=24.6.0 in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.19.0->jupyterlab) (25.10.0)
+Requirement already satisfied: beautifulsoup4 in /usr/lib/python3.15/site-packages (from nbconvert>=6.4.4->jupyter-server<3,>=2.19.0->jupyterlab) (4.15.0)
+Requirement already satisfied: bleach!=5.0.0 in /usr/lib/python3.15/site-packages (from bleach[css]!=5.0.0->nbconvert>=6.4.4->jupyter-server<3,>=2.19.0->jupyterlab) (6.4.0)
+Requirement already satisfied: defusedxml in /usr/lib/python3.15/site-packages (from nbconvert>=6.4.4->jupyter-server<3,>=2.19.0->jupyterlab) (0.7.1)
+Requirement already satisfied: jupyterlab-pygments in /usr/lib/python3.15/site-packages (from nbconvert>=6.4.4->jupyter-server<3,>=2.19.0->jupyterlab) (0.3.0)
+Requirement already satisfied: mistune<4,>=2.0.3 in /usr/lib/python3.15/site-packages (from nbconvert>=6.4.4->jupyter-server<3,>=2.19.0->jupyterlab) (3.4.0)
+Requirement already satisfied: nbclient>=0.5.0 in /usr/lib/python3.15/site-packages (from nbconvert>=6.4.4->jupyter-server<3,>=2.19.0->jupyterlab) (0.11.0)
+Requirement already satisfied: pandocfilters>=1.4.1 in /usr/lib/python3.15/site-packages (from nbconvert>=6.4.4->jupyter-server<3,>=2.19.0->jupyterlab) (1.5.1)
+Requirement already satisfied: webencodings in /usr/lib/python3.15/site-packages (from bleach!=5.0.0->bleach[css]!=5.0.0->nbconvert>=6.4.4->jupyter-server<3,>=2.19.0->jupyterlab) (0.6.1)
+Requirement already satisfied: tinycss2>=1.1.0 in /usr/lib/python3.15/site-packages (from bleach[css]!=5.0.0->nbconvert>=6.4.4->jupyter-server<3,>=2.19.0->jupyterlab) (1.5.1)
+Requirement already satisfied: ptyprocess>=0.5 in /usr/lib/python3.15/site-packages (from pexpect>4.6->ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab) (0.7.0)
+Requirement already satisfied: six>=1.6 in /usr/lib/python3.15/site-packages (from python-dateutil>=2.8.2->jupyter-client>=7.4.4->jupyter-server<3,>=2.19.0->jupyterlab) (1.17.0)
+Requirement already satisfied: tzdata in /usr/lib/python3.15/site-packages (from python-dateutil>=2.8.2->jupyter-client>=7.4.4->jupyter-server<3,>=2.19.0->jupyterlab) (2026.6)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/lib/python3.15/site-packages (from requests>=2.31->jupyterlab-server<3,>=2.28.0->jupyterlab) (3.5.2)
+Requirement already satisfied: urllib3<3,>=1.26 in /usr/lib/python3.15/site-packages (from requests>=2.31->jupyterlab-server<3,>=2.28.0->jupyterlab) (2.8.0)
+Requirement already satisfied: lark>=1.2.2 in /usr/lib/python3.15/site-packages (from rfc3987-syntax>=1.1.0->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.19.0->jupyterlab) (1.3.1)
+Requirement already satisfied: executing>=1.2.0 in /usr/lib/python3.15/site-packages (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab) (2.3.0)
+Requirement already satisfied: asttokens>=2.1.0 in /usr/lib/python3.15/site-packages (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab) (3.0.2)
+Requirement already satisfied: pure-eval in /usr/lib/python3.15/site-packages (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab) (0.2.4)
+Requirement already satisfied: cffi>=2 in /usr/lib/python3.15/site-packages (from argon2-cffi-bindings->argon2-cffi>=21.1->jupyter-server<3,>=2.19.0->jupyterlab) (2.1.1)
+Requirement already satisfied: pycparser in /usr/lib/python3.15/site-packages (from cffi>=2->argon2-cffi-bindings->argon2-cffi>=21.1->jupyter-server<3,>=2.19.0->jupyterlab) (3.12)
+Requirement already satisfied: arrow>=0.15.0 in /usr/lib/python3.15/site-packages (from isoduration->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.19.0->jupyterlab) (1.4.0)
+Downloading click-8.5.1-py3-none-any.whl (126 kB)
+Using cached fastjsonschema-2.22.3-py3-none-any.whl (28 kB)
+Downloading jsonpointer-3.11-py3-none-any.whl (10 kB)
+Downloading jupyterlab-4.6.6-py3-none-any.whl (17.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 889.9 kB/s  0:00:19
+Downloading platformdirs-4.14.5-py3-none-any.whl (35 kB)
+Downloading pyzmq-27.3.0-cp312-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (855 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 855.2/855.2 kB 905.9 kB/s  0:00:00
+Downloading soupsieve-4.1-py3-none-any.whl (52 kB)
+Downloading tornado-6.6.1-cp311-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (534 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 534.5/534.5 kB 1.1 MB/s  0:00:00
+Installing collected packages: tornado, soupsieve, pyzmq, platformdirs, jsonpointer, fastjsonschema, click, jupyterlab
+  Attempting uninstall: tornado
+    Found existing installation: tornado 6.6
+    Uninstalling tornado-6.6:
+      Successfully uninstalled tornado-6.6
+  Attempting uninstall: soupsieve
+    Found existing installation: soupsieve 3.0.4
+    Uninstalling soupsieve-3.0.4:
+      Successfully uninstalled soupsieve-3.0.4
+  Attempting uninstall: pyzmq
+    Found existing installation: pyzmq 27.2.0
+    Uninstalling pyzmq-27.2.0:
+      Successfully uninstalled pyzmq-27.2.0
+  Attempting uninstall: platformdirs
+    Found existing installation: platformdirs 4.14.3
+    Uninstalling platformdirs-4.14.3:
+      Successfully uninstalled platformdirs-4.14.3
+  Attempting uninstall: jsonpointer
+    Found existing installation: jsonpointer 3.8
+    Uninstalling jsonpointer-3.8:
+      Successfully uninstalled jsonpointer-3.8
+  Attempting uninstall: fastjsonschema
+    Found existing installation: fastjsonschema 2.22.2
+    Uninstalling fastjsonschema-2.22.2:
+      Successfully uninstalled fastjsonschema-2.22.2
+  Attempting uninstall: click
+    Found existing installation: click 8.5.0
+    Uninstalling click-8.5.0:
+      Successfully uninstalled click-8.5.0
+  Attempting uninstall: jupyterlab
+    Found existing installation: jupyterlab 4.6.5
+    Uninstalling jupyterlab-4.6.5:
+      Successfully uninstalled jupyterlab-4.6.5
+
+Successfully installed click-8.5.1 fastjsonschema-2.22.3 jsonpointer-3.11 jupyterlab-4.6.6 platformdirs-4.14.5 pyzmq-27.3.0 soupsieve-4.1 tornado-6.6.1
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-39
+r13.1-582
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
