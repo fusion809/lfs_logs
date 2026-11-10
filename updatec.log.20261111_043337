@@ -1,0 +1,2079 @@
+===== Update check started: 2026-11-11 04:33:37 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261111_043337
+Packages needing attention: git xwayland
+===== Starting updatec: 2026-11-11 04:33:40 AEST =====
+Checking for packages with missing file inventories...
+name=git
+local_ver=2.56.0
+remote_ver=2.56.1
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - git
+  - xwayland
+
+Building custom package git...
+[04:33:41] Found custom package for git, bypassing BLFS aliases.
+[04:33:41] Custom package detected at /home/fusion809/lfs_packaging/git (package: git)
+[04:33:41] Extracting dependencies for custom package 'git'...
+[04:33:41] Required deps: brotli curl cyrus-sasl expat glibc libidn2 libpsl libunistring nghttp2 openldap openssl pcre2 zlib zstd 
+[04:33:41] Dependency 'brotli' already installed.
+[04:33:41] Dependency 'curl' already installed.
+[04:33:41] Dependency 'cyrus-sasl' already installed.
+[04:33:41] Dependency 'expat' already installed.
+[04:33:41] Dependency 'glibc' already installed.
+[04:33:41] Dependency 'libidn2' already installed.
+[04:33:41] Dependency 'libpsl' already installed.
+[04:33:41] Dependency 'libunistring' already installed.
+[04:33:41] Dependency 'nghttp2' already installed.
+[04:33:41] Dependency 'openldap' already installed.
+[04:33:41] Dependency 'openssl' already installed.
+[04:33:41] Dependency 'pcre2' already installed.
+[04:33:41] Dependency 'zlib' already installed.
+[04:33:41] Dependency 'zstd' already installed.
+[VERSION] git: 2.56.1
+[04:33:43] Installing git version: 2.56.1
+[04:33:43] Starting remote custom build for git...
+--2026-11-11 04:33:58--  https://www.kernel.org/pub/software/scm/git/git-2.56.1.tar.xz
+Resolving www.kernel.org (www.kernel.org)... 151.101.129.55, 151.101.1.55, 151.101.65.55, ...
+Connecting to www.kernel.org (www.kernel.org)|151.101.129.55|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8494608 (8.1M) [application/x-xz]
+Saving to: ‘git-2.56.1.tar.xz’
+
+git-2.56.1.tar.xz     0%[                    ]       0  --.-KB/s               git-2.56.1.tar.xz     2%[                    ] 240.00K  1.12MB/s               git-2.56.1.tar.xz     5%[>                   ] 480.00K  1.12MB/s               git-2.56.1.tar.xz     8%[>                   ] 715.00K  1.12MB/s               git-2.56.1.tar.xz    11%[=>                  ] 955.00K  1.12MB/s               git-2.56.1.tar.xz    12%[=>                  ]   1.02M   657KB/s               git-2.56.1.tar.xz    15%[==>                 ]   1.25M   715KB/s               git-2.56.1.tar.xz    18%[==>                 ]   1.48M   759KB/s               git-2.56.1.tar.xz    21%[===>                ]   1.72M   796KB/s               git-2.56.1.tar.xz    24%[===>                ]   1.95M   826KB/s               git-2.56.1.tar.xz    24%[===>                ]   2.02M   702KB/s               git-2.56.1.tar.xz    27%[====>               ]   2.25M   732KB/s    eta 8s     git-2.56.1.tar.xz    30%[=====>              ]   2.48M   757KB/s    eta 8s     git-2.56.1.tar.xz    33%[=====>              ]   2.71M   779KB/s    eta 8s     git-2.56.1.tar.xz    36%[======>             ]   2.95M   800KB/s    eta 8s     git-2.56.1.tar.xz    37%[======>             ]   3.01M   722KB/s    eta 7s     git-2.56.1.tar.xz    40%[=======>            ]   3.25M   742KB/s    eta 7s     git-2.56.1.tar.xz    42%[=======>            ]   3.48M   760KB/s    eta 7s     git-2.56.1.tar.xz    45%[========>           ]   3.71M   763KB/s    eta 7s     git-2.56.1.tar.xz    48%[========>           ]   3.92M   753KB/s    eta 7s     git-2.56.1.tar.xz    49%[========>           ]   4.02M   679KB/s    eta 6s     git-2.56.1.tar.xz    52%[=========>          ]   4.24M   683KB/s    eta 6s     git-2.56.1.tar.xz    55%[==========>         ]   4.48M   794KB/s    eta 6s     git-2.56.1.tar.xz    58%[==========>         ]   4.71M   785KB/s    eta 6s     git-2.56.1.tar.xz    60%[===========>        ]   4.93M   789KB/s    eta 6s     git-2.56.1.tar.xz    61%[===========>        ]   5.02M   760KB/s    eta 4s     git-2.56.1.tar.xz    64%[===========>        ]   5.25M   764KB/s    eta 4s     git-2.56.1.tar.xz    67%[============>       ]   5.48M   858KB/s    eta 4s     git-2.56.1.tar.xz    70%[=============>      ]   5.71M   850KB/s    eta 4s     git-2.56.1.tar.xz    73%[=============>      ]   5.95M   855KB/s    eta 4s     git-2.56.1.tar.xz    74%[=============>      ]   6.02M   807KB/s    eta 3s     git-2.56.1.tar.xz    77%[==============>     ]   6.25M   812KB/s    eta 3s     git-2.56.1.tar.xz    80%[===============>    ]   6.48M   912KB/s    eta 3s     git-2.56.1.tar.xz    82%[===============>    ]   6.71M   905KB/s    eta 3s     git-2.56.1.tar.xz    85%[================>   ]   6.94M   907KB/s    eta 3s     git-2.56.1.tar.xz    86%[================>   ]   7.02M   857KB/s    eta 1s     git-2.56.1.tar.xz    89%[================>   ]   7.24M   862KB/s    eta 1s     git-2.56.1.tar.xz    92%[=================>  ]   7.48M   978KB/s    eta 1s     git-2.56.1.tar.xz    95%[==================> ]   7.71M   981KB/s    eta 1s     git-2.56.1.tar.xz    97%[==================> ]   7.93M   977KB/s    eta 1s     git-2.56.1.tar.xz   100%[===================>]   8.10M   977KB/s    in 9.8s    
+
+2026-11-11 04:34:08 (845 KB/s) - ‘git-2.56.1.tar.xz’ saved [8494608/8494608]
+
+--2026-11-11 04:34:08--  https://www.kernel.org/pub/software/scm/git/git-manpages-2.56.1.tar.xz
+Resolving www.kernel.org (www.kernel.org)... 151.101.193.55, 151.101.1.55, 151.101.65.55, ...
+Connecting to www.kernel.org (www.kernel.org)|151.101.193.55|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 636072 (621K) [application/x-xz]
+Saving to: ‘git-manpages-2.56.1.tar.xz’
+
+          git-manpa   0%[                    ]       0  --.-KB/s                        git-manpag  38%[======>             ] 240.00K  1.09MB/s                       git-manpage  77%[==============>     ] 480.00K  1.10MB/s               git-manpages-2.56.1 100%[===================>] 621.16K  1.11MB/s    in 0.5s    
+
+2026-11-11 04:34:10 (1.11 MB/s) - ‘git-manpages-2.56.1.tar.xz’ saved [636072/636072]
+
+--2026-11-11 04:34:11--  https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.56.1.tar.xz
+Resolving www.kernel.org (www.kernel.org)... 151.101.193.55, 151.101.65.55, 151.101.129.55, ...
+Connecting to www.kernel.org (www.kernel.org)|151.101.193.55|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1741716 (1.7M) [application/x-xz]
+Saving to: ‘git-htmldocs-2.56.1.tar.xz’
+
+          git-htmld   0%[                    ]       0  --.-KB/s                        git-htmldo  13%[=>                  ] 224.00K  1.09MB/s                       git-htmldoc  27%[====>               ] 464.00K  1.10MB/s                      git-htmldocs  41%[=======>            ] 704.00K  1.11MB/s                     git-htmldocs-  55%[==========>         ] 944.00K  1.11MB/s                    git-htmldocs-2  69%[============>       ]   1.16M  1.11MB/s                   git-htmldocs-2.  83%[===============>    ]   1.39M  1.11MB/s                  git-htmldocs-2.5  97%[==================> ]   1.62M  1.11MB/s               git-htmldocs-2.56.1 100%[===================>]   1.66M  1.11MB/s    in 1.5s    
+
+2026-11-11 04:34:13 (1.11 MB/s) - ‘git-htmldocs-2.56.1.tar.xz’ saved [1741716/1741716]
+
+configure: Setting lib to 'lib' (the default)
+configure: Will try -pthread then -lpthread to enable POSIX Threads.
+configure: CHECKS for site configuration
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+configure: Setting ETC_GITCONFIG to /etc/gitconfig
+configure: Setting PYTHON_PATH to python3
+configure: CHECKS for programs
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking for inline... inline
+checking if linker supports -R... no
+checking if linker supports -Wl,-rpath,... yes
+checking for gar... no
+checking for ar... ar
+checking for gtar... no
+checking for tar... tar
+checking for gnudiff... no
+checking for gdiff... no
+checking for diff... diff
+checking for asciidoc... no
+configure: CHECKS for libraries
+checking for SHA1_Init in -lcrypto... yes
+checking for pcre2_config_8 in -lpcre2-8... yes
+checking for curl_global_init in -lcurl... yes
+checking for curl-config... curl-config
+configure: Setting CURL_LDFLAGS to '-lcurl'
+checking for XML_ParserCreate in -lexpat... yes
+checking for iconv in -lc... yes
+checking for deflateBound in -lz... yes
+checking for socket in -lc... yes
+checking for inet_ntop... yes
+checking for inet_pton... yes
+checking for hstrerror... yes
+checking for basename in -lc... yes
+checking if libc contains libintl... yes
+checking for libintl.h... yes
+configure: CHECKS for header files
+checking for sys/select.h... yes
+checking for poll.h... yes
+checking for sys/poll.h... yes
+checking for inttypes.h... (cached) yes
+checking for old iconv()... no
+checking whether iconv omits bom for utf-16 and utf-32... no
+configure: CHECKS for typedefs, structures, and compiler characteristics
+checking for socklen_t... yes
+checking for struct itimerval... yes
+checking for struct stat.st_mtimespec.tv_nsec... no
+checking for struct stat.st_mtim.tv_nsec... yes
+checking for struct dirent.d_type... yes
+checking for struct passwd.pw_gecos... yes
+checking for struct sockaddr_storage... yes
+checking for struct addrinfo... yes
+checking for getaddrinfo... yes
+checking for library containing getaddrinfo... none required
+checking how to run the C preprocessor... gcc -E
+checking for egrep -e... /usr/bin/grep -E
+checking whether the platform regex supports REG_STARTEND... yes
+checking whether system succeeds to read fopen'ed directory... yes
+checking whether snprintf() and/or vsnprintf() return bogus value... no
+checking whether the platform uses typical file type bits... yes
+configure: CHECKS for library functions
+checking for libgen.h... yes
+checking for paths.h... yes
+checking for libcharset.h... no
+checking for strings.h... (cached) yes
+checking for locale_charset in -liconv... no
+checking for locale_charset in -lcharset... no
+checking for clock_gettime... yes
+checking for library containing clock_gettime... none required
+checking for CLOCK_MONOTONIC... yes
+checking for sync_file_range... yes
+checking for library containing sync_file_range... none required
+checking for setitimer... yes
+checking for library containing setitimer... none required
+checking for strcasestr... yes
+checking for library containing strcasestr... none required
+checking for memmem... yes
+checking for library containing memmem... none required
+checking for strlcpy... yes
+checking for library containing strlcpy... none required
+checking for strtoumax... yes
+checking for library containing strtoumax... none required
+checking for setenv... yes
+checking for library containing setenv... none required
+checking for unsetenv... yes
+checking for library containing unsetenv... none required
+checking for mkdtemp... yes
+checking for library containing mkdtemp... none required
+checking for initgroups... yes
+checking for library containing initgroups... none required
+checking for getdelim... yes
+checking for library containing getdelim... none required
+checking for BSD sysctl... no
+checking for sysinfo... yes
+checking for POSIX Threads with ''... yes
+configure: creating ./config.status
+config.status: creating config.mak.autogen
+config.status: executing config.mak.autogen commands
+GIT_VERSION=2.56.1
+    * new build flags
+    * new link flags
+    * new prefix flags
+    GEN command-list.h
+    CC hex.o
+    CC hex-ll.o
+    GEN hook-list.h
+    CC ident.o
+    CC json-writer.o
+    CC kwset.o
+    CC levenshtein.o
+    CC line-log.o
+    CC line-range.o
+    CC linear-assignment.o
+    CC list-objects-filter-options.o
+    CC list-objects-filter.o
+    CC list-objects.o
+    CC lockfile.o
+    CC log-tree.o
+    CC loose.o
+    CC ls-refs.o
+    CC mailinfo.o
+    CC mailmap.o
+    CC mem-pool.o
+    CC match-trees.o
+    CC merge-blobs.o
+    CC merge-ll.o
+    CC merge-ort.o
+    CC merge-ort-wrappers.o
+    CC merge.o
+    CC midx.o
+    CC midx-write.o
+    CC name-hash.o
+    CC negotiator/default.o
+    CC negotiator/noop.o
+    CC negotiator/skipping.o
+    CC notes-cache.o
+    CC notes-merge.o
+    CC notes-utils.o
+    CC notes.o
+    CC object-file-convert.o
+    CC object-file.o
+    CC object-name.o
+    CC object.o
+    CC odb.o
+    CC odb/source.o
+    CC odb/source-files.o
+    CC odb/source-inmemory.o
+    CC odb/source-loose.o
+    CC odb/source-packed.o
+    CC odb/streaming.o
+    CC odb/transaction.o
+    CC oid-array.o
+    CC oidmap.o
+    CC oidset.o
+    CC oidtree.o
+    CC pack-bitmap-write.o
+    CC pack-bitmap.o
+    CC pack-check.o
+    CC pack-mtimes.o
+    CC pack-objects.o
+    CC pack-refs.o
+    CC pack-revindex.o
+    CC pack-write.o
+    CC packfile.o
+    CC packfile-list.o
+    CC pager.o
+    CC parallel-checkout.o
+    CC parse.o
+    CC parse-options-cb.o
+    CC parse-options.o
+    CC patch-delta.o
+    CC patch-ids.o
+    CC path.o
+    CC path-walk.o
+    CC pathspec.o
+    CC pkt-line.o
+    CC preload-index.o
+    CC pretty.o
+    CC prio-queue.o
+    CC progress.o
+    CC promisor-remote.o
+    CC prompt.o
+    CC protocol.o
+    CC protocol-caps.o
+    CC prune-packed.o
+    CC pseudo-merge.o
+    CC quote.o
+    CC range-diff.o
+    CC reachable.o
+    CC read-cache.o
+    CC rebase-interactive.o
+    CC rebase.o
+    CC ref-filter.o
+    CC reflog-walk.o
+    CC reflog.o
+    CC refs.o
+    CC refs/debug.o
+    CC refs/files-backend.o
+    CC refs/reftable-backend.o
+    CC refs/iterator.o
+    CC refs/packed-backend.o
+    CC refs/ref-cache.o
+    CC refspec.o
+    CC reftable/basics.o
+    CC reftable/block.o
+    CC reftable/blocksource.o
+    CC reftable/error.o
+    CC reftable/fsck.o
+    CC reftable/iter.o
+    CC reftable/merged.o
+    CC reftable/pq.o
+    CC reftable/record.o
+    CC reftable/stack.o
+    CC reftable/system.o
+    CC reftable/table.o
+    CC reftable/tree.o
+    CC reftable/writer.o
+    CC remote.o
+    CC repack.o
+    CC repack-cruft.o
+    CC repack-filtered.o
+    CC repack-geometry.o
+    CC repack-midx.o
+    CC repack-promisor.o
+    CC replace-object.o
+    CC replay.o
+    CC repo-settings.o
+    CC repository.o
+    CC rerere.o
+    CC reset.o
+    CC resolve-undo.o
+    CC revision.o
+    CC run-command.o
+    CC send-pack.o
+    CC sequencer.o
+    CC serve.o
+    CC server-info.o
+    CC setup.o
+    CC shallow.o
+    CC sideband.o
+    CC sigchain.o
+    CC sparse-index.o
+    CC split-index.o
+    CC stable-qsort.o
+    CC statinfo.o
+    CC strbuf.o
+    CC string-list.o
+    CC strmap.o
+    CC strvec.o
+    CC sub-process.o
+    CC submodule-config.o
+    CC submodule.o
+    CC symlinks.o
+    CC tag.o
+    CC tempfile.o
+    CC thread-utils.o
+    CC tmp-objdir.o
+    CC trace.o
+    CC trace2.o
+    CC trace2/tr2_cfg.o
+    CC trace2/tr2_cmd_name.o
+    CC trace2/tr2_ctr.o
+    CC trace2/tr2_dst.o
+    CC trace2/tr2_sid.o
+    CC trace2/tr2_sysenv.o
+    CC trace2/tr2_tbuf.o
+    CC trace2/tr2_tgt_event.o
+    CC trace2/tr2_tgt_normal.o
+    CC trace2/tr2_tgt_perf.o
+    CC trace2/tr2_tls.o
+    CC trace2/tr2_tmr.o
+    CC trailer.o
+    CC transport-helper.o
+    CC transport.o
+    CC tree-diff.o
+    CC tree-walk.o
+    CC tree.o
+    CC unpack-trees.o
+    CC upload-pack.o
+    CC url.o
+    CC urlmatch.o
+    CC usage.o
+    CC userdiff.o
+    CC utf8.o
+    CC versioncmp.o
+    CC walker.o
+    CC wildmatch.o
+    CC worktree.o
+    CC wrapper.o
+    CC write-or-die.o
+    CC ws.o
+    CC wt-status.o
+    CC xdiff-interface.o
+    CC xdiff/xdiffi.o
+    CC xdiff/xemit.o
+    CC xdiff/xhistogram.o
+    CC xdiff/xmerge.o
+    CC xdiff/xpatience.o
+    CC xdiff/xprepare.o
+    CC xdiff/xutils.o
+    CC unix-socket.o
+    CC unix-stream-server.o
+    CC compat/simple-ipc/ipc-shared.o
+    CC compat/simple-ipc/ipc-unix-socket.o
+    CC sha1dc_git.o
+    CC sha1dc/sha1.o
+    CC sha1dc/ubc_check.o
+    CC sha256/block/sha256.o
+    CC compat/linux/procinfo.o
+    CC compat/fopen.o
+    CC compat/qsort_s.o
+    CC compat/fsmonitor/fsm-listen-linux.o
+    CC compat/fsmonitor/fsm-health-linux.o
+    CC compat/fsmonitor/fsm-ipc-unix.o
+    CC compat/fsmonitor/fsm-settings-unix.o
+    CC compat/fsmonitor/fsm-path-utils-linux.o
+    CC http-backend.o
+    CC imap-send.o
+    CC http.o
+imap-send.c: In function ‘host_matches’:
+imap-send.c:230:9: warning: ‘ASN1_STRING_length’ is deprecated: Since OpenSSL 4.1; use ASN1_STRING_get_length() [-Wdeprecated-declarations]
+  230 |         if (memchr(pattern, '\0', ASN1_STRING_length(asn1_str)))
+      |         ^~
+In file included from /usr/include/openssl/objects.h:21,
+                 from /usr/include/openssl/evp.h:48,
+                 from /usr/include/openssl/x509.h:31,
+                 from /usr/include/openssl/ssl.h:34,
+                 from git-compat-util.h:193,
+                 from imap-send.c:27:
+/usr/include/openssl/asn1.h:794:5: note: declared here
+  794 | int ASN1_STRING_length(const ASN1_STRING *x);
+      |     ^~~~~~~~~~~~~~~~~~
+imap-send.c:230:9: warning: ‘ASN1_STRING_length’ is deprecated: Since OpenSSL 4.1; use ASN1_STRING_get_length() [-Wdeprecated-declarations]
+  230 |         if (memchr(pattern, '\0', ASN1_STRING_length(asn1_str)))
+      |         ^~
+/usr/include/openssl/asn1.h:794:5: note: declared here
+  794 | int ASN1_STRING_length(const ASN1_STRING *x);
+      |     ^~~~~~~~~~~~~~~~~~
+    CC sh-i18n--envsubst.o
+    CC shell.o
+    CC http-walker.o
+    CC http-fetch.o
+    CC http-push.o
+    CC remote-curl.o
+    * new script parameters
+    * new perl-specific parameters
+    GEN git-p4
+    GEN git-instaweb
+    CC git.o
+    CC builtin/add.o
+    CC builtin/am.o
+    CC builtin/annotate.o
+    CC builtin/apply.o
+    CC builtin/archive.o
+    CC builtin/backfill.o
+    CC builtin/bisect.o
+    CC builtin/blame.o
+    CC builtin/branch.o
+    CC builtin/bugreport.o
+    CC builtin/bundle.o
+    CC builtin/cat-file.o
+    CC builtin/check-attr.o
+    CC builtin/check-ignore.o
+    CC builtin/check-mailmap.o
+    CC builtin/check-ref-format.o
+    CC builtin/checkout--worker.o
+    CC builtin/checkout-index.o
+    CC builtin/checkout.o
+    CC builtin/clean.o
+    CC builtin/clone.o
+    CC builtin/column.o
+    CC builtin/commit-graph.o
+    CC builtin/commit-tree.o
+    CC builtin/commit.o
+    CC builtin/count-objects.o
+    CC builtin/config.o
+    CC builtin/credential-cache--daemon.o
+    CC builtin/credential-cache.o
+    CC builtin/credential-store.o
+    CC builtin/credential.o
+    CC builtin/describe.o
+    CC builtin/diagnose.o
+    CC builtin/diff-files.o
+    CC builtin/diff-index.o
+    CC builtin/diff-pairs.o
+    CC builtin/diff-tree.o
+    CC builtin/diff.o
+    CC builtin/difftool.o
+    CC builtin/fast-export.o
+    CC builtin/fast-import.o
+    CC builtin/fetch-pack.o
+    CC builtin/fetch.o
+    CC builtin/fmt-merge-msg.o
+    CC builtin/for-each-ref.o
+    CC builtin/for-each-repo.o
+    CC builtin/fsck.o
+    CC builtin/fsmonitor--daemon.o
+    CC builtin/gc.o
+    CC builtin/get-tar-commit-id.o
+    CC builtin/grep.o
+    CC builtin/hash-object.o
+    GEN config-list.h
+    CC builtin/history.o
+    CC builtin/hook.o
+    CC builtin/index-pack.o
+    CC builtin/init-db.o
+    CC builtin/interpret-trailers.o
+    CC builtin/last-modified.o
+    CC builtin/log.o
+    CC builtin/ls-files.o
+    CC builtin/ls-remote.o
+    CC builtin/ls-tree.o
+    CC builtin/mailinfo.o
+    CC builtin/mailsplit.o
+    CC builtin/merge-base.o
+    CC builtin/merge-file.o
+    CC builtin/merge-index.o
+    CC builtin/merge-ours.o
+    CC builtin/merge-recursive.o
+    CC builtin/merge-tree.o
+    CC builtin/merge.o
+    CC builtin/mktag.o
+    CC builtin/mktree.o
+    CC builtin/multi-pack-index.o
+    CC builtin/mv.o
+    CC builtin/name-rev.o
+    CC builtin/notes.o
+    CC builtin/pack-objects.o
+    CC builtin/pack-redundant.o
+    CC builtin/pack-refs.o
+    CC builtin/patch-id.o
+    CC builtin/prune-packed.o
+    CC builtin/prune.o
+    CC builtin/pull.o
+    CC builtin/push.o
+    CC builtin/range-diff.o
+    CC builtin/read-tree.o
+    CC builtin/rebase.o
+    CC builtin/receive-pack.o
+    CC builtin/reflog.o
+    CC builtin/refs.o
+    CC builtin/remote-ext.o
+    CC builtin/remote-fd.o
+    CC builtin/remote.o
+    CC builtin/repack.o
+    CC builtin/replace.o
+    CC builtin/replay.o
+    CC builtin/repo.o
+    CC builtin/rerere.o
+    CC builtin/reset.o
+    CC builtin/rev-list.o
+    CC builtin/rev-parse.o
+    CC builtin/revert.o
+    CC builtin/rm.o
+    CC builtin/send-pack.o
+    CC builtin/shortlog.o
+    CC builtin/show-branch.o
+    CC builtin/show-index.o
+    CC builtin/show-ref.o
+    CC builtin/sparse-checkout.o
+    CC builtin/stash.o
+    CC builtin/stripspace.o
+    CC builtin/submodule--helper.o
+    CC builtin/symbolic-ref.o
+    CC builtin/tag.o
+    CC builtin/unpack-file.o
+    CC builtin/unpack-objects.o
+    CC builtin/update-index.o
+    CC builtin/update-ref.o
+    CC builtin/update-server-info.o
+    CC builtin/upload-archive.o
+    CC builtin/upload-pack.o
+    CC builtin/url-parse.o
+    CC builtin/var.o
+    CC builtin/verify-commit.o
+    CC builtin/verify-pack.o
+    CC builtin/verify-tag.o
+    CC builtin/worktree.o
+    CC builtin/write-tree.o
+    GEN git-mergetool--lib
+    GEN git-sh-i18n
+    GEN git-sh-setup
+    CC scalar.o
+    CC daemon.o
+    CC common-main.o
+    CC abspath.o
+    CC add-interactive.o
+    CC add-patch.o
+    CC advice.o
+    CC alias.o
+    CC alloc.o
+    CC apply.o
+    CC archive-tar.o
+    CC archive-zip.o
+    CC archive.o
+    CC attr.o
+    CC base85.o
+    CC bisect.o
+    CC blame.o
+    CC blob.o
+    CC bloom.o
+    CC branch.o
+    CC bundle-uri.o
+    CC bundle.o
+    CC cache-tree.o
+    CC cbtree.o
+    CC chdir-notify.o
+    CC checkout.o
+    CC color.o
+    CC chunk-format.o
+    CC column.o
+    CC combine-diff.o
+    CC commit-graph.o
+    CC commit-reach.o
+    CC commit.o
+    CC common-exit.o
+    CC common-init.o
+    CC compat/nonblock.o
+    CC compat/obstack.o
+    CC compat/open.o
+    CC compat/terminal.o
+    CC compiler-tricks/not-constant.o
+    CC config.o
+    CC connect.o
+    CC connected.o
+    CC convert.o
+    CC copy.o
+    CC credential.o
+    CC csum-file.o
+    CC date.o
+    CC ctype.o
+    CC decorate.o
+    CC delta-islands.o
+    CC diagnose.o
+    CC diff-delta.o
+    CC diff-merges.o
+    CC diff-lib.o
+    CC diff-no-index.o
+    CC diff.o
+    CC diffcore-break.o
+    CC diffcore-delta.o
+    CC diffcore-order.o
+    CC diffcore-pickaxe.o
+    CC diffcore-rename.o
+    CC diffcore-rotate.o
+    CC dir-iterator.o
+    CC dir.o
+    CC editor.o
+    CC entry.o
+    CC environment.o
+    CC ewah/bitmap.o
+    CC ewah/ewah_bitmap.o
+    CC ewah/ewah_io.o
+    CC ewah/ewah_rlw.o
+    CC exec-cmd.o
+    CC fetch-negotiator.o
+    CC fetch-object-info.o
+    CC fetch-pack.o
+    CC fmt-merge-msg.o
+    CC fsck.o
+    CC fsmonitor.o
+    CC fsmonitor-ipc.o
+    CC fsmonitor-settings.o
+    CC gettext.o
+    CC git-zlib.o
+    CC gpg-interface.o
+    CC graph.o
+    CC grep.o
+    CC hash-lookup.o
+    CC hash.o
+    CC hashmap.o
+    CC help.o
+    CC hook.o
+    GEN version-def.h
+    GEN git-difftool--helper
+    GEN git-filter-branch
+    GEN git-merge-octopus
+    GEN git-merge-one-file
+    GEN git-merge-resolve
+    GEN git-mergetool
+    GEN git-quiltimport
+    GEN git-request-pull
+    GEN git-submodule
+    GEN git-web--browse
+    GEN GIT-PERL-HEADER
+    CC builtin/help.o
+    CC version.o
+    GEN git-archimport
+    GEN git-cvsexportcommit
+    GEN git-cvsimport
+    GEN git-cvsserver
+    GEN git-send-email
+    GEN git-svn
+    AR libgit.a
+    CARGO target/release/libgitcore.a
+    LINK git-daemon
+    LINK git-imap-send
+    LINK git-http-backend
+    LINK git-sh-i18n--envsubst
+    LINK git-shell
+    LINK git-http-fetch
+    LINK git-http-push
+    LINK git-remote-http
+    LINK git
+    LINK scalar
+    LN/CP git-remote-https
+    LN/CP git-remote-ftp
+    LN/CP git-remote-ftps
+    BUILTIN git-add
+    BUILTIN git-apply
+    BUILTIN git-am
+    BUILTIN git-annotate
+    BUILTIN git-archive
+    BUILTIN git-backfill
+    BUILTIN git-blame
+    BUILTIN git-bisect
+    BUILTIN git-branch
+    BUILTIN git-bugreport
+    BUILTIN git-check-attr
+    BUILTIN git-bundle
+    BUILTIN git-cat-file
+    BUILTIN git-check-mailmap
+    BUILTIN git-check-ignore
+    BUILTIN git-check-ref-format
+    BUILTIN git-checkout-index
+    BUILTIN git-checkout--worker
+    BUILTIN git-checkout
+    BUILTIN git-clean
+    BUILTIN git-clone
+    BUILTIN git-column
+    BUILTIN git-commit-graph
+    BUILTIN git-commit-tree
+    BUILTIN git-commit
+    BUILTIN git-config
+    BUILTIN git-count-objects
+    BUILTIN git-credential-cache--daemon
+    BUILTIN git-credential-cache
+    BUILTIN git-credential-store
+    BUILTIN git-credential
+    BUILTIN git-describe
+    BUILTIN git-diagnose
+    BUILTIN git-diff-index
+    BUILTIN git-diff-files
+    BUILTIN git-diff-pairs
+    BUILTIN git-difftool
+    BUILTIN git-diff-tree
+    BUILTIN git-diff
+    BUILTIN git-fast-export
+    BUILTIN git-fetch-pack
+    BUILTIN git-fast-import
+    BUILTIN git-fetch
+    BUILTIN git-fmt-merge-msg
+    BUILTIN git-for-each-ref
+    BUILTIN git-fsck
+    BUILTIN git-for-each-repo
+    BUILTIN git-fsmonitor--daemon
+    BUILTIN git-gc
+    BUILTIN git-get-tar-commit-id
+    BUILTIN git-hash-object
+    BUILTIN git-grep
+    BUILTIN git-help
+    BUILTIN git-history
+    BUILTIN git-hook
+    BUILTIN git-index-pack
+    BUILTIN git-init-db
+    BUILTIN git-interpret-trailers
+    BUILTIN git-last-modified
+    BUILTIN git-log
+    BUILTIN git-ls-files
+    BUILTIN git-ls-remote
+    BUILTIN git-ls-tree
+    BUILTIN git-mailinfo
+    BUILTIN git-mailsplit
+    BUILTIN git-merge-base
+    BUILTIN git-merge-file
+    BUILTIN git-merge-index
+    BUILTIN git-merge-ours
+    BUILTIN git-merge-tree
+    BUILTIN git-merge
+    BUILTIN git-merge-recursive
+    BUILTIN git-mktag
+    BUILTIN git-mktree
+    BUILTIN git-multi-pack-index
+    BUILTIN git-mv
+    BUILTIN git-name-rev
+    BUILTIN git-notes
+    BUILTIN git-pack-objects
+    BUILTIN git-pack-redundant
+    BUILTIN git-patch-id
+    BUILTIN git-pack-refs
+    BUILTIN git-prune
+    BUILTIN git-prune-packed
+    BUILTIN git-pull
+    BUILTIN git-push
+    BUILTIN git-range-diff
+    BUILTIN git-read-tree
+    BUILTIN git-rebase
+    BUILTIN git-reflog
+    BUILTIN git-receive-pack
+    BUILTIN git-remote-fd
+    BUILTIN git-refs
+    BUILTIN git-remote-ext
+    BUILTIN git-repack
+    BUILTIN git-remote
+    BUILTIN git-replace
+    BUILTIN git-replay
+    BUILTIN git-repo
+    BUILTIN git-rerere
+    BUILTIN git-reset
+    BUILTIN git-rev-list
+    BUILTIN git-rev-parse
+    BUILTIN git-revert
+    BUILTIN git-rm
+    BUILTIN git-send-pack
+    BUILTIN git-shortlog
+    BUILTIN git-show-branch
+    BUILTIN git-sparse-checkout
+    BUILTIN git-show-index
+    BUILTIN git-show-ref
+    BUILTIN git-stash
+    BUILTIN git-stripspace
+    BUILTIN git-symbolic-ref
+    BUILTIN git-submodule--helper
+    BUILTIN git-unpack-file
+    BUILTIN git-tag
+    BUILTIN git-unpack-objects
+    BUILTIN git-update-index
+    BUILTIN git-update-server-info
+    BUILTIN git-update-ref
+    BUILTIN git-upload-archive
+    BUILTIN git-url-parse
+    BUILTIN git-upload-pack
+    BUILTIN git-var
+    BUILTIN git-verify-commit
+    BUILTIN git-verify-pack
+    BUILTIN git-worktree
+    BUILTIN git-verify-tag
+    BUILTIN git-write-tree
+    BUILTIN git-cherry
+    BUILTIN git-cherry-pick
+    BUILTIN git-format-patch
+    BUILTIN git-format-rev
+    BUILTIN git-fsck-objects
+    BUILTIN git-init
+    BUILTIN git-maintenance
+    BUILTIN git-merge-subtree
+    BUILTIN git-stage
+    BUILTIN git-show
+    BUILTIN git-restore
+    BUILTIN git-status
+    BUILTIN git-switch
+    BUILTIN git-version
+    BUILTIN git-whatchanged
+    SUBDIR git-gui
+    MSGFMT po/bg.msg
+GITGUI_VERSION=0.21.0.285.g5dcb97
+    MSGFMT po/de.msg
+    MSGFMT po/el.msg
+    MSGFMT po/fr.msg
+    MSGFMT po/hu.msg
+    MSGFMT po/it.msg
+    MSGFMT po/ja.msg
+    MSGFMT po/nb.msg
+    MSGFMT po/pt_br.msg
+    MSGFMT po/pt_pt.msg
+    MSGFMT po/sv.msg
+    MSGFMT po/ru.msg
+    MSGFMT po/vi.msg
+    MSGFMT po/zh_cn.msg
+    GEN git-gui
+    GEN git-gui--askpass
+    GEN git-gui--askyesno
+    INDEX lib/
+    SUBDIR gitk-git
+    MSGFMT po/bg.msg
+    MSGFMT po/ca.msg
+    * new Tcl/Tk interpreter location
+    MSGFMT po/de.msg
+    MSGFMT po/es.msg
+    MSGFMT po/fr.msg
+    MSGFMT po/hu.msg
+    MSGFMT po/it.msg
+    MSGFMT po/pt_br.msg
+    MSGFMT po/ja.msg
+    MSGFMT po/pt_pt.msg
+    MSGFMT po/ru.msg
+    MSGFMT po/ta.msg
+    MSGFMT po/sv.msg
+    MSGFMT po/vi.msg
+    MSGFMT po/zh_cn.msg
+    GEN gitk-wish
+    SUBDIR templates
+    CC oss-fuzz/dummy-cmd-main.o
+    CC oss-fuzz/fuzz-config.o
+    CC oss-fuzz/fuzz-commit-graph.o
+    CC oss-fuzz/fuzz-credential-from-url-gently.o
+    CC oss-fuzz/fuzz-date.o
+    CC oss-fuzz/fuzz-pack-headers.o
+    CC oss-fuzz/fuzz-pack-idx.o
+    CC oss-fuzz/fuzz-parse-attr-line.o
+    CC oss-fuzz/fuzz-reftable.o
+    CC oss-fuzz/fuzz-url-decode-mem.o
+    LINK oss-fuzz/fuzz-commit-graph
+    LINK oss-fuzz/fuzz-config
+    LINK oss-fuzz/fuzz-credential-from-url-gently
+    LINK oss-fuzz/fuzz-date
+    LINK oss-fuzz/fuzz-pack-headers
+    LINK oss-fuzz/fuzz-pack-idx
+    LINK oss-fuzz/fuzz-parse-attr-line
+    LINK oss-fuzz/fuzz-reftable
+    LINK oss-fuzz/fuzz-url-decode-mem
+    MKDIR -p po/build/locale/bg/LC_MESSAGES
+    MKDIR -p po/build/locale/af/LC_MESSAGES
+    MKDIR -p po/build/locale/ca/LC_MESSAGES
+    MSGFMT po/build/locale/bg/LC_MESSAGES/git.mo
+    MSGFMT po/build/locale/af/LC_MESSAGES/git.mo
+    MSGFMT po/build/locale/ca/LC_MESSAGES/git.mo
+    MKDIR -p po/build/locale/de/LC_MESSAGES
+    MKDIR -p po/build/locale/el/LC_MESSAGES
+    MKDIR -p po/build/locale/es/LC_MESSAGES
+    MSGFMT po/build/locale/de/LC_MESSAGES/git.mo
+    MSGFMT po/build/locale/el/LC_MESSAGES/git.mo
+    MSGFMT po/build/locale/es/LC_MESSAGES/git.mo
+    MKDIR -p po/build/locale/fr/LC_MESSAGES
+    MKDIR -p po/build/locale/ga/LC_MESSAGES
+    MSGFMT po/build/locale/fr/LC_MESSAGES/git.mo
+    MKDIR -p po/build/locale/id/LC_MESSAGES
+    MSGFMT po/build/locale/ga/LC_MESSAGES/git.mo
+    MSGFMT po/build/locale/id/LC_MESSAGES/git.mo
+    MKDIR -p po/build/locale/is/LC_MESSAGES
+    MKDIR -p po/build/locale/it/LC_MESSAGES
+    MKDIR -p po/build/locale/ko/LC_MESSAGES
+    MSGFMT po/build/locale/it/LC_MESSAGES/git.mo
+    MSGFMT po/build/locale/is/LC_MESSAGES/git.mo
+    MSGFMT po/build/locale/ko/LC_MESSAGES/git.mo
+    MKDIR -p po/build/locale/pl/LC_MESSAGES
+    MSGFMT po/build/locale/pl/LC_MESSAGES/git.mo
+    MKDIR -p po/build/locale/pt_PT/LC_MESSAGES
+    MKDIR -p po/build/locale/pt_BR/LC_MESSAGES
+    MSGFMT po/build/locale/pt_PT/LC_MESSAGES/git.mo
+    MSGFMT po/build/locale/pt_BR/LC_MESSAGES/git.mo
+    MKDIR -p po/build/locale/ru/LC_MESSAGES
+    MSGFMT po/build/locale/ru/LC_MESSAGES/git.mo
+    MKDIR -p po/build/locale/sv/LC_MESSAGES
+    MSGFMT po/build/locale/sv/LC_MESSAGES/git.mo
+    MKDIR -p po/build/locale/tr/LC_MESSAGES
+    MKDIR -p po/build/locale/uk/LC_MESSAGES
+    MSGFMT po/build/locale/tr/LC_MESSAGES/git.mo
+    MSGFMT po/build/locale/uk/LC_MESSAGES/git.mo
+    MKDIR -p po/build/locale/vi/LC_MESSAGES
+    MKDIR -p po/build/locale/zh_CN/LC_MESSAGES
+    MSGFMT po/build/locale/vi/LC_MESSAGES/git.mo
+    MSGFMT po/build/locale/zh_CN/LC_MESSAGES/git.mo
+    MKDIR -p po/build/locale/zh_TW/LC_MESSAGES
+    MSGFMT po/build/locale/zh_TW/LC_MESSAGES/git.mo
+    GEN perl/build/lib/Git/IndexInfo.pm
+    MKDIR -p perl/build/lib
+    MKDIR -p perl/build/lib/Git
+    GEN perl/build/lib/Git.pm
+    GEN perl/build/lib/Git/I18N.pm
+    GEN perl/build/lib/Git/LoadCPAN.pm
+    GEN perl/build/lib/Git/Packet.pm
+    GEN perl/build/lib/Git/SVN.pm
+    MKDIR -p perl/build/lib/Git/LoadCPAN
+    MKDIR -p perl/build/lib/Git/SVN
+    GEN perl/build/lib/Git/LoadCPAN/Error.pm
+    GEN perl/build/lib/Git/SVN/Editor.pm
+    GEN perl/build/lib/Git/SVN/Fetcher.pm
+    GEN perl/build/lib/Git/SVN/Log.pm
+    GEN perl/build/lib/Git/SVN/GlobSpec.pm
+    GEN perl/build/lib/Git/SVN/Migration.pm
+    GEN perl/build/lib/Git/SVN/Prompt.pm
+    GEN perl/build/lib/Git/SVN/Ra.pm
+    GEN perl/build/lib/Git/SVN/Utils.pm
+    MKDIR -p perl/build/lib/Git/SVN/Memoize
+    MKDIR -p perl/build/lib/Git/LoadCPAN/Mail
+    GEN perl/build/lib/Git/SVN/Memoize/YAML.pm
+    GEN perl/build/lib/Git/LoadCPAN/Mail/Address.pm
+    MKDIR -p perl/build/lib/FromCPAN
+    MKDIR -p perl/build/lib/FromCPAN/Mail
+    GEN perl/build/lib/FromCPAN/Mail/Address.pm
+    GEN perl/build/lib/FromCPAN/Error.pm
+    CC t/helper/test-fake-ssh.o
+    CC t/helper/test-tool.o
+    CC t/helper/test-advise.o
+    CC t/helper/test-base85.o
+    CC t/helper/test-bitmap.o
+    CC t/helper/test-bloom.o
+    CC t/helper/test-bundle-uri.o
+    CC t/helper/test-cache-entry.o
+    CC t/helper/test-cache-tree.o
+    CC t/helper/test-chmtime.o
+    CC t/helper/test-config.o
+    CC t/helper/test-crontab.o
+    CC t/helper/test-csprng.o
+    CC t/helper/test-date.o
+    CC t/helper/test-delete-gpgsig.o
+    CC t/helper/test-delta.o
+    CC t/helper/test-dir-iterator.o
+    CC t/helper/test-drop-caches.o
+    CC t/helper/test-dump-cache-tree.o
+    CC t/helper/test-dump-fsmonitor.o
+    CC t/helper/test-dump-split-index.o
+    CC t/helper/test-dump-untracked-cache.o
+    CC t/helper/test-env-helper.o
+    CC t/helper/test-example-tap.o
+    CC t/helper/test-find-pack.o
+    CC t/helper/test-fsmonitor-client.o
+    CC t/helper/test-genrandom.o
+    CC t/helper/test-genzeros.o
+    CC t/helper/test-getcwd.o
+    CC t/helper/test-hash-speed.o
+    CC t/helper/test-hash.o
+    CC t/helper/test-hashmap.o
+    CC t/helper/test-hexdump.o
+    CC t/helper/test-json-writer.o
+    CC t/helper/test-lazy-init-name-hash.o
+    CC t/helper/test-match-trees.o
+    CC t/helper/test-mergesort.o
+    CC t/helper/test-mktemp.o
+    CC t/helper/test-name-hash.o
+    CC t/helper/test-online-cpus.o
+    CC t/helper/test-pack-deltas.o
+    CC t/helper/test-pack-mtimes.o
+    CC t/helper/test-parse-options.o
+    CC t/helper/test-parse-pathspec-file.o
+    CC t/helper/test-partial-clone.o
+    CC t/helper/test-path-utils.o
+    CC t/helper/test-path-walk.o
+    CC t/helper/test-pcre2-config.o
+    CC t/helper/test-pkt-line.o
+    CC t/helper/test-proc-receive.o
+    CC t/helper/test-progress.o
+    CC t/helper/test-reach.o
+    CC t/helper/test-read-cache.o
+    CC t/helper/test-read-graph.o
+    CC t/helper/test-read-midx.o
+    CC t/helper/test-ref-store.o
+    CC t/helper/test-reftable.o
+    CC t/helper/test-regex.o
+    CC t/helper/test-rot13-filter.o
+    CC t/helper/test-repository.o
+    CC t/helper/test-revision-walking.o
+    CC t/helper/test-run-command.o
+    CC t/helper/test-scrap-cache-tree.o
+    CC t/helper/test-serve-v2.o
+    CC t/helper/test-sha1.o
+    CC t/helper/test-sha256.o
+    CC t/helper/test-sigchain.o
+    CC t/helper/test-simple-ipc.o
+    CC t/helper/test-string-list.o
+    CC t/helper/test-submodule-config.o
+    CC t/helper/test-submodule-nested-repo-config.o
+    CC t/helper/test-submodule.o
+    CC t/helper/test-subprocess.o
+    CC t/helper/test-synthesize.o
+    CC t/helper/test-trace2.o
+    CC t/helper/test-truncate.o
+    CC t/helper/test-userdiff.o
+    CC t/helper/test-wildmatch.o
+    CC t/helper/test-windows-named-pipe.o
+    CC t/helper/test-write-cache.o
+    CC t/helper/test-xml-encode.o
+    CC t/helper/test-zlib.o
+    CC t/unit-tests/test-lib.o
+    GEN bin-wrappers/git
+    GEN bin-wrappers/scalar
+    GEN bin-wrappers/git-receive-pack
+    GEN bin-wrappers/git-shell
+    GEN bin-wrappers/git-upload-archive
+    GEN bin-wrappers/git-upload-pack
+    GEN bin-wrappers/git-cvsserver
+    GEN bin-wrappers/test-fake-ssh
+    GEN bin-wrappers/test-tool
+    * new test suites
+    LINK t/helper/test-fake-ssh
+    GEN t/unit-tests/clar-decls.h
+    LINK t/helper/test-tool
+    GEN t/unit-tests/clar.suite
+    CC t/unit-tests/u-ctype.o
+    CC t/unit-tests/u-dir.o
+    CC t/unit-tests/u-example-decorate.o
+    CC t/unit-tests/u-hash.o
+    CC t/unit-tests/u-hashmap.o
+    CC t/unit-tests/u-list-objects-filter-options.o
+    CC t/unit-tests/u-mem-pool.o
+    CC t/unit-tests/u-odb-inmemory.o
+    CC t/unit-tests/u-oid-array.o
+    CC t/unit-tests/u-oidmap.o
+    CC t/unit-tests/u-oidtree.o
+    CC t/unit-tests/u-prio-queue.o
+    CC t/unit-tests/u-reftable-basics.o
+    CC t/unit-tests/u-reftable-block.o
+    CC t/unit-tests/u-reftable-merged.o
+    CC t/unit-tests/u-reftable-pq.o
+    CC t/unit-tests/u-reftable-readwrite.o
+    CC t/unit-tests/u-reftable-stack.o
+    CC t/unit-tests/u-reftable-table.o
+    CC t/unit-tests/u-reftable-tree.o
+    CC t/unit-tests/u-strbuf.o
+    CC t/unit-tests/u-strcmp-offset.o
+    CC t/unit-tests/u-string-list.o
+    CC t/unit-tests/u-strvec.o
+    CC t/unit-tests/u-trailer.o
+    CC t/unit-tests/u-urlmatch-normalization.o
+    CC t/unit-tests/u-utf8-width.o
+    CC t/unit-tests/lib-oid.o
+    CC t/unit-tests/clar/clar.o
+    CC t/unit-tests/lib-reftable.o
+    CC t/unit-tests/unit-test.o
+    MKDIR -p t/unit-tests/bin
+    LINK t/unit-tests/bin/unit-tests
+    GEN gitweb/static/gitweb.js
+    GEN gitweb/gitweb.cgi
+    * new script parameters
+    GEN git-difftool--helper
+    GEN git-filter-branch
+    GEN git-merge-octopus
+    GEN git-merge-one-file
+    GEN git-merge-resolve
+    GEN git-mergetool
+    GEN git-quiltimport
+    GEN git-request-pull
+    GEN git-submodule
+    GEN git-web--browse
+    * new perl-specific parameters
+    GEN GIT-PERL-HEADER
+    GEN git-archimport
+    GEN git-cvsexportcommit
+    GEN git-cvsimport
+    GEN git-cvsserver
+    GEN git-send-email
+    GEN git-svn
+    GEN git-instaweb
+    GEN git-mergetool--lib
+    GEN git-sh-i18n
+    GEN git-sh-setup
+    SUBDIR git-gui
+    SUBDIR gitk-git
+    SUBDIR templates
+    GEN perl/build/lib/Git.pm
+    GEN perl/build/lib/Git/I18N.pm
+    GEN perl/build/lib/Git/IndexInfo.pm
+    GEN perl/build/lib/Git/LoadCPAN.pm
+    GEN perl/build/lib/Git/Packet.pm
+    GEN perl/build/lib/Git/SVN.pm
+    GEN perl/build/lib/Git/LoadCPAN/Error.pm
+    GEN perl/build/lib/Git/SVN/Editor.pm
+    GEN perl/build/lib/Git/SVN/Fetcher.pm
+    GEN perl/build/lib/Git/SVN/GlobSpec.pm
+    GEN perl/build/lib/Git/SVN/Log.pm
+    GEN perl/build/lib/Git/SVN/Migration.pm
+    GEN perl/build/lib/Git/SVN/Prompt.pm
+    GEN perl/build/lib/Git/SVN/Ra.pm
+    GEN perl/build/lib/Git/SVN/Utils.pm
+    GEN perl/build/lib/Git/LoadCPAN/Mail/Address.pm
+    GEN perl/build/lib/Git/SVN/Memoize/YAML.pm
+    GEN perl/build/lib/FromCPAN/Error.pm
+    GEN perl/build/lib/FromCPAN/Mail/Address.pm
+install -d -m 755 '/usr/share/gitweb'
+install -m 755 gitweb/gitweb.cgi '/usr/share/gitweb'
+install -d -m 755 '/usr/share/gitweb/static'
+install -m 644 gitweb/static/gitweb.js gitweb/static/gitweb.css gitweb/static/git-logo.png gitweb/static/git-favicon.png \
+	'/usr/share/gitweb/static'
+install -d -m 755 '/usr/bin'
+install -d -m 755 '/usr/libexec/git-core'
+install   git-daemon git-http-backend git-imap-send git-sh-i18n--envsubst git-shell git-http-fetch git-http-push git-remote-http git-remote-https git-remote-ftp git-remote-ftps '/usr/libexec/git-core'
+install git-difftool--helper git-filter-branch git-merge-octopus git-merge-one-file git-merge-resolve git-mergetool git-quiltimport git-request-pull git-submodule git-web--browse git-archimport git-cvsexportcommit git-cvsimport git-cvsserver git-send-email git-svn git-p4 git-instaweb '/usr/libexec/git-core'
+install -m 644 git-mergetool--lib git-sh-i18n git-sh-setup '/usr/libexec/git-core'
+install  git scalar git-receive-pack git-shell git-upload-archive git-upload-pack '/usr/bin'
+install git-cvsserver '/usr/bin'
+make -C templates DESTDIR='' install
+make[1]: Entering directory '/home/fusion809/lfs_packaging/git/git-2.56.1/templates'
+install -d -m 755 '/usr/share/git-core/templates'
+(cd blt && tar cf - .) | \
+(cd '/usr/share/git-core/templates' && umask 022 && tar xof -)
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/git/git-2.56.1/templates'
+install -d -m 755 '/usr/libexec/git-core/mergetools'
+install -m 644 mergetools/* '/usr/libexec/git-core/mergetools'
+install -d -m 755 '/usr/share/locale'
+(cd po/build/locale && tar cf - .) | \
+(cd '/usr/share/locale' && umask 022 && tar xof -)
+install -d -m 755 '/usr/lib/perl5/5.44/site_perl'
+(cd perl/build/lib && tar cf - .) | \
+(cd '/usr/lib/perl5/5.44/site_perl' && umask 022 && tar xof -)
+make -C gitk-git install
+make[1]: Entering directory '/home/fusion809/lfs_packaging/git/git-2.56.1/gitk-git'
+install -d -m 755 '/usr/bin'
+install -m 755 gitk-wish '/usr/bin'/gitk
+install -d -m 755 '/usr/share/gitk/lib/msgs'
+install -m 644 po/bg.msg '/usr/share/gitk/lib/msgs' &&  install -m 644 po/ca.msg '/usr/share/gitk/lib/msgs' &&  install -m 644 po/de.msg '/usr/share/gitk/lib/msgs' &&  install -m 644 po/es.msg '/usr/share/gitk/lib/msgs' &&  install -m 644 po/fr.msg '/usr/share/gitk/lib/msgs' &&  install -m 644 po/hu.msg '/usr/share/gitk/lib/msgs' &&  install -m 644 po/it.msg '/usr/share/gitk/lib/msgs' &&  install -m 644 po/ja.msg '/usr/share/gitk/lib/msgs' &&  install -m 644 po/pt_br.msg '/usr/share/gitk/lib/msgs' &&  install -m 644 po/pt_pt.msg '/usr/share/gitk/lib/msgs' &&  install -m 644 po/ru.msg '/usr/share/gitk/lib/msgs' &&  install -m 644 po/sv.msg '/usr/share/gitk/lib/msgs' &&  install -m 644 po/ta.msg '/usr/share/gitk/lib/msgs' &&  install -m 644 po/vi.msg '/usr/share/gitk/lib/msgs' &&  install -m 644 po/zh_cn.msg '/usr/share/gitk/lib/msgs' && true
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/git/git-2.56.1/gitk-git'
+make -C git-gui gitexecdir='/usr/libexec/git-core' install
+make[1]: Entering directory '/home/fusion809/lfs_packaging/git/git-2.56.1/git-gui'
+  DEST /usr/libexec/git-core
+    INSTALL 755 git-gui
+    INSTALL 755 git-gui--askpass
+    INSTALL 755 git-gui--askyesno
+    LINK        git-citool -> git-gui
+  DEST /usr/share/git-gui/lib
+    INSTALL 644 tclIndex
+    INSTALL 644 about.tcl
+    INSTALL 644 blame.tcl
+    INSTALL 644 branch_checkout.tcl
+    INSTALL 644 branch_create.tcl
+    INSTALL 644 branch_delete.tcl
+    INSTALL 644 branch_rename.tcl
+    INSTALL 644 branch.tcl
+    INSTALL 644 browser.tcl
+    INSTALL 644 checkout_op.tcl
+    INSTALL 644 choose_font.tcl
+    INSTALL 644 choose_repository.tcl
+    INSTALL 644 choose_rev.tcl
+    INSTALL 644 chord.tcl
+    INSTALL 644 class.tcl
+    INSTALL 644 commit.tcl
+    INSTALL 644 console.tcl
+    INSTALL 644 database.tcl
+    INSTALL 644 date.tcl
+    INSTALL 644 diff.tcl
+    INSTALL 644 encoding.tcl
+    INSTALL 644 error.tcl
+    INSTALL 644 index.tcl
+    INSTALL 644 line.tcl
+    INSTALL 644 logo.tcl
+    INSTALL 644 merge.tcl
+    INSTALL 644 mergetool.tcl
+    INSTALL 644 option.tcl
+    INSTALL 644 remote_add.tcl
+    INSTALL 644 remote_branch_delete.tcl
+    INSTALL 644 remote.tcl
+    INSTALL 644 search.tcl
+    INSTALL 644 shortcut.tcl
+    INSTALL 644 spellcheck.tcl
+    INSTALL 644 sshkey.tcl
+    INSTALL 644 status_bar.tcl
+    INSTALL 644 themed.tcl
+    INSTALL 644 tools_dlg.tcl
+    INSTALL 644 tools.tcl
+    INSTALL 644 transport.tcl
+    INSTALL 644 win32.tcl
+    INSTALL 644 git-gui.ico
+    INSTALL 644 win32_shortcut.js
+  DEST /usr/share/git-gui/lib/msgs
+    INSTALL 644 bg.msg
+    INSTALL 644 de.msg
+    INSTALL 644 el.msg
+    INSTALL 644 fr.msg
+    INSTALL 644 hu.msg
+    INSTALL 644 it.msg
+    INSTALL 644 ja.msg
+    INSTALL 644 nb.msg
+    INSTALL 644 pt_br.msg
+    INSTALL 644 pt_pt.msg
+    INSTALL 644 ru.msg
+    INSTALL 644 sv.msg
+    INSTALL 644 vi.msg
+    INSTALL 644 zh_cn.msg
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/git/git-2.56.1/git-gui'
+install -d -m 755 '/usr/share/bash-completion/completions' && \
+install -m 644 contrib/completion/git-completion.bash '/usr/share/bash-completion/completions/git'
+bindir=$(cd '/usr/bin' && pwd) && \
+execdir=$(cd '/usr/libexec/git-core' && pwd) && \
+destdir_from_execdir_SQ=$(echo 'libexec/git-core' | sed -e 's|[^/][^/]*|..|g') && \
+{ test "$bindir/" = "$execdir/" || \
+  for p in git scalar git-shell git-cvsserver; do \
+	rm -f "$execdir/$p" && \
+	test -n "" && \
+	ln -s "$destdir_from_execdir_SQ/bin/$p" "$execdir/$p" || \
+	{ test -z "" && \
+	  ln "$bindir/$p" "$execdir/$p" 2>/dev/null || \
+	  cp "$bindir/$p" "$execdir/$p" || exit; } \
+  done; \
+} && \
+for p in git-receive-pack git-upload-archive git-upload-pack; do \
+	rm -f "$bindir/$p" && \
+	test -n "" && \
+	ln -s "git" "$bindir/$p" || \
+	{ test -z "" && \
+	  ln "$bindir/git" "$bindir/$p" 2>/dev/null || \
+	  ln -s "git" "$bindir/$p" 2>/dev/null || \
+	  cp "$bindir/git" "$bindir/$p" || exit; }; \
+done && \
+for p in git-add git-am git-annotate git-apply git-archive git-backfill git-bisect git-blame git-branch git-bugreport git-bundle git-cat-file git-check-attr git-check-ignore git-check-mailmap git-check-ref-format git-checkout--worker git-checkout-index git-checkout git-clean git-clone git-column git-commit-graph git-commit-tree git-commit git-config git-count-objects git-credential-cache--daemon git-credential-cache git-credential-store git-credential git-describe git-diagnose git-diff-files git-diff-index git-diff-pairs git-diff-tree git-diff git-difftool git-fast-export git-fast-import git-fetch-pack git-fetch git-fmt-merge-msg git-for-each-ref git-for-each-repo git-fsck git-fsmonitor--daemon git-gc git-get-tar-commit-id git-grep git-hash-object git-help git-history git-hook git-index-pack git-init-db git-interpret-trailers git-last-modified git-log git-ls-files git-ls-remote git-ls-tree git-mailinfo git-mailsplit git-merge-base git-merge-file git-merge-index git-merge-ours git-merge-recursive git-merge-tree git-merge git-mktag git-mktree git-multi-pack-index git-mv git-name-rev git-notes git-pack-objects git-pack-redundant git-pack-refs git-patch-id git-prune-packed git-prune git-pull git-push git-range-diff git-read-tree git-rebase git-receive-pack git-reflog git-refs git-remote-ext git-remote-fd git-remote git-repack git-replace git-replay git-repo git-rerere git-reset git-rev-list git-rev-parse git-revert git-rm git-send-pack git-shortlog git-show-branch git-show-index git-show-ref git-sparse-checkout git-stash git-stripspace git-submodule--helper git-symbolic-ref git-tag git-unpack-file git-unpack-objects git-update-index git-update-ref git-update-server-info git-upload-archive git-upload-pack git-url-parse git-var git-verify-commit git-verify-pack git-verify-tag git-worktree git-write-tree git-cherry git-cherry-pick git-format-patch git-format-rev git-fsck-objects git-init git-maintenance git-merge-subtree git-restore git-show git-stage git-status git-switch git-version git-whatchanged; do \
+	rm -f "$execdir/$p" && \
+	if test -z ""; \
+	then \
+		test -n "" && \
+		ln -s "$destdir_from_execdir_SQ/bin/git" "$execdir/$p" || \
+		{ test -z "" && \
+		  ln "$execdir/git" "$execdir/$p" 2>/dev/null || \
+		  ln -s "git" "$execdir/$p" 2>/dev/null || \
+		  cp "$execdir/git" "$execdir/$p" || exit; }; \
+	fi \
+done && \
+remote_curl_aliases="git-remote-https git-remote-ftp git-remote-ftps" && \
+for p in $remote_curl_aliases; do \
+	rm -f "$execdir/$p" && \
+	test -n "" && \
+	ln -s "git-remote-http" "$execdir/$p" || \
+	{ test -z "" && \
+	  ln "$execdir/git-remote-http" "$execdir/$p" 2>/dev/null || \
+	  ln -s "git-remote-http" "$execdir/$p" 2>/dev/null || \
+	  cp "$execdir/git-remote-http" "$execdir/$p" || exit; } \
+done
+mkdir: created directory '/usr/share/doc/git-2.56.1'
+mkdir: created directory '/usr/share/doc/git-2.56.1/man-pages'
+mkdir: created directory '/usr/share/doc/git-2.56.1/man-pages/html'
+mkdir: created directory '/usr/share/doc/git-2.56.1/man-pages/text'
+mkdir: created directory '/usr/share/doc/git-2.56.1/technical/html'
+mkdir: created directory '/usr/share/doc/git-2.56.1/technical/text'
+mkdir: created directory '/usr/share/doc/git-2.56.1/howto/html'
+mkdir: created directory '/usr/share/doc/git-2.56.1/howto/text'
+2.56.1
+Updated registry for git to version 2.56.1
+[VERSION] git: 2.56.1
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package git in /var/lib/custom-packages/
+Building custom package xwayland...
+[04:37:26] Found custom package for xwayland, bypassing BLFS aliases.
+[04:37:26] Custom package detected at /home/fusion809/lfs_packaging/xwayland (package: xwayland)
+[04:37:26] Extracting dependencies for custom package 'xwayland'...
+[04:37:26] Required deps: brotli bzip2 expat freetype gcc glibc libdrm libei libepoxy libffi libfontenc libglvnd libpng libtirpc libx11 libxau libxcb libxcvt libxdmcp libxfont2 libxshmfence mesa nettle pixman systemd wayland zlib 
+[04:37:26] Dependency 'brotli' already installed.
+[04:37:26] Dependency 'bzip2' already installed.
+[04:37:26] Dependency 'expat' already installed.
+[04:37:26] Dependency 'freetype' already installed.
+[04:37:26] Dependency 'gcc' already installed.
+[04:37:26] Dependency 'glibc' already installed.
+[04:37:26] Dependency 'libdrm' already installed.
+[04:37:26] Dependency 'libei' already installed.
+[04:37:26] Dependency 'libepoxy' already installed.
+[04:37:26] Dependency 'libffi' already installed.
+[04:37:26] Dependency 'libfontenc' already installed.
+[04:37:26] Dependency 'libglvnd' already installed.
+[04:37:26] Dependency 'libpng' already installed.
+[04:37:26] Dependency 'libtirpc' already installed.
+[04:37:26] Dependency 'libx11' already installed.
+[04:37:26] Dependency 'libxau' already installed.
+[04:37:26] Dependency 'libxcb' already installed.
+[04:37:26] Dependency 'libxcvt' already installed.
+[04:37:26] Dependency 'libxdmcp' already installed.
+[04:37:26] Dependency 'libxfont2' already installed.
+[04:37:26] Dependency 'libxshmfence' already installed.
+[04:37:26] Dependency 'mesa' already installed.
+[04:37:26] Dependency 'nettle' already installed.
+[04:37:26] Dependency 'pixman' already installed.
+[04:37:27] Dependency 'systemd' already installed.
+[04:37:27] Dependency 'wayland' already installed.
+[04:37:27] Dependency 'zlib' already installed.
+[VERSION] xwayland: 24.1.15
+[04:37:31] Installing xwayland version: 24.1.15
+[04:37:31] Starting remote custom build for xwayland...
+--2026-11-11 04:37:38--  https://www.x.org/pub/individual/xserver/xwayland-24.1.15.tar.xz
+Resolving www.x.org (www.x.org)... 151.101.131.52, 151.101.195.52, 151.101.67.52, ...
+Connecting to www.x.org (www.x.org)|151.101.131.52|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://www.x.org/archive/individual/xserver/xwayland-24.1.15.tar.xz [following]
+URL transformed to HTTPS due to an HSTS policy
+--2026-11-11 04:37:39--  https://www.x.org/archive/individual/xserver/xwayland-24.1.15.tar.xz
+Reusing existing connection to www.x.org:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://xorg.freedesktop.org/archive/individual/xserver/xwayland-24.1.15.tar.xz [following]
+--2026-11-11 04:37:40--  https://xorg.freedesktop.org/archive/individual/xserver/xwayland-24.1.15.tar.xz
+Resolving xorg.freedesktop.org (xorg.freedesktop.org)... 131.252.210.176
+Connecting to xorg.freedesktop.org (xorg.freedesktop.org)|131.252.210.176|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1307812 (1.2M) [application/x-xz]
+Saving to: ‘xwayland-24.1.15.tar.xz’
+
+xwayland-24.1.15.ta   0%[                    ]       0  --.-KB/s               xwayland-24.1.15.ta   1%[                    ]  23.35K  76.3KB/s               xwayland-24.1.15.ta   4%[                    ]  54.60K  97.9KB/s               xwayland-24.1.15.ta   7%[>                   ] 101.47K   129KB/s               xwayland-24.1.15.ta  12%[=>                  ] 156.16K   154KB/s               xwayland-24.1.15.ta  17%[==>                 ] 218.66K   174KB/s               xwayland-24.1.15.ta  21%[===>                ] 273.35K   181KB/s               xwayland-24.1.15.ta  25%[====>               ] 320.22K   187KB/s               xwayland-24.1.15.ta  28%[====>               ] 367.10K   190KB/s               xwayland-24.1.15.ta  34%[=====>              ] 437.41K   201KB/s               xwayland-24.1.15.ta  38%[======>             ] 492.10K   205KB/s               xwayland-24.1.15.ta  44%[=======>            ] 570.22K   216KB/s               xwayland-24.1.15.ta  50%[=========>          ] 640.54K   224KB/s               xwayland-24.1.15.ta  53%[=========>          ] 679.60K   221KB/s    eta 3s     xwayland-24.1.15.ta  58%[==========>         ] 749.91K   229KB/s    eta 3s     xwayland-24.1.15.ta  64%[===========>        ] 828.04K   237KB/s    eta 3s     xwayland-24.1.15.ta  70%[=============>      ] 906.16K   244KB/s    eta 3s     xwayland-24.1.15.ta  78%[==============>     ] 999.91K   254KB/s    eta 3s     xwayland-24.1.15.ta  85%[================>   ]   1.07M   287KB/s    eta 1s     xwayland-24.1.15.ta  93%[=================>  ]   1.17M   302KB/s    eta 1s     xwayland-24.1.15.ta 100%[===================>]   1.25M   317KB/s    in 4.6s    
+
+2026-11-11 04:37:46 (281 KB/s) - ‘xwayland-24.1.15.tar.xz’ saved [1307812/1307812]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+meson_args: <-D>
+meson_args: <xkb_output_dir=/var/lib/xkb>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <-D> <xkb_output_dir=/var/lib/xkb> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/xwayland/xwayland-24.1.15
+Build dir: /home/fusion809/lfs_packaging/xwayland/xwayland-24.1.15/build
+Build type: native build
+Project name: xwayland
+Project version: 24.1.15
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -Wall: YES 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wformat=2: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wnested-externs: YES 
+Compiler for C supports arguments -Wbad-function-cast: YES 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Compiler for C supports arguments -Wunused: YES 
+Compiler for C supports arguments -Wuninitialized: YES 
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wmissing-noreturn: YES 
+Compiler for C supports arguments -Wmissing-format-attribute: YES 
+Compiler for C supports arguments -Wredundant-decls: YES 
+Compiler for C supports arguments -Werror=implicit: YES 
+Compiler for C supports arguments -Werror=nonnull: YES 
+Compiler for C supports arguments -Werror=init-self: YES 
+Compiler for C supports arguments -Werror=main: YES 
+Compiler for C supports arguments -Werror=missing-braces: YES 
+Compiler for C supports arguments -Werror=sequence-point: YES 
+Compiler for C supports arguments -Werror=return-type: YES 
+Compiler for C supports arguments -Werror=trigraphs: YES 
+Compiler for C supports arguments -Werror=array-bounds: YES 
+Compiler for C supports arguments -Werror=write-strings: YES 
+Compiler for C supports arguments -Werror=address: YES 
+Compiler for C supports arguments -Werror=int-to-pointer-cast: YES 
+Compiler for C supports arguments -Werror=pointer-to-int-cast: YES 
+../meson.build:61: WARNING: Consider using the built-in warning_level option instead of using "-Wall".
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency x11 found: YES 1.8.13
+Run-time dependency xproto found: YES 7.0.34
+Run-time dependency randrproto found: YES 1.6.0
+Run-time dependency renderproto found: YES 0.11.1
+Run-time dependency xextproto found: YES 7.3.0
+Run-time dependency inputproto found: YES 2.3.99.2
+Run-time dependency kbproto found: YES 1.0.7
+Run-time dependency fontsproto found: YES 2.1.3
+Run-time dependency fixesproto found: YES 6.1
+Run-time dependency damageproto found: YES 1.2.1
+Run-time dependency xcmiscproto found: YES 1.2.2
+Run-time dependency bigreqsproto found: YES 1.1.2
+Run-time dependency presentproto found: YES 1.4
+Run-time dependency xtrans found: YES 1.6.0
+Run-time dependency videoproto found: YES 2.3.3
+Run-time dependency compositeproto found: YES 0.4.2
+Run-time dependency recordproto found: YES 1.14.2
+Run-time dependency scrnsaverproto found: YES 1.2.3
+Run-time dependency resourceproto found: YES 1.2.0
+Run-time dependency dri3proto found: YES 1.4
+Run-time dependency xineramaproto found: YES 1.2.1
+Run-time dependency xf86bigfontproto found: YES 1.2.0
+Run-time dependency xf86vidmodeproto found: YES 2.3.1
+Run-time dependency xshmfence found: YES 1.3.3
+Run-time dependency xwaylandproto found: YES 1.0
+Run-time dependency dpmsproto found: YES 1.2
+Run-time dependency pixman-1 found: YES 0.46.4
+Found CMake: /usr/bin/cmake (4.4.5)
+Run-time dependency libbsd-overlay found: NO  (tried pkg-config and cmake)
+Run-time dependency xkbcomp found: YES 1.5.0
+Run-time dependency xkbfile found: YES 1.2.0
+Run-time dependency xfont2 found: YES 2.0.9
+Run-time dependency libsystemd found: YES 262
+Run-time dependency fontutil found: YES 1.4.2
+Run-time dependency libxcvt found: YES 0.1.3
+Run-time dependency wayland-client found: YES 1.26.0
+Run-time dependency wayland-protocols found: YES 1.49
+Dependency libxcvt for host machine found: YES 0.1.3 (cached)
+Dependency xshmfence for host machine found: YES 1.3.3 (cached)
+Run-time dependency libdrm found: YES 2.4.134
+Run-time dependency epoxy found: YES 1.5.10
+Checking for function "getaddrinfo" : YES 
+Run-time dependency gbm found: YES 26.2.6
+Dependency epoxy for host machine found: YES 1.5.10 (cached)
+Run-time dependency libdecor-0 found: NO  (tried pkg-config and cmake)
+Run-time dependency libei-1.0 found: YES 1.6.0
+Run-time dependency liboeffis-1.0 found: YES 1.6.0
+Checking for function "SHA1Init" : NO 
+Checking for function "CC_SHA1_Init" : NO 
+Has header "wincrypt.h" : NO 
+Library md found: NO
+Run-time dependency libsha1 found: NO  (tried pkg-config and cmake)
+Run-time dependency nettle found: YES 4.0
+Message: Using libnettle SHA1 functions
+Run-time dependency xdmcp found: YES 1.1.5
+Dependency libdrm for host machine found: YES 2.4.134 (cached)
+Has header "sys/eventfd.h" : YES 
+Has header "sys/shm.h" : YES 
+Library m found: YES
+Library dl found: YES
+Run-time dependency libselinux found: YES 3.11
+Run-time dependency audit found: NO  (tried pkg-config and cmake)
+Configuring Xserver.1 using configuration
+Run-time dependency xorg-sgml-doctools found: NO  (tried pkg-config and cmake)
+Program xmlto found: YES (/usr/bin/xmlto)
+Program xsltproc found: YES (/usr/bin/xsltproc)
+Program fop found: NO
+Run-time dependency dri found: YES 26.2.6
+Checking if "typeof()" compiles: YES 
+Checking for function "clock_gettime" : YES 
+Checking if "CLOCK_MONOTONIC" compiles: YES 
+Checking for size of "unsigned long" : 8 
+Header "pthread.h" has symbol "PTHREAD_MUTEX_RECURSIVE" : YES 
+Checking if "pthread_setname_np(tid, name)" compiles: YES 
+Has header "dlfcn.h" : YES 
+Has header "execinfo.h" : YES 
+Has header "fnmatch.h" : YES 
+Has header "stdlib.h" : YES 
+Has header "string.h" : YES 
+Has header "strings.h" : YES 
+Has header "sys/ucred.h" : NO 
+Has header "sys/utsname.h" : YES 
+Has header "sys/sysmacros.h" : YES 
+Checking for function "arc4random_buf" with dependency libbsd-overlay: YES 
+Checking for function "backtrace" : YES 
+Checking for function "cbrt" : YES 
+Checking for function "epoll_create1" : YES 
+Checking for function "getuid" : YES 
+Checking for function "geteuid" : YES 
+Checking for function "isastream" : NO 
+Checking for function "issetugid" : NO 
+Checking for function "getifaddrs" : YES 
+Checking for function "getpeereid" : NO 
+Checking for function "getpeerucred" : NO 
+Checking for function "getprogname" : NO 
+Checking for function "getzoneid" : NO 
+Checking for function "memfd_create" : YES 
+Checking for function "mkostemp" : YES 
+Checking for function "mmap" : YES 
+Checking for function "open_device" : NO 
+Checking for function "poll" : YES 
+Checking for function "pollset_create" : NO 
+Checking for function "posix_fallocate" : YES 
+Checking for function "port_create" : NO 
+Checking for function "reallocarray" with dependency libbsd-overlay: YES 
+Checking for function "seteuid" : YES 
+Checking for function "setitimer" : YES 
+Checking for function "shmctl64" : NO 
+Checking for function "sigaction" : YES 
+Checking for function "sigprocmask" : YES 
+Checking for type "socklen_t" : YES 
+Checking for function "strcasecmp" : YES 
+Checking for function "strcasestr" : YES 
+Checking for function "strlcat" with dependency libbsd-overlay: YES 
+Checking for function "strlcpy" with dependency libbsd-overlay: YES 
+Checking for function "strncasecmp" : YES 
+Checking for function "strndup" : YES 
+Header "string.h" has symbol "strndup" : YES 
+Checking for type "struct sockaddr_storage" : YES 
+Checking for function "timingsafe_memcmp" : NO 
+Checking for function "vasprintf" : YES 
+Checking for function "vsnprintf" : YES 
+Checking for function "walkcontext" : NO 
+Checking whether type "struct xucred" has member "cr_pid" : NO 
+Header "sys/socket.h" has symbol "SCM_RIGHTS" : YES 
+Header "sys/socket.h" has symbol "SO_PEERCRED" : YES 
+Configuring dix-config.h using configuration
+Configuring version-config.h using configuration
+Configuring xkb-config.h using configuration
+Configuring xwayland-config.h using configuration
+Run-time dependency glproto found: YES 1.4.17
+Run-time dependency gl found: YES 1.2
+Dependency glproto for host machine found: YES 1.4.17 (cached)
+Dependency gl for host machine found: YES 1.2 (cached)
+Run-time dependency libtirpc found: YES 1.3.8
+Library pthread found: YES
+Run-time dependency xau found: YES 1.0.12
+Dependency presentproto for host machine found: YES 1.4 (cached)
+Dependency epoxy for host machine found: YES 1.5.10 (cached)
+Run-time dependency wayland-scanner found: YES 1.26.0
+Program /usr/bin/wayland-scanner found: YES (/usr/bin/wayland-scanner)
+Dependency wayland-protocols for host machine found: YES 1.49 (cached)
+../hw/xwayland/meson.build:189: WARNING: Project targets '>= 0.56.0' but uses feature introduced in '0.62.0': pkgconfig.generate implicit variable for builtin directories.
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Configuring Xwayland.1 using configuration
+Configuring org.freedesktop.Xwayland.desktop using configuration
+Program rendercheck found: NO
+Program scripts/xvfb-piglit.sh found: YES (/home/fusion809/lfs_packaging/xwayland/xwayland-24.1.15/test/scripts/xvfb-piglit.sh)
+Program scripts/xwayland-piglit.sh found: YES (/home/fusion809/lfs_packaging/xwayland/xwayland-24.1.15/test/scripts/xwayland-piglit.sh)
+Run-time dependency xcb found: YES 1.17.0
+Run-time dependency xcb-xinput found: YES 1.17.0
+Dependency xcb for host machine found: YES 1.17.0 (cached)
+Run-time dependency xcb-damage found: YES 1.17.0
+Dependency xcb for host machine found: YES 1.17.0 (cached)
+Run-time dependency xcb-sync found: YES 1.17.0
+Build targets in project: 33
+WARNING: Project specifies a minimum meson_version '>= 0.56.0' but uses features which were added in newer versions:
+ * 0.62.0: {'pkgconfig.generate implicit variable for builtin directories'}
+
+xwayland 24.1.15
+
+  User defined options
+    buildtype     : release
+    prefix        : /usr
+    xkb_output_dir: /var/lib/xkb
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/446] Compiling C object dix/liblibxserver_dix.a.p/atom.c.o
+[2/446] Compiling C object dix/liblibxserver_dix.a.p/cursor.c.o
+[3/446] Compiling C object dix/liblibxserver_dix.a.p/colormap.c.o
+[4/446] Compiling C object dix/liblibxserver_dix.a.p/devices.c.o
+[5/446] Compiling C object dix/liblibxserver_dix.a.p/main.c.o
+[6/446] Compiling C object dix/liblibxserver_dix.a.p/dispatch.c.o
+[7/446] Compiling C object dix/liblibxserver_dix.a.p/dixutils.c.o
+[8/446] Compiling C object dix/liblibxserver_dix.a.p/dixfonts.c.o
+[9/446] Compiling C object dix/liblibxserver_dix.a.p/enterleave.c.o
+[10/446] Compiling C object dix/liblibxserver_dix.a.p/eventconvert.c.o
+[11/446] Compiling C object dix/liblibxserver_dix.a.p/extension.c.o
+[12/446] Compiling C object dix/liblibxserver_dix.a.p/gc.c.o
+[13/446] Compiling C object dix/liblibxserver_dix.a.p/gestures.c.o
+[14/446] Compiling C object dix/liblibxserver_dix.a.p/globals.c.o
+[15/446] Compiling C object dix/liblibxserver_dix.a.p/glyphcurs.c.o
+[16/446] Compiling C object dix/liblibxserver_dix.a.p/grabs.c.o
+[17/446] Compiling C object dix/liblibxserver_dix.a.p/initatoms.c.o
+[18/446] Compiling C object dix/liblibxserver_dix.a.p/getevents.c.o
+[19/446] Compiling C object dix/liblibxserver_dix.a.p/events.c.o
+[20/446] Compiling C object dix/liblibxserver_dix.a.p/pixmap.c.o
+[21/446] Compiling C object dix/liblibxserver_dix.a.p/privates.c.o
+[22/446] Compiling C object dix/liblibxserver_dix.a.p/inpututils.c.o
+[23/446] Compiling C object dix/liblibxserver_dix.a.p/property.c.o
+[24/446] Compiling C object dix/liblibxserver_dix.a.p/ptrveloc.c.o
+[25/446] Compiling C object dix/liblibxserver_dix.a.p/registry.c.o
+[26/446] Compiling C object dix/liblibxserver_dix.a.p/selection.c.o
+[27/446] Compiling C object dix/liblibxserver_dix.a.p/resource.c.o
+[28/446] Compiling C object dix/liblibxserver_dix.a.p/swaprep.c.o
+[29/446] Compiling C object dix/liblibxserver_dix.a.p/region.c.o
+[30/446] Compiling C object dix/liblibxserver_dix.a.p/tables.c.o
+[31/446] Compiling C object dix/liblibxserver_dix.a.p/swapreq.c.o
+[32/446] Compiling C object dix/liblibxserver_main.a.p/stubmain.c.o
+[33/446] Compiling C object dri3/liblibxserver_dri3.a.p/dri3.c.o
+[34/446] Compiling C object dix/liblibxserver_dix.a.p/touch.c.o
+[35/446] Compiling C object dri3/liblibxserver_dri3.a.p/dri3_screen.c.o
+[36/446] Compiling C object dri3/liblibxserver_dri3.a.p/dri3_request.c.o
+[37/446] Compiling C object dix/liblibxserver_dix.a.p/window.c.o
+[38/446] Compiling C object glx/liblibxserver_glx.a.p/indirect_reqsize.c.o
+[39/446] Compiling C object glx/liblibxserver_glx.a.p/indirect_dispatch.c.o
+[40/446] Compiling C object glx/liblibxserver_glx.a.p/indirect_table.c.o
+[41/446] Compiling C object glx/liblibxserver_glx.a.p/indirect_size_get.c.o
+[42/446] Compiling C object glx/liblibxserver_glx.a.p/clientinfo.c.o
+[43/446] Compiling C object glx/liblibxserver_glx.a.p/createcontext.c.o
+[44/446] Compiling C object glx/liblibxserver_glx.a.p/extension_string.c.o
+[45/446] Compiling C object glx/liblibxserver_glx.a.p/indirect_program.c.o
+[46/446] Compiling C object glx/liblibxserver_glx.a.p/indirect_util.c.o
+[47/446] Compiling C object glx/liblibxserver_glx.a.p/indirect_dispatch_swap.c.o
+[48/446] Compiling C object glx/liblibxserver_glx.a.p/indirect_texture_compression.c.o
+[49/446] Compiling C object glx/liblibxserver_glx.a.p/glxext.c.o
+[50/446] Compiling C object glx/liblibxserver_glx.a.p/glxcmdsswap.c.o
+[51/446] Compiling C object glx/liblibxserver_glx.a.p/glxdriswrast.c.o
+[52/446] Compiling C object glx/liblibxserver_glx.a.p/glxdricommon.c.o
+[53/446] Compiling C object glx/liblibxserver_glx.a.p/glxcmds.c.o
+[54/446] Compiling C object glx/liblibxserver_glx.a.p/render2.c.o
+[55/446] Compiling C object glx/liblibxserver_glx.a.p/glxscreens.c.o
+[56/446] Compiling C object glx/liblibxserver_glx.a.p/renderpix.c.o
+[57/446] Compiling C object glx/liblibxserver_glx.a.p/renderpixswap.c.o
+[58/446] Compiling C object glx/liblibxserver_glx.a.p/render2swap.c.o
+[59/446] Compiling C object glx/liblibxserver_glx.a.p/rensize.c.o
+[60/446] Compiling C object glx/liblibxserver_glx.a.p/single2.c.o
+[61/446] Compiling C object glx/liblibxserver_glx.a.p/single2swap.c.o
+[62/446] Compiling C object glx/liblibxserver_glx.a.p/singlesize.c.o
+[63/446] Compiling C object glx/liblibxserver_glx.a.p/singlepix.c.o
+[64/446] Compiling C object glx/liblibxserver_glx.a.p/singlepixswap.c.o
+[65/446] Compiling C object glx/liblibxserver_glx.a.p/swap_interval.c.o
+[66/446] Compiling C object glx/liblibxserver_glx.a.p/xfont.c.o
+[67/446] Compiling C object glx/liblibglxvnd.a.p/vndext.c.o
+[68/446] Compiling C object glx/liblibglxvnd.a.p/vndservermapping.c.o
+[69/446] Compiling C object glx/liblibglxvnd.a.p/vndcmds.c.o
+[70/446] Compiling C object fb/liblibxserver_fb.a.p/fballpriv.c.o
+[71/446] Compiling C object glx/liblibglxvnd.a.p/vndservervendor.c.o
+[72/446] Compiling C object fb/liblibxserver_fb.a.p/fbarc.c.o
+[73/446] Compiling C object fb/liblibxserver_fb.a.p/fbblt.c.o
+[74/446] Compiling C object fb/liblibxserver_fb.a.p/fbbltone.c.o
+[75/446] Compiling C object fb/liblibxserver_fb.a.p/fbcmap_mi.c.o
+[76/446] Compiling C object fb/liblibxserver_fb.a.p/fbcopy.c.o
+[77/446] Compiling C object fb/liblibxserver_fb.a.p/fbfill.c.o
+[78/446] Compiling C object fb/liblibxserver_fb.a.p/fbfillsp.c.o
+[79/446] Compiling C object fb/liblibxserver_fb.a.p/fbfillrect.c.o
+[80/446] Compiling C object fb/liblibxserver_fb.a.p/fbgetsp.c.o
+[81/446] Compiling C object fb/liblibxserver_fb.a.p/fbgc.c.o
+[82/446] Compiling C object fb/liblibxserver_fb.a.p/fbglyph.c.o
+[83/446] Compiling C object fb/liblibxserver_fb.a.p/fbimage.c.o
+[84/446] Compiling C object fb/liblibxserver_fb.a.p/fbline.c.o
+[85/446] Compiling C object fb/liblibxserver_fb.a.p/fbbits.c.o
+[86/446] Compiling C object fb/liblibxserver_fb.a.p/fboverlay.c.o
+[87/446] Compiling C object fb/liblibxserver_fb.a.p/fbpict.c.o
+[88/446] Compiling C object fb/liblibxserver_fb.a.p/fbpixmap.c.o
+[89/446] Compiling C object fb/liblibxserver_fb.a.p/fbpoint.c.o
+[90/446] Compiling C object fb/liblibxserver_fb.a.p/fbpush.c.o
+[91/446] Compiling C object fb/liblibxserver_fb.a.p/fbscreen.c.o
+[92/446] Compiling C object fb/liblibxserver_fb.a.p/fbsetsp.c.o
+[93/446] Compiling C object fb/liblibxserver_fb.a.p/fbsolid.c.o
+[94/446] Compiling C object fb/liblibxserver_fb.a.p/fbseg.c.o
+[95/446] Compiling C object fb/liblibxserver_fb.a.p/fbtile.c.o
+[96/446] Compiling C object fb/liblibxserver_fb.a.p/fbtrap.c.o
+[97/446] Compiling C object fb/liblibxserver_fb.a.p/fbutil.c.o
+[98/446] Compiling C object fb/liblibxserver_fb.a.p/fbwindow.c.o
+[99/446] Compiling C object mi/liblibxserver_mi.a.p/mibitblt.c.o
+[100/446] Compiling C object mi/liblibxserver_mi.a.p/micmap.c.o
+[101/446] Compiling C object mi/liblibxserver_mi.a.p/micopy.c.o
+[102/446] Compiling C object mi/liblibxserver_mi.a.p/midash.c.o
+[103/446] Compiling C object mi/liblibxserver_mi.a.p/midispcur.c.o
+[104/446] Compiling C object mi/liblibxserver_mi.a.p/mieq.c.o
+[105/446] Compiling C object mi/liblibxserver_mi.a.p/miexpose.c.o
+[106/446] Compiling C object mi/liblibxserver_mi.a.p/mifillrct.c.o
+[107/446] Compiling C object mi/liblibxserver_mi.a.p/mifillarc.c.o
+[108/446] Compiling C object mi/liblibxserver_mi.a.p/miarc.c.o
+[109/446] Compiling C object mi/liblibxserver_mi.a.p/migc.c.o
+[110/446] Compiling C object mi/liblibxserver_mi.a.p/miglblt.c.o
+[111/446] Compiling C object mi/liblibxserver_mi.a.p/mipointer.c.o
+[112/446] Compiling C object mi/liblibxserver_mi.a.p/mipoly.c.o
+[113/446] Compiling C object mi/liblibxserver_mi.a.p/mipolypnt.c.o
+[114/446] Compiling C object mi/liblibxserver_mi.a.p/mipolyrect.c.o
+[115/446] Compiling C object mi/liblibxserver_mi.a.p/mipolyseg.c.o
+[116/446] Compiling C object mi/liblibxserver_mi.a.p/mipolytext.c.o
+[117/446] Compiling C object mi/liblibxserver_mi.a.p/mipushpxl.c.o
+[118/446] Compiling C object mi/liblibxserver_mi.a.p/mioverlay.c.o
+[119/446] Compiling C object mi/liblibxserver_mi.a.p/miscrinit.c.o
+[120/446] Compiling C object mi/liblibxserver_mi.a.p/misprite.c.o
+[121/446] Compiling C object mi/liblibxserver_mi.a.p/mivaltree.c.o
+[122/446] Compiling C object mi/liblibxserver_mi.a.p/miwindow.c.o
+[123/446] Compiling C object mi/liblibxserver_mi.a.p/mizerclip.c.o
+[124/446] Compiling C object mi/liblibxserver_mi.a.p/mizerarc.c.o
+[125/446] Compiling C object os/liblibxlibc.a.p/timingsafe_memcmp.c.o
+[126/446] Compiling C object mi/liblibxserver_mi.a.p/mizerline.c.o
+[127/446] Compiling C object mi/liblibxserver_mi.a.p/miwideline.c.o
+[128/446] Compiling C object os/liblibxserver_os.a.p/alloc.c.o
+[129/446] Compiling C object os/liblibxserver_os.a.p/WaitFor.c.o
+[130/446] Compiling C object os/liblibxserver_os.a.p/auth.c.o
+[131/446] Compiling C object os/liblibxserver_os.a.p/backtrace.c.o
+[132/446] Compiling C object os/liblibxserver_os.a.p/client.c.o
+[133/446] Compiling C object os/liblibxserver_os.a.p/access.c.o
+[134/446] Compiling C object os/liblibxserver_os.a.p/fmt.c.o
+[135/446] Compiling C object os/liblibxserver_os.a.p/inputthread.c.o
+[136/446] Compiling C object os/liblibxserver_os.a.p/connection.c.o
+[137/446] Compiling C object os/liblibxserver_os.a.p/io.c.o
+[138/446] Compiling C object os/liblibxserver_os.a.p/mitauth.c.o
+[139/446] Compiling C object os/liblibxserver_os.a.p/oscolor.c.o
+[140/446] Compiling C object os/liblibxserver_os.a.p/string.c.o
+[141/446] Compiling C object os/liblibxserver_os.a.p/osinit.c.o
+[142/446] Compiling C object os/liblibxserver_os.a.p/ospoll.c.o
+[143/446] Compiling C object os/liblibxserver_os.a.p/xsha1.c.o
+[144/446] Compiling C object os/liblibxserver_os.a.p/xdmauth.c.o
+[145/446] Compiling C object os/liblibxserver_os.a.p/xprintf.c.o
+[146/446] Compiling C object os/liblibxserver_os.a.p/utils.c.o
+[147/446] Compiling C object os/liblibxserver_os.a.p/busfault.c.o
+[148/446] Compiling C object os/liblibxserver_os.a.p/xstrans.c.o
+[149/446] Compiling C object os/liblibxserver_os.a.p/log.c.o
+[150/446] Compiling C object os/liblibxserver_os.a.p/rpcauth.c.o
+[151/446] Compiling C object os/liblibxserver_os.a.p/xdmcp.c.o
+[152/446] Compiling C object composite/liblibxserver_composite.a.p/compinit.c.o
+[153/446] Compiling C object composite/liblibxserver_composite.a.p/compalloc.c.o
+[154/446] Compiling C object composite/liblibxserver_composite.a.p/compoverlay.c.o
+[155/446] Compiling C object composite/liblibxserver_composite.a.p/compext.c.o
+[156/446] Compiling C object composite/liblibxserver_composite.a.p/compwindow.c.o
+[157/446] Compiling C object damageext/liblibxserver_damageext.a.p/damageext.c.o
+[158/446] Compiling C object dbe/liblibxserver_dbe.a.p/dbe.c.o
+[159/446] Compiling C object dbe/liblibxserver_dbe.a.p/midbe.c.o
+[160/446] Compiling C object miext/sync/liblibxserver_miext_sync.a.p/misync.c.o
+[161/446] Compiling C object miext/sync/liblibxserver_miext_sync.a.p/misyncfd.c.o
+[162/446] Compiling C object miext/sync/liblibxserver_miext_sync.a.p/misyncshm.c.o
+[163/446] Compiling C object present/liblibxserver_present.a.p/present.c.o
+[164/446] Compiling C object present/liblibxserver_present.a.p/present_event.c.o
+[165/446] Compiling C object present/liblibxserver_present.a.p/present_execute.c.o
+[166/446] Compiling C object present/liblibxserver_present.a.p/present_fake.c.o
+[167/446] Compiling C object present/liblibxserver_present.a.p/present_fence.c.o
+[168/446] Compiling C object present/liblibxserver_present.a.p/present_notify.c.o
+[169/446] Compiling C object miext/damage/liblibxserver_miext_damage.a.p/damage.c.o
+[170/446] Compiling C object present/liblibxserver_present.a.p/present_request.c.o
+[171/446] Compiling C object present/liblibxserver_present.a.p/present_screen.c.o
+[172/446] Compiling C object present/liblibxserver_present.a.p/present_vblank.c.o
+[173/446] Compiling C object present/liblibxserver_present.a.p/present_scmd.c.o
+[174/446] Compiling C object randr/liblibxserver_randr.a.p/randr.c.o
+[175/446] Compiling C object randr/liblibxserver_randr.a.p/rrdispatch.c.o
+[176/446] Compiling C object randr/liblibxserver_randr.a.p/rrinfo.c.o
+[177/446] Compiling C object randr/liblibxserver_randr.a.p/rrlease.c.o
+[178/446] Compiling C object randr/liblibxserver_randr.a.p/rrcrtc.c.o
+[179/446] Compiling C object randr/liblibxserver_randr.a.p/rrmode.c.o
+[180/446] Compiling C object randr/liblibxserver_randr.a.p/rrpointer.c.o
+[181/446] Compiling C object randr/liblibxserver_randr.a.p/rrmonitor.c.o
+[182/446] Compiling C object randr/liblibxserver_randr.a.p/rroutput.c.o
+[183/446] Compiling C object randr/liblibxserver_randr.a.p/rrprovider.c.o
+[184/446] Compiling C object randr/liblibxserver_randr.a.p/rrproperty.c.o
+[185/446] Compiling C object randr/liblibxserver_randr.a.p/rrproviderproperty.c.o
+[186/446] Compiling C object randr/liblibxserver_randr.a.p/rrtransform.c.o
+[187/446] Compiling C object randr/liblibxserver_randr.a.p/rrsdispatch.c.o
+[188/446] Compiling C object randr/liblibxserver_randr.a.p/rrscreen.c.o
+[189/446] Compiling C object randr/liblibxserver_randr.a.p/rrxinerama.c.o
+[190/446] Compiling C object record/liblibxserver_record.a.p/set.c.o
+[191/446] Compiling C object render/liblibxserver_render.a.p/animcur.c.o
+[192/446] Compiling C object render/liblibxserver_render.a.p/filter.c.o
+[193/446] Compiling C object render/liblibxserver_render.a.p/matrix.c.o
+[194/446] Compiling C object render/liblibxserver_render.a.p/glyph.c.o
+[195/446] Compiling C object record/liblibxserver_record.a.p/record.c.o
+[196/446] Compiling C object render/liblibxserver_render.a.p/miindex.c.o
+[197/446] Compiling C object render/liblibxserver_render.a.p/mirect.c.o
+[198/446] Compiling C object render/liblibxserver_render.a.p/mipict.c.o
+[199/446] Compiling C object render/liblibxserver_render.a.p/mitrap.c.o
+[200/446] Compiling C object render/liblibxserver_render.a.p/mitri.c.o
+[201/446] Compiling C object xfixes/liblibxserver_xfixes.a.p/cursor.c.o
+[202/446] Compiling C object xfixes/liblibxserver_xfixes.a.p/disconnect.c.o
+[203/446] Compiling C object render/liblibxserver_render.a.p/picture.c.o
+[204/446] Compiling C object xfixes/liblibxserver_xfixes.a.p/saveset.c.o
+[205/446] Compiling C object xfixes/liblibxserver_xfixes.a.p/select.c.o
+[206/446] Compiling C object xfixes/liblibxserver_xfixes.a.p/region.c.o
+[207/446] Compiling C object xfixes/liblibxserver_xfixes.a.p/xfixes.c.o
+[208/446] Compiling C object xkb/liblibxserver_xkb.a.p/ddxCtrls.c.o
+[209/446] Compiling C object xkb/liblibxserver_xkb.a.p/ddxBeep.c.o
+[210/446] Compiling C object render/liblibxserver_render.a.p/render.c.o
+[211/446] Compiling C object xkb/liblibxserver_xkb.a.p/ddxLEDs.c.o
+[212/446] Compiling C object xkb/liblibxserver_xkb.a.p/ddxLoad.c.o
+[213/446] Compiling C object xkb/liblibxserver_xkb.a.p/maprules.c.o
+[214/446] Compiling C object xkb/liblibxserver_xkb.a.p/xkmread.c.o
+[215/446] Compiling C object xkb/liblibxserver_xkb.a.p/xkbfmisc.c.o
+[216/446] Compiling C object xkb/liblibxserver_xkb.a.p/xkbtext.c.o
+[217/446] Compiling C object xkb/liblibxserver_xkb.a.p/xkbout.c.o
+[218/446] Compiling C object xkb/liblibxserver_xkb.a.p/xkbEvents.c.o
+[219/446] Compiling C object xkb/liblibxserver_xkb.a.p/xkbUtils.c.o
+[220/446] Compiling C object xkb/liblibxserver_xkb.a.p/xkbSwap.c.o
+[221/446] Compiling C object xkb/liblibxserver_xkb.a.p/xkbAccessX.c.o
+[222/446] Compiling C object xkb/liblibxserver_xkb.a.p/xkbInit.c.o
+[223/446] Compiling C object xkb/liblibxserver_xkb.a.p/xkbLEDs.c.o
+[224/446] Compiling C object xkb/liblibxserver_xkb.a.p/xkbPrKeyEv.c.o
+[225/446] Compiling C object xkb/liblibxserver_xkb.a.p/xkbActions.c.o
+[226/446] Compiling C object xkb/liblibxserver_xkb.a.p/XKBAlloc.c.o
+[227/446] Compiling C object xkb/liblibxserver_xkb.a.p/XKBMisc.c.o
+[228/446] Compiling C object xkb/liblibxserver_xkb.a.p/XKBGAlloc.c.o
+[229/446] Compiling C object xkb/liblibxserver_xkb.a.p/xkb.c.o
+../xkb/xkb.c: In function ‘_XkbSetNamedIndicator’:
+../xkb/xkb.c:3652:18: warning: variable ‘extDevReason’ set but not used [-Wunused-but-set-variable=]
+ 3652 |     unsigned int extDevReason;
+      |                  ^~~~~~~~~~~~
+[230/446] Compiling C object xkb/liblibxserver_xkb_stubs.a.p/ddxKillSrv.c.o
+[231/446] Compiling C object xkb/liblibxserver_xkb_stubs.a.p/ddxPrivate.c.o
+[232/446] Compiling C object xkb/liblibxserver_xkb_stubs.a.p/ddxVT.c.o
+[233/446] Compiling C object xkb/liblibxserver_xkb.a.p/XKBMAlloc.c.o
+[234/446] Compiling C object Xext/liblibxserver_xext.a.p/bigreq.c.o
+[235/446] Compiling C object Xext/liblibxserver_xext.a.p/geext.c.o
+[236/446] Compiling C object Xext/liblibxserver_xext.a.p/sleepuntil.c.o
+[237/446] Compiling C object Xext/liblibxserver_xext.a.p/xcmisc.c.o
+[238/446] Compiling C object Xext/liblibxserver_xext.a.p/shape.c.o
+[239/446] Compiling C object Xext/liblibxserver_xext.a.p/xtest.c.o
+[240/446] Compiling C object Xext/liblibxserver_xext.a.p/dpms.c.o
+[241/446] Compiling C object Xext/liblibxserver_xext.a.p/sync.c.o
+[242/446] Compiling C object Xext/liblibxserver_xext.a.p/hashtable.c.o
+[243/446] Compiling C object Xext/liblibxserver_xext.a.p/shm.c.o
+[244/446] Compiling C object Xext/liblibxserver_xext.a.p/xres.c.o
+[245/446] Compiling C object Xext/liblibxserver_xext.a.p/xace.c.o
+[246/446] Compiling C object Xext/liblibxserver_xext.a.p/saver.c.o
+[247/446] Compiling C object Xext/liblibxserver_xext.a.p/panoramiXSwap.c.o
+[248/446] Compiling C object Xext/liblibxserver_xext.a.p/panoramiX.c.o
+[249/446] Compiling C object Xext/liblibxserver_xext.a.p/xvmain.c.o
+[250/446] Compiling C object Xext/liblibxserver_xext.a.p/xvmc.c.o
+[251/446] Compiling C object Xext/liblibxserver_xext.a.p/xvdisp.c.o
+[252/446] Compiling C object Xext/liblibxserver_xext.a.p/panoramiXprocs.c.o
+[253/446] Compiling C object Xi/liblibxserver_xi.a.p/allowev.c.o
+[254/446] Compiling C object Xi/liblibxserver_xi.a.p/chgdctl.c.o
+[255/446] Compiling C object Xi/liblibxserver_xi.a.p/chgkbd.c.o
+[256/446] Compiling C object Xi/liblibxserver_xi.a.p/chgfctl.c.o
+[257/446] Compiling C object Xi/liblibxserver_xi.a.p/chgkmap.c.o
+[258/446] Compiling C object Xext/liblibxserver_xext_vidmode.a.p/vidmode.c.o
+[259/446] Compiling C object Xi/liblibxserver_xi.a.p/chgprop.c.o
+[260/446] Compiling C object Xi/liblibxserver_xi.a.p/chgptr.c.o
+[261/446] Compiling C object Xi/liblibxserver_xi.a.p/closedev.c.o
+[262/446] Compiling C object Xi/liblibxserver_xi.a.p/devbell.c.o
+[263/446] Compiling C object Xi/liblibxserver_xi.a.p/getbmap.c.o
+[264/446] Compiling C object Xi/liblibxserver_xi.a.p/getdctl.c.o
+[265/446] Compiling C object Xi/liblibxserver_xi.a.p/extinit.c.o
+[266/446] Compiling C object Xi/liblibxserver_xi.a.p/getfctl.c.o
+[267/446] Compiling C object Xi/liblibxserver_xi.a.p/getfocus.c.o
+[268/446] Compiling C object Xi/liblibxserver_xi.a.p/getkmap.c.o
+[269/446] Compiling C object Xi/liblibxserver_xi.a.p/getmmap.c.o
+[270/446] Compiling C object Xi/liblibxserver_xi.a.p/getprop.c.o
+[271/446] Compiling C object Xi/liblibxserver_xi.a.p/getselev.c.o
+[272/446] Compiling C object Xi/liblibxserver_xi.a.p/exevents.c.o
+[273/446] Compiling C object Xi/liblibxserver_xi.a.p/getvers.c.o
+[274/446] Compiling C object Xi/liblibxserver_xi.a.p/grabdev.c.o
+[275/446] Compiling C object Xi/liblibxserver_xi.a.p/grabdevb.c.o
+[276/446] Compiling C object Xi/liblibxserver_xi.a.p/grabdevk.c.o
+[277/446] Compiling C object Xi/liblibxserver_xi.a.p/gtmotion.c.o
+[278/446] Compiling C object Xi/liblibxserver_xi.a.p/opendev.c.o
+[279/446] Compiling C object Xi/liblibxserver_xi.a.p/listdev.c.o
+[280/446] Compiling C object Xi/liblibxserver_xi.a.p/selectev.c.o
+[281/446] Compiling C object Xi/liblibxserver_xi.a.p/queryst.c.o
+[282/446] Compiling C object Xi/liblibxserver_xi.a.p/sendexev.c.o
+[283/446] Compiling C object Xi/liblibxserver_xi.a.p/setbmap.c.o
+[284/446] Compiling C object Xi/liblibxserver_xi.a.p/setdval.c.o
+[285/446] Compiling C object Xi/liblibxserver_xi.a.p/setfocus.c.o
+[286/446] Compiling C object Xi/liblibxserver_xi.a.p/setmmap.c.o
+[287/446] Compiling C object Xi/liblibxserver_xi.a.p/setmode.c.o
+[288/446] Compiling C object Xi/liblibxserver_xi.a.p/ungrdev.c.o
+[289/446] Compiling C object Xi/liblibxserver_xi.a.p/ungrdevb.c.o
+[290/446] Compiling C object Xi/liblibxserver_xi.a.p/ungrdevk.c.o
+[291/446] Compiling C object Xi/liblibxserver_xi.a.p/xiallowev.c.o
+[292/446] Compiling C object Xi/liblibxserver_xi.a.p/xichangecursor.c.o
+[293/446] Compiling C object Xi/liblibxserver_xi.a.p/xigetclientpointer.c.o
+[294/446] Compiling C object Xi/liblibxserver_xi.a.p/xibarriers.c.o
+[295/446] Compiling C object Xi/liblibxserver_xi.a.p/xichangehierarchy.c.o
+[296/446] Compiling C object Xi/liblibxserver_xi.a.p/xigrabdev.c.o
+[297/446] Compiling C object Xi/liblibxserver_xi.a.p/xipassivegrab.c.o
+[298/446] Compiling C object Xi/liblibxserver_xi.a.p/xiquerydevice.c.o
+[299/446] Compiling C object Xi/liblibxserver_xi.a.p/xiproperty.c.o
+[300/446] Compiling C object Xi/liblibxserver_xi.a.p/xiquerypointer.c.o
+[301/446] Compiling C object Xi/liblibxserver_xi.a.p/xiqueryversion.c.o
+[302/446] Compiling C object Xi/liblibxserver_xi.a.p/xisetclientpointer.c.o
+[303/446] Compiling C object Xi/liblibxserver_xi.a.p/xisetdevfocus.c.o
+[304/446] Compiling C object Xi/liblibxserver_xi_stubs.a.p/stubs.c.o
+[305/446] Compiling C object Xi/liblibxserver_xi.a.p/xiwarppointer.c.o
+[306/446] Compiling C object Xi/liblibxserver_xi.a.p/xiselectev.c.o
+[307/446] Compiling C object glamor/libglamor.a.p/glamor_core.c.o
+[308/446] Compiling C object glamor/libglamor.a.p/glamor.c.o
+[309/446] Compiling C object glamor/libglamor.a.p/glamor_copy.c.o
+[310/446] Compiling C object glamor/libglamor.a.p/glamor_dash.c.o
+[311/446] Compiling C object glamor/libglamor.a.p/glamor_font.c.o
+[312/446] Compiling C object glamor/libglamor.a.p/glamor_image.c.o
+[313/446] Compiling C object glamor/libglamor.a.p/glamor_composite_glyphs.c.o
+[314/446] Compiling C object glamor/libglamor.a.p/glamor_lines.c.o
+[315/446] Compiling C object glamor/libglamor.a.p/glamor_segs.c.o
+[316/446] Compiling C object glamor/libglamor.a.p/glamor_prepare.c.o
+[317/446] Compiling C object glamor/libglamor.a.p/glamor_gradient.c.o
+[318/446] Compiling C object glamor/libglamor.a.p/glamor_program.c.o
+[319/446] Compiling C object glamor/libglamor.a.p/glamor_rects.c.o
+[320/446] Compiling C object glamor/libglamor.a.p/glamor_spans.c.o
+[321/446] Compiling C object glamor/libglamor.a.p/glamor_render.c.o
+[322/446] Compiling C object glamor/libglamor.a.p/glamor_text.c.o
+[323/446] Compiling C object glamor/libglamor.a.p/glamor_transfer.c.o
+[324/446] Compiling C object glamor/libglamor.a.p/glamor_trapezoid.c.o
+[325/446] Compiling C object glamor/libglamor.a.p/glamor_transform.c.o
+[326/446] Compiling C object glamor/libglamor.a.p/glamor_triangles.c.o
+[327/446] Compiling C object glamor/libglamor.a.p/glamor_addtraps.c.o
+[328/446] Compiling C object glamor/libglamor.a.p/glamor_glyphblt.c.o
+[329/446] Compiling C object glamor/libglamor.a.p/glamor_points.c.o
+[330/446] Compiling C object glamor/libglamor.a.p/glamor_pixmap.c.o
+[331/446] Compiling C object glamor/libglamor.a.p/glamor_picture.c.o
+[332/446] Compiling C object glamor/libglamor.a.p/glamor_vbo.c.o
+[333/446] Compiling C object glamor/libglamor.a.p/glamor_window.c.o
+[334/446] Compiling C object glamor/libglamor.a.p/glamor_fbo.c.o
+[335/446] Compiling C object glamor/libglamor.a.p/glamor_largepixmap.c.o
+[336/446] Compiling C object glamor/libglamor.a.p/glamor_compositerects.c.o
+[337/446] Compiling C object glamor/libglamor.a.p/glamor_utils.c.o
+[338/446] Compiling C object glamor/libglamor.a.p/glamor_sync.c.o
+[339/446] Generating 'hw/xwayland/Xwayland.p/relative-pointer-unstable-v1-client-protocol.h'
+[340/446] Generating 'hw/xwayland/Xwayland.p/pointer-constraints-unstable-v1-client-protocol.h'
+[341/446] Generating 'hw/xwayland/Xwayland.p/pointer-gestures-unstable-v1-client-protocol.h'
+[342/446] Generating 'hw/xwayland/Xwayland.p/tablet-unstable-v2-client-protocol.h'
+[343/446] Generating 'hw/xwayland/Xwayland.p/xwayland-keyboard-grab-unstable-v1-client-protocol.h'
+[344/446] Generating 'hw/xwayland/Xwayland.p/xdg-output-unstable-v1-client-protocol.h'
+[345/446] Generating 'hw/xwayland/Xwayland.p/linux-dmabuf-unstable-v1-client-protocol.h'
+[346/446] Compiling C object glamor/libglamor.a.p/glamor_glx_provider.c.o
+[347/446] Generating 'hw/xwayland/Xwayland.p/viewporter-client-protocol.h'
+[348/446] Generating 'hw/xwayland/Xwayland.p/xdg-shell-client-protocol.h'
+[349/446] Generating 'hw/xwayland/Xwayland.p/drm-lease-v1-client-protocol.h'
+[350/446] Generating 'hw/xwayland/Xwayland.p/xwayland-shell-v1-client-protocol.h'
+[351/446] Generating 'hw/xwayland/Xwayland.p/keyboard-shortcuts-inhibit-unstable-v1-client-protocol.h'
+[352/446] Generating 'hw/xwayland/Xwayland.p/tearing-control-v1-client-protocol.h'
+[353/446] Generating 'hw/xwayland/Xwayland.p/fractional-scale-v1-client-protocol.h'
+[354/446] Generating 'hw/xwayland/Xwayland.p/linux-drm-syncobj-v1-client-protocol.h'
+[355/446] Generating 'hw/xwayland/Xwayland.p/relative-pointer-unstable-v1-protocol.c'
+[356/446] Generating 'hw/xwayland/Xwayland.p/pointer-constraints-unstable-v1-protocol.c'
+[357/446] Generating 'hw/xwayland/Xwayland.p/pointer-gestures-unstable-v1-protocol.c'
+[358/446] Generating 'hw/xwayland/Xwayland.p/tablet-unstable-v2-protocol.c'
+[359/446] Generating 'hw/xwayland/Xwayland.p/xwayland-keyboard-grab-unstable-v1-protocol.c'
+[360/446] Generating 'hw/xwayland/Xwayland.p/xdg-output-unstable-v1-protocol.c'
+[361/446] Compiling C object glamor/libglamor.a.p/glamor_xv.c.o
+[362/446] Generating 'hw/xwayland/Xwayland.p/linux-dmabuf-unstable-v1-protocol.c'
+[363/446] Generating 'hw/xwayland/Xwayland.p/viewporter-protocol.c'
+[364/446] Generating 'hw/xwayland/Xwayland.p/xdg-shell-protocol.c'
+[365/446] Generating 'hw/xwayland/Xwayland.p/keyboard-shortcuts-inhibit-unstable-v1-protocol.c'
+[366/446] Generating 'hw/xwayland/Xwayland.p/drm-lease-v1-protocol.c'
+[367/446] Generating 'hw/xwayland/Xwayland.p/tearing-control-v1-protocol.c'
+[368/446] Generating 'hw/xwayland/Xwayland.p/xwayland-shell-v1-protocol.c'
+[369/446] Generating 'hw/xwayland/Xwayland.p/fractional-scale-v1-protocol.c'
+[370/446] Generating 'hw/xwayland/Xwayland.p/drm-protocol.c'
+[371/446] Generating 'hw/xwayland/Xwayland.p/drm-client-protocol.h'
+[372/446] Generating 'hw/xwayland/Xwayland.p/linux-drm-syncobj-v1-protocol.c'
+[373/446] Linking static target dix/liblibxserver_main.a
+[374/446] Linking static target dix/liblibxserver_dix.a
+[375/446] Linking static target dri3/liblibxserver_dri3.a
+[376/446] Linking static target glx/liblibglxvnd.a
+[377/446] Linking static target fb/liblibxserver_fb.a
+[378/446] Linking static target glx/liblibxserver_glx.a
+[379/446] Linking static target os/liblibxlibc.a
+[380/446] Linking static target os/liblibxserver_os.a
+[381/446] Linking static target mi/liblibxserver_mi.a
+[382/446] Linking static target damageext/liblibxserver_damageext.a
+[383/446] Linking static target composite/liblibxserver_composite.a
+[384/446] Linking static target dbe/liblibxserver_dbe.a
+[385/446] Linking static target miext/damage/liblibxserver_miext_damage.a
+[386/446] Linking static target miext/sync/liblibxserver_miext_sync.a
+[387/446] Linking static target present/liblibxserver_present.a
+[388/446] Linking static target randr/liblibxserver_randr.a
+[389/446] Linking static target record/liblibxserver_record.a
+[390/446] Linking static target xkb/liblibxserver_xkb.a
+[391/446] Linking static target render/liblibxserver_render.a
+[392/446] Linking static target xfixes/liblibxserver_xfixes.a
+[393/446] Linking static target xkb/liblibxserver_xkb_stubs.a
+[394/446] Linking static target Xext/liblibxserver_xext_vidmode.a
+[395/446] Linking static target Xi/liblibxserver_xi.a
+[396/446] Linking static target Xext/liblibxserver_xext.a
+[397/446] Linking static target Xi/liblibxserver_xi_stubs.a
+[398/446] Linking static target glamor/libglamor.a
+[399/446] Compiling C object hw/vfb/Xvfb.p/.._.._mi_miinitext.c.o
+[400/446] Compiling C object hw/vfb/Xvfb.p/InitInput.c.o
+[401/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_relative-pointer-unstable-v1-protocol.c.o
+[402/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_pointer-constraints-unstable-v1-protocol.c.o
+[403/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_pointer-gestures-unstable-v1-protocol.c.o
+[404/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_xwayland-keyboard-grab-unstable-v1-protocol.c.o
+[405/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_tablet-unstable-v2-protocol.c.o
+[406/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_xdg-output-unstable-v1-protocol.c.o
+[407/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_linux-dmabuf-unstable-v1-protocol.c.o
+[408/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_viewporter-protocol.c.o
+[409/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_xdg-shell-protocol.c.o
+[410/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_drm-lease-v1-protocol.c.o
+[411/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_keyboard-shortcuts-inhibit-unstable-v1-protocol.c.o
+[412/446] Compiling C object hw/vfb/Xvfb.p/InitOutput.c.o
+[413/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_xwayland-shell-v1-protocol.c.o
+[414/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_tearing-control-v1-protocol.c.o
+[415/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_fractional-scale-v1-protocol.c.o
+[416/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_linux-drm-syncobj-v1-protocol.c.o
+[417/446] Compiling C object hw/xwayland/Xwayland.p/meson-generated_drm-protocol.c.o
+[418/446] Compiling C object hw/xwayland/Xwayland.p/xwayland.c.o
+[419/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-cursor.c.o
+[420/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-pixmap.c.o
+[421/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-drm-lease.c.o
+[422/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-input.c.o
+[423/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-present.c.o
+[424/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-screen.c.o
+[425/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-shm.c.o
+[426/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-cvt.c.o
+[427/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-vidmode.c.o
+[428/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-output.c.o
+[429/446] Compiling C object hw/xwayland/Xwayland.p/.._.._mi_miinitext.c.o
+[430/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-window-buffers.c.o
+[431/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-window.c.o
+[432/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-glamor.c.o
+[433/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-xtest.c.o
+[434/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-glamor-xv.c.o
+[435/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-dmabuf.c.o
+[436/446] Compiling C object test/bigreq/request-length.p/request-length.c.o
+[437/446] Compiling C object test/simple-xinit.p/simple-xinit.c.o
+[438/446] Compiling C object test/sync/sync.p/sync.c.o
+[439/446] Compiling C object test/damage/damage-primitives.p/primitives.c.o
+[440/446] Linking target test/simple-xinit
+[441/446] Linking target test/bigreq/request-length
+[442/446] Linking target test/damage/damage-primitives
+[443/446] Linking target test/sync/sync
+[444/446] Linking target hw/vfb/Xvfb
+[445/446] Compiling C object hw/xwayland/Xwayland.p/xwayland-glamor-gbm.c.o
+[446/446] Linking target hw/xwayland/Xwayland
+[0/1] Installing files
+Installing hw/xwayland/Xwayland to /usr/bin
+Installing /home/fusion809/lfs_packaging/xwayland/xwayland-24.1.15/build/man/Xserver.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/xwayland/xwayland-24.1.15/build/hw/xwayland/Xwayland.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/xwayland/xwayland-24.1.15/dix/protocol.txt to /usr/lib/xorg
+Installing /home/fusion809/lfs_packaging/xwayland/xwayland-24.1.15/build/meson-private/xwayland.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/xwayland/xwayland-24.1.15/build/hw/xwayland/org.freedesktop.Xwayland.desktop to /usr/share/applications
+24.1.15
+Updated registry for xwayland to version 24.1.15
+[VERSION] xwayland: 24.1.15
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package xwayland in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: git: 2.56.0->2.56.1; xwayland: 24.1.14->24.1.15.
+[master 9162e37] git: 2.56.0->2.56.1; xwayland: 24.1.14->24.1.15.
+ 2 files changed, 1676 insertions(+), 1670 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: git: 2.56.0->2.56.1; xwayland: 24.1.14->24.1.15.
+[master b0a39f1] git: 2.56.0->2.56.1; xwayland: 24.1.14->24.1.15.
+ 2 files changed, 2 insertions(+)
+Pushing changes in ~/build_duration...
+r13.1-39
+r13.1-582
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+Removing stale: git-2.56.0  (newer: git-2.56.1)
+---
+Removed : 1
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.3-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.2-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
