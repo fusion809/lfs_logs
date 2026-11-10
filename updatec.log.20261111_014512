@@ -1,0 +1,53 @@
+===== Update check started: 2026-11-11 01:45:12 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261111_014512
+Packages needing attention: libxmlb
+===== Starting updatec: 2026-11-11 01:45:16 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - libxmlb
+
+Building custom package libxmlb...
+[01:45:17] Found custom package for libxmlb, bypassing BLFS aliases.
+[01:45:17] Custom package detected at /home/fusion809/lfs_packaging/libxmlb (package: libxmlb)
+[01:45:17] Extracting dependencies for custom package 'libxmlb'...
+[01:45:17] Required deps: glib2 glibc libffi pcre2 systemd util-linux xz zlib zstd 
+[01:45:17] Dependency 'glib2' already installed.
+[01:45:17] Dependency 'glibc' already installed.
+[01:45:17] Dependency 'libffi' already installed.
+[01:45:17] Dependency 'pcre2' already installed.
+[01:45:17] Dependency 'systemd' already installed.
+[01:45:17] Dependency 'util-linux' already installed.
+[01:45:17] Dependency 'xz' already installed.
+[01:45:17] Dependency 'zlib' already installed.
+[01:45:17] Dependency 'zstd' already installed.
+[01:45:18] [LFS-AUTOBUILD] Skipping custom package libxmlb: version 0.3.30 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-39
+r13.1-582
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.3-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.2-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+/var/lib/custom-packages does not show any likely updates to the table.
+~/logs ~ ~/lfs_packaging
