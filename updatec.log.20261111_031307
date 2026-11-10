@@ -1,0 +1,52 @@
+===== Update check started: 2026-11-11 03:13:07 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261111_031307
+Packages needing attention: go
+===== Starting updatec: 2026-11-11 03:13:10 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - go
+
+Building custom package go...
+[03:13:11] Found custom package for go, bypassing BLFS aliases.
+[03:13:11] Custom package detected at /home/fusion809/lfs_packaging/go (package: go)
+[03:13:11] Extracting dependencies for custom package 'go'...
+[03:13:11] Required deps: gcc glibc libjpeg-turbo libwebp tiff xz zlib zstd 
+[03:13:11] Dependency 'gcc' already installed.
+[03:13:11] Dependency 'glibc' already installed.
+[03:13:11] Dependency 'libjpeg-turbo' already installed.
+[03:13:11] Dependency 'libwebp' already installed.
+[03:13:11] Dependency 'tiff' already installed.
+[03:13:11] Dependency 'xz' already installed.
+[03:13:11] Dependency 'zlib' already installed.
+[03:13:11] Dependency 'zstd' already installed.
+[03:13:12] [LFS-AUTOBUILD] Skipping custom package go: version 1.27.4 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-39
+r13.1-582
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.3-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.2-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+/var/lib/custom-packages does not show any likely updates to the table.
+~/logs ~ ~/lfs_packaging
