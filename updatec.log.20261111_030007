@@ -1,0 +1,1951 @@
+===== Update check started: 2026-11-11 03:00:07 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261111_030007
+Packages needing attention: go
+===== Starting updatec: 2026-11-11 03:00:09 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - go
+
+Building custom package go...
+[03:00:11] Found custom package for go, bypassing BLFS aliases.
+[03:00:11] Custom package detected at /home/fusion809/lfs_packaging/go (package: go)
+[03:00:11] Extracting dependencies for custom package 'go'...
+[03:00:11] Required deps: gcc glibc libjpeg-turbo libwebp tiff xz zlib zstd 
+[03:00:11] Dependency 'gcc' already installed.
+[03:00:11] Dependency 'glibc' already installed.
+[03:00:11] Dependency 'libjpeg-turbo' already installed.
+[03:00:11] Dependency 'libwebp' already installed.
+[03:00:11] Dependency 'tiff' already installed.
+[03:00:11] Dependency 'xz' already installed.
+[03:00:11] Dependency 'zlib' already installed.
+[03:00:11] Dependency 'zstd' already installed.
+[VERSION] go: 1.27.4
+[03:00:12] Installing go version: 1.27.4
+[03:00:12] Starting remote custom build for go...
+--2026-11-11 03:00:28--  https://go.dev//dl/go1.27.4.src.tar.gz
+Resolving go.dev (go.dev)... 216.239.32.21, 216.239.36.21, 216.239.34.21, ...
+Connecting to go.dev (go.dev)|216.239.32.21|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://dl.google.com/go/go1.27.4.src.tar.gz [following]
+--2026-11-11 03:00:28--  https://dl.google.com/go/go1.27.4.src.tar.gz
+Resolving dl.google.com (dl.google.com)... 142.250.195.238, 2404:6800:4006:808::200e
+Connecting to dl.google.com (dl.google.com)|142.250.195.238|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 35153471 (34M) [application/x-gzip]
+Saving to: ‘go1.27.4.src.tar.gz’
+
+go1.27.4.src.tar.gz   0%[                    ]       0  --.-KB/s               go1.27.4.src.tar.gz   0%[                    ]  49.35K   205KB/s               go1.27.4.src.tar.gz   0%[                    ] 200.07K   453KB/s               go1.27.4.src.tar.gz   1%[                    ] 420.04K   654KB/s               go1.27.4.src.tar.gz   1%[                    ] 645.38K   766KB/s               go1.27.4.src.tar.gz   2%[                    ] 870.73K   835KB/s               go1.27.4.src.tar.gz   3%[                    ]   1.08M   879KB/s               go1.27.4.src.tar.gz   3%[                    ]   1.31M   917KB/s               go1.27.4.src.tar.gz   4%[                    ]   1.55M   945KB/s               go1.27.4.src.tar.gz   5%[>                   ]   1.78M   966KB/s               go1.27.4.src.tar.gz   6%[>                   ]   2.02M   985KB/s               go1.27.4.src.tar.gz   6%[>                   ]   2.23M   996KB/s               go1.27.4.src.tar.gz   7%[>                   ]   2.47M  1008KB/s               go1.27.4.src.tar.gz   8%[>                   ]   2.70M  1019KB/s               go1.27.4.src.tar.gz   8%[>                   ]   2.94M  1.00MB/s               go1.27.4.src.tar.gz   9%[>                   ]   3.17M  1.01MB/s    eta 30s    go1.27.4.src.tar.gz  10%[=>                  ]   3.39M  1.05MB/s    eta 30s    go1.27.4.src.tar.gz  10%[=>                  ]   3.62M  1.10MB/s    eta 30s    go1.27.4.src.tar.gz  11%[=>                  ]   3.84M  1.10MB/s    eta 30s    go1.27.4.src.tar.gz  12%[=>                  ]   4.06M  1.10MB/s    eta 30s    go1.27.4.src.tar.gz  12%[=>                  ]   4.30M  1.10MB/s    eta 28s    go1.27.4.src.tar.gz  13%[=>                  ]   4.53M  1.10MB/s    eta 28s    go1.27.4.src.tar.gz  14%[=>                  ]   4.77M  1.10MB/s    eta 28s    go1.27.4.src.tar.gz  14%[=>                  ]   5.00M  1.10MB/s    eta 28s    go1.27.4.src.tar.gz  15%[==>                 ]   5.22M  1.10MB/s    eta 28s    go1.27.4.src.tar.gz  16%[==>                 ]   5.45M  1.10MB/s    eta 27s    go1.27.4.src.tar.gz  16%[==>                 ]   5.67M  1.10MB/s    eta 27s    go1.27.4.src.tar.gz  17%[==>                 ]   5.89M  1.09MB/s    eta 27s    go1.27.4.src.tar.gz  18%[==>                 ]   6.12M  1.09MB/s    eta 27s    go1.27.4.src.tar.gz  18%[==>                 ]   6.33M  1.08MB/s    eta 27s    go1.27.4.src.tar.gz  19%[==>                 ]   6.44M  1.04MB/s    eta 26s    go1.27.4.src.tar.gz  19%[==>                 ]   6.67M  1.05MB/s    eta 26s    go1.27.4.src.tar.gz  20%[===>                ]   6.89M  1.05MB/s    eta 26s    go1.27.4.src.tar.gz  21%[===>                ]   7.12M  1.05MB/s    eta 26s    go1.27.4.src.tar.gz  21%[===>                ]   7.34M  1.05MB/s    eta 26s    go1.27.4.src.tar.gz  22%[===>                ]   7.58M  1.05MB/s    eta 25s    go1.27.4.src.tar.gz  23%[===>                ]   7.81M  1.05MB/s    eta 25s    go1.27.4.src.tar.gz  24%[===>                ]   8.05M  1.05MB/s    eta 25s    go1.27.4.src.tar.gz  24%[===>                ]   8.28M  1.06MB/s    eta 25s    go1.27.4.src.tar.gz  25%[====>               ]   8.52M  1.06MB/s    eta 25s    go1.27.4.src.tar.gz  26%[====>               ]   8.73M  1.06MB/s    eta 24s    go1.27.4.src.tar.gz  26%[====>               ]   8.97M  1.06MB/s    eta 24s    go1.27.4.src.tar.gz  27%[====>               ]   9.19M  1.06MB/s    eta 24s    go1.27.4.src.tar.gz  28%[====>               ]   9.42M  1.06MB/s    eta 24s    go1.27.4.src.tar.gz  28%[====>               ]   9.66M  1.06MB/s    eta 24s    go1.27.4.src.tar.gz  29%[====>               ]   9.89M  1.11MB/s    eta 22s    go1.27.4.src.tar.gz  30%[=====>              ]  10.12M  1.11MB/s    eta 22s    go1.27.4.src.tar.gz  30%[=====>              ]  10.34M  1.11MB/s    eta 22s    go1.27.4.src.tar.gz  31%[=====>              ]  10.58M  1.11MB/s    eta 22s    go1.27.4.src.tar.gz  32%[=====>              ]  10.81M  1.11MB/s    eta 22s    go1.27.4.src.tar.gz  32%[=====>              ]  11.03M  1.11MB/s    eta 21s    go1.27.4.src.tar.gz  33%[=====>              ]  11.27M  1.11MB/s    eta 21s    go1.27.4.src.tar.gz  34%[=====>              ]  11.50M  1.11MB/s    eta 21s    go1.27.4.src.tar.gz  35%[======>             ]  11.73M  1.11MB/s    eta 21s    go1.27.4.src.tar.gz  35%[======>             ]  11.97M  1.11MB/s    eta 21s    go1.27.4.src.tar.gz  36%[======>             ]  12.19M  1.11MB/s    eta 20s    go1.27.4.src.tar.gz  36%[======>             ]  12.38M  1.09MB/s    eta 20s    go1.27.4.src.tar.gz  37%[======>             ]  12.52M  1.06MB/s    eta 20s    go1.27.4.src.tar.gz  38%[======>             ]  12.75M  1.07MB/s    eta 20s    go1.27.4.src.tar.gz  38%[======>             ]  12.98M  1.07MB/s    eta 20s    go1.27.4.src.tar.gz  39%[======>             ]  13.22M  1.06MB/s    eta 19s    go1.27.4.src.tar.gz  40%[=======>            ]  13.45M  1.07MB/s    eta 19s    go1.27.4.src.tar.gz  40%[=======>            ]  13.67M  1.06MB/s    eta 19s    go1.27.4.src.tar.gz  41%[=======>            ]  13.89M  1.06MB/s    eta 19s    go1.27.4.src.tar.gz  42%[=======>            ]  14.12M  1.06MB/s    eta 19s    go1.27.4.src.tar.gz  42%[=======>            ]  14.36M  1.06MB/s    eta 18s    go1.27.4.src.tar.gz  43%[=======>            ]  14.59M  1.06MB/s    eta 18s    go1.27.4.src.tar.gz  44%[=======>            ]  14.83M  1.06MB/s    eta 18s    go1.27.4.src.tar.gz  44%[=======>            ]  15.06M  1.06MB/s    eta 18s    go1.27.4.src.tar.gz  45%[========>           ]  15.30M  1.07MB/s    eta 18s    go1.27.4.src.tar.gz  46%[========>           ]  15.52M  1.07MB/s    eta 17s    go1.27.4.src.tar.gz  46%[========>           ]  15.75M  1.08MB/s    eta 17s    go1.27.4.src.tar.gz  47%[========>           ]  15.98M  1.11MB/s    eta 17s    go1.27.4.src.tar.gz  48%[========>           ]  16.22M  1.11MB/s    eta 17s    go1.27.4.src.tar.gz  49%[========>           ]  16.45M  1.11MB/s    eta 17s    go1.27.4.src.tar.gz  49%[========>           ]  16.69M  1.11MB/s    eta 16s    go1.27.4.src.tar.gz  50%[=========>          ]  16.92M  1.11MB/s    eta 16s    go1.27.4.src.tar.gz  51%[=========>          ]  17.16M  1.11MB/s    eta 16s    go1.27.4.src.tar.gz  51%[=========>          ]  17.38M  1.11MB/s    eta 16s    go1.27.4.src.tar.gz  52%[=========>          ]  17.61M  1.11MB/s    eta 16s    go1.27.4.src.tar.gz  53%[=========>          ]  17.84M  1.11MB/s    eta 15s    go1.27.4.src.tar.gz  53%[=========>          ]  18.08M  1.11MB/s    eta 15s    go1.27.4.src.tar.gz  54%[=========>          ]  18.31M  1.11MB/s    eta 15s    go1.27.4.src.tar.gz  55%[==========>         ]  18.53M  1.11MB/s    eta 15s    go1.27.4.src.tar.gz  55%[==========>         ]  18.77M  1.11MB/s    eta 15s    go1.27.4.src.tar.gz  56%[==========>         ]  19.00M  1.11MB/s    eta 14s    go1.27.4.src.tar.gz  57%[==========>         ]  19.22M  1.11MB/s    eta 14s    go1.27.4.src.tar.gz  58%[==========>         ]  19.45M  1.11MB/s    eta 14s    go1.27.4.src.tar.gz  58%[==========>         ]  19.69M  1.11MB/s    eta 14s    go1.27.4.src.tar.gz  59%[==========>         ]  19.92M  1.11MB/s    eta 14s    go1.27.4.src.tar.gz  60%[===========>        ]  20.16M  1.11MB/s    eta 12s    go1.27.4.src.tar.gz  60%[===========>        ]  20.28M  1.07MB/s    eta 12s    go1.27.4.src.tar.gz  61%[===========>        ]  20.50M  1.07MB/s    eta 12s    go1.27.4.src.tar.gz  61%[===========>        ]  20.73M  1.07MB/s    eta 12s    go1.27.4.src.tar.gz  62%[===========>        ]  20.97M  1.07MB/s    eta 12s    go1.27.4.src.tar.gz  63%[===========>        ]  21.20M  1.06MB/s    eta 12s    go1.27.4.src.tar.gz  63%[===========>        ]  21.42M  1.06MB/s    eta 12s    go1.27.4.src.tar.gz  64%[===========>        ]  21.66M  1.06MB/s    eta 12s    go1.27.4.src.tar.gz  65%[============>       ]  21.89M  1.06MB/s    eta 12s    go1.27.4.src.tar.gz  65%[============>       ]  22.11M  1.06MB/s    eta 12s    go1.27.4.src.tar.gz  66%[============>       ]  22.31M  1.06MB/s    eta 10s    go1.27.4.src.tar.gz  67%[============>       ]  22.55M  1.06MB/s    eta 10s    go1.27.4.src.tar.gz  67%[============>       ]  22.78M  1.06MB/s    eta 10s    go1.27.4.src.tar.gz  68%[============>       ]  23.02M  1.06MB/s    eta 10s    go1.27.4.src.tar.gz  69%[============>       ]  23.25M  1.06MB/s    eta 10s    go1.27.4.src.tar.gz  70%[=============>      ]  23.48M  1.06MB/s    eta 9s     go1.27.4.src.tar.gz  70%[=============>      ]  23.70M  1.10MB/s    eta 9s     go1.27.4.src.tar.gz  71%[=============>      ]  23.94M  1.10MB/s    eta 9s     go1.27.4.src.tar.gz  72%[=============>      ]  24.17M  1.10MB/s    eta 9s     go1.27.4.src.tar.gz  72%[=============>      ]  24.39M  1.10MB/s    eta 9s     go1.27.4.src.tar.gz  73%[=============>      ]  24.62M  1.10MB/s    eta 8s     go1.27.4.src.tar.gz  74%[=============>      ]  24.86M  1.10MB/s    eta 8s     go1.27.4.src.tar.gz  74%[=============>      ]  25.08M  1.10MB/s    eta 8s     go1.27.4.src.tar.gz  75%[==============>     ]  25.31M  1.10MB/s    eta 8s     go1.27.4.src.tar.gz  76%[==============>     ]  25.55M  1.10MB/s    eta 8s     go1.27.4.src.tar.gz  76%[==============>     ]  25.78M  1.11MB/s    eta 7s     go1.27.4.src.tar.gz  77%[==============>     ]  26.02M  1.11MB/s    eta 7s     go1.27.4.src.tar.gz  78%[==============>     ]  26.25M  1.11MB/s    eta 7s     go1.27.4.src.tar.gz  78%[==============>     ]  26.48M  1.11MB/s    eta 7s     go1.27.4.src.tar.gz  79%[==============>     ]  26.70M  1.11MB/s    eta 7s     go1.27.4.src.tar.gz  80%[===============>    ]  26.92M  1.11MB/s    eta 6s     go1.27.4.src.tar.gz  81%[===============>    ]  27.16M  1.11MB/s    eta 6s     go1.27.4.src.tar.gz  81%[===============>    ]  27.39M  1.11MB/s    eta 6s     go1.27.4.src.tar.gz  82%[===============>    ]  27.62M  1.11MB/s    eta 6s     go1.27.4.src.tar.gz  83%[===============>    ]  27.86M  1.11MB/s    eta 6s     go1.27.4.src.tar.gz  83%[===============>    ]  28.09M  1.11MB/s    eta 5s     go1.27.4.src.tar.gz  84%[===============>    ]  28.33M  1.11MB/s    eta 5s     go1.27.4.src.tar.gz  85%[================>   ]  28.55M  1.11MB/s    eta 5s     go1.27.4.src.tar.gz  85%[================>   ]  28.78M  1.11MB/s    eta 5s     go1.27.4.src.tar.gz  86%[================>   ]  29.02M  1.11MB/s    eta 5s     go1.27.4.src.tar.gz  87%[================>   ]  29.25M  1.11MB/s    eta 4s     go1.27.4.src.tar.gz  87%[================>   ]  29.48M  1.11MB/s    eta 4s     go1.27.4.src.tar.gz  88%[================>   ]  29.72M  1.11MB/s    eta 4s     go1.27.4.src.tar.gz  89%[================>   ]  29.95M  1.11MB/s    eta 4s     go1.27.4.src.tar.gz  90%[=================>  ]  30.19M  1.11MB/s    eta 4s     go1.27.4.src.tar.gz  90%[=================>  ]  30.42M  1.11MB/s    eta 3s     go1.27.4.src.tar.gz  91%[=================>  ]  30.64M  1.11MB/s    eta 3s     go1.27.4.src.tar.gz  92%[=================>  ]  30.88M  1.11MB/s    eta 3s     go1.27.4.src.tar.gz  92%[=================>  ]  31.11M  1.11MB/s    eta 3s     go1.27.4.src.tar.gz  93%[=================>  ]  31.34M  1.11MB/s    eta 3s     go1.27.4.src.tar.gz  94%[=================>  ]  31.58M  1.11MB/s    eta 2s     go1.27.4.src.tar.gz  94%[=================>  ]  31.80M  1.11MB/s    eta 2s     go1.27.4.src.tar.gz  95%[==================> ]  32.03M  1.11MB/s    eta 2s     go1.27.4.src.tar.gz  96%[==================> ]  32.27M  1.11MB/s    eta 2s     go1.27.4.src.tar.gz  96%[==================> ]  32.48M  1.11MB/s    eta 2s     go1.27.4.src.tar.gz  97%[==================> ]  32.72M  1.11MB/s    eta 1s     go1.27.4.src.tar.gz  98%[==================> ]  32.94M  1.11MB/s    eta 1s     go1.27.4.src.tar.gz  98%[==================> ]  33.17M  1.11MB/s    eta 1s     go1.27.4.src.tar.gz  99%[==================> ]  33.41M  1.11MB/s    eta 1s     go1.27.4.src.tar.gz 100%[===================>]  33.52M  1.11MB/s    in 31s     
+
+2026-11-11 03:01:01 (1.08 MB/s) - ‘go1.27.4.src.tar.gz’ saved [35153471/35153471]
+
+Building Go cmd/dist using /usr/lib/go. (go1.27.3-X:nodwarf5 linux/amd64)
+cmd/dist
+
+Building Go toolchain1 using /usr/lib/go.
+internal/goarch
+internal/unsafeheader
+internal/cpu
+internal/abi
+internal/byteorder
+internal/coverage/rtcov
+internal/godebugs
+internal/bytealg
+internal/chacha8rand
+internal/goexperiment
+internal/goos
+internal/profilerecord
+internal/runtime/atomic
+internal/runtime/syscall/linux
+math/bits
+internal/runtime/exithook
+internal/runtime/gc
+internal/strconv
+internal/asan
+internal/msan
+internal/race
+internal/runtime/math
+internal/runtime/sys
+internal/runtime/pprof/label
+internal/stringslite
+internal/runtime/maps
+internal/trace/tracev2
+sync/atomic
+internal/runtime/cgroup
+internal/sync
+internal/synctest
+unicode
+unicode/utf8
+cmp
+math
+runtime
+log/internal
+bootstrap/cmp
+bootstrap/internal/goexperiment
+bootstrap/internal/goarch
+bootstrap/internal/abi
+crypto/internal/fips140/alias
+crypto/internal/fips140deps/byteorder
+crypto/internal/constanttime
+crypto/internal/fips140deps/cpu
+crypto/internal/fips140deps/time
+crypto/internal/boring/sig
+bootstrap/math/bits
+encoding
+bootstrap/internal/coverage
+bootstrap/internal/platform
+bootstrap/internal/unsafeheader
+unicode/utf16
+bootstrap/internal/goversion
+bootstrap/internal/runtime/gc
+bootstrap/internal/gover
+internal/goversion
+internal/platform
+internal/syslist
+bootstrap/internal/race
+bootstrap/cmd/compile/internal/test
+bootstrap/cmd/internal/telemetry
+sync
+iter
+internal/reflectlite
+slices
+crypto/internal/fips140/subtle
+crypto/subtle
+maps
+runtime/metrics
+errors
+bootstrap/sort
+strconv
+io
+reflect
+bytes
+strings
+internal/oserror
+path
+bufio
+syscall
+internal/testlog
+internal/bisect
+internal/godebug
+hash
+crypto
+crypto/internal/fips140deps/godebug
+crypto/internal/fips140
+crypto/internal/fips140/sha256
+time
+internal/syscall/unix
+internal/syscall/execenv
+crypto/internal/fips140/sha3
+crypto/internal/fips140/sha512
+crypto/internal/fips140/hmac
+crypto/internal/fips140/check
+crypto/internal/fips140/aes
+internal/fmtsort
+encoding/binary
+crypto/internal/entropy/v1.0.0
+io/fs
+internal/poll
+internal/filepathlite
+context
+crypto/fips140
+bootstrap/internal/bisect
+os
+bootstrap/cmd/internal/sys
+encoding/base64
+bootstrap/go/build/constraint
+math/rand
+hash/adler32
+bootstrap/internal/saferio
+sort
+go/build/constraint
+bootstrap/internal/types/errors
+html
+regexp/syntax
+weak
+unique
+net/netip
+fmt
+path/filepath
+os/exec
+crypto/internal/sysrand
+crypto/internal/fips140/drbg
+crypto/internal/fips140/aes/gcm
+log
+bootstrap/cmd/internal/src
+bootstrap/cmd/internal/bio
+bootstrap/internal/buildcfg
+crypto/internal/fips140only
+crypto/cipher
+flag
+crypto/internal/boring
+bootstrap/cmd/internal/dwarf
+bootstrap/cmd/internal/goobj
+crypto/sha256
+bootstrap/cmd/internal/objabi
+bootstrap/cmd/internal/hash
+text/scanner
+bootstrap/cmd/internal/telemetry/counter
+bootstrap/cmd/internal/edit
+bootstrap/cmd/internal/par
+bootstrap/cmd/internal/pkgpath
+bootstrap/cmd/internal/quoted
+bootstrap/debug/dwarf
+bootstrap/compress/flate
+bootstrap/cmd/internal/obj
+bootstrap/internal/zstd
+bootstrap/compress/zlib
+bootstrap/debug/macho
+bootstrap/debug/pe
+bootstrap/debug/elf
+bootstrap/cmd/internal/obj/arm
+bootstrap/cmd/internal/obj/arm64
+bootstrap/cmd/internal/obj/loong64
+bootstrap/cmd/internal/obj/mips
+bootstrap/cmd/internal/obj/ppc64
+bootstrap/cmd/internal/obj/riscv
+bootstrap/cmd/internal/obj/s390x
+bootstrap/cmd/internal/obj/wasm
+bootstrap/cmd/internal/obj/x86
+bootstrap/cmd/asm/internal/flags
+bootstrap/cmd/asm/internal/lex
+bootstrap/internal/xcoff
+go/token
+go/scanner
+go/ast
+go/doc/comment
+bootstrap/cmd/asm/internal/arch
+text/tabwriter
+regexp
+go/parser
+bootstrap/cmd/asm/internal/asm
+go/printer
+bootstrap/cmd/internal/cov/covcmd
+bootstrap/cmd/asm
+encoding/json
+go/format
+bootstrap/cmd/cgo
+runtime/debug
+math/big
+bootstrap/cmd/compile/internal/base
+bootstrap/internal/lazyregexp
+encoding/hex
+net/url
+bootstrap/cmd/compile/internal/logopt
+bootstrap/cmd/compile/internal/bitvec
+bootstrap/go/constant
+bootstrap/cmd/compile/internal/abt
+bootstrap/container/heap
+hash/crc32
+compress/flate
+bootstrap/go/version
+internal/lazyregexp
+bootstrap/cmd/compile/internal/types
+bootstrap/cmd/compile/internal/syntax
+compress/gzip
+bootstrap/internal/profile
+bootstrap/cmd/compile/internal/ir
+bootstrap/cmd/compile/internal/typebits
+bootstrap/cmd/internal/pgo
+bootstrap/cmd/compile/internal/types2
+go/doc
+internal/buildcfg
+internal/goroot
+go/build
+bootstrap/internal/exportdata
+bootstrap/internal/pkgbits
+hash/fnv
+bootstrap/cmd/internal/archive
+runtime/pprof
+bootstrap/cmd/compile/internal/objw
+bootstrap/cmd/compile/internal/abi
+bootstrap/cmd/compile/internal/typecheck
+bootstrap/cmd/compile/internal/rttype
+bootstrap/cmd/compile/internal/staticdata
+bootstrap/cmd/compile/internal/deadlocals
+runtime/trace
+bootstrap/cmd/compile/internal/importer
+bootstrap/cmd/compile/internal/compare
+bootstrap/cmd/compile/internal/pgoir
+bootstrap/cmd/compile/internal/inline/inlheur
+bootstrap/cmd/compile/internal/bloop
+bootstrap/cmd/compile/internal/reflectdata
+bootstrap/cmd/compile/internal/coverage
+bootstrap/cmd/compile/internal/escape
+bootstrap/cmd/compile/internal/inline
+bootstrap/cmd/compile/internal/ssa
+bootstrap/cmd/compile/internal/devirtualize
+bootstrap/cmd/compile/internal/inline/interleaved
+bootstrap/cmd/compile/internal/loopvar
+bootstrap/cmd/compile/internal/midway
+bootstrap/cmd/compile/internal/rangefunc
+bootstrap/cmd/compile/internal/staticinit
+bootstrap/cmd/compile/internal/slice
+bootstrap/cmd/internal/codesign
+bootstrap/cmd/internal/gcprog
+bootstrap/cmd/internal/macho
+bootstrap/cmd/link/internal/benchmark
+bootstrap/cmd/link/internal/sym
+crypto/sha3
+bootstrap/cmd/link/internal/loader
+crypto/internal/fips140hash
+crypto/hmac
+bootstrap/cmd/link/internal/dwtest
+bootstrap/cmd/link/internal/loadelf
+bootstrap/cmd/link/internal/loadmacho
+bootstrap/cmd/link/internal/loadpe
+bootstrap/cmd/link/internal/loadxcoff
+bootstrap/cmd/link/internal/ld
+bootstrap/cmd/link/internal/amd64
+bootstrap/cmd/link/internal/arm
+bootstrap/cmd/link/internal/arm64
+bootstrap/cmd/link/internal/loong64
+bootstrap/cmd/link/internal/mips
+bootstrap/cmd/link/internal/mips64
+bootstrap/cmd/link/internal/ppc64
+bootstrap/cmd/link/internal/riscv64
+bootstrap/cmd/link/internal/s390x
+bootstrap/cmd/link/internal/wasm
+bootstrap/cmd/link/internal/x86
+bootstrap/cmd/link
+bootstrap/cmd/compile/internal/liveness
+bootstrap/cmd/compile/internal/ssagen
+bootstrap/cmd/compile/internal/amd64
+bootstrap/cmd/compile/internal/arm
+bootstrap/cmd/compile/internal/arm64
+bootstrap/cmd/compile/internal/dwarfgen
+bootstrap/cmd/compile/internal/loong64
+bootstrap/cmd/compile/internal/mips
+bootstrap/cmd/compile/internal/noder
+bootstrap/cmd/compile/internal/ppc64
+bootstrap/cmd/compile/internal/mips64
+bootstrap/cmd/compile/internal/riscv64
+bootstrap/cmd/compile/internal/s390x
+bootstrap/cmd/compile/internal/wasm
+bootstrap/cmd/compile/internal/x86
+bootstrap/cmd/compile/internal/pkginit
+bootstrap/cmd/compile/internal/walk
+bootstrap/cmd/compile/internal/gc
+bootstrap/cmd/compile
+
+Building Go bootstrap cmd/go (go_bootstrap) using Go toolchain1.
+runtime
+internal/runtime/pprof/label
+internal/runtime/gc
+internal/runtime/maps
+internal/race
+internal/cpu
+internal/asan
+internal/runtime/math
+internal/goarch
+internal/msan
+internal/stringslite
+internal/coverage/rtcov
+internal/godebugs
+internal/goos
+internal/runtime/syscall/linux
+internal/runtime/exithook
+internal/goexperiment
+internal/chacha8rand
+internal/byteorder
+internal/profilerecord
+math/bits
+internal/bytealg
+internal/strconv
+internal/runtime/cgroup
+internal/trace/tracev2
+internal/runtime/atomic
+internal/abi
+internal/runtime/sys
+time/tzdata
+syscall
+errors
+internal/reflectlite
+internal/unsafeheader
+slices
+internal/oserror
+sync/atomic
+iter
+sync
+cmp
+internal/synctest
+internal/sync
+cmd/go
+cmd/go/internal/help
+flag
+unicode
+time
+cmd/go/internal/modload
+cmd/go/internal/base
+log
+cmd/go/internal/generate
+os/exec
+io/fs
+cmd/go/internal/modget
+cmd/go/internal/run
+go/build
+cmd/go/internal/telemetrycmd
+cmd/go/internal/version
+cmd/go/internal/cfg
+cmd/go/internal/modfetch
+cmd/go/internal/test
+cmd/go/internal/tool
+cmd/go/internal/work
+internal/buildcfg
+path/filepath
+strings
+cmd/go/internal/clean
+cmd/go/internal/toolchain
+cmd/go/internal/workcmd
+cmd/internal/telemetry
+os
+cmd/go/internal/fmtcmd
+runtime/trace
+cmd/go/internal/vet
+cmd/go/internal/envcmd
+cmd/go/internal/telemetrystats
+cmd/go/internal/trace
+cmd/go/internal/bug
+io
+unicode/utf8
+bufio
+text/template
+cmd/go/internal/modcmd
+path
+context
+fmt
+cmd/go/internal/doc
+cmd/go/internal/list
+encoding
+cmd/internal/telemetry/counter
+reflect
+strconv
+cmd/internal/pathcache
+regexp
+cmd/go/internal/load
+bytes
+go/parser
+go/token
+cmd/go/internal/str
+internal/godebug
+internal/syscall/execenv
+internal/syscall/unix
+encoding/json
+log/internal
+cmd/go/internal/gover
+debug/buildinfo
+internal/platform
+internal/cfg
+cmd/go/internal/fsys
+maps
+cmd/internal/par
+cmd/go/internal/search
+cmd/vendor/golang.org/x/mod/modfile
+math/rand
+math
+internal/fmtsort
+cmd/vendor/golang.org/x/mod/module
+go/printer
+go/format
+runtime/debug
+sort
+go/doc
+cmd/internal/pkgpattern
+cmd/vendor/golang.org/x/mod/semver
+go/ast
+internal/gover
+internal/goversion
+cmd/go/internal/lockedfile
+unicode/utf16
+cmd/go/internal/imports
+encoding/base64
+cmd/go/internal/cache
+cmd/vendor/golang.org/x/mod/internal/lazyregexp
+cmd/vendor/golang.org/x/sync/semaphore
+container/list
+net/url
+internal/testlog
+cmd/go/internal/lockedfile/internal/filelock
+cmd/go/internal/modinfo
+cmd/go/internal/web
+internal/filepathlite
+internal/poll
+go/build/constraint
+text/tabwriter
+regexp/syntax
+internal/syslist
+go/doc/comment
+cmd/internal/sys
+cmd/go/internal/modfetch/codehost
+internal/lazyregexp
+debug/plan9obj
+internal/saferio
+go/scanner
+text/template/parse
+cmd/vendor/golang.org/x/mod/sumdb/dirhash
+crypto/sha256
+encoding/xml
+archive/zip
+cmd/internal/buildid
+container/heap
+cmd/go/internal/fips140
+crypto/sha1
+debug/pe
+debug/macho
+encoding/binary
+cmd/internal/quoted
+cmd/internal/pkgpath
+cmd/internal/robustio
+cmd/vendor/golang.org/x/tools/go/analysis
+internal/coverage
+debug/elf
+cmd/internal/cov/covcmd
+internal/goroot
+internal/xcoff
+cmd/go/internal/mvs
+hash
+debug/dwarf
+internal/diff
+encoding/hex
+cmd/go/internal/modindex
+cmd/go/internal/cacheprog
+cmd/go/internal/mmap
+internal/trace/traceviewer/format
+cmd/go/internal/vcs
+cmd/vendor/golang.org/x/mod/zip
+os/signal
+go/version
+net/netip
+unique
+weak
+crypto
+crypto/internal/boring
+crypto/internal/boring/sig
+crypto/cipher
+internal/bisect
+cmd/internal/codesign
+cmd/internal/hash
+crypto/internal/fips140/sha256
+hash/crc32
+cmd/go/internal/cmdflag
+crypto/internal/fips140only
+crypto/fips140
+crypto/internal/fips140/check
+crypto/internal/fips140deps/byteorder
+crypto/internal/impl
+crypto/internal/fips140/aes
+cmd/internal/macho
+crypto/internal/fips140/aes/gcm
+crypto/internal/fips140/alias
+internal/singleflight
+compress/flate
+cmd/internal/test2json
+internal/lazytemplate
+cmd/internal/objabi
+internal/zstd
+compress/zlib
+crypto/subtle
+go/types
+crypto/internal/fips140/subtle
+crypto/internal/fips140deps/cpu
+crypto/internal/constanttime
+crypto/internal/fips140
+crypto/internal/fips140/sha3
+crypto/internal/fips140/sha512
+crypto/internal/fips140deps/godebug
+crypto/internal/fips140/hmac
+hash/adler32
+crypto/internal/fips140/drbg
+crypto/internal/sysrand
+crypto/internal/entropy/v1.0.0
+crypto/internal/fips140deps/time
+internal/types/errors
+hash/maphash
+go/constant
+math/big
+
+
+Building Go toolchain2 using go_bootstrap and Go toolchain1.
+internal/goarch
+internal/unsafeheader
+internal/cpu
+internal/abi
+internal/byteorder
+internal/coverage/rtcov
+internal/godebugs
+internal/bytealg
+internal/chacha8rand
+internal/goexperiment
+internal/goos
+internal/profilerecord
+internal/runtime/atomic
+internal/runtime/syscall/linux
+math/bits
+internal/runtime/exithook
+internal/strconv
+internal/runtime/gc
+internal/runtime/sys
+internal/runtime/gc/scan
+internal/asan
+internal/msan
+internal/race
+internal/runtime/math
+internal/runtime/maps
+internal/runtime/pprof/label
+internal/stringslite
+internal/runtime/cgroup
+internal/trace/tracev2
+sync/atomic
+internal/synctest
+unicode
+internal/sync
+unicode/utf8
+cmp
+math
+runtime
+log/internal
+crypto/internal/fips140/alias
+crypto/internal/fips140deps/byteorder
+crypto/internal/fips140deps/cpu
+crypto/internal/constanttime
+crypto/internal/fips140/subtle
+crypto/internal/fips140deps/time
+crypto/subtle
+crypto/internal/boring/sig
+encoding
+internal/gover
+internal/coverage
+unicode/utf16
+internal/platform
+internal/goversion
+internal/syslist
+internal/reflectlite
+iter
+sync
+slices
+maps
+runtime/metrics
+weak
+internal/testlog
+internal/bisect
+errors
+sort
+io
+strconv
+bytes
+strings
+reflect
+internal/oserror
+path
+bufio
+syscall
+internal/godebug
+hash
+crypto
+crypto/internal/fips140deps/godebug
+crypto/internal/fips140
+crypto/internal/impl
+crypto/internal/fips140/sha256
+crypto/internal/fips140/sha3
+internal/syscall/unix
+time
+internal/syscall/execenv
+crypto/internal/fips140/sha512
+crypto/internal/fips140/hmac
+crypto/internal/fips140/check
+crypto/internal/fips140/aes
+crypto/internal/entropy/v1.0.0
+crypto/fips140
+encoding/base64
+internal/fmtsort
+encoding/binary
+go/build/constraint
+io/fs
+internal/poll
+internal/filepathlite
+context
+cmd/internal/sys
+go/version
+math/rand
+hash/adler32
+os
+internal/saferio
+regexp/syntax
+encoding/json/internal
+encoding/json/internal/jsonflags
+encoding/json/internal/jsonopts
+encoding/json/internal/jsonwire
+encoding/json/jsontext
+regexp
+fmt
+path/filepath
+crypto/internal/sysrand
+crypto/internal/fips140/drbg
+os/exec
+crypto/internal/fips140/aes/gcm
+log
+cmd/internal/src
+internal/buildcfg
+cmd/internal/bio
+crypto/internal/fips140only
+crypto/cipher
+flag
+cmd/internal/dwarf
+cmd/internal/goobj
+crypto/internal/boring
+crypto/sha256
+text/scanner
+cmd/internal/hash
+cmd/internal/objabi
+cmd/vendor/golang.org/x/telemetry/internal/mmap
+runtime/debug
+cmd/internal/edit
+cmd/internal/par
+cmd/internal/pkgpath
+cmd/internal/quoted
+debug/dwarf
+cmd/internal/obj
+cmd/vendor/golang.org/x/telemetry/internal/telemetry
+cmd/vendor/golang.org/x/telemetry/internal/counter
+cmd/vendor/golang.org/x/telemetry/counter
+compress/flate
+cmd/internal/telemetry/counter
+internal/zstd
+cmd/internal/obj/arm
+cmd/internal/obj/arm64
+cmd/internal/obj/loong64
+cmd/internal/obj/mips
+cmd/internal/obj/ppc64
+cmd/internal/obj/riscv
+cmd/internal/obj/s390x
+cmd/internal/obj/wasm
+cmd/internal/obj/x86
+cmd/asm/internal/flags
+cmd/asm/internal/lex
+compress/zlib
+debug/elf
+debug/macho
+debug/pe
+go/token
+go/doc/comment
+go/scanner
+cmd/asm/internal/arch
+go/ast
+text/tabwriter
+cmd/asm/internal/asm
+internal/xcoff
+cmd/internal/cov/covcmd
+encoding/base32
+encoding/hex
+encoding/json/v2
+go/parser
+cmd/asm
+go/printer
+internal/types/errors
+math/big
+go/format
+cmd/cgo
+encoding/json
+go/constant
+cmd/compile/internal/base
+internal/lazyregexp
+html
+unique
+cmd/compile/internal/types
+net/netip
+cmd/compile/internal/bitvec
+cmd/compile/internal/abt
+cmd/compile/internal/typebits
+container/heap
+net/url
+hash/crc32
+compress/gzip
+cmd/compile/internal/syntax
+internal/profile
+cmd/compile/internal/ir
+cmd/compile/internal/logopt
+cmd/internal/pgo
+go/doc
+cmd/compile/internal/types2
+internal/goroot
+go/build
+internal/exportdata
+internal/pkgbits
+hash/fnv
+cmd/internal/archive
+runtime/pprof
+cmd/compile/internal/objw
+cmd/compile/internal/abi
+cmd/compile/internal/typecheck
+cmd/compile/internal/rttype
+cmd/compile/internal/staticdata
+cmd/compile/internal/deadlocals
+cmd/compile/internal/importer
+cmd/compile/internal/midway
+cmd/compile/internal/rangefunc
+runtime/trace
+cmd/internal/codesign
+cmd/internal/gcprog
+cmd/internal/macho
+cmd/link/internal/benchmark
+cmd/link/internal/sym
+crypto/sha3
+cmd/compile/internal/compare
+cmd/compile/internal/pgoir
+cmd/compile/internal/bloop
+cmd/compile/internal/inline/inlheur
+cmd/compile/internal/reflectdata
+cmd/compile/internal/coverage
+cmd/compile/internal/escape
+cmd/compile/internal/inline
+cmd/compile/internal/ssa
+cmd/compile/internal/devirtualize
+cmd/compile/internal/loopvar
+cmd/compile/internal/inline/interleaved
+cmd/compile/internal/staticinit
+cmd/compile/internal/slice
+cmd/link/internal/loader
+crypto/internal/fips140hash
+crypto/hmac
+cmd/preprofile
+cmd/link/internal/loadelf
+cmd/link/internal/loadmacho
+cmd/link/internal/loadpe
+cmd/link/internal/loadxcoff
+cmd/link/internal/ld
+cmd/link/internal/amd64
+cmd/link/internal/arm
+cmd/link/internal/arm64
+cmd/link/internal/loong64
+cmd/link/internal/mips
+cmd/link/internal/mips64
+cmd/link/internal/ppc64
+cmd/link/internal/riscv64
+cmd/link/internal/s390x
+cmd/link/internal/wasm
+cmd/link/internal/x86
+cmd/link
+cmd/compile/internal/liveness
+cmd/compile/internal/ssagen
+cmd/compile/internal/amd64
+cmd/compile/internal/arm
+cmd/compile/internal/arm64
+cmd/compile/internal/dwarfgen
+cmd/compile/internal/loong64
+cmd/compile/internal/mips
+cmd/compile/internal/noder
+cmd/compile/internal/mips64
+cmd/compile/internal/ppc64
+cmd/compile/internal/riscv64
+cmd/compile/internal/s390x
+cmd/compile/internal/wasm
+cmd/compile/internal/x86
+cmd/compile/internal/walk
+cmd/compile/internal/pkginit
+cmd/compile/internal/gc
+cmd/compile
+
+Building Go toolchain3 using go_bootstrap and Go toolchain2.
+internal/goarch
+internal/unsafeheader
+internal/cpu
+internal/byteorder
+internal/abi
+internal/coverage/rtcov
+internal/godebugs
+internal/goexperiment
+internal/bytealg
+internal/chacha8rand
+internal/goos
+internal/profilerecord
+internal/runtime/atomic
+internal/runtime/syscall/linux
+math/bits
+internal/runtime/exithook
+internal/strconv
+internal/runtime/gc
+internal/runtime/sys
+internal/asan
+internal/msan
+internal/runtime/gc/scan
+internal/race
+internal/runtime/math
+internal/runtime/maps
+internal/runtime/pprof/label
+internal/stringslite
+internal/runtime/cgroup
+internal/trace/tracev2
+sync/atomic
+internal/synctest
+unicode
+internal/sync
+unicode/utf8
+cmp
+runtime
+math
+log/internal
+crypto/internal/fips140/alias
+crypto/internal/fips140deps/byteorder
+crypto/internal/fips140deps/cpu
+crypto/internal/constanttime
+crypto/internal/fips140/subtle
+crypto/internal/fips140deps/time
+crypto/subtle
+crypto/internal/boring/sig
+encoding
+internal/gover
+unicode/utf16
+internal/platform
+internal/goarch
+internal/unsafeheader
+internal/abi
+internal/cpu
+internal/bytealg
+internal/byteorder
+internal/chacha8rand
+internal/coverage/rtcov
+internal/godebugs
+internal/goexperiment
+internal/goos
+internal/profilerecord
+internal/runtime/atomic
+internal/runtime/syscall/linux
+math/bits
+internal/runtime/exithook
+internal/runtime/gc
+internal/runtime/sys
+internal/strconv
+internal/runtime/gc/scan
+internal/asan
+internal/msan
+internal/runtime/cgroup
+internal/race
+internal/runtime/math
+internal/runtime/pprof/label
+internal/runtime/maps
+internal/stringslite
+internal/trace/tracev2
+sync/atomic
+internal/sync
+internal/synctest
+unicode
+runtime
+unicode/utf8
+crypto/internal/fips140/alias
+crypto/internal/fips140deps/byteorder
+crypto/internal/fips140deps/cpu
+crypto/internal/constanttime
+crypto/internal/fips140/subtle
+crypto/internal/fips140deps/time
+cmp
+math
+internal/reflectlite
+sync
+errors
+iter
+strconv
+io
+reflect
+bytes
+strings
+bufio
+slices
+internal/oserror
+path
+syscall
+internal/fmtsort
+internal/testlog
+internal/bisect
+internal/godebug
+time
+internal/syscall/unix
+internal/syscall/execenv
+encoding/binary
+io/fs
+internal/poll
+internal/filepathlite
+context
+hash
+crypto/internal/fips140deps/godebug
+crypto
+crypto/internal/fips140
+crypto/internal/impl
+crypto/internal/fips140/sha3
+os
+crypto/internal/fips140/sha256
+crypto/internal/fips140/sha512
+crypto/internal/entropy/v1.0.0
+sort
+crypto/internal/fips140/hmac
+crypto/internal/fips140/check
+crypto/internal/fips140/aes
+crypto/fips140
+cmd/internal/sys
+encoding/base64
+go/build/constraint
+go/version
+math/rand
+hash/adler32
+internal/saferio
+maps
+regexp/syntax
+internal/reflectlite
+fmt
+path/filepath
+crypto/internal/sysrand
+crypto/internal/fips140/drbg
+os/exec
+crypto/internal/fips140/aes/gcm
+crypto/internal/fips140only
+regexp
+crypto/cipher
+crypto/internal/boring
+log
+cmd/internal/src
+cmd/internal/bio
+internal/buildcfg
+crypto/sha256
+cmd/internal/hash
+flag
+cmd/internal/dwarf
+cmd/internal/goobj
+text/scanner
+cmd/internal/objabi
+cmd/vendor/golang.org/x/telemetry/internal/mmap
+runtime/debug
+cmd/internal/edit
+cmd/internal/par
+cmd/internal/obj
+cmd/internal/pkgpath
+cmd/vendor/golang.org/x/telemetry/internal/telemetry
+cmd/internal/quoted
+debug/dwarf
+cmd/vendor/golang.org/x/telemetry/internal/counter
+cmd/vendor/golang.org/x/telemetry/counter
+cmd/internal/telemetry/counter
+compress/flate
+internal/zstd
+go/token
+cmd/internal/obj/arm
+cmd/internal/obj/arm64
+cmd/internal/obj/loong64
+cmd/internal/obj/mips
+cmd/internal/obj/ppc64
+cmd/internal/obj/riscv
+cmd/internal/obj/s390x
+cmd/internal/obj/wasm
+cmd/internal/obj/x86
+cmd/asm/internal/flags
+cmd/asm/internal/lex
+compress/zlib
+debug/elf
+debug/macho
+debug/pe
+go/scanner
+cmd/asm/internal/arch
+go/ast
+go/doc/comment
+cmd/asm/internal/asm
+text/tabwriter
+internal/xcoff
+errors
+sync
+go/parser
+cmd/asm
+go/printer
+io
+iter
+hash
+bytes
+strconv
+go/format
+cmd/cgo
+crypto
+internal/bisect
+strings
+internal/godebug
+crypto/internal/impl
+crypto/internal/fips140deps/godebug
+crypto/internal/entropy/v1.0.0
+crypto/internal/fips140
+crypto/internal/fips140/sha256
+crypto/internal/fips140/sha3
+crypto/internal/fips140/sha512
+internal/oserror
+slices
+syscall
+crypto/internal/fips140/hmac
+crypto/internal/fips140/check
+crypto/internal/fips140/aes
+path
+internal/testlog
+crypto/fips140
+crypto/subtle
+crypto/internal/boring/sig
+reflect
+internal/coverage
+internal/syscall/unix
+time
+internal/syscall/execenv
+bufio
+log/internal
+encoding
+sort
+encoding/base64
+internal/gover
+io/fs
+internal/poll
+internal/filepathlite
+context
+go/version
+os
+math/rand
+internal/fmtsort
+encoding/binary
+encoding/json/internal
+encoding/json/internal/jsonflags
+encoding/json/internal/jsonopts
+unicode/utf16
+encoding/json/internal/jsonwire
+cmd/internal/sys
+encoding/base32
+encoding/json/jsontext
+internal/platform
+internal/types/errors
+runtime/metrics
+crypto/internal/sysrand
+fmt
+crypto/internal/fips140/drbg
+crypto/internal/fips140/aes/gcm
+crypto/internal/fips140only
+crypto/cipher
+path/filepath
+log
+crypto/internal/boring
+crypto/sha256
+cmd/internal/src
+cmd/internal/cov/covcmd
+cmd/internal/bio
+internal/buildcfg
+os/exec
+cmd/internal/hash
+flag
+cmd/internal/goobj
+cmd/internal/dwarf
+cmd/vendor/golang.org/x/telemetry/internal/mmap
+cmd/internal/objabi
+runtime/debug
+encoding/hex
+cmd/internal/obj
+cmd/vendor/golang.org/x/telemetry/internal/telemetry
+cmd/vendor/golang.org/x/telemetry/internal/counter
+encoding/json/v2
+cmd/vendor/golang.org/x/telemetry/counter
+cmd/internal/telemetry/counter
+go/token
+math/big
+internal/goversion
+regexp/syntax
+encoding/json
+regexp
+go/constant
+cmd/compile/internal/base
+html
+internal/lazyregexp
+weak
+cmd/compile/internal/abt
+unique
+cmd/internal/obj/arm
+net/netip
+cmd/compile/internal/types
+cmd/compile/internal/bitvec
+net/url
+cmd/internal/obj/arm64
+cmd/compile/internal/typebits
+cmd/compile/internal/ir
+cmd/compile/internal/logopt
+cmd/internal/obj/loong64
+cmd/internal/obj/mips
+cmd/internal/obj/ppc64
+cmd/internal/obj/riscv
+cmd/compile/internal/objw
+cmd/compile/internal/abi
+cmd/compile/internal/typecheck
+cmd/compile/internal/rttype
+cmd/compile/internal/staticdata
+cmd/internal/obj/s390x
+cmd/internal/obj/wasm
+cmd/compile/internal/compare
+cmd/compile/internal/reflectdata
+cmd/internal/obj/x86
+container/heap
+hash/crc32
+compress/flate
+maps
+cmd/compile/internal/bloop
+cmd/compile/internal/coverage
+compress/gzip
+cmd/compile/internal/ssa
+internal/profile
+cmd/compile/internal/deadlocals
+cmd/compile/internal/escape
+cmd/internal/pgo
+cmd/compile/internal/pgoir
+cmd/compile/internal/inline/inlheur
+cmd/compile/internal/loopvar
+go/build/constraint
+cmd/compile/internal/syntax
+cmd/compile/internal/inline
+cmd/compile/internal/devirtualize
+cmd/compile/internal/inline/interleaved
+go/scanner
+cmd/compile/internal/types2
+go/ast
+go/doc/comment
+go/doc
+go/parser
+internal/goroot
+internal/syslist
+go/build
+internal/saferio
+internal/exportdata
+internal/pkgbits
+cmd/compile/internal/midway
+cmd/compile/internal/rangefunc
+cmd/compile/internal/staticinit
+cmd/compile/internal/importer
+cmd/compile/internal/slice
+hash/fnv
+cmd/internal/archive
+text/tabwriter
+runtime/trace
+runtime/pprof
+cmd/internal/codesign
+cmd/internal/gcprog
+cmd/internal/macho
+hash/crc32
+compress/gzip
+runtime/pprof
+cmd/link/internal/sym
+cmd/link/internal/loader
+cmd/link/internal/benchmark
+crypto/sha3
+crypto/internal/fips140hash
+crypto/hmac
+encoding/hex
+encoding/json/internal
+encoding/json/internal/jsonflags
+encoding/json/internal/jsonopts
+encoding/json/internal/jsonwire
+cmd/link/internal/loadelf
+cmd/link/internal/loadmacho
+cmd/link/internal/loadpe
+cmd/link/internal/loadxcoff
+encoding/json/jsontext
+encoding/base32
+internal/profile
+cmd/internal/pgo
+cmd/preprofile
+encoding/json/v2
+encoding/json
+cmd/link/internal/ld
+cmd/link/internal/amd64
+cmd/link/internal/arm
+cmd/link/internal/arm64
+cmd/link/internal/loong64
+cmd/link/internal/mips
+cmd/link/internal/mips64
+cmd/link/internal/ppc64
+cmd/link/internal/riscv64
+cmd/link/internal/s390x
+cmd/link/internal/wasm
+cmd/link/internal/x86
+cmd/link
+cmd/compile/internal/liveness
+cmd/compile/internal/ssagen
+cmd/compile/internal/arm
+cmd/compile/internal/amd64
+cmd/compile/internal/arm64
+cmd/compile/internal/dwarfgen
+cmd/compile/internal/loong64
+cmd/compile/internal/mips
+cmd/compile/internal/mips64
+cmd/compile/internal/ppc64
+cmd/compile/internal/riscv64
+cmd/compile/internal/noder
+cmd/compile/internal/s390x
+cmd/compile/internal/wasm
+cmd/compile/internal/x86
+cmd/compile/internal/pkginit
+cmd/compile/internal/walk
+cmd/compile/internal/gc
+cmd/compile
+
+Building packages and commands for linux/amd64.
+internal/goarch
+internal/unsafeheader
+internal/cpu
+internal/byteorder
+internal/abi
+internal/coverage/rtcov
+internal/godebugs
+internal/bytealg
+internal/chacha8rand
+internal/goexperiment
+internal/goos
+internal/profilerecord
+internal/runtime/atomic
+internal/runtime/syscall/linux
+math/bits
+internal/runtime/exithook
+internal/strconv
+internal/runtime/gc
+internal/runtime/sys
+internal/runtime/gc/scan
+internal/asan
+internal/msan
+internal/race
+internal/runtime/cgroup
+internal/runtime/math
+internal/runtime/maps
+internal/runtime/pprof/label
+internal/stringslite
+internal/trace/tracev2
+sync/atomic
+internal/synctest
+unicode
+internal/sync
+unicode/utf8
+cmp
+math
+runtime
+container/list
+container/ring
+crypto/internal/fips140/alias
+crypto/internal/fips140deps/byteorder
+crypto/internal/fips140deps/cpu
+crypto/internal/constanttime
+crypto/internal/fips140deps/time
+crypto/internal/fips140/subtle
+crypto/internal/boring/sig
+unicode/utf16
+crypto/subtle
+vendor/golang.org/x/crypto/cryptobyte/asn1
+vendor/golang.org/x/crypto/internal/alias
+crypto/internal/boring/bcache
+encoding
+internal/cfg
+internal/platform
+crypto/internal/fips140deps
+internal/nettrace
+database/sql/internal
+log/internal
+internal/goversion
+internal/syslist
+internal/gover
+image/color
+internal/coverage
+internal/coverage/calloc
+image/color/palette
+internal/coverage/uleb128
+internal/runtime/startlinetest
+internal/trace/traceviewer/format
+log/slog/internal
+math/cmplx
+reflect/internal/example1
+reflect/internal/example2
+runtime/race/internal/amd64v1
+runtime/race
+structs
+iter
+sync
+internal/reflectlite
+slices
+maps
+weak
+runtime/metrics
+errors
+sort
+internal/testlog
+io
+strconv
+internal/oserror
+bytes
+path
+reflect
+syscall
+internal/bisect
+internal/godebug
+strings
+time
+internal/syscall/unix
+internal/syscall/execenv
+io/fs
+internal/poll
+internal/fmtsort
+internal/filepathlite
+os
+bufio
+runtime/cgo
+encoding/binary
+fmt
+path/filepath
+hash
+hash/crc32
+compress/bzip2
+hash/adler32
+compress/flate
+compress/lzw
+container/heap
+context
+crypto
+crypto/internal/fips140deps/godebug
+archive/zip
+compress/gzip
+os/user
+compress/zlib
+crypto/internal/fips140
+crypto/internal/impl
+crypto/internal/fips140/sha256
+crypto/internal/fips140/sha3
+archive/tar
+crypto/internal/fips140/sha512
+crypto/internal/fips140/hmac
+crypto/internal/fips140/check
+crypto/internal/entropy/v1.0.0
+crypto/internal/fips140/aes
+crypto/internal/sysrand
+crypto/fips140
+math/rand/v2
+crypto/internal/fips140/drbg
+crypto/internal/fips140/aes/gcm
+crypto/internal/fips140only
+crypto/internal/randutil
+math/rand
+crypto/internal/fips140/nistec/fiat
+crypto/cipher
+math/big
+crypto/internal/boring
+crypto/aes
+crypto/des
+crypto/internal/rand
+crypto/internal/fips140/edwards25519/field
+crypto/internal/fips140/bigmod
+crypto/internal/fips140cache
+crypto/internal/fips140/nistec
+crypto/sha3
+crypto/internal/fips140hash
+crypto/sha512
+internal/saferio
+crypto/internal/fips140/edwards25519
+crypto/dsa
+crypto/internal/boring/bbig
+encoding/asn1
+crypto/internal/fips140/ed25519
+crypto/rand
+crypto/ed25519
+vendor/golang.org/x/crypto/cryptobyte
+crypto/internal/fips140/hkdf
+crypto/hkdf
+crypto/hmac
+crypto/internal/fips140/mlkem
+crypto/sha256
+vendor/golang.org/x/crypto/chacha20
+crypto/internal/fips140/ecdh
+crypto/elliptic
+crypto/ecdh
+crypto/internal/fips140/ecdsa
+crypto/mlkem
+vendor/golang.org/x/crypto/internal/poly1305
+vendor/golang.org/x/sys/cpu
+encoding/json/internal
+vendor/golang.org/x/crypto/chacha20poly1305
+encoding/json/internal/jsonflags
+encoding/json/internal/jsonopts
+crypto/ecdsa
+encoding/json/internal/jsonwire
+crypto/hpke
+encoding/json/jsontext
+encoding/base32
+encoding/base64
+encoding/hex
+flag
+os/exec
+internal/sysinfo
+runtime/debug
+runtime/trace
+regexp/syntax
+testing
+encoding/json/v2
+regexp
+crypto/internal/entropy
+crypto/internal/fips140/check/checktest
+crypto/internal/fips140/mldsa
+internal/testenv
+internal/testhash
+crypto/internal/fips140/pbkdf2
+crypto/internal/fips140/rsa
+crypto/internal/fips140/ssh
+crypto/internal/fips140/tls12
+crypto/internal/fips140/tls13
+crypto/md5
+crypto/mldsa
+crypto/mlkem/mlkemtest
+crypto/pbkdf2
+crypto/rc4
+crypto/rsa
+encoding/json
+crypto/sha1
+crypto/internal/sysrand/internal/seccomp
+crypto/tls/internal/fips140tls
+crypto/internal/cryptotest
+crypto/internal/cryptotest/x509limbo
+crypto/x509/pkix
+encoding/pem
+vendor/golang.org/x/net/dns/dnsmessage
+internal/singleflight
+unique
+crypto/internal/cryptotest/wycheproof
+net/netip
+uuid
+database/sql/driver
+database/sql
+net/url
+debug/dwarf
+internal/zstd
+net
+debug/macho
+debug/elf
+debug/pe
+debug/plan9obj
+internal/xcoff
+debug/gosym
+debug/buildinfo
+embed
+encoding/ascii85
+encoding/csv
+encoding/gob
+encoding/json/internal/jsontest
+encoding/xml
+log
+vendor/golang.org/x/text/transform
+crypto/x509
+vendor/golang.org/x/text/unicode/bidi
+vendor/golang.org/x/text/unicode/norm
+vendor/golang.org/x/text/secure/bidirule
+net/textproto
+mime
+mime/quotedprintable
+vendor/golang.org/x/net/idna
+mime/multipart
+vendor/golang.org/x/net/http/httpguts
+vendor/golang.org/x/net/http/httpproxy
+net/http/internal
+net/http/internal/ascii
+vendor/golang.org/x/net/http2/hpack
+crypto/tls
+net/http/internal/httpsfv
+go/token
+go/build/constraint
+go/scanner
+go/doc/comment
+go/ast
+internal/lazyregexp
+internal/buildcfg
+internal/goroot
+go/constant
+go/doc
+go/parser
+text/tabwriter
+go/printer
+go/build
+go/format
+go/version
+hash/maphash
+internal/types/errors
+text/scanner
+go/types
+internal/exportdata
+internal/pkgbits
+net/http/httptrace
+net/http/internal/httpcommon
+hash/crc64
+net/http/internal/http2
+hash/fnv
+html
+text/template/parse
+text/template
+html/template
+net/http
+image
+image/internal/imageutil
+image/draw
+image/gif
+image/jpeg
+image/png
+index/suffixarray
+internal/cgrouptest
+internal/coverage/cmerge
+internal/coverage/cformat
+go/internal/gccgoimporter
+go/internal/gcimporter
+go/internal/srcimporter
+internal/coverage/slicereader
+go/importer
+internal/coverage/stringtab
+internal/coverage/slicewriter
+internal/coverage/pods
+internal/coverage/decodecounter
+internal/coverage/decodemeta
+internal/coverage/encodecounter
+internal/coverage/encodemeta
+internal/dag
+internal/coverage/cfile
+internal/diff
+internal/fuzz
+internal/gate
+internal/lazytemplate
+internal/nettest
+expvar
+internal/obscuretestdata
+internal/profile
+internal/runtime/gc/internal/gen
+internal/runtime/cgobench
+internal/trace/version
+internal/txtar
+internal/trace/internal/tracev1
+internal/trace/raw
+io/ioutil
+log/slog/internal/buffer
+log/slog
+internal/trace
+internal/testpty
+log/syslog
+math/big/internal/asmgen
+log/slog/internal/benchmarks
+net/http/cgi
+net/http/cookiejar
+net/http/fcgi
+net/http/internal/testcert
+net/http/httptest
+net/http/httputil
+internal/trace/internal/testgen
+internal/trace/testtrace
+internal/trace/traceviewer
+runtime/pprof
+net/internal/socktest
+net/rpc
+net/mail
+net/smtp
+os/exec/internal/fdtest
+os/signal
+net/http/pprof
+net/rpc/jsonrpc
+runtime/coverage
+testing/cryptotest
+testing/iotest
+testing/internal/testdeps
+testing/fstest
+testing/quick
+testing/slogtest
+testing/synctest
+plugin
+time/tzdata
+vendor/golang.org/x/crypto/hkdf
+vendor/golang.org/x/net/internal/httpcommon
+vendor/golang.org/x/net/internal/quic/quicwire
+vendor/golang.org/x/net/quic
+vendor/golang.org/x/net/nettest
+vendor/golang.org/x/net/internal/http3
+vendor/golang.org/x/net/http3
+internal/cfg
+container/list
+cmd/go/internal/str
+cmd/internal/pathcache
+os/signal
+cmd/go/internal/fsys
+cmd/go/internal/cacheprog
+cmd/go/internal/lockedfile/internal/filelock
+cmd/go/internal/lockedfile
+cmd/go/internal/mmap
+archive/zip
+cmd/vendor/golang.org/x/mod/internal/lazyregexp
+cmd/vendor/golang.org/x/mod/semver
+cmd/go/internal/cfg
+cmd/vendor/golang.org/x/mod/module
+cmd/go/internal/base
+cmd/vendor/golang.org/x/mod/modfile
+crypto/aes
+crypto/des
+crypto/internal/fips140/nistec/fiat
+cmd/go/internal/cache
+cmd/go/internal/gover
+crypto/internal/fips140/edwards25519/field
+math/rand/v2
+crypto/internal/fips140/nistec
+crypto/internal/randutil
+crypto/internal/boring/bbig
+crypto/internal/rand
+crypto/internal/fips140/bigmod
+crypto/internal/fips140cache
+crypto/sha512
+encoding/asn1
+vendor/golang.org/x/crypto/cryptobyte/asn1
+crypto/internal/fips140/edwards25519
+vendor/golang.org/x/crypto/cryptobyte
+crypto/internal/fips140/ed25519
+crypto/rand
+crypto/ed25519
+crypto/internal/fips140/hkdf
+crypto/hkdf
+crypto/internal/fips140/mlkem
+crypto/internal/fips140/ecdh
+crypto/elliptic
+crypto/ecdh
+crypto/internal/fips140/ecdsa
+crypto/mlkem
+vendor/golang.org/x/crypto/internal/alias
+vendor/golang.org/x/crypto/internal/poly1305
+vendor/golang.org/x/crypto/chacha20
+vendor/golang.org/x/sys/cpu
+crypto/internal/fips140/tls12
+crypto/ecdsa
+vendor/golang.org/x/crypto/chacha20poly1305
+crypto/internal/fips140/tls13
+crypto/md5
+crypto/hpke
+crypto/internal/fips140/mldsa
+crypto/rc4
+crypto/internal/fips140/rsa
+crypto/mldsa
+crypto/sha1
+crypto/tls/internal/fips140tls
+crypto/dsa
+crypto/x509/pkix
+encoding/pem
+vendor/golang.org/x/net/dns/dnsmessage
+crypto/rsa
+internal/nettrace
+internal/singleflight
+vendor/golang.org/x/text/transform
+vendor/golang.org/x/text/unicode/bidi
+vendor/golang.org/x/text/unicode/norm
+net
+vendor/golang.org/x/text/secure/bidirule
+mime
+mime/quotedprintable
+vendor/golang.org/x/net/idna
+net/http/internal
+net/http/internal/ascii
+vendor/golang.org/x/net/http2/hpack
+net/http/internal/httpsfv
+cmd/internal/browser
+encoding/xml
+internal/trace/traceviewer/format
+cmd/go/internal/trace
+cmd/internal/pkgpattern
+cmd/go/internal/search
+cmd/internal/robustio
+cmd/vendor/golang.org/x/mod/sumdb/note
+cmd/vendor/golang.org/x/mod/sumdb/tlog
+cmd/vendor/golang.org/x/mod/sumdb/dirhash
+cmd/vendor/golang.org/x/mod/zip
+cmd/go/internal/imports
+cmd/go/internal/mvs
+net/textproto
+crypto/x509
+vendor/golang.org/x/net/http/httpproxy
+vendor/golang.org/x/net/http/httpguts
+mime/multipart
+cmd/go/internal/modindex
+internal/diff
+text/template/parse
+cmd/internal/buildid
+text/template
+debug/plan9obj
+hash/maphash
+crypto/tls
+go/types
+internal/lazytemplate
+cmd/vendor/golang.org/x/sync/errgroup
+cmd/vendor/golang.org/x/telemetry/internal/crashmonitor
+cmd/vendor/golang.org/x/telemetry/internal/config
+cmd/vendor/golang.org/x/telemetry/internal/configstore
+debug/buildinfo
+cmd/go/internal/help
+cmd/vendor/golang.org/x/sync/semaphore
+cmd/vendor/golang.org/x/sys/unix
+net/http/httptrace
+net/http/internal/httpcommon
+cmd/go/internal/cmdflag
+cmd/internal/test2json
+net/http/internal/http2
+cmd/go/internal/version
+cmd/gofmt
+cmd/vendor/golang.org/x/tools/cover
+html/template
+cmd/vendor/golang.org/x/tools/go/analysis
+internal/coverage/slicereader
+internal/coverage/uleb128
+internal/coverage/stringtab
+internal/coverage/slicewriter
+internal/coverage/encodemeta
+cmd/vendor/golang.org/x/tools/internal/packagepath
+cmd/vendor/golang.org/x/tools/internal/stdlib
+cmd/cover
+net/http
+cmd/vendor/golang.org/x/tools/internal/versions
+cmd/vendor/golang.org/x/tools/go/ast/edge
+cmd/vendor/golang.org/x/tools/go/ast/inspector
+cmd/vendor/golang.org/x/tools/go/analysis/passes/inspect
+cmd/vendor/golang.org/x/tools/internal/analysis/analyzerutil
+cmd/vendor/golang.org/x/tools/internal/typeparams
+cmd/vendor/golang.org/x/tools/go/analysis/passes/buildtag
+cmd/vendor/golang.org/x/tools/internal/moreiters
+cmd/vendor/golang.org/x/tools/internal/astutil
+cmd/vendor/golang.org/x/tools/go/types/typeutil
+cmd/vendor/golang.org/x/tools/internal/typesinternal
+embed
+cmd/vendor/golang.org/x/tools/go/analysis/passes/internal/gofixdirective
+cmd/vendor/golang.org/x/tools/internal/typesinternal/typeindex
+encoding/gob
+cmd/vendor/golang.org/x/tools/internal/analysis/typeindex
+cmd/vendor/golang.org/x/tools/go/analysis/passes/hostport
+cmd/vendor/golang.org/x/tools/internal/refactor
+cmd/vendor/golang.org/x/tools/go/ast/astutil
+cmd/vendor/golang.org/x/tools/internal/astutil/free
+cmd/vendor/golang.org/x/tools/internal/fmtstr
+cmd/vendor/golang.org/x/tools/internal/refactor/inline
+cmd/vendor/golang.org/x/tools/internal/goplsexport
+cmd/vendor/golang.org/x/tools/go/analysis/passes/modernize
+cmd/go/internal/web/intercept
+cmd/go/internal/auth
+cmd/go/internal/web
+cmd/go/internal/modfetch/codehost
+cmd/go/internal/vcs
+cmd/vendor/golang.org/x/mod/sumdb
+cmd/vendor/golang.org/x/telemetry/internal/upload
+cmd/go/internal/modfetch
+cmd/go/internal/modinfo
+cmd/vendor/golang.org/x/tools/go/analysis/passes/inline
+cmd/vendor/golang.org/x/telemetry
+cmd/internal/telemetry
+cmd/go/internal/telemetrycmd
+go/internal/gccgoimporter
+cmd/vendor/golang.org/x/tools/go/analysis/suite/fix
+go/internal/gcimporter
+go/internal/srcimporter
+cmd/go/internal/fips140
+cmd/vendor/golang.org/x/tools/go/analysis/internal/analysisflags
+go/importer
+cmd/vendor/golang.org/x/tools/internal/diff/lcs
+cmd/vendor/golang.org/x/tools/go/types/objectpath
+cmd/go/internal/modload
+cmd/vendor/golang.org/x/tools/internal/diff
+cmd/vendor/golang.org/x/tools/internal/facts
+cmd/vendor/golang.org/x/tools/internal/analysis/driverutil
+cmd/vendor/golang.org/x/tools/go/analysis/passes/appends
+cmd/vendor/golang.org/x/tools/go/analysis/passes/asmdecl
+cmd/vendor/golang.org/x/tools/go/analysis/unitchecker
+cmd/vendor/golang.org/x/tools/go/analysis/passes/assign
+cmd/vendor/golang.org/x/tools/go/analysis/passes/atomic
+cmd/fix
+cmd/vendor/golang.org/x/tools/go/analysis/passes/bools
+cmd/vendor/golang.org/x/tools/go/analysis/passes/cgocall
+cmd/vendor/golang.org/x/tools/go/analysis/passes/composite
+cmd/vendor/golang.org/x/tools/go/analysis/passes/copylock
+cmd/vendor/golang.org/x/tools/go/analysis/passes/defers
+cmd/vendor/golang.org/x/tools/go/analysis/passes/directive
+cmd/vendor/golang.org/x/tools/go/analysis/passes/errorsas
+cmd/vendor/golang.org/x/tools/go/analysis/passes/framepointer
+cmd/vendor/golang.org/x/tools/go/analysis/passes/httpresponse
+cmd/vendor/golang.org/x/tools/go/analysis/passes/ifaceassert
+cmd/vendor/golang.org/x/tools/go/analysis/passes/loopclosure
+cmd/vendor/golang.org/x/tools/go/cfg
+cmd/vendor/golang.org/x/tools/go/analysis/passes/nilfunc
+cmd/vendor/golang.org/x/tools/go/analysis/passes/ctrlflow
+cmd/go/internal/load
+cmd/go/internal/telemetrystats
+cmd/vendor/golang.org/x/tools/go/analysis/passes/lostcancel
+cmd/vendor/golang.org/x/tools/refactor/satisfy
+cmd/vendor/golang.org/x/tools/go/analysis/passes/shift
+cmd/vendor/golang.org/x/tools/go/analysis/passes/printf
+cmd/vendor/golang.org/x/tools/go/analysis/passes/sigchanyzer
+cmd/vendor/golang.org/x/tools/go/analysis/passes/slog
+cmd/vendor/golang.org/x/tools/go/analysis/passes/stdmethods
+cmd/vendor/golang.org/x/tools/go/analysis/passes/stdversion
+cmd/vendor/golang.org/x/tools/go/analysis/passes/stringintconv
+cmd/vendor/golang.org/x/tools/go/analysis/passes/structtag
+cmd/vendor/golang.org/x/tools/go/analysis/passes/testinggoroutine
+cmd/vendor/golang.org/x/tools/go/analysis/passes/tests
+cmd/vendor/golang.org/x/tools/go/analysis/passes/timeformat
+cmd/go/internal/work
+cmd/go/internal/fmtcmd
+cmd/vendor/golang.org/x/tools/go/analysis/passes/unmarshal
+cmd/vendor/golang.org/x/tools/go/analysis/passes/unreachable
+cmd/vendor/golang.org/x/tools/go/analysis/passes/unsafeptr
+cmd/vendor/golang.org/x/tools/go/analysis/passes/unusedresult
+cmd/vendor/golang.org/x/tools/go/analysis/passes/waitgroup
+cmd/vendor/golang.org/x/tools/go/analysis/suite/vet
+cmd/vet
+cmd/go/internal/clean
+cmd/go/internal/doc
+cmd/go/internal/envcmd
+cmd/go/internal/generate
+cmd/go/internal/bug
+cmd/go/internal/list
+cmd/go/internal/run
+cmd/go/internal/test
+cmd/go/internal/toolchain
+cmd/go/internal/tool
+cmd/go/internal/modcmd
+cmd/go/internal/modget
+cmd/go/internal/vet
+cmd/go/internal/workcmd
+cmd/go
+
+---
+Installed Go for linux/amd64 in /home/fusion809/lfs_packaging/go/go
+Installed commands in /home/fusion809/lfs_packaging/go/go/bin
+*** You need to add /home/fusion809/lfs_packaging/go/go/bin to your PATH.
+1.27.4
+Updated registry for go to version 1.27.4
+[VERSION] go: 1.27.4
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package go in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: go: 1.27.3->1.27.4.
+[master dd7a73c] go: 1.27.3->1.27.4.
+ 1 file changed, 13448 insertions(+), 13447 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: go: 1.27.3->1.27.4.
+[master 3eaa2db] go: 1.27.3->1.27.4.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-39
+r13.1-582
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+Removing stale: go-1.27.3  (newer: go-1.27.4)
+---
+Removed : 1
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.3-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.2-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
