@@ -1,0 +1,66 @@
+===== Update check started: 2026-11-11 06:25:39 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261111_062539
+Packages needing attention: appstream vim
+===== Starting updatec: 2026-11-11 06:25:41 AEST =====
+Checking for packages with missing file inventories...
+name=appstream
+local_ver=1.2.2
+remote_ver=1.2.3
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - appstream
+  - vim
+
+Building custom package appstream...
+[06:25:43] Found custom package for appstream, bypassing BLFS aliases.
+[06:25:43] Custom package detected at /home/fusion809/lfs_packaging/appstream (package: appstream)
+[06:25:43] Extracting dependencies for custom package 'appstream'...
+[06:25:43] Required deps: brotli curl cyrus-sasl docbook-xsl-nons double-conversion freetype gcc glib2 glibc icu itstool libffi libfyaml libidn2 libpsl libunistring libxml2 libxmlb libxslt llvm nghttp2 openldap openssl pcre2 qt6 systemd util-linux webkitgtk xz zlib zstd 
+[06:25:43] Dependency 'brotli' already installed.
+[06:25:43] Dependency 'curl' already installed.
+[06:25:43] Dependency 'cyrus-sasl' already installed.
+[06:25:43] Dependency 'docbook-xsl-nons' already installed.
+[06:25:43] Dependency 'double-conversion' already installed.
+[06:25:43] Dependency 'freetype' already installed.
+[06:25:43] Dependency 'gcc' already installed.
+[06:25:43] Dependency 'glib2' already installed.
+[06:25:43] Dependency 'glibc' already installed.
+[06:25:43] Dependency 'icu' already installed.
+[06:25:43] Dependency 'itstool' already installed.
+[06:25:43] Dependency 'libffi' already installed.
+[06:25:43] Dependency 'libfyaml' already installed.
+[06:25:43] Dependency 'libidn2' already installed.
+[06:25:43] Dependency 'libpsl' already installed.
+[06:25:43] Dependency 'libunistring' already installed.
+[06:25:43] Dependency 'libxml2' already installed.
+[06:25:43] Dependency 'libxmlb' already installed.
+[06:25:43] Dependency 'libxslt' already installed.
+[06:25:43] Dependency 'llvm' already installed.
+[06:25:43] Dependency 'nghttp2' already installed.
+[06:25:43] Dependency 'openldap' already installed.
+[06:25:43] Dependency 'openssl' already installed.
+[06:25:43] Dependency 'pcre2' already installed.
+[06:25:43] Dependency 'qt6' already installed.
+[06:25:43] Dependency 'systemd' already installed.
+[06:25:43] Dependency 'util-linux' already installed.
+[06:25:43] Dependency 'webkitgtk' already installed.
+[06:25:43] Dependency 'xz' already installed.
+[06:25:43] Dependency 'zlib' already installed.
+[06:25:43] Dependency 'zstd' already installed.
+[VERSION] appstream: 1.2.3
+[06:25:44] Installing appstream version: 1.2.3
+[06:25:44] Starting remote custom build for appstream...
+--2026-11-11 06:26:41--  https://www.freedesktop.org/software/appstream/releases/AppStream-1.2.3.tar.xz
+Resolving www.freedesktop.org (www.freedesktop.org)... 131.252.210.176
+Connecting to www.freedesktop.org (www.freedesktop.org)|131.252.210.176|:443... connected.
+Unable to establish SSL connection.
+[ERROR] build.sh exited with code 4 for appstream
+[ERROR] Custom build failed for appstream
+[06:26:43] ========================================
+[06:26:43] Build completed with 1 failure(s):
+[06:26:43]   - appstream
+[06:26:43] ========================================
+Error: Build failed for appstream. Aborting update loop.
+===== ERROR: updatec exited with status 1 =====
+Finished: 2026-11-11 06:26:43 AEST
+Exit status: 1
