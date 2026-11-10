@@ -1,0 +1,354 @@
+===== Update check started: 2026-11-11 01:37:10 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261111_013710
+Packages needing attention: libxmlb
+===== Starting updatec: 2026-11-11 01:37:13 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - libxmlb
+
+Building custom package libxmlb...
+[01:37:14] Found custom package for libxmlb, bypassing BLFS aliases.
+[01:37:14] Custom package detected at /home/fusion809/lfs_packaging/libxmlb (package: libxmlb)
+[01:37:14] Extracting dependencies for custom package 'libxmlb'...
+[01:37:14] Required deps: glib2 glibc libffi pcre2 systemd util-linux xz zlib zstd 
+[01:37:14] Dependency 'glib2' already installed.
+[01:37:14] Dependency 'glibc' already installed.
+[01:37:14] Dependency 'libffi' already installed.
+[01:37:14] Dependency 'pcre2' already installed.
+[01:37:14] Dependency 'systemd' already installed.
+[01:37:14] Dependency 'util-linux' already installed.
+[01:37:14] Dependency 'xz' already installed.
+[01:37:14] Dependency 'zlib' already installed.
+[01:37:14] Dependency 'zstd' already installed.
+[VERSION] libxmlb: 0.3.30
+[01:37:16] Installing libxmlb version: 0.3.30
+[01:37:16] Starting remote custom build for libxmlb...
+--2026-11-11 01:37:33--  https://github.com/hughsie/libxmlb/releases/download/0.3.30/libxmlb-0.3.30.tar.xz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/149332634/43ddf86d-93e7-41cc-8ed0-d6939c8d8428?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-10T16%3A19%3A36Z&rscd=attachment%3B+filename%3Dlibxmlb-0.3.30.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-10T15%3A19%3A20Z&ske=2026-11-10T16%3A19%3A36Z&sks=b&skv=2018-11-09&sig=cgbWJ%2FdNuFfoKUKS7brJF0bi8MF9kNRcSpf%2FIYKjZrg%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NDMyNTM1MywibmJmIjoxNzk0MzI1MDUzLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.x1KMkkA4Xcu05C3OLY27cbWf24jukPrAwT21CE2XOlc&response-content-disposition=attachment%3B%20filename%3Dlibxmlb-0.3.30.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2026-11-11 01:37:33--  https://release-assets.githubusercontent.com/github-production-release-asset/149332634/43ddf86d-93e7-41cc-8ed0-d6939c8d8428?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-10T16%3A19%3A36Z&rscd=attachment%3B+filename%3Dlibxmlb-0.3.30.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-10T15%3A19%3A20Z&ske=2026-11-10T16%3A19%3A36Z&sks=b&skv=2018-11-09&sig=cgbWJ%2FdNuFfoKUKS7brJF0bi8MF9kNRcSpf%2FIYKjZrg%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NDMyNTM1MywibmJmIjoxNzk0MzI1MDUzLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.x1KMkkA4Xcu05C3OLY27cbWf24jukPrAwT21CE2XOlc&response-content-disposition=attachment%3B%20filename%3Dlibxmlb-0.3.30.tar.xz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 117916 (115K) [application/octet-stream]
+Saving to: ‘libxmlb-0.3.30.tar.xz’
+
+libxmlb-0.3.30.tar.   0%[                    ]       0  --.-KB/s               libxmlb-0.3.30.tar. 100%[===================>] 115.15K   681KB/s    in 0.2s    
+
+2026-11-11 01:37:34 (681 KB/s) - ‘libxmlb-0.3.30.tar.xz’ saved [117916/117916]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+meson_args: <-D>
+meson_args: <gtkdoc=false>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <-D> <gtkdoc=false> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30
+Build dir: /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/build
+Build type: native build
+Project name: libxmlb
+Project version: 0.3.30
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -Wno-nonnull-compare: YES 
+Compiler for C supports arguments -Wno-aggregate-return: YES 
+Compiler for C supports arguments -Wunused: YES 
+Compiler for C supports arguments -Warray-bounds: YES 
+Compiler for C supports arguments -Wcast-align: YES 
+Compiler for C supports arguments -Wclobbered: YES 
+Compiler for C supports arguments -Wdeclaration-after-statement: YES 
+Compiler for C supports arguments -Wduplicated-branches: YES 
+Compiler for C supports arguments -Wduplicated-cond: YES 
+Compiler for C supports arguments -Wempty-body: YES 
+Compiler for C supports arguments -Wformat=2: YES 
+Compiler for C supports arguments -Wformat-nonliteral: YES 
+Compiler for C supports arguments -Wformat-security: YES 
+Compiler for C supports arguments -Wformat-signedness: YES 
+Compiler for C supports arguments -Wignored-qualifiers: YES 
+Compiler for C supports arguments -Wimplicit-function-declaration: YES 
+Compiler for C supports arguments -Wincompatible-pointer-types-discards-qualifiers: NO 
+Compiler for C supports arguments -Winit-self: YES 
+Compiler for C supports arguments -Wlogical-op: YES 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wmissing-format-attribute: YES 
+Compiler for C supports arguments -Wmissing-include-dirs: YES 
+Compiler for C supports arguments -Wmissing-noreturn: YES 
+Compiler for C supports arguments -Wmissing-parameter-type: YES 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wnested-externs: YES 
+Compiler for C supports arguments -Wno-cast-function-type: YES 
+Compiler for C supports arguments -Wno-error=cpp: YES 
+Compiler for C supports arguments -Wno-unknown-pragmas: YES 
+Compiler for C supports arguments -Wno-discarded-qualifiers: YES 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C supports arguments -Wno-strict-aliasing: YES 
+Compiler for C supports arguments -Wno-suggest-attribute=format: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wnull-dereference: YES 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Compiler for C supports arguments -Woverride-init: YES 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Compiler for C supports arguments -Wredundant-decls: YES 
+Compiler for C supports arguments -Wreturn-type: YES 
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wsign-compare: YES 
+Compiler for C supports arguments -Wstrict-aliasing: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C supports arguments -Wswitch-default: YES 
+Compiler for C supports arguments -Wtype-limits: YES 
+Compiler for C supports arguments -Wundef: YES 
+Compiler for C supports arguments -Wuninitialized: YES 
+Compiler for C supports arguments -Wunused-but-set-variable: YES 
+Compiler for C supports arguments -Wunused-variable: YES 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Compiler for C supports link arguments -Wl,-z,relro: YES 
+Compiler for C supports link arguments -Wl,-z,now: YES 
+Compiler for C supports link arguments -Wl,-Bsymbolic: YES 
+Compiler for C supports link arguments -fno-plt: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency gio-2.0 found: YES 2.90.1
+Run-time dependency gio-unix-2.0 found: YES 2.90.1
+Run-time dependency liblzma found: YES 5.8.4
+Run-time dependency libzstd found: YES 1.5.7
+Configuring config.h using configuration
+Program python3 found: YES (/usr/bin/python3)
+Configuring libxmlb.test using configuration
+Configuring xb-version.h using configuration
+Compiler for C supports link arguments -Wl,--version-script,/home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/libxmlb.map: YES 
+Configuring xb-tool.1 using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program diff found: YES (/usr/bin/diff)
+Build targets in project: 7
+
+libxmlb 0.3.30
+
+  User defined options
+    buildtype: release
+    gtkdoc   : false
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/64] Generating src/libxmlb-defile with a custom command
+[2/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-builder-fixup.c.o
+[3/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-builder-node.c.o
+[4/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-builder-source.c.o
+[5/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-builder-source-ctx.c.o
+[6/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-builder.c.o
+../src/xb-builder.c: In function ‘xb_builder_compile_text_cb’:
+../src/xb-builder.c:208:67: warning: null pointer dereference [-Wnull-dereference]
+  208 |                         xb_builder_node_set_text(bn, str->str, str->len);
+      |                                                                ~~~^~~~~
+../src/xb-builder.c:208:57: warning: null pointer dereference [-Wnull-dereference]
+  208 |                         xb_builder_node_set_text(bn, str->str, str->len);
+      |                                                      ~~~^~~~~
+[7/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-common.c.o
+[8/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-opcode.c.o
+[9/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-node.c.o
+[10/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-node-query.c.o
+[11/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-query-context.c.o
+[12/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-query.c.o
+[13/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-machine.c.o
+[14/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-silo-export.c.o
+[15/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-silo-node.c.o
+../src/xb-silo-node.c: In function ‘xb_silo_node_to_string’:
+../src/xb-silo-node.c:29:25: warning: potential null pointer dereference [-Wnull-dereference]
+   29 |                         g_string_append_printf(str,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   30 |                                                "  attr: %u=%u\n",
+      |                                                ~~~~~~~~~~~~~~~~~~
+   31 |                                                attr->attr_name,
+      |                                                ~~~~~~~~~~~~~~~~
+   32 |                                                attr->attr_value);
+      |                                                ~~~~~~~~~~~~~~~~~
+../src/xb-silo-node.c:29:25: warning: potential null pointer dereference [-Wnull-dereference]
+[16/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-stack.c.o
+[17/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-silo.c.o
+../src/xb-silo.c: In function ‘xb_silo_get_node_attr_by_str’:
+../src/xb-silo.c:518:68: warning: potential null pointer dereference [-Wnull-dereference]
+  518 |                 const gchar *name_tmp = xb_silo_from_strtab(self, a->attr_name, NULL);
+      |                                                                   ~^~~~~~~~~~~
+../src/xb-silo.c:518:68: warning: potential null pointer dereference [-Wnull-dereference]
+In function ‘xb_silo_node_get_attr_by_val’,
+    inlined from ‘xb_silo_machine_func_attr_cb’ at ../src/xb-silo.c:1392:7:
+../src/xb-silo.c:538:22: warning: potential null pointer dereference [-Wnull-dereference]
+  538 |                 if (a->attr_name == name)
+      |                     ~^~~~~~~~~~~
+[18/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-silo-query.c.o
+../src/xb-silo-query.c: In function ‘xb_silo_query_build_index’:
+../src/xb-silo-query.c:819:38: warning: potential null pointer dereference [-Wnull-dereference]
+  819 |                                 if (!xb_silo_strtab_index_insert(self, a->attr_name, error))
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/xb-silo-query.c:819:38: warning: potential null pointer dereference [-Wnull-dereference]
+[19/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-version.c.o
+[20/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-value-bindings.c.o
+[21/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-string.c.o
+[22/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-zstd-decompressor.c.o
+[23/64] Compiling C object src/libxmlb.so.2.0.0.p/xb-lzma-decompressor.c.o
+[24/64] Linking target src/libxmlb.so.2.0.0
+[25/64] Compiling C object src/xb-tool.p/xb-tool.c.o
+[26/64] Generating symbol file src/libxmlb.so.2.0.0.p/libxmlb.so.2.0.0.symbols
+[27/64] Compiling C object src/xb-self-test.p/xb-builder-fixup.c.o
+[28/64] Compiling C object src/xb-self-test.p/xb-builder.c.o
+../src/xb-builder.c: In function ‘xb_builder_compile_text_cb’:
+../src/xb-builder.c:208:67: warning: null pointer dereference [-Wnull-dereference]
+  208 |                         xb_builder_node_set_text(bn, str->str, str->len);
+      |                                                                ~~~^~~~~
+../src/xb-builder.c:208:57: warning: null pointer dereference [-Wnull-dereference]
+  208 |                         xb_builder_node_set_text(bn, str->str, str->len);
+      |                                                      ~~~^~~~~
+[29/64] Compiling C object src/xb-self-test.p/xb-builder-source.c.o
+[30/64] Compiling C object src/xb-self-test.p/xb-builder-source-ctx.c.o
+[31/64] Compiling C object src/xb-self-test.p/xb-builder-node.c.o
+[32/64] Generating src/Xmlb-2.0.gir with a custom command (wrapped by meson to set env)
+[33/64] Compiling C object src/xb-self-test.p/xb-common.c.o
+[34/64] Compiling C object src/xb-self-test.p/xb-node-query.c.o
+[35/64] Compiling C object src/xb-self-test.p/xb-node.c.o
+[36/64] Compiling C object src/xb-self-test.p/xb-opcode.c.o
+[37/64] Compiling C object src/xb-self-test.p/xb-query-context.c.o
+[38/64] Compiling C object src/xb-self-test.p/xb-machine.c.o
+[39/64] Compiling C object src/xb-self-test.p/xb-query.c.o
+[40/64] Compiling C object src/xb-self-test.p/xb-silo-node.c.o
+../src/xb-silo-node.c: In function ‘xb_silo_node_to_string’:
+../src/xb-silo-node.c:29:25: warning: potential null pointer dereference [-Wnull-dereference]
+   29 |                         g_string_append_printf(str,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   30 |                                                "  attr: %u=%u\n",
+      |                                                ~~~~~~~~~~~~~~~~~~
+   31 |                                                attr->attr_name,
+      |                                                ~~~~~~~~~~~~~~~~
+   32 |                                                attr->attr_value);
+      |                                                ~~~~~~~~~~~~~~~~~
+../src/xb-silo-node.c:29:25: warning: potential null pointer dereference [-Wnull-dereference]
+[41/64] Compiling C object src/xb-self-test.p/xb-silo-export.c.o
+[42/64] Compiling C object src/xb-self-test.p/xb-silo-query.c.o
+../src/xb-silo-query.c: In function ‘xb_silo_query_build_index’:
+../src/xb-silo-query.c:819:38: warning: potential null pointer dereference [-Wnull-dereference]
+  819 |                                 if (!xb_silo_strtab_index_insert(self, a->attr_name, error))
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/xb-silo-query.c:819:38: warning: potential null pointer dereference [-Wnull-dereference]
+[43/64] Compiling C object src/xb-self-test.p/xb-stack.c.o
+[44/64] Compiling C object src/xb-self-test.p/xb-silo.c.o
+../src/xb-silo.c: In function ‘xb_silo_get_node_attr_by_str’:
+../src/xb-silo.c:518:68: warning: potential null pointer dereference [-Wnull-dereference]
+  518 |                 const gchar *name_tmp = xb_silo_from_strtab(self, a->attr_name, NULL);
+      |                                                                   ~^~~~~~~~~~~
+../src/xb-silo.c:518:68: warning: potential null pointer dereference [-Wnull-dereference]
+In function ‘xb_silo_node_get_attr_by_val’,
+    inlined from ‘xb_silo_machine_func_attr_cb’ at ../src/xb-silo.c:1392:7:
+../src/xb-silo.c:538:22: warning: potential null pointer dereference [-Wnull-dereference]
+  538 |                 if (a->attr_name == name)
+      |                     ~^~~~~~~~~~~
+[45/64] Compiling C object src/xb-self-test.p/xb-value-bindings.c.o
+[46/64] Compiling C object src/xb-self-test.p/xb-string.c.o
+[47/64] Compiling C object src/xb-self-test.p/xb-self-test.c.o
+[48/64] Compiling C object src/xb-self-test.p/xb-test-common.c.o
+[49/64] Compiling C object src/xb-self-test.p/xb-opcode-test.c.o
+[50/64] Compiling C object src/xb-self-test.p/xb-common-test.c.o
+[51/64] Compiling C object src/xb-self-test.p/xb-node-test.c.o
+[52/64] Compiling C object src/xb-self-test.p/xb-builder-source-test.c.o
+[53/64] Compiling C object src/xb-self-test.p/xb-builder-node-test.c.o
+[54/64] Compiling C object src/xb-self-test.p/xb-builder-test.c.o
+[55/64] Compiling C object src/xb-self-test.p/xb-xpath-test.c.o
+[56/64] Compiling C object src/xb-self-test.p/xb-xpath-predicate-test.c.o
+[57/64] Compiling C object src/xb-self-test.p/xb-threading-test.c.o
+[58/64] Compiling C object src/xb-self-test.p/xb-xpath-limit-test.c.o
+[59/64] Compiling C object src/xb-self-test.p/xb-zstd-decompressor.c.o
+[60/64] Compiling C object src/xb-self-test.p/xb-lzma-decompressor.c.o
+[61/64] Compiling C object src/xb-self-test.p/xb-speed-test.c.o
+[62/64] Linking target src/xb-tool
+[63/64] Linking target src/xb-self-test
+[64/64] Generating src/Xmlb-2.0.typelib with a custom command
+[0/1] Installing files
+Installing src/libxmlb.so.2.0.0 to /usr/lib
+Installing src/xb-tool to /usr/bin
+Installing src/Xmlb-2.0.gir to /usr/share/gir-1.0
+Installing src/Xmlb-2.0.typelib to /usr/lib/girepository-1.0
+Installing src/xb-self-test to /usr/libexec/installed-tests/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xmlb.h to /usr/include/libxmlb-2
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-builder.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-builder-fixup.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-builder-node.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-builder-source.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-builder-source-ctx.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-compile.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-compile-glib-2-62.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-machine.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-node.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-node-query.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-node-silo.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-opcode.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-query.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-query-context.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-silo-export.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-silo.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-silo-query.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-stack.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-string.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/src/xb-value-bindings.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/build/src/xb-version.h to /usr/include/libxmlb-2/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/build/data/libxmlb.test to /usr/share/installed-tests/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/data/test.desktop to /usr/libexec/installed-tests/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/data/test.quirk to /usr/libexec/installed-tests/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/data/test.xml to /usr/libexec/installed-tests/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/data/test.xml.gz.gz.gz to /usr/libexec/installed-tests/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/data/test.xml.xz to /usr/libexec/installed-tests/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/data/test.xml.zst to /usr/libexec/installed-tests/libxmlb
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/build/src/xb-tool.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/libxmlb/libxmlb-0.3.30/build/meson-private/xmlb.pc to /usr/lib/pkgconfig
+Installing symlink pointing to libxmlb.so.2.0.0 to /usr/lib/libxmlb.so.2
+Installing symlink pointing to libxmlb.so.2 to /usr/lib/libxmlb.so
+0.3.30
+Updated registry for libxmlb to version 0.3.30
+[VERSION] libxmlb: 0.3.30
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package libxmlb in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: libxmlb: 0.3.29->0.3.30.
+[master 7624cdb] libxmlb: 0.3.29->0.3.30.
+ 1 file changed, 26 insertions(+), 26 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: libxmlb: 0.3.29->0.3.30.
+[master 544e10b] libxmlb: 0.3.29->0.3.30.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-39
+r13.1-582
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.3-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.2-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
