@@ -1,0 +1,46 @@
+===== Update check started: 2026-11-11 02:41:52 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261111_024152
+Packages needing attention: dotnet-bin
+===== Starting updatec: 2026-11-11 02:41:56 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - dotnet-bin
+
+Building custom package dotnet-bin...
+[02:41:57] Found custom package for dotnet-bin, bypassing BLFS aliases.
+[02:41:57] Custom package detected at /home/fusion809/lfs_packaging/dotnet-bin (package: dotnet-bin)
+[02:41:57] Extracting dependencies for custom package 'dotnet-bin'...
+[02:41:57] Required deps: gcc glibc 
+[02:41:57] Dependency 'gcc' already installed.
+[02:41:57] Dependency 'glibc' already installed.
+[02:42:02] [LFS-AUTOBUILD] Skipping custom package dotnet-bin: version 10.0.404 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-39
+r13.1-582
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.3-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.2-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+/var/lib/custom-packages does not show any likely updates to the table.
+~/logs ~ ~/lfs_packaging
