@@ -1,0 +1,144 @@
+===== Update check started: 2026-11-12 05:07:26 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261112_050726
+Packages needing attention: flex vectorcraft-bin
+===== Starting updatec: 2026-11-12 05:07:27 AEST =====
+Checking for packages with missing file inventories...
+name=flex
+local_ver=2.6.8
+remote_ver=2.6.9
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - flex
+  - vectorcraft-bin
+
+Building custom package flex...
+[05:07:29] Found custom package for flex, bypassing BLFS aliases.
+[05:07:29] Custom package detected at /home/fusion809/lfs_packaging/flex (package: flex)
+[05:07:29] Extracting dependencies for custom package 'flex'...
+[05:07:29] Required deps: coreutils gcc glibc gzip make tar 
+[05:07:29] Dependency 'coreutils' already installed.
+[05:07:29] Dependency 'gcc' already installed.
+[05:07:29] Dependency 'glibc' already installed.
+[05:07:29] Dependency 'gzip' already installed.
+[05:07:29] Dependency 'make' already installed.
+[05:07:29] Dependency 'tar' already installed.
+[05:07:30] [LFS-AUTOBUILD] Skipping custom package flex: version 2.6.9 already installed (use -f to force build).
+Building custom package vectorcraft-bin...
+[05:07:30] Found custom package for vectorcraft-bin, bypassing BLFS aliases.
+[05:07:30] Custom package detected at /home/fusion809/lfs_packaging/vectorcraft-bin (package: vectorcraft-bin)
+[05:07:30] Checking conflicting package(s) for 'vectorcraft-bin': vectorcraft 
+[05:07:30] Extracting dependencies for custom package 'vectorcraft-bin'...
+[VERSION] vectorcraft-bin: 0.24.0
+[05:07:32] Installing vectorcraft-bin version: 0.24.0
+[05:07:32] Starting remote custom build for vectorcraft-bin...
+--2026-11-12 05:07:47--  https://github.com/storytold/vectorcraft/releases/download/v0.24.0/vectorcraft-0.24.0-linux-x86_64.AppImage
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/1398097510/80d97175-431e-498b-9cdc-271a35f9e5dc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-11T19%3A45%3A19Z&rscd=attachment%3B+filename%3Dvectorcraft-0.24.0-linux-x86_64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-11T18%3A44%3A36Z&ske=2026-11-11T19%3A45%3A19Z&sks=b&skv=2018-11-09&sig=iJnqvNsePIdT7kUQ2eV7WX2knHw34U4tQxo%2BnOnQbCs%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NDQyNzY2OCwibmJmIjoxNzk0NDI0MDY4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mGjTwy5AAVFEIOMl5MvUPYLfIpAyNLi9zVBlmW8VlYg&response-content-disposition=attachment%3B%20filename%3Dvectorcraft-0.24.0-linux-x86_64.AppImage&response-content-type=application%2Foctet-stream [following]
+--2026-11-12 05:07:48--  https://release-assets.githubusercontent.com/github-production-release-asset/1398097510/80d97175-431e-498b-9cdc-271a35f9e5dc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-11T19%3A45%3A19Z&rscd=attachment%3B+filename%3Dvectorcraft-0.24.0-linux-x86_64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-11T18%3A44%3A36Z&ske=2026-11-11T19%3A45%3A19Z&sks=b&skv=2018-11-09&sig=iJnqvNsePIdT7kUQ2eV7WX2knHw34U4tQxo%2BnOnQbCs%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NDQyNzY2OCwibmJmIjoxNzk0NDI0MDY4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mGjTwy5AAVFEIOMl5MvUPYLfIpAyNLi9zVBlmW8VlYg&response-content-disposition=attachment%3B%20filename%3Dvectorcraft-0.24.0-linux-x86_64.AppImage&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.108.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 147462648 (141M) [application/octet-stream]
+Saving to: ‘vectorcraft-0.24.0-linux-x86_64.AppImage’
+
+          vectorcra   0%[                    ]       0  --.-KB/s                        vectorcraf   1%[                    ]   1.93M  9.62MB/s                       vectorcraft   2%[                    ]   4.14M  10.3MB/s                      vectorcraft-   4%[                    ]   6.34M  10.5MB/s                     vectorcraft-0   6%[>                   ]   8.50M  9.68MB/s                    vectorcraft-0.   7%[>                   ]  10.93M  10.1MB/s                   vectorcraft-0.2   9%[>                   ]  13.06M  10.2MB/s                  vectorcraft-0.24  10%[=>                  ]  15.18M  10.3MB/s                 vectorcraft-0.24.  12%[=>                  ]  17.18M  10.2MB/s                vectorcraft-0.24.0  13%[=>                  ]  18.90M  9.85MB/s               vectorcraft-0.24.0-  15%[==>                 ]  21.53M  10.2MB/s               ectorcraft-0.24.0-l  16%[==>                 ]  23.34M  10.1MB/s               ctorcraft-0.24.0-li  18%[==>                 ]  25.45M  10.1MB/s               torcraft-0.24.0-lin  19%[==>                 ]  27.67M  10.2MB/s               orcraft-0.24.0-linu  21%[===>                ]  29.72M  10.2MB/s               rcraft-0.24.0-linux  21%[===>                ]  30.09M  9.47MB/s    eta 12s    craft-0.24.0-linux-  21%[===>                ]  30.20M  8.82MB/s    eta 12s    raft-0.24.0-linux-x  21%[===>                ]  30.48M  8.23MB/s    eta 12s    aft-0.24.0-linux-x8  22%[===>                ]  31.06M  7.77MB/s    eta 12s    ft-0.24.0-linux-x86  22%[===>                ]  32.21M  7.49MB/s    eta 12s    t-0.24.0-linux-x86_  24%[===>                ]  34.12M  7.46MB/s    eta 13s    -0.24.0-linux-x86_6  25%[====>               ]  35.98M  7.57MB/s    eta 13s    0.24.0-linux-x86_64  27%[====>               ]  38.07M  7.47MB/s    eta 13s    .24.0-linux-x86_64.  28%[====>               ]  40.02M  6.53MB/s    eta 13s    24.0-linux-x86_64.A  28%[====>               ]  40.09M  6.02MB/s    eta 13s    4.0-linux-x86_64.Ap  28%[====>               ]  40.25M  5.60MB/s    eta 13s    .0-linux-x86_64.App  28%[====>               ]  40.59M  5.17MB/s    eta 13s    0-linux-x86_64.AppI  29%[====>               ]  41.31M  4.95MB/s    eta 13s    -linux-x86_64.AppIm  30%[=====>              ]  42.65M  4.82MB/s    eta 14s    linux-x86_64.AppIma  31%[=====>              ]  44.39M  4.78MB/s    eta 14s    inux-x86_64.AppImag  33%[=====>              ]  46.53M  4.85MB/s    eta 14s    nux-x86_64.AppImage  34%[=====>              ]  48.69M  4.95MB/s    eta 14s    ux-x86_64.AppImage   35%[======>             ]  50.50M  5.35MB/s    eta 14s    x-x86_64.AppImage    37%[======>             ]  52.61M  5.85MB/s    eta 12s    -x86_64.AppImage     38%[======>             ]  54.69M  6.53MB/s    eta 12s    x86_64.AppImage      40%[=======>            ]  56.80M  6.82MB/s    eta 12s    86_64.AppImage       41%[=======>            ]  58.94M  6.89MB/s    eta 12s    6_64.AppImage        43%[=======>            ]  60.83M  6.83MB/s    eta 12s    _64.AppImage         44%[=======>            ]  62.31M  6.66MB/s    eta 10s    64.AppImage          46%[========>           ]  64.87M  7.64MB/s    eta 10s    4.AppImage           47%[========>           ]  66.93M  8.25MB/s    eta 10s    .AppImage            49%[========>           ]  69.02M  8.83MB/s    eta 10s    AppImage             50%[=========>          ]  70.89M  9.69MB/s    eta 10s    ppImage              51%[=========>          ]  72.92M  9.95MB/s    eta 9s     pImage               53%[=========>          ]  75.01M  9.99MB/s    eta 9s     Image                54%[=========>          ]  77.20M  10.1MB/s    eta 9s     mage                 56%[==========>         ]  79.39M  10.1MB/s    eta 9s     age                  57%[==========>         ]  81.33M  10.0MB/s    eta 9s     ge                   59%[==========>         ]  83.33M  10.1MB/s    eta 7s     e                    60%[===========>        ]  85.25M  10.0MB/s    eta 7s                          62%[===========>        ]  87.31M  10.0MB/s    eta 7s                       v  63%[===========>        ]  89.33M  9.97MB/s    eta 7s                      ve  64%[===========>        ]  91.12M  9.96MB/s    eta 7s                     vec  66%[============>       ]  93.17M  9.96MB/s    eta 6s                    vect  67%[============>       ]  95.23M  10.1MB/s    eta 6s                   vecto  69%[============>       ]  97.19M  10.0MB/s    eta 6s                  vector  70%[=============>      ]  99.34M  10.1MB/s    eta 6s                 vectorc  71%[=============>      ] 101.23M  10.1MB/s    eta 6s                vectorcr  73%[=============>      ] 103.25M  10.1MB/s    eta 4s               vectorcra  74%[=============>      ] 105.15M  10.0MB/s    eta 4s              vectorcraf  76%[==============>     ] 107.03M  9.89MB/s    eta 4s             vectorcraft  77%[==============>     ] 109.05M  9.87MB/s    eta 4s            vectorcraft-  78%[==============>     ] 110.84M  9.84MB/s    eta 4s           vectorcraft-0  79%[==============>     ] 112.15M  9.55MB/s    eta 3s          vectorcraft-0.  81%[===============>    ] 114.76M  9.74MB/s    eta 3s         vectorcraft-0.2  83%[===============>    ] 116.84M  9.77MB/s    eta 3s        vectorcraft-0.24  84%[===============>    ] 118.95M  9.82MB/s    eta 3s       vectorcraft-0.24.  85%[================>   ] 120.89M  9.84MB/s    eta 3s      vectorcraft-0.24.0  87%[================>   ] 122.98M  9.88MB/s    eta 2s     vectorcraft-0.24.0-  88%[================>   ] 125.11M  9.90MB/s    eta 2s     ectorcraft-0.24.0-l  90%[=================>  ] 127.14M  9.92MB/s    eta 2s     ctorcraft-0.24.0-li  91%[=================>  ] 129.21M  9.91MB/s    eta 2s     torcraft-0.24.0-lin  93%[=================>  ] 130.96M  9.83MB/s    eta 2s     orcraft-0.24.0-linu  94%[=================>  ] 133.06M  9.88MB/s    eta 1s     rcraft-0.24.0-linux  96%[==================> ] 135.21M  9.90MB/s    eta 1s     craft-0.24.0-linux-  97%[==================> ] 137.17M  9.92MB/s    eta 1s     raft-0.24.0-linux-x  98%[==================> ] 139.21M  9.97MB/s    eta 1s     aft-0.24.0-linux-x8  99%[==================> ] 140.08M  9.60MB/s    eta 1s     ft-0.24.0-linux-x86  99%[==================> ] 140.19M  9.04MB/s    eta 0s     t-0.24.0-linux-x86_  99%[==================> ] 140.39M  8.73MB/s    eta 0s     vectorcraft-0.24.0- 100%[===================>] 140.63M  8.11MB/s    in 17s     
+
+2026-11-12 05:08:05 (8.44 MB/s) - ‘vectorcraft-0.24.0-linux-x86_64.AppImage’ saved [147462648/147462648]
+
+'usr/./bin/vectorcraft' -> '/usr/./bin/vectorcraft'
+'usr/./bin/vectorcraft-cli' -> '/usr/./bin/vectorcraft-cli'
+'usr/./share/applications/ai.storyteller.vectorcraft.desktop' -> '/usr/./share/applications/ai.storyteller.vectorcraft.desktop'
+'usr/./share/doc/vectorcraft' -> '/usr/./share/doc/vectorcraft'
+'usr/./share/doc/vectorcraft/ASSETS.md' -> '/usr/./share/doc/vectorcraft/ASSETS.md'
+'usr/./share/doc/vectorcraft/LICENSE-APACHE' -> '/usr/./share/doc/vectorcraft/LICENSE-APACHE'
+'usr/./share/doc/vectorcraft/LICENSE-MIT' -> '/usr/./share/doc/vectorcraft/LICENSE-MIT'
+'usr/./share/doc/vectorcraft/NOTICE' -> '/usr/./share/doc/vectorcraft/NOTICE'
+'usr/./share/doc/vectorcraft/OFL-biz-ud-mincho.txt' -> '/usr/./share/doc/vectorcraft/OFL-biz-ud-mincho.txt'
+'usr/./share/doc/vectorcraft/OFL-biz-ud-pgothic.txt' -> '/usr/./share/doc/vectorcraft/OFL-biz-ud-pgothic.txt'
+'usr/./share/doc/vectorcraft/OFL-lxgw-wenkai-lite.txt' -> '/usr/./share/doc/vectorcraft/OFL-lxgw-wenkai-lite.txt'
+'usr/./share/doc/vectorcraft/OFL-nanum-gothic.txt' -> '/usr/./share/doc/vectorcraft/OFL-nanum-gothic.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-arabic.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-arabic.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-cjk-sc.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-cjk-sc.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-devanagari.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-devanagari.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-georgian.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-georgian.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-hebrew.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-hebrew.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-symbols-2.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-symbols-2.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-symbols.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-symbols.txt'
+'usr/./share/doc/vectorcraft/OFL-noto-sans-thai.txt' -> '/usr/./share/doc/vectorcraft/OFL-noto-sans-thai.txt'
+'usr/./share/doc/vectorcraft/OFL-shippori-mincho.txt' -> '/usr/./share/doc/vectorcraft/OFL-shippori-mincho.txt'
+'usr/./share/doc/vectorcraft/README.md' -> '/usr/./share/doc/vectorcraft/README.md'
+'usr/./share/doc/vectorcraft/licenses' -> '/usr/./share/doc/vectorcraft/licenses'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap/LICENSE-APACHE' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap/LICENSE-APACHE'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap/LICENSE-MIT' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap/LICENSE-MIT'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap/LICENSE.txt' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-cmap/LICENSE.txt'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/LICENSE-APACHE' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/LICENSE-APACHE'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/LICENSE-MIT' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/LICENSE-MIT'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/assets' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/assets'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/assets/CGATS_LICENSE.txt' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/assets/CGATS_LICENSE.txt'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/assets/LICENSE_FOXIT' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-interpret/assets/LICENSE_FOXIT'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-jbig2' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-jbig2'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-jbig2/LICENSE-APACHE' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-jbig2/LICENSE-APACHE'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-jbig2/LICENSE-MIT' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-jbig2/LICENSE-MIT'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-syntax' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-syntax'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-syntax/LICENSE-APACHE' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-syntax/LICENSE-APACHE'
+'usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-syntax/LICENSE-MIT' -> '/usr/./share/doc/vectorcraft/licenses/pdf-backend/hayro-syntax/LICENSE-MIT'
+'usr/./share/icons/hicolor/128x128/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/128x128/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/16x16/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/16x16/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/24x24/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/24x24/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/256x256/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/256x256/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/32x32/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/32x32/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/48x48/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/48x48/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/512x512/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/512x512/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/64x64/apps/ai.storyteller.vectorcraft.png' -> '/usr/./share/icons/hicolor/64x64/apps/ai.storyteller.vectorcraft.png'
+'usr/./share/icons/hicolor/scalable/apps/ai.storyteller.vectorcraft.svg' -> '/usr/./share/icons/hicolor/scalable/apps/ai.storyteller.vectorcraft.svg'
+'usr/./share/metainfo/ai.storyteller.vectorcraft.metainfo.xml' -> '/usr/./share/metainfo/ai.storyteller.vectorcraft.metainfo.xml'
+'usr/./share/mime/packages/ai.storyteller.vectorcraft.xml' -> '/usr/./share/mime/packages/ai.storyteller.vectorcraft.xml'
+'/usr/share/pixmaps/ai.storyteller.vectorcraft.png' -> '/usr/share/icons/hicolor/512x512/apps/ai.storyteller.vectorcraft.png'
+0.24.0
+Updated registry for vectorcraft-bin to version 0.24.0
+[VERSION] vectorcraft-bin: 0.24.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package vectorcraft-bin in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: vectorcraft-bin: 0.23.0->0.24.0.
+[master 5431cb4] vectorcraft-bin: 0.23.0->0.24.0.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: vectorcraft-bin: 0.23.0->0.24.0.
+[master 8d7a862] vectorcraft-bin: 0.23.0->0.24.0.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-39
+r13.1-585
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.4-lfs-r13.1-39
+Found linux image: /boot/vmlinuz-7.3.3-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.2-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
