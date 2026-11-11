@@ -1,0 +1,587 @@
+===== Update check started: 2026-11-12 05:00:03 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261112_050003
+Packages needing attention: flex
+===== Starting updatec: 2026-11-12 05:00:06 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - flex
+
+Building custom package flex...
+[05:00:07] Found custom package for flex, bypassing BLFS aliases.
+[05:00:07] Custom package detected at /home/fusion809/lfs_packaging/flex (package: flex)
+[05:00:07] Extracting dependencies for custom package 'flex'...
+[05:00:07] Required deps: coreutils gcc glibc gzip make tar 
+[05:00:07] Dependency 'coreutils' already installed.
+[05:00:07] Dependency 'gcc' already installed.
+[05:00:07] Dependency 'glibc' already installed.
+[05:00:07] Dependency 'gzip' already installed.
+[05:00:07] Dependency 'make' already installed.
+[05:00:07] Dependency 'tar' already installed.
+[VERSION] flex: 2.6.9
+[05:00:08] Installing flex version: 2.6.9
+[05:00:08] Starting remote custom build for flex...
+--2026-11-12 05:00:22--  https://github.com/westes/flex/releases/download/v2.6.9/flex-2.6.9.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/14521001/3f1e716b-f5a4-4af2-8ded-7c467327360a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-11T19%3A43%3A15Z&rscd=attachment%3B+filename%3Dflex-2.6.9.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-11T18%3A42%3A52Z&ske=2026-11-11T19%3A43%3A15Z&sks=b&skv=2018-11-09&sig=K5wJnnL9IXpwubJaxEzB0YOs%2B5d2I69pw1DrJ4a00uw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NDQyMzkyMywibmJmIjoxNzk0NDIzNjIzLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.apwQ0ZciTyI4WeJpP_CIGVk1iejkRjJkA65p0YVByLY&response-content-disposition=attachment%3B%20filename%3Dflex-2.6.9.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2026-11-12 05:00:22--  https://release-assets.githubusercontent.com/github-production-release-asset/14521001/3f1e716b-f5a4-4af2-8ded-7c467327360a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-11T19%3A43%3A15Z&rscd=attachment%3B+filename%3Dflex-2.6.9.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-11T18%3A42%3A52Z&ske=2026-11-11T19%3A43%3A15Z&sks=b&skv=2018-11-09&sig=K5wJnnL9IXpwubJaxEzB0YOs%2B5d2I69pw1DrJ4a00uw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NDQyMzkyMywibmJmIjoxNzk0NDIzNjIzLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.apwQ0ZciTyI4WeJpP_CIGVk1iejkRjJkA65p0YVByLY&response-content-disposition=attachment%3B%20filename%3Dflex-2.6.9.tar.gz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.109.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1820166 (1.7M) [application/octet-stream]
+Saving to: ‘flex-2.6.9.tar.gz’
+
+flex-2.6.9.tar.gz     0%[                    ]       0  --.-KB/s               flex-2.6.9.tar.gz   100%[===================>]   1.74M  9.71MB/s    in 0.2s    
+
+2026-11-12 05:00:23 (9.71 MB/s) - ‘flex-2.6.9.tar.gz’ saved [1820166/1820166]
+
+configure found
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for vfork.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking for gawk... gawk
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking dependency style of gcc... gcc3
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking how to run the C preprocessor... gcc -E
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for bison... bison -y
+checking whether bison -y is GNU Bison... yes
+checking for flex... flex
+checking for lex output file root... lex.yy
+checking for lex library... none needed
+checking whether yytext is a pointer... yes
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking for x86_64-pc-linux-gnu-gcc... x86_64-pc-linux-gnu-gcc
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-pc-linux-gnu-gcc accepts -g... yes
+checking for x86_64-pc-linux-gnu-gcc option to enable C11 features... none needed
+checking whether x86_64-pc-linux-gnu-gcc understands -c and -o together... yes
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking how to run the C preprocessor... x86_64-pc-linux-gnu-gcc -E
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking dependency style of g++... gcc3
+checking whether ln -s works... yes
+checking for gawk... (cached) gawk
+checking for help2man... /usr/bin/help2man
+checking for gtexi2dvi... no
+checking for texi2dvi... /usr/bin/texi2dvi
+checking for m4 that supports -P... /usr/bin/m4
+checking for indent... no
+checking for regex.h... yes
+checking for strings.h... (cached) yes
+checking for sys/wait.h... yes
+checking for unistd.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for libintl.h... yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for malloc.h... yes
+checking for netinet/in.h... yes
+checking for pthread_mutex_lock in -lpthread... yes
+checking for pthread.h... yes
+checking for log10 in -lm... yes
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99... no
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for pid_t... yes
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for GNU libc compatible realloc... yes
+checking for dup2... yes
+checking for memset... yes
+checking for regcomp... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strtol... yes
+checking for pow... yes
+checking for setlocale... yes
+checking for reallocarr... no
+checking for reallocarray... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether __func__ is declared... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating examples/Makefile
+config.status: creating examples/fastwc/Makefile
+config.status: creating examples/manual/Makefile
+config.status: creating po/Makefile.in
+config.status: creating src/libfl.pc
+config.status: creating src/Makefile
+config.status: creating tools/Makefile
+config.status: creating tests/Makefile
+config.status: creating src/config.h
+config.status: executing libtool commands
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/Makefile
+Making all in src
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/src'
+make  all-am
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/src'
+depbase=`echo buf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT buf.o -MD -MP -MF $depbase.Tpo -c -o buf.o buf.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ccl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT ccl.o -MD -MP -MF $depbase.Tpo -c -o ccl.o ccl.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo dfa.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT dfa.o -MD -MP -MF $depbase.Tpo -c -o dfa.o dfa.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ecs.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT ecs.o -MD -MP -MF $depbase.Tpo -c -o ecs.o ecs.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo filter.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT filter.o -MD -MP -MF $depbase.Tpo -c -o filter.o filter.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo gen.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT gen.o -MD -MP -MF $depbase.Tpo -c -o gen.o gen.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT main.o -MD -MP -MF $depbase.Tpo -c -o main.o main.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo misc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT misc.o -MD -MP -MF $depbase.Tpo -c -o misc.o misc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo nfa.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT nfa.o -MD -MP -MF $depbase.Tpo -c -o nfa.o nfa.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo options.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT options.o -MD -MP -MF $depbase.Tpo -c -o options.o options.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo parse.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT parse.o -MD -MP -MF $depbase.Tpo -c -o parse.o parse.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo regex.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT regex.o -MD -MP -MF $depbase.Tpo -c -o regex.o regex.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo scanflags.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT scanflags.o -MD -MP -MF $depbase.Tpo -c -o scanflags.o scanflags.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo scanopt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT scanopt.o -MD -MP -MF $depbase.Tpo -c -o scanopt.o scanopt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ./mkskel.sh cpp . /usr/bin/m4 2.6.9 > cpp-flex.h.tmp
+/bin/sh ./chkskel.sh cpp-flex.h.tmp
+mv -f cpp-flex.h.tmp cpp-flex.h
+/bin/sh ./mkskel.sh c99 . /usr/bin/m4 2.6.9 > c99-flex.h.tmp
+/bin/sh ./chkskel.sh c99-flex.h.tmp
+mv -f c99-flex.h.tmp c99-flex.h
+/bin/sh ./mkskel.sh go . /usr/bin/m4 2.6.9 > go-flex.h.tmp
+/bin/sh ./chkskel.sh go-flex.h.tmp
+mv -f go-flex.h.tmp go-flex.h
+depbase=`echo sym.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT sym.o -MD -MP -MF $depbase.Tpo -c -o sym.o sym.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo tables.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT tables.o -MD -MP -MF $depbase.Tpo -c -o tables.o tables.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo tables_shared.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT tables_shared.o -MD -MP -MF $depbase.Tpo -c -o tables_shared.o tables_shared.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo tblcmp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT tblcmp.o -MD -MP -MF $depbase.Tpo -c -o tblcmp.o tblcmp.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo yylex.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT yylex.o -MD -MP -MF $depbase.Tpo -c -o yylex.o yylex.c &&\
+mv -f $depbase.Tpo $depbase.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-scan.o -MD -MP -MF .deps/stage1flex-scan.Tpo -c -o stage1flex-scan.o `test -f 'scan.c' || echo './'`scan.c
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-buf.o -MD -MP -MF .deps/stage1flex-buf.Tpo -c -o stage1flex-buf.o `test -f 'buf.c' || echo './'`buf.c
+mv -f .deps/stage1flex-buf.Tpo .deps/stage1flex-buf.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-ccl.o -MD -MP -MF .deps/stage1flex-ccl.Tpo -c -o stage1flex-ccl.o `test -f 'ccl.c' || echo './'`ccl.c
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-dfa.o -MD -MP -MF .deps/stage1flex-dfa.Tpo -c -o stage1flex-dfa.o `test -f 'dfa.c' || echo './'`dfa.c
+mv -f .deps/stage1flex-ccl.Tpo .deps/stage1flex-ccl.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-ecs.o -MD -MP -MF .deps/stage1flex-ecs.Tpo -c -o stage1flex-ecs.o `test -f 'ecs.c' || echo './'`ecs.c
+mv -f .deps/stage1flex-ecs.Tpo .deps/stage1flex-ecs.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-filter.o -MD -MP -MF .deps/stage1flex-filter.Tpo -c -o stage1flex-filter.o `test -f 'filter.c' || echo './'`filter.c
+mv -f .deps/stage1flex-filter.Tpo .deps/stage1flex-filter.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-gen.o -MD -MP -MF .deps/stage1flex-gen.Tpo -c -o stage1flex-gen.o `test -f 'gen.c' || echo './'`gen.c
+mv -f .deps/stage1flex-dfa.Tpo .deps/stage1flex-dfa.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-main.o -MD -MP -MF .deps/stage1flex-main.Tpo -c -o stage1flex-main.o `test -f 'main.c' || echo './'`main.c
+mv -f .deps/stage1flex-gen.Tpo .deps/stage1flex-gen.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-misc.o -MD -MP -MF .deps/stage1flex-misc.Tpo -c -o stage1flex-misc.o `test -f 'misc.c' || echo './'`misc.c
+mv -f .deps/stage1flex-main.Tpo .deps/stage1flex-main.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-nfa.o -MD -MP -MF .deps/stage1flex-nfa.Tpo -c -o stage1flex-nfa.o `test -f 'nfa.c' || echo './'`nfa.c
+mv -f .deps/stage1flex-misc.Tpo .deps/stage1flex-misc.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-options.o -MD -MP -MF .deps/stage1flex-options.Tpo -c -o stage1flex-options.o `test -f 'options.c' || echo './'`options.c
+mv -f .deps/stage1flex-scan.Tpo .deps/stage1flex-scan.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-parse.o -MD -MP -MF .deps/stage1flex-parse.Tpo -c -o stage1flex-parse.o `test -f 'parse.c' || echo './'`parse.c
+mv -f .deps/stage1flex-options.Tpo .deps/stage1flex-options.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-regex.o -MD -MP -MF .deps/stage1flex-regex.Tpo -c -o stage1flex-regex.o `test -f 'regex.c' || echo './'`regex.c
+mv -f .deps/stage1flex-nfa.Tpo .deps/stage1flex-nfa.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-scanflags.o -MD -MP -MF .deps/stage1flex-scanflags.Tpo -c -o stage1flex-scanflags.o `test -f 'scanflags.c' || echo './'`scanflags.c
+mv -f .deps/stage1flex-regex.Tpo .deps/stage1flex-regex.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-scanopt.o -MD -MP -MF .deps/stage1flex-scanopt.Tpo -c -o stage1flex-scanopt.o `test -f 'scanopt.c' || echo './'`scanopt.c
+mv -f .deps/stage1flex-scanflags.Tpo .deps/stage1flex-scanflags.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-skeletons.o -MD -MP -MF .deps/stage1flex-skeletons.Tpo -c -o stage1flex-skeletons.o `test -f 'skeletons.c' || echo './'`skeletons.c
+mv -f .deps/stage1flex-skeletons.Tpo .deps/stage1flex-skeletons.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-sym.o -MD -MP -MF .deps/stage1flex-sym.Tpo -c -o stage1flex-sym.o `test -f 'sym.c' || echo './'`sym.c
+mv -f .deps/stage1flex-scanopt.Tpo .deps/stage1flex-scanopt.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-tables.o -MD -MP -MF .deps/stage1flex-tables.Tpo -c -o stage1flex-tables.o `test -f 'tables.c' || echo './'`tables.c
+mv -f .deps/stage1flex-sym.Tpo .deps/stage1flex-sym.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-tables_shared.o -MD -MP -MF .deps/stage1flex-tables_shared.Tpo -c -o stage1flex-tables_shared.o `test -f 'tables_shared.c' || echo './'`tables_shared.c
+mv -f .deps/stage1flex-tables_shared.Tpo .deps/stage1flex-tables_shared.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-tblcmp.o -MD -MP -MF .deps/stage1flex-tblcmp.Tpo -c -o stage1flex-tblcmp.o `test -f 'tblcmp.c' || echo './'`tblcmp.c
+mv -f .deps/stage1flex-parse.Tpo .deps/stage1flex-parse.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-yylex.o -MD -MP -MF .deps/stage1flex-yylex.Tpo -c -o stage1flex-yylex.o `test -f 'yylex.c' || echo './'`yylex.c
+mv -f .deps/stage1flex-tables.Tpo .deps/stage1flex-tables.Po
+depbase=`echo libmain.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT libmain.lo -MD -MP -MF $depbase.Tpo -c -o libmain.lo libmain.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+mv -f .deps/stage1flex-yylex.Tpo .deps/stage1flex-yylex.Po
+depbase=`echo libyywrap.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT libyywrap.lo -MD -MP -MF $depbase.Tpo -c -o libyywrap.lo libyywrap.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DLOCALEDIR=\"/usr/share/locale\" -g -O2 -MT libmain.lo -MD -MP -MF .deps/libmain.Tpo -c libmain.c  -fPIC -DPIC -o .libs/libmain.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DLOCALEDIR=\"/usr/share/locale\" -g -O2 -MT libyywrap.lo -MD -MP -MF .deps/libyywrap.Tpo -c libyywrap.c  -fPIC -DPIC -o .libs/libyywrap.o
+depbase=`echo skeletons.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT skeletons.o -MD -MP -MF $depbase.Tpo -c -o skeletons.o skeletons.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -version-info 2:0:0  -o libfl.la -rpath /usr/lib libmain.lo libyywrap.lo  -lm 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libmain.o .libs/libyywrap.o   -lm  -g -O2   -Wl,-soname -Wl,libfl.so.2 -o .libs/libfl.so.2.0.0
+libtool: link: (cd ".libs" && rm -f "libfl.so.2" && ln -s "libfl.so.2.0.0" "libfl.so.2")
+libtool: link: (cd ".libs" && rm -f "libfl.so" && ln -s "libfl.so.2.0.0" "libfl.so")
+mv -f .deps/stage1flex-tblcmp.Tpo .deps/stage1flex-tblcmp.Po
+libtool: link: ( cd ".libs" && rm -f "libfl.la" && ln -s "../libfl.la" "libfl.la" )
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o stage1flex stage1flex-scan.o stage1flex-buf.o stage1flex-ccl.o stage1flex-dfa.o stage1flex-ecs.o stage1flex-filter.o stage1flex-gen.o stage1flex-main.o stage1flex-misc.o stage1flex-nfa.o stage1flex-options.o stage1flex-parse.o stage1flex-regex.o stage1flex-scanflags.o stage1flex-scanopt.o stage1flex-skeletons.o stage1flex-sym.o stage1flex-tables.o stage1flex-tables_shared.o stage1flex-tblcmp.o stage1flex-yylex.o     -lm 
+libtool: link: gcc -g -O2 -o stage1flex stage1flex-scan.o stage1flex-buf.o stage1flex-ccl.o stage1flex-dfa.o stage1flex-ecs.o stage1flex-filter.o stage1flex-gen.o stage1flex-main.o stage1flex-misc.o stage1flex-nfa.o stage1flex-options.o stage1flex-parse.o stage1flex-regex.o stage1flex-scanflags.o stage1flex-scanopt.o stage1flex-skeletons.o stage1flex-sym.o stage1flex-tables.o stage1flex-tables_shared.o stage1flex-tblcmp.o stage1flex-yylex.o  -lm
+( cd . && /home/fusion809/lfs_packaging/flex/flex-2.6.9/src/stage1flex \
+    -o scan.c -t scan.l ) >stage1scan.c || \
+{ s=$?; rm -f stage1scan.c; exit $s; }
+depbase=`echo stage1scan.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1scan.o -MD -MP -MF $depbase.Tpo -c -o stage1scan.o stage1scan.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o flex buf.o ccl.o dfa.o ecs.o filter.o gen.o main.o misc.o nfa.o options.o parse.o regex.o scanflags.o scanopt.o skeletons.o sym.o tables.o tables_shared.o tblcmp.o yylex.o   stage1scan.o   -lm 
+libtool: link: gcc -g -O2 -o flex buf.o ccl.o dfa.o ecs.o filter.o gen.o main.o misc.o nfa.o options.o parse.o regex.o scanflags.o scanopt.o skeletons.o sym.o tables.o tables_shared.o tblcmp.o yylex.o stage1scan.o  -lm
+make[3]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/src'
+( cd . && /home/fusion809/lfs_packaging/flex/flex-2.6.9/src/flex \
+    -o scan.c -t scan.l ) >stage2scan.c
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/src'
+Comparing stage1scan.c and stage2scan.c
+Comparison successful.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/src'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/src'
+Making all in doc
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/doc'
+Making all in examples
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples'
+Making all in manual
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples/manual'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples/manual'
+Making all in fastwc
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples/fastwc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples/fastwc'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples'
+Making all in po
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/po'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/po'
+Making all in tests
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/tests'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/tests'
+Making all in tools
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/tools'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/tools'
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9'
+Making install in src
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/src'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/src'
+ /usr/bin/mkdir -p '/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libfl.la '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libfl.so.2.0.0 /usr/lib/libfl.so.2.0.0
+libtool: install: (cd /usr/lib && { ln -s -f libfl.so.2.0.0 libfl.so.2 || { rm -f libfl.so.2 && ln -s libfl.so.2.0.0 libfl.so.2; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libfl.so.2.0.0 libfl.so || { rm -f libfl.so && ln -s libfl.so.2.0.0 libfl.so; }; })
+libtool: install: /usr/bin/install -c .libs/libfl.lai /usr/lib/libfl.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c flex '/usr/bin'
+libtool: install: /usr/bin/install -c flex /usr/bin/flex
+ /usr/bin/mkdir -p '/usr/include'
+ /usr/bin/install -c -m 644 FlexLexer.h '/usr/include'
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libfl.pc '/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/src'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/src'
+Making install in doc
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/doc'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/info'
+ /usr/bin/install -c -m 644 ./flex.info ./flex.info-1 ./flex.info-2 '/usr/share/info'
+ install-info --info-dir='/usr/share/info' '/usr/share/info/flex.info'
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 flex.1 '/usr/share/man/man1'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/doc'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/doc'
+Making install in examples
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples'
+Making install in manual
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples/manual'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples/manual'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples/manual'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples/manual'
+Making install in fastwc
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples/fastwc'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples/fastwc'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples/fastwc'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples/fastwc'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/examples'
+Making install in po
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/po'
+installing bg.gmo as /usr/share/locale/bg/LC_MESSAGES/flex.mo
+installing ca.gmo as /usr/share/locale/ca/LC_MESSAGES/flex.mo
+installing da.gmo as /usr/share/locale/da/LC_MESSAGES/flex.mo
+installing de.gmo as /usr/share/locale/de/LC_MESSAGES/flex.mo
+installing en@boldquot.gmo as /usr/share/locale/en@boldquot/LC_MESSAGES/flex.mo
+installing en@quot.gmo as /usr/share/locale/en@quot/LC_MESSAGES/flex.mo
+installing eo.gmo as /usr/share/locale/eo/LC_MESSAGES/flex.mo
+installing es.gmo as /usr/share/locale/es/LC_MESSAGES/flex.mo
+installing fi.gmo as /usr/share/locale/fi/LC_MESSAGES/flex.mo
+installing fr.gmo as /usr/share/locale/fr/LC_MESSAGES/flex.mo
+installing ga.gmo as /usr/share/locale/ga/LC_MESSAGES/flex.mo
+installing hr.gmo as /usr/share/locale/hr/LC_MESSAGES/flex.mo
+installing ka.gmo as /usr/share/locale/ka/LC_MESSAGES/flex.mo
+installing ko.gmo as /usr/share/locale/ko/LC_MESSAGES/flex.mo
+installing lv.gmo as /usr/share/locale/lv/LC_MESSAGES/flex.mo
+installing nl.gmo as /usr/share/locale/nl/LC_MESSAGES/flex.mo
+installing pl.gmo as /usr/share/locale/pl/LC_MESSAGES/flex.mo
+installing pt.gmo as /usr/share/locale/pt/LC_MESSAGES/flex.mo
+installing pt_BR.gmo as /usr/share/locale/pt_BR/LC_MESSAGES/flex.mo
+installing ro.gmo as /usr/share/locale/ro/LC_MESSAGES/flex.mo
+installing ru.gmo as /usr/share/locale/ru/LC_MESSAGES/flex.mo
+installing sr.gmo as /usr/share/locale/sr/LC_MESSAGES/flex.mo
+installing sv.gmo as /usr/share/locale/sv/LC_MESSAGES/flex.mo
+installing tr.gmo as /usr/share/locale/tr/LC_MESSAGES/flex.mo
+installing uk.gmo as /usr/share/locale/uk/LC_MESSAGES/flex.mo
+installing vi.gmo as /usr/share/locale/vi/LC_MESSAGES/flex.mo
+installing zh_CN.gmo as /usr/share/locale/zh_CN/LC_MESSAGES/flex.mo
+installing zh_TW.gmo as /usr/share/locale/zh_TW/LC_MESSAGES/flex.mo
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/po'
+Making install in tests
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/tests'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/tests'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/tests'
+Making install in tools
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/tools'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/tools'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/tools'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9/tools'
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9'
+make  install-exec-hook
+make[3]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9'
+cd /usr/bin && \
+	ln -s -f flex flex++
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9'
+ /usr/bin/mkdir -p '/usr/share/doc/flex-2.6.9'
+ /usr/bin/install -c -m 644 AUTHORS COPYING NEWS ONEWS README.md '/usr/share/doc/flex-2.6.9'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.6.9'
+2.6.9
+Updated registry for flex to version 2.6.9
+[VERSION] flex: 2.6.9
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package flex in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: flex: 2.6.8->2.6.9.
+[master d023cbd] flex: 2.6.8->2.6.9.
+ 1 file changed, 8 insertions(+), 7 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: flex: 2.6.8->2.6.9.
+[master f411b1a] flex: 2.6.8->2.6.9.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-39
+r13.1-585
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+Removing stale: flex-2.6.8  (newer: flex-2.6.9)
+---
+Removed : 1
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.4-lfs-r13.1-39
+Found linux image: /boot/vmlinuz-7.3.3-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.2-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
