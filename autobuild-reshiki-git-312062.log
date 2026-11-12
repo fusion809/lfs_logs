@@ -1,0 +1,115 @@
+[11:10:15] Found custom package for reshiki-git, bypassing BLFS aliases.
+[11:10:15] Custom package detected at /home/fusion809/lfs_packaging/reshiki-git (package: reshiki-git)
+[11:10:15] Extracting dependencies for custom package 'reshiki-git'...
+[11:10:15] Required deps: acl at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz libcanberra libepoxy libffi libice libogg libpng libseccomp libselinux libsm libtool libvorbis libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres libxt ncurses pango pcre2 pixman systemd util-linux wayland zlib 
+[11:10:15] Dependency 'acl' already installed.
+[11:10:15] Dependency 'at-spi2-core' already installed.
+[11:10:15] Dependency 'brotli' already installed.
+[11:10:15] Dependency 'bzip2' already installed.
+[11:10:15] Dependency 'cairo' already installed.
+[11:10:15] Dependency 'dbus' already installed.
+[11:10:15] Dependency 'expat' already installed.
+[11:10:15] Dependency 'fontconfig' already installed.
+[11:10:15] Dependency 'freetype' already installed.
+[11:10:15] Dependency 'fribidi' already installed.
+[11:10:15] Dependency 'gcc' already installed.
+[11:10:15] Dependency 'gdk-pixbuf' already installed.
+[11:10:15] Dependency 'glib2' already installed.
+[11:10:15] Dependency 'glibc' already installed.
+[11:10:15] Dependency 'glycin' already installed.
+[11:10:15] Dependency 'graphite2' already installed.
+[11:10:15] Dependency 'gtk3' already installed.
+[11:10:15] Dependency 'harfbuzz' already installed.
+[11:10:15] Dependency 'libcanberra' already installed.
+[11:10:15] Dependency 'libepoxy' already installed.
+[11:10:15] Dependency 'libffi' already installed.
+[11:10:15] Dependency 'libice' already installed.
+[11:10:15] Dependency 'libogg' already installed.
+[11:10:15] Dependency 'libpng' already installed.
+[11:10:15] Dependency 'libseccomp' already installed.
+[11:10:15] Dependency 'libselinux' already installed.
+[11:10:15] Dependency 'libsm' already installed.
+[11:10:15] Dependency 'libtool' already installed.
+[11:10:15] Dependency 'libvorbis' already installed.
+[11:10:15] Dependency 'libx11' already installed.
+[11:10:15] Dependency 'libxau' already installed.
+[11:10:15] Dependency 'libxcb' already installed.
+[11:10:15] Dependency 'libxcomposite' already installed.
+[11:10:15] Dependency 'libxcursor' already installed.
+[11:10:15] Dependency 'libxdamage' already installed.
+[11:10:15] Dependency 'libxdmcp' already installed.
+[11:10:15] Dependency 'libxext' already installed.
+[11:10:15] Dependency 'libxfixes' already installed.
+[11:10:15] Dependency 'libxi' already installed.
+[11:10:15] Dependency 'libxinerama' already installed.
+[11:10:15] Dependency 'libxkbcommon' already installed.
+[11:10:15] Dependency 'libxrandr' already installed.
+[11:10:15] Dependency 'libxrender' already installed.
+[11:10:15] Dependency 'libxres' already installed.
+[11:10:15] Dependency 'libxt' already installed.
+[11:10:15] Dependency 'ncurses' already installed.
+[11:10:15] Dependency 'pango' already installed.
+[11:10:15] Dependency 'pcre2' already installed.
+[11:10:15] Dependency 'pixman' already installed.
+[11:10:15] Dependency 'systemd' already installed.
+[11:10:15] Dependency 'util-linux' already installed.
+[11:10:15] Dependency 'wayland' already installed.
+[11:10:15] Dependency 'zlib' already installed.
+[VERSION] reshiki-git: 11df00d5b2724dbe4768d75364b6e4dba38c8a2c
+[11:10:16] Installing reshiki-git version: 11df00d5b2724dbe4768d75364b6e4dba38c8a2c
+[11:10:16] Starting remote custom build for reshiki-git...
+From https://github.com/Ameyanagi/ReShiki
+ * [new branch]        feat/761-multinode-arrows -> origin/feat/761-multinode-arrows
+ * [new branch]        feat/766-stereo-groups -> origin/feat/766-stereo-groups
+ * [new branch]        fix/1056-atrop-axis-warning -> origin/fix/1056-atrop-axis-warning
+   4b854ecd..11df00d5  main                   -> origin/main
+   fbd63424..ecac63d1  port/rdkit-2026-09-depict -> origin/port/rdkit-2026-09-depict
+ + 9cfd5e93...02d78a99 port/rdkit-2026-09-pin -> origin/port/rdkit-2026-09-pin  (forced update)
+Previous HEAD position was 4b854ecd Merge pull request #1133 from Ameyanagi/ci/warm-cache-windows-shell
+HEAD is now at 11df00d5 Merge pull request #1126 from Ameyanagi/feat/246-dative-paint
+   Compiling reshiki-model v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/model)
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor/iced_widget/src/pick_list.rs:375:22
+    |
+375 |                 f32::INFINITY,
+    |                      ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: `iced_widget` (lib) generated 1 warning
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:586:55
+    |
+586 |         let event = if let Ok(event) = event_receiver.try_next() {
+    |                                                       ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:297:64
+    |
+297 |                     task::Poll::Pending => match self.receiver.try_next() {
+    |                                                                ^^^^^^^^
+
+warning: `iced_winit` (lib) generated 2 warnings
+   Compiling reshiki-io v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/io)
+   Compiling reshiki-agent v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/agent)
+   Compiling reshiki-mcp v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/mcp)
+   Compiling reshiki v0.14.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki)
+    Finished `release` profile [optimized] target(s) in 13m 00s
+[Desktop Entry]
+Name=ReShiki (git)
+Type=Application
+Exec=/usr/bin/reshiki-git %U
+TryExec=/usr/bin/reshiki-git
+Icon=reshiki-git
+MimeType=chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;chemical/x-smiles;chemical/x-cml;chemical/x-inchi;
+StartupNotify=true
+Categories=Education;Science;Chemistry;
+StartupWMClass=reshiki-git
+Saved working directory and index state WIP on (no branch): 11df00d5 Merge pull request #1126 from Ameyanagi/feat/246-dative-paint
+11df00d5b2724dbe4768d75364b6e4dba38c8a2c
+Updated registry for reshiki-git to version 11df00d5b2724dbe4768d75364b6e4dba38c8a2c
+[VERSION] reshiki-git: 11df00d5b2724dbe4768d75364b6e4dba38c8a2c
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package reshiki-git in /var/lib/custom-packages/
