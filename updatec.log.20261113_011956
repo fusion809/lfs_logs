@@ -1,0 +1,51 @@
+===== Update check started: 2026-11-13 01:19:56 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261113_011956
+Packages needing attention: flex
+===== Starting updatec: 2026-11-13 01:19:59 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - flex
+
+Building custom package flex...
+[01:20:00] Found custom package for flex, bypassing BLFS aliases.
+[01:20:00] Custom package detected at /home/fusion809/lfs_packaging/flex (package: flex)
+[01:20:00] Extracting dependencies for custom package 'flex'...
+[01:20:00] Required deps: coreutils gcc glibc gzip make tar 
+[01:20:00] Dependency 'coreutils' already installed.
+[01:20:00] Dependency 'gcc' already installed.
+[01:20:00] Dependency 'glibc' already installed.
+[01:20:00] Dependency 'gzip' already installed.
+[01:20:00] Dependency 'make' already installed.
+[01:20:00] Dependency 'tar' already installed.
+[01:20:01] [LFS-AUTOBUILD] Skipping custom package flex: version 2.6.10 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-39
+r13.1-593
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.4-lfs-r13.1-39
+Found linux image: /boot/vmlinuz-7.3.3-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.2-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+/var/lib/custom-packages does not show any likely updates to the table.
+~/logs ~ ~/lfs_packaging
