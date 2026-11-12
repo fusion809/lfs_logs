@@ -1,0 +1,140 @@
+[07:45:49] Found custom package for gh, bypassing BLFS aliases.
+[07:45:49] Custom package detected at /home/fusion809/lfs_packaging/gh (package: gh)
+[07:45:49] Checking conflicting package(s) for 'gh': gh-bin 
+[07:45:49] Extracting dependencies for custom package 'gh'...
+[07:45:49] Required deps: glibc 
+[07:45:49] Dependency 'glibc' already installed.
+[VERSION] gh: 2.104.0
+[07:45:50] Installing gh version: 2.104.0
+[07:45:50] Starting remote custom build for gh...
+--2026-11-13 07:46:05--  https://github.com/cli/cli/archive/v2.104.0.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/cli/cli/tar.gz/refs/tags/v2.104.0 [following]
+--2026-11-13 07:46:05--  https://codeload.github.com/cli/cli/tar.gz/refs/tags/v2.104.0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘cli-2.104.0.tar.gz’
+
+cli-2.104.0.tar.gz      [<=>                 ]       0  --.-KB/s               cli-2.104.0.tar.gz      [ <=>                ]   1.03M  5.13MB/s               cli-2.104.0.tar.gz      [  <=>               ]   3.24M  8.11MB/s               cli-2.104.0.tar.gz      [   <=>              ]   5.45M  9.08MB/s               cli-2.104.0.tar.gz      [    <=>             ]   7.65M  9.56MB/s               cli-2.104.0.tar.gz      [     <=>            ]   9.85M  9.85MB/s               cli-2.104.0.tar.gz      [      <=>           ]  12.06M  10.0MB/s               cli-2.104.0.tar.gz      [       <=>          ]  13.72M  9.52MB/s               cli-2.104.0.tar.gz      [        <=>         ]  14.93M  10.2MB/s    in 1.5s    
+
+2026-11-13 07:46:07 (10.2 MB/s) - ‘cli-2.104.0.tar.gz’ saved [15656398]
+
+GOOS= GOARCH= GOARM= GOFLAGS= CGO_ENABLED= go build -o script/build script/build.go
+go build -trimpath -ldflags "-X github.com/cli/cli/v2/internal/build.Date=2026-11-13 -X github.com/cli/cli/v2/internal/build.Version=d105184c " -o bin/gh ./cmd/gh
+go: downloading golang.org/x/sync v0.25.0
+go: downloading github.com/spf13/pflag v1.1.0
+go: downloading golang.org/x/sys v0.50.0
+go: downloading charm.land/bubbletea/v2 v2.1.1
+go: downloading charm.land/lipgloss/v2 v2.1.0
+go: downloading github.com/sigstore/sigstore-go v1.4.0
+go: downloading google.golang.org/grpc v1.85.0
+go: downloading github.com/yuin/goldmark v1.8.7
+go: downloading github.com/klauspost/compress v1.20.4
+go: downloading github.com/secure-systems-lab/go-securesystemslib v0.11.1
+go: downloading golang.org/x/mod v0.42.0
+go: downloading github.com/sigstore/sigstore v1.11.1
+go: downloading github.com/google/certificate-transparency-go v1.4.0
+go: downloading github.com/sigstore/rekor-tiles/v2 v2.4.0
+go: downloading golang.org/x/net v0.61.0
+go: downloading google.golang.org/genproto/googleapis/api v0.0.0-20261012220534-4341edf3f941
+go: downloading github.com/sigstore/timestamp-authority/v2 v2.2.0
+go: downloading github.com/go-openapi/runtime v0.33.3
+go: downloading github.com/go-openapi/strfmt v0.27.4
+go: downloading github.com/sigstore/rekor v1.5.5
+go: downloading github.com/grpc-ecosystem/grpc-gateway/v2 v2.32.0
+go: downloading google.golang.org/genproto/googleapis/rpc v0.0.0-20261005182115-fad411399dd8
+go: downloading github.com/go-openapi/errors v0.22.9
+go: downloading github.com/go-openapi/swag/fileutils v0.29.2
+go: downloading github.com/go-openapi/swag/jsonutils v0.29.2
+go: downloading github.com/go-openapi/swag/stringutils v0.29.2
+go: downloading github.com/oklog/ulid/v2 v2.1.2
+go: downloading github.com/go-openapi/swag/typeutils v0.29.2
+go: downloading github.com/go-openapi/validate v1.0.0
+go: downloading github.com/go-openapi/swag/conv v0.29.2
+go: downloading github.com/go-openapi/runtime/server-middleware v0.33.3
+go: downloading go.opentelemetry.io/otel v1.47.0
+go: downloading github.com/go-openapi/swag/pools v0.29.2
+go: downloading github.com/go-openapi/analysis v1.0.0
+go: downloading go.opentelemetry.io/otel/trace v1.47.0
+go: downloading github.com/go-openapi/loads v0.25.3
+go: downloading github.com/go-openapi/spec v1.0.1
+go: downloading github.com/go-openapi/swag/loading v0.29.2
+go: downloading github.com/go-openapi/jsonpointer v1.0.1
+go: downloading go.opentelemetry.io/otel/log v1.47.0
+go: downloading go.opentelemetry.io/otel/metric v1.47.0
+go: downloading github.com/go-openapi/jsonreference v1.0.2
+go: downloading github.com/go-openapi/swag/mangling v0.29.2
+go: downloading github.com/go-openapi/swag/yamlutils v0.29.2
+build.go: `bin/gh` is up to date.
+go run ./cmd/gen-docs --man-page --doc-path ./share/man/man1/
+go: downloading github.com/spf13/pflag v1.1.0
+go: downloading charm.land/bubbletea/v2 v2.1.1
+go: downloading charm.land/lipgloss/v2 v2.1.0
+go: downloading golang.org/x/sys v0.50.0
+go: downloading golang.org/x/sync v0.25.0
+go: downloading github.com/sigstore/sigstore-go v1.4.0
+go: downloading google.golang.org/grpc v1.85.0
+go: downloading github.com/yuin/goldmark v1.8.7
+go: downloading github.com/klauspost/compress v1.20.4
+go: downloading golang.org/x/mod v0.42.0
+go: downloading github.com/secure-systems-lab/go-securesystemslib v0.11.1
+go: downloading github.com/google/certificate-transparency-go v1.4.0
+go: downloading github.com/sigstore/rekor-tiles/v2 v2.4.0
+go: downloading github.com/sigstore/sigstore v1.11.1
+go: downloading golang.org/x/net v0.61.0
+go: downloading google.golang.org/genproto/googleapis/api v0.0.0-20261012220534-4341edf3f941
+go: downloading github.com/sigstore/timestamp-authority/v2 v2.2.0
+go: downloading github.com/go-openapi/runtime v0.33.3
+go: downloading github.com/go-openapi/strfmt v0.27.4
+go: downloading github.com/sigstore/rekor v1.5.5
+go: downloading github.com/grpc-ecosystem/grpc-gateway/v2 v2.32.0
+go: downloading google.golang.org/genproto/googleapis/rpc v0.0.0-20261005182115-fad411399dd8
+go: downloading github.com/go-openapi/errors v0.22.9
+go: downloading github.com/go-openapi/swag/fileutils v0.29.2
+go: downloading github.com/go-openapi/swag/jsonutils v0.29.2
+go: downloading github.com/go-openapi/swag/stringutils v0.29.2
+go: downloading github.com/oklog/ulid/v2 v2.1.2
+go: downloading github.com/go-openapi/swag/typeutils v0.29.2
+go: downloading github.com/go-openapi/validate v1.0.0
+go: downloading github.com/go-openapi/swag/conv v0.29.2
+go: downloading github.com/go-openapi/runtime/server-middleware v0.33.3
+go: downloading go.opentelemetry.io/otel v1.47.0
+go: downloading github.com/go-openapi/swag/pools v0.29.2
+go: downloading go.opentelemetry.io/otel/trace v1.47.0
+go: downloading github.com/go-openapi/analysis v1.0.0
+go: downloading github.com/go-openapi/loads v0.25.3
+go: downloading github.com/go-openapi/spec v1.0.1
+go: downloading github.com/go-openapi/jsonpointer v1.0.1
+go: downloading github.com/go-openapi/swag/loading v0.29.2
+go: downloading go.opentelemetry.io/otel/log v1.47.0
+go: downloading go.opentelemetry.io/otel/metric v1.47.0
+go: downloading github.com/go-openapi/swag/mangling v0.29.2
+go: downloading github.com/go-openapi/jsonreference v1.0.2
+go: downloading github.com/go-openapi/swag/yamlutils v0.29.2
+mkdir -p ./share/bash-completion/completions ./share/fish/vendor_completions.d ./share/zsh/site-functions ./share/zsh/vendor-completions
+bin/gh completion -s bash > ./share/bash-completion/completions/gh
+bin/gh completion -s fish > ./share/fish/vendor_completions.d/gh.fish
+bin/gh completion -s zsh > ./share/zsh/site-functions/_gh
+# On Debian/Ubuntu the default zsh fpath does not include /usr/share/zsh/site-functions
+# but does include /usr/share/zsh/vendor-completions, so we ship both paths in our
+# .deb and .rpm packages. See https://github.com/cli/cli/issues/13166
+cp ./share/zsh/site-functions/_gh ./share/zsh/vendor-completions/_gh
+install -d /usr/bin
+install -m755 bin/gh /usr/bin/
+install -d /usr/share/man/man1
+install -m644 ./share/man/man1/* /usr/share/man/man1/
+install -d /usr/share/bash-completion/completions
+install -m644 ./share/bash-completion/completions/gh /usr/share/bash-completion/completions/gh
+install -d /usr/share/fish/vendor_completions.d
+install -m644 ./share/fish/vendor_completions.d/gh.fish /usr/share/fish/vendor_completions.d/gh.fish
+install -d /usr/share/zsh/site-functions
+install -m644 ./share/zsh/site-functions/_gh /usr/share/zsh/site-functions/_gh
+2.104.0
+Updated registry for gh to version 2.104.0
+[VERSION] gh: 2.104.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package gh in /var/lib/custom-packages/
