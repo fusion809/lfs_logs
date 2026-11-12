@@ -1,0 +1,875 @@
+===== Update check started: 2026-11-13 00:50:39 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261113_005039
+Packages needing attention: p11-kit reshiki-git
+===== Starting updatec: 2026-11-13 00:50:42 AEST =====
+Checking for packages with missing file inventories...
+name=p11-kit
+local_ver=0.26.5
+remote_ver=0.26.6
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - p11-kit
+  - reshiki-git
+
+Building custom package p11-kit...
+[00:50:43] Found custom package for p11-kit, bypassing BLFS aliases.
+[00:50:43] Custom package detected at /home/fusion809/lfs_packaging/p11-kit (package: p11-kit)
+[00:50:43] Extracting dependencies for custom package 'p11-kit'...
+[00:50:43] Required deps: glibc libffi libtasn1 make-ca nss 
+[00:50:43] Dependency 'glibc' already installed.
+[00:50:43] Dependency 'libffi' already installed.
+[00:50:43] Dependency 'libtasn1' already installed.
+[00:50:43] Dependency 'make-ca' already installed.
+[00:50:43] Dependency 'nss' already installed.
+[VERSION] p11-kit: 0.26.6
+[00:50:44] Installing p11-kit version: 0.26.6
+[00:50:44] Starting remote custom build for p11-kit...
+--2026-11-13 00:50:59--  https://github.com/p11-glue/p11-kit/releases/download/0.26.6/p11-kit-0.26.6.tar.xz
+Resolving github.com (github.com)... 4.195.217.80
+Connecting to github.com (github.com)|4.195.217.80|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/12060420/79235d56-f15e-469d-bf44-7bcae2a618c2?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-12T15%3A45%3A46Z&rscd=attachment%3B+filename%3Dp11-kit-0.26.6.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-12T14%3A44%3A52Z&ske=2026-11-12T15%3A45%3A46Z&sks=b&skv=2018-11-09&sig=rJbazS7Ck2lMCf4DxB79m87QBQCsRP5pBpVRVVvitgE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NDQ5NTM2MCwibmJmIjoxNzk0NDk1MDYwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.T9388Wu8ligVkpF2NpV4E2IqItVSQhI-PaUSujVwfik&response-content-disposition=attachment%3B%20filename%3Dp11-kit-0.26.6.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2026-11-13 00:50:59--  https://release-assets.githubusercontent.com/github-production-release-asset/12060420/79235d56-f15e-469d-bf44-7bcae2a618c2?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-12T15%3A45%3A46Z&rscd=attachment%3B+filename%3Dp11-kit-0.26.6.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-12T14%3A44%3A52Z&ske=2026-11-12T15%3A45%3A46Z&sks=b&skv=2018-11-09&sig=rJbazS7Ck2lMCf4DxB79m87QBQCsRP5pBpVRVVvitgE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NDQ5NTM2MCwibmJmIjoxNzk0NDk1MDYwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.T9388Wu8ligVkpF2NpV4E2IqItVSQhI-PaUSujVwfik&response-content-disposition=attachment%3B%20filename%3Dp11-kit-0.26.6.tar.xz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.109.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1150004 (1.1M) [application/octet-stream]
+Saving to: ‘p11-kit-0.26.6.tar.xz’
+
+p11-kit-0.26.6.tar.   0%[                    ]       0  --.-KB/s               p11-kit-0.26.6.tar. 100%[===================>]   1.10M  --.-KB/s    in 0.1s    
+
+2026-11-13 00:51:00 (8.93 MB/s) - ‘p11-kit-0.26.6.tar.xz’ saved [1150004/1150004]
+
+source_dir=..
+Optional 3 build, applicable to p11-kit
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6
+Build dir: /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-build
+Build type: native build
+Project name: p11-kit
+Project version: 0.26.6
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Has header "libintl.h" : YES 
+Library intl found: NO
+Checking for size of "unsigned long" : 8 
+Run-time dependency threads found: YES
+Checking for function "pthread_create" with dependency threads: YES 
+Checking for function "nanosleep" : YES 
+Checking for function "dlopen" : YES 
+Library nsl found: NO
+Has header "locale.h" : YES 
+Checking for type "locale_t" : YES 
+Checking for function "newlocale" : YES 
+Checking for function "strerror_l" : YES 
+Has header "sys/resource.h" : YES 
+Has header "sys/un.h" : YES 
+Has header "ucred.h" : NO 
+Checking for function "fdwalk" : NO 
+Checking for function "getexecname" : NO 
+Checking for function "getpeereid" : NO 
+Checking for function "getpeerucred" : NO 
+Checking for function "getprogname" : NO 
+Checking for function "getresuid" : YES 
+Checking for function "isatty" : YES 
+Checking for function "issetugid" : NO 
+Checking for function "mkdtemp" : YES 
+Checking for function "mkstemp" : YES 
+Checking for function "readpassphrase" : NO 
+Checking for function "secure_getenv" : YES 
+Checking for function "strndup" : YES 
+Checking for function "strnstr" : NO 
+Checking for function "getauxval" : YES 
+Checking whether type "struct dirent" has member "d_type" : YES 
+Checking if "thread-local storage class" compiles: YES 
+Checking for function "gmtime_r" : YES 
+Checking if "program_invocation_short_name_test_code" links: YES 
+Checking if "__libc_enable_secure" links: YES 
+Checking if "vsock_test" compiles: YES 
+Checking for type "sighandler_t" : NO 
+Checking for type "sig_t" : NO 
+Checking for type "__sighandler_t" : NO 
+Checking for type "sighandler_t" : NO 
+Checking for type "sig_t" : YES 
+Checking for type "__sighandler_t" : YES 
+Has header "stdbool.h" : YES 
+Checking for function "asprintf" : YES 
+Checking for function "basename" : YES 
+Checking for function "memdup" : NO 
+Checking for function "reallocarray" : YES 
+Checking for function "secure_getenv" : YES (cached)
+Checking for function "setenv" : YES 
+Checking for function "strnstr" : NO (cached)
+Checking for function "vasprintf" : YES 
+Checking for function "strerror_r" : YES 
+Checking if "GNU strerror_r check" compiles: YES 
+Header "errno.h" has symbol "program_invocation_short_name" : YES 
+Header "stdio.h" has symbol "asprintf" : YES 
+Header "stdio.h" has symbol "vasprintf" : YES 
+Header "stdlib.h" has symbol "reallocarray" : YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency libffi found: YES 3.8.0
+Run-time dependency libtasn1 found: YES 4.21.0
+Program asn1Parser found: YES (/usr/bin/asn1Parser)
+Run-time dependency systemd found: YES 262
+Configuring config.h using configuration
+Program python3 found: YES (/usr/bin/python3.15)
+
+Executing subproject pkcs11-json for machine: host 
+
+pkcs11-json| Project name: pkcs11-json
+pkcs11-json| Project version: undefined
+pkcs11-json| Program castxml found: NO
+pkcs11-json| Program cp found: YES (/usr/bin/cp)
+pkcs11-json| Build targets in project: 0
+pkcs11-json| Subproject pkcs11-json finished.
+
+Checking for function "readpassphrase" : NO (cached)
+Configuring test-init.sh using configuration
+Configuring version.h using configuration
+Compiler for C supports link arguments -Wl,--version-script,/home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/libp11-kit.map: YES 
+Compiler for C supports link arguments -Wl,-z,nodelete: YES 
+Compiler for C supports link arguments -Wl,--version-script,/home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/p11-module.map: YES 
+Configuring p11-kit-server.service using configuration
+Program gen-pkcs11-gnu.sh found: YES (/home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/gen-pkcs11-gnu.sh)
+Program test-objects.sh found: YES (/home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/test-objects.sh)
+Program test-lists.sh found: YES (/home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/test-lists.sh)
+Program test-messages.sh found: YES (/home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/test-messages.sh)
+Program test-server.sh found: YES (/home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/test-server.sh)
+Program test-list-mechanisms.sh found: YES (/home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/test-list-mechanisms.sh)
+Program test-list-tokens.sh found: YES (/home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/test-list-tokens.sh)
+Program test-generate-keypair.sh found: YES (/home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/test-generate-keypair.sh)
+Program test-export-public.sh found: YES (/home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/test-export-public.sh)
+Program test-import-public.sh found: YES (/home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/test-import-public.sh)
+Program test-profiles.sh found: YES (/home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/test-profiles.sh)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Configuring pkcs11.conf.example using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Run-time dependency bash-completion found: YES 2.17.0
+Build targets in project: 200
+NOTICE: Future-deprecated features used:
+ * 1.12.0: {'"shared_module" keyword argument "name_suffix" of type list'}
+
+p11-kit 0.26.6
+
+  Subprojects (for host machine)
+    pkcs11-json: YES
+
+  User defined options
+    buildtype  : release
+    prefix     : /usr
+    trust_paths: /etc/pki/anchors
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/435] Generating 'p11-kit/virtual-ffi-generated.h.p/pkcs11.json'
+[2/435] Generating 'p11-kit/virtual-stack-generated.h.p/pkcs11.json'
+[3/435] Generating 'p11-kit/virtual-fixed-wrappers.h.p/pkcs11.json'
+[4/435] Generating 'p11-kit/virtual-base-generated.h.p/pkcs11.json'
+[5/435] Generating p11-kit/generate virtual-fixed-closures.h with a custom command
+[6/435] Generating p11-kit/generate virtual-fixed-wrappers.h with a custom command
+[7/435] Generating p11-kit/generate virtual-ffi-generated.h with a custom command
+[8/435] Generating 'p11-kit/proxy-generated.h.p/pkcs11.json'
+[9/435] Generating p11-kit/generate virtual-stack-generated.h with a custom command
+[10/435] Generating p11-kit/generate virtual-base-generated.h with a custom command
+[11/435] Compiling C object common/libp11-common.a.p/argv.c.o
+[12/435] Compiling C object common/libp11-common.a.p/array.c.o
+[13/435] Compiling C object common/libp11-common.a.p/base64.c.o
+[14/435] Compiling C object common/libp11-common.a.p/buffer.c.o
+[15/435] Compiling C object common/libp11-common.a.p/compat.c.o
+[16/435] Compiling C object common/libp11-common.a.p/constants.c.o
+[17/435] Compiling C object common/libp11-common.a.p/attrs.c.o
+[18/435] Compiling C object common/libp11-common.a.p/debug.c.o
+[19/435] Compiling C object common/libp11-common.a.p/hash.c.o
+[20/435] Compiling C object common/libp11-common.a.p/dict.c.o
+[21/435] Compiling C object common/libp11-common.a.p/hex.c.o
+[22/435] Compiling C object common/libp11-common.a.p/message.c.o
+[23/435] Compiling C object common/libp11-common.a.p/lexer.c.o
+[24/435] Compiling C object common/libp11-common.a.p/pem.c.o
+[25/435] Compiling C object common/libp11-common.a.p/runtime.c.o
+[26/435] Compiling C object common/libp11-common.a.p/path.c.o
+[27/435] Compiling C object common/libp11-common.a.p/vsock.c.o
+[28/435] Compiling C object common/libp11-common.a.p/url.c.o
+[29/435] Compiling C object common/libp11-library.a.p/library.c.o
+[30/435] Compiling C object p11-kit/libp11-kit-internal.a.p/filter.c.o
+[31/435] Compiling C object p11-kit/libp11-kit-internal.a.p/conf.c.o
+[32/435] Compiling C object p11-kit/libp11-kit-internal.a.p/rpc-transport.c.o
+[33/435] Compiling C object p11-kit/libp11-kit-internal.a.p/rpc-message.c.o
+[34/435] Compiling C object p11-kit/libp11-kit-internal.a.p/rpc-attribute.c.o
+[35/435] Compiling C object p11-kit/libp11-kit-internal.a.p/rpc-mechanism.c.o
+[36/435] Compiling C object p11-kit/libp11-kit-internal.a.p/log.c.o
+[37/435] Generating p11-kit/generate proxy-generated.h with a custom command
+[38/435] Compiling C object p11-kit/libp11-kit-internal.a.p/rpc-client.c.o
+[39/435] Linking static target common/libp11-common.a
+[40/435] Linking static target common/libp11-library.a
+[41/435] Generating common/basic.asn.h with a custom command
+Done.
+[42/435] Generating common/pkix.asn.h with a custom command
+Done.
+[43/435] Generating common/openssl.asn.h with a custom command
+Done.
+[44/435] Compiling C object p11-kit/libp11-kit.so.0.4.12.p/messages.c.o
+[45/435] Compiling C object p11-kit/libp11-kit.so.0.4.12.p/iter.c.o
+[46/435] Compiling C object p11-kit/libp11-kit.so.0.4.12.p/pin.c.o
+[47/435] Compiling C object p11-kit/libp11-kit.so.0.4.12.p/modules.c.o
+[48/435] Compiling C object p11-kit/libp11-kit.so.0.4.12.p/proxy-init.c.o
+[49/435] Compiling C object p11-kit/libp11-kit.so.0.4.12.p/proxy.c.o
+[50/435] Compiling C object p11-kit/libp11-kit.so.0.4.12.p/uri.c.o
+[51/435] Compiling C object p11-kit/libp11-kit.so.0.4.12.p/util.c.o
+[52/435] Compiling C object p11-kit/libp11-kit.so.0.4.12.p/rpc-server.c.o
+[53/435] Compiling C object common/libp11-test.a.p/test.c.o
+[54/435] Compiling C object common/libp11-tool.a.p/options.c.o
+[55/435] Compiling C object common/libp11-tool.a.p/print.c.o
+[56/435] Compiling C object common/libp11-tool.a.p/unix-peer.c.o
+[57/435] Compiling C object common/libp11-tool.a.p/readpassphrase.c.o
+[58/435] Compiling C object common/libp11-test.a.p/mock.c.o
+[59/435] Compiling C object common/libp11-asn1.a.p/asn1.c.o
+[60/435] Compiling C object common/libp11-asn1.a.p/oid.c.o
+[61/435] Compiling C object p11-kit/libp11-kit-testable.a.p/conf.c.o
+[62/435] Compiling C object common/libp11-asn1.a.p/persist.c.o
+[63/435] Compiling C object p11-kit/libp11-kit-testable.a.p/filter.c.o
+[64/435] Compiling C object p11-kit/libp11-kit-testable.a.p/rpc-transport.c.o
+[65/435] Compiling C object p11-kit/libp11-kit-testable.a.p/rpc-message.c.o
+[66/435] Compiling C object p11-kit/libp11-kit-testable.a.p/rpc-attribute.c.o
+[67/435] Compiling C object p11-kit/libp11-kit-testable.a.p/log.c.o
+[68/435] Compiling C object p11-kit/libp11-kit-testable.a.p/rpc-mechanism.c.o
+[69/435] Compiling C object p11-kit/libp11-kit-testable.a.p/rpc-client.c.o
+[70/435] Compiling C object p11-kit/libp11-kit-testable.a.p/iter.c.o
+[71/435] Compiling C object p11-kit/libp11-kit-testable.a.p/messages.c.o
+[72/435] Compiling C object p11-kit/libp11-kit-testable.a.p/modules.c.o
+[73/435] Compiling C object p11-kit/libp11-kit-testable.a.p/pin.c.o
+[74/435] Compiling C object p11-kit/libp11-kit-testable.a.p/proxy.c.o
+[75/435] Compiling C object p11-kit/libp11-kit-testable.a.p/proxy-init.c.o
+[76/435] Compiling C object p11-kit/libp11-kit-testable.a.p/rpc-server.c.o
+[77/435] Compiling C object p11-kit/libp11-kit-testable.a.p/uri.c.o
+[78/435] Compiling C object p11-kit/libp11-kit-testable.a.p/util.c.o
+[79/435] Generating 'p11-kit/libp11-kit-pkcs11-gnu.a.p/pkcs11-gnu-iter.h'
+[80/435] Generating 'p11-kit/libp11-kit-pkcs11-gnu.a.p/pkcs11-gnu-pin.h'
+[81/435] Generating 'p11-kit/libp11-kit-pkcs11-gnu.a.p/pkcs11-gnu-uri.h'
+[82/435] Compiling C object trust/liblibtrust-data.a.p/utf8.c.o
+[83/435] Compiling C object trust/liblibtrust-data.a.p/x509.c.o
+[84/435] Compiling C object trust/liblibtrust-testable.a.p/builder.c.o
+[85/435] Compiling C object trust/liblibtrust-testable.a.p/digest.c.o
+[86/435] Compiling C object trust/liblibtrust-testable.a.p/index.c.o
+[87/435] Compiling C object trust/liblibtrust-testable.a.p/parser.c.o
+[88/435] Compiling C object trust/liblibtrust-testable.a.p/module.c.o
+[89/435] Compiling C object trust/liblibtrust-testable.a.p/save.c.o
+[90/435] Compiling C object trust/liblibtrust-testable.a.p/session.c.o
+[91/435] Compiling C object trust/liblibtrust-testable.a.p/token.c.o
+[92/435] Compiling C object trust/liblibtrust-test.a.p/test-trust.c.o
+[93/435] Compiling C object trust/liblibtrust-test.a.p/digest.c.o
+[94/435] Linking static target common/libp11-test.a
+[95/435] Linking static target common/libp11-tool.a
+[96/435] Linking static target common/libp11-asn1.a
+[97/435] Compiling C object common/test-tests.p/test-tests.c.o
+[98/435] Compiling C object common/test-compat.p/test-compat.c.o
+[99/435] Compiling C object common/test-hash.p/test-hash.c.o
+[100/435] Compiling C object common/test-dict.p/test-dict.c.o
+[101/435] Compiling C object common/test-array.p/test-array.c.o
+[102/435] Compiling C object common/test-hex.p/test-hex.c.o
+[103/435] Compiling C object common/test-constants.p/test-constants.c.o
+[104/435] Compiling C object common/test-attrs.p/test-attrs.c.o
+[105/435] Compiling C object common/test-buffer.p/test-buffer.c.o
+[106/435] Compiling C object common/test-url.p/test-url.c.o
+[107/435] Compiling C object common/test-path.p/test-path.c.o
+[108/435] Compiling C object common/test-lexer.p/test-lexer.c.o
+[109/435] Compiling C object common/test-message.p/test-message.c.o
+[110/435] Compiling C object common/test-argv.p/test-argv.c.o
+[111/435] Compiling C object common/test-runtime.p/test-runtime.c.o
+[112/435] Compiling C object common/test-asn1.p/test-asn1.c.o
+[113/435] Compiling C object common/test-oid.p/test-oid.c.o
+[114/435] Compiling C object common/frob-getauxval.p/frob-getauxval.c.o
+[115/435] Compiling C object common/frob-getenv.p/frob-getenv.c.o
+[116/435] Compiling C object common/frob-getprogname.p/frob-getprogname.c.o
+[117/435] Compiling C object p11-kit/p11-kit-client.so.p/client.c.o
+[118/435] Compiling C object p11-kit/p11-kit-client.so.p/client-init.c.o
+[119/435] Compiling C object p11-kit/p11-kit.p/add-profile.c.o
+[120/435] Compiling C object p11-kit/p11-kit.p/delete-object.c.o
+[121/435] Compiling C object p11-kit/p11-kit.p/delete-profile.c.o
+[122/435] Compiling C object p11-kit/p11-kit.p/export-object.c.o
+[123/435] Compiling C object p11-kit/p11-kit.p/generate-keypair.c.o
+[124/435] Compiling C object p11-kit/p11-kit.p/import-object.c.o
+[125/435] Compiling C object p11-kit/p11-kit.p/list-objects.c.o
+[126/435] Compiling C object p11-kit/p11-kit.p/list-profiles.c.o
+[127/435] Compiling C object p11-kit/p11-kit.p/list-mechanisms.c.o
+[128/435] Compiling C object p11-kit/p11-kit.p/list-tokens.c.o
+[129/435] Compiling C object p11-kit/p11-kit.p/lists.c.o
+[130/435] Compiling C object p11-kit/p11-kit.p/p11-kit.c.o
+[131/435] Compiling C object p11-kit/p11-kit.p/print-config.c.o
+[132/435] Compiling C object p11-kit/p11-kit.p/tool.c.o
+[133/435] Compiling C object p11-kit/p11-kit.p/tty.c.o
+[134/435] Compiling C object p11-kit/p11-kit-testable.p/add-profile.c.o
+[135/435] Compiling C object p11-kit/p11-kit-testable.p/delete-object.c.o
+[136/435] Compiling C object p11-kit/p11-kit-testable.p/delete-profile.c.o
+[137/435] Compiling C object p11-kit/p11-kit-testable.p/export-object.c.o
+[138/435] Compiling C object p11-kit/p11-kit-testable.p/generate-keypair.c.o
+[139/435] Compiling C object p11-kit/p11-kit-testable.p/import-object.c.o
+[140/435] Compiling C object p11-kit/p11-kit-testable.p/list-objects.c.o
+[141/435] Compiling C object p11-kit/p11-kit-testable.p/list-profiles.c.o
+[142/435] Compiling C object p11-kit/p11-kit-testable.p/list-mechanisms.c.o
+[143/435] Compiling C object p11-kit/p11-kit-testable.p/list-tokens.c.o
+[144/435] Compiling C object p11-kit/p11-kit-testable.p/lists.c.o
+[145/435] Compiling C object p11-kit/p11-kit-testable.p/p11-kit.c.o
+[146/435] Compiling C object p11-kit/p11-kit-testable.p/print-config.c.o
+[147/435] Compiling C object p11-kit/p11-kit-testable.p/tool.c.o
+[148/435] Compiling C object p11-kit/p11-kit-testable.p/tty.c.o
+[149/435] Compiling C object p11-kit/p11-kit-remote.p/remote.c.o
+[150/435] Compiling C object p11-kit/p11-kit-remote-testable.p/remote.c.o
+[151/435] Compiling C object p11-kit/p11-kit-server.p/server.c.o
+[152/435] Compiling C object p11-kit/p11-kit-server-testable.p/server.c.o
+[153/435] Compiling C object p11-kit/libp11-kit-pkcs11-gnu.a.p/pkcs11-gnu.c.o
+[154/435] Compiling C object p11-kit/test-progname.p/test-progname.c.o
+[155/435] Compiling C object p11-kit/test-util.p/test-util.c.o
+[156/435] Compiling C object p11-kit/test-conf.p/test-conf.c.o
+[157/435] Compiling C object p11-kit/test-uri.p/test-uri.c.o
+[158/435] Compiling C object p11-kit/test-pin.p/test-pin.c.o
+[159/435] Compiling C object p11-kit/test-init.p/test-init.c.o
+[160/435] Compiling C object p11-kit/test-modules.p/test-modules.c.o
+[161/435] Compiling C object p11-kit/test-deprecated.p/test-deprecated.c.o
+[162/435] Compiling C object p11-kit/test-proxy.p/test-proxy.c.o
+[163/435] Compiling C object p11-kit/libp11-kit-internal.a.p/virtual.c.o
+[164/435] Linking static target p11-kit/libp11-kit-internal.a
+[165/435] Linking target p11-kit/libp11-kit.so.0.4.12
+[166/435] Generating symbol file p11-kit/libp11-kit.so.0.4.12.p/libp11-kit.so.0.4.12.symbols
+[167/435] Compiling C object p11-kit/test-proxy3.p/test-proxy3.c.o
+[168/435] Compiling C object p11-kit/test-iter.p/test-iter.c.o
+[169/435] Compiling C object p11-kit/test-rpc.p/test-rpc.c.o
+[170/435] Compiling C object p11-kit/test-virtual.p/test-virtual.c.o
+[171/435] Compiling C object p11-kit/test-rpc-message.p/test-rpc-message.c.o
+[172/435] Compiling C object p11-kit/test-managed.p/test-managed.c.o
+[173/435] Compiling C object p11-kit/test-log.p/test-log.c.o
+[174/435] Compiling C object p11-kit/test-filter.p/test-filter.c.o
+[175/435] Compiling C object p11-kit/libp11-kit-testable.a.p/virtual.c.o
+[176/435] Linking static target p11-kit/libp11-kit-testable.a
+[177/435] Compiling C object p11-kit/test-log3.p/test-log3.c.o
+[178/435] Compiling C object p11-kit/test-version.p/test-version.c.o
+[179/435] Compiling C object p11-kit/test-server.p/test-server.c.o
+[180/435] Compiling C object p11-kit/print-messages.p/print-messages.c.o
+[181/435] Compiling C object p11-kit/frob-setuid.p/frob-setuid.c.o
+[182/435] Compiling C object p11-kit/mock-one.so.p/mock-module-ep.c.o
+[183/435] Compiling C object p11-kit/mock-v3-one.so.p/mock-module-v3-ep.c.o
+[184/435] Compiling C object p11-kit/mock-two.so.p/mock-module-ep2.c.o
+[185/435] Compiling C object p11-kit/mock-v3-two.so.p/mock-module-v3-ep2.c.o
+[186/435] Compiling C object p11-kit/mock-three.so.p/mock-module-ep.c.o
+[187/435] Compiling C object p11-kit/mock-four.so.p/mock-module-ep.c.o
+[188/435] Compiling C object p11-kit/mock-v3-four.so.p/mock-module-v3-ep.c.o
+[189/435] Compiling C object p11-kit/mock-five.so.p/mock-module-ep3.c.o
+[190/435] Compiling C object p11-kit/test-transport.p/test-transport.c.o
+[191/435] Compiling C object p11-kit/mock-seven.so.p/mock-module-ep5.c.o
+[192/435] Compiling C object p11-kit/mock-eight.so.p/mock-module-ep6.c.o
+[193/435] Compiling C object p11-kit/mock-nine.so.p/mock-module-ep7.c.o
+[194/435] Compiling C object p11-kit/mock-ten.so.p/mock-module-ep8.c.o
+[195/435] Compiling C object p11-kit/mock-eleven.so.p/mock-module-ep9.c.o
+[196/435] Compiling C object p11-kit/mock-twelve.so.p/mock-module-ep10.c.o
+[197/435] Compiling C object p11-kit/mock-fourteen.so.p/mock-module-ep12.c.o
+[198/435] Compiling C object p11-kit/mock-six.so.p/mock-module-ep4.c.o
+[199/435] Linking static target trust/liblibtrust-data.a
+[200/435] Compiling C object p11-kit/mock-thirteen.so.p/mock-module-ep11.c.o
+[201/435] Compiling C object p11-kit/test-transport3.p/test-transport3.c.o
+[202/435] Compiling C object trust/p11-kit-trust.so.p/digest.c.o
+[203/435] Compiling C object trust/p11-kit-trust.so.p/builder.c.o
+[204/435] Compiling C object trust/p11-kit-trust.so.p/parser.c.o
+[205/435] Compiling C object trust/p11-kit-trust.so.p/index.c.o
+[206/435] Compiling C object trust/p11-kit-trust.so.p/session.c.o
+[207/435] Compiling C object trust/p11-kit-trust.so.p/save.c.o
+[208/435] Compiling C object trust/p11-kit-trust.so.p/module-init.c.o
+[209/435] Linking static target trust/liblibtrust-testable.a
+[210/435] Compiling C object trust/p11-kit-trust.so.p/token.c.o
+[211/435] Compiling C object trust/p11-kit-trust.so.p/module.c.o
+[212/435] Compiling C object trust/trust.p/check-format.c.o
+[213/435] Compiling C object trust/trust.p/anchor.c.o
+[214/435] Compiling C object trust/trust.p/dump.c.o
+[215/435] Compiling C object trust/trust.p/parser.c.o
+[216/435] Compiling C object trust/trust.p/extract.c.o
+[217/435] Compiling C object trust/trust.p/enumerate.c.o
+[218/435] Compiling C object trust/trust.p/extract-jks.c.o
+[219/435] Compiling C object trust/trust.p/digest.c.o
+[220/435] Compiling C object trust/trust.p/extract-edk2.c.o
+[221/435] Compiling C object trust/trust.p/extract-pem.c.o
+[222/435] Compiling C object trust/trust.p/extract-cer.c.o
+[223/435] Compiling C object trust/trust.p/extract-openssl.c.o
+[224/435] Compiling C object trust/trust.p/list.c.o
+../trust/list.c: In function ‘list_iterate’:
+../trust/list.c:96:26: warning: variable ‘object’ set but not used [-Wunused-but-set-variable=]
+   96 |         CK_OBJECT_HANDLE object;
+      |                          ^~~~~~
+[225/435] Linking static target trust/liblibtrust-test.a
+[226/435] Compiling C object trust/trust.p/trust.c.o
+[227/435] Compiling C object trust/test-base64.p/test-base64.c.o
+[228/435] Compiling C object trust/trust.p/save.c.o
+[229/435] Compiling C object trust/test-digest.p/test-digest.c.o
+[230/435] Compiling C object trust/test-pem.p/test-pem.c.o
+[231/435] Compiling C object trust/test-utf8.p/test-utf8.c.o
+[232/435] Compiling C object trust/test-x509.p/test-x509.c.o
+[233/435] Compiling C object trust/test-persist.p/test-persist.c.o
+[234/435] Compiling C object trust/test-parser.p/test-parser.c.o
+[235/435] Compiling C object trust/test-index.p/test-index.c.o
+[236/435] Compiling C object trust/test-token.p/test-token.c.o
+[237/435] Compiling C object trust/test-builder.p/test-builder.c.o
+[238/435] Compiling C object trust/test-module.p/test-module.c.o
+[239/435] Compiling C object trust/test-save.p/test-save.c.o
+[240/435] Compiling C object trust/test-enumerate.p/test-enumerate.c.o
+[241/435] Compiling C object trust/test-cer.p/test-cer.c.o
+[242/435] Compiling C object trust/test-bundle.p/test-bundle.c.o
+[243/435] Compiling C object trust/test-edk2.p/test-edk2.c.o
+[244/435] Compiling C object trust/frob-pow.p/frob-pow.c.o
+[245/435] Compiling C object trust/frob-token.p/frob-token.c.o
+[246/435] Compiling C object trust/test-openssl.p/test-openssl.c.o
+[247/435] Compiling C object trust/test-jks.p/test-jks.c.o
+[248/435] Compiling C object trust/frob-nss-trust.p/frob-nss-trust.c.o
+[249/435] Compiling C object trust/frob-cert.p/frob-cert.c.o
+[250/435] Compiling C object trust/frob-bc.p/frob-bc.c.o
+[251/435] Compiling C object trust/frob-ku.p/frob-ku.c.o
+[252/435] Compiling C object trust/frob-eku.p/frob-eku.c.o
+[253/435] Compiling C object fuzz/conf_fuzzer.p/conf_fuzzer.c.o
+[254/435] Compiling C object trust/frob-ext.p/frob-ext.c.o
+[255/435] Compiling C object trust/frob-oid.p/frob-oid.c.o
+[256/435] Compiling C object fuzz/conf_fuzzer.p/main.c.o
+[257/435] Compiling C object fuzz/rpc_fuzzer.p/main.c.o
+[258/435] Compiling C object fuzz/rpc_fuzzer.p/rpc_fuzzer.c.o
+[259/435] Compiling C object fuzz/uri_fuzzer.p/main.c.o
+[260/435] Compiling C object fuzz/uri_fuzzer.p/uri_fuzzer.c.o
+[261/435] Compiling C object fuzz/persist_fuzzer.p/persist_fuzzer.c.o
+[262/435] Linking target common/test-tests
+[263/435] Compiling C object fuzz/persist_fuzzer.p/main.c.o
+[264/435] Linking target common/test-compat
+[265/435] Linking target common/test-dict
+[266/435] Linking target common/test-hash
+[267/435] Linking target common/test-array
+[268/435] Linking target common/test-hex
+[269/435] Linking target common/test-constants
+[270/435] Linking target common/test-buffer
+[271/435] Linking target common/test-attrs
+[272/435] Linking target common/test-url
+[273/435] Linking target common/test-lexer
+[274/435] Linking target common/test-path
+[275/435] Linking target common/test-message
+[276/435] Linking target common/test-argv
+[277/435] Linking target common/test-runtime
+[278/435] Linking target common/test-asn1
+[279/435] Linking target common/test-oid
+[280/435] Linking target common/frob-getauxval
+[281/435] Linking target common/frob-getenv
+[282/435] Linking target p11-kit/p11-kit-client.so
+[283/435] Linking target common/frob-getprogname
+[284/435] Linking target p11-kit/p11-kit-remote
+[285/435] Linking target p11-kit/p11-kit
+[286/435] Linking target p11-kit/p11-kit-server
+[287/435] Linking target p11-kit/p11-kit-remote-testable
+[288/435] Linking static target p11-kit/libp11-kit-pkcs11-gnu.a
+[289/435] Linking target p11-kit/p11-kit-testable
+[290/435] Linking target p11-kit/p11-kit-server-testable
+[291/435] Linking target p11-kit/test-progname
+[292/435] Linking target p11-kit/test-conf
+[293/435] Linking target p11-kit/test-uri
+[294/435] Linking target p11-kit/test-util
+[295/435] Linking target p11-kit/test-pin
+[296/435] Linking target p11-kit/test-deprecated
+[297/435] Linking target p11-kit/test-modules
+[298/435] Linking target p11-kit/test-init
+[299/435] Linking target p11-kit/test-proxy
+[300/435] Linking target p11-kit/test-iter
+[301/435] Linking target p11-kit/test-proxy3
+[302/435] Linking target p11-kit/test-rpc
+[303/435] Linking target p11-kit/test-rpc-message
+[304/435] Linking target p11-kit/test-virtual
+[305/435] Linking target p11-kit/test-managed
+[306/435] Linking target p11-kit/test-log3
+[307/435] Linking target p11-kit/test-log
+[308/435] Linking target p11-kit/test-filter
+[309/435] Linking target p11-kit/test-transport
+[310/435] Linking target p11-kit/test-transport3
+[311/435] Linking target p11-kit/test-version
+[312/435] Linking target p11-kit/print-messages
+[313/435] Linking target p11-kit/test-server
+[314/435] Linking target p11-kit/mock-one.so
+[315/435] Linking target p11-kit/mock-v3-one.so
+[316/435] Linking target p11-kit/frob-setuid
+[317/435] Linking target p11-kit/mock-two.so
+[318/435] Linking target p11-kit/mock-three.so
+[319/435] Linking target p11-kit/mock-v3-two.so
+[320/435] Linking target p11-kit/mock-five.so
+[321/435] Linking target p11-kit/mock-four.so
+[322/435] Linking target p11-kit/mock-v3-four.so
+[323/435] Linking target p11-kit/mock-seven.so
+[324/435] Linking target p11-kit/mock-nine.so
+[325/435] Linking target p11-kit/mock-eight.so
+[326/435] Linking target p11-kit/mock-ten.so
+[327/435] Linking target p11-kit/mock-twelve.so
+[328/435] Linking target p11-kit/mock-eleven.so
+[329/435] Linking target p11-kit/mock-thirteen.so
+[330/435] Linking target p11-kit/mock-fourteen.so
+[331/435] Linking target p11-kit/mock-six.so
+[332/435] Linking target trust/p11-kit-trust.so
+[333/435] Linking target trust/test-digest
+[334/435] Linking target trust/test-base64
+[335/435] Linking target trust/trust
+[336/435] Linking target trust/test-x509
+[337/435] Linking target trust/test-pem
+[338/435] Linking target trust/test-utf8
+[339/435] Linking target trust/test-persist
+[340/435] Linking target trust/test-parser
+[341/435] Linking target trust/test-index
+[342/435] Linking target trust/test-builder
+[343/435] Linking target trust/test-token
+[344/435] Linking target trust/test-module
+[345/435] Linking target trust/test-save
+[346/435] Linking target trust/test-enumerate
+[347/435] Linking target trust/test-bundle
+[348/435] Linking target trust/test-cer
+[349/435] Linking target trust/test-openssl
+[350/435] Linking target trust/test-edk2
+[351/435] Linking target trust/frob-pow
+[352/435] Linking target trust/test-jks
+[353/435] Linking target trust/frob-token
+[354/435] Linking target trust/frob-nss-trust
+[355/435] Linking target trust/frob-cert
+[356/435] Linking target trust/frob-ku
+[357/435] Linking target trust/frob-bc
+[358/435] Linking target trust/frob-ext
+[359/435] Linking target trust/frob-eku
+[360/435] Linking target trust/frob-oid
+[361/435] Building translation po/ar/LC_MESSAGES/p11-kit-ar.mo
+[362/435] Building translation po/ast/LC_MESSAGES/p11-kit-ast.mo
+[363/435] Building translation po/as/LC_MESSAGES/p11-kit-as.mo
+[364/435] Building translation po/az/LC_MESSAGES/p11-kit-az.mo
+[365/435] Building translation po/bg/LC_MESSAGES/p11-kit-bg.mo
+[366/435] Building translation po/bn_IN/LC_MESSAGES/p11-kit-bn_IN.mo
+[367/435] Building translation po/ca/LC_MESSAGES/p11-kit-ca.mo
+[368/435] Building translation po/ca@valencia/LC_MESSAGES/p11-kit-ca@valencia.mo
+[369/435] Building translation po/cs/LC_MESSAGES/p11-kit-cs.mo
+[370/435] Building translation po/da/LC_MESSAGES/p11-kit-da.mo
+[371/435] Building translation po/cy/LC_MESSAGES/p11-kit-cy.mo
+[372/435] Building translation po/de/LC_MESSAGES/p11-kit-de.mo
+[373/435] Building translation po/el/LC_MESSAGES/p11-kit-el.mo
+[374/435] Building translation po/en_GB/LC_MESSAGES/p11-kit-en_GB.mo
+[375/435] Building translation po/eo/LC_MESSAGES/p11-kit-eo.mo
+[376/435] Building translation po/et/LC_MESSAGES/p11-kit-et.mo
+[377/435] Building translation po/es/LC_MESSAGES/p11-kit-es.mo
+[378/435] Building translation po/eu/LC_MESSAGES/p11-kit-eu.mo
+[379/435] Building translation po/fa/LC_MESSAGES/p11-kit-fa.mo
+[380/435] Building translation po/fi/LC_MESSAGES/p11-kit-fi.mo
+[381/435] Building translation po/fo/LC_MESSAGES/p11-kit-fo.mo
+[382/435] Building translation po/ga/LC_MESSAGES/p11-kit-ga.mo
+[383/435] Building translation po/fr/LC_MESSAGES/p11-kit-fr.mo
+[384/435] Building translation po/fur/LC_MESSAGES/p11-kit-fur.mo
+[385/435] Building translation po/he/LC_MESSAGES/p11-kit-he.mo
+[386/435] Building translation po/gu/LC_MESSAGES/p11-kit-gu.mo
+[387/435] Building translation po/gl/LC_MESSAGES/p11-kit-gl.mo
+[388/435] Building translation po/hi/LC_MESSAGES/p11-kit-hi.mo
+[389/435] Building translation po/hu/LC_MESSAGES/p11-kit-hu.mo
+[390/435] Building translation po/hr/LC_MESSAGES/p11-kit-hr.mo
+[391/435] Building translation po/ia/LC_MESSAGES/p11-kit-ia.mo
+[392/435] Building translation po/ja/LC_MESSAGES/p11-kit-ja.mo
+[393/435] Building translation po/it/LC_MESSAGES/p11-kit-it.mo
+[394/435] Building translation po/id/LC_MESSAGES/p11-kit-id.mo
+[395/435] Building translation po/ka/LC_MESSAGES/p11-kit-ka.mo
+[396/435] Building translation po/kn/LC_MESSAGES/p11-kit-kn.mo
+[397/435] Building translation po/kk/LC_MESSAGES/p11-kit-kk.mo
+[398/435] Building translation po/ko/LC_MESSAGES/p11-kit-ko.mo
+[399/435] Building translation po/lt/LC_MESSAGES/p11-kit-lt.mo
+[400/435] Building translation po/lv/LC_MESSAGES/p11-kit-lv.mo
+[401/435] Building translation po/ml/LC_MESSAGES/p11-kit-ml.mo
+[402/435] Building translation po/mr/LC_MESSAGES/p11-kit-mr.mo
+[403/435] Building translation po/ms/LC_MESSAGES/p11-kit-ms.mo
+[404/435] Building translation po/nb/LC_MESSAGES/p11-kit-nb.mo
+[405/435] Building translation po/nl/LC_MESSAGES/p11-kit-nl.mo
+[406/435] Building translation po/nn/LC_MESSAGES/p11-kit-nn.mo
+[407/435] Building translation po/pa/LC_MESSAGES/p11-kit-pa.mo
+[408/435] Building translation po/oc/LC_MESSAGES/p11-kit-oc.mo
+[409/435] Building translation po/or/LC_MESSAGES/p11-kit-or.mo
+[410/435] Building translation po/pl/LC_MESSAGES/p11-kit-pl.mo
+[411/435] Building translation po/pt/LC_MESSAGES/p11-kit-pt.mo
+[412/435] Building translation po/pt_BR/LC_MESSAGES/p11-kit-pt_BR.mo
+[413/435] Building translation po/ro/LC_MESSAGES/p11-kit-ro.mo
+[414/435] Building translation po/ru/LC_MESSAGES/p11-kit-ru.mo
+[415/435] Building translation po/si/LC_MESSAGES/p11-kit-si.mo
+[416/435] Building translation po/sk/LC_MESSAGES/p11-kit-sk.mo
+[417/435] Building translation po/sq/LC_MESSAGES/p11-kit-sq.mo
+[418/435] Building translation po/sl/LC_MESSAGES/p11-kit-sl.mo
+[419/435] Building translation po/sr@latin/LC_MESSAGES/p11-kit-sr@latin.mo
+[420/435] Building translation po/sr/LC_MESSAGES/p11-kit-sr.mo
+[421/435] Building translation po/sv/LC_MESSAGES/p11-kit-sv.mo
+[422/435] Building translation po/te/LC_MESSAGES/p11-kit-te.mo
+[423/435] Building translation po/th/LC_MESSAGES/p11-kit-th.mo
+[424/435] Building translation po/ta/LC_MESSAGES/p11-kit-ta.mo
+[425/435] Building translation po/uk/LC_MESSAGES/p11-kit-uk.mo
+[426/435] Building translation po/tr/LC_MESSAGES/p11-kit-tr.mo
+[427/435] Building translation po/vi/LC_MESSAGES/p11-kit-vi.mo
+[428/435] Building translation po/wa/LC_MESSAGES/p11-kit-wa.mo
+[429/435] Building translation po/zh_CN/LC_MESSAGES/p11-kit-zh_CN.mo
+[430/435] Building translation po/zh_HK/LC_MESSAGES/p11-kit-zh_HK.mo
+[431/435] Building translation po/zh_TW/LC_MESSAGES/p11-kit-zh_TW.mo
+[432/435] Linking target fuzz/uri_fuzzer
+[433/435] Linking target fuzz/rpc_fuzzer
+[434/435] Linking target fuzz/conf_fuzzer
+[435/435] Linking target fuzz/persist_fuzzer
+[0/1] Installing files
+Installing p11-kit/libp11-kit.so.0.4.12 to /usr/lib
+Installing p11-kit/p11-kit-client.so to /usr/lib/pkcs11
+Installing p11-kit/p11-kit to /usr/bin
+Installing p11-kit/p11-kit-remote to /usr/libexec/p11-kit
+Installing p11-kit/p11-kit-server to /usr/libexec/p11-kit
+Installing trust/p11-kit-trust.so to /usr/lib/pkcs11
+Installing trust/trust to /usr/bin
+Installing po/ar/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ar/LC_MESSAGES
+Installing po/as/LC_MESSAGES/p11-kit.mo to /usr/share/locale/as/LC_MESSAGES
+Installing po/ast/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ast/LC_MESSAGES
+Installing po/az/LC_MESSAGES/p11-kit.mo to /usr/share/locale/az/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/p11-kit.mo to /usr/share/locale/bg/LC_MESSAGES
+Installing po/bn_IN/LC_MESSAGES/p11-kit.mo to /usr/share/locale/bn_IN/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ca/LC_MESSAGES
+Installing po/ca@valencia/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ca@valencia/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/p11-kit.mo to /usr/share/locale/cs/LC_MESSAGES
+Installing po/cy/LC_MESSAGES/p11-kit.mo to /usr/share/locale/cy/LC_MESSAGES
+Installing po/da/LC_MESSAGES/p11-kit.mo to /usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/p11-kit.mo to /usr/share/locale/de/LC_MESSAGES
+Installing po/el/LC_MESSAGES/p11-kit.mo to /usr/share/locale/el/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/p11-kit.mo to /usr/share/locale/en_GB/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/p11-kit.mo to /usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/p11-kit.mo to /usr/share/locale/es/LC_MESSAGES
+Installing po/et/LC_MESSAGES/p11-kit.mo to /usr/share/locale/et/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/p11-kit.mo to /usr/share/locale/eu/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/p11-kit.mo to /usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/p11-kit.mo to /usr/share/locale/fi/LC_MESSAGES
+Installing po/fo/LC_MESSAGES/p11-kit.mo to /usr/share/locale/fo/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/p11-kit.mo to /usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/p11-kit.mo to /usr/share/locale/fur/LC_MESSAGES
+Installing po/ga/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ga/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/p11-kit.mo to /usr/share/locale/gl/LC_MESSAGES
+Installing po/gu/LC_MESSAGES/p11-kit.mo to /usr/share/locale/gu/LC_MESSAGES
+Installing po/he/LC_MESSAGES/p11-kit.mo to /usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/p11-kit.mo to /usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/p11-kit.mo to /usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/p11-kit.mo to /usr/share/locale/hu/LC_MESSAGES
+Installing po/ia/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ia/LC_MESSAGES
+Installing po/id/LC_MESSAGES/p11-kit.mo to /usr/share/locale/id/LC_MESSAGES
+Installing po/it/LC_MESSAGES/p11-kit.mo to /usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ka/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/p11-kit.mo to /usr/share/locale/kk/LC_MESSAGES
+Installing po/kn/LC_MESSAGES/p11-kit.mo to /usr/share/locale/kn/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ko/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/p11-kit.mo to /usr/share/locale/lt/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/p11-kit.mo to /usr/share/locale/lv/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ml/LC_MESSAGES
+Installing po/mr/LC_MESSAGES/p11-kit.mo to /usr/share/locale/mr/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ms/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/p11-kit.mo to /usr/share/locale/nb/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/p11-kit.mo to /usr/share/locale/nl/LC_MESSAGES
+Installing po/nn/LC_MESSAGES/p11-kit.mo to /usr/share/locale/nn/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/p11-kit.mo to /usr/share/locale/oc/LC_MESSAGES
+Installing po/or/LC_MESSAGES/p11-kit.mo to /usr/share/locale/or/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/p11-kit.mo to /usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/p11-kit.mo to /usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/p11-kit.mo to /usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/p11-kit.mo to /usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ru/LC_MESSAGES
+Installing po/si/LC_MESSAGES/p11-kit.mo to /usr/share/locale/si/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/p11-kit.mo to /usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/p11-kit.mo to /usr/share/locale/sl/LC_MESSAGES
+Installing po/sq/LC_MESSAGES/p11-kit.mo to /usr/share/locale/sq/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/p11-kit.mo to /usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/p11-kit.mo to /usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/p11-kit.mo to /usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/p11-kit.mo to /usr/share/locale/ta/LC_MESSAGES
+Installing po/te/LC_MESSAGES/p11-kit.mo to /usr/share/locale/te/LC_MESSAGES
+Installing po/th/LC_MESSAGES/p11-kit.mo to /usr/share/locale/th/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/p11-kit.mo to /usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/p11-kit.mo to /usr/share/locale/uk/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/p11-kit.mo to /usr/share/locale/vi/LC_MESSAGES
+Installing po/wa/LC_MESSAGES/p11-kit.mo to /usr/share/locale/wa/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/p11-kit.mo to /usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_HK/LC_MESSAGES/p11-kit.mo to /usr/share/locale/zh_HK/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/p11-kit.mo to /usr/share/locale/zh_TW/LC_MESSAGES
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/common/pkcs11.h to /usr/include/p11-kit-1/p11-kit
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/common/pkcs11x.h to /usr/include/p11-kit-1/p11-kit
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/deprecated.h to /usr/include/p11-kit-1/p11-kit
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/iter.h to /usr/include/p11-kit-1/p11-kit
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/p11-kit.h to /usr/include/p11-kit-1/p11-kit
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/pin.h to /usr/include/p11-kit-1/p11-kit
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/remote.h to /usr/include/p11-kit-1/p11-kit
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/uri.h to /usr/include/p11-kit-1/p11-kit
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-build/p11-kit/version.h to /usr/include/p11-kit-1/p11-kit
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-build/p11-kit/p11-kit-server.service to /usr/lib/systemd/user
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/p11-kit-server.socket to /usr/lib/systemd/user
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-build/meson-private/p11-kit-1.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-build/p11-kit/pkcs11.conf.example to /etc/pkcs11
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/trust/p11-kit-trust.module to /usr/share/p11-kit/modules
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/trust/trust-extract-compat to /usr/libexec/p11-kit
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/bash-completion/p11-kit to /usr/share/bash-completion/completions
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/bash-completion/trust to /usr/share/bash-completion/completions
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/zsh-completion/p11-kit.zsh to /usr/share/zsh/site-functions
+Installing /home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/zsh-completion/trust.zsh to /usr/share/zsh/site-functions
+Installing symlink pointing to libp11-kit.so.0.4.12 to /usr/lib/libp11-kit.so.0
+Installing symlink pointing to libp11-kit.so.0 to /usr/lib/libp11-kit.so
+Running custom install script '/home/fusion809/lfs_packaging/p11-kit/p11-kit-0.26.6/p11-kit/meson_post_install.sh lib share/p11-kit/modules'
+'/usr/bin/update-ca-certificates' -> '/usr/libexec/p11-kit/trust-extract-compat'
+0.26.6
+Updated registry for p11-kit to version 0.26.6
+[VERSION] p11-kit: 0.26.6
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package p11-kit in /var/lib/custom-packages/
+Building custom package reshiki-git...
+[00:52:32] Found custom package for reshiki-git, bypassing BLFS aliases.
+[00:52:32] Custom package detected at /home/fusion809/lfs_packaging/reshiki-git (package: reshiki-git)
+[00:52:32] Extracting dependencies for custom package 'reshiki-git'...
+[00:52:32] Required deps: acl at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz libcanberra libepoxy libffi libice libogg libpng libseccomp libselinux libsm libtool libvorbis libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres libxt ncurses pango pcre2 pixman systemd util-linux wayland zlib 
+[00:52:32] Dependency 'acl' already installed.
+[00:52:32] Dependency 'at-spi2-core' already installed.
+[00:52:32] Dependency 'brotli' already installed.
+[00:52:32] Dependency 'bzip2' already installed.
+[00:52:32] Dependency 'cairo' already installed.
+[00:52:32] Dependency 'dbus' already installed.
+[00:52:32] Dependency 'expat' already installed.
+[00:52:32] Dependency 'fontconfig' already installed.
+[00:52:32] Dependency 'freetype' already installed.
+[00:52:32] Dependency 'fribidi' already installed.
+[00:52:32] Dependency 'gcc' already installed.
+[00:52:32] Dependency 'gdk-pixbuf' already installed.
+[00:52:32] Dependency 'glib2' already installed.
+[00:52:32] Dependency 'glibc' already installed.
+[00:52:32] Dependency 'glycin' already installed.
+[00:52:32] Dependency 'graphite2' already installed.
+[00:52:32] Dependency 'gtk3' already installed.
+[00:52:32] Dependency 'harfbuzz' already installed.
+[00:52:32] Dependency 'libcanberra' already installed.
+[00:52:32] Dependency 'libepoxy' already installed.
+[00:52:32] Dependency 'libffi' already installed.
+[00:52:32] Dependency 'libice' already installed.
+[00:52:32] Dependency 'libogg' already installed.
+[00:52:32] Dependency 'libpng' already installed.
+[00:52:32] Dependency 'libseccomp' already installed.
+[00:52:32] Dependency 'libselinux' already installed.
+[00:52:32] Dependency 'libsm' already installed.
+[00:52:32] Dependency 'libtool' already installed.
+[00:52:32] Dependency 'libvorbis' already installed.
+[00:52:32] Dependency 'libx11' already installed.
+[00:52:32] Dependency 'libxau' already installed.
+[00:52:32] Dependency 'libxcb' already installed.
+[00:52:32] Dependency 'libxcomposite' already installed.
+[00:52:32] Dependency 'libxcursor' already installed.
+[00:52:32] Dependency 'libxdamage' already installed.
+[00:52:32] Dependency 'libxdmcp' already installed.
+[00:52:32] Dependency 'libxext' already installed.
+[00:52:32] Dependency 'libxfixes' already installed.
+[00:52:32] Dependency 'libxi' already installed.
+[00:52:32] Dependency 'libxinerama' already installed.
+[00:52:32] Dependency 'libxkbcommon' already installed.
+[00:52:32] Dependency 'libxrandr' already installed.
+[00:52:32] Dependency 'libxrender' already installed.
+[00:52:32] Dependency 'libxres' already installed.
+[00:52:32] Dependency 'libxt' already installed.
+[00:52:32] Dependency 'ncurses' already installed.
+[00:52:32] Dependency 'pango' already installed.
+[00:52:32] Dependency 'pcre2' already installed.
+[00:52:32] Dependency 'pixman' already installed.
+[00:52:32] Dependency 'systemd' already installed.
+[00:52:32] Dependency 'util-linux' already installed.
+[00:52:32] Dependency 'wayland' already installed.
+[00:52:32] Dependency 'zlib' already installed.
+[VERSION] reshiki-git: 2935c99a33854776f03687a47914b9b07705813a
+[00:52:34] Installing reshiki-git version: 2935c99a33854776f03687a47914b9b07705813a
+[00:52:34] Starting remote custom build for reshiki-git...
+From https://github.com/Ameyanagi/ReShiki
+   dc88b08c..2935c99a  main                   -> origin/main
+   b8c70f92..38fa69f2  port/rdkit-2026-09-pin -> origin/port/rdkit-2026-09-pin
+Previous HEAD position was dc88b08c Merge pull request #1157 from Ameyanagi/fix/clipboard-text-flavors
+HEAD is now at 2935c99a Merge pull request #1140 from Ameyanagi/feat/761-multinode-arrows
+   Compiling reshiki-model v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/model)
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor/iced_widget/src/pick_list.rs:375:22
+    |
+375 |                 f32::INFINITY,
+    |                      ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:586:55
+    |
+586 |         let event = if let Ok(event) = event_receiver.try_next() {
+    |                                                       ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:297:64
+    |
+297 |                     task::Poll::Pending => match self.receiver.try_next() {
+    |                                                                ^^^^^^^^
+
+warning: `iced_widget` (lib) generated 1 warning
+warning: `iced_winit` (lib) generated 2 warnings
+   Compiling reshiki-io v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/io)
+   Compiling reshiki-agent v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/agent)
+   Compiling reshiki-mcp v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/mcp)
+   Compiling reshiki v0.14.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki)
+    Finished `release` profile [optimized] target(s) in 10m 20s
+[Desktop Entry]
+Name=ReShiki (git)
+Type=Application
+Exec=/usr/bin/reshiki-git %U
+TryExec=/usr/bin/reshiki-git
+Icon=reshiki-git
+MimeType=chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;chemical/x-smiles;chemical/x-cml;chemical/x-inchi;
+StartupNotify=true
+Categories=Education;Science;Chemistry;
+StartupWMClass=reshiki-git
+Saved working directory and index state WIP on (no branch): 2935c99a Merge pull request #1140 from Ameyanagi/feat/761-multinode-arrows
+2935c99a33854776f03687a47914b9b07705813a
+Updated registry for reshiki-git to version 2935c99a33854776f03687a47914b9b07705813a
+[VERSION] reshiki-git: 2935c99a33854776f03687a47914b9b07705813a
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package reshiki-git in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master 1968eaf] Updating packages
+ 2 files changed, 129 insertions(+), 129 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master 8a16671] Updating packages
+ 2 files changed, 2 insertions(+)
+Pushing changes in ~/build_duration...
+r13.1-39
+r13.1-593
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libp11-kit.so.0.4.11
+Path: /usr/lib/libp11-kit.so.0.4.11
+Skipping generic/unsafe name 'libp11-kit.so.' to prevent false positive matches.
+i_dir=/usr/lib
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libp11-kit.so.0.4.11...
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.1...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.4-lfs-r13.1-39
+Found linux image: /boot/vmlinuz-7.3.3-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.2-lfs-r13.1-37
+Found linux image: /boot/vmlinuz-7.3.1-lfs-r13.1-32
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
