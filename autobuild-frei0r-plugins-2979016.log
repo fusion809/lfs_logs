@@ -1,0 +1,1089 @@
+[21:35:22] Found custom package for frei0r-plugins, bypassing BLFS aliases.
+[21:35:22] Custom package detected at /home/fusion809/lfs_packaging/frei0r-plugins (package: frei0r-plugins)
+[21:35:22] Extracting dependencies for custom package 'frei0r-plugins'...
+[21:35:22] Required deps: cairo gavl gcc glibc libglvnd opencv 
+[21:35:22] Dependency 'cairo' already installed.
+[21:35:22] Dependency 'gavl' already installed.
+[21:35:22] Dependency 'gcc' already installed.
+[21:35:22] Dependency 'glibc' already installed.
+[21:35:22] Dependency 'libglvnd' already installed.
+[21:35:22] Dependency 'opencv' already installed.
+[VERSION] frei0r-plugins: 3.7.1
+[21:35:23] Installing frei0r-plugins version: 3.7.1
+[21:35:23] Starting remote custom build for frei0r-plugins...
+--2026-11-12 21:35:26--  https://github.com/dyne/frei0r/archive/v3.7.1.tar.gz
+Resolving github.com (github.com)... 4.196.32.112
+Connecting to github.com (github.com)|4.196.32.112|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/dyne/frei0r/tar.gz/refs/tags/v3.7.1 [following]
+--2026-11-12 21:35:26--  https://codeload.github.com/dyne/frei0r/tar.gz/refs/tags/v3.7.1
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘frei0r-3.7.1.tar.gz’
+
+frei0r-3.7.1.tar.gz     [<=>                 ]       0  --.-KB/s               frei0r-3.7.1.tar.gz     [ <=>                ]   1.03M  5.14MB/s               frei0r-3.7.1.tar.gz     [  <=>               ]   3.23M  8.08MB/s               frei0r-3.7.1.tar.gz     [   <=>              ]   4.25M  8.63MB/s    in 0.5s    
+
+2026-11-12 21:35:27 (8.63 MB/s) - ‘frei0r-3.7.1.tar.gz’ saved [4458929]
+
+Upstream version and arch ver differ, so patch may fail.
+--2026-11-12 21:35:30--  https://gitlab.archlinux.org/archlinux/packaging/packages/frei0r-plugins/-/raw/main/opencv-5.patch?ref_type=heads&inline=false
+Resolving gitlab.archlinux.org (gitlab.archlinux.org)... 213.133.111.15, 2a01:4f8:222:174c::1
+Connecting to gitlab.archlinux.org (gitlab.archlinux.org)|213.133.111.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 746 [application/octet-stream]
+Saving to: ‘opencv-5.patch’
+
+opencv-5.patch        0%[                    ]       0  --.-KB/s               opencv-5.patch      100%[===================>]     746  --.-KB/s    in 0s      
+
+2026-11-12 21:35:32 (409 MB/s) - ‘opencv-5.patch’ saved [746/746]
+
+patching file src/filter/facebl0r/facebl0r.cpp
+patching file src/filter/facedetect/facedetect.cpp
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenCV: /usr (found version "5.1.0")
+-- Found Freetype: /usr/lib/libfreetype.so (found version "2.15.0")
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.10")
+-- Checking for module 'cairo'
+--   Found cairo, version 1.18.6
+-- Found Cairo 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Checking for module 'gavl'
+--   Found gavl, version 2.0.1
+-- Looking for C++ include immintrin.h
+-- Looking for C++ include immintrin.h - found
+-- Performing Test HAS_SIN_INTRINSIC
+-- Performing Test HAS_SIN_INTRINSIC - Failed
+-- Performing Test HAS_COS_INTRINSIC
+-- Performing Test HAS_COS_INTRINSIC - Failed
+-- Performing Test HAS_ATAN2_INTRINSIC
+-- Performing Test HAS_ATAN2_INTRINSIC - Failed
+-- Performing Test HAS_WORKING_FUTURE
+-- Performing Test HAS_WORKING_FUTURE - Success
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Checking for module 'egl'
+--   Found egl, version 1.5
+-- Configuring done (5.2s)
+-- Generating done (0.5s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/frei0r-plugins/frei0r-3.7.1/build
+[  0%] Building C object test/CMakeFiles/frei0r-run.dir/test-pattern.c.o
+[  0%] Building CXX object test/CMakeFiles/motiondiff0r-alloc.dir/motiondiff0r-alloc.cpp.o
+[  0%] Building C object test/CMakeFiles/frei0r-meta.dir/frei0r-meta.c.o
+[  0%] Linking C executable frei0r-meta
+[  0%] Built target frei0r-meta
+[  0%] Building CXX object test/CMakeFiles/motiondiff0r-alloc.dir/__/src/filter/motiondiff0r/motiondiff0r.cpp.o
+[  0%] Building CXX object test/CMakeFiles/motiondiff0r-memory-contract.dir/motiondiff0r-memory-contract.cpp.o
+[  1%] Building C object test/CMakeFiles/frei0r-run.dir/frei0r-run.c.o
+[  2%] Building CXX object test/CMakeFiles/motiondiff0r-memory-contract.dir/__/src/filter/motiondiff0r/motiondiff0r.cpp.o
+[  2%] Linking C executable frei0r-run
+[  2%] Built target frei0r-run
+[  2%] Building CXX object test/CMakeFiles/motiondiff0r-small-budget.dir/motiondiff0r-memory-contract.cpp.o
+[  2%] Building CXX object test/CMakeFiles/motiondiff0r-small-budget.dir/__/src/filter/motiondiff0r/motiondiff0r.cpp.o
+[  3%] Linking CXX executable motiondiff0r-alloc
+[  3%] Built target motiondiff0r-alloc
+[  3%] Building C object test/CMakeFiles/aech0r-contract.dir/aech0r-contract.c.o
+[  3%] Linking CXX executable motiondiff0r-memory-contract
+[  3%] Built target motiondiff0r-memory-contract
+[  3%] Building CXX object test/CMakeFiles/aech0r-contract.dir/__/src/filter/aech0r/aech0r.cpp.o
+[  4%] Building C object test/CMakeFiles/harris0r-contract-plugin.dir/__/src/filter/harris0r/harris0r.c.o
+[  4%] Built target harris0r-contract-plugin
+[  4%] Building C object test/CMakeFiles/slitscan0r-contract-plugin.dir/__/src/filter/slitscan0r/slitscan0r.c.o
+[  4%] Built target slitscan0r-contract-plugin
+[  4%] Building C object test/CMakeFiles/runtime-smoke-brightness.dir/__/src/filter/brightness/brightness.c.o
+[  4%] Built target runtime-smoke-brightness
+[  5%] Building C object test/CMakeFiles/runtime-smoke-brightness-descriptor.dir/bundle-descriptors/brightness-descriptor.c.o
+[  5%] Built target runtime-smoke-brightness-descriptor
+[  5%] Building C object test/CMakeFiles/runtime-smoke-invert0r.dir/__/src/filter/invert0r/invert0r.c.o
+[  5%] Built target runtime-smoke-invert0r
+[  5%] Building C object test/CMakeFiles/runtime-smoke-invert0r-descriptor.dir/bundle-descriptors/invert0r-descriptor.c.o
+[  6%] Linking CXX executable motiondiff0r-small-budget
+[  6%] Built target runtime-smoke-invert0r-descriptor
+[  7%] Building CXX object test/CMakeFiles/bundle-prototype-addition.dir/__/src/mixer2/addition/addition.cpp.o
+[  7%] Built target motiondiff0r-small-budget
+[  7%] Building C object test/CMakeFiles/bundle-prototype-addition-descriptor.dir/bundle-descriptors/addition-descriptor.c.o
+[  7%] Built target bundle-prototype-addition-descriptor
+[  7%] Building C object test/CMakeFiles/symbol-collision-fixture-a.dir/symbol-collision-fixture-a.c.o
+[  7%] Built target symbol-collision-fixture-a
+[  7%] Building C object test/CMakeFiles/symbol-collision-fixture-b.dir/symbol-collision-fixture-b.c.o
+[  7%] Built target symbol-collision-fixture-b
+[  7%] Linking CXX executable aech0r-contract
+[  8%] Building C object test/CMakeFiles/runtime-smoke-registry.dir/runtime-smoke-registry.c.o
+[  8%] Built target runtime-smoke-registry
+[  8%] Building C object test/CMakeFiles/bundle-prototype-registry.dir/bundle-prototype-registry.c.o
+[  8%] Built target aech0r-contract
+[  8%] Building CXX object test/CMakeFiles/bundle-api-cxx.dir/bundle-api-cxx.cpp.o
+[  8%] Built target bundle-prototype-registry
+[  8%] Building C object src/filter/rgbparade/CMakeFiles/rgbparade.dir/rgbparade.c.o
+[  8%] Linking CXX executable bundle-api-cxx
+[  8%] Built target bundle-prototype-addition
+[  8%] Building C object src/filter/scale0tilt/CMakeFiles/scale0tilt.dir/scale0tilt.c.o
+[  8%] Built target bundle-api-cxx
+[  8%] Building C object src/filter/vectorscope/CMakeFiles/vectorscope.dir/vectorscope.c.o
+[  8%] Linking C shared module scale0tilt.so
+[  8%] Linking C shared module rgbparade.so
+[  8%] Built target scale0tilt
+[  8%] Building C object src/filter/cairoimagegrid/CMakeFiles/cairoimagegrid.dir/cairoimagegrid.c.o
+[  8%] Built target rgbparade
+[  8%] Linking C shared module vectorscope.so
+[  8%] Building C object src/filter/cairogradient/CMakeFiles/cairogradient.dir/cairogradient.c.o
+[  8%] Linking C shared module cairoimagegrid.so
+[  8%] Built target vectorscope
+[  8%] Building CXX object src/filter/mirr0r/CMakeFiles/mirr0r.dir/mirr0r.cpp.o
+[  8%] Built target cairoimagegrid
+[  8%] Building CXX object src/filter/shake0scillate/CMakeFiles/shake0scillate.dir/shake0scillate.cpp.o
+[  9%] Linking C shared module cairogradient.so
+[  9%] Built target cairogradient
+[  9%] Building C object src/filter/3dflippo/CMakeFiles/3dflippo.dir/3dflippo.c.o
+[  9%] Linking C shared module 3dflippo.so
+[  9%] Built target 3dflippo
+[  9%] Building C object src/filter/3dperspective/CMakeFiles/3dperspective.dir/3dperspective.c.o
+[ 10%] Linking C shared module 3dperspective.so
+[ 10%] Built target 3dperspective
+[ 10%] Building CXX object src/filter/aech0r/CMakeFiles/aech0r.dir/aech0r.cpp.o
+[ 10%] Linking CXX shared module mirr0r.so
+[ 10%] Built target mirr0r
+[ 11%] Building C object src/filter/alpha0ps/CMakeFiles/alpha0ps_alpha0ps.dir/alpha0ps_alpha0ps.c.o
+[ 12%] Linking CXX shared module shake0scillate.so
+[ 12%] Built target shake0scillate
+[ 12%] Building C object src/filter/alpha0ps/CMakeFiles/alpha0ps_alphagrad.dir/alpha0ps_alphagrad.c.o
+[ 12%] Linking C shared module alpha0ps_alphagrad.so
+[ 12%] Built target alpha0ps_alphagrad
+[ 13%] Building C object src/filter/alpha0ps/CMakeFiles/alpha0ps_alphaspot.dir/alpha0ps_alphaspot.c.o
+[ 13%] Linking C shared module alpha0ps_alpha0ps.so
+[ 14%] Linking CXX shared module aech0r.so
+[ 14%] Built target alpha0ps_alpha0ps
+[ 14%] Building C object src/filter/autothresh0ld/CMakeFiles/autothresh0ld.dir/autothresh0ld.c.o
+[ 14%] Built target aech0r
+[ 15%] Building C object src/filter/balanc0r/CMakeFiles/balanc0r.dir/balanc0r.c.o
+[ 15%] Linking C shared module alpha0ps_alphaspot.so
+[ 15%] Linking C shared module autothresh0ld.so
+[ 15%] Built target alpha0ps_alphaspot
+[ 15%] Building CXX object src/filter/baltan/CMakeFiles/baltan.dir/baltan.cpp.o
+[ 15%] Built target autothresh0ld
+[ 15%] Linking C shared module balanc0r.so
+[ 16%] Building CXX object src/filter/bluescreen0r/CMakeFiles/bluescreen0r.dir/bluescreen0r.cpp.o
+[ 16%] Built target balanc0r
+[ 17%] Building C object src/filter/bgsubtract0r/CMakeFiles/bgsubtract0r.dir/bgsubtract0r.c.o
+[ 17%] Linking C shared module bgsubtract0r.so
+[ 17%] Built target bgsubtract0r
+[ 17%] Building C object src/filter/blur/CMakeFiles/IIRblur.dir/IIRblur.c.o
+[ 17%] Linking CXX shared module baltan.so
+[ 17%] Built target baltan
+[ 17%] Building C object src/filter/brightness/CMakeFiles/brightness.dir/brightness.c.o
+[ 17%] Linking C shared module brightness.so
+[ 17%] Built target brightness
+[ 17%] Building C object src/filter/bw0r/CMakeFiles/bw0r.dir/bw0r.c.o
+[ 17%] Linking CXX shared module bluescreen0r.so
+[ 17%] Linking C shared module bw0r.so
+[ 17%] Built target bw0r
+[ 17%] Built target bluescreen0r
+[ 17%] Building CXX object src/filter/cartoon/CMakeFiles/cartoon.dir/cartoon.cpp.o
+[ 17%] Building CXX object src/filter/camerashake/CMakeFiles/camerashake.dir/camerashake.cpp.o
+[ 18%] Linking CXX shared module camerashake.so
+[ 18%] Built target camerashake
+[ 18%] Building C object src/filter/cluster/CMakeFiles/cluster.dir/cluster.c.o
+[ 19%] Linking C shared module cluster.so
+[ 19%] Built target cluster
+[ 19%] Building C object src/filter/colgate/CMakeFiles/colgate.dir/colgate.c.o
+[ 19%] Linking C shared module IIRblur.so
+[ 19%] Built target IIRblur
+[ 19%] Building C object src/filter/coloradj/CMakeFiles/coloradj_RGB.dir/coloradj_RGB.c.o
+[ 19%] Linking C shared module colgate.so
+[ 19%] Built target colgate
+[ 19%] Building C object src/filter/colordistance/CMakeFiles/colordistance.dir/colordistance.c.o
+[ 19%] Linking CXX shared module cartoon.so
+[ 19%] Linking C shared module coloradj_RGB.so
+[ 20%] Linking C shared module colordistance.so
+[ 20%] Built target coloradj_RGB
+[ 20%] Built target colordistance
+[ 20%] Built target cartoon
+[ 20%] Building C object src/filter/colorenhance/CMakeFiles/colorenhance.dir/colorenhance.c.o
+[ 20%] Building C object src/filter/colorize/CMakeFiles/colorize.dir/colorize.c.o
+[ 20%] Building C object src/filter/colorhalftone/CMakeFiles/colorhalftone.dir/colorhalftone.c.o
+[ 20%] Linking C shared module colorenhance.so
+[ 20%] Linking C shared module colorize.so
+[ 21%] Linking C shared module colorhalftone.so
+[ 21%] Built target colorenhance
+[ 21%] Built target colorize
+[ 21%] Building C object src/filter/colortap/CMakeFiles/colortap.dir/colortap.c.o
+[ 21%] Built target colorhalftone
+[ 21%] Building C object src/filter/contrast0r/CMakeFiles/contrast0r.dir/contrast0r.c.o
+[ 21%] Building C object src/filter/c0rners/CMakeFiles/c0rners.dir/c0rners.c.o
+[ 22%] Linking C shared module colortap.so
+[ 23%] Linking C shared module contrast0r.so
+[ 23%] Built target contrast0r
+[ 23%] Built target colortap
+[ 23%] Building C object src/filter/curves/CMakeFiles/curves.dir/curves.c.o
+[ 23%] Building CXX object src/filter/d90stairsteppingfix/CMakeFiles/d90stairsteppingfix.dir/d90stairsteppingfix.cpp.o
+[ 24%] Linking C shared module c0rners.so
+[ 24%] Built target c0rners
+[ 24%] Building C object src/filter/defish0r/CMakeFiles/defish0r.dir/defish0r.c.o
+[ 24%] Linking C shared module curves.so
+[ 24%] Built target curves
+[ 24%] Building CXX object src/filter/delay0r/CMakeFiles/delay0r.dir/delay0r.cpp.o
+[ 25%] Linking CXX shared module d90stairsteppingfix.so
+[ 25%] Built target d90stairsteppingfix
+[ 25%] Building CXX object src/filter/delaygrab/CMakeFiles/delaygrab.dir/delaygrab.cpp.o
+[ 26%] Linking C shared module defish0r.so
+[ 26%] Built target defish0r
+[ 26%] Building C object src/filter/denoise/CMakeFiles/denoise_hqdn3d.dir/denoise_hqdn3d.c.o
+[ 26%] Linking C shared module denoise_hqdn3d.so
+[ 26%] Built target denoise_hqdn3d
+[ 26%] Linking CXX shared module delay0r.so
+[ 26%] Building C object src/filter/distort0r/CMakeFiles/distort0r.dir/distort0r.c.o
+[ 27%] Linking CXX shared module delaygrab.so
+[ 27%] Built target delaygrab
+[ 27%] Built target delay0r
+[ 27%] Building C object src/filter/dither/CMakeFiles/dither.dir/dither.c.o
+[ 27%] Building CXX object src/filter/edgeglow/CMakeFiles/edgeglow.dir/edgeglow.cpp.o
+[ 27%] Linking C shared module distort0r.so
+[ 27%] Built target distort0r
+[ 27%] Building CXX object src/filter/elastic_scale/CMakeFiles/elastic_scale.dir/elastic_scale.cpp.o
+[ 28%] Linking C shared module dither.so
+[ 28%] Built target dither
+[ 28%] Building C object src/filter/emboss/CMakeFiles/emboss.dir/emboss.c.o
+[ 28%] Linking C shared module emboss.so
+[ 28%] Built target emboss
+[ 28%] Building CXX object src/filter/equaliz0r/CMakeFiles/equaliz0r.dir/equaliz0r.cpp.o
+[ 28%] Linking CXX shared module edgeglow.so
+[ 28%] Built target edgeglow
+[ 28%] Building C object src/filter/filmgrain/CMakeFiles/filmgrain.dir/filmgrain.c.o
+[ 29%] Linking CXX shared module elastic_scale.so
+[ 29%] Built target elastic_scale
+[ 30%] Linking C shared module filmgrain.so
+[ 30%] Building C object src/filter/flarefx/CMakeFiles/flarefx.dir/flarefx.c.o
+[ 31%] Linking CXX shared module equaliz0r.so
+[ 31%] Built target filmgrain
+[ 31%] Building C object src/filter/flippo/CMakeFiles/flippo.dir/flippo.c.o
+[ 31%] Built target equaliz0r
+[ 31%] Building C object src/filter/gamma/CMakeFiles/gamma.dir/gamma.c.o
+[ 32%] Linking C shared module flippo.so
+[ 32%] Linking C shared module flarefx.so
+[ 32%] Linking C shared module gamma.so
+[ 32%] Built target flippo
+[ 32%] Built target flarefx
+[ 33%] Building C object src/filter/gateweave/CMakeFiles/gateweave.dir/gateweave.c.o
+[ 34%] Building C object src/filter/glow/CMakeFiles/glow.dir/glow.c.o
+[ 34%] Built target gamma
+[ 34%] Building C object src/filter/glitch0r/CMakeFiles/glitch0r.dir/glitch0r.c.o
+[ 34%] Linking C shared module gateweave.so
+[ 34%] Linking C shared module glow.so
+[ 34%] Linking C shared module glitch0r.so
+[ 34%] Built target gateweave
+[ 34%] Built target glow
+[ 35%] Building C object src/filter/harris0r/CMakeFiles/harris0r.dir/harris0r.c.o
+[ 35%] Built target glitch0r
+[ 35%] Building C object src/filter/heatmap0r/CMakeFiles/heatmap0r.dir/heatmap0r.c.o
+[ 35%] Building C object src/filter/hueshift0r/CMakeFiles/hueshift0r.dir/hueshift0r.c.o
+[ 35%] Linking C shared module harris0r.so
+[ 35%] Linking C shared module heatmap0r.so
+[ 35%] Built target heatmap0r
+[ 35%] Built target harris0r
+[ 35%] Linking C shared module hueshift0r.so
+[ 35%] Building C object src/filter/invert0r/CMakeFiles/invert0r.dir/invert0r.c.o
+[ 35%] Building CXX object src/filter/kaleid0sc0pe/CMakeFiles/kaleid0sc0pe.dir/api.cpp.o
+[ 35%] Built target hueshift0r
+[ 36%] Linking C shared module invert0r.so
+[ 36%] Building C object src/filter/keyspillm0pup/CMakeFiles/keyspillm0pup.dir/keyspillm0pup.c.o
+[ 36%] Built target invert0r
+[ 37%] Building C object src/filter/lenscorrection/CMakeFiles/lenscorrection.dir/lenscorrection.c.o
+[ 37%] Linking C shared module lenscorrection.so
+[ 37%] Built target lenscorrection
+[ 37%] Building C object src/filter/letterb0xed/CMakeFiles/letterb0xed.dir/letterb0xed.c.o
+[ 37%] Linking C shared module letterb0xed.so
+[ 37%] Built target letterb0xed
+[ 38%] Building C object src/filter/levels/CMakeFiles/levels.dir/levels.c.o
+[ 38%] Linking C shared module keyspillm0pup.so
+[ 38%] Built target keyspillm0pup
+[ 39%] Building CXX object src/filter/kaleid0sc0pe/CMakeFiles/kaleid0sc0pe.dir/kaleid0sc0pe.cpp.o
+[ 39%] Linking C shared module levels.so
+[ 39%] Built target levels
+[ 40%] Building CXX object src/filter/lightgraffiti/CMakeFiles/lightgraffiti.dir/lightgraffiti.cpp.o
+[ 41%] Building C object src/filter/luminance/CMakeFiles/luminance.dir/luminance.c.o
+[ 41%] Linking C shared module luminance.so
+[ 41%] Built target luminance
+[ 41%] Building C object src/filter/mask0mate/CMakeFiles/mask0mate.dir/mask0mate.c.o
+[ 41%] Linking C shared module mask0mate.so
+[ 41%] Built target mask0mate
+[ 42%] Building C object src/filter/medians/CMakeFiles/medians.dir/medians.c.o
+[ 42%] Linking CXX shared module kaleid0sc0pe.so
+[ 42%] Built target kaleid0sc0pe
+[ 43%] Building C object src/filter/measure/CMakeFiles/measure_pr0be.dir/measure_pr0be.c.o
+[ 43%] Linking C shared module medians.so
+[ 43%] Built target medians
+[ 43%] Linking CXX shared module lightgraffiti.so
+[ 43%] Building C object src/filter/measure/CMakeFiles/measure_pr0file.dir/measure_pr0file.c.o
+[ 43%] Built target lightgraffiti
+[ 44%] Building CXX object src/filter/motiondiff0r/CMakeFiles/motiondiff0r.dir/motiondiff0r.cpp.o
+[ 44%] Linking C shared module measure_pr0be.so
+[ 44%] Linking C shared module measure_pr0file.so
+[ 44%] Built target measure_pr0be
+[ 44%] Built target measure_pr0file
+[ 44%] Building CXX object src/filter/ndvi/CMakeFiles/ndvi.dir/ndvi.cpp.o
+[ 44%] Building CXX object src/filter/nervous/CMakeFiles/nervous.dir/nervous.cpp.o
+[ 44%] Linking CXX shared module nervous.so
+[ 44%] Built target nervous
+[ 44%] Linking CXX shared module motiondiff0r.so
+[ 44%] Building C object src/filter/normaliz0r/CMakeFiles/normaliz0r.dir/normaliz0r.c.o
+[ 44%] Built target motiondiff0r
+[ 44%] Building CXX object src/filter/nosync0r/CMakeFiles/nosync0r.dir/nosync0r.cpp.o
+[ 44%] Linking C shared module normaliz0r.so
+[ 44%] Built target normaliz0r
+[ 44%] Building C object src/filter/ntsc/CMakeFiles/ntsc.dir/crt_core.c.o
+[ 44%] Building C object src/filter/ntsc/CMakeFiles/ntsc.dir/crt_ntsc.c.o
+[ 44%] Building C object src/filter/ntsc/CMakeFiles/ntsc.dir/ntsc-effect.c.o
+[ 45%] Linking C shared module ntsc.so
+[ 45%] Built target ntsc
+[ 45%] Building C object src/filter/perspective/CMakeFiles/perspective.dir/perspective.c.o
+[ 46%] Linking C shared module perspective.so
+[ 47%] Linking CXX shared module ndvi.so
+[ 47%] Built target perspective
+[ 47%] Building C object src/filter/pixeliz0r/CMakeFiles/pixeliz0r.dir/pixeliz0r.c.o
+[ 47%] Built target ndvi
+[ 48%] Linking CXX shared module nosync0r.so
+[ 48%] Building C object src/filter/pixels0rt/CMakeFiles/pixels0rt.dir/pixels0rt.c.o
+[ 48%] Built target nosync0r
+[ 48%] Linking C shared module pixeliz0r.so
+[ 48%] Building CXX object src/filter/pixs0r/CMakeFiles/pixs0r.dir/pixs0r.cc.o
+[ 49%] Linking C shared module pixels0rt.so
+[ 49%] Built target pixeliz0r
+[ 49%] Building C object src/filter/posterize/CMakeFiles/posterize.dir/posterize.c.o
+[ 49%] Built target pixels0rt
+[ 49%] Building CXX object src/filter/premultiply/CMakeFiles/premultiply.dir/premultiply.cpp.o
+[ 49%] Linking C shared module posterize.so
+[ 49%] Built target posterize
+[ 49%] Building CXX object src/filter/primaries/CMakeFiles/primaries.dir/primaries.cpp.o
+[ 49%] Linking CXX shared module pixs0r.so
+[ 49%] Built target pixs0r
+[ 49%] Building C object src/filter/RGB/CMakeFiles/R.dir/R.c.o
+[ 50%] Linking C shared module R.so
+[ 50%] Built target R
+[ 51%] Linking CXX shared module premultiply.so
+[ 51%] Building C object src/filter/RGB/CMakeFiles/G.dir/G.c.o
+[ 52%] Linking C shared module G.so
+[ 52%] Linking CXX shared module primaries.so
+[ 52%] Built target premultiply
+[ 52%] Built target G
+[ 52%] Building C object src/filter/RGB/CMakeFiles/B.dir/B.c.o
+[ 52%] Building C object src/filter/rgbnoise/CMakeFiles/rgbnoise.dir/rgbnoise.c.o
+[ 52%] Built target primaries
+[ 52%] Building C object src/filter/rgbsplit0r/CMakeFiles/rgbsplit0r.dir/rgbsplit0r.c.o
+[ 52%] Linking C shared module B.so
+[ 53%] Linking C shared module rgbnoise.so
+[ 53%] Built target B
+[ 53%] Built target rgbnoise
+[ 53%] Building C object src/filter/saturat0r/CMakeFiles/saturat0r.dir/saturat0r.c.o
+[ 53%] Building CXX object src/filter/scanline0r/CMakeFiles/scanline0r.dir/scanline0r.cpp.o
+[ 54%] Linking C shared module rgbsplit0r.so
+[ 54%] Built target rgbsplit0r
+[ 54%] Linking C shared module saturat0r.so
+[ 54%] Building C object src/filter/select0r/CMakeFiles/select0r.dir/select0r.c.o
+[ 54%] Built target saturat0r
+[ 54%] Building C object src/filter/sharpness/CMakeFiles/sharpness.dir/sharpness.c.o
+[ 54%] Linking C shared module sharpness.so
+[ 54%] Built target sharpness
+[ 54%] Building CXX object src/filter/shadert0y/CMakeFiles/shadert0y.dir/shadert0y.cpp.o
+[ 55%] Linking CXX shared module scanline0r.so
+[ 55%] Built target scanline0r
+[ 55%] Building C object src/filter/sigmoidaltransfer/CMakeFiles/sigmoidaltransfer.dir/sigmoidaltransfer.c.o
+[ 56%] Linking C shared module sigmoidaltransfer.so
+[ 57%] Linking C shared module select0r.so
+[ 57%] Built target sigmoidaltransfer
+[ 57%] Building C object src/filter/slitscan0r/CMakeFiles/slitscan0r.dir/slitscan0r.c.o
+[ 57%] Built target select0r
+[ 57%] Building CXX object src/filter/sobel/CMakeFiles/sobel.dir/sobel.cpp.o
+[ 57%] Linking C shared module slitscan0r.so
+[ 57%] Built target slitscan0r
+[ 58%] Building C object src/filter/softglow/CMakeFiles/softglow.dir/softglow.c.o
+[ 58%] Linking CXX shared module sobel.so
+[ 58%] Linking C shared module softglow.so
+[ 58%] Built target softglow
+[ 59%] Built target sobel
+[ 59%] Building CXX object src/filter/sopsat/CMakeFiles/sopsat.dir/sopsat.cpp.o
+[ 59%] Building C object src/filter/spillsupress/CMakeFiles/spillsupress.dir/spillsupress.c.o
+[ 59%] Linking C shared module spillsupress.so
+[ 59%] Built target spillsupress
+[ 60%] Building C object src/filter/squareblur/CMakeFiles/squareblur.dir/squareblur.c.o
+[ 60%] Linking C shared module squareblur.so
+[ 60%] Built target squareblur
+[ 60%] Building CXX object src/filter/squigglevision/CMakeFiles/squigglevision.dir/squigglevision.cpp.o
+[ 60%] Linking CXX shared module sopsat.so
+[ 60%] Built target sopsat
+[ 61%] Building C object src/filter/tehroxx0r/CMakeFiles/tehroxx0r.dir/tehroxx0r.c.o
+[ 61%] Linking C shared module tehroxx0r.so
+[ 61%] Built target tehroxx0r
+[ 61%] Building C object src/filter/three_point_balance/CMakeFiles/three_point_balance.dir/three_point_balance.c.o
+[ 61%] Linking C shared module three_point_balance.so
+[ 61%] Built target three_point_balance
+[ 62%] Building CXX object src/filter/threelay0r/CMakeFiles/threelay0r.dir/threelay0r.cpp.o
+[ 62%] Linking CXX shared module squigglevision.so
+[ 62%] Linking CXX shared module threelay0r.so
+[ 62%] Built target squigglevision
+[ 62%] Building C object src/filter/threshold0r/CMakeFiles/threshold0r.dir/threshold0r.c.o
+[ 62%] Built target threelay0r
+[ 63%] Building CXX object src/filter/timeout/CMakeFiles/timeout.dir/timeout.cpp.o
+[ 63%] Linking C shared module threshold0r.so
+[ 63%] Built target threshold0r
+[ 63%] Building C object src/filter/tint0r/CMakeFiles/tint0r.dir/tint0r.c.o
+[ 63%] Linking C shared module tint0r.so
+[ 63%] Built target tint0r
+[ 64%] Building C object src/filter/transparency/CMakeFiles/transparency.dir/transparency.c.o
+[ 64%] Linking C shared module transparency.so
+[ 64%] Built target transparency
+[ 64%] Building CXX object src/filter/tutorial/CMakeFiles/tutorial.dir/tutorial.cpp.o
+[ 64%] Linking CXX shared module timeout.so
+[ 64%] Built target timeout
+[ 65%] Building CXX object src/filter/twolay0r/CMakeFiles/twolay0r.dir/twolay0r.cpp.o
+[ 65%] Linking CXX shared module tutorial.so
+[ 65%] Built target tutorial
+[ 66%] Building C object src/filter/vertigo/CMakeFiles/vertigo.dir/vertigo.c.o
+[ 66%] Linking C shared module vertigo.so
+[ 66%] Built target vertigo
+[ 66%] Linking CXX shared module twolay0r.so
+[ 66%] Building CXX object src/filter/vignette/CMakeFiles/vignette.dir/vignette.cpp.o
+[ 66%] Built target twolay0r
+[ 67%] Building CXX object src/filter/water/CMakeFiles/water.dir/water.cpp.o
+[ 67%] Linking CXX shared module shadert0y.so
+[ 67%] Built target shadert0y
+[ 67%] Building C object src/filter/whirlpinch0r/CMakeFiles/whirlpinch0r.dir/whirlpinch0r.c.o
+[ 67%] Linking C shared module whirlpinch0r.so
+[ 67%] Built target whirlpinch0r
+[ 67%] Building CXX object src/generator/dem0scene/CMakeFiles/plasma.dir/plasma.cpp.o
+[ 67%] Linking CXX shared module vignette.so
+[ 67%] Built target vignette
+[ 67%] Building C object src/generator/ising0r/CMakeFiles/ising0r.dir/ising0r.c.o
+[ 67%] Linking C shared module ising0r.so
+[ 67%] Built target ising0r
+[ 67%] Building CXX object src/generator/lissajous0r/CMakeFiles/lissajous0r.dir/lissajous0r.cpp.o
+[ 67%] Linking CXX shared module water.so
+[ 67%] Built target water
+[ 67%] Building CXX object src/generator/nois0r/CMakeFiles/nois0r.dir/nois0r.cpp.o
+[ 68%] Linking CXX shared module plasma.so
+[ 68%] Built target plasma
+[ 68%] Building CXX object src/generator/onecol0r/CMakeFiles/onecol0r.dir/onecol0r.cpp.o
+[ 69%] Linking CXX shared module nois0r.so
+[ 69%] Linking CXX shared module lissajous0r.so
+[ 69%] Built target nois0r
+[ 69%] Built target lissajous0r
+[ 69%] Building CXX object src/generator/partik0l/CMakeFiles/partik0l.dir/partik0l.cpp.o
+[ 69%] Building C object src/generator/test_pat/CMakeFiles/test_pat_B.dir/test_pat_B.c.o
+[ 69%] Linking CXX shared module onecol0r.so
+[ 69%] Built target onecol0r
+[ 70%] Building C object src/generator/test_pat/CMakeFiles/test_pat_C.dir/test_pat_C.c.o
+[ 70%] Linking CXX shared module partik0l.so
+[ 70%] Linking C shared module test_pat_C.so
+[ 70%] Built target partik0l
+[ 70%] Building C object src/generator/test_pat/CMakeFiles/test_pat_G.dir/test_pat_G.c.o
+[ 70%] Built target test_pat_C
+[ 71%] Building C object src/generator/test_pat/CMakeFiles/test_pat_I.dir/test_pat_I.c.o
+[ 71%] Linking C shared module test_pat_I.so
+[ 71%] Built target test_pat_I
+[ 71%] Building C object src/generator/test_pat/CMakeFiles/test_pat_L.dir/test_pat_L.c.o
+[ 71%] Linking C shared module test_pat_G.so
+[ 71%] Built target test_pat_G
+[ 72%] Building C object src/generator/test_pat/CMakeFiles/test_pat_R.dir/test_pat_R.c.o
+[ 72%] Linking C shared module test_pat_B.so
+[ 72%] Built target test_pat_B
+[ 72%] Building C object src/mixer2/cairoaffineblend/CMakeFiles/cairoaffineblend.dir/cairoaffineblend.c.o
+[ 73%] Linking C shared module cairoaffineblend.so
+[ 73%] Linking C shared module test_pat_L.so
+[ 73%] Built target cairoaffineblend
+[ 73%] Built target test_pat_L
+[ 73%] Building C object src/mixer2/cairoblend/CMakeFiles/cairoblend.dir/cairoblend.c.o
+[ 73%] Building CXX object src/mixer2/addition/CMakeFiles/addition.dir/addition.cpp.o
+[ 73%] Linking C shared module cairoblend.so
+[ 73%] Built target cairoblend
+[ 73%] Building CXX object src/mixer2/addition_alpha/CMakeFiles/addition_alpha.dir/addition_alpha.cpp.o
+[ 73%] Linking C shared module test_pat_R.so
+[ 73%] Built target test_pat_R
+[ 74%] Linking CXX shared module addition.so
+[ 74%] Building CXX object src/mixer2/alphaatop/CMakeFiles/alphaatop.dir/alphaatop.cpp.o
+[ 74%] Built target addition
+[ 75%] Building CXX object src/mixer2/alphain/CMakeFiles/alphain.dir/alphain.cpp.o
+[ 75%] Linking CXX shared module addition_alpha.so
+[ 75%] Built target addition_alpha
+[ 75%] Building C object src/mixer2/alphainjection/CMakeFiles/alphainjection.dir/alphainjection.c.o
+[ 75%] Linking C shared module alphainjection.so
+[ 75%] Built target alphainjection
+[ 76%] Building CXX object src/mixer2/alphaout/CMakeFiles/alphaout.dir/alphaout.cpp.o
+[ 76%] Linking CXX shared module alphaatop.so
+[ 76%] Built target alphaatop
+[ 76%] Building CXX object src/mixer2/alphaover/CMakeFiles/alphaover.dir/alphaover.cpp.o
+[ 76%] Linking CXX shared module alphain.so
+[ 76%] Built target alphain
+[ 77%] Building CXX object src/mixer2/alphaxor/CMakeFiles/alphaxor.dir/alphaxor.cpp.o
+[ 77%] Linking CXX shared module alphaout.so
+[ 77%] Linking CXX shared module alphaover.so
+[ 77%] Built target alphaout
+[ 77%] Building CXX object src/mixer2/blend/CMakeFiles/blend.dir/blend.cpp.o
+[ 77%] Built target alphaover
+[ 77%] Building CXX object src/mixer2/burn/CMakeFiles/burn.dir/burn.cpp.o
+[ 77%] Linking CXX shared module alphaxor.so
+[ 77%] Built target alphaxor
+[ 77%] Building CXX object src/mixer2/color_only/CMakeFiles/color_only.dir/color_only.cpp.o
+[ 78%] Linking CXX shared module burn.so
+[ 78%] Built target burn
+[ 78%] Linking CXX shared module blend.so
+[ 78%] Building C object src/mixer2/composition/CMakeFiles/composition.dir/composition.c.o
+[ 78%] Linking C shared module composition.so
+[ 78%] Built target blend
+[ 79%] Linking CXX shared module color_only.so
+[ 79%] Built target composition
+[ 79%] Building CXX object src/mixer2/darken/CMakeFiles/darken.dir/darken.cpp.o
+[ 79%] Building CXX object src/mixer2/difference/CMakeFiles/difference.dir/difference.cpp.o
+[ 79%] Built target color_only
+[ 79%] Building CXX object src/mixer2/divide/CMakeFiles/divide.dir/divide.cpp.o
+[ 79%] Linking CXX shared module darken.so
+[ 80%] Linking CXX shared module difference.so
+[ 80%] Built target darken
+[ 80%] Building CXX object src/mixer2/dodge/CMakeFiles/dodge.dir/dodge.cpp.o
+[ 80%] Linking CXX shared module divide.so
+[ 80%] Built target difference
+[ 80%] Building CXX object src/mixer2/euclid_eraser/CMakeFiles/euclid_eraser.dir/euclid_eraser.cpp.o
+[ 80%] Built target divide
+[ 80%] Building CXX object src/mixer2/grain_extract/CMakeFiles/grain_extract.dir/grain_extract.cpp.o
+[ 81%] Linking CXX shared module dodge.so
+[ 81%] Built target dodge
+[ 81%] Linking CXX shared module grain_extract.so
+[ 82%] Building CXX object src/mixer2/grain_merge/CMakeFiles/grain_merge.dir/grain_merge.cpp.o
+[ 82%] Built target grain_extract
+[ 82%] Building CXX object src/mixer2/hardlight/CMakeFiles/hardlight.dir/hardlight.cpp.o
+[ 82%] Linking CXX shared module euclid_eraser.so
+[ 82%] Built target euclid_eraser
+[ 82%] Building CXX object src/mixer2/hue/CMakeFiles/hue.dir/hue.cpp.o
+[ 82%] Linking CXX shared module grain_merge.so
+[ 82%] Built target grain_merge
+[ 82%] Building CXX object src/mixer2/lighten/CMakeFiles/lighten.dir/lighten.cpp.o
+[ 82%] Linking CXX shared module hardlight.so
+[ 82%] Built target hardlight
+[ 82%] Building CXX object src/mixer2/multiply/CMakeFiles/multiply.dir/multiply.cpp.o
+[ 83%] Linking CXX shared module hue.so
+[ 83%] Built target hue
+[ 83%] Building CXX object src/mixer2/overlay/CMakeFiles/overlay.dir/overlay.cpp.o
+[ 83%] Linking CXX shared module lighten.so
+[ 83%] Built target lighten
+[ 83%] Linking CXX shared module multiply.so
+[ 83%] Building CXX object src/mixer2/saturation/CMakeFiles/saturation.dir/saturation.cpp.o
+[ 83%] Built target multiply
+[ 83%] Building CXX object src/mixer2/screen/CMakeFiles/screen.dir/screen.cpp.o
+[ 84%] Linking CXX shared module overlay.so
+[ 84%] Built target overlay
+[ 84%] Building CXX object src/mixer2/softlight/CMakeFiles/softlight.dir/softlight.cpp.o
+[ 85%] Linking CXX shared module saturation.so
+[ 85%] Linking CXX shared module screen.so
+[ 85%] Built target screen
+[ 85%] Built target saturation
+[ 86%] Building CXX object src/mixer2/subtract/CMakeFiles/subtract.dir/subtract.cpp.o
+[ 86%] Building C object src/mixer2/uvmap/CMakeFiles/uvmap.dir/uvmap.c.o
+[ 86%] Linking C shared module uvmap.so
+[ 86%] Linking CXX shared module softlight.so
+[ 86%] Built target uvmap
+[ 87%] Building CXX object src/mixer2/value/CMakeFiles/value.dir/value.cpp.o
+[ 87%] Built target softlight
+[ 87%] Building CXX object src/mixer2/xfade0r/CMakeFiles/xfade0r.dir/xfade0r.cpp.o
+[ 87%] Linking CXX shared module subtract.so
+[ 87%] Built target subtract
+[ 87%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_wipe-up.dir/sleid0r_wipe-up.c.o
+[ 88%] Linking C shared module sleid0r_wipe-up.so
+[ 88%] Linking CXX shared module value.so
+[ 88%] Built target sleid0r_wipe-up
+[ 88%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_wipe-left.dir/sleid0r_wipe-left.c.o
+[ 88%] Built target value
+[ 88%] Linking C shared module sleid0r_wipe-left.so
+[ 88%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_wipe-barn-door-v.dir/sleid0r_wipe-barn-door-v.c.o
+[ 89%] Linking CXX shared module xfade0r.so
+[ 89%] Built target sleid0r_wipe-left
+[ 89%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_slide-right.dir/sleid0r_slide-right.c.o
+[ 90%] Linking C shared module sleid0r_wipe-barn-door-v.so
+[ 90%] Built target xfade0r
+[ 90%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_push-up.dir/sleid0r_push-up.c.o
+[ 90%] Built target sleid0r_wipe-barn-door-v
+[ 90%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_push-down.dir/sleid0r_push-down.c.o
+[ 90%] Linking C shared module sleid0r_slide-right.so
+[ 91%] Linking C shared module sleid0r_push-up.so
+[ 91%] Linking C shared module sleid0r_push-down.so
+[ 91%] Built target sleid0r_slide-right
+[ 91%] Built target sleid0r_push-up
+[ 91%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_wipe-right.dir/sleid0r_wipe-right.c.o
+[ 91%] Built target sleid0r_push-down
+[ 91%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_wipe-down.dir/sleid0r_wipe-down.c.o
+[ 91%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_wipe-barn-door-h.dir/sleid0r_wipe-barn-door-h.c.o
+[ 92%] Linking C shared module sleid0r_wipe-down.so
+[ 92%] Linking C shared module sleid0r_wipe-right.so
+[ 92%] Linking C shared module sleid0r_wipe-barn-door-h.so
+[ 92%] Built target sleid0r_wipe-right
+[ 92%] Built target sleid0r_wipe-down
+[ 92%] Built target sleid0r_wipe-barn-door-h
+[ 92%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_slide-left.dir/sleid0r_slide-left.c.o
+[ 92%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_push-right.dir/sleid0r_push-right.c.o
+[ 92%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_wipe-rect.dir/sleid0r_wipe-rect.c.o
+[ 92%] Linking C shared module sleid0r_push-right.so
+[ 93%] Linking C shared module sleid0r_slide-left.so
+[ 93%] Built target sleid0r_push-right
+[ 93%] Built target sleid0r_slide-left
+[ 93%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_wipe-circle.dir/sleid0r_wipe-circle.c.o
+[ 93%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_slide-up.dir/sleid0r_slide-up.c.o
+[ 94%] Linking C shared module sleid0r_wipe-rect.so
+[ 95%] Linking C shared module sleid0r_slide-up.so
+[ 95%] Built target sleid0r_wipe-rect
+[ 95%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_slide-down.dir/sleid0r_slide-down.c.o
+[ 95%] Linking C shared module sleid0r_wipe-circle.so
+[ 95%] Built target sleid0r_slide-up
+[ 95%] Building C object src/mixer2/sleid0r/CMakeFiles/sleid0r_push-left.dir/sleid0r_push-left.c.o
+[ 95%] Built target sleid0r_wipe-circle
+[ 95%] Linking C shared module sleid0r_slide-down.so
+[ 95%] Building C object src/mixer3/RGB/CMakeFiles/RGB.dir/RGB.c.o
+[ 96%] Linking C shared module sleid0r_push-left.so
+[ 96%] Built target sleid0r_slide-down
+[ 96%] Built target sleid0r_push-left
+[ 96%] Building C object test/CMakeFiles/cairo-input-contract.dir/cairo-input-contract.c.o
+[ 96%] Linking C shared module RGB.so
+[ 97%] Building C object test/CMakeFiles/whirlpinch0r-contract.dir/whirlpinch0r-contract.c.o
+[ 97%] Built target RGB
+[ 97%] Building C object test/CMakeFiles/motiondiff0r-contract.dir/motiondiff0r-contract.c.o
+[ 97%] Linking C executable cairo-input-contract
+[ 97%] Linking C executable whirlpinch0r-contract
+[ 97%] Built target whirlpinch0r-contract
+[ 97%] Built target cairo-input-contract
+[ 97%] Building C object test/CMakeFiles/harris0r-contract.dir/harris0r-contract.c.o
+[ 97%] Linking C executable motiondiff0r-contract
+[ 97%] Building C object test/CMakeFiles/slitscan0r-contract.dir/slitscan0r-contract.c.o
+[ 97%] Built target motiondiff0r-contract
+[ 97%] Linking C static library libruntime-smoke-plugins.a
+[ 97%] Built target runtime-smoke-plugins
+[ 97%] Linking C executable harris0r-contract
+[ 98%] Linking CXX static library libbundle-prototype-plugins.a
+[ 98%] Built target harris0r-contract
+[ 99%] Linking C executable slitscan0r-contract
+[ 99%] Built target bundle-prototype-symbol-collisions-objects
+[ 99%] Built target bundle-prototype-plugins
+[ 99%] Built target slitscan0r-contract
+[ 99%] Linking CXX shared library libbundle-symbol-probe.so
+[ 99%] Built target bundle-symbol-collision-fixture-objects
+[ 99%] Building C object test/CMakeFiles/runtime-smoke.dir/runtime-smoke.c.o
+[100%] Building C object test/CMakeFiles/bundle-api-contract.dir/bundle-api-contract.c.o
+[100%] Linking C executable runtime-smoke
+[100%] Built target bundle-symbol-probe
+[100%] Linking C executable bundle-api-contract
+[100%] Building CXX object test/CMakeFiles/bundle-prototype-contract.dir/bundle-prototype-contract.cpp.o
+[100%] Built target runtime-smoke
+[100%] Built target bundle-api-contract
+[100%] Linking CXX executable bundle-prototype-contract
+[100%] Built target bundle-prototype-contract
+[  1%] Built target frei0r-run
+[  1%] Built target rgbparade
+[  1%] Built target scale0tilt
+[  1%] Built target vectorscope
+[  1%] Built target cairoimagegrid
+[  2%] Built target cairogradient
+[  2%] Built target mirr0r
+[  3%] Built target shake0scillate
+[  3%] Built target 3dflippo
+[  4%] Linking C shared module 3dperspective.so
+[  4%] Built target 3dperspective
+[  5%] Built target aech0r
+[  6%] Built target alpha0ps_alpha0ps
+[  6%] Built target alpha0ps_alphagrad
+[  7%] Built target alpha0ps_alphaspot
+[  7%] Built target autothresh0ld
+[  8%] Built target balanc0r
+[  8%] Built target baltan
+[  9%] Built target bluescreen0r
+[ 10%] Built target bgsubtract0r
+[ 10%] Linking C shared module IIRblur.so
+[ 10%] Built target IIRblur
+[ 10%] Built target brightness
+[ 10%] Built target bw0r
+[ 10%] Built target cartoon
+[ 11%] Built target camerashake
+[ 12%] Built target cluster
+[ 12%] Built target colgate
+[ 12%] Built target coloradj_RGB
+[ 13%] Built target colordistance
+[ 13%] Built target colorenhance
+[ 13%] Built target colorize
+[ 14%] Built target colorhalftone
+[ 15%] Built target colortap
+[ 16%] Built target contrast0r
+[ 17%] Built target c0rners
+[ 17%] Built target curves
+[ 18%] Built target d90stairsteppingfix
+[ 19%] Built target defish0r
+[ 19%] Built target delay0r
+[ 20%] Built target delaygrab
+[ 20%] Built target denoise_hqdn3d
+[ 20%] Built target distort0r
+[ 21%] Built target dither
+[ 21%] Built target edgeglow
+[ 22%] Built target elastic_scale
+[ 22%] Linking C shared module emboss.so
+[ 22%] Built target emboss
+[ 23%] Built target equaliz0r
+[ 24%] Built target filmgrain
+[ 24%] Built target flarefx
+[ 25%] Built target flippo
+[ 25%] Built target gamma
+[ 26%] Built target gateweave
+[ 27%] Built target glow
+[ 27%] Built target glitch0r
+[ 28%] Built target harris0r
+[ 28%] Built target heatmap0r
+[ 28%] Built target hueshift0r
+[ 29%] Built target invert0r
+[ 30%] Built target kaleid0sc0pe
+[ 30%] Built target keyspillm0pup
+[ 30%] Linking C shared module lenscorrection.so
+[ 31%] Built target lenscorrection
+[ 31%] Built target letterb0xed
+[ 32%] Built target levels
+[ 33%] Built target lightgraffiti
+[ 34%] Built target luminance
+[ 34%] Built target mask0mate
+[ 35%] Built target medians
+[ 36%] Built target measure_pr0be
+[ 36%] Built target measure_pr0file
+[ 37%] Built target motiondiff0r
+[ 38%] Built target ndvi
+[ 38%] Built target nervous
+[ 38%] Built target normaliz0r
+[ 39%] Built target nosync0r
+[ 40%] Built target ntsc
+[ 41%] Built target perspective
+[ 41%] Built target pixeliz0r
+[ 42%] Built target pixels0rt
+[ 42%] Built target pixs0r
+[ 42%] Built target posterize
+[ 43%] Built target premultiply
+[ 43%] Built target primaries
+[ 44%] Built target R
+[ 45%] Built target G
+[ 45%] Built target B
+[ 46%] Built target rgbnoise
+[ 47%] Built target rgbsplit0r
+[ 47%] Built target saturat0r
+[ 48%] Built target scanline0r
+[ 49%] Linking C shared module select0r.so
+[ 49%] Built target select0r
+[ 49%] Built target sharpness
+[ 49%] Built target shadert0y
+[ 50%] Built target sigmoidaltransfer
+[ 50%] Built target slitscan0r
+[ 50%] Built target sobel
+[ 51%] Built target softglow
+[ 52%] Built target sopsat
+[ 52%] Built target spillsupress
+[ 53%] Built target squareblur
+[ 53%] Built target squigglevision
+[ 54%] Built target tehroxx0r
+[ 54%] Built target three_point_balance
+[ 55%] Built target threelay0r
+[ 55%] Built target threshold0r
+[ 56%] Built target timeout
+[ 56%] Built target tint0r
+[ 56%] Linking C shared module transparency.so
+[ 57%] Built target transparency
+[ 57%] Built target tutorial
+[ 58%] Built target twolay0r
+[ 59%] Built target vertigo
+[ 59%] Built target vignette
+[ 60%] Built target water
+[ 60%] Built target whirlpinch0r
+[ 61%] Built target plasma
+[ 61%] Built target ising0r
+[ 61%] Built target lissajous0r
+[ 62%] Built target nois0r
+[ 62%] Built target onecol0r
+[ 62%] Built target partik0l
+[ 62%] Built target test_pat_B
+[ 63%] Built target test_pat_C
+[ 63%] Built target test_pat_G
+[ 64%] Built target test_pat_I
+[ 64%] Built target test_pat_L
+[ 65%] Built target test_pat_R
+[ 66%] Built target cairoaffineblend
+[ 66%] Built target cairoblend
+[ 67%] Built target addition
+[ 67%] Built target addition_alpha
+[ 67%] Built target alphaatop
+[ 68%] Built target alphain
+[ 68%] Built target alphainjection
+[ 69%] Built target alphaout
+[ 69%] Built target alphaover
+[ 70%] Built target alphaxor
+[ 70%] Built target blend
+[ 71%] Built target burn
+[ 72%] Built target color_only
+[ 72%] Built target composition
+[ 72%] Linking CXX shared module darken.so
+[ 72%] Built target darken
+[ 73%] Built target difference
+[ 73%] Built target divide
+[ 74%] Built target dodge
+[ 74%] Built target euclid_eraser
+[ 74%] Built target grain_extract
+[ 75%] Built target grain_merge
+[ 75%] Built target hardlight
+[ 76%] Built target hue
+[ 76%] Built target lighten
+[ 76%] Built target multiply
+[ 77%] Built target overlay
+[ 78%] Linking CXX shared module saturation.so
+[ 78%] Built target saturation
+[ 78%] Linking CXX shared module screen.so
+[ 78%] Built target screen
+[ 78%] Built target softlight
+[ 79%] Built target subtract
+[ 79%] Built target uvmap
+[ 80%] Built target value
+[ 81%] Built target xfade0r
+[ 82%] Built target sleid0r_wipe-up
+[ 82%] Built target sleid0r_wipe-left
+[ 83%] Built target sleid0r_wipe-barn-door-v
+[ 83%] Built target sleid0r_slide-right
+[ 84%] Built target sleid0r_push-up
+[ 84%] Built target sleid0r_push-down
+[ 84%] Built target sleid0r_wipe-right
+[ 85%] Built target sleid0r_wipe-down
+[ 85%] Built target sleid0r_wipe-barn-door-h
+[ 86%] Built target sleid0r_slide-left
+[ 86%] Built target sleid0r_push-right
+[ 87%] Built target sleid0r_wipe-rect
+[ 87%] Built target sleid0r_wipe-circle
+[ 88%] Built target sleid0r_slide-up
+[ 88%] Built target sleid0r_slide-down
+[ 89%] Built target sleid0r_push-left
+[ 89%] Built target RGB
+[ 89%] Built target frei0r-meta
+[ 89%] Built target cairo-input-contract
+[ 90%] Built target whirlpinch0r-contract
+[ 90%] Built target motiondiff0r-contract
+[ 91%] Built target motiondiff0r-alloc
+[ 92%] Built target motiondiff0r-memory-contract
+[ 93%] Built target motiondiff0r-small-budget
+[ 93%] Built target aech0r-contract
+[ 94%] Built target harris0r-contract-plugin
+[ 94%] Built target harris0r-contract
+[ 94%] Built target slitscan0r-contract-plugin
+[ 95%] Built target slitscan0r-contract
+[ 95%] Built target runtime-smoke-brightness
+[ 96%] Built target runtime-smoke-brightness-descriptor
+[ 96%] Built target runtime-smoke-invert0r
+[ 96%] Built target runtime-smoke-invert0r-descriptor
+[ 96%] Built target runtime-smoke-plugins
+[ 97%] Built target bundle-prototype-addition
+[ 97%] Built target bundle-prototype-addition-descriptor
+[ 98%] Built target bundle-prototype-plugins
+[ 98%] Built target bundle-prototype-symbol-collisions-objects
+[ 98%] Built target symbol-collision-fixture-a
+[ 98%] Built target symbol-collision-fixture-b
+[ 98%] Built target bundle-symbol-collision-fixture-objects
+[ 99%] Built target runtime-smoke-registry
+[ 99%] Built target bundle-prototype-registry
+[ 99%] Built target bundle-prototype-contract
+[ 99%] Built target bundle-symbol-probe
+[100%] Built target bundle-api-contract
+[100%] Built target bundle-api-cxx
+[100%] Built target runtime-smoke
+Install the project...
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /usr/include
+-- Installing: /usr/include/frei0r.hpp
+-- Up-to-date: /usr/include/frei0r
+-- Installing: /usr/include/frei0r/colorspace.h
+-- Installing: /usr/include/frei0r/cfc.h
+-- Installing: /usr/include/frei0r/bundle.h
+-- Installing: /usr/include/frei0r/math.h
+-- Installing: /usr/include/frei0r/blur.h
+-- Installing: /usr/include/frei0r/cairo.h
+-- Installing: /usr/include/frei0r.h
+-- Installing: /usr/lib/pkgconfig/frei0r.pc
+-- Installing: /usr/lib/frei0r-1/rgbparade.so
+-- Installing: /usr/lib/frei0r-1/scale0tilt.so
+-- Installing: /usr/lib/frei0r-1/vectorscope.so
+-- Installing: /usr/lib/frei0r-1/cairoimagegrid.so
+-- Installing: /usr/lib/frei0r-1/cairogradient.so
+-- Installing: /usr/lib/frei0r-1/mirr0r.so
+-- Installing: /usr/lib/frei0r-1/shake0scillate.so
+-- Installing: /usr/lib/frei0r-1/3dflippo.so
+-- Installing: /usr/lib/frei0r-1/3dperspective.so
+-- Installing: /usr/lib/frei0r-1/aech0r.so
+-- Installing: /usr/lib/frei0r-1/alpha0ps_alpha0ps.so
+-- Installing: /usr/lib/frei0r-1/alpha0ps_alphagrad.so
+-- Installing: /usr/lib/frei0r-1/alpha0ps_alphaspot.so
+-- Installing: /usr/lib/frei0r-1/balanc0r.so
+-- Installing: /usr/lib/frei0r-1/baltan.so
+-- Installing: /usr/lib/frei0r-1/bluescreen0r.so
+-- Installing: /usr/lib/frei0r-1/bgsubtract0r.so
+-- Installing: /usr/lib/frei0r-1/IIRblur.so
+-- Installing: /usr/lib/frei0r-1/brightness.so
+-- Installing: /usr/lib/frei0r-1/bw0r.so
+-- Installing: /usr/lib/frei0r-1/cartoon.so
+-- Installing: /usr/lib/frei0r-1/camerashake.so
+-- Installing: /usr/lib/frei0r-1/cluster.so
+-- Installing: /usr/lib/frei0r-1/colgate.so
+-- Installing: /usr/lib/frei0r-1/coloradj_RGB.so
+-- Installing: /usr/lib/frei0r-1/colordistance.so
+-- Installing: /usr/lib/frei0r-1/colorenhance.so
+-- Installing: /usr/lib/frei0r-1/colorize.so
+-- Installing: /usr/lib/frei0r-1/colorhalftone.so
+-- Installing: /usr/lib/frei0r-1/colortap.so
+-- Installing: /usr/lib/frei0r-1/contrast0r.so
+-- Installing: /usr/lib/frei0r-1/c0rners.so
+-- Installing: /usr/lib/frei0r-1/curves.so
+-- Installing: /usr/lib/frei0r-1/d90stairsteppingfix.so
+-- Installing: /usr/lib/frei0r-1/defish0r.so
+-- Installing: /usr/lib/frei0r-1/delay0r.so
+-- Installing: /usr/lib/frei0r-1/delaygrab.so
+-- Installing: /usr/lib/frei0r-1/denoise_hqdn3d.so
+-- Installing: /usr/lib/frei0r-1/distort0r.so
+-- Installing: /usr/lib/frei0r-1/dither.so
+-- Installing: /usr/lib/frei0r-1/edgeglow.so
+-- Installing: /usr/lib/frei0r-1/elastic_scale.so
+-- Installing: /usr/lib/frei0r-1/emboss.so
+-- Installing: /usr/lib/frei0r-1/equaliz0r.so
+-- Installing: /usr/lib/frei0r-1/filmgrain.so
+-- Installing: /usr/lib/frei0r-1/flarefx.so
+-- Installing: /usr/lib/frei0r-1/flippo.so
+-- Installing: /usr/lib/frei0r-1/gamma.so
+-- Installing: /usr/lib/frei0r-1/gateweave.so
+-- Installing: /usr/lib/frei0r-1/glow.so
+-- Installing: /usr/lib/frei0r-1/glitch0r.so
+-- Installing: /usr/lib/frei0r-1/harris0r.so
+-- Installing: /usr/lib/frei0r-1/heatmap0r.so
+-- Installing: /usr/lib/frei0r-1/hueshift0r.so
+-- Installing: /usr/lib/frei0r-1/invert0r.so
+-- Installing: /usr/lib/frei0r-1/kaleid0sc0pe.so
+-- Installing: /usr/lib/frei0r-1/keyspillm0pup.so
+-- Installing: /usr/lib/frei0r-1/lenscorrection.so
+-- Installing: /usr/lib/frei0r-1/letterb0xed.so
+-- Installing: /usr/lib/frei0r-1/levels.so
+-- Installing: /usr/lib/frei0r-1/lightgraffiti.so
+-- Installing: /usr/lib/frei0r-1/luminance.so
+-- Installing: /usr/lib/frei0r-1/mask0mate.so
+-- Installing: /usr/lib/frei0r-1/medians.so
+-- Installing: /usr/lib/frei0r-1/measure_pr0be.so
+-- Installing: /usr/lib/frei0r-1/measure_pr0file.so
+-- Installing: /usr/lib/frei0r-1/motiondiff0r.so
+-- Installing: /usr/lib/frei0r-1/ndvi.so
+-- Installing: /usr/lib/frei0r-1/nervous.so
+-- Installing: /usr/lib/frei0r-1/normaliz0r.so
+-- Installing: /usr/lib/frei0r-1/nosync0r.so
+-- Installing: /usr/lib/frei0r-1/ntsc.so
+-- Installing: /usr/lib/frei0r-1/perspective.so
+-- Installing: /usr/lib/frei0r-1/pixeliz0r.so
+-- Installing: /usr/lib/frei0r-1/pixels0rt.so
+-- Installing: /usr/lib/frei0r-1/pixs0r.so
+-- Installing: /usr/lib/frei0r-1/posterize.so
+-- Installing: /usr/lib/frei0r-1/premultiply.so
+-- Installing: /usr/lib/frei0r-1/primaries.so
+-- Installing: /usr/lib/frei0r-1/R.so
+-- Installing: /usr/lib/frei0r-1/G.so
+-- Installing: /usr/lib/frei0r-1/B.so
+-- Installing: /usr/lib/frei0r-1/rgbnoise.so
+-- Installing: /usr/lib/frei0r-1/rgbsplit0r.so
+-- Installing: /usr/lib/frei0r-1/saturat0r.so
+-- Installing: /usr/lib/frei0r-1/scanline0r.so
+-- Installing: /usr/lib/frei0r-1/select0r.so
+-- Installing: /usr/lib/frei0r-1/sharpness.so
+-- Installing: /usr/lib/frei0r-1/shadert0y.so
+-- Installing: /usr/lib/frei0r-1/sigmoidaltransfer.so
+-- Installing: /usr/lib/frei0r-1/slitscan0r.so
+-- Installing: /usr/lib/frei0r-1/sobel.so
+-- Installing: /usr/lib/frei0r-1/softglow.so
+-- Installing: /usr/lib/frei0r-1/sopsat.so
+-- Installing: /usr/lib/frei0r-1/spillsupress.so
+-- Installing: /usr/lib/frei0r-1/squareblur.so
+-- Installing: /usr/lib/frei0r-1/squigglevision.so
+-- Installing: /usr/lib/frei0r-1/tehroxx0r.so
+-- Installing: /usr/lib/frei0r-1/three_point_balance.so
+-- Installing: /usr/lib/frei0r-1/threelay0r.so
+-- Installing: /usr/lib/frei0r-1/threshold0r.so
+-- Installing: /usr/lib/frei0r-1/timeout.so
+-- Installing: /usr/lib/frei0r-1/tint0r.so
+-- Installing: /usr/lib/frei0r-1/transparency.so
+-- Installing: /usr/lib/frei0r-1/twolay0r.so
+-- Installing: /usr/lib/frei0r-1/vertigo.so
+-- Installing: /usr/lib/frei0r-1/vignette.so
+-- Installing: /usr/lib/frei0r-1/water.so
+-- Installing: /usr/lib/frei0r-1/whirlpinch0r.so
+-- Installing: /usr/lib/frei0r-1/plasma.so
+-- Installing: /usr/lib/frei0r-1/ising0r.so
+-- Installing: /usr/lib/frei0r-1/lissajous0r.so
+-- Installing: /usr/lib/frei0r-1/nois0r.so
+-- Installing: /usr/lib/frei0r-1/onecol0r.so
+-- Installing: /usr/lib/frei0r-1/partik0l.so
+-- Installing: /usr/lib/frei0r-1/test_pat_B.so
+-- Installing: /usr/lib/frei0r-1/test_pat_C.so
+-- Installing: /usr/lib/frei0r-1/test_pat_G.so
+-- Installing: /usr/lib/frei0r-1/test_pat_I.so
+-- Installing: /usr/lib/frei0r-1/test_pat_L.so
+-- Installing: /usr/lib/frei0r-1/test_pat_R.so
+-- Installing: /usr/lib/frei0r-1/cairoaffineblend.so
+-- Installing: /usr/lib/frei0r-1/cairoblend.so
+-- Installing: /usr/lib/frei0r-1/addition.so
+-- Installing: /usr/lib/frei0r-1/addition_alpha.so
+-- Installing: /usr/lib/frei0r-1/alphaatop.so
+-- Installing: /usr/lib/frei0r-1/alphain.so
+-- Installing: /usr/lib/frei0r-1/alphainjection.so
+-- Installing: /usr/lib/frei0r-1/alphaout.so
+-- Installing: /usr/lib/frei0r-1/alphaover.so
+-- Installing: /usr/lib/frei0r-1/alphaxor.so
+-- Installing: /usr/lib/frei0r-1/blend.so
+-- Installing: /usr/lib/frei0r-1/burn.so
+-- Installing: /usr/lib/frei0r-1/color_only.so
+-- Installing: /usr/lib/frei0r-1/composition.so
+-- Installing: /usr/lib/frei0r-1/darken.so
+-- Installing: /usr/lib/frei0r-1/difference.so
+-- Installing: /usr/lib/frei0r-1/divide.so
+-- Installing: /usr/lib/frei0r-1/dodge.so
+-- Installing: /usr/lib/frei0r-1/euclid_eraser.so
+-- Installing: /usr/lib/frei0r-1/grain_extract.so
+-- Installing: /usr/lib/frei0r-1/grain_merge.so
+-- Installing: /usr/lib/frei0r-1/hardlight.so
+-- Installing: /usr/lib/frei0r-1/hue.so
+-- Installing: /usr/lib/frei0r-1/lighten.so
+-- Installing: /usr/lib/frei0r-1/multiply.so
+-- Installing: /usr/lib/frei0r-1/overlay.so
+-- Installing: /usr/lib/frei0r-1/saturation.so
+-- Installing: /usr/lib/frei0r-1/screen.so
+-- Installing: /usr/lib/frei0r-1/softlight.so
+-- Installing: /usr/lib/frei0r-1/subtract.so
+-- Installing: /usr/lib/frei0r-1/uvmap.so
+-- Installing: /usr/lib/frei0r-1/value.so
+-- Installing: /usr/lib/frei0r-1/xfade0r.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_wipe-up.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_wipe-left.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_wipe-barn-door-v.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_slide-right.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_push-up.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_push-down.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_wipe-right.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_wipe-down.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_wipe-barn-door-h.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_slide-left.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_push-right.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_wipe-rect.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_wipe-circle.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_slide-up.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_slide-down.so
+-- Installing: /usr/lib/frei0r-1/sleid0r_push-left.so
+-- Installing: /usr/lib/frei0r-1/RGB.so
+3.7.1
+Updated registry for frei0r-plugins to version 3.7.1
+[VERSION] frei0r-plugins: 3.7.1
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package frei0r-plugins in /var/lib/custom-packages/
