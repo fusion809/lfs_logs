@@ -1,0 +1,186 @@
+[09:35:28] Found custom package for pkgconf, bypassing BLFS aliases.
+[09:35:28] Custom package detected at /home/fusion809/lfs_packaging/pkgconf (package: pkgconf)
+[09:35:28] Extracting dependencies for custom package 'pkgconf'...
+[09:35:28] Required deps: bash coreutils glibc meson ninja tar xz 
+[09:35:28] Dependency 'bash' already installed.
+[09:35:28] Dependency 'coreutils' already installed.
+[09:35:28] Dependency 'glibc' already installed.
+[09:35:28] Dependency 'meson' already installed.
+[09:35:28] Dependency 'ninja' already installed.
+[09:35:28] Dependency 'tar' already installed.
+[09:35:28] Dependency 'xz' already installed.
+[VERSION] pkgconf: 3.0.11
+[09:35:28] Installing pkgconf version: 3.0.11
+[09:35:28] Starting remote custom build for pkgconf...
+--2026-11-15 09:35:56--  https://github.com/pkgconf/pkgconf/releases/download/pkgconf-3.0.11/pkgconf-3.0.11.tar.xz
+Resolving github.com (github.com)... 4.196.32.112
+Connecting to github.com (github.com)|4.196.32.112|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/4180110/80f346cf-ef22-46e2-8a31-3c94548b3fb3?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-15T00%3A13%3A35Z&rscd=attachment%3B+filename%3Dpkgconf-3.0.11.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-14T23%3A12%3A37Z&ske=2026-11-15T00%3A13%3A35Z&sks=b&skv=2018-11-09&sig=bGBC2KowPFd%2B6CPAa9eb7bzsFb4gd%2FZ6IpScpUqVG9M%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NDY5OTY1NiwibmJmIjoxNzk0Njk5MzU2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.ZPNpUxElA7ENcAwOXokxzxO3kh0NX5EbYozDbZRhEGA&response-content-disposition=attachment%3B%20filename%3Dpkgconf-3.0.11.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2026-11-15 09:35:56--  https://release-assets.githubusercontent.com/github-production-release-asset/4180110/80f346cf-ef22-46e2-8a31-3c94548b3fb3?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-15T00%3A13%3A35Z&rscd=attachment%3B+filename%3Dpkgconf-3.0.11.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-14T23%3A12%3A37Z&ske=2026-11-15T00%3A13%3A35Z&sks=b&skv=2018-11-09&sig=bGBC2KowPFd%2B6CPAa9eb7bzsFb4gd%2FZ6IpScpUqVG9M%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NDY5OTY1NiwibmJmIjoxNzk0Njk5MzU2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.ZPNpUxElA7ENcAwOXokxzxO3kh0NX5EbYozDbZRhEGA&response-content-disposition=attachment%3B%20filename%3Dpkgconf-3.0.11.tar.xz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 429908 (420K) [application/octet-stream]
+Saving to: ‘pkgconf-3.0.11.tar.xz’
+
+pkgconf-3.0.11.tar.   0%[                    ]       0  --.-KB/s               pkgconf-3.0.11.tar. 100%[===================>] 419.83K  --.-KB/s    in 0.06s   
+
+2026-11-15 09:35:56 (6.41 MB/s) - ‘pkgconf-3.0.11.tar.xz’ saved [429908/429908]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11
+Build dir: /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/build
+Build type: native build
+Project name: pkgconf
+Project version: 3.0.11
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -Wdate-time: YES 
+Compiler for C supports arguments -Wformat=2: YES 
+Compiler for C supports arguments -Wimplicit-function-declaration: YES 
+Compiler for C supports arguments -Wmisleading-indentation: YES 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wmissing-variable-declarations: YES 
+Compiler for C supports arguments -Wnested-externs: YES 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Checking for function "getc_unlocked" : YES 
+Header "stdio.h" has symbol "getc_unlocked" : YES 
+Checking for function "strndup" : YES 
+Header "string.h" has symbol "strndup" : YES 
+Checking for function "strdup" : YES 
+Header "string.h" has symbol "strdup" : YES 
+Checking for function "strncasecmp" : YES 
+Header "strings.h" has symbol "strncasecmp" : YES 
+Checking for function "strcasecmp" : YES 
+Header "strings.h" has symbol "strcasecmp" : YES 
+Checking for function "reallocarray" : YES 
+Header "stdlib.h" has symbol "reallocarray" : YES 
+Checking for function "pledge" : NO 
+Checking for function "unveil" : NO 
+Checking for function "readlinkat" : YES 
+Header "unistd.h" has symbol "readlinkat" : YES 
+Checking for function "mkdtemp" : YES 
+Header "stdlib.h" has symbol "mkdtemp" : YES 
+Checking for function "nl_langinfo_l" : YES 
+Header "langinfo.h" has symbol "nl_langinfo_l" : YES 
+Configuring config.h using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Compiler for C supports link arguments -Wl,--wrap=calloc: YES 
+Build targets in project: 25
+
+pkgconf 3.0.11
+
+  User defined options
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_audit.c.o
+[2/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_argvsplit.c.o
+[3/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_bufferset.c.o
+[4/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_bsdstubs.c.o
+[5/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_buffer.c.o
+[6/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_bytecode.c.o
+[7/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_cache.c.o
+[8/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_fileio.c.o
+[9/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_dependency.c.o
+[10/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_client.c.o
+[11/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_output.c.o
+[12/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_license.c.o
+[13/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_fragment.c.o
+[14/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_parser.c.o
+[15/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_personality.c.o
+[16/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_path.c.o
+[17/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_tuple.c.o
+[18/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_queue.c.o
+[19/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_variable.c.o
+[20/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_version.c.o
+[21/66] Compiling C object pkgconf.p/cli_main.c.o
+[22/66] Compiling C object libpkgconf.so.8.0.0.p/libpkgconf_pkg.c.o
+[23/66] Linking target libpkgconf.so.8.0.0
+[24/66] Compiling C object pkgconf.p/cli_getopt_long.c.o
+[25/66] Compiling C object pkgconf.p/cli_renderer-msvc.c.o
+[26/66] Generating symbol file libpkgconf.so.8.0.0.p/libpkgconf.so.8.0.0.symbols
+[27/66] Compiling C object pkgconf.p/cli_core.c.o
+[28/66] Compiling C object bomtool.p/cli_getopt_long.c.o
+[29/66] Compiling C object bomtool.p/cli_bomtool_main.c.o
+[30/66] Compiling C object spdxtool.p/cli_spdxtool_main.c.o
+[31/66] Compiling C object spdxtool.p/cli_spdxtool_software.c.o
+[32/66] Compiling C object spdxtool.p/cli_spdxtool_serialize.c.o
+[33/66] Compiling C object spdxtool.p/cli_spdxtool_simplelicensing.c.o
+[34/66] Compiling C object spdxtool.p/cli_spdxtool_core.c.o
+[35/66] Compiling C object spdxtool.p/cli_spdxtool_util.c.o
+[36/66] Compiling C object spdxtool.p/cli_spdxtool_generate.c.o
+[37/66] Compiling C object spdxtool.p/cli_getopt_long.c.o
+[38/66] Compiling C object pccritic.p/cli_pccritic_main.c.o
+[39/66] Compiling C object pccritic.p/cli_pccritic_critic.c.o
+[40/66] Compiling C object pccritic.p/cli_getopt_long.c.o
+[41/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_audit.c.o
+[42/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_argvsplit.c.o
+[43/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_bufferset.c.o
+[44/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_bsdstubs.c.o
+[45/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_cache.c.o
+[46/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_bytecode.c.o
+[47/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_buffer.c.o
+[48/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_client.c.o
+[49/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_fileio.c.o
+[50/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_dependency.c.o
+[51/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_license.c.o
+[52/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_output.c.o
+[53/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_parser.c.o
+[54/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_fragment.c.o
+[55/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_personality.c.o
+[56/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_path.c.o
+[57/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_tuple.c.o
+[58/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_queue.c.o
+[59/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_variable.c.o
+[60/66] Linking target pkgconf
+[61/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_version.c.o
+[62/66] Linking target bomtool
+[63/66] Linking target spdxtool
+[64/66] Linking target pccritic
+[65/66] Compiling C object libpkgconf-fault.a.p/libpkgconf_pkg.c.o
+[66/66] Linking static target libpkgconf-fault.a
+[0/1] Installing files
+Installing libpkgconf.so.8.0.0 to /usr/lib
+Installing pkgconf to /usr/bin
+Installing bomtool to /usr/bin
+Installing spdxtool to /usr/bin
+Installing pccritic to /usr/bin
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/libpkgconf/libpkgconf.h to /usr/include/pkgconf/libpkgconf
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/libpkgconf/stdinc.h to /usr/include/pkgconf/libpkgconf
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/libpkgconf/iter.h to /usr/include/pkgconf/libpkgconf
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/libpkgconf/bsdstubs.h to /usr/include/pkgconf/libpkgconf
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/libpkgconf/libpkgconf-api.h to /usr/include/pkgconf/libpkgconf
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/man/bomtool.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/man/pkgconf.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/man/pkg.m4.7 to /usr/share/man/man7
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/man/pc.5 to /usr/share/man/man5
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/man/pkgconf-personality.5 to /usr/share/man/man5
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/man/spdxtool.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/man/pccritic.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/build/meson-private/libpkgconf.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/pkg.m4 to /usr/share/aclocal
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/AUTHORS to /usr/share/doc/pkgconf
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/README.md to /usr/share/doc/pkgconf
+Installing /home/fusion809/lfs_packaging/pkgconf/pkgconf-3.0.11/COPYING to /usr/share/doc/pkgconf
+Installing symlink pointing to libpkgconf.so.8.0.0 to /usr/lib/libpkgconf.so.8
+Installing symlink pointing to libpkgconf.so.8 to /usr/lib/libpkgconf.so
+3.0.11
+Updated registry for pkgconf to version 3.0.11
+[VERSION] pkgconf: 3.0.11
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package pkgconf in /var/lib/custom-packages/
