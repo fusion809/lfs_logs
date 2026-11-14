@@ -1,0 +1,735 @@
+[04:11:28] Found custom package for syntax-highlighting, bypassing BLFS aliases.
+[04:11:28] Custom package detected at /home/fusion809/lfs_packaging/syntax-highlighting (package: syntax-highlighting)
+[04:11:28] Extracting dependencies for custom package 'syntax-highlighting'...
+[04:11:28] Required deps: brotli bzip2 dbus double-conversion e2fsprogs elfutils expat fontconfig freetype gcc glib2 glibc graphite2 harfbuzz icu keyutils libdrm libffi libglvnd libpciaccess libpng libx11 libxau libxcb libxdmcp libxext libxkbcommon libxml2 libxshmfence libxxf86vm llvm lm-sensors mesa mitkrb openssl pcre2 qt6 spirv-tools systemd wayland xz zlib zstd 
+[04:11:28] Dependency 'brotli' already installed.
+[04:11:28] Dependency 'bzip2' already installed.
+[04:11:28] Dependency 'dbus' already installed.
+[04:11:28] Dependency 'double-conversion' already installed.
+[04:11:28] Dependency 'e2fsprogs' already installed.
+[04:11:28] Dependency 'elfutils' already installed.
+[04:11:28] Dependency 'expat' already installed.
+[04:11:28] Dependency 'fontconfig' already installed.
+[04:11:28] Dependency 'freetype' already installed.
+[04:11:28] Dependency 'gcc' already installed.
+[04:11:28] Dependency 'glib2' already installed.
+[04:11:28] Dependency 'glibc' already installed.
+[04:11:28] Dependency 'graphite2' already installed.
+[04:11:28] Dependency 'harfbuzz' already installed.
+[04:11:28] Dependency 'icu' already installed.
+[04:11:28] Dependency 'keyutils' already installed.
+[04:11:28] Dependency 'libdrm' already installed.
+[04:11:28] Dependency 'libffi' already installed.
+[04:11:28] Dependency 'libglvnd' already installed.
+[04:11:28] Dependency 'libpciaccess' already installed.
+[04:11:28] Dependency 'libpng' already installed.
+[04:11:28] Dependency 'libx11' already installed.
+[04:11:28] Dependency 'libxau' already installed.
+[04:11:28] Dependency 'libxcb' already installed.
+[04:11:28] Dependency 'libxdmcp' already installed.
+[04:11:28] Dependency 'libxext' already installed.
+[04:11:28] Dependency 'libxkbcommon' already installed.
+[04:11:28] Dependency 'libxml2' already installed.
+[04:11:28] Dependency 'libxshmfence' already installed.
+[04:11:28] Dependency 'libxxf86vm' already installed.
+[04:11:28] Dependency 'llvm' already installed.
+[04:11:28] Dependency 'lm-sensors' already installed.
+[04:11:28] Dependency 'mesa' already installed.
+[04:11:28] Dependency 'mitkrb' already installed.
+[04:11:28] Dependency 'openssl' already installed.
+[04:11:28] Dependency 'pcre2' already installed.
+[04:11:28] Dependency 'qt6' already installed.
+[04:11:28] Dependency 'spirv-tools' already installed.
+[04:11:28] Dependency 'systemd' already installed.
+[04:11:28] Dependency 'wayland' already installed.
+[04:11:28] Dependency 'xz' already installed.
+[04:11:28] Dependency 'zlib' already installed.
+[04:11:28] Dependency 'zstd' already installed.
+[VERSION] syntax-highlighting: 6.32.0
+[04:11:28] Installing syntax-highlighting version: 6.32.0
+[04:11:28] Starting remote custom build for syntax-highlighting...
+--2026-11-14 04:11:31--  https://download.kde.org/stable/frameworks/6.32/syntax-highlighting-6.32.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://mirrors.xtom.au/kde/stable/frameworks/6.32/syntax-highlighting-6.32.0.tar.xz [following]
+--2026-11-14 04:11:33--  https://mirrors.xtom.au/kde/stable/frameworks/6.32/syntax-highlighting-6.32.0.tar.xz
+Resolving mirrors.xtom.au (mirrors.xtom.au)... 146.19.0.8, 2a11:3::8
+Connecting to mirrors.xtom.au (mirrors.xtom.au)|146.19.0.8|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3960672 (3.8M) [application/octet-stream]
+Saving to: ‘syntax-highlighting-6.32.0.tar.xz’
+
+          syntax-hi   0%[                    ]       0  --.-KB/s                        syntax-hig  23%[===>                ] 927.52K  4.49MB/s                       syntax-high  71%[=============>      ]   2.72M  5.99MB/s               syntax-highlighting 100%[===================>]   3.78M  8.08MB/s    in 0.5s    
+
+2026-11-14 04:11:34 (8.08 MB/s) - ‘syntax-highlighting-6.32.0.tar.xz’ saved [3960672/3960672]
+
+syntax-highlighting-6.32.0.tar.xz already present and appears valid.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:9 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/syntax-highlighting/syntax-highlighting-6.32.0/build/prefix.sh to set the environment for KSyntaxHighlighting.
+fatal: no upstream configured for branch 'master'
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Failed to find XercesC (missing: XercesC_LIBRARY XercesC_INCLUDE_DIR XercesC_VERSION) 
+-- Found Perl: /usr/bin/perl (found version "5.44.0")
+-- Found Python: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following features have been enabled:
+
+ * SYNTAX_RESOURCE, Bundle the syntax definition files inside the library as resources
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6Core
+ * Qt6Qml
+ * Qt6Test (required version >= 6.10.0)
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.12.0)
+ * Qt6Gui (required version >= 6.10.0)
+ * Python
+   Auto-generate Jinja syntax definition files.
+ * Qt6LinguistTools
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.32.0)
+ * Perl
+   Auto-generate PHP syntax definition files.
+ * Qt6, <http://qt-project.org/>
+
+-- The following features have been disabled:
+
+ * FEATURE_NO_STANDARD_PATHS, Skip lookup of syntax and theme definitions in QStandardPaths locations
+
+-- The following OPTIONAL packages have not been found:
+
+ * XercesC
+   Compile-time validation of syntax definition files.
+
+-- Configuring done (7.2s)
+-- Generating done (0.3s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_PYTHON_BINDINGS
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/syntax-highlighting/syntax-highlighting-6.32.0/build
+[  1%] Generating ECMPoQm/ar/syntaxhighlighting6_qt.qm
+[  2%] Generating ECMPoQm/ast/syntaxhighlighting6_qt.qm
+[  3%] Generating ECMPoQm/af/syntaxhighlighting6_qt.qm
+[  3%] Built target translations_3
+[  4%] Generating ECMPoQm/az/syntaxhighlighting6_qt.qm
+[  4%] Built target translations_2
+[  4%] Built target translations_1
+[  5%] Generating ECMPoQm/be/syntaxhighlighting6_qt.qm
+[  5%] Built target translations_4
+[  5%] Generating ECMPoQm/bg/syntaxhighlighting6_qt.qm
+[  5%] Generating ECMPoQm/bn/syntaxhighlighting6_qt.qm
+[  5%] Built target translations_6
+[  5%] Built target translations_5
+[  5%] Generating ECMPoQm/br/syntaxhighlighting6_qt.qm
+[  5%] Generating ECMPoQm/bs/syntaxhighlighting6_qt.qm
+[  5%] Built target translations_7
+[  5%] Generating ECMPoQm/ca/syntaxhighlighting6_qt.qm
+[  5%] Built target translations_10
+[  5%] Built target translations_8
+[  5%] Built target translations_9
+[  6%] Generating ECMPoQm/ca@valencia/syntaxhighlighting6_qt.qm
+[  8%] Generating ECMPoQm/cy/syntaxhighlighting6_qt.qm
+[  8%] Generating ECMPoQm/cs/syntaxhighlighting6_qt.qm
+[  8%] Built target translations_11
+[  8%] Built target translations_12
+[  8%] Generating ECMPoQm/da/syntaxhighlighting6_qt.qm
+[  9%] Generating ECMPoQm/de/syntaxhighlighting6_qt.qm
+[  9%] Built target translations_13
+[  9%] Generating ECMPoQm/el/syntaxhighlighting6_qt.qm
+[  9%] Built target translations_14
+[  9%] Built target translations_15
+[ 10%] Generating ECMPoQm/en_GB/syntaxhighlighting6_qt.qm
+[ 10%] Generating ECMPoQm/eo/syntaxhighlighting6_qt.qm
+[ 10%] Built target translations_16
+[ 10%] Built target translations_18
+[ 10%] Generating ECMPoQm/es/syntaxhighlighting6_qt.qm
+[ 10%] Generating ECMPoQm/et/syntaxhighlighting6_qt.qm
+[ 10%] Built target translations_19
+[ 11%] Generating ECMPoQm/eu/syntaxhighlighting6_qt.qm
+[ 11%] Built target translations_20
+[ 11%] Built target translations_17
+[ 11%] Generating ECMPoQm/fa/syntaxhighlighting6_qt.qm
+[ 12%] Generating ECMPoQm/fi/syntaxhighlighting6_qt.qm
+[ 12%] Built target translations_21
+[ 12%] Generating ECMPoQm/fr/syntaxhighlighting6_qt.qm
+[ 12%] Built target translations_22
+[ 12%] Built target translations_23
+[ 13%] Generating ECMPoQm/fy/syntaxhighlighting6_qt.qm
+[ 13%] Generating ECMPoQm/ga/syntaxhighlighting6_qt.qm
+[ 13%] Built target translations_24
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+[ 14%] Generating ECMPoQm/gl/syntaxhighlighting6_qt.qm
+[ 14%] Built target translations_26
+[ 14%] Built target translations_25
+[ 14%] Built target translations_27
+[ 14%] Generating ECMPoQm/gu/syntaxhighlighting6_qt.qm
+[ 14%] Generating ECMPoQm/he/syntaxhighlighting6_qt.qm
+[ 14%] Generating ECMPoQm/hi/syntaxhighlighting6_qt.qm
+[ 14%] Built target translations_29
+[ 14%] Built target translations_28
+[ 16%] Generating ECMPoQm/hr/syntaxhighlighting6_qt.qm
+[ 16%] Built target translations_30
+[ 16%] Generating ECMPoQm/hsb/syntaxhighlighting6_qt.qm
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+[ 17%] Generating ECMPoQm/hu/syntaxhighlighting6_qt.qm
+[ 17%] Built target translations_32
+[ 17%] Built target translations_31
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+[ 17%] Generating ECMPoQm/ia/syntaxhighlighting6_qt.qm
+[ 18%] Generating ECMPoQm/id/syntaxhighlighting6_qt.qm
+[ 18%] Built target translations_33
+[ 18%] Built target translations_35
+[ 18%] Generating ECMPoQm/is/syntaxhighlighting6_qt.qm
+[ 19%] Generating ECMPoQm/it/syntaxhighlighting6_qt.qm
+[ 19%] Built target translations_34
+[ 19%] Generating ECMPoQm/ja/syntaxhighlighting6_qt.qm
+[ 19%] Built target translations_36
+[ 19%] Built target translations_37
+[ 19%] Built target translations_38
+[ 19%] Generating ECMPoQm/ka/syntaxhighlighting6_qt.qm
+[ 19%] Generating ECMPoQm/kk/syntaxhighlighting6_qt.qm
+[ 20%] Generating ECMPoQm/km/syntaxhighlighting6_qt.qm
+[ 20%] Built target translations_39
+[ 20%] Generating ECMPoQm/ko/syntaxhighlighting6_qt.qm
+[ 20%] Built target translations_41
+[ 20%] Built target translations_40
+[ 20%] Generating ECMPoQm/lb/syntaxhighlighting6_qt.qm
+[ 21%] Generating ECMPoQm/ku/syntaxhighlighting6_qt.qm
+[ 21%] Built target translations_42
+[ 21%] Built target translations_43
+[ 22%] Generating ECMPoQm/lt/syntaxhighlighting6_qt.qm
+[ 22%] Built target translations_44
+[ 22%] Generating ECMPoQm/lv/syntaxhighlighting6_qt.qm
+[ 24%] Generating ECMPoQm/mai/syntaxhighlighting6_qt.qm
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+[ 24%] Built target translations_46
+[ 24%] Built target translations_45
+[ 24%] Built target translations_47
+[ 24%] Generating ECMPoQm/mk/syntaxhighlighting6_qt.qm
+[ 24%] Generating ECMPoQm/ml/syntaxhighlighting6_qt.qm
+[ 24%] Generating ECMPoQm/mr/syntaxhighlighting6_qt.qm
+[ 24%] Built target translations_49
+[ 24%] Built target translations_50
+[ 24%] Built target translations_48
+[ 25%] Generating ECMPoQm/ms/syntaxhighlighting6_qt.qm
+[ 25%] Generating ECMPoQm/nb/syntaxhighlighting6_qt.qm
+[ 26%] Generating ECMPoQm/nds/syntaxhighlighting6_qt.qm
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+[ 26%] Built target translations_52
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+[ 26%] Built target translations_51
+[ 26%] Generating ECMPoQm/ne/syntaxhighlighting6_qt.qm
+[ 27%] Generating ECMPoQm/nl/syntaxhighlighting6_qt.qm
+[ 27%] Built target translations_53
+[ 27%] Built target translations_55
+[ 27%] Generating ECMPoQm/nn/syntaxhighlighting6_qt.qm
+[ 27%] Built target translations_54
+[ 28%] Generating ECMPoQm/oc/syntaxhighlighting6_qt.qm
+[ 28%] Built target translations_56
+[ 28%] Generating ECMPoQm/pa/syntaxhighlighting6_qt.qm
+[ 29%] Generating ECMPoQm/pl/syntaxhighlighting6_qt.qm
+[ 29%] Built target translations_57
+[ 29%] Built target translations_59
+[ 29%] Generating ECMPoQm/pt/syntaxhighlighting6_qt.qm
+[ 29%] Built target translations_58
+[ 31%] Generating ECMPoQm/pt_BR/syntaxhighlighting6_qt.qm
+[ 31%] Built target translations_60
+[ 31%] Generating ECMPoQm/ro/syntaxhighlighting6_qt.qm
+[ 31%] Built target translations_61
+[ 32%] Generating ECMPoQm/ru/syntaxhighlighting6_qt.qm
+[ 32%] Generating ECMPoQm/sa/syntaxhighlighting6_qt.qm
+[ 32%] Built target translations_64
+Removed plural forms as the target language has less forms.
+If this sounds wrong, possibly the target language is not set or recognized.
+[ 32%] Built target translations_62
+[ 33%] Generating ECMPoQm/se/syntaxhighlighting6_qt.qm
+[ 33%] Generating ECMPoQm/si/syntaxhighlighting6_qt.qm
+[ 33%] Built target translations_63
+[ 34%] Generating ECMPoQm/sk/syntaxhighlighting6_qt.qm
+[ 34%] Built target translations_65
+[ 34%] Generating ECMPoQm/sl/syntaxhighlighting6_qt.qm
+[ 34%] Built target translations_67
+[ 34%] Built target translations_66
+[ 34%] Built target translations_68
+[ 35%] Generating ECMPoQm/sq/syntaxhighlighting6_qt.qm
+[ 35%] Generating ECMPoQm/sr/syntaxhighlighting6_qt.qm
+[ 36%] Generating ECMPoQm/sr@ijekavian/syntaxhighlighting6_qt.qm
+[ 36%] Built target translations_70
+[ 36%] Built target translations_69
+[ 36%] Built target translations_71
+[ 36%] Generating ECMPoQm/sr@ijekavianlatin/syntaxhighlighting6_qt.qm
+[ 37%] Generating ECMPoQm/sr@latin/syntaxhighlighting6_qt.qm
+[ 37%] Generating ECMPoQm/sv/syntaxhighlighting6_qt.qm
+[ 37%] Built target translations_72
+[ 37%] Built target translations_73
+[ 37%] Built target translations_74
+[ 39%] Generating ECMPoQm/ta/syntaxhighlighting6_qt.qm
+[ 39%] Generating ECMPoQm/tg/syntaxhighlighting6_qt.qm
+[ 40%] Generating ECMPoQm/th/syntaxhighlighting6_qt.qm
+[ 40%] Built target translations_75
+[ 40%] Built target translations_76
+[ 40%] Built target translations_77
+[ 40%] Generating ECMPoQm/tr/syntaxhighlighting6_qt.qm
+[ 41%] Generating ECMPoQm/uk/syntaxhighlighting6_qt.qm
+[ 41%] Generating ECMPoQm/ug/syntaxhighlighting6_qt.qm
+[ 41%] Built target translations_78
+[ 41%] Built target translations_80
+[ 42%] Generating ECMPoQm/uz/syntaxhighlighting6_qt.qm
+[ 42%] Built target translations_79
+[ 42%] Generating ECMPoQm/uz@cyrillic/syntaxhighlighting6_qt.qm
+[ 43%] Generating ECMPoQm/vi/syntaxhighlighting6_qt.qm
+[ 43%] Built target translations_81
+[ 43%] Built target translations_82
+[ 43%] Built target translations_83
+[ 43%] Generating ECMPoQm/wa/syntaxhighlighting6_qt.qm
+[ 44%] Generating ECMPoQm/xh/syntaxhighlighting6_qt.qm
+[ 44%] Generating ECMPoQm/zh_CN/syntaxhighlighting6_qt.qm
+[ 44%] Built target translations_86
+[ 44%] Built target translations_84
+[ 45%] Generating ECMPoQm/zh_TW/syntaxhighlighting6_qt.qm
+[ 45%] Built target translations_85
+[ 47%] Generating generated/syntax/html-php.xml
+[ 47%] Generating generated/syntax/css-php.xml
+[ 47%] Built target translations_87
+[ 48%] Generating generated/syntax/javascript-php.xml
+[ 48%] Built target html-php.xml
+[ 48%] Built target css-php.xml
+[ 48%] Built target javascript-php.xml
+[ 48%] Generating generated/syntax/javascript-react-php.xml
+[ 49%] Generating generated/syntax/typescript-php.xml
+[ 49%] Generating generated/syntax/mustache-php.xml
+[ 49%] Built target javascript-react-php.xml
+[ 49%] Built target mustache-php.xml
+[ 49%] Built target typescript-php.xml
+[ 49%] Generating generated/syntax/html-twig.xml
+[ 50%] Generating generated/syntax/css-twig.xml
+[ 50%] Built target html-twig.xml
+[ 51%] Generating generated/syntax/javascript-twig.xml
+[ 51%] Built target css-twig.xml
+[ 51%] Generating generated/syntax/javascript-react-twig.xml
+[ 51%] Built target javascript-twig.xml
+[ 51%] Generating generated/syntax/typescript-twig.xml
+[ 51%] Built target javascript-react-twig.xml
+[ 51%] Generating generated/syntax/doxygenlua.xml
+[ 51%] Built target typescript-twig.xml
+[ 52%] Generating generated/syntax/xslt.xml
+[ 52%] Generating generated/syntax/jsonc.xml
+[ 52%] Built target doxygenlua.xml
+[ 52%] Built target xslt.xml
+[ 52%] Built target jsonc.xml
+[ 54%] Generating generated/syntax/jinja-qml.xml, generated/syntax/jinja-toml.xml, generated/syntax/jinja-cmake.xml, generated/syntax/jinja-comments.xml, generated/syntax/jinja-alert.xml, generated/syntax/jinja-yaml.xml, generated/syntax/jinja-javascript.xml, generated/syntax/jinja-xml.xml, generated/syntax/jinja-ruby.xml, generated/syntax/jinja-rust.xml, generated/syntax/jinja-json.xml, generated/syntax/jinja-doxygen.xml, generated/syntax/jinja-rest.xml, generated/syntax/jinja-sql.xml, generated/syntax/jinja-systemd-unit.xml, generated/syntax/jinja-terraform.xml, generated/syntax/jinja-ini.xml, generated/syntax/jinja-cpp.xml, generated/syntax/jinja-python.xml, generated/syntax/jinja-html.xml, generated/syntax/jinja-groovy.xml, generated/syntax/jinja-modelines.xml, generated/syntax/jinja-typescript.xml, generated/syntax/jinja-bash.xml, generated/syntax/jinja-dockerfile.xml, generated/syntax/jinja-mustache.xml, generated/syntax/jinja-qmake.xml, generated/syntax/jinja-javascript-react.xml, generated/syntax/jinja-zsh.xml, generated/syntax/jinja-javadoc.xml, generated/syntax/jinja-css.xml, generated/syntax/jinja-java.xml, generated/syntax/jinja-isocpp.xml, generated/syntax/jinja-spdx-comments.xml, generated/syntax/jinja-gcc.xml
+[ 54%] Built target SyntaxHighlightingData_autogen_timestamp_deps
+[ 54%] Built target katehighlightingindexer_autogen_timestamp_deps
+[ 54%] Built target KF6SyntaxHighlighting_autogen_timestamp_deps
+[ 55%] Copying kquicksyntaxhighlightingplugin qml resources into build dir
+[ 55%] Populating .qmlls.build.ini file at /home/fusion809/lfs_packaging/syntax-highlighting/syntax-highlighting-6.32.0/build/.qt/.qmlls.build.ini
+[ 55%] Built target kquicksyntaxhighlightingplugin_copy_res
+[ 55%] Copying kquicksyntaxhighlightingplugin qml sources into build dir
+[ 55%] Built target kquicksyntaxhighlightingplugin_copy_qml
+[ 55%] Automatic MOC for target SyntaxHighlightingData
+[ 55%] Built target generate_qmlls_build_ini_file
+[ 56%] Automatic MOC for target katehighlightingindexer
+[ 56%] Built target SyntaxHighlightingData_autogen
+[ 57%] Automatic MOC for target KF6SyntaxHighlighting
+[ 57%] Built target katehighlightingindexer_autogen
+[ 58%] Building CXX object src/indexer/CMakeFiles/katehighlightingindexer.dir/katehighlightingindexer_autogen/mocs_compilation.cpp.o
+[ 58%] Building CXX object src/indexer/CMakeFiles/katehighlightingindexer.dir/katehighlightingindexer.cpp.o
+[ 58%] Built target KF6SyntaxHighlighting_autogen
+[ 59%] Building CXX object src/indexer/CMakeFiles/katehighlightingindexer.dir/__/lib/worddelimiters.cpp.o
+[ 59%] Built target generate-jinja
+[ 59%] Linking CXX executable ../../bin/katehighlightingindexer
+[ 59%] Built target katehighlightingindexer
+[ 59%] Automatic RCC for themes/theme-data.qrc
+[ 60%] Generating index.katesyntax
+[ 62%] Generating qrc_syntax-data.cpp
+[ 62%] Building CXX object data/CMakeFiles/SyntaxHighlightingData.dir/SyntaxHighlightingData_autogen/mocs_compilation.cpp.o
+[ 62%] Building CXX object data/CMakeFiles/SyntaxHighlightingData.dir/qrc_syntax-data.cpp.o
+[ 63%] Building CXX object data/CMakeFiles/SyntaxHighlightingData.dir/SyntaxHighlightingData_autogen/PS4R4P76QL/qrc_theme-data.cpp.o
+[ 71%] Built target SyntaxHighlightingData
+[ 71%] Running AUTOMOC file extraction for target KF6SyntaxHighlighting
+[ 71%] Running moc --collect-json for target KF6SyntaxHighlighting
+[ 73%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/context.cpp.o
+[ 73%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/KF6SyntaxHighlighting_autogen/mocs_compilation.cpp.o
+[ 73%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/abstracthighlighter.cpp.o
+[ 73%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/contextswitch.cpp.o
+[ 74%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/definitiondownloader.cpp.o
+[ 74%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/highlightingdata.cpp.o
+[ 75%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/foldingregion.cpp.o
+[ 75%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/format.cpp.o
+[ 77%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/htmlhighlighter.cpp.o
+[ 77%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/ansihighlighter.cpp.o
+[ 77%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/keywordlist.cpp.o
+[ 78%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/rule.cpp.o
+[ 78%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/definition.cpp.o
+[ 79%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/repository.cpp.o
+[ 79%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/state.cpp.o
+[ 80%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/syntaxhighlighter.cpp.o
+[ 80%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/theme.cpp.o
+[ 81%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/wildcardmatcher.cpp.o
+[ 81%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/themedata.cpp.o
+[ 82%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/themepreviewicon.cpp.o
+[ 82%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/worddelimiters.cpp.o
+[ 82%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/ECMQmLoader-syntaxhighlighting6_qt.cpp.o
+[ 83%] Building CXX object src/lib/CMakeFiles/KF6SyntaxHighlighting.dir/ksyntaxhighlighting_logging.cpp.o
+[ 83%] Linking CXX shared library ../../bin/libKF6SyntaxHighlighting.so
+[ 83%] Built target KF6SyntaxHighlighting
+[ 83%] Built target codeeditor_autogen_timestamp_deps
+[ 83%] Built target ksyntaxhighlighter6_autogen_timestamp_deps
+[ 83%] Built target kquicksyntaxhighlightingplugin_autogen_timestamp_deps
+[ 83%] Built target codepdfprinter_autogen_timestamp_deps
+[ 85%] Automatic MOC for target codeeditor
+[ 85%] Automatic MOC for target ksyntaxhighlighter6
+[ 86%] Automatic MOC for target kquicksyntaxhighlightingplugin
+[ 86%] Built target ksyntaxhighlighter6_autogen
+[ 87%] Automatic MOC for target codepdfprinter
+[ 87%] Built target codepdfprinter_autogen
+[ 88%] Building CXX object src/cli/CMakeFiles/ksyntaxhighlighter6.dir/ksyntaxhighlighter6_autogen/mocs_compilation.cpp.o
+[ 88%] Building CXX object src/cli/CMakeFiles/ksyntaxhighlighter6.dir/ksyntaxhighlighter.cpp.o
+[ 88%] Built target codeeditor_autogen
+[ 88%] Built target kquicksyntaxhighlightingplugin_autogen
+[ 89%] Building CXX object examples/codepdfprinter/CMakeFiles/codepdfprinter.dir/codepdfprinter_autogen/mocs_compilation.cpp.o
+[ 89%] Building CXX object examples/codeeditor/CMakeFiles/codeeditor.dir/codeeditor_autogen/mocs_compilation.cpp.o
+[ 90%] Building CXX object examples/codeeditor/CMakeFiles/codeeditor.dir/codeeditor.cpp.o
+[ 90%] Building CXX object examples/codepdfprinter/CMakeFiles/codepdfprinter.dir/codepdfprinter.cpp.o
+[ 90%] Linking CXX executable ../../bin/ksyntaxhighlighter6
+[ 91%] Building CXX object examples/codepdfprinter/CMakeFiles/codepdfprinter.dir/main.cpp.o
+[ 91%] Built target ksyntaxhighlighter6
+[ 93%] Running AUTOMOC file extraction for target kquicksyntaxhighlightingplugin
+[ 93%] Running rcc for resource qmake_org_kde_syntaxhighlighting
+[ 93%] Running moc --collect-json for target kquicksyntaxhighlightingplugin
+[ 93%] Generating meta_types/qt6kquicksyntaxhighlightingplugin_metatypes.json
+[ 94%] Automatic QML type registration for target kquicksyntaxhighlightingplugin
+[ 95%] Building CXX object src/quick/CMakeFiles/kquicksyntaxhighlightingplugin.dir/kquicksyntaxhighlightingplugin_autogen/mocs_compilation.cpp.o
+[ 95%] Building CXX object src/quick/CMakeFiles/kquicksyntaxhighlightingplugin.dir/kquicksyntaxhighlightingplugin_org_kde_syntaxhighlightingPlugin.cpp.o
+[ 95%] Building CXX object examples/codeeditor/CMakeFiles/codeeditor.dir/main.cpp.o
+[ 95%] Linking CXX executable ../../bin/codepdfprinter
+[ 95%] Built target codepdfprinter
+[ 96%] Building CXX object src/quick/CMakeFiles/kquicksyntaxhighlightingplugin.dir/kquicksyntaxhighlightingplugin_qmltyperegistrations.cpp.o
+[ 96%] Building CXX object src/quick/CMakeFiles/kquicksyntaxhighlightingplugin.dir/.qt/rcc/qrc_qmake_org_kde_syntaxhighlighting.cpp.o
+[ 97%] Building CXX object src/quick/CMakeFiles/kquicksyntaxhighlightingplugin.dir/kquicksyntaxhighlighter.cpp.o
+[ 98%] Linking CXX executable ../../bin/codeeditor
+[100%] Built target codeeditor
+[100%] Building CXX object src/quick/CMakeFiles/kquicksyntaxhighlightingplugin.dir/types.cpp.o
+[100%] Linking CXX shared module ../../bin/org/kde/syntaxhighlighting/libkquicksyntaxhighlightingplugin.so
+[100%] Built target kquicksyntaxhighlightingplugin
+[  1%] Built target translations_1
+[  2%] Built target translations_2
+[  3%] Built target translations_3
+[  4%] Built target translations_4
+[  5%] Built target translations_5
+[  5%] Built target translations_6
+[  5%] Built target translations_7
+[  5%] Built target translations_8
+[  5%] Built target translations_9
+[  5%] Built target translations_10
+[  6%] Built target translations_11
+[  6%] Built target translations_12
+[  8%] Built target translations_13
+[  8%] Built target translations_14
+[  9%] Built target translations_15
+[  9%] Built target translations_16
+[ 10%] Built target translations_17
+[ 10%] Built target translations_18
+[ 10%] Built target translations_19
+[ 10%] Built target translations_20
+[ 11%] Built target translations_21
+[ 11%] Built target translations_22
+[ 12%] Built target translations_23
+[ 12%] Built target translations_24
+[ 13%] Built target translations_25
+[ 13%] Built target translations_26
+[ 14%] Built target translations_27
+[ 14%] Built target translations_28
+[ 14%] Built target translations_29
+[ 14%] Built target translations_30
+[ 16%] Built target translations_31
+[ 16%] Built target translations_32
+[ 17%] Built target translations_33
+[ 17%] Built target translations_34
+[ 18%] Built target translations_35
+[ 18%] Built target translations_36
+[ 19%] Built target translations_37
+[ 19%] Built target translations_38
+[ 19%] Built target translations_39
+[ 19%] Built target translations_40
+[ 20%] Built target translations_41
+[ 20%] Built target translations_42
+[ 21%] Built target translations_43
+[ 21%] Built target translations_44
+[ 22%] Built target translations_45
+[ 22%] Built target translations_46
+[ 24%] Built target translations_47
+[ 24%] Built target translations_48
+[ 24%] Built target translations_49
+[ 24%] Built target translations_50
+[ 25%] Built target translations_51
+[ 25%] Built target translations_52
+[ 26%] Built target translations_53
+[ 26%] Built target translations_54
+[ 27%] Built target translations_55
+[ 27%] Built target translations_56
+[ 28%] Built target translations_57
+[ 28%] Built target translations_58
+[ 29%] Built target translations_59
+[ 29%] Built target translations_60
+[ 31%] Built target translations_61
+[ 31%] Built target translations_62
+[ 32%] Built target translations_63
+[ 32%] Built target translations_64
+[ 33%] Built target translations_65
+[ 33%] Built target translations_66
+[ 34%] Built target translations_67
+[ 34%] Built target translations_68
+[ 35%] Built target translations_69
+[ 35%] Built target translations_70
+[ 36%] Built target translations_71
+[ 36%] Built target translations_72
+[ 37%] Built target translations_73
+[ 37%] Built target translations_74
+[ 39%] Built target translations_75
+[ 39%] Built target translations_76
+[ 40%] Built target translations_77
+[ 40%] Built target translations_78
+[ 41%] Built target translations_79
+[ 41%] Built target translations_80
+[ 42%] Built target translations_81
+[ 42%] Built target translations_82
+[ 43%] Built target translations_83
+[ 43%] Built target translations_84
+[ 44%] Built target translations_85
+[ 44%] Built target translations_86
+[ 45%] Built target translations_87
+[ 47%] Built target html-php.xml
+[ 47%] Built target css-php.xml
+[ 48%] Built target javascript-php.xml
+[ 48%] Built target javascript-react-php.xml
+[ 49%] Built target typescript-php.xml
+[ 49%] Built target mustache-php.xml
+[ 49%] Built target html-twig.xml
+[ 50%] Built target css-twig.xml
+[ 51%] Built target javascript-twig.xml
+[ 51%] Built target javascript-react-twig.xml
+[ 51%] Built target typescript-twig.xml
+[ 51%] Built target doxygenlua.xml
+[ 52%] Built target xslt.xml
+[ 52%] Built target jsonc.xml
+[ 54%] Built target generate-jinja
+[ 54%] Built target SyntaxHighlightingData_autogen_timestamp_deps
+[ 54%] Built target SyntaxHighlightingData_autogen
+[ 54%] Built target katehighlightingindexer_autogen_timestamp_deps
+[ 55%] Built target katehighlightingindexer_autogen
+[ 57%] Built target katehighlightingindexer
+[ 68%] Built target SyntaxHighlightingData
+[ 68%] Built target KF6SyntaxHighlighting_autogen_timestamp_deps
+[ 70%] Built target KF6SyntaxHighlighting_autogen
+[ 82%] Built target KF6SyntaxHighlighting
+[ 82%] Built target ksyntaxhighlighter6_autogen_timestamp_deps
+[ 83%] Built target ksyntaxhighlighter6_autogen
+[ 85%] Built target ksyntaxhighlighter6
+[ 86%] Built target kquicksyntaxhighlightingplugin_copy_res
+[ 86%] Built target generate_qmlls_build_ini_file
+[ 86%] Built target kquicksyntaxhighlightingplugin_copy_qml
+[ 86%] Built target kquicksyntaxhighlightingplugin_autogen_timestamp_deps
+[ 87%] Built target kquicksyntaxhighlightingplugin_autogen
+[ 87%] Linking CXX shared module ../../bin/org/kde/syntaxhighlighting/libkquicksyntaxhighlightingplugin.so
+[ 93%] Built target kquicksyntaxhighlightingplugin
+[ 93%] Built target codeeditor_autogen_timestamp_deps
+[ 93%] Built target codeeditor_autogen
+[ 96%] Built target codeeditor
+[ 96%] Built target codepdfprinter_autogen_timestamp_deps
+[ 97%] Built target codepdfprinter_autogen
+[100%] Built target codepdfprinter
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/share/locale/af/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ar/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ast/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/az/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/be/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/bg/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/bn/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/br/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/bs/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ca/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ca@valencia/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/cs/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/cy/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/da/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/de/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/el/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/en_GB/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/eo/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/es/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/et/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/eu/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/fa/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/fi/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/fr/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/fy/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ga/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/gl/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/gu/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/he/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/hi/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/hr/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/hsb/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/hu/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ia/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/id/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/is/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/it/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ja/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ka/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/kk/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/km/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ko/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ku/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/lb/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/lt/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/lv/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/mai/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/mk/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ml/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/mr/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ms/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/nb/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/nds/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ne/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/nl/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/nn/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/oc/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/pa/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/pl/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/pt/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/pt_BR/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ro/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ru/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/sa/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/se/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/si/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/sk/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/sl/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/sq/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/sr/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/sr@ijekavian/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/sr@latin/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/sv/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ta/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/tg/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/th/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/tr/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/ug/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/uk/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/uz/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/uz@cyrillic/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/vi/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/wa/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/xh/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/zh_CN/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/share/locale/zh_TW/LC_MESSAGES/syntaxhighlighting6_qt.qm
+-- Installing: /usr/lib/libKF6SyntaxHighlighting.so.6.32.0
+-- Installing: /usr/lib/libKF6SyntaxHighlighting.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKF6SyntaxHighlighting.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKF6SyntaxHighlighting.so
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/AbstractHighlighter
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/Definition
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/DefinitionDownloader
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/FoldingRegion
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/Format
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/Repository
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/State
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/SyntaxHighlighter
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/Theme
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/WildcardMatcher
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/abstracthighlighter.h
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/definition.h
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/definitiondownloader.h
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/foldingregion.h
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/format.h
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/repository.h
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/state.h
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/syntaxhighlighter.h
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/theme.h
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/wildcardmatcher.h
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/KSyntaxHighlighting/ksyntaxhighlighting_export.h
+-- Installing: /usr/bin/ksyntaxhighlighter6
+-- Set non-toolchain portion of runtime path of "/usr/bin/ksyntaxhighlighter6" to ""
+-- Installing: /usr/lib/qml/org/kde/syntaxhighlighting/libkquicksyntaxhighlightingplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/syntaxhighlighting/libkquicksyntaxhighlightingplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/syntaxhighlighting/qmldir
+-- Installing: /usr/lib/qml/org/kde/syntaxhighlighting/kquicksyntaxhighlightingplugin.qmltypes
+-- Installing: /usr/lib/qml/org/kde/syntaxhighlighting/kde-qmlmodule.version
+-- Installing: /usr/share/qlogging-categories6/ksyntaxhighlighting.categories
+-- Installing: /usr/share/qlogging-categories6/ksyntaxhighlighting.renamecategories
+-- Installing: /usr/lib/cmake/KF6SyntaxHighlighting/KF6SyntaxHighlightingConfig.cmake
+-- Installing: /usr/lib/cmake/KF6SyntaxHighlighting/KF6SyntaxHighlightingConfigVersion.cmake
+-- Old export file "/usr/lib/cmake/KF6SyntaxHighlighting/KF6SyntaxHighlightingTargets.cmake" will be replaced.  Removing files [/usr/lib/cmake/KF6SyntaxHighlighting/KF6SyntaxHighlightingTargets-release.cmake].
+-- Installing: /usr/lib/cmake/KF6SyntaxHighlighting/KF6SyntaxHighlightingTargets.cmake
+-- Installing: /usr/lib/cmake/KF6SyntaxHighlighting/KF6SyntaxHighlightingTargets-release.cmake
+-- Installing: /usr/include/KF6/KSyntaxHighlighting/ksyntaxhighlighting_version.h
+6.32.0
+Updated registry for syntax-highlighting to version 6.32.0
+[VERSION] syntax-highlighting: 6.32.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package syntax-highlighting in /var/lib/custom-packages/

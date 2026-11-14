@@ -1,0 +1,300 @@
+[02:16:20] Found custom package for attica, bypassing BLFS aliases.
+[02:16:20] Custom package detected at /home/fusion809/lfs_packaging/attica (package: attica)
+[02:16:20] Extracting dependencies for custom package 'attica'...
+[02:16:20] Required deps: brotli double-conversion e2fsprogs extra-cmake-modules gcc glib2 glibc icu keyutils mitkrb openssl pcre2 qt6 systemd zlib zstd 
+[02:16:20] Dependency 'brotli' already installed.
+[02:16:20] Dependency 'double-conversion' already installed.
+[02:16:20] Dependency 'e2fsprogs' already installed.
+[02:16:20] Dependency 'extra-cmake-modules' already installed.
+[02:16:20] Dependency 'gcc' already installed.
+[02:16:20] Dependency 'glib2' already installed.
+[02:16:20] Dependency 'glibc' already installed.
+[02:16:20] Dependency 'icu' already installed.
+[02:16:20] Dependency 'keyutils' already installed.
+[02:16:20] Dependency 'mitkrb' already installed.
+[02:16:20] Dependency 'openssl' already installed.
+[02:16:20] Dependency 'pcre2' already installed.
+[02:16:20] Dependency 'qt6' already installed.
+[02:16:20] Dependency 'systemd' already installed.
+[02:16:20] Dependency 'zlib' already installed.
+[02:16:20] Dependency 'zstd' already installed.
+[VERSION] attica: 6.32.0
+[02:16:21] Installing attica version: 6.32.0
+[02:16:21] Starting remote custom build for attica...
+attica-6.32.0.tar.xz already present and appears valid.
+attica-6.32.0.tar.xz already present and appears valid.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:14 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/attica/attica-6.32.0/build/prefix.sh to set the environment for Attica.
+fatal: no upstream configured for branch 'master'
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Could NOT find ReuseTool (missing: REUSETOOL_EXECUTABLE) 
+CMake Warning at /usr/share/ECM/modules/ECMCheckOutboundLicense.cmake:88 (message):
+  Reuse tool not found, skipping test generation
+Call Stack (most recent call first):
+  CMakeLists.txt:21 (include)
+
+
+-- Skipping execution of outbound license tests.
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6Core
+ * Python3
+   Required to run tests of module ECMCheckOutboundLicense
+ * Qt6Network (required version >= 6.10.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.32.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt6
+
+-- The following features have been disabled:
+
+ * SPDX_LICENSE_TESTING, Automatic license testing based on SPDX definitions (requires reuse tool)
+
+-- The following OPTIONAL packages have not been found:
+
+ * ReuseTool
+   Required to run tests of module ECMCheckOutboundLicense
+
+-- Configuring done (3.2s)
+-- Generating done (0.2s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_PYTHON_BINDINGS
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/attica/attica-6.32.0/build
+[  0%] Built target KF6Attica_autogen_timestamp_deps
+[  1%] Automatic MOC for target KF6Attica
+[  1%] Built target KF6Attica_autogen
+make[2]: Warning: File 'src/KF6Attica_autogen/mocs_compilation.cpp' has modification time 0.5 s in the future
+[  2%] Building CXX object src/CMakeFiles/KF6Attica.dir/KF6Attica_autogen/mocs_compilation.cpp.o
+[  4%] Building CXX object src/CMakeFiles/KF6Attica.dir/accountbalance.cpp.o
+[  5%] Building CXX object src/CMakeFiles/KF6Attica.dir/accountbalanceparser.cpp.o
+[  6%] Building CXX object src/CMakeFiles/KF6Attica.dir/achievement.cpp.o
+[  8%] Building CXX object src/CMakeFiles/KF6Attica.dir/achievementparser.cpp.o
+[  9%] Building CXX object src/CMakeFiles/KF6Attica.dir/buildservice.cpp.o
+[ 10%] Building CXX object src/CMakeFiles/KF6Attica.dir/buildserviceparser.cpp.o
+[ 12%] Building CXX object src/CMakeFiles/KF6Attica.dir/buildservicejob.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/KF6Attica.dir/buildservicejobparser.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/KF6Attica.dir/buildservicejoboutput.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/KF6Attica.dir/buildservicejoboutputparser.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/KF6Attica.dir/activity.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/KF6Attica.dir/activityparser.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/KF6Attica.dir/atticabasejob.cpp.o
+[ 21%] Building CXX object src/CMakeFiles/KF6Attica.dir/atticautils.cpp.o
+[ 22%] Building CXX object src/CMakeFiles/KF6Attica.dir/privatedata.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/KF6Attica.dir/privatedataparser.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/KF6Attica.dir/category.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/KF6Attica.dir/categoryparser.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/KF6Attica.dir/comment.cpp.o
+[ 29%] Building CXX object src/CMakeFiles/KF6Attica.dir/commentparser.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/KF6Attica.dir/config.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/KF6Attica.dir/configparser.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/KF6Attica.dir/content.cpp.o
+[ 34%] Building CXX object src/CMakeFiles/KF6Attica.dir/contentparser.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/KF6Attica.dir/deletejob.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/KF6Attica.dir/distribution.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/KF6Attica.dir/distributionparser.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/KF6Attica.dir/downloaddescription.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/KF6Attica.dir/downloaditem.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/KF6Attica.dir/downloaditemparser.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/KF6Attica.dir/event.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/KF6Attica.dir/eventparser.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/KF6Attica.dir/folder.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/KF6Attica.dir/folderparser.cpp.o
+[ 49%] Building CXX object src/CMakeFiles/KF6Attica.dir/forum.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/KF6Attica.dir/forumparser.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/KF6Attica.dir/getjob.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/KF6Attica.dir/homepageentry.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/KF6Attica.dir/homepagetype.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/KF6Attica.dir/homepagetypeparser.cpp.o
+[ 57%] Building CXX object src/CMakeFiles/KF6Attica.dir/icon.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/KF6Attica.dir/itemjob.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/KF6Attica.dir/knowledgebaseentry.cpp.o
+[ 61%] Building CXX object src/CMakeFiles/KF6Attica.dir/knowledgebaseentryparser.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/KF6Attica.dir/license.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/KF6Attica.dir/licenseparser.cpp.o
+[ 65%] Building CXX object src/CMakeFiles/KF6Attica.dir/listjob_inst.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/KF6Attica.dir/message.cpp.o
+[ 68%] Building CXX object src/CMakeFiles/KF6Attica.dir/messageparser.cpp.o
+[ 69%] Building CXX object src/CMakeFiles/KF6Attica.dir/metadata.cpp.o
+[ 70%] Building CXX object src/CMakeFiles/KF6Attica.dir/parser.cpp.o
+[ 72%] Building CXX object src/CMakeFiles/KF6Attica.dir/person.cpp.o
+[ 73%] Building CXX object src/CMakeFiles/KF6Attica.dir/personparser.cpp.o
+[ 74%] Building CXX object src/CMakeFiles/KF6Attica.dir/platformdependent_v2.cpp.o
+[ 76%] Building CXX object src/CMakeFiles/KF6Attica.dir/postfiledata.cpp.o
+[ 77%] Building CXX object src/CMakeFiles/KF6Attica.dir/postjob.cpp.o
+[ 78%] Building CXX object src/CMakeFiles/KF6Attica.dir/project.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/KF6Attica.dir/projectparser.cpp.o
+[ 81%] Building CXX object src/CMakeFiles/KF6Attica.dir/putjob.cpp.o
+[ 82%] Building CXX object src/CMakeFiles/KF6Attica.dir/remoteaccount.cpp.o
+[ 84%] Building CXX object src/CMakeFiles/KF6Attica.dir/remoteaccountparser.cpp.o
+[ 85%] Building CXX object src/CMakeFiles/KF6Attica.dir/provider.cpp.o
+[ 86%] Building CXX object src/CMakeFiles/KF6Attica.dir/providermanager.cpp.o
+[ 88%] Building CXX object src/CMakeFiles/KF6Attica.dir/publisher.cpp.o
+[ 89%] Building CXX object src/CMakeFiles/KF6Attica.dir/publisherparser.cpp.o
+[ 90%] Building CXX object src/CMakeFiles/KF6Attica.dir/publisherfield.cpp.o
+[ 92%] Building CXX object src/CMakeFiles/KF6Attica.dir/publisherfieldparser.cpp.o
+[ 93%] Building CXX object src/CMakeFiles/KF6Attica.dir/qtplatformdependent.cpp.o
+[ 94%] Building CXX object src/CMakeFiles/KF6Attica.dir/topic.cpp.o
+[ 96%] Building CXX object src/CMakeFiles/KF6Attica.dir/topicparser.cpp.o
+[ 97%] Building CXX object src/CMakeFiles/KF6Attica.dir/platformdependent_v3.cpp.o
+[ 98%] Building CXX object src/CMakeFiles/KF6Attica.dir/attica_debug.cpp.o
+[100%] Linking CXX shared library ../bin/libKF6Attica.so
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[100%] Built target KF6Attica
+[  0%] Built target KF6Attica_autogen_timestamp_deps
+[  1%] Built target KF6Attica_autogen
+[  2%] Building CXX object src/CMakeFiles/KF6Attica.dir/KF6Attica_autogen/mocs_compilation.cpp.o
+[  4%] Linking CXX shared library ../bin/libKF6Attica.so
+[100%] Built target KF6Attica
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/include/KF6/Attica/Attica/Activity
+-- Installing: /usr/include/KF6/Attica/Attica/AccountBalance
+-- Installing: /usr/include/KF6/Attica/Attica/Achievement
+-- Installing: /usr/include/KF6/Attica/Attica/Comment
+-- Installing: /usr/include/KF6/Attica/Attica/Config
+-- Installing: /usr/include/KF6/Attica/Attica/Content
+-- Installing: /usr/include/KF6/Attica/Attica/Category
+-- Installing: /usr/include/KF6/Attica/Attica/DeleteJob
+-- Installing: /usr/include/KF6/Attica/Attica/Distribution
+-- Installing: /usr/include/KF6/Attica/Attica/DownloadDescription
+-- Installing: /usr/include/KF6/Attica/Attica/DownloadItem
+-- Installing: /usr/include/KF6/Attica/Attica/Event
+-- Installing: /usr/include/KF6/Attica/Attica/Folder
+-- Installing: /usr/include/KF6/Attica/Attica/Forum
+-- Installing: /usr/include/KF6/Attica/Attica/GetJob
+-- Installing: /usr/include/KF6/Attica/Attica/HomePageEntry
+-- Installing: /usr/include/KF6/Attica/Attica/HomePageType
+-- Installing: /usr/include/KF6/Attica/Attica/Icon
+-- Installing: /usr/include/KF6/Attica/Attica/ItemJob
+-- Installing: /usr/include/KF6/Attica/Attica/KnowledgeBaseEntry
+-- Installing: /usr/include/KF6/Attica/Attica/ListJob
+-- Installing: /usr/include/KF6/Attica/Attica/License
+-- Installing: /usr/include/KF6/Attica/Attica/Message
+-- Installing: /usr/include/KF6/Attica/Attica/Metadata
+-- Installing: /usr/include/KF6/Attica/Attica/Person
+-- Installing: /usr/include/KF6/Attica/Attica/PrivateData
+-- Installing: /usr/include/KF6/Attica/Attica/PostJob
+-- Installing: /usr/include/KF6/Attica/Attica/Project
+-- Installing: /usr/include/KF6/Attica/Attica/PutJob
+-- Installing: /usr/include/KF6/Attica/Attica/RemoteAccount
+-- Installing: /usr/include/KF6/Attica/Attica/BuildService
+-- Installing: /usr/include/KF6/Attica/Attica/BuildServiceJob
+-- Installing: /usr/include/KF6/Attica/Attica/BuildServiceJobOutput
+-- Installing: /usr/include/KF6/Attica/Attica/ProviderManager
+-- Installing: /usr/include/KF6/Attica/Attica/Provider
+-- Installing: /usr/include/KF6/Attica/Attica/Publisher
+-- Installing: /usr/include/KF6/Attica/Attica/PublisherField
+-- Installing: /usr/include/KF6/Attica/Attica/Topic
+-- Installing: /usr/lib/libKF6Attica.so.6.32.0
+-- Installing: /usr/lib/libKF6Attica.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKF6Attica.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKF6Attica.so
+-- Installing: /usr/include/KF6/Attica/attica/activity.h
+-- Installing: /usr/include/KF6/Attica/attica/accountbalance.h
+-- Installing: /usr/include/KF6/Attica/attica/achievement.h
+-- Installing: /usr/include/KF6/Attica/attica/comment.h
+-- Installing: /usr/include/KF6/Attica/attica/config.h
+-- Installing: /usr/include/KF6/Attica/attica/content.h
+-- Installing: /usr/include/KF6/Attica/attica/category.h
+-- Installing: /usr/include/KF6/Attica/attica/deletejob.h
+-- Installing: /usr/include/KF6/Attica/attica/distribution.h
+-- Installing: /usr/include/KF6/Attica/attica/downloaddescription.h
+-- Installing: /usr/include/KF6/Attica/attica/downloaditem.h
+-- Installing: /usr/include/KF6/Attica/attica/event.h
+-- Installing: /usr/include/KF6/Attica/attica/folder.h
+-- Installing: /usr/include/KF6/Attica/attica/forum.h
+-- Installing: /usr/include/KF6/Attica/attica/getjob.h
+-- Installing: /usr/include/KF6/Attica/attica/homepageentry.h
+-- Installing: /usr/include/KF6/Attica/attica/homepagetype.h
+-- Installing: /usr/include/KF6/Attica/attica/icon.h
+-- Installing: /usr/include/KF6/Attica/attica/itemjob.h
+-- Installing: /usr/include/KF6/Attica/attica/knowledgebaseentry.h
+-- Installing: /usr/include/KF6/Attica/attica/listjob.h
+-- Installing: /usr/include/KF6/Attica/attica/license.h
+-- Installing: /usr/include/KF6/Attica/attica/message.h
+-- Installing: /usr/include/KF6/Attica/attica/metadata.h
+-- Installing: /usr/include/KF6/Attica/attica/person.h
+-- Installing: /usr/include/KF6/Attica/attica/privatedata.h
+-- Installing: /usr/include/KF6/Attica/attica/postjob.h
+-- Installing: /usr/include/KF6/Attica/attica/project.h
+-- Installing: /usr/include/KF6/Attica/attica/putjob.h
+-- Installing: /usr/include/KF6/Attica/attica/remoteaccount.h
+-- Installing: /usr/include/KF6/Attica/attica/buildservice.h
+-- Installing: /usr/include/KF6/Attica/attica/buildservicejob.h
+-- Installing: /usr/include/KF6/Attica/attica/buildservicejoboutput.h
+-- Installing: /usr/include/KF6/Attica/attica/providermanager.h
+-- Installing: /usr/include/KF6/Attica/attica/provider.h
+-- Installing: /usr/include/KF6/Attica/attica/publisher.h
+-- Installing: /usr/include/KF6/Attica/attica/publisherfield.h
+-- Installing: /usr/include/KF6/Attica/attica/topic.h
+-- Installing: /usr/include/KF6/Attica/attica/atticabasejob.h
+-- Installing: /usr/include/KF6/Attica/attica/atticautils.h
+-- Installing: /usr/include/KF6/Attica/attica/platformdependent.h
+-- Installing: /usr/include/KF6/Attica/attica/platformdependent_v2.h
+-- Installing: /usr/include/KF6/Attica/attica/platformdependent_v3.h
+-- Installing: /usr/include/KF6/Attica/attica/version.h
+-- Installing: /usr/include/KF6/Attica/attica/attica_export.h
+-- Installing: /usr/share/qlogging-categories6/attica.categories
+-- Installing: /usr/share/qlogging-categories6/attica.renamecategories
+-- Installing: /usr/lib/pkgconfig/KF6Attica.pc
+-- Installing: /usr/lib/cmake/KF6Attica/KF6AtticaConfig.cmake
+-- Installing: /usr/lib/cmake/KF6Attica/KF6AtticaConfigVersion.cmake
+-- Old export file "/usr/lib/cmake/KF6Attica/KF6AtticaTargets.cmake" will be replaced.  Removing files [/usr/lib/cmake/KF6Attica/KF6AtticaTargets-release.cmake].
+-- Installing: /usr/lib/cmake/KF6Attica/KF6AtticaTargets.cmake
+-- Installing: /usr/lib/cmake/KF6Attica/KF6AtticaTargets-release.cmake
+-- Installing: /usr/include/KF6/Attica/attica_version.h
+6.32.0
+Updated registry for attica to version 6.32.0
+[VERSION] attica: 6.32.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package attica in /var/lib/custom-packages/

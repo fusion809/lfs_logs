@@ -1,0 +1,509 @@
+[02:15:52] Found custom package for extra-cmake-modules, bypassing BLFS aliases.
+[02:15:52] Custom package detected at /home/fusion809/lfs_packaging/extra-cmake-modules (package: extra-cmake-modules)
+[02:15:52] Extracting dependencies for custom package 'extra-cmake-modules'...
+[02:15:52] Required deps: cmake qt6 
+[02:15:52] Dependency 'cmake' already installed.
+[02:15:52] Dependency 'qt6' already installed.
+[VERSION] extra-cmake-modules: 6.32.0
+[02:15:53] Installing extra-cmake-modules version: 6.32.0
+[02:15:53] Starting remote custom build for extra-cmake-modules...
+--2026-11-14 02:15:56--  https://download.kde.org/stable/frameworks/6.32/extra-cmake-modules-6.32.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://cdn.download.kde.org/stable/frameworks/6.32/extra-cmake-modules-6.32.0.tar.xz [following]
+--2026-11-14 02:15:57--  https://cdn.download.kde.org/stable/frameworks/6.32/extra-cmake-modules-6.32.0.tar.xz
+Resolving cdn.download.kde.org (cdn.download.kde.org)... 143.244.62.5, 143.244.62.8, 2a02:6ea0:db00::1, ...
+Connecting to cdn.download.kde.org (cdn.download.kde.org)|143.244.62.5|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 347516 (339K) [application/x-xz]
+Saving to: ‘extra-cmake-modules-6.32.0.tar.xz’
+
+          extra-cma   0%[                    ]       0  --.-KB/s                        extra-cmak  28%[====>               ]  95.31K   462KB/s                       extra-cmake  98%[==================> ] 335.31K   817KB/s               extra-cmake-modules 100%[===================>] 339.37K   824KB/s    in 0.4s    
+
+2026-11-14 02:15:58 (824 KB/s) - ‘extra-cmake-modules-6.32.0.tar.xz’ saved [347516/347516]
+
+extra-cmake-modules-6.32.0.tar.xz already present and appears valid.
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Sphinx: /usr/bin/sphinx-build (Required is at least version "1.2")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- The C compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+-- Could NOT find ReuseTool (missing: REUSETOOL_EXECUTABLE) 
+CMake Warning at modules/ECMCheckOutboundLicense.cmake:88 (message):
+  Reuse tool not found, skipping test generation
+Call Stack (most recent call first):
+  tests/ECMCheckOutboundLicenseTest/CMakeLists.txt:7 (include)
+
+
+-- Skipping execution of outbound license tests.
+-- The following features have been enabled:
+
+ * BUILD_DOC, Build documentation.
+ * BUILD_HTML_DOCS, Generate HTML documentation for installed modules.
+ * BUILD_MAN_DOCS, Generate man page documentation for installed modules.
+ * BUILD_QTHELP_DOCS, Generate QtHelp documentation for installed modules.
+ * BUILD_TESTING, Build automated tests.
+
+-- The following OPTIONAL packages have been found:
+
+ * Sphinx (required version >= 1.2), Tool to generate documentation., <https://www.sphinx-doc.org/>
+   Required to build documentation for Extra CMake Modules.
+ * Qt6ToolsTools, Qt help collection generator., <https://www.qt.io/>
+   Required to build Extra CMake Modules documentation in Qt Help format.
+ * Qt6Core, Qt core library., <https://www.qt.io/>
+   Required to run tests for the ECMQtDeclareLoggingCategory module, and for some tests of the KDEInstallDirs module.
+ * Qt6LinguistTools, Qt linguist tools., <https://www.qt.io/>
+   Required to run tests for the ECMPoQmTools module.
+ * Qt6QuickTools (required version >= 6.12.0)
+ * OpenGL
+ * Qt6GuiTools (required version >= 6.12.0)
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6DBusTools (required version >= 6.12.0)
+ * Qt6QmlTools (required version >= 6.12.0)
+ * WrapVulkanHeaders
+ * Qt6Quick, Qt Quick library., <https://www.qt.io/>
+   Required to run tests for the ECMQMLModules module.
+ * Qt6
+ * Python3
+   Required to run tests of module ECMCheckOutboundLicense
+
+-- The following features have been disabled:
+
+ * SPDX_LICENSE_TESTING, Automatic license testing based on SPDX definitions (requires reuse tool)
+
+-- The following OPTIONAL packages have not been found:
+
+ * ReuseTool
+   Required to run tests of module ECMCheckOutboundLicense
+
+-- Configuring done (3.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/extra-cmake-modules/extra-cmake-modules-6.32.0/build
+[ 14%] Building CXX object tests/ECMGeneratePkgConfigFile/test_no_interface_include_dirs/CMakeFiles/EGPF_lib_without_interface.dir/main.cpp.o
+[ 28%] Building CXX object tests/ECMGeneratePkgConfigFile/test_imported_targets/CMakeFiles/EGPF_lib.dir/main.cpp.o
+[ 42%] sphinx-build html: see /home/fusion809/lfs_packaging/extra-cmake-modules/extra-cmake-modules-6.32.0/build/docs/build-html.log
+[ 57%] Linking CXX static library libEGPF_lib_without_interface.a
+[ 71%] Linking CXX static library libEGPF_lib.a
+[ 71%] Built target EGPF_lib_without_interface
+[ 71%] Built target EGPF_lib
+/home/fusion809/lfs_packaging/extra-cmake-modules/extra-cmake-modules-6.32.0/modules/ECMAddAndroidApk.cmake:42: ERROR: Unexpected indentation. [docutils]
+/home/fusion809/lfs_packaging/extra-cmake-modules/extra-cmake-modules-6.32.0/modules/ECMAddAndroidApk.cmake:55: ERROR: Unexpected indentation. [docutils]
+/home/fusion809/lfs_packaging/extra-cmake-modules/extra-cmake-modules-6.32.0/modules/ECMAddAndroidApk.cmake:63: ERROR: Unexpected indentation. [docutils]
+/home/fusion809/lfs_packaging/extra-cmake-modules/extra-cmake-modules-6.32.0/modules/ECMAddAndroidApk.cmake:61: WARNING: Inline literal start-string without end-string. [docutils]
+/home/fusion809/lfs_packaging/extra-cmake-modules/extra-cmake-modules-6.32.0/modules/ECMAddAndroidApk.cmake:67: WARNING: Block quote ends without a blank line; unexpected unindent. [docutils]
+[ 85%] sphinx-build man: see /home/fusion809/lfs_packaging/extra-cmake-modules/extra-cmake-modules-6.32.0/build/docs/build-man.log
+[100%] sphinx-build qthelp: see /home/fusion809/lfs_packaging/extra-cmake-modules/extra-cmake-modules-6.32.0/build/docs/build-qthelp.log
+Reading collection config file...
+Generating help for ExtraCMakeModules.qhp...
+Building up file structure...
+Insert custom filters...
+Insert help data for filter section (1 of 1)...
+Insert files...
+Insert contents...
+Insert indices...
+Documentation successfully generated.
+Creating collection file...
+[100%] Built target documentation
+[ 14%] sphinx-build html: see /home/fusion809/lfs_packaging/extra-cmake-modules/extra-cmake-modules-6.32.0/build/docs/build-html.log
+[ 28%] sphinx-build man: see /home/fusion809/lfs_packaging/extra-cmake-modules/extra-cmake-modules-6.32.0/build/docs/build-man.log
+[ 42%] sphinx-build qthelp: see /home/fusion809/lfs_packaging/extra-cmake-modules/extra-cmake-modules-6.32.0/build/docs/build-qthelp.log
+Reading collection config file...
+Generating help for ExtraCMakeModules.qhp...
+Building up file structure...
+Insert custom filters...
+Insert help data for filter section (1 of 1)...
+Insert files...
+Insert contents...
+Insert indices...
+Documentation successfully generated.
+Creating collection file...
+[ 42%] Built target documentation
+[ 71%] Built target EGPF_lib
+[100%] Built target EGPF_lib_without_interface
+Install the project...
+-- Install configuration: ""
+-- Installing: /usr/share/man/man7/ecm.7
+-- Installing: /usr/share/man/man7/ecm-developer.7
+-- Installing: /usr/share/man/man7/ecm-find-modules.7
+-- Installing: /usr/share/man/man7/ecm-kde-modules.7
+-- Installing: /usr/share/man/man7/ecm-modules.7
+-- Installing: /usr/share/man/man7/ecm-toolchains.7
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMFindQmlModule.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMAddAndroidApk.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMDeprecationSettings.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMFindModuleHelpers.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/CheckAtomic.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMSetupQtPluginMacroNames.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMGenerateExportHeader.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMMarkNonGuiExecutable.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMAddAppIcon.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMInstallIcons.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMWinResolveSymlinks.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMInstalledLibraryCheck.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMPoQmTools.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMMarkAsTest.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMGeneratePriFile.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMGenerateHeaders.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMAddTests.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMCreateQmFromPoFiles.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMCheckOutboundLicense.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMSourceVersionControl.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMGenerateQDoc.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMGeneratePkgConfigFile.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/QtVersionOption.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMPackageConfigHelpers.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMQueryQt.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMFeatureSummary.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMGeneratePythonBindings.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMAddQch.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMGenerateQmlTypes.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMGenerateDBusServiceFile.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMUninstallTarget.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMSetupVersion.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMCoverageOption.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMOptionalAddSubdirectory.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMQmlModule.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMUseFindModules.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMAddQtDesignerPlugin.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMQtDeclareLoggingCategory.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMConfiguredInstall.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/module/ECMEnableSanitizers.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindCanberra.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindKF5.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindOpenEXR.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindLibcap.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindSharedMimeInfo.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindWayland.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindLibGit2.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindUDev.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindKF6.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindSeccomp.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindTaglib.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindWaylandProtocols.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindIcoTool.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/Find7z.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindPhoneNumber.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindLibExiv2.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindPulseAudio.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindPoppler.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindQtWaylandScanner.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/Findepoxy.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindX11_XCB.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/Find7Zip.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindGradle.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindWaylandScanner.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindIsoCodes.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindDesktopFileUtils.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindEGL.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindSasl2.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindXCB.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindInotify.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/Findgzip.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindFFmpeg.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindGLIB2.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindLibMount.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/find-module/FindGperf.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/manual
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/manual/ecm-toolchains.7.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/manual/ecm.7.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/manual/ecm-modules.7.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/manual/ecm-kde-modules.7.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/manual/ecm-developer.7.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/manual/ecm-find-modules.7.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/searchindex.js
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/searchtools.js
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/base-stemmer.js
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/sphinx_highlight.js
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/file.png
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/plus.png
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/default.css
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/pygments.css
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/minus.png
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/doctools.js
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/basic.css
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/sidebar.js
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/documentation_options.js
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/language_data.js
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/ecm.css
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/english-stemmer.js
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/classic.css
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_static/kde-favicon.ico
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/search.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/kde-module
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/kde-module/KDECMakeSettings.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/kde-module/KDEMetaInfoPlatformCheck.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/kde-module/KDEInstallDirs5.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/kde-module/KDEInstallDirs6.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/kde-module/KDEPackageAppTemplates.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/kde-module/KDEClangFormat.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/kde-module/KDEFrameworkCompilerSettings.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/kde-module/KDEGitCommitHooks.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/kde-module/KDECompilerSettings.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/kde-module/KDEInstallDirs.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMGenerateQmlTypes.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMQueryQt.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/QtVersionOption.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMPoQmTools.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMFeatureSummary.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMAddQtDesignerPlugin.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMMarkNonGuiExecutable.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMUseFindModules.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMGenerateExportHeader.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMAddAndroidApk.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMQmlModule.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMUninstallTarget.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMFindQmlModule.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMGenerateQDoc.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMCheckOutboundLicense.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMGenerateHeaders.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMDeprecationSettings.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMGeneratePkgConfigFile.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMConfiguredInstall.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMCoverageOption.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/CheckAtomic.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMQtDeclareLoggingCategory.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMWinResolveSymlinks.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMEnableSanitizers.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMGeneratePythonBindings.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMGeneratePriFile.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMSourceVersionControl.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMMarkAsTest.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMCreateQmFromPoFiles.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMAddAppIcon.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMAddQch.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMAddTests.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMSetupVersion.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMFindModuleHelpers.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMInstalledLibraryCheck.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMSetupQtPluginMacroNames.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMOptionalAddSubdirectory.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMPackageConfigHelpers.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMInstallIcons.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/module/ECMGenerateDBusServiceFile.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindXCB.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/Findgzip.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindSasl2.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindQtWaylandScanner.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindPulseAudio.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindInotify.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindOpenEXR.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindDesktopFileUtils.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindSeccomp.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindGperf.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindLibGit2.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindFFmpeg.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindWaylandScanner.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindKF6.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindX11_XCB.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/Findepoxy.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindGradle.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindIsoCodes.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindUDev.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindSharedMimeInfo.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindWayland.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindLibcap.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindKF5.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindIcoTool.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindGLIB2.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindTaglib.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/Find7Zip.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindPhoneNumber.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindPoppler.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindWaylandProtocols.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/Find7z.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindLibMount.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindCanberra.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindEGL.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/find-module/FindLibExiv2.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/manual
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/manual/ecm-modules.7.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/manual/ecm-kde-modules.7.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/manual/ecm-find-modules.7.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/manual/ecm.7.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/manual/ecm-developer.7.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/manual/ecm-toolchains.7.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/index.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/kde-module
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/kde-module/KDEMetaInfoPlatformCheck.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/kde-module/KDEInstallDirs6.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/kde-module/KDECMakeSettings.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/kde-module/KDEFrameworkCompilerSettings.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/kde-module/KDEInstallDirs.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/kde-module/KDEClangFormat.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/kde-module/KDEGitCommitHooks.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/kde-module/KDEPackageAppTemplates.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/kde-module/KDECompilerSettings.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/kde-module/KDEInstallDirs5.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/toolchain
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/_sources/toolchain/Android.rst.txt
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/index.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/genindex.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/toolchain
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/html/toolchain/Android.html
+-- Installing: /usr/share/doc/extra-cmake-modules-6.32.0/ExtraCMakeModules.qch
+-- Installing: /usr/share/ECM/modules/CheckAtomic.cmake
+-- Installing: /usr/share/ECM/modules/ECMAddAndroidApk.cmake
+-- Installing: /usr/share/ECM/modules/ECMAddAppIcon.cmake
+-- Installing: /usr/share/ECM/modules/ECMAddQch.cmake
+-- Installing: /usr/share/ECM/modules/ECMQchDoxygen.config.in
+-- Installing: /usr/share/ECM/modules/ECMQchDoxygenLayout.xml
+-- Installing: /usr/share/ECM/modules/ECMAddQtDesignerPlugin.cmake
+-- Installing: /usr/share/ECM/modules/ECMAddTests.cmake
+-- Installing: /usr/share/ECM/modules/ECMCheckOutboundLicense.cmake
+-- Installing: /usr/share/ECM/modules/check-outbound-license.py
+-- Installing: /usr/share/ECM/modules/ECMConfiguredInstall.cmake
+-- Installing: /usr/share/ECM/modules/ECMCoverageOption.cmake
+-- Installing: /usr/share/ECM/modules/ECMCreateQmFromPoFiles.cmake
+-- Installing: /usr/share/ECM/modules/ECMDeprecationSettings.cmake
+-- Installing: /usr/share/ECM/modules/ECMEnableSanitizers.cmake
+-- Installing: /usr/share/ECM/modules/ECMFeatureSummary.cmake
+-- Installing: /usr/share/ECM/modules/ECMFindModuleHelpers.cmake
+-- Installing: /usr/share/ECM/modules/ECMFindQmlModule.cmake
+-- Installing: /usr/share/ECM/modules/ECMFindQmlModule.cmake.in
+-- Installing: /usr/share/ECM/modules/ECMGenerateDBusServiceFile.cmake
+-- Installing: /usr/share/ECM/modules/ECMGenerateExportHeader.cmake
+-- Installing: /usr/share/ECM/modules/ECMGenerateHeaders.cmake
+-- Installing: /usr/share/ECM/modules/ECMGeneratePkgConfigFile.cmake
+-- Installing: /usr/share/ECM/modules/ECMGeneratePriFile.cmake
+-- Installing: /usr/share/ECM/modules/ECMGeneratePythonBindings.cmake
+-- Installing: /usr/share/ECM/modules/ECMGeneratePythonBindings.toml.in
+-- Installing: /usr/share/ECM/modules/ECMGeneratePythonBindings.toml.in.license
+-- Installing: /usr/share/ECM/modules/ECMGenerateQDoc.cmake
+-- Installing: /usr/share/ECM/modules/ECMGenerateQmlTypes.cmake
+-- Installing: /usr/share/ECM/modules/ECMInstalledLibraryCheck.cmake
+-- Installing: /usr/share/ECM/modules/ecm_create_installed_library_check.cmake
+-- Installing: /usr/share/ECM/modules/ECMInstallIcons.cmake
+-- Installing: /usr/share/ECM/modules/ECMMarkAsTest.cmake
+-- Installing: /usr/share/ECM/modules/ECMMarkNonGuiExecutable.cmake
+-- Installing: /usr/share/ECM/modules/ECMOptionalAddSubdirectory.cmake
+-- Installing: /usr/share/ECM/modules/ECMPackageConfigHelpers.cmake
+-- Installing: /usr/share/ECM/modules/ECMPoQmTools.cmake
+-- Installing: /usr/share/ECM/modules/ECMQmLoader.cpp.in
+-- Installing: /usr/share/ECM/modules/ECMQmlModule5.cmake
+-- Installing: /usr/share/ECM/modules/ECMQmlModule6.cmake
+-- Installing: /usr/share/ECM/modules/ECMQmlModule.cmake
+-- Installing: /usr/share/ECM/modules/ECMQmlModule.cpp.in
+-- Installing: /usr/share/ECM/modules/ECMQmlModule.cpp.in.license
+-- Installing: /usr/share/ECM/modules/ECMQmlModule.h.in
+-- Installing: /usr/share/ECM/modules/ECMQmlModule.h.in.license
+-- Installing: /usr/share/ECM/modules/ECMQMLModules.cmake
+-- Installing: /usr/share/ECM/modules/ECMQtDeclareLoggingCategory.cmake
+-- Installing: /usr/share/ECM/modules/ECMQtDeclareLoggingCategory.cpp.in
+-- Installing: /usr/share/ECM/modules/ECMQtDeclareLoggingCategory.h.in
+-- Installing: /usr/share/ECM/modules/ECMQueryQmake.cmake
+-- Installing: /usr/share/ECM/modules/ECMQueryQt.cmake
+-- Installing: /usr/share/ECM/modules/ECMSetupQtPluginMacroNames.cmake
+-- Installing: /usr/share/ECM/modules/ECMSetupVersion.cmake
+-- Installing: /usr/share/ECM/modules/ECMVersionHeader.h.in
+-- Installing: /usr/share/ECM/modules/ECMSourceVersionControl.cmake
+-- Installing: /usr/share/ECM/modules/ECMUninstallTarget.cmake
+-- Installing: /usr/share/ECM/modules/ecm_uninstall.cmake.in
+-- Installing: /usr/share/ECM/modules/ECMUseFindModules.cmake
+-- Installing: /usr/share/ECM/modules/ECMWinResolveSymlinks.cmake
+-- Installing: /usr/share/ECM/modules/QtVersionOption.cmake
+-- Installing: /usr/share/ECM/test-modules/test_execute_and_compare.cmake
+-- Installing: /usr/share/ECM/kde-modules/KDEClangFormat.cmake
+-- Installing: /usr/share/ECM/kde-modules/clang-format.cmake
+-- Installing: /usr/share/ECM/kde-modules/KDECMakeSettings.cmake
+-- Installing: /usr/share/ECM/kde-modules/appstreamtest.cmake
+-- Installing: /usr/share/ECM/kde-modules/KDECompilerSettings.cmake
+-- Installing: /usr/share/ECM/kde-modules/KDEFrameworkCompilerLegacySettings.cmake
+-- Installing: /usr/share/ECM/kde-modules/KDEFrameworkCompilerSettings.cmake
+-- Installing: /usr/share/ECM/kde-modules/KDEGitCommitHooks.cmake
+-- Installing: /usr/share/ECM/kde-modules/KDEInstallDirs5.cmake
+-- Installing: /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake
+-- Installing: /usr/share/ECM/kde-modules/KDEInstallDirs.cmake
+-- Installing: /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake
+-- Installing: /usr/share/ECM/kde-modules/KDEMetaInfoPlatformCheck.cmake
+-- Installing: /usr/share/ECM/kde-modules/KDEPackageAppTemplates.cmake
+-- Installing: /usr/share/ECM/kde-modules/KDESetupPrefixScript.cmake
+-- Installing: /usr/share/ECM/kde-modules/prefix.sh.cmake
+-- Installing: /usr/share/ECM/kde-modules/prefix.sh.fish.cmake
+-- Installing: /usr/share/ECM/kde-modules/kde-git-commit-hooks/combined.schema.json.in
+-- Installing: /usr/share/ECM/kde-modules/kde-git-commit-hooks/combined.schema.json.in.license
+-- Installing: /usr/share/ECM/kde-modules/kde-git-commit-hooks/clang-format.sh
+-- Installing: /usr/share/ECM/kde-modules/kde-git-commit-hooks/json-schema.py
+-- Installing: /usr/share/ECM/kde-modules/kde-git-commit-hooks/pre-commit.in
+-- Installing: /usr/share/ECM/find-modules/ECMFindModuleHelpersStub.cmake
+-- Installing: /usr/share/ECM/find-modules/Find7z.cmake
+-- Installing: /usr/share/ECM/find-modules/Find7Zip.cmake
+-- Installing: /usr/share/ECM/find-modules/FindCanberra.cmake
+-- Installing: /usr/share/ECM/find-modules/FindDesktopFileUtils.cmake
+-- Installing: /usr/share/ECM/find-modules/FindEGL.cmake
+-- Installing: /usr/share/ECM/find-modules/Findepoxy.cmake
+-- Installing: /usr/share/ECM/find-modules/FindFFmpeg.cmake
+-- Installing: /usr/share/ECM/find-modules/FindGLIB2.cmake
+-- Installing: /usr/share/ECM/find-modules/FindGperf.cmake
+-- Installing: /usr/share/ECM/find-modules/FindGradle.cmake
+-- Installing: /usr/share/ECM/find-modules/local.properties.cmake
+-- Installing: /usr/share/ECM/find-modules/settings.gradle.cmake
+-- Installing: /usr/share/ECM/find-modules/Findgzip.cmake
+-- Installing: /usr/share/ECM/find-modules/FindIcoTool.cmake
+-- Installing: /usr/share/ECM/find-modules/FindInotify.cmake
+-- Installing: /usr/share/ECM/find-modules/FindIsoCodes.cmake
+-- Installing: /usr/share/ECM/find-modules/FindKF5.cmake
+-- Installing: /usr/share/ECM/find-modules/FindKF6.cmake
+-- Installing: /usr/share/ECM/find-modules/FindLibcap.cmake
+-- Installing: /usr/share/ECM/find-modules/FindLibExiv2.cmake
+-- Installing: /usr/share/ECM/find-modules/FindLibGit2.cmake
+-- Installing: /usr/share/ECM/find-modules/FindLibMount.cmake
+-- Installing: /usr/share/ECM/find-modules/FindOpenEXR.cmake
+-- Installing: /usr/share/ECM/find-modules/FindPhoneNumber.cmake
+-- Installing: /usr/share/ECM/find-modules/FindPoppler.cmake
+-- Installing: /usr/share/ECM/find-modules/FindPulseAudio.cmake
+-- Installing: /usr/share/ECM/find-modules/FindQHelpGenerator.cmake
+-- Installing: /usr/share/ECM/find-modules/FindQtWaylandScanner.cmake
+-- Installing: /usr/share/ECM/find-modules/FindReuseTool.cmake
+-- Installing: /usr/share/ECM/find-modules/FindSasl2.cmake
+-- Installing: /usr/share/ECM/find-modules/FindSeccomp.cmake
+-- Installing: /usr/share/ECM/find-modules/FindSharedMimeInfo.cmake
+-- Installing: /usr/share/ECM/find-modules/FindTaglib.cmake
+-- Installing: /usr/share/ECM/find-modules/FindUDev.cmake
+-- Installing: /usr/share/ECM/find-modules/FindWayland.cmake
+-- Installing: /usr/share/ECM/find-modules/FindWaylandProtocols.cmake
+-- Installing: /usr/share/ECM/find-modules/FindWaylandScanner.cmake
+-- Installing: /usr/share/ECM/find-modules/FindX11_XCB.cmake
+-- Installing: /usr/share/ECM/find-modules/FindXCB.cmake
+-- Installing: /usr/share/ECM/toolchain/Android.cmake
+-- Installing: /usr/share/ECM/toolchain/deployment-file.json.in
+-- Installing: /usr/share/ECM/toolchain/deployment-file-qt514.json.in
+-- Installing: /usr/share/ECM/toolchain/deployment-file-qt6.json.in
+-- Installing: /usr/share/ECM/toolchain/deployment-file-qt6.json.in.license
+-- Installing: /usr/share/ECM/toolchain/ECMAndroidDeployQt5.cmake
+-- Installing: /usr/share/ECM/toolchain/ecm-version.gradle.in
+-- Installing: /usr/share/ECM/toolchain/generate-fastlane-metadata.py
+-- Installing: /usr/share/ECM/toolchain/hasMainSymbol.cmake
+-- Installing: /usr/share/ECM/toolchain/specifydependencies.cmake
+-- Installing: /usr/share/ECM/cmake/ECMConfig.cmake
+-- Installing: /usr/share/ECM/cmake/ECMConfigVersion.cmake
+6.32.0
+Updated registry for extra-cmake-modules to version 6.32.0
+[VERSION] extra-cmake-modules: 6.32.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package extra-cmake-modules in /var/lib/custom-packages/

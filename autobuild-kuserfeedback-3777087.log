@@ -1,0 +1,781 @@
+[08:45:53] Found custom package for kuserfeedback, bypassing BLFS aliases.
+[08:45:53] Custom package detected at /home/fusion809/lfs_packaging/kuserfeedback (package: kuserfeedback)
+[08:45:53] Extracting dependencies for custom package 'kuserfeedback'...
+[08:45:53] Required deps: brotli bzip2 dbus double-conversion e2fsprogs elfutils expat fontconfig freetype gcc glib2 glibc graphite2 harfbuzz icu keyutils libdrm libffi libglvnd libpciaccess libpng libx11 libxau libxcb libxdmcp libxext libxkbcommon libxml2 libxshmfence libxxf86vm llvm lm-sensors mesa mitkrb openssl pcre2 qt6 spirv-tools systemd wayland xz zlib zstd 
+[08:45:54] Dependency 'brotli' already installed.
+[08:45:54] Dependency 'bzip2' already installed.
+[08:45:54] Dependency 'dbus' already installed.
+[08:45:54] Dependency 'double-conversion' already installed.
+[08:45:54] Dependency 'e2fsprogs' already installed.
+[08:45:54] Dependency 'elfutils' already installed.
+[08:45:54] Dependency 'expat' already installed.
+[08:45:54] Dependency 'fontconfig' already installed.
+[08:45:54] Dependency 'freetype' already installed.
+[08:45:54] Dependency 'gcc' already installed.
+[08:45:54] Dependency 'glib2' already installed.
+[08:45:54] Dependency 'glibc' already installed.
+[08:45:54] Dependency 'graphite2' already installed.
+[08:45:54] Dependency 'harfbuzz' already installed.
+[08:45:54] Dependency 'icu' already installed.
+[08:45:54] Dependency 'keyutils' already installed.
+[08:45:54] Dependency 'libdrm' already installed.
+[08:45:54] Dependency 'libffi' already installed.
+[08:45:54] Dependency 'libglvnd' already installed.
+[08:45:54] Dependency 'libpciaccess' already installed.
+[08:45:54] Dependency 'libpng' already installed.
+[08:45:54] Dependency 'libx11' already installed.
+[08:45:54] Dependency 'libxau' already installed.
+[08:45:54] Dependency 'libxcb' already installed.
+[08:45:54] Dependency 'libxdmcp' already installed.
+[08:45:54] Dependency 'libxext' already installed.
+[08:45:54] Dependency 'libxkbcommon' already installed.
+[08:45:54] Dependency 'libxml2' already installed.
+[08:45:54] Dependency 'libxshmfence' already installed.
+[08:45:54] Dependency 'libxxf86vm' already installed.
+[08:45:54] Dependency 'llvm' already installed.
+[08:45:54] Dependency 'lm-sensors' already installed.
+[08:45:54] Dependency 'mesa' already installed.
+[08:45:54] Dependency 'mitkrb' already installed.
+[08:45:54] Dependency 'openssl' already installed.
+[08:45:54] Dependency 'pcre2' already installed.
+[08:45:54] Dependency 'qt6' already installed.
+[08:45:54] Dependency 'spirv-tools' already installed.
+[08:45:54] Dependency 'systemd' already installed.
+[08:45:54] Dependency 'wayland' already installed.
+[08:45:54] Dependency 'xz' already installed.
+[08:45:54] Dependency 'zlib' already installed.
+[08:45:54] Dependency 'zstd' already installed.
+[VERSION] kuserfeedback: 6.32.0
+[08:45:54] Installing kuserfeedback version: 6.32.0
+[08:45:54] Starting remote custom build for kuserfeedback...
+--2026-11-14 08:45:58--  https://download.kde.org/stable/frameworks/6.32/kuserfeedback-6.32.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://mirrors.xtom.au/kde/stable/frameworks/6.32/kuserfeedback-6.32.0.tar.xz [following]
+--2026-11-14 08:46:00--  https://mirrors.xtom.au/kde/stable/frameworks/6.32/kuserfeedback-6.32.0.tar.xz
+Resolving mirrors.xtom.au (mirrors.xtom.au)... 146.19.0.8, 2a11:3::8
+Connecting to mirrors.xtom.au (mirrors.xtom.au)|146.19.0.8|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 277840 (271K) [application/octet-stream]
+Saving to: ‘kuserfeedback-6.32.0.tar.xz’
+
+          kuserfeed   0%[                    ]       0  --.-KB/s               kuserfeedback-6.32. 100%[===================>] 271.33K  --.-KB/s    in 0.1s    
+
+2026-11-14 08:46:00 (2.23 MB/s) - ‘kuserfeedback-6.32.0.tar.xz’ saved [277840/277840]
+
+kuserfeedback-6.32.0.tar.xz already present and appears valid.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:25 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/build/prefix.sh to set the environment for KUserFeedback.
+fatal: no upstream configured for branch 'master'
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found FLEX: /usr/bin/flex (found version "2.6.11")
+-- Found BISON: /usr/bin/bison (found version "3.8.2")
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Unable to build .qhc user manual:
+-- qcollectiongenerator not found
+-- Unable to build .qch user manual:
+-- qdoc executable: /opt/qt6/bin/qdoc
+-- qhelpgenerator executable: /opt/qt6/libexec/qhelpgenerator
+-- The following features have been enabled:
+
+ * Survey targeting expressions support, Requires flex and bison parser generators.
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6Core
+ * Qt6QmlTools (required version >= 6.12.0)
+ * Qt6Qml
+ * OpenGL
+ * Qt6LinguistTools
+
+-- The following RECOMMENDED packages have been found:
+
+ * FLEX
+   Survey target expression parser.
+ * BISON
+   Survey target expression parser.
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.32.0), Extra CMake Modules., <https://invent.kde.org/frameworks/extra-cmake-modules>
+ * Qt6, <http://qt-project.org/>
+
+-- The following OPTIONAL packages have not been found:
+
+ * QmlLint
+
+-- The following RECOMMENDED packages have not been found:
+
+ * Php, <http://php.net>
+   Syntax checking of PHP server code.
+ * PhpUnit, <http://phpunit.de>
+   Unit tests for PHP server code.
+
+-- Configuring done (8.0s)
+-- Generating done (0.4s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_PYTHON_BINDINGS
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/build
+[  0%] Generating ECMPoQm/ar/userfeedbackprovider6_qt.qm
+[  1%] Generating ECMPoQm/ast/userfeedbackconsole6_qt.qm
+[  2%] Generating ECMPoQm/ar/userfeedbackconsole6_qt.qm
+[  2%] Built target translations_2
+[  2%] Built target translations_3
+[  2%] Built target translations_1
+[  3%] Generating ECMPoQm/ast/userfeedbackprovider6_qt.qm
+[  4%] Generating ECMPoQm/az/userfeedbackprovider6_qt.qm
+[  4%] Generating ECMPoQm/az/userfeedbackconsole6_qt.qm
+[  4%] Built target translations_4
+[  4%] Built target translations_6
+[  4%] Built target translations_5
+[  4%] Generating ECMPoQm/bg/userfeedbackprovider6_qt.qm
+[  5%] Generating ECMPoQm/bg/userfeedbackconsole6_qt.qm
+[  5%] Generating ECMPoQm/ca/userfeedbackconsole6_qt.qm
+[  5%] Built target translations_8
+[  5%] Built target translations_7
+[  5%] Built target translations_9
+[  5%] Generating ECMPoQm/ca/userfeedbackprovider6_qt.qm
+[  6%] Generating ECMPoQm/ca@valencia/userfeedbackconsole6_qt.qm
+[  7%] Generating ECMPoQm/ca@valencia/userfeedbackprovider6_qt.qm
+[  7%] Built target translations_10
+[  7%] Built target translations_11
+[  7%] Built target translations_12
+[  7%] Generating ECMPoQm/cs/userfeedbackconsole6_qt.qm
+[  7%] Generating ECMPoQm/da/userfeedbackconsole6_qt.qm
+[  8%] Generating ECMPoQm/cs/userfeedbackprovider6_qt.qm
+[  8%] Built target translations_13
+[  8%] Built target translations_14
+[  8%] Built target translations_15
+[ 10%] Generating ECMPoQm/da/userfeedbackprovider6_qt.qm
+[ 10%] Built target translations_16
+[ 11%] Generating ECMPoQm/de/userfeedbackconsole6_qt.qm
+[ 11%] Generating ECMPoQm/de/userfeedbackprovider6_qt.qm
+[ 12%] Generating ECMPoQm/en_GB/userfeedbackconsole6_qt.qm
+[ 12%] Built target translations_18
+[ 12%] Built target translations_17
+[ 12%] Built target translations_19
+[ 13%] Generating ECMPoQm/en_GB/userfeedbackprovider6_qt.qm
+[ 13%] Generating ECMPoQm/eo/userfeedbackconsole6_qt.qm
+[ 13%] Built target translations_20
+[ 14%] Generating ECMPoQm/eo/userfeedbackprovider6_qt.qm
+[ 14%] Built target translations_21
+[ 15%] Generating ECMPoQm/es/userfeedbackconsole6_qt.qm
+[ 15%] Built target translations_22
+[ 15%] Generating ECMPoQm/es/userfeedbackprovider6_qt.qm
+[ 16%] Generating ECMPoQm/et/userfeedbackconsole6_qt.qm
+[ 16%] Built target translations_23
+[ 16%] Built target translations_24
+[ 16%] Built target translations_25
+[ 16%] Generating ECMPoQm/et/userfeedbackprovider6_qt.qm
+[ 17%] Generating ECMPoQm/eu/userfeedbackconsole6_qt.qm
+[ 17%] Built target translations_26
+[ 17%] Generating ECMPoQm/eu/userfeedbackprovider6_qt.qm
+[ 18%] Generating ECMPoQm/fi/userfeedbackconsole6_qt.qm
+[ 18%] Built target translations_27
+[ 18%] Built target translations_28
+[ 20%] Generating ECMPoQm/fr/userfeedbackconsole6_qt.qm
+[ 20%] Built target translations_29
+[ 20%] Generating ECMPoQm/fi/userfeedbackprovider6_qt.qm
+[ 20%] Generating ECMPoQm/fr/userfeedbackprovider6_qt.qm
+[ 20%] Built target translations_31
+[ 20%] Built target translations_30
+[ 20%] Built target translations_32
+[ 20%] Generating ECMPoQm/ga/userfeedbackprovider6_qt.qm
+[ 21%] Generating ECMPoQm/ga/userfeedbackconsole6_qt.qm
+[ 22%] Generating ECMPoQm/gl/userfeedbackconsole6_qt.qm
+[ 22%] Built target translations_34
+[ 22%] Built target translations_33
+[ 22%] Built target translations_35
+[ 23%] Generating ECMPoQm/gl/userfeedbackprovider6_qt.qm
+[ 23%] Generating ECMPoQm/he/userfeedbackconsole6_qt.qm
+[ 24%] Generating ECMPoQm/he/userfeedbackprovider6_qt.qm
+[ 24%] Built target translations_36
+[ 24%] Built target translations_38
+[ 24%] Built target translations_37
+[ 24%] Generating ECMPoQm/hi/userfeedbackconsole6_qt.qm
+[ 25%] Generating ECMPoQm/hu/userfeedbackconsole6_qt.qm
+[ 25%] Generating ECMPoQm/hi/userfeedbackprovider6_qt.qm
+[ 25%] Built target translations_39
+[ 25%] Built target translations_41
+[ 25%] Built target translations_40
+[ 26%] Generating ECMPoQm/hu/userfeedbackprovider6_qt.qm
+[ 27%] Generating ECMPoQm/ia/userfeedbackprovider6_qt.qm
+[ 27%] Generating ECMPoQm/ia/userfeedbackconsole6_qt.qm
+[ 27%] Built target translations_44
+[ 27%] Built target translations_42
+[ 27%] Built target translations_43
+[ 27%] Generating ECMPoQm/id/userfeedbackconsole6_qt.qm
+[ 28%] Generating ECMPoQm/id/userfeedbackprovider6_qt.qm
+[ 28%] Generating ECMPoQm/is/userfeedbackprovider6_qt.qm
+[ 28%] Built target translations_45
+[ 28%] Built target translations_46
+[ 28%] Built target translations_47
+[ 30%] Generating ECMPoQm/it/userfeedbackconsole6_qt.qm
+[ 31%] Generating ECMPoQm/it/userfeedbackprovider6_qt.qm
+[ 32%] Generating ECMPoQm/ja/userfeedbackconsole6_qt.qm
+[ 32%] Built target translations_48
+[ 32%] Built target translations_49
+[ 32%] Built target translations_50
+[ 33%] Generating ECMPoQm/ka/userfeedbackconsole6_qt.qm
+[ 33%] Generating ECMPoQm/ja/userfeedbackprovider6_qt.qm
+[ 33%] Generating ECMPoQm/ka/userfeedbackprovider6_qt.qm
+[ 33%] Built target translations_52
+[ 33%] Built target translations_51
+[ 33%] Built target translations_53
+[ 34%] Generating ECMPoQm/ko/userfeedbackconsole6_qt.qm
+[ 35%] Generating ECMPoQm/ko/userfeedbackprovider6_qt.qm
+[ 35%] Generating ECMPoQm/lt/userfeedbackconsole6_qt.qm
+[ 35%] Built target translations_55
+[ 35%] Built target translations_54
+[ 35%] Built target translations_56
+[ 36%] Generating ECMPoQm/lt/userfeedbackprovider6_qt.qm
+[ 36%] Generating ECMPoQm/lv/userfeedbackconsole6_qt.qm
+[ 36%] Built target translations_57
+[ 37%] Generating ECMPoQm/lv/userfeedbackprovider6_qt.qm
+[ 37%] Built target translations_58
+[ 37%] Generating ECMPoQm/nan_TW@latin/userfeedbackconsole6_qt.qm
+[ 37%] Built target translations_59
+[ 38%] Generating ECMPoQm/nan_TW@latin/userfeedbackprovider6_qt.qm
+[ 38%] Built target translations_60
+[ 38%] Generating ECMPoQm/nl/userfeedbackconsole6_qt.qm
+[ 38%] Built target translations_61
+[ 38%] Generating ECMPoQm/nn/userfeedbackprovider6_qt.qm
+[ 40%] Generating ECMPoQm/nl/userfeedbackprovider6_qt.qm
+[ 40%] Built target translations_62
+[ 40%] Built target translations_63
+[ 40%] Built target translations_64
+[ 41%] Generating ECMPoQm/pl/userfeedbackconsole6_qt.qm
+[ 42%] Generating ECMPoQm/pl/userfeedbackprovider6_qt.qm
+[ 42%] Generating ECMPoQm/pt/userfeedbackconsole6_qt.qm
+[ 42%] Built target translations_65
+[ 42%] Built target translations_66
+[ 42%] Built target translations_67
+[ 43%] Generating ECMPoQm/pt/userfeedbackprovider6_qt.qm
+[ 43%] Generating ECMPoQm/pt_BR/userfeedbackconsole6_qt.qm
+[ 43%] Built target translations_68
+[ 43%] Generating ECMPoQm/pt_BR/userfeedbackprovider6_qt.qm
+[ 43%] Built target translations_69
+[ 44%] Generating ECMPoQm/ro/userfeedbackconsole6_qt.qm
+[ 45%] Generating ECMPoQm/ro/userfeedbackprovider6_qt.qm
+[ 45%] Built target translations_70
+[ 45%] Built target translations_71
+[ 45%] Generating ECMPoQm/ru/userfeedbackconsole6_qt.qm
+[ 45%] Built target translations_72
+[ 45%] Built target translations_73
+[ 46%] Generating ECMPoQm/ru/userfeedbackprovider6_qt.qm
+[ 46%] Generating ECMPoQm/sa/userfeedbackconsole6_qt.qm
+[ 47%] Generating ECMPoQm/sa/userfeedbackprovider6_qt.qm
+[ 47%] Built target translations_74
+[ 47%] Built target translations_75
+[ 47%] Built target translations_76
+[ 47%] Generating ECMPoQm/sk/userfeedbackconsole6_qt.qm
+[ 48%] Generating ECMPoQm/sk/userfeedbackprovider6_qt.qm
+[ 50%] Generating ECMPoQm/sl/userfeedbackconsole6_qt.qm
+[ 50%] Built target translations_77
+[ 50%] Built target translations_78
+[ 50%] Built target translations_79
+[ 51%] Generating ECMPoQm/sl/userfeedbackprovider6_qt.qm
+[ 51%] Generating ECMPoQm/sv/userfeedbackconsole6_qt.qm
+[ 52%] Generating ECMPoQm/sv/userfeedbackprovider6_qt.qm
+[ 52%] Built target translations_80
+[ 52%] Built target translations_81
+[ 52%] Built target translations_82
+[ 52%] Generating ECMPoQm/ta/userfeedbackconsole6_qt.qm
+[ 53%] Generating ECMPoQm/ta/userfeedbackprovider6_qt.qm
+[ 54%] Generating ECMPoQm/tr/userfeedbackconsole6_qt.qm
+[ 54%] Built target translations_83
+[ 54%] Built target translations_85
+[ 54%] Generating ECMPoQm/tr/userfeedbackprovider6_qt.qm
+[ 54%] Built target translations_84
+[ 55%] Generating ECMPoQm/ug/userfeedbackconsole6_qt.qm
+[ 55%] Generating ECMPoQm/ug/userfeedbackprovider6_qt.qm
+[ 55%] Built target translations_86
+[ 55%] Built target translations_87
+[ 55%] Built target translations_88
+[ 56%] Generating ECMPoQm/uk/userfeedbackconsole6_qt.qm
+[ 57%] Generating ECMPoQm/zh_CN/userfeedbackconsole6_qt.qm
+[ 58%] Generating ECMPoQm/uk/userfeedbackprovider6_qt.qm
+[ 58%] Built target translations_89
+[ 58%] Generating ECMPoQm/zh_CN/userfeedbackprovider6_qt.qm
+[ 58%] Built target translations_90
+[ 58%] Built target translations_91
+[ 58%] Built target translations_92
+[ 60%] Generating ECMPoQm/zh_TW/userfeedbackconsole6_qt.qm
+[ 60%] Generating ECMPoQm/zh_TW/userfeedbackprovider6_qt.qm
+[ 60%] Built target translations_93
+[ 61%] [FLEX][surveytargetexpressionscanner] Building scanner with flex 2.6.11
+[ 61%] Built target translations_94
+[ 61%] Copying KF6UserFeedbackQml qml resources into build dir
+[ 62%] Populating .qmlls.build.ini file at /home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/build/.qt/.qmlls.build.ini
+[ 62%] [BISON][surveytargetexpressionparser] Building parser with bison 3.8.2
+[ 62%] Built target KF6UserFeedbackQml_copy_res
+[ 63%] Copying KF6UserFeedbackQml qml sources into build dir
+[ 63%] Built target KF6UserFeedbackQml_copy_qml
+[ 63%] Built target KF6UserFeedbackCommon_autogen_timestamp_deps
+[ 63%] Built target generate_qmlls_build_ini_file
+[ 64%] Generating manual/user-feedback-manual.qhp
+[ 64%] Automatic MOC and UIC for target KF6UserFeedbackCommon
+[ 64%] Built target KF6UserFeedbackCommon_autogen
+[ 65%] Building CXX object src/common/CMakeFiles/KF6UserFeedbackCommon.dir/surveytargetexpression.cpp.o
+[ 65%] Building CXX object src/common/CMakeFiles/KF6UserFeedbackCommon.dir/KF6UserFeedbackCommon_autogen/mocs_compilation.cpp.o
+[ 65%] Building CXX object src/common/CMakeFiles/KF6UserFeedbackCommon.dir/surveytargetexpressionevaluator.cpp.o
+[ 66%] Generating manual/user-feedback-manual.qch
+Building up file structure...
+Insert custom filters...
+Insert help data for filter section (1 of 1)...
+Insert files...
+Insert contents...
+Insert indices...
+Documentation successfully generated.
+[ 66%] Built target user_feedback_manual_qch
+[ 67%] Building CXX object src/common/CMakeFiles/KF6UserFeedbackCommon.dir/surveytargetexpressionparser.cpp.o
+/home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/src/common/surveytargetexpression.cpp: In constructor ‘KUserFeedback::SurveyTargetExpression::SurveyTargetExpression(const QString&, const QVariant&, const QString&)’:
+/home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/src/common/surveytargetexpression.cpp:22:19: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+   22 |     if (index.type() == QVariant::Int)
+      |         ~~~~~~~~~~^~
+In file included from /opt/qt6/include/QtCore/QVariant:1,
+                 from /home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/src/common/surveytargetexpression.h:12,
+                 from /home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/src/common/surveytargetexpression.cpp:7:
+/opt/qt6/include/QtCore/qvariant.h:671:10: note: declared here
+  671 |     Type type() const
+      |          ^~~~
+/home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/src/common/surveytargetexpression.cpp:24:24: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+   24 |     else if (index.type() == QVariant::String)
+      |              ~~~~~~~~~~^~
+/opt/qt6/include/QtCore/qvariant.h:671:10: note: declared here
+  671 |     Type type() const
+      |          ^~~~
+/home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/src/common/surveytargetexpressionevaluator.cpp: In member function ‘bool KUserFeedback::SurveyTargetExpressionEvaluator::evaluate(KUserFeedback::SurveyTargetExpression*)’:
+/home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/src/common/surveytargetexpressionevaluator.cpp:60:17: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+   60 |     if (lhs.type() == QVariant::Invalid || rhs.type() == QVariant::Invalid) // invalid element access can never succeed
+      |         ~~~~~~~~^~
+In file included from /opt/qt6/include/QtCore/QVariant:1,
+                 from /home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/src/common/surveytargetexpression.h:12,
+                 from /home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/src/common/surveytargetexpressionevaluator.cpp:8:
+/opt/qt6/include/QtCore/qvariant.h:671:10: note: declared here
+  671 |     Type type() const
+      |          ^~~~
+/home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/src/common/surveytargetexpressionevaluator.cpp:60:52: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+   60 |     if (lhs.type() == QVariant::Invalid || rhs.type() == QVariant::Invalid) // invalid element access can never succeed
+      |                                            ~~~~~~~~^~
+/opt/qt6/include/QtCore/qvariant.h:671:10: note: declared here
+  671 |     Type type() const
+      |          ^~~~
+/home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/src/common/surveytargetexpressionevaluator.cpp:62:18: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+   62 |     if ((lhs.type() == QVariant::String && rhs.type() != QVariant::String)
+      |          ~~~~~~~~^~
+/opt/qt6/include/QtCore/qvariant.h:671:10: note: declared here
+  671 |     Type type() const
+      |          ^~~~
+/home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/src/common/surveytargetexpressionevaluator.cpp:62:52: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+   62 |     if ((lhs.type() == QVariant::String && rhs.type() != QVariant::String)
+      |                                            ~~~~~~~~^~
+/opt/qt6/include/QtCore/qvariant.h:671:10: note: declared here
+  671 |     Type type() const
+      |          ^~~~
+/home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/src/common/surveytargetexpressionevaluator.cpp:63:21: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+   63 |         || (lhs.type() != QVariant::String && rhs.type() == QVariant::String))
+      |             ~~~~~~~~^~
+/opt/qt6/include/QtCore/qvariant.h:671:10: note: declared here
+  671 |     Type type() const
+      |          ^~~~
+/home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/src/common/surveytargetexpressionevaluator.cpp:63:55: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+   63 |         || (lhs.type() != QVariant::String && rhs.type() == QVariant::String))
+      |                                               ~~~~~~~~^~
+/opt/qt6/include/QtCore/qvariant.h:671:10: note: declared here
+  671 |     Type type() const
+      |          ^~~~
+[ 67%] Building CXX object src/common/CMakeFiles/KF6UserFeedbackCommon.dir/surveytargetexpressionparser_p.cpp.o
+[ 68%] Building CXX object src/common/CMakeFiles/KF6UserFeedbackCommon.dir/surveytargetexpressionlexer.cpp.o
+/home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/build/src/common/surveytargetexpressionparser_p.cpp: In function ‘int yyparse(KUserFeedback::SurveyTargetExpression**, yyscan_t)’:
+/home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/build/src/common/surveytargetexpressionparser_p.cpp:920:9: warning: variable ‘yynerrs’ set but not used [-Wunused-but-set-variable=]
+  920 |     int yynerrs = 0;
+      |         ^~~~~~~
+/home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/build/src/common/surveytargetexpressionlexer.cpp: In function ‘yy_buffer_state* yy_scan_bytes(const char*, int, yyscan_t)’:
+/home/fusion809/lfs_packaging/kuserfeedback/kuserfeedback-6.32.0/build/src/common/surveytargetexpressionlexer.cpp:1978:21: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+ 1978 |         if ( buf == 0 ) {
+      |                     ^
+[ 70%] Linking CXX static library ../../lib/libKF6UserFeedbackCommon.a
+[ 70%] Built target KF6UserFeedbackCommon
+[ 70%] Built target KF6UserFeedbackCore_autogen_timestamp_deps
+[ 70%] Automatic MOC and UIC for target KF6UserFeedbackCore
+[ 70%] Built target KF6UserFeedbackCore_autogen
+[ 71%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/applicationversionsource.cpp.o
+[ 71%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/abstractdatasource.cpp.o
+[ 72%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/KF6UserFeedbackCore_autogen/mocs_compilation.cpp.o
+[ 73%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/compilerinfosource.cpp.o
+[ 73%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/cpuinfosource.cpp.o
+[ 74%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/feedbackconfiguicontroller.cpp.o
+[ 74%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/localeinfosource.cpp.o
+[ 75%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/openglinfosource.cpp.o
+[ 75%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/platforminfosource.cpp.o
+[ 76%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/propertyratiosource.cpp.o
+[ 77%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/provider.cpp.o
+[ 77%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/qpainfosource.cpp.o
+[ 78%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/qtversionsource.cpp.o
+[ 78%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/screeninfosource.cpp.o
+[ 80%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/selectionratiosource.cpp.o
+[ 80%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/startcountsource.cpp.o
+[ 81%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/surveyinfo.cpp.o
+[ 82%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/usagetimesource.cpp.o
+[ 82%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/auditloguicontroller.cpp.o
+[ 83%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/ECMQmLoader-userfeedbackprovider6_qt.cpp.o
+[ 83%] Building CXX object src/provider/core/CMakeFiles/KF6UserFeedbackCore.dir/logging_p.cpp.o
+[ 84%] Linking CXX shared library ../../../bin/libKF6UserFeedbackCore.so
+[ 84%] Built target KF6UserFeedbackCore
+[ 84%] Built target KF6UserFeedbackQml_autogen_timestamp_deps
+[ 84%] Built target KF6UserFeedbackWidgets_autogen_timestamp_deps
+[ 85%] Automatic MOC and UIC for target KF6UserFeedbackWidgets
+[ 85%] Automatic MOC and UIC for target KF6UserFeedbackQml
+[ 85%] Built target KF6UserFeedbackWidgets_autogen
+[ 86%] Building CXX object src/provider/widgets/CMakeFiles/KF6UserFeedbackWidgets.dir/KF6UserFeedbackWidgets_autogen/mocs_compilation.cpp.o
+[ 86%] Building CXX object src/provider/widgets/CMakeFiles/KF6UserFeedbackWidgets.dir/feedbackconfigdialog.cpp.o
+[ 87%] Building CXX object src/provider/widgets/CMakeFiles/KF6UserFeedbackWidgets.dir/feedbackconfigwidget.cpp.o
+[ 87%] Built target KF6UserFeedbackQml_autogen
+[ 87%] Running AUTOMOC file extraction for target KF6UserFeedbackQml
+[ 88%] Running rcc for resource qmake_org_kde_userfeedback
+[ 90%] Running moc --collect-json for target KF6UserFeedbackQml
+[ 91%] Generating meta_types/qt6kf6userfeedbackqml_metatypes.json
+[ 91%] Automatic QML type registration for target KF6UserFeedbackQml
+[ 91%] Building CXX object src/provider/qml/CMakeFiles/KF6UserFeedbackQml.dir/KF6UserFeedbackQml_autogen/mocs_compilation.cpp.o
+[ 92%] Building CXX object src/provider/qml/CMakeFiles/KF6UserFeedbackQml.dir/kf6userfeedbackqml_qmltyperegistrations.cpp.o
+[ 93%] Building CXX object src/provider/widgets/CMakeFiles/KF6UserFeedbackWidgets.dir/notificationpopup.cpp.o
+[ 94%] Building CXX object src/provider/qml/CMakeFiles/KF6UserFeedbackQml.dir/.qt/rcc/qrc_qmake_org_kde_userfeedback.cpp.o
+[ 94%] Building CXX object src/provider/qml/CMakeFiles/KF6UserFeedbackQml.dir/qmlabstractdatasource.cpp.o
+[ 94%] Building CXX object src/provider/widgets/CMakeFiles/KF6UserFeedbackWidgets.dir/styleinfosource.cpp.o
+[ 95%] Building CXX object src/provider/qml/CMakeFiles/KF6UserFeedbackQml.dir/qmldatasources.cpp.o
+[ 96%] Building CXX object src/provider/widgets/CMakeFiles/KF6UserFeedbackWidgets.dir/auditlogbrowserdialog.cpp.o
+[ 96%] Building CXX object src/provider/qml/CMakeFiles/KF6UserFeedbackQml.dir/qmlplugin.cpp.o
+[ 97%] Building CXX object src/provider/qml/CMakeFiles/KF6UserFeedbackQml.dir/qmlpropertyratiosource.cpp.o
+[ 98%] Building CXX object src/provider/qml/CMakeFiles/KF6UserFeedbackQml.dir/qmlproviderextension.cpp.o
+[ 98%] Linking CXX shared library ../../../bin/libKF6UserFeedbackWidgets.so
+[ 98%] Built target KF6UserFeedbackWidgets
+[ 98%] Building CXX object src/provider/qml/CMakeFiles/KF6UserFeedbackQml.dir/qmlpropertysource.cpp.o
+[100%] Linking CXX shared module ../../../bin/org/kde/userfeedback/libKF6UserFeedbackQml.so
+[100%] Built target KF6UserFeedbackQml
+[  1%] Built target translations_1
+[  1%] Built target translations_2
+[  2%] Built target translations_3
+[  3%] Built target translations_4
+[  3%] Built target translations_5
+[  4%] Built target translations_6
+[  5%] Built target translations_7
+[  5%] Built target translations_8
+[  5%] Built target translations_9
+[  5%] Built target translations_10
+[  6%] Built target translations_11
+[  7%] Built target translations_12
+[  7%] Built target translations_13
+[  8%] Built target translations_14
+[  8%] Built target translations_15
+[ 10%] Built target translations_16
+[ 11%] Built target translations_17
+[ 11%] Built target translations_18
+[ 12%] Built target translations_19
+[ 13%] Built target translations_20
+[ 13%] Built target translations_21
+[ 14%] Built target translations_22
+[ 15%] Built target translations_23
+[ 15%] Built target translations_24
+[ 16%] Built target translations_25
+[ 16%] Built target translations_26
+[ 17%] Built target translations_27
+[ 17%] Built target translations_28
+[ 18%] Built target translations_29
+[ 18%] Built target translations_30
+[ 20%] Built target translations_31
+[ 20%] Built target translations_32
+[ 21%] Built target translations_33
+[ 21%] Built target translations_34
+[ 22%] Built target translations_35
+[ 23%] Built target translations_36
+[ 23%] Built target translations_37
+[ 24%] Built target translations_38
+[ 24%] Built target translations_39
+[ 24%] Built target translations_40
+[ 25%] Built target translations_41
+[ 26%] Built target translations_42
+[ 26%] Built target translations_43
+[ 27%] Built target translations_44
+[ 27%] Built target translations_45
+[ 28%] Built target translations_46
+[ 28%] Built target translations_47
+[ 30%] Built target translations_48
+[ 31%] Built target translations_49
+[ 32%] Built target translations_50
+[ 32%] Built target translations_51
+[ 33%] Built target translations_52
+[ 33%] Built target translations_53
+[ 34%] Built target translations_54
+[ 35%] Built target translations_55
+[ 35%] Built target translations_56
+[ 36%] Built target translations_57
+[ 36%] Built target translations_58
+[ 37%] Built target translations_59
+[ 37%] Built target translations_60
+[ 38%] Built target translations_61
+[ 38%] Built target translations_62
+[ 40%] Built target translations_63
+[ 40%] Built target translations_64
+[ 41%] Built target translations_65
+[ 42%] Built target translations_66
+[ 42%] Built target translations_67
+[ 43%] Built target translations_68
+[ 43%] Built target translations_69
+[ 43%] Built target translations_70
+[ 44%] Built target translations_71
+[ 45%] Built target translations_72
+[ 45%] Built target translations_73
+[ 46%] Built target translations_74
+[ 46%] Built target translations_75
+[ 47%] Built target translations_76
+[ 47%] Built target translations_77
+[ 48%] Built target translations_78
+[ 50%] Built target translations_79
+[ 51%] Built target translations_80
+[ 51%] Built target translations_81
+[ 52%] Built target translations_82
+[ 52%] Built target translations_83
+[ 53%] Built target translations_84
+[ 54%] Built target translations_85
+[ 54%] Built target translations_86
+[ 55%] Built target translations_87
+[ 55%] Built target translations_88
+[ 56%] Built target translations_89
+[ 57%] Built target translations_90
+[ 58%] Built target translations_91
+[ 58%] Built target translations_92
+[ 60%] Built target translations_93
+[ 60%] Built target translations_94
+[ 61%] Built target KF6UserFeedbackCommon_autogen_timestamp_deps
+[ 61%] Built target KF6UserFeedbackCommon_autogen
+[ 65%] Built target KF6UserFeedbackCommon
+[ 65%] Built target KF6UserFeedbackCore_autogen_timestamp_deps
+[ 65%] Built target KF6UserFeedbackCore_autogen
+[ 80%] Built target KF6UserFeedbackCore
+[ 80%] Built target KF6UserFeedbackWidgets_autogen_timestamp_deps
+[ 81%] Built target KF6UserFeedbackWidgets_autogen
+[ 85%] Built target KF6UserFeedbackWidgets
+[ 85%] Built target KF6UserFeedbackQml_copy_res
+[ 86%] Built target generate_qmlls_build_ini_file
+[ 87%] Built target KF6UserFeedbackQml_copy_qml
+[ 87%] Built target KF6UserFeedbackQml_autogen_timestamp_deps
+[ 87%] Built target KF6UserFeedbackQml_autogen
+[ 97%] Built target KF6UserFeedbackQml
+[100%] Built target user_feedback_manual_qch
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/lib/libKF6UserFeedbackCore.so.6.32.0
+-- Installing: /usr/lib/libKF6UserFeedbackCore.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKF6UserFeedbackCore.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKF6UserFeedbackCore.so
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedbackcore_export.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/abstractdatasource.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/applicationversionsource.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/compilerinfosource.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/cpuinfosource.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/localeinfosource.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/openglinfosource.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/platforminfosource.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/propertyratiosource.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/provider.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/qpainfosource.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/qtversionsource.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/screeninfosource.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/startcountsource.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/surveyinfo.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/usagetimesource.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/kuserfeedback/feedbackconfiguicontroller.h
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/AbstractDataSource
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/ApplicationVersionSource
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/CompilerInfoSource
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/CpuInfoSource
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/LocaleInfoSource
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/OpenGLInfoSource
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/PlatformInfoSource
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/PropertyRatioSource
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/Provider
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/QPAInfoSource
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/QtVersionSource
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/ScreenInfoSource
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/StartCountSource
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/SurveyInfo
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/UsageTimeSource
+-- Installing: /usr/include/KF6/KUserFeedbackCore/KUserFeedback/FeedbackConfigUiController
+-- Installing: /usr/mkspecs/modules/qt_KF6UserFeedbackCore.pri
+-- Installing: /usr/lib/libKF6UserFeedbackWidgets.so.6.32.0
+-- Installing: /usr/lib/libKF6UserFeedbackWidgets.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKF6UserFeedbackWidgets.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKF6UserFeedbackWidgets.so
+-- Installing: /usr/include/KF6/KUserFeedbackWidgets/kuserfeedbackwidgets_export.h
+-- Installing: /usr/include/KF6/KUserFeedbackWidgets/kuserfeedback/feedbackconfigdialog.h
+-- Installing: /usr/include/KF6/KUserFeedbackWidgets/kuserfeedback/feedbackconfigwidget.h
+-- Installing: /usr/include/KF6/KUserFeedbackWidgets/kuserfeedback/notificationpopup.h
+-- Installing: /usr/include/KF6/KUserFeedbackWidgets/kuserfeedback/styleinfosource.h
+-- Installing: /usr/include/KF6/KUserFeedbackWidgets/KUserFeedback/FeedbackConfigDialog
+-- Installing: /usr/include/KF6/KUserFeedbackWidgets/KUserFeedback/FeedbackConfigWidget
+-- Installing: /usr/include/KF6/KUserFeedbackWidgets/KUserFeedback/NotificationPopup
+-- Installing: /usr/include/KF6/KUserFeedbackWidgets/KUserFeedback/StyleInfoSource
+-- Installing: /usr/mkspecs/modules/qt_KF6UserFeedbackWidgets.pri
+-- Installing: /usr/lib/qml/org/kde/userfeedback/libKF6UserFeedbackQml.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/userfeedback/libKF6UserFeedbackQml.so" to ""
+-- Installing: /usr/lib/qml/org/kde/userfeedback/qmldir
+-- Installing: /usr/lib/qml/org/kde/userfeedback/KF6UserFeedbackQml.qmltypes
+-- Installing: /usr/lib/qml/org/kde/userfeedback/kde-qmlmodule.version
+-- Installing: /usr/share/KDE/UserFeedbackConsole/user-feedback-manual.qch
+-- Installing: /usr/lib/cmake/KF6UserFeedback/KF6UserFeedbackConfig.cmake
+-- Installing: /usr/lib/cmake/KF6UserFeedback/KF6UserFeedbackConfigVersion.cmake
+-- Old export file "/usr/lib/cmake/KF6UserFeedback/KF6UserFeedbackTarget.cmake" will be replaced.  Removing files [/usr/lib/cmake/KF6UserFeedback/KF6UserFeedbackTarget-release.cmake].
+-- Installing: /usr/lib/cmake/KF6UserFeedback/KF6UserFeedbackTarget.cmake
+-- Installing: /usr/lib/cmake/KF6UserFeedback/KF6UserFeedbackTarget-release.cmake
+-- Installing: /usr/share/qlogging-categories6/org_kde_UserFeedback.categories
+-- Installing: /usr/share/locale/ar/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/ar/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/ast/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/ast/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/az/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/az/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/bg/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/bg/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/ca/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/ca/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/ca@valencia/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/ca@valencia/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/cs/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/cs/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/da/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/da/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/de/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/de/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/en_GB/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/en_GB/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/eo/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/eo/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/es/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/es/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/et/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/et/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/eu/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/eu/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/fi/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/fi/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/fr/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/fr/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/ga/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/ga/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/gl/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/gl/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/he/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/he/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/hi/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/hi/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/hu/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/hu/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/ia/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/ia/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/id/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/id/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/is/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/it/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/it/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/ja/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/ja/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/ka/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/ka/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/ko/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/ko/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/lt/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/lt/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/lv/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/lv/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/nan_TW@latin/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/nan_TW@latin/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/nl/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/nl/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/nn/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/pl/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/pl/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/pt/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/pt/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/pt_BR/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/pt_BR/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/ro/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/ro/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/ru/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/ru/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/sa/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/sa/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/sk/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/sk/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/sl/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/sl/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/sv/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/sv/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/ta/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/ta/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/tr/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/tr/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/ug/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/ug/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/uk/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/uk/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/zh_CN/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/zh_CN/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/share/locale/zh_TW/LC_MESSAGES/userfeedbackconsole6_qt.qm
+-- Installing: /usr/share/locale/zh_TW/LC_MESSAGES/userfeedbackprovider6_qt.qm
+-- Installing: /usr/include/KF6/KUserFeedback/kuserfeedback_version.h
+6.32.0
+Updated registry for kuserfeedback to version 6.32.0
+[VERSION] kuserfeedback: 6.32.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package kuserfeedback in /var/lib/custom-packages/

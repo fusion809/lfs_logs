@@ -1,0 +1,80 @@
+[02:10:44] Found custom package for attica, bypassing BLFS aliases.
+[02:10:44] Custom package detected at /home/fusion809/lfs_packaging/attica (package: attica)
+[02:10:44] Extracting dependencies for custom package 'attica'...
+[02:10:44] Required deps: brotli double-conversion e2fsprogs extra-cmake-modules gcc glib2 glibc icu keyutils mitkrb openssl pcre2 qt6 systemd zlib zstd 
+[02:10:44] Dependency 'brotli' already installed.
+[02:10:44] Dependency 'double-conversion' already installed.
+[02:10:44] Dependency 'e2fsprogs' already installed.
+[02:10:44] Dependency 'extra-cmake-modules' already installed.
+[02:10:44] Dependency 'gcc' already installed.
+[02:10:44] Dependency 'glib2' already installed.
+[02:10:44] Dependency 'glibc' already installed.
+[02:10:44] Dependency 'icu' already installed.
+[02:10:44] Dependency 'keyutils' already installed.
+[02:10:44] Dependency 'mitkrb' already installed.
+[02:10:44] Dependency 'openssl' already installed.
+[02:10:44] Dependency 'pcre2' already installed.
+[02:10:44] Dependency 'qt6' already installed.
+[02:10:44] Dependency 'systemd' already installed.
+[02:10:44] Dependency 'zlib' already installed.
+[02:10:44] Dependency 'zstd' already installed.
+[VERSION] attica: 6.32.0
+[02:10:45] Installing attica version: 6.32.0
+[02:10:45] Starting remote custom build for attica...
+--2026-11-14 02:11:01--  https://download.kde.org/stable/frameworks/6.32/attica-6.32.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://cdn.download.kde.org/stable/frameworks/6.32/attica-6.32.0.tar.xz [following]
+--2026-11-14 02:11:02--  https://cdn.download.kde.org/stable/frameworks/6.32/attica-6.32.0.tar.xz
+Resolving cdn.download.kde.org (cdn.download.kde.org)... 143.244.62.8, 143.244.62.6, 2a02:6ea0:db00::11, ...
+Connecting to cdn.download.kde.org (cdn.download.kde.org)|143.244.62.8|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 68468 (67K) [application/x-xz]
+Saving to: ‘attica-6.32.0.tar.xz’
+
+attica-6.32.0.tar.x   0%[                    ]       0  --.-KB/s               attica-6.32.0.tar.x 100%[===================>]  66.86K  --.-KB/s    in 0.05s   
+
+2026-11-14 02:11:04 (1.21 MB/s) - ‘attica-6.32.0.tar.xz’ saved [68468/68468]
+
+attica-6.32.0.tar.xz already present and appears valid.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning at CMakeLists.txt:8 (find_package):
+  Could not find a configuration file for package "ECM" that is compatible
+  with requested version "6.32.0".
+
+  The following configuration files were considered but not accepted:
+
+    /usr/share/ECM/cmake/ECMConfig.cmake, version: 6.31.0
+      The version found is not compatible with the version requested.
+
+
+
+-- 
+ * ECM (required version >= 6.32.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+
+CMake Error at /usr/share/cmake-4.5/Modules/FeatureSummary.cmake:869 (message):
+  feature_summary() Error: REQUIRED package(s) are missing, aborting CMake
+  run.
+Call Stack (most recent call first):
+  CMakeLists.txt:10 (feature_summary)
+
+
+-- Configuring incomplete, errors occurred!
+[ERROR] build.sh exited with code 1 for attica
+[ERROR] Custom build failed for attica
+[02:11:05] ========================================
+[02:11:05] Build completed with 1 failure(s):
+[02:11:05]   - attica
+[02:11:05] ========================================

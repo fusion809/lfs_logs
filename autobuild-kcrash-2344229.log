@@ -1,0 +1,201 @@
+[03:08:32] Found custom package for kcrash, bypassing BLFS aliases.
+[03:08:32] Custom package detected at /home/fusion809/lfs_packaging/kcrash (package: kcrash)
+[03:08:32] Extracting dependencies for custom package 'kcrash'...
+[03:08:32] Required deps: brotli bzip2 dbus double-conversion e2fsprogs elfutils expat fontconfig freetype gcc glib2 glibc graphite2 harfbuzz icu kcoreaddons keyutils libdrm libffi libglvnd libpciaccess libpng libx11 libxau libxcb libxdmcp libxext libxkbcommon libxml2 libxshmfence libxxf86vm llvm lm-sensors mesa mitkrb openssl pcre2 qt6 spirv-tools systemd util-linux wayland xz zlib zstd 
+[03:08:32] Dependency 'brotli' already installed.
+[03:08:32] Dependency 'bzip2' already installed.
+[03:08:32] Dependency 'dbus' already installed.
+[03:08:32] Dependency 'double-conversion' already installed.
+[03:08:32] Dependency 'e2fsprogs' already installed.
+[03:08:32] Dependency 'elfutils' already installed.
+[03:08:32] Dependency 'expat' already installed.
+[03:08:32] Dependency 'fontconfig' already installed.
+[03:08:32] Dependency 'freetype' already installed.
+[03:08:32] Dependency 'gcc' already installed.
+[03:08:32] Dependency 'glib2' already installed.
+[03:08:32] Dependency 'glibc' already installed.
+[03:08:32] Dependency 'graphite2' already installed.
+[03:08:32] Dependency 'harfbuzz' already installed.
+[03:08:32] Dependency 'icu' already installed.
+[03:08:32] Dependency 'kcoreaddons' already installed.
+[03:08:32] Dependency 'keyutils' already installed.
+[03:08:32] Dependency 'libdrm' already installed.
+[03:08:32] Dependency 'libffi' already installed.
+[03:08:32] Dependency 'libglvnd' already installed.
+[03:08:32] Dependency 'libpciaccess' already installed.
+[03:08:32] Dependency 'libpng' already installed.
+[03:08:32] Dependency 'libx11' already installed.
+[03:08:32] Dependency 'libxau' already installed.
+[03:08:32] Dependency 'libxcb' already installed.
+[03:08:32] Dependency 'libxdmcp' already installed.
+[03:08:32] Dependency 'libxext' already installed.
+[03:08:32] Dependency 'libxkbcommon' already installed.
+[03:08:32] Dependency 'libxml2' already installed.
+[03:08:32] Dependency 'libxshmfence' already installed.
+[03:08:32] Dependency 'libxxf86vm' already installed.
+[03:08:32] Dependency 'llvm' already installed.
+[03:08:32] Dependency 'lm-sensors' already installed.
+[03:08:32] Dependency 'mesa' already installed.
+[03:08:32] Dependency 'mitkrb' already installed.
+[03:08:32] Dependency 'openssl' already installed.
+[03:08:32] Dependency 'pcre2' already installed.
+[03:08:32] Dependency 'qt6' already installed.
+[03:08:32] Dependency 'spirv-tools' already installed.
+[03:08:32] Dependency 'systemd' already installed.
+[03:08:32] Dependency 'util-linux' already installed.
+[03:08:32] Dependency 'wayland' already installed.
+[03:08:32] Dependency 'xz' already installed.
+[03:08:32] Dependency 'zlib' already installed.
+[03:08:32] Dependency 'zstd' already installed.
+[VERSION] kcrash: 6.32.0
+[03:08:33] Installing kcrash version: 6.32.0
+[03:08:33] Starting remote custom build for kcrash...
+--2026-11-14 03:08:36--  https://download.kde.org/stable/frameworks/6.32/kcrash-6.32.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://mirrors.xtom.com/kde/stable/frameworks/6.32/kcrash-6.32.0.tar.xz [following]
+--2026-11-14 03:08:38--  https://mirrors.xtom.com/kde/stable/frameworks/6.32/kcrash-6.32.0.tar.xz
+Resolving mirrors.xtom.com (mirrors.xtom.com)... 142.147.88.7, 2604:a840::7
+Connecting to mirrors.xtom.com (mirrors.xtom.com)|142.147.88.7|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 35420 (35K) [application/octet-stream]
+Saving to: ‘kcrash-6.32.0.tar.xz’
+
+kcrash-6.32.0.tar.x   0%[                    ]       0  --.-KB/s               kcrash-6.32.0.tar.x 100%[===================>]  34.59K   169KB/s               kcrash-6.32.0.tar.x 100%[===================>]  34.59K   169KB/s    in 0.2s    
+
+2026-11-14 03:08:38 (169 KB/s) - ‘kcrash-6.32.0.tar.xz’ saved [35420/35420]
+
+kcrash-6.32.0.tar.xz already present and appears valid.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:17 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/kcrash/kcrash-6.32.0/build/prefix.sh to set the environment for KCrash.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+fatal: no upstream configured for branch 'master'
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following features have been enabled:
+
+ * Core Pattern Raising, Raising signals to kernel core patterns (iff the pattern is a process). You may wish to not install drkonqi if this can cause a UI conflict.
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.12.0)
+ * Qt6DBusTools (required version >= 6.12.0)
+ * Qt6Gui (required version >= 6.10.0)
+ * Qt6CoreTools (required version >= 6.12.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.32.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * X11
+ * Qt6Test (required version >= 6.10.0)
+ * Qt6Core (required version >= 6.10.0)
+ * KF6CoreAddons (required version >= 6.32.0)
+ * Qt6
+
+-- Configuring done (4.0s)
+-- Generating done (0.0s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_PYTHON_BINDINGS
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/kcrash/kcrash-6.32.0/build
+[  0%] Built target KF6Crash_autogen_timestamp_deps
+[ 12%] Automatic MOC for target KF6Crash
+[ 12%] Built target KF6Crash_autogen
+[ 37%] Building CXX object src/CMakeFiles/KF6Crash.dir/coreconfig.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/KF6Crash.dir/KF6Crash_autogen/mocs_compilation.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/KF6Crash.dir/kcrash.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/KF6Crash.dir/metadata.cpp.o
+[ 75%] Building CXX object src/CMakeFiles/KF6Crash.dir/exception.cpp.o
+[ 87%] Building CXX object src/CMakeFiles/KF6Crash.dir/kcrash_debug.cpp.o
+[100%] Linking CXX shared library ../bin/libKF6Crash.so
+[100%] Built target KF6Crash
+[  0%] Built target KF6Crash_autogen_timestamp_deps
+[ 12%] Built target KF6Crash_autogen
+[100%] Built target KF6Crash
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/lib/libKF6Crash.so.6.32.0
+-- Installing: /usr/lib/libKF6Crash.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKF6Crash.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKF6Crash.so
+-- Installing: /usr/include/KF6/KCrash/kcrash_export.h
+-- Installing: /usr/include/KF6/KCrash/kcrash.h
+-- Installing: /usr/include/KF6/KCrash/KCrash
+-- Installing: /usr/share/qlogging-categories6/kcrash.categories
+-- Installing: /usr/share/qlogging-categories6/kcrash.renamecategories
+-- Installing: /usr/lib/cmake/KF6Crash/KF6CrashConfig.cmake
+-- Installing: /usr/lib/cmake/KF6Crash/KF6CrashConfigVersion.cmake
+-- Old export file "/usr/lib/cmake/KF6Crash/KF6CrashTargets.cmake" will be replaced.  Removing files [/usr/lib/cmake/KF6Crash/KF6CrashTargets-release.cmake].
+-- Installing: /usr/lib/cmake/KF6Crash/KF6CrashTargets.cmake
+-- Installing: /usr/lib/cmake/KF6Crash/KF6CrashTargets-release.cmake
+-- Installing: /usr/include/KF6/KCrash/kcrash_version.h
+6.32.0
+Updated registry for kcrash to version 6.32.0
+[VERSION] kcrash: 6.32.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package kcrash in /var/lib/custom-packages/

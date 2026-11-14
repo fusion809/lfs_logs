@@ -1,0 +1,268 @@
+[07:20:42] Found custom package for bluez-qt, bypassing BLFS aliases.
+[07:20:42] Custom package detected at /home/fusion809/lfs_packaging/bluez-qt (package: bluez-qt)
+[07:20:42] Extracting dependencies for custom package 'bluez-qt'...
+[07:20:42] Required deps: brotli dbus double-conversion e2fsprogs gcc glib2 glibc icu keyutils mitkrb openssl pcre2 qt6 systemd zlib zstd 
+[07:20:42] Dependency 'brotli' already installed.
+[07:20:42] Dependency 'dbus' already installed.
+[07:20:42] Dependency 'double-conversion' already installed.
+[07:20:42] Dependency 'e2fsprogs' already installed.
+[07:20:42] Dependency 'gcc' already installed.
+[07:20:42] Dependency 'glib2' already installed.
+[07:20:42] Dependency 'glibc' already installed.
+[07:20:42] Dependency 'icu' already installed.
+[07:20:42] Dependency 'keyutils' already installed.
+[07:20:42] Dependency 'mitkrb' already installed.
+[07:20:42] Dependency 'openssl' already installed.
+[07:20:42] Dependency 'pcre2' already installed.
+[07:20:42] Dependency 'qt6' already installed.
+[07:20:42] Dependency 'systemd' already installed.
+[07:20:42] Dependency 'zlib' already installed.
+[07:20:42] Dependency 'zstd' already installed.
+[VERSION] bluez-qt: 6.32.0
+[07:20:43] Installing bluez-qt version: 6.32.0
+[07:20:43] Starting remote custom build for bluez-qt...
+--2026-11-14 07:20:52--  https://download.kde.org/stable/frameworks/6.32/bluez-qt-6.32.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://mirrors.xtom.au/kde/stable/frameworks/6.32/bluez-qt-6.32.0.tar.xz [following]
+--2026-11-14 07:20:53--  https://mirrors.xtom.au/kde/stable/frameworks/6.32/bluez-qt-6.32.0.tar.xz
+Resolving mirrors.xtom.au (mirrors.xtom.au)... 146.19.0.8, 2a11:3::8
+Connecting to mirrors.xtom.au (mirrors.xtom.au)|146.19.0.8|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 116444 (114K) [application/octet-stream]
+Saving to: ‘bluez-qt-6.32.0.tar.xz’
+
+bluez-qt-6.32.0.tar   0%[                    ]       0  --.-KB/s               bluez-qt-6.32.0.tar 100%[===================>] 113.71K  --.-KB/s    in 0.07s   
+
+2026-11-14 07:20:53 (1.55 MB/s) - ‘bluez-qt-6.32.0.tar.xz’ saved [116444/116444]
+
+bluez-qt-6.32.0.tar.xz already present and appears valid.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:13 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/build/prefix.sh to set the environment for BluezQt.
+fatal: no upstream configured for branch 'master'
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6Core
+ * Qt6DBusTools (required version >= 6.12.0)
+ * Qt6DBus (required version >= 6.10.0)
+ * Qt6Test (required version >= 6.10.0), Autotests for BluezQt
+ * Qt6Qml (required version >= 6.10.0), QML support for BluezQt
+ * OpenGL
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6GuiTools (required version >= 6.12.0)
+ * Qt6QmlTools (required version >= 6.12.0)
+ * Qt6QuickTools (required version >= 6.12.0)
+ * WrapVulkanHeaders
+ * Qt6QuickTest (required version >= 6.10.0), QML autotests for BluezQt
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.32.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt6
+
+-- Configuring done (11.1s)
+-- Generating done (1.0s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_PYTHON_BINDINGS
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/build
+[  0%] Built target bluezapi2qt_autogen_timestamp_deps
+[  0%] Built target KF6BluezQt_autogen_timestamp_deps
+[  0%] Copying bluezqtextensionplugin qml resources into build dir
+[  0%] Built target bluezqtextensionplugin_copy_res
+[  1%] Copying bluezqtextensionplugin qml sources into build dir
+[  1%] Populating .qmlls.build.ini file at /home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/build/.qt/.qmlls.build.ini
+[  2%] Automatic MOC for target KF6BluezQt
+[  2%] Built target bluezqtextensionplugin_copy_qml
+[  3%] Automatic MOC for target bluezapi2qt
+[  3%] Built target generate_qmlls_build_ini_file
+[  3%] Built target bluezapi2qt_autogen
+[  3%] Building CXX object tools/bluezapi2qt/CMakeFiles/bluezapi2qt.dir/BluezApiParser.cpp.o
+[  4%] Building CXX object tools/bluezapi2qt/CMakeFiles/bluezapi2qt.dir/bluezapi2qt_autogen/mocs_compilation.cpp.o
+[  5%] Building CXX object tools/bluezapi2qt/CMakeFiles/bluezapi2qt.dir/Comment.cpp.o
+[  5%] Building CXX object tools/bluezapi2qt/CMakeFiles/bluezapi2qt.dir/CppGenerator.cpp.o
+[  6%] Building CXX object tools/bluezapi2qt/CMakeFiles/bluezapi2qt.dir/Interface.cpp.o
+[  6%] Built target KF6BluezQt_autogen
+[  6%] Generating obextransfer1.cpp, obextransfer1.h
+[  7%] Generating bluezadapter1.cpp, bluezadapter1.h
+[  8%] Generating bluezagentmanager1.cpp, bluezagentmanager1.h
+[  9%] Generating bluezbattery1.cpp, bluezbattery1.h
+[ 10%] Generating bluezdevice1.cpp, bluezdevice1.h
+[ 11%] Generating bluezgattcharacteristic1.cpp, bluezgattcharacteristic1.h
+[ 13%] Generating bluezgattdescriptor1.cpp, bluezgattdescriptor1.h
+[ 14%] Generating bluezgattmanager1.cpp, bluezgattmanager1.h
+[ 15%] Generating bluezgattservice1.cpp, bluezgattservice1.h
+[ 16%] Generating bluezleadvertisement1.cpp, bluezleadvertisement1.h
+[ 17%] Generating bluezleadvertisingmanager1.cpp, bluezleadvertisingmanager1.h
+[ 17%] Generating bluezmedia1.cpp, bluezmedia1.h
+[ 17%] Generating bluezmediaendpoint1.cpp, bluezmediaendpoint1.h
+[ 17%] Generating bluezmediaplayer1.cpp, bluezmediaplayer1.h
+[ 17%] Building CXX object tools/bluezapi2qt/CMakeFiles/bluezapi2qt.dir/Method.cpp.o
+[ 17%] Generating bluezmediatransport1.cpp, bluezmediatransport1.h
+[ 18%] Generating bluezprofilemanager1.cpp, bluezprofilemanager1.h
+[ 19%] Generating dbusobjectmanager.cpp, dbusobjectmanager.h
+[ 20%] Generating dbusproperties.cpp, dbusproperties.h
+[ 20%] Running AUTOMOC file extraction for target KF6BluezQt
+[ 20%] Generating obexagentmanager1.cpp, obexagentmanager1.h
+[ 20%] Generating obexclient1.cpp, obexclient1.h
+[ 21%] Generating obexfiletransfer1.cpp, obexfiletransfer1.h
+[ 21%] Generating obexobjectpush1.cpp, obexobjectpush1.h
+[ 21%] Generating obexsession1.cpp, obexsession1.h
+[ 22%] Running moc --collect-json for target KF6BluezQt
+[ 22%] Generating moc_bluezadapter1.cpp
+[ 22%] Generating moc_bluezagentmanager1.cpp
+[ 22%] Generating moc_bluezbattery1.cpp
+[ 22%] Generating moc_bluezdevice1.cpp
+[ 22%] Generating moc_bluezgattcharacteristic1.cpp
+[ 23%] Building CXX object tools/bluezapi2qt/CMakeFiles/bluezapi2qt.dir/Methods.cpp.o
+[ 23%] Generating moc_bluezgattdescriptor1.cpp
+[ 23%] Generating moc_bluezgattmanager1.cpp
+[ 23%] Generating moc_bluezgattservice1.cpp
+[ 23%] Generating moc_bluezleadvertisement1.cpp
+[ 23%] Generating moc_bluezleadvertisingmanager1.cpp
+[ 25%] Generating moc_bluezmedia1.cpp
+[ 26%] Generating moc_bluezmediaendpoint1.cpp
+[ 27%] Generating moc_bluezmediaplayer1.cpp
+[ 28%] Generating moc_bluezmediatransport1.cpp
+[ 28%] Generating moc_bluezprofilemanager1.cpp
+[ 28%] Generating moc_dbusobjectmanager.cpp
+[ 28%] Generating moc_dbusproperties.cpp
+[ 29%] Generating moc_obextransfer1.cpp
+[ 30%] Generating moc_obexagentmanager1.cpp
+[ 31%] Generating moc_obexclient1.cpp
+[ 31%] Generating moc_obexfiletransfer1.cpp
+[ 32%] Generating moc_obexobjectpush1.cpp
+[ 33%] Generating moc_obexsession1.cpp
+[ 34%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/KF6BluezQt_autogen/mocs_compilation.cpp.o
+[ 34%] Building C object src/CMakeFiles/KF6BluezQt.dir/a2dp-codecs.c.o
+In file included from /home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/src/a2dp-codecs.c:9:
+/home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/src/a2dp-codecs.c:53:29: warning: suggest parentheses around arithmetic in operand of ‘|’ [-Wparentheses]
+   53 |     AAC_SAMPLING_FREQ_44100 |
+      |                             ^
+/home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/src/a2dp-codecs.h:124:23: note: in definition of macro ‘AAC_INIT_FREQUENCY’
+  124 |         .frequency2 = f & 0x0f,
+      |                       ^
+/home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/src/a2dp-codecs.h:93:41: warning: unsigned conversion from ‘int’ to ‘unsigned char:4’ changes value from ‘24’ to ‘8’ [-Woverflow]
+   93 | #define AAC_SAMPLING_FREQ_44100         0x0010
+      |                                         ^~~~~~
+/home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/src/a2dp-codecs.h:124:23: note: in definition of macro ‘AAC_INIT_FREQUENCY’
+  124 |         .frequency2 = f & 0x0f,
+      |                       ^
+/home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/src/a2dp-codecs.c:53:5: note: in expansion of macro ‘AAC_SAMPLING_FREQ_44100’
+   53 |     AAC_SAMPLING_FREQ_44100 |
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+[ 35%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/manager.cpp.o
+[ 35%] Building CXX object tools/bluezapi2qt/CMakeFiles/bluezapi2qt.dir/Parameter.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/manager_p.cpp.o
+[ 36%] Building CXX object tools/bluezapi2qt/CMakeFiles/bluezapi2qt.dir/Properties.cpp.o
+[ 36%] Building CXX object tools/bluezapi2qt/CMakeFiles/bluezapi2qt.dir/Property.cpp.o
+[ 38%] Building CXX object tools/bluezapi2qt/CMakeFiles/bluezapi2qt.dir/TypeAnnotation.cpp.o
+[ 38%] Building CXX object tools/bluezapi2qt/CMakeFiles/bluezapi2qt.dir/XmlGenerator.cpp.o
+[ 39%] Building CXX object tools/bluezapi2qt/CMakeFiles/bluezapi2qt.dir/main.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/adapter.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/adapter_p.cpp.o
+[ 40%] Linking CXX executable ../../bin/bluezapi2qt
+[ 40%] Built target bluezapi2qt
+[ 41%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/battery.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/device.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/device_p.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/gattapplication.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/gattapplication_p.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/gattcharacteristic.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/gattcharacteristic_p.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/gattcharacteristicadaptor.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/gattdescriptor.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/gattdescriptor_p.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/gattdescriptoradaptor.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/gattmanager.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/gattmanager_p.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/KF6BluezQt.dir/gattservice.cpp.o
+In file included from /opt/qt6/include/QtCore/qtdeprecationdefinitions.h:7,
+                 from /opt/qt6/include/QtCore/qtconfigmacros.h:13,
+                 from /opt/qt6/include/QtCore/qtcoreglobal.h:14,
+                 from /opt/qt6/include/QtCore/qglobal.h:25,
+                 from /opt/qt6/include/QtCore/qcompare.h:13,
+                 from /opt/qt6/include/QtCore/qmap.h:9,
+                 from /opt/qt6/include/QtCore/QMap:1,
+                 from /home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/src/types.h:17,
+                 from /home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/src/gattservice.h:13,
+                 from /home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/src/gattservice.cpp:9:
+/home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/build/src/KF6BluezQt_autogen/include/moc_gattservice.cpp:90:1: fatal error: opening dependency file CMakeFiles/KF6BluezQt.dir/gattservice.cpp.o.d: No such file or directory
+compilation terminated.
+make[2]: *** [src/CMakeFiles/KF6BluezQt.dir/build.make:635: src/CMakeFiles/KF6BluezQt.dir/gattservice.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/src/gattmanager_p.cpp:23:1: fatal error: opening dependency file CMakeFiles/KF6BluezQt.dir/gattmanager_p.cpp.o.d: No such file or directory
+   23 | } // namespace BluezQt
+      | ^
+compilation terminated.
+make[2]: *** [src/CMakeFiles/KF6BluezQt.dir/build.make:621: src/CMakeFiles/KF6BluezQt.dir/gattmanager_p.cpp.o] Error 1
+In file included from /opt/qt6/include/QtCore/qtdeprecationdefinitions.h:7,
+                 from /opt/qt6/include/QtCore/qtconfigmacros.h:13,
+                 from /opt/qt6/include/QtCore/qtcoreglobal.h:14,
+                 from /opt/qt6/include/QtCore/qglobal.h:25,
+                 from /opt/qt6/include/QtCore/qnamespace.h:13,
+                 from /opt/qt6/include/QtCore/qobjectdefs.h:13,
+                 from /opt/qt6/include/QtCore/qobject.h:11,
+                 from /opt/qt6/include/QtCore/QObject:1,
+                 from /home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/src/gattmanager.h:12,
+                 from /home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/src/gattmanager.cpp:9:
+/home/fusion809/lfs_packaging/bluez-qt/bluez-qt-6.32.0/build/src/KF6BluezQt_autogen/include/moc_gattmanager.cpp:90:1: fatal error: opening dependency file CMakeFiles/KF6BluezQt.dir/gattmanager.cpp.o.d: No such file or directory
+compilation terminated.
+make[2]: *** [src/CMakeFiles/KF6BluezQt.dir/build.make:607: src/CMakeFiles/KF6BluezQt.dir/gattmanager.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:9922: src/CMakeFiles/KF6BluezQt.dir/all] Error 2
+make: *** [Makefile:139: all] Error 2
+[ERROR] build.sh exited with code 2 for bluez-qt
+[ERROR] Custom build failed for bluez-qt

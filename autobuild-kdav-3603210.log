@@ -1,0 +1,439 @@
+[08:33:19] Found custom package for kdav, bypassing BLFS aliases.
+[08:33:19] Custom package detected at /home/fusion809/lfs_packaging/kdav (package: kdav)
+[08:33:19] Extracting dependencies for custom package 'kdav'...
+[08:33:19] Required deps: brotli bzip2 dbus double-conversion e2fsprogs elfutils expat fontconfig freetype gcc glib2 glibc graphite2 harfbuzz icu kcoreaddons keyutils ki18n libdrm libffi libglvnd libpciaccess libpng libx11 libxau libxcb libxdmcp libxext libxkbcommon libxml2 libxshmfence libxxf86vm llvm lm-sensors mesa mitkrb openssl pcre2 qt6 spirv-tools systemd util-linux wayland xz zlib zstd 
+[08:33:20] Dependency 'brotli' already installed.
+[08:33:20] Dependency 'bzip2' already installed.
+[08:33:20] Dependency 'dbus' already installed.
+[08:33:20] Dependency 'double-conversion' already installed.
+[08:33:20] Dependency 'e2fsprogs' already installed.
+[08:33:20] Dependency 'elfutils' already installed.
+[08:33:20] Dependency 'expat' already installed.
+[08:33:20] Dependency 'fontconfig' already installed.
+[08:33:20] Dependency 'freetype' already installed.
+[08:33:20] Dependency 'gcc' already installed.
+[08:33:20] Dependency 'glib2' already installed.
+[08:33:20] Dependency 'glibc' already installed.
+[08:33:20] Dependency 'graphite2' already installed.
+[08:33:20] Dependency 'harfbuzz' already installed.
+[08:33:20] Dependency 'icu' already installed.
+[08:33:20] Dependency 'kcoreaddons' already installed.
+[08:33:20] Dependency 'keyutils' already installed.
+[08:33:20] Dependency 'ki18n' already installed.
+[08:33:20] Dependency 'libdrm' already installed.
+[08:33:20] Dependency 'libffi' already installed.
+[08:33:20] Dependency 'libglvnd' already installed.
+[08:33:20] Dependency 'libpciaccess' already installed.
+[08:33:20] Dependency 'libpng' already installed.
+[08:33:20] Dependency 'libx11' already installed.
+[08:33:20] Dependency 'libxau' already installed.
+[08:33:20] Dependency 'libxcb' already installed.
+[08:33:20] Dependency 'libxdmcp' already installed.
+[08:33:20] Dependency 'libxext' already installed.
+[08:33:20] Dependency 'libxkbcommon' already installed.
+[08:33:20] Dependency 'libxml2' already installed.
+[08:33:20] Dependency 'libxshmfence' already installed.
+[08:33:20] Dependency 'libxxf86vm' already installed.
+[08:33:20] Dependency 'llvm' already installed.
+[08:33:20] Dependency 'lm-sensors' already installed.
+[08:33:20] Dependency 'mesa' already installed.
+[08:33:20] Dependency 'mitkrb' already installed.
+[08:33:20] Dependency 'openssl' already installed.
+[08:33:20] Dependency 'pcre2' already installed.
+[08:33:20] Dependency 'qt6' already installed.
+[08:33:20] Dependency 'spirv-tools' already installed.
+[08:33:20] Dependency 'systemd' already installed.
+[08:33:20] Dependency 'util-linux' already installed.
+[08:33:20] Dependency 'wayland' already installed.
+[08:33:20] Dependency 'xz' already installed.
+[08:33:20] Dependency 'zlib' already installed.
+[08:33:20] Dependency 'zstd' already installed.
+[VERSION] kdav: 6.32.0
+[08:33:21] Installing kdav version: 6.32.0
+[08:33:21] Starting remote custom build for kdav...
+--2026-11-14 08:33:31--  https://download.kde.org/stable/frameworks/6.32/kdav-6.32.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://mirrors.xtom.au/kde/stable/frameworks/6.32/kdav-6.32.0.tar.xz [following]
+--2026-11-14 08:33:32--  https://mirrors.xtom.au/kde/stable/frameworks/6.32/kdav-6.32.0.tar.xz
+Resolving mirrors.xtom.au (mirrors.xtom.au)... 146.19.0.8, 2a11:3::8
+Connecting to mirrors.xtom.au (mirrors.xtom.au)|146.19.0.8|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 92980 (91K) [application/octet-stream]
+Saving to: ‘kdav-6.32.0.tar.xz’
+
+kdav-6.32.0.tar.xz    0%[                    ]       0  --.-KB/s               kdav-6.32.0.tar.xz  100%[===================>]  90.80K  --.-KB/s    in 0.06s   
+
+2026-11-14 08:33:32 (1.37 MB/s) - ‘kdav-6.32.0.tar.xz’ saved [92980/92980]
+
+kdav-6.32.0.tar.xz already present and appears valid.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:11 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/kdav/kdav-6.32.0/build/prefix.sh to set the environment for libkdav.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.32.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.32.0")
+-- Found KF6: success (found suitable version "6.32.0", minimum required is "6.32.0") found components: CoreAddons I18n
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.12.0)
+ * Qt6DBusTools (required version >= 6.12.0)
+ * Qt6Gui (required version >= 6.10.0)
+ * Qt6Network (required version >= 6.10.0)
+ * Qt6Test (required version >= 6.10.0)
+ * Qt6Xml (required version >= 6.10.0)
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6Core (required version >= 6.10.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.32.0)
+ * KF6CoreAddons (required version >= 6.32.0)
+ * Gettext
+ * KF6I18n (required version >= 6.32.0)
+ * KF6 (required version >= 6.32.0)
+ * Qt6
+
+-- Configuring done (12.5s)
+-- Generating done (0.4s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_PYTHON_BINDINGS
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/kdav/kdav-6.32.0/build
+[  2%] Generating mo...
+[  2%] Built target KF6DAV_autogen_timestamp_deps
+[  4%] Generating ts...
+[  7%] Automatic MOC for target KF6DAV
+[  7%] Built target tsfiles-b77c34c2c6c5d19bd6534ff6302b470e
+[  7%] Built target pofiles-b77c34c2c6c5d19bd6534ff6302b470e
+AutoMoc: /home/fusion809/lfs_packaging/kdav/kdav-6.32.0/src/common/davpushregistration.h: note: No relevant classes found. No output generated.
+[  7%] Built target KF6DAV_autogen
+make[2]: Warning: File 'src/KF6DAV_autogen/mocs_compilation.cpp' has modification time 0.11 s in the future
+[  9%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davpushsupport.cpp.o
+[ 12%] Building CXX object src/CMakeFiles/KF6DAV.dir/KF6DAV_autogen/mocs_compilation.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davcollection.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davpushdontnotify.cpp.o
+[ 19%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davcollectioncreatejob.cpp.o
+[ 21%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davcollectiondeletejob.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davcollectionmodifyjob.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davcollectionsfetchjob.cpp.o
+[ 29%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davcollectionsmultifetchjob.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/daverror.cpp.o
+[ 34%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davitem.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davitemcreatejob.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davitemdeletejob.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davitemfetchjob.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davitemmodifyjob.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davitemsfetchjob.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davitemslistjob.cpp.o
+[ 51%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davitemssyncjob.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davitemmovejob.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davjobbase.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davmanager.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davmultigetprotocol.cpp.o
+[ 63%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davprincipalhomesetsfetchjob.cpp.o
+[ 65%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davprincipalsearchjob.cpp.o
+[ 68%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davprotocolbase.cpp.o
+[ 70%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davssluiproxy.cpp.o
+[ 73%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davurl.cpp.o
+[ 75%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/etagcache.cpp.o
+[ 78%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/protocolinfo.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/utils.cpp.o
+[ 82%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davpushregistrationjob.cpp.o
+[ 85%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davpushunregistrationjob.cpp.o
+[ 87%] Building CXX object src/CMakeFiles/KF6DAV.dir/common/davpushregistration.cpp.o
+[ 90%] Building CXX object src/CMakeFiles/KF6DAV.dir/protocols/groupdavprotocol.cpp.o
+[ 92%] Building CXX object src/CMakeFiles/KF6DAV.dir/protocols/carddavprotocol.cpp.o
+[ 95%] Building CXX object src/CMakeFiles/KF6DAV.dir/protocols/caldavprotocol.cpp.o
+[ 97%] Building CXX object src/CMakeFiles/KF6DAV.dir/libkdav_debug.cpp.o
+[100%] Linking CXX shared library ../bin/libKF6DAV.so
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[100%] Built target KF6DAV
+[  2%] Generating mo...
+[  2%] Built target pofiles-b77c34c2c6c5d19bd6534ff6302b470e
+[  4%] Generating ts...
+[  4%] Built target tsfiles-b77c34c2c6c5d19bd6534ff6302b470e
+[  4%] Built target KF6DAV_autogen_timestamp_deps
+[  7%] Built target KF6DAV_autogen
+[100%] Built target KF6DAV
+Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /usr/share/locale
+-- Up-to-date: /usr/share/locale/nn
+-- Up-to-date: /usr/share/locale/nn/LC_MESSAGES
+-- Installing: /usr/share/locale/nn/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/ja
+-- Up-to-date: /usr/share/locale/ja/LC_MESSAGES
+-- Installing: /usr/share/locale/ja/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/az
+-- Up-to-date: /usr/share/locale/az/LC_MESSAGES
+-- Installing: /usr/share/locale/az/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/fi
+-- Up-to-date: /usr/share/locale/fi/LC_MESSAGES
+-- Installing: /usr/share/locale/fi/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/it
+-- Up-to-date: /usr/share/locale/it/LC_MESSAGES
+-- Installing: /usr/share/locale/it/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/ta
+-- Up-to-date: /usr/share/locale/ta/LC_MESSAGES
+-- Installing: /usr/share/locale/ta/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/sa
+-- Up-to-date: /usr/share/locale/sa/LC_MESSAGES
+-- Installing: /usr/share/locale/sa/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/pt_BR
+-- Up-to-date: /usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /usr/share/locale/pt_BR/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/tr
+-- Up-to-date: /usr/share/locale/tr/LC_MESSAGES
+-- Installing: /usr/share/locale/tr/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/et
+-- Up-to-date: /usr/share/locale/et/LC_MESSAGES
+-- Installing: /usr/share/locale/et/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/ro
+-- Up-to-date: /usr/share/locale/ro/LC_MESSAGES
+-- Installing: /usr/share/locale/ro/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/sr@ijekavian
+-- Up-to-date: /usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /usr/share/locale/sr@ijekavian/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/en_GB
+-- Up-to-date: /usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /usr/share/locale/en_GB/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/fr
+-- Up-to-date: /usr/share/locale/fr/LC_MESSAGES
+-- Installing: /usr/share/locale/fr/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/sr@latin
+-- Up-to-date: /usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /usr/share/locale/sr@latin/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/eo
+-- Up-to-date: /usr/share/locale/eo/LC_MESSAGES
+-- Installing: /usr/share/locale/eo/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/ga
+-- Up-to-date: /usr/share/locale/ga/LC_MESSAGES
+-- Installing: /usr/share/locale/ga/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/el
+-- Up-to-date: /usr/share/locale/el/LC_MESSAGES
+-- Installing: /usr/share/locale/el/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/uk
+-- Up-to-date: /usr/share/locale/uk/LC_MESSAGES
+-- Installing: /usr/share/locale/uk/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/sr@ijekavianlatin
+-- Up-to-date: /usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/de
+-- Up-to-date: /usr/share/locale/de/LC_MESSAGES
+-- Installing: /usr/share/locale/de/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/sl
+-- Up-to-date: /usr/share/locale/sl/LC_MESSAGES
+-- Installing: /usr/share/locale/sl/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/cs
+-- Up-to-date: /usr/share/locale/cs/LC_MESSAGES
+-- Installing: /usr/share/locale/cs/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/sr
+-- Up-to-date: /usr/share/locale/sr/LC_MESSAGES
+-- Installing: /usr/share/locale/sr/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/ar
+-- Up-to-date: /usr/share/locale/ar/LC_MESSAGES
+-- Installing: /usr/share/locale/ar/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/ast
+-- Up-to-date: /usr/share/locale/ast/LC_MESSAGES
+-- Installing: /usr/share/locale/ast/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/lv
+-- Up-to-date: /usr/share/locale/lv/LC_MESSAGES
+-- Installing: /usr/share/locale/lv/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/lt
+-- Up-to-date: /usr/share/locale/lt/LC_MESSAGES
+-- Installing: /usr/share/locale/lt/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/zh_CN
+-- Up-to-date: /usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /usr/share/locale/zh_CN/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/ca@valencia
+-- Up-to-date: /usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /usr/share/locale/ca@valencia/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/ia
+-- Up-to-date: /usr/share/locale/ia/LC_MESSAGES
+-- Installing: /usr/share/locale/ia/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/ka
+-- Up-to-date: /usr/share/locale/ka/LC_MESSAGES
+-- Installing: /usr/share/locale/ka/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/zh_TW
+-- Up-to-date: /usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /usr/share/locale/zh_TW/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/nb
+-- Up-to-date: /usr/share/locale/nb/LC_MESSAGES
+-- Installing: /usr/share/locale/nb/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/es
+-- Up-to-date: /usr/share/locale/es/LC_MESSAGES
+-- Installing: /usr/share/locale/es/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/ko
+-- Up-to-date: /usr/share/locale/ko/LC_MESSAGES
+-- Installing: /usr/share/locale/ko/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/he
+-- Up-to-date: /usr/share/locale/he/LC_MESSAGES
+-- Installing: /usr/share/locale/he/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/hu
+-- Up-to-date: /usr/share/locale/hu/LC_MESSAGES
+-- Installing: /usr/share/locale/hu/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/hi
+-- Up-to-date: /usr/share/locale/hi/LC_MESSAGES
+-- Installing: /usr/share/locale/hi/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/bg
+-- Up-to-date: /usr/share/locale/bg/LC_MESSAGES
+-- Installing: /usr/share/locale/bg/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/nl
+-- Up-to-date: /usr/share/locale/nl/LC_MESSAGES
+-- Installing: /usr/share/locale/nl/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/eu
+-- Up-to-date: /usr/share/locale/eu/LC_MESSAGES
+-- Installing: /usr/share/locale/eu/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/pt
+-- Up-to-date: /usr/share/locale/pt/LC_MESSAGES
+-- Installing: /usr/share/locale/pt/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/sk
+-- Up-to-date: /usr/share/locale/sk/LC_MESSAGES
+-- Installing: /usr/share/locale/sk/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/ug
+-- Up-to-date: /usr/share/locale/ug/LC_MESSAGES
+-- Installing: /usr/share/locale/ug/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/ca
+-- Up-to-date: /usr/share/locale/ca/LC_MESSAGES
+-- Installing: /usr/share/locale/ca/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/ru
+-- Up-to-date: /usr/share/locale/ru/LC_MESSAGES
+-- Installing: /usr/share/locale/ru/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/gl
+-- Up-to-date: /usr/share/locale/gl/LC_MESSAGES
+-- Installing: /usr/share/locale/gl/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/sv
+-- Up-to-date: /usr/share/locale/sv/LC_MESSAGES
+-- Installing: /usr/share/locale/sv/LC_MESSAGES/libkdav6.mo
+-- Up-to-date: /usr/share/locale/pl
+-- Up-to-date: /usr/share/locale/pl/LC_MESSAGES
+-- Installing: /usr/share/locale/pl/LC_MESSAGES/libkdav6.mo
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavJobBase
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavCollection
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavPushRegistration
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavPushRegistrationJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavPushUnregistrationJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavPushSupport
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavPushDontNotify
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavCollectionDeleteJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavCollectionsFetchJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavCollectionCreateJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavCollectionModifyJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavCollectionsMultiFetchJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavError
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavItem
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavItemCreateJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavItemDeleteJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavItemMoveJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavItemFetchJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavItemModifyJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavItemsFetchJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavItemsListJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavItemsSyncJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavPrincipalHomesetsFetchJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavPrincipalSearchJob
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavSslUiProxy
+-- Installing: /usr/include/KF6/KDAV/KDAV/DavUrl
+-- Installing: /usr/include/KF6/KDAV/KDAV/Enums
+-- Installing: /usr/include/KF6/KDAV/KDAV/EtagCache
+-- Installing: /usr/include/KF6/KDAV/KDAV/ProtocolInfo
+-- Installing: /usr/include/KF6/KDAV/kdav/davjobbase.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davcollection.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davpushregistration.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davpushregistrationjob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davpushunregistrationjob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davpushsupport.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davpushdontnotify.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davcollectiondeletejob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davcollectionsfetchjob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davcollectioncreatejob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davcollectionmodifyjob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davcollectionsmultifetchjob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/daverror.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davitem.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davitemcreatejob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davitemdeletejob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davitemmovejob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davitemfetchjob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davitemmodifyjob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davitemsfetchjob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davitemslistjob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davitemssyncjob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davprincipalhomesetsfetchjob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davprincipalsearchjob.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davssluiproxy.h
+-- Installing: /usr/include/KF6/KDAV/kdav/davurl.h
+-- Installing: /usr/include/KF6/KDAV/kdav/enums.h
+-- Installing: /usr/include/KF6/KDAV/kdav/etagcache.h
+-- Installing: /usr/include/KF6/KDAV/kdav/protocolinfo.h
+-- Installing: /usr/include/KF6/KDAV/kdav/kdav_export.h
+-- Installing: /usr/lib/libKF6DAV.so.6.32.0
+-- Installing: /usr/lib/libKF6DAV.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKF6DAV.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKF6DAV.so
+-- Installing: /usr/share/qlogging-categories6/kdav.categories
+-- Installing: /usr/share/qlogging-categories6/kdav.renamecategories
+-- Installing: /usr/lib/cmake/KF6DAV/KF6DAVConfig.cmake
+-- Installing: /usr/lib/cmake/KF6DAV/KF6DAVConfigVersion.cmake
+-- Old export file "/usr/lib/cmake/KF6DAV/KF6DAVTargets.cmake" will be replaced.  Removing files [/usr/lib/cmake/KF6DAV/KF6DAVTargets-release.cmake].
+-- Installing: /usr/lib/cmake/KF6DAV/KF6DAVTargets.cmake
+-- Installing: /usr/lib/cmake/KF6DAV/KF6DAVTargets-release.cmake
+-- Installing: /usr/include/KF6/KDAV/kdav_version.h
+6.32.0
+Updated registry for kdav to version 6.32.0
+[VERSION] kdav: 6.32.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package kdav in /var/lib/custom-packages/

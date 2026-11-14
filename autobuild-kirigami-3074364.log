@@ -1,0 +1,1519 @@
+[03:53:39] Found custom package for kirigami, bypassing BLFS aliases.
+[03:53:39] Custom package detected at /home/fusion809/lfs_packaging/kirigami (package: kirigami)
+[03:53:39] Extracting dependencies for custom package 'kirigami'...
+[03:53:39] Required deps: brotli bzip2 dbus double-conversion e2fsprogs elfutils expat fontconfig freetype gcc glib2 glibc graphite2 harfbuzz icu keyutils libdrm libffi libglvnd libpciaccess libpng libx11 libxau libxcb libxdmcp libxext libxkbcommon libxml2 libxshmfence libxxf86vm llvm lm-sensors mesa mitkrb openssl pcre2 qt6 spirv-tools systemd wayland xz zlib zstd 
+[03:53:40] Dependency 'brotli' already installed.
+[03:53:40] Dependency 'bzip2' already installed.
+[03:53:40] Dependency 'dbus' already installed.
+[03:53:40] Dependency 'double-conversion' already installed.
+[03:53:40] Dependency 'e2fsprogs' already installed.
+[03:53:40] Dependency 'elfutils' already installed.
+[03:53:40] Dependency 'expat' already installed.
+[03:53:40] Dependency 'fontconfig' already installed.
+[03:53:40] Dependency 'freetype' already installed.
+[03:53:40] Dependency 'gcc' already installed.
+[03:53:40] Dependency 'glib2' already installed.
+[03:53:40] Dependency 'glibc' already installed.
+[03:53:40] Dependency 'graphite2' already installed.
+[03:53:40] Dependency 'harfbuzz' already installed.
+[03:53:40] Dependency 'icu' already installed.
+[03:53:40] Dependency 'keyutils' already installed.
+[03:53:40] Dependency 'libdrm' already installed.
+[03:53:40] Dependency 'libffi' already installed.
+[03:53:40] Dependency 'libglvnd' already installed.
+[03:53:40] Dependency 'libpciaccess' already installed.
+[03:53:40] Dependency 'libpng' already installed.
+[03:53:40] Dependency 'libx11' already installed.
+[03:53:40] Dependency 'libxau' already installed.
+[03:53:40] Dependency 'libxcb' already installed.
+[03:53:40] Dependency 'libxdmcp' already installed.
+[03:53:40] Dependency 'libxext' already installed.
+[03:53:40] Dependency 'libxkbcommon' already installed.
+[03:53:40] Dependency 'libxml2' already installed.
+[03:53:40] Dependency 'libxshmfence' already installed.
+[03:53:40] Dependency 'libxxf86vm' already installed.
+[03:53:40] Dependency 'llvm' already installed.
+[03:53:40] Dependency 'lm-sensors' already installed.
+[03:53:40] Dependency 'mesa' already installed.
+[03:53:40] Dependency 'mitkrb' already installed.
+[03:53:40] Dependency 'openssl' already installed.
+[03:53:40] Dependency 'pcre2' already installed.
+[03:53:40] Dependency 'qt6' already installed.
+[03:53:40] Dependency 'spirv-tools' already installed.
+[03:53:40] Dependency 'systemd' already installed.
+[03:53:40] Dependency 'wayland' already installed.
+[03:53:40] Dependency 'xz' already installed.
+[03:53:40] Dependency 'zlib' already installed.
+[03:53:40] Dependency 'zstd' already installed.
+[VERSION] kirigami: 6.32.0
+[03:53:40] Installing kirigami version: 6.32.0
+[03:53:40] Starting remote custom build for kirigami...
+--2026-11-14 03:53:43--  https://download.kde.org/stable/frameworks/6.32/kirigami-6.32.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://mirrors.xtom.au/kde/stable/frameworks/6.32/kirigami-6.32.0.tar.xz [following]
+--2026-11-14 03:53:45--  https://mirrors.xtom.au/kde/stable/frameworks/6.32/kirigami-6.32.0.tar.xz
+Resolving mirrors.xtom.au (mirrors.xtom.au)... 146.19.0.8, 2a11:3::8
+Connecting to mirrors.xtom.au (mirrors.xtom.au)|146.19.0.8|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 690384 (674K) [application/octet-stream]
+Saving to: ‘kirigami-6.32.0.tar.xz’
+
+kirigami-6.32.0.tar   0%[                    ]       0  --.-KB/s               kirigami-6.32.0.tar 100%[===================>] 674.20K  --.-KB/s    in 0.1s    
+
+2026-11-14 03:53:45 (4.54 MB/s) - ‘kirigami-6.32.0.tar.xz’ saved [690384/690384]
+
+kirigami-6.32.0.tar.xz already present and appears valid.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:33 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/kirigami/kirigami-6.32.0/build/prefix.sh to set the environment for kirigami2.
+fatal: no upstream configured for branch 'master'
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found XKB: /usr/lib/libxkbcommon.so (found suitable version "1.13.2", minimum required is "0.9.0")
+Installing in /usr. Run /home/fusion809/lfs_packaging/kirigami/kirigami-6.32.0/build/prefix.sh to set the environment for kirigami2.
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- Found OpenMP: TRUE (found version "5.2")
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following features have been enabled:
+
+ * QtGuiOpenGL, QtGui built with support for OpenGL
+
+-- The following OPTIONAL packages have been found:
+
+ * Qt6Core
+ * Qt6QuickTools (required version >= 6.12.0)
+ * OpenGL
+ * Qt6GuiTools (required version >= 6.12.0)
+ * Qt6QmlTools (required version >= 6.12.0)
+ * WrapVulkanHeaders
+ * Qt6Quick (required version >= 6.10.0)
+ * Qt6Svg (required version >= 6.10.0)
+ * Qt6QuickControls2 (required version >= 6.10.0)
+ * Qt6ShaderToolsTools (required version >= 6.12.0)
+ * Qt6ShaderTools (required version >= 6.10.0)
+ * Python3
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6DBusTools (required version >= 6.12.0)
+ * OpenMP, Multi-platform shared-memory parallel programming in C/C++ and Fortran
+   Accelerates palette generation in Kirigami.ImageColors
+ * Qt6LinguistTools
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.32.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt6GuiPrivate (required version >= 6.10.0)
+ * Qt6DBus (required version >= 6.10.0)
+ * Qt6
+
+-- Configuring done (6.2s)
+-- Generating done (0.5s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_PYTHON_BINDINGS
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/kirigami/kirigami-6.32.0/build
+[  0%] Generating ECMPoQm/ast/libkirigami6_qt.qm
+[  0%] Generating ECMPoQm/ar/libkirigami6_qt.qm
+[  0%] Generating ECMPoQm/az/libkirigami6_qt.qm
+[  0%] Built target translations_2
+[  0%] Built target translations_1
+[  1%] Generating ECMPoQm/bg/libkirigami6_qt.qm
+[  1%] Built target translations_3
+[  1%] Generating ECMPoQm/ca/libkirigami6_qt.qm
+[  1%] Built target translations_4
+[  1%] Generating ECMPoQm/ca@valencia/libkirigami6_qt.qm
+[  1%] Built target translations_5
+[  1%] Generating ECMPoQm/cs/libkirigami6_qt.qm
+[  1%] Built target translations_6
+[  1%] Generating ECMPoQm/da/libkirigami6_qt.qm
+[  1%] Built target translations_7
+[  2%] Generating ECMPoQm/de/libkirigami6_qt.qm
+[  2%] Built target translations_8
+[  2%] Generating ECMPoQm/el/libkirigami6_qt.qm
+[  2%] Built target translations_9
+[  3%] Generating ECMPoQm/en_GB/libkirigami6_qt.qm
+[  3%] Built target translations_10
+[  3%] Generating ECMPoQm/eo/libkirigami6_qt.qm
+[  3%] Built target translations_12
+[  3%] Generating ECMPoQm/es/libkirigami6_qt.qm
+[  3%] Built target translations_11
+[  3%] Built target translations_13
+[  3%] Generating ECMPoQm/et/libkirigami6_qt.qm
+[  3%] Generating ECMPoQm/eu/libkirigami6_qt.qm
+[  3%] Built target translations_14
+[  3%] Generating ECMPoQm/fi/libkirigami6_qt.qm
+[  3%] Built target translations_15
+[  3%] Built target translations_16
+[  3%] Generating ECMPoQm/fr/libkirigami6_qt.qm
+[  3%] Generating ECMPoQm/ga/libkirigami6_qt.qm
+[  4%] Generating ECMPoQm/gl/libkirigami6_qt.qm
+[  4%] Built target translations_17
+[  4%] Built target translations_18
+[  4%] Built target translations_19
+[  4%] Generating ECMPoQm/he/libkirigami6_qt.qm
+[  4%] Generating ECMPoQm/hi/libkirigami6_qt.qm
+[  4%] Generating ECMPoQm/hu/libkirigami6_qt.qm
+[  4%] Built target translations_20
+[  4%] Built target translations_21
+[  4%] Built target translations_22
+[  4%] Generating ECMPoQm/ia/libkirigami6_qt.qm
+[  4%] Generating ECMPoQm/id/libkirigami6_qt.qm
+[  5%] Generating ECMPoQm/is/libkirigami6_qt.qm
+[  5%] Built target translations_23
+[  5%] Built target translations_24
+[  5%] Built target translations_25
+[  5%] Generating ECMPoQm/it/libkirigami6_qt.qm
+[  5%] Generating ECMPoQm/ja/libkirigami6_qt.qm
+[  5%] Generating ECMPoQm/ka/libkirigami6_qt.qm
+[  5%] Built target translations_26
+[  5%] Built target translations_27
+[  5%] Generating ECMPoQm/ko/libkirigami6_qt.qm
+[  5%] Built target translations_28
+[  5%] Generating ECMPoQm/lt/libkirigami6_qt.qm
+[  5%] Built target translations_29
+[  5%] Generating ECMPoQm/lv/libkirigami6_qt.qm
+[  5%] Built target translations_30
+[  5%] Built target translations_31
+[  7%] Generating ECMPoQm/ml/libkirigami6_qt.qm
+[  7%] Generating ECMPoQm/nb/libkirigami6_qt.qm
+[  7%] Built target translations_32
+[  7%] Generating ECMPoQm/nl/libkirigami6_qt.qm
+[  7%] Built target translations_33
+[  7%] Generating ECMPoQm/nn/libkirigami6_qt.qm
+[  7%] Built target translations_34
+[  7%] Generating ECMPoQm/pa/libkirigami6_qt.qm
+[  7%] Generating ECMPoQm/pl/libkirigami6_qt.qm
+[  7%] Built target translations_35
+[  7%] Built target translations_36
+[  7%] Generating ECMPoQm/pt/libkirigami6_qt.qm
+[  7%] Built target translations_37
+[  7%] Generating ECMPoQm/ro/libkirigami6_qt.qm
+[  7%] Generating ECMPoQm/pt_BR/libkirigami6_qt.qm
+[  7%] Built target translations_38
+[  7%] Built target translations_40
+[  7%] Generating ECMPoQm/ru/libkirigami6_qt.qm
+[  7%] Built target translations_39
+[  7%] Generating ECMPoQm/sa/libkirigami6_qt.qm
+[  7%] Generating ECMPoQm/sk/libkirigami6_qt.qm
+[  7%] Built target translations_41
+[  7%] Built target translations_42
+[  7%] Generating ECMPoQm/sl/libkirigami6_qt.qm
+[  7%] Built target translations_43
+[  7%] Generating ECMPoQm/sr/libkirigami6_qt.qm
+[  8%] Generating ECMPoQm/sr@ijekavian/libkirigami6_qt.qm
+[  8%] Built target translations_44
+[  8%] Built target translations_45
+[  8%] Built target translations_46
+[  8%] Generating ECMPoQm/sr@ijekavianlatin/libkirigami6_qt.qm
+[  8%] Generating ECMPoQm/sr@latin/libkirigami6_qt.qm
+[  8%] Built target translations_48
+[  8%] Built target translations_47
+[  8%] Generating ECMPoQm/sv/libkirigami6_qt.qm
+[  8%] Generating ECMPoQm/ta/libkirigami6_qt.qm
+[  8%] Generating ECMPoQm/tg/libkirigami6_qt.qm
+[  8%] Built target translations_49
+[  8%] Built target translations_51
+[  8%] Built target translations_50
+[  8%] Generating ECMPoQm/tr/libkirigami6_qt.qm
+[  9%] Generating ECMPoQm/ug/libkirigami6_qt.qm
+[  9%] Generating ECMPoQm/uk/libkirigami6_qt.qm
+[  9%] Built target translations_52
+[  9%] Built target translations_53
+[  9%] Built target translations_54
+[  9%] Generating ECMPoQm/zh_CN/libkirigami6_qt.qm
+[  9%] Generating ECMPoQm/zh_TW/libkirigami6_qt.qm
+[  9%] Copying KirigamiPrivate qml resources into build dir
+[  9%] Built target translations_55
+[  9%] Built target translations_56
+[  9%] Built target KirigamiPrivate_copy_res
+[  9%] Populating .qmlls.build.ini file at /home/fusion809/lfs_packaging/kirigami/kirigami-6.32.0/build/.qt/.qmlls.build.ini
+[  9%] Copying KirigamiPrivate qml sources into build dir
+[  9%] Copying Kirigami qml sources into build dir
+[  9%] Built target KirigamiPrivate_copy_qml
+[  9%] Built target Kirigami_copy_qml
+[ 10%] Copying Kirigami qml resources into build dir
+[ 10%] Copying KirigamiPlatform qml resources into build dir
+[ 10%] Built target generate_qmlls_build_ini_file
+[ 10%] Built target Kirigami_copy_res
+[ 10%] Built target KirigamiPlatform_copy_res
+[ 10%] Copying KirigamiLayouts qml resources into build dir
+[ 10%] Copying KirigamiPlatform qml sources into build dir
+[ 10%] Copying KirigamiLayoutsPrivate qml resources into build dir
+[ 10%] Built target KirigamiLayouts_copy_res
+[ 10%] Built target KirigamiPlatform_copy_qml
+[ 10%] Built target KirigamiLayoutsPrivate_copy_res
+[ 10%] Copying KirigamiLayoutsPrivate qml sources into build dir
+[ 10%] Copying KirigamiLayouts qml sources into build dir
+[ 10%] Copying KirigamiPrimitives qml resources into build dir
+[ 10%] Built target KirigamiLayoutsPrivate_copy_qml
+[ 10%] Built target KirigamiLayouts_copy_qml
+[ 10%] Built target KirigamiPrimitives_copy_res
+[ 10%] Copying KirigamiPrimitives qml sources into build dir
+[ 10%] Copying KirigamiTemplates qml resources into build dir
+[ 10%] Copying KirigamiTemplates qml sources into build dir
+[ 10%] Built target KirigamiPrimitives_copy_qml
+[ 10%] Built target KirigamiTemplates_copy_res
+[ 10%] Built target KirigamiTemplates_copy_qml
+[ 10%] Copying KirigamiControls qml resources into build dir
+[ 10%] Copying KirigamiControls qml sources into build dir
+[ 10%] Copying KirigamiDelegates qml resources into build dir
+[ 10%] Built target KirigamiControls_copy_res
+[ 10%] Built target KirigamiDelegates_copy_res
+[ 10%] Built target KirigamiControls_copy_qml
+[ 10%] Copying KirigamiDelegates qml sources into build dir
+[ 10%] Copying KirigamiDialogs qml resources into build dir
+[ 10%] Copying KirigamiDialogs qml sources into build dir
+[ 10%] Built target KirigamiDelegates_copy_qml
+[ 10%] Built target KirigamiDialogs_copy_res
+[ 10%] Copying KirigamiFormsPrivateTemplates qml resources into build dir
+[ 10%] Built target KirigamiDialogs_copy_qml
+[ 10%] Copying KirigamiFormsPrivateTemplates qml sources into build dir
+[ 10%] Built target KirigamiFormsPrivateTemplates_copy_res
+[ 10%] Copying KirigamiFormsPrivateFlat qml resources into build dir
+[ 10%] Built target KirigamiFormsPrivateTemplates_copy_qml
+[ 10%] Copying KirigamiFormsPrivateFlat qml sources into build dir
+[ 10%] Built target KirigamiFormsPrivateFlat_copy_res
+[ 10%] Copying KirigamiFormsPrivateCards qml resources into build dir
+[ 10%] Built target KirigamiFormsPrivateFlat_copy_qml
+[ 10%] Copying KirigamiFormsPrivateCards qml sources into build dir
+[ 10%] Built target KirigamiFormsPrivateCards_copy_res
+[ 11%] Copying KirigamiForms qml resources into build dir
+[ 11%] Built target KirigamiFormsPrivateCards_copy_qml
+[ 11%] Copying KirigamiForms qml sources into build dir
+[ 11%] Built target KirigamiForms_copy_res
+[ 11%] Generating ../share/kdevappwizard/templates/kirigami6.tar.bz2
+[ 11%] Built target KirigamiForms_copy_qml
+[ 11%] Built target KirigamiPrivate_autogen_timestamp_deps
+[ 11%] Built target KirigamiPlatform_autogen_timestamp_deps
+[ 11%] Built target kirigami6_kapptemplate
+[ 11%] Automatic MOC for target KirigamiPrivate
+[ 12%] Automatic MOC for target KirigamiPlatform
+[ 12%] Built target KirigamiPrivate_autogen
+[ 12%] Running AUTOMOC file extraction for target KirigamiPrivate
+[ 12%] Running rcc for resource qmake_org_kde_kirigami_private
+[ 14%] Running moc --collect-json for target KirigamiPrivate
+[ 14%] Generating meta_types/qt6kirigamiprivate_metatypes.json
+[ 14%] Automatic QML type registration for target KirigamiPrivate
+[ 14%] Building CXX object src/CMakeFiles/KirigamiPrivate.dir/KirigamiPrivate_autogen/mocs_compilation.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/KirigamiPrivate.dir/kirigamiprivate_qmltyperegistrations.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/KirigamiPrivate.dir/.qt/rcc/qrc_qmake_org_kde_kirigami_private.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/KirigamiPrivate.dir/copyhelper.cpp.o
+[ 15%] Built target KirigamiPlatform_autogen
+[ 15%] Building CXX object src/CMakeFiles/KirigamiPrivate.dir/actionhelper.cpp.o
+[ 15%] Generating settings_interface.cpp, settings_interface.h
+[ 15%] Running AUTOMOC file extraction for target KirigamiPlatform
+[ 16%] Running rcc for resource qmake_org_kde_kirigami_platform
+[ 16%] Running moc --collect-json for target KirigamiPlatform
+[ 16%] Generating moc_settings_interface.cpp
+[ 16%] Generating meta_types/qt6kirigamiplatform_metatypes.json
+[ 16%] Automatic QML type registration for target KirigamiPlatform
+[ 16%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/KirigamiPlatform_autogen/mocs_compilation.cpp.o
+[ 16%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/kirigamiplatform_qmltyperegistrations.cpp.o
+[ 16%] Linking CXX shared library ../bin/libKirigamiPrivate.so
+[ 16%] Built target KirigamiPrivate
+[ 16%] Built target KirigamiPrivateplugin_autogen_timestamp_deps
+[ 16%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/.qt/rcc/qrc_qmake_org_kde_kirigami_platform.cpp.o
+[ 17%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/platformtheme.cpp.o
+[ 17%] Automatic MOC for target KirigamiPrivateplugin
+[ 17%] Built target KirigamiPrivateplugin_autogen
+[ 17%] Building CXX object src/CMakeFiles/KirigamiPrivateplugin.dir/KirigamiPrivateplugin_autogen/mocs_compilation.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/KirigamiPrivateplugin.dir/KirigamiPrivateplugin_org_kde_kirigami_privatePlugin.cpp.o
+[ 17%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/basictheme.cpp.o
+[ 17%] Linking CXX shared module ../bin/org/kde/kirigami/private/libKirigamiPrivateplugin.so
+[ 17%] Built target KirigamiPrivateplugin
+[ 17%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/inputmethod.cpp.o
+[ 17%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/platformpluginfactory.cpp.o
+[ 17%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/tabletmodewatcher.cpp.o
+[ 17%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/settings.cpp.o
+[ 17%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/smoothscrollwatcher.cpp.o
+[ 18%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/styleselector.cpp.o
+[ 18%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/units.cpp.o
+[ 18%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/virtualkeyboardwatcher.cpp.o
+[ 18%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/colorutils.cpp.o
+[ 18%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/stylehints.cpp.o
+[ 18%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/settings_interface.cpp.o
+[ 18%] Building CXX object src/platform/CMakeFiles/KirigamiPlatform.dir/kirigamiplatform_logging.cpp.o
+[ 18%] Linking CXX shared library ../../bin/libKirigamiPlatform.so
+[ 18%] Built target KirigamiPlatform
+[ 18%] Built target KirigamiPlatformplugin_autogen_timestamp_deps
+[ 18%] Built target KirigamiPrimitives_autogen_timestamp_deps
+[ 18%] Built target KirigamiLayoutsPrivate_autogen_timestamp_deps
+[ 18%] Automatic MOC for target KirigamiPlatformplugin
+[ 18%] Automatic MOC for target KirigamiPrimitives
+[ 18%] Automatic MOC for target KirigamiLayoutsPrivate
+[ 18%] Built target KirigamiLayoutsPrivate_autogen
+[ 18%] Running AUTOMOC file extraction for target KirigamiLayoutsPrivate
+[ 18%] Running rcc for resource KirigamiLayoutsPrivate_raw_qml_0
+[ 18%] Running rcc for resource qmake_org_kde_kirigami_layouts_private
+[ 20%] Generating .rcc/qmlcache/KirigamiLayoutsPrivate_qmlcache_loader.cpp
+[ 20%] Running moc --collect-json for target KirigamiLayoutsPrivate
+[ 20%] Generating meta_types/qt6kirigamilayoutsprivate_metatypes.json
+[ 20%] Automatic QML type registration for target KirigamiLayoutsPrivate
+[ 20%] Built target KirigamiPlatformplugin_autogen
+[ 20%] Building CXX object src/platform/CMakeFiles/KirigamiPlatformplugin.dir/KirigamiPlatformplugin_autogen/mocs_compilation.cpp.o
+[ 20%] Building CXX object src/platform/CMakeFiles/KirigamiPlatformplugin.dir/KirigamiPlatformplugin_org_kde_kirigami_platformPlugin.cpp.o
+[ 20%] Generating .rcc/qmlcache/KirigamiLayoutsPrivate_ColumnViewSeparator_qml.cpp
+[ 20%] Building CXX object src/layouts/CMakeFiles/KirigamiLayoutsPrivate.dir/KirigamiLayoutsPrivate_autogen/mocs_compilation.cpp.o
+[ 20%] Building CXX object src/layouts/CMakeFiles/KirigamiLayoutsPrivate.dir/kirigamilayoutsprivate_qmltyperegistrations.cpp.o
+[ 20%] Built target KirigamiPrimitives_autogen
+[ 20%] Building CXX object src/layouts/CMakeFiles/KirigamiLayoutsPrivate.dir/.qt/rcc/qrc_qmake_org_kde_kirigami_layouts_private.cpp.o
+[ 21%] Building CXX object src/layouts/CMakeFiles/KirigamiLayoutsPrivate.dir/.rcc/qmlcache/KirigamiLayoutsPrivate_qmlcache_loader.cpp.o
+[ 21%] Running AUTOMOC file extraction for target KirigamiPrimitives
+[ 21%] Generating .qsb/icon_default.frag.qsb
+[ 21%] Linking CXX shared module ../../bin/org/kde/kirigami/platform/libKirigamiPlatformplugin.so
+[ 21%] Generating .qsb/icon_default.vert.qsb
+[ 21%] Generating .qsb/icon_mask_default.frag.qsb
+[ 21%] Generating .qsb/icon_mask_default.vert.qsb
+[ 21%] Built target KirigamiPlatformplugin
+[ 21%] Generating .qsb/icon_mask_mix.vert.qsb
+[ 21%] Generating .qsb/icon_mask_mix.frag.qsb
+[ 22%] Generating .qsb/icon_mix.frag.qsb
+[ 22%] Generating .qsb/icon_mix.vert.qsb
+[ 22%] Building CXX object src/layouts/CMakeFiles/KirigamiLayoutsPrivate.dir/.rcc/qmlcache/KirigamiLayoutsPrivate_ColumnViewSeparator_qml.cpp.o
+[ 22%] Generating .qsb/shadowed_border_rectangle.frag.qsb
+[ 23%] Generating .qsb/shadowed_border_rectangle.vert.qsb
+[ 23%] Building CXX object src/layouts/CMakeFiles/KirigamiLayoutsPrivate.dir/.qt/rcc/qrc_KirigamiLayoutsPrivate_raw_qml_0.cpp.o
+[ 23%] Generating .qsb/shadowed_border_rectangle_lowpower.frag.qsb
+[ 24%] Generating .qsb/shadowed_border_rectangle_lowpower.vert.qsb
+[ 24%] Generating .qsb/shadowed_border_texture.frag.qsb
+[ 24%] Generating .qsb/shadowed_border_texture.vert.qsb
+[ 24%] Generating .qsb/shadowed_border_texture_lowpower.frag.qsb
+[ 24%] Generating .qsb/shadowed_border_texture_lowpower.vert.qsb
+[ 24%] Generating .qsb/shadowed_rectangle.frag.qsb
+[ 24%] Generating .qsb/shadowed_rectangle.vert.qsb
+[ 24%] Generating .qsb/shadowed_rectangle_lowpower.frag.qsb
+[ 24%] Generating .qsb/shadowed_rectangle_lowpower.vert.qsb
+[ 24%] Generating .qsb/shadowed_texture.frag.qsb
+[ 24%] Generating .qsb/shadowed_texture.vert.qsb
+[ 24%] Generating .qsb/shadowed_texture_lowpower.frag.qsb
+[ 24%] Generating .qsb/shadowed_texture_lowpower.vert.qsb
+[ 24%] Running rcc for resource KirigamiPrimitives_raw_qml_0
+[ 24%] Running rcc for resource icon_default
+[ 24%] Running rcc for resource icon_mask_default
+[ 24%] Running rcc for resource icon_mask_mix
+[ 25%] Running rcc for resource icon_mix
+[ 27%] Running rcc for resource qmake_org_kde_kirigami_primitives
+[ 27%] Running rcc for resource shadowed_border_rectangle
+[ 27%] Running rcc for resource shadowed_border_texture
+[ 27%] Running rcc for resource shadowed_border_rectangle_lowpower
+[ 27%] Running rcc for resource shadowed_border_texture_lowpower
+[ 27%] Running rcc for resource shadowed_rectangle
+[ 27%] Running rcc for resource shadowed_rectangle_lowpower
+[ 28%] Running rcc for resource shadowed_texture
+[ 28%] Running rcc for resource shadowed_texture_lowpower
+[ 28%] Generating .rcc/qmlcache/KirigamiPrimitives_qmlcache_loader.cpp
+[ 28%] Running moc --collect-json for target KirigamiPrimitives
+[ 28%] Generating meta_types/qt6kirigamiprimitives_metatypes.json
+[ 28%] Automatic QML type registration for target KirigamiPrimitives
+[ 28%] Generating .rcc/qmlcache/KirigamiPrimitives_IconPropertiesGroup_qml.cpp
+[ 28%] Generating .rcc/qmlcache/KirigamiPrimitives_Separator_qml.cpp
+[ 28%] Generating .rcc/qmlcache/KirigamiPrimitives_ShadowedImage_qml.cpp
+[ 28%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/kirigamiprimitives_qmltyperegistrations.cpp.o
+[ 28%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/KirigamiPrimitives_autogen/mocs_compilation.cpp.o
+[ 29%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.qt/rcc/qrc_qmake_org_kde_kirigami_primitives.cpp.o
+[ 29%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/alignedsizeattached.cpp.o
+/home/fusion809/lfs_packaging/kirigami/kirigami-6.32.0/src/primitives/alignedsizeattached.cpp: In lambda function:
+/home/fusion809/lfs_packaging/kirigami/kirigami-6.32.0/src/primitives/alignedsizeattached.cpp:22:76: warning: unused parameter ‘window’ [-Wunused-parameter]
+   22 |     connect(m_item, &QQuickItem::windowChanged, this, [this](QQuickWindow *window) {
+      |                                                              ~~~~~~~~~~~~~~^~~~~~
+[ 29%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/icon.cpp.o
+[ 29%] Linking CXX shared library ../../bin/libKirigamiLayoutsPrivate.so
+[ 29%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/mnemonicattached.cpp.o
+[ 29%] Built target KirigamiLayoutsPrivate
+[ 29%] Built target KirigamiLayouts_autogen_timestamp_deps
+[ 29%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/nameutils.cpp.o
+[ 29%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/shadowedrectangle.cpp.o
+[ 29%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/shadowedtexture.cpp.o
+[ 29%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/scenepositionattached.cpp.o
+[ 30%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/scenegraph/shadernode.cpp.o
+[ 30%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/scenegraph/shadermaterial.cpp.o
+[ 30%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/scenegraph/iconmaterial.cpp.o
+[ 30%] Built target KirigamiLayoutsPrivateplugin_autogen_timestamp_deps
+[ 30%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/scenegraph/iconnode.cpp.o
+[ 30%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/scenegraph/softwarerectanglenode.cpp.o
+[ 30%] Automatic MOC for target KirigamiLayouts
+[ 30%] Built target KirigamiLayouts_autogen
+[ 31%] Automatic MOC for target KirigamiLayoutsPrivateplugin
+[ 31%] Built target KirigamiLayoutsPrivateplugin_autogen
+[ 31%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/scenegraph/texturecache.cpp.o
+[ 31%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.rcc/qmlcache/KirigamiPrimitives_qmlcache_loader.cpp.o
+[ 32%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.rcc/qmlcache/KirigamiPrimitives_IconPropertiesGroup_qml.cpp.o
+[ 32%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.rcc/qmlcache/KirigamiPrimitives_Separator_qml.cpp.o
+[ 32%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.rcc/qmlcache/KirigamiPrimitives_ShadowedImage_qml.cpp.o
+[ 32%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.qt/rcc/qrc_KirigamiPrimitives_raw_qml_0.cpp.o
+[ 32%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.qt/rcc/qrc_shadowed_rectangle.cpp.o
+[ 32%] Running AUTOMOC file extraction for target KirigamiLayouts
+[ 34%] Running rcc for resource KirigamiLayouts_raw_qml_0
+[ 34%] Running rcc for resource qmake_org_kde_kirigami_layouts
+[ 34%] Generating .rcc/qmlcache/KirigamiLayouts_qmlcache_loader.cpp
+[ 34%] Running moc --collect-json for target KirigamiLayouts
+[ 34%] Generating meta_types/qt6kirigamilayouts_metatypes.json
+[ 34%] Automatic QML type registration for target KirigamiLayouts
+[ 34%] Generating .rcc/qmlcache/KirigamiLayouts_FormLayout_qml.cpp
+[ 34%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/KirigamiLayouts_autogen/mocs_compilation.cpp.o
+[ 34%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/kirigamilayouts_qmltyperegistrations.cpp.o
+[ 34%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/.qt/rcc/qrc_qmake_org_kde_kirigami_layouts.cpp.o
+[ 34%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/loggingcategory.cpp.o
+[ 34%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.qt/rcc/qrc_shadowed_border_rectangle.cpp.o
+[ 34%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/columnview.cpp.o
+[ 34%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.qt/rcc/qrc_shadowed_texture.cpp.o
+[ 34%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.qt/rcc/qrc_shadowed_border_texture.cpp.o
+[ 35%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.qt/rcc/qrc_shadowed_rectangle_lowpower.cpp.o
+[ 35%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.qt/rcc/qrc_shadowed_border_rectangle_lowpower.cpp.o
+[ 35%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.qt/rcc/qrc_shadowed_texture_lowpower.cpp.o
+[ 35%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.qt/rcc/qrc_shadowed_border_texture_lowpower.cpp.o
+[ 35%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.qt/rcc/qrc_icon_default.cpp.o
+[ 35%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.qt/rcc/qrc_icon_mix.cpp.o
+[ 35%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.qt/rcc/qrc_icon_mask_default.cpp.o
+[ 36%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitives.dir/.qt/rcc/qrc_icon_mask_mix.cpp.o
+[ 36%] Linking CXX shared library ../../bin/libKirigamiPrimitives.so
+[ 36%] Built target KirigamiPrimitives
+[ 36%] Building CXX object src/layouts/CMakeFiles/KirigamiLayoutsPrivateplugin.dir/KirigamiLayoutsPrivateplugin_autogen/mocs_compilation.cpp.o
+[ 36%] Building CXX object src/layouts/CMakeFiles/KirigamiLayoutsPrivateplugin.dir/KirigamiLayoutsPrivateplugin_org_kde_kirigami_layouts_privatePlugin.cpp.o
+[ 37%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/displayhint.cpp.o
+[ 37%] Linking CXX shared module ../../bin/org/kde/kirigami/layouts/private/libKirigamiLayoutsPrivateplugin.so
+[ 37%] Built target KirigamiLayoutsPrivateplugin
+[ 37%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/formlayoutattached.cpp.o
+[ 37%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/headerfooterlayout.cpp.o
+[ 37%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/padding.cpp.o
+[ 37%] Built target KirigamiPrimitivesplugin_autogen_timestamp_deps
+[ 37%] Built target KirigamiDialogs_autogen_timestamp_deps
+[ 37%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/sizegroup.cpp.o
+[ 37%] Automatic MOC for target KirigamiPrimitivesplugin
+[ 37%] Built target KirigamiPrimitivesplugin_autogen
+[ 37%] Automatic MOC for target KirigamiDialogs
+[ 37%] Built target KirigamiDialogs_autogen
+[ 37%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitivesplugin.dir/KirigamiPrimitivesplugin_autogen/mocs_compilation.cpp.o
+[ 37%] Building CXX object src/primitives/CMakeFiles/KirigamiPrimitivesplugin.dir/KirigamiPrimitivesplugin_org_kde_kirigami_primitivesPlugin.cpp.o
+[ 37%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/toolbarlayout.cpp.o
+[ 37%] Linking CXX shared module ../../bin/org/kde/kirigami/primitives/libKirigamiPrimitivesplugin.so
+[ 37%] Built target KirigamiPrimitivesplugin
+[ 37%] Running AUTOMOC file extraction for target KirigamiDialogs
+[ 37%] Running rcc for resource KirigamiDialogs_raw_qml_0
+[ 37%] Running rcc for resource qmake_org_kde_kirigami_dialogs
+[ 37%] Generating .rcc/qmlcache/KirigamiDialogs_qmlcache_loader.cpp
+[ 37%] Running moc --collect-json for target KirigamiDialogs
+[ 37%] Generating meta_types/qt6kirigamidialogs_metatypes.json
+[ 38%] Automatic QML type registration for target KirigamiDialogs
+[ 38%] Generating .rcc/qmlcache/KirigamiDialogs_DialogHeaderTopContent_qml.cpp
+[ 38%] Generating .rcc/qmlcache/KirigamiDialogs_DialogHeader_qml.cpp
+[ 38%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/toolbarlayoutdelegate.cpp.o
+[ 38%] Generating .rcc/qmlcache/KirigamiDialogs_Dialog_qml.cpp
+[ 38%] Generating .rcc/qmlcache/KirigamiDialogs_MenuDialog_qml.cpp
+[ 38%] Generating .rcc/qmlcache/KirigamiDialogs_PromptDialog_qml.cpp
+[ 40%] Generating .rcc/qmlcache/KirigamiDialogs_SearchDialog_qml.cpp
+[ 40%] Building CXX object src/dialogs/CMakeFiles/KirigamiDialogs.dir/KirigamiDialogs_autogen/mocs_compilation.cpp.o
+[ 40%] Building CXX object src/dialogs/CMakeFiles/KirigamiDialogs.dir/kirigamidialogs_qmltyperegistrations.cpp.o
+[ 41%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/pagestackattached.cpp.o
+[ 41%] Building CXX object src/dialogs/CMakeFiles/KirigamiDialogs.dir/.qt/rcc/qrc_qmake_org_kde_kirigami_dialogs.cpp.o
+[ 41%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/.rcc/qmlcache/KirigamiLayouts_qmlcache_loader.cpp.o
+[ 41%] Building CXX object src/dialogs/CMakeFiles/KirigamiDialogs.dir/.rcc/qmlcache/KirigamiDialogs_qmlcache_loader.cpp.o
+[ 41%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/.rcc/qmlcache/KirigamiLayouts_FormLayout_qml.cpp.o
+[ 42%] Building CXX object src/dialogs/CMakeFiles/KirigamiDialogs.dir/.rcc/qmlcache/KirigamiDialogs_DialogHeader_qml.cpp.o
+[ 42%] Building CXX object src/layouts/CMakeFiles/KirigamiLayouts.dir/.qt/rcc/qrc_KirigamiLayouts_raw_qml_0.cpp.o
+[ 42%] Building CXX object src/dialogs/CMakeFiles/KirigamiDialogs.dir/.rcc/qmlcache/KirigamiDialogs_DialogHeaderTopContent_qml.cpp.o
+[ 42%] Building CXX object src/dialogs/CMakeFiles/KirigamiDialogs.dir/.rcc/qmlcache/KirigamiDialogs_Dialog_qml.cpp.o
+[ 42%] Building CXX object src/dialogs/CMakeFiles/KirigamiDialogs.dir/.rcc/qmlcache/KirigamiDialogs_MenuDialog_qml.cpp.o
+[ 42%] Linking CXX shared library ../../bin/libKirigamiLayouts.so
+[ 42%] Building CXX object src/dialogs/CMakeFiles/KirigamiDialogs.dir/.rcc/qmlcache/KirigamiDialogs_PromptDialog_qml.cpp.o
+[ 42%] Built target KirigamiLayouts
+[ 42%] Built target KirigamiTemplates_autogen_timestamp_deps
+[ 42%] Built target KirigamiFormsPrivateTemplates_autogen_timestamp_deps
+[ 42%] Built target KirigamiFormsPrivateFlat_autogen_timestamp_deps
+[ 42%] Building CXX object src/dialogs/CMakeFiles/KirigamiDialogs.dir/.rcc/qmlcache/KirigamiDialogs_SearchDialog_qml.cpp.o
+[ 42%] Building CXX object src/dialogs/CMakeFiles/KirigamiDialogs.dir/.qt/rcc/qrc_KirigamiDialogs_raw_qml_0.cpp.o
+[ 42%] Built target KirigamiFormsPrivateCards_autogen_timestamp_deps
+[ 42%] Built target KirigamiLayoutsplugin_autogen_timestamp_deps
+[ 42%] Automatic MOC for target KirigamiTemplates
+[ 42%] Built target KirigamiTemplates_autogen
+[ 42%] Automatic MOC for target KirigamiFormsPrivateTemplates
+[ 42%] Built target KirigamiFormsPrivateTemplates_autogen
+[ 42%] Automatic MOC for target KirigamiFormsPrivateFlat
+[ 42%] Built target KirigamiFormsPrivateFlat_autogen
+[ 43%] Automatic MOC for target KirigamiFormsPrivateCards
+[ 43%] Built target KirigamiFormsPrivateCards_autogen
+[ 43%] Automatic MOC for target KirigamiLayoutsplugin
+[ 43%] Built target KirigamiLayoutsplugin_autogen
+[ 43%] Running AUTOMOC file extraction for target KirigamiTemplates
+[ 43%] Running rcc for resource KirigamiTemplates_raw_qml_0
+[ 43%] Running rcc for resource KirigamiTemplates_raw_qml_1
+[ 43%] Running rcc for resource qmake_org_kde_kirigami_templates
+[ 43%] Generating .rcc/qmlcache/KirigamiTemplates_qmlcache_loader.cpp
+[ 44%] Running moc --collect-json for target KirigamiTemplates
+[ 45%] Generating meta_types/qt6kirigamitemplates_metatypes.json
+[ 45%] Automatic QML type registration for target KirigamiTemplates
+[ 45%] Generating .rcc/qmlcache/KirigamiTemplates_AbstractApplicationHeader_qml.cpp
+[ 45%] Generating .rcc/qmlcache/KirigamiTemplates_AbstractCard_qml.cpp
+[ 45%] Generating .rcc/qmlcache/KirigamiTemplates_AppHeaderSizeGroup_qml.cpp
+[ 45%] Running AUTOMOC file extraction for target KirigamiFormsPrivateTemplates
+[ 45%] Running rcc for resource KirigamiFormsPrivateTemplates_raw_qml_0
+[ 45%] Running rcc for resource qmake_org_kde_kirigami_forms_private_templates
+[ 45%] Generating .rcc/qmlcache/KirigamiTemplates_Avatar_qml.cpp
+[ 45%] Generating .rcc/qmlcache/KirigamiFormsPrivateTemplates_qmlcache_loader.cpp
+[ 47%] Linking CXX shared library ../../bin/libKirigamiDialogs.so
+[ 47%] Running moc --collect-json for target KirigamiFormsPrivateTemplates
+[ 47%] Generating meta_types/qt6kirigamiformsprivatetemplates_metatypes.json
+[ 47%] Automatic QML type registration for target KirigamiFormsPrivateTemplates
+[ 48%] Generating .rcc/qmlcache/KirigamiTemplates_Badge_qml.cpp
+[ 48%] Generating .rcc/qmlcache/KirigamiFormsPrivateTemplates_templates_FormAction_qml.cpp
+[ 48%] Generating .rcc/qmlcache/KirigamiTemplates_Chip_qml.cpp
+[ 48%] Generating .rcc/qmlcache/KirigamiFormsPrivateTemplates_templates_FormEntry_qml.cpp
+[ 48%] Generating .rcc/qmlcache/KirigamiTemplates_Heading_qml.cpp
+[ 49%] Generating .rcc/qmlcache/KirigamiFormsPrivateTemplates_templates_FormGroup_qml.cpp
+[ 49%] Generating .rcc/qmlcache/KirigamiTemplates_InlineMessage_qml.cpp
+[ 49%] Built target KirigamiDialogs
+[ 49%] Running AUTOMOC file extraction for target KirigamiFormsPrivateFlat
+[ 49%] Running rcc for resource KirigamiFormsPrivateFlat_raw_qml_0
+[ 49%] Running rcc for resource qmake_org_kde_kirigami_forms_private_flat
+[ 49%] Generating .rcc/qmlcache/KirigamiFormsPrivateTemplates_templates_FormSeparator_qml.cpp
+[ 50%] Generating .rcc/qmlcache/KirigamiFormsPrivateFlat_qmlcache_loader.cpp
+[ 50%] Running moc --collect-json for target KirigamiFormsPrivateFlat
+[ 50%] Generating .rcc/qmlcache/KirigamiTemplates_InlineViewHeader_qml.cpp
+[ 51%] Generating meta_types/qt6kirigamiformsprivateflat_metatypes.json
+[ 51%] Generating .rcc/qmlcache/KirigamiFormsPrivateTemplates_templates_Form_qml.cpp
+[ 51%] Automatic QML type registration for target KirigamiFormsPrivateFlat
+[ 51%] Generating .rcc/qmlcache/KirigamiTemplates_LinkButton_qml.cpp
+[ 51%] Generating .rcc/qmlcache/KirigamiFormsPrivateFlat_flat_FormAction_qml.cpp
+[ 51%] Generating .rcc/qmlcache/KirigamiTemplates_NavigationTabBar_qml.cpp
+[ 51%] Generating .rcc/qmlcache/KirigamiFormsPrivateFlat_flat_FormEntry_qml.cpp
+[ 51%] Generating .rcc/qmlcache/KirigamiTemplates_NavigationTabButton_qml.cpp
+[ 51%] Generating .rcc/qmlcache/KirigamiTemplates_OverlayDrawer_qml.cpp
+[ 51%] Generating .rcc/qmlcache/KirigamiFormsPrivateFlat_flat_FormGroup_qml.cpp
+[ 52%] Generating .rcc/qmlcache/KirigamiTemplates_OverlaySheet_qml.cpp
+[ 52%] Generating .rcc/qmlcache/KirigamiFormsPrivateFlat_flat_FormSeparator_qml.cpp
+[ 52%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateTemplates.dir/KirigamiFormsPrivateTemplates_autogen/mocs_compilation.cpp.o
+[ 52%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateTemplates.dir/kirigamiformsprivatetemplates_qmltyperegistrations.cpp.o
+[ 52%] Generating .rcc/qmlcache/KirigamiFormsPrivateFlat_flat_Form_qml.cpp
+[ 52%] Generating .rcc/qmlcache/KirigamiTemplates_private_BorderPropertiesGroup_qml.cpp
+[ 52%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateFlat.dir/KirigamiFormsPrivateFlat_autogen/mocs_compilation.cpp.o
+[ 52%] Generating .rcc/qmlcache/KirigamiTemplates_private_DrawerHandle_qml.cpp
+[ 52%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateFlat.dir/kirigamiformsprivateflat_qmltyperegistrations.cpp.o
+[ 52%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/KirigamiTemplates_autogen/mocs_compilation.cpp.o
+[ 52%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/kirigamitemplates_qmltyperegistrations.cpp.o
+[ 54%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateTemplates.dir/.qt/rcc/qrc_qmake_org_kde_kirigami_forms_private_templates.cpp.o
+[ 54%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateTemplates.dir/.rcc/qmlcache/KirigamiFormsPrivateTemplates_qmlcache_loader.cpp.o
+[ 54%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateFlat.dir/.qt/rcc/qrc_qmake_org_kde_kirigami_forms_private_flat.cpp.o
+[ 54%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateFlat.dir/.rcc/qmlcache/KirigamiFormsPrivateFlat_qmlcache_loader.cpp.o
+[ 54%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.qt/rcc/qrc_qmake_org_kde_kirigami_templates.cpp.o
+[ 54%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_qmlcache_loader.cpp.o
+[ 54%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateTemplates.dir/.rcc/qmlcache/KirigamiFormsPrivateTemplates_templates_FormAction_qml.cpp.o
+[ 54%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateFlat.dir/.rcc/qmlcache/KirigamiFormsPrivateFlat_flat_FormAction_qml.cpp.o
+[ 54%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_AbstractApplicationHeader_qml.cpp.o
+[ 54%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateTemplates.dir/.rcc/qmlcache/KirigamiFormsPrivateTemplates_templates_FormEntry_qml.cpp.o
+[ 54%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateFlat.dir/.rcc/qmlcache/KirigamiFormsPrivateFlat_flat_FormEntry_qml.cpp.o
+[ 54%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_AbstractCard_qml.cpp.o
+[ 54%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateTemplates.dir/.rcc/qmlcache/KirigamiFormsPrivateTemplates_templates_FormGroup_qml.cpp.o
+[ 54%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateFlat.dir/.rcc/qmlcache/KirigamiFormsPrivateFlat_flat_FormGroup_qml.cpp.o
+[ 54%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateTemplates.dir/.rcc/qmlcache/KirigamiFormsPrivateTemplates_templates_Form_qml.cpp.o
+[ 54%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_AppHeaderSizeGroup_qml.cpp.o
+[ 55%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateFlat.dir/.rcc/qmlcache/KirigamiFormsPrivateFlat_flat_Form_qml.cpp.o
+[ 55%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateTemplates.dir/.rcc/qmlcache/KirigamiFormsPrivateTemplates_templates_FormSeparator_qml.cpp.o
+[ 56%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_Avatar_qml.cpp.o
+[ 56%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateFlat.dir/.rcc/qmlcache/KirigamiFormsPrivateFlat_flat_FormSeparator_qml.cpp.o
+[ 56%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateTemplates.dir/.qt/rcc/qrc_KirigamiFormsPrivateTemplates_raw_qml_0.cpp.o
+[ 57%] Linking CXX shared library ../../bin/libKirigamiFormsPrivateTemplates.so
+[ 57%] Built target KirigamiFormsPrivateTemplates
+[ 57%] Running AUTOMOC file extraction for target KirigamiFormsPrivateCards
+[ 57%] Running rcc for resource KirigamiFormsPrivateCards_raw_qml_0
+[ 57%] Running rcc for resource qmake_org_kde_kirigami_forms_private_cards
+[ 57%] Generating .rcc/qmlcache/KirigamiFormsPrivateCards_qmlcache_loader.cpp
+[ 58%] Running moc --collect-json for target KirigamiFormsPrivateCards
+[ 58%] Generating meta_types/qt6kirigamiformsprivatecards_metatypes.json
+[ 58%] Automatic QML type registration for target KirigamiFormsPrivateCards
+[ 58%] Generating .rcc/qmlcache/KirigamiFormsPrivateCards_cards_FormAction_qml.cpp
+[ 58%] Generating .rcc/qmlcache/KirigamiFormsPrivateCards_cards_FormEntry_qml.cpp
+[ 58%] Generating .rcc/qmlcache/KirigamiFormsPrivateCards_cards_FormGroup_qml.cpp
+[ 60%] Generating .rcc/qmlcache/KirigamiFormsPrivateCards_cards_FormSeparator_qml.cpp
+[ 60%] Generating .rcc/qmlcache/KirigamiFormsPrivateCards_cards_Form_qml.cpp
+[ 60%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateCards.dir/KirigamiFormsPrivateCards_autogen/mocs_compilation.cpp.o
+[ 60%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateCards.dir/kirigamiformsprivatecards_qmltyperegistrations.cpp.o
+[ 60%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_Badge_qml.cpp.o
+[ 60%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateFlat.dir/.qt/rcc/qrc_KirigamiFormsPrivateFlat_raw_qml_0.cpp.o
+[ 60%] Linking CXX shared library ../../bin/libKirigamiFormsPrivateFlat.so
+[ 60%] Built target KirigamiFormsPrivateFlat
+[ 60%] Building CXX object src/layouts/CMakeFiles/KirigamiLayoutsplugin.dir/KirigamiLayoutsplugin_autogen/mocs_compilation.cpp.o
+[ 60%] Building CXX object src/layouts/CMakeFiles/KirigamiLayoutsplugin.dir/KirigamiLayoutsplugin_org_kde_kirigami_layoutsPlugin.cpp.o
+[ 60%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateCards.dir/.qt/rcc/qrc_qmake_org_kde_kirigami_forms_private_cards.cpp.o
+[ 61%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateCards.dir/.rcc/qmlcache/KirigamiFormsPrivateCards_qmlcache_loader.cpp.o
+[ 61%] Linking CXX shared module ../../bin/org/kde/kirigami/layouts/libKirigamiLayoutsplugin.so
+[ 61%] Built target KirigamiLayoutsplugin
+[ 61%] Built target KirigamiDialogsplugin_autogen_timestamp_deps
+[ 61%] Built target KirigamiFormsPrivateTemplatesplugin_autogen_timestamp_deps
+[ 61%] Built target KirigamiFormsPrivateFlatplugin_autogen_timestamp_deps
+[ 61%] Automatic MOC for target KirigamiDialogsplugin
+[ 61%] Built target KirigamiDialogsplugin_autogen
+[ 61%] Automatic MOC for target KirigamiFormsPrivateTemplatesplugin
+[ 61%] Built target KirigamiFormsPrivateTemplatesplugin_autogen
+[ 61%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateCards.dir/.rcc/qmlcache/KirigamiFormsPrivateCards_cards_FormAction_qml.cpp.o
+[ 61%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_Chip_qml.cpp.o
+[ 61%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_Heading_qml.cpp.o
+[ 62%] Automatic MOC for target KirigamiFormsPrivateFlatplugin
+[ 62%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_InlineMessage_qml.cpp.o
+[ 62%] Built target KirigamiFormsPrivateFlatplugin_autogen
+[ 62%] Building CXX object src/dialogs/CMakeFiles/KirigamiDialogsplugin.dir/KirigamiDialogsplugin_autogen/mocs_compilation.cpp.o
+[ 62%] Building CXX object src/dialogs/CMakeFiles/KirigamiDialogsplugin.dir/KirigamiDialogsplugin_org_kde_kirigami_dialogsPlugin.cpp.o
+[ 62%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateCards.dir/.rcc/qmlcache/KirigamiFormsPrivateCards_cards_FormEntry_qml.cpp.o
+[ 62%] Linking CXX shared module ../../bin/org/kde/kirigami/dialogs/libKirigamiDialogsplugin.so
+[ 62%] Built target KirigamiDialogsplugin
+[ 62%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_LinkButton_qml.cpp.o
+[ 62%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateTemplatesplugin.dir/KirigamiFormsPrivateTemplatesplugin_autogen/mocs_compilation.cpp.o
+[ 62%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateTemplatesplugin.dir/KirigamiFormsPrivateTemplatesplugin_org_kde_kirigami_forms_private_templatesPlugin.cpp.o
+[ 62%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_NavigationTabBar_qml.cpp.o
+[ 62%] Linking CXX shared module ../../bin/org/kde/kirigami/forms/private/templates/libKirigamiFormsPrivateTemplatesplugin.so
+[ 62%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateCards.dir/.rcc/qmlcache/KirigamiFormsPrivateCards_cards_FormGroup_qml.cpp.o
+[ 62%] Built target KirigamiFormsPrivateTemplatesplugin
+[ 63%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_NavigationTabButton_qml.cpp.o
+[ 63%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateFlatplugin.dir/KirigamiFormsPrivateFlatplugin_autogen/mocs_compilation.cpp.o
+[ 63%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateFlatplugin.dir/KirigamiFormsPrivateFlatplugin_org_kde_kirigami_forms_private_flatPlugin.cpp.o
+[ 63%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_OverlayDrawer_qml.cpp.o
+[ 63%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateCards.dir/.rcc/qmlcache/KirigamiFormsPrivateCards_cards_Form_qml.cpp.o
+[ 63%] Linking CXX shared module ../../bin/org/kde/kirigami/forms/private/flat/libKirigamiFormsPrivateFlatplugin.so
+[ 63%] Built target KirigamiFormsPrivateFlatplugin
+[ 63%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateCards.dir/.rcc/qmlcache/KirigamiFormsPrivateCards_cards_FormSeparator_qml.cpp.o
+[ 63%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_OverlaySheet_qml.cpp.o
+[ 63%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateCards.dir/.qt/rcc/qrc_KirigamiFormsPrivateCards_raw_qml_0.cpp.o
+[ 63%] Linking CXX shared library ../../bin/libKirigamiFormsPrivateCards.so
+[ 63%] Built target KirigamiFormsPrivateCards
+[ 63%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_InlineViewHeader_qml.cpp.o
+[ 63%] Built target KirigamiForms_autogen_timestamp_deps
+[ 63%] Built target KirigamiFormsPrivateCardsplugin_autogen_timestamp_deps
+[ 63%] Automatic MOC for target KirigamiForms
+[ 63%] Built target KirigamiForms_autogen
+[ 63%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.qt/rcc/qrc_KirigamiTemplates_raw_qml_0.cpp.o
+[ 63%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_private_BorderPropertiesGroup_qml.cpp.o
+[ 63%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.rcc/qmlcache/KirigamiTemplates_private_DrawerHandle_qml.cpp.o
+[ 63%] Building CXX object src/templates/CMakeFiles/KirigamiTemplates.dir/.qt/rcc/qrc_KirigamiTemplates_raw_qml_1.cpp.o
+[ 63%] Automatic MOC for target KirigamiFormsPrivateCardsplugin
+[ 63%] Built target KirigamiFormsPrivateCardsplugin_autogen
+[ 64%] Running AUTOMOC file extraction for target KirigamiForms
+[ 64%] Running rcc for resource qmake_org_kde_kirigami_forms
+[ 64%] Running moc --collect-json for target KirigamiForms
+[ 64%] Generating meta_types/qt6kirigamiforms_metatypes.json
+[ 64%] Automatic QML type registration for target KirigamiForms
+[ 64%] Building CXX object src/forms/CMakeFiles/KirigamiForms.dir/KirigamiForms_autogen/mocs_compilation.cpp.o
+[ 64%] Building CXX object src/forms/CMakeFiles/KirigamiForms.dir/kirigamiforms_qmltyperegistrations.cpp.o
+[ 64%] Building CXX object src/forms/CMakeFiles/KirigamiForms.dir/.qt/rcc/qrc_qmake_org_kde_kirigami_forms.cpp.o
+[ 64%] Building CXX object src/forms/CMakeFiles/KirigamiForms.dir/formalignmentgroup.cpp.o
+[ 65%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateCardsplugin.dir/KirigamiFormsPrivateCardsplugin_autogen/mocs_compilation.cpp.o
+[ 65%] Building CXX object src/forms/CMakeFiles/KirigamiFormsPrivateCardsplugin.dir/KirigamiFormsPrivateCardsplugin_org_kde_kirigami_forms_private_cardsPlugin.cpp.o
+[ 67%] Linking CXX shared library ../../bin/libKirigamiTemplates.so
+[ 67%] Built target KirigamiTemplates
+[ 67%] Built target KirigamiControls_autogen_timestamp_deps
+[ 67%] Built target KirigamiTemplatesplugin_autogen_timestamp_deps
+[ 67%] Automatic MOC for target KirigamiControls
+[ 67%] Linking CXX shared library ../../bin/libKirigamiForms.so
+[ 67%] Linking CXX shared module ../../bin/org/kde/kirigami/forms/private/cards/libKirigamiFormsPrivateCardsplugin.so
+[ 67%] Built target KirigamiControls_autogen
+[ 67%] Built target KirigamiFormsPrivateCardsplugin
+[ 67%] Running AUTOMOC file extraction for target KirigamiControls
+[ 67%] Automatic MOC for target KirigamiTemplatesplugin
+[ 67%] Running rcc for resource KirigamiControls_raw_qml_0
+[ 67%] Built target KirigamiForms
+[ 67%] Running rcc for resource KirigamiControls_raw_qml_1
+[ 67%] Running rcc for resource KirigamiControls_raw_qml_2
+[ 67%] Running rcc for resource qmake_org_kde_kirigami_controls
+[ 67%] Built target KirigamiFormsplugin_autogen_timestamp_deps
+[ 67%] Generating .rcc/qmlcache/KirigamiControls_qmlcache_loader.cpp
+[ 67%] Automatic MOC for target KirigamiFormsplugin
+[ 67%] Running moc --collect-json for target KirigamiControls
+[ 67%] Generating meta_types/qt6kirigamicontrols_metatypes.json
+[ 67%] Automatic QML type registration for target KirigamiControls
+[ 67%] Built target KirigamiTemplatesplugin_autogen
+[ 67%] Building CXX object src/templates/CMakeFiles/KirigamiTemplatesplugin.dir/KirigamiTemplatesplugin_autogen/mocs_compilation.cpp.o
+[ 67%] Building CXX object src/templates/CMakeFiles/KirigamiTemplatesplugin.dir/KirigamiTemplatesplugin_org_kde_kirigami_templatesPlugin.cpp.o
+[ 67%] Generating .rcc/qmlcache/KirigamiControls_AboutItem_qml.cpp
+[ 67%] Built target KirigamiFormsplugin_autogen
+[ 67%] Generating .rcc/qmlcache/KirigamiControls_AboutPage_qml.cpp
+[ 67%] Generating .rcc/qmlcache/KirigamiControls_AbstractApplicationHeader_qml.cpp
+[ 68%] Generating .rcc/qmlcache/KirigamiControls_AbstractApplicationItem_qml.cpp
+[ 68%] Generating .rcc/qmlcache/KirigamiControls_AbstractApplicationWindow_qml.cpp
+[ 68%] Generating .rcc/qmlcache/KirigamiControls_AbstractCard_qml.cpp
+[ 68%] Generating .rcc/qmlcache/KirigamiControls_ActionTextField_qml.cpp
+[ 68%] Building CXX object src/forms/CMakeFiles/KirigamiFormsplugin.dir/KirigamiFormsplugin_autogen/mocs_compilation.cpp.o
+[ 68%] Generating .rcc/qmlcache/KirigamiControls_ActionToolBar_qml.cpp
+[ 69%] Building CXX object src/forms/CMakeFiles/KirigamiFormsplugin.dir/kirigamiformsplugin.cpp.o
+[ 69%] Generating .rcc/qmlcache/KirigamiControls_Action_qml.cpp
+[ 69%] Generating .rcc/qmlcache/KirigamiControls_ApplicationItem_qml.cpp
+[ 69%] Generating .rcc/qmlcache/KirigamiControls_ApplicationWindow_qml.cpp
+[ 70%] Generating .rcc/qmlcache/KirigamiControls_Avatar_qml.cpp
+[ 70%] Generating .rcc/qmlcache/KirigamiControls_Badge_qml.cpp
+[ 70%] Generating .rcc/qmlcache/KirigamiControls_Card_qml.cpp
+[ 70%] Generating .rcc/qmlcache/KirigamiControls_CardsLayout_qml.cpp
+[ 70%] Generating .rcc/qmlcache/KirigamiControls_CardsListView_qml.cpp
+[ 70%] Generating .rcc/qmlcache/KirigamiControls_Chip_qml.cpp
+[ 70%] Linking CXX shared module ../../bin/org/kde/kirigami/templates/libKirigamiTemplatesplugin.so
+[ 70%] Built target KirigamiTemplatesplugin
+[ 70%] Generating .rcc/qmlcache/KirigamiControls_ContextDrawer_qml.cpp
+[ 71%] Generating .rcc/qmlcache/KirigamiControls_ContextualHelpButton_qml.cpp
+[ 71%] Generating .rcc/qmlcache/KirigamiControls_FlexColumn_qml.cpp
+[ 71%] Generating .rcc/qmlcache/KirigamiControls_GlobalDrawer_qml.cpp
+[ 71%] Generating .rcc/qmlcache/KirigamiControls_Heading_qml.cpp
+[ 71%] Generating .rcc/qmlcache/KirigamiControls_InlineMessage_qml.cpp
+[ 71%] Generating .rcc/qmlcache/KirigamiControls_InlineViewHeader_qml.cpp
+[ 71%] Generating .rcc/qmlcache/KirigamiControls_LinkButton_qml.cpp
+[ 71%] Generating .rcc/qmlcache/KirigamiControls_ListItemDragHandle_qml.cpp
+[ 71%] Linking CXX shared module ../../bin/org/kde/kirigami/forms/libKirigamiFormsplugin.so
+[ 72%] Generating .rcc/qmlcache/KirigamiControls_ListSectionHeader_qml.cpp
+[ 72%] Generating .rcc/qmlcache/KirigamiControls_LoadingPlaceholder_qml.cpp
+[ 72%] Generating .rcc/qmlcache/KirigamiControls_NavigationTabBar_qml.cpp
+[ 72%] Built target KirigamiFormsplugin
+[ 72%] Generating .rcc/qmlcache/KirigamiControls_NavigationTabButton_qml.cpp
+[ 72%] Generating .rcc/qmlcache/KirigamiControls_OverlayDrawer_qml.cpp
+[ 72%] Generating .rcc/qmlcache/KirigamiControls_OverlaySheet_qml.cpp
+[ 74%] Generating .rcc/qmlcache/KirigamiControls_PagePoolAction_qml.cpp
+[ 74%] Generating .rcc/qmlcache/KirigamiControls_PageRow_qml.cpp
+[ 74%] Generating .rcc/qmlcache/KirigamiControls_Page_qml.cpp
+[ 74%] Generating .rcc/qmlcache/KirigamiControls_PasswordField_qml.cpp
+[ 74%] Generating .rcc/qmlcache/KirigamiControls_PlaceholderMessage_qml.cpp
+[ 74%] Generating .rcc/qmlcache/KirigamiControls_ScrollablePage_qml.cpp
+[ 74%] Generating .rcc/qmlcache/KirigamiControls_SearchField_qml.cpp
+[ 74%] Generating .rcc/qmlcache/KirigamiControls_SelectableLabel_qml.cpp
+[ 74%] Generating .rcc/qmlcache/KirigamiControls_SwipeListItem_qml.cpp
+[ 75%] Generating .rcc/qmlcache/KirigamiControls_UrlButton_qml.cpp
+[ 75%] Generating .rcc/qmlcache/KirigamiControls_private_ActionsMenu_qml.cpp
+[ 75%] Generating .rcc/qmlcache/KirigamiControls_private_ActionMenuItem_qml.cpp
+[ 75%] Generating .rcc/qmlcache/KirigamiControls_private_BannerImage_qml.cpp
+[ 75%] Generating .rcc/qmlcache/KirigamiControls_private_ContextDrawerActionItem_qml.cpp
+[ 75%] Generating .rcc/qmlcache/KirigamiControls_private_DefaultCardBackground_qml.cpp
+[ 75%] Generating .rcc/qmlcache/KirigamiControls_private_DefaultChipBackground_qml.cpp
+[ 76%] Generating .rcc/qmlcache/KirigamiControls_private_DefaultPageTitleDelegate_qml.cpp
+[ 76%] Generating .rcc/qmlcache/KirigamiControls_private_EdgeShadow_qml.cpp
+[ 76%] Generating .rcc/qmlcache/KirigamiControls_private_GlobalDrawerActionItem_qml.cpp
+[ 76%] Generating .rcc/qmlcache/KirigamiControls_private_MobileDialogLayer_qml.cpp
+[ 76%] Generating .rcc/qmlcache/KirigamiControls_private_PassiveNotificationsManager_qml.cpp
+[ 76%] Generating .rcc/qmlcache/KirigamiControls_private_PrivateActionToolButton_qml.cpp
+[ 76%] Generating .rcc/qmlcache/KirigamiControls_private_PullDownIndicator_qml.cpp
+[ 77%] Generating .rcc/qmlcache/KirigamiControls_private_SwipeItemEventFilter_qml.cpp
+[ 77%] Generating .rcc/qmlcache/KirigamiControls_private_globaltoolbar_BreadcrumbControl_qml.cpp
+[ 77%] Generating .rcc/qmlcache/KirigamiControls_private_globaltoolbar_HandleButton_qml.cpp
+[ 77%] Generating .rcc/qmlcache/KirigamiControls_private_globaltoolbar_NavigationButtons_qml.cpp
+[ 77%] Generating .rcc/qmlcache/KirigamiControls_private_globaltoolbar_PageRowGlobalToolBarStyleGroup_qml.cpp
+[ 77%] Generating .rcc/qmlcache/KirigamiControls_private_globaltoolbar_PageRowGlobalToolBarUI_qml.cpp
+[ 77%] Generating .rcc/qmlcache/KirigamiControls_private_globaltoolbar_ToolBarPageFooter_qml.cpp
+[ 78%] Generating .rcc/qmlcache/KirigamiControls_private_globaltoolbar_ToolBarPageHeader_qml.cpp
+[ 78%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/KirigamiControls_autogen/mocs_compilation.cpp.o
+[ 78%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.qt/rcc/qrc_qmake_org_kde_kirigami_controls.cpp.o
+[ 78%] Running moc --collect-json for target KirigamiControls
+[ 78%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/loggingcategory.cpp.o
+[ 80%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_qmlcache_loader.cpp.o
+[ 80%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.qt/rcc/qrc_KirigamiControls_raw_qml_0.cpp.o
+[ 80%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.qt/rcc/qrc_KirigamiControls_raw_qml_1.cpp.o
+[ 80%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.qt/rcc/qrc_KirigamiControls_raw_qml_2.cpp.o
+[ 80%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/pagepool.cpp.o
+[ 80%] Generating meta_types/qt6kirigamicontrols_metatypes.json
+[ 80%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/kirigamicontrols_qmltyperegistrations.cpp.o
+[ 80%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_AboutItem_qml.cpp.o
+[ 80%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_AboutPage_qml.cpp.o
+[ 80%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_AbstractApplicationHeader_qml.cpp.o
+[ 80%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_AbstractApplicationItem_qml.cpp.o
+[ 80%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_AbstractApplicationWindow_qml.cpp.o
+[ 80%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_AbstractCard_qml.cpp.o
+[ 81%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_Action_qml.cpp.o
+[ 81%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_ActionTextField_qml.cpp.o
+[ 81%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_ActionToolBar_qml.cpp.o
+[ 81%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_ApplicationItem_qml.cpp.o
+[ 81%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_ApplicationWindow_qml.cpp.o
+[ 81%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_Avatar_qml.cpp.o
+[ 81%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_Badge_qml.cpp.o
+[ 81%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_Card_qml.cpp.o
+[ 82%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_CardsLayout_qml.cpp.o
+[ 82%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_CardsListView_qml.cpp.o
+[ 82%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_Chip_qml.cpp.o
+[ 82%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_ContextDrawer_qml.cpp.o
+[ 82%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_ContextualHelpButton_qml.cpp.o
+[ 82%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_FlexColumn_qml.cpp.o
+[ 82%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_GlobalDrawer_qml.cpp.o
+[ 83%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_Heading_qml.cpp.o
+[ 83%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_InlineMessage_qml.cpp.o
+[ 83%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_InlineViewHeader_qml.cpp.o
+[ 83%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_LinkButton_qml.cpp.o
+[ 83%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_ListItemDragHandle_qml.cpp.o
+[ 83%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_ListSectionHeader_qml.cpp.o
+[ 83%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_LoadingPlaceholder_qml.cpp.o
+[ 83%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_NavigationTabBar_qml.cpp.o
+[ 84%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_NavigationTabButton_qml.cpp.o
+[ 84%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_OverlayDrawer_qml.cpp.o
+[ 84%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_OverlaySheet_qml.cpp.o
+[ 84%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_Page_qml.cpp.o
+[ 84%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_PagePoolAction_qml.cpp.o
+[ 84%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_PageRow_qml.cpp.o
+[ 84%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_PasswordField_qml.cpp.o
+[ 84%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_PlaceholderMessage_qml.cpp.o
+[ 85%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_ScrollablePage_qml.cpp.o
+[ 85%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_SearchField_qml.cpp.o
+[ 85%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_SelectableLabel_qml.cpp.o
+[ 85%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_SwipeListItem_qml.cpp.o
+[ 85%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_UrlButton_qml.cpp.o
+[ 85%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_ActionMenuItem_qml.cpp.o
+[ 87%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_ActionsMenu_qml.cpp.o
+[ 87%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_BannerImage_qml.cpp.o
+[ 87%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_ContextDrawerActionItem_qml.cpp.o
+[ 87%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_DefaultCardBackground_qml.cpp.o
+[ 87%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_DefaultChipBackground_qml.cpp.o
+[ 87%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_DefaultPageTitleDelegate_qml.cpp.o
+[ 87%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_EdgeShadow_qml.cpp.o
+[ 87%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_GlobalDrawerActionItem_qml.cpp.o
+[ 88%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_MobileDialogLayer_qml.cpp.o
+[ 88%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_PassiveNotificationsManager_qml.cpp.o
+[ 88%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_PrivateActionToolButton_qml.cpp.o
+[ 88%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_PullDownIndicator_qml.cpp.o
+[ 88%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_SwipeItemEventFilter_qml.cpp.o
+[ 88%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_globaltoolbar_BreadcrumbControl_qml.cpp.o
+[ 88%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_globaltoolbar_HandleButton_qml.cpp.o
+[ 89%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_globaltoolbar_NavigationButtons_qml.cpp.o
+[ 89%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_globaltoolbar_PageRowGlobalToolBarStyleGroup_qml.cpp.o
+[ 89%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_globaltoolbar_PageRowGlobalToolBarUI_qml.cpp.o
+[ 89%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_globaltoolbar_ToolBarPageFooter_qml.cpp.o
+[ 89%] Building CXX object src/controls/CMakeFiles/KirigamiControls.dir/.rcc/qmlcache/KirigamiControls_private_globaltoolbar_ToolBarPageHeader_qml.cpp.o
+[ 90%] Linking CXX shared library ../../bin/libKirigamiControls.so
+[ 90%] Built target KirigamiControls
+[ 90%] Built target KirigamiDelegates_autogen_timestamp_deps
+[ 90%] Built target KirigamiControlsplugin_autogen_timestamp_deps
+[ 90%] Automatic MOC for target KirigamiControlsplugin
+[ 90%] Automatic MOC for target KirigamiDelegates
+[ 90%] Built target KirigamiDelegates_autogen
+[ 90%] Running rcc for resource KirigamiDelegates_raw_qml_0
+[ 90%] Running AUTOMOC file extraction for target KirigamiDelegates
+[ 91%] Running rcc for resource qmake_org_kde_kirigami_delegates
+[ 91%] Generating .rcc/qmlcache/KirigamiDelegates_qmlcache_loader.cpp
+[ 91%] Running moc --collect-json for target KirigamiDelegates
+[ 91%] Generating meta_types/qt6kirigamidelegates_metatypes.json
+[ 91%] Automatic QML type registration for target KirigamiDelegates
+[ 91%] Built target KirigamiControlsplugin_autogen
+[ 91%] Generating .rcc/qmlcache/KirigamiDelegates_IconTitleSubtitle_qml.cpp
+[ 91%] Generating .rcc/qmlcache/KirigamiDelegates_CheckSubtitleDelegate_qml.cpp
+[ 91%] Building CXX object src/controls/CMakeFiles/KirigamiControlsplugin.dir/KirigamiControlsplugin_autogen/mocs_compilation.cpp.o
+[ 91%] Building CXX object src/controls/CMakeFiles/KirigamiControlsplugin.dir/kirigamicontrolsplugin.cpp.o
+[ 91%] Generating .rcc/qmlcache/KirigamiDelegates_RadioSubtitleDelegate_qml.cpp
+[ 91%] Generating .rcc/qmlcache/KirigamiDelegates_SubtitleDelegate_qml.cpp
+[ 92%] Generating .rcc/qmlcache/KirigamiDelegates_SwitchSubtitleDelegate_qml.cpp
+[ 92%] Generating .rcc/qmlcache/KirigamiDelegates_TitleSubtitleWithActions_qml.cpp
+[ 92%] Generating .rcc/qmlcache/KirigamiDelegates_TitleSubtitle_qml.cpp
+[ 92%] Building CXX object src/delegates/CMakeFiles/KirigamiDelegates.dir/KirigamiDelegates_autogen/mocs_compilation.cpp.o
+[ 92%] Building CXX object src/delegates/CMakeFiles/KirigamiDelegates.dir/kirigamidelegates_qmltyperegistrations.cpp.o
+[ 92%] Building CXX object src/delegates/CMakeFiles/KirigamiDelegates.dir/.qt/rcc/qrc_qmake_org_kde_kirigami_delegates.cpp.o
+[ 92%] Building CXX object src/delegates/CMakeFiles/KirigamiDelegates.dir/.rcc/qmlcache/KirigamiDelegates_qmlcache_loader.cpp.o
+[ 94%] Building CXX object src/delegates/CMakeFiles/KirigamiDelegates.dir/.rcc/qmlcache/KirigamiDelegates_IconTitleSubtitle_qml.cpp.o
+[ 94%] Linking CXX shared module ../../bin/org/kde/kirigami/controls/libKirigamiControlsplugin.so
+[ 94%] Building CXX object src/delegates/CMakeFiles/KirigamiDelegates.dir/.rcc/qmlcache/KirigamiDelegates_TitleSubtitle_qml.cpp.o
+[ 94%] Built target KirigamiControlsplugin
+[ 94%] Building CXX object src/delegates/CMakeFiles/KirigamiDelegates.dir/.rcc/qmlcache/KirigamiDelegates_TitleSubtitleWithActions_qml.cpp.o
+[ 94%] Building CXX object src/delegates/CMakeFiles/KirigamiDelegates.dir/.rcc/qmlcache/KirigamiDelegates_SubtitleDelegate_qml.cpp.o
+[ 94%] Building CXX object src/delegates/CMakeFiles/KirigamiDelegates.dir/.rcc/qmlcache/KirigamiDelegates_CheckSubtitleDelegate_qml.cpp.o
+[ 94%] Building CXX object src/delegates/CMakeFiles/KirigamiDelegates.dir/.rcc/qmlcache/KirigamiDelegates_RadioSubtitleDelegate_qml.cpp.o
+[ 94%] Building CXX object src/delegates/CMakeFiles/KirigamiDelegates.dir/.rcc/qmlcache/KirigamiDelegates_SwitchSubtitleDelegate_qml.cpp.o
+[ 95%] Building CXX object src/delegates/CMakeFiles/KirigamiDelegates.dir/.qt/rcc/qrc_KirigamiDelegates_raw_qml_0.cpp.o
+[ 95%] Linking CXX shared library ../../bin/libKirigamiDelegates.so
+[ 95%] Built target KirigamiDelegates
+[ 95%] Built target Kirigami_autogen_timestamp_deps
+[ 95%] Built target KirigamiDelegatesplugin_autogen_timestamp_deps
+[ 95%] Automatic MOC for target Kirigami
+[ 95%] Automatic MOC for target KirigamiDelegatesplugin
+[ 95%] Built target KirigamiDelegatesplugin_autogen
+[ 95%] Building CXX object src/delegates/CMakeFiles/KirigamiDelegatesplugin.dir/KirigamiDelegatesplugin_autogen/mocs_compilation.cpp.o
+[ 95%] Building CXX object src/delegates/CMakeFiles/KirigamiDelegatesplugin.dir/KirigamiDelegatesplugin_org_kde_kirigami_delegatesPlugin.cpp.o
+[ 95%] Built target Kirigami_autogen
+[ 96%] Running AUTOMOC file extraction for target Kirigami
+[ 96%] Running rcc for resource Kirigami_raw_qml_0
+[ 96%] Running rcc for resource Kirigami_raw_qml_1
+[ 96%] Running rcc for resource Kirigami_raw_res_2
+[ 96%] Running rcc for resource Kirigami_raw_res_3
+[ 96%] Running rcc for resource qmake_org_kde_kirigami
+[ 96%] Running moc --collect-json for target Kirigami
+[ 96%] Generating meta_types/qt6kirigami_metatypes.json
+[ 96%] Automatic QML type registration for target Kirigami
+[ 96%] Building CXX object src/CMakeFiles/Kirigami.dir/kirigami_qmltyperegistrations.cpp.o
+[ 96%] Building CXX object src/CMakeFiles/Kirigami.dir/Kirigami_autogen/mocs_compilation.cpp.o
+[ 96%] Building CXX object src/CMakeFiles/Kirigami.dir/.qt/rcc/qrc_qmake_org_kde_kirigami.cpp.o
+[ 96%] Building CXX object src/CMakeFiles/Kirigami.dir/ECMQmLoader-libkirigami6_qt.cpp.o
+[ 96%] Linking CXX shared module ../../bin/org/kde/kirigami/delegates/libKirigamiDelegatesplugin.so
+[ 96%] Built target KirigamiDelegatesplugin
+[ 96%] Building CXX object src/CMakeFiles/Kirigami.dir/loggingcategory.cpp.o
+[ 96%] Building CXX object src/CMakeFiles/Kirigami.dir/imagecolors.cpp.o
+[ 97%] Building CXX object src/CMakeFiles/Kirigami.dir/overlayzstackingattached.cpp.o
+[ 97%] Building CXX object src/CMakeFiles/Kirigami.dir/spellcheckattached.cpp.o
+[ 97%] Building CXX object src/CMakeFiles/Kirigami.dir/wheelhandler.cpp.o
+[ 97%] Building CXX object src/CMakeFiles/Kirigami.dir/.qt/rcc/qrc_Kirigami_raw_qml_0.cpp.o
+[ 97%] Building CXX object src/CMakeFiles/Kirigami.dir/.qt/rcc/qrc_Kirigami_raw_qml_1.cpp.o
+[ 97%] Building CXX object src/CMakeFiles/Kirigami.dir/.qt/rcc/qrc_Kirigami_raw_res_2.cpp.o
+[ 97%] Building CXX object src/CMakeFiles/Kirigami.dir/.qt/rcc/qrc_Kirigami_raw_res_3.cpp.o
+[ 98%] Linking CXX shared library ../bin/libKirigami.so
+[ 98%] Built target Kirigami
+[ 98%] Built target Kirigamiplugin_autogen_timestamp_deps
+[ 98%] Automatic MOC for target Kirigamiplugin
+[ 98%] Built target Kirigamiplugin_autogen
+[ 98%] Building CXX object src/CMakeFiles/Kirigamiplugin.dir/kirigamiplugin.cpp.o
+[ 98%] Building CXX object src/CMakeFiles/Kirigamiplugin.dir/Kirigamiplugin_autogen/mocs_compilation.cpp.o
+[100%] Linking CXX shared module ../bin/org/kde/kirigami/libKirigamiplugin.so
+[100%] Built target Kirigamiplugin
+[  0%] Built target translations_1
+[  0%] Built target translations_2
+[  0%] Built target translations_3
+[  1%] Built target translations_4
+[  1%] Built target translations_5
+[  1%] Built target translations_6
+[  1%] Built target translations_7
+[  1%] Built target translations_8
+[  2%] Built target translations_9
+[  2%] Built target translations_10
+[  3%] Built target translations_11
+[  3%] Built target translations_12
+[  3%] Built target translations_13
+[  3%] Built target translations_14
+[  3%] Built target translations_15
+[  3%] Built target translations_16
+[  3%] Built target translations_17
+[  3%] Built target translations_18
+[  4%] Built target translations_19
+[  4%] Built target translations_20
+[  4%] Built target translations_21
+[  4%] Built target translations_22
+[  4%] Built target translations_23
+[  4%] Built target translations_24
+[  5%] Built target translations_25
+[  5%] Built target translations_26
+[  5%] Built target translations_27
+[  5%] Built target translations_28
+[  5%] Built target translations_29
+[  5%] Built target translations_30
+[  5%] Built target translations_31
+[  7%] Built target translations_32
+[  7%] Built target translations_33
+[  7%] Built target translations_34
+[  7%] Built target translations_35
+[  7%] Built target translations_36
+[  7%] Built target translations_37
+[  7%] Built target translations_38
+[  7%] Built target translations_39
+[  7%] Built target translations_40
+[  7%] Built target translations_41
+[  7%] Built target translations_42
+[  7%] Built target translations_43
+[  7%] Built target translations_44
+[  7%] Built target translations_45
+[  8%] Built target translations_46
+[  8%] Built target translations_47
+[  8%] Built target translations_48
+[  8%] Built target translations_49
+[  8%] Built target translations_50
+[  8%] Built target translations_51
+[  8%] Built target translations_52
+[  9%] Built target translations_53
+[  9%] Built target translations_54
+[  9%] Built target translations_55
+[  9%] Built target translations_56
+[  9%] Built target KirigamiPrivate_copy_res
+[  9%] Built target generate_qmlls_build_ini_file
+[  9%] Built target KirigamiPrivate_copy_qml
+[  9%] Built target KirigamiPrivate_autogen_timestamp_deps
+[  9%] Built target KirigamiPrivate_autogen
+[ 11%] Built target KirigamiPrivate
+[ 11%] Built target Kirigami_copy_qml
+[ 12%] Built target Kirigami_copy_res
+[ 12%] Built target KirigamiPlatform_copy_res
+[ 12%] Built target KirigamiPlatform_copy_qml
+[ 12%] Built target KirigamiPlatform_autogen_timestamp_deps
+[ 14%] Built target KirigamiPlatform_autogen
+make[2]: Warning: File 'src/platform/CMakeFiles/KirigamiPlatform.dir/compiler_depend.make' has modification time 0.23 s in the future
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[ 17%] Built target KirigamiPlatform
+[ 17%] Built target KirigamiLayouts_copy_res
+[ 17%] Built target KirigamiLayoutsPrivate_copy_res
+[ 17%] Built target KirigamiLayoutsPrivate_copy_qml
+[ 17%] Built target KirigamiLayoutsPrivate_autogen_timestamp_deps
+[ 17%] Built target KirigamiLayoutsPrivate_autogen
+[ 20%] Built target KirigamiLayoutsPrivate
+[ 20%] Built target KirigamiLayouts_copy_qml
+[ 20%] Built target KirigamiLayouts_autogen_timestamp_deps
+[ 20%] Built target KirigamiLayouts_autogen
+[ 23%] Built target KirigamiLayouts
+[ 23%] Built target KirigamiPrimitives_copy_res
+[ 23%] Built target KirigamiPrimitives_copy_qml
+[ 23%] Built target KirigamiPrimitives_autogen_timestamp_deps
+[ 23%] Built target KirigamiPrimitives_autogen
+[ 36%] Built target KirigamiPrimitives
+[ 36%] Built target KirigamiTemplates_copy_res
+[ 36%] Built target KirigamiTemplates_copy_qml
+[ 36%] Built target KirigamiTemplates_autogen_timestamp_deps
+[ 36%] Built target KirigamiTemplates_autogen
+[ 44%] Built target KirigamiTemplates
+[ 44%] Built target KirigamiControls_copy_res
+[ 44%] Built target KirigamiControls_copy_qml
+[ 44%] Built target KirigamiControls_autogen_timestamp_deps
+[ 44%] Built target KirigamiControls_autogen
+[ 44%] Generating meta_types/qt6kirigamicontrols_metatypes.json
+[ 44%] Generating meta_types/qt6kirigamicontrols_metatypes.json
+[ 67%] Built target KirigamiControls
+[ 67%] Built target KirigamiDelegates_copy_res
+[ 67%] Built target KirigamiDelegates_copy_qml
+[ 67%] Built target KirigamiDelegates_autogen_timestamp_deps
+[ 67%] Built target KirigamiDelegates_autogen
+[ 71%] Built target KirigamiDelegates
+[ 71%] Built target KirigamiDialogs_copy_res
+[ 71%] Built target KirigamiDialogs_copy_qml
+[ 71%] Built target KirigamiDialogs_autogen_timestamp_deps
+[ 71%] Built target KirigamiDialogs_autogen
+[ 76%] Built target KirigamiDialogs
+[ 76%] Built target KirigamiFormsPrivateTemplates_copy_res
+[ 76%] Built target KirigamiFormsPrivateTemplates_copy_qml
+[ 76%] Built target KirigamiFormsPrivateTemplates_autogen_timestamp_deps
+[ 76%] Built target KirigamiFormsPrivateTemplates_autogen
+[ 80%] Built target KirigamiFormsPrivateTemplates
+[ 80%] Built target KirigamiFormsPrivateFlat_copy_res
+[ 80%] Built target KirigamiFormsPrivateFlat_copy_qml
+[ 80%] Built target KirigamiFormsPrivateFlat_autogen_timestamp_deps
+[ 80%] Built target KirigamiFormsPrivateFlat_autogen
+[ 83%] Built target KirigamiFormsPrivateFlat
+[ 83%] Built target KirigamiFormsPrivateCards_copy_res
+[ 83%] Built target KirigamiFormsPrivateCards_copy_qml
+[ 83%] Built target KirigamiFormsPrivateCards_autogen_timestamp_deps
+[ 84%] Built target KirigamiFormsPrivateCards_autogen
+[ 88%] Built target KirigamiFormsPrivateCards
+[ 89%] Built target KirigamiForms_copy_res
+[ 89%] Built target KirigamiForms_copy_qml
+[ 89%] Built target KirigamiForms_autogen_timestamp_deps
+[ 89%] Built target KirigamiForms_autogen
+[ 90%] Built target KirigamiForms
+[ 90%] Built target Kirigami_autogen_timestamp_deps
+[ 90%] Built target Kirigami_autogen
+[ 94%] Built target Kirigami
+[ 94%] Built target KirigamiPrivateplugin_autogen_timestamp_deps
+[ 94%] Automatic MOC for target KirigamiPrivateplugin
+[ 94%] Built target KirigamiPrivateplugin_autogen
+[ 94%] Building CXX object src/CMakeFiles/KirigamiPrivateplugin.dir/KirigamiPrivateplugin_org_kde_kirigami_privatePlugin.cpp.o
+[ 94%] Linking CXX shared module ../bin/org/kde/kirigami/private/libKirigamiPrivateplugin.so
+[ 94%] Built target KirigamiPrivateplugin
+[ 94%] Built target Kirigamiplugin_autogen_timestamp_deps
+[ 94%] Built target Kirigamiplugin_autogen
+[ 95%] Built target Kirigamiplugin
+[ 95%] Built target KirigamiPlatformplugin_autogen_timestamp_deps
+[ 95%] Built target KirigamiPlatformplugin_autogen
+[ 95%] Built target KirigamiPlatformplugin
+[ 95%] Built target KirigamiLayoutsPrivateplugin_autogen_timestamp_deps
+[ 96%] Built target KirigamiLayoutsPrivateplugin_autogen
+[ 96%] Built target KirigamiLayoutsPrivateplugin
+[ 96%] Built target KirigamiLayoutsplugin_autogen_timestamp_deps
+[ 96%] Built target KirigamiLayoutsplugin_autogen
+[ 96%] Built target KirigamiLayoutsplugin
+[ 96%] Built target KirigamiPrimitivesplugin_autogen_timestamp_deps
+[ 96%] Built target KirigamiPrimitivesplugin_autogen
+[ 96%] Built target KirigamiPrimitivesplugin
+[ 96%] Built target KirigamiTemplatesplugin_autogen_timestamp_deps
+[ 96%] Automatic MOC for target KirigamiTemplatesplugin
+[ 96%] Built target KirigamiTemplatesplugin_autogen
+[ 96%] Building CXX object src/templates/CMakeFiles/KirigamiTemplatesplugin.dir/KirigamiTemplatesplugin_org_kde_kirigami_templatesPlugin.cpp.o
+[ 96%] Linking CXX shared module ../../bin/org/kde/kirigami/templates/libKirigamiTemplatesplugin.so
+[ 96%] Built target KirigamiTemplatesplugin
+[ 96%] Built target KirigamiControlsplugin_autogen_timestamp_deps
+[ 96%] Built target KirigamiControlsplugin_autogen
+[ 96%] Built target KirigamiControlsplugin
+[ 96%] Built target KirigamiDelegatesplugin_autogen_timestamp_deps
+[ 96%] Built target KirigamiDelegatesplugin_autogen
+[ 96%] Built target KirigamiDelegatesplugin
+[ 96%] Built target KirigamiDialogsplugin_autogen_timestamp_deps
+[ 96%] Built target KirigamiDialogsplugin_autogen
+[ 96%] Built target KirigamiDialogsplugin
+[ 96%] Built target KirigamiFormsPrivateTemplatesplugin_autogen_timestamp_deps
+[ 96%] Built target KirigamiFormsPrivateTemplatesplugin_autogen
+[ 96%] Built target KirigamiFormsPrivateTemplatesplugin
+[ 96%] Built target KirigamiFormsPrivateFlatplugin_autogen_timestamp_deps
+[ 97%] Built target KirigamiFormsPrivateFlatplugin_autogen
+[ 97%] Built target KirigamiFormsPrivateFlatplugin
+[ 97%] Built target KirigamiFormsPrivateCardsplugin_autogen_timestamp_deps
+[ 97%] Built target KirigamiFormsPrivateCardsplugin_autogen
+[ 98%] Built target KirigamiFormsPrivateCardsplugin
+[ 98%] Built target KirigamiFormsplugin_autogen_timestamp_deps
+[ 98%] Built target KirigamiFormsplugin_autogen
+[100%] Built target KirigamiFormsplugin
+[100%] Built target kirigami6_kapptemplate
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/lib/cmake/KF6KirigamiPlatform/KF6KirigamiPlatformConfig.cmake
+-- Installing: /usr/lib/cmake/KF6KirigamiPlatform/KF6KirigamiPlatformConfigVersion.cmake
+-- Installing: /usr/lib/libKirigamiPlatform.so.6.32.0
+-- Installing: /usr/lib/libKirigamiPlatform.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKirigamiPlatform.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKirigamiPlatform.so
+-- Old export file "/usr/lib/cmake/KF6KirigamiPlatform/KF6KirigamiPlatformTargets.cmake" will be replaced.  Removing files [/usr/lib/cmake/KF6KirigamiPlatform/KF6KirigamiPlatformTargets-release.cmake].
+-- Installing: /usr/lib/cmake/KF6KirigamiPlatform/KF6KirigamiPlatformTargets.cmake
+-- Installing: /usr/lib/cmake/KF6KirigamiPlatform/KF6KirigamiPlatformTargets-release.cmake
+-- Installing: /usr/include/KF6/Kirigami/Platform/platformtheme.h
+-- Installing: /usr/include/KF6/Kirigami/Platform/platformpluginfactory.h
+-- Installing: /usr/include/KF6/Kirigami/Platform/styleselector.h
+-- Installing: /usr/include/KF6/Kirigami/Platform/tabletmodewatcher.h
+-- Installing: /usr/include/KF6/Kirigami/Platform/units.h
+-- Installing: /usr/include/KF6/Kirigami/Platform/virtualkeyboardwatcher.h
+-- Installing: /usr/include/KF6/Kirigami/Platform/stylehints.h
+-- Installing: /usr/include/KF6/Kirigami/Platform/kirigamiplatform_export.h
+-- Installing: /usr/include/KF6/Kirigami/Platform/kirigamiplatform_version.h
+-- Installing: /usr/include/KF6/Kirigami/Platform/PlatformTheme
+-- Installing: /usr/include/KF6/Kirigami/Platform/PlatformPluginFactory
+-- Installing: /usr/include/KF6/Kirigami/Platform/StyleSelector
+-- Installing: /usr/include/KF6/Kirigami/Platform/TabletModeWatcher
+-- Installing: /usr/include/KF6/Kirigami/Platform/Units
+-- Installing: /usr/include/KF6/Kirigami/Platform/VirtualKeyboardWatcher
+-- Installing: /usr/include/KF6/Kirigami/Platform/StyleHints
+-- Installing: /usr/metatypes/qt6kirigamiplatform_metatypes.json
+-- Installing: /usr/lib/qml/org/kde/kirigami/platform/libKirigamiPlatformplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kirigami/platform/libKirigamiPlatformplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kirigami/platform/qmldir
+-- Installing: /usr/lib/qml/org/kde/kirigami/platform/KirigamiPlatform.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kirigami/platform/kde-qmlmodule.version
+-- Installing: /usr/lib/qml/org/kde/kirigami/layouts/private/libKirigamiLayoutsPrivateplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kirigami/layouts/private/libKirigamiLayoutsPrivateplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kirigami/layouts/private/qmldir
+-- Installing: /usr/lib/qml/org/kde/kirigami/layouts/private/KirigamiLayoutsPrivate.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kirigami/layouts/private/ColumnViewSeparator.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/layouts/private/kde-qmlmodule.version
+-- Installing: /usr/lib/qml/org/kde/kirigami/layouts/libKirigamiLayoutsplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kirigami/layouts/libKirigamiLayoutsplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kirigami/layouts/qmldir
+-- Installing: /usr/lib/qml/org/kde/kirigami/layouts/KirigamiLayouts.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kirigami/layouts/FormLayout.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/layouts/kde-qmlmodule.version
+-- Installing: /usr/lib/libKirigamiLayouts.so.6.32.0
+-- Installing: /usr/lib/libKirigamiLayouts.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKirigamiLayouts.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKirigamiLayouts.so
+-- Installing: /usr/lib/libKirigamiLayoutsPrivate.so.6.32.0
+-- Installing: /usr/lib/libKirigamiLayoutsPrivate.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKirigamiLayoutsPrivate.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKirigamiLayoutsPrivate.so
+-- Installing: /usr/lib/qml/org/kde/kirigami/primitives/libKirigamiPrimitivesplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kirigami/primitives/libKirigamiPrimitivesplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kirigami/primitives/qmldir
+-- Installing: /usr/lib/qml/org/kde/kirigami/primitives/KirigamiPrimitives.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kirigami/primitives/IconPropertiesGroup.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/primitives/Separator.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/primitives/ShadowedImage.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/primitives/kde-qmlmodule.version
+-- Installing: /usr/lib/libKirigamiPrimitives.so.6.32.0
+-- Installing: /usr/lib/libKirigamiPrimitives.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKirigamiPrimitives.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKirigamiPrimitives.so
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/libKirigamiTemplatesplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kirigami/templates/libKirigamiTemplatesplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/qmldir
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/KirigamiTemplates.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/AbstractApplicationHeader.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/AbstractCard.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/AppHeaderSizeGroup.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/Avatar.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/Badge.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/Chip.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/Heading.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/InlineMessage.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/LinkButton.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/NavigationTabBar.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/NavigationTabButton.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/OverlayDrawer.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/OverlaySheet.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/InlineViewHeader.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/private/BorderPropertiesGroup.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/private/DrawerHandle.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/templates/kde-qmlmodule.version
+-- Installing: /usr/lib/libKirigamiTemplates.so.6.32.0
+-- Installing: /usr/lib/libKirigamiTemplates.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKirigamiTemplates.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKirigamiTemplates.so
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/libKirigamiControlsplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kirigami/controls/libKirigamiControlsplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/qmldir
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/KirigamiControls.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/AboutItem.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/AboutPage.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/AbstractApplicationHeader.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/AbstractApplicationItem.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/AbstractApplicationWindow.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/AbstractCard.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/Action.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/ActionTextField.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/ActionToolBar.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/ApplicationItem.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/ApplicationWindow.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/Avatar.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/Badge.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/Card.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/CardsLayout.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/CardsListView.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/Chip.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/ContextDrawer.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/ContextualHelpButton.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/FlexColumn.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/GlobalDrawer.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/Heading.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/InlineMessage.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/InlineViewHeader.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/LinkButton.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/ListItemDragHandle.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/ListSectionHeader.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/LoadingPlaceholder.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/NavigationTabBar.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/NavigationTabButton.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/OverlayDrawer.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/OverlaySheet.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/Page.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/PagePoolAction.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/PageRow.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/PasswordField.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/PlaceholderMessage.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/ScrollablePage.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/SearchField.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/SelectableLabel.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/SwipeListItem.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/UrlButton.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/ActionMenuItem.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/ActionsMenu.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/BannerImage.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/ContextDrawerActionItem.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/DefaultCardBackground.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/DefaultChipBackground.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/DefaultPageTitleDelegate.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/EdgeShadow.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/GlobalDrawerActionItem.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/MobileDialogLayer.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/PassiveNotificationsManager.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/PrivateActionToolButton.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/PullDownIndicator.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/SwipeItemEventFilter.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/globaltoolbar/BreadcrumbControl.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/globaltoolbar/HandleButton.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/globaltoolbar/NavigationButtons.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/globaltoolbar/PageRowGlobalToolBarStyleGroup.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/globaltoolbar/PageRowGlobalToolBarUI.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/globaltoolbar/ToolBarPageFooter.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/private/globaltoolbar/ToolBarPageHeader.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/controls/kde-qmlmodule.version
+-- Installing: /usr/lib/libKirigamiControls.so.6.32.0
+-- Installing: /usr/lib/libKirigamiControls.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKirigamiControls.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKirigamiControls.so
+-- Installing: /usr/lib/qml/org/kde/kirigami/delegates/libKirigamiDelegatesplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kirigami/delegates/libKirigamiDelegatesplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kirigami/delegates/qmldir
+-- Installing: /usr/lib/qml/org/kde/kirigami/delegates/KirigamiDelegates.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kirigami/delegates/IconTitleSubtitle.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/delegates/TitleSubtitle.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/delegates/TitleSubtitleWithActions.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/delegates/SubtitleDelegate.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/delegates/CheckSubtitleDelegate.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/delegates/RadioSubtitleDelegate.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/delegates/SwitchSubtitleDelegate.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/delegates/kde-qmlmodule.version
+-- Installing: /usr/lib/libKirigamiDelegates.so.6.32.0
+-- Installing: /usr/lib/libKirigamiDelegates.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKirigamiDelegates.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKirigamiDelegates.so
+-- Installing: /usr/lib/qml/org/kde/kirigami/dialogs/libKirigamiDialogsplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kirigami/dialogs/libKirigamiDialogsplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kirigami/dialogs/qmldir
+-- Installing: /usr/lib/qml/org/kde/kirigami/dialogs/KirigamiDialogs.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kirigami/dialogs/DialogHeader.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/dialogs/DialogHeaderTopContent.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/dialogs/Dialog.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/dialogs/MenuDialog.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/dialogs/PromptDialog.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/dialogs/SearchDialog.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/dialogs/kde-qmlmodule.version
+-- Installing: /usr/lib/libKirigamiDialogs.so.6.32.0
+-- Installing: /usr/lib/libKirigamiDialogs.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKirigamiDialogs.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKirigamiDialogs.so
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/templates/libKirigamiFormsPrivateTemplatesplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kirigami/forms/private/templates/libKirigamiFormsPrivateTemplatesplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/templates/qmldir
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/templates/KirigamiFormsPrivateTemplates.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/templates/FormAction.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/templates/FormEntry.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/templates/FormGroup.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/templates/Form.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/templates/FormSeparator.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/templates/kde-qmlmodule.version
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/flat/libKirigamiFormsPrivateFlatplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kirigami/forms/private/flat/libKirigamiFormsPrivateFlatplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/flat/qmldir
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/flat/KirigamiFormsPrivateFlat.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/flat/FormAction.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/flat/FormEntry.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/flat/FormGroup.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/flat/Form.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/flat/FormSeparator.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/flat/kde-qmlmodule.version
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/cards/libKirigamiFormsPrivateCardsplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kirigami/forms/private/cards/libKirigamiFormsPrivateCardsplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/cards/qmldir
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/cards/KirigamiFormsPrivateCards.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/cards/FormAction.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/cards/FormEntry.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/cards/FormGroup.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/cards/Form.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/cards/FormSeparator.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/private/cards/kde-qmlmodule.version
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/libKirigamiFormsplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kirigami/forms/libKirigamiFormsplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/qmldir
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/KirigamiForms.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kirigami/forms/kde-qmlmodule.version
+-- Installing: /usr/lib/libKirigamiFormsPrivateTemplates.so.6.32.0
+-- Installing: /usr/lib/libKirigamiFormsPrivateTemplates.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKirigamiFormsPrivateTemplates.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKirigamiFormsPrivateTemplates.so
+-- Installing: /usr/lib/libKirigamiFormsPrivateFlat.so.6.32.0
+-- Installing: /usr/lib/libKirigamiFormsPrivateFlat.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKirigamiFormsPrivateFlat.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKirigamiFormsPrivateFlat.so
+-- Installing: /usr/lib/libKirigamiFormsPrivateCards.so.6.32.0
+-- Installing: /usr/lib/libKirigamiFormsPrivateCards.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKirigamiFormsPrivateCards.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKirigamiFormsPrivateCards.so
+-- Installing: /usr/lib/libKirigamiForms.so.6.32.0
+-- Installing: /usr/lib/libKirigamiForms.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKirigamiForms.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKirigamiForms.so
+-- Installing: /usr/lib/qml/org/kde/kirigami/private/libKirigamiPrivateplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kirigami/private/libKirigamiPrivateplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kirigami/private/qmldir
+-- Installing: /usr/lib/qml/org/kde/kirigami/private/KirigamiPrivate.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kirigami/private/kde-qmlmodule.version
+-- Installing: /usr/lib/libKirigamiPrivate.so.6.32.0
+-- Installing: /usr/lib/libKirigamiPrivate.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKirigamiPrivate.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKirigamiPrivate.so
+-- Installing: /usr/lib/libKirigami.so.6.32.0
+-- Installing: /usr/lib/libKirigami.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKirigami.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKirigami.so
+-- Old export file "/usr/lib/cmake/KF6Kirigami/KF6KirigamiTargets.cmake" will be replaced.  Removing files [/usr/lib/cmake/KF6Kirigami/KF6KirigamiTargets-release.cmake].
+-- Installing: /usr/lib/cmake/KF6Kirigami/KF6KirigamiTargets.cmake
+-- Installing: /usr/lib/cmake/KF6Kirigami/KF6KirigamiTargets-release.cmake
+-- Installing: /usr/lib/qml/org/kde/kirigami/libKirigamiplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/kirigami/libKirigamiplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/kirigami/qmldir
+-- Installing: /usr/lib/qml/org/kde/kirigami/Kirigami.qmltypes
+-- Installing: /usr/lib/qml/org/kde/kirigami/AboutPage.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/AboutItem.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/styles/Material/AbstractApplicationHeader.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/styles/Material/Badge.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/styles/Material/InlineMessage.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/styles/Material/NavigationTabBar.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/styles/Material/NavigationTabButton.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/styles/Material/OverlayDrawer.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/styles/Material/Theme.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/styles/org.kde.desktop/AbstractApplicationHeader.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/styles/org.kde.desktop/Theme.qml
+-- Installing: /usr/lib/qml/org/kde/kirigami/kde-qmlmodule.version
+-- Installing: /usr/share/qlogging-categories6/kirigami.categories
+-- Installing: /usr/share/kdevappwizard/templates/kirigami6.tar.bz2
+-- Installing: /usr/lib/cmake/KF6Kirigami/KF6KirigamiConfig.cmake
+-- Installing: /usr/lib/cmake/KF6Kirigami/KF6KirigamiConfigVersion.cmake
+-- Installing: /usr/lib/cmake/KF6Kirigami/KF6KirigamiMacros.cmake
+-- Installing: /usr/lib/cmake/KF6Kirigami2/KF6Kirigami2Config.cmake
+-- Installing: /usr/lib/cmake/KF6Kirigami2/KF6Kirigami2ConfigVersion.cmake
+-- Installing: /usr/share/locale/ar/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/ast/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/az/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/bg/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/ca/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/ca@valencia/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/cs/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/da/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/de/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/el/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/en_GB/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/eo/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/es/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/et/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/eu/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/fi/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/fr/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/ga/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/gl/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/he/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/hi/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/hu/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/ia/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/id/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/is/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/it/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/ja/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/ka/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/ko/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/lt/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/lv/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/ml/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/nb/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/nl/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/nn/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/pa/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/pl/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/pt/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/pt_BR/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/ro/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/ru/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/sa/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/sk/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/sl/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/sr/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/sr@ijekavian/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/sr@latin/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/sv/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/ta/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/tg/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/tr/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/ug/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/uk/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/zh_CN/LC_MESSAGES/libkirigami6_qt.qm
+-- Installing: /usr/share/locale/zh_TW/LC_MESSAGES/libkirigami6_qt.qm
+6.32.0
+Updated registry for kirigami to version 6.32.0
+[VERSION] kirigami: 6.32.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package kirigami in /var/lib/custom-packages/

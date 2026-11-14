@@ -1,0 +1,792 @@
+[02:20:44] Found custom package for kconfig, bypassing BLFS aliases.
+[02:20:44] Custom package detected at /home/fusion809/lfs_packaging/kconfig (package: kconfig)
+[02:20:44] Extracting dependencies for custom package 'kconfig'...
+[02:20:44] Required deps: brotli bzip2 dbus double-conversion e2fsprogs elfutils expat fontconfig freetype gcc glib2 glibc graphite2 harfbuzz icu keyutils libdrm libffi libglvnd libpciaccess libpng libx11 libxau libxcb libxdmcp libxext libxkbcommon libxml2 libxshmfence libxxf86vm llvm lm-sensors mesa mitkrb openssl pcre2 qt6 spirv-tools systemd wayland xz zlib zstd 
+[02:20:44] Dependency 'brotli' already installed.
+[02:20:44] Dependency 'bzip2' already installed.
+[02:20:44] Dependency 'dbus' already installed.
+[02:20:44] Dependency 'double-conversion' already installed.
+[02:20:44] Dependency 'e2fsprogs' already installed.
+[02:20:44] Dependency 'elfutils' already installed.
+[02:20:44] Dependency 'expat' already installed.
+[02:20:44] Dependency 'fontconfig' already installed.
+[02:20:44] Dependency 'freetype' already installed.
+[02:20:44] Dependency 'gcc' already installed.
+[02:20:44] Dependency 'glib2' already installed.
+[02:20:44] Dependency 'glibc' already installed.
+[02:20:44] Dependency 'graphite2' already installed.
+[02:20:44] Dependency 'harfbuzz' already installed.
+[02:20:44] Dependency 'icu' already installed.
+[02:20:44] Dependency 'keyutils' already installed.
+[02:20:44] Dependency 'libdrm' already installed.
+[02:20:44] Dependency 'libffi' already installed.
+[02:20:44] Dependency 'libglvnd' already installed.
+[02:20:44] Dependency 'libpciaccess' already installed.
+[02:20:44] Dependency 'libpng' already installed.
+[02:20:44] Dependency 'libx11' already installed.
+[02:20:44] Dependency 'libxau' already installed.
+[02:20:44] Dependency 'libxcb' already installed.
+[02:20:44] Dependency 'libxdmcp' already installed.
+[02:20:44] Dependency 'libxext' already installed.
+[02:20:44] Dependency 'libxkbcommon' already installed.
+[02:20:44] Dependency 'libxml2' already installed.
+[02:20:44] Dependency 'libxshmfence' already installed.
+[02:20:44] Dependency 'libxxf86vm' already installed.
+[02:20:44] Dependency 'llvm' already installed.
+[02:20:44] Dependency 'lm-sensors' already installed.
+[02:20:44] Dependency 'mesa' already installed.
+[02:20:44] Dependency 'mitkrb' already installed.
+[02:20:44] Dependency 'openssl' already installed.
+[02:20:44] Dependency 'pcre2' already installed.
+[02:20:44] Dependency 'qt6' already installed.
+[02:20:44] Dependency 'spirv-tools' already installed.
+[02:20:44] Dependency 'systemd' already installed.
+[02:20:44] Dependency 'wayland' already installed.
+[02:20:44] Dependency 'xz' already installed.
+[02:20:44] Dependency 'zlib' already installed.
+[02:20:44] Dependency 'zstd' already installed.
+[VERSION] kconfig: 6.32.0
+[02:20:45] Installing kconfig version: 6.32.0
+[02:20:45] Starting remote custom build for kconfig...
+--2026-11-14 02:20:48--  https://download.kde.org/stable/frameworks/6.32/kconfig-6.32.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://cdn.download.kde.org/stable/frameworks/6.32/kconfig-6.32.0.tar.xz [following]
+--2026-11-14 02:20:49--  https://cdn.download.kde.org/stable/frameworks/6.32/kconfig-6.32.0.tar.xz
+Resolving cdn.download.kde.org (cdn.download.kde.org)... 143.244.62.6, 143.244.62.8, 2a02:6ea0:db00::11, ...
+Connecting to cdn.download.kde.org (cdn.download.kde.org)|143.244.62.6|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 394772 (386K) [application/x-xz]
+Saving to: ‘kconfig-6.32.0.tar.xz’
+
+kconfig-6.32.0.tar.   0%[                    ]       0  --.-KB/s               kconfig-6.32.0.tar. 100%[===================>] 385.52K  2.07MB/s    in 0.2s    
+
+2026-11-14 02:20:50 (2.07 MB/s) - ‘kconfig-6.32.0.tar.xz’ saved [394772/394772]
+
+kconfig-6.32.0.tar.xz already present and appears valid.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:13 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/kconfig/kconfig-6.32.0/build/prefix.sh to set the environment for KConfig.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+fatal: no upstream configured for branch 'master'
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6Core
+ * Qt6Xml (required version >= 6.10.0)
+ * OpenGL
+ * Qt6GuiTools (required version >= 6.12.0)
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6DBusTools (required version >= 6.12.0)
+ * Qt6Gui (required version >= 6.10.0)
+ * Qt6Qml
+ * Qt6QmlTools (required version >= 6.12.0)
+ * Qt6QuickTools (required version >= 6.12.0)
+ * WrapVulkanHeaders
+ * Qt6Quick (required version >= 6.10.0)
+ * Qt6LinguistTools
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.32.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt6
+
+-- Configuring done (6.8s)
+-- Generating done (0.3s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_PYTHON_BINDINGS
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/kconfig/kconfig-6.32.0/build
+make: Warning: File 'Makefile' has modification time 0.18 s in the future
+-- 
+
+Installing in /usr. Run /home/fusion809/lfs_packaging/kconfig/kconfig-6.32.0/build/prefix.sh to set the environment for KConfig.
+fatal: no upstream configured for branch 'master'
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6Core
+ * Qt6Xml (required version >= 6.10.0)
+ * OpenGL
+ * Qt6GuiTools (required version >= 6.12.0)
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6DBusTools (required version >= 6.12.0)
+ * Qt6Gui (required version >= 6.10.0)
+ * Qt6Qml
+ * Qt6QmlTools (required version >= 6.12.0)
+ * Qt6QuickTools (required version >= 6.12.0)
+ * WrapVulkanHeaders
+ * Qt6Quick (required version >= 6.10.0)
+ * Qt6LinguistTools
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.32.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt6
+
+-- Configuring done (4.1s)
+-- Generating done (0.3s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/kconfig/kconfig-6.32.0/build
+[  1%] Generating ECMPoQm/af/kconfig6_qt.qm
+[  1%] Generating ECMPoQm/ast/kconfig6_qt.qm
+[  1%] Generating ECMPoQm/ar/kconfig6_qt.qm
+[  1%] Built target translations_1
+[  1%] Built target translations_3
+[  1%] Built target translations_2
+[  2%] Generating ECMPoQm/az/kconfig6_qt.qm
+[  3%] Generating ECMPoQm/be/kconfig6_qt.qm
+[  3%] Generating ECMPoQm/be@latin/kconfig6_qt.qm
+[  3%] Built target translations_5
+[  3%] Built target translations_4
+[  3%] Built target translations_6
+[  4%] Generating ECMPoQm/bg/kconfig6_qt.qm
+[  5%] Generating ECMPoQm/bn/kconfig6_qt.qm
+[  5%] Generating ECMPoQm/bn_IN/kconfig6_qt.qm
+[  5%] Built target translations_7
+[  5%] Built target translations_8
+[  5%] Built target translations_9
+[  5%] Generating ECMPoQm/br/kconfig6_qt.qm
+[  5%] Generating ECMPoQm/ca/kconfig6_qt.qm
+[  6%] Generating ECMPoQm/bs/kconfig6_qt.qm
+[  6%] Built target translations_10
+[  6%] Built target translations_12
+[  6%] Built target translations_11
+[  7%] Generating ECMPoQm/ca@valencia/kconfig6_qt.qm
+[  7%] Generating ECMPoQm/cs/kconfig6_qt.qm
+[  8%] Generating ECMPoQm/csb/kconfig6_qt.qm
+[  8%] Built target translations_13
+[  8%] Built target translations_14
+[  8%] Generating ECMPoQm/cy/kconfig6_qt.qm
+[  9%] Generating ECMPoQm/da/kconfig6_qt.qm
+[  9%] Built target translations_15
+[  9%] Built target translations_16
+[  9%] Generating ECMPoQm/de/kconfig6_qt.qm
+[  9%] Built target translations_17
+[ 10%] Generating ECMPoQm/el/kconfig6_qt.qm
+[ 12%] Generating ECMPoQm/en_GB/kconfig6_qt.qm
+[ 12%] Built target translations_18
+[ 12%] Built target translations_19
+[ 12%] Generating ECMPoQm/eo/kconfig6_qt.qm
+[ 12%] Built target translations_20
+[ 13%] Generating ECMPoQm/es/kconfig6_qt.qm
+[ 14%] Generating ECMPoQm/et/kconfig6_qt.qm
+[ 14%] Built target translations_21
+[ 14%] Built target translations_22
+[ 14%] Generating ECMPoQm/eu/kconfig6_qt.qm
+[ 14%] Built target translations_23
+[ 15%] Generating ECMPoQm/fa/kconfig6_qt.qm
+[ 15%] Built target translations_24
+[ 15%] Generating ECMPoQm/fi/kconfig6_qt.qm
+[ 15%] Built target translations_25
+[ 16%] Generating ECMPoQm/fr/kconfig6_qt.qm
+[ 16%] Generating ECMPoQm/fy/kconfig6_qt.qm
+[ 16%] Built target translations_26
+[ 16%] Built target translations_28
+[ 16%] Built target translations_27
+[ 17%] Generating ECMPoQm/ga/kconfig6_qt.qm
+[ 18%] Generating ECMPoQm/gd/kconfig6_qt.qm
+[ 18%] Generating ECMPoQm/gl/kconfig6_qt.qm
+[ 18%] Built target translations_29
+[ 19%] Generating ECMPoQm/gu/kconfig6_qt.qm
+[ 19%] Built target translations_30
+[ 19%] Built target translations_31
+[ 20%] Generating ECMPoQm/hi/kconfig6_qt.qm
+[ 20%] Built target translations_32
+[ 20%] Generating ECMPoQm/he/kconfig6_qt.qm
+[ 20%] Generating ECMPoQm/hne/kconfig6_qt.qm
+[ 20%] Built target translations_34
+[ 20%] Built target translations_33
+[ 21%] Generating ECMPoQm/hr/kconfig6_qt.qm
+[ 21%] Built target translations_35
+[ 21%] Generating ECMPoQm/hsb/kconfig6_qt.qm
+[ 21%] Built target translations_36
+[ 23%] Generating ECMPoQm/hu/kconfig6_qt.qm
+[ 23%] Built target translations_37
+[ 23%] Generating ECMPoQm/ia/kconfig6_qt.qm
+[ 23%] Built target translations_38
+[ 23%] Generating ECMPoQm/id/kconfig6_qt.qm
+[ 23%] Built target translations_39
+[ 24%] Generating ECMPoQm/is/kconfig6_qt.qm
+[ 24%] Generating ECMPoQm/it/kconfig6_qt.qm
+[ 24%] Built target translations_40
+[ 24%] Built target translations_41
+[ 25%] Generating ECMPoQm/ja/kconfig6_qt.qm
+[ 25%] Built target translations_42
+[ 25%] Generating ECMPoQm/ka/kconfig6_qt.qm
+[ 25%] Built target translations_43
+[ 26%] Generating ECMPoQm/kab/kconfig6_qt.qm
+[ 26%] Built target translations_44
+[ 26%] Generating ECMPoQm/kk/kconfig6_qt.qm
+[ 26%] Built target translations_45
+[ 27%] Generating ECMPoQm/km/kconfig6_qt.qm
+[ 27%] Built target translations_46
+[ 28%] Generating ECMPoQm/kn/kconfig6_qt.qm
+[ 28%] Generating ECMPoQm/ko/kconfig6_qt.qm
+[ 28%] Built target translations_47
+[ 28%] Generating ECMPoQm/ku/kconfig6_qt.qm
+[ 28%] Built target translations_49
+[ 28%] Built target translations_48
+[ 28%] Built target translations_50
+[ 28%] Generating ECMPoQm/lt/kconfig6_qt.qm
+[ 29%] Generating ECMPoQm/lb/kconfig6_qt.qm
+[ 30%] Generating ECMPoQm/lv/kconfig6_qt.qm
+[ 30%] Built target translations_51
+[ 30%] Built target translations_53
+[ 30%] Built target translations_52
+[ 30%] Generating ECMPoQm/mai/kconfig6_qt.qm
+[ 30%] Generating ECMPoQm/ml/kconfig6_qt.qm
+[ 31%] Generating ECMPoQm/mk/kconfig6_qt.qm
+[ 31%] Built target translations_56
+[ 31%] Built target translations_55
+[ 31%] Built target translations_54
+[ 32%] Generating ECMPoQm/mr/kconfig6_qt.qm
+[ 32%] Generating ECMPoQm/ms/kconfig6_qt.qm
+[ 34%] Generating ECMPoQm/nan_TW/kconfig6_qt.qm
+[ 34%] Built target translations_57
+[ 34%] Built target translations_58
+[ 34%] Built target translations_59
+[ 35%] Generating ECMPoQm/nds/kconfig6_qt.qm
+[ 35%] Generating ECMPoQm/nb/kconfig6_qt.qm
+[ 36%] Generating ECMPoQm/nan_TW@latin/kconfig6_qt.qm
+[ 36%] Built target translations_60
+[ 36%] Built target translations_62
+[ 36%] Built target translations_61
+[ 36%] Generating ECMPoQm/ne/kconfig6_qt.qm
+[ 36%] Generating ECMPoQm/nn/kconfig6_qt.qm
+[ 37%] Generating ECMPoQm/nl/kconfig6_qt.qm
+[ 37%] Built target translations_63
+[ 37%] Built target translations_65
+[ 37%] Built target translations_64
+[ 38%] Generating ECMPoQm/or/kconfig6_qt.qm
+[ 38%] Generating ECMPoQm/pa/kconfig6_qt.qm
+[ 39%] Generating ECMPoQm/pl/kconfig6_qt.qm
+[ 39%] Built target translations_66
+[ 39%] Built target translations_67
+[ 39%] Generating ECMPoQm/pt_BR/kconfig6_qt.qm
+[ 39%] Built target translations_68
+[ 39%] Generating ECMPoQm/pt/kconfig6_qt.qm
+[ 40%] Generating ECMPoQm/ro/kconfig6_qt.qm
+[ 40%] Built target translations_69
+[ 40%] Built target translations_70
+[ 40%] Built target translations_71
+[ 41%] Generating ECMPoQm/ru/kconfig6_qt.qm
+[ 41%] Generating ECMPoQm/sa/kconfig6_qt.qm
+[ 42%] Generating ECMPoQm/se/kconfig6_qt.qm
+[ 42%] Built target translations_72
+[ 42%] Built target translations_74
+[ 42%] Built target translations_73
+[ 42%] Generating ECMPoQm/si/kconfig6_qt.qm
+[ 43%] Generating ECMPoQm/sk/kconfig6_qt.qm
+[ 43%] Generating ECMPoQm/sl/kconfig6_qt.qm
+[ 43%] Built target translations_75
+[ 43%] Built target translations_76
+[ 43%] Built target translations_77
+[ 45%] Generating ECMPoQm/sq/kconfig6_qt.qm
+[ 45%] Generating ECMPoQm/sr/kconfig6_qt.qm
+[ 45%] Generating ECMPoQm/sr@ijekavian/kconfig6_qt.qm
+[ 45%] Built target translations_78
+[ 45%] Built target translations_79
+[ 45%] Built target translations_80
+[ 46%] Generating ECMPoQm/sr@ijekavianlatin/kconfig6_qt.qm
+[ 46%] Generating ECMPoQm/sr@latin/kconfig6_qt.qm
+[ 47%] Generating ECMPoQm/sv/kconfig6_qt.qm
+[ 47%] Built target translations_81
+[ 47%] Built target translations_82
+[ 47%] Built target translations_83
+[ 47%] Generating ECMPoQm/ta/kconfig6_qt.qm
+[ 48%] Generating ECMPoQm/te/kconfig6_qt.qm
+[ 48%] Generating ECMPoQm/tg/kconfig6_qt.qm
+[ 48%] Built target translations_84
+[ 48%] Built target translations_85
+[ 49%] Generating ECMPoQm/th/kconfig6_qt.qm
+[ 49%] Built target translations_86
+[ 49%] Generating ECMPoQm/tr/kconfig6_qt.qm
+[ 50%] Generating ECMPoQm/ug/kconfig6_qt.qm
+[ 50%] Built target translations_87
+[ 50%] Built target translations_88
+[ 51%] Generating ECMPoQm/uk/kconfig6_qt.qm
+[ 51%] Built target translations_89
+[ 51%] Generating ECMPoQm/uz/kconfig6_qt.qm
+[ 51%] Built target translations_90
+[ 52%] Generating ECMPoQm/uz@cyrillic/kconfig6_qt.qm
+[ 52%] Built target translations_91
+[ 52%] Generating ECMPoQm/vi/kconfig6_qt.qm
+[ 52%] Built target translations_92
+[ 53%] Generating ECMPoQm/wa/kconfig6_qt.qm
+[ 53%] Generating ECMPoQm/xh/kconfig6_qt.qm
+[ 53%] Built target translations_93
+[ 53%] Built target translations_94
+[ 53%] Built target translations_95
+[ 54%] Generating ECMPoQm/zh_CN/kconfig6_qt.qm
+[ 56%] Generating ECMPoQm/zh_TW/kconfig6_qt.qm
+[ 56%] Built target KF6ConfigCore_autogen_timestamp_deps
+[ 56%] Built target translations_96
+[ 56%] Built target translations_97
+[ 56%] Copying KF6ConfigQml qml resources into build dir
+[ 57%] Populating .qmlls.build.ini file at /home/fusion809/lfs_packaging/kconfig/kconfig-6.32.0/build/.qt/.qmlls.build.ini
+[ 58%] Copying KF6ConfigQml qml sources into build dir
+[ 58%] Built target KF6ConfigQml_copy_res
+[ 58%] Built target KF6ConfigQml_copy_qml
+[ 58%] Built target kconfig_compiler_autogen_timestamp_deps
+[ 58%] Automatic MOC for target kconfig_compiler
+[ 59%] Automatic MOC for target KF6ConfigCore
+[ 59%] Built target generate_qmlls_build_ini_file
+[ 59%] Built target kconfig_compiler_autogen
+[ 60%] Building CXX object src/kconfig_compiler/CMakeFiles/kconfig_compiler.dir/kconfig_compiler_autogen/mocs_compilation.cpp.o
+[ 60%] Building CXX object src/kconfig_compiler/CMakeFiles/kconfig_compiler.dir/KConfigParameters.cpp.o
+[ 61%] Building CXX object src/kconfig_compiler/CMakeFiles/kconfig_compiler.dir/KConfigCodeGeneratorBase.cpp.o
+[ 61%] Built target KF6ConfigCore_autogen
+[ 62%] Building CXX object src/kconfig_compiler/CMakeFiles/kconfig_compiler.dir/KConfigHeaderGenerator.cpp.o
+[ 62%] Building CXX object src/kconfig_compiler/CMakeFiles/kconfig_compiler.dir/KConfigSourceGenerator.cpp.o
+[ 63%] Building CXX object src/kconfig_compiler/CMakeFiles/kconfig_compiler.dir/KConfigXmlParser.cpp.o
+[ 63%] Building CXX object src/kconfig_compiler/CMakeFiles/kconfig_compiler.dir/kconfig_compiler.cpp.o
+[ 64%] Running AUTOMOC file extraction for target KF6ConfigCore
+[ 64%] Running moc --collect-json for target KF6ConfigCore
+[ 64%] Building CXX object src/core/CMakeFiles/KF6ConfigCore.dir/KF6ConfigCore_autogen/mocs_compilation.cpp.o
+[ 65%] Building CXX object src/core/CMakeFiles/KF6ConfigCore.dir/kconfig.cpp.o
+[ 65%] Building CXX object src/core/CMakeFiles/KF6ConfigCore.dir/kconfigbase.cpp.o
+[ 67%] Linking CXX executable ../../bin/kconfig_compiler_kf6
+[ 67%] Built target kconfig_compiler
+[ 68%] Building CXX object src/core/CMakeFiles/KF6ConfigCore.dir/kconfigdata.cpp.o
+[ 68%] Building CXX object src/core/CMakeFiles/KF6ConfigCore.dir/kconfiggroup.cpp.o
+[ 69%] Building CXX object src/core/CMakeFiles/KF6ConfigCore.dir/kconfigini.cpp.o
+[ 69%] Building CXX object src/core/CMakeFiles/KF6ConfigCore.dir/kdesktopfile.cpp.o
+[ 70%] Building CXX object src/core/CMakeFiles/KF6ConfigCore.dir/kdesktopfileaction.cpp.o
+[ 70%] Building CXX object src/core/CMakeFiles/KF6ConfigCore.dir/ksharedconfig.cpp.o
+[ 71%] Building CXX object src/core/CMakeFiles/KF6ConfigCore.dir/kcoreconfigskeleton.cpp.o
+[ 71%] Building CXX object src/core/CMakeFiles/KF6ConfigCore.dir/kauthorized.cpp.o
+[ 72%] Building CXX object src/core/CMakeFiles/KF6ConfigCore.dir/kemailsettings.cpp.o
+[ 72%] Building CXX object src/core/CMakeFiles/KF6ConfigCore.dir/kconfigwatcher.cpp.o
+[ 73%] Building CXX object src/core/CMakeFiles/KF6ConfigCore.dir/kconfig_core_log_settings.cpp.o
+[ 73%] Linking CXX shared library ../../bin/libKF6ConfigCore.so
+[ 73%] Built target KF6ConfigCore
+[ 73%] Built target kreadconfig6_autogen_timestamp_deps
+[ 73%] Built target kconf_update_autogen_timestamp_deps
+[ 73%] Built target KF6ConfigGui_autogen_timestamp_deps
+[ 73%] Built target kwriteconfig6_autogen_timestamp_deps
+[ 73%] Automatic MOC for target kreadconfig6
+[ 73%] Automatic MOC for target kconf_update
+[ 74%] Automatic MOC for target KF6ConfigGui
+[ 74%] Built target kreadconfig6_autogen
+[ 74%] Built target kconf_update_autogen
+[ 74%] Automatic MOC for target kwriteconfig6
+[ 75%] Building CXX object src/kreadconfig/CMakeFiles/kreadconfig6.dir/kreadconfig6_autogen/mocs_compilation.cpp.o
+[ 75%] Built target kwriteconfig6_autogen
+[ 75%] Building CXX object src/kconf_update/CMakeFiles/kconf_update.dir/kconf_update_autogen/mocs_compilation.cpp.o
+[ 75%] Building CXX object src/kreadconfig/CMakeFiles/kreadconfig6.dir/kreadconfig.cpp.o
+[ 76%] Building CXX object src/kconf_update/CMakeFiles/kconf_update.dir/kconf_update.cpp.o
+[ 76%] Built target KF6ConfigGui_autogen
+[ 78%] Building CXX object src/kreadconfig/CMakeFiles/kwriteconfig6.dir/kwriteconfig6_autogen/mocs_compilation.cpp.o
+[ 78%] Building CXX object src/kreadconfig/CMakeFiles/kwriteconfig6.dir/kwriteconfig.cpp.o
+[ 79%] Linking CXX executable ../../bin/kwriteconfig6
+[ 80%] Linking CXX executable ../../bin/kreadconfig6
+[ 80%] Built target kwriteconfig6
+[ 80%] Building CXX object src/kconf_update/CMakeFiles/kconf_update.dir/kconf_update_debug.cpp.o
+[ 80%] Built target kreadconfig6
+[ 80%] Running AUTOMOC file extraction for target KF6ConfigGui
+[ 81%] Running moc --collect-json for target KF6ConfigGui
+[ 82%] Building CXX object src/gui/CMakeFiles/KF6ConfigGui.dir/KF6ConfigGui_autogen/mocs_compilation.cpp.o
+[ 82%] Building CXX object src/gui/CMakeFiles/KF6ConfigGui.dir/ECMQmLoader-kconfig6_qt.cpp.o
+[ 83%] Linking CXX executable ../../bin/kconf_update
+[ 83%] Built target kconf_update
+[ 84%] Building CXX object src/gui/CMakeFiles/KF6ConfigGui.dir/kconfiggui.cpp.o
+[ 84%] Building CXX object src/gui/CMakeFiles/KF6ConfigGui.dir/kconfiggroupgui.cpp.o
+[ 85%] Building CXX object src/gui/CMakeFiles/KF6ConfigGui.dir/kconfigloader.cpp.o
+[ 85%] Building CXX object src/gui/CMakeFiles/KF6ConfigGui.dir/kconfigskeleton.cpp.o
+[ 86%] Building CXX object src/gui/CMakeFiles/KF6ConfigGui.dir/kstandardshortcut.cpp.o
+[ 87%] Building CXX object src/gui/CMakeFiles/KF6ConfigGui.dir/kstandardshortcutwatcher.cpp.o
+[ 87%] Building CXX object src/gui/CMakeFiles/KF6ConfigGui.dir/kwindowconfig.cpp.o
+[ 89%] Building CXX object src/gui/CMakeFiles/KF6ConfigGui.dir/kwindowstatesaver.cpp.o
+[ 89%] Building CXX object src/gui/CMakeFiles/KF6ConfigGui.dir/kstandardactions.cpp.o
+[ 90%] Building CXX object src/gui/CMakeFiles/KF6ConfigGui.dir/kconfig_gui_log_settings.cpp.o
+[ 90%] Linking CXX shared library ../../bin/libKF6ConfigGui.so
+[ 90%] Built target KF6ConfigGui
+[ 90%] Built target KF6ConfigQml_autogen_timestamp_deps
+[ 90%] Automatic MOC for target KF6ConfigQml
+[ 90%] Built target KF6ConfigQml_autogen
+[ 90%] Running AUTOMOC file extraction for target KF6ConfigQml
+[ 91%] Running rcc for resource qmake_org_kde_config
+[ 92%] Running moc --collect-json for target KF6ConfigQml
+[ 93%] Generating meta_types/qt6kf6configqml_metatypes.json
+[ 93%] Automatic QML type registration for target KF6ConfigQml
+[ 94%] Building CXX object src/qml/CMakeFiles/KF6ConfigQml.dir/kf6configqml_qmltyperegistrations.cpp.o
+[ 94%] Building CXX object src/qml/CMakeFiles/KF6ConfigQml.dir/KF6ConfigQml_autogen/mocs_compilation.cpp.o
+[ 94%] Building CXX object src/qml/CMakeFiles/KF6ConfigQml.dir/.qt/rcc/qrc_qmake_org_kde_config.cpp.o
+[ 95%] Building CXX object src/qml/CMakeFiles/KF6ConfigQml.dir/kconfigpropertymap.cpp.o
+[ 95%] Building CXX object src/qml/CMakeFiles/KF6ConfigQml.dir/kwindowstatesaverquick.cpp.o
+[ 96%] Building CXX object src/qml/CMakeFiles/KF6ConfigQml.dir/types.cpp.o
+[ 96%] Building CXX object src/qml/CMakeFiles/KF6ConfigQml.dir/kconfig_qml_log_settings.cpp.o
+[ 97%] Linking CXX shared library ../../bin/libKF6ConfigQml.so
+[ 97%] Built target KF6ConfigQml
+[ 97%] Built target KF6ConfigQmlplugin_autogen_timestamp_deps
+[ 98%] Automatic MOC for target KF6ConfigQmlplugin
+[ 98%] Built target KF6ConfigQmlplugin_autogen
+[100%] Building CXX object src/qml/CMakeFiles/KF6ConfigQmlplugin.dir/KF6ConfigQmlplugin_autogen/mocs_compilation.cpp.o
+[100%] Building CXX object src/qml/CMakeFiles/KF6ConfigQmlplugin.dir/KF6ConfigQmlplugin_org_kde_configPlugin.cpp.o
+[100%] Linking CXX shared module ../../bin/org/kde/config/libKF6ConfigQmlplugin.so
+[100%] Built target KF6ConfigQmlplugin
+make: warning:  Clock skew detected.  Your build may be incomplete.
+[  1%] Built target translations_1
+[  1%] Built target translations_2
+[  1%] Built target translations_3
+[  2%] Built target translations_4
+[  3%] Built target translations_5
+[  3%] Built target translations_6
+[  4%] Built target translations_7
+[  5%] Built target translations_8
+[  5%] Built target translations_9
+[  5%] Built target translations_10
+[  6%] Built target translations_11
+[  6%] Built target translations_12
+[  7%] Built target translations_13
+[  7%] Built target translations_14
+[  8%] Built target translations_15
+[  8%] Built target translations_16
+[  9%] Built target translations_17
+[  9%] Built target translations_18
+[ 10%] Built target translations_19
+[ 12%] Built target translations_20
+[ 12%] Built target translations_21
+[ 13%] Built target translations_22
+[ 14%] Built target translations_23
+[ 14%] Built target translations_24
+[ 15%] Built target translations_25
+[ 15%] Built target translations_26
+[ 16%] Built target translations_27
+[ 16%] Built target translations_28
+[ 17%] Built target translations_29
+[ 18%] Built target translations_30
+[ 18%] Built target translations_31
+[ 19%] Built target translations_32
+[ 19%] Built target translations_33
+[ 20%] Built target translations_34
+[ 20%] Built target translations_35
+[ 21%] Built target translations_36
+[ 21%] Built target translations_37
+[ 23%] Built target translations_38
+[ 23%] Built target translations_39
+[ 23%] Built target translations_40
+[ 24%] Built target translations_41
+[ 24%] Built target translations_42
+[ 25%] Built target translations_43
+[ 25%] Built target translations_44
+[ 26%] Built target translations_45
+[ 26%] Built target translations_46
+[ 27%] Built target translations_47
+[ 28%] Built target translations_48
+[ 28%] Built target translations_49
+[ 28%] Built target translations_50
+[ 29%] Built target translations_51
+[ 29%] Built target translations_52
+[ 30%] Built target translations_53
+[ 30%] Built target translations_54
+[ 31%] Built target translations_55
+[ 31%] Built target translations_56
+[ 32%] Built target translations_57
+[ 32%] Built target translations_58
+[ 34%] Built target translations_59
+[ 35%] Built target translations_60
+[ 35%] Built target translations_61
+[ 36%] Built target translations_62
+[ 36%] Built target translations_63
+[ 37%] Built target translations_64
+[ 37%] Built target translations_65
+[ 38%] Built target translations_66
+[ 38%] Built target translations_67
+[ 39%] Built target translations_68
+[ 39%] Built target translations_69
+[ 39%] Built target translations_70
+[ 40%] Built target translations_71
+[ 41%] Built target translations_72
+[ 41%] Built target translations_73
+[ 42%] Built target translations_74
+[ 42%] Built target translations_75
+[ 43%] Built target translations_76
+[ 43%] Built target translations_77
+[ 45%] Built target translations_78
+[ 45%] Built target translations_79
+[ 45%] Built target translations_80
+[ 46%] Built target translations_81
+[ 46%] Built target translations_82
+[ 47%] Built target translations_83
+[ 47%] Built target translations_84
+[ 48%] Built target translations_85
+[ 48%] Built target translations_86
+[ 49%] Built target translations_87
+[ 49%] Built target translations_88
+[ 50%] Built target translations_89
+[ 51%] Built target translations_90
+[ 51%] Built target translations_91
+[ 52%] Built target translations_92
+[ 52%] Built target translations_93
+[ 53%] Built target translations_94
+[ 53%] Built target translations_95
+[ 54%] Built target translations_96
+[ 56%] Built target translations_97
+[ 56%] Built target KF6ConfigCore_autogen_timestamp_deps
+[ 57%] Built target KF6ConfigCore_autogen
+[ 65%] Built target KF6ConfigCore
+[ 65%] Built target KF6ConfigGui_autogen_timestamp_deps
+[ 67%] Built target KF6ConfigGui_autogen
+[ 75%] Built target KF6ConfigGui
+[ 75%] Built target KF6ConfigQml_copy_res
+[ 76%] Built target generate_qmlls_build_ini_file
+[ 78%] Built target KF6ConfigQml_copy_qml
+[ 78%] Built target KF6ConfigQml_autogen_timestamp_deps
+[ 78%] Built target KF6ConfigQml_autogen
+[ 85%] Built target KF6ConfigQml
+[ 85%] Built target KF6ConfigQmlplugin_autogen_timestamp_deps
+[ 86%] Built target KF6ConfigQmlplugin_autogen
+[ 87%] Built target KF6ConfigQmlplugin
+[ 87%] Built target kconfig_compiler_autogen_timestamp_deps
+[ 87%] Built target kconfig_compiler_autogen
+[ 93%] Built target kconfig_compiler
+[ 93%] Built target kconf_update_autogen_timestamp_deps
+[ 93%] Built target kconf_update_autogen
+[ 93%] Building CXX object src/kconf_update/CMakeFiles/kconf_update.dir/kconf_update_autogen/mocs_compilation.cpp.o
+[ 94%] Linking CXX executable ../../bin/kconf_update
+[ 95%] Built target kconf_update
+[ 95%] Built target kreadconfig6_autogen_timestamp_deps
+[ 95%] Built target kreadconfig6_autogen
+[ 97%] Built target kreadconfig6
+[ 97%] Built target kwriteconfig6_autogen_timestamp_deps
+[ 97%] Built target kwriteconfig6_autogen
+[ 98%] Linking CXX executable ../../bin/kwriteconfig6
+[100%] Built target kwriteconfig6
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/lib/libKF6ConfigCore.so.6.32.0
+-- Installing: /usr/lib/libKF6ConfigCore.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKF6ConfigCore.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKF6ConfigCore.so
+-- Installing: /usr/include/KF6/KConfigCore/kconfigcore_export.h
+-- Installing: /usr/include/KF6/KConfigCore/kauthorized.h
+-- Installing: /usr/include/KF6/KConfigCore/kconfig.h
+-- Installing: /usr/include/KF6/KConfigCore/kconfigbase.h
+-- Installing: /usr/include/KF6/KConfigCore/kconfiggroup.h
+-- Installing: /usr/include/KF6/KConfigCore/kdesktopfile.h
+-- Installing: /usr/include/KF6/KConfigCore/kdesktopfileaction.h
+-- Installing: /usr/include/KF6/KConfigCore/ksharedconfig.h
+-- Installing: /usr/include/KF6/KConfigCore/kcoreconfigskeleton.h
+-- Installing: /usr/include/KF6/KConfigCore/kemailsettings.h
+-- Installing: /usr/include/KF6/KConfigCore/kconfigwatcher.h
+-- Installing: /usr/include/KF6/KConfigCore/kconfigconversioncheck_p.h
+-- Installing: /usr/include/KF6/KConfigCore/KAuthorized
+-- Installing: /usr/include/KF6/KConfigCore/KConfig
+-- Installing: /usr/include/KF6/KConfigCore/KConfigBase
+-- Installing: /usr/include/KF6/KConfigCore/KConfigGroup
+-- Installing: /usr/include/KF6/KConfigCore/KDesktopFile
+-- Installing: /usr/include/KF6/KConfigCore/KDesktopFileAction
+-- Installing: /usr/include/KF6/KConfigCore/KSharedConfig
+-- Installing: /usr/include/KF6/KConfigCore/KCoreConfigSkeleton
+-- Installing: /usr/include/KF6/KConfigCore/KEMailSettings
+-- Installing: /usr/include/KF6/KConfigCore/KConfigWatcher
+-- Installing: /usr/metatypes/qt6kf6configcore_metatypes.json
+-- Installing: /usr/metatypes/qt6kf6configgui_metatypes.json
+-- Installing: /usr/lib/libKF6ConfigGui.so.6.32.0
+-- Installing: /usr/lib/libKF6ConfigGui.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKF6ConfigGui.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKF6ConfigGui.so
+-- Installing: /usr/include/KF6/KConfigGui/kconfiggui_export.h
+-- Installing: /usr/include/KF6/KConfigGui/kstandardactions_p.h
+-- Installing: /usr/include/KF6/KConfigGui/kconfiggui.h
+-- Installing: /usr/include/KF6/KConfigGui/kconfigloader.h
+-- Installing: /usr/include/KF6/KConfigGui/kconfigskeleton.h
+-- Installing: /usr/include/KF6/KConfigGui/kstandardshortcut.h
+-- Installing: /usr/include/KF6/KConfigGui/kstandardshortcutwatcher.h
+-- Installing: /usr/include/KF6/KConfigGui/kwindowconfig.h
+-- Installing: /usr/include/KF6/KConfigGui/kwindowstatesaver.h
+-- Installing: /usr/include/KF6/KConfigGui/kstandardactions.h
+-- Installing: /usr/include/KF6/KConfigGui/KConfigGui
+-- Installing: /usr/include/KF6/KConfigGui/KConfigLoader
+-- Installing: /usr/include/KF6/KConfigGui/KConfigSkeleton
+-- Installing: /usr/include/KF6/KConfigGui/KStandardShortcut
+-- Installing: /usr/include/KF6/KConfigGui/KStandardShortcutWatcher
+-- Installing: /usr/include/KF6/KConfigGui/KWindowConfig
+-- Installing: /usr/include/KF6/KConfigGui/KWindowStateSaver
+-- Installing: /usr/include/KF6/KConfigGui/KStandardActions
+-- Installing: /usr/include/KF6/KConfigGui/kconfigguistaticinitializer.cpp
+-- Installing: /usr/lib/libKF6ConfigQml.so.6.32.0
+-- Installing: /usr/lib/libKF6ConfigQml.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKF6ConfigQml.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKF6ConfigQml.so
+-- Installing: /usr/include/KF6/KConfigQml/kconfigqml_export.h
+-- Installing: /usr/include/KF6/KConfigQml/kconfigpropertymap.h
+-- Installing: /usr/include/KF6/KConfigQml/KConfigPropertyMap
+-- Installing: /usr/lib/qml/org/kde/config/libKF6ConfigQmlplugin.so
+-- Set non-toolchain portion of runtime path of "/usr/lib/qml/org/kde/config/libKF6ConfigQmlplugin.so" to ""
+-- Installing: /usr/lib/qml/org/kde/config/qmldir
+-- Installing: /usr/lib/qml/org/kde/config/KF6ConfigQml.qmltypes
+-- Installing: /usr/lib/qml/org/kde/config/kde-qmlmodule.version
+-- Installing: /usr/libexec/kf6/kconfig_compiler_kf6
+-- Set non-toolchain portion of runtime path of "/usr/libexec/kf6/kconfig_compiler_kf6" to ""
+-- Installing: /usr/libexec/kf6/kconf_update
+-- Set non-toolchain portion of runtime path of "/usr/libexec/kf6/kconf_update" to ""
+-- Installing: /usr/bin/kreadconfig6
+-- Set non-toolchain portion of runtime path of "/usr/bin/kreadconfig6" to ""
+-- Installing: /usr/bin/kwriteconfig6
+-- Set non-toolchain portion of runtime path of "/usr/bin/kwriteconfig6" to ""
+-- Installing: /usr/share/qlogging-categories6/kconfig.categories
+-- Installing: /usr/share/qlogging-categories6/kconfig.renamecategories
+-- Installing: /usr/share/locale/af/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ar/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ast/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/az/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/be/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/be@latin/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/bg/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/bn/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/bn_IN/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/br/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/bs/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ca/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ca@valencia/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/cs/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/csb/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/cy/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/da/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/de/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/el/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/en_GB/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/eo/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/es/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/et/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/eu/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/fa/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/fi/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/fr/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/fy/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ga/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/gd/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/gl/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/gu/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/he/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/hi/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/hne/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/hr/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/hsb/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/hu/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ia/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/id/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/is/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/it/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ja/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ka/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/kab/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/kk/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/km/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/kn/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ko/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ku/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/lb/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/lt/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/lv/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/mai/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/mk/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ml/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/mr/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ms/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/nan_TW/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/nan_TW@latin/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/nb/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/nds/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ne/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/nl/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/nn/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/or/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/pa/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/pl/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/pt/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/pt_BR/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ro/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ru/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/sa/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/se/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/si/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/sk/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/sl/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/sq/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/sr/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/sr@ijekavian/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/sr@latin/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/sv/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ta/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/te/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/tg/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/th/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/tr/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/ug/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/uk/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/uz/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/uz@cyrillic/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/vi/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/wa/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/xh/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/zh_CN/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/share/locale/zh_TW/LC_MESSAGES/kconfig6_qt.qm
+-- Installing: /usr/lib/cmake/KF6Config/KF6ConfigConfig.cmake
+-- Installing: /usr/lib/cmake/KF6Config/KF6ConfigConfigVersion.cmake
+-- Installing: /usr/lib/cmake/KF6Config/KF6ConfigMacros.cmake
+-- Old export file "/usr/lib/cmake/KF6Config/KF6ConfigTargets.cmake" will be replaced.  Removing files [/usr/lib/cmake/KF6Config/KF6ConfigTargets-release.cmake].
+-- Installing: /usr/lib/cmake/KF6Config/KF6ConfigTargets.cmake
+-- Installing: /usr/lib/cmake/KF6Config/KF6ConfigTargets-release.cmake
+-- Old export file "/usr/lib/cmake/KF6Config/KF6ConfigCompilerTargets.cmake" will be replaced.  Removing files [/usr/lib/cmake/KF6Config/KF6ConfigCompilerTargets-release.cmake].
+-- Installing: /usr/lib/cmake/KF6Config/KF6ConfigCompilerTargets.cmake
+-- Installing: /usr/lib/cmake/KF6Config/KF6ConfigCompilerTargets-release.cmake
+-- Installing: /usr/include/KF6/KConfig/kconfig_version.h
+6.32.0
+Updated registry for kconfig to version 6.32.0
+[VERSION] kconfig: 6.32.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package kconfig in /var/lib/custom-packages/

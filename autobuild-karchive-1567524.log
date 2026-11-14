@@ -1,0 +1,405 @@
+[02:18:35] Found custom package for karchive, bypassing BLFS aliases.
+[02:18:35] Custom package detected at /home/fusion809/lfs_packaging/karchive (package: karchive)
+[02:18:35] Extracting dependencies for custom package 'karchive'...
+[02:18:35] Required deps: brotli bzip2 double-conversion e2fsprogs gcc glib2 glibc icu keyutils mitkrb openssl pcre2 qt6 systemd xz zlib zstd 
+[02:18:35] Dependency 'brotli' already installed.
+[02:18:35] Dependency 'bzip2' already installed.
+[02:18:35] Dependency 'double-conversion' already installed.
+[02:18:35] Dependency 'e2fsprogs' already installed.
+[02:18:35] Dependency 'gcc' already installed.
+[02:18:35] Dependency 'glib2' already installed.
+[02:18:35] Dependency 'glibc' already installed.
+[02:18:35] Dependency 'icu' already installed.
+[02:18:35] Dependency 'keyutils' already installed.
+[02:18:35] Dependency 'mitkrb' already installed.
+[02:18:35] Dependency 'openssl' already installed.
+[02:18:35] Dependency 'pcre2' already installed.
+[02:18:35] Dependency 'qt6' already installed.
+[02:18:35] Dependency 'systemd' already installed.
+[02:18:35] Dependency 'xz' already installed.
+[02:18:35] Dependency 'zlib' already installed.
+[02:18:35] Dependency 'zstd' already installed.
+[VERSION] karchive: 6.32.0
+[02:18:35] Installing karchive version: 6.32.0
+[02:18:35] Starting remote custom build for karchive...
+--2026-11-14 02:18:39--  https://download.kde.org/stable/frameworks/6.32/karchive-6.32.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://cdn.download.kde.org/stable/frameworks/6.32/karchive-6.32.0.tar.xz [following]
+--2026-11-14 02:18:40--  https://cdn.download.kde.org/stable/frameworks/6.32/karchive-6.32.0.tar.xz
+Resolving cdn.download.kde.org (cdn.download.kde.org)... 143.244.62.5, 143.244.62.8, 2a02:6ea0:db00::11, ...
+Connecting to cdn.download.kde.org (cdn.download.kde.org)|143.244.62.5|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 842212 (822K) [application/x-xz]
+Saving to: ‘karchive-6.32.0.tar.xz’
+
+karchive-6.32.0.tar   0%[                    ]       0  --.-KB/s               karchive-6.32.0.tar  13%[=>                  ] 111.31K   553KB/s               karchive-6.32.0.tar  50%[=========>          ] 415.31K  1.00MB/s               karchive-6.32.0.tar 100%[===================>] 822.47K  1.55MB/s    in 0.5s    
+
+2026-11-14 02:18:42 (1.55 MB/s) - ‘karchive-6.32.0.tar.xz’ saved [842212/842212]
+
+karchive-6.32.0.tar.xz already present and appears valid.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:47 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/karchive/karchive-6.32.0/build/prefix.sh to set the environment for KArchive.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+fatal: no upstream configured for branch 'master'
+-- Found ZLIB: /usr/lib/libz.so (found version "1.4")
+-- Found BZip2: /usr/lib/libbz2.so (found version "1.0.8")
+-- Looking for BZ2_bzCompressInit
+-- Looking for BZ2_bzCompressInit - found
+-- Looking for lzma_auto_decoder in /usr/lib/liblzma.so
+-- Looking for lzma_auto_decoder in /usr/lib/liblzma.so - found
+-- Looking for lzma_easy_encoder in /usr/lib/liblzma.so
+-- Looking for lzma_easy_encoder in /usr/lib/liblzma.so - found
+-- Looking for lzma_lzma_preset in /usr/lib/liblzma.so
+-- Looking for lzma_lzma_preset in /usr/lib/liblzma.so - found
+-- Found LibLZMA: /usr/lib/liblzma.so (found version "5.8.4")
+-- Found OpenSSL: /usr/lib/libcrypto.so (found version "4.1.0")
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.10")
+-- Checking for module 'libzstd'
+--   Found libzstd, version 1.5.7
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following features have been enabled:
+
+ * LibZstd, Support for zstd compressed files and data streams
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6LinguistTools
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.32.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt6Core (required version >= 6.10.0)
+ * ZLIB, Support for gzip compressed files and data streams, <https://www.zlib.net>
+   Support for gzip compressed files and data streams
+ * BZip2, Support for BZip2 compressed files and data streams, <https://sourceware.org/bzip2/>
+   Support for BZip2 compressed files and data streams
+ * LibLZMA, Support for xz compressed files and data streams, <https://tukaani.org/xz/>
+   Support for xz compressed files and data streams
+ * OpenSSL, Support for encrypted archives, <https://www.openssl.org/>
+   Support for encrypted archives
+ * PkgConfig
+ * Qt6
+
+-- Configuring done (5.1s)
+-- Generating done (0.1s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_PYTHON_BINDINGS
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/karchive/karchive-6.32.0/build
+make[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 0.084 s in the future
+make[2]: Warning: File 'CMakeFiles/translations_1.dir/build.make' has modification time 0.033 s in the future
+make[2]: Warning: File 'CMakeFiles/translations_2.dir/build.make' has modification time 0.033 s in the future
+make[2]: Warning: File 'CMakeFiles/translations_3.dir/build.make' has modification time 0.03 s in the future
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: Warning: File 'CMakeFiles/translations_1.dir/progress.make' has modification time 0.034 s in the future
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: Warning: File 'CMakeFiles/translations_2.dir/progress.make' has modification time 0.024 s in the future
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: Warning: File 'CMakeFiles/translations_3.dir/progress.make' has modification time 0.018 s in the future
+[  1%] Generating ECMPoQm/ar/karchive6_qt.qm
+[  3%] Generating ECMPoQm/ast/karchive6_qt.qm
+[  4%] Generating ECMPoQm/bg/karchive6_qt.qm
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[  4%] Built target translations_1
+[  4%] Built target translations_3
+[  4%] Built target translations_2
+[  6%] Generating ECMPoQm/ca/karchive6_qt.qm
+[  7%] Generating ECMPoQm/cs/karchive6_qt.qm
+[  9%] Generating ECMPoQm/ca@valencia/karchive6_qt.qm
+[  9%] Built target translations_4
+[  9%] Built target translations_6
+[  9%] Built target translations_5
+[ 10%] Generating ECMPoQm/de/karchive6_qt.qm
+[ 12%] Generating ECMPoQm/el/karchive6_qt.qm
+[ 13%] Generating ECMPoQm/en_GB/karchive6_qt.qm
+[ 13%] Built target translations_7
+[ 13%] Built target translations_8
+[ 15%] Generating ECMPoQm/eo/karchive6_qt.qm
+[ 15%] Built target translations_9
+[ 16%] Generating ECMPoQm/eu/karchive6_qt.qm
+[ 18%] Generating ECMPoQm/es/karchive6_qt.qm
+[ 18%] Built target translations_10
+[ 18%] Built target translations_12
+[ 20%] Generating ECMPoQm/fi/karchive6_qt.qm
+[ 20%] Built target translations_11
+[ 21%] Generating ECMPoQm/fr/karchive6_qt.qm
+[ 23%] Generating ECMPoQm/ga/karchive6_qt.qm
+[ 23%] Built target translations_13
+[ 23%] Built target translations_14
+[ 23%] Built target translations_15
+[ 24%] Generating ECMPoQm/he/karchive6_qt.qm
+[ 26%] Generating ECMPoQm/gl/karchive6_qt.qm
+[ 27%] Generating ECMPoQm/hi/karchive6_qt.qm
+[ 27%] Built target translations_17
+[ 27%] Built target translations_18
+[ 27%] Built target translations_16
+[ 29%] Generating ECMPoQm/hu/karchive6_qt.qm
+[ 30%] Generating ECMPoQm/ia/karchive6_qt.qm
+[ 32%] Generating ECMPoQm/id/karchive6_qt.qm
+[ 32%] Built target translations_20
+[ 32%] Built target translations_19
+[ 33%] Generating ECMPoQm/ja/karchive6_qt.qm
+[ 35%] Generating ECMPoQm/it/karchive6_qt.qm
+[ 35%] Built target translations_21
+[ 35%] Built target translations_23
+[ 35%] Built target translations_22
+[ 36%] Generating ECMPoQm/ka/karchive6_qt.qm
+[ 38%] Generating ECMPoQm/ko/karchive6_qt.qm
+[ 40%] Generating ECMPoQm/lt/karchive6_qt.qm
+[ 40%] Built target translations_24
+[ 40%] Built target translations_25
+[ 40%] Built target translations_26
+[ 41%] Generating ECMPoQm/lv/karchive6_qt.qm
+[ 43%] Generating ECMPoQm/nn/karchive6_qt.qm
+[ 44%] Generating ECMPoQm/nl/karchive6_qt.qm
+[ 44%] Built target translations_27
+[ 44%] Built target translations_29
+[ 44%] Built target translations_28
+[ 46%] Generating ECMPoQm/pa/karchive6_qt.qm
+[ 47%] Generating ECMPoQm/pl/karchive6_qt.qm
+[ 49%] Generating ECMPoQm/pt/karchive6_qt.qm
+[ 49%] Built target translations_30
+[ 49%] Built target translations_31
+[ 49%] Built target translations_32
+[ 50%] Generating ECMPoQm/ro/karchive6_qt.qm
+[ 52%] Generating ECMPoQm/pt_BR/karchive6_qt.qm
+[ 53%] Generating ECMPoQm/ru/karchive6_qt.qm
+[ 53%] Built target translations_34
+[ 55%] Generating ECMPoQm/sa/karchive6_qt.qm
+[ 55%] Built target translations_33
+[ 55%] Built target translations_35
+[ 56%] Generating ECMPoQm/sk/karchive6_qt.qm
+[ 56%] Built target translations_36
+[ 58%] Generating ECMPoQm/sl/karchive6_qt.qm
+[ 60%] Generating ECMPoQm/sv/karchive6_qt.qm
+[ 60%] Built target translations_37
+[ 61%] Generating ECMPoQm/ta/karchive6_qt.qm
+[ 61%] Built target translations_38
+[ 61%] Built target translations_39
+[ 63%] Generating ECMPoQm/tr/karchive6_qt.qm
+[ 63%] Built target translations_40
+[ 64%] Generating ECMPoQm/ug/karchive6_qt.qm
+[ 64%] Built target translations_41
+[ 66%] Generating ECMPoQm/uk/karchive6_qt.qm
+[ 66%] Built target translations_42
+[ 67%] Generating ECMPoQm/zh_CN/karchive6_qt.qm
+[ 67%] Built target translations_43
+[ 69%] Generating ECMPoQm/zh_TW/karchive6_qt.qm
+[ 69%] Built target translations_44
+[ 69%] Built target translations_45
+[ 69%] Built target KF6Archive_autogen_timestamp_deps
+[ 70%] Automatic MOC for target KF6Archive
+[ 70%] Built target KF6Archive_autogen
+[ 72%] Building CXX object src/CMakeFiles/KF6Archive.dir/KF6Archive_autogen/mocs_compilation.cpp.o
+[ 73%] Building CXX object src/CMakeFiles/KF6Archive.dir/kbzip2filter.cpp.o
+[ 75%] Building CXX object src/CMakeFiles/KF6Archive.dir/ECMQmLoader-karchive6_qt.cpp.o
+[ 76%] Building CXX object src/CMakeFiles/KF6Archive.dir/kxzfilter.cpp.o
+[ 78%] Building CXX object src/CMakeFiles/KF6Archive.dir/klzfilter.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/KF6Archive.dir/k7zip.cpp.o
+[ 81%] Building CXX object src/CMakeFiles/KF6Archive.dir/kzstdfilter.cpp.o
+[ 83%] Building CXX object src/CMakeFiles/KF6Archive.dir/karchive.cpp.o
+[ 84%] Building CXX object src/CMakeFiles/KF6Archive.dir/kar.cpp.o
+[ 86%] Building CXX object src/CMakeFiles/KF6Archive.dir/kcompressiondevice.cpp.o
+[ 87%] Building CXX object src/CMakeFiles/KF6Archive.dir/kfilterbase.cpp.o
+[ 89%] Building CXX object src/CMakeFiles/KF6Archive.dir/kgzipfilter.cpp.o
+[ 90%] Building CXX object src/CMakeFiles/KF6Archive.dir/klimitediodevice.cpp.o
+[ 92%] Building CXX object src/CMakeFiles/KF6Archive.dir/knonefilter.cpp.o
+[ 93%] Building CXX object src/CMakeFiles/KF6Archive.dir/ktar.cpp.o
+[ 95%] Building CXX object src/CMakeFiles/KF6Archive.dir/kzip.cpp.o
+[ 96%] Building CXX object src/CMakeFiles/KF6Archive.dir/krcc.cpp.o
+[ 98%] Building CXX object src/CMakeFiles/KF6Archive.dir/loggingcategory.cpp.o
+[100%] Linking CXX shared library ../bin/libKF6Archive.so
+[100%] Built target KF6Archive
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+[  1%] Built target translations_1
+[  3%] Built target translations_2
+[  4%] Built target translations_3
+[  6%] Built target translations_4
+[  7%] Built target translations_5
+[  9%] Built target translations_6
+[ 10%] Built target translations_7
+[ 12%] Built target translations_8
+[ 13%] Built target translations_9
+[ 15%] Built target translations_10
+[ 16%] Built target translations_11
+[ 18%] Built target translations_12
+[ 20%] Built target translations_13
+[ 21%] Built target translations_14
+[ 23%] Built target translations_15
+[ 24%] Built target translations_16
+[ 26%] Built target translations_17
+[ 27%] Built target translations_18
+[ 29%] Built target translations_19
+[ 30%] Built target translations_20
+[ 32%] Built target translations_21
+[ 33%] Built target translations_22
+[ 35%] Built target translations_23
+[ 36%] Built target translations_24
+[ 38%] Built target translations_25
+[ 40%] Built target translations_26
+[ 41%] Built target translations_27
+[ 43%] Built target translations_28
+[ 44%] Built target translations_29
+[ 46%] Built target translations_30
+[ 47%] Built target translations_31
+[ 49%] Built target translations_32
+[ 50%] Built target translations_33
+[ 52%] Built target translations_34
+[ 53%] Built target translations_35
+[ 55%] Built target translations_36
+[ 56%] Built target translations_37
+[ 58%] Built target translations_38
+[ 60%] Built target translations_39
+[ 61%] Built target translations_40
+[ 63%] Built target translations_41
+[ 64%] Built target translations_42
+[ 66%] Built target translations_43
+[ 67%] Built target translations_44
+[ 69%] Built target translations_45
+[ 69%] Built target KF6Archive_autogen_timestamp_deps
+[ 70%] Built target KF6Archive_autogen
+[ 72%] Building CXX object src/CMakeFiles/KF6Archive.dir/KF6Archive_autogen/mocs_compilation.cpp.o
+[ 73%] Linking CXX shared library ../bin/libKF6Archive.so
+[100%] Built target KF6Archive
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/lib/libKF6Archive.so.6.32.0
+-- Installing: /usr/lib/libKF6Archive.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKF6Archive.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKF6Archive.so
+-- Installing: /usr/include/KF6/KArchive/karchive_export.h
+-- Installing: /usr/include/KF6/KArchive/karchive.h
+-- Installing: /usr/include/KF6/KArchive/karchiveentry.h
+-- Installing: /usr/include/KF6/KArchive/karchivefile.h
+-- Installing: /usr/include/KF6/KArchive/karchivedirectory.h
+-- Installing: /usr/include/KF6/KArchive/kar.h
+-- Installing: /usr/include/KF6/KArchive/kcompressiondevice.h
+-- Installing: /usr/include/KF6/KArchive/kfilterbase.h
+-- Installing: /usr/include/KF6/KArchive/krcc.h
+-- Installing: /usr/include/KF6/KArchive/ktar.h
+-- Installing: /usr/include/KF6/KArchive/kzip.h
+-- Installing: /usr/include/KF6/KArchive/kzipfileentry.h
+-- Installing: /usr/include/KF6/KArchive/k7zip.h
+-- Installing: /usr/include/KF6/KArchive/KArchive
+-- Installing: /usr/include/KF6/KArchive/KArchiveEntry
+-- Installing: /usr/include/KF6/KArchive/KArchiveFile
+-- Installing: /usr/include/KF6/KArchive/KArchiveDirectory
+-- Installing: /usr/include/KF6/KArchive/KAr
+-- Installing: /usr/include/KF6/KArchive/KCompressionDevice
+-- Installing: /usr/include/KF6/KArchive/KFilterBase
+-- Installing: /usr/include/KF6/KArchive/KRcc
+-- Installing: /usr/include/KF6/KArchive/KTar
+-- Installing: /usr/include/KF6/KArchive/KZip
+-- Installing: /usr/include/KF6/KArchive/KZipFileEntry
+-- Installing: /usr/include/KF6/KArchive/K7Zip
+-- Installing: /usr/share/qlogging-categories6/karchive.categories
+-- Installing: /usr/share/qlogging-categories6/karchive.renamecategories
+-- Installing: /usr/share/locale/ar/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/ast/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/bg/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/ca/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/ca@valencia/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/cs/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/de/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/el/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/en_GB/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/eo/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/es/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/eu/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/fi/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/fr/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/ga/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/gl/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/he/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/hi/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/hu/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/ia/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/id/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/it/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/ja/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/ka/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/ko/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/lt/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/lv/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/nl/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/nn/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/pa/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/pl/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/pt/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/pt_BR/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/ro/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/ru/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/sa/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/sk/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/sl/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/sv/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/ta/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/tr/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/ug/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/uk/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/zh_CN/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/share/locale/zh_TW/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /usr/include/KF6/KArchive/karchive_version.h
+-- Installing: /usr/lib/cmake/KF6Archive/KF6ArchiveConfig.cmake
+-- Installing: /usr/lib/cmake/KF6Archive/KF6ArchiveConfigVersion.cmake
+-- Old export file "/usr/lib/cmake/KF6Archive/KF6ArchiveTargets.cmake" will be replaced.  Removing files [/usr/lib/cmake/KF6Archive/KF6ArchiveTargets-release.cmake].
+-- Installing: /usr/lib/cmake/KF6Archive/KF6ArchiveTargets.cmake
+-- Installing: /usr/lib/cmake/KF6Archive/KF6ArchiveTargets-release.cmake
+-- Installing: /usr/lib/pkgconfig/KF6Archive.pc
+6.32.0
+Updated registry for karchive to version 6.32.0
+[VERSION] karchive: 6.32.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package karchive in /var/lib/custom-packages/

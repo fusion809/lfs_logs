@@ -1,0 +1,378 @@
+[03:10:16] Found custom package for kunitconversion, bypassing BLFS aliases.
+[03:10:16] Custom package detected at /home/fusion809/lfs_packaging/kunitconversion (package: kunitconversion)
+[03:10:16] Extracting dependencies for custom package 'kunitconversion'...
+[03:10:16] Required deps: brotli double-conversion e2fsprogs gcc glib2 glibc icu keyutils ki18n mitkrb openssl pcre2 qt6 systemd zlib zstd 
+[03:10:16] Dependency 'brotli' already installed.
+[03:10:16] Dependency 'double-conversion' already installed.
+[03:10:16] Dependency 'e2fsprogs' already installed.
+[03:10:16] Dependency 'gcc' already installed.
+[03:10:16] Dependency 'glib2' already installed.
+[03:10:16] Dependency 'glibc' already installed.
+[03:10:16] Dependency 'icu' already installed.
+[03:10:16] Dependency 'keyutils' already installed.
+[03:10:16] Dependency 'ki18n' already installed.
+[03:10:16] Dependency 'mitkrb' already installed.
+[03:10:16] Dependency 'openssl' already installed.
+[03:10:16] Dependency 'pcre2' already installed.
+[03:10:16] Dependency 'qt6' already installed.
+[03:10:16] Dependency 'systemd' already installed.
+[03:10:16] Dependency 'zlib' already installed.
+[03:10:16] Dependency 'zstd' already installed.
+[VERSION] kunitconversion: 6.32.0
+[03:10:17] Installing kunitconversion version: 6.32.0
+[03:10:17] Starting remote custom build for kunitconversion...
+--2026-11-14 03:10:20--  https://download.kde.org/stable/frameworks/6.32/kunitconversion-6.32.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://mirrors.xtom.com/kde/stable/frameworks/6.32/kunitconversion-6.32.0.tar.xz [following]
+--2026-11-14 03:10:21--  https://mirrors.xtom.com/kde/stable/frameworks/6.32/kunitconversion-6.32.0.tar.xz
+Resolving mirrors.xtom.com (mirrors.xtom.com)... 142.147.88.7, 2604:a840::7
+Connecting to mirrors.xtom.com (mirrors.xtom.com)|142.147.88.7|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1020864 (997K) [application/octet-stream]
+Saving to: ‘kunitconversion-6.32.0.tar.xz’
+
+          kunitconv   0%[                    ]       0  --.-KB/s                        kunitconve   3%[                    ]  31.52K   146KB/s                       kunitconver   6%[>                   ]  63.52K   152KB/s                      kunitconvers  12%[=>                  ] 127.52K   197KB/s                     kunitconversi  24%[===>                ] 239.52K   275KB/s                    kunitconversio  41%[=======>            ] 415.52K   386KB/s                   kunitconversion  73%[=============>      ] 735.52K   574KB/s               kunitconversion-6.3 100%[===================>] 996.94K   716KB/s    in 1.4s    
+
+2026-11-14 03:10:23 (716 KB/s) - ‘kunitconversion-6.32.0.tar.xz’ saved [1020864/1020864]
+
+kunitconversion-6.32.0.tar.xz already present and appears valid.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:12 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/kunitconversion/kunitconversion-6.32.0/build/prefix.sh to set the environment for KUnitConversion.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6Network (required version >= 6.10.0)
+ * Qt6CoreTools (required version >= 6.12.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.32.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt6Core (required version >= 6.10.0)
+ * Gettext
+ * KF6I18n (required version >= 6.32.0)
+ * Qt6
+
+-- The following features have been disabled:
+
+ * PYTHON_BINDINGS, Python bindings
+
+-- Configuring done (2.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/kunitconversion/kunitconversion-6.32.0/build
+[  2%] Generating mo...
+[  5%] Built target KF6UnitConversion_autogen_timestamp_deps
+[  5%] Generating ts...
+[  5%] Built target tsfiles-edefcc5fcbe7004551e714e03f9597c0
+[  8%] Automatic MOC for target KF6UnitConversion
+[  8%] Built target KF6UnitConversion_autogen
+[ 11%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/KF6UnitConversion_autogen/mocs_compilation.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/kunitconversion_debug.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/converter.cpp.o
+[ 16%] Built target pofiles-edefcc5fcbe7004551e714e03f9597c0
+[ 19%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/value.cpp.o
+[ 22%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/unit.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/unitcategory.cpp.o
+[ 27%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/length.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/area.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/volume.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/temperature.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/velocity.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/mass.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/pressure.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/energy.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/currency.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/power.cpp.o
+[ 55%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/timeunit.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/fuel_efficiency.cpp.o
+[ 61%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/density.cpp.o
+[ 63%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/weight_per_area.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/acceleration.cpp.o
+[ 69%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/force.cpp.o
+[ 72%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/angle.cpp.o
+[ 75%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/frequency.cpp.o
+[ 77%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/thermal_conductivity.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/thermal_flux.cpp.o
+[ 83%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/thermal_generation.cpp.o
+[ 86%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/voltage.cpp.o
+[ 88%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/electrical_current.cpp.o
+[ 91%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/electrical_resistance.cpp.o
+[ 94%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/permeability.cpp.o
+[ 97%] Building CXX object src/CMakeFiles/KF6UnitConversion.dir/binary_data.cpp.o
+[100%] Linking CXX shared library ../bin/libKF6UnitConversion.so
+[100%] Built target KF6UnitConversion
+[  2%] Generating mo...
+[  2%] Built target pofiles-edefcc5fcbe7004551e714e03f9597c0
+[  5%] Generating ts...
+[  5%] Built target tsfiles-edefcc5fcbe7004551e714e03f9597c0
+[  5%] Built target KF6UnitConversion_autogen_timestamp_deps
+[  8%] Built target KF6UnitConversion_autogen
+[100%] Built target KF6UnitConversion
+Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /usr/share/locale
+-- Up-to-date: /usr/share/locale/ms
+-- Up-to-date: /usr/share/locale/ms/LC_MESSAGES
+-- Installing: /usr/share/locale/ms/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/nn
+-- Up-to-date: /usr/share/locale/nn/LC_MESSAGES
+-- Installing: /usr/share/locale/nn/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/ja
+-- Up-to-date: /usr/share/locale/ja/LC_MESSAGES
+-- Installing: /usr/share/locale/ja/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/az
+-- Up-to-date: /usr/share/locale/az/LC_MESSAGES
+-- Installing: /usr/share/locale/az/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/fi
+-- Up-to-date: /usr/share/locale/fi/LC_MESSAGES
+-- Installing: /usr/share/locale/fi/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/it
+-- Up-to-date: /usr/share/locale/it/LC_MESSAGES
+-- Installing: /usr/share/locale/it/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/id
+-- Up-to-date: /usr/share/locale/id/LC_MESSAGES
+-- Installing: /usr/share/locale/id/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/ta
+-- Up-to-date: /usr/share/locale/ta/LC_MESSAGES
+-- Installing: /usr/share/locale/ta/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/sa
+-- Up-to-date: /usr/share/locale/sa/LC_MESSAGES
+-- Installing: /usr/share/locale/sa/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/pt_BR
+-- Up-to-date: /usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /usr/share/locale/pt_BR/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/mr
+-- Up-to-date: /usr/share/locale/mr/LC_MESSAGES
+-- Installing: /usr/share/locale/mr/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/tr
+-- Up-to-date: /usr/share/locale/tr/LC_MESSAGES
+-- Installing: /usr/share/locale/tr/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/et
+-- Up-to-date: /usr/share/locale/et/LC_MESSAGES
+-- Installing: /usr/share/locale/et/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/nds
+-- Up-to-date: /usr/share/locale/nds/LC_MESSAGES
+-- Installing: /usr/share/locale/nds/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/ro
+-- Up-to-date: /usr/share/locale/ro/LC_MESSAGES
+-- Installing: /usr/share/locale/ro/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/sr@ijekavian
+-- Up-to-date: /usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /usr/share/locale/sr@ijekavian/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/en_GB
+-- Up-to-date: /usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /usr/share/locale/en_GB/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/fr
+-- Up-to-date: /usr/share/locale/fr/LC_MESSAGES
+-- Installing: /usr/share/locale/fr/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/sr@latin
+-- Up-to-date: /usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /usr/share/locale/sr@latin/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/bs
+-- Up-to-date: /usr/share/locale/bs/LC_MESSAGES
+-- Installing: /usr/share/locale/bs/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/da
+-- Up-to-date: /usr/share/locale/da/LC_MESSAGES
+-- Installing: /usr/share/locale/da/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/eo
+-- Up-to-date: /usr/share/locale/eo/LC_MESSAGES
+-- Installing: /usr/share/locale/eo/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/ga
+-- Up-to-date: /usr/share/locale/ga/LC_MESSAGES
+-- Installing: /usr/share/locale/ga/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/el
+-- Up-to-date: /usr/share/locale/el/LC_MESSAGES
+-- Installing: /usr/share/locale/el/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/uk
+-- Up-to-date: /usr/share/locale/uk/LC_MESSAGES
+-- Installing: /usr/share/locale/uk/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/sr@ijekavianlatin
+-- Up-to-date: /usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/de
+-- Up-to-date: /usr/share/locale/de/LC_MESSAGES
+-- Installing: /usr/share/locale/de/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/sl
+-- Up-to-date: /usr/share/locale/sl/LC_MESSAGES
+-- Installing: /usr/share/locale/sl/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/cs
+-- Up-to-date: /usr/share/locale/cs/LC_MESSAGES
+-- Installing: /usr/share/locale/cs/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/sr
+-- Up-to-date: /usr/share/locale/sr/LC_MESSAGES
+-- Installing: /usr/share/locale/sr/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/th
+-- Up-to-date: /usr/share/locale/th/LC_MESSAGES
+-- Installing: /usr/share/locale/th/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/ar
+-- Up-to-date: /usr/share/locale/ar/LC_MESSAGES
+-- Installing: /usr/share/locale/ar/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/hr
+-- Up-to-date: /usr/share/locale/hr/LC_MESSAGES
+-- Installing: /usr/share/locale/hr/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/ml
+-- Up-to-date: /usr/share/locale/ml/LC_MESSAGES
+-- Installing: /usr/share/locale/ml/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/ast
+-- Up-to-date: /usr/share/locale/ast/LC_MESSAGES
+-- Installing: /usr/share/locale/ast/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/pa
+-- Up-to-date: /usr/share/locale/pa/LC_MESSAGES
+-- Installing: /usr/share/locale/pa/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/lv
+-- Up-to-date: /usr/share/locale/lv/LC_MESSAGES
+-- Installing: /usr/share/locale/lv/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/lt
+-- Up-to-date: /usr/share/locale/lt/LC_MESSAGES
+-- Installing: /usr/share/locale/lt/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/zh_CN
+-- Up-to-date: /usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /usr/share/locale/zh_CN/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/ca@valencia
+-- Up-to-date: /usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /usr/share/locale/ca@valencia/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/is
+-- Up-to-date: /usr/share/locale/is/LC_MESSAGES
+-- Installing: /usr/share/locale/is/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/ia
+-- Up-to-date: /usr/share/locale/ia/LC_MESSAGES
+-- Installing: /usr/share/locale/ia/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/ka
+-- Up-to-date: /usr/share/locale/ka/LC_MESSAGES
+-- Installing: /usr/share/locale/ka/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/zh_TW
+-- Up-to-date: /usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /usr/share/locale/zh_TW/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/nb
+-- Up-to-date: /usr/share/locale/nb/LC_MESSAGES
+-- Installing: /usr/share/locale/nb/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/es
+-- Up-to-date: /usr/share/locale/es/LC_MESSAGES
+-- Installing: /usr/share/locale/es/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/ko
+-- Up-to-date: /usr/share/locale/ko/LC_MESSAGES
+-- Installing: /usr/share/locale/ko/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/tg
+-- Up-to-date: /usr/share/locale/tg/LC_MESSAGES
+-- Installing: /usr/share/locale/tg/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/hu
+-- Up-to-date: /usr/share/locale/hu/LC_MESSAGES
+-- Installing: /usr/share/locale/hu/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/hi
+-- Up-to-date: /usr/share/locale/hi/LC_MESSAGES
+-- Installing: /usr/share/locale/hi/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/bg
+-- Up-to-date: /usr/share/locale/bg/LC_MESSAGES
+-- Installing: /usr/share/locale/bg/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/gd
+-- Up-to-date: /usr/share/locale/gd/LC_MESSAGES
+-- Installing: /usr/share/locale/gd/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/nl
+-- Up-to-date: /usr/share/locale/nl/LC_MESSAGES
+-- Installing: /usr/share/locale/nl/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/se
+-- Up-to-date: /usr/share/locale/se/LC_MESSAGES
+-- Installing: /usr/share/locale/se/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/eu
+-- Up-to-date: /usr/share/locale/eu/LC_MESSAGES
+-- Installing: /usr/share/locale/eu/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/pt
+-- Up-to-date: /usr/share/locale/pt/LC_MESSAGES
+-- Installing: /usr/share/locale/pt/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/sk
+-- Up-to-date: /usr/share/locale/sk/LC_MESSAGES
+-- Installing: /usr/share/locale/sk/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/ug
+-- Up-to-date: /usr/share/locale/ug/LC_MESSAGES
+-- Installing: /usr/share/locale/ug/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/ca
+-- Up-to-date: /usr/share/locale/ca/LC_MESSAGES
+-- Installing: /usr/share/locale/ca/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/kk
+-- Up-to-date: /usr/share/locale/kk/LC_MESSAGES
+-- Installing: /usr/share/locale/kk/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/ru
+-- Up-to-date: /usr/share/locale/ru/LC_MESSAGES
+-- Installing: /usr/share/locale/ru/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/gl
+-- Up-to-date: /usr/share/locale/gl/LC_MESSAGES
+-- Installing: /usr/share/locale/gl/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/sv
+-- Up-to-date: /usr/share/locale/sv/LC_MESSAGES
+-- Installing: /usr/share/locale/sv/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/pl
+-- Up-to-date: /usr/share/locale/pl/LC_MESSAGES
+-- Installing: /usr/share/locale/pl/LC_MESSAGES/kunitconversion6.mo
+-- Up-to-date: /usr/share/locale/lo
+-- Up-to-date: /usr/share/locale/lo/LC_MESSAGES
+-- Installing: /usr/share/locale/lo/LC_MESSAGES/kunitconversion6.mo
+-- Installing: /usr/include/KF6/KUnitConversion/KUnitConversion/Converter
+-- Installing: /usr/include/KF6/KUnitConversion/KUnitConversion/Value
+-- Installing: /usr/include/KF6/KUnitConversion/KUnitConversion/Unit
+-- Installing: /usr/include/KF6/KUnitConversion/KUnitConversion/UnitCategory
+-- Installing: /usr/lib/libKF6UnitConversion.so.6.32.0
+-- Installing: /usr/lib/libKF6UnitConversion.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKF6UnitConversion.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKF6UnitConversion.so
+-- Installing: /usr/include/KF6/KUnitConversion/kunitconversion/kunitconversion_export.h
+-- Installing: /usr/include/KF6/KUnitConversion/kunitconversion/converter.h
+-- Installing: /usr/include/KF6/KUnitConversion/kunitconversion/value.h
+-- Installing: /usr/include/KF6/KUnitConversion/kunitconversion/unit.h
+-- Installing: /usr/include/KF6/KUnitConversion/kunitconversion/unitcategory.h
+-- Installing: /usr/share/qlogging-categories6/kunitconversion.categories
+-- Installing: /usr/lib/cmake/KF6UnitConversion/KF6UnitConversionConfig.cmake
+-- Installing: /usr/lib/cmake/KF6UnitConversion/KF6UnitConversionConfigVersion.cmake
+-- Old export file "/usr/lib/cmake/KF6UnitConversion/KF6UnitConversionTargets.cmake" will be replaced.  Removing files [/usr/lib/cmake/KF6UnitConversion/KF6UnitConversionTargets-release.cmake].
+-- Installing: /usr/lib/cmake/KF6UnitConversion/KF6UnitConversionTargets.cmake
+-- Installing: /usr/lib/cmake/KF6UnitConversion/KF6UnitConversionTargets-release.cmake
+-- Installing: /usr/include/KF6/KUnitConversion/kunitconversion_version.h
+6.32.0
+Updated registry for kunitconversion to version 6.32.0
+[VERSION] kunitconversion: 6.32.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package kunitconversion in /var/lib/custom-packages/

@@ -1,0 +1,327 @@
+[03:04:32] Found custom package for threadweaver, bypassing BLFS aliases.
+[03:04:33] Custom package detected at /home/fusion809/lfs_packaging/threadweaver (package: threadweaver)
+[03:04:33] Extracting dependencies for custom package 'threadweaver'...
+[03:04:33] Required deps: brotli double-conversion e2fsprogs gcc glib2 glibc icu keyutils mitkrb openssl pcre2 qt6 systemd zlib zstd 
+[03:04:33] Dependency 'brotli' already installed.
+[03:04:33] Dependency 'double-conversion' already installed.
+[03:04:33] Dependency 'e2fsprogs' already installed.
+[03:04:33] Dependency 'gcc' already installed.
+[03:04:33] Dependency 'glib2' already installed.
+[03:04:33] Dependency 'glibc' already installed.
+[03:04:33] Dependency 'icu' already installed.
+[03:04:33] Dependency 'keyutils' already installed.
+[03:04:33] Dependency 'mitkrb' already installed.
+[03:04:33] Dependency 'openssl' already installed.
+[03:04:33] Dependency 'pcre2' already installed.
+[03:04:33] Dependency 'qt6' already installed.
+[03:04:33] Dependency 'systemd' already installed.
+[03:04:33] Dependency 'zlib' already installed.
+[03:04:33] Dependency 'zstd' already installed.
+[VERSION] threadweaver: 6.32.0
+[03:04:34] Installing threadweaver version: 6.32.0
+[03:04:34] Starting remote custom build for threadweaver...
+--2026-11-14 03:04:37--  https://download.kde.org/stable/frameworks/6.32/threadweaver-6.32.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://mirrors.xtom.com/kde/stable/frameworks/6.32/threadweaver-6.32.0.tar.xz [following]
+--2026-11-14 03:04:39--  https://mirrors.xtom.com/kde/stable/frameworks/6.32/threadweaver-6.32.0.tar.xz
+Resolving mirrors.xtom.com (mirrors.xtom.com)... 142.147.88.7, 2604:a840::7
+Connecting to mirrors.xtom.com (mirrors.xtom.com)|142.147.88.7|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1415444 (1.3M) [application/octet-stream]
+Saving to: ‘threadweaver-6.32.0.tar.xz’
+
+          threadwea   0%[                    ]       0  --.-KB/s                        threadweav   3%[                    ]  47.52K   206KB/s                       threadweave   9%[>                   ] 127.52K   276KB/s                      threadweaver  20%[===>                ] 287.52K   429KB/s                     threadweaver-  45%[========>           ] 623.52K   714KB/s                    threadweaver-6  97%[==================> ]   1.31M  1.22MB/s               threadweaver-6.32.0 100%[===================>]   1.35M  1.25MB/s    in 1.1s    
+
+2026-11-14 03:04:40 (1.25 MB/s) - ‘threadweaver-6.32.0.tar.xz’ saved [1415444/1415444]
+
+threadweaver-6.32.0.tar.xz already present and appears valid.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:13 (include)
+
+
+-- Found Python3: /usr/bin/python3.15 (found version "3.15.2") found components: Interpreter
+Installing in /usr. Run /home/fusion809/lfs_packaging/threadweaver/threadweaver-6.32.0/build/prefix.sh to set the environment for ThreadWeaver.
+fatal: no upstream configured for branch 'master'
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6WidgetsTools (required version >= 6.12.0)
+ * OpenGL
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.12.0)
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6DBusTools (required version >= 6.12.0)
+ * Qt6Network
+ * Qt6Xml
+
+-- The following REQUIRED packages have been found:
+
+ * Qt6Core (required version >= 6.10.0)
+ * Qt6Widgets (required version >= 6.10.0)
+ * Qt6Test (required version >= 6.10.0)
+ * ECM (required version >= 1.1.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt6
+
+-- Configuring done (3.3s)
+-- Generating done (0.2s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_PYTHON_BINDINGS
+
+
+-- Build files have been written to: /home/fusion809/lfs_packaging/threadweaver/threadweaver-6.32.0/build
+-- 
+
+Installing in /usr. Run /home/fusion809/lfs_packaging/threadweaver/threadweaver-6.32.0/build/prefix.sh to set the environment for ThreadWeaver.
+fatal: no upstream configured for branch 'master'
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6WidgetsTools (required version >= 6.12.0)
+ * OpenGL
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.12.0)
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6DBusTools (required version >= 6.12.0)
+ * Qt6Network
+ * Qt6Xml
+
+-- The following REQUIRED packages have been found:
+
+ * Qt6Core (required version >= 6.10.0)
+ * Qt6Widgets (required version >= 6.10.0)
+ * Qt6Test (required version >= 6.10.0)
+ * ECM (required version >= 1.1.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt6
+
+-- Configuring done (0.7s)
+-- Generating done (0.2s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/threadweaver/threadweaver-6.32.0/build
+[  0%] Built target KF6ThreadWeaver_autogen_timestamp_deps
+[  1%] Automatic MOC for target KF6ThreadWeaver
+[  1%] Built target KF6ThreadWeaver_autogen
+[  2%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/collection.cpp.o
+[  4%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/KF6ThreadWeaver_autogen/mocs_compilation.cpp.o
+[  5%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/collection_p.cpp.o
+[  7%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/debuggingaids.cpp.o
+[  8%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/dependency.cpp.o
+[ 10%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/dependencypolicy.cpp.o
+[ 11%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/destructedstate.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/exception.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/executewrapper.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/executor.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/iddecorator.cpp.o
+[ 19%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/inconstructionstate.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/job.cpp.o
+[ 22%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/job_p.cpp.o
+[ 23%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/qobjectdecorator.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/queueapi.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/queue.cpp.o
+[ 27%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/queuesignals.cpp.o
+[ 29%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/queuesignals_p.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/queuestream.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/resourcerestrictionpolicy.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/sequence.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/sequence_p.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/shuttingdownstate.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/state.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/suspendedstate.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/suspendingstate.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/thread.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/threadweaver.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/weaver.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/weaverimplstate.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/weaver_p.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/KF6ThreadWeaver.dir/workinghardstate.cpp.o
+[ 51%] Linking CXX shared library ../bin/libKF6ThreadWeaver.so
+[ 51%] Built target KF6ThreadWeaver
+[ 51%] Built target ThreadWeaver_HelloInternet_autogen_timestamp_deps
+[ 51%] Built target ThreadWeaver_HelloWorld_autogen_timestamp_deps
+[ 51%] Built target ThreadWeaver_HelloWorldRaw_autogen_timestamp_deps
+[ 51%] Built target ThreadWeaver_ThumbNailer_autogen_timestamp_deps
+[ 52%] Automatic MOC for target ThreadWeaver_HelloInternet
+[ 54%] Automatic MOC for target ThreadWeaver_HelloWorld
+[ 55%] Automatic MOC for target ThreadWeaver_HelloWorldRaw
+[ 55%] Built target ThreadWeaver_HelloWorld_autogen
+[ 55%] Built target ThreadWeaver_HelloWorldRaw_autogen
+[ 57%] Automatic MOC for target ThreadWeaver_ThumbNailer
+[ 58%] Building CXX object examples/HelloWorld/CMakeFiles/ThreadWeaver_HelloWorld.dir/ThreadWeaver_HelloWorld_autogen/mocs_compilation.cpp.o
+[ 60%] Building CXX object examples/HelloWorld/CMakeFiles/ThreadWeaver_HelloWorld.dir/HelloWorld.cpp.o
+[ 60%] Built target ThreadWeaver_HelloInternet_autogen
+[ 61%] Building CXX object examples/HelloWorldRaw/CMakeFiles/ThreadWeaver_HelloWorldRaw.dir/ThreadWeaver_HelloWorldRaw_autogen/mocs_compilation.cpp.o
+[ 63%] Building CXX object examples/HelloWorldRaw/CMakeFiles/ThreadWeaver_HelloWorldRaw.dir/HelloWorldRaw.cpp.o
+[ 63%] Built target ThreadWeaver_ThumbNailer_autogen
+[ 64%] Automatic RCC for HelloInternetResources.qrc
+[ 66%] Building CXX object examples/HelloInternet/CMakeFiles/ThreadWeaver_HelloInternet.dir/ThreadWeaver_HelloInternet_autogen/mocs_compilation.cpp.o
+[ 67%] Building CXX object examples/HelloInternet/CMakeFiles/ThreadWeaver_HelloInternet.dir/main.cpp.o
+[ 69%] Linking CXX executable ../../bin/ThreadWeaver_HelloWorld
+[ 70%] Built target ThreadWeaver_HelloWorld
+[ 72%] Generating ui_MainWindow.h
+[ 73%] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/ThreadWeaver_ThumbNailer_autogen/mocs_compilation.cpp.o
+[ 75%] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/ThumbNailer.cpp.o
+[ 76%] Linking CXX executable ../../bin/ThreadWeaver_HelloWorldRaw
+[ 76%] Built target ThreadWeaver_HelloWorldRaw
+[ 77%] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/Image.cpp.o
+[ 79%] Building CXX object examples/HelloInternet/CMakeFiles/ThreadWeaver_HelloInternet.dir/MainWidget.cpp.o
+[ 80%] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/Model.cpp.o
+[ 82%] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/MainWindow.cpp.o
+[ 83%] Building CXX object examples/HelloInternet/CMakeFiles/ThreadWeaver_HelloInternet.dir/ViewController.cpp.o
+[ 85%] Building CXX object examples/HelloInternet/CMakeFiles/ThreadWeaver_HelloInternet.dir/ThreadWeaver_HelloInternet_autogen/EWIEGA46WW/qrc_HelloInternetResources.cpp.o
+[ 86%] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/Benchmark.cpp.o
+[ 88%] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/PriorityDecorator.cpp.o
+[ 89%] Linking CXX executable ../../bin/ThreadWeaver_HelloInternet
+[ 89%] Built target ThreadWeaver_HelloInternet
+[ 91%] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/ItemDelegate.cpp.o
+[ 92%] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/ImageListFilter.cpp.o
+[ 94%] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/FileLoaderJob.cpp.o
+[ 95%] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/ImageLoaderJob.cpp.o
+[ 97%] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/ComputeThumbNailJob.cpp.o
+[ 98%] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/AverageLoadManager.cpp.o
+[100%] Linking CXX executable ../../bin/ThreadWeaver_ThumbNailer
+[100%] Built target ThreadWeaver_ThumbNailer
+[  0%] Built target KF6ThreadWeaver_autogen_timestamp_deps
+[  1%] Built target KF6ThreadWeaver_autogen
+[ 51%] Built target KF6ThreadWeaver
+[ 51%] Built target ThreadWeaver_HelloWorld_autogen_timestamp_deps
+[ 52%] Built target ThreadWeaver_HelloWorld_autogen
+[ 58%] Built target ThreadWeaver_HelloWorld
+[ 58%] Built target ThreadWeaver_HelloWorldRaw_autogen_timestamp_deps
+[ 60%] Built target ThreadWeaver_HelloWorldRaw_autogen
+[ 64%] Built target ThreadWeaver_HelloWorldRaw
+[ 64%] Built target ThreadWeaver_HelloInternet_autogen_timestamp_deps
+[ 66%] Built target ThreadWeaver_HelloInternet_autogen
+[ 76%] Built target ThreadWeaver_HelloInternet
+[ 76%] Built target ThreadWeaver_ThumbNailer_autogen_timestamp_deps
+[ 77%] Built target ThreadWeaver_ThumbNailer_autogen
+[100%] Built target ThreadWeaver_ThumbNailer
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/lib/libKF6ThreadWeaver.so.6.32.0
+-- Installing: /usr/lib/libKF6ThreadWeaver.so.6
+-- Set non-toolchain portion of runtime path of "/usr/lib/libKF6ThreadWeaver.so.6.32.0" to ""
+-- Up-to-date: /usr/lib/libKF6ThreadWeaver.so
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/ThreadWeaver
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/Weaver
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/WeaverInterface
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/QueueAPI
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/QueueStream
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/Queueing
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/Exception
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/QueueInterface
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/Queue
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/DebuggingAids
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/Thread
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/JobInterface
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/Job
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/IdDecorator
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/QObjectDecorator
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/Lambda
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/State
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/WeaverImplState
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/InConstructionState
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/WorkingHardState
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/SuspendingState
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/SuspendedState
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/ShuttingDownState
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/DestructedState
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/Collection
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/Sequence
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/Dependency
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/DependencyPolicy
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/ResourceRestrictionPolicy
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/QueueSignals
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/QueuePolicy
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/JobPointer
+-- Installing: /usr/include/KF6/ThreadWeaver/ThreadWeaver/ManagedJobPointer
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/threadweaver_export.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/threadweaver.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/weaver.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/weaverinterface.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/queueapi.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/queuestream.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/queueing.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/exception.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/queueinterface.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/queue.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/debuggingaids.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/thread.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/jobinterface.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/job.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/iddecorator.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/qobjectdecorator.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/lambda.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/state.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/weaverimplstate.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/inconstructionstate.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/workinghardstate.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/suspendingstate.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/suspendedstate.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/shuttingdownstate.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/destructedstate.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/collection.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/sequence.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/dependency.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/dependencypolicy.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/resourcerestrictionpolicy.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/queuesignals.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/queuepolicy.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/jobpointer.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver/managedjobpointer.h
+-- Installing: /usr/include/KF6/ThreadWeaver/threadweaver_version.h
+-- Installing: /usr/lib/cmake/KF6ThreadWeaver/KF6ThreadWeaverConfig.cmake
+-- Installing: /usr/lib/cmake/KF6ThreadWeaver/KF6ThreadWeaverConfigVersion.cmake
+-- Old export file "/usr/lib/cmake/KF6ThreadWeaver/KF6ThreadWeaverTargets.cmake" will be replaced.  Removing files [/usr/lib/cmake/KF6ThreadWeaver/KF6ThreadWeaverTargets-release.cmake].
+-- Installing: /usr/lib/cmake/KF6ThreadWeaver/KF6ThreadWeaverTargets.cmake
+-- Installing: /usr/lib/cmake/KF6ThreadWeaver/KF6ThreadWeaverTargets-release.cmake
+6.32.0
+Updated registry for threadweaver to version 6.32.0
+[VERSION] threadweaver: 6.32.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package threadweaver in /var/lib/custom-packages/
