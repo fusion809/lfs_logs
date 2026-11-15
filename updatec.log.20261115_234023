@@ -1,0 +1,181 @@
+===== Update check started: 2026-11-15 23:40:23 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261115_234023
+Packages needing attention: primesieve
+===== Starting updatec: 2026-11-15 23:40:26 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - primesieve
+
+Building custom package primesieve...
+[23:40:27] Found custom package for primesieve, bypassing BLFS aliases.
+[23:40:27] Custom package detected at /home/fusion809/lfs_packaging/primesieve (package: primesieve)
+[23:40:27] Extracting dependencies for custom package 'primesieve'...
+[23:40:27] Required deps: gcc gmp libx11 libxau libxcb libxdmcp ncurses readline sagemath ssw 
+[23:40:27] Dependency 'gcc' already installed.
+[23:40:27] Dependency 'gmp' already installed.
+[23:40:27] Dependency 'libx11' already installed.
+[23:40:27] Dependency 'libxau' already installed.
+[23:40:27] Dependency 'libxcb' already installed.
+[23:40:27] Dependency 'libxdmcp' already installed.
+[23:40:27] Dependency 'ncurses' already installed.
+[23:40:27] Dependency 'readline' already installed.
+[23:40:27] Dependency 'sagemath' already installed.
+[23:40:27] Dependency 'ssw' already installed.
+[VERSION] primesieve: 12.18
+[23:40:28] Installing primesieve version: 12.18
+[23:40:28] Starting remote custom build for primesieve...
+--2026-11-15 23:40:44--  https://github.com/kimwalisch/primesieve/archive/v12.18.tar.gz
+Resolving github.com (github.com)... 4.196.32.112
+Connecting to github.com (github.com)|4.196.32.112|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/kimwalisch/primesieve/tar.gz/refs/tags/v12.18 [following]
+--2026-11-15 23:40:45--  https://codeload.github.com/kimwalisch/primesieve/tar.gz/refs/tags/v12.18
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘primesieve-12.18.tar.gz’
+
+primesieve-12.18.ta     [<=>                 ]       0  --.-KB/s               primesieve-12.18.ta     [ <=>                ] 170.75K   832KB/s               primesieve-12.18.ta     [  <=>               ] 227.39K   817KB/s    in 0.3s    
+
+2026-11-15 23:40:46 (817 KB/s) - ‘primesieve-12.18.tar.gz’ saved [232848]
+
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Setting CMAKE_BUILD_TYPE = Release
+-- Setting CMAKE_VISIBILITY_INLINES_HIDDEN = ON
+-- Performing Test PRIMESIEVE_MULTIARCH_X86_POPCNT
+-- Performing Test PRIMESIEVE_MULTIARCH_X86_POPCNT - Success
+-- Performing Test PRIMESIEVE_MULTIARCH_AVX2
+-- Performing Test PRIMESIEVE_MULTIARCH_AVX2 - Success
+-- Performing Test PRIMESIEVE_MULTIARCH_AVX512_BW
+-- Performing Test PRIMESIEVE_MULTIARCH_AVX512_BW - Success
+-- Performing Test PRIMESIEVE_MULTIARCH_AVX512_VBMI2
+-- Performing Test PRIMESIEVE_MULTIARCH_AVX512_VBMI2 - Success
+-- Performing Test PRIMESIEVE_ATOMIC64
+-- Performing Test PRIMESIEVE_ATOMIC64 - Success
+-- Configuring done (5.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/primesieve/primesieve-12.18/build
+[  3%] Building CXX object CMakeFiles/libprimesieve.dir/src/api-c.cpp.o
+[  6%] Building CXX object CMakeFiles/libprimesieve.dir/src/api.cpp.o
+[ 10%] Building CXX object CMakeFiles/libprimesieve.dir/src/CountPrintPrimes.cpp.o
+[ 13%] Building CXX object CMakeFiles/libprimesieve.dir/src/CpuInfo.cpp.o
+[ 16%] Building CXX object CMakeFiles/libprimesieve.dir/src/Erat.cpp.o
+[ 20%] Building CXX object CMakeFiles/libprimesieve.dir/src/EratSmall.cpp.o
+[ 23%] Building CXX object CMakeFiles/libprimesieve.dir/src/EratMedium.cpp.o
+[ 26%] Building CXX object CMakeFiles/libprimesieve.dir/src/EratBig.cpp.o
+[ 30%] Building CXX object CMakeFiles/libprimesieve.dir/src/iterator-c.cpp.o
+[ 33%] Building CXX object CMakeFiles/libprimesieve.dir/src/iterator.cpp.o
+[ 36%] Building CXX object CMakeFiles/libprimesieve.dir/src/IteratorHelper.cpp.o
+[ 40%] Building CXX object CMakeFiles/libprimesieve.dir/src/LookupTables.cpp.o
+[ 43%] Building CXX object CMakeFiles/libprimesieve.dir/src/MemoryPool.cpp.o
+[ 46%] Building CXX object CMakeFiles/libprimesieve.dir/src/PrimeGenerator.cpp.o
+[ 50%] Building CXX object CMakeFiles/libprimesieve.dir/src/nthPrime.cpp.o
+[ 53%] Building CXX object CMakeFiles/libprimesieve.dir/src/ParallelSieve.cpp.o
+[ 56%] Building CXX object CMakeFiles/libprimesieve.dir/src/popcount.cpp.o
+[ 60%] Building CXX object CMakeFiles/libprimesieve.dir/src/PreSieve.cpp.o
+[ 63%] Building CXX object CMakeFiles/libprimesieve.dir/src/PrimeSieveClass.cpp.o
+[ 66%] Building CXX object CMakeFiles/libprimesieve.dir/src/RiemannR.cpp.o
+[ 70%] Building CXX object CMakeFiles/libprimesieve.dir/src/SievingPrimes.cpp.o
+[ 73%] Building CXX object CMakeFiles/libprimesieve.dir/src/util.cpp.o
+[ 76%] Building CXX object CMakeFiles/libprimesieve.dir/src/arch/x86/cpuid.cpp.o
+[ 80%] Linking CXX shared library libprimesieve.so
+[ 80%] Built target libprimesieve
+[ 83%] Building CXX object CMakeFiles/primesieve.dir/src/app/help.cpp.o
+[ 86%] Building CXX object CMakeFiles/primesieve.dir/src/app/main.cpp.o
+[ 90%] Building CXX object CMakeFiles/primesieve.dir/src/app/CmdOptions.cpp.o
+[ 93%] Building CXX object CMakeFiles/primesieve.dir/src/app/stressTest.cpp.o
+[ 96%] Building CXX object CMakeFiles/primesieve.dir/src/app/test.cpp.o
+[100%] Linking CXX executable primesieve
+[100%] Built target primesieve
+[ 80%] Built target libprimesieve
+[100%] Built target primesieve
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/lib/libprimesieve.so.12.18
+-- Installing: /usr/lib/libprimesieve.so.12
+-- Up-to-date: /usr/lib/libprimesieve.so
+-- Installing: /usr/bin/primesieve
+-- Set non-toolchain portion of runtime path of "/usr/bin/primesieve" to ""
+-- Installing: /usr/include/primesieve.h
+-- Installing: /usr/include/primesieve.hpp
+-- Installing: /usr/include/primesieve/iterator.h
+-- Installing: /usr/include/primesieve/iterator.hpp
+-- Installing: /usr/include/primesieve/StorePrimes.hpp
+-- Installing: /usr/include/primesieve/primesieve_error.hpp
+-- Installing: /usr/lib/cmake/primesieve/primesieveConfig.cmake
+-- Installing: /usr/lib/cmake/primesieve/primesieveConfigVersion.cmake
+-- Old export file "/usr/lib/cmake/primesieve/primesieveShared.cmake" will be replaced.  Removing files [/usr/lib/cmake/primesieve/primesieveShared-release.cmake].
+-- Installing: /usr/lib/cmake/primesieve/primesieveShared.cmake
+-- Installing: /usr/lib/cmake/primesieve/primesieveShared-release.cmake
+-- Installing: /usr/share/man/man1/primesieve.1
+-- Installing: /usr/lib/pkgconfig/primesieve.pc
+12.18
+Updated registry for primesieve to version 12.18
+[VERSION] primesieve: 12.18
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package primesieve in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: primesieve: 12.17->12.18.
+[master 4adf54d] primesieve: 12.17->12.18.
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: primesieve: 12.17->12.18.
+[master 2e7576e] primesieve: 12.17->12.18.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-40
+r13.1-621
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libpari-gmp-tls.so.2.19.0
+cand_sobase=libpari-gmp-tls.so
+search_base=libpari-gmp-tls
+replacement_found=true
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libpari-gmp-tls.so.2.19.0
+Path: /usr/lib/libpari-gmp-tls.so.2.19.0
+Skipping generic/unsafe name 'libpari-gmp-tls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libpari-gmp-tls.so.10 libpari-gmp-tls.so.2.19.0
+Example dependents: ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libpari-gmp-tls.so.2.19.0:
+  - ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libpari-gmp-tls.so.2.19.0.
+------------------------------------------------
+Checking obsolete version (file): libprimesieve.so.12.17
+Path: /usr/lib/libprimesieve.so.12.17
+Skipping generic/unsafe name 'libprimesieve.so.' to prevent false positive matches.
+i_dir=/usr/lib
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libprimesieve.so.12.17...
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.4...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.4-lfs-r13.1-39
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
