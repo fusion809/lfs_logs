@@ -1,0 +1,48 @@
+===== Update check started: 2026-11-16 09:25:24 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261116_092524
+Packages needing attention: man-db
+===== Starting updatec: 2026-11-16 09:25:26 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - man-db
+
+Building custom package man-db...
+[09:25:28] Found custom package for man-db, bypassing BLFS aliases.
+[09:25:28] Custom package detected at /home/fusion809/lfs_packaging/man-db (package: man-db)
+[09:25:28] Extracting dependencies for custom package 'man-db'...
+[09:25:28] Required deps: bash coreutils gcc gdbm glibc libpipeline libseccomp make tar xz zlib 
+[09:25:28] Dependency 'bash' already installed.
+[09:25:28] Dependency 'coreutils' already installed.
+[09:25:28] Dependency 'gcc' already installed.
+[09:25:28] Dependency 'gdbm' already installed.
+[09:25:28] Dependency 'glibc' already installed.
+[09:25:28] Dependency 'libpipeline' already installed.
+[09:25:28] Dependency 'libseccomp' already installed.
+[09:25:28] Dependency 'make' already installed.
+[09:25:28] Dependency 'tar' already installed.
+[09:25:28] Dependency 'xz' already installed.
+[09:25:28] Dependency 'zlib' already installed.
+[VERSION] man-db: 2.13.2
+[09:25:29] Installing man-db version: 2.13.2
+[09:25:29] Starting remote custom build for man-db...
+--2026-11-16 09:25:32--  https://download.savannah.gnu.org/releases/man-db/man-db-2.13.2.tar.xz
+Resolving download.savannah.gnu.org (download.savannah.gnu.org)... 209.51.188.79, 2001:470:142::79
+Connecting to download.savannah.gnu.org (download.savannah.gnu.org)|209.51.188.79|:443... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://nongnu.katoptra.org/man-db/man-db-2.13.2.tar.xz [following]
+--2026-11-16 09:25:34--  https://nongnu.katoptra.org/man-db/man-db-2.13.2.tar.xz
+Resolving nongnu.katoptra.org (nongnu.katoptra.org)... 172.67.217.5, 104.21.45.170, 2606:4700:3030::6815:2daa, ...
+Connecting to nongnu.katoptra.org (nongnu.katoptra.org)|172.67.217.5|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-16 09:25:34 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for man-db
+[ERROR] Custom build failed for man-db
+[09:25:34] ========================================
+[09:25:34] Build completed with 1 failure(s):
+[09:25:34]   - man-db
+[09:25:34] ========================================
+Error: Build failed for man-db. Aborting update loop.
+===== ERROR: updatec exited with status 1 =====
+Finished: 2026-11-16 09:25:34 AEST
+Exit status: 1
