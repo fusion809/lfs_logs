@@ -1,0 +1,47 @@
+===== Update check started: 2026-11-15 21:00:01 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261115_210001
+Packages needing attention: povray
+===== Starting updatec: 2026-11-15 21:00:04 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - povray
+
+Building custom package povray...
+[21:00:05] Found custom package for povray, bypassing BLFS aliases.
+[21:00:05] Custom package detected at /home/fusion809/lfs_packaging/povray (package: povray)
+[21:00:05] Extracting dependencies for custom package 'povray'...
+[21:00:05] Required deps: boost imath libpng openexr tiff 
+[21:00:05] Dependency 'boost' already installed.
+[21:00:05] Dependency 'imath' already installed.
+[21:00:05] Dependency 'libpng' already installed.
+[21:00:05] Dependency 'openexr' already installed.
+[21:00:05] Dependency 'tiff' already installed.
+[21:00:06] [LFS-AUTOBUILD] Skipping custom package povray: version 3.7.0.10 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+r13.1-40
+r13.1-621
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.4...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.4-lfs-r13.1-39
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+/var/lib/custom-packages does not show any likely updates to the table.
+~/logs ~ ~/lfs_packaging
