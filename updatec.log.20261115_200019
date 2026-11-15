@@ -1,0 +1,73 @@
+===== Update check started: 2026-11-15 20:00:19 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261115_200019
+Packages needing attention: iana-etc
+===== Starting updatec: 2026-11-15 20:00:22 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - iana-etc
+
+Building custom package iana-etc...
+[20:00:23] Found custom package for iana-etc, bypassing BLFS aliases.
+[20:00:23] Custom package detected at /home/fusion809/lfs_packaging/iana-etc (package: iana-etc)
+[20:00:23] Extracting dependencies for custom package 'iana-etc'...
+[VERSION] iana-etc: 20261110
+[20:00:24] Installing iana-etc version: 20261110
+[20:00:24] Starting remote custom build for iana-etc...
+--2026-11-15 20:00:39--  https://github.com/Mic92/iana-etc/releases/download/20261110/iana-etc-20261110.tar.gz
+Resolving github.com (github.com)... 4.195.217.80
+Connecting to github.com (github.com)|4.195.217.80|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/84966990/f2b9af79-ea6c-4c6a-99c1-a9f7e2712ed4?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-15T10%3A48%3A16Z&rscd=attachment%3B+filename%3Diana-etc-20261110.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-15T09%3A47%3A19Z&ske=2026-11-15T10%3A48%3A16Z&sks=b&skv=2018-11-09&sig=8KHzFwucYN6eM908I5AzJKI4pM4INGpNd8H4c1McGNQ%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NDczNzE0MCwibmJmIjoxNzk0NzM2ODQwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.dgxLXfQ7LSAjRftcWZujiJdRjDhi7DgTLnxZjfrf4zU&response-content-disposition=attachment%3B%20filename%3Diana-etc-20261110.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2026-11-15 20:00:39--  https://release-assets.githubusercontent.com/github-production-release-asset/84966990/f2b9af79-ea6c-4c6a-99c1-a9f7e2712ed4?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-15T10%3A48%3A16Z&rscd=attachment%3B+filename%3Diana-etc-20261110.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-15T09%3A47%3A19Z&ske=2026-11-15T10%3A48%3A16Z&sks=b&skv=2018-11-09&sig=8KHzFwucYN6eM908I5AzJKI4pM4INGpNd8H4c1McGNQ%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NDczNzE0MCwibmJmIjoxNzk0NzM2ODQwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.dgxLXfQ7LSAjRftcWZujiJdRjDhi7DgTLnxZjfrf4zU&response-content-disposition=attachment%3B%20filename%3Diana-etc-20261110.tar.gz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.110.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 611446 (597K) [application/octet-stream]
+Saving to: ‘iana-etc-20261110.tar.gz’
+
+iana-etc-20261110.t   0%[                    ]       0  --.-KB/s               iana-etc-20261110.t  40%[=======>            ] 240.00K  1.13MB/s               iana-etc-20261110.t  80%[===============>    ] 480.00K  1.12MB/s               iana-etc-20261110.t 100%[===================>] 597.12K  1.11MB/s    in 0.5s    
+
+2026-11-15 20:00:40 (1.11 MB/s) - ‘iana-etc-20261110.tar.gz’ saved [611446/611446]
+
+'services' -> '/etc/services'
+'protocols' -> '/etc/protocols'
+20261110
+Updated registry for iana-etc to version 20261110
+[VERSION] iana-etc: 20261110
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package iana-etc in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: iana-etc: 20261106->20261110.
+[master 56ff4b9] iana-etc: 20261106->20261110.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: iana-etc: 20261106->20261110.
+[master f0e2459] iana-etc: 20261106->20261110.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-40
+r13.1-621
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.4...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.4-lfs-r13.1-39
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
