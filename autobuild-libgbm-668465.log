@@ -1,0 +1,76 @@
+[03:30:27] Found custom package for libgbm, bypassing BLFS aliases.
+[03:30:27] Custom package detected at /home/fusion809/lfs_packaging/libgbm (package: libgbm)
+[03:30:27] Extracting dependencies for custom package 'libgbm'...
+[03:30:27] Required deps: glibc libdrm 
+[03:30:27] Dependency 'glibc' already installed.
+[03:30:27] Dependency 'libdrm' already installed.
+[VERSION] libgbm: 1.1.0
+[03:30:28] Installing libgbm version: 1.1.0
+[03:30:28] Starting remote custom build for libgbm...
+--2026-11-16 03:30:45--  https://github.com/glfs-book/libgbm/archive/1.1.0.tar.gz
+Resolving github.com (github.com)... 4.196.32.112
+Connecting to github.com (github.com)|4.196.32.112|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/glfs-book/libgbm/tar.gz/refs/tags/1.1.0 [following]
+--2026-11-16 03:30:45--  https://codeload.github.com/glfs-book/libgbm/tar.gz/refs/tags/1.1.0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘libgbm-1.1.0.tar.gz’
+
+libgbm-1.1.0.tar.gz     [<=>                 ]       0  --.-KB/s               libgbm-1.1.0.tar.gz     [ <=>                ]  22.53K  --.-KB/s    in 0.04s   
+
+2026-11-16 03:30:46 (619 KB/s) - ‘libgbm-1.1.0.tar.gz’ saved [23067]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/libgbm/libgbm-1.1.0
+Build dir: /home/fusion809/lfs_packaging/libgbm/libgbm-1.1.0/build
+Build type: native build
+Project name: libgbm
+Project version: 1.1.0
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Header "sys/sysmacros.h" has symbol "major" : YES 
+Header "sys/sysmacros.h" has symbol "minor" : YES 
+Header "sys/sysmacros.h" has symbol "makedev" : YES 
+Header "sys/mkdev.h" has symbol "major" : NO 
+Checking for function "dlopen" : YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Run-time dependency libdrm found: YES 2.4.134
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Build targets in project: 1
+
+libgbm 1.1.0
+
+  User defined options
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/3] Compiling C object libgbm.so.1.1.0.p/src_backend.c.o
+[2/3] Compiling C object libgbm.so.1.1.0.p/src_gbm.c.o
+[3/3] Linking target libgbm.so.1.1.0
+[0/1] Installing files
+Installing libgbm.so.1.1.0 to /usr/lib
+Installing /home/fusion809/lfs_packaging/libgbm/libgbm-1.1.0/include/gbm.h to /usr/include
+Installing /home/fusion809/lfs_packaging/libgbm/libgbm-1.1.0/include/gbm_backend_abi.h to /usr/include
+Installing /home/fusion809/lfs_packaging/libgbm/libgbm-1.1.0/doc/libgbm.3 to /usr/share/man/man3
+Installing /home/fusion809/lfs_packaging/libgbm/libgbm-1.1.0/doc/using.md to /usr/share/doc/libgbm-1.1.0
+Installing /home/fusion809/lfs_packaging/libgbm/libgbm-1.1.0/build/meson-private/gbm.pc to /usr/lib/pkgconfig
+Installing symlink pointing to libgbm.so.1.1.0 to /usr/lib/libgbm.so.1
+Installing symlink pointing to libgbm.so.1 to /usr/lib/libgbm.so
+1.1.0
+Updated registry for libgbm to version 1.1.0
+[VERSION] libgbm: 1.1.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package libgbm in /var/lib/custom-packages/
