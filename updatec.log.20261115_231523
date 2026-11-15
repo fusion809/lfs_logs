@@ -1,0 +1,61 @@
+===== Update check started: 2026-11-15 23:15:23 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261115_231523
+Packages needing attention: pari
+===== Starting updatec: 2026-11-15 23:15:26 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - pari
+
+Building custom package pari...
+[23:15:28] Found custom package for pari, bypassing BLFS aliases.
+[23:15:28] Custom package detected at /home/fusion809/lfs_packaging/pari (package: pari)
+[23:15:28] Extracting dependencies for custom package 'pari'...
+[23:15:32] [LFS-AUTOBUILD] Skipping custom package pari: version 2.19.1 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: pari: 2.19.0->2.19.1.
+[master 7ae3c2e] pari: 2.19.0->2.19.1.
+ 1 file changed, 61 insertions(+), 61 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: pari: 2.19.0->2.19.1.
+[master f17c118] pari: 2.19.0->2.19.1.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-40
+r13.1-621
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libpari-gmp-tls.so.2.19.0
+Path: /usr/lib/libpari-gmp-tls.so.2.19.0
+Skipping generic/unsafe name 'libpari-gmp-tls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libpari-gmp-tls.so.10 libpari-gmp-tls.so.2.19.0
+Example dependents: ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libpari-gmp-tls.so.2.19.0:
+  - ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libpari-gmp-tls.so.2.19.0.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.4...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.4-lfs-r13.1-39
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
