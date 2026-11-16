@@ -1,0 +1,74 @@
+===== Update check started: 2026-11-17 09:05:23 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261117_090523
+Packages needing attention: man-db
+===== Starting updatec: 2026-11-17 09:05:28 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - man-db
+
+Building custom package man-db...
+[09:05:29] Found custom package for man-db, bypassing BLFS aliases.
+[09:05:29] Custom package detected at /home/fusion809/lfs_packaging/man-db (package: man-db)
+[09:05:29] Extracting dependencies for custom package 'man-db'...
+[09:05:29] Required deps: bash coreutils gcc gdbm glibc libpipeline libseccomp make tar xz zlib 
+[09:05:29] Dependency 'bash' already installed.
+[09:05:29] Dependency 'coreutils' already installed.
+[09:05:29] Dependency 'gcc' already installed.
+[09:05:29] Dependency 'gdbm' already installed.
+[09:05:29] Dependency 'glibc' already installed.
+[09:05:29] Dependency 'libpipeline' already installed.
+[09:05:29] Dependency 'libseccomp' already installed.
+[09:05:29] Dependency 'make' already installed.
+[09:05:29] Dependency 'tar' already installed.
+[09:05:29] Dependency 'xz' already installed.
+[09:05:29] Dependency 'zlib' already installed.
+[09:05:30] [LFS-AUTOBUILD] Skipping custom package man-db: version 2.13.3 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: man-db: 2.13.2->2.13.3.
+[master 1ec6092] man-db: 2.13.2->2.13.3.
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: man-db: 2.13.2->2.13.3.
+[master 6dbdcdf] man-db: 2.13.2->2.13.3.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-40
+r13.1-631
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libpari-gmp-tls.so.2.19.0
+Path: /usr/lib/libpari-gmp-tls.so.2.19.0
+Skipping generic/unsafe name 'libpari-gmp-tls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libpari-gmp-tls.so.10 libpari-gmp-tls.so.2.19.0
+Example dependents: ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libpari-gmp-tls.so.2.19.0:
+  - ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libpari-gmp-tls.so.2.19.0.
+Scanning /usr/share/doc for stale old-version directories...
+Removing stale: man-db-2.13.2  (newer: man-db-2.13.3)
+---
+Removed : 1
+Kept    : 0
+Deleting kernels older than 7.3.4...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.4-lfs-r13.1-39
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging

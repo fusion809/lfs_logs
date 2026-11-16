@@ -1,0 +1,3921 @@
+[08:51:04] Found custom package for man-db, bypassing BLFS aliases.
+[08:51:04] Custom package detected at /home/fusion809/lfs_packaging/man-db (package: man-db)
+[08:51:04] Extracting dependencies for custom package 'man-db'...
+[08:51:04] Required deps: bash coreutils gcc gdbm glibc libpipeline libseccomp make tar xz zlib 
+[08:51:04] Dependency 'bash' already installed.
+[08:51:04] Dependency 'coreutils' already installed.
+[08:51:04] Dependency 'gcc' already installed.
+[08:51:04] Dependency 'gdbm' already installed.
+[08:51:04] Dependency 'glibc' already installed.
+[08:51:04] Dependency 'libpipeline' already installed.
+[08:51:04] Dependency 'libseccomp' already installed.
+[08:51:04] Dependency 'make' already installed.
+[08:51:04] Dependency 'tar' already installed.
+[08:51:04] Dependency 'xz' already installed.
+[08:51:04] Dependency 'zlib' already installed.
+[VERSION] man-db: 2.13.3
+[08:51:05] Installing man-db version: 2.13.3
+[08:51:05] Starting remote custom build for man-db...
+bootstrap found
+./bootstrap: Bootstrapping from checked-out man-db sources...
+./bootstrap: getting gnulib files...
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gnulib/.git/
+From https://github.com/coreutils/gnulib
+ * branch                  0ba13435a9362bec0ff5fd0830907b9fac723e41 -> FETCH_HEAD
+HEAD is now at 0ba13435a9 doc: Remove references to POSIX 202x.
+Note: switching to '0ba13435a9362bec0ff5fd0830907b9fac723e41'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 0ba13435a9 doc: Remove references to POSIX 202x.
+./bootstrap: autopoint --force
+Copying file ABOUT-NLS
+Copying file build-aux/config.rpath
+Creating directory gl
+Creating directory gl/m4
+Copying file gl/m4/codeset.m4
+Copying file gl/m4/extern-inline.m4
+Copying file gl/m4/fcntl-o.m4
+Copying file gl/m4/gettext.m4
+Copying file gl/m4/glibc2.m4
+Copying file gl/m4/glibc21.m4
+Copying file gl/m4/iconv.m4
+Copying file gl/m4/intdiv0.m4
+Copying file gl/m4/intl.m4
+Copying file gl/m4/intldir.m4
+Copying file gl/m4/intlmacosx.m4
+Copying file gl/m4/intmax.m4
+Copying file gl/m4/inttypes-pri.m4
+Copying file gl/m4/inttypes_h.m4
+Copying file gl/m4/lcmessage.m4
+Copying file gl/m4/lib-ld.m4
+Copying file gl/m4/lib-link.m4
+Copying file gl/m4/lib-prefix.m4
+Copying file gl/m4/lock.m4
+Copying file gl/m4/longlong.m4
+Copying file gl/m4/nls.m4
+Copying file gl/m4/po.m4
+Copying file gl/m4/printf-posix.m4
+Copying file gl/m4/progtest.m4
+Copying file gl/m4/size_max.m4
+Copying file gl/m4/stdint_h.m4
+Copying file gl/m4/threadlib.m4
+Copying file gl/m4/uintmax_t.m4
+Copying file gl/m4/visibility.m4
+Copying file gl/m4/wchar_t.m4
+Copying file gl/m4/wint_t.m4
+Copying file gl/m4/xsize.m4
+Copying file po/Makefile.in.in
+Creating directory gl/po
+Copying file gl/po/Makefile.in.in
+Copying file po/Makevars.template
+Copying file gl/po/Makevars.template
+Copying file po/Rules-quot
+Copying file gl/po/Rules-quot
+Copying file po/boldquot.sed
+Copying file gl/po/boldquot.sed
+Copying file po/en@boldquot.header
+Copying file gl/po/en@boldquot.header
+Copying file po/en@quot.header
+Copying file gl/po/en@quot.header
+Copying file po/insert-header.sin
+Copying file gl/po/insert-header.sin
+Copying file po/quot.sed
+Copying file gl/po/quot.sed
+Copying file po/remove-potcdate.sin
+Copying file gl/po/remove-potcdate.sin
+running: libtoolize --install --copy
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'build-aux'.
+libtoolize: copying file 'build-aux/config.guess'
+libtoolize: copying file 'build-aux/config.sub'
+libtoolize: copying file 'build-aux/install-sh'
+libtoolize: copying file 'build-aux/ltmain.sh'
+libtoolize: putting macros in 'gl/m4'.
+libtoolize: copying file 'gl/m4/libtool.m4'
+libtoolize: copying file 'gl/m4/ltoptions.m4'
+libtoolize: copying file 'gl/m4/ltsugar.m4'
+libtoolize: copying file 'gl/m4/ltversion.m4'
+libtoolize: copying file 'gl/m4/lt~obsolete.m4'
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([gl/m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+./bootstrap: no version control for ./ABOUT-NLS?
+./bootstrap: no version control for ./build-aux/config.guess?
+./bootstrap: no version control for ./build-aux/config.rpath?
+./bootstrap: no version control for ./build-aux/config.sub?
+./bootstrap: no version control for ./build-aux/install-sh?
+./bootstrap: no version control for ./build-aux/ltmain.sh?
+./bootstrap: no version control for ./gl/m4/codeset.m4?
+./bootstrap: no version control for ./gl/m4/extern-inline.m4?
+./bootstrap: no version control for ./gl/m4/fcntl-o.m4?
+./bootstrap: no version control for ./gl/m4/gettext.m4?
+./bootstrap: no version control for ./gl/m4/glibc2.m4?
+./bootstrap: no version control for ./gl/m4/glibc21.m4?
+./bootstrap: no version control for ./gl/m4/iconv.m4?
+./bootstrap: no version control for ./gl/m4/intdiv0.m4?
+./bootstrap: no version control for ./gl/m4/intl.m4?
+./bootstrap: no version control for ./gl/m4/intldir.m4?
+./bootstrap: no version control for ./gl/m4/intlmacosx.m4?
+./bootstrap: no version control for ./gl/m4/intmax.m4?
+./bootstrap: no version control for ./gl/m4/inttypes-pri.m4?
+./bootstrap: no version control for ./gl/m4/inttypes_h.m4?
+./bootstrap: no version control for ./gl/m4/lcmessage.m4?
+./bootstrap: no version control for ./gl/m4/lib-ld.m4?
+./bootstrap: no version control for ./gl/m4/lib-link.m4?
+./bootstrap: no version control for ./gl/m4/lib-prefix.m4?
+./bootstrap: no version control for ./gl/m4/libtool.m4?
+./bootstrap: no version control for ./gl/m4/lock.m4?
+./bootstrap: no version control for ./gl/m4/longlong.m4?
+./bootstrap: no version control for ./gl/m4/ltoptions.m4?
+./bootstrap: no version control for ./gl/m4/ltsugar.m4?
+./bootstrap: no version control for ./gl/m4/ltversion.m4?
+./bootstrap: no version control for ./gl/m4/lt~obsolete.m4?
+./bootstrap: no version control for ./gl/m4/nls.m4?
+./bootstrap: no version control for ./gl/m4/po.m4?
+./bootstrap: no version control for ./gl/m4/printf-posix.m4?
+./bootstrap: no version control for ./gl/m4/progtest.m4?
+./bootstrap: no version control for ./gl/m4/size_max.m4?
+./bootstrap: no version control for ./gl/m4/stdint_h.m4?
+./bootstrap: no version control for ./gl/m4/threadlib.m4?
+./bootstrap: no version control for ./gl/m4/uintmax_t.m4?
+./bootstrap: no version control for ./gl/m4/visibility.m4?
+./bootstrap: no version control for ./gl/m4/wchar_t.m4?
+./bootstrap: no version control for ./gl/m4/wint_t.m4?
+./bootstrap: no version control for ./gl/m4/xsize.m4?
+./bootstrap: no version control for ./gl/po/Makefile.in.in?
+./bootstrap: no version control for ./gl/po/Makevars.template?
+./bootstrap: no version control for ./gl/po/Rules-quot?
+./bootstrap: no version control for ./gl/po/boldquot.sed?
+./bootstrap: no version control for ./gl/po/en@boldquot.header?
+./bootstrap: no version control for ./gl/po/en@quot.header?
+./bootstrap: no version control for ./gl/po/insert-header.sin?
+./bootstrap: no version control for ./gl/po/quot.sed?
+./bootstrap: no version control for ./gl/po/remove-potcdate.sin?
+./bootstrap: no version control for ./po/Makefile.in.in?
+./bootstrap: no version control for ./po/Makevars.template?
+./bootstrap: no version control for ./po/Rules-quot?
+./bootstrap: no version control for ./po/boldquot.sed?
+./bootstrap: no version control for ./po/en@boldquot.header?
+./bootstrap: no version control for ./po/en@quot.header?
+./bootstrap: no version control for ./po/insert-header.sin?
+./bootstrap: no version control for ./po/quot.sed?
+./bootstrap: no version control for ./po/remove-potcdate.sin?
+./bootstrap: gnulib/gnulib-tool      --no-changelog     --aux-dir=build-aux     --doc-base=doc     --lib=libgnu     --m4-base=gl/m4/     --source-base=gl/lib/     --tests-base=tests     --local-dir=gnulib-local      --no-conditional-dependencies  --libtool  --macro-prefix=gl  --no-vc-files  --po-base=gl/ref-po --po-domain=man-db     --import ...
+Last-modified header missing -- time-stamps turned off.
+2026-11-17 08:59:13 URL:https://translationproject.org/latest/gnulib/ [8158] -> "./index.html.tmp" [1]
+https://translationproject.org/robots.txt:
+2026-11-17 08:59:13 ERROR 404: Not Found.
+Last-modified header missing -- time-stamps turned off.
+2026-11-17 08:59:14 URL:https://translationproject.org/latest/gnulib/?C=N;O=D [8158] -> "./index.html?C=N;O=D.tmp" [1]
+Last-modified header missing -- time-stamps turned off.
+2026-11-17 08:59:14 URL:https://translationproject.org/latest/gnulib/?C=M;O=A [8158] -> "./index.html?C=M;O=A.tmp" [1]
+Last-modified header missing -- time-stamps turned off.
+2026-11-17 08:59:15 URL:https://translationproject.org/latest/gnulib/?C=S;O=A [8158] -> "./index.html?C=S;O=A.tmp" [1]
+Last-modified header missing -- time-stamps turned off.
+2026-11-17 08:59:15 URL:https://translationproject.org/latest/gnulib/?C=D;O=A [8158] -> "./index.html?C=D;O=A.tmp" [1]
+Last-modified header missing -- time-stamps turned off.
+2026-11-17 08:59:16 URL:https://translationproject.org/latest/ [29677] -> "./index.html.tmp" [1]
+2026-11-17 08:59:17 URL:https://translationproject.org/latest/gnulib/af.po [13777/13777] -> "./af.po" [1]
+2026-11-17 08:59:17 URL:https://translationproject.org/latest/gnulib/be.po [13228/13228] -> "./be.po" [1]
+2026-11-17 08:59:17 URL:https://translationproject.org/latest/gnulib/bg.po [51015/51015] -> "./bg.po" [1]
+2026-11-17 08:59:18 URL:https://translationproject.org/latest/gnulib/ca.po [16778/16778] -> "./ca.po" [1]
+2026-11-17 08:59:18 URL:https://translationproject.org/latest/gnulib/cs.po [28286/28286] -> "./cs.po" [1]
+2026-11-17 08:59:18 URL:https://translationproject.org/latest/gnulib/da.po [27145/27145] -> "./da.po" [1]
+2026-11-17 08:59:19 URL:https://translationproject.org/latest/gnulib/de.po [45257/45257] -> "./de.po" [1]
+2026-11-17 08:59:19 URL:https://translationproject.org/latest/gnulib/el.po [27109/27109] -> "./el.po" [1]
+2026-11-17 08:59:19 URL:https://translationproject.org/latest/gnulib/eo.po [30477/30477] -> "./eo.po" [1]
+2026-11-17 08:59:20 URL:https://translationproject.org/latest/gnulib/es.po [46143/46143] -> "./es.po" [1]
+2026-11-17 08:59:20 URL:https://translationproject.org/latest/gnulib/et.po [25425/25425] -> "./et.po" [1]
+2026-11-17 08:59:21 URL:https://translationproject.org/latest/gnulib/eu.po [13021/13021] -> "./eu.po" [1]
+2026-11-17 08:59:21 URL:https://translationproject.org/latest/gnulib/fi.po [30663/30663] -> "./fi.po" [1]
+2026-11-17 08:59:21 URL:https://translationproject.org/latest/gnulib/fr.po [43502/43502] -> "./fr.po" [1]
+2026-11-17 08:59:22 URL:https://translationproject.org/latest/gnulib/ga.po [24532/24532] -> "./ga.po" [1]
+2026-11-17 08:59:22 URL:https://translationproject.org/latest/gnulib/gl.po [27316/27316] -> "./gl.po" [1]
+2026-11-17 08:59:23 URL:https://translationproject.org/latest/gnulib/hu.po [28558/28558] -> "./hu.po" [1]
+2026-11-17 08:59:23 URL:https://translationproject.org/latest/gnulib/it.po [33109/33109] -> "./it.po" [1]
+2026-11-17 08:59:23 URL:https://translationproject.org/latest/gnulib/ja.po [31707/31707] -> "./ja.po" [1]
+2026-11-17 08:59:24 URL:https://translationproject.org/latest/gnulib/ka.po [56795/56795] -> "./ka.po" [1]
+2026-11-17 08:59:24 URL:https://translationproject.org/latest/gnulib/ko.po [11796/11796] -> "./ko.po" [1]
+2026-11-17 08:59:24 URL:https://translationproject.org/latest/gnulib/lv.po [42161/42161] -> "./lv.po" [1]
+2026-11-17 08:59:25 URL:https://translationproject.org/latest/gnulib/ms.po [11303/11303] -> "./ms.po" [1]
+2026-11-17 08:59:25 URL:https://translationproject.org/latest/gnulib/nb.po [11146/11146] -> "./nb.po" [1]
+2026-11-17 08:59:26 URL:https://translationproject.org/latest/gnulib/nl.po [43474/43474] -> "./nl.po" [1]
+2026-11-17 08:59:26 URL:https://translationproject.org/latest/gnulib/pl.po [30974/30974] -> "./pl.po" [1]
+2026-11-17 08:59:26 URL:https://translationproject.org/latest/gnulib/pt.po [41626/41626] -> "./pt.po" [1]
+2026-11-17 08:59:27 URL:https://translationproject.org/latest/gnulib/pt_BR.po [46138/46138] -> "./pt_BR.po" [1]
+2026-11-17 08:59:27 URL:https://translationproject.org/latest/gnulib/ro.po [47694/47694] -> "./ro.po" [1]
+2026-11-17 08:59:27 URL:https://translationproject.org/latest/gnulib/ru.po [51332/51332] -> "./ru.po" [1]
+2026-11-17 08:59:28 URL:https://translationproject.org/latest/gnulib/sk.po [11819/11819] -> "./sk.po" [1]
+2026-11-17 08:59:28 URL:https://translationproject.org/latest/gnulib/sl.po [29126/29126] -> "./sl.po" [1]
+2026-11-17 08:59:29 URL:https://translationproject.org/latest/gnulib/sr.po [50268/50268] -> "./sr.po" [1]
+2026-11-17 08:59:29 URL:https://translationproject.org/latest/gnulib/sv.po [41573/41573] -> "./sv.po" [1]
+2026-11-17 08:59:30 URL:https://translationproject.org/latest/gnulib/tr.po [14517/14517] -> "./tr.po" [1]
+2026-11-17 08:59:30 URL:https://translationproject.org/latest/gnulib/uk.po [50923/50923] -> "./uk.po" [1]
+2026-11-17 08:59:31 URL:https://translationproject.org/latest/gnulib/vi.po [30022/30022] -> "./vi.po" [1]
+2026-11-17 08:59:31 URL:https://translationproject.org/latest/gnulib/zh_CN.po [30664/30664] -> "./zh_CN.po" [1]
+2026-11-17 08:59:32 URL:https://translationproject.org/latest/gnulib/zh_TW.po [42040/42040] -> "./zh_TW.po" [1]
+FINISHED --2026-11-17 08:59:32--
+Total wall clock time: 20s
+Downloaded: 45 files, 1.3M in 1.2s (1.07 MB/s)
+Module list with included dependencies (indented):
+    absolute-header
+    alignasof
+    alloca
+    alloca-opt
+  argp
+  array-list
+    assert-h
+    assure
+    at-internal
+  attribute
+    basename-lgpl
+    bitrotate
+    btoc32
+    btowc
+    builtin-expect
+    c32_apply_type_test
+    c32_get_type_test
+    c32isalnum
+    c32isalpha
+    c32isblank
+    c32iscntrl
+    c32isdigit
+    c32isgraph
+    c32islower
+    c32isprint
+    c32ispunct
+    c32isspace
+    c32isupper
+    c32isxdigit
+    c32tolower
+  c99
+    calloc-gnu
+    calloc-posix
+  canonicalize
+    canonicalize-lgpl
+    chdir
+    chdir-long
+    chown
+    clock-time
+    cloexec
+    close
+  closedir
+    ctype
+    d-ino
+    d-type
+  dirent
+    dirfd
+  dirname
+    dirname-lgpl
+    double-slash-root
+    dup
+    dup2
+    eloop-threshold
+    environ
+    errno
+  error
+    error-h
+    exitfail
+    extensions
+    extern-inline
+    fchdir
+    fcntl
+  fcntl-h
+    fd-hook
+    fd-safer-flag
+    fdopendir
+    file-set
+    filename
+    filenamecat-lgpl
+    flexmember
+    float
+  flock
+    fnmatch
+  fnmatch-gnu
+    fnmatch-h
+    free-posix
+  fstat
+    fstatat
+    gen-header
+    getcwd
+    getcwd-lgpl
+    getdelim
+    getdtablesize
+  getline
+    getlogin_r
+    getopt-gnu
+    getopt-posix
+    getprogname
+    getrandom
+  gettext-h
+    gettime
+    gettimeofday
+  gitlog-to-changelog
+    glibc-internal/dynarray
+    glibc-internal/scratch_buffer
+  glob
+    glob-h
+  gnupload
+    hard-locale
+    hash
+  hash-map
+    hash-pjw
+  hash-pjw-bare
+  hash-set
+    hash-triple-simple
+  havelib
+    ialloc
+  idpriv-drop
+  idpriv-droptemp
+    idx
+    include_next
+    inline
+    intprops
+    inttypes-incomplete
+    ioctl
+    isblank
+    iswblank
+    iswctype
+    iswdigit
+    iswpunct
+    iswxdigit
+    langinfo
+    largefile
+  lchown
+  lib-ignore
+    libc-config
+    limits-h
+  linkedhash-list
+    list
+  localcharset
+    locale
+    localeconv
+    lock
+    lstat
+    malloc-gnu
+    malloc-posix
+    malloca
+  manywarnings
+    map
+    mbrtoc32
+    mbrtowc
+    mbsinit
+    mbsrtoc32s
+    mbsrtowcs
+    mbszero
+    mbtowc
+    memchr
+  memmem
+    memmem-simple
+    mempcpy
+    memrchr
+  minmax
+    mkdir
+  mkdtemp
+  mkstemp
+    msvc-inval
+    msvc-nothrow
+    multiarch
+  nanosleep
+    nl_langinfo
+    nocrash
+  nonblocking
+  nullptr
+    open
+  openat
+    openat-die
+    openat-h
+  opendir
+    pathmax
+    pipe-posix
+  progname
+    pselect
+    pthread-h
+    pthread-once
+    pthread_sigmask
+  raise
+    rawmemchr
+  rbtree-list
+    readdir
+    readlink
+    readlinkat
+    realloc-gnu
+    realloc-posix
+    reallocarray
+  regex
+  rename
+  renameat
+    renameatu
+    rewinddir
+    rmdir
+    same-inode
+    save-cwd
+    sched
+    select
+    set
+  setenv
+    setlocale-null
+    setlocale-null-unlocked
+  sigaction
+  signal-h
+  sigpipe
+  sigprocmask
+    size_max
+    sleep
+    snippet/_Noreturn
+    snippet/arg-nonnull
+    snippet/c++defs
+    snippet/warn-on-use
+    socketlib
+    sockets
+    socklen
+    ssize_t
+    stat
+  stat-time
+    std-gnu11
+    stdarg
+  stdbool
+    stdckdint
+    stddef
+    stdint
+    stdio
+    stdlib
+    stdopen
+  stpcpy
+  strcase
+  strcasestr
+    strcasestr-simple
+    strchrnul
+    strdup-posix
+    streq
+  strerror
+    strerror-override
+    string
+    strings
+    strndup
+    strnlen
+    strnlen1
+  strsep
+    sys_file
+    sys_ioctl
+    sys_random
+    sys_select
+    sys_socket
+    sys_stat
+    sys_time
+    sys_types
+    sys_uio
+    sysexits
+  tempname
+  termios
+    threadlib
+    time-h
+  timespec
+    uchar
+    unicase/base
+    unicase/tolower
+    unictype/base
+    unictype/ctype-alnum
+    unictype/ctype-alpha
+    unictype/ctype-blank
+    unictype/ctype-cntrl
+    unictype/ctype-digit
+    unictype/ctype-graph
+    unictype/ctype-lower
+    unictype/ctype-print
+    unictype/ctype-punct
+    unictype/ctype-space
+    unictype/ctype-upper
+    unictype/ctype-xdigit
+    uninorm/base
+    unistd
+    unistd-safer
+    unistr/base
+    unistr/u32-chr
+    unistr/u32-cpy
+    unistr/u32-pcpy
+    unistr/u32-strcat
+    unistr/u32-strlen
+    unitypes
+    unlink
+  unlinkat
+    utime
+    utime-h
+  utimens
+    vararrays
+    vasnprintf
+    vaszprintf
+    verify
+  verror
+    vsnprintf
+    vsnzprintf
+  warnings
+    wchar
+    wcrtomb
+    wctype
+    wctype-h
+    windows-mutex
+    windows-once
+    windows-recmutex
+    windows-rwlock
+    wmemchr
+    wmempcpy
+  xalloc
+    xalloc-die
+    xalloc-oversized
+  xgetcwd
+  xlist
+  xmap
+  xset
+    xsize
+  xstdopen
+  xstrndup
+  xvasprintf
+  year2038-recommended
+File list:
+  build-aux/config.rpath
+  build-aux/gitlog-to-changelog
+  build-aux/gnupload
+  lib/_Noreturn.h
+  lib/alloca.c
+  lib/alloca.in.h
+  lib/arg-nonnull.h
+  lib/argp-ba.c
+  lib/argp-eexst.c
+  lib/argp-fmtstream.c
+  lib/argp-fmtstream.h
+  lib/argp-fs-xinl.c
+  lib/argp-help.c
+  lib/argp-namefrob.h
+  lib/argp-parse.c
+  lib/argp-pin.c
+  lib/argp-pv.c
+  lib/argp-pvh.c
+  lib/argp-xinl.c
+  lib/argp.h
+  lib/asnprintf.c
+  lib/assert.in.h
+  lib/assure.h
+  lib/aszprintf.c
+  lib/at-func.c
+  lib/at-func2.c
+  lib/attribute.h
+  lib/basename-lgpl.c
+  lib/basename-lgpl.h
+  lib/basename.c
+  lib/bitrotate.c
+  lib/bitrotate.h
+  lib/btoc32.c
+  lib/btowc.c
+  lib/c++defs.h
+  lib/c32_apply_type_test.c
+  lib/c32_get_type_test.c
+  lib/c32is-impl.h
+  lib/c32isalnum.c
+  lib/c32isalpha.c
+  lib/c32isblank.c
+  lib/c32iscntrl.c
+  lib/c32isdigit.c
+  lib/c32isgraph.c
+  lib/c32islower.c
+  lib/c32isprint.c
+  lib/c32ispunct.c
+  lib/c32isspace.c
+  lib/c32isupper.c
+  lib/c32isxdigit.c
+  lib/c32to-impl.h
+  lib/c32tolower.c
+  lib/calloc.c
+  lib/canonicalize-lgpl.c
+  lib/canonicalize.c
+  lib/canonicalize.h
+  lib/cdefs.h
+  lib/chdir-long.c
+  lib/chdir-long.h
+  lib/chown.c
+  lib/cloexec.c
+  lib/cloexec.h
+  lib/close.c
+  lib/closedir.c
+  lib/ctype.in.h
+  lib/dirent-private.h
+  lib/dirent.in.h
+  lib/dirfd.c
+  lib/dirname-lgpl.c
+  lib/dirname.c
+  lib/dirname.h
+  lib/dup-safer-flag.c
+  lib/dup-safer.c
+  lib/dup.c
+  lib/dup2.c
+  lib/dynarray.h
+  lib/eloop-threshold.h
+  lib/errno.in.h
+  lib/error.c
+  lib/error.in.h
+  lib/exitfail.c
+  lib/exitfail.h
+  lib/fchdir.c
+  lib/fchown-stub.c
+  lib/fcntl.c
+  lib/fcntl.in.h
+  lib/fd-hook.c
+  lib/fd-hook.h
+  lib/fd-safer-flag.c
+  lib/fd-safer.c
+  lib/fdopendir.c
+  lib/file-set.c
+  lib/file-set.h
+  lib/filename.h
+  lib/filenamecat-lgpl.c
+  lib/filenamecat.h
+  lib/flexmember.h
+  lib/float+.h
+  lib/float.c
+  lib/float.in.h
+  lib/flock.c
+  lib/fnmatch.c
+  lib/fnmatch.in.h
+  lib/fnmatch_loop.c
+  lib/free.c
+  lib/fstat.c
+  lib/fstatat.c
+  lib/getcwd-lgpl.c
+  lib/getcwd.c
+  lib/getdelim.c
+  lib/getdtablesize.c
+  lib/getline.c
+  lib/getlogin_r.c
+  lib/getopt-cdefs.in.h
+  lib/getopt-core.h
+  lib/getopt-ext.h
+  lib/getopt-pfx-core.h
+  lib/getopt-pfx-ext.h
+  lib/getopt.c
+  lib/getopt.in.h
+  lib/getopt1.c
+  lib/getopt_int.h
+  lib/getprogname.c
+  lib/getprogname.h
+  lib/getrandom.c
+  lib/gettext.h
+  lib/gettime.c
+  lib/gettimeofday.c
+  lib/gl_anyhash1.h
+  lib/gl_anyhash2.h
+  lib/gl_anyhash_primes.h
+  lib/gl_anylinked_list1.h
+  lib/gl_anylinked_list2.h
+  lib/gl_anyrbtree_list1.h
+  lib/gl_anyrbtree_list2.h
+  lib/gl_anytree_list1.h
+  lib/gl_anytree_list2.h
+  lib/gl_array_list.c
+  lib/gl_array_list.h
+  lib/gl_hash_map.c
+  lib/gl_hash_map.h
+  lib/gl_hash_set.c
+  lib/gl_hash_set.h
+  lib/gl_linkedhash_list.c
+  lib/gl_linkedhash_list.h
+  lib/gl_list.c
+  lib/gl_list.h
+  lib/gl_map.c
+  lib/gl_map.h
+  lib/gl_rbtree_list.c
+  lib/gl_rbtree_list.h
+  lib/gl_set.c
+  lib/gl_set.h
+  lib/gl_xlist.c
+  lib/gl_xlist.h
+  lib/gl_xmap.c
+  lib/gl_xmap.h
+  lib/gl_xset.c
+  lib/gl_xset.h
+  lib/glob-libc.h
+  lib/glob.c
+  lib/glob.in.h
+  lib/glob_internal.h
+  lib/glob_pattern_p.c
+  lib/globfree.c
+  lib/glthread/lock.c
+  lib/glthread/lock.h
+  lib/glthread/threadlib.c
+  lib/hard-locale.c
+  lib/hard-locale.h
+  lib/hash-pjw-bare.c
+  lib/hash-pjw-bare.h
+  lib/hash-pjw.c
+  lib/hash-pjw.h
+  lib/hash-triple-simple.c
+  lib/hash-triple.h
+  lib/hash.c
+  lib/hash.h
+  lib/ialloc.c
+  lib/ialloc.h
+  lib/idpriv-drop.c
+  lib/idpriv-droptemp.c
+  lib/idpriv.h
+  lib/idx.h
+  lib/intprops-internal.h
+  lib/intprops.h
+  lib/inttypes.in.h
+  lib/ioctl.c
+  lib/isblank.c
+  lib/iswblank.c
+  lib/iswctype-impl.h
+  lib/iswctype.c
+  lib/iswdigit.c
+  lib/iswpunct.c
+  lib/iswxdigit.c
+  lib/itold.c
+  lib/langinfo.in.h
+  lib/lc-charset-dispatch.c
+  lib/lc-charset-dispatch.h
+  lib/lchown.c
+  lib/libc-config.h
+  lib/limits.in.h
+  lib/localcharset.c
+  lib/localcharset.h
+  lib/locale.in.h
+  lib/localeconv.c
+  lib/lstat.c
+  lib/malloc.c
+  lib/malloc/dynarray-skeleton.c
+  lib/malloc/dynarray.h
+  lib/malloc/dynarray_at_failure.c
+  lib/malloc/dynarray_emplace_enlarge.c
+  lib/malloc/dynarray_finalize.c
+  lib/malloc/dynarray_resize.c
+  lib/malloc/dynarray_resize_clear.c
+  lib/malloc/scratch_buffer.h
+  lib/malloc/scratch_buffer_grow.c
+  lib/malloc/scratch_buffer_grow_preserve.c
+  lib/malloc/scratch_buffer_set_array_size.c
+  lib/malloca.c
+  lib/malloca.h
+  lib/mbrtoc32.c
+  lib/mbrtowc-impl-utf8.h
+  lib/mbrtowc-impl.h
+  lib/mbrtowc.c
+  lib/mbsinit.c
+  lib/mbsrtoc32s-state.c
+  lib/mbsrtoc32s.c
+  lib/mbsrtowcs-impl.h
+  lib/mbsrtowcs-state.c
+  lib/mbsrtowcs.c
+  lib/mbszero.c
+  lib/mbtowc-impl.h
+  lib/mbtowc-lock.c
+  lib/mbtowc-lock.h
+  lib/mbtowc.c
+  lib/memchr.c
+  lib/memchr.valgrind
+  lib/memmem.c
+  lib/mempcpy.c
+  lib/memrchr.c
+  lib/minmax.h
+  lib/mkdir.c
+  lib/mkdtemp.c
+  lib/mkstemp.c
+  lib/msvc-inval.c
+  lib/msvc-inval.h
+  lib/msvc-nothrow.c
+  lib/msvc-nothrow.h
+  lib/nanosleep.c
+  lib/nl_langinfo-lock.c
+  lib/nl_langinfo.c
+  lib/nonblocking.c
+  lib/nonblocking.h
+  lib/open.c
+  lib/openat-die.c
+  lib/openat-priv.h
+  lib/openat-proc.c
+  lib/openat.c
+  lib/openat.h
+  lib/opendir.c
+  lib/pathmax.h
+  lib/pipe-safer.c
+  lib/pipe.c
+  lib/printf-args.c
+  lib/printf-args.h
+  lib/printf-parse.c
+  lib/printf-parse.h
+  lib/progname.c
+  lib/progname.h
+  lib/pselect.c
+  lib/pthread-once.c
+  lib/pthread.in.h
+  lib/pthread_sigmask.c
+  lib/raise.c
+  lib/rawmemchr.c
+  lib/rawmemchr.valgrind
+  lib/readdir.c
+  lib/readlink.c
+  lib/readlinkat.c
+  lib/realloc.c
+  lib/reallocarray.c
+  lib/regcomp.c
+  lib/regex.c
+  lib/regex.h
+  lib/regex_internal.c
+  lib/regex_internal.h
+  lib/regexec.c
+  lib/rename.c
+  lib/renameat.c
+  lib/renameatu.c
+  lib/renameatu.h
+  lib/rewinddir.c
+  lib/rmdir.c
+  lib/same-inode.c
+  lib/same-inode.h
+  lib/save-cwd.c
+  lib/save-cwd.h
+  lib/sched.in.h
+  lib/scratch_buffer.h
+  lib/select.c
+  lib/setenv.c
+  lib/setlocale-lock.c
+  lib/setlocale_null-unlocked.c
+  lib/setlocale_null.c
+  lib/setlocale_null.h
+  lib/sig-handler.c
+  lib/sig-handler.h
+  lib/sigaction.c
+  lib/signal.in.h
+  lib/sigprocmask.c
+  lib/size_max.h
+  lib/sleep.c
+  lib/sockets.c
+  lib/sockets.h
+  lib/stat-time.c
+  lib/stat-time.h
+  lib/stat-w32.c
+  lib/stat-w32.h
+  lib/stat.c
+  lib/stdarg.in.h
+  lib/stdckdint.in.h
+  lib/stddef.in.h
+  lib/stdint.in.h
+  lib/stdio-read.c
+  lib/stdio-write.c
+  lib/stdio.in.h
+  lib/stdlib.in.h
+  lib/stdopen.c
+  lib/stdopen.h
+  lib/stpcpy.c
+  lib/str-two-way.h
+  lib/strcasecmp.c
+  lib/strcasestr.c
+  lib/strchrnul.c
+  lib/strchrnul.valgrind
+  lib/strdup.c
+  lib/streq.h
+  lib/strerror-override.c
+  lib/strerror-override.h
+  lib/strerror.c
+  lib/string.in.h
+  lib/strings.in.h
+  lib/stripslash.c
+  lib/strncasecmp.c
+  lib/strndup.c
+  lib/strnlen.c
+  lib/strnlen1.c
+  lib/strnlen1.h
+  lib/strsep.c
+  lib/sys_file.in.h
+  lib/sys_ioctl.in.h
+  lib/sys_random.in.h
+  lib/sys_select.in.h
+  lib/sys_socket.c
+  lib/sys_socket.in.h
+  lib/sys_stat.in.h
+  lib/sys_time.in.h
+  lib/sys_types.in.h
+  lib/sys_uio.in.h
+  lib/sysexits.in.h
+  lib/tempname.c
+  lib/tempname.h
+  lib/termios.in.h
+  lib/time.in.h
+  lib/timespec.c
+  lib/timespec.h
+  lib/uchar.in.h
+  lib/unicase.in.h
+  lib/unicase/simple-mapping.h
+  lib/unicase/tolower.c
+  lib/unicase/tolower.h
+  lib/unictype.in.h
+  lib/unictype/bitmap.h
+  lib/unictype/ctype_alnum.c
+  lib/unictype/ctype_alnum.h
+  lib/unictype/ctype_alpha.c
+  lib/unictype/ctype_alpha.h
+  lib/unictype/ctype_blank.c
+  lib/unictype/ctype_blank.h
+  lib/unictype/ctype_cntrl.c
+  lib/unictype/ctype_cntrl.h
+  lib/unictype/ctype_digit.c
+  lib/unictype/ctype_digit.h
+  lib/unictype/ctype_graph.c
+  lib/unictype/ctype_graph.h
+  lib/unictype/ctype_lower.c
+  lib/unictype/ctype_lower.h
+  lib/unictype/ctype_print.c
+  lib/unictype/ctype_print.h
+  lib/unictype/ctype_punct.c
+  lib/unictype/ctype_punct.h
+  lib/unictype/ctype_space.c
+  lib/unictype/ctype_space.h
+  lib/unictype/ctype_upper.c
+  lib/unictype/ctype_upper.h
+  lib/unictype/ctype_xdigit.c
+  lib/unictype/ctype_xdigit.h
+  lib/uninorm.in.h
+  lib/unistd--.h
+  lib/unistd-safer.h
+  lib/unistd.c
+  lib/unistd.in.h
+  lib/unistr.in.h
+  lib/unistr/u-cpy.h
+  lib/unistr/u-pcpy.h
+  lib/unistr/u-strcat.h
+  lib/unistr/u-strlen.h
+  lib/unistr/u32-chr.c
+  lib/unistr/u32-cpy.c
+  lib/unistr/u32-pcpy.c
+  lib/unistr/u32-strcat.c
+  lib/unistr/u32-strlen.c
+  lib/unitypes.in.h
+  lib/unlink.c
+  lib/unlinkat.c
+  lib/utime.c
+  lib/utime.in.h
+  lib/utimens.c
+  lib/utimens.h
+  lib/vasnprintf.c
+  lib/vasnprintf.h
+  lib/vaszprintf.c
+  lib/verify.h
+  lib/verror.c
+  lib/verror.h
+  lib/vsnprintf.c
+  lib/vsnzprintf.c
+  lib/w32sock.h
+  lib/warn-on-use.h
+  lib/wchar.in.h
+  lib/wcrtomb.c
+  lib/wctype-h.c
+  lib/wctype-impl.h
+  lib/wctype.c
+  lib/wctype.in.h
+  lib/windows-initguard.h
+  lib/windows-mutex.c
+  lib/windows-mutex.h
+  lib/windows-once.c
+  lib/windows-once.h
+  lib/windows-recmutex.c
+  lib/windows-recmutex.h
+  lib/windows-rwlock.c
+  lib/windows-rwlock.h
+  lib/wmemchr-impl.h
+  lib/wmemchr.c
+  lib/wmempcpy.c
+  lib/xalloc-die.c
+  lib/xalloc-oversized.h
+  lib/xalloc.h
+  lib/xasprintf.c
+  lib/xgetcwd.c
+  lib/xgetcwd.h
+  lib/xmalloc.c
+  lib/xsize.c
+  lib/xsize.h
+  lib/xstdopen.c
+  lib/xstdopen.h
+  lib/xstrndup.c
+  lib/xstrndup.h
+  lib/xvasprintf.c
+  lib/xvasprintf.h
+  m4/00gnulib.m4
+  m4/__inline.m4
+  m4/absolute-header.m4
+  m4/alloca.m4
+  m4/argp.m4
+  m4/asm-underscore.m4
+  m4/assert_h.m4
+  m4/btowc.m4
+  m4/builtin-expect.m4
+  m4/c-bool.m4
+  m4/c32rtomb.m4
+  m4/calloc.m4
+  m4/canonicalize.m4
+  m4/chdir-long.m4
+  m4/chown.m4
+  m4/clock_time.m4
+  m4/close.m4
+  m4/closedir.m4
+  m4/codeset.m4
+  m4/ctype_h.m4
+  m4/d-ino.m4
+  m4/d-type.m4
+  m4/dirent_h.m4
+  m4/dirfd.m4
+  m4/double-slash-root.m4
+  m4/dup.m4
+  m4/dup2.m4
+  m4/eealloc.m4
+  m4/environ.m4
+  m4/errno_h.m4
+  m4/error.m4
+  m4/error_h.m4
+  m4/exponentd.m4
+  m4/extensions.m4
+  m4/extern-inline.m4
+  m4/fchdir.m4
+  m4/fcntl-o.m4
+  m4/fcntl.m4
+  m4/fcntl_h.m4
+  m4/fdopendir.m4
+  m4/filenamecat.m4
+  m4/flexmember.m4
+  m4/float_h.m4
+  m4/flock.m4
+  m4/fnmatch.m4
+  m4/fnmatch_h.m4
+  m4/free.m4
+  m4/fstat.m4
+  m4/fstatat.m4
+  m4/getcwd-abort-bug.m4
+  m4/getcwd-path-max.m4
+  m4/getcwd.m4
+  m4/getdelim.m4
+  m4/getdtablesize.m4
+  m4/getline.m4
+  m4/getlogin.m4
+  m4/getlogin_r.m4
+  m4/getopt.m4
+  m4/getprogname.m4
+  m4/getrandom.m4
+  m4/gettime.m4
+  m4/gettimeofday.m4
+  m4/glob.m4
+  m4/glob_h.m4
+  m4/gnulib-common.m4
+  m4/host-cpu-c-abi.m4
+  m4/idpriv.m4
+  m4/include_next.m4
+  m4/inline.m4
+  m4/intmax_t.m4
+  m4/inttypes.m4
+  m4/inttypes_h.m4
+  m4/ioctl.m4
+  m4/isblank.m4
+  m4/iswblank.m4
+  m4/iswctype.m4
+  m4/iswdigit.m4
+  m4/iswpunct.m4
+  m4/iswxdigit.m4
+  m4/langinfo_h.m4
+  m4/largefile.m4
+  m4/lchown.m4
+  m4/lib-ignore.m4
+  m4/lib-ld.m4
+  m4/lib-link.m4
+  m4/lib-prefix.m4
+  m4/libunistring-base.m4
+  m4/limits-h.m4
+  m4/localcharset.m4
+  m4/locale-fr.m4
+  m4/locale-ja.m4
+  m4/locale-zh.m4
+  m4/locale_h.m4
+  m4/localeconv.m4
+  m4/lock.m4
+  m4/lstat.m4
+  m4/malloc.m4
+  m4/malloca.m4
+  m4/manywarnings-c++.m4
+  m4/manywarnings.m4
+  m4/math_h.m4
+  m4/mbrtoc32.m4
+  m4/mbrtowc.m4
+  m4/mbsinit.m4
+  m4/mbsrtowcs.m4
+  m4/mbstate_t.m4
+  m4/mbtowc.m4
+  m4/memchr.m4
+  m4/memmem.m4
+  m4/mempcpy.m4
+  m4/memrchr.m4
+  m4/minmax.m4
+  m4/mkdir.m4
+  m4/mkdtemp.m4
+  m4/mkstemp.m4
+  m4/mmap-anon.m4
+  m4/mode_t.m4
+  m4/msvc-inval.m4
+  m4/msvc-nothrow.m4
+  m4/multiarch.m4
+  m4/musl.m4
+  m4/nanosleep.m4
+  m4/nl_langinfo.m4
+  m4/nocrash.m4
+  m4/nonblocking.m4
+  m4/nullptr.m4
+  m4/off64_t.m4
+  m4/off_t.m4
+  m4/open-cloexec.m4
+  m4/open-slash.m4
+  m4/open.m4
+  m4/openat.m4
+  m4/opendir.m4
+  m4/pathmax.m4
+  m4/pid_t.m4
+  m4/pipe.m4
+  m4/printf.m4
+  m4/pselect.m4
+  m4/pthread-once.m4
+  m4/pthread-spin.m4
+  m4/pthread_h.m4
+  m4/pthread_rwlock_rdlock.m4
+  m4/pthread_sigmask.m4
+  m4/raise.m4
+  m4/rawmemchr.m4
+  m4/readdir.m4
+  m4/readlink.m4
+  m4/readlinkat.m4
+  m4/realloc.m4
+  m4/reallocarray.m4
+  m4/regex.m4
+  m4/rename.m4
+  m4/renameat.m4
+  m4/rewinddir.m4
+  m4/rmdir.m4
+  m4/save-cwd.m4
+  m4/sched_h.m4
+  m4/select.m4
+  m4/setenv.m4
+  m4/setlocale_null.m4
+  m4/sigaction.m4
+  m4/signal_h.m4
+  m4/signalblocking.m4
+  m4/sigpipe.m4
+  m4/size_max.m4
+  m4/sleep.m4
+  m4/socketlib.m4
+  m4/sockets.m4
+  m4/socklen.m4
+  m4/sockpfaf.m4
+  m4/ssize_t.m4
+  m4/stat-time.m4
+  m4/stat.m4
+  m4/std-gnu11.m4
+  m4/stdalign.m4
+  m4/stdarg.m4
+  m4/stddef_h.m4
+  m4/stdint.m4
+  m4/stdint_h.m4
+  m4/stdio_h.m4
+  m4/stdlib_h.m4
+  m4/stpcpy.m4
+  m4/strcase.m4
+  m4/strcasestr.m4
+  m4/strchrnul.m4
+  m4/strdup.m4
+  m4/strerror.m4
+  m4/strerrorname_np.m4
+  m4/string_h.m4
+  m4/strings_h.m4
+  m4/strndup.m4
+  m4/strnlen.m4
+  m4/strsep.m4
+  m4/sys_cdefs_h.m4
+  m4/sys_file_h.m4
+  m4/sys_ioctl_h.m4
+  m4/sys_random_h.m4
+  m4/sys_select_h.m4
+  m4/sys_socket_h.m4
+  m4/sys_stat_h.m4
+  m4/sys_time_h.m4
+  m4/sys_types_h.m4
+  m4/sys_uio_h.m4
+  m4/sysexits.m4
+  m4/tempname.m4
+  m4/termios_h.m4
+  m4/threadlib.m4
+  m4/time_h.m4
+  m4/timespec.m4
+  m4/uchar_h.m4
+  m4/unicase_h.m4
+  m4/unictype_h.m4
+  m4/uninorm_h.m4
+  m4/unistd-safer.m4
+  m4/unistd_h.m4
+  m4/unlink.m4
+  m4/unlinkat.m4
+  m4/utime.m4
+  m4/utime_h.m4
+  m4/utimens.m4
+  m4/utimes.m4
+  m4/vararrays.m4
+  m4/vasnprintf.m4
+  m4/visibility.m4
+  m4/vsnprintf.m4
+  m4/warn-on-use.m4
+  m4/warnings.m4
+  m4/wchar_h.m4
+  m4/wcrtomb.m4
+  m4/wctype.m4
+  m4/wctype_h.m4
+  m4/wint_t.m4
+  m4/wmemchr.m4
+  m4/wmempcpy.m4
+  m4/xalloc.m4
+  m4/xgetcwd.m4
+  m4/xsize.m4
+  m4/xstrndup.m4
+  m4/xvasprintf.m4
+  m4/zzgnulib.m4
+Creating directory ./gl/lib
+Creating directory ./gl/ref-po
+Creating directory ./gl/lib/glthread
+Creating directory ./gl/lib/malloc
+Creating directory ./gl/lib/unicase
+Creating directory ./gl/lib/unictype
+Creating directory ./gl/lib/unistr
+Replacing file build-aux/config.rpath (non-gnulib code backed up in build-aux/config.rpath~) !!
+Copying file build-aux/gitlog-to-changelog
+Copying file build-aux/gnupload
+Copying file gl/lib/_Noreturn.h
+Copying file gl/lib/alloca.c
+Copying file gl/lib/alloca.in.h
+Copying file gl/lib/arg-nonnull.h
+Copying file gl/lib/argp-ba.c
+Copying file gl/lib/argp-eexst.c
+Copying file gl/lib/argp-fmtstream.c
+Copying file gl/lib/argp-fmtstream.h
+Copying file gl/lib/argp-fs-xinl.c
+Copying file gl/lib/argp-help.c
+Copying file gl/lib/argp-namefrob.h
+Copying file gl/lib/argp-parse.c
+Copying file gl/lib/argp-pin.c
+Copying file gl/lib/argp-pv.c
+Copying file gl/lib/argp-pvh.c
+Copying file gl/lib/argp-xinl.c
+Copying file gl/lib/argp.h
+Copying file gl/lib/asnprintf.c
+Copying file gl/lib/assert.in.h
+Copying file gl/lib/assure.h
+Copying file gl/lib/aszprintf.c
+Copying file gl/lib/at-func.c
+Copying file gl/lib/at-func2.c
+Copying file gl/lib/attribute.h
+Copying file gl/lib/basename-lgpl.c
+Copying file gl/lib/basename-lgpl.h
+Copying file gl/lib/basename.c
+Copying file gl/lib/bitrotate.c
+Copying file gl/lib/bitrotate.h
+Copying file gl/lib/btoc32.c
+Copying file gl/lib/btowc.c
+Copying file gl/lib/c++defs.h
+Copying file gl/lib/c32_apply_type_test.c
+Copying file gl/lib/c32_get_type_test.c
+Copying file gl/lib/c32is-impl.h
+Copying file gl/lib/c32isalnum.c
+Copying file gl/lib/c32isalpha.c
+Copying file gl/lib/c32isblank.c
+Copying file gl/lib/c32iscntrl.c
+Copying file gl/lib/c32isdigit.c
+Copying file gl/lib/c32isgraph.c
+Copying file gl/lib/c32islower.c
+Copying file gl/lib/c32isprint.c
+Copying file gl/lib/c32ispunct.c
+Copying file gl/lib/c32isspace.c
+Copying file gl/lib/c32isupper.c
+Copying file gl/lib/c32isxdigit.c
+Copying file gl/lib/c32to-impl.h
+Copying file gl/lib/c32tolower.c
+Copying file gl/lib/calloc.c
+Copying file gl/lib/canonicalize-lgpl.c
+Copying file gl/lib/canonicalize.c
+Copying file gl/lib/canonicalize.h
+Copying file gl/lib/cdefs.h
+Copying file gl/lib/chdir-long.c
+Copying file gl/lib/chdir-long.h
+Copying file gl/lib/chown.c
+Copying file gl/lib/cloexec.c
+Copying file gl/lib/cloexec.h
+Copying file gl/lib/close.c
+Copying file gl/lib/closedir.c
+Copying file gl/lib/ctype.in.h
+Copying file gl/lib/dirent-private.h
+Copying file gl/lib/dirent.in.h
+Copying file gl/lib/dirfd.c
+Copying file gl/lib/dirname-lgpl.c
+Copying file gl/lib/dirname.c
+Copying file gl/lib/dirname.h
+Copying file gl/lib/dup-safer-flag.c
+Copying file gl/lib/dup-safer.c
+Copying file gl/lib/dup.c
+Copying file gl/lib/dup2.c
+Copying file gl/lib/dynarray.h
+Copying file gl/lib/eloop-threshold.h
+Copying file gl/lib/errno.in.h
+Copying file gl/lib/error.c
+Copying file gl/lib/error.in.h
+Copying file gl/lib/exitfail.c
+Copying file gl/lib/exitfail.h
+Copying file gl/lib/fchdir.c
+Copying file gl/lib/fchown-stub.c
+Copying file gl/lib/fcntl.c
+Copying file gl/lib/fcntl.in.h
+Copying file gl/lib/fd-hook.c
+Copying file gl/lib/fd-hook.h
+Copying file gl/lib/fd-safer-flag.c
+Copying file gl/lib/fd-safer.c
+Copying file gl/lib/fdopendir.c
+Copying file gl/lib/file-set.c
+Copying file gl/lib/file-set.h
+Copying file gl/lib/filename.h
+Copying file gl/lib/filenamecat-lgpl.c
+Copying file gl/lib/filenamecat.h
+Copying file gl/lib/flexmember.h
+Copying file gl/lib/float+.h
+Copying file gl/lib/float.c
+Copying file gl/lib/float.in.h
+Copying file gl/lib/flock.c
+Copying file gl/lib/fnmatch.c
+Copying file gl/lib/fnmatch.in.h
+Copying file gl/lib/fnmatch_loop.c
+Copying file gl/lib/free.c
+Copying file gl/lib/fstat.c
+Copying file gl/lib/fstatat.c
+Copying file gl/lib/getcwd-lgpl.c
+Copying file gl/lib/getcwd.c
+Copying file gl/lib/getdelim.c
+Copying file gl/lib/getdtablesize.c
+Copying file gl/lib/getline.c
+Copying file gl/lib/getlogin_r.c
+Copying file gl/lib/getopt-cdefs.in.h
+Copying file gl/lib/getopt-core.h
+Copying file gl/lib/getopt-ext.h
+Copying file gl/lib/getopt-pfx-core.h
+Copying file gl/lib/getopt-pfx-ext.h
+Copying file gl/lib/getopt.c
+Copying file gl/lib/getopt.in.h
+Copying file gl/lib/getopt1.c
+Copying file gl/lib/getopt_int.h
+Copying file gl/lib/getprogname.c
+Copying file gl/lib/getprogname.h
+Copying file gl/lib/getrandom.c
+Copying file gl/lib/gettext.h
+Copying file gl/lib/gettime.c
+Copying file gl/lib/gettimeofday.c
+Copying file gl/lib/gl_anyhash1.h
+Copying file gl/lib/gl_anyhash2.h
+Copying file gl/lib/gl_anyhash_primes.h
+Copying file gl/lib/gl_anylinked_list1.h
+Copying file gl/lib/gl_anylinked_list2.h
+Copying file gl/lib/gl_anyrbtree_list1.h
+Copying file gl/lib/gl_anyrbtree_list2.h
+Copying file gl/lib/gl_anytree_list1.h
+Copying file gl/lib/gl_anytree_list2.h
+Copying file gl/lib/gl_array_list.c
+Copying file gl/lib/gl_array_list.h
+Copying file gl/lib/gl_hash_map.c
+Copying file gl/lib/gl_hash_map.h
+Copying file gl/lib/gl_hash_set.c
+Copying file gl/lib/gl_hash_set.h
+Copying file gl/lib/gl_linkedhash_list.c
+Copying file gl/lib/gl_linkedhash_list.h
+Copying file gl/lib/gl_list.c
+Copying file gl/lib/gl_list.h
+Copying file gl/lib/gl_map.c
+Copying file gl/lib/gl_map.h
+Copying file gl/lib/gl_rbtree_list.c
+Copying file gl/lib/gl_rbtree_list.h
+Copying file gl/lib/gl_set.c
+Copying file gl/lib/gl_set.h
+Copying file gl/lib/gl_xlist.c
+Copying file gl/lib/gl_xlist.h
+Copying file gl/lib/gl_xmap.c
+Copying file gl/lib/gl_xmap.h
+Copying file gl/lib/gl_xset.c
+Copying file gl/lib/gl_xset.h
+Copying file gl/lib/glob-libc.h
+Copying file gl/lib/glob.c
+Copying file gl/lib/glob.in.h
+Copying file gl/lib/glob_internal.h
+Copying file gl/lib/glob_pattern_p.c
+Copying file gl/lib/globfree.c
+Copying file gl/lib/glthread/lock.c
+Copying file gl/lib/glthread/lock.h
+Copying file gl/lib/glthread/threadlib.c
+Copying file gl/lib/hard-locale.c
+Copying file gl/lib/hard-locale.h
+Copying file gl/lib/hash-pjw-bare.c
+Copying file gl/lib/hash-pjw-bare.h
+Copying file gl/lib/hash-pjw.c
+Copying file gl/lib/hash-pjw.h
+Copying file gl/lib/hash-triple-simple.c
+Copying file gl/lib/hash-triple.h
+Copying file gl/lib/hash.c
+Copying file gl/lib/hash.h
+Copying file gl/lib/ialloc.c
+Copying file gl/lib/ialloc.h
+Copying file gl/lib/idpriv-drop.c
+Copying file gl/lib/idpriv-droptemp.c
+Copying file gl/lib/idpriv.h
+Copying file gl/lib/idx.h
+Copying file gl/lib/intprops-internal.h
+Copying file gl/lib/intprops.h
+Copying file gl/lib/inttypes.in.h
+Copying file gl/lib/ioctl.c
+Copying file gl/lib/isblank.c
+Copying file gl/lib/iswblank.c
+Copying file gl/lib/iswctype-impl.h
+Copying file gl/lib/iswctype.c
+Copying file gl/lib/iswdigit.c
+Copying file gl/lib/iswpunct.c
+Copying file gl/lib/iswxdigit.c
+Copying file gl/lib/itold.c
+Copying file gl/lib/langinfo.in.h
+Copying file gl/lib/lc-charset-dispatch.c
+Copying file gl/lib/lc-charset-dispatch.h
+Copying file gl/lib/lchown.c
+Copying file gl/lib/libc-config.h
+Copying file gl/lib/limits.in.h
+Copying file gl/lib/localcharset.c
+Copying file gl/lib/localcharset.h
+Copying file gl/lib/locale.in.h
+Copying file gl/lib/localeconv.c
+Copying file gl/lib/lstat.c
+Copying file gl/lib/malloc.c
+Copying file gl/lib/malloc/dynarray-skeleton.c
+Copying file gl/lib/malloc/dynarray.h
+Copying file gl/lib/malloc/dynarray_at_failure.c
+Copying file gl/lib/malloc/dynarray_emplace_enlarge.c
+Copying file gl/lib/malloc/dynarray_finalize.c
+Copying file gl/lib/malloc/dynarray_resize.c
+Copying file gl/lib/malloc/dynarray_resize_clear.c
+Copying file gl/lib/malloc/scratch_buffer.h
+Copying file gl/lib/malloc/scratch_buffer_grow.c
+Copying file gl/lib/malloc/scratch_buffer_grow_preserve.c
+Copying file gl/lib/malloc/scratch_buffer_set_array_size.c
+Copying file gl/lib/malloca.c
+Copying file gl/lib/malloca.h
+Copying file gl/lib/mbrtoc32.c
+Copying file gl/lib/mbrtowc-impl-utf8.h
+Copying file gl/lib/mbrtowc-impl.h
+Copying file gl/lib/mbrtowc.c
+Copying file gl/lib/mbsinit.c
+Copying file gl/lib/mbsrtoc32s-state.c
+Copying file gl/lib/mbsrtoc32s.c
+Copying file gl/lib/mbsrtowcs-impl.h
+Copying file gl/lib/mbsrtowcs-state.c
+Copying file gl/lib/mbsrtowcs.c
+Copying file gl/lib/mbszero.c
+Copying file gl/lib/mbtowc-impl.h
+Copying file gl/lib/mbtowc-lock.c
+Copying file gl/lib/mbtowc-lock.h
+Copying file gl/lib/mbtowc.c
+Copying file gl/lib/memchr.c
+Copying file gl/lib/memchr.valgrind
+Copying file gl/lib/memmem.c
+Copying file gl/lib/mempcpy.c
+Copying file gl/lib/memrchr.c
+Copying file gl/lib/minmax.h
+Copying file gl/lib/mkdir.c
+Copying file gl/lib/mkdtemp.c
+Copying file gl/lib/mkstemp.c
+Copying file gl/lib/msvc-inval.c
+Copying file gl/lib/msvc-inval.h
+Copying file gl/lib/msvc-nothrow.c
+Copying file gl/lib/msvc-nothrow.h
+Copying file gl/lib/nanosleep.c
+Copying file gl/lib/nl_langinfo-lock.c
+Copying file gl/lib/nl_langinfo.c
+Copying file gl/lib/nonblocking.c
+Copying file gl/lib/nonblocking.h
+Copying file gl/lib/open.c
+Copying file gl/lib/openat-die.c
+Copying file gl/lib/openat-priv.h
+Copying file gl/lib/openat-proc.c
+Copying file gl/lib/openat.c
+Copying file gl/lib/openat.h
+Copying file gl/lib/opendir.c
+Copying file gl/lib/pathmax.h
+Copying file gl/lib/pipe-safer.c
+Copying file gl/lib/pipe.c
+Copying file gl/lib/printf-args.c
+Copying file gl/lib/printf-args.h
+Copying file gl/lib/printf-parse.c
+Copying file gl/lib/printf-parse.h
+Copying file gl/lib/progname.c
+Copying file gl/lib/progname.h
+Copying file gl/lib/pselect.c
+Copying file gl/lib/pthread-once.c
+Copying file gl/lib/pthread.in.h
+Copying file gl/lib/pthread_sigmask.c
+Copying file gl/lib/raise.c
+Copying file gl/lib/rawmemchr.c
+Copying file gl/lib/rawmemchr.valgrind
+Copying file gl/lib/readdir.c
+Copying file gl/lib/readlink.c
+Copying file gl/lib/readlinkat.c
+Copying file gl/lib/realloc.c
+Copying file gl/lib/reallocarray.c
+Copying file gl/lib/regcomp.c
+Copying file gl/lib/regex.c
+Copying file gl/lib/regex.h
+Copying file gl/lib/regex_internal.c
+Copying file gl/lib/regex_internal.h
+Copying file gl/lib/regexec.c
+Copying file gl/lib/rename.c
+Copying file gl/lib/renameat.c
+Copying file gl/lib/renameatu.c
+Copying file gl/lib/renameatu.h
+Copying file gl/lib/rewinddir.c
+Copying file gl/lib/rmdir.c
+Copying file gl/lib/same-inode.c
+Copying file gl/lib/same-inode.h
+Copying file gl/lib/save-cwd.c
+Copying file gl/lib/save-cwd.h
+Copying file gl/lib/sched.in.h
+Copying file gl/lib/scratch_buffer.h
+Copying file gl/lib/select.c
+Copying file gl/lib/setenv.c
+Copying file gl/lib/setlocale-lock.c
+Copying file gl/lib/setlocale_null-unlocked.c
+Copying file gl/lib/setlocale_null.c
+Copying file gl/lib/setlocale_null.h
+Copying file gl/lib/sig-handler.c
+Copying file gl/lib/sig-handler.h
+Copying file gl/lib/sigaction.c
+Copying file gl/lib/signal.in.h
+Copying file gl/lib/sigprocmask.c
+Copying file gl/lib/size_max.h
+Copying file gl/lib/sleep.c
+Copying file gl/lib/sockets.c
+Copying file gl/lib/sockets.h
+Copying file gl/lib/stat-time.c
+Copying file gl/lib/stat-time.h
+Copying file gl/lib/stat-w32.c
+Copying file gl/lib/stat-w32.h
+Copying file gl/lib/stat.c
+Copying file gl/lib/stdarg.in.h
+Copying file gl/lib/stdckdint.in.h
+Copying file gl/lib/stddef.in.h
+Copying file gl/lib/stdint.in.h
+Copying file gl/lib/stdio-read.c
+Copying file gl/lib/stdio-write.c
+Copying file gl/lib/stdio.in.h
+Copying file gl/lib/stdlib.in.h
+Copying file gl/lib/stdopen.c
+Copying file gl/lib/stdopen.h
+Copying file gl/lib/stpcpy.c
+Copying file gl/lib/str-two-way.h
+Copying file gl/lib/strcasecmp.c
+Copying file gl/lib/strcasestr.c
+Copying file gl/lib/strchrnul.c
+Copying file gl/lib/strchrnul.valgrind
+Copying file gl/lib/strdup.c
+Copying file gl/lib/streq.h
+Copying file gl/lib/strerror-override.c
+Copying file gl/lib/strerror-override.h
+Copying file gl/lib/strerror.c
+Copying file gl/lib/string.in.h
+Copying file gl/lib/strings.in.h
+Copying file gl/lib/stripslash.c
+Copying file gl/lib/strncasecmp.c
+Copying file gl/lib/strndup.c
+Copying file gl/lib/strnlen.c
+Copying file gl/lib/strnlen1.c
+Copying file gl/lib/strnlen1.h
+Copying file gl/lib/strsep.c
+Copying file gl/lib/sys_file.in.h
+Copying file gl/lib/sys_ioctl.in.h
+Copying file gl/lib/sys_random.in.h
+Copying file gl/lib/sys_select.in.h
+Copying file gl/lib/sys_socket.c
+Copying file gl/lib/sys_socket.in.h
+Copying file gl/lib/sys_stat.in.h
+Copying file gl/lib/sys_time.in.h
+Copying file gl/lib/sys_types.in.h
+Copying file gl/lib/sys_uio.in.h
+Copying file gl/lib/sysexits.in.h
+Copying file gl/lib/tempname.c
+Copying file gl/lib/tempname.h
+Copying file gl/lib/termios.in.h
+Copying file gl/lib/time.in.h
+Copying file gl/lib/timespec.c
+Copying file gl/lib/timespec.h
+Copying file gl/lib/uchar.in.h
+Copying file gl/lib/unicase.in.h
+Copying file gl/lib/unicase/simple-mapping.h
+Copying file gl/lib/unicase/tolower.c
+Copying file gl/lib/unicase/tolower.h
+Copying file gl/lib/unictype.in.h
+Copying file gl/lib/unictype/bitmap.h
+Copying file gl/lib/unictype/ctype_alnum.c
+Copying file gl/lib/unictype/ctype_alnum.h
+Copying file gl/lib/unictype/ctype_alpha.c
+Copying file gl/lib/unictype/ctype_alpha.h
+Copying file gl/lib/unictype/ctype_blank.c
+Copying file gl/lib/unictype/ctype_blank.h
+Copying file gl/lib/unictype/ctype_cntrl.c
+Copying file gl/lib/unictype/ctype_cntrl.h
+Copying file gl/lib/unictype/ctype_digit.c
+Copying file gl/lib/unictype/ctype_digit.h
+Copying file gl/lib/unictype/ctype_graph.c
+Copying file gl/lib/unictype/ctype_graph.h
+Copying file gl/lib/unictype/ctype_lower.c
+Copying file gl/lib/unictype/ctype_lower.h
+Copying file gl/lib/unictype/ctype_print.c
+Copying file gl/lib/unictype/ctype_print.h
+Copying file gl/lib/unictype/ctype_punct.c
+Copying file gl/lib/unictype/ctype_punct.h
+Copying file gl/lib/unictype/ctype_space.c
+Copying file gl/lib/unictype/ctype_space.h
+Copying file gl/lib/unictype/ctype_upper.c
+Copying file gl/lib/unictype/ctype_upper.h
+Copying file gl/lib/unictype/ctype_xdigit.c
+Copying file gl/lib/unictype/ctype_xdigit.h
+Copying file gl/lib/uninorm.in.h
+Copying file gl/lib/unistd--.h
+Copying file gl/lib/unistd-safer.h
+Copying file gl/lib/unistd.c
+Copying file gl/lib/unistd.in.h
+Copying file gl/lib/unistr.in.h
+Copying file gl/lib/unistr/u-cpy.h
+Copying file gl/lib/unistr/u-pcpy.h
+Copying file gl/lib/unistr/u-strcat.h
+Copying file gl/lib/unistr/u-strlen.h
+Copying file gl/lib/unistr/u32-chr.c
+Copying file gl/lib/unistr/u32-cpy.c
+Copying file gl/lib/unistr/u32-pcpy.c
+Copying file gl/lib/unistr/u32-strcat.c
+Copying file gl/lib/unistr/u32-strlen.c
+Copying file gl/lib/unitypes.in.h
+Copying file gl/lib/unlink.c
+Copying file gl/lib/unlinkat.c
+Copying file gl/lib/utime.c
+Copying file gl/lib/utime.in.h
+Copying file gl/lib/utimens.c
+Copying file gl/lib/utimens.h
+Copying file gl/lib/vasnprintf.c
+Copying file gl/lib/vasnprintf.h
+Copying file gl/lib/vaszprintf.c
+Copying file gl/lib/verify.h
+Copying file gl/lib/verror.c
+Copying file gl/lib/verror.h
+Copying file gl/lib/vsnprintf.c
+Copying file gl/lib/vsnzprintf.c
+Copying file gl/lib/w32sock.h
+Copying file gl/lib/warn-on-use.h
+Copying file gl/lib/wchar.in.h
+Copying file gl/lib/wcrtomb.c
+Copying file gl/lib/wctype-h.c
+Copying file gl/lib/wctype-impl.h
+Copying file gl/lib/wctype.c
+Copying file gl/lib/wctype.in.h
+Copying file gl/lib/windows-initguard.h
+Copying file gl/lib/windows-mutex.c
+Copying file gl/lib/windows-mutex.h
+Copying file gl/lib/windows-once.c
+Copying file gl/lib/windows-once.h
+Copying file gl/lib/windows-recmutex.c
+Copying file gl/lib/windows-recmutex.h
+Copying file gl/lib/windows-rwlock.c
+Copying file gl/lib/windows-rwlock.h
+Copying file gl/lib/wmemchr-impl.h
+Copying file gl/lib/wmemchr.c
+Copying file gl/lib/wmempcpy.c
+Copying file gl/lib/xalloc-die.c
+Copying file gl/lib/xalloc-oversized.h
+Copying file gl/lib/xalloc.h
+Copying file gl/lib/xasprintf.c
+Copying file gl/lib/xgetcwd.c
+Copying file gl/lib/xgetcwd.h
+Copying file gl/lib/xmalloc.c
+Copying file gl/lib/xsize.c
+Copying file gl/lib/xsize.h
+Copying file gl/lib/xstdopen.c
+Copying file gl/lib/xstdopen.h
+Copying file gl/lib/xstrndup.c
+Copying file gl/lib/xstrndup.h
+Copying file gl/lib/xvasprintf.c
+Copying file gl/lib/xvasprintf.h
+Copying file gl/m4/00gnulib.m4
+Copying file gl/m4/__inline.m4
+Copying file gl/m4/absolute-header.m4
+Copying file gl/m4/alloca.m4
+Copying file gl/m4/argp.m4
+Copying file gl/m4/asm-underscore.m4
+Copying file gl/m4/assert_h.m4
+Copying file gl/m4/btowc.m4
+Copying file gl/m4/builtin-expect.m4
+Copying file gl/m4/c-bool.m4
+Copying file gl/m4/c32rtomb.m4
+Copying file gl/m4/calloc.m4
+Copying file gl/m4/canonicalize.m4
+Copying file gl/m4/chdir-long.m4
+Copying file gl/m4/chown.m4
+Copying file gl/m4/clock_time.m4
+Copying file gl/m4/close.m4
+Copying file gl/m4/closedir.m4
+Replacing file gl/m4/codeset.m4 (non-gnulib code backed up in gl/m4/codeset.m4~) !!
+Copying file gl/m4/ctype_h.m4
+Copying file gl/m4/d-ino.m4
+Copying file gl/m4/d-type.m4
+Copying file gl/m4/dirent_h.m4
+Copying file gl/m4/dirfd.m4
+Copying file gl/m4/double-slash-root.m4
+Copying file gl/m4/dup.m4
+Copying file gl/m4/dup2.m4
+Copying file gl/m4/eealloc.m4
+Copying file gl/m4/environ.m4
+Copying file gl/m4/errno_h.m4
+Copying file gl/m4/error.m4
+Copying file gl/m4/error_h.m4
+Copying file gl/m4/exponentd.m4
+Copying file gl/m4/extensions.m4
+Replacing file gl/m4/extern-inline.m4 (non-gnulib code backed up in gl/m4/extern-inline.m4~) !!
+Copying file gl/m4/fchdir.m4
+Replacing file gl/m4/fcntl-o.m4 (non-gnulib code backed up in gl/m4/fcntl-o.m4~) !!
+Copying file gl/m4/fcntl.m4
+Copying file gl/m4/fcntl_h.m4
+Copying file gl/m4/fdopendir.m4
+Copying file gl/m4/filenamecat.m4
+Copying file gl/m4/flexmember.m4
+Copying file gl/m4/float_h.m4
+Copying file gl/m4/flock.m4
+Copying file gl/m4/fnmatch.m4
+Copying file gl/m4/fnmatch_h.m4
+Copying file gl/m4/free.m4
+Copying file gl/m4/fstat.m4
+Copying file gl/m4/fstatat.m4
+Copying file gl/m4/getcwd-abort-bug.m4
+Copying file gl/m4/getcwd-path-max.m4
+Copying file gl/m4/getcwd.m4
+Copying file gl/m4/getdelim.m4
+Copying file gl/m4/getdtablesize.m4
+Copying file gl/m4/getline.m4
+Copying file gl/m4/getlogin.m4
+Copying file gl/m4/getlogin_r.m4
+Copying file gl/m4/getopt.m4
+Copying file gl/m4/getprogname.m4
+Copying file gl/m4/getrandom.m4
+Copying file gl/m4/gettime.m4
+Copying file gl/m4/gettimeofday.m4
+Copying file gl/m4/glob.m4
+Copying file gl/m4/glob_h.m4
+Copying file gl/m4/gnulib-common.m4
+Copying file gl/m4/gnulib-tool.m4
+Copying file gl/m4/host-cpu-c-abi.m4
+Copying file gl/m4/idpriv.m4
+Copying file gl/m4/include_next.m4
+Copying file gl/m4/inline.m4
+Copying file gl/m4/intmax_t.m4
+Copying file gl/m4/inttypes.m4
+Replacing file gl/m4/inttypes_h.m4 (non-gnulib code backed up in gl/m4/inttypes_h.m4~) !!
+Copying file gl/m4/ioctl.m4
+Copying file gl/m4/isblank.m4
+Copying file gl/m4/iswblank.m4
+Copying file gl/m4/iswctype.m4
+Copying file gl/m4/iswdigit.m4
+Copying file gl/m4/iswpunct.m4
+Copying file gl/m4/iswxdigit.m4
+Copying file gl/m4/langinfo_h.m4
+Copying file gl/m4/largefile.m4
+Copying file gl/m4/lchown.m4
+Copying file gl/m4/lib-ignore.m4
+Replacing file gl/m4/lib-ld.m4 (non-gnulib code backed up in gl/m4/lib-ld.m4~) !!
+Replacing file gl/m4/lib-link.m4 (non-gnulib code backed up in gl/m4/lib-link.m4~) !!
+Replacing file gl/m4/lib-prefix.m4 (non-gnulib code backed up in gl/m4/lib-prefix.m4~) !!
+Copying file gl/m4/libunistring-base.m4
+Copying file gl/m4/limits-h.m4
+Copying file gl/m4/localcharset.m4
+Copying file gl/m4/locale-fr.m4
+Copying file gl/m4/locale-ja.m4
+Copying file gl/m4/locale-zh.m4
+Copying file gl/m4/locale_h.m4
+Copying file gl/m4/localeconv.m4
+Replacing file gl/m4/lock.m4 (non-gnulib code backed up in gl/m4/lock.m4~) !!
+Copying file gl/m4/lstat.m4
+Copying file gl/m4/malloc.m4
+Copying file gl/m4/malloca.m4
+Copying file gl/m4/manywarnings-c++.m4
+Copying file gl/m4/manywarnings.m4
+Copying file gl/m4/math_h.m4
+Copying file gl/m4/mbrtoc32.m4
+Copying file gl/m4/mbrtowc.m4
+Copying file gl/m4/mbsinit.m4
+Copying file gl/m4/mbsrtowcs.m4
+Copying file gl/m4/mbstate_t.m4
+Copying file gl/m4/mbtowc.m4
+Copying file gl/m4/memchr.m4
+Copying file gl/m4/memmem.m4
+Copying file gl/m4/mempcpy.m4
+Copying file gl/m4/memrchr.m4
+Copying file gl/m4/minmax.m4
+Copying file gl/m4/mkdir.m4
+Copying file gl/m4/mkdtemp.m4
+Copying file gl/m4/mkstemp.m4
+Copying file gl/m4/mmap-anon.m4
+Copying file gl/m4/mode_t.m4
+Copying file gl/m4/msvc-inval.m4
+Copying file gl/m4/msvc-nothrow.m4
+Copying file gl/m4/multiarch.m4
+Copying file gl/m4/musl.m4
+Copying file gl/m4/nanosleep.m4
+Copying file gl/m4/nl_langinfo.m4
+Copying file gl/m4/nocrash.m4
+Copying file gl/m4/nonblocking.m4
+Copying file gl/m4/nullptr.m4
+Copying file gl/m4/off64_t.m4
+Copying file gl/m4/off_t.m4
+Copying file gl/m4/open-cloexec.m4
+Copying file gl/m4/open-slash.m4
+Copying file gl/m4/open.m4
+Copying file gl/m4/openat.m4
+Copying file gl/m4/opendir.m4
+Copying file gl/m4/pathmax.m4
+Copying file gl/m4/pid_t.m4
+Copying file gl/m4/pipe.m4
+Copying file gl/m4/printf.m4
+Copying file gl/m4/pselect.m4
+Copying file gl/m4/pthread-once.m4
+Copying file gl/m4/pthread-spin.m4
+Copying file gl/m4/pthread_h.m4
+Copying file gl/m4/pthread_rwlock_rdlock.m4
+Copying file gl/m4/pthread_sigmask.m4
+Copying file gl/m4/raise.m4
+Copying file gl/m4/rawmemchr.m4
+Copying file gl/m4/readdir.m4
+Copying file gl/m4/readlink.m4
+Copying file gl/m4/readlinkat.m4
+Copying file gl/m4/realloc.m4
+Copying file gl/m4/reallocarray.m4
+Copying file gl/m4/regex.m4
+Copying file gl/m4/rename.m4
+Copying file gl/m4/renameat.m4
+Copying file gl/m4/rewinddir.m4
+Copying file gl/m4/rmdir.m4
+Copying file gl/m4/save-cwd.m4
+Copying file gl/m4/sched_h.m4
+Copying file gl/m4/select.m4
+Copying file gl/m4/setenv.m4
+Copying file gl/m4/setlocale_null.m4
+Copying file gl/m4/sigaction.m4
+Copying file gl/m4/signal_h.m4
+Copying file gl/m4/signalblocking.m4
+Copying file gl/m4/sigpipe.m4
+Replacing file gl/m4/size_max.m4 (non-gnulib code backed up in gl/m4/size_max.m4~) !!
+Copying file gl/m4/sleep.m4
+Copying file gl/m4/socketlib.m4
+Copying file gl/m4/sockets.m4
+Copying file gl/m4/socklen.m4
+Copying file gl/m4/sockpfaf.m4
+Copying file gl/m4/ssize_t.m4
+Copying file gl/m4/stat-time.m4
+Copying file gl/m4/stat.m4
+Copying file gl/m4/std-gnu11.m4
+Copying file gl/m4/stdalign.m4
+Copying file gl/m4/stdarg.m4
+Copying file gl/m4/stddef_h.m4
+Copying file gl/m4/stdint.m4
+Replacing file gl/m4/stdint_h.m4 (non-gnulib code backed up in gl/m4/stdint_h.m4~) !!
+Copying file gl/m4/stdio_h.m4
+Copying file gl/m4/stdlib_h.m4
+Copying file gl/m4/stpcpy.m4
+Copying file gl/m4/strcase.m4
+Copying file gl/m4/strcasestr.m4
+Copying file gl/m4/strchrnul.m4
+Copying file gl/m4/strdup.m4
+Copying file gl/m4/strerror.m4
+Copying file gl/m4/strerrorname_np.m4
+Copying file gl/m4/string_h.m4
+Copying file gl/m4/strings_h.m4
+Copying file gl/m4/strndup.m4
+Copying file gl/m4/strnlen.m4
+Copying file gl/m4/strsep.m4
+Copying file gl/m4/sys_cdefs_h.m4
+Copying file gl/m4/sys_file_h.m4
+Copying file gl/m4/sys_ioctl_h.m4
+Copying file gl/m4/sys_random_h.m4
+Copying file gl/m4/sys_select_h.m4
+Copying file gl/m4/sys_socket_h.m4
+Copying file gl/m4/sys_stat_h.m4
+Copying file gl/m4/sys_time_h.m4
+Copying file gl/m4/sys_types_h.m4
+Copying file gl/m4/sys_uio_h.m4
+Copying file gl/m4/sysexits.m4
+Copying file gl/m4/tempname.m4
+Copying file gl/m4/termios_h.m4
+Replacing file gl/m4/threadlib.m4 (non-gnulib code backed up in gl/m4/threadlib.m4~) !!
+Copying file gl/m4/time_h.m4
+Copying file gl/m4/timespec.m4
+Copying file gl/m4/uchar_h.m4
+Copying file gl/m4/unicase_h.m4
+Copying file gl/m4/unictype_h.m4
+Copying file gl/m4/uninorm_h.m4
+Copying file gl/m4/unistd-safer.m4
+Copying file gl/m4/unistd_h.m4
+Copying file gl/m4/unlink.m4
+Copying file gl/m4/unlinkat.m4
+Copying file gl/m4/utime.m4
+Copying file gl/m4/utime_h.m4
+Copying file gl/m4/utimens.m4
+Copying file gl/m4/utimes.m4
+Copying file gl/m4/vararrays.m4
+Copying file gl/m4/vasnprintf.m4
+Replacing file gl/m4/visibility.m4 (non-gnulib code backed up in gl/m4/visibility.m4~) !!
+Copying file gl/m4/vsnprintf.m4
+Copying file gl/m4/warn-on-use.m4
+Copying file gl/m4/warnings.m4
+Copying file gl/m4/wchar_h.m4
+Copying file gl/m4/wcrtomb.m4
+Copying file gl/m4/wctype.m4
+Copying file gl/m4/wctype_h.m4
+Replacing file gl/m4/wint_t.m4 (non-gnulib code backed up in gl/m4/wint_t.m4~) !!
+Copying file gl/m4/wmemchr.m4
+Copying file gl/m4/wmempcpy.m4
+Copying file gl/m4/xalloc.m4
+Copying file gl/m4/xgetcwd.m4
+Replacing file gl/m4/xsize.m4 (non-gnulib code backed up in gl/m4/xsize.m4~) !!
+Copying file gl/m4/xstrndup.m4
+Copying file gl/m4/xvasprintf.m4
+Copying file gl/m4/zzgnulib.m4
+Creating gl/ref-po/Makefile.in.in
+Creating gl/ref-po/remove-potcdate.sin
+Creating gl/ref-po/Makevars
+Creating gl/ref-po/POTFILES.in
+Fetching gnulib PO files from https://translationproject.org/latest/
+Creating gl/ref-po/LINGUAS
+Creating gl/m4/gnulib-cache.m4
+Creating gl/m4/gnulib-comp.m4
+Creating gl/lib/Makefile.am
+Finished.
+
+You may need to add #include directives for the following .h files.
+  #include <dirent.h>
+  #include <error.h>
+  #include <fcntl.h>
+  #include <fnmatch.h>
+  #include <glob.h>
+  #include <regex.h>
+  #include <signal.h>
+  #include <stdio.h>
+  #include <stdlib.h>
+  #include <string.h>
+  #include <strings.h>
+  #include <sys/file.h>
+  #include <sys/stat.h>
+  #include <termios.h>
+  #include <time.h>
+  #include <unistd.h>
+  #include "argp.h"
+  #include "attribute.h"
+  #include "canonicalize.h"
+  #include "dirname.h"
+  #include "gettext.h"
+  #include "gl_array_list.h"
+  #include "gl_hash_map.h"
+  #include "gl_hash_set.h"
+  #include "gl_linkedhash_list.h"
+  #include "gl_rbtree_list.h"
+  #include "gl_xlist.h"
+  #include "gl_xmap.h"
+  #include "gl_xset.h"
+  #include "hash-pjw-bare.h"
+  #include "idpriv.h"
+  #include "localcharset.h"
+  #include "minmax.h"
+  #include "nonblocking.h"
+  #include "progname.h"
+  #include "stat-time.h"
+  #include "tempname.h"
+  #include "timespec.h"
+  #include "utimens.h"
+  #include "verror.h"
+  #include "xalloc.h"
+  #include "xgetcwd.h"
+  #include "xstdopen.h"
+  #include "xstrndup.h"
+  #include "xvasprintf.h"
+
+You may need to use the following Makefile variables when linking.
+Use them in <program>_LDADD when linking a program, or
+in <library>_a_LDFLAGS or <library>_la_LDFLAGS when linking a library.
+  $(CLOCK_TIME_LIB)
+  $(GETLOGIN_LIB)
+  $(GETRANDOM_LIB)
+  $(HARD_LOCALE_LIB)
+  $(LIBPMULTITHREAD)
+  $(LIBPTHREAD)
+  $(LIBSOCKET)
+  $(LIBTHREAD)
+  $(LTLIBC32CONV) when linking with libtool, $(LIBC32CONV) otherwise
+  $(LTLIBINTL) when linking with libtool, $(LIBINTL) otherwise
+  $(LTLIBUNISTRING) when linking with libtool, $(LIBUNISTRING) otherwise
+  $(MBRTOWC_LIB)
+  $(NANOSLEEP_LIB)
+  $(PTHREAD_SIGMASK_LIB)
+  $(SELECT_LIB)
+  $(SETLOCALE_NULL_LIB)
+
+Don't forget to
+  - add "gl/lib/Makefile" to AC_CONFIG_FILES in ./configure.ac,
+  - add "gl/ref-po/Makefile.in" to AC_CONFIG_FILES in ./configure.ac,
+  - mention "lib" in SUBDIRS in gl/Makefile.am,
+  - mention "ref-po" in SUBDIRS in gl/Makefile.am,
+  - mention "-I gl/m4" in ACLOCAL_AMFLAGS in Makefile.am
+    or add an AC_CONFIG_MACRO_DIRS([gl/m4]) invocation in ./configure.ac,
+  - mention "gl/m4/gnulib-cache.m4" in EXTRA_DIST in Makefile.am,
+  - invoke gl_EARLY in ./configure.ac, right after AC_PROG_CC,
+  - invoke gl_INIT in ./configure.ac.
+running: AUTOPOINT=true LIBTOOLIZE=true autoreconf --verbose --install --force -I gl/m4  --no-recursive
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not running autopoint: AUTOPOINT=true in environment
+autoreconf: running: aclocal -I gl/m4 --force -I gl/m4 -I m4
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not running libtoolize: LIBTOOLIZE=true in environment
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: configure.ac: not running autopoint: AUTOPOINT=true in environment
+autoreconf: running: /usr/bin/autoconf --include=gl/m4 --force
+autoreconf: running: /usr/bin/autoheader --include=gl/m4 --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:50: installing 'build-aux/ar-lib'
+configure.ac:11: installing 'build-aux/compile'
+configure.ac:7: installing 'build-aux/missing'
+gl/lib/Makefile.am: installing 'build-aux/depcomp'
+parallel-tests: installing 'build-aux/test-driver'
+configure.ac: installing 'build-aux/ylwrap'
+autoreconf: configure.ac: not running make: --make not given
+autoreconf: Leaving directory '.'
+./bootstrap: ln -fs ../gnulib/build-aux/install-sh build-aux/install-sh
+./bootstrap: ln -fs ../gnulib/build-aux/mdate-sh build-aux/mdate-sh
+./bootstrap: ln -fs ../gnulib/build-aux/texinfo.tex build-aux/texinfo.tex
+./bootstrap: ln -fs ../gnulib/build-aux/depcomp build-aux/depcomp
+./bootstrap: ln -fs ../gnulib/build-aux/config.guess build-aux/config.guess
+./bootstrap: ln -fs ../gnulib/build-aux/config.sub build-aux/config.sub
+./bootstrap: ln -fs gnulib/doc/INSTALL INSTALL
+./bootstrap: Creating po/Makevars from po/Makevars.template ...
+./bootstrap: done.  Now you can run './configure'.
+configure script found
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '97' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C23 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether the compiler is clang... no
+checking for compiler option needed when checking for declarations... none
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for features.h... yes
+checking for linewrap.h... no
+checking for uchar.h... yes
+checking for sys/param.h... yes
+checking for sys/socket.h... yes
+checking for dirent.h... yes
+checking for error.h... yes
+checking for fnmatch.h... yes
+checking for getopt.h... yes
+checking for sys/time.h... yes
+checking for glob.h... yes
+checking for threads.h... yes
+checking for limits.h... yes
+checking for crtdefs.h... no
+checking for wctype.h... yes
+checking for langinfo.h... yes
+checking for xlocale.h... no
+checking for sys/mman.h... yes
+checking for sys/select.h... yes
+checking for pthread.h... yes
+checking for malloc.h... yes
+checking for stdbool.h... yes
+checking for stdckdint.h... yes
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/random.h... yes
+checking for sys/uio.h... yes
+checking for sysexits.h... yes
+checking for termios.h... yes
+checking for utime.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking if tar --sort=name works... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for getuid... yes
+checking for geteuid... yes
+checking for getresuid... yes
+checking for getgid... yes
+checking for getegid... yes
+checking for getresgid... yes
+checking for setresuid... yes
+checking for setreuid... yes
+checking for seteuid... yes
+checking for setresgid... yes
+checking for setregid... yes
+checking for setegid... yes
+checking for flockfile... yes
+checking for funlockfile... yes
+checking for btowc... yes
+checking for mbrtowc... yes
+checking for mbsinit... yes
+checking for canonicalize_file_name... yes
+checking for realpath... yes
+checking for lstat... yes
+checking for chown... yes
+checking for fchown... yes
+checking for _set_invalid_parameter_handler... no
+checking for fchdir... yes
+checking for fcntl... yes
+checking for symlink... yes
+checking for fdopendir... yes
+checking for flock... yes
+checking for fnmatch... yes
+checking for mbsrtowcs... yes
+checking for fstatat... yes
+checking for getdtablesize... yes
+checking for getexecname... no
+checking for gettimeofday... yes
+checking for glob_pattern_p... yes
+checking for isblank... yes
+checking for iswcntrl... yes
+checking for lchmod... yes
+checking for mprotect... yes
+checking for mkstemp... yes
+checking for openat... yes
+checking for pipe... yes
+checking for pselect... yes
+checking for pthread_sigmask... yes
+checking for readlink... yes
+checking for iswctype... yes
+checking for link... yes
+checking for renameat... yes
+checking for setenv... yes
+checking for sigaction... yes
+checking for sigaltstack... yes
+checking for siginterrupt... yes
+checking for sleep... yes
+checking for strndup... yes
+checking for unlinkat... yes
+checking for vasnprintf... no
+checking for snprintf... yes
+checking for wcrtomb... yes
+configure: System-wide cache files will be owned by bin
+configure: Man will not be installed setuid
+configure: Using GNU hierarchy organization
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C23 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking whether the compiler is clang... (cached) no
+checking for compiler option needed when checking for declarations... (cached) none
+checking dependency style of gcc... (cached) gcc3
+checking how to run the C preprocessor... gcc -E
+checking for egrep -e... /usr/bin/grep -E
+checking for Minix Amsterdam compiler... no
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking for ar... (cached) ar
+checking for ranlib... ranlib
+checking for gcc option to support large files... none needed
+checking for gcc option to support timestamps after 2038... none needed
+checking how to run the C preprocessor... gcc -E
+checking whether -Wno-missing-field-initializers is needed... no
+checking whether -Wuninitialized is supported... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... no
+checking whether C compiler handles -fstrict-flex-arrays... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wall... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Warith-conversion... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wbad-function-cast... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wcast-align=strict... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wdate-time... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wdisabled-optimization... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wdouble-promotion... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wduplicated-branches... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wduplicated-cond... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wextra... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wformat-signedness... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wflex-array-member-not-at-end... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Winit-self... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Winvalid-pch... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wlogical-op... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wmissing-declarations... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wmissing-include-dirs... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wmissing-prototypes... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wmissing-variable-declarations... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wnested-externs... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wnull-dereference... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wold-style-definition... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wopenmp-simd... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Woverlength-strings... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wpacked... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wpointer-arith... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wshadow... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wstack-protector... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wstrict-flex-arrays... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wstrict-overflow... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wstrict-prototypes... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=cold... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=const... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=format... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=malloc... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=noreturn... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=pure... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-final-methods... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-final-types... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsync-nand... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wtrampolines... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wuninitialized... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wunknown-pragmas... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wunsafe-loop-optimizations... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wunused-macros... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wvariadic-macros... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wvector-operation-performance... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wvla... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wwrite-strings... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Warray-bounds=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wattribute-alias=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wbidi-chars=any,ucn... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wformat-overflow=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wformat=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wformat-truncation=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wimplicit-fallthrough=5... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wshift-overflow=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wuse-after-free=3... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wunused-const-variable=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wvla-larger-than=4031... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wno-analyzer-malloc-leak... yes
+checking whether C compiler handles -Wno-missing-field-initializers... yes
+checking whether ln -s works... yes
+checking the archiver (ar) interface... (cached) ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for cat... cat
+checking for browser... /usr/bin/lynx
+checking for tr... tr
+checking for grep... grep
+checking for pager... no
+checking for less... less
+checking for nroff... nroff
+checking whether nroff is GNU nroff... checking for gpreconv... no
+checking for preconv... preconv
+yes
+checking for appropriate nroff macro... -mandoc
+checking for groff... groff
+checking for appropriate groff options... -mandoc
+checking whether nroff supports warning control... yes
+checking for eqn... eqn
+checking for neqn... neqn
+checking for tbl... tbl
+checking whether tbl supports the 'x' format character... yes
+checking for col... col
+checking for vgrind... /usr/bin/vgrind
+checking for refer... refer
+checking for grap... /usr/bin/grap
+checking for pic... pic
+checking for gzip... gzip
+checking for compress... no
+checking for bzip2... bzip2
+checking for xz... xz
+checking for lzip... lzip
+checking for zstd... zstd
+checking for gzopen in -lz... yes
+checking for flex... flex
+checking for lex output file root... lex.yy
+checking for lex library... none needed
+checking whether yytext is a pointer... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for inline... inline
+checking for C/C++ restrict keyword... __restrict__
+checking for gcc options to detect undeclared functions... none needed
+checking for gcc options to ignore future-version functions... none needed
+checking whether clearerr_unlocked is declared... yes
+checking whether feof_unlocked is declared... yes
+checking whether ferror_unlocked is declared... yes
+checking whether fflush_unlocked is declared... yes
+checking whether fgets_unlocked is declared... yes
+checking whether fputc_unlocked is declared... yes
+checking whether fputs_unlocked is declared... yes
+checking whether fread_unlocked is declared... yes
+checking whether fwrite_unlocked is declared... yes
+checking whether getc_unlocked is declared... yes
+checking whether getchar_unlocked is declared... yes
+checking whether putc_unlocked is declared... yes
+checking whether putchar_unlocked is declared... yes
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking whether the preprocessor supports include_next... yes
+checking whether source code line length is unlimited... yes
+checking whether <wchar.h> uses 'inline' correctly... yes
+checking for nl_langinfo and CODESET... yes
+checking for a traditional french locale... fr_FR
+checking whether char8_t is correctly defined... yes
+checking whether char16_t is correctly defined... yes
+checking whether char32_t is correctly defined... yes
+checking for bit size of wchar_t... 32
+checking for mbstate_t... yes
+checking for a traditional japanese locale... ja_JP
+checking for a french Unicode locale... fr_FR.UTF-8
+checking for a transitional chinese locale... zh_CN.GB18030
+checking whether mbrtowc handles incomplete characters... yes
+checking whether mbrtowc works as well as mbtowc... yes
+checking whether mbrtoc32 is declared... yes
+checking for mbrtoc32... yes
+checking whether mbrtoc32 works as well as mbrtowc... yes
+checking whether c32rtomb is declared... yes
+checking for c32rtomb... yes
+checking whether c32rtomb works as well as wcrtomb... yes
+checking whether malloc is ptrdiff_t safe... yes
+checking whether malloc, realloc, calloc set errno on failure... yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether // is distinct from /... no
+checking whether realpath works... yes
+checking for faccessat... yes
+checking for getcwd... yes
+checking for uid_t... yes
+checking for gid_t... yes
+checking for unistd.h... (cached) yes
+checking for working chown... yes
+checking whether chown dereferences symlinks... yes
+checking whether chown honors trailing slash... yes
+checking whether chown always updates ctime... yes
+checking if environ is properly declared... yes
+checking for complete errno.h... yes
+checking for error... yes
+checking whether error_at_line is declared... yes
+checking for error_at_line... yes
+checking for working error function... yes
+checking whether ctype.h defines __header_inline... no
+checking whether fchdir is declared... yes
+checking for working fcntl.h... yes
+checking for pid_t... yes
+checking for mode_t... yes
+checking whether stat file-mode macros are broken... no
+checking for nlink_t... yes
+checking whether getcwd (NULL, 0) allocates memory for result... yes
+checking for getcwd with POSIX signature... yes
+checking whether getcwd is declared... yes
+checking whether alarm is declared... yes
+checking whether getdelim is declared... yes
+checking whether getdtablesize is declared... yes
+checking whether getline is declared... yes
+checking whether getlogin_r is declared... yes
+checking whether getlogin is declared... yes
+checking for getopt.h... (cached) yes
+checking for getopt_long_only... yes
+checking whether getopt is POSIX compatible... yes
+checking for working GNU getopt function... yes
+checking for working GNU getopt_long function... yes
+checking for glibc-compatible sys/cdefs.h... yes
+checking whether timespec_get is declared... yes
+checking for timespec_get... yes
+checking for struct timeval... yes
+checking for wide-enough struct timeval.tv_sec member... yes
+checking for pthread.h... (cached) yes
+checking for pthread_kill in -lpthread... yes
+checking whether POSIX threads API is available... yes
+checking whether setlocale (LC_ALL, NULL) is multithread-safe... yes
+checking whether setlocale (category, NULL) is multithread-safe... yes
+checking whether limits.h has WORD_BIT, BOOL_WIDTH etc.... yes
+checking whether limits.h has SSIZE_MAX... yes
+checking for wint_t... yes
+checking whether wint_t is large enough... yes
+checking whether the compiler produces multi-arch binaries... no
+checking whether stdint.h conforms to C99... yes
+checking whether stdint.h works without ISO C predefines... yes
+checking whether stdint.h has UINTMAX_WIDTH etc.... yes
+checking whether <sys/socket.h> is self-contained... yes
+checking for shutdown... yes
+checking whether <sys/socket.h> defines the SHUT_* macros... yes
+checking for struct sockaddr_storage... yes
+checking for sa_family_t... yes
+checking for struct sockaddr_storage.ss_family... yes
+checking whether iswcntrl works... yes
+checking for towlower... yes
+checking for wctype_t... yes
+checking for wctrans_t... yes
+checking whether wctype supports the "blank" and "punct" character classes... yes
+checking whether langinfo.h defines CODESET... yes
+checking whether langinfo.h defines T_FMT_AMPM... yes
+checking whether langinfo.h defines ALTMON_1... yes
+checking whether langinfo.h defines ERA... yes
+checking whether langinfo.h defines YESEXPR... yes
+checking for good max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking for unreachable... yes
+checking whether nullptr_t needs <stddef.h>... yes
+checking for clean definition of __STDC_VERSION_STDDEF_H__... no
+checking whether locale.h defines locale_t... yes
+checking whether locale.h conforms to POSIX:2001... yes
+checking whether struct lconv is properly defined... yes
+checking whether imported symbols can be declared weak... yes
+checking for multithread API to use... posix
+checking whether malloc (0) returns nonnull... yes
+checking for mmap... yes
+checking for MAP_ANONYMOUS... yes
+checking whether memchr works... yes
+checking whether memmem is declared... yes
+checking for memmem... yes
+checking whether memmem works... yes
+checking whether memrchr is declared... yes
+checking whether <limits.h> defines MIN and MAX... no
+checking whether <sys/param.h> defines MIN and MAX... yes
+checking whether C symbols are prefixed with underscore at the linker level... no
+checking for O_CLOEXEC... yes
+checking for promoted mode_t type... mode_t
+checking whether <sys/select.h> is self-contained... yes
+checking for pthread_t... yes
+checking for pthread_spinlock_t... yes
+checking for pthread_spin_init... yes
+checking for sigset_t... yes
+checking for SIGPIPE... yes
+checking for sched.h... yes
+checking for struct sched_param... yes
+checking for library containing setsockopt... none needed
+checking whether setenv is declared... yes
+checking whether _putenv is declared... no
+checking for search.h... yes
+checking for tsearch... yes
+checking for volatile sig_atomic_t... yes
+checking for sighandler_t... yes
+checking whether fcloseall is declared... yes
+checking whether getw is declared... yes
+checking whether putw is declared... yes
+checking which flavor of printf attribute matches inttypes macros... system
+checking whether ecvt is declared... yes
+checking whether fcvt is declared... yes
+checking whether gcvt is declared... yes
+checking whether MB_CUR_MAX is correct... yes
+checking for strcasestr... yes
+checking whether strcasestr works... yes
+checking whether strdup is declared... yes
+checking whether strerror(0) succeeds... yes
+checking whether strndup is declared... yes
+checking whether strnlen is declared... yes
+checking whether <sys/ioctl.h> declares ioctl... yes
+checking for off64_t... yes
+checking for struct timespec in <time.h>... yes
+checking for TIME_UTC in <time.h>... yes
+checking whether execvpe is declared... yes
+checking whether the utimes function works... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for intmax_t... yes
+checking whether snprintf returns a byte count as in C99... yes
+checking whether snprintf truncates the result as in C99... yes
+checking where to find the exponent in a 'double'... word 1 bit 20
+checking for wcslen... yes
+checking for snprintf... (cached) yes
+checking for strnlen... yes
+checking for wcrtomb... (cached) yes
+checking whether _snprintf is declared... no
+checking whether printf supports POSIX/XSI format strings with positions... yes
+checking whether vsnprintf is declared... yes
+checking whether wcsdup is declared... yes
+checking for strerrorname_np... yes
+checking whether strerrorname_np works... yes
+checking for C compiler option to allow warnings... -Wno-error
+checking for alignas and alignof... yes, keywords
+checking for alloca as a compiler built-in... yes
+checking whether program_invocation_name is declared... yes
+checking whether program_invocation_short_name is declared... yes
+checking whether program_invocation_name is defined... yes
+checking whether program_invocation_short_name is defined... yes
+checking for static_assert... yes, a keyword
+checking whether btowc(0) is correct... yes
+checking whether btowc(EOF) is correct... yes
+checking whether btowc is consistent with mbrtowc in the C locale... no
+checking for __builtin_expect... yes
+checking whether calloc (0, n) and calloc (n, 0) return nonnull... yes
+checking for faccessat... (cached) yes
+checking whether this system supports file names of any length... no
+checking for library containing clock_gettime... none required
+checking for clock_getres... yes
+checking for clock_gettime... yes
+checking for clock_settime... yes
+checking for closedir... yes
+checking for d_ino member in directory struct... yes
+checking for d_type member in directory struct... yes
+checking for dirfd... yes
+checking whether dirfd is declared... yes
+checking whether dirfd is a macro... no
+checking whether // is distinct from /... (cached) no
+checking whether dup works... yes
+checking whether dup2 works... yes
+checking whether fcntl handles F_DUPFD correctly... yes
+checking whether fcntl understands F_DUPFD_CLOEXEC... needs runtime check
+checking whether fdopendir is declared... yes
+checking whether fdopendir works... yes
+checking for mempcpy... yes
+checking for flexible array member... yes
+checking whether conversion from 'int' to 'long double' works... yes
+checking for working GNU fnmatch... yes
+checking whether free is known to preserve errno... yes
+checking whether fstatat (..., 0) works... yes
+checking whether getcwd handles long file names properly... yes
+checking whether getcwd succeeds when 4k < cwd_length < 16k... yes
+checking for getdelim... yes
+checking for working getdelim function... yes
+checking whether getdtablesize works... yes
+checking for getline... yes
+checking for working getline function... yes
+checking for getlogin_r... yes
+checking whether getlogin_r works with small buffers... yes
+checking for getprogname... no
+checking whether program_invocation_name is declared... (cached) yes
+checking whether program_invocation_name is declared... (cached) yes
+checking whether program_invocation_short_name is declared... (cached) yes
+checking whether __argv is declared... no
+checking for getrandom... yes
+checking whether getrandom is compatible with its GNU+BSD signature... yes
+checking for gettimeofday with POSIX signature... yes
+checking for glob... yes
+checking for GNU glob interface version 1 or 2... yes
+checking whether glob lists broken symlinks... yes
+checking whether glob NOTDIR*/ omits symlink to nondir... yes
+checking whether the compiler generally respects inline... yes
+checking for ioctl... yes
+checking for ioctl with POSIX signature... no
+checking for iswblank... yes
+checking whether iswblank is declared... yes
+checking whether iswdigit is ISO C compliant... yes
+checking whether iswpunct is consistent with ispunct... yes
+checking whether iswxdigit is ISO C compliant... yes
+checking for lchown... yes
+checking for C compiler flag to ignore unused libraries... -Wl,--as-needed
+checking whether the compiler supports the __inline keyword... yes
+checking whether localeconv works... yes
+checking for pthread_rwlock_t... yes
+checking whether pthread_rwlock_rdlock prefers a writer to a reader... no
+checking whether malloc (0) returns nonnull... (cached) yes
+checking whether mbrtoc32 works on empty input... yes
+checking whether the C locale is free of encoding errors... no
+checking whether mbrtoc32 works in an UTF-8 locale... yes
+checking whether mbrtowc handles a NULL pwc argument... yes
+checking whether mbrtowc handles a NULL string argument... yes
+checking whether mbrtowc has a correct return value... yes
+checking whether mbrtowc returns 0 when parsing a NUL character... yes
+checking whether mbrtowc stores incomplete characters... no
+checking whether mbrtowc works on empty input... yes
+checking whether the C locale is free of encoding errors... no
+checking whether mbsrtowcs works... yes
+checking whether the C locale is free of encoding errors... (cached) no
+checking for mbtowc... yes
+checking whether memmem works in linear time... yes
+checking for memmem... (cached) yes
+checking whether memmem works... (cached) yes
+checking for mempcpy... (cached) yes
+checking for memrchr... yes
+checking whether mkdir handles trailing slash... yes
+checking whether mkdir handles trailing dot... yes
+checking for mkdtemp... yes
+checking for working mkstemp... yes
+checking for library containing nanosleep... none required
+checking for working nanosleep... no (mishandles large arguments)
+checking for nl_langinfo... yes
+checking whether YESEXPR works... yes
+checking for C nullptr... yes
+checking whether open recognizes a trailing slash... yes
+checking for opendir... yes
+checking whether program_invocation_name is declared... (cached) yes
+checking whether program_invocation_short_name is declared... (cached) yes
+checking whether signature of pselect conforms to POSIX... yes
+checking whether pselect detects invalid fds... yes
+checking for PTHREAD_CREATE_DETACHED... yes
+checking for PTHREAD_MUTEX_RECURSIVE... yes
+checking for PTHREAD_MUTEX_ROBUST... yes
+checking for PTHREAD_PROCESS_SHARED... yes
+checking whether pthread_once works... yes
+checking whether pthread_sigmask is a macro... no
+checking whether pthread_sigmask works without -lpthread... yes
+checking whether pthread_sigmask returns error numbers... yes
+checking whether pthread_sigmask unblocks signals correctly... guessing yes
+checking for raise... yes
+checking for sigprocmask... yes
+checking for rawmemchr... yes
+checking for readdir... yes
+checking whether readlink signature is correct... yes
+checking whether readlink handles trailing slash correctly... yes
+checking whether readlink truncates results correctly... yes
+checking for readlinkat... yes
+checking whether readlinkat signature is correct... yes
+checking whether realloc (0, 0) returns nonnull... yes
+checking for reallocarray... yes
+checking for working re_compile_pattern... yes
+checking whether rename honors trailing slash on destination... yes
+checking whether rename honors trailing slash on source... yes
+checking whether rename manages hard links correctly... yes
+checking whether rename manages existing destinations correctly... yes
+checking for linux/fs.h... yes
+checking for renameat2... yes
+checking whether renameat2 works... yes
+checking for linux/fs.h... (cached) yes
+checking for renameat2... (cached) yes
+checking whether renameat2 works... (cached) yes
+checking for rewinddir... yes
+checking whether rmdir works... yes
+checking whether select supports a 0 argument... yes
+checking whether select detects invalid fds... yes
+checking whether setenv validates arguments... yes
+checking whether setlocale (LC_ALL, NULL) is multithread-safe... (cached) yes
+checking whether setlocale (category, NULL) is multithread-safe... (cached) yes
+checking for struct sigaction.sa_sigaction... yes
+checking for sigprocmask... (cached) yes
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... yes
+checking whether sleep is declared... yes
+checking for working sleep... yes
+checking for socklen_t... yes
+checking for ssize_t... yes
+checking whether stat handles trailing slashes on files... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for struct stat.st_birthtimespec.tv_nsec... no
+checking for struct stat.st_birthtimensec... no
+checking for struct stat.st_birthtim.tv_nsec... no
+checking for va_copy... yes
+checking for bool, true, false... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strncasecmp... yes
+checking whether strncasecmp is declared... yes
+checking whether strcasestr works in linear time... yes
+checking for strcasestr... (cached) yes
+checking whether strcasestr works... (cached) yes
+checking for strchrnul... yes
+checking whether strchrnul works... yes
+checking for working strerror function... yes
+checking for working strndup... yes
+checking for working strnlen... yes
+checking for strsep... yes
+checking whether unlink honors trailing slashes... yes
+checking whether unlink of a parent directory fails as it should... guessing yes
+checking for utime... yes
+checking whether utime handles trailing slashes on files... yes
+checking for futimes... yes
+checking for futimesat... yes
+checking for lutimes... yes
+checking for futimens... yes
+checking for utimensat... yes
+checking for variable-length arrays... yes
+checking for ptrdiff_t... yes
+checking for vsnprintf... yes
+checking whether snprintf respects a size of 1... yes
+checking whether wcrtomb works in the C locale... yes
+checking whether wcrtomb return value is correct... yes
+checking for wmemchr... yes
+checking for wmempcpy... yes
+checking for stdint.h... (cached) yes
+checking for sys/file.h... (cached) yes
+checking for linux/fiemap.h... yes
+checking for posix_fadvise... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for po4a... no
+checking for an ANSI C-conforming const... yes
+checking for inline... (cached) inline
+checking for pid_t... (cached) yes
+checking for uid_t... (cached) yes
+checking for gid_t... (cached) yes
+checking for size_t... (cached) yes
+checking for _nl_msg_cat_cntr... yes
+checking for libpipeline >= 1.5.0... yes
+checking for gdbm.h... yes
+checking for gdbm_fetch in -lgdbm... yes
+checking for gdbm_exists... yes
+checking for libseccomp... yes
+configure: default CC = "gcc"
+configure: default CPP = "gcc -E"
+configure: default CPPFLAGS = ""
+configure: default CFLAGS = "-g -O2 -Wall"
+configure: default LDFLAGS = ""
+configure: default LIBS = ""
+configure: default DBLIBS = "-lgdbm"
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating gl/lib/Makefile
+config.status: creating init/Makefile
+config.status: creating init/systemd/Makefile
+config.status: creating lib/Makefile
+config.status: creating src/Makefile
+config.status: creating src/man_db.conf
+config.status: creating src/tests/Makefile
+config.status: creating man/Makefile
+config.status: creating man/replace.sin
+config.status: creating man/po4a/Makefile
+config.status: creating man/da/Makefile
+config.status: creating man/de/Makefile
+config.status: creating man/es/Makefile
+config.status: creating man/fr/Makefile
+config.status: creating man/id/Makefile
+config.status: creating man/it/Makefile
+config.status: creating man/ja/Makefile
+config.status: creating man/ko/Makefile
+config.status: creating man/lv/Makefile
+config.status: creating man/nl/Makefile
+config.status: creating man/pl/Makefile
+config.status: creating man/pt/Makefile
+config.status: creating man/pt_BR/Makefile
+config.status: creating man/ro/Makefile
+config.status: creating man/ru/Makefile
+config.status: creating man/sr/Makefile
+config.status: creating man/sv/Makefile
+config.status: creating man/tr/Makefile
+config.status: creating man/uk/Makefile
+config.status: creating man/zh_CN/Makefile
+config.status: creating man/zh_TW/Makefile
+config.status: creating manual/Makefile
+config.status: creating libdb/Makefile
+config.status: creating docs/Makefile
+config.status: creating tools/Makefile
+config.status: creating po/Makefile.in
+config.status: creating gl/po/Makefile.in
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: creating gl/po/POTFILES
+config.status: creating gl/po/Makefile
+make  all-recursive
+make[1]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3'
+Making all in docs
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/docs'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/docs'
+Making all in gl/lib
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/lib'
+  GEN      dirent.h
+  GEN      alloca.h
+  GEN      ctype.h
+  GEN      error.h
+  GEN      fcntl.h
+  GEN      getopt.h
+  GEN      malloc/dynarray.gl.h
+  GEN      getopt-cdefs.h
+  GEN      malloc/dynarray-skeleton.gl.h
+  GEN      malloc/scratch_buffer.gl.h
+  GEN      glob-libc.gl.h
+  GEN      inttypes.h
+  GEN      langinfo.h
+  GEN      limits.h
+  GEN      sched.h
+  GEN      locale.h
+  GEN      pthread.h
+  GEN      signal.h
+  GEN      stddef.h
+  GEN      stdio.h
+  GEN      stdlib.h
+  GEN      strings.h
+  GEN      string.h
+  GEN      sys/ioctl.h
+  GEN      sys/file.h
+  GEN      sys/random.h
+  GEN      sys/select.h
+  GEN      sys/socket.h
+  GEN      sys/time.h
+  GEN      sys/stat.h
+  GEN      sys/types.h
+  GEN      sys/uio.h
+  GEN      termios.h
+  GEN      time.h
+  GEN      uchar.h
+  GEN      unicase.h
+  GEN      unictype.h
+  GEN      uninorm.h
+  GEN      unistd.h
+  GEN      unistr.h
+  GEN      unitypes.h
+  GEN      wchar.h
+  GEN      utime.h
+  GEN      wctype.h
+make  all-recursive
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/lib'
+make[4]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/lib'
+  CC       libgnu_la-argp-ba.lo
+  CC       libgnu_la-argp-fmtstream.lo
+  CC       libgnu_la-argp-eexst.lo
+  CC       libgnu_la-argp-fs-xinl.lo
+  CC       libgnu_la-argp-help.lo
+argp-help.c: In function 'argp_doc':
+argp-help.c:1614:18: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1614 |       char *vt = strchr (doc, '\v');
+      |                  ^~~~~~
+  CC       libgnu_la-argp-parse.lo
+  CC       libgnu_la-argp-pin.lo
+  CC       libgnu_la-argp-pv.lo
+  CC       libgnu_la-argp-pvh.lo
+  CC       libgnu_la-argp-xinl.lo
+  CC       libgnu_la-gl_array_list.lo
+  CC       libgnu_la-openat-proc.lo
+  CC       libgnu_la-basename-lgpl.lo
+  CC       libgnu_la-bitrotate.lo
+  CC       libgnu_la-btoc32.lo
+  CC       libgnu_la-btowc.lo
+  CC       libgnu_la-c32_apply_type_test.lo
+  CC       libgnu_la-c32_get_type_test.lo
+  CC       libgnu_la-c32isalnum.lo
+  CC       libgnu_la-c32isalpha.lo
+  CC       libgnu_la-c32isblank.lo
+  CC       libgnu_la-c32iscntrl.lo
+  CC       libgnu_la-c32isdigit.lo
+  CC       libgnu_la-c32isgraph.lo
+  CC       libgnu_la-c32islower.lo
+  CC       libgnu_la-c32isprint.lo
+  CC       libgnu_la-c32ispunct.lo
+  CC       libgnu_la-c32isspace.lo
+  CC       libgnu_la-c32isupper.lo
+  CC       libgnu_la-c32isxdigit.lo
+  CC       libgnu_la-c32tolower.lo
+  CC       libgnu_la-canonicalize.lo
+  CC       libgnu_la-chdir-long.lo
+  CC       libgnu_la-cloexec.lo
+  CC       libgnu_la-dirname.lo
+  CC       libgnu_la-basename.lo
+  CC       libgnu_la-dirname-lgpl.lo
+  CC       libgnu_la-stripslash.lo
+  CC       libgnu_la-exitfail.lo
+  CC       libgnu_la-fcntl.lo
+  CC       libgnu_la-fd-hook.lo
+  CC       libgnu_la-fd-safer-flag.lo
+  CC       libgnu_la-dup-safer-flag.lo
+  CC       libgnu_la-file-set.lo
+  CC       libgnu_la-filenamecat-lgpl.lo
+  CC       libgnu_la-getopt.lo
+  CC       libgnu_la-getopt1.lo
+  CC       libgnu_la-getprogname.lo
+  CC       libgnu_la-gettime.lo
+  CC       libgnu_la-hard-locale.lo
+  CC       libgnu_la-hash.lo
+  CC       libgnu_la-gl_hash_map.lo
+  CC       libgnu_la-hash-pjw.lo
+  CC       libgnu_la-hash-pjw-bare.lo
+  CC       libgnu_la-gl_hash_set.lo
+  CC       libgnu_la-hash-triple-simple.lo
+  CC       libgnu_la-ialloc.lo
+  CC       libgnu_la-idpriv-drop.lo
+  CC       libgnu_la-idpriv-droptemp.lo
+  CC       libgnu_la-ioctl.lo
+  CC       libgnu_la-gl_linkedhash_list.lo
+  CC       libgnu_la-gl_list.lo
+  CC       libgnu_la-localcharset.lo
+  CC       libgnu_la-gl_map.lo
+  CC       libgnu_la-malloca.lo
+  CC       libgnu_la-mbrtoc32.lo
+  CC       libgnu_la-mbrtowc.lo
+  CC       libgnu_la-mbsrtoc32s.lo
+  CC       libgnu_la-mbsrtowcs.lo
+  CC       libgnu_la-mbszero.lo
+  CC       libgnu_la-nanosleep.lo
+  CC       libgnu_la-nonblocking.lo
+  CC       libgnu_la-openat-die.lo
+  CC       libgnu_la-progname.lo
+  CC       libgnu_la-gl_rbtree_list.lo
+  CC       libgnu_la-renameatu.lo
+  CC       libgnu_la-same-inode.lo
+  CC       libgnu_la-save-cwd.lo
+  CC       libgnu_la-gl_set.lo
+  CC       libgnu_la-setlocale_null.lo
+  CC       libgnu_la-setlocale_null-unlocked.lo
+  CC       libgnu_la-sig-handler.lo
+  CC       libgnu_la-sockets.lo
+  CC       libgnu_la-stat-time.lo
+  CC       libgnu_la-stdopen.lo
+  CC       libgnu_la-strnlen1.lo
+  CC       libgnu_la-sys_socket.lo
+  CC       libgnu_la-tempname.lo
+  CC       glthread/libgnu_la-threadlib.lo
+  CC       libgnu_la-timespec.lo
+  CC       libgnu_la-unistd.lo
+  CC       libgnu_la-dup-safer.lo
+  CC       libgnu_la-fd-safer.lo
+  CC       libgnu_la-pipe-safer.lo
+  CC       libgnu_la-utimens.lo
+  CC       libgnu_la-vaszprintf.lo
+  CC       libgnu_la-aszprintf.lo
+  CC       libgnu_la-verror.lo
+  CC       libgnu_la-vsnzprintf.lo
+  CC       libgnu_la-wctype-h.lo
+  CC       libgnu_la-xmalloc.lo
+  CC       libgnu_la-xalloc-die.lo
+  CC       libgnu_la-xgetcwd.lo
+  CC       libgnu_la-gl_xlist.lo
+  CC       libgnu_la-gl_xmap.lo
+  CC       libgnu_la-gl_xset.lo
+  CC       libgnu_la-xsize.lo
+  CC       libgnu_la-xstdopen.lo
+  CC       libgnu_la-xstrndup.lo
+  CC       libgnu_la-xvasprintf.lo
+  CC       libgnu_la-xasprintf.lo
+  CC       asnprintf.lo
+  CC       mbsrtoc32s-state.lo
+  CC       mbsrtowcs-state.lo
+  CC       printf-args.lo
+  CC       printf-parse.lo
+  CC       vasnprintf.lo
+  CC       malloc/libgnu_la-dynarray_at_failure.lo
+  CC       malloc/libgnu_la-dynarray_emplace_enlarge.lo
+  CC       malloc/libgnu_la-dynarray_finalize.lo
+  CC       malloc/libgnu_la-dynarray_resize.lo
+  CC       malloc/libgnu_la-dynarray_resize_clear.lo
+  CC       malloc/libgnu_la-scratch_buffer_grow.lo
+  CC       malloc/libgnu_la-scratch_buffer_grow_preserve.lo
+  CC       malloc/libgnu_la-scratch_buffer_set_array_size.lo
+  CC       glthread/libgnu_la-lock.lo
+  CC       unicase/libgnu_la-tolower.lo
+  CC       unictype/libgnu_la-ctype_alnum.lo
+  CC       unictype/libgnu_la-ctype_alpha.lo
+  CC       unictype/libgnu_la-ctype_blank.lo
+  CC       unictype/libgnu_la-ctype_cntrl.lo
+  CC       unictype/libgnu_la-ctype_digit.lo
+  CC       unictype/libgnu_la-ctype_graph.lo
+  CC       unictype/libgnu_la-ctype_lower.lo
+  CC       unictype/libgnu_la-ctype_print.lo
+  CC       unictype/libgnu_la-ctype_punct.lo
+  CC       unictype/libgnu_la-ctype_space.lo
+  CC       unictype/libgnu_la-ctype_upper.lo
+  CC       unictype/libgnu_la-ctype_xdigit.lo
+  CC       unistr/libgnu_la-u32-chr.lo
+  CC       unistr/libgnu_la-u32-cpy.lo
+  CC       unistr/libgnu_la-u32-pcpy.lo
+  CC       unistr/libgnu_la-u32-strcat.lo
+  CC       unistr/libgnu_la-u32-strlen.lo
+  CCLD     libgnu.la
+make[4]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/lib'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/lib'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/lib'
+Making all in gl/po
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/po'
+make man-db-gnulib.pot-update
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/po'
+sed -e '/^#/d' remove-potcdate.sin > t-remove-potcdate.sed
+mv t-remove-potcdate.sed remove-potcdate.sed
+if { if (LC_ALL=C find --version) 2>/dev/null | grep GNU >/dev/null; then \
+       LC_ALL=C find -L ../.. -maxdepth 1 -type f -size -10000000c -exec grep 'GNU man-db' /dev/null '{}' ';' 2>/dev/null; \
+     else \
+       LC_ALL=C grep 'GNU man-db' ../../* 2>/dev/null; \
+     fi; \
+   } | grep -v 'libtool:' >/dev/null; then \
+  package_gnu='GNU '; \
+else \
+  package_gnu=''; \
+fi; \
+if test -n 'bug-gnulib@gnu.org' || test 'cjwatson@debian.org' = '@'PACKAGE_BUGREPORT'@'; then \
+  msgid_bugs_address='bug-gnulib@gnu.org'; \
+else \
+  msgid_bugs_address='cjwatson@debian.org'; \
+fi; \
+case `/usr/bin/xgettext --version | sed 1q | sed -e 's,^[^0-9]*,,'` in \
+  '' | 0.[0-9] | 0.[0-9].* | 0.1[0-5] | 0.1[0-5].* | 0.16 | 0.16.[0-1]*) \
+    /usr/bin/xgettext --default-domain=man-db-gnulib --directory=../.. \
+      --add-comments=TRANSLATORS: --keyword=_ --flag=_:1:pass-c-format --keyword=N_ --flag=N_:1:pass-c-format --keyword='proper_name:1,"This is a proper name. See the gettext manual, section Names."' --keyword='proper_name_lite:1,"This is a proper name. See the gettext manual, section Names."' --keyword='proper_name_utf8:1,"This is a proper name. See the gettext manual, section Names."' --flag=error:3:c-format --flag=error_at_line:5:c-format  --flag=argp_error:2:c-format --flag=argp_failure:4:c-format --flag=error:3:c-format --flag=error_at_line:5:c-format --flag=aszprintf:2:c-format --flag=vaszprintf:2:c-format --flag=verror:3:c-format --flag=verror_at_line:5:c-format --flag=xasprintf:1:c-format \
+      --files-from=./POTFILES.in \
+      --copyright-holder='Free Software Foundation, Inc.' \
+      --msgid-bugs-address="$msgid_bugs_address" \
+    ;; \
+  *) \
+    /usr/bin/xgettext --default-domain=man-db-gnulib --directory=../.. \
+      --add-comments=TRANSLATORS: --keyword=_ --flag=_:1:pass-c-format --keyword=N_ --flag=N_:1:pass-c-format --keyword='proper_name:1,"This is a proper name. See the gettext manual, section Names."' --keyword='proper_name_lite:1,"This is a proper name. See the gettext manual, section Names."' --keyword='proper_name_utf8:1,"This is a proper name. See the gettext manual, section Names."' --flag=error:3:c-format --flag=error_at_line:5:c-format  --flag=argp_error:2:c-format --flag=argp_failure:4:c-format --flag=error:3:c-format --flag=error_at_line:5:c-format --flag=aszprintf:2:c-format --flag=vaszprintf:2:c-format --flag=verror:3:c-format --flag=verror_at_line:5:c-format --flag=xasprintf:1:c-format \
+      --files-from=./POTFILES.in \
+      --copyright-holder='Free Software Foundation, Inc.' \
+      --package-name="${package_gnu}man-db" \
+      --package-version='2.13.3' \
+      --msgid-bugs-address="$msgid_bugs_address" \
+    ;; \
+esac
+/usr/bin/xgettext: warning: file 'gl/lib/memchr.valgrind' extension 'valgrind' is unknown; will try C
+/usr/bin/xgettext: warning: file 'gl/lib/rawmemchr.valgrind' extension 'valgrind' is unknown; will try C
+/usr/bin/xgettext: warning: file 'gl/lib/strchrnul.valgrind' extension 'valgrind' is unknown; will try C
+test ! -f man-db-gnulib.po || { \
+  if test -f ./man-db-gnulib.pot; then \
+    sed -f remove-potcdate.sed < ./man-db-gnulib.pot > man-db-gnulib.1po && \
+    sed -f remove-potcdate.sed < man-db-gnulib.po > man-db-gnulib.2po && \
+    if cmp man-db-gnulib.1po man-db-gnulib.2po >/dev/null 2>&1; then \
+      rm -f man-db-gnulib.1po man-db-gnulib.2po man-db-gnulib.po; \
+    else \
+      rm -f man-db-gnulib.1po man-db-gnulib.2po ./man-db-gnulib.pot && \
+      mv man-db-gnulib.po ./man-db-gnulib.pot; \
+    fi; \
+  else \
+    mv man-db-gnulib.po ./man-db-gnulib.pot; \
+  fi; \
+}
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/po'
+test ! -f ./man-db-gnulib.pot || \
+  test -z "af.gmo be.gmo bg.gmo ca.gmo cs.gmo da.gmo de.gmo el.gmo eo.gmo es.gmo et.gmo eu.gmo fi.gmo fr.gmo ga.gmo gl.gmo hu.gmo it.gmo ja.gmo ka.gmo ko.gmo lv.gmo ms.gmo nb.gmo nl.gmo pl.gmo pt.gmo pt_BR.gmo ro.gmo ru.gmo sk.gmo sl.gmo sr.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo" || make af.gmo be.gmo bg.gmo ca.gmo cs.gmo da.gmo de.gmo el.gmo eo.gmo es.gmo et.gmo eu.gmo fi.gmo fr.gmo ga.gmo gl.gmo hu.gmo it.gmo ja.gmo ka.gmo ko.gmo lv.gmo ms.gmo nb.gmo nl.gmo pl.gmo pt.gmo pt_BR.gmo ro.gmo ru.gmo sk.gmo sl.gmo sr.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/po'
+/usr/bin/msgmerge --update  --lang=be be.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=af af.po man-db-gnulib.pot
+...../usr/bin/msgmerge --update  --lang=bg bg.po man-db-gnulib.pot
+............ done.
+................... done.
+/usr/bin/msgmerge --update  --lang=ca ca.po man-db-gnulib.pot
+........ done.
+/usr/bin/msgmerge --update  --lang=cs cs.po man-db-gnulib.pot
+..................... done.
+/usr/bin/msgmerge --update  --lang=da da.po man-db-gnulib.pot
+............... done.
+/usr/bin/msgmerge --update  --lang=de de.po man-db-gnulib.pot
+............. done.
+/usr/bin/msgmerge --update  --lang=el el.po man-db-gnulib.pot
+...... done.
+/usr/bin/msgmerge --update  --lang=eo eo.po man-db-gnulib.pot
+............ done.
+.......... done.
+/usr/bin/msgmerge --update  --lang=es es.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=et et.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=eu eu.po man-db-gnulib.pot
+...... done.
+.................. done.
+/usr/bin/msgmerge --update  --lang=fi fi.po man-db-gnulib.pot
+............. done.
+....../usr/bin/msgmerge --update  --lang=fr fr.po man-db-gnulib.pot
+ done.
+/usr/bin/msgmerge --update  --lang=ga ga.po man-db-gnulib.pot
+......./usr/bin/msgmerge --update  --lang=gl gl.po man-db-gnulib.pot
+......... done.
+...... done.
+............... done.
+/usr/bin/msgmerge --update  --lang=hu hu.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=it it.po man-db-gnulib.pot
+............. done.
+....... done.
+/usr/bin/msgmerge --update  --lang=ja ja.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=ka ka.po man-db-gnulib.pot
+....../usr/bin/msgmerge --update  --lang=ko ko.po man-db-gnulib.pot
+........ done.
+....... done.
+.................. done.
+/usr/bin/msgmerge --update  --lang=lv lv.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=ms ms.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=nb nb.po man-db-gnulib.pot
+....... done.
+.................. done.
+.................. done.
+/usr/bin/msgmerge --update  --lang=nl nl.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=pl pl.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=pt pt.po man-db-gnulib.pot
+............ done.
+ done.
+....... done.
+/usr/bin/msgmerge --update  --lang=pt_BR pt_BR.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=ro ro.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=ru ru.po man-db-gnulib.pot
+...... done.
+...... done.
+...... done.
+/usr/bin/msgmerge --update  --lang=sl sl.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=sk sk.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=sr sr.po man-db-gnulib.pot
+............. done.
+...... done.
+/usr/bin/msgmerge --update  --lang=sv sv.po man-db-gnulib.pot
+....../usr/bin/msgmerge --update  --lang=tr tr.po man-db-gnulib.pot
+....... done.
+............ done.
+.................. done.
+/usr/bin/msgmerge --update  --lang=uk uk.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=vi vi.po man-db-gnulib.pot
+/usr/bin/msgmerge --update  --lang=zh_CN zh_CN.po man-db-gnulib.pot
+....... done.
+............... done.
+......... done.
+/usr/bin/msgmerge --update  --lang=zh_TW zh_TW.po man-db-gnulib.pot
+rm -f af.gmo && /usr/bin/msgfmt -c --statistics --verbose -o af.gmo af.po
+rm -f be.gmo && /usr/bin/msgfmt -c --statistics --verbose -o be.gmo be.po
+af.po: 4 translated messages, 23 fuzzy translations, 24 untranslated messages.
+...... done.
+be.po: 4 translated messages, 23 fuzzy translations, 24 untranslated messages.
+rm -f bg.gmo && /usr/bin/msgfmt -c --statistics --verbose -o bg.gmo bg.po
+rm -f ca.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ca.gmo ca.po
+rm -f cs.gmo && /usr/bin/msgfmt -c --statistics --verbose -o cs.gmo cs.po
+bg.po: 50 translated messages, 1 untranslated message.
+ca.po: 15 translated messages, 26 fuzzy translations, 10 untranslated messages.
+cs.po: 43 translated messages, 7 fuzzy translations, 1 untranslated message.
+rm -f da.gmo && /usr/bin/msgfmt -c --statistics --verbose -o da.gmo da.po
+rm -f de.gmo && /usr/bin/msgfmt -c --statistics --verbose -o de.gmo de.po
+rm -f el.gmo && /usr/bin/msgfmt -c --statistics --verbose -o el.gmo el.po
+de.po: 51 translated messages.
+da.po: 43 translated messages, 7 fuzzy translations, 1 untranslated message.
+el.po: 3 translated messages, 22 fuzzy translations, 26 untranslated messages.
+rm -f es.gmo && /usr/bin/msgfmt -c --statistics --verbose -o es.gmo es.po
+rm -f eo.gmo && /usr/bin/msgfmt -c --statistics --verbose -o eo.gmo eo.po
+rm -f et.gmo && /usr/bin/msgfmt -c --statistics --verbose -o et.gmo et.po
+et.po: 35 translated messages, 6 fuzzy translations, 10 untranslated messages.
+es.po: 51 translated messages.
+eo.po: 51 translated messages.
+rm -f eu.gmo && /usr/bin/msgfmt -c --statistics --verbose -o eu.gmo eu.po
+rm -f fi.gmo && /usr/bin/msgfmt -c --statistics --verbose -o fi.gmo fi.po
+eu.po: 3 translated messages, 24 fuzzy translations, 24 untranslated messages.
+rm -f fr.gmo && /usr/bin/msgfmt -c --statistics --verbose -o fr.gmo fr.po
+fi.po: 51 translated messages.
+fr.po: 51 translated messages.
+rm -f ga.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ga.gmo ga.po
+ga.po: 40 translated messages, 9 fuzzy translations, 2 untranslated messages.
+rm -f gl.gmo && /usr/bin/msgfmt -c --statistics --verbose -o gl.gmo gl.po
+rm -f it.gmo && /usr/bin/msgfmt -c --statistics --verbose -o it.gmo it.po
+it.po: 51 translated messages.
+gl.po: 35 translated messages, 7 fuzzy translations, 9 untranslated messages.
+rm -f hu.gmo && /usr/bin/msgfmt -c --statistics --verbose -o hu.gmo hu.po
+rm -f ka.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ka.gmo ka.po
+rm -f ja.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ja.gmo ja.po
+ja.po: 43 translated messages, 7 fuzzy translations, 1 untranslated message.
+hu.po: 43 translated messages, 7 fuzzy translations, 1 untranslated message.
+ka.po: 51 translated messages.
+rm -f lv.gmo && /usr/bin/msgfmt -c --statistics --verbose -o lv.gmo lv.po
+rm -f ko.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ko.gmo ko.po
+lv.po: 50 translated messages, 1 untranslated message.
+rm -f ms.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ms.gmo ms.po
+ko.po: 2 translated messages, 24 fuzzy translations, 25 untranslated messages.
+ms.po: 4 translated messages, 23 fuzzy translations, 24 untranslated messages.
+rm -f nb.gmo && /usr/bin/msgfmt -c --statistics --verbose -o nb.gmo nb.po
+rm -f nl.gmo && /usr/bin/msgfmt -c --statistics --verbose -o nl.gmo nl.po
+nb.po: 2 translated messages, 24 fuzzy translations, 25 untranslated messages.
+rm -f pl.gmo && /usr/bin/msgfmt -c --statistics --verbose -o pl.gmo pl.po
+nl.po: 51 translated messages.
+pl.po: 51 translated messages.
+rm -f pt.gmo && /usr/bin/msgfmt -c --statistics --verbose -o pt.gmo pt.po
+rm -f pt_BR.gmo && /usr/bin/msgfmt -c --statistics --verbose -o pt_BR.gmo pt_BR.po
+pt_BR.po: 51 translated messages.
+pt.po: 51 translated messages.
+rm -f ro.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ro.gmo ro.po
+ro.po: 51 translated messages.
+rm -f sk.gmo && /usr/bin/msgfmt -c --statistics --verbose -o sk.gmo sk.po
+rm -f ru.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ru.gmo ru.po
+sk.po: 2 translated messages, 23 fuzzy translations, 26 untranslated messages.
+ru.po: 51 translated messages.
+rm -f sl.gmo && /usr/bin/msgfmt -c --statistics --verbose -o sl.gmo sl.po
+sl.po: 43 translated messages, 7 fuzzy translations, 1 untranslated message.
+rm -f sr.gmo && /usr/bin/msgfmt -c --statistics --verbose -o sr.gmo sr.po
+rm -f sv.gmo && /usr/bin/msgfmt -c --statistics --verbose -o sv.gmo sv.po
+sr.po: 51 translated messages.
+sv.po: 50 translated messages, 1 untranslated message.
+rm -f tr.gmo && /usr/bin/msgfmt -c --statistics --verbose -o tr.gmo tr.po
+tr.po: 4 translated messages, 24 fuzzy translations, 23 untranslated messages.
+rm -f uk.gmo && /usr/bin/msgfmt -c --statistics --verbose -o uk.gmo uk.po
+rm -f vi.gmo && /usr/bin/msgfmt -c --statistics --verbose -o vi.gmo vi.po
+uk.po: 51 translated messages.
+rm -f zh_CN.gmo && /usr/bin/msgfmt -c --statistics --verbose -o zh_CN.gmo zh_CN.po
+vi.po: 43 translated messages, 7 fuzzy translations, 1 untranslated message.
+zh_CN.po: 51 translated messages.
+rm -f zh_TW.gmo && /usr/bin/msgfmt -c --statistics --verbose -o zh_TW.gmo zh_TW.po
+zh_TW.po: 51 translated messages.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/po'
+touch stamp-po
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/po'
+Making all in init
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init'
+Making all in systemd
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init/systemd'
+sed -e "s,[@]bindir[@],/usr/bin,g" \
+    -e "s,[@]cache_top_owner[@],bin,g" \
+    man-db.service.in > man-db.service
+sed -e "s,[@]cache_top_owner[@],bin,g" man-db.conf.in > man-db.conf
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init/systemd'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init'
+Making all in lib
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/lib'
+  CC       libman_la-appendstr.lo
+  CC       libman_la-cleanup.lo
+  CC       libman_la-compression.lo
+  CC       libman_la-debug.lo
+  CC       libman_la-encodings.lo
+  CC       libman_la-fatal.lo
+  CC       libman_la-filenames.lo
+  CC       libman_la-glcontainers.lo
+  CC       libman_la-linelength.lo
+  CC       libman_la-orderfiles.lo
+  CC       libman_la-pathsearch.lo
+  CC       libman_la-sandbox.lo
+  CC       libman_la-security.lo
+  CC       libman_la-tempfile.lo
+  CC       libman_la-util.lo
+  CC       libman_la-wordfnmatch.lo
+  CC       libman_la-xregcomp.lo
+  CCLD     libman.la
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/lib'
+Making all in libdb
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/libdb'
+  CC       libmandb_la-db_btree.lo
+  CC       libmandb_la-db_gdbm.lo
+  CC       libmandb_la-db_delete.lo
+  CC       libmandb_la-db_lookup.lo
+  CC       libmandb_la-db_ndbm.lo
+  CC       libmandb_la-db_store.lo
+  CC       libmandb_la-db_ver.lo
+  CC       libmandb_la-db_xdbm.lo
+  CCLD     libmandb.la
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/libdb'
+Making all in src
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src'
+Making all in .
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src'
+  CC       globbing.o
+  CC       catman.o
+  CC       manp.o
+  CC       convert.o
+  CC       decompress.o
+  CC       descriptions.o
+  LEX      lexgrog.c
+  CC       lexgrog_test.o
+  CC       manconv.o
+  CC       manconv_client.o
+  CC       ult_src.o
+  CC       utf8.o
+  CC       man.o
+  LEX      zsoelim.c
+  CC       man-recode.o
+  CC       check_mandirs.o
+  CC       descriptions_store.o
+  CC       mandb.o
+  CC       straycats.o
+  CC       manpath.o
+  CC       whatis.o
+  CC       globbing_test.o
+  CC       manconv_main.o
+  CC       zsoelim_main.o
+  CC       accessdb.o
+  CCLD     catman
+  CC       lexgrog.o
+  CC       zsoelim.o
+lexgrog.l:72:9: warning: ‘YY_READ_BUF_SIZE’ redefined
+   72 | #define YY_READ_BUF_SIZE        1024
+      |         ^~~~~~~~~~~~~~~~
+lexgrog.l:548:16: note: this is the location of the previous definition
+  548 |         {bol}\.Fx{blank}*               BEGIN (MAN_DESC_FX);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD     man-recode
+  CCLD     manpath
+  CCLD     whatis
+  CCLD     globbing
+  CCLD     manconv
+  CCLD     accessdb
+  CCLD     zsoelim
+rm -f apropos
+ln -s whatis apropos
+  CCLD     lexgrog
+  CCLD     man
+  CCLD     mandb
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src'
+Making all in tests
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src/tests'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src/tests'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src'
+Making all in man
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man'
+Making all in it
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man/it'
+  GEN      replace.sed
+  GEN      man1/apropos.1
+  GEN      man1/man.1
+  GEN      man1/manpath.1
+  GEN      man1/zsoelim.1
+  GEN      man1/whatis.1
+  GEN      man5/manpath.5
+  GEN      man8/accessdb.8
+  GEN      man8/catman.8
+  GEN      man8/mandb.8
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man/it'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man'
+  GEN      replace.sed
+  GEN      man1/apropos.1
+  GEN      man1/lexgrog.1
+  GEN      man1/man.1
+  GEN      man1/manconv.1
+  GEN      man1/man-recode.1
+  GEN      man1/manpath.1
+  GEN      man1/whatis.1
+  GEN      man1/zsoelim.1
+  GEN      man5/manpath.5
+  GEN      man8/accessdb.8
+  GEN      man8/mandb.8
+  GEN      man8/catman.8
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man'
+Making all in manual
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/manual'
+(echo '.ds V 2.13.3'; echo '.ds td 2026-11-16') > version
+soelim -I. man_db.me | tbl > man_db.pp.new && mv -f man_db.pp.new man_db.pp
+LC_ALL=C nroff -me man_db.pp > man_db.cat.new && mv -f man_db.cat.new man_db.cat
+groff -me -Tps man_db.pp > man_db.ps.new && mv -f man_db.ps.new man_db.ps
+troff:./files.me:88: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:88: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:100: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:100: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:88: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:88: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:100: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:100: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:389: warning: cannot format input character code 173 [-w char]
+troff:./files.me:389: warning: cannot format input character code 173 [-w char]
+troff:./format.me:162: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./format.me:162: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+troff:./db.me:53: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./db.me:53: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+troff:./format.me:162: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./format.me:162: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+troff:./db.me:53: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./db.me:53: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+./db.me:255: warning: centered table wider than line length minus indentation
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/manual'
+Making all in po
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/po'
+test ! -f ./man-db.pot || \
+  test -z "ast.gmo ca.gmo cs.gmo da.gmo de.gmo eo.gmo es.gmo fi.gmo fr.gmo id.gmo it.gmo ja.gmo ka.gmo ko.gmo lv.gmo nl.gmo pl.gmo pt.gmo pt_BR.gmo ro.gmo ru.gmo sr.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo" || make ast.gmo ca.gmo cs.gmo da.gmo de.gmo eo.gmo es.gmo fi.gmo fr.gmo id.gmo it.gmo ja.gmo ka.gmo ko.gmo lv.gmo nl.gmo pl.gmo pt.gmo pt_BR.gmo ro.gmo ru.gmo sr.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/po'
+rm -f ast.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ast.gmo ast.po
+rm -f cs.gmo && /usr/bin/msgfmt -c --statistics --verbose -o cs.gmo cs.po
+rm -f ca.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ca.gmo ca.po
+ast.po: 195 translated messages, 1 fuzzy translation, 8 untranslated messages.
+cs.po: 204 translated messages.
+ca.po: 195 translated messages, 1 fuzzy translation, 8 untranslated messages.
+rm -f da.gmo && /usr/bin/msgfmt -c --statistics --verbose -o da.gmo da.po
+rm -f de.gmo && /usr/bin/msgfmt -c --statistics --verbose -o de.gmo de.po
+da.po: 203 translated messages, 1 untranslated message.
+rm -f eo.gmo && /usr/bin/msgfmt -c --statistics --verbose -o eo.gmo eo.po
+de.po: 204 translated messages.
+eo.po: 203 translated messages, 1 untranslated message.
+rm -f es.gmo && /usr/bin/msgfmt -c --statistics --verbose -o es.gmo es.po
+es.po: 204 translated messages.
+rm -f fr.gmo && /usr/bin/msgfmt -c --statistics --verbose -o fr.gmo fr.po
+rm -f fi.gmo && /usr/bin/msgfmt -c --statistics --verbose -o fi.gmo fi.po
+fi.po: 70 translated messages, 13 fuzzy translations, 121 untranslated messages.
+fr.po: 203 translated messages, 1 untranslated message.
+rm -f id.gmo && /usr/bin/msgfmt -c --statistics --verbose -o id.gmo id.po
+rm -f it.gmo && /usr/bin/msgfmt -c --statistics --verbose -o it.gmo it.po
+id.po: 204 translated messages.
+rm -f ja.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ja.gmo ja.po
+it.po: 204 translated messages.
+ja.po: 195 translated messages, 1 fuzzy translation, 8 untranslated messages.
+rm -f ka.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ka.gmo ka.po
+ka.po: 78 translated messages, 126 untranslated messages.
+rm -f ko.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ko.gmo ko.po
+ko.po: 204 translated messages.
+rm -f lv.gmo && /usr/bin/msgfmt -c --statistics --verbose -o lv.gmo lv.po
+rm -f nl.gmo && /usr/bin/msgfmt -c --statistics --verbose -o nl.gmo nl.po
+lv.po: 204 translated messages.
+rm -f pl.gmo && /usr/bin/msgfmt -c --statistics --verbose -o pl.gmo pl.po
+nl.po: 204 translated messages.
+rm -f pt.gmo && /usr/bin/msgfmt -c --statistics --verbose -o pt.gmo pt.po
+pl.po: 195 translated messages, 1 fuzzy translation, 8 untranslated messages.
+rm -f pt_BR.gmo && /usr/bin/msgfmt -c --statistics --verbose -o pt_BR.gmo pt_BR.po
+pt.po: 204 translated messages.
+rm -f ro.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ro.gmo ro.po
+pt_BR.po: 204 translated messages.
+ro.po: 204 translated messages.
+rm -f ru.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ru.gmo ru.po
+rm -f sr.gmo && /usr/bin/msgfmt -c --statistics --verbose -o sr.gmo sr.po
+ru.po: 204 translated messages.
+rm -f sv.gmo && /usr/bin/msgfmt -c --statistics --verbose -o sv.gmo sv.po
+sr.po: 204 translated messages.
+sv.po: 204 translated messages.
+rm -f tr.gmo && /usr/bin/msgfmt -c --statistics --verbose -o tr.gmo tr.po
+rm -f uk.gmo && /usr/bin/msgfmt -c --statistics --verbose -o uk.gmo uk.po
+tr.po: 203 translated messages, 1 untranslated message.
+uk.po: 204 translated messages.
+rm -f vi.gmo && /usr/bin/msgfmt -c --statistics --verbose -o vi.gmo vi.po
+vi.po: 195 translated messages, 1 fuzzy translation, 8 untranslated messages.
+rm -f zh_CN.gmo && /usr/bin/msgfmt -c --statistics --verbose -o zh_CN.gmo zh_CN.po
+rm -f zh_TW.gmo && /usr/bin/msgfmt -c --statistics --verbose -o zh_TW.gmo zh_TW.po
+zh_CN.po: 204 translated messages.
+zh_TW.po: 204 translated messages.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/po'
+touch stamp-po
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/po'
+Making all in tools
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/tools'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/tools'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3'
+Making install in docs
+make[1]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/docs'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/docs'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/docs'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/docs'
+Making install in gl/lib
+make[1]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/lib'
+make  install-recursive
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/lib'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/lib'
+make[4]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/lib'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/lib'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/lib'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/lib'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/lib'
+Making install in gl/po
+make[1]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/po'
+installing af.gmo as /usr/share/locale/af/LC_MESSAGES/man-db-gnulib.mo
+installing be.gmo as /usr/share/locale/be/LC_MESSAGES/man-db-gnulib.mo
+installing bg.gmo as /usr/share/locale/bg/LC_MESSAGES/man-db-gnulib.mo
+installing ca.gmo as /usr/share/locale/ca/LC_MESSAGES/man-db-gnulib.mo
+installing cs.gmo as /usr/share/locale/cs/LC_MESSAGES/man-db-gnulib.mo
+installing da.gmo as /usr/share/locale/da/LC_MESSAGES/man-db-gnulib.mo
+installing de.gmo as /usr/share/locale/de/LC_MESSAGES/man-db-gnulib.mo
+installing el.gmo as /usr/share/locale/el/LC_MESSAGES/man-db-gnulib.mo
+installing eo.gmo as /usr/share/locale/eo/LC_MESSAGES/man-db-gnulib.mo
+installing es.gmo as /usr/share/locale/es/LC_MESSAGES/man-db-gnulib.mo
+installing et.gmo as /usr/share/locale/et/LC_MESSAGES/man-db-gnulib.mo
+installing eu.gmo as /usr/share/locale/eu/LC_MESSAGES/man-db-gnulib.mo
+installing fi.gmo as /usr/share/locale/fi/LC_MESSAGES/man-db-gnulib.mo
+installing fr.gmo as /usr/share/locale/fr/LC_MESSAGES/man-db-gnulib.mo
+installing ga.gmo as /usr/share/locale/ga/LC_MESSAGES/man-db-gnulib.mo
+installing gl.gmo as /usr/share/locale/gl/LC_MESSAGES/man-db-gnulib.mo
+installing hu.gmo as /usr/share/locale/hu/LC_MESSAGES/man-db-gnulib.mo
+installing it.gmo as /usr/share/locale/it/LC_MESSAGES/man-db-gnulib.mo
+installing ja.gmo as /usr/share/locale/ja/LC_MESSAGES/man-db-gnulib.mo
+installing ka.gmo as /usr/share/locale/ka/LC_MESSAGES/man-db-gnulib.mo
+installing ko.gmo as /usr/share/locale/ko/LC_MESSAGES/man-db-gnulib.mo
+installing lv.gmo as /usr/share/locale/lv/LC_MESSAGES/man-db-gnulib.mo
+installing ms.gmo as /usr/share/locale/ms/LC_MESSAGES/man-db-gnulib.mo
+installing nb.gmo as /usr/share/locale/nb/LC_MESSAGES/man-db-gnulib.mo
+installing nl.gmo as /usr/share/locale/nl/LC_MESSAGES/man-db-gnulib.mo
+installing pl.gmo as /usr/share/locale/pl/LC_MESSAGES/man-db-gnulib.mo
+installing pt.gmo as /usr/share/locale/pt/LC_MESSAGES/man-db-gnulib.mo
+installing pt_BR.gmo as /usr/share/locale/pt_BR/LC_MESSAGES/man-db-gnulib.mo
+installing ro.gmo as /usr/share/locale/ro/LC_MESSAGES/man-db-gnulib.mo
+installing ru.gmo as /usr/share/locale/ru/LC_MESSAGES/man-db-gnulib.mo
+installing sk.gmo as /usr/share/locale/sk/LC_MESSAGES/man-db-gnulib.mo
+installing sl.gmo as /usr/share/locale/sl/LC_MESSAGES/man-db-gnulib.mo
+installing sr.gmo as /usr/share/locale/sr/LC_MESSAGES/man-db-gnulib.mo
+installing sv.gmo as /usr/share/locale/sv/LC_MESSAGES/man-db-gnulib.mo
+installing tr.gmo as /usr/share/locale/tr/LC_MESSAGES/man-db-gnulib.mo
+installing uk.gmo as /usr/share/locale/uk/LC_MESSAGES/man-db-gnulib.mo
+installing vi.gmo as /usr/share/locale/vi/LC_MESSAGES/man-db-gnulib.mo
+installing zh_CN.gmo as /usr/share/locale/zh_CN/LC_MESSAGES/man-db-gnulib.mo
+installing zh_TW.gmo as /usr/share/locale/zh_TW/LC_MESSAGES/man-db-gnulib.mo
+if test "man-db" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/gl/po'
+Making install in init
+make[1]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init'
+Making install in systemd
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init/systemd'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init/systemd'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/lib/systemd/system'
+ /usr/bin/install -c -m 644 man-db.timer '/usr/lib/systemd/system'
+ /usr/bin/mkdir -p '/usr/lib/systemd/system'
+ /usr/bin/install -c -m 644 man-db.service '/usr/lib/systemd/system'
+ /usr/bin/mkdir -p '/usr/lib/tmpfiles.d'
+ /usr/bin/install -c -m 644 man-db.conf '/usr/lib/tmpfiles.d'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init/systemd'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init/systemd'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/init'
+Making install in lib
+make[1]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/lib'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/lib'
+ /usr/bin/mkdir -p '/usr/lib/man-db'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libman.la '/usr/lib/man-db'
+libtool: install: /usr/bin/install -c .libs/libman-2.13.3.so /usr/lib/man-db/libman-2.13.3.so
+libtool: install: (cd /usr/lib/man-db && { ln -s -f libman-2.13.3.so libman.so || { rm -f libman.so && ln -s libman-2.13.3.so libman.so; }; })
+libtool: install: /usr/bin/install -c .libs/libman.lai /usr/lib/man-db/libman.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/lib/man-db
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib/man-db
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+After a 'make install' for many GNU/Linux systems, 'ldconfig LIBDIR'
+may need to be executed to help locate newly installed libraries,
+but you should consult with a system administrator before updating
+the shared library cache as this should be done with great care
+and consideration. (See the 'Platform-specific configuration notes'
+section of the documentation for more information.)
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/lib'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/lib'
+Making install in libdb
+make[1]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/libdb'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/libdb'
+ /usr/bin/mkdir -p '/usr/lib/man-db'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libmandb.la '/usr/lib/man-db'
+libtool: warning: relinking 'libmandb.la'
+libtool: install: (cd /home/fusion809/lfs_packaging/man-db/man-db-2.13.3/libdb; /bin/sh "/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/libtool"  --silent --tag CC --mode=relink gcc -fstrict-flex-arrays -Wall -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdisabled-optimization -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wnull-dereference -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wshadow -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=const -Wsuggest-attribute=format -Wsuggest-attribute=malloc -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wunused-macros -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-missing-field-initializers -g -O2 -Wall -avoid-version -release 2.13.3 -rpath /usr/lib/man-db -no-undefined -o libmandb.la -rpath /usr/lib/man-db libmandb_la-db_btree.lo libmandb_la-db_delete.lo libmandb_la-db_gdbm.lo libmandb_la-db_lookup.lo libmandb_la-db_ndbm.lo libmandb_la-db_store.lo libmandb_la-db_ver.lo libmandb_la-db_xdbm.lo ../lib/libman.la -lgdbm )
+libtool: install: /usr/bin/install -c .libs/libmandb-2.13.3.soT /usr/lib/man-db/libmandb-2.13.3.so
+libtool: install: (cd /usr/lib/man-db && { ln -s -f libmandb-2.13.3.so libmandb.so || { rm -f libmandb.so && ln -s libmandb-2.13.3.so libmandb.so; }; })
+libtool: install: /usr/bin/install -c .libs/libmandb.lai /usr/lib/man-db/libmandb.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/lib/man-db
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib/man-db
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+After a 'make install' for many GNU/Linux systems, 'ldconfig LIBDIR'
+may need to be executed to help locate newly installed libraries,
+but you should consult with a system administrator before updating
+the shared library cache as this should be done with great care
+and consideration. (See the 'Platform-specific configuration notes'
+section of the documentation for more information.)
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/libdb'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/libdb'
+Making install in src
+make[1]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src'
+Making install in .
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src'
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c catman lexgrog man man-recode mandb manpath whatis '/usr/bin'
+libtool: install: /usr/bin/install -c .libs/catman /usr/bin/catman
+libtool: install: /usr/bin/install -c .libs/lexgrog /usr/bin/lexgrog
+libtool: install: /usr/bin/install -c .libs/man /usr/bin/man
+libtool: install: /usr/bin/install -c .libs/man-recode /usr/bin/man-recode
+libtool: install: /usr/bin/install -c .libs/mandb /usr/bin/mandb
+libtool: install: /usr/bin/install -c .libs/manpath /usr/bin/manpath
+libtool: install: /usr/bin/install -c .libs/whatis /usr/bin/whatis
+ /usr/bin/mkdir -p '/usr/libexec/man-db'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c globbing manconv zsoelim '/usr/libexec/man-db'
+libtool: install: /usr/bin/install -c .libs/globbing /usr/libexec/man-db/globbing
+libtool: install: /usr/bin/install -c .libs/manconv /usr/libexec/man-db/manconv
+libtool: install: /usr/bin/install -c .libs/zsoelim /usr/libexec/man-db/zsoelim
+ /usr/bin/mkdir -p '/usr/sbin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c accessdb '/usr/sbin'
+libtool: install: /usr/bin/install -c .libs/accessdb /usr/sbin/accessdb
+make  install-exec-hook
+make[4]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src'
+if [ "bin" ] && [ "755" = 6755 ]; then \
+	chown bin:bin \
+		/usr/bin/man \
+		/usr/bin/mandb; \
+fi
+chmod 755 \
+	/usr/bin/man \
+	/usr/bin/mandb
+cd /usr/bin && rm -f apropos && \
+	ln -s whatis apropos
+make[4]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src'
+make  install-data-hook
+make[4]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src'
+/etc/man_db.conf already exists; overwrite manually if necessary
+make[4]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src'
+Making install in tests
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src/tests'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src/tests'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src/tests'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/src'
+Making install in man
+make[1]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man'
+Making install in it
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man/it'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man/it'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/it/man1'
+ /usr/bin/install -c -m 644 man1/apropos.1 man1/man.1 man1/manpath.1 man1/whatis.1 man1/zsoelim.1 '/usr/share/man/it/man1'
+ /usr/bin/mkdir -p '/usr/share/man/it/man5'
+ /usr/bin/install -c -m 644 man5/manpath.5 '/usr/share/man/it/man5'
+ /usr/bin/mkdir -p '/usr/share/man/it/man8'
+ /usr/bin/install -c -m 644 man8/accessdb.8 man8/catman.8 man8/mandb.8 '/usr/share/man/it/man8'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man/it'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man/it'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/./man1'
+ /usr/bin/install -c -m 644 man1/apropos.1 man1/lexgrog.1 man1/man.1 man1/man-recode.1 man1/manconv.1 man1/manpath.1 man1/whatis.1 man1/zsoelim.1 '/usr/share/man/./man1'
+ /usr/bin/mkdir -p '/usr/share/man/./man5'
+ /usr/bin/install -c -m 644 man5/manpath.5 '/usr/share/man/./man5'
+ /usr/bin/mkdir -p '/usr/share/man/./man8'
+ /usr/bin/install -c -m 644 man8/accessdb.8 man8/catman.8 man8/mandb.8 '/usr/share/man/./man8'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/man'
+Making install in manual
+make[1]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/manual'
+LC_ALL=C nroff -me man_db.pp > man_db.cat.new && mv -f man_db.cat.new man_db.cat
+troff:./files.me:88: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:88: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:100: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:100: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:389: warning: cannot format input character code 173 [-w char]
+troff:./format.me:162: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./format.me:162: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+troff:./db.me:53: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./db.me:53: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+./db.me:255: warning: centered table wider than line length minus indentation
+groff -me -Tps man_db.pp > man_db.ps.new && mv -f man_db.ps.new man_db.ps
+troff:./files.me:88: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:88: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:100: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:100: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+troff:./files.me:389: warning: cannot format input character code 173 [-w char]
+troff:./format.me:162: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./format.me:162: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+troff:./db.me:53: warning: ignoring escaped 'f' on input line after output line continuation escape sequence [-w syntax]
+troff:./db.me:53: warning: ignoring character '1' on input line after output line continuation escape sequence [-w syntax]
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/manual'
+make[2]: Nothing to be done for 'install-exec-am'.
+make  install-data-hook
+make[3]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/manual'
+test -z "/usr/share/doc/man-db-2.13.3" || /usr/bin/mkdir -p "/usr/share/doc/man-db-2.13.3"
+ /usr/bin/install -c -m 644 man_db.cat '/usr/share/doc/man-db-2.13.3/man-db-manual.txt'
+ /usr/bin/install -c -m 644 man_db.ps '/usr/share/doc/man-db-2.13.3/man-db-manual.ps'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/manual'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/manual'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/manual'
+Making install in po
+make[1]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/po'
+installing ast.gmo as /usr/share/locale/ast/LC_MESSAGES/man-db.mo
+installing ca.gmo as /usr/share/locale/ca/LC_MESSAGES/man-db.mo
+installing cs.gmo as /usr/share/locale/cs/LC_MESSAGES/man-db.mo
+installing da.gmo as /usr/share/locale/da/LC_MESSAGES/man-db.mo
+installing de.gmo as /usr/share/locale/de/LC_MESSAGES/man-db.mo
+installing eo.gmo as /usr/share/locale/eo/LC_MESSAGES/man-db.mo
+installing es.gmo as /usr/share/locale/es/LC_MESSAGES/man-db.mo
+installing fi.gmo as /usr/share/locale/fi/LC_MESSAGES/man-db.mo
+installing fr.gmo as /usr/share/locale/fr/LC_MESSAGES/man-db.mo
+installing id.gmo as /usr/share/locale/id/LC_MESSAGES/man-db.mo
+installing it.gmo as /usr/share/locale/it/LC_MESSAGES/man-db.mo
+installing ja.gmo as /usr/share/locale/ja/LC_MESSAGES/man-db.mo
+installing ka.gmo as /usr/share/locale/ka/LC_MESSAGES/man-db.mo
+installing ko.gmo as /usr/share/locale/ko/LC_MESSAGES/man-db.mo
+installing lv.gmo as /usr/share/locale/lv/LC_MESSAGES/man-db.mo
+installing nl.gmo as /usr/share/locale/nl/LC_MESSAGES/man-db.mo
+installing pl.gmo as /usr/share/locale/pl/LC_MESSAGES/man-db.mo
+installing pt.gmo as /usr/share/locale/pt/LC_MESSAGES/man-db.mo
+installing pt_BR.gmo as /usr/share/locale/pt_BR/LC_MESSAGES/man-db.mo
+installing ro.gmo as /usr/share/locale/ro/LC_MESSAGES/man-db.mo
+installing ru.gmo as /usr/share/locale/ru/LC_MESSAGES/man-db.mo
+installing sr.gmo as /usr/share/locale/sr/LC_MESSAGES/man-db.mo
+installing sv.gmo as /usr/share/locale/sv/LC_MESSAGES/man-db.mo
+installing tr.gmo as /usr/share/locale/tr/LC_MESSAGES/man-db.mo
+installing uk.gmo as /usr/share/locale/uk/LC_MESSAGES/man-db.mo
+installing vi.gmo as /usr/share/locale/vi/LC_MESSAGES/man-db.mo
+installing zh_CN.gmo as /usr/share/locale/zh_CN/LC_MESSAGES/man-db.mo
+installing zh_TW.gmo as /usr/share/locale/zh_TW/LC_MESSAGES/man-db.mo
+if test "man-db" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/po'
+Making install in tools
+make[1]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/tools'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/tools'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/tools'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3/tools'
+make[1]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/man-db/man-db-2.13.3'
+2.13.3
+Updated registry for man-db to version 2.13.3
+[VERSION] man-db: 2.13.3
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package man-db in /var/lib/custom-packages/
