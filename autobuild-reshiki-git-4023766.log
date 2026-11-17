@@ -1,0 +1,111 @@
+[13:55:30] Found custom package for reshiki-git, bypassing BLFS aliases.
+[13:55:30] Custom package detected at /home/fusion809/lfs_packaging/reshiki-git (package: reshiki-git)
+[13:55:30] Extracting dependencies for custom package 'reshiki-git'...
+[13:55:30] Required deps: acl at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz libcanberra libepoxy libffi libice libogg libpng libseccomp libselinux libsm libtool libvorbis libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres libxt ncurses pango pcre2 pixman systemd util-linux wayland zlib 
+[13:55:30] Dependency 'acl' already installed.
+[13:55:30] Dependency 'at-spi2-core' already installed.
+[13:55:30] Dependency 'brotli' already installed.
+[13:55:30] Dependency 'bzip2' already installed.
+[13:55:30] Dependency 'cairo' already installed.
+[13:55:30] Dependency 'dbus' already installed.
+[13:55:30] Dependency 'expat' already installed.
+[13:55:30] Dependency 'fontconfig' already installed.
+[13:55:30] Dependency 'freetype' already installed.
+[13:55:30] Dependency 'fribidi' already installed.
+[13:55:30] Dependency 'gcc' already installed.
+[13:55:30] Dependency 'gdk-pixbuf' already installed.
+[13:55:30] Dependency 'glib2' already installed.
+[13:55:30] Dependency 'glibc' already installed.
+[13:55:30] Dependency 'glycin' already installed.
+[13:55:30] Dependency 'graphite2' already installed.
+[13:55:30] Dependency 'gtk3' already installed.
+[13:55:30] Dependency 'harfbuzz' already installed.
+[13:55:30] Dependency 'libcanberra' already installed.
+[13:55:30] Dependency 'libepoxy' already installed.
+[13:55:30] Dependency 'libffi' already installed.
+[13:55:30] Dependency 'libice' already installed.
+[13:55:30] Dependency 'libogg' already installed.
+[13:55:30] Dependency 'libpng' already installed.
+[13:55:30] Dependency 'libseccomp' already installed.
+[13:55:30] Dependency 'libselinux' already installed.
+[13:55:30] Dependency 'libsm' already installed.
+[13:55:30] Dependency 'libtool' already installed.
+[13:55:30] Dependency 'libvorbis' already installed.
+[13:55:30] Dependency 'libx11' already installed.
+[13:55:30] Dependency 'libxau' already installed.
+[13:55:30] Dependency 'libxcb' already installed.
+[13:55:30] Dependency 'libxcomposite' already installed.
+[13:55:30] Dependency 'libxcursor' already installed.
+[13:55:30] Dependency 'libxdamage' already installed.
+[13:55:30] Dependency 'libxdmcp' already installed.
+[13:55:30] Dependency 'libxext' already installed.
+[13:55:30] Dependency 'libxfixes' already installed.
+[13:55:30] Dependency 'libxi' already installed.
+[13:55:30] Dependency 'libxinerama' already installed.
+[13:55:30] Dependency 'libxkbcommon' already installed.
+[13:55:30] Dependency 'libxrandr' already installed.
+[13:55:30] Dependency 'libxrender' already installed.
+[13:55:30] Dependency 'libxres' already installed.
+[13:55:30] Dependency 'libxt' already installed.
+[13:55:30] Dependency 'ncurses' already installed.
+[13:55:30] Dependency 'pango' already installed.
+[13:55:30] Dependency 'pcre2' already installed.
+[13:55:30] Dependency 'pixman' already installed.
+[13:55:30] Dependency 'systemd' already installed.
+[13:55:30] Dependency 'util-linux' already installed.
+[13:55:30] Dependency 'wayland' already installed.
+[13:55:30] Dependency 'zlib' already installed.
+[VERSION] reshiki-git: dc6a54088865faef2350b1ea1adf0e04e759c35c
+[13:55:32] Installing reshiki-git version: dc6a54088865faef2350b1ea1adf0e04e759c35c
+[13:55:32] Starting remote custom build for reshiki-git...
+From https://github.com/Ameyanagi/ReShiki
+   62707c6b..f39527f2  fix/chemdraw-import-diagrams -> origin/fix/chemdraw-import-diagrams
+   fe1a78ac..dc6a5408  main       -> origin/main
+Previous HEAD position was fe1a78ac Merge pull request #1218 from Ameyanagi/ci/nightly-no-intel-mac
+HEAD is now at dc6a5408 Merge pull request #1214 from Ameyanagi/fix/chemdraw-import-diagrams
+   Compiling reshiki-model v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/model)
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor/iced_widget/src/pick_list.rs:375:22
+    |
+375 |                 f32::INFINITY,
+    |                      ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: `iced_widget` (lib) generated 1 warning
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:586:55
+    |
+586 |         let event = if let Ok(event) = event_receiver.try_next() {
+    |                                                       ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:297:64
+    |
+297 |                     task::Poll::Pending => match self.receiver.try_next() {
+    |                                                                ^^^^^^^^
+
+warning: `iced_winit` (lib) generated 2 warnings
+   Compiling reshiki-io v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/io)
+   Compiling reshiki-agent v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/agent)
+   Compiling reshiki-mcp v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/mcp)
+   Compiling reshiki v0.15.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki)
+    Finished `release` profile [optimized + debuginfo] target(s) in 26m 32s
+[Desktop Entry]
+Name=ReShiki (git)
+Type=Application
+Exec=/usr/bin/reshiki-git %U
+TryExec=/usr/bin/reshiki-git
+Icon=reshiki-git
+MimeType=chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;chemical/x-smiles;chemical/x-cml;chemical/x-inchi;
+StartupNotify=true
+Categories=Education;Science;Chemistry;
+StartupWMClass=reshiki-git
+Saved working directory and index state WIP on (no branch): dc6a5408 Merge pull request #1214 from Ameyanagi/fix/chemdraw-import-diagrams
+dc6a54088865faef2350b1ea1adf0e04e759c35c
+Updated registry for reshiki-git to version dc6a54088865faef2350b1ea1adf0e04e759c35c
+[VERSION] reshiki-git: dc6a54088865faef2350b1ea1adf0e04e759c35c
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package reshiki-git in /var/lib/custom-packages/
