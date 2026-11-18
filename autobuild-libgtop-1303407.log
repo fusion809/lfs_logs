@@ -1,0 +1,754 @@
+[20:55:32] Found custom package for libgtop, bypassing BLFS aliases.
+[20:55:32] Custom package detected at /home/fusion809/lfs_packaging/libgtop (package: libgtop)
+[20:55:32] Extracting dependencies for custom package 'libgtop'...
+[20:55:32] Required deps: glib2 glibc libffi libxau pcre2 
+[20:55:32] Dependency 'glib2' already installed.
+[20:55:32] Dependency 'glibc' already installed.
+[20:55:32] Dependency 'libffi' already installed.
+[20:55:32] Dependency 'libxau' already installed.
+[20:55:32] Dependency 'pcre2' already installed.
+[VERSION] libgtop: 2.41.4
+[20:55:35] Installing libgtop version: 2.41.4
+[20:55:35] Starting remote custom build for libgtop...
+--2026-11-17 20:55:43--  https://download.gnome.org/sources/libgtop/2.41/libgtop-2.41.4.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 143.244.62.6, 143.244.62.8, 2a02:6ea0:db00::1, ...
+Connecting to download.gnome.org (download.gnome.org)|143.244.62.6|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 762996 (745K) [application/octet-stream]
+Saving to: ‘libgtop-2.41.4.tar.xz’
+
+libgtop-2.41.4.tar.   0%[                    ]       0  --.-KB/s               libgtop-2.41.4.tar.  27%[====>               ] 207.48K   969KB/s               libgtop-2.41.4.tar.  57%[==========>         ] 431.48K  1019KB/s               libgtop-2.41.4.tar.  75%[==============>     ] 559.48K   817KB/s               libgtop-2.41.4.tar.  87%[================>   ] 655.48K   739KB/s               libgtop-2.41.4.tar.  98%[==================> ] 735.48K   665KB/s               libgtop-2.41.4.tar. 100%[===================>] 745.11K   660KB/s    in 1.1s    
+
+2026-11-17 20:55:46 (660 KB/s) - ‘libgtop-2.41.4.tar.xz’ saved [762996/762996]
+
+configure found
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.1
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '97' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gobject-introspection... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C23 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for library containing strerror... none required
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C23 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for sys/param.h... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for gawk... (cached) gawk
+checking for perl5... no
+checking for perl... perl
+checking for lsblk... lsblk
+checking for sed... sed
+checking for tr... tr
+checking for gcc... (cached) gcc
+checking for ranlib... ranlib
+checking for as... as
+checking for ar... ar
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... (cached) ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for libgtop sysdeps directory... linux
+checking for linux/version.h... yes
+checking for Linux kernel version code... 459012
+checking whether we need libgtop... yes
+checking for sys/bitypes.h... yes
+checking for glib-2.0 >= 2.6.0 gobject-2.0 >= 2.26.0... yes
+checking for ifaddrs.h... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for struct stat.st_rdev... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for uid_t... yes
+checking for gid_t... yes
+checking for sys/time.h... yes
+checking for ssize_t... yes
+checking for memory.h... yes
+checking for string.h... (cached) yes
+checking for strerror... yes
+checking for dlopen... yes
+checking for dlerror... yes
+checking for linux/isdn.h... no
+checking for vmgetinfo in -lperfstat... no
+checking for vm_statistics in -lmach... no
+checking whether program_invocation_name must be declared... no
+checking for socket... yes
+checking for netinet/in.h... yes
+checking for arpa/inet.h... yes
+checking "for sun_len member in struct sockaddr_un"... no
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking return type of signal handlers... void
+checking for strftime... yes
+checking for getcwd... yes
+checking for gettimeofday... yes
+checking for getwd... yes
+checking for putenv... yes
+checking for sbrk... yes
+checking for strdup... yes
+checking for strtoul... yes
+checking for uname... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking how to run the C preprocessor... gcc -E
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking for gethostbyname... (cached) yes
+checking for connect... (cached) yes
+checking for inet_aton... yes
+checking for X11/Xauth.h... yes
+checking for XauGetAuthByAddr in -lXau... yes
+checking for fcntl.h... yes
+checking for sys/param.h... (cached) yes
+checking for sys/statfs.h... yes
+checking for sys/fstyp.h... no
+checking for mnttab.h... no
+checking for mntent.h... yes
+checking for sys/statvfs.h... yes
+checking for sys/vfs.h... yes
+checking for sys/mount.h... yes
+checking for sys/filsys.h... no
+checking for sys/fs_types.h... no
+checking for sys/fs/s5param.h... no
+checking for bcopy... yes
+checking for endgrent... yes
+checking for endpwent... yes
+checking for fchdir... yes
+checking for ftime... yes
+checking for ftruncate... yes
+checking for getcwd... (cached) yes
+checking for getmntinfo... no
+checking for gettimeofday... (cached) yes
+checking for isascii... yes
+checking for lchown... yes
+checking for listmntent... no
+checking for memcpy... yes
+checking for mkfifo... yes
+checking for strchr... yes
+checking for strerror... (cached) yes
+checking for strrchr... yes
+checking for vprintf... yes
+checking for library containing getmntent... none required
+checking for listmntent of Cray/Unicos-9... no
+checking for one-argument getmntent function... yes
+configure: checking how to get filesystem space usage...
+checking statvfs function (SVR4)... yes
+checking for statfs that truncates block counts... no
+configure: checking for AFS...
+checking for gtk-doc... yes
+checking for gtkdoc-check... gtkdoc-check.test
+checking for gtkdoc-check... /usr/bin/gtkdoc-check
+checking for gtkdoc-rebase... /usr/bin/gtkdoc-rebase
+checking for gtkdoc-mkpdf... /usr/bin/gtkdoc-mkpdf
+checking whether to build gtk-doc documentation... no
+checking for glib-2.0 >= 2.10.0 gobject-2.0  >= 2.10.0... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libgtop.spec
+config.status: creating po/Makefile.in
+config.status: creating misc/Makefile
+config.status: creating include/Makefile
+config.status: creating include/glibtop/Makefile
+config.status: creating sysdeps/Makefile
+config.status: creating sysdeps/common/Makefile
+config.status: creating sysdeps/stub/Makefile
+config.status: creating sysdeps/stub_suid/Makefile
+config.status: creating sysdeps/sun4/Makefile
+config.status: creating sysdeps/osf1/Makefile
+config.status: creating sysdeps/linux/Makefile
+config.status: creating sysdeps/freebsd/Makefile
+config.status: creating sysdeps/solaris/Makefile
+config.status: creating sysdeps/aix/Makefile
+config.status: creating sysdeps/bsd/Makefile
+config.status: creating sysdeps/darwin/Makefile
+config.status: creating sysdeps/cygwin/Makefile
+config.status: creating sysdeps/openbsd/Makefile
+config.status: creating src/Makefile
+config.status: creating src/daemon/Makefile
+config.status: creating lib/Makefile
+config.status: creating examples/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/reference/Makefile
+config.status: creating doc/reference/version.xml
+config.status: creating libgtop-2.0.pc
+config.status: creating libgtopconfig.h
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/Makefile
+make  all-recursive
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4'
+Making all in po
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/po'
+Making all in misc
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/misc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/misc'
+Making all in include
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include'
+Making all in glibtop
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include/glibtop'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include/glibtop'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include'
+Making all in sysdeps
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps'
+Making all in common
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps/common'
+  CC       procargs.lo
+  CC       error.lo
+  CC       gnuslib.lo
+  CC       default.lo
+  CC       sysdeps_suid.lo
+  CCLD     libgtop_suid_common-2.0.la
+  CCLD     libgtop_common-2.0.la
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps/common'
+Making all in linux
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps/linux'
+  CC       open.lo
+  CC       close.lo
+  CC       cpu.lo
+  CC       disk.lo
+  CC       mem.lo
+  CC       swap.lo
+  CC       uptime.lo
+In function 'find_primary_part',
+    inlined from 'glibtop_get_disk_s' at disk.c:253:2:
+disk.c:164:17: warning: 'strncpy' output may be truncated copying 4 bytes from a string of length 255 [-Wstringop-truncation]
+  164 |                 strncpy (primary_part[n].type, type, 4);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       loadavg.lo
+  CC       shm_limits.lo
+  CC       msg_limits.lo
+  CC       sem_limits.lo
+  CC       proclist.lo
+  CC       procstate.lo
+  CC       procuid.lo
+  CC       proctime.lo
+  CC       procmem.lo
+  CC       procsignal.lo
+  CC       prockernel.lo
+  CC       procsegment.lo
+  CC       procargs.lo
+  CC       procmap.lo
+  CC       siglist.lo
+  CC       sysinfo.lo
+  CC       netload.lo
+  CC       ppp.lo
+  CC       glibtop_private.lo
+  CC       mountlist.lo
+  CC       procaffinity.lo
+  CC       procio.lo
+  CC       fsusage.lo
+  CC       netlist.lo
+  CC       procopenfiles.lo
+  CC       procwd.lo
+  CC       suid_open.lo
+  CCLD     libgtop_sysdeps_suid-2.0.la
+  CCLD     libgtop_sysdeps-2.0.la
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps/linux'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps'
+Making all in lib
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/lib'
+perl ./lib.pl < ../features.def > lib-t
+mv lib-t lib.c
+make  all-am
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/lib'
+  CC       init.lo
+  CC       close.lo
+  CC       open.lo
+  CC       command.lo
+  CC       read.lo
+  CC       read_data.lo
+  CC       write.lo
+  CC       lib.lo
+  CC       parameter.lo
+  CC       sysdeps.lo
+  CC       boxed.lo
+  CCLD     libgtop-2.0.la
+  GISCAN   GTop-2.0.gir
+../include/glibtop/procargs.h:79: Warning: GTop: glibtop_get_proc_argv_l: return value: Missing (transfer) annotation
+../include/glibtop/procwd.h:55: Warning: GTop: glibtop_get_proc_wd_l: return value: Missing (transfer) annotation
+../include/glibtop/procwd.h:68: Warning: GTop: glibtop_get_proc_wd_s: return value: Missing (transfer) annotation
+  GICOMP   GTop-2.0.gir
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/lib'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/lib'
+Making all in src
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src'
+Making all in daemon
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src/daemon'
+  CC       slave.o
+  CC       main.o
+  CC       gnuserv.o
+gnuserv.c: In function ‘syslog_io_message’:
+gnuserv.c:109:37: warning: ‘: ’ directive output may be truncated writing 2 bytes into a region of size between 0 and 8191 [-Wformat-truncation=]
+  109 |     snprintf (buffer2, BUFSIZ-1, "%s: %s", buffer, g_strerror (errno));
+      |                                     ^~
+gnuserv.c:109:5: note: ‘snprintf’ output 3 or more bytes (assuming 8194) into a destination of size 8191
+  109 |     snprintf (buffer2, BUFSIZ-1, "%s: %s", buffer, g_strerror (errno));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       io.o
+  CC       version.o
+  CC       server.o
+  CCLD     libgtop_daemon2
+  CCLD     libgtop_server2
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src/daemon'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src'
+Making all in examples
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/examples'
+  CC       pprint.o
+  CC       second.o
+  CC       first.o
+  CC       procargs.o
+  CC       df.o
+  CC       netlist.o
+  CC       mountlist.o
+  CC       procmap.o
+  CC       netload.o
+  CC       sysdeps.o
+  CC       timings.o
+  CC       openfiles.o
+  CC       smp.o
+  CC       proclist.o
+  CC       free.o
+  CC       wd.o
+  CC       affinity.o
+  CC       disk.o
+  CC       diskio.o
+  CC       sysinfo.o
+  CCLD     first
+  CCLD     second
+  CCLD     pprint
+  CCLD     procargs
+  CCLD     df
+  CCLD     netlist
+  CCLD     mountlist
+  CCLD     procmap
+  CCLD     netload
+  CCLD     sysdeps
+  CCLD     timings
+  CCLD     openfiles
+  CCLD     smp
+  CCLD     proclist
+  CCLD     free
+  CCLD     wd
+  CCLD     affinity
+  CCLD     disk
+  CCLD     diskio
+  CCLD     sysinfo
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/examples'
+Making all in doc
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc'
+Making all in reference
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc/reference'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc/reference'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4'
+Making install in po
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/po'
+installing ab.gmo as /usr/share/locale/ab/LC_MESSAGES/libgtop.mo
+installing am.gmo as /usr/share/locale/am/LC_MESSAGES/libgtop.mo
+installing ar.gmo as /usr/share/locale/ar/LC_MESSAGES/libgtop.mo
+installing as.gmo as /usr/share/locale/as/LC_MESSAGES/libgtop.mo
+installing ast.gmo as /usr/share/locale/ast/LC_MESSAGES/libgtop.mo
+installing az.gmo as /usr/share/locale/az/LC_MESSAGES/libgtop.mo
+installing be.gmo as /usr/share/locale/be/LC_MESSAGES/libgtop.mo
+installing bg.gmo as /usr/share/locale/bg/LC_MESSAGES/libgtop.mo
+installing bn.gmo as /usr/share/locale/bn/LC_MESSAGES/libgtop.mo
+installing bn_IN.gmo as /usr/share/locale/bn_IN/LC_MESSAGES/libgtop.mo
+installing bs.gmo as /usr/share/locale/bs/LC_MESSAGES/libgtop.mo
+installing ca.gmo as /usr/share/locale/ca/LC_MESSAGES/libgtop.mo
+installing ca@valencia.gmo as /usr/share/locale/ca@valencia/LC_MESSAGES/libgtop.mo
+installing cs.gmo as /usr/share/locale/cs/LC_MESSAGES/libgtop.mo
+installing cy.gmo as /usr/share/locale/cy/LC_MESSAGES/libgtop.mo
+installing da.gmo as /usr/share/locale/da/LC_MESSAGES/libgtop.mo
+installing de.gmo as /usr/share/locale/de/LC_MESSAGES/libgtop.mo
+installing dz.gmo as /usr/share/locale/dz/LC_MESSAGES/libgtop.mo
+installing el.gmo as /usr/share/locale/el/LC_MESSAGES/libgtop.mo
+installing en_CA.gmo as /usr/share/locale/en_CA/LC_MESSAGES/libgtop.mo
+installing en_GB.gmo as /usr/share/locale/en_GB/LC_MESSAGES/libgtop.mo
+installing en@shaw.gmo as /usr/share/locale/en@shaw/LC_MESSAGES/libgtop.mo
+installing eo.gmo as /usr/share/locale/eo/LC_MESSAGES/libgtop.mo
+installing es.gmo as /usr/share/locale/es/LC_MESSAGES/libgtop.mo
+installing et.gmo as /usr/share/locale/et/LC_MESSAGES/libgtop.mo
+installing eu.gmo as /usr/share/locale/eu/LC_MESSAGES/libgtop.mo
+installing fa.gmo as /usr/share/locale/fa/LC_MESSAGES/libgtop.mo
+installing fi.gmo as /usr/share/locale/fi/LC_MESSAGES/libgtop.mo
+installing fr.gmo as /usr/share/locale/fr/LC_MESSAGES/libgtop.mo
+installing fur.gmo as /usr/share/locale/fur/LC_MESSAGES/libgtop.mo
+installing ga.gmo as /usr/share/locale/ga/LC_MESSAGES/libgtop.mo
+installing gl.gmo as /usr/share/locale/gl/LC_MESSAGES/libgtop.mo
+installing gu.gmo as /usr/share/locale/gu/LC_MESSAGES/libgtop.mo
+installing he.gmo as /usr/share/locale/he/LC_MESSAGES/libgtop.mo
+installing hi.gmo as /usr/share/locale/hi/LC_MESSAGES/libgtop.mo
+installing hr.gmo as /usr/share/locale/hr/LC_MESSAGES/libgtop.mo
+installing hu.gmo as /usr/share/locale/hu/LC_MESSAGES/libgtop.mo
+installing ia.gmo as /usr/share/locale/ia/LC_MESSAGES/libgtop.mo
+installing id.gmo as /usr/share/locale/id/LC_MESSAGES/libgtop.mo
+installing it.gmo as /usr/share/locale/it/LC_MESSAGES/libgtop.mo
+installing ja.gmo as /usr/share/locale/ja/LC_MESSAGES/libgtop.mo
+installing ka.gmo as /usr/share/locale/ka/LC_MESSAGES/libgtop.mo
+installing kab.gmo as /usr/share/locale/kab/LC_MESSAGES/libgtop.mo
+installing kk.gmo as /usr/share/locale/kk/LC_MESSAGES/libgtop.mo
+installing kn.gmo as /usr/share/locale/kn/LC_MESSAGES/libgtop.mo
+installing ko.gmo as /usr/share/locale/ko/LC_MESSAGES/libgtop.mo
+installing ku.gmo as /usr/share/locale/ku/LC_MESSAGES/libgtop.mo
+installing kw.gmo as /usr/share/locale/kw/LC_MESSAGES/libgtop.mo
+installing ky.gmo as /usr/share/locale/ky/LC_MESSAGES/libgtop.mo
+installing la.gmo as /usr/share/locale/la/LC_MESSAGES/libgtop.mo
+installing lo.gmo as /usr/share/locale/lo/LC_MESSAGES/libgtop.mo
+installing lt.gmo as /usr/share/locale/lt/LC_MESSAGES/libgtop.mo
+installing lv.gmo as /usr/share/locale/lv/LC_MESSAGES/libgtop.mo
+installing mai.gmo as /usr/share/locale/mai/LC_MESSAGES/libgtop.mo
+installing mg.gmo as /usr/share/locale/mg/LC_MESSAGES/libgtop.mo
+installing mi.gmo as /usr/share/locale/mi/LC_MESSAGES/libgtop.mo
+installing mk.gmo as /usr/share/locale/mk/LC_MESSAGES/libgtop.mo
+installing ml.gmo as /usr/share/locale/ml/LC_MESSAGES/libgtop.mo
+installing mn.gmo as /usr/share/locale/mn/LC_MESSAGES/libgtop.mo
+installing mr.gmo as /usr/share/locale/mr/LC_MESSAGES/libgtop.mo
+installing ms.gmo as /usr/share/locale/ms/LC_MESSAGES/libgtop.mo
+installing nb.gmo as /usr/share/locale/nb/LC_MESSAGES/libgtop.mo
+installing ne.gmo as /usr/share/locale/ne/LC_MESSAGES/libgtop.mo
+installing nl.gmo as /usr/share/locale/nl/LC_MESSAGES/libgtop.mo
+installing nn.gmo as /usr/share/locale/nn/LC_MESSAGES/libgtop.mo
+installing oc.gmo as /usr/share/locale/oc/LC_MESSAGES/libgtop.mo
+installing or.gmo as /usr/share/locale/or/LC_MESSAGES/libgtop.mo
+installing pa.gmo as /usr/share/locale/pa/LC_MESSAGES/libgtop.mo
+installing pl.gmo as /usr/share/locale/pl/LC_MESSAGES/libgtop.mo
+installing pt.gmo as /usr/share/locale/pt/LC_MESSAGES/libgtop.mo
+installing pt_BR.gmo as /usr/share/locale/pt_BR/LC_MESSAGES/libgtop.mo
+installing ro.gmo as /usr/share/locale/ro/LC_MESSAGES/libgtop.mo
+installing ru.gmo as /usr/share/locale/ru/LC_MESSAGES/libgtop.mo
+installing rw.gmo as /usr/share/locale/rw/LC_MESSAGES/libgtop.mo
+installing sk.gmo as /usr/share/locale/sk/LC_MESSAGES/libgtop.mo
+installing sl.gmo as /usr/share/locale/sl/LC_MESSAGES/libgtop.mo
+installing sq.gmo as /usr/share/locale/sq/LC_MESSAGES/libgtop.mo
+installing sr.gmo as /usr/share/locale/sr/LC_MESSAGES/libgtop.mo
+installing sr@latin.gmo as /usr/share/locale/sr@latin/LC_MESSAGES/libgtop.mo
+installing sv.gmo as /usr/share/locale/sv/LC_MESSAGES/libgtop.mo
+installing ta.gmo as /usr/share/locale/ta/LC_MESSAGES/libgtop.mo
+installing te.gmo as /usr/share/locale/te/LC_MESSAGES/libgtop.mo
+installing tg.gmo as /usr/share/locale/tg/LC_MESSAGES/libgtop.mo
+installing th.gmo as /usr/share/locale/th/LC_MESSAGES/libgtop.mo
+installing tr.gmo as /usr/share/locale/tr/LC_MESSAGES/libgtop.mo
+installing ug.gmo as /usr/share/locale/ug/LC_MESSAGES/libgtop.mo
+installing uk.gmo as /usr/share/locale/uk/LC_MESSAGES/libgtop.mo
+installing uz.gmo as /usr/share/locale/uz/LC_MESSAGES/libgtop.mo
+installing vi.gmo as /usr/share/locale/vi/LC_MESSAGES/libgtop.mo
+installing xh.gmo as /usr/share/locale/xh/LC_MESSAGES/libgtop.mo
+installing zh_CN.gmo as /usr/share/locale/zh_CN/LC_MESSAGES/libgtop.mo
+installing zh_HK.gmo as /usr/share/locale/zh_HK/LC_MESSAGES/libgtop.mo
+installing zh_TW.gmo as /usr/share/locale/zh_TW/LC_MESSAGES/libgtop.mo
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/po'
+Making install in misc
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/misc'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/misc'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/misc'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/misc'
+Making install in include
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include'
+Making install in glibtop
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include/glibtop'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include/glibtop'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/include/libgtop-2.0/glibtop'
+ /usr/bin/install -c -m 644 close.h loadavg.h prockernel.h procstate.h sem_limits.h uptime.h command.h mem.h proclist.h proctime.h shm_limits.h cpu.h disk.h msg_limits.h procmem.h procuid.h swap.h procsegment.h sysdeps.h global.h procsignal.h union.h gnuserv.h parameter.h mountlist.h fsusage.h procmap.h signal.h sysinfo.h ppp.h procargs.h netload.h procwd.h procaffinity.h procio.h netlist.h procopenfiles.h open.h '/usr/include/libgtop-2.0/glibtop'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include/glibtop'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include/glibtop'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/include'
+Making install in sysdeps
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps'
+Making install in common
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps/common'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps/common'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps/common'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps/common'
+Making install in linux
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps/linux'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps/linux'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/include/libgtop-2.0'
+ /usr/bin/install -c -m 644 glibtop_server.h glibtop_machine.h glibtop_suid.h '/usr/include/libgtop-2.0'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps/linux'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps/linux'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/sysdeps'
+Making install in lib
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/lib'
+make  install-am
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/lib'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/lib'
+ /usr/bin/mkdir -p '/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libgtop-2.0.la '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libgtop-2.0.so.11.1.1 /usr/lib/libgtop-2.0.so.11.1.1
+libtool: install: (cd /usr/lib && { ln -s -f libgtop-2.0.so.11.1.1 libgtop-2.0.so.11 || { rm -f libgtop-2.0.so.11 && ln -s libgtop-2.0.so.11.1.1 libgtop-2.0.so.11; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libgtop-2.0.so.11.1.1 libgtop-2.0.so || { rm -f libgtop-2.0.so && ln -s libgtop-2.0.so.11.1.1 libgtop-2.0.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgtop-2.0.lai /usr/lib/libgtop-2.0.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/share/gir-1.0'
+ /usr/bin/install -c -m 644 GTop-2.0.gir '/usr/share/gir-1.0'
+ /usr/bin/mkdir -p '/usr/lib/girepository-1.0'
+ /usr/bin/install -c -m 644 GTop-2.0.typelib '/usr/lib/girepository-1.0'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/lib'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/lib'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/lib'
+Making install in src
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src'
+Making install in daemon
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src/daemon'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src/daemon'
+ /usr/bin/mkdir -p '/usr/libexec'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c libgtop_daemon2 libgtop_server2 '/usr/libexec'
+libtool: install: /usr/bin/install -c .libs/libgtop_daemon2 /usr/libexec/libgtop_daemon2
+libtool: install: /usr/bin/install -c .libs/libgtop_server2 /usr/libexec/libgtop_server2
+make  install-exec-hook
+make[4]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src/daemon'
+test -n "" || chown root /usr/libexec/libgtop_server2 && chmod 4755 /usr/libexec/libgtop_server2
+make[4]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src/daemon'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src/daemon'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src/daemon'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/src'
+Making install in examples
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/examples'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/examples'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/examples'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/examples'
+Making install in doc
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc'
+Making install in reference
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc/reference'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc/reference'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/install -c -m 644 ./html/home.png
+ /usr/bin/install -c -m 644 ./html/index.html
+ /usr/bin/install -c -m 644 ./html/left-insensitive.png
+ /usr/bin/install -c -m 644 ./html/left.png
+ /usr/bin/install -c -m 644 ./html/libgtop-Close.html
+ /usr/bin/install -c -m 644 ./html/libgtop-Command.html
+ /usr/bin/install -c -m 644 ./html/libgtop-cpu.html
+ /usr/bin/install -c -m 644 ./html/libgtop.devhelp2
+ /usr/bin/install -c -m 644 ./html/libgtop-fsusage.html
+ /usr/bin/install -c -m 644 ./html/libgtop-GlibTop.html
+ /usr/bin/install -c -m 644 ./html/libgtop-GlibTop-Server.html
+ /usr/bin/install -c -m 644 ./html/libgtop-lib.html
+ /usr/bin/install -c -m 644 ./html/libgtop-loadavg.html
+ /usr/bin/install -c -m 644 ./html/libgtop-mem.html
+ /usr/bin/install -c -m 644 ./html/libgtop-mountlist.html
+ /usr/bin/install -c -m 644 ./html/libgtop-msg-limits.html
+ /usr/bin/install -c -m 644 ./html/libgtop-Net-List.html
+ /usr/bin/install -c -m 644 ./html/libgtop-Net-Load.html
+ /usr/bin/install -c -m 644 ./html/libgtop-open.html
+ /usr/bin/install -c -m 644 ./html/libgtop-parameter.html
+ /usr/bin/install -c -m 644 ./html/libgtop-PPP.html
+ /usr/bin/install -c -m 644 ./html/libgtop-Process-Arguments.html
+ /usr/bin/install -c -m 644 ./html/libgtop-Process-List.html
+ /usr/bin/install -c -m 644 ./html/libgtop-Process-Time.html
+ /usr/bin/install -c -m 644 ./html/libgtop-prockernel.html
+ /usr/bin/install -c -m 644 ./html/libgtop-procmap.html
+ /usr/bin/install -c -m 644 ./html/libgtop-procmem.html
+ /usr/bin/install -c -m 644 ./html/libgtop-procopenfiles.html
+ /usr/bin/install -c -m 644 ./html/libgtop-procsegment.html
+ /usr/bin/install -c -m 644 ./html/libgtop-procsignal.html
+ /usr/bin/install -c -m 644 ./html/libgtop-procstate.html
+ /usr/bin/install -c -m 644 ./html/libgtop-procuid.html
+ /usr/bin/install -c -m 644 ./html/libgtop-sem-limits.html
+ /usr/bin/install -c -m 644 ./html/libgtop-Shared-Memory-Limits.html
+ /usr/bin/install -c -m 644 ./html/libgtop-signal.html
+ /usr/bin/install -c -m 644 ./html/libgtop-swap.html
+ /usr/bin/install -c -m 644 ./html/libgtop-sysdeps.html
+ /usr/bin/install -c -m 644 ./html/libgtop-sysinfo.html
+ /usr/bin/install -c -m 644 ./html/libgtop-union.html
+ /usr/bin/install -c -m 644 ./html/libgtop-Uptime.html
+ /usr/bin/install -c -m 644 ./html/libgtop-version.html
+ /usr/bin/install -c -m 644 ./html/libgtop-white-paper.html
+ /usr/bin/install -c -m 644 ./html/libgtop-white-paper-overview.html
+ /usr/bin/install -c -m 644 ./html/right-insensitive.png
+ /usr/bin/install -c -m 644 ./html/right.png
+ /usr/bin/install -c -m 644 ./html/style.css
+ /usr/bin/install -c -m 644 ./html/up-insensitive.png
+ /usr/bin/install -c -m 644 ./html/up.png
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc/reference'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc/reference'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/info'
+ /usr/bin/install -c -m 644 ./libgtop2.info '/usr/share/info'
+ install-info --info-dir='/usr/share/info' '/usr/share/info/libgtop2.info'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4/doc'
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/include/libgtop-2.0'
+ /usr/bin/install -c -m 644 glibtop.h libgtopconfig.h '/usr/include/libgtop-2.0'
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libgtop-2.0.pc '/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libgtop/libgtop-2.41.4'
+2.41.4
+Updated registry for libgtop to version 2.41.4
+[VERSION] libgtop: 2.41.4
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package libgtop in /var/lib/custom-packages/
