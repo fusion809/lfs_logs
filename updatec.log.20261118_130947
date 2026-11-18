@@ -1,0 +1,171 @@
+===== Update check started: 2026-11-18 13:09:47 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261118_130947
+Packages needing attention: reshiki-git
+===== Starting updatec: 2026-11-18 13:09:49 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - reshiki-git
+
+Building custom package reshiki-git...
+[13:09:50] Found custom package for reshiki-git, bypassing BLFS aliases.
+[13:09:50] Custom package detected at /home/fusion809/lfs_packaging/reshiki-git (package: reshiki-git)
+[13:09:50] Extracting dependencies for custom package 'reshiki-git'...
+[13:09:50] Required deps: acl at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz libcanberra libepoxy libffi libice libogg libpng libseccomp libselinux libsm libtool libvorbis libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres libxt ncurses pango pcre2 pixman systemd util-linux wayland zlib 
+[13:09:50] Dependency 'acl' already installed.
+[13:09:50] Dependency 'at-spi2-core' already installed.
+[13:09:50] Dependency 'brotli' already installed.
+[13:09:50] Dependency 'bzip2' already installed.
+[13:09:50] Dependency 'cairo' already installed.
+[13:09:50] Dependency 'dbus' already installed.
+[13:09:50] Dependency 'expat' already installed.
+[13:09:50] Dependency 'fontconfig' already installed.
+[13:09:50] Dependency 'freetype' already installed.
+[13:09:50] Dependency 'fribidi' already installed.
+[13:09:50] Dependency 'gcc' already installed.
+[13:09:50] Dependency 'gdk-pixbuf' already installed.
+[13:09:50] Dependency 'glib2' already installed.
+[13:09:50] Dependency 'glibc' already installed.
+[13:09:50] Dependency 'glycin' already installed.
+[13:09:50] Dependency 'graphite2' already installed.
+[13:09:50] Dependency 'gtk3' already installed.
+[13:09:50] Dependency 'harfbuzz' already installed.
+[13:09:50] Dependency 'libcanberra' already installed.
+[13:09:50] Dependency 'libepoxy' already installed.
+[13:09:50] Dependency 'libffi' already installed.
+[13:09:50] Dependency 'libice' already installed.
+[13:09:50] Dependency 'libogg' already installed.
+[13:09:50] Dependency 'libpng' already installed.
+[13:09:50] Dependency 'libseccomp' already installed.
+[13:09:50] Dependency 'libselinux' already installed.
+[13:09:50] Dependency 'libsm' already installed.
+[13:09:50] Dependency 'libtool' already installed.
+[13:09:50] Dependency 'libvorbis' already installed.
+[13:09:50] Dependency 'libx11' already installed.
+[13:09:50] Dependency 'libxau' already installed.
+[13:09:50] Dependency 'libxcb' already installed.
+[13:09:50] Dependency 'libxcomposite' already installed.
+[13:09:50] Dependency 'libxcursor' already installed.
+[13:09:50] Dependency 'libxdamage' already installed.
+[13:09:50] Dependency 'libxdmcp' already installed.
+[13:09:50] Dependency 'libxext' already installed.
+[13:09:50] Dependency 'libxfixes' already installed.
+[13:09:50] Dependency 'libxi' already installed.
+[13:09:50] Dependency 'libxinerama' already installed.
+[13:09:50] Dependency 'libxkbcommon' already installed.
+[13:09:50] Dependency 'libxrandr' already installed.
+[13:09:50] Dependency 'libxrender' already installed.
+[13:09:50] Dependency 'libxres' already installed.
+[13:09:50] Dependency 'libxt' already installed.
+[13:09:50] Dependency 'ncurses' already installed.
+[13:09:50] Dependency 'pango' already installed.
+[13:09:50] Dependency 'pcre2' already installed.
+[13:09:50] Dependency 'pixman' already installed.
+[13:09:50] Dependency 'systemd' already installed.
+[13:09:50] Dependency 'util-linux' already installed.
+[13:09:50] Dependency 'wayland' already installed.
+[13:09:50] Dependency 'zlib' already installed.
+[VERSION] reshiki-git: f2e771f17e7bc91a9e19ade72c20e7a6440f9064
+[13:09:51] Installing reshiki-git version: f2e771f17e7bc91a9e19ade72c20e7a6440f9064
+[13:09:51] Starting remote custom build for reshiki-git...
+From https://github.com/Ameyanagi/ReShiki
+   b6732f24..7961da61  feat/compare-c2a -> origin/feat/compare-c2a
+   3e2cd2ee..04825ac0  feat/compare-c2b -> origin/feat/compare-c2b
+   8825661e..ef6f542a  feat/name-in-property-caption -> origin/feat/name-in-property-caption
+   73abecb5..f2e771f1  main             -> origin/main
+ * [new tag]           nightly-0.15.0-nightly.20261118.44213908870.1 -> nightly-0.15.0-nightly.20261118.44213908870.1
+Previous HEAD position was 73abecb5 Merge pull request #1235 from Ameyanagi/feat/compare-polish
+HEAD is now at f2e771f1 Merge pull request #1230 from Ameyanagi/feat/name-in-property-caption
+   Compiling reshiki-model v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/model)
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor/iced_widget/src/pick_list.rs:375:22
+    |
+375 |                 f32::INFINITY,
+    |                      ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: `iced_widget` (lib) generated 1 warning
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:586:55
+    |
+586 |         let event = if let Ok(event) = event_receiver.try_next() {
+    |                                                       ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:297:64
+    |
+297 |                     task::Poll::Pending => match self.receiver.try_next() {
+    |                                                                ^^^^^^^^
+
+warning: `iced_winit` (lib) generated 2 warnings
+   Compiling reshiki-io v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/io)
+   Compiling reshiki-agent v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/agent)
+   Compiling reshiki-mcp v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/mcp)
+   Compiling reshiki v0.15.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki)
+    Finished `release` profile [optimized + debuginfo] target(s) in 18m 00s
+[Desktop Entry]
+Name=ReShiki (git)
+Type=Application
+Exec=/usr/bin/reshiki-git %U
+TryExec=/usr/bin/reshiki-git
+Icon=reshiki-git
+MimeType=chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;chemical/x-smiles;chemical/x-cml;chemical/x-inchi;
+StartupNotify=true
+Categories=Education;Science;Chemistry;
+StartupWMClass=reshiki-git
+Saved working directory and index state WIP on (no branch): f2e771f1 Merge pull request #1230 from Ameyanagi/feat/name-in-property-caption
+f2e771f17e7bc91a9e19ade72c20e7a6440f9064
+Updated registry for reshiki-git to version 11787670453e6ac90f06724a1051472c4ac4fd72
+[VERSION] reshiki-git: 11787670453e6ac90f06724a1051472c4ac4fd72
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package reshiki-git in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master caf370e] Updating packages
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master db14c3b] Updating packages
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-40
+r13.1-638
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libpari-gmp-tls.so.2.19.0
+Path: /usr/lib/libpari-gmp-tls.so.2.19.0
+Skipping generic/unsafe name 'libpari-gmp-tls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libpari-gmp-tls.so.10 libpari-gmp-tls.so.2.19.0
+Example dependents: ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libpari-gmp-tls.so.2.19.0:
+  - ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libpari-gmp-tls.so.2.19.0.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.5...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.5-lfs-r13.1-40
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
