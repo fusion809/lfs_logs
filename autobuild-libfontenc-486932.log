@@ -1,0 +1,304 @@
+[13:00:15] Found custom package for libfontenc, bypassing BLFS aliases.
+[13:00:15] Custom package detected at /home/fusion809/lfs_packaging/libfontenc (package: libfontenc)
+[13:00:15] Extracting dependencies for custom package 'libfontenc'...
+[13:00:15] Required deps: bash coreutils fontconfig glibc libxcb make sed systemd tar util-linux xz zlib 
+[13:00:15] Dependency 'bash' already installed.
+[13:00:15] Dependency 'coreutils' already installed.
+[13:00:15] Dependency 'fontconfig' already installed.
+[13:00:15] Dependency 'glibc' already installed.
+[13:00:15] Dependency 'libxcb' already installed.
+[13:00:15] Dependency 'make' already installed.
+[13:00:15] Dependency 'sed' already installed.
+[13:00:15] Dependency 'systemd' already installed.
+[13:00:15] Dependency 'tar' already installed.
+[13:00:15] Dependency 'util-linux' already installed.
+[13:00:15] Dependency 'xz' already installed.
+[13:00:15] Dependency 'zlib' already installed.
+[VERSION] libfontenc: 1.1.10
+[13:00:17] Installing libfontenc version: 1.1.10
+[13:00:17] Starting remote custom build for libfontenc...
+--2026-11-18 13:00:22--  https://xorg.freedesktop.org/archive/individual/lib/libfontenc-1.1.10.tar.xz
+Resolving xorg.freedesktop.org (xorg.freedesktop.org)... 131.252.210.176
+Connecting to xorg.freedesktop.org (xorg.freedesktop.org)|131.252.210.176|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 288648 (282K) [application/x-xz]
+Saving to: ‘libfontenc-1.1.10.tar.xz’
+
+libfontenc-1.1.10.t   0%[                    ]       0  --.-KB/s               libfontenc-1.1.10.t  16%[==>                 ]  46.79K   121KB/s               libfontenc-1.1.10.t  63%[===========>        ] 179.60K   306KB/s               libfontenc-1.1.10.t 100%[===================>] 281.88K   362KB/s    in 0.8s    
+
+2026-11-18 13:00:24 (362 KB/s) - ‘libfontenc-1.1.10.tar.xz’ saved [288648/288648]
+
+configure found
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C23 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '97' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking dependency style of gcc... gcc3
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc options to detect undeclared functions... none needed
+checking for gcc options to ignore future-version functions... none needed
+checking whether __clang__ is declared... no
+checking whether __INTEL_COMPILER is declared... no
+checking whether __SUNPRO_C is declared... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking if gcc supports -Werror=unknown-warning-option... no
+checking if gcc supports -Werror=unused-command-line-argument... no
+checking if gcc supports -Wall... yes
+checking if gcc supports -Wpointer-arith... yes
+checking if gcc supports -Wmissing-declarations... yes
+checking if gcc supports -Wformat=2... yes
+checking if gcc supports -Wstrict-prototypes... yes
+checking if gcc supports -Wmissing-prototypes... yes
+checking if gcc supports -Wnested-externs... yes
+checking if gcc supports -Wbad-function-cast... yes
+checking if gcc supports -Wold-style-definition... yes
+checking if gcc supports -Wunused... yes
+checking if gcc supports -Wuninitialized... yes
+checking if gcc supports -Wshadow... yes
+checking if gcc supports -Wmissing-noreturn... yes
+checking if gcc supports -Wmissing-format-attribute... yes
+checking if gcc supports -Wredundant-decls... yes
+checking if gcc supports -Wlogical-op... yes
+checking if gcc supports -Werror=implicit... yes
+checking if gcc supports -Werror=nonnull... yes
+checking if gcc supports -Werror=init-self... yes
+checking if gcc supports -Werror=main... yes
+checking if gcc supports -Werror=missing-braces... yes
+checking if gcc supports -Werror=sequence-point... yes
+checking if gcc supports -Werror=return-type... yes
+checking if gcc supports -Werror=trigraphs... yes
+checking if gcc supports -Werror=array-bounds... yes
+checking if gcc supports -Werror=write-strings... yes
+checking if gcc supports -Werror=address... yes
+checking if gcc supports -Werror=int-to-pointer-cast... yes
+checking if gcc supports -Werror=pointer-to-int-cast... yes
+checking if gcc supports -pedantic... yes
+checking if gcc supports -Werror... yes
+checking if gcc supports -Werror=attributes... yes
+checking for root directory for font files... /usr/share/fonts/X11
+checking for directory for encodings files... ${FONTROOTDIR}/encodings
+checking for zlib... yes
+checking for xproto... yes
+checking for gcc option to support large files... none needed
+checking for reallocarray... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating fontenc.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libfontenc/libfontenc-1.1.10'
+Making all in src
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libfontenc/libfontenc-1.1.10/src'
+  CC       encparse.lo
+  CC       fontenc.lo
+fontenc.c:586:40: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  586 | static char *iso8859_15_aliases[2] = { "fcd8859-15", NULL };
+      |                                        ^~~~~~~~~~~~
+fontenc.c:589:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  589 |     {"iso10646-1", NULL, 256 * 256, 0, iso10646, NULL, 0, 0},   /* Unicode */
+      |      ^~~~~~~~~~~~
+fontenc.c:590:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  590 |     {"iso8859-1", NULL, 256, 0, iso8859_1, NULL, 0, 0}, /* Latin 1 (West European) */
+      |      ^~~~~~~~~~~
+fontenc.c:591:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  591 |     {"iso8859-2", NULL, 256, 0, iso8859_2, NULL, 0, 0}, /* Latin 2 (East European) */
+      |      ^~~~~~~~~~~
+fontenc.c:592:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  592 |     {"iso8859-3", NULL, 256, 0, iso8859_3, NULL, 0, 0}, /* Latin 3 (South European) */
+      |      ^~~~~~~~~~~
+fontenc.c:593:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  593 |     {"iso8859-4", NULL, 256, 0, iso8859_4, NULL, 0, 0}, /* Latin 4 (North European) */
+      |      ^~~~~~~~~~~
+fontenc.c:594:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  594 |     {"iso8859-5", NULL, 256, 0, iso8859_5, NULL, 0, 0}, /* Cyrillic */
+      |      ^~~~~~~~~~~
+fontenc.c:595:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  595 |     {"iso8859-6", NULL, 256, 0, iso8859_6, NULL, 0, 0}, /* Arabic */
+      |      ^~~~~~~~~~~
+fontenc.c:596:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  596 |     {"iso8859-7", NULL, 256, 0, iso8859_7, NULL, 0, 0}, /* Greek */
+      |      ^~~~~~~~~~~
+fontenc.c:597:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  597 |     {"iso8859-8", NULL, 256, 0, iso8859_8, NULL, 0, 0}, /* Hebrew */
+      |      ^~~~~~~~~~~
+fontenc.c:598:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  598 |     {"iso8859-9", NULL, 256, 0, iso8859_9, NULL, 0, 0}, /* Latin 5 (Turkish) */
+      |      ^~~~~~~~~~~
+fontenc.c:599:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  599 |     {"iso8859-10", NULL, 256, 0, iso8859_10, NULL, 0, 0},       /* Latin 6 (Nordic) */
+      |      ^~~~~~~~~~~~
+fontenc.c:600:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  600 |     {"iso8859-15", iso8859_15_aliases, 256, 0, iso8859_15, NULL, 0, 0}, /* Latin 9 */
+      |      ^~~~~~~~~~~~
+fontenc.c:601:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  601 |     {"koi8-r", NULL, 256, 0, koi8_r, NULL, 0, 0},       /* Russian */
+      |      ^~~~~~~~
+fontenc.c:602:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  602 |     {"koi8-ru", NULL, 256, 0, koi8_ru, NULL, 0, 0},     /* Ukrainian */
+      |      ^~~~~~~~~
+fontenc.c:603:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  603 |     {"koi8-uni", NULL, 256, 0, koi8_uni, NULL, 0, 0},   /* Russian/Ukrainian/Bielorussian */
+      |      ^~~~~~~~~~
+fontenc.c:604:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  604 |     {"koi8-e", NULL, 256, 0, koi8_e, NULL, 0, 0},       /* ``European'' */
+      |      ^~~~~~~~
+fontenc.c:605:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  605 |     {"koi8-u", NULL, 256, 0, koi8_u, NULL, 0, 0},       /* Ukrainian too */
+      |      ^~~~~~~~
+fontenc.c:606:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  606 |     {"microsoft-symbol", NULL, 256, 0, microsoft_symbol, NULL, 0, 0},
+      |      ^~~~~~~~~~~~~~~~~~
+fontenc.c:607:6: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  607 |     {"apple-roman", NULL, 256, 0, apple_roman, NULL, 0, 0},
+      |      ^~~~~~~~~~~~~
+encparse.c: In function 'FontEncReallyReallyLoad':
+encparse.c:919:30: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+  919 |         count = fscanf(file, format, encoding_name, file_name);
+      |                              ^~~~~~
+encparse.c:932:54: warning: '%s' directive output may be truncated writing up to 1023 bytes into a region of size between 1 and 1024 [-Wformat-truncation=]
+  932 |                 snprintf(buf, MAXFONTFILENAMELEN, "%s%s", dir, file_name);
+      |                                                      ^~        ~~~~~~~~~
+encparse.c:932:17: note: 'snprintf' output between 1 and 2047 bytes into a destination of size 1024
+  932 |                 snprintf(buf, MAXFONTFILENAMELEN, "%s%s", dir, file_name);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD     libfontenc.la
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libfontenc/libfontenc-1.1.10/src'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libfontenc/libfontenc-1.1.10'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libfontenc/libfontenc-1.1.10'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libfontenc/libfontenc-1.1.10'
+Making install in src
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libfontenc/libfontenc-1.1.10/src'
+make[1]: Warning: File '.deps/encparse.Plo' has modification time 0.32 s in the future
+  CCLD     libfontenc.la
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libfontenc/libfontenc-1.1.10/src'
+make[2]: Warning: File '.deps/encparse.Plo' has modification time 0.14 s in the future
+  CCLD     libfontenc.la
+ /usr/bin/mkdir -p '/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libfontenc.la '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libfontenc.so.1.0.0 /usr/lib/libfontenc.so.1.0.0
+libtool: install: (cd /usr/lib && { ln -s -f libfontenc.so.1.0.0 libfontenc.so.1 || { rm -f libfontenc.so.1 && ln -s libfontenc.so.1.0.0 libfontenc.so.1; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libfontenc.so.1.0.0 libfontenc.so || { rm -f libfontenc.so && ln -s libfontenc.so.1.0.0 libfontenc.so; }; })
+libtool: install: /usr/bin/install -c .libs/libfontenc.lai /usr/lib/libfontenc.la
+libtool: install: /usr/bin/install -c .libs/libfontenc.a /usr/lib/libfontenc.a
+libtool: install: chmod 644 /usr/lib/libfontenc.a
+libtool: install: ranlib /usr/lib/libfontenc.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/include/X11/fonts'
+ /usr/bin/install -c -m 644 ../include/X11/fonts/fontenc.h '/usr/include/X11/fonts'
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libfontenc/libfontenc-1.1.10/src'
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libfontenc/libfontenc-1.1.10/src'
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libfontenc/libfontenc-1.1.10'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libfontenc/libfontenc-1.1.10'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 fontenc.pc '/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libfontenc/libfontenc-1.1.10'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libfontenc/libfontenc-1.1.10'
+1.1.10
+Updated registry for libfontenc to version 1.1.10
+[VERSION] libfontenc: 1.1.10
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package libfontenc in /var/lib/custom-packages/

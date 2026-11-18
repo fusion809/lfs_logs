@@ -1,0 +1,60 @@
+[12:55:17] Found custom package for gh, bypassing BLFS aliases.
+[12:55:17] Custom package detected at /home/fusion809/lfs_packaging/gh (package: gh)
+[12:55:17] Checking conflicting package(s) for 'gh': gh-bin 
+[12:55:17] Extracting dependencies for custom package 'gh'...
+[12:55:17] Required deps: glibc 
+[12:55:17] Dependency 'glibc' already installed.
+[VERSION] gh: 2.105.0
+[12:55:18] Installing gh version: 2.105.0
+[12:55:18] Starting remote custom build for gh...
+--2026-11-18 12:56:31--  https://github.com/cli/cli/archive/v2.105.0.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/cli/cli/tar.gz/refs/tags/v2.105.0 [following]
+--2026-11-18 12:56:32--  https://codeload.github.com/cli/cli/tar.gz/refs/tags/v2.105.0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15822703 (15M) [application/x-gzip]
+Saving to: ‘cli-2.105.0.tar.gz’
+
+cli-2.105.0.tar.gz    0%[                    ]       0  --.-KB/s               cli-2.105.0.tar.gz    1%[                    ] 162.22K   786KB/s               cli-2.105.0.tar.gz    2%[                    ] 407.37K   982KB/s               cli-2.105.0.tar.gz    4%[                    ] 667.23K  1.06MB/s               cli-2.105.0.tar.gz    6%[>                   ] 969.91K  1.15MB/s               cli-2.105.0.tar.gz    8%[>                   ]   1.30M  1.25MB/s               cli-2.105.0.tar.gz   11%[=>                  ]   1.73M  1.38MB/s               cli-2.105.0.tar.gz   14%[=>                  ]   2.16M  1.48MB/s               cli-2.105.0.tar.gz   17%[==>                 ]   2.62M  1.58MB/s               cli-2.105.0.tar.gz   20%[===>                ]   3.15M  1.69MB/s               cli-2.105.0.tar.gz   24%[===>                ]   3.75M  1.81MB/s               cli-2.105.0.tar.gz   29%[====>               ]   4.41M  1.94MB/s               cli-2.105.0.tar.gz   33%[=====>              ]   5.09M  2.06MB/s               cli-2.105.0.tar.gz   38%[======>             ]   5.77M  2.16MB/s               cli-2.105.0.tar.gz   42%[=======>            ]   6.48M  2.26MB/s               cli-2.105.0.tar.gz   47%[========>           ]   7.12M  2.32MB/s    eta 3s     cli-2.105.0.tar.gz   51%[=========>          ]   7.82M  2.47MB/s    eta 3s     cli-2.105.0.tar.gz   56%[==========>         ]   8.51M  2.60MB/s    eta 3s     cli-2.105.0.tar.gz   62%[===========>        ]   9.37M  2.84MB/s    eta 3s     cli-2.105.0.tar.gz   69%[============>       ]  10.47M  3.09MB/s    eta 3s     cli-2.105.0.tar.gz   80%[===============>    ]  12.10M  3.48MB/s    eta 1s     cli-2.105.0.tar.gz   91%[=================>  ]  13.87M  4.00MB/s    eta 1s     cli-2.105.0.tar.gz  100%[===================>]  15.09M  4.31MB/s    in 4.4s    
+
+2026-11-18 12:56:37 (3.41 MB/s) - ‘cli-2.105.0.tar.gz’ saved [15822703/15822703]
+
+GOOS= GOARCH= GOARM= GOFLAGS= CGO_ENABLED= go build -o script/build script/build.go
+go build -trimpath -ldflags "-X github.com/cli/cli/v2/internal/build.Date=2026-11-18 -X github.com/cli/cli/v2/internal/build.Version=701b6e5c " -o bin/gh ./cmd/gh
+go: downloading golang.org/x/text v0.44.0
+go: downloading golang.org/x/term v0.48.0
+go: downloading golang.org/x/crypto v0.59.0
+go: downloading golang.org/x/net v0.62.0
+build.go: `bin/gh` is up to date.
+go run ./cmd/gen-docs --man-page --doc-path ./share/man/man1/
+go: downloading golang.org/x/text v0.44.0
+go: downloading golang.org/x/term v0.48.0
+go: downloading golang.org/x/crypto v0.59.0
+go: downloading golang.org/x/net v0.62.0
+mkdir -p ./share/bash-completion/completions ./share/fish/vendor_completions.d ./share/zsh/site-functions ./share/zsh/vendor-completions
+bin/gh completion -s bash > ./share/bash-completion/completions/gh
+bin/gh completion -s fish > ./share/fish/vendor_completions.d/gh.fish
+bin/gh completion -s zsh > ./share/zsh/site-functions/_gh
+# On Debian/Ubuntu the default zsh fpath does not include /usr/share/zsh/site-functions
+# but does include /usr/share/zsh/vendor-completions, so we ship both paths in our
+# .deb and .rpm packages. See https://github.com/cli/cli/issues/13166
+cp ./share/zsh/site-functions/_gh ./share/zsh/vendor-completions/_gh
+install -d /usr/bin
+install -m755 bin/gh /usr/bin/
+install -d /usr/share/man/man1
+install -m644 ./share/man/man1/* /usr/share/man/man1/
+install -d /usr/share/bash-completion/completions
+install -m644 ./share/bash-completion/completions/gh /usr/share/bash-completion/completions/gh
+install -d /usr/share/fish/vendor_completions.d
+install -m644 ./share/fish/vendor_completions.d/gh.fish /usr/share/fish/vendor_completions.d/gh.fish
+install -d /usr/share/zsh/site-functions
+install -m644 ./share/zsh/site-functions/_gh /usr/share/zsh/site-functions/_gh
+2.105.0
+Updated registry for gh to version 2.105.0
+[VERSION] gh: 2.105.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package gh in /var/lib/custom-packages/

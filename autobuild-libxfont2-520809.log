@@ -1,0 +1,336 @@
+[13:01:26] Found custom package for libxfont2, bypassing BLFS aliases.
+[13:01:26] Custom package detected at /home/fusion809/lfs_packaging/libxfont2 (package: libxfont2)
+[13:01:26] Extracting dependencies for custom package 'libxfont2'...
+[13:01:26] Required deps: bash brotli bzip2 coreutils fontconfig freetype glibc libfontenc libpng libxcb make sed systemd tar util-linux xz zlib 
+[13:01:26] Dependency 'bash' already installed.
+[13:01:26] Dependency 'brotli' already installed.
+[13:01:26] Dependency 'bzip2' already installed.
+[13:01:26] Dependency 'coreutils' already installed.
+[13:01:26] Dependency 'fontconfig' already installed.
+[13:01:26] Dependency 'freetype' already installed.
+[13:01:26] Dependency 'glibc' already installed.
+[13:01:26] Dependency 'libfontenc' already installed.
+[13:01:26] Dependency 'libpng' already installed.
+[13:01:26] Dependency 'libxcb' already installed.
+[13:01:26] Dependency 'make' already installed.
+[13:01:26] Dependency 'sed' already installed.
+[13:01:26] Dependency 'systemd' already installed.
+[13:01:26] Dependency 'tar' already installed.
+[13:01:26] Dependency 'util-linux' already installed.
+[13:01:26] Dependency 'xz' already installed.
+[13:01:26] Dependency 'zlib' already installed.
+[VERSION] libxfont2: 2.0.10
+[13:01:27] Installing libxfont2 version: 2.0.10
+[13:01:27] Starting remote custom build for libxfont2...
+--2026-11-18 13:01:32--  https://xorg.freedesktop.org/archive/individual/lib/libXfont2-2.0.10.tar.xz
+Resolving xorg.freedesktop.org (xorg.freedesktop.org)... 131.252.210.176
+Connecting to xorg.freedesktop.org (xorg.freedesktop.org)|131.252.210.176|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 479120 (468K) [application/x-xz]
+Saving to: ‘libXfont2-2.0.10.tar.xz’
+
+libXfont2-2.0.10.ta   0%[                    ]       0  --.-KB/s               libXfont2-2.0.10.ta   3%[                    ]  15.54K  69.5KB/s               libXfont2-2.0.10.ta   9%[>                   ]  46.79K   104KB/s               libXfont2-2.0.10.ta  23%[===>                ] 109.29K   162KB/s               libXfont2-2.0.10.ta  50%[=========>          ] 234.29K   260KB/s               libXfont2-2.0.10.ta 100%[===================>] 467.89K   496KB/s    in 0.9s    
+
+2026-11-18 13:01:35 (496 KB/s) - ‘libXfont2-2.0.10.tar.xz’ saved [479120/479120]
+
+configure found
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '97' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C23 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc options to detect undeclared functions... none needed
+checking for gcc options to ignore future-version functions... none needed
+checking whether __clang__ is declared... no
+checking whether __INTEL_COMPILER is declared... no
+checking whether __SUNPRO_C is declared... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking if gcc supports -Werror=unknown-warning-option... no
+checking if gcc supports -Werror=unused-command-line-argument... no
+checking if gcc supports -Wall... yes
+checking if gcc supports -Wpointer-arith... yes
+checking if gcc supports -Wmissing-declarations... yes
+checking if gcc supports -Wformat=2... yes
+checking if gcc supports -Wstrict-prototypes... yes
+checking if gcc supports -Wmissing-prototypes... yes
+checking if gcc supports -Wnested-externs... yes
+checking if gcc supports -Wbad-function-cast... yes
+checking if gcc supports -Wold-style-definition... yes
+checking if gcc supports -Wunused... yes
+checking if gcc supports -Wuninitialized... yes
+checking if gcc supports -Wshadow... yes
+checking if gcc supports -Wmissing-noreturn... yes
+checking if gcc supports -Wmissing-format-attribute... yes
+checking if gcc supports -Wredundant-decls... yes
+checking if gcc supports -Wlogical-op... yes
+checking if gcc supports -Werror=implicit... yes
+checking if gcc supports -Werror=nonnull... yes
+checking if gcc supports -Werror=init-self... yes
+checking if gcc supports -Werror=main... yes
+checking if gcc supports -Werror=missing-braces... yes
+checking if gcc supports -Werror=sequence-point... yes
+checking if gcc supports -Werror=return-type... yes
+checking if gcc supports -Werror=trigraphs... yes
+checking if gcc supports -Werror=array-bounds... yes
+checking if gcc supports -Werror=write-strings... yes
+checking if gcc supports -Werror=address... yes
+checking if gcc supports -Werror=int-to-pointer-cast... yes
+checking if gcc supports -Werror=pointer-to-int-cast... yes
+checking if gcc supports -pedantic... yes
+checking if gcc supports -Werror... yes
+checking if gcc supports -Werror=attributes... yes
+checking whether to build developer documentation... no
+checking for xmlto... /usr/bin/xmlto
+checking the xmlto version... 0.0.29
+checking for fop... no
+configure: WARNING: fop not found - documentation targets will be skipped
+checking for X.Org SGML entities >= 1.7... no
+checking for a Python interpreter with version >= 3.0... python
+checking for python... /usr/bin/python
+checking for python version... 3.15
+checking for python platform... linux
+checking for GNU default python prefix... ${prefix}
+checking for GNU default python exec_prefix... ${exec_prefix}
+checking for python script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.15/site-packages
+checking for python extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.15/site-packages
+checking for endian.h... yes
+checking for poll.h... yes
+checking for sys/poll.h... yes
+checking for poll... yes
+checking for readlink... yes
+checking for strlcat... yes
+checking for reallocarray... yes
+checking for realpath... yes
+checking for strlcat... (cached) yes
+checking for strlcpy... yes
+checking for err.h... yes
+checking for float.h... yes
+checking for gcc option to support large files... none needed
+checking for freetype2... yes
+checking for zlib... yes
+checking for hypot in -lm... yes
+checking for xproto xtrans fontsproto >= 2.1.3 fontenc... yes
+checking if Xtrans should support UNIX socket connections... yes
+checking if Xtrans should support TCP socket connections... yes
+checking for library containing socket... none required
+checking for library containing gethostbyname... none required
+checking for getaddrinfo... yes
+checking for inet_ntop... yes
+checking if IPv6 support should be built... yes
+checking for struct sockaddr_in.sin_len... no
+checking for socklen_t... yes
+checking for struct sockaddr_storage... yes
+checking for struct msghdr.msg_control... yes
+checking if Xtrans should support os-specific local connections... no
+checking for strcasecmp... yes
+checking for strlcpy... (cached) yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating xfont2.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libxfont2/libXfont2-2.0.10'
+Making all in doc
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libxfont2/libXfont2-2.0.10/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libxfont2/libXfont2-2.0.10/doc'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libxfont2/libXfont2-2.0.10'
+  CC       test/utils/lsfontdir.o
+  CC       test/utils/font-test-utils.o
+  CC       src/stubs/atom.lo
+  CC       src/stubs/libxfontstubs.lo
+  CC       src/util/fontaccel.lo
+  CC       src/util/fontnames.lo
+  CC       src/util/fontutil.lo
+  CC       src/util/fontxlfd.lo
+  CC       src/util/format.lo
+  CC       src/util/miscutil.lo
+  CC       src/util/patcache.lo
+  CC       src/util/private.lo
+  CC       src/util/utilbitmap.lo
+  CC       src/fontfile/bitsource.lo
+  CC       src/fontfile/bufio.lo
+  CC       src/fontfile/decompress.lo
+  CC       src/fontfile/defaults.lo
+  CC       src/fontfile/dirfile.lo
+src/fontfile/dirfile.c: In function 'FontFileReadDirectory':
+src/fontfile/dirfile.c:88:14: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   88 |     if ((ptr = strchr(directory, ':'))) {
+      |              ^
+  CC       src/fontfile/fileio.lo
+  CC       src/fontfile/filewr.lo
+  CC       src/fontfile/fontdir.lo
+  CC       src/fontfile/fontfile.lo
+  CC       src/fontfile/fontscale.lo
+  CC       src/fontfile/gunzip.lo
+  CC       src/fontfile/register.lo
+  CC       src/fontfile/renderers.lo
+  CC       src/fontfile/catalogue.lo
+  CC       src/FreeType/ftenc.lo
+  CC       src/FreeType/ftfuncs.lo
+src/FreeType/ftenc.c: In function 'FTPickMapping':
+src/FreeType/ftenc.c:89:40: warning: '%s' directive output may be truncated writing up to 18 bytes into a region of size between 1 and 19 [-Wformat-truncation=]
+   89 |         snprintf(buf, sizeof(buf), "%s-%s", reg, enc);
+      |                                        ^~
+src/FreeType/ftenc.c:89:9: note: 'snprintf' output between 2 and 38 bytes into a destination of size 20
+   89 |         snprintf(buf, sizeof(buf), "%s-%s", reg, enc);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       src/FreeType/fttools.lo
+  CC       src/FreeType/xttcap.lo
+  CC       src/bitmap/bitmap.lo
+  CC       src/bitmap/bitmapfunc.lo
+  CC       src/bitmap/bitmaputil.lo
+  CC       src/bitmap/bitscale.lo
+src/bitmap/bitscale.c: In function 'BitmapScaleBitmaps':
+src/bitmap/bitscale.c:1514:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'size_t' {aka 'long unsigned int'} [-Wformat=]
+ 1514 |  fprintf(stderr, "Error: Couldn't allocate bitmaps (%d)\n", bytestoalloc);
+      |                                                     ~^      ~~~~~~~~~~~~
+      |                                                      |      |
+      |                                                      int    size_t {aka long unsigned int}
+      |                                                     %ld
+  CC       src/bitmap/fontink.lo
+  CC       src/bitmap/bdfread.lo
+  CC       src/bitmap/bdfutils.lo
+  CC       src/bitmap/pcfread.lo
+  CC       src/bitmap/pcfwrite.lo
+  CC       src/builtins/dir.lo
+  CC       src/builtins/file.lo
+  CC       src/builtins/fonts.lo
+  CC       src/builtins/fpe.lo
+  CC       src/builtins/render.lo
+  CCLD     libXfont2.la
+  CCLD     lsfontdir
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libxfont2/libXfont2-2.0.10'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libxfont2/libXfont2-2.0.10'
+Making install in doc
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libxfont2/libXfont2-2.0.10/doc'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libxfont2/libXfont2-2.0.10/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libxfont2/libXfont2-2.0.10/doc'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libxfont2/libXfont2-2.0.10/doc'
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libxfont2/libXfont2-2.0.10'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/libxfont2/libXfont2-2.0.10'
+ /usr/bin/mkdir -p '/usr/lib'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libXfont2.la '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libXfont2.so.2.0.0 /usr/lib/libXfont2.so.2.0.0
+libtool: install: (cd /usr/lib && { ln -s -f libXfont2.so.2.0.0 libXfont2.so.2 || { rm -f libXfont2.so.2 && ln -s libXfont2.so.2.0.0 libXfont2.so.2; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libXfont2.so.2.0.0 libXfont2.so || { rm -f libXfont2.so && ln -s libXfont2.so.2.0.0 libXfont2.so; }; })
+libtool: install: /usr/bin/install -c .libs/libXfont2.lai /usr/lib/libXfont2.la
+libtool: install: /usr/bin/install -c .libs/libXfont2.a /usr/lib/libXfont2.a
+libtool: install: chmod 644 /usr/lib/libXfont2.a
+libtool: install: ranlib /usr/lib/libXfont2.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/include/X11/fonts'
+ /usr/bin/install -c -m 644 include/X11/fonts/libxfont2.h '/usr/include/X11/fonts'
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 xfont2.pc '/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/libxfont2/libXfont2-2.0.10'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libxfont2/libXfont2-2.0.10'
+2.0.10
+Updated registry for libxfont2 to version 2.0.10
+[VERSION] libxfont2: 2.0.10
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package libxfont2 in /var/lib/custom-packages/
