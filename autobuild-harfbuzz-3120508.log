@@ -1,0 +1,842 @@
+[09:33:29] Found custom package for harfbuzz, bypassing BLFS aliases.
+[09:33:29] Custom package detected at /home/fusion809/lfs_packaging/harfbuzz (package: harfbuzz)
+[09:33:29] Extracting dependencies for custom package 'harfbuzz'...
+[09:33:29] Required deps: brotli bzip2 cairo expat fontconfig freetype gcc glib2 glibc graphite2 icu libffi libpng libx11 libxau libxcb libxdmcp libxext libxrender pcre2 pixman zlib 
+[09:33:29] Dependency 'brotli' already installed.
+[09:33:29] Dependency 'bzip2' already installed.
+[09:33:29] Dependency 'cairo' already installed.
+[09:33:29] Dependency 'expat' already installed.
+[09:33:29] Dependency 'fontconfig' already installed.
+[09:33:29] Dependency 'freetype' already installed.
+[09:33:29] Dependency 'gcc' already installed.
+[09:33:29] Dependency 'glib2' already installed.
+[09:33:29] Dependency 'glibc' already installed.
+[09:33:29] Dependency 'graphite2' already installed.
+[09:33:29] Dependency 'icu' already installed.
+[09:33:29] Dependency 'libffi' already installed.
+[09:33:29] Dependency 'libpng' already installed.
+[09:33:29] Dependency 'libx11' already installed.
+[09:33:29] Dependency 'libxau' already installed.
+[09:33:29] Dependency 'libxcb' already installed.
+[09:33:29] Dependency 'libxdmcp' already installed.
+[09:33:29] Dependency 'libxext' already installed.
+[09:33:29] Dependency 'libxrender' already installed.
+[09:33:29] Dependency 'pcre2' already installed.
+[09:33:29] Dependency 'pixman' already installed.
+[09:33:29] Dependency 'zlib' already installed.
+[VERSION] harfbuzz: 15.2.0
+[09:33:30] Installing harfbuzz version: 15.2.0
+[09:33:30] Starting remote custom build for harfbuzz...
+--2026-11-20 09:33:48--  https://github.com/harfbuzz/harfbuzz/releases/download/15.2.0/harfbuzz-15.2.0.tar.xz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/5050525/951b4812-2f98-4be7-a21f-9c552d9693b9?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-20T00%3A11%3A18Z&rscd=attachment%3B+filename%3Dharfbuzz-15.2.0.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-19T23%3A11%3A09Z&ske=2026-11-20T00%3A11%3A18Z&sks=b&skv=2018-11-09&sig=%2Bb165GatDiTonkFOvTnSxuXibzbVxNQ%2FLpMjUD4YFYU%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTEzMzAyOCwibmJmIjoxNzk1MTMxMjI4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.2_fWujl2GBtt4MfRfv_z225bWlTdBOQgeuOeNK83bxQ&response-content-disposition=attachment%3B%20filename%3Dharfbuzz-15.2.0.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2026-11-20 09:33:48--  https://release-assets.githubusercontent.com/github-production-release-asset/5050525/951b4812-2f98-4be7-a21f-9c552d9693b9?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-20T00%3A11%3A18Z&rscd=attachment%3B+filename%3Dharfbuzz-15.2.0.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-19T23%3A11%3A09Z&ske=2026-11-20T00%3A11%3A18Z&sks=b&skv=2018-11-09&sig=%2Bb165GatDiTonkFOvTnSxuXibzbVxNQ%2FLpMjUD4YFYU%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTEzMzAyOCwibmJmIjoxNzk1MTMxMjI4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.2_fWujl2GBtt4MfRfv_z225bWlTdBOQgeuOeNK83bxQ&response-content-disposition=attachment%3B%20filename%3Dharfbuzz-15.2.0.tar.xz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.108.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20761992 (20M) [application/octet-stream]
+Saving to: ‘harfbuzz-15.2.0.tar.xz’
+
+harfbuzz-15.2.0.tar   0%[                    ]       0  --.-KB/s               harfbuzz-15.2.0.tar   9%[>                   ]   1.89M  9.43MB/s               harfbuzz-15.2.0.tar  18%[==>                 ]   3.69M  9.20MB/s               harfbuzz-15.2.0.tar  28%[====>               ]   5.70M  9.49MB/s               harfbuzz-15.2.0.tar  39%[======>             ]   7.75M  9.65MB/s               harfbuzz-15.2.0.tar  49%[========>           ]   9.76M  9.71MB/s               harfbuzz-15.2.0.tar  54%[=========>          ]  10.71M  8.88MB/s               harfbuzz-15.2.0.tar  65%[============>       ]  12.89M  9.15MB/s               harfbuzz-15.2.0.tar  75%[==============>     ]  15.00M  9.32MB/s               harfbuzz-15.2.0.tar  86%[================>   ]  17.21M  9.51MB/s               harfbuzz-15.2.0.tar  96%[==================> ]  19.14M  9.52MB/s               harfbuzz-15.2.0.tar 100%[===================>]  19.80M  9.65MB/s    in 2.1s    
+
+2026-11-20 09:33:50 (9.65 MB/s) - ‘harfbuzz-15.2.0.tar.xz’ saved [20761992/20761992]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+meson_args: <-D>
+meson_args: <graphite2=enabled>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <-D> <graphite2=enabled> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0
+Build dir: /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build
+Build type: native build
+Project name: harfbuzz
+Project version: 15.2.0
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+C++ compiler for the host machine: c++ (gcc 16.2.0 "c++ (GCC) 16.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C++ supports link arguments -Bsymbolic-functions: YES 
+Compiler for C++ supports arguments -fno-exceptions: YES 
+Compiler for C++ supports arguments -fno-rtti: YES 
+Compiler for C++ supports arguments -fno-threadsafe-statics: YES 
+Compiler for C++ supports arguments -fvisibility-inlines-hidden: YES 
+Library m found: YES
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Run-time dependency freetype2 found: YES 26.7.20
+Run-time dependency glib-2.0 found: YES 2.90.1
+Run-time dependency gobject-2.0 found: YES 2.90.1
+Run-time dependency graphite2 found: YES 3.3.1
+Dependency graphite2 for host machine skipped: feature graphite disabled
+Library iwasm skipped: feature wasm disabled
+Run-time dependency icu-uc found: YES 79.1
+../meson.build:127: WARNING: Consider using the built-in option for language standard version instead of using "-std=c++17".
+Run-time dependency cairo found: YES 1.18.6
+Run-time dependency cairo-ft found: YES 1.18.6
+Found CMake: /usr/bin/cmake (4.5.1)
+Run-time dependency chafa found: NO  (tried pkg-config and cmake)
+Run-time dependency libpng found: YES 1.6.59
+Run-time dependency zlib found: YES 1.4
+Run-time dependency threads found: YES
+Has header "unistd.h" : YES 
+Has header "sys/mman.h" : YES 
+Has header "stdbool.h" : YES 
+Has header "xlocale.h" : NO 
+Checking for function "atexit" : YES 
+Checking for function "mprotect" : YES 
+Checking for function "sysconf" : YES 
+Checking for function "getpagesize" : YES 
+Checking for function "mmap" : YES 
+Checking for function "isatty" : YES 
+Checking for function "uselocale" : YES 
+Checking for function "newlocale" : YES 
+Checking for function "localeconv_l" : NO 
+Checking for function "sincos" : YES 
+Checking for function "sincosf" : YES 
+Checking for function "cairo_user_font_face_set_render_color_glyph_func" with dependency cairo: YES 
+Checking for function "cairo_font_options_get_custom_palette_color" with dependency cairo: YES 
+Checking for function "cairo_user_scaled_font_get_foreground_source" with dependency cairo: YES 
+Checking for function "FT_Get_Var_Blend_Coordinates" with dependency freetype2: YES 
+Checking for function "FT_Set_Var_Blend_Coordinates" with dependency freetype2: YES 
+Checking for function "FT_Done_MM_Var" with dependency freetype2: YES 
+Checking for function "FT_Get_Transform" with dependency freetype2: YES 
+Program gen-hb-version.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/gen-hb-version.py)
+Configuring hb-version.h with command
+Program ragel found: NO
+../src/meson.build:464: WARNING: You have to install ragel if you are going to develop HarfBuzz itself
+Program gen-harfbuzzcc.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/gen-harfbuzzcc.py)
+Configuring hb-features.h using configuration
+Configuring hb-supported-features.h using configuration
+Program gen-def.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/gen-def.py)
+Program gen-harfbuzzcc.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/gen-harfbuzzcc.py)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Program gen-gpu-shader-artifacts.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/gen-gpu-shader-artifacts.py)
+Dependency cairo for host machine found: YES 1.18.6 (cached)
+Configuring harfbuzz-config.cmake using configuration
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Program fix_get_types.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/fix_get_types.py)
+Program fix_get_types.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/fix_get_types.py)
+Program g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program check-c-linkage-decls.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/check-c-linkage-decls.py)
+Program check-externs.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/check-externs.py)
+Program check-header-guards.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/check-header-guards.py)
+Program check-includes.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/check-includes.py)
+Program check-static-inits.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/check-static-inits.py)
+Program check-symbols.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/check-symbols.py)
+Program check-libstdc++.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/check-libstdc++.py)
+Program check-release-notes.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/check-release-notes.py)
+Program gen-harfbuzz-world.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/gen-harfbuzz-world.py)
+Program help2man found: YES (/usr/bin/help2man)
+Program ../../src/gen-gpu-shader-artifacts.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/util/gpu/../../src/gen-gpu-shader-artifacts.py)
+Run-time dependency glew found: YES 2.3.1
+Run-time dependency glfw3 found: NO  (tried pkg-config and cmake)
+Run-time dependency gl found: YES 1.2
+Library d3d11 found: NO
+Library d3dcompiler found: NO
+Program glob.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/test/fuzzing/glob.py)
+Program run-tests.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/test/subset/run-tests.py)
+Program run-repack-tests.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/test/subset/run-repack-tests.py)
+Program run-tests.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/test/shape/run-tests.py)
+Program run-tests.py found: YES (/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/test/vector/run-tests.py)
+Program gtkdoc-scan found: YES (/usr/bin/gtkdoc-scan)
+Configuring version.xml using configuration
+Program gtkdoc-scan found: YES (/usr/bin/gtkdoc-scan)
+Program gtkdoc-scangobj found: YES (/usr/bin/gtkdoc-scangobj)
+Program gtkdoc-mkdb found: YES (/usr/bin/gtkdoc-mkdb)
+Program gtkdoc-mkhtml found: YES (/usr/bin/gtkdoc-mkhtml)
+Program gtkdoc-fixxref found: YES (/usr/bin/gtkdoc-fixxref)
+Configuring config.h using configuration
+Build targets in project: 202
+
+harfbuzz 15.2.0
+
+  Directories
+    prefix                    : /usr
+    bindir                    : bin
+    libdir                    : lib
+    includedir                : include
+    datadir                   : share
+    cmakepackagedir           : lib/cmake
+
+  Unicode callbacks (you want at least one)
+    Builtin                   : YES
+    Glib                      : YES
+    ICU                       : YES
+
+  Font callbacks (the more the merrier)
+    Builtin                   : YES
+    FreeType                  : YES
+    Fontations                : NO
+
+  Additional shapers
+    Graphite2                 : YES
+    WebAssembly (experimental): NO
+
+  Platform / other shapers (not normally needed)
+    CoreText                  : NO
+    DirectWrite               : NO
+    GDI/Uniscribe             : NO
+    HarfRust                  : NO
+    kbts                      : NO
+
+  Additional libraries
+    Subset                    : YES
+    Raster                    : YES
+    Vector                    : YES
+    GPU                       : YES
+
+  Dependencies used by additional libraries
+    PNG                       : YES
+    Zlib                      : YES
+
+  Other features
+    Utilities                 : YES
+    Documentation             : YES
+    GObject bindings          : YES
+    Cairo integration         : YES
+    Introspection             : YES
+    Experimental APIs         : NO
+
+  Dependencies used by command-line utilities
+    Cairo                     : YES
+    Chafa                     : NO
+
+  Testing
+    Tests                     : YES
+    Benchmark                 : NO
+
+  User defined options
+    buildtype                 : release
+    graphite2                 : enabled
+    prefix                    : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/497] Generating GObject enum file src/hb-gobject-enums-tmp.h (wrapped by meson to capture output)
+[2/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-blob.cc.o
+[3/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-buffer-serialize.cc.o
+[4/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-buffer-verify.cc.o
+[5/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-aat-map.cc.o
+[6/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-common.cc.o
+[7/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-buffer.cc.o
+[8/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-draw.cc.o
+[9/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-paint-bounded.cc.o
+[10/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-paint.cc.o
+[11/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-paint-extents.cc.o
+[12/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-face-builder.cc.o
+[13/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-fallback-shape.cc.o
+[14/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-face.cc.o
+[15/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-map.cc.o
+[16/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-number.cc.o
+[17/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-font.cc.o
+[18/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-aat-layout.cc.o
+[19/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-cff2-table.cc.o
+[20/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-cff1-table.cc.o
+[21/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-color.cc.o
+[22/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-fetch.cc.o
+[23/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-outline.cc.o
+[24/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-face.cc.o
+[25/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/OT_Var_VARC_VARC.cc.o
+[26/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-map.cc.o
+[27/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-font.cc.o
+[28/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-meta.cc.o
+[29/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-math.cc.o
+[30/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-metrics.cc.o
+[31/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-name.cc.o
+[32/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shaper-default.cc.o
+[33/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shaper-hangul.cc.o
+[34/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shaper-hebrew.cc.o
+[35/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shaper-indic-table.cc.o
+[36/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shaper-indic.cc.o
+[37/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shaper-khmer.cc.o
+[38/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shaper-myanmar.cc.o
+[39/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shaper-syllabic.cc.o
+[40/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shaper-thai.cc.o
+[41/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shaper-arabic.cc.o
+[42/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shaper-vowel-constraints.cc.o
+[43/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shaper-use.cc.o
+[44/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-layout.cc.o
+[45/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shape-normalize.cc.o
+[46/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-tag.cc.o
+[47/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shape.cc.o
+[48/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-shape-fallback.cc.o
+[49/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ot-var.cc.o
+[50/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-shape-plan.cc.o
+[51/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-shape.cc.o
+[52/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-shaper.cc.o
+[53/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-set.cc.o
+[54/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ucd.cc.o
+[55/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-unicode.cc.o
+[56/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-style.cc.o
+[57/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-glib.cc.o
+[58/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-static.cc.o
+[59/497] Generating GObject enum file src/hb-gobject-enums-tmp.cc (wrapped by meson to capture output)
+[60/497] Generating src/hb-gobject-enums.cc with a custom command
+[61/497] Generating src/hb-gobject-enums.h with a custom command
+[62/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-graphite2.cc.o
+[63/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-number.cc.o
+[64/497] Compiling C++ object src/libharfbuzz.so.0.61520.0.p/hb-ft.cc.o
+[65/497] Linking target src/libharfbuzz.so.0.61520.0
+[66/497] Generating symbol file src/libharfbuzz.so.0.61520.0.p/libharfbuzz.so.0.61520.0.symbols
+[67/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-ot-cff2-table.cc.o
+[68/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-ot-cff1-table.cc.o
+[69/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-cff-common.cc.o
+[70/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-static.cc.o
+[71/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/OT_Var_VARC_VARC.cc.o
+[72/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-input.cc.o
+[73/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-instancer-iup.cc.o
+[74/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-instancer-solver.cc.o
+[75/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-cff1.cc.o
+[76/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-cff2.cc.o
+[77/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-plan.cc.o
+[78/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-plan-var.cc.o
+[79/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-plan-layout.cc.o
+[80/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-serialize.cc.o
+[81/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-table-cff.cc.o
+[82/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-table-var.cc.o
+[83/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-table-layout.cc.o
+[84/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/graph_gsubgpos-context.cc.o
+[85/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-table-color.cc.o
+[86/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset-table-other.cc.o
+[87/497] Compiling C++ object src/libharfbuzz-raster.so.0.61520.0.p/hb-raster-image.cc.o
+[88/497] Compiling C++ object src/libharfbuzz-raster.so.0.61520.0.p/hb-raster-draw.cc.o
+[89/497] Compiling C++ object src/libharfbuzz-raster.so.0.61520.0.p/hb-raster-paint.cc.o
+[90/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-subset.cc.o
+[91/497] Compiling C++ object src/libharfbuzz-vector.so.0.61520.0.p/hb-zlib.cc.o
+[92/497] Compiling C++ object src/libharfbuzz-vector.so.0.61520.0.p/hb-vector.cc.o
+[93/497] Compiling C++ object src/libharfbuzz-raster.so.0.61520.0.p/hb-static.cc.o
+[94/497] Compiling C++ object src/libharfbuzz-subset.so.0.61520.0.p/hb-depend.cc.o
+[95/497] Compiling C++ object src/libharfbuzz-vector.so.0.61520.0.p/hb-vector-path.cc.o
+[96/497] Compiling C++ object src/libharfbuzz-vector.so.0.61520.0.p/hb-vector-draw.cc.o
+[97/497] Compiling C++ object src/libharfbuzz-vector.so.0.61520.0.p/hb-vector-paint.cc.o
+[98/497] Compiling C++ object src/libharfbuzz-vector.so.0.61520.0.p/hb-vector-paint-svg.cc.o
+[99/497] Generating src/hb-gpu-fragment-glsl.hh with a custom command
+[100/497] Generating src/hb-gpu-vertex-glsl.hh with a custom command
+[101/497] Generating src/hb-gpu-fragment-wgsl.hh with a custom command
+[102/497] Generating src/hb-gpu-vertex-wgsl.hh with a custom command
+[103/497] Generating src/hb-gpu-fragment-msl.hh with a custom command
+[104/497] Generating src/hb-gpu-vertex-msl.hh with a custom command
+[105/497] Generating src/hb-gpu-fragment-hlsl.hh with a custom command
+[106/497] Generating src/hb-gpu-vertex-hlsl.hh with a custom command
+[107/497] Generating src/hb-gpu-draw-fragment-glsl.hh with a custom command
+[108/497] Generating src/hb-gpu-draw-fragment-wgsl.hh with a custom command
+[109/497] Generating src/hb-gpu-draw-fragment-msl.hh with a custom command
+[110/497] Generating src/hb-gpu-draw-fragment-hlsl.hh with a custom command
+[111/497] Generating src/hb-gpu-paint-fragment-glsl.hh with a custom command
+[112/497] Generating src/hb-gpu-paint-fragment-msl.hh with a custom command
+[113/497] Generating src/hb-gpu-paint-fragment-wgsl.hh with a custom command
+[114/497] Generating src/hb-gpu-paint-fragment-hlsl.hh with a custom command
+[115/497] Compiling C++ object src/libharfbuzz-vector.so.0.61520.0.p/hb-vector-paint-pdf.cc.o
+[116/497] Compiling C++ object src/libharfbuzz-cairo.so.0.61520.0.p/hb-cairo.cc.o
+[117/497] Compiling C++ object src/libharfbuzz-vector.so.0.61520.0.p/hb-static.cc.o
+[118/497] Compiling C++ object src/libharfbuzz-cairo.so.0.61520.0.p/hb-cairo-utils.cc.o
+[119/497] Compiling C++ object src/libharfbuzz-gobject.so.0.61520.0.p/meson-generated_.._hb-gobject-enums.cc.o
+[120/497] Linking target src/libharfbuzz-subset.so.0.61520.0
+[121/497] Linking target src/libharfbuzz-raster.so.0.61520.0
+[122/497] Linking target src/libharfbuzz-vector.so.0.61520.0
+[123/497] Compiling C++ object src/libharfbuzz-gobject.so.0.61520.0.p/hb-gobject-structs.cc.o
+[124/497] Compiling C++ object src/libharfbuzz-gpu.so.0.61520.0.p/hb-gpu.cc.o
+[125/497] Compiling C++ object src/libharfbuzz-gpu.so.0.61520.0.p/hb-gpu-draw.cc.o
+[126/497] Compiling C++ object src/libharfbuzz-gpu.so.0.61520.0.p/hb-gpu-paint.cc.o
+[127/497] Compiling C++ object src/libharfbuzz-cairo.so.0.61520.0.p/hb-static.cc.o
+[128/497] Linking target src/libharfbuzz-cairo.so.0.61520.0
+[129/497] Linking target src/libharfbuzz-gobject.so.0.61520.0
+[130/497] Generating symbol file src/libharfbuzz-subset.so.0.61520.0.p/libharfbuzz-subset.so.0.61520.0.symbols
+[131/497] Generating symbol file src/libharfbuzz-raster.so.0.61520.0.p/libharfbuzz-raster.so.0.61520.0.symbols
+[132/497] Generating symbol file src/libharfbuzz-vector.so.0.61520.0.p/libharfbuzz-vector.so.0.61520.0.symbols
+[133/497] Generating symbol file src/libharfbuzz-cairo.so.0.61520.0.p/libharfbuzz-cairo.so.0.61520.0.symbols
+[134/497] Compiling C++ object src/libharfbuzz-icu.so.0.61520.0.p/hb-icu.cc.o
+[135/497] Linking target src/libharfbuzz-icu.so.0.61520.0
+[136/497] Generating symbol file src/libharfbuzz-gobject.so.0.61520.0.p/libharfbuzz-gobject.so.0.61520.0.symbols
+[137/497] Compiling C++ object util/hb-shape.p/hb-shape.cc.o
+[138/497] Compiling C++ object util/hb-view.p/hb-view.cc.o
+[139/497] Compiling C++ object src/libharfbuzz-gpu.so.0.61520.0.p/hb-static.cc.o
+[140/497] Linking target src/libharfbuzz-gpu.so.0.61520.0
+[141/497] Compiling C++ object util/hb-vector.p/hb-vector.cc.o
+[142/497] Compiling C++ object util/hb-info.p/hb-info.cc.o
+[143/497] Generating symbol file src/libharfbuzz-gpu.so.0.61520.0.p/libharfbuzz-gpu.so.0.61520.0.symbols
+[144/497] Compiling C++ object util/hb-raster.p/hb-raster.cc.o
+[145/497] Compiling C++ object util/hb-subset.p/hb-subset.cc.o
+[146/497] Compiling C++ object src/test-basics.p/test.cc.o
+[147/497] Compiling C++ object src/test-buffer-serialize.p/test-buffer-serialize.cc.o
+[148/497] Compiling C++ object src/test-ot-name.p/test-ot-name.cc.o
+[149/497] Compiling C++ object src/test-ot-meta.p/test-ot-meta.cc.o
+[150/497] Compiling C++ object src/test-ot-gsub-get-alternates.p/test-gsub-get-alternates.cc.o
+[151/497] Compiling C++ object src/test-ot-glyphname.p/test-ot-glyphname.cc.o
+[152/497] Compiling C++ object src/test-ot-gpos-size-params.p/test-gpos-size-params.cc.o
+[153/497] Compiling C++ object src/test-ot-gsub-would-substitute.p/test-gsub-would-substitute.cc.o
+[154/497] Compiling C++ object src/test-use-table.p/test-use-table.cc.o
+[155/497] Compiling C++ object src/test-algs.p/test-algs.cc.o
+[156/497] Compiling C++ object src/test-aat.p/test-aat.cc.o
+[157/497] Compiling C++ object src/test-array.p/test-array.cc.o
+[158/497] Compiling C++ object src/test-aat.p/hb-static.cc.o
+[159/497] Compiling C++ object src/test-bimap.p/test-bimap.cc.o
+[160/497] Compiling C++ object src/test-bit-vector.p/test-bit-vector.cc.o
+[161/497] Compiling C++ object src/test-algs.p/hb-static.cc.o
+[162/497] Compiling C++ object src/test-buffer.p/test-buffer.cc.o
+[163/497] Compiling C++ object src/test-bimap.p/hb-static.cc.o
+[164/497] Compiling C++ object src/test-bit-vector.p/hb-static.cc.o
+[165/497] Compiling C++ object src/test-gdef-cache.p/test-gdef-cache.cc.o
+[166/497] Compiling C++ object src/test-buffer.p/hb-static.cc.o
+[167/497] Compiling C++ object src/test-cache.p/test-cache.cc.o
+[168/497] Compiling C++ object src/test-gdef-cache.p/hb-static.cc.o
+[169/497] Compiling C++ object src/test-checksum.p/test-checksum.cc.o
+[170/497] Compiling C++ object src/test-cff.p/hb-static.cc.o
+[171/497] Compiling C++ object src/test-cff.p/test-cff.cc.o
+[172/497] Compiling C++ object src/test-checksum.p/hb-static.cc.o
+[173/497] Compiling C++ object src/test-colr.p/test-colr.cc.o
+[174/497] Compiling C++ object src/test-colr.p/hb-static.cc.o
+[175/497] Compiling C++ object src/test-classdef-graph.p/hb-static.cc.o
+[176/497] Compiling C++ object src/test-result.p/test-result.cc.o
+[177/497] Compiling C++ object src/test-classdef-graph.p/graph_gsubgpos-context.cc.o
+[178/497] Compiling C++ object src/test-decycler.p/test-decycler.cc.o
+[179/497] Compiling C++ object src/test-classdef-graph.p/graph_test-classdef-graph.cc.o
+[180/497] Compiling C++ object src/test-result.p/hb-static.cc.o
+[181/497] Compiling C++ object src/test-decycler.p/hb-static.cc.o
+[182/497] Compiling C++ object src/test-geometry.p/test-geometry.cc.o
+[183/497] Compiling C++ object src/test-iter.p/test-iter.cc.o
+[184/497] Compiling C++ object src/test-machinery.p/test-machinery.cc.o
+[185/497] Compiling C++ object src/test-iter.p/hb-static.cc.o
+[186/497] Compiling C++ object src/test-geometry.p/hb-static.cc.o
+[187/497] Compiling C++ object src/test-machinery.p/hb-static.cc.o
+[188/497] Compiling C++ object src/test-multimap.p/test-multimap.cc.o
+[189/497] Compiling C++ object src/test-map.p/test-map.cc.o
+[190/497] Compiling C++ object src/test-map.p/hb-static.cc.o
+[191/497] Compiling C++ object src/test-number.p/hb-number.cc.o
+[192/497] Compiling C++ object src/test-number.p/test-number.cc.o
+[193/497] Compiling C++ object src/test-paint-extents.p/test-paint-extents.cc.o
+[194/497] Compiling C++ object src/test-ot-tag.p/hb-ot-tag.cc.o
+[195/497] Compiling C++ object src/test-paint-extents.p/hb-paint-extents.cc.o
+[196/497] Compiling C++ object src/test-multimap.p/hb-static.cc.o
+[197/497] Compiling C++ object src/test-set.p/test-set.cc.o
+[198/497] Compiling C++ object src/test-paint-extents.p/hb-static.cc.o
+[199/497] Compiling C++ object src/test-set.p/hb-static.cc.o
+[200/497] Compiling C++ object src/test-vector.p/test-vector.cc.o
+[201/497] Compiling C++ object src/test-serialize.p/hb-static.cc.o
+[202/497] Compiling C++ object src/test-vector.p/hb-static.cc.o
+[203/497] Compiling C++ object src/test-serialize.p/test-serialize.cc.o
+[204/497] Compiling C++ object src/test-repacker.p/hb-static.cc.o
+[205/497] Compiling C++ object src/test-instancer-solver.p/test-subset-instancer-solver.cc.o
+[206/497] Compiling C++ object src/test-instancer-solver.p/hb-subset-instancer-solver.cc.o
+[207/497] Compiling C++ object src/test-repacker.p/graph_gsubgpos-context.cc.o
+[208/497] Compiling C++ object src/test-priority-queue.p/test-priority-queue.cc.o
+[209/497] Compiling C++ object src/test-instancer-solver.p/hb-static.cc.o
+[210/497] Compiling C++ object src/test-priority-queue.p/hb-static.cc.o
+[211/497] Compiling C++ object src/test-tuple-varstore.p/hb-subset-instancer-solver.cc.o
+[212/497] Compiling C++ object src/test-tuple-varstore.p/hb-subset-instancer-iup.cc.o
+[213/497] Compiling C++ object src/test-repacker.p/test-repacker.cc.o
+[214/497] Compiling C++ object src/test-tuple-varstore.p/test-tuple-varstore.cc.o
+[215/497] Compiling C++ object src/test-item-varstore.p/hb-subset-instancer-solver.cc.o
+[216/497] Compiling C++ object src/test-tuple-varstore.p/hb-static.cc.o
+[217/497] Compiling C++ object src/test-item-varstore.p/hb-subset-instancer-iup.cc.o
+[218/497] Compiling C++ object src/test-item-varstore.p/hb-static.cc.o
+[219/497] Compiling C++ object src/test-item-varstore.p/test-item-varstore.cc.o
+In file included from ../src/hb.hh:585,
+                 from ../src/hb-ot-layout-common.hh:32,
+                 from ../src/hb-ot-var-common.hh:29,
+                 from ../src/test-item-varstore.cc:25:
+In function ‘void* hb_memcpy(void*, const void*, size_t)’,
+    inlined from ‘bool OT::VarRegionList::serialize(hb_serialize_context_t*, const OT::VarRegionList*, const hb_inc_bimap_t&)’ at ../src/hb-ot-layout-common.hh:2919:17,
+    inlined from ‘void test_var_region_list_serialize_bounds()’ at ../src/test-item-varstore.cc:104:5:
+../src/hb-algs.hh:1255:17: warning: ‘void* memcpy(void*, const void*, size_t)’ reading between 2 and 393210 bytes from a region of size 0 [-Wstringop-overread]
+ 1255 |   return memcpy (dst, src, len);
+      |          ~~~~~~~^~~~~~~~~~~~~~~
+../src/test-item-varstore.cc: In function ‘void test_var_region_list_serialize_bounds()’:
+../src/test-item-varstore.cc:87:23: note: at offset 4 into source object ‘source’ of size 4
+   87 |   const unsigned char source[] = {0xFF, 0xFF, 0x7F, 0xFF};
+      |                       ^~~~~~
+[220/497] Compiling C++ object src/test-unicode-ranges.p/test-unicode-ranges.cc.o
+[221/497] Compiling C++ object src/test-jstf.p/test-jstf.cc.o
+[222/497] Compiling C++ object src/test-jstf.p/hb-static.cc.o
+[223/497] Compiling C++ object src/test-subset-glyf-budget.p/hb-static.cc.o
+[224/497] Compiling C++ object src/test-cbdt-cache.p/test-cbdt-cache.cc.o
+[225/497] Compiling C++ object src/test-subset-glyf-budget.p/test-subset-glyf-budget.cc.o
+[226/497] Compiling C++ object src/test-cbdt-cache.p/hb-static.cc.o
+[227/497] Compiling C++ object src/test-subset-cff2-serialize.p/hb-subset-instancer-solver.cc.o
+[228/497] Compiling C++ object src/test-subset-cff2-serialize.p/hb-subset-cff-common.cc.o
+[229/497] Compiling C++ object src/test-subset-cff2-serialize.p/hb-subset-instancer-iup.cc.o
+[230/497] Compiling C++ object src/test-graphite2-buffer.p/test-graphite2-buffer.cc.o
+[231/497] Compiling C++ object src/test-subset-cff2-serialize.p/hb-static.cc.o
+[232/497] Compiling C++ object src/test-raster-paint.p/test-raster-paint.cc.o
+[233/497] Generating symbol file src/libharfbuzz-icu.so.0.61520.0.p/libharfbuzz-icu.so.0.61520.0.symbols
+[234/497] Compiling C++ object src/test-graphite2-buffer.p/hb-static.cc.o
+[235/497] Linking target util/hb-view
+[236/497] Linking target util/hb-shape
+[237/497] Linking target util/hb-vector
+[238/497] Linking target util/hb-raster
+[239/497] Generating src/HarfBuzz-0.0.gir with a custom command (wrapped by meson to set env)
+[240/497] Compiling C++ object util/hb-ft-raster-all.p/hb-ft-raster-all.cc.o
+[241/497] Compiling C++ object util/hb-draw-all.p/hb-draw-all.cc.o
+[242/497] Compiling C++ object util/hb-vector-svg-all.p/hb-vector-svg-all.cc.o
+[243/497] Compiling C++ object util/hb-paint-all.p/hb-paint-all.cc.o
+[244/497] Compiling C++ object util/hb-ft-raster.p/hb-ft-raster.cc.o
+[245/497] Linking target util/hb-info
+[246/497] Compiling C++ object src/test-subset-cff2-serialize.p/hb-subset-cff2.cc.o
+[247/497] Linking target util/hb-subset
+[248/497] Compiling C++ object util/hb-raster-all.p/hb-raster-all.cc.o
+[249/497] Compiling C object test/api/test-aat-layout.p/test-aat-layout.c.o
+[250/497] Compiling C++ object util/hb-gpu-encode-all.p/hb-gpu-encode-all.cc.o
+[251/497] Compiling C object test/api/test-baseline.p/test-baseline.c.o
+[252/497] Compiling C object test/api/test-base-minmax.p/test-base-minmax.c.o
+[253/497] Compiling C object test/api/test-be-glyph-advance.p/test-be-glyph-advance.c.o
+[254/497] Compiling C object test/api/test-be-subset-tables.p/test-be-subset-tables.c.o
+[255/497] Compiling C object test/api/test-be-num-glyphs.p/test-be-num-glyphs.c.o
+[256/497] Compiling C object test/api/test-blob.p/test-blob.c.o
+[257/497] Compiling C object test/api/test-c.p/test-c.c.o
+[258/497] Compiling C object test/api/test-collect-unicodes.p/test-collect-unicodes.c.o
+[259/497] Compiling C object test/api/test-buffer.p/test-buffer.c.o
+[260/497] Compiling C++ object test/api/test-cplusplus.p/test-cplusplus.cc.o
+[261/497] Compiling C object test/api/test-common.p/test-common.c.o
+[262/497] Compiling C object test/api/test-extents.p/test-extents.c.o
+[263/497] Compiling C object test/api/test-draw-varc.p/test-draw-varc.c.o
+[264/497] Compiling C object test/api/test-face.p/test-face.c.o
+[265/497] Compiling C object test/api/test-font-scale.p/test-font-scale.c.o
+[266/497] Compiling C object test/api/test-draw.p/test-draw.c.o
+[267/497] Compiling C object test/api/test-get-table-tags.p/test-get-table-tags.c.o
+[268/497] Compiling C object test/api/test-glyph-names.p/test-glyph-names.c.o
+[269/497] Compiling C object test/api/test-font.p/test-font.c.o
+[270/497] Compiling C object test/api/test-map.p/test-map.c.o
+[271/497] Compiling C object test/api/test-instance-cff2.p/test-instance-cff2.c.o
+[272/497] Compiling C object test/api/test-ot-alternates.p/test-ot-alternates.c.o
+[273/497] Compiling C object test/api/test-ot-collect-glyphs.p/test-ot-collect-glyphs.c.o
+[274/497] Compiling C object test/api/test-object.p/test-object.c.o
+[275/497] Compiling C object test/api/test-ot-face.p/test-ot-face.c.o
+[276/497] Compiling C object test/api/test-ot-fetch.p/test-ot-fetch.c.o
+[277/497] Compiling C object test/api/test-ot-color.p/test-ot-color.c.o
+[278/497] Compiling C object test/api/test-ot-glyphname.p/test-ot-glyphname.c.o
+[279/497] Compiling C object test/api/test-ot-ligature-carets.p/test-ot-ligature-carets.c.o
+[280/497] Compiling C object test/api/test-ot-name.p/test-ot-name.c.o
+[281/497] Compiling C object test/api/test-ot-nullable-output.p/test-ot-nullable-output.c.o
+[282/497] Compiling C object test/api/test-ot-layout.p/test-ot-layout.c.o
+[283/497] Compiling C object test/api/test-ot-meta.p/test-ot-meta.c.o
+[284/497] Compiling C object test/api/test-ot-metrics.p/test-ot-metrics.c.o
+[285/497] Compiling C object test/api/test-ot-tag.p/test-ot-tag.c.o
+[286/497] Compiling C object test/api/test-ot-extents-cff.p/test-ot-extents-cff.c.o
+[287/497] Compiling C object test/api/test-ot-math.p/test-ot-math.c.o
+[288/497] Compiling C object test/api/test-subset-repacker.p/test-subset-repacker.c.o
+[289/497] Compiling C object test/api/test-ot-metrics-tt-var.p/test-ot-metrics-tt-var.c.o
+[290/497] Compiling C object test/api/test-paint.p/test-paint.c.o
+[291/497] Compiling C object test/api/test-shape.p/test-shape.c.o
+[292/497] Compiling C object test/api/test-style.p/test-style.c.o
+[293/497] Compiling C object test/api/test-shape-plan.p/test-shape-plan.c.o
+[294/497] Compiling C object test/api/test-set.p/test-set.c.o
+[295/497] Compiling C object test/api/test-subset-cmap.p/test-subset-cmap.c.o
+[296/497] Compiling C object test/api/test-subset-avar2.p/test-subset-avar2.c.o
+[297/497] Compiling C object test/api/test-subset-drop-tables.p/test-subset-drop-tables.c.o
+[298/497] Compiling C object test/api/test-subset.p/test-subset.c.o
+[299/497] Compiling C object test/api/test-subset-hdmx.p/test-subset-hdmx.c.o
+[300/497] Compiling C object test/api/test-subset-nameids.p/test-subset-nameids.c.o
+[301/497] Compiling C object test/api/test-subset-glyf.p/test-subset-glyf.c.o
+[302/497] Compiling C object test/api/test-subset-hmtx.p/test-subset-hmtx.c.o
+[303/497] Compiling C object test/api/test-subset-os2.p/test-subset-os2.c.o
+[304/497] Compiling C object test/api/test-subset-post.p/test-subset-post.c.o
+[305/497] Compiling C object test/api/test-subset-vmtx.p/test-subset-vmtx.c.o
+[306/497] Compiling C object test/api/test-subset-cff2.p/test-subset-cff2.c.o
+[307/497] Compiling C object test/api/test-subset-gvar.p/test-subset-gvar.c.o
+[308/497] Compiling C object test/api/test-subset-hvar.p/test-subset-hvar.c.o
+[309/497] Compiling C object test/api/test-subset-cff1.p/test-subset-cff1.c.o
+[310/497] Compiling C object test/api/test-subset-vvar.p/test-subset-vvar.c.o
+[311/497] Compiling C object test/api/test-subset-sbix.p/test-subset-sbix.c.o
+[312/497] Compiling C object test/api/test-subset-gpos.p/test-subset-gpos.c.o
+[313/497] Compiling C object test/api/test-subset-math.p/test-subset-math.c.o
+[314/497] Compiling C object test/api/test-subset-varc.p/test-subset-varc.c.o
+[315/497] Compiling C object test/api/test-subset-cbdt.p/test-subset-cbdt.c.o
+[316/497] Compiling C object test/api/test-var-coords.p/test-var-coords.c.o
+[317/497] Compiling C object test/api/test-unicode.p/test-unicode.c.o
+[318/497] Compiling C object test/api/test-version.p/test-version.c.o
+[319/497] Compiling C object test/api/test-graphite2.p/test-graphite2.c.o
+[320/497] Compiling C object test/api/test-cairo.p/test-cairo.c.o
+[321/497] Compiling C object test/api/test-ft.p/test-ft.c.o
+[322/497] Compiling C object test/api/test-multithread.p/test-multithread.c.o
+[323/497] Compiling C object test/api/test-subset-colr.p/test-subset-colr.c.o
+[324/497] Compiling C++ object test/api/test-raster.p/test-raster.cc.o
+[325/497] Compiling C++ object test/fuzzing/hb-shape-fuzzer.p/main.cc.o
+[326/497] Compiling C++ object test/fuzzing/hb-shape-fuzzer.p/hb-shape-fuzzer.cc.o
+[327/497] Compiling C++ object test/fuzzing/hb-subset-fuzzer.p/main.cc.o
+[328/497] Compiling C++ object test/api/test-gpu.p/test-gpu.cc.o
+[329/497] Compiling C++ object test/fuzzing/hb-raster-fuzzer.p/main.cc.o
+[330/497] Compiling C++ object test/fuzzing/hb-subset-fuzzer.p/hb-subset-fuzzer.cc.o
+[331/497] Compiling C++ object test/fuzzing/hb-vector-fuzzer.p/main.cc.o
+[332/497] Compiling C++ object test/fuzzing/hb-raster-fuzzer.p/hb-raster-fuzzer.cc.o
+[333/497] Compiling C++ object test/fuzzing/hb-gpu-fuzzer.p/main.cc.o
+[334/497] Compiling C++ object test/fuzzing/hb-vector-fuzzer.p/hb-vector-fuzzer.cc.o
+[335/497] Compiling C++ object test/fuzzing/hb-repacker-fuzzer.p/hb-repacker-fuzzer.cc.o
+[336/497] Compiling C++ object test/fuzzing/hb-repacker-fuzzer.p/main.cc.o
+[337/497] Compiling C++ object test/fuzzing/hb-gpu-fuzzer.p/hb-gpu-fuzzer.cc.o
+[338/497] Compiling C++ object test/threads/hb-subset-threads.p/hb-subset-threads.cc.o
+[339/497] Compiling C++ object test/threads/hb-shape-threads.p/hb-shape-threads.cc.o
+[340/497] Compiling C object test/vector/test-vector-budget.p/test-vector-budget.c.o
+[341/497] Compiling C object test/vector/test-vector-reset.p/test-vector-reset.c.o
+[342/497] Generating src/harfbuzz.cc with a custom command
+[343/497] Generating src/harfbuzz-subset.cc with a custom command
+[344/497] Linking target src/test-basics
+[345/497] Linking target src/test-buffer-serialize
+[346/497] Compiling C object test/vector/test-vector-png.p/test-vector-png.c.o
+[347/497] Linking target src/test-ot-meta
+[348/497] Linking target src/test-ot-name
+[349/497] Linking target src/test-ot-glyphname
+[350/497] Linking target src/test-ot-gsub-get-alternates
+[351/497] Linking target src/test-ot-gpos-size-params
+[352/497] Linking target src/test-ot-gsub-would-substitute
+[353/497] Linking target src/test-aat
+[354/497] Linking target src/test-use-table
+[355/497] Linking target src/test-bimap
+[356/497] Linking target src/test-array
+[357/497] Linking target src/test-algs
+[358/497] Linking target src/test-bit-vector
+[359/497] Linking target src/test-buffer
+[360/497] Linking target src/test-gdef-cache
+[361/497] Linking target src/test-checksum
+[362/497] Linking target src/test-cff
+[363/497] Linking target src/test-cache
+[364/497] Linking target src/test-colr
+[365/497] Linking target src/test-classdef-graph
+[366/497] Linking target src/test-result
+[367/497] Linking target src/test-decycler
+[368/497] Linking target src/test-iter
+[369/497] Linking target src/test-geometry
+[370/497] Linking target src/test-machinery
+[371/497] Linking target src/test-multimap
+[372/497] Linking target src/test-number
+[373/497] Linking target src/test-map
+[374/497] Linking target src/test-set
+[375/497] Linking target src/test-ot-tag
+[376/497] Linking target src/test-paint-extents
+[377/497] Linking target src/test-serialize
+[378/497] Linking target src/test-instancer-solver
+[379/497] Linking target src/test-vector
+[380/497] Linking target src/test-repacker
+[381/497] Linking target src/test-priority-queue
+[382/497] Linking target src/test-tuple-varstore
+[383/497] Linking target src/test-item-varstore
+[384/497] Linking target src/test-unicode-ranges
+[385/497] Linking target src/test-jstf
+[386/497] Linking target src/test-subset-glyf-budget
+[387/497] Linking target src/test-subset-cff2-serialize
+[388/497] Linking target src/test-cbdt-cache
+[389/497] Linking target src/test-graphite2-buffer
+[390/497] Linking target src/test-raster-paint
+[391/497] Generating src/harfbuzz-world.cc with a custom command
+[392/497] Generating util/hb-view.1 with a custom command (wrapped by meson to set env)
+[393/497] Linking target util/hb-ft-raster
+[394/497] Generating src/HarfBuzz-0.0.typelib with a custom command
+[395/497] Linking target util/hb-draw-all
+[396/497] Linking target util/hb-ft-raster-all
+[397/497] Linking target util/hb-vector-svg-all
+[398/497] Linking target util/hb-raster-all
+[399/497] Linking target util/hb-paint-all
+[400/497] Generating util/hb-shape.1 with a custom command (wrapped by meson to set env)
+[401/497] Generating util/hb-raster.1 with a custom command (wrapped by meson to set env)
+[402/497] Generating util/hb-vector.1 with a custom command (wrapped by meson to set env)
+[403/497] Generating util/hb-info.1 with a custom command (wrapped by meson to set env)
+[404/497] Generating util/gpu/demo-vertex-glsl.hh with a custom command
+[405/497] Generating util/gpu/demo-fragment-glsl.hh with a custom command
+[406/497] Generating util/hb-subset.1 with a custom command (wrapped by meson to set env)
+[407/497] Generating util/gpu/demo-shader-msl.hh with a custom command
+[408/497] Generating util/gpu/demo-shader-hlsl.hh with a custom command
+[409/497] Generating util/gpu/demo-shader-wgsl.hh with a custom command
+[410/497] Linking target test/api/test-aat-layout
+[411/497] Linking target test/api/test-baseline
+[412/497] Linking target test/api/test-base-minmax
+[413/497] Linking target util/hb-gpu-encode-all
+[414/497] Linking target test/api/test-be-num-glyphs
+[415/497] Linking target test/api/test-be-glyph-advance
+[416/497] Linking target test/api/test-be-subset-tables
+[417/497] Linking target test/api/test-c
+[418/497] Linking target test/api/test-blob
+[419/497] Linking target test/api/test-buffer
+[420/497] Linking target test/api/test-cplusplus
+[421/497] Linking target test/api/test-collect-unicodes
+[422/497] Linking target test/api/test-common
+[423/497] Linking target test/api/test-extents
+[424/497] Linking target test/api/test-draw
+[425/497] Linking target test/api/test-draw-varc
+[426/497] Linking target test/api/test-face
+[427/497] Linking target test/api/test-font
+[428/497] Linking target test/api/test-font-scale
+[429/497] Linking target test/api/test-get-table-tags
+[430/497] Linking target test/api/test-glyph-names
+[431/497] Linking target test/api/test-instance-cff2
+[432/497] Linking target test/api/test-map
+[433/497] Linking target test/api/test-ot-alternates
+[434/497] Linking target test/api/test-object
+[435/497] Linking target test/api/test-ot-collect-glyphs
+[436/497] Linking target test/api/test-ot-color
+[437/497] Linking target test/api/test-ot-face
+[438/497] Linking target test/api/test-ot-glyphname
+[439/497] Linking target test/api/test-ot-fetch
+[440/497] Linking target test/api/test-ot-ligature-carets
+[441/497] Linking target test/api/test-ot-layout
+[442/497] Linking target test/api/test-ot-nullable-output
+[443/497] Linking target test/api/test-ot-name
+[444/497] Linking target test/api/test-ot-math
+[445/497] Linking target test/api/test-ot-metrics
+[446/497] Linking target test/api/test-ot-meta
+[447/497] Linking target test/api/test-ot-tag
+[448/497] Linking target test/api/test-ot-extents-cff
+[449/497] Linking target test/api/test-paint
+[450/497] Linking target test/api/test-ot-metrics-tt-var
+[451/497] Linking target test/api/test-set
+[452/497] Linking target test/api/test-subset-repacker
+[453/497] Linking target test/api/test-shape
+[454/497] Linking target test/api/test-shape-plan
+[455/497] Linking target test/api/test-style
+[456/497] Linking target test/api/test-subset-avar2
+[457/497] Linking target test/api/test-subset
+[458/497] Linking target test/api/test-subset-drop-tables
+[459/497] Linking target test/api/test-subset-cmap
+[460/497] Linking target test/api/test-subset-glyf
+[461/497] Linking target test/api/test-subset-hmtx
+[462/497] Linking target test/api/test-subset-hdmx
+[463/497] Linking target test/api/test-subset-nameids
+[464/497] Linking target test/api/test-subset-os2
+[465/497] Linking target test/api/test-subset-post
+[466/497] Linking target test/api/test-subset-vmtx
+[467/497] Linking target test/api/test-subset-cff1
+[468/497] Linking target test/api/test-subset-cff2
+[469/497] Linking target test/api/test-subset-gvar
+[470/497] Linking target test/api/test-subset-hvar
+[471/497] Linking target test/api/test-subset-vvar
+[472/497] Linking target test/api/test-subset-varc
+[473/497] Linking target test/api/test-subset-sbix
+[474/497] Linking target test/api/test-subset-gpos
+[475/497] Linking target test/api/test-subset-math
+[476/497] Linking target test/api/test-subset-cbdt
+[477/497] Linking target test/api/test-subset-colr
+[478/497] Linking target test/api/test-version
+[479/497] Linking target test/api/test-var-coords
+[480/497] Linking target test/api/test-unicode
+[481/497] Linking target test/api/test-ft
+[482/497] Linking target test/api/test-cairo
+[483/497] Linking target test/api/test-graphite2
+[484/497] Linking target test/api/test-multithread
+[485/497] Linking target test/api/test-raster
+[486/497] Linking target test/api/test-gpu
+[487/497] Linking target test/fuzzing/hb-subset-fuzzer
+[488/497] Linking target test/fuzzing/hb-shape-fuzzer
+[489/497] Linking target test/fuzzing/hb-raster-fuzzer
+[490/497] Linking target test/fuzzing/hb-vector-fuzzer
+[491/497] Linking target test/fuzzing/hb-gpu-fuzzer
+[492/497] Linking target test/fuzzing/hb-repacker-fuzzer
+[493/497] Linking target test/vector/test-vector-budget
+[494/497] Linking target test/threads/hb-subset-threads
+[495/497] Linking target test/vector/test-vector-reset
+[496/497] Linking target test/vector/test-vector-png
+[497/497] Linking target test/threads/hb-shape-threads
+[0/1] Installing files
+Installing src/libharfbuzz.so.0.61520.0 to /usr/lib
+Installing src/libharfbuzz-subset.so.0.61520.0 to /usr/lib
+Installing src/libharfbuzz-raster.so.0.61520.0 to /usr/lib
+Installing src/libharfbuzz-vector.so.0.61520.0 to /usr/lib
+Installing src/libharfbuzz-gpu.so.0.61520.0 to /usr/lib
+Installing src/libharfbuzz-cairo.so.0.61520.0 to /usr/lib
+Installing src/libharfbuzz-icu.so.0.61520.0 to /usr/lib
+Installing src/hb-gobject-enums.h to /usr/include/harfbuzz
+Installing src/libharfbuzz-gobject.so.0.61520.0 to /usr/lib
+Installing src/HarfBuzz-0.0.gir to /usr/share/gir-1.0
+Installing src/HarfBuzz-0.0.typelib to /usr/lib/girepository-1.0
+Installing util/hb-view to /usr/bin
+Installing util/hb-view.1 to /usr/share/man/man1
+Installing util/hb-shape to /usr/bin
+Installing util/hb-vector to /usr/bin
+Installing util/hb-raster to /usr/bin
+Installing util/hb-info to /usr/bin
+Installing util/hb-subset to /usr/bin
+Installing util/hb-shape.1 to /usr/share/man/man1
+Installing util/hb-raster.1 to /usr/share/man/man1
+Installing util/hb-vector.1 to /usr/share/man/man1
+Installing util/hb-info.1 to /usr/share/man/man1
+Installing util/hb-subset.1 to /usr/share/man/man1
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-raster.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-vector.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-gpu.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-cairo.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-icu.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-gobject.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-gobject-structs.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-aat-layout.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-aat.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-blob.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-buffer.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-common.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-cplusplus.hh to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-deprecated.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-draw.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-paint.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-face.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-font.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-map.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-ot-color.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-ot-deprecated.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-ot-fetch.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-ot-font.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-ot-layout.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-ot-math.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-ot-meta.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-ot-metrics.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-ot-name.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-ot-shape.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-ot-var.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-ot.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-script-list.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-set.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-shape-plan.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-shape.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-style.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-unicode.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/src/hb-version.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-ft.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-glib.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-graphite2.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-subset.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-subset-serialize.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/hb-subset-depend.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/src/hb-version.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/src/hb-features.h to /usr/include/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/meson-private/harfbuzz-raster.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/meson-private/harfbuzz-vector.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/meson-private/harfbuzz-gpu.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/meson-private/harfbuzz-cairo.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/meson-private/harfbuzz.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/meson-private/harfbuzz-subset.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/meson-private/harfbuzz-icu.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/src/harfbuzz-config.cmake to /usr/lib/cmake/harfbuzz
+Installing /home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/meson-private/harfbuzz-gobject.pc to /usr/lib/pkgconfig
+Installing symlink pointing to libharfbuzz.so.0.61520.0 to /usr/lib/libharfbuzz.so.0
+Installing symlink pointing to libharfbuzz.so.0 to /usr/lib/libharfbuzz.so
+Installing symlink pointing to libharfbuzz-subset.so.0.61520.0 to /usr/lib/libharfbuzz-subset.so.0
+Installing symlink pointing to libharfbuzz-subset.so.0 to /usr/lib/libharfbuzz-subset.so
+Installing symlink pointing to libharfbuzz-raster.so.0.61520.0 to /usr/lib/libharfbuzz-raster.so.0
+Installing symlink pointing to libharfbuzz-raster.so.0 to /usr/lib/libharfbuzz-raster.so
+Installing symlink pointing to libharfbuzz-vector.so.0.61520.0 to /usr/lib/libharfbuzz-vector.so.0
+Installing symlink pointing to libharfbuzz-vector.so.0 to /usr/lib/libharfbuzz-vector.so
+Installing symlink pointing to libharfbuzz-gpu.so.0.61520.0 to /usr/lib/libharfbuzz-gpu.so.0
+Installing symlink pointing to libharfbuzz-gpu.so.0 to /usr/lib/libharfbuzz-gpu.so
+Installing symlink pointing to libharfbuzz-cairo.so.0.61520.0 to /usr/lib/libharfbuzz-cairo.so.0
+Installing symlink pointing to libharfbuzz-cairo.so.0 to /usr/lib/libharfbuzz-cairo.so
+Installing symlink pointing to libharfbuzz-icu.so.0.61520.0 to /usr/lib/libharfbuzz-icu.so.0
+Installing symlink pointing to libharfbuzz-icu.so.0 to /usr/lib/libharfbuzz-icu.so
+Installing symlink pointing to libharfbuzz-gobject.so.0.61520.0 to /usr/lib/libharfbuzz-gobject.so.0
+Installing symlink pointing to libharfbuzz-gobject.so.0 to /usr/lib/libharfbuzz-gobject.so
+Running custom install script '/usr/bin/meson --internal gtkdoc --sourcedir=/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0 --builddir=/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build --subdir=docs --headerdirs=/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/../src@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/docs/../src --mainfile=harfbuzz-docs.xml --modulename=harfbuzz --moduleversion= --mode=auto --gtkdoc-scan=/usr/bin/gtkdoc-scan --gtkdoc-scangobj=/usr/bin/gtkdoc-scangobj --gtkdoc-mkdb=/usr/bin/gtkdoc-mkdb --gtkdoc-mkhtml=/usr/bin/gtkdoc-mkhtml --gtkdoc-fixxref=/usr/bin/gtkdoc-fixxref --htmlargs= --scanargs=--deprecated-guards=HB_DISABLE_DEPRECATED@@--ignore-decorators=HB_EXTERN|HB_DEPRECATED|HB_DEPRECATED_FOR() --scanobjsargs= --gobjects-types-file= --fixxrefargs= --mkdbargs=--source-suffixes=h,cc@@--xml-mode@@--output-format=xml --html-assets=/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/favicon.ico@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/HarfBuzz.png@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/HarfBuzz.svg@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/hb-shape.png@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/hb-subset.png@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/hb-raster.png@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/hb-vector.png@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/hb-gpu.png --content-files=/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/usermanual-what-is-harfbuzz.xml@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/usermanual-install-harfbuzz.xml@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/usermanual-getting-started.xml@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/usermanual-glyph-information.xml@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/usermanual-shaping-concepts.xml@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/usermanual-object-model.xml@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/usermanual-buffers-language-script-and-direction.xml@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/usermanual-fonts-and-faces.xml@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/usermanual-opentype-features.xml@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/usermanual-clusters.xml@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/usermanual-utilities.xml@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/docs/usermanual-integration.xml@@/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/docs/version.xml --expand-content-files= --ignore-headers=hb-features.h@@hb-gobject.h@@hb-gobject-enums.h@@hb-gobject-enums-tmp.h@@hb-gobject-structs.h@@hb-wasm-api.h --installdir= --cc=cc --ld=cc --cflags=-I/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/src/. -I/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/src/. -pthread -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -O2 -fPIC -DHAVE_CONFIG_H --ldflags=-L/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/src -Wl,-rpath,/home/fusion809/lfs_packaging/harfbuzz/harfbuzz-15.2.0/build/src -lharfbuzz -pthread -lm -lfreetype -lglib-2.0 -lgraphite2 -O2 -fPIC'
+15.2.0
+Updated registry for harfbuzz to version 15.2.0
+[VERSION] harfbuzz: 15.2.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package harfbuzz in /var/lib/custom-packages/
