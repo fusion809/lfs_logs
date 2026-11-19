@@ -1,0 +1,52 @@
+[07:43:41] Found custom package for gnutls, bypassing BLFS aliases.
+[07:43:41] Custom package detected at /home/fusion809/lfs_packaging/gnutls (package: gnutls)
+[07:43:41] Extracting dependencies for custom package 'gnutls'...
+[07:43:41] Required deps: gcc glibc gmp libffi libidn2 libtasn1 libunistring make-ca nettle p11-kit 
+[07:43:41] Dependency 'gcc' already installed.
+[07:43:41] Dependency 'glibc' already installed.
+[07:43:41] Dependency 'gmp' already installed.
+[07:43:41] Dependency 'libffi' already installed.
+[07:43:41] Dependency 'libidn2' already installed.
+[07:43:41] Dependency 'libtasn1' already installed.
+[07:43:41] Dependency 'libunistring' already installed.
+[07:43:41] Dependency 'make-ca' already installed.
+[07:43:41] Dependency 'nettle' already installed.
+[07:43:41] Dependency 'p11-kit' already installed.
+[VERSION] gnutls: 3.8.14
+[07:43:42] Installing gnutls version: 3.8.14
+[07:43:42] Starting remote custom build for gnutls...
+--2026-11-19 07:43:47--  https://github.com/gnutls/gnutls/archive/3.8.14.tar.gz
+Resolving github.com (github.com)... 4.195.217.80
+Connecting to github.com (github.com)|4.195.217.80|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/gnutls/gnutls/tar.gz/refs/tags/3.8.14 [following]
+--2026-11-19 07:43:47--  https://codeload.github.com/gnutls/gnutls/tar.gz/refs/tags/3.8.14
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘gnutls-3.8.14.tar.gz’
+
+gnutls-3.8.14.tar.g     [<=>                 ]       0  --.-KB/s               gnutls-3.8.14.tar.g     [ <=>                ] 386.83K  1.75MB/s               gnutls-3.8.14.tar.g     [  <=>               ]   1.03M  2.46MB/s               gnutls-3.8.14.tar.g     [   <=>              ]   1.96M  3.14MB/s               gnutls-3.8.14.tar.g     [    <=>             ]   3.18M  3.87MB/s               gnutls-3.8.14.tar.g     [     <=>            ]   4.88M  4.77MB/s               gnutls-3.8.14.tar.g     [      <=>           ]   6.94M  5.67MB/s               gnutls-3.8.14.tar.g     [       <=>          ]   8.89M  6.23MB/s               gnutls-3.8.14.tar.g     [        <=>         ]  10.82M  6.75MB/s    in 1.6s    
+
+2026-11-19 07:43:50 (6.75 MB/s) - ‘gnutls-3.8.14.tar.gz’ saved [11345780]
+
+bootstrap found
+error: pathspec 'tests/suite/tls-fuzzer/python-ecdsa' did not match any file(s) known to git
+error: pathspec 'tests/suite/tls-fuzzer/tlsfuzzer' did not match any file(s) known to git
+error: pathspec 'tests/suite/tls-fuzzer/tlslite-ng' did not match any file(s) known to git
+error: pathspec 'tests/suite/tls-interoperability' did not match any file(s) known to git
+error: pathspec 'cligen' did not match any file(s) known to git
+error: pathspec 'devel/abi-dump' did not match any file(s) known to git
+error: pathspec 'devel/nettle' did not match any file(s) known to git
+error: pathspec 'devel/openssl' did not match any file(s) known to git
+./bootstrap.conf: line 73: gnulib/gnulib-tool: No such file or directory
+./bootstrap: Bootstrapping from checked-out gnutls sources...
+./bootstrap: getting gnulib files...
+error: pathspec 'gnulib' did not match any file(s) known to git
+[ERROR] build.sh exited with code 1 for gnutls
+[ERROR] Custom build failed for gnutls
+[07:43:52] ========================================
+[07:43:52] Build completed with 1 failure(s):
+[07:43:52]   - gnutls
+[07:43:52] ========================================

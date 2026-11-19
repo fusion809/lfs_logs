@@ -1,0 +1,2915 @@
+===== Update check started: 2026-11-19 03:14:50 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261119_031450
+Packages needing attention: cargo-tauri flex fontconfig krita reshiki-git
+===== Starting updatec: 2026-11-19 03:14:53 AEST =====
+Checking for packages with missing file inventories...
+name=cargo-tauri
+local_ver=2.12.5
+remote_ver=2.12.6
+name=flex
+local_ver=2.6.16
+remote_ver=2.7.1
+name=fontconfig
+local_ver=2.18.3
+remote_ver=2.18.4
+name=krita
+local_ver=6.0.4
+remote_ver=6.0.5
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - cargo-tauri
+  - flex
+  - fontconfig
+  - krita
+  - reshiki-git
+
+Building custom package cargo-tauri...
+[03:14:57] Found custom package for cargo-tauri, bypassing BLFS aliases.
+[03:14:57] Custom package detected at /home/fusion809/lfs_packaging/cargo-tauri (package: cargo-tauri)
+[03:14:57] Extracting dependencies for custom package 'cargo-tauri'...
+[VERSION] cargo-tauri: 2.12.6
+[03:14:57] Installing cargo-tauri version: 2.12.6
+[03:14:57] Starting remote custom build for cargo-tauri...
+--2026-11-19 03:15:19--  https://github.com/tauri-apps/tauri/archive/tauri-v2.12.6.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/tauri-apps/tauri/tar.gz/refs/tags/tauri-v2.12.6 [following]
+--2026-11-19 03:15:20--  https://codeload.github.com/tauri-apps/tauri/tar.gz/refs/tags/tauri-v2.12.6
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘tauri-v2.12.6.tar.gz’
+
+tauri-v2.12.6.tar.g     [<=>                 ]       0  --.-KB/s               tauri-v2.12.6.tar.g     [ <=>                ] 968.13K  4.72MB/s               tauri-v2.12.6.tar.g     [  <=>               ]   3.14M  7.84MB/s               tauri-v2.12.6.tar.g     [   <=>              ]   5.32M  8.86MB/s               tauri-v2.12.6.tar.g     [    <=>             ]   7.49M  9.36MB/s               tauri-v2.12.6.tar.g     [     <=>            ]   9.68M  9.68MB/s               tauri-v2.12.6.tar.g     [      <=>           ]  11.87M  9.88MB/s               tauri-v2.12.6.tar.g     [       <=>          ]  13.37M  9.31MB/s               tauri-v2.12.6.tar.g     [        <=>         ]  15.07M  9.97MB/s    in 1.5s    
+
+2026-11-19 03:15:21 (9.97 MB/s) - ‘tauri-v2.12.6.tar.gz’ saved [15802939]
+
+ Downloading crates ...
+  Downloaded convert_case v0.12.0
+  Downloaded fraction v0.17.0
+  Downloaded jsonschema-regex v0.60.1
+  Downloaded jsonschema-value v0.60.1
+  Downloaded jsonschema v0.60.1
+  Downloaded minisign v0.10.0
+  Downloaded napi-build v2.6.0
+  Downloaded napi-sys v3.4.1
+  Downloaded napi-derive-backend v7.0.0
+  Downloaded napi-derive v3.7.0
+  Downloaded napi v3.16.1
+  Downloaded referencing v0.60.1
+  Downloaded zip v9.4.1
+  Downloaded zstd v0.14.3
+  Downloaded zstd-safe v8.2.0
+  Downloaded zstd-sys v2.1.2+zstd.1.5.7
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.46
+   Compiling unicode-ident v1.0.14
+   Compiling libc v0.2.189
+   Compiling cfg-if v1.0.1
+   Compiling version_check v0.9.5
+   Compiling autocfg v1.4.0
+   Compiling syn v2.0.117
+   Compiling syn v3.0.9
+   Compiling serde_core v1.0.229
+   Compiling serde_derive v1.0.229
+   Compiling serde v1.0.229
+   Compiling memchr v2.8.3
+   Compiling smallvec v1.15.2
+   Compiling zeroize_derive v1.4.2
+   Compiling zeroize v1.8.1
+   Compiling getrandom v0.2.15
+   Compiling heck v0.5.0
+   Compiling equivalent v1.0.1
+   Compiling hashbrown v0.16.1
+   Compiling winnow v0.7.14
+   Compiling indexmap v2.11.4
+   Compiling typenum v1.20.0
+   Compiling pkg-config v0.3.31
+   Compiling rand_core v0.6.4
+   Compiling generic-array v0.14.7
+   Compiling zmij v1.0.23
+   Compiling thiserror v2.0.21
+   Compiling thiserror-impl v2.0.21
+   Compiling crypto-common v0.1.6
+   Compiling synstructure v0.13.1
+   Compiling siphasher v1.0.1
+   Compiling subtle v2.6.1
+   Compiling fastrand v2.3.0
+   Compiling value-bag v1.12.0
+   Compiling zerofrom-derive v0.1.5
+   Compiling yoke-derive v0.8.2
+   Compiling log v0.4.34
+   Compiling toml_datetime v0.6.8
+   Compiling phf_shared v0.13.1
+   Compiling itoa v1.0.14
+   Compiling zerovec-derive v0.11.3
+   Compiling phf_generator v0.13.1
+   Compiling displaydoc v0.2.5
+   Compiling target-lexicon v0.12.16
+   Compiling serde_spanned v0.6.8
+   Compiling bitflags v2.13.0
+   Compiling once_cell v1.21.4
+   Compiling allocator-api2 v0.2.21
+   Compiling toml_edit v0.22.24
+   Compiling cfg-expr v0.15.8
+   Compiling lock_api v0.4.12
+   Compiling version-compare v0.2.0
+   Compiling parking_lot_core v0.9.10
+   Compiling thiserror v1.0.69
+   Compiling thiserror-impl v1.0.69
+   Compiling phf_macros v0.13.1
+   Compiling toml v0.8.20
+   Compiling getrandom v0.3.4
+   Compiling system-deps v6.2.2
+   Compiling semver v1.0.28
+   Compiling icu_properties_data v2.1.2
+   Compiling icu_normalizer_data v2.1.1
+   Compiling slab v0.4.9
+   Compiling strsim v0.11.1
+   Compiling ident_case v1.0.1
+   Compiling phf_codegen v0.13.1
+   Compiling pin-project-lite v0.2.16
+   Compiling futures-core v0.3.31
+   Compiling futures-sink v0.3.31
+   Compiling anyhow v1.0.103
+   Compiling futures-io v0.3.31
+   Compiling string_cache_codegen v0.6.1
+   Compiling time-core v0.1.9
+   Compiling num-conv v0.2.2
+   Compiling web_atoms v0.2.3
+   Compiling futures-channel v0.3.31
+   Compiling fnv v1.0.7
+   Compiling const-oid v0.9.6
+   Compiling bytes v1.11.1
+   Compiling unicode-xid v0.2.6
+   Compiling pin-utils v0.1.0
+   Compiling derive_more-impl v2.0.1
+   Compiling futures-macro v0.3.31
+   Compiling typeid v1.0.2
+   Compiling futures-task v0.3.31
+   Compiling foldhash v0.2.0
+   Compiling stable_deref_trait v1.2.0
+   Compiling crc32fast v1.5.2
+   Compiling futures-util v0.3.31
+   Compiling serde_json v1.0.154
+   Compiling selectors v0.38.0
+   Compiling phf v0.13.1
+   Compiling cssparser-macros v0.7.0
+   Compiling indexmap v1.9.3
+   Compiling camino v1.1.9
+   Compiling libm v0.2.11
+   Compiling erased-serde v0.4.9
+   Compiling darling_core v0.23.0
+   Compiling zerofrom v0.1.5
+   Compiling cpufeatures v0.2.16
+   Compiling yoke v0.8.1
+   Compiling darling_macro v0.23.0
+   Compiling block-buffer v0.10.4
+   Compiling schemars v0.8.22
+   Compiling darling v0.23.0
+   Compiling digest v0.10.7
+   Compiling serde_derive_internals v0.29.1
+   Compiling serde_with_macros v3.21.0
+   Compiling zerovec v0.11.5
+   Compiling serialize-to-javascript-impl v0.1.2
+   Compiling schemars_derive v0.8.22 (https://github.com/tauri-apps/schemars.git?branch=feat%2Fpreserve-description-newlines#d949e78b)
+   Compiling rustc_version v0.4.1
+   Compiling jobserver v0.1.32
+   Compiling shlex v1.3.0
+   Compiling find-msvc-tools v0.1.6
+   Compiling tinystr v0.8.2
+   Compiling cc v1.2.51
+   Compiling num-traits v0.2.19
+   Compiling litemap v0.8.2
+   Compiling writeable v0.6.3
+   Compiling icu_locale_core v2.1.1
+   Compiling potential_utf v0.1.4
+   Compiling zerotrie v0.2.3
+   Compiling icu_collections v2.1.1
+   Compiling icu_provider v2.1.1
+   Compiling glib-sys v0.18.1
+   Compiling block-padding v0.3.3
+   Compiling new_debug_unreachable v1.0.6
+   Compiling scopeguard v1.2.0
+   Compiling inout v0.1.3
+   Compiling precomputed-hash v0.1.1
+   Compiling icu_normalizer v2.1.1
+   Compiling icu_properties v2.1.2
+   Compiling parking_lot v0.12.3
+   Compiling cipher v0.4.4
+   Compiling gobject-sys v0.18.0
+   Compiling string_cache v0.9.0
+   Compiling idna_adapter v1.2.1
+   Compiling http v1.3.1
+   Compiling toml_parser v1.0.9+spec-1.1.0
+   Compiling serde_spanned v1.0.4
+   Compiling toml_datetime v1.0.0+spec-1.1.0
+   Compiling percent-encoding v2.3.2
+   Compiling toml_writer v1.0.6+spec-1.1.0
+   Compiling utf8_iter v1.0.4
+   Compiling dtoa v1.0.9
+   Compiling utf-8 v0.7.6
+   Compiling universal-hash v0.5.1
+   Compiling dtoa-short v0.3.5
+   Compiling tendril v0.5.0
+   Compiling idna v1.1.0
+   Compiling toml v1.0.6+spec-1.1.0
+   Compiling form_urlencoded v1.2.2
+   Compiling uuid v1.11.0
+   Compiling aho-corasick v1.1.3
+   Compiling opaque-debug v0.3.1
+   Compiling regex-syntax v0.8.11
+   Compiling alloc-no-stdlib v3.0.0
+   Compiling alloc-stdlib v0.3.0
+   Compiling polyval v0.6.2
+   Compiling markup5ever v0.39.0
+   Compiling url v2.5.8
+   Compiling cssparser v0.37.0
+   Compiling regex-automata v0.4.18
+   Compiling derive_more v2.0.1
+   Compiling servo_arc v0.4.3
+   Compiling byteorder v1.5.0
+   Compiling deranged v0.5.8
+   Compiling web-time v1.1.0
+   Compiling powerfmt v0.2.0
+   Compiling bit-vec v0.8.0
+   Compiling rustc-hash v2.1.1
+   Compiling ctor v1.0.7
+   Compiling syn v1.0.109
+   Compiling hashbrown v0.12.3
+   Compiling time v0.3.51
+   Compiling regex v1.13.1
+   Compiling bit-set v0.8.0
+   Compiling cfb v0.14.0
+   Compiling html5ever v0.39.0
+   Compiling ghash v0.5.1
+   Compiling brotli-decompressor v6.0.0
+   Compiling ctr v0.9.2
+   Compiling aes v0.8.4
+   Compiling jsonptr v0.7.1
+   Compiling aead v0.5.2
+   Compiling gio-sys v0.18.1
+   Compiling quick-xml v0.41.0
+   Compiling cargo-platform v0.1.8
+   Compiling base64 v0.22.1
+   Compiling same-file v1.0.6
+   Compiling dyn-clone v1.0.17
+   Compiling tauri-utils v2.10.3 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tauri-utils)
+   Compiling dunce v1.0.5
+   Compiling dom_query v0.28.0
+   Compiling plist v1.10.0
+   Compiling walkdir v2.5.0
+   Compiling cargo_metadata v0.19.0
+   Compiling json-patch v4.2.0
+   Compiling aes-gcm v0.10.3
+   Compiling brotli v9.0.0
+   Compiling serde-untagged v0.1.6
+   Compiling infer v0.22.0
+   Compiling urlpattern v0.6.0
+   Compiling serialize-to-javascript v0.1.2
+   Compiling serde_with v3.21.0
+   Compiling futures-executor v0.3.31
+   Compiling glob v0.3.4
+   Compiling simd-adler32 v0.3.10
+   Compiling winnow v0.5.40
+   Compiling num-integer v0.1.46
+   Compiling proc-macro-error-attr v1.0.4
+   Compiling gdk-sys v0.18.2
+   Compiling proc-macro-error v1.0.4
+   Compiling crossbeam-utils v0.8.21
+   Compiling adler2 v2.0.0
+   Compiling miniz_oxide v0.8.8
+   Compiling mio v1.2.4
+   Compiling zlib-rs v0.5.0
+   Compiling libz-rs-sys v0.5.0
+   Compiling toml_edit v0.20.7
+   Compiling flate2 v1.1.1
+   Compiling hybrid-array v0.4.13
+   Compiling proc-macro-crate v2.0.0
+   Compiling gdk-pixbuf-sys v0.18.0
+   Compiling cairo-sys-rs v0.18.2
+   Compiling pango-sys v0.18.0
+   Compiling zerocopy-derive v0.7.35
+   Compiling tokio-macros v2.7.2
+   Compiling socket2 v0.6.5
+   Compiling heck v0.4.1
+   Compiling rustversion v1.0.19
+   Compiling tokio v1.53.3
+   Compiling glib-macros v0.18.5
+   Compiling zerocopy v0.7.35
+   Compiling atk-sys v0.18.2
+   Compiling glib v0.18.5
+   Compiling block-buffer v0.12.1
+   Compiling crypto-common v0.2.2
+   Compiling fdeflate v0.3.7
+   Compiling const-oid v0.10.2
+   Compiling digest v0.11.3
+   Compiling png v0.18.1
+   Compiling num-bigint v0.4.8
+   Compiling time-macros v0.2.30
+   Compiling cpufeatures v0.3.0
+   Compiling base64ct v1.6.0
+   Compiling num_threads v0.1.7
+   Compiling crossbeam-epoch v0.9.20
+   Compiling ucd-trie v0.1.7
+   Compiling pest v2.7.15
+   Compiling ico v0.6.0
+   Compiling sha2 v0.11.0
+   Compiling gtk-sys v0.18.2
+   Compiling gio v0.18.4
+   Compiling arrayvec v0.7.6
+   Compiling base64 v0.23.1
+   Compiling pest_meta v2.7.15
+   Compiling tauri-codegen v2.7.5 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tauri-codegen)
+   Compiling pest_generator v2.7.15
+   Compiling crossbeam-deque v0.8.6
+   Compiling pem-rfc7468 v0.7.0
+   Compiling num-rational v0.4.2
+   Compiling sha1_smol v1.0.1
+   Compiling der v0.7.9
+   Compiling pest_derive v2.7.15
+   Compiling ppv-lite86 v0.2.20
+   Compiling either v1.13.0
+   Compiling rayon-core v1.13.0
+   Compiling bytemuck v1.25.0
+   Compiling rustix v1.0.7
+   Compiling spki v0.7.3
+   Compiling hmac v0.12.1
+   Compiling memoffset v0.9.1
+   Compiling linux-raw-sys v0.9.4
+   Compiling wasm-bindgen-shared v0.2.125
+   Compiling gdk-pixbuf v0.18.5
+   Compiling pango v0.18.3
+   Compiling cairo-rs v0.18.5
+   Compiling toml_edit v0.19.15
+   Compiling field-offset v0.3.6
+   Compiling option-ext v0.2.0
+   Compiling bitflags v1.3.2
+   Compiling dirs-sys v0.5.0
+   Compiling proc-macro-crate v1.3.1
+   Compiling gdk v0.18.2
+   Compiling pkcs8 v0.10.2
+   Compiling json5 v0.4.1
+   Compiling tauri v2.12.6 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tauri)
+   Compiling embed-resource v3.0.9
+   Compiling gtk v0.18.2
+   Compiling aligned-vec v0.5.0
+   Compiling httparse v1.9.5
+   Compiling v_frame v0.3.8
+   Compiling tauri-winres v0.3.6
+   Compiling gtk3-macros v0.18.2
+   Compiling dirs v7.0.0
+   Compiling rayon v1.12.0
+   Compiling atk v0.18.2
+   Compiling cargo_toml v1.0.0
+   Compiling as-slice v0.2.1
+   Compiling signature v2.2.0
+   Compiling equator-macro v0.4.2
+   Compiling minimal-lexical v0.2.1
+   Compiling paste v1.0.15
+   Compiling quick-error v2.0.1
+   Compiling built v0.8.1
+   Compiling av-scenechange v0.14.1
+   Compiling static_vcruntime v3.0.0
+   Compiling tauri-build v2.7.5 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tauri-build)
+   Compiling nom v7.1.3
+   Compiling rav1e v0.8.1
+   Compiling equator v0.4.2
+   Compiling aligned v0.4.3
+   Compiling javascriptcore-rs-sys v1.1.1
+   Compiling soup3-sys v0.5.0
+   Compiling no_std_io2 v0.9.4
+   Compiling arg_enum_proc_macro v0.3.4
+   Compiling profiling-procmacros v1.0.16
+   Compiling pastey v0.1.1
+   Compiling y4m v0.8.0
+   Compiling zune-core v0.5.1
+   Compiling radium v0.7.0
+   Compiling weezl v0.1.12
+   Compiling zune-jpeg v0.5.15
+   Compiling profiling v1.0.16
+   Compiling bitstream-io v4.10.0
+   Compiling aligned-vec v0.6.4
+   Compiling av1-grain v0.2.3
+   Compiling maybe-rayon v0.1.1
+   Compiling rgb v0.8.53
+   Compiling itertools v0.14.0
+   Compiling sha1 v0.10.6
+   Compiling webkit2gtk-sys v2.0.2
+   Compiling x11 v2.21.0
+   Compiling num-derive v0.4.2
+   Compiling simd_helpers v0.1.0
+   Compiling half v2.4.1
+   Compiling byteorder-lite v0.1.0
+   Compiling color_quant v1.1.0
+   Compiling noop_proc_macro v0.3.0
+   Compiling tap v1.0.1
+   Compiling mime v0.3.17
+   Compiling imgref v1.12.2
+   Compiling wyz v0.5.1
+   Compiling loop9 v0.1.5
+   Compiling gif v0.14.2
+   Compiling image-webp v0.2.4
+   Compiling avif-serialize v0.8.9
+   Compiling wasm-bindgen v0.2.125
+   Compiling zune-inflate v0.2.54
+   Compiling gdkx11-sys v0.18.2
+   Compiling tracing-core v0.1.33
+   Compiling dpi v0.1.1
+   Compiling tracing-attributes v0.1.28
+   Compiling bumpalo v3.20.3
+   Compiling pxfm v0.1.30
+   Compiling lebe v0.5.2
+   Compiling funty v2.0.0
+   Compiling base16ct v0.2.0
+   Compiling fax v0.2.7
+   Compiling bit_field v0.10.2
+   Compiling exr v1.74.0
+   Compiling moxcms v0.8.1
+   Compiling tiff v0.11.3
+   Compiling bitvec v1.1.1
+   Compiling tracing v0.1.41
+   Compiling wasm-bindgen-macro-support v0.2.125
+   Compiling ravif v0.13.0
+   Compiling qoi v0.4.1
+   Compiling x11-dl v2.21.0
+   Compiling libdbus-sys v0.2.7
+   Compiling cookie v0.18.1
+   Compiling image v0.25.10
+   Compiling wasm-bindgen-macro v0.2.125
+   Compiling ff v0.13.0
+   Compiling serdect v0.2.0
+   Compiling soup3 v0.5.0
+   Compiling javascriptcore-rs v1.1.2
+   Compiling rand_chacha v0.3.1
+   Compiling tokio-util v0.7.13
+   Compiling crossbeam-channel v0.5.15
+   Compiling http-body v1.0.1
+   Compiling sha2 v0.10.8
+   Compiling darling_core v0.20.10
+   Compiling raw-window-handle v0.6.2
+   Compiling unicode-width v0.2.0
+   Compiling spin v0.9.9
+   Compiling lazy_static v1.5.0
+   Compiling darling_macro v0.20.10
+   Compiling rand v0.8.6
+   Compiling webkit2gtk v2.0.2
+   Compiling sec1 v0.7.3
+   Compiling group v0.13.0
+   Compiling hkdf v0.12.4
+   Compiling num-iter v0.1.45
+   Compiling rand_core v0.9.3
+   Compiling ring v0.17.14
+   Compiling crypto-bigint v0.5.5
+   Compiling dlopen2_derive v0.4.0
+   Compiling libloading v0.7.4
+   Compiling tauri-runtime v2.12.3 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tauri-runtime)
+   Compiling wry v0.57.0
+   Compiling ryu v1.0.18
+   Compiling tower-service v0.3.3
+   Compiling muda v0.20.0
+   Compiling dlopen2 v0.8.0
+   Compiling libappindicator-sys v0.9.0
+   Compiling rand_chacha v0.9.0
+   Compiling elliptic-curve v0.13.8
+   Compiling dbus v0.9.10
+   Compiling darling v0.20.10
+   Compiling gdkx11 v0.18.2
+   Compiling terminal_size v0.4.4
+   Compiling gdkwayland-sys v0.18.2
+   Compiling keyboard-types v0.8.3
+   Compiling owo-colors v4.1.0
+   Compiling tray-icon v0.25.1
+   Compiling unicode-linebreak v0.1.5
+   Compiling smawk v0.3.2
+   Compiling tauri-runtime-wry v2.12.4 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tauri-runtime-wry)
+   Compiling textwrap v0.16.2
+   Compiling tao v0.37.0
+   Compiling derive_builder_core v0.20.2
+   Compiling rand v0.9.4
+   Compiling libappindicator v0.9.0
+   Compiling http-body-util v0.1.2
+   Compiling rfc6979 v0.4.0
+   Compiling try-lock v0.2.5
+   Compiling sync_wrapper v1.0.2
+   Compiling untrusted v0.9.0
+   Compiling tower-layer v0.3.3
+   Compiling atomic-waker v1.1.2
+   Compiling h2 v0.4.17
+   Compiling want v0.3.1
+   Compiling derive_builder_macro v0.20.2
+   Compiling tauri-macros v2.7.5 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tauri-macros)
+   Compiling rustls-pki-types v1.13.2
+   Compiling oxc-miette-derive v2.7.1
+   Compiling serde_repr v0.1.19
+   Compiling signal-hook-registry v1.4.2
+   Compiling keccak v0.1.6
+   Compiling rand_core v0.10.1
+   Compiling getrandom v0.4.3
+   Compiling http-range v0.1.5
+   Compiling unicode-segmentation v1.12.0
+   Compiling httpdate v1.0.3
+   Compiling num-bigint-dig v0.8.6
+   Compiling oxc-miette v2.7.1
+   Compiling hyper v1.8.1
+   Compiling sha3 v0.10.8
+   Compiling derive_builder v0.20.2
+   Compiling tower v0.5.3
+   Compiling ecdsa v0.16.9
+   Compiling castaway v0.2.3
+   Compiling zstd-sys v2.1.2+zstd.1.5.7
+   Compiling curve25519-dalek v4.1.3
+   Compiling async-trait v0.1.88
+   Compiling pin-project-internal v1.1.8
+   Compiling oxc_data_structures v0.110.0
+   Compiling static_assertions v1.1.0
+   Compiling iana-time-zone v0.1.61
+   Compiling chrono v0.4.41
+   Compiling pin-project v1.1.8
+   Compiling compact_str v0.9.1
+   Compiling oxc_allocator v0.110.0
+   Compiling hyper-util v0.1.19
+   Compiling primeorder v0.13.6
+   Compiling tauri-plugin v2.7.3 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tauri-plugin)
+   Compiling num-complex v0.4.6
+   Compiling oxc_ast_macros v0.110.0
+   Compiling curve25519-dalek-derive v0.1.1
+   Compiling os_pipe v1.2.3
+   Compiling utf8parse v0.2.2
+   Compiling oxc_estree v0.110.0
+   Compiling signal-hook v0.3.18
+   Compiling cow-utils v0.1.3
+   Compiling dragonbox_ecma v0.1.12
+   Compiling data-encoding v2.11.0
+   Compiling rustls v0.23.46
+   Compiling tempfile v3.23.0
+   Compiling oxc_span v0.110.0
+   Compiling anstyle-parse v1.0.0
+   Compiling num v0.4.3
+   Compiling rustls-webpki v0.103.16
+   Compiling pkcs1 v0.7.5
+   Compiling futures v0.3.31
+   Compiling des v0.8.1
+   Compiling liblzma-sys v0.4.9
+   Compiling core_maths v0.1.0
+   Compiling dbl v0.3.2
+   Compiling hybrid-array v0.3.1
+   Compiling nom v8.0.0
+   Compiling ahash v0.8.11
+   Compiling slotmap v1.0.7
+   Compiling colorchoice v1.0.3
+   Compiling crc24 v0.1.6
+   Compiling openssl-probe v0.2.0
+   Compiling is_terminal_polyfill v1.70.1
+   Compiling hex v0.4.3
+   Compiling anstyle v1.0.14
+   Compiling ref-cast v1.0.23
+   Compiling unicode-id-start v1.3.1
+   Compiling nonmax v0.5.5
+   Compiling zstd-safe v8.2.0
+   Compiling anstyle-query v1.1.2
+   Compiling float-cmp v0.9.0
+   Compiling strict-num v0.1.1
+   Compiling anstream v1.0.0
+   Compiling oxc_index v4.1.0
+   Compiling rustls-native-certs v0.8.3
+   Compiling cmac v0.7.2
+   Compiling ttf-parser v0.25.1
+   Compiling rsa v0.9.10
+   Compiling tungstenite v0.29.0
+   Compiling oxc_diagnostics v0.110.0
+   Compiling js-sys v0.3.102
+   Compiling tokio-stream v0.1.17
+   Compiling serdect v0.3.0
+   Compiling ed25519 v2.2.3
+   Compiling polycool v0.4.0
+   Compiling password-hash v0.5.0
+   Compiling jsonrpsee-types v0.26.1
+   Compiling blake2 v0.10.6
+   Compiling bitfields-impl v1.0.3
+   Compiling kem v0.3.0-pre.0
+   Compiling hybrid-array v0.2.3
+   Compiling snafu-derive v0.9.2
+   Compiling num_enum_derive v0.7.3
+   Compiling ref-cast-impl v1.0.23
+   Compiling roxmltree v0.20.0
+   Compiling num-modular v0.6.1
+   Compiling arrayref v0.3.9
+   Compiling tinyvec_macros v0.1.1
+   Compiling cfg_aliases v0.2.1
+   Compiling libbz2-rs-sys v0.2.5
+   Compiling futures-timer v3.0.4
+   Compiling jsonrpsee-core v0.26.1
+   Compiling bzip2 v0.6.1
+   Compiling num-order v1.2.0
+   Compiling nix v0.31.3
+   Compiling tinyvec v1.8.1
+   Compiling tiny-skia-path v0.12.0
+   Compiling snafu v0.9.2
+   Compiling fontconfig-parser v0.5.7
+   Compiling num_enum v0.7.3
+   Compiling bitfields v1.0.3
+   Compiling ml-kem v0.2.3
+   Compiling argon2 v0.5.3
+   Compiling kurbo v0.13.1
+   Compiling ed25519-dalek v2.1.1
+   Compiling cx448 v0.1.1
+   Compiling tokio-tungstenite v0.29.0
+   Compiling oxc_regular_expression v0.110.0
+   Compiling oxc_syntax v0.110.0
+   Compiling sigchld v0.2.4
+   Compiling rustls-platform-verifier v0.6.2
+   Compiling eax v0.5.0
+   Compiling slh-dsa v0.0.3
+   Compiling ml-dsa v0.0.4
+   Compiling soketto v0.8.1
+   Compiling x25519-dalek v2.0.1
+   Compiling p521 v0.13.3
+   Compiling p256 v0.13.2
+   Compiling p384 v0.13.0
+   Compiling dsa v0.6.3
+   Compiling k256 v0.13.4
+   Compiling webpki-roots v1.0.10
+   Compiling axum-core v0.5.6
+   Compiling serde_urlencoded v0.7.1
+   Compiling sha1-checked v0.10.0
+   Compiling ureq-proto v0.5.3
+   Compiling aes-kw v0.2.1
+   Compiling ocb3 v0.1.0
+   Compiling socks v0.3.4
+   Compiling blowfish v0.9.1
+   Compiling camellia v0.1.0
+   Compiling twofish v0.7.1
+   Compiling idea v0.5.1
+   Compiling cfb-mode v0.8.2
+   Compiling cast5 v0.11.1
+   Compiling md-5 v0.10.6
+   Compiling ripemd v0.1.3
+   Compiling serde_path_to_error v0.1.16
+   Compiling phf_shared v0.14.0
+   Compiling buffer-redux v1.0.2
+   Compiling bstr v1.11.3
+   Compiling inotify-sys v0.1.5
+   Compiling memmap2 v0.9.11
+   Compiling matchit v0.8.4
+   Compiling jsonschema-value v0.60.1
+   Compiling unicode-bidi-mirroring v0.4.0
+   Compiling unicode-ccc v0.4.0
+   Compiling replace_with v0.1.8
+   Compiling clap_lex v1.1.1
+   Compiling unicode-properties v0.1.3
+   Compiling pico-args v0.5.0
+   Compiling unicode-general-category v1.1.0
+   Compiling napi-build v2.6.0
+   Compiling borrow-or-share v0.2.4
+   Compiling unicode-script v0.5.7
+   Compiling fluent-uri v0.4.1
+   Compiling zopfli v0.8.4
+   Compiling rustybuzz v0.20.1
+   Compiling clap_builder v4.6.7
+   Compiling pgp v0.20.0
+   Compiling neli-proc-macros v0.2.2
+   Compiling axum v0.8.9
+   Compiling globset v0.4.20
+   Compiling fontdb v0.23.0
+   Compiling inotify v0.11.0
+   Compiling phf_generator v0.14.0
+   Compiling ureq v3.1.4
+   Compiling enum-primitive-derive v0.3.0
+   Compiling liblzma v0.4.8
+   Compiling shared_child v1.1.2
+   Compiling zstd v0.14.3
+   Compiling oxc_ast v0.110.0
+   Compiling svgtypes v0.16.1
+   Compiling handlebars v6.3.0
+   Compiling fraction v0.17.0
+   Compiling tauri-plugin-sample v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/examples/api/src-tauri/tauri-plugin-sample)
+   Compiling tauri-plugin-log v2.9.0
+   Compiling chacha20 v0.10.2
+   Compiling xattr v1.6.1
+   Compiling pbkdf2 v0.12.2
+   Compiling itertools v0.15.0
+   Compiling enum-display-derive v0.1.1
+   Compiling salsa20 v0.10.2
+   Compiling hashbrown v0.17.1
+   Compiling simplecss v0.2.2
+   Compiling strum_macros v0.28.0
+   Compiling clap_derive v4.6.7
+   Compiling strum_macros v0.27.2
+   Compiling roxmltree v0.21.1
+   Compiling getset v0.1.7
+   Compiling num-derive v0.5.1
+   Compiling rtoolbox v0.0.2
+   Compiling filetime v0.2.25
+   Compiling which v8.0.6
+   Compiling encoding_rs v0.8.35
+   Compiling bytecount v0.6.8
+   Compiling typed-path v0.13.0
+   Compiling shared_thread v0.2.0
+   Compiling vsimd v0.8.0
+   Compiling jiff-core v0.1.1
+   Compiling std_prelude v0.2.12
+   Compiling unicode-vo v0.1.0
+   Compiling xmlwriter v0.1.0
+   Compiling notify-types v2.0.0
+   Compiling micromap v0.3.0
+   Compiling data-url v0.3.1
+   Compiling imagesize v0.14.0
+   Compiling cargo-mobile2 v0.22.5
+   Compiling unicode-bidi v0.3.18
+   Compiling rpm-version v0.5.1
+   Compiling stfu8 v0.2.7
+   Compiling num-cmp v0.1.0
+   Compiling outref v0.5.1
+   Compiling route-recognizer v0.3.1
+   Compiling uuid-simd v0.8.0
+   Compiling jsonrpsee-server v0.26.1
+   Compiling path_abs v0.5.1
+   Compiling usvg v0.47.0
+   Compiling rpm v0.30.2
+   Compiling referencing v0.60.1
+   Compiling notify v8.2.0
+   Compiling jiff v0.2.38
+   Compiling zip v9.4.1
+   Compiling java-properties v2.0.0
+   Compiling duct v1.1.2
+   Compiling tar v0.4.46
+   Compiling rpassword v7.5.4
+   Compiling neli v0.7.4
+   Compiling strum v0.28.0
+   Compiling clap v4.6.7
+   Compiling scrypt v0.11.0
+   Compiling rand v0.10.3
+   Compiling web-sys v0.3.102
+   Compiling oxc_ecmascript v0.110.0
+   Compiling phf_macros v0.14.0
+   Compiling ignore v0.4.33
+   Compiling tiny-skia v0.12.0
+   Compiling sha1 v0.11.0
+   Compiling freedesktop_entry_parser v2.0.1
+   Compiling colored v2.2.0
+   Compiling console v0.16.4
+   Compiling png v0.17.16
+   Compiling fancy-regex v0.19.0
+   Compiling env_filter v2.0.0
+   Compiling jsonschema-regex v0.60.1
+   Compiling ordered-float v2.10.1
+   Compiling email_address v0.2.9
+   Compiling include_dir_macros v0.7.4
+   Compiling deunicode v1.6.0
+   Compiling shell-words v1.1.0
+   Compiling bytesize v2.7.0
+   Compiling ct-codecs v1.1.7
+   Compiling md5 v0.8.0
+   Compiling home v0.5.9
+   Compiling english-numbers v0.3.3
+   Compiling seq-macro v0.3.6
+   Compiling signal-hook v0.4.1
+   Compiling file-id v0.2.3
+   Compiling base64 v0.13.1
+   Compiling vlq v0.5.1
+   Compiling ar v0.9.0
+   Compiling napi-sys v3.4.1
+   Compiling tauri-cli v2.12.5 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tauri-cli)
+   Compiling convert_case v0.12.0
+   Compiling tauri-bundler v2.10.5 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tauri-bundler)
+   Compiling magic_string v0.3.4
+   Compiling notify-debouncer-full v0.7.0
+   Compiling oxc_parser v0.110.0
+   Compiling minisign v0.10.0
+   Compiling dialoguer v0.12.0
+   Compiling include_dir v0.7.4
+   Compiling serde-value v0.7.0
+   Compiling jsonschema v0.60.1
+   Compiling phf v0.14.0
+   Compiling env_logger v0.11.11
+   Compiling tauri-icns v0.1.0
+   Compiling resvg v0.47.0
+   Compiling worker-sys v0.8.5
+   Compiling local-ip-address v0.6.13
+   Compiling ctrlc v3.5.2
+   Compiling clap_complete v4.6.11
+   Compiling jsonrpsee v0.26.1
+   Compiling strum v0.27.2
+   Compiling napi v3.16.1
+   Compiling jsonrpsee-client-transport v0.26.1
+   Compiling wasm-bindgen-futures v0.4.75
+   Compiling api v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/examples/api/src-tauri)
+   Compiling toml_edit v0.25.4+spec-1.1.0
+   Compiling os_info v3.9.2
+   Compiling fern v0.7.1
+   Compiling libloading v0.9.0
+   Compiling common-path v1.0.0
+   Compiling css-color v0.2.8
+   Compiling elf v0.8.0
+   Compiling sublime_fuzzy v0.7.0
+   Compiling colored v3.1.1
+   Compiling wasm-streams v0.6.0
+   Compiling worker-macros v0.8.5
+   Compiling napi-derive-backend v7.0.0
+   Compiling tauri-cli-node v0.0.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/packages/cli)
+   Compiling serde-wasm-bindgen v0.6.5
+   Compiling bench_cpu_intensive v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/bench/tests/cpu_intensive/src-tauri)
+   Compiling bench_helloworld v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/bench/tests/helloworld/src-tauri)
+   Compiling tauri-file-associations-demo v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/examples/file-associations/src-tauri)
+   Compiling bench_files_transfer v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/bench/tests/files_transfer/src-tauri)
+   Compiling resources v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/examples/resources/src-tauri)
+   Compiling tauri-schema-generator v0.0.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tauri-schema-generator)
+   Compiling pem v3.0.4
+   Compiling cbc v0.1.2
+   Compiling rc2 v0.8.1
+   Compiling bcder v0.7.4
+   Compiling nohash-hasher v0.2.0
+   Compiling yasna v0.5.2
+   Compiling restart v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tests/restart)
+   Compiling matchit v0.7.3
+   Compiling p12 v0.6.3
+   Compiling worker v0.8.5
+   Compiling x509-certificate v0.24.0
+   Compiling napi-derive v3.7.0
+   Compiling signal-hook-tokio v0.4.0
+   Compiling console_error_panic_hook v0.1.7
+   Compiling tauri-schema-worker v0.0.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tauri-schema-worker)
+   Compiling tauri-driver v2.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tauri-driver)
+   Compiling tauri-macos-sign v2.4.3 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tauri-macos-sign)
+   Compiling tauri_bench v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/bench)
+   Compiling acl-tests v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.12.6/crates/tests/acl)
+    Finished `release` profile [optimized] target(s) in 40m 46s
+2.12.6
+Updated registry for cargo-tauri to version 2.12.6
+[VERSION] cargo-tauri: 2.12.6
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package cargo-tauri in /var/lib/custom-packages/
+Building custom package flex...
+[03:56:21] Found custom package for flex, bypassing BLFS aliases.
+[03:56:21] Custom package detected at /home/fusion809/lfs_packaging/flex (package: flex)
+[03:56:21] Extracting dependencies for custom package 'flex'...
+[03:56:21] Required deps: coreutils gcc glibc gzip make tar 
+[03:56:21] Dependency 'coreutils' already installed.
+[03:56:21] Dependency 'gcc' already installed.
+[03:56:21] Dependency 'glibc' already installed.
+[03:56:21] Dependency 'gzip' already installed.
+[03:56:21] Dependency 'make' already installed.
+[03:56:21] Dependency 'tar' already installed.
+[VERSION] flex: 2.7.1
+[03:56:22] Installing flex version: 2.7.1
+[03:56:22] Starting remote custom build for flex...
+--2026-11-19 03:56:26--  https://github.com/westes/flex/releases/download/v2.7.1/flex-2.7.1.tar.gz
+Resolving github.com (github.com)... 4.195.217.80
+Connecting to github.com (github.com)|4.195.217.80|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/14521001/d7426b33-d5ae-4295-a739-9e728d770a2b?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-18T18%3A32%3A12Z&rscd=attachment%3B+filename%3Dflex-2.7.1.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-18T17%3A31%3A47Z&ske=2026-11-18T18%3A32%3A12Z&sks=b&skv=2018-11-09&sig=gwPMKWoF3tM%2FELBqWGtu4iYyGSfdkzt4NdG4EsU3ck0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTAyNDg4NiwibmJmIjoxNzk1MDI0NTg2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.VJhxxUIA3OBW3DQMqlyfdaIzE_6o2wq4zsixmPHCDHU&response-content-disposition=attachment%3B%20filename%3Dflex-2.7.1.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2026-11-19 03:56:26--  https://release-assets.githubusercontent.com/github-production-release-asset/14521001/d7426b33-d5ae-4295-a739-9e728d770a2b?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-18T18%3A32%3A12Z&rscd=attachment%3B+filename%3Dflex-2.7.1.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-18T17%3A31%3A47Z&ske=2026-11-18T18%3A32%3A12Z&sks=b&skv=2018-11-09&sig=gwPMKWoF3tM%2FELBqWGtu4iYyGSfdkzt4NdG4EsU3ck0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTAyNDg4NiwibmJmIjoxNzk1MDI0NTg2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.VJhxxUIA3OBW3DQMqlyfdaIzE_6o2wq4zsixmPHCDHU&response-content-disposition=attachment%3B%20filename%3Dflex-2.7.1.tar.gz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1854043 (1.8M) [application/octet-stream]
+Saving to: ‘flex-2.7.1.tar.gz’
+
+flex-2.7.1.tar.gz     0%[                    ]       0  --.-KB/s               flex-2.7.1.tar.gz     5%[>                   ]  93.79K   445KB/s               flex-2.7.1.tar.gz    14%[=>                  ] 253.79K   615KB/s               flex-2.7.1.tar.gz    33%[=====>              ] 605.79K   984KB/s               flex-2.7.1.tar.gz    73%[=============>      ]   1.29M  1.59MB/s               flex-2.7.1.tar.gz   100%[===================>]   1.77M  2.02MB/s    in 0.9s    
+
+2026-11-19 03:56:27 (2.02 MB/s) - ‘flex-2.7.1.tar.gz’ saved [1854043/1854043]
+
+configure found
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for vfork.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking for gawk... gawk
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking dependency style of gcc... gcc3
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking how to run the C preprocessor... gcc -E
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for bison... bison -y
+checking whether bison -y is GNU Bison... yes
+checking for flex... flex
+checking for lex output file root... lex.yy
+checking for lex library... none needed
+checking whether yytext is a pointer... yes
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking for x86_64-pc-linux-gnu-gcc... x86_64-pc-linux-gnu-gcc
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-pc-linux-gnu-gcc accepts -g... yes
+checking for x86_64-pc-linux-gnu-gcc option to enable C11 features... none needed
+checking whether x86_64-pc-linux-gnu-gcc understands -c and -o together... yes
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking how to run the C preprocessor... x86_64-pc-linux-gnu-gcc -E
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking dependency style of g++... gcc3
+checking whether ln -s works... yes
+checking for gawk... (cached) gawk
+checking for help2man... /usr/bin/help2man
+checking for gtexi2dvi... no
+checking for texi2dvi... /usr/bin/texi2dvi
+checking for m4 that supports -P... /usr/bin/m4
+checking for indent... no
+checking for regex.h... yes
+checking for strings.h... (cached) yes
+checking for sys/wait.h... yes
+checking for unistd.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for libintl.h... yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for malloc.h... yes
+checking for netinet/in.h... yes
+checking for pthread_mutex_lock in -lpthread... yes
+checking for pthread.h... yes
+checking for log10 in -lm... yes
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99... no
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for pid_t... yes
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for GNU libc compatible realloc... yes
+checking for dup2... yes
+checking for memset... yes
+checking for regcomp... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strtol... yes
+checking for pow... yes
+checking for setlocale... yes
+checking for reallocarr... no
+checking for reallocarray... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether __func__ is declared... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/FlexLexer.h
+config.status: creating doc/Makefile
+config.status: creating examples/Makefile
+config.status: creating examples/fastwc/Makefile
+config.status: creating examples/manual/Makefile
+config.status: creating po/Makefile.in
+config.status: creating src/libfl.pc
+config.status: creating src/Makefile
+config.status: creating tools/Makefile
+config.status: creating tests/Makefile
+config.status: creating src/config.h
+config.status: executing libtool commands
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/Makefile
+Making all in src
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/src'
+make  all-am
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/src'
+depbase=`echo buf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT buf.o -MD -MP -MF $depbase.Tpo -c -o buf.o buf.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ccl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT ccl.o -MD -MP -MF $depbase.Tpo -c -o ccl.o ccl.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo dfa.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT dfa.o -MD -MP -MF $depbase.Tpo -c -o dfa.o dfa.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ecs.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT ecs.o -MD -MP -MF $depbase.Tpo -c -o ecs.o ecs.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo filter.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT filter.o -MD -MP -MF $depbase.Tpo -c -o filter.o filter.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo gen.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT gen.o -MD -MP -MF $depbase.Tpo -c -o gen.o gen.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT main.o -MD -MP -MF $depbase.Tpo -c -o main.o main.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo misc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT misc.o -MD -MP -MF $depbase.Tpo -c -o misc.o misc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo nfa.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT nfa.o -MD -MP -MF $depbase.Tpo -c -o nfa.o nfa.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo options.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT options.o -MD -MP -MF $depbase.Tpo -c -o options.o options.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo parse.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT parse.o -MD -MP -MF $depbase.Tpo -c -o parse.o parse.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo regex.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT regex.o -MD -MP -MF $depbase.Tpo -c -o regex.o regex.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo scanflags.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT scanflags.o -MD -MP -MF $depbase.Tpo -c -o scanflags.o scanflags.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo scanopt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT scanopt.o -MD -MP -MF $depbase.Tpo -c -o scanopt.o scanopt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ./mkskel.sh cpp . /usr/bin/m4 2.7.1 > cpp-flex.h.tmp
+/bin/sh ./chkskel.sh cpp-flex.h.tmp
+mv -f cpp-flex.h.tmp cpp-flex.h
+/bin/sh ./mkskel.sh c99 . /usr/bin/m4 2.7.1 > c99-flex.h.tmp
+/bin/sh ./chkskel.sh c99-flex.h.tmp
+mv -f c99-flex.h.tmp c99-flex.h
+/bin/sh ./mkskel.sh go . /usr/bin/m4 2.7.1 > go-flex.h.tmp
+/bin/sh ./chkskel.sh go-flex.h.tmp
+mv -f go-flex.h.tmp go-flex.h
+depbase=`echo sym.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT sym.o -MD -MP -MF $depbase.Tpo -c -o sym.o sym.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo tables.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT tables.o -MD -MP -MF $depbase.Tpo -c -o tables.o tables.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo tables_shared.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT tables_shared.o -MD -MP -MF $depbase.Tpo -c -o tables_shared.o tables_shared.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo tblcmp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT tblcmp.o -MD -MP -MF $depbase.Tpo -c -o tblcmp.o tblcmp.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo yylex.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT yylex.o -MD -MP -MF $depbase.Tpo -c -o yylex.o yylex.c &&\
+mv -f $depbase.Tpo $depbase.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-scan.o -MD -MP -MF .deps/stage1flex-scan.Tpo -c -o stage1flex-scan.o `test -f 'scan.c' || echo './'`scan.c
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-buf.o -MD -MP -MF .deps/stage1flex-buf.Tpo -c -o stage1flex-buf.o `test -f 'buf.c' || echo './'`buf.c
+mv -f .deps/stage1flex-buf.Tpo .deps/stage1flex-buf.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-ccl.o -MD -MP -MF .deps/stage1flex-ccl.Tpo -c -o stage1flex-ccl.o `test -f 'ccl.c' || echo './'`ccl.c
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-dfa.o -MD -MP -MF .deps/stage1flex-dfa.Tpo -c -o stage1flex-dfa.o `test -f 'dfa.c' || echo './'`dfa.c
+mv -f .deps/stage1flex-ccl.Tpo .deps/stage1flex-ccl.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-ecs.o -MD -MP -MF .deps/stage1flex-ecs.Tpo -c -o stage1flex-ecs.o `test -f 'ecs.c' || echo './'`ecs.c
+mv -f .deps/stage1flex-ecs.Tpo .deps/stage1flex-ecs.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-filter.o -MD -MP -MF .deps/stage1flex-filter.Tpo -c -o stage1flex-filter.o `test -f 'filter.c' || echo './'`filter.c
+mv -f .deps/stage1flex-filter.Tpo .deps/stage1flex-filter.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-gen.o -MD -MP -MF .deps/stage1flex-gen.Tpo -c -o stage1flex-gen.o `test -f 'gen.c' || echo './'`gen.c
+mv -f .deps/stage1flex-dfa.Tpo .deps/stage1flex-dfa.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-main.o -MD -MP -MF .deps/stage1flex-main.Tpo -c -o stage1flex-main.o `test -f 'main.c' || echo './'`main.c
+mv -f .deps/stage1flex-gen.Tpo .deps/stage1flex-gen.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-misc.o -MD -MP -MF .deps/stage1flex-misc.Tpo -c -o stage1flex-misc.o `test -f 'misc.c' || echo './'`misc.c
+mv -f .deps/stage1flex-main.Tpo .deps/stage1flex-main.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-nfa.o -MD -MP -MF .deps/stage1flex-nfa.Tpo -c -o stage1flex-nfa.o `test -f 'nfa.c' || echo './'`nfa.c
+mv -f .deps/stage1flex-misc.Tpo .deps/stage1flex-misc.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-options.o -MD -MP -MF .deps/stage1flex-options.Tpo -c -o stage1flex-options.o `test -f 'options.c' || echo './'`options.c
+mv -f .deps/stage1flex-nfa.Tpo .deps/stage1flex-nfa.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-parse.o -MD -MP -MF .deps/stage1flex-parse.Tpo -c -o stage1flex-parse.o `test -f 'parse.c' || echo './'`parse.c
+mv -f .deps/stage1flex-options.Tpo .deps/stage1flex-options.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-regex.o -MD -MP -MF .deps/stage1flex-regex.Tpo -c -o stage1flex-regex.o `test -f 'regex.c' || echo './'`regex.c
+mv -f .deps/stage1flex-regex.Tpo .deps/stage1flex-regex.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-scanflags.o -MD -MP -MF .deps/stage1flex-scanflags.Tpo -c -o stage1flex-scanflags.o `test -f 'scanflags.c' || echo './'`scanflags.c
+mv -f .deps/stage1flex-scanflags.Tpo .deps/stage1flex-scanflags.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-scanopt.o -MD -MP -MF .deps/stage1flex-scanopt.Tpo -c -o stage1flex-scanopt.o `test -f 'scanopt.c' || echo './'`scanopt.c
+mv -f .deps/stage1flex-scan.Tpo .deps/stage1flex-scan.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-skeletons.o -MD -MP -MF .deps/stage1flex-skeletons.Tpo -c -o stage1flex-skeletons.o `test -f 'skeletons.c' || echo './'`skeletons.c
+mv -f .deps/stage1flex-parse.Tpo .deps/stage1flex-parse.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-sym.o -MD -MP -MF .deps/stage1flex-sym.Tpo -c -o stage1flex-sym.o `test -f 'sym.c' || echo './'`sym.c
+mv -f .deps/stage1flex-scanopt.Tpo .deps/stage1flex-scanopt.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-tables.o -MD -MP -MF .deps/stage1flex-tables.Tpo -c -o stage1flex-tables.o `test -f 'tables.c' || echo './'`tables.c
+mv -f .deps/stage1flex-skeletons.Tpo .deps/stage1flex-skeletons.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-tables_shared.o -MD -MP -MF .deps/stage1flex-tables_shared.Tpo -c -o stage1flex-tables_shared.o `test -f 'tables_shared.c' || echo './'`tables_shared.c
+mv -f .deps/stage1flex-sym.Tpo .deps/stage1flex-sym.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-tblcmp.o -MD -MP -MF .deps/stage1flex-tblcmp.Tpo -c -o stage1flex-tblcmp.o `test -f 'tblcmp.c' || echo './'`tblcmp.c
+mv -f .deps/stage1flex-tables_shared.Tpo .deps/stage1flex-tables_shared.Po
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1flex-yylex.o -MD -MP -MF .deps/stage1flex-yylex.Tpo -c -o stage1flex-yylex.o `test -f 'yylex.c' || echo './'`yylex.c
+mv -f .deps/stage1flex-tables.Tpo .deps/stage1flex-tables.Po
+depbase=`echo libmain.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT libmain.lo -MD -MP -MF $depbase.Tpo -c -o libmain.lo libmain.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+mv -f .deps/stage1flex-yylex.Tpo .deps/stage1flex-yylex.Po
+depbase=`echo libyywrap.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT libyywrap.lo -MD -MP -MF $depbase.Tpo -c -o libyywrap.lo libyywrap.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DLOCALEDIR=\"/usr/share/locale\" -g -O2 -MT libmain.lo -MD -MP -MF .deps/libmain.Tpo -c libmain.c  -fPIC -DPIC -o .libs/libmain.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DLOCALEDIR=\"/usr/share/locale\" -g -O2 -MT libyywrap.lo -MD -MP -MF .deps/libyywrap.Tpo -c libyywrap.c  -fPIC -DPIC -o .libs/libyywrap.o
+depbase=`echo skeletons.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT skeletons.o -MD -MP -MF $depbase.Tpo -c -o skeletons.o skeletons.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -version-info 2:0:0  -o libfl.la -rpath /usr/lib libmain.lo libyywrap.lo  -lm 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libmain.o .libs/libyywrap.o   -lm  -g -O2   -Wl,-soname -Wl,libfl.so.2 -o .libs/libfl.so.2.0.0
+mv -f .deps/stage1flex-tblcmp.Tpo .deps/stage1flex-tblcmp.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o stage1flex stage1flex-scan.o stage1flex-buf.o stage1flex-ccl.o stage1flex-dfa.o stage1flex-ecs.o stage1flex-filter.o stage1flex-gen.o stage1flex-main.o stage1flex-misc.o stage1flex-nfa.o stage1flex-options.o stage1flex-parse.o stage1flex-regex.o stage1flex-scanflags.o stage1flex-scanopt.o stage1flex-skeletons.o stage1flex-sym.o stage1flex-tables.o stage1flex-tables_shared.o stage1flex-tblcmp.o stage1flex-yylex.o     -lm 
+libtool: link: (cd ".libs" && rm -f "libfl.so.2" && ln -s "libfl.so.2.0.0" "libfl.so.2")
+libtool: link: (cd ".libs" && rm -f "libfl.so" && ln -s "libfl.so.2.0.0" "libfl.so")
+libtool: link: ( cd ".libs" && rm -f "libfl.la" && ln -s "../libfl.la" "libfl.la" )
+libtool: link: gcc -g -O2 -o stage1flex stage1flex-scan.o stage1flex-buf.o stage1flex-ccl.o stage1flex-dfa.o stage1flex-ecs.o stage1flex-filter.o stage1flex-gen.o stage1flex-main.o stage1flex-misc.o stage1flex-nfa.o stage1flex-options.o stage1flex-parse.o stage1flex-regex.o stage1flex-scanflags.o stage1flex-scanopt.o stage1flex-skeletons.o stage1flex-sym.o stage1flex-tables.o stage1flex-tables_shared.o stage1flex-tblcmp.o stage1flex-yylex.o  -lm
+( cd . && /home/fusion809/lfs_packaging/flex/flex-2.7.1/src/stage1flex \
+    -o scan.c -t scan.l ) >stage1scan.c || \
+{ s=$?; rm -f stage1scan.c; exit $s; }
+depbase=`echo stage1scan.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/usr/share/locale\"   -g -O2 -MT stage1scan.o -MD -MP -MF $depbase.Tpo -c -o stage1scan.o stage1scan.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o flex buf.o ccl.o dfa.o ecs.o filter.o gen.o main.o misc.o nfa.o options.o parse.o regex.o scanflags.o scanopt.o skeletons.o sym.o tables.o tables_shared.o tblcmp.o yylex.o   stage1scan.o   -lm 
+libtool: link: gcc -g -O2 -o flex buf.o ccl.o dfa.o ecs.o filter.o gen.o main.o misc.o nfa.o options.o parse.o regex.o scanflags.o scanopt.o skeletons.o sym.o tables.o tables_shared.o tblcmp.o yylex.o stage1scan.o  -lm
+make[3]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/src'
+( cd . && /home/fusion809/lfs_packaging/flex/flex-2.7.1/src/flex \
+    -o scan.c -t scan.l ) >stage2scan.c
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/src'
+Comparing stage1scan.c and stage2scan.c
+Comparison successful.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/src'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/src'
+Making all in doc
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/doc'
+Making all in examples
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples'
+Making all in manual
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples/manual'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples/manual'
+Making all in fastwc
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples/fastwc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples/fastwc'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples'
+Making all in po
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/po'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/po'
+Making all in tests
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/tests'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/tests'
+Making all in tools
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/tools'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/tools'
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1'
+Making install in src
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/src'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/src'
+ /usr/bin/mkdir -p '/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libfl.la '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libfl.so.2.0.0 /usr/lib/libfl.so.2.0.0
+libtool: install: (cd /usr/lib && { ln -s -f libfl.so.2.0.0 libfl.so.2 || { rm -f libfl.so.2 && ln -s libfl.so.2.0.0 libfl.so.2; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libfl.so.2.0.0 libfl.so || { rm -f libfl.so && ln -s libfl.so.2.0.0 libfl.so; }; })
+libtool: install: /usr/bin/install -c .libs/libfl.lai /usr/lib/libfl.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c flex '/usr/bin'
+libtool: install: /usr/bin/install -c flex /usr/bin/flex
+ /usr/bin/mkdir -p '/usr/include'
+ /usr/bin/install -c -m 644 FlexLexer.h '/usr/include'
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libfl.pc '/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/src'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/src'
+Making install in doc
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/doc'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/info'
+ /usr/bin/install -c -m 644 ./flex.info ./flex.info-1 ./flex.info-2 '/usr/share/info'
+ install-info --info-dir='/usr/share/info' '/usr/share/info/flex.info'
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 flex.1 '/usr/share/man/man1'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/doc'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/doc'
+Making install in examples
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples'
+Making install in manual
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples/manual'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples/manual'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples/manual'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples/manual'
+Making install in fastwc
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples/fastwc'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples/fastwc'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples/fastwc'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples/fastwc'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/examples'
+Making install in po
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/po'
+installing bg.gmo as /usr/share/locale/bg/LC_MESSAGES/flex.mo
+installing ca.gmo as /usr/share/locale/ca/LC_MESSAGES/flex.mo
+installing da.gmo as /usr/share/locale/da/LC_MESSAGES/flex.mo
+installing de.gmo as /usr/share/locale/de/LC_MESSAGES/flex.mo
+installing en@boldquot.gmo as /usr/share/locale/en@boldquot/LC_MESSAGES/flex.mo
+installing en@quot.gmo as /usr/share/locale/en@quot/LC_MESSAGES/flex.mo
+installing eo.gmo as /usr/share/locale/eo/LC_MESSAGES/flex.mo
+installing es.gmo as /usr/share/locale/es/LC_MESSAGES/flex.mo
+installing fi.gmo as /usr/share/locale/fi/LC_MESSAGES/flex.mo
+installing fr.gmo as /usr/share/locale/fr/LC_MESSAGES/flex.mo
+installing ga.gmo as /usr/share/locale/ga/LC_MESSAGES/flex.mo
+installing hr.gmo as /usr/share/locale/hr/LC_MESSAGES/flex.mo
+installing ka.gmo as /usr/share/locale/ka/LC_MESSAGES/flex.mo
+installing ko.gmo as /usr/share/locale/ko/LC_MESSAGES/flex.mo
+installing lv.gmo as /usr/share/locale/lv/LC_MESSAGES/flex.mo
+installing nl.gmo as /usr/share/locale/nl/LC_MESSAGES/flex.mo
+installing pl.gmo as /usr/share/locale/pl/LC_MESSAGES/flex.mo
+installing pt.gmo as /usr/share/locale/pt/LC_MESSAGES/flex.mo
+installing pt_BR.gmo as /usr/share/locale/pt_BR/LC_MESSAGES/flex.mo
+installing ro.gmo as /usr/share/locale/ro/LC_MESSAGES/flex.mo
+installing ru.gmo as /usr/share/locale/ru/LC_MESSAGES/flex.mo
+installing sr.gmo as /usr/share/locale/sr/LC_MESSAGES/flex.mo
+installing sv.gmo as /usr/share/locale/sv/LC_MESSAGES/flex.mo
+installing tr.gmo as /usr/share/locale/tr/LC_MESSAGES/flex.mo
+installing uk.gmo as /usr/share/locale/uk/LC_MESSAGES/flex.mo
+installing vi.gmo as /usr/share/locale/vi/LC_MESSAGES/flex.mo
+installing zh_CN.gmo as /usr/share/locale/zh_CN/LC_MESSAGES/flex.mo
+installing zh_TW.gmo as /usr/share/locale/zh_TW/LC_MESSAGES/flex.mo
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/po'
+Making install in tests
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/tests'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/tests'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/tests'
+Making install in tools
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/tools'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/tools'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/tools'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1/tools'
+make[1]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1'
+make  install-exec-hook
+make[3]: Entering directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1'
+cd /usr/bin && \
+	ln -s -f flex flex++
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1'
+ /usr/bin/mkdir -p '/usr/share/doc/flex-2.7.1'
+ /usr/bin/install -c -m 644 AUTHORS COPYING NEWS ONEWS README.md '/usr/share/doc/flex-2.7.1'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/flex/flex-2.7.1'
+2.7.1
+Updated registry for flex to version 2.7.1
+[VERSION] flex: 2.7.1
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package flex in /var/lib/custom-packages/
+Building custom package fontconfig...
+[03:57:19] Found custom package for fontconfig, bypassing BLFS aliases.
+[03:57:19] Custom package detected at /home/fusion809/lfs_packaging/fontconfig (package: fontconfig)
+[03:57:19] Extracting dependencies for custom package 'fontconfig'...
+[03:57:19] Required deps: brotli bzip2 expat freetype glibc libpng zlib 
+[03:57:19] Dependency 'brotli' already installed.
+[03:57:19] Dependency 'bzip2' already installed.
+[03:57:19] Dependency 'expat' already installed.
+[03:57:19] Dependency 'freetype' already installed.
+[03:57:19] Dependency 'glibc' already installed.
+[03:57:19] Dependency 'libpng' already installed.
+[03:57:19] Dependency 'zlib' already installed.
+[VERSION] fontconfig: 2.18.4
+[03:57:22] Installing fontconfig version: 2.18.4
+[03:57:22] Starting remote custom build for fontconfig...
+--2026-11-19 03:57:28--  https://gitlab.freedesktop.org/api/v4/projects/890/packages/generic/fontconfig/2.18.4/fontconfig-2.18.4.tar.xz
+Resolving gitlab.freedesktop.org (gitlab.freedesktop.org)... 151.101.3.52, 151.101.195.52, 151.101.67.52, ...
+Connecting to gitlab.freedesktop.org (gitlab.freedesktop.org)|151.101.3.52|:443... connected.
+HTTP request sent, awaiting response... 302 
+Location: https://fsn1.your-objectstorage.com/fdo-gitlab-packages/e6/f0/e6f095e985e6762f1538b47ff1abda58dbe8ce088b16d8a5744fc179e9a2fc16/%40final/75/87/d95d4d556fb47f2b76499b13fadac186e674b046ed5c3f52a9ed6da8160d?response-content-disposition=attachment%3B%20filename%3D%22fontconfig-2.18.4.tar.xz%22%3B%20filename%2A%3DUTF-8%27%27fontconfig-2.18.4.tar.xz&response-content-type=application%2Fx-xz&X-Amz-Expires=600&X-Amz-Date=20261118T175731Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=HUZAP6VQ6FOSXT1W3SLF%2F20261118%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=773e460f91808a34780ccebbb454fa3f93447cf93d73144b1d9931b2c2c9b237 [following]
+--2026-11-19 03:57:30--  https://fsn1.your-objectstorage.com/fdo-gitlab-packages/e6/f0/e6f095e985e6762f1538b47ff1abda58dbe8ce088b16d8a5744fc179e9a2fc16/%40final/75/87/d95d4d556fb47f2b76499b13fadac186e674b046ed5c3f52a9ed6da8160d?response-content-disposition=attachment%3B%20filename%3D%22fontconfig-2.18.4.tar.xz%22%3B%20filename%2A%3DUTF-8%27%27fontconfig-2.18.4.tar.xz&response-content-type=application%2Fx-xz&X-Amz-Expires=600&X-Amz-Date=20261118T175731Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=HUZAP6VQ6FOSXT1W3SLF%2F20261118%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=773e460f91808a34780ccebbb454fa3f93447cf93d73144b1d9931b2c2c9b237
+Resolving fsn1.your-objectstorage.com (fsn1.your-objectstorage.com)... 88.198.120.64, 2a01:4f8:b001::1
+Connecting to fsn1.your-objectstorage.com (fsn1.your-objectstorage.com)|88.198.120.64|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1178564 (1.1M) [application/x-xz]
+Saving to: ‘fontconfig-2.18.4.tar.xz’
+
+fontconfig-2.18.4.t   0%[                    ]       0  --.-KB/s               fontconfig-2.18.4.t   2%[                    ]  29.36K  98.1KB/s               fontconfig-2.18.4.t   5%[>                   ]  59.23K   109KB/s               fontconfig-2.18.4.t   9%[>                   ] 105.05K   129KB/s               fontconfig-2.18.4.t  15%[==>                 ] 180.75K   175KB/s               fontconfig-2.18.4.t  24%[===>                ] 286.33K   229KB/s               fontconfig-2.18.4.t  40%[=======>            ] 466.58K   319KB/s               fontconfig-2.18.4.t  62%[===========>        ] 721.54K   433KB/s               fontconfig-2.18.4.t  99%[==================> ]   1.11M   610KB/s               fontconfig-2.18.4.t 100%[===================>]   1.12M   614KB/s    in 1.9s    
+
+2026-11-19 03:57:34 (614 KB/s) - ‘fontconfig-2.18.4.tar.xz’ saved [1178564/1178564]
+
+configure found
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '97' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C23 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/param.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for gcc option to support large files... none needed
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for a Python interpreter with version >= 3... python
+checking for python... /usr/bin/python
+checking for python version... 3.15
+checking for python platform... linux
+checking for GNU default python prefix... ${prefix}
+checking for GNU default python exec_prefix... ${exec_prefix}
+checking for python script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.15/site-packages
+checking for python extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.15/site-packages
+checking for RM macro... rm -f
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by gcc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking how to run the C preprocessor... gcc -E
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for gcc options to detect undeclared functions... none needed
+checking for gcc options to ignore future-version functions... none needed
+checking whether __SUNPRO_C is declared... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for egrep... (cached) /usr/bin/grep -E
+checking for dirent.h... yes
+checking for fcntl.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/statvfs.h... yes
+checking for sys/vfs.h... yes
+checking for sys/statfs.h... yes
+checking for sys/param.h... (cached) yes
+checking for sys/mount.h... yes
+checking for stdint types... stdint.h (shortcircuit)
+make use of stdint.h in src/fcstdint.h (assuming C99 compatible system)
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for flexible array members... yes
+checking for pid_t... yes
+./configure: line 19613: AX_FUNC_SNPRINTF: command not found
+checking for vprintf... yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking for link... yes
+checking for symlink... yes
+checking for mkstemp... yes
+checking for _mktemp_s... no
+checking for mkdtemp... yes
+checking for getopt... yes
+checking for getopt_long... yes
+checking for getprogname... no
+checking for getexecname... no
+checking for rand... yes
+checking for random... yes
+checking for lrand48... yes
+checking for random_r... yes
+checking for rand_r... yes
+checking for readlink... yes
+checking for fstatvfs... yes
+checking for fstatfs... yes
+checking for lstat... yes
+checking for strerror... yes
+checking for strerror_r... yes
+checking for strdup... yes
+checking for vasprintf... yes
+checking for uselocale... yes
+checking whether mkostemp is declared... yes
+checking for library containing fabs... -lm
+checking for posix_fadvise in fcntl.h... fcntl.h
+checking for struct stat.st_mtim... yes
+checking for struct statvfs.f_basetype... no
+checking for struct statvfs.f_fstypename... no
+checking for struct statfs.f_flags... yes
+checking for struct statfs.f_fstypename... no
+checking for struct dirent.d_type... yes
+checking The type of len parameter of gperf hash/lookup function... size_t
+checking for va_copy() function... yes
+checking Whether vsnprintf is C99-compliant... yes
+checking for FREETYPE... yes
+checking for FT_Get_BDF_Property... yes
+checking for FT_Get_PS_Font_Info... yes
+checking for FT_Has_PS_Glyph_Names... yes
+checking for FT_Get_X11_Font_Format... yes
+checking for FT_Done_MM_Var... yes
+checking for EXPAT... yes
+checking for expat.h... yes
+checking for XML_SetDoctypeDeclHandler... yes
+checking for JSONC... yes
+checking stdatomic.h atomic primitives... true
+checking for Intel atomic primitives... true
+checking for Solaris atomic operations... false
+checking if compiler needs -Werror to reject unknown flags... no
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+checking for docbook2html... no
+checking whether byte ordering is bigendian... no
+checking size of void *... 8
+checking alignment of double... 8
+checking alignment of void *... 8
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating fontconfig/Makefile
+config.status: creating fc-lang/Makefile
+config.status: creating fc-case/Makefile
+config.status: creating src/Makefile
+config.status: creating conf.d/Makefile
+config.status: creating fc-cache/Makefile
+config.status: creating fc-cat/Makefile
+config.status: creating fc-conflist/Makefile
+config.status: creating fc-const/Makefile
+config.status: creating fc-genconf/Makefile
+config.status: creating fc-genericfamily/Makefile
+config.status: creating fc-list/Makefile
+config.status: creating fc-match/Makefile
+config.status: creating fc-pattern/Makefile
+config.status: creating fc-query/Makefile
+config.status: creating fc-scan/Makefile
+config.status: creating fc-validate/Makefile
+config.status: creating fontconfig/fontconfig.h
+config.status: creating doc/Makefile
+config.status: creating doc/cache-version.sgml
+config.status: creating doc/version.sgml
+config.status: creating its/Makefile
+config.status: creating po/Makefile.in
+config.status: creating po-conf/Makefile.in
+config.status: creating test/Makefile
+config.status: creating fontconfig.pc
+config.status: creating fontconfig-zip
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: creating po-conf/POTFILES
+config.status: creating po-conf/Makefile
+config.status: executing src/fcstdint.h commands
+config.status: creating src/fcstdint.h : _FONTCONFIG_SRC_FCSTDINT_H
+  GEN      .gitignore
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/doc'
+  GEN      .gitignore
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/doc'
+make  all-recursive
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4'
+Making all in fontconfig
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fontconfig'
+  GEN      .gitignore
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fontconfig'
+Making all in fc-case
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-case'
+  GEN      fcaliastail.h
+  GEN      .gitignore
+  GEN      fcalias.h
+make  all-am
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-case'
+  GEN      fccase.h
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-case'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-case'
+Making all in fc-lang
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-lang'
+  GEN      fcaliastail.h
+  GEN      fcalias.h
+  GEN      ../conf.d/35-lang-normalize.conf
+  GEN      .gitignore
+make  all-am
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-lang'
+  GEN      fclang.h
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-lang'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-lang'
+Making all in fc-const
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-const'
+  GEN      fcconst.h
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-const'
+Making all in fc-genericfamily
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-genericfamily'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-genericfamily'
+  GEN      stamp-fcgenericfamily.gperf
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-genericfamily'
+  GEN      fcgenericfamily.h
+make  all-am
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-genericfamily'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-genericfamily'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-genericfamily'
+Making all in src
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/src'
+  GEN      fcftalias.h
+  GEN      fcalias.h
+  GEN      stamp-fcstdint
+  GEN      stamp-fcobjshash.gperf
+  GEN      .gitignore
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/src'
+  GEN      stamp-fcobjshash.gperf
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/src'
+  GEN      fcobjshash.h
+config.status: executing src/fcstdint.h commands
+config.status: creating src/fcstdint.h : _FONTCONFIG_SRC_FCSTDINT_H
+config.status: src/fcstdint.h is unchanged
+make  all-am
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/src'
+  CC       fccache.lo
+  CC       fcatomic.lo
+  CC       fcarch.o
+  CC       fccfg.lo
+  CC       fccharset.lo
+  CC       fccompat.lo
+  CC       fcdbg.lo
+  CC       fcdefault.lo
+  CC       fcdir.lo
+  CC       fcformat.lo
+  CC       fcfreetype.lo
+  CC       fcfs.lo
+  CC       fcgenericalias.lo
+  CC       fcptrlist.lo
+  CC       fchash.lo
+  CC       fcinit.lo
+  CC       fclang.lo
+  CC       fclist.lo
+  CC       fcmatch.lo
+  CC       fcmatrix.lo
+  CC       fcname.lo
+  CC       fcobjs.lo
+  CC       fcpat.lo
+  CC       fcrange.lo
+  CC       fcserialize.lo
+  CC       fcstat.lo
+  CC       fcstr.lo
+  CC       fcweight.lo
+  CC       fcxml.lo
+  CC       ftglue.lo
+fcxml.c: In function 'FcConfigMessage':
+fcxml.c:733:22: warning: 'XML_GetCurrentLineNumber' is deprecated: please use XML_GetCurrentLineNumber64 instead [-Wdeprecated-declarations]
+  733 |                      parse->name, (int)XML_GetCurrentLineNumber (parse->parser));
+      |                      ^~~~~
+In file included from fcxml.c:55:
+/usr/include/expat.h:966:23: note: declared here
+  966 | XMLPARSEAPI(XML_Size) XML_GetCurrentLineNumber(XML_Parser parser);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~
+fcxml.c:736:22: warning: 'XML_GetCurrentLineNumber' is deprecated: please use XML_GetCurrentLineNumber64 instead [-Wdeprecated-declarations]
+  736 |                      (int)XML_GetCurrentLineNumber (parse->parser));
+      |                      ^
+/usr/include/expat.h:966:23: note: declared here
+  966 | XMLPARSEAPI(XML_Size) XML_GetCurrentLineNumber(XML_Parser parser);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD     fcarch
+  CCLD     libfontconfig.la
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/src'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/src'
+Making all in fc-cache
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-cache'
+  CC       fc-cache.o
+  GEN      .gitignore
+  CCLD     fc-cache
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-cache'
+Making all in fc-cat
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-cat'
+  CC       fc-cat.o
+  GEN      .gitignore
+  CCLD     fc-cat
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-cat'
+Making all in fc-conflist
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-conflist'
+  CC       fc-conflist.o
+  GEN      .gitignore
+  CCLD     fc-conflist
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-conflist'
+Making all in fc-list
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-list'
+  GEN      .gitignore
+  CC       fc-list.o
+  CCLD     fc-list
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-list'
+Making all in fc-match
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-match'
+  GEN      .gitignore
+  CC       fc-match.o
+  CCLD     fc-match
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-match'
+Making all in fc-pattern
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-pattern'
+  GEN      .gitignore
+  CC       fc-pattern.o
+  CCLD     fc-pattern
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-pattern'
+Making all in fc-query
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-query'
+  CC       fc-query.o
+  GEN      .gitignore
+  CCLD     fc-query
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-query'
+Making all in fc-scan
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-scan'
+  GEN      .gitignore
+  CC       fc-scan.o
+  CCLD     fc-scan
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-scan'
+Making all in fc-validate
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-validate'
+  GEN      .gitignore
+  CC       fc-validate.o
+  CCLD     fc-validate
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-validate'
+Making all in conf.d
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/conf.d'
+sed "s|\@TEMPLATEDIR\@|/usr/share/fontconfig/conf.avail|" README.in > README
+  GEN      .gitignore
+make  all-am
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/conf.d'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/conf.d'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/conf.d'
+Making all in its
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/its'
+  GEN      .gitignore
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/its'
+Making all in po
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po'
+make fontconfig.pot-update
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po'
+sed -e '/^#/d' remove-potcdate.sin > t-remove-potcdate.sed
+mv t-remove-potcdate.sed remove-potcdate.sed
+package_gnu="no"; \
+test -n "$package_gnu" || { \
+  if { if (LC_ALL=C find --version) 2>/dev/null | grep GNU >/dev/null; then \
+	 LC_ALL=C find -L .. -maxdepth 1 -type f \
+		       -size -10000000c -exec grep 'GNU fontconfig' \
+		       /dev/null '{}' ';' 2>/dev/null; \
+       else \
+	 LC_ALL=C grep 'GNU fontconfig' ../* 2>/dev/null; \
+       fi; \
+     } | grep -v 'libtool:' >/dev/null; then \
+     package_gnu=yes; \
+   else \
+     package_gnu=no; \
+   fi; \
+}; \
+if test "$package_gnu" = "yes"; then \
+  package_prefix='GNU '; \
+else \
+  package_prefix=''; \
+fi; \
+if test -n 'https://gitlab.freedesktop.org/fontconfig/fontconfig/issues/new' || test 'https://gitlab.freedesktop.org/fontconfig/fontconfig/issues/new' = '@'PACKAGE_BUGREPORT'@'; then \
+  msgid_bugs_address='https://gitlab.freedesktop.org/fontconfig/fontconfig/issues/new'; \
+else \
+  msgid_bugs_address='https://gitlab.freedesktop.org/fontconfig/fontconfig/issues/new'; \
+fi; \
+case `/usr/bin/xgettext --version | sed 1q | sed -e 's,^[^0-9]*,,'` in \
+  '' | 0.[0-9] | 0.[0-9].* | 0.1[0-5] | 0.1[0-5].* | 0.16 | 0.16.[0-1]*) \
+    /usr/bin/xgettext --default-domain=fontconfig --directory=.. \
+      --add-comments=TRANSLATORS: --keyword=_ --keyword=N_  \
+      --files-from=./POTFILES.in \
+      --copyright-holder='Fontconfig Author(s)' \
+      --msgid-bugs-address="$msgid_bugs_address" \
+    ;; \
+  *) \
+    /usr/bin/xgettext --default-domain=fontconfig --directory=.. \
+      --add-comments=TRANSLATORS: --keyword=_ --keyword=N_  \
+      --files-from=./POTFILES.in \
+      --copyright-holder='Fontconfig Author(s)' \
+      --package-name="${package_prefix}fontconfig" \
+      --package-version='2.18.4' \
+      --msgid-bugs-address="$msgid_bugs_address" \
+    ;; \
+esac
+test ! -f fontconfig.po || { \
+  if test -f ./fontconfig.pot-header; then \
+    sed -e '1,/^#$/d' < fontconfig.po > fontconfig.1po && \
+    cat ./fontconfig.pot-header fontconfig.1po > fontconfig.po; \
+    rm -f fontconfig.1po; \
+  fi; \
+  if test -f ./fontconfig.pot; then \
+    sed -f remove-potcdate.sed < ./fontconfig.pot > fontconfig.1po && \
+    sed -f remove-potcdate.sed < fontconfig.po > fontconfig.2po && \
+    if cmp fontconfig.1po fontconfig.2po >/dev/null 2>&1; then \
+      rm -f fontconfig.1po fontconfig.2po fontconfig.po; \
+    else \
+      rm -f fontconfig.1po fontconfig.2po ./fontconfig.pot && \
+      mv fontconfig.po ./fontconfig.pot; \
+    fi; \
+  else \
+    mv fontconfig.po ./fontconfig.pot; \
+  fi; \
+}
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po'
+test ! -f ./fontconfig.pot || \
+  test -z "ka.gmo zh_CN.gmo" || make ka.gmo zh_CN.gmo
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po'
+/usr/bin/msgmerge --update  --lang=ka ka.po fontconfig.pot
+/usr/bin/msgmerge --update  --lang=zh_CN zh_CN.po fontconfig.pot
+.............. done.
+....................... done.
+rm -f ka.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ka.gmo ka.po
+rm -f zh_CN.gmo && /usr/bin/msgfmt -c --statistics --verbose -o zh_CN.gmo zh_CN.po
+ka.po: 112 translated messages, 1 fuzzy translation.
+zh_CN.po: 103 translated messages, 10 fuzzy translations.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po'
+touch stamp-po
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po'
+Making all in po-conf
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po-conf'
+make fontconfig-conf.pot-update
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po-conf'
+sed -e '/^#/d' remove-potcdate.sin > t-remove-potcdate.sed
+mv t-remove-potcdate.sed remove-potcdate.sed
+package_gnu="no"; \
+test -n "$package_gnu" || { \
+  if { if (LC_ALL=C find --version) 2>/dev/null | grep GNU >/dev/null; then \
+	 LC_ALL=C find -L .. -maxdepth 1 -type f \
+		       -size -10000000c -exec grep 'GNU fontconfig' \
+		       /dev/null '{}' ';' 2>/dev/null; \
+       else \
+	 LC_ALL=C grep 'GNU fontconfig' ../* 2>/dev/null; \
+       fi; \
+     } | grep -v 'libtool:' >/dev/null; then \
+     package_gnu=yes; \
+   else \
+     package_gnu=no; \
+   fi; \
+}; \
+if test "$package_gnu" = "yes"; then \
+  package_prefix='GNU '; \
+else \
+  package_prefix=''; \
+fi; \
+if test -n 'https://gitlab.freedesktop.org/fontconfig/fontconfig/issues/new' || test 'https://gitlab.freedesktop.org/fontconfig/fontconfig/issues/new' = '@'PACKAGE_BUGREPORT'@'; then \
+  msgid_bugs_address='https://gitlab.freedesktop.org/fontconfig/fontconfig/issues/new'; \
+else \
+  msgid_bugs_address='https://gitlab.freedesktop.org/fontconfig/fontconfig/issues/new'; \
+fi; \
+case `/usr/bin/xgettext --version | sed 1q | sed -e 's,^[^0-9]*,,'` in \
+  '' | 0.[0-9] | 0.[0-9].* | 0.1[0-5] | 0.1[0-5].* | 0.16 | 0.16.[0-1]*) \
+    /usr/bin/xgettext --default-domain=fontconfig-conf --directory=.. \
+      --add-comments=TRANSLATORS: --keyword=_ --keyword=N_  \
+      --files-from=./POTFILES.in \
+      --copyright-holder='Fontconfig Author(s)' \
+      --msgid-bugs-address="$msgid_bugs_address" \
+    ;; \
+  *) \
+    /usr/bin/xgettext --default-domain=fontconfig-conf --directory=.. \
+      --add-comments=TRANSLATORS: --keyword=_ --keyword=N_  \
+      --files-from=./POTFILES.in \
+      --copyright-holder='Fontconfig Author(s)' \
+      --package-name="${package_prefix}fontconfig" \
+      --package-version='2.18.4' \
+      --msgid-bugs-address="$msgid_bugs_address" \
+    ;; \
+esac
+test ! -f fontconfig-conf.po || { \
+  if test -f ./fontconfig-conf.pot-header; then \
+    sed -e '1,/^#$/d' < fontconfig-conf.po > fontconfig-conf.1po && \
+    cat ./fontconfig-conf.pot-header fontconfig-conf.1po > fontconfig-conf.po; \
+    rm -f fontconfig-conf.1po; \
+  fi; \
+  if test -f ./fontconfig-conf.pot; then \
+    sed -f remove-potcdate.sed < ./fontconfig-conf.pot > fontconfig-conf.1po && \
+    sed -f remove-potcdate.sed < fontconfig-conf.po > fontconfig-conf.2po && \
+    if cmp fontconfig-conf.1po fontconfig-conf.2po >/dev/null 2>&1; then \
+      rm -f fontconfig-conf.1po fontconfig-conf.2po fontconfig-conf.po; \
+    else \
+      rm -f fontconfig-conf.1po fontconfig-conf.2po ./fontconfig-conf.pot && \
+      mv fontconfig-conf.po ./fontconfig-conf.pot; \
+    fi; \
+  else \
+    mv fontconfig-conf.po ./fontconfig-conf.pot; \
+  fi; \
+}
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po-conf'
+test ! -f ./fontconfig-conf.pot || \
+  test -z "ka.gmo zh_CN.gmo" || make ka.gmo zh_CN.gmo
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po-conf'
+/usr/bin/msgmerge --update  --lang=ka ka.po fontconfig-conf.pot
+/usr/bin/msgmerge --update  --lang=zh_CN zh_CN.po fontconfig-conf.pot
+............. done.
+.... done.
+rm -f ka.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ka.gmo ka.po
+rm -f zh_CN.gmo && /usr/bin/msgfmt -c --statistics --verbose -o zh_CN.gmo zh_CN.po
+zh_CN.po: 28 translated messages, 3 fuzzy translations, 2 untranslated messages.
+ka.po: 28 translated messages, 3 fuzzy translations, 2 untranslated messages.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po-conf'
+touch stamp-po
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po-conf'
+Making all in test
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/test'
+cp ./out.expected-no-long-family-names ./out.expected
+  GEN      .gitignore
+make  all-am
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/test'
+  CC       test-crbug1004254.o
+  CC       test-pthread.o
+  CC       test_bz89617-test-bz89617.o
+  CC       test-bz131804.o
+  CC       test-migration.o
+  CC       test-bz96676.o
+  CC       test-name-parse.o
+  CC       test_conf-test-conf.o
+  CC       test_bz106632-test-bz106632.o
+  CC       test-bz106618.o
+  CC       test-issue107.o
+  CC       test-bz1744377.o
+  CC       test-issue180.o
+  CC       test-family-matching.o
+  CC       test-filter.o
+  CCLD     test-pthread
+  CCLD     test-crbug1004254
+  CCLD     test-bz89617
+  CCLD     test-bz131804
+  CCLD     test-migration
+  CCLD     test-bz96676
+  CCLD     test-conf
+  CCLD     test-name-parse
+  CCLD     test-bz106618
+  CCLD     test-bz106632
+  CCLD     test-issue107
+  CCLD     test-issue180
+  CCLD     test-bz1744377
+  CCLD     test-family-matching
+  CCLD     test-filter
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/test'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/test'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4'
+Making install in fontconfig
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fontconfig'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fontconfig'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/include/fontconfig'
+ /usr/bin/install -c -m 644 fontconfig.h fcfreetype.h fcprivate.h '/usr/include/fontconfig'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fontconfig'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fontconfig'
+Making install in fc-case
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-case'
+make  install-am
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-case'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-case'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-case'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-case'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-case'
+Making install in fc-lang
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-lang'
+make  install-am
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-lang'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-lang'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-lang'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-lang'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-lang'
+Making install in fc-const
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-const'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-const'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-const'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-const'
+Making install in fc-genericfamily
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-genericfamily'
+make  install-am
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-genericfamily'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-genericfamily'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-genericfamily'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-genericfamily'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-genericfamily'
+Making install in src
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/src'
+make  install-am
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/src'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/src'
+ /usr/bin/mkdir -p '/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libfontconfig.la '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libfontconfig.so.1.16.1 /usr/lib/libfontconfig.so.1.16.1
+libtool: install: (cd /usr/lib && { ln -s -f libfontconfig.so.1.16.1 libfontconfig.so.1 || { rm -f libfontconfig.so.1 && ln -s libfontconfig.so.1.16.1 libfontconfig.so.1; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libfontconfig.so.1.16.1 libfontconfig.so || { rm -f libfontconfig.so && ln -s libfontconfig.so.1.16.1 libfontconfig.so; }; })
+libtool: install: /usr/bin/install -c .libs/libfontconfig.lai /usr/lib/libfontconfig.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/src'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/src'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/src'
+Making install in fc-cache
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-cache'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-cache'
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-cache '/usr/bin'
+libtool: install: /usr/bin/install -c .libs/fc-cache /usr/bin/fc-cache
+/bin/sh /home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/install-sh -d "/var/cache/fontconfig"
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-cache'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-cache'
+Making install in fc-cat
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-cat'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-cat'
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-cat '/usr/bin'
+libtool: install: /usr/bin/install -c .libs/fc-cat /usr/bin/fc-cat
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-cat'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-cat'
+Making install in fc-conflist
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-conflist'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-conflist'
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-conflist '/usr/bin'
+libtool: install: /usr/bin/install -c .libs/fc-conflist /usr/bin/fc-conflist
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-conflist'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-conflist'
+Making install in fc-list
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-list'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-list'
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-list '/usr/bin'
+libtool: install: /usr/bin/install -c .libs/fc-list /usr/bin/fc-list
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-list'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-list'
+Making install in fc-match
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-match'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-match'
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-match '/usr/bin'
+libtool: install: /usr/bin/install -c .libs/fc-match /usr/bin/fc-match
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-match'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-match'
+Making install in fc-pattern
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-pattern'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-pattern'
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-pattern '/usr/bin'
+libtool: install: /usr/bin/install -c .libs/fc-pattern /usr/bin/fc-pattern
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-pattern'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-pattern'
+Making install in fc-query
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-query'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-query'
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-query '/usr/bin'
+libtool: install: /usr/bin/install -c .libs/fc-query /usr/bin/fc-query
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-query'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-query'
+Making install in fc-scan
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-scan'
+  CCLD     fc-scan
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-scan'
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-scan '/usr/bin'
+libtool: install: /usr/bin/install -c .libs/fc-scan /usr/bin/fc-scan
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-scan'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-scan'
+Making install in fc-validate
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-validate'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-validate'
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-validate '/usr/bin'
+libtool: install: /usr/bin/install -c .libs/fc-validate /usr/bin/fc-validate
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-validate'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-validate'
+Making install in conf.d
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/conf.d'
+make  install-am
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/conf.d'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/conf.d'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/etc/fonts/conf.d'
+ /usr/bin/install -c -m 644 README '/etc/fonts/conf.d'
+ /usr/bin/mkdir -p '/usr/share/fontconfig/conf.avail'
+ /usr/bin/install -c -m 644 05-reset-dirs-sample.conf 09-autohint-if-no-hinting.conf 10-autohint.conf 10-hinting-full.conf 10-hinting-medium.conf 10-hinting-none.conf 10-hinting-slight.conf 10-no-antialias.conf 10-scale-bitmap-fonts.conf 10-sub-pixel-bgr.conf 10-sub-pixel-none.conf 10-sub-pixel-rgb.conf 10-sub-pixel-vbgr.conf 10-sub-pixel-vrgb.conf 10-unhinted.conf 10-yes-antialias.conf 11-lcdfilter-default.conf 11-lcdfilter-legacy.conf 11-lcdfilter-light.conf 11-lcdfilter-none.conf 20-unhint-small-vera.conf 25-unhint-nonlatin.conf 30-metric-aliases.conf 35-lang-normalize.conf 40-nonlatin.conf 45-generic.conf 45-latin.conf 48-guessfamily.conf 48-spacing.conf 49-sansserif.conf 50-user.conf 51-local.conf 60-generic.conf 60-latin.conf 65-fonts-persian.conf 65-khmer.conf 65-nonlatin.conf 69-unifont.conf 70-no-bitmaps.conf 70-no-bitmaps-and-emoji.conf '/usr/share/fontconfig/conf.avail'
+ /usr/bin/install -c -m 644 70-no-bitmaps-except-emoji.conf 70-yes-bitmaps.conf 80-delicious.conf 90-synthetic.conf '/usr/share/fontconfig/conf.avail'
+make  install-data-hook
+make[4]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/conf.d'
+/usr/bin/python ./link_confs.py /usr/share/fontconfig/conf.avail /etc/fonts/conf.d 10-hinting-slight.conf 10-scale-bitmap-fonts.conf 10-yes-antialias.conf 10-sub-pixel-none.conf 11-lcdfilter-default.conf 20-unhint-small-vera.conf 30-metric-aliases.conf 40-nonlatin.conf 45-generic.conf 45-latin.conf 48-guessfamily.conf 48-spacing.conf 49-sansserif.conf 50-user.conf 51-local.conf 60-generic.conf 60-latin.conf 65-fonts-persian.conf 65-nonlatin.conf 69-unifont.conf 80-delicious.conf 90-synthetic.conf 70-no-bitmaps-except-emoji.conf 
+make[4]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/conf.d'
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/conf.d'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/conf.d'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/conf.d'
+Making install in its
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/its'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/its'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/gettext/its'
+ /usr/bin/install -c -m 644 fontconfig.its fontconfig.loc '/usr/share/gettext/its'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/its'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/its'
+Making install in po
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po'
+installing ka.gmo as /usr/share/locale/ka/LC_MESSAGES/fontconfig.mo
+installing zh_CN.gmo as /usr/share/locale/zh_CN/LC_MESSAGES/fontconfig.mo
+if test "fontconfig" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po'
+Making install in po-conf
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po-conf'
+installing ka.gmo as /usr/share/locale/ka/LC_MESSAGES/fontconfig-conf.mo
+installing zh_CN.gmo as /usr/share/locale/zh_CN/LC_MESSAGES/fontconfig-conf.mo
+if test "fontconfig" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/po-conf'
+Making install in test
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/test'
+make  install-am
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/test'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/test'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/test'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/test'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/test'
+make[1]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4'
+make[2]: Nothing to be done for 'install-exec-am'.
+sed \
+	-e 's,@FC_CACHEDIR\@,/var/cache/fontconfig,g' \
+	-e 's,@FC_DEFAULT_FONTS\@,	<dir>/usr/share/fonts</dir>,g' \
+	-e 's,@FC_FONTPATH\@,,g' \
+	-e 's,@CONFIGDIR\@,conf.d,g' \
+	-e 's,@PACKAGE\@,fontconfig,g' \
+	-e 's,@VERSION\@,2.18.4,g' \
+	./fonts.conf.in > fonts.conf.tmp && \
+mv fonts.conf.tmp fonts.conf
+/bin/sh /home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/install-sh -d /etc/fonts /var/cache/fontconfig
+if [ -f /etc/fonts/fonts.conf ]; then \
+  echo "backing up existing /etc/fonts/fonts.conf"; \
+  mv /etc/fonts/fonts.conf /etc/fonts/fonts.conf.bak; \
+fi
+backing up existing /etc/fonts/fonts.conf
+if [ -f ./fonts.conf ]; then \
+  echo " /usr/bin/install -c -m 644 ./fonts.conf /etc/fonts/fonts.conf"; \
+  /usr/bin/install -c -m 644 ./fonts.conf /etc/fonts/fonts.conf; \
+else if [ -f fonts.conf ]; then \
+  echo " /usr/bin/install -c -m 644 fonts.conf /etc/fonts/fonts.conf"; \
+  /usr/bin/install -c -m 644 fonts.conf /etc/fonts/fonts.conf; \
+fi; fi
+ /usr/bin/install -c -m 644 ./fonts.conf /etc/fonts/fonts.conf
+fc-cache -s -f -v
+Font directories:
+	/usr/share/fonts
+	/usr/share/fonts/X11
+	/usr/share/fonts/X11-OTF
+	/usr/share/fonts/X11-TTF
+	/usr/share/fonts/X11/100dpi
+	/usr/share/fonts/X11/75dpi
+	/usr/share/fonts/X11/OTF
+	/usr/share/fonts/X11/TTF
+	/usr/share/fonts/X11/Type1
+	/usr/share/fonts/X11/cyrillic
+	/usr/share/fonts/X11/encodings
+	/usr/share/fonts/X11/misc
+	/usr/share/fonts/X11/util
+	/usr/share/fonts/X11/encodings/large
+/usr/share/fonts: caching, new cache contents: 0 fonts, 3 dirs
+/usr/share/fonts/X11: caching, new cache contents: 0 fonts, 9 dirs
+/usr/share/fonts/X11/100dpi: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/X11/75dpi: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/X11/OTF: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/X11/TTF: caching, new cache contents: 13 fonts, 0 dirs
+/usr/share/fonts/X11/Type1: caching, new cache contents: 21 fonts, 0 dirs
+/usr/share/fonts/X11/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/X11/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/X11/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/X11/misc: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/X11/util: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/X11-OTF: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/X11-TTF: caching, new cache contents: 13 fonts, 0 dirs
+/usr/share/fonts/X11: skipping, looped directory detected
+/usr/share/fonts/X11-OTF: skipping, looped directory detected
+/usr/share/fonts/X11-TTF: skipping, looped directory detected
+/usr/share/fonts/X11/100dpi: skipping, looped directory detected
+/usr/share/fonts/X11/75dpi: skipping, looped directory detected
+/usr/share/fonts/X11/OTF: skipping, looped directory detected
+/usr/share/fonts/X11/TTF: skipping, looped directory detected
+/usr/share/fonts/X11/Type1: skipping, looped directory detected
+/usr/share/fonts/X11/cyrillic: skipping, looped directory detected
+/usr/share/fonts/X11/encodings: skipping, looped directory detected
+/usr/share/fonts/X11/misc: skipping, looped directory detected
+/usr/share/fonts/X11/util: skipping, looped directory detected
+/usr/share/fonts/X11/encodings/large: skipping, looped directory detected
+/var/cache/fontconfig: cleaning cache directory
+/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4/fc-cache/.libs/fc-cache: succeeded
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 fontconfig.pc '/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/usr/share/xml/fontconfig'
+ /usr/bin/install -c -m 644 fonts.dtd '/usr/share/xml/fontconfig'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/fontconfig/fontconfig-2.18.4'
+install: creating directory '/usr/share/doc/fontconfig-2.18.4'
+removed '/usr/share/man/man1/fc-cache.1'
+'fc-cache/fc-cache.1' -> '/usr/share/man/man1/fc-cache.1'
+removed '/usr/share/man/man1/fc-cat.1'
+'fc-cat/fc-cat.1' -> '/usr/share/man/man1/fc-cat.1'
+removed '/usr/share/man/man1/fc-conflist.1'
+'fc-conflist/fc-conflist.1' -> '/usr/share/man/man1/fc-conflist.1'
+removed '/usr/share/man/man1/fc-genconf.1'
+'fc-genconf/fc-genconf.1' -> '/usr/share/man/man1/fc-genconf.1'
+removed '/usr/share/man/man1/fc-list.1'
+'fc-list/fc-list.1' -> '/usr/share/man/man1/fc-list.1'
+removed '/usr/share/man/man1/fc-match.1'
+'fc-match/fc-match.1' -> '/usr/share/man/man1/fc-match.1'
+removed '/usr/share/man/man1/fc-pattern.1'
+'fc-pattern/fc-pattern.1' -> '/usr/share/man/man1/fc-pattern.1'
+removed '/usr/share/man/man1/fc-query.1'
+'fc-query/fc-query.1' -> '/usr/share/man/man1/fc-query.1'
+removed '/usr/share/man/man1/fc-scan.1'
+'fc-scan/fc-scan.1' -> '/usr/share/man/man1/fc-scan.1'
+removed '/usr/share/man/man1/fc-validate.1'
+'fc-validate/fc-validate.1' -> '/usr/share/man/man1/fc-validate.1'
+removed '/usr/share/man/man3/FcAtomicCreate.3'
+'doc/FcAtomicCreate.3' -> '/usr/share/man/man3/FcAtomicCreate.3'
+removed '/usr/share/man/man3/FcAtomicDeleteNew.3'
+'doc/FcAtomicDeleteNew.3' -> '/usr/share/man/man3/FcAtomicDeleteNew.3'
+removed '/usr/share/man/man3/FcAtomicDestroy.3'
+'doc/FcAtomicDestroy.3' -> '/usr/share/man/man3/FcAtomicDestroy.3'
+removed '/usr/share/man/man3/FcAtomicLock.3'
+'doc/FcAtomicLock.3' -> '/usr/share/man/man3/FcAtomicLock.3'
+removed '/usr/share/man/man3/FcAtomicNewFile.3'
+'doc/FcAtomicNewFile.3' -> '/usr/share/man/man3/FcAtomicNewFile.3'
+removed '/usr/share/man/man3/FcAtomicOrigFile.3'
+'doc/FcAtomicOrigFile.3' -> '/usr/share/man/man3/FcAtomicOrigFile.3'
+removed '/usr/share/man/man3/FcAtomicReplaceOrig.3'
+'doc/FcAtomicReplaceOrig.3' -> '/usr/share/man/man3/FcAtomicReplaceOrig.3'
+removed '/usr/share/man/man3/FcAtomicUnlock.3'
+'doc/FcAtomicUnlock.3' -> '/usr/share/man/man3/FcAtomicUnlock.3'
+removed '/usr/share/man/man3/FcBlanksAdd.3'
+'doc/FcBlanksAdd.3' -> '/usr/share/man/man3/FcBlanksAdd.3'
+removed '/usr/share/man/man3/FcBlanksCreate.3'
+'doc/FcBlanksCreate.3' -> '/usr/share/man/man3/FcBlanksCreate.3'
+removed '/usr/share/man/man3/FcBlanksDestroy.3'
+'doc/FcBlanksDestroy.3' -> '/usr/share/man/man3/FcBlanksDestroy.3'
+removed '/usr/share/man/man3/FcBlanksIsMember.3'
+'doc/FcBlanksIsMember.3' -> '/usr/share/man/man3/FcBlanksIsMember.3'
+removed '/usr/share/man/man3/FcCacheCopySet.3'
+'doc/FcCacheCopySet.3' -> '/usr/share/man/man3/FcCacheCopySet.3'
+removed '/usr/share/man/man3/FcCacheCreateTagFile.3'
+'doc/FcCacheCreateTagFile.3' -> '/usr/share/man/man3/FcCacheCreateTagFile.3'
+removed '/usr/share/man/man3/FcCacheDir.3'
+'doc/FcCacheDir.3' -> '/usr/share/man/man3/FcCacheDir.3'
+removed '/usr/share/man/man3/FcCacheNumFont.3'
+'doc/FcCacheNumFont.3' -> '/usr/share/man/man3/FcCacheNumFont.3'
+removed '/usr/share/man/man3/FcCacheNumSubdir.3'
+'doc/FcCacheNumSubdir.3' -> '/usr/share/man/man3/FcCacheNumSubdir.3'
+removed '/usr/share/man/man3/FcCacheSubdir.3'
+'doc/FcCacheSubdir.3' -> '/usr/share/man/man3/FcCacheSubdir.3'
+removed '/usr/share/man/man3/FcCharSetAddChar.3'
+'doc/FcCharSetAddChar.3' -> '/usr/share/man/man3/FcCharSetAddChar.3'
+removed '/usr/share/man/man3/FcCharSetCopy.3'
+'doc/FcCharSetCopy.3' -> '/usr/share/man/man3/FcCharSetCopy.3'
+removed '/usr/share/man/man3/FcCharSetCount.3'
+'doc/FcCharSetCount.3' -> '/usr/share/man/man3/FcCharSetCount.3'
+removed '/usr/share/man/man3/FcCharSetCoverage.3'
+'doc/FcCharSetCoverage.3' -> '/usr/share/man/man3/FcCharSetCoverage.3'
+removed '/usr/share/man/man3/FcCharSetCreate.3'
+'doc/FcCharSetCreate.3' -> '/usr/share/man/man3/FcCharSetCreate.3'
+removed '/usr/share/man/man3/FcCharSetDelChar.3'
+'doc/FcCharSetDelChar.3' -> '/usr/share/man/man3/FcCharSetDelChar.3'
+removed '/usr/share/man/man3/FcCharSetDestroy.3'
+'doc/FcCharSetDestroy.3' -> '/usr/share/man/man3/FcCharSetDestroy.3'
+removed '/usr/share/man/man3/FcCharSetEqual.3'
+'doc/FcCharSetEqual.3' -> '/usr/share/man/man3/FcCharSetEqual.3'
+removed '/usr/share/man/man3/FcCharSetFirstPage.3'
+'doc/FcCharSetFirstPage.3' -> '/usr/share/man/man3/FcCharSetFirstPage.3'
+removed '/usr/share/man/man3/FcCharSetHasChar.3'
+'doc/FcCharSetHasChar.3' -> '/usr/share/man/man3/FcCharSetHasChar.3'
+removed '/usr/share/man/man3/FcCharSetIntersect.3'
+'doc/FcCharSetIntersect.3' -> '/usr/share/man/man3/FcCharSetIntersect.3'
+removed '/usr/share/man/man3/FcCharSetIntersectCount.3'
+'doc/FcCharSetIntersectCount.3' -> '/usr/share/man/man3/FcCharSetIntersectCount.3'
+removed '/usr/share/man/man3/FcCharSetIsSubset.3'
+'doc/FcCharSetIsSubset.3' -> '/usr/share/man/man3/FcCharSetIsSubset.3'
+removed '/usr/share/man/man3/FcCharSetMerge.3'
+'doc/FcCharSetMerge.3' -> '/usr/share/man/man3/FcCharSetMerge.3'
+removed '/usr/share/man/man3/FcCharSetNew.3'
+'doc/FcCharSetNew.3' -> '/usr/share/man/man3/FcCharSetNew.3'
+removed '/usr/share/man/man3/FcCharSetNextPage.3'
+'doc/FcCharSetNextPage.3' -> '/usr/share/man/man3/FcCharSetNextPage.3'
+removed '/usr/share/man/man3/FcCharSetSubtract.3'
+'doc/FcCharSetSubtract.3' -> '/usr/share/man/man3/FcCharSetSubtract.3'
+removed '/usr/share/man/man3/FcCharSetSubtractCount.3'
+'doc/FcCharSetSubtractCount.3' -> '/usr/share/man/man3/FcCharSetSubtractCount.3'
+removed '/usr/share/man/man3/FcCharSetUnion.3'
+'doc/FcCharSetUnion.3' -> '/usr/share/man/man3/FcCharSetUnion.3'
+removed '/usr/share/man/man3/FcConfigAcceptFilename.3'
+'doc/FcConfigAcceptFilename.3' -> '/usr/share/man/man3/FcConfigAcceptFilename.3'
+removed '/usr/share/man/man3/FcConfigAcceptFilter.3'
+'doc/FcConfigAcceptFilter.3' -> '/usr/share/man/man3/FcConfigAcceptFilter.3'
+removed '/usr/share/man/man3/FcConfigAcceptFont.3'
+'doc/FcConfigAcceptFont.3' -> '/usr/share/man/man3/FcConfigAcceptFont.3'
+removed '/usr/share/man/man3/FcConfigAppFontAddDir.3'
+'doc/FcConfigAppFontAddDir.3' -> '/usr/share/man/man3/FcConfigAppFontAddDir.3'
+removed '/usr/share/man/man3/FcConfigAppFontAddFile.3'
+'doc/FcConfigAppFontAddFile.3' -> '/usr/share/man/man3/FcConfigAppFontAddFile.3'
+removed '/usr/share/man/man3/FcConfigAppFontClear.3'
+'doc/FcConfigAppFontClear.3' -> '/usr/share/man/man3/FcConfigAppFontClear.3'
+removed '/usr/share/man/man3/FcConfigBuildFonts.3'
+'doc/FcConfigBuildFonts.3' -> '/usr/share/man/man3/FcConfigBuildFonts.3'
+removed '/usr/share/man/man3/FcConfigCreate.3'
+'doc/FcConfigCreate.3' -> '/usr/share/man/man3/FcConfigCreate.3'
+removed '/usr/share/man/man3/FcConfigDestroy.3'
+'doc/FcConfigDestroy.3' -> '/usr/share/man/man3/FcConfigDestroy.3'
+removed '/usr/share/man/man3/FcConfigEnableHome.3'
+'doc/FcConfigEnableHome.3' -> '/usr/share/man/man3/FcConfigEnableHome.3'
+removed '/usr/share/man/man3/FcConfigFileGenerate.3'
+'doc/FcConfigFileGenerate.3' -> '/usr/share/man/man3/FcConfigFileGenerate.3'
+removed '/usr/share/man/man3/FcConfigFileInfoIterGet.3'
+'doc/FcConfigFileInfoIterGet.3' -> '/usr/share/man/man3/FcConfigFileInfoIterGet.3'
+removed '/usr/share/man/man3/FcConfigFileInfoIterInit.3'
+'doc/FcConfigFileInfoIterInit.3' -> '/usr/share/man/man3/FcConfigFileInfoIterInit.3'
+removed '/usr/share/man/man3/FcConfigFileInfoIterNext.3'
+'doc/FcConfigFileInfoIterNext.3' -> '/usr/share/man/man3/FcConfigFileInfoIterNext.3'
+removed '/usr/share/man/man3/FcConfigFilename.3'
+'doc/FcConfigFilename.3' -> '/usr/share/man/man3/FcConfigFilename.3'
+removed '/usr/share/man/man3/FcConfigGetBlanks.3'
+'doc/FcConfigGetBlanks.3' -> '/usr/share/man/man3/FcConfigGetBlanks.3'
+removed '/usr/share/man/man3/FcConfigGetCache.3'
+'doc/FcConfigGetCache.3' -> '/usr/share/man/man3/FcConfigGetCache.3'
+removed '/usr/share/man/man3/FcConfigGetCacheDirs.3'
+'doc/FcConfigGetCacheDirs.3' -> '/usr/share/man/man3/FcConfigGetCacheDirs.3'
+removed '/usr/share/man/man3/FcConfigGetConfigDirs.3'
+'doc/FcConfigGetConfigDirs.3' -> '/usr/share/man/man3/FcConfigGetConfigDirs.3'
+removed '/usr/share/man/man3/FcConfigGetConfigFiles.3'
+'doc/FcConfigGetConfigFiles.3' -> '/usr/share/man/man3/FcConfigGetConfigFiles.3'
+removed '/usr/share/man/man3/FcConfigGetCurrent.3'
+'doc/FcConfigGetCurrent.3' -> '/usr/share/man/man3/FcConfigGetCurrent.3'
+removed '/usr/share/man/man3/FcConfigGetDefaultLangs.3'
+'doc/FcConfigGetDefaultLangs.3' -> '/usr/share/man/man3/FcConfigGetDefaultLangs.3'
+removed '/usr/share/man/man3/FcConfigGetFilename.3'
+'doc/FcConfigGetFilename.3' -> '/usr/share/man/man3/FcConfigGetFilename.3'
+removed '/usr/share/man/man3/FcConfigGetFontDirs.3'
+'doc/FcConfigGetFontDirs.3' -> '/usr/share/man/man3/FcConfigGetFontDirs.3'
+removed '/usr/share/man/man3/FcConfigGetFonts.3'
+'doc/FcConfigGetFonts.3' -> '/usr/share/man/man3/FcConfigGetFonts.3'
+removed '/usr/share/man/man3/FcConfigGetRescanInterval.3'
+'doc/FcConfigGetRescanInterval.3' -> '/usr/share/man/man3/FcConfigGetRescanInterval.3'
+removed '/usr/share/man/man3/FcConfigGetSysRoot.3'
+'doc/FcConfigGetSysRoot.3' -> '/usr/share/man/man3/FcConfigGetSysRoot.3'
+removed '/usr/share/man/man3/FcConfigGetWarningFlags.3'
+'doc/FcConfigGetWarningFlags.3' -> '/usr/share/man/man3/FcConfigGetWarningFlags.3'
+removed '/usr/share/man/man3/FcConfigHome.3'
+'doc/FcConfigHome.3' -> '/usr/share/man/man3/FcConfigHome.3'
+removed '/usr/share/man/man3/FcConfigParseAndLoad.3'
+'doc/FcConfigParseAndLoad.3' -> '/usr/share/man/man3/FcConfigParseAndLoad.3'
+removed '/usr/share/man/man3/FcConfigParseAndLoadFromMemory.3'
+'doc/FcConfigParseAndLoadFromMemory.3' -> '/usr/share/man/man3/FcConfigParseAndLoadFromMemory.3'
+removed '/usr/share/man/man3/FcConfigPreferAppFont.3'
+'doc/FcConfigPreferAppFont.3' -> '/usr/share/man/man3/FcConfigPreferAppFont.3'
+removed '/usr/share/man/man3/FcConfigReference.3'
+'doc/FcConfigReference.3' -> '/usr/share/man/man3/FcConfigReference.3'
+removed '/usr/share/man/man3/FcConfigSetCurrent.3'
+'doc/FcConfigSetCurrent.3' -> '/usr/share/man/man3/FcConfigSetCurrent.3'
+removed '/usr/share/man/man3/FcConfigSetDefaultSubstitute.3'
+'doc/FcConfigSetDefaultSubstitute.3' -> '/usr/share/man/man3/FcConfigSetDefaultSubstitute.3'
+removed '/usr/share/man/man3/FcConfigSetFontSetFilter.3'
+'doc/FcConfigSetFontSetFilter.3' -> '/usr/share/man/man3/FcConfigSetFontSetFilter.3'
+removed '/usr/share/man/man3/FcConfigSetRescanInterval.3'
+'doc/FcConfigSetRescanInterval.3' -> '/usr/share/man/man3/FcConfigSetRescanInterval.3'
+removed '/usr/share/man/man3/FcConfigSetSysRoot.3'
+'doc/FcConfigSetSysRoot.3' -> '/usr/share/man/man3/FcConfigSetSysRoot.3'
+removed '/usr/share/man/man3/FcConfigSetWarningFlags.3'
+'doc/FcConfigSetWarningFlags.3' -> '/usr/share/man/man3/FcConfigSetWarningFlags.3'
+removed '/usr/share/man/man3/FcConfigSubstitute.3'
+'doc/FcConfigSubstitute.3' -> '/usr/share/man/man3/FcConfigSubstitute.3'
+removed '/usr/share/man/man3/FcConfigSubstituteWithPat.3'
+'doc/FcConfigSubstituteWithPat.3' -> '/usr/share/man/man3/FcConfigSubstituteWithPat.3'
+removed '/usr/share/man/man3/FcConfigUptoDate.3'
+'doc/FcConfigUptoDate.3' -> '/usr/share/man/man3/FcConfigUptoDate.3'
+removed '/usr/share/man/man3/FcDefaultSubstitute.3'
+'doc/FcDefaultSubstitute.3' -> '/usr/share/man/man3/FcDefaultSubstitute.3'
+removed '/usr/share/man/man3/FcDirCacheClean.3'
+'doc/FcDirCacheClean.3' -> '/usr/share/man/man3/FcDirCacheClean.3'
+removed '/usr/share/man/man3/FcDirCacheCreateUUID.3'
+'doc/FcDirCacheCreateUUID.3' -> '/usr/share/man/man3/FcDirCacheCreateUUID.3'
+removed '/usr/share/man/man3/FcDirCacheDeleteUUID.3'
+'doc/FcDirCacheDeleteUUID.3' -> '/usr/share/man/man3/FcDirCacheDeleteUUID.3'
+removed '/usr/share/man/man3/FcDirCacheLoad.3'
+'doc/FcDirCacheLoad.3' -> '/usr/share/man/man3/FcDirCacheLoad.3'
+removed '/usr/share/man/man3/FcDirCacheLoadFile.3'
+'doc/FcDirCacheLoadFile.3' -> '/usr/share/man/man3/FcDirCacheLoadFile.3'
+removed '/usr/share/man/man3/FcDirCacheRead.3'
+'doc/FcDirCacheRead.3' -> '/usr/share/man/man3/FcDirCacheRead.3'
+removed '/usr/share/man/man3/FcDirCacheRescan.3'
+'doc/FcDirCacheRescan.3' -> '/usr/share/man/man3/FcDirCacheRescan.3'
+removed '/usr/share/man/man3/FcDirCacheUnlink.3'
+'doc/FcDirCacheUnlink.3' -> '/usr/share/man/man3/FcDirCacheUnlink.3'
+removed '/usr/share/man/man3/FcDirCacheUnload.3'
+'doc/FcDirCacheUnload.3' -> '/usr/share/man/man3/FcDirCacheUnload.3'
+removed '/usr/share/man/man3/FcDirCacheValid.3'
+'doc/FcDirCacheValid.3' -> '/usr/share/man/man3/FcDirCacheValid.3'
+removed '/usr/share/man/man3/FcDirSave.3'
+'doc/FcDirSave.3' -> '/usr/share/man/man3/FcDirSave.3'
+removed '/usr/share/man/man3/FcDirScan.3'
+'doc/FcDirScan.3' -> '/usr/share/man/man3/FcDirScan.3'
+removed '/usr/share/man/man3/FcFileIsDir.3'
+'doc/FcFileIsDir.3' -> '/usr/share/man/man3/FcFileIsDir.3'
+removed '/usr/share/man/man3/FcFileScan.3'
+'doc/FcFileScan.3' -> '/usr/share/man/man3/FcFileScan.3'
+removed '/usr/share/man/man3/FcFini.3'
+'doc/FcFini.3' -> '/usr/share/man/man3/FcFini.3'
+removed '/usr/share/man/man3/FcFontationsQueryAll.3'
+'doc/FcFontationsQueryAll.3' -> '/usr/share/man/man3/FcFontationsQueryAll.3'
+removed '/usr/share/man/man3/FcFontList.3'
+'doc/FcFontList.3' -> '/usr/share/man/man3/FcFontList.3'
+removed '/usr/share/man/man3/FcFontMatch.3'
+'doc/FcFontMatch.3' -> '/usr/share/man/man3/FcFontMatch.3'
+removed '/usr/share/man/man3/FcFontRenderPrepare.3'
+'doc/FcFontRenderPrepare.3' -> '/usr/share/man/man3/FcFontRenderPrepare.3'
+removed '/usr/share/man/man3/FcFontSetAdd.3'
+'doc/FcFontSetAdd.3' -> '/usr/share/man/man3/FcFontSetAdd.3'
+removed '/usr/share/man/man3/FcFontSetCreate.3'
+'doc/FcFontSetCreate.3' -> '/usr/share/man/man3/FcFontSetCreate.3'
+removed '/usr/share/man/man3/FcFontSetDestroy.3'
+'doc/FcFontSetDestroy.3' -> '/usr/share/man/man3/FcFontSetDestroy.3'
+removed '/usr/share/man/man3/FcFontSetList.3'
+'doc/FcFontSetList.3' -> '/usr/share/man/man3/FcFontSetList.3'
+removed '/usr/share/man/man3/FcFontSetMatch.3'
+'doc/FcFontSetMatch.3' -> '/usr/share/man/man3/FcFontSetMatch.3'
+removed '/usr/share/man/man3/FcFontSetPrint.3'
+'doc/FcFontSetPrint.3' -> '/usr/share/man/man3/FcFontSetPrint.3'
+removed '/usr/share/man/man3/FcFontSetSort.3'
+'doc/FcFontSetSort.3' -> '/usr/share/man/man3/FcFontSetSort.3'
+removed '/usr/share/man/man3/FcFontSetSortDestroy.3'
+'doc/FcFontSetSortDestroy.3' -> '/usr/share/man/man3/FcFontSetSortDestroy.3'
+removed '/usr/share/man/man3/FcFontSort.3'
+'doc/FcFontSort.3' -> '/usr/share/man/man3/FcFontSort.3'
+removed '/usr/share/man/man3/FcFreeTypeCharIndex.3'
+'doc/FcFreeTypeCharIndex.3' -> '/usr/share/man/man3/FcFreeTypeCharIndex.3'
+removed '/usr/share/man/man3/FcFreeTypeCharSet.3'
+'doc/FcFreeTypeCharSet.3' -> '/usr/share/man/man3/FcFreeTypeCharSet.3'
+removed '/usr/share/man/man3/FcFreeTypeCharSetAndSpacing.3'
+'doc/FcFreeTypeCharSetAndSpacing.3' -> '/usr/share/man/man3/FcFreeTypeCharSetAndSpacing.3'
+removed '/usr/share/man/man3/FcFreeTypeQuery.3'
+'doc/FcFreeTypeQuery.3' -> '/usr/share/man/man3/FcFreeTypeQuery.3'
+removed '/usr/share/man/man3/FcFreeTypeQueryAll.3'
+'doc/FcFreeTypeQueryAll.3' -> '/usr/share/man/man3/FcFreeTypeQueryAll.3'
+removed '/usr/share/man/man3/FcFreeTypeQueryFace.3'
+'doc/FcFreeTypeQueryFace.3' -> '/usr/share/man/man3/FcFreeTypeQueryFace.3'
+removed '/usr/share/man/man3/FcGetDefaultLangs.3'
+'doc/FcGetDefaultLangs.3' -> '/usr/share/man/man3/FcGetDefaultLangs.3'
+removed '/usr/share/man/man3/FcGetLangs.3'
+'doc/FcGetLangs.3' -> '/usr/share/man/man3/FcGetLangs.3'
+removed '/usr/share/man/man3/FcGetVersion.3'
+'doc/FcGetVersion.3' -> '/usr/share/man/man3/FcGetVersion.3'
+removed '/usr/share/man/man3/FcInit.3'
+'doc/FcInit.3' -> '/usr/share/man/man3/FcInit.3'
+removed '/usr/share/man/man3/FcInitBringUptoDate.3'
+'doc/FcInitBringUptoDate.3' -> '/usr/share/man/man3/FcInitBringUptoDate.3'
+removed '/usr/share/man/man3/FcInitLoadConfig.3'
+'doc/FcInitLoadConfig.3' -> '/usr/share/man/man3/FcInitLoadConfig.3'
+removed '/usr/share/man/man3/FcInitLoadConfigAndFonts.3'
+'doc/FcInitLoadConfigAndFonts.3' -> '/usr/share/man/man3/FcInitLoadConfigAndFonts.3'
+removed '/usr/share/man/man3/FcInitReinitialize.3'
+'doc/FcInitReinitialize.3' -> '/usr/share/man/man3/FcInitReinitialize.3'
+removed '/usr/share/man/man3/FcIsLower.3'
+'doc/FcIsLower.3' -> '/usr/share/man/man3/FcIsLower.3'
+removed '/usr/share/man/man3/FcIsUpper.3'
+'doc/FcIsUpper.3' -> '/usr/share/man/man3/FcIsUpper.3'
+removed '/usr/share/man/man3/FcLangGetCharSet.3'
+'doc/FcLangGetCharSet.3' -> '/usr/share/man/man3/FcLangGetCharSet.3'
+removed '/usr/share/man/man3/FcLangNormalize.3'
+'doc/FcLangNormalize.3' -> '/usr/share/man/man3/FcLangNormalize.3'
+removed '/usr/share/man/man3/FcLangSetAdd.3'
+'doc/FcLangSetAdd.3' -> '/usr/share/man/man3/FcLangSetAdd.3'
+removed '/usr/share/man/man3/FcLangSetCompare.3'
+'doc/FcLangSetCompare.3' -> '/usr/share/man/man3/FcLangSetCompare.3'
+removed '/usr/share/man/man3/FcLangSetContains.3'
+'doc/FcLangSetContains.3' -> '/usr/share/man/man3/FcLangSetContains.3'
+removed '/usr/share/man/man3/FcLangSetCopy.3'
+'doc/FcLangSetCopy.3' -> '/usr/share/man/man3/FcLangSetCopy.3'
+removed '/usr/share/man/man3/FcLangSetCreate.3'
+'doc/FcLangSetCreate.3' -> '/usr/share/man/man3/FcLangSetCreate.3'
+removed '/usr/share/man/man3/FcLangSetDel.3'
+'doc/FcLangSetDel.3' -> '/usr/share/man/man3/FcLangSetDel.3'
+removed '/usr/share/man/man3/FcLangSetDestroy.3'
+'doc/FcLangSetDestroy.3' -> '/usr/share/man/man3/FcLangSetDestroy.3'
+removed '/usr/share/man/man3/FcLangSetEqual.3'
+'doc/FcLangSetEqual.3' -> '/usr/share/man/man3/FcLangSetEqual.3'
+removed '/usr/share/man/man3/FcLangSetGetLangs.3'
+'doc/FcLangSetGetLangs.3' -> '/usr/share/man/man3/FcLangSetGetLangs.3'
+removed '/usr/share/man/man3/FcLangSetHash.3'
+'doc/FcLangSetHash.3' -> '/usr/share/man/man3/FcLangSetHash.3'
+removed '/usr/share/man/man3/FcLangSetHasLang.3'
+'doc/FcLangSetHasLang.3' -> '/usr/share/man/man3/FcLangSetHasLang.3'
+removed '/usr/share/man/man3/FcLangSetSubtract.3'
+'doc/FcLangSetSubtract.3' -> '/usr/share/man/man3/FcLangSetSubtract.3'
+removed '/usr/share/man/man3/FcLangSetUnion.3'
+'doc/FcLangSetUnion.3' -> '/usr/share/man/man3/FcLangSetUnion.3'
+removed '/usr/share/man/man3/FcMatrixCopy.3'
+'doc/FcMatrixCopy.3' -> '/usr/share/man/man3/FcMatrixCopy.3'
+removed '/usr/share/man/man3/FcMatrixEqual.3'
+'doc/FcMatrixEqual.3' -> '/usr/share/man/man3/FcMatrixEqual.3'
+removed '/usr/share/man/man3/FcMatrixInit.3'
+'doc/FcMatrixInit.3' -> '/usr/share/man/man3/FcMatrixInit.3'
+removed '/usr/share/man/man3/FcMatrixMultiply.3'
+'doc/FcMatrixMultiply.3' -> '/usr/share/man/man3/FcMatrixMultiply.3'
+removed '/usr/share/man/man3/FcMatrixRotate.3'
+'doc/FcMatrixRotate.3' -> '/usr/share/man/man3/FcMatrixRotate.3'
+removed '/usr/share/man/man3/FcMatrixScale.3'
+'doc/FcMatrixScale.3' -> '/usr/share/man/man3/FcMatrixScale.3'
+removed '/usr/share/man/man3/FcMatrixShear.3'
+'doc/FcMatrixShear.3' -> '/usr/share/man/man3/FcMatrixShear.3'
+removed '/usr/share/man/man3/FcNameConstant.3'
+'doc/FcNameConstant.3' -> '/usr/share/man/man3/FcNameConstant.3'
+removed '/usr/share/man/man3/FcNameGetConstant.3'
+'doc/FcNameGetConstant.3' -> '/usr/share/man/man3/FcNameGetConstant.3'
+removed '/usr/share/man/man3/FcNameGetConstantFor.3'
+'doc/FcNameGetConstantFor.3' -> '/usr/share/man/man3/FcNameGetConstantFor.3'
+removed '/usr/share/man/man3/FcNameGetConstantNameFrom.3'
+'doc/FcNameGetConstantNameFrom.3' -> '/usr/share/man/man3/FcNameGetConstantNameFrom.3'
+removed '/usr/share/man/man3/FcNameGetObjectType.3'
+'doc/FcNameGetObjectType.3' -> '/usr/share/man/man3/FcNameGetObjectType.3'
+removed '/usr/share/man/man3/FcNameParse.3'
+'doc/FcNameParse.3' -> '/usr/share/man/man3/FcNameParse.3'
+removed '/usr/share/man/man3/FcNameRegisterConstants.3'
+'doc/FcNameRegisterConstants.3' -> '/usr/share/man/man3/FcNameRegisterConstants.3'
+removed '/usr/share/man/man3/FcNameRegisterObjectTypes.3'
+'doc/FcNameRegisterObjectTypes.3' -> '/usr/share/man/man3/FcNameRegisterObjectTypes.3'
+removed '/usr/share/man/man3/FcNameUnparse.3'
+'doc/FcNameUnparse.3' -> '/usr/share/man/man3/FcNameUnparse.3'
+removed '/usr/share/man/man3/FcNameUnregisterConstants.3'
+'doc/FcNameUnregisterConstants.3' -> '/usr/share/man/man3/FcNameUnregisterConstants.3'
+removed '/usr/share/man/man3/FcNameUnregisterObjectTypes.3'
+'doc/FcNameUnregisterObjectTypes.3' -> '/usr/share/man/man3/FcNameUnregisterObjectTypes.3'
+removed '/usr/share/man/man3/FcObjectSetAdd.3'
+'doc/FcObjectSetAdd.3' -> '/usr/share/man/man3/FcObjectSetAdd.3'
+removed '/usr/share/man/man3/FcObjectSetBuild.3'
+'doc/FcObjectSetBuild.3' -> '/usr/share/man/man3/FcObjectSetBuild.3'
+removed '/usr/share/man/man3/FcObjectSetCreate.3'
+'doc/FcObjectSetCreate.3' -> '/usr/share/man/man3/FcObjectSetCreate.3'
+removed '/usr/share/man/man3/FcObjectSetDestroy.3'
+'doc/FcObjectSetDestroy.3' -> '/usr/share/man/man3/FcObjectSetDestroy.3'
+removed '/usr/share/man/man3/FcPatternAdd.3'
+'doc/FcPatternAdd.3' -> '/usr/share/man/man3/FcPatternAdd.3'
+removed '/usr/share/man/man3/FcPatternAdd-Type.3'
+'doc/FcPatternAdd-Type.3' -> '/usr/share/man/man3/FcPatternAdd-Type.3'
+removed '/usr/share/man/man3/FcPatternAddWeak.3'
+'doc/FcPatternAddWeak.3' -> '/usr/share/man/man3/FcPatternAddWeak.3'
+removed '/usr/share/man/man3/FcPatternBuild.3'
+'doc/FcPatternBuild.3' -> '/usr/share/man/man3/FcPatternBuild.3'
+removed '/usr/share/man/man3/FcPatternCreate.3'
+'doc/FcPatternCreate.3' -> '/usr/share/man/man3/FcPatternCreate.3'
+removed '/usr/share/man/man3/FcPatternDel.3'
+'doc/FcPatternDel.3' -> '/usr/share/man/man3/FcPatternDel.3'
+removed '/usr/share/man/man3/FcPatternDestroy.3'
+'doc/FcPatternDestroy.3' -> '/usr/share/man/man3/FcPatternDestroy.3'
+removed '/usr/share/man/man3/FcPatternDuplicate.3'
+'doc/FcPatternDuplicate.3' -> '/usr/share/man/man3/FcPatternDuplicate.3'
+removed '/usr/share/man/man3/FcPatternEqual.3'
+'doc/FcPatternEqual.3' -> '/usr/share/man/man3/FcPatternEqual.3'
+removed '/usr/share/man/man3/FcPatternEqualSubset.3'
+'doc/FcPatternEqualSubset.3' -> '/usr/share/man/man3/FcPatternEqualSubset.3'
+removed '/usr/share/man/man3/FcPatternFilter.3'
+'doc/FcPatternFilter.3' -> '/usr/share/man/man3/FcPatternFilter.3'
+removed '/usr/share/man/man3/FcPatternFindIter.3'
+'doc/FcPatternFindIter.3' -> '/usr/share/man/man3/FcPatternFindIter.3'
+removed '/usr/share/man/man3/FcPatternFormat.3'
+'doc/FcPatternFormat.3' -> '/usr/share/man/man3/FcPatternFormat.3'
+removed '/usr/share/man/man3/FcPatternGet.3'
+'doc/FcPatternGet.3' -> '/usr/share/man/man3/FcPatternGet.3'
+removed '/usr/share/man/man3/FcPatternGet-Type.3'
+'doc/FcPatternGet-Type.3' -> '/usr/share/man/man3/FcPatternGet-Type.3'
+removed '/usr/share/man/man3/FcPatternGetWithBinding.3'
+'doc/FcPatternGetWithBinding.3' -> '/usr/share/man/man3/FcPatternGetWithBinding.3'
+removed '/usr/share/man/man3/FcPatternHash.3'
+'doc/FcPatternHash.3' -> '/usr/share/man/man3/FcPatternHash.3'
+removed '/usr/share/man/man3/FcPatternIterEqual.3'
+'doc/FcPatternIterEqual.3' -> '/usr/share/man/man3/FcPatternIterEqual.3'
+removed '/usr/share/man/man3/FcPatternIterGetObject.3'
+'doc/FcPatternIterGetObject.3' -> '/usr/share/man/man3/FcPatternIterGetObject.3'
+removed '/usr/share/man/man3/FcPatternIterGetValue.3'
+'doc/FcPatternIterGetValue.3' -> '/usr/share/man/man3/FcPatternIterGetValue.3'
+removed '/usr/share/man/man3/FcPatternIterIsValid.3'
+'doc/FcPatternIterIsValid.3' -> '/usr/share/man/man3/FcPatternIterIsValid.3'
+removed '/usr/share/man/man3/FcPatternIterNext.3'
+'doc/FcPatternIterNext.3' -> '/usr/share/man/man3/FcPatternIterNext.3'
+removed '/usr/share/man/man3/FcPatternIterStart.3'
+'doc/FcPatternIterStart.3' -> '/usr/share/man/man3/FcPatternIterStart.3'
+removed '/usr/share/man/man3/FcPatternIterValueCount.3'
+'doc/FcPatternIterValueCount.3' -> '/usr/share/man/man3/FcPatternIterValueCount.3'
+removed '/usr/share/man/man3/FcPatternObjectCount.3'
+'doc/FcPatternObjectCount.3' -> '/usr/share/man/man3/FcPatternObjectCount.3'
+removed '/usr/share/man/man3/FcPatternPrint.3'
+'doc/FcPatternPrint.3' -> '/usr/share/man/man3/FcPatternPrint.3'
+removed '/usr/share/man/man3/FcPatternReference.3'
+'doc/FcPatternReference.3' -> '/usr/share/man/man3/FcPatternReference.3'
+removed '/usr/share/man/man3/FcPatternRemove.3'
+'doc/FcPatternRemove.3' -> '/usr/share/man/man3/FcPatternRemove.3'
+removed '/usr/share/man/man3/FcRangeCopy.3'
+'doc/FcRangeCopy.3' -> '/usr/share/man/man3/FcRangeCopy.3'
+removed '/usr/share/man/man3/FcRangeCreateDouble.3'
+'doc/FcRangeCreateDouble.3' -> '/usr/share/man/man3/FcRangeCreateDouble.3'
+removed '/usr/share/man/man3/FcRangeCreateInteger.3'
+'doc/FcRangeCreateInteger.3' -> '/usr/share/man/man3/FcRangeCreateInteger.3'
+removed '/usr/share/man/man3/FcRangeDestroy.3'
+'doc/FcRangeDestroy.3' -> '/usr/share/man/man3/FcRangeDestroy.3'
+removed '/usr/share/man/man3/FcRangeGetDouble.3'
+'doc/FcRangeGetDouble.3' -> '/usr/share/man/man3/FcRangeGetDouble.3'
+removed '/usr/share/man/man3/FcStrBasename.3'
+'doc/FcStrBasename.3' -> '/usr/share/man/man3/FcStrBasename.3'
+removed '/usr/share/man/man3/FcStrBuildFilename.3'
+'doc/FcStrBuildFilename.3' -> '/usr/share/man/man3/FcStrBuildFilename.3'
+removed '/usr/share/man/man3/FcStrCmp.3'
+'doc/FcStrCmp.3' -> '/usr/share/man/man3/FcStrCmp.3'
+removed '/usr/share/man/man3/FcStrCmpIgnoreCase.3'
+'doc/FcStrCmpIgnoreCase.3' -> '/usr/share/man/man3/FcStrCmpIgnoreCase.3'
+removed '/usr/share/man/man3/FcStrCopy.3'
+'doc/FcStrCopy.3' -> '/usr/share/man/man3/FcStrCopy.3'
+removed '/usr/share/man/man3/FcStrCopyFilename.3'
+'doc/FcStrCopyFilename.3' -> '/usr/share/man/man3/FcStrCopyFilename.3'
+removed '/usr/share/man/man3/FcStrDirname.3'
+'doc/FcStrDirname.3' -> '/usr/share/man/man3/FcStrDirname.3'
+removed '/usr/share/man/man3/FcStrDowncase.3'
+'doc/FcStrDowncase.3' -> '/usr/share/man/man3/FcStrDowncase.3'
+removed '/usr/share/man/man3/FcStrFree.3'
+'doc/FcStrFree.3' -> '/usr/share/man/man3/FcStrFree.3'
+removed '/usr/share/man/man3/FcStrListCreate.3'
+'doc/FcStrListCreate.3' -> '/usr/share/man/man3/FcStrListCreate.3'
+removed '/usr/share/man/man3/FcStrListDone.3'
+'doc/FcStrListDone.3' -> '/usr/share/man/man3/FcStrListDone.3'
+removed '/usr/share/man/man3/FcStrListFirst.3'
+'doc/FcStrListFirst.3' -> '/usr/share/man/man3/FcStrListFirst.3'
+removed '/usr/share/man/man3/FcStrListNext.3'
+'doc/FcStrListNext.3' -> '/usr/share/man/man3/FcStrListNext.3'
+removed '/usr/share/man/man3/FcStrPlus.3'
+'doc/FcStrPlus.3' -> '/usr/share/man/man3/FcStrPlus.3'
+removed '/usr/share/man/man3/FcStrSetAdd.3'
+'doc/FcStrSetAdd.3' -> '/usr/share/man/man3/FcStrSetAdd.3'
+removed '/usr/share/man/man3/FcStrSetAddFilename.3'
+'doc/FcStrSetAddFilename.3' -> '/usr/share/man/man3/FcStrSetAddFilename.3'
+removed '/usr/share/man/man3/FcStrSetCreate.3'
+'doc/FcStrSetCreate.3' -> '/usr/share/man/man3/FcStrSetCreate.3'
+removed '/usr/share/man/man3/FcStrSetDel.3'
+'doc/FcStrSetDel.3' -> '/usr/share/man/man3/FcStrSetDel.3'
+removed '/usr/share/man/man3/FcStrSetDestroy.3'
+'doc/FcStrSetDestroy.3' -> '/usr/share/man/man3/FcStrSetDestroy.3'
+removed '/usr/share/man/man3/FcStrSetEqual.3'
+'doc/FcStrSetEqual.3' -> '/usr/share/man/man3/FcStrSetEqual.3'
+removed '/usr/share/man/man3/FcStrSetMember.3'
+'doc/FcStrSetMember.3' -> '/usr/share/man/man3/FcStrSetMember.3'
+removed '/usr/share/man/man3/FcStrStr.3'
+'doc/FcStrStr.3' -> '/usr/share/man/man3/FcStrStr.3'
+removed '/usr/share/man/man3/FcStrStrIgnoreCase.3'
+'doc/FcStrStrIgnoreCase.3' -> '/usr/share/man/man3/FcStrStrIgnoreCase.3'
+removed '/usr/share/man/man3/FcToLower.3'
+'doc/FcToLower.3' -> '/usr/share/man/man3/FcToLower.3'
+removed '/usr/share/man/man3/FcUcs4ToUtf8.3'
+'doc/FcUcs4ToUtf8.3' -> '/usr/share/man/man3/FcUcs4ToUtf8.3'
+removed '/usr/share/man/man3/FcUtf16Len.3'
+'doc/FcUtf16Len.3' -> '/usr/share/man/man3/FcUtf16Len.3'
+removed '/usr/share/man/man3/FcUtf16ToUcs4.3'
+'doc/FcUtf16ToUcs4.3' -> '/usr/share/man/man3/FcUtf16ToUcs4.3'
+removed '/usr/share/man/man3/FcUtf8Len.3'
+'doc/FcUtf8Len.3' -> '/usr/share/man/man3/FcUtf8Len.3'
+removed '/usr/share/man/man3/FcUtf8ToUcs4.3'
+'doc/FcUtf8ToUcs4.3' -> '/usr/share/man/man3/FcUtf8ToUcs4.3'
+removed '/usr/share/man/man3/FcValueDestroy.3'
+'doc/FcValueDestroy.3' -> '/usr/share/man/man3/FcValueDestroy.3'
+removed '/usr/share/man/man3/FcValueEqual.3'
+'doc/FcValueEqual.3' -> '/usr/share/man/man3/FcValueEqual.3'
+removed '/usr/share/man/man3/FcValuePrint.3'
+'doc/FcValuePrint.3' -> '/usr/share/man/man3/FcValuePrint.3'
+removed '/usr/share/man/man3/FcValueSave.3'
+'doc/FcValueSave.3' -> '/usr/share/man/man3/FcValueSave.3'
+removed '/usr/share/man/man3/FcWeightFromOpenType.3'
+'doc/FcWeightFromOpenType.3' -> '/usr/share/man/man3/FcWeightFromOpenType.3'
+removed '/usr/share/man/man3/FcWeightFromOpenTypeDouble.3'
+'doc/FcWeightFromOpenTypeDouble.3' -> '/usr/share/man/man3/FcWeightFromOpenTypeDouble.3'
+removed '/usr/share/man/man3/FcWeightToOpenType.3'
+'doc/FcWeightToOpenType.3' -> '/usr/share/man/man3/FcWeightToOpenType.3'
+removed '/usr/share/man/man3/FcWeightToOpenTypeDouble.3'
+'doc/FcWeightToOpenTypeDouble.3' -> '/usr/share/man/man3/FcWeightToOpenTypeDouble.3'
+removed '/usr/share/man/man5/fonts-conf.5'
+'doc/fonts-conf.5' -> '/usr/share/man/man5/fonts-conf.5'
+'doc/fontconfig-devel.pdf' -> '/usr/share/doc/fontconfig-2.18.4/fontconfig-devel.pdf'
+'doc/fontconfig-user.pdf' -> '/usr/share/doc/fontconfig-2.18.4/fontconfig-user.pdf'
+'doc/cache-version.sgml' -> '/usr/share/doc/fontconfig-2.18.4/cache-version.sgml'
+'doc/fontconfig-devel.sgml' -> '/usr/share/doc/fontconfig-2.18.4/fontconfig-devel.sgml'
+'doc/fontconfig-user.sgml' -> '/usr/share/doc/fontconfig-2.18.4/fontconfig-user.sgml'
+'doc/func.sgml' -> '/usr/share/doc/fontconfig-2.18.4/func.sgml'
+'doc/version.sgml' -> '/usr/share/doc/fontconfig-2.18.4/version.sgml'
+'doc/fontconfig-devel.txt' -> '/usr/share/doc/fontconfig-2.18.4/fontconfig-devel.txt'
+'doc/fontconfig-user.txt' -> '/usr/share/doc/fontconfig-2.18.4/fontconfig-user.txt'
+'doc/fontconfig-devel.html' -> '/usr/share/doc/fontconfig-2.18.4/fontconfig-devel.html'
+'doc/fontconfig-user.html' -> '/usr/share/doc/fontconfig-2.18.4/fontconfig-user.html'
+2.18.4
+Updated registry for fontconfig to version 2.18.4
+[VERSION] fontconfig: 2.18.4
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package fontconfig in /var/lib/custom-packages/
+Building custom package krita...
+[03:58:35] Found custom package for krita, bypassing BLFS aliases.
+[03:58:35] Custom package detected at /home/fusion809/lfs_packaging/krita (package: krita)
+[03:58:35] Extracting dependencies for custom package 'krita'...
+[03:58:35] Required deps: boost eigen exiv2 extra-cmake-modules ffmpeg fftw fontconfig freetype fribidi gcc giflib glibc gsl harfbuzz imath immer kcolorscheme kcompletion kconfig kcoreaddons kcrash kguiaddons ki18n kitemviews kseexpr kwidgetsaddons lager lcms2 libheif libjpeg-turbo libjxl libkdcraw libmypaint libpng libunibreak libwebp libx11 libxkbcommon mlt opencolorio openexr openjpeg poppler pyqt6 qt6 quazip tiff wayland xsimd zlib zug 
+[03:58:35] Dependency 'boost' already installed.
+[03:58:35] Dependency 'eigen' already installed.
+[03:58:35] Dependency 'exiv2' already installed.
+[03:58:35] Dependency 'extra-cmake-modules' already installed.
+[03:58:35] Dependency 'ffmpeg' already installed.
+[03:58:35] Dependency 'fftw' already installed.
+[03:58:35] Dependency 'fontconfig' already installed.
+[03:58:35] Dependency 'freetype' already installed.
+[03:58:35] Dependency 'fribidi' already installed.
+[03:58:35] Dependency 'gcc' already installed.
+[03:58:35] Dependency 'giflib' already installed.
+[03:58:35] Dependency 'glibc' already installed.
+[03:58:35] Dependency 'gsl' already installed.
+[03:58:35] Dependency 'harfbuzz' already installed.
+[03:58:35] Dependency 'imath' already installed.
+[03:58:35] Dependency 'immer' already installed.
+[03:58:35] Dependency 'kcolorscheme' already installed.
+[03:58:35] Dependency 'kcompletion' already installed.
+[03:58:35] Dependency 'kconfig' already installed.
+[03:58:35] Dependency 'kcoreaddons' already installed.
+[03:58:35] Dependency 'kcrash' already installed.
+[03:58:35] Dependency 'kguiaddons' already installed.
+[03:58:35] Dependency 'ki18n' already installed.
+[03:58:35] Dependency 'kitemviews' already installed.
+[03:58:35] Dependency 'kseexpr' already installed.
+[03:58:35] Dependency 'kwidgetsaddons' already installed.
+[03:58:35] Dependency 'lager' already installed.
+[03:58:35] Dependency 'lcms2' already installed.
+[03:58:35] Dependency 'libheif' already installed.
+[03:58:35] Dependency 'libjpeg-turbo' already installed.
+[03:58:35] Dependency 'libjxl' already installed.
+[03:58:35] Dependency 'libkdcraw' already installed.
+[03:58:35] Dependency 'libmypaint' already installed.
+[03:58:35] Dependency 'libpng' already installed.
+[03:58:35] Dependency 'libunibreak' already installed.
+[03:58:35] Dependency 'libwebp' already installed.
+[03:58:35] Dependency 'libx11' already installed.
+[03:58:35] Dependency 'libxkbcommon' already installed.
+[03:58:35] Dependency 'mlt' already installed.
+[03:58:35] Dependency 'opencolorio' already installed.
+[03:58:35] Dependency 'openexr' already installed.
+[03:58:35] Dependency 'openjpeg' already installed.
+[03:58:35] Dependency 'poppler' already installed.
+[03:58:35] Dependency 'pyqt6' already installed.
+[03:58:35] Dependency 'qt6' already installed.
+[03:58:35] Dependency 'quazip' already installed.
+[03:58:35] Dependency 'tiff' already installed.
+[03:58:35] Dependency 'wayland' already installed.
+[03:58:35] Dependency 'xsimd' already installed.
+[03:58:35] Dependency 'zlib' already installed.
+[03:58:36] Dependency 'zug' already installed.
+[VERSION] krita: 6.0.5
+[03:58:36] Installing krita version: 6.0.5
+[03:58:36] Starting remote custom build for krita...
+--2026-11-19 03:58:39--  https://download.kde.org/stable/krita/6.0.5/krita-6.0.5.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-19 03:58:40 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for krita
+[ERROR] Custom build failed for krita
+[03:58:40] ========================================
+[03:58:40] Build completed with 1 failure(s):
+[03:58:40]   - krita
+[03:58:40] ========================================
+Error: Build failed for krita. Aborting update loop.
+===== ERROR: updatec exited with status 1 =====
+Finished: 2026-11-19 03:58:40 AEST
+Exit status: 1

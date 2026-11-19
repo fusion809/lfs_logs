@@ -1,0 +1,96 @@
+===== Update check started: 2026-11-19 06:00:03 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261119_060003
+Packages needing attention: krita mesa reshiki-git vim
+===== Starting updatec: 2026-11-19 06:00:06 AEST =====
+Checking for packages with missing file inventories...
+name=krita
+local_ver=6.0.4
+remote_ver=6.0.5
+name=mesa
+local_ver=26.2.7
+remote_ver=26.3.1
+name=reshiki-git
+local_ver=1178767
+remote_ver=ba34c8d
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - krita
+  - mesa
+  - reshiki-git
+  - vim
+
+Building custom package krita...
+[06:00:07] Found custom package for krita, bypassing BLFS aliases.
+[06:00:07] Custom package detected at /home/fusion809/lfs_packaging/krita (package: krita)
+[06:00:07] Extracting dependencies for custom package 'krita'...
+[06:00:07] Required deps: boost eigen exiv2 extra-cmake-modules ffmpeg fftw fontconfig freetype fribidi gcc giflib glibc gsl harfbuzz imath immer kcolorscheme kcompletion kconfig kcoreaddons kcrash kguiaddons ki18n kitemviews kseexpr kwidgetsaddons lager lcms2 libheif libjpeg-turbo libjxl libkdcraw libmypaint libpng libunibreak libwebp libx11 libxkbcommon mlt opencolorio openexr openjpeg poppler pyqt6 qt6 quazip tiff wayland xsimd zlib zug 
+[06:00:07] Dependency 'boost' already installed.
+[06:00:07] Dependency 'eigen' already installed.
+[06:00:07] Dependency 'exiv2' already installed.
+[06:00:07] Dependency 'extra-cmake-modules' already installed.
+[06:00:07] Dependency 'ffmpeg' already installed.
+[06:00:07] Dependency 'fftw' already installed.
+[06:00:07] Dependency 'fontconfig' already installed.
+[06:00:07] Dependency 'freetype' already installed.
+[06:00:07] Dependency 'fribidi' already installed.
+[06:00:07] Dependency 'gcc' already installed.
+[06:00:07] Dependency 'giflib' already installed.
+[06:00:07] Dependency 'glibc' already installed.
+[06:00:07] Dependency 'gsl' already installed.
+[06:00:07] Dependency 'harfbuzz' already installed.
+[06:00:07] Dependency 'imath' already installed.
+[06:00:07] Dependency 'immer' already installed.
+[06:00:07] Dependency 'kcolorscheme' already installed.
+[06:00:07] Dependency 'kcompletion' already installed.
+[06:00:07] Dependency 'kconfig' already installed.
+[06:00:07] Dependency 'kcoreaddons' already installed.
+[06:00:07] Dependency 'kcrash' already installed.
+[06:00:07] Dependency 'kguiaddons' already installed.
+[06:00:07] Dependency 'ki18n' already installed.
+[06:00:07] Dependency 'kitemviews' already installed.
+[06:00:07] Dependency 'kseexpr' already installed.
+[06:00:07] Dependency 'kwidgetsaddons' already installed.
+[06:00:07] Dependency 'lager' already installed.
+[06:00:07] Dependency 'lcms2' already installed.
+[06:00:08] Dependency 'libheif' already installed.
+[06:00:08] Dependency 'libjpeg-turbo' already installed.
+[06:00:08] Dependency 'libjxl' already installed.
+[06:00:08] Dependency 'libkdcraw' already installed.
+[06:00:08] Dependency 'libmypaint' already installed.
+[06:00:08] Dependency 'libpng' already installed.
+[06:00:08] Dependency 'libunibreak' already installed.
+[06:00:08] Dependency 'libwebp' already installed.
+[06:00:08] Dependency 'libx11' already installed.
+[06:00:08] Dependency 'libxkbcommon' already installed.
+[06:00:08] Dependency 'mlt' already installed.
+[06:00:08] Dependency 'opencolorio' already installed.
+[06:00:08] Dependency 'openexr' already installed.
+[06:00:08] Dependency 'openjpeg' already installed.
+[06:00:08] Dependency 'poppler' already installed.
+[06:00:08] Dependency 'pyqt6' already installed.
+[06:00:08] Dependency 'qt6' already installed.
+[06:00:08] Dependency 'quazip' already installed.
+[06:00:08] Dependency 'tiff' already installed.
+[06:00:08] Dependency 'wayland' already installed.
+[06:00:08] Dependency 'xsimd' already installed.
+[06:00:08] Dependency 'zlib' already installed.
+[06:00:08] Dependency 'zug' already installed.
+[VERSION] krita: 6.0.5
+[06:00:09] Installing krita version: 6.0.5
+[06:00:09] Starting remote custom build for krita...
+--2026-11-19 06:00:12--  https://download.kde.org/stable/krita/6.0.5/krita-6.0.5.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-19 06:00:14 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for krita
+[ERROR] Custom build failed for krita
+[06:00:14] ========================================
+[06:00:14] Build completed with 1 failure(s):
+[06:00:14]   - krita
+[06:00:14] ========================================
+Error: Build failed for krita. Aborting update loop.
+===== ERROR: updatec exited with status 1 =====
+Finished: 2026-11-19 06:00:14 AEST
+Exit status: 1

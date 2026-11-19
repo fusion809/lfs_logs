@@ -1,0 +1,198 @@
+[08:01:12] Found custom package for libev, bypassing BLFS aliases.
+[08:01:12] Custom package detected at /home/fusion809/lfs_packaging/libev (package: libev)
+[08:01:12] Extracting dependencies for custom package 'libev'...
+[VERSION] libev: 4.33
+[08:01:17] Installing libev version: 4.33
+[08:01:17] Starting remote custom build for libev...
+--2026-11-19 08:01:26--  https://dist.schmorp.de/libev/libev-4.33.tar.gz
+Resolving dist.schmorp.de (dist.schmorp.de)... 5.9.56.12, 2a01:4f8:161:5203::2
+Connecting to dist.schmorp.de (dist.schmorp.de)|5.9.56.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 569527 (556K) [application/gzip]
+Saving to: ‘libev-4.33.tar.gz’
+
+libev-4.33.tar.gz     0%[                    ]       0  --.-KB/s               libev-4.33.tar.gz     4%[                    ]  23.27K  81.0KB/s               libev-4.33.tar.gz     9%[>                   ]  54.52K   107KB/s               libev-4.33.tar.gz    16%[==>                 ]  93.58K   124KB/s               libev-4.33.tar.gz    26%[====>               ] 148.27K   155KB/s               libev-4.33.tar.gz    43%[=======>            ] 242.02K   209KB/s               libev-4.33.tar.gz    67%[============>       ] 374.83K   274KB/s               libev-4.33.tar.gz   100%[===================>] 556.18K   358KB/s    in 1.6s    
+
+2026-11-19 08:01:29 (358 KB/s) - ‘libev-4.33.tar.gz’ saved [569527/569527]
+
+configure found
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking sys/inotify.h usability... yes
+checking sys/inotify.h presence... yes
+checking for sys/inotify.h... yes
+checking sys/epoll.h usability... yes
+checking sys/epoll.h presence... yes
+checking for sys/epoll.h... yes
+checking sys/event.h usability... no
+checking sys/event.h presence... no
+checking for sys/event.h... no
+checking port.h usability... no
+checking port.h presence... no
+checking for port.h... no
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking sys/timerfd.h usability... yes
+checking sys/timerfd.h presence... yes
+checking for sys/timerfd.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/eventfd.h usability... yes
+checking sys/eventfd.h presence... yes
+checking for sys/eventfd.h... yes
+checking sys/signalfd.h usability... yes
+checking sys/signalfd.h presence... yes
+checking for sys/signalfd.h... yes
+checking linux/aio_abi.h usability... yes
+checking linux/aio_abi.h presence... yes
+checking for linux/aio_abi.h... yes
+checking linux/fs.h usability... yes
+checking linux/fs.h presence... yes
+checking for linux/fs.h... yes
+checking for inotify_init... yes
+checking for epoll_ctl... yes
+checking for kqueue... no
+checking for port_create... no
+checking for poll... yes
+checking for select... yes
+checking for eventfd... yes
+checking for signalfd... yes
+checking for clock_gettime... yes
+checking for nanosleep... yes
+checking for __kernel_rwf_t... yes
+checking for library containing floor... -lm
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-am
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libev/libev-4.33'
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.     -g -O3 -MT ev.lo -MD -MP -MF .deps/ev.Tpo -c -o ev.lo ev.c
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.     -g -O3 -MT event.lo -MD -MP -MF .deps/event.Tpo -c -o event.lo event.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -g -O3 -MT ev.lo -MD -MP -MF .deps/ev.Tpo -c ev.c  -fPIC -DPIC -o .libs/ev.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -g -O3 -MT event.lo -MD -MP -MF .deps/event.Tpo -c event.c  -fPIC -DPIC -o .libs/event.o
+ev.c:2143:31: warning: ‘ev_default_loop_ptr’ initialized and declared ‘extern’
+ 2143 |   EV_API_DECL struct ev_loop *ev_default_loop_ptr = 0; /* needs to be initialised to make it a definition despite extern */
+      |                               ^~~~~~~~~~~~~~~~~~~
+mv -f .deps/event.Tpo .deps/event.Plo
+mv -f .deps/ev.Tpo .deps/ev.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -g -O3 -version-info 4:0:0  -o libev.la -rpath /usr/lib ev.lo event.lo  -lm 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/ev.o .libs/event.o   -lm  -g -O3   -Wl,-soname -Wl,libev.so.4 -o .libs/libev.so.4.0.0
+libtool: link: (cd ".libs" && rm -f "libev.so.4" && ln -s "libev.so.4.0.0" "libev.so.4")
+libtool: link: (cd ".libs" && rm -f "libev.so" && ln -s "libev.so.4.0.0" "libev.so")
+libtool: link: ( cd ".libs" && rm -f "libev.la" && ln -s "../libev.la" "libev.la" )
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libev/libev-4.33'
+make[1]: Entering directory '/home/fusion809/lfs_packaging/libev/libev-4.33'
+ /usr/bin/mkdir -p '/usr/lib'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libev.la '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libev.so.4.0.0 /usr/lib/libev.so.4.0.0
+libtool: install: (cd /usr/lib && { ln -s -f libev.so.4.0.0 libev.so.4 || { rm -f libev.so.4 && ln -s libev.so.4.0.0 libev.so.4; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libev.so.4.0.0 libev.so || { rm -f libev.so && ln -s libev.so.4.0.0 libev.so; }; })
+libtool: install: /usr/bin/install -c .libs/libev.lai /usr/lib/libev.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/include'
+ /usr/bin/install -c -m 644 ev.h ev++.h event.h '/usr/include'
+ /usr/bin/mkdir -p '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 ev.3 '/usr/share/man/man3'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/libev/libev-4.33'
+4.33
+Updated registry for libev to version 4.33
+[VERSION] libev: 4.33
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package libev in /var/lib/custom-packages/

@@ -1,0 +1,67 @@
+===== Update check started: 2026-11-19 07:25:34 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261119_072534
+Packages needing attention: gnutls krita mesa nspr nss reshiki-git vim
+===== Starting updatec: 2026-11-19 07:25:37 AEST =====
+Checking for packages with missing file inventories...
+name=gnutls
+local_ver=3.8.13
+remote_ver=3.8.14
+name=krita
+local_ver=6.0.4
+remote_ver=6.0.5
+name=mesa
+local_ver=26.2.7
+remote_ver=26.3.1
+name=nspr
+local_ver=4.40
+remote_ver=4.41
+name=nss
+local_ver=3.133
+remote_ver=3.134
+name=reshiki-git
+local_ver=1178767
+remote_ver=1a722d4
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - gnutls
+  - krita
+  - mesa
+  - nspr
+  - nss
+  - reshiki-git
+  - vim
+
+Building custom package gnutls...
+[07:25:39] Found custom package for gnutls, bypassing BLFS aliases.
+[07:25:39] Custom package detected at /home/fusion809/lfs_packaging/gnutls (package: gnutls)
+[07:25:39] Extracting dependencies for custom package 'gnutls'...
+[07:25:39] Required deps: gcc glibc gmp libffi libidn2 libtasn1 libunistring make-ca nettle p11-kit 
+[07:25:39] Dependency 'gcc' already installed.
+[07:25:39] Dependency 'glibc' already installed.
+[07:25:39] Dependency 'gmp' already installed.
+[07:25:39] Dependency 'libffi' already installed.
+[07:25:39] Dependency 'libidn2' already installed.
+[07:25:39] Dependency 'libtasn1' already installed.
+[07:25:39] Dependency 'libunistring' already installed.
+[07:25:39] Dependency 'make-ca' already installed.
+[07:25:39] Dependency 'nettle' already installed.
+[07:25:39] Dependency 'p11-kit' already installed.
+[VERSION] gnutls: 3.8.14
+[07:25:40] Installing gnutls version: 3.8.14
+[07:25:40] Starting remote custom build for gnutls...
+--2026-11-19 07:25:44--  https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.14.tar.xz
+Resolving www.gnupg.org (www.gnupg.org)... 5.9.17.227, 2a01:4f8:160:91ea::2
+Connecting to www.gnupg.org (www.gnupg.org)|5.9.17.227|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-19 07:25:45 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for gnutls
+[ERROR] Custom build failed for gnutls
+[07:25:46] ========================================
+[07:25:46] Build completed with 1 failure(s):
+[07:25:46]   - gnutls
+[07:25:46] ========================================
+Error: Build failed for gnutls. Aborting update loop.
+===== ERROR: updatec exited with status 1 =====
+Finished: 2026-11-19 07:25:46 AEST
+Exit status: 1
