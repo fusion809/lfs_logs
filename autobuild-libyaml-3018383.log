@@ -1,0 +1,66 @@
+[08:52:24] Build order resolved: blas-lapack-git libyaml
+[09:14:18] Found custom package for libyaml, bypassing BLFS aliases.
+[09:14:18] Custom package detected at /home/fusion809/lfs_packaging/libyaml (package: libyaml)
+[09:14:18] Extracting dependencies for custom package 'libyaml'...
+[09:14:18] Required deps: glibc 
+[09:14:18] Dependency 'glibc' already installed.
+[VERSION] libyaml: 0.2.6
+[09:14:19] Installing libyaml version: 0.2.6
+[09:14:19] Starting remote custom build for libyaml...
+--2026-11-21 09:14:23--  https://github.com/yaml/libyaml/releases/download/0.2.6/yaml-0.2.6.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/2699072/8251ab60-293e-4726-9d92-2be1f7f0ac0c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-21T00%3A13%3A19Z&rscd=attachment%3B+filename%3Dyaml-0.2.6.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-20T23%3A12%3A23Z&ske=2026-11-21T00%3A13%3A19Z&sks=b&skv=2018-11-09&sig=cWVNaZuCkJr2RApbhJMIfv9r0TY0%2FE6dHCDhYRrYp6w%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTIxNjc2NCwibmJmIjoxNzk1MjE2NDY0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.jvcs4dsDz1aUBhZJyt68HAW5-n2vLfxvXFQUfhhmIhA&response-content-disposition=attachment%3B%20filename%3Dyaml-0.2.6.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2026-11-21 09:14:23--  https://release-assets.githubusercontent.com/github-production-release-asset/2699072/8251ab60-293e-4726-9d92-2be1f7f0ac0c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-21T00%3A13%3A19Z&rscd=attachment%3B+filename%3Dyaml-0.2.6.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-20T23%3A12%3A23Z&ske=2026-11-21T00%3A13%3A19Z&sks=b&skv=2018-11-09&sig=cWVNaZuCkJr2RApbhJMIfv9r0TY0%2FE6dHCDhYRrYp6w%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTIxNjc2NCwibmJmIjoxNzk1MjE2NDY0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.jvcs4dsDz1aUBhZJyt68HAW5-n2vLfxvXFQUfhhmIhA&response-content-disposition=attachment%3B%20filename%3Dyaml-0.2.6.tar.gz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 667786 (652K) [application/octet-stream]
+Saving to: ‘yaml-0.2.6.tar.gz’
+
+yaml-0.2.6.tar.gz     0%[                    ]       0  --.-KB/s               yaml-0.2.6.tar.gz   100%[===================>] 652.13K  --.-KB/s    in 0.09s   
+
+2026-11-21 09:14:23 (7.44 MB/s) - ‘yaml-0.2.6.tar.gz’ saved [667786/667786]
+
+configure found
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '97' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... cat: confdefs.h: No such file or directory
+none needed
+checking whether gcc understands -c and -o together... cat: confdefs.h: No such file or directory
+yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... none
+checking how to run the C preprocessor... cat: confdefs.h: No such file or directory
+cat: confdefs.h: No such file or directory
+gcc -E
+cat: confdefs.h: No such file or directory
+cat: confdefs.h: No such file or directory
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+configure: error: cannot run /bin/sh ./config/config.sub
+[ERROR] build.sh exited with code 127 for libyaml
+[ERROR] Custom build failed for libyaml
+[09:14:26] ========================================
+[09:14:26] Build completed with 1 failure(s):
+[09:14:26]   - libyaml
+[09:14:26] ========================================
