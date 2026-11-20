@@ -1,0 +1,458 @@
+===== Update check started: 2026-11-20 14:45:29 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261120_144529
+Packages needing attention: less
+===== Starting updatec: 2026-11-20 14:45:32 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - less
+
+Building custom package less...
+[14:45:33] Found custom package for less, bypassing BLFS aliases.
+[14:45:33] Custom package detected at /home/fusion809/lfs_packaging/less (package: less)
+[14:45:33] Extracting dependencies for custom package 'less'...
+[14:45:33] Required deps: glibc ncurses pcre2 
+[14:45:33] Dependency 'glibc' already installed.
+[14:45:33] Dependency 'ncurses' already installed.
+[14:45:33] Dependency 'pcre2' already installed.
+[VERSION] less: 713
+[14:45:35] Installing less version: 713
+[14:45:35] Starting remote custom build for less...
+--2026-11-20 14:45:49--  https://github.com/gwsw/less/archive/v713.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/gwsw/less/tar.gz/refs/tags/v713 [following]
+--2026-11-20 14:45:50--  https://codeload.github.com/gwsw/less/tar.gz/refs/tags/v713
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘less-713.tar.gz’
+
+less-713.tar.gz         [<=>                 ]       0  --.-KB/s               less-713.tar.gz         [ <=>                ]   1.02M  5.09MB/s               less-713.tar.gz         [  <=>               ]   1.26M  5.68MB/s    in 0.2s    
+
+2026-11-20 14:45:50 (5.68 MB/s) - ‘less-713.tar.gz’ saved [1319345]
+
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: no obvious need to run autopoint
+autoreconf: running: aclocal --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: configure.ac: no need to run autopoint (confirmed)
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: configure.ac: not using Automake
+autoreconf: './install-sh' is created
+autoreconf: configure.ac: not running make: --make not given
+autoreconf: Leaving directory '.'
+configure: WARNING: unrecognized options: --disable-static
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C23 features... none needed
+checking for library containing strerror... none required
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for gcc option to support large files... none needed
+checking for tgoto in -ltinfo... no
+checking for tgoto in -ltinfow... no
+checking for initscr in -lxcurses... no
+checking for initscr in -lncursesw... yes
+checking for initscr in -lncurses... yes
+checking for initscr in -lcurses... yes
+checking for tgetent in -ltermcap... no
+checking for tgetent in -ltermlib... no
+checking for library containing regcmp... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for ctype.h... yes
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for limits.h... yes
+checking for stdckdint.h... yes
+checking for termcap.h... yes
+checking for ncurses/termcap.h... no
+checking for ncursesw/termcap.h... no
+checking for termio.h... no
+checking for termios.h... yes
+checking for time.h... yes
+checking for values.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/stream.h... no
+checking for sys/time.h... yes
+checking for sys/wait.h... yes
+checking whether stat file-mode macros are broken... no
+checking for an ANSI C-conforming const... yes
+checking for off_t... yes
+checking for size_t... yes
+checking for working terminal libraries... using -lncursesw
+checking for terminfo... yes
+checking for const... yes
+checking for time_t... yes
+checking for st_ino in struct stat... yes
+checking for fchmod... yes
+checking for fsync... yes
+checking for nanosleep... yes
+checking for poll... yes
+checking for popen... yes
+checking for realpath... yes
+checking for _setjmp... yes
+checking for setitimer... yes
+checking for sigprocmask... yes
+checking for sigsetmask... yes
+checking for snprintf... yes
+checking for stat... yes
+checking for strsignal... yes
+checking for system... yes
+checking for ttyname... yes
+checking for usleep... yes
+checking for gcc options to detect undeclared functions... none needed
+checking for gcc options to ignore future-version functions... none needed
+checking whether sigsetjmp is declared... yes
+checking for memcpy... yes
+checking for strchr... yes
+checking for strstr... yes
+checking for tcgetattr... yes
+checking for fileno... yes
+checking for strerror... yes
+checking for sys_errlist... yes
+checking for sigset_t... yes
+checking for sigemptyset... yes
+checking for errno... yes - in errno.h
+checking for settable errno... yes
+checking for locale... yes
+checking for ctype functions... yes
+checking termcap for ospeed... yes - in termcap.h
+checking for POSIX regcomp... yes
+regular expression library:  posix
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating defines.h
+configure: WARNING: unrecognized options: --disable-static
+mv -f ./help.c ./help.c.old
+mv: cannot stat './help.c': No such file or directory
+make: [Makefile.aut:71: help.c] Error 1 (ignored)
+rm -rf help.c
+./mkhelp.pl < less.hlp > help.c
+if cmp -s help.c help.c.old; then mv -f help.c.old help.c; fi
+mv -f ./funcs.h ./funcs.h.old
+mv: cannot stat './funcs.h': No such file or directory
+make: [Makefile.aut:81: funcs.h] Error 1 (ignored)
+grep -h '^public [^;]*$' ./main.c ./screen.c ./brac.c ./ch.c ./charset.c ./cmdbuf.c ./command.c ./cvt.c ./decode.c ./edit.c ./evar.c ./filename.c ./forwback.c ./help.c ./ifile.c ./input.c ./jump.c ./lesskey_parse.c ./line.c ./linenum.c ./lmsg.c ./lsystem.c ./mark.c ./optfunc.c ./option.c ./opttbl.c ./os.c ./output.c ./pattern.c ./position.c ./prompt.c ./search.c ./signal.c ./tags.c ./ttyin.c ./version.c ./xbuf.c | sed 's/$/;/' >./funcs.h
+mv -f lessmsg.inc lessmsg.inc.old
+mv: cannot stat 'lessmsg.inc': No such file or directory
+make: [Makefile.aut:85: lessmsg.inc] Error 1 (ignored)
+sed -e '/^ *#/d' -e '/^ *$/d' -e 's/^ *\([^ ]*\)  *\(.*\)/M(\1,"\2")/' lessmsg lessmsg_int > lessmsg.inc
+test ! -f stamp-h || CONFIG_FILES= CONFIG_HEADERS=defines.h ./config.status
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o lessecho.o lessecho.c
+touch stamp-h
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o main.o main.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o screen.o screen.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o brac.o brac.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o ch.o ch.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o charset.o charset.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o cmdbuf.o cmdbuf.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o command.o command.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o cvt.o cvt.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o decode.o decode.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o edit.o edit.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o evar.o evar.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o filename.o filename.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o forwback.o forwback.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o help.o help.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o ifile.o ifile.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o input.o input.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o jump.o jump.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o line.o line.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o linenum.o linenum.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o lmsg.o lmsg.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o lsystem.o lsystem.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o mark.o mark.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o optfunc.o optfunc.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o option.o option.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o opttbl.o opttbl.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o os.o os.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o output.o output.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o pattern.o pattern.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o position.o position.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o prompt.o prompt.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o search.o search.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o signal.o signal.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o tags.o tags.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o ttyin.o ttyin.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o version.o version.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o xbuf.o xbuf.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o lesskey_parse.o lesskey_parse.c
+gcc  -o lessecho lessecho.o version.o   -lncursesw
+gcc  -o less main.o screen.o brac.o ch.o charset.o cmdbuf.o command.o cvt.o decode.o edit.o evar.o filename.o forwback.o help.o ifile.o input.o jump.o line.o linenum.o lmsg.o lsystem.o mark.o optfunc.o option.o opttbl.o os.o output.o pattern.o position.o prompt.o search.o signal.o tags.o ttyin.o version.o xbuf.o   lesskey_parse.o   -lncursesw
+if [ -n "" ]; then DFLAG="-d@"; fi; DT=`date $DFLAG '+%d %h %Y'`; echo "Stuffing version number 713 into less.nro"; rm -f less.nro; sed -e "s;@@VERSION@@;713;" -e "s;@@DATE@@;$DT;" >less.nro ./less.nro.VER
+Stuffing version number 713 into less.nro
+if [ -n "" ]; then DFLAG="-d@"; fi; DT=`date $DFLAG '+%d %h %Y'`; echo "Stuffing version number 713 into lesskey.nro"; rm -f lesskey.nro; sed -e "s;@@VERSION@@;713;" -e "s;@@DATE@@;$DT;" >lesskey.nro ./lesskey.nro.VER
+Stuffing version number 713 into lesskey.nro
+if [ -n "" ]; then DFLAG="-d@"; fi; DT=`date $DFLAG '+%d %h %Y'`; echo "Stuffing version number 713 into lessecho.nro"; rm -f lessecho.nro; sed -e "s;@@VERSION@@;713;" -e "s;@@DATE@@;$DT;" >lessecho.nro ./lessecho.nro.VER
+Stuffing version number 713 into lessecho.nro
+./mkinstalldirs /usr/bin /usr/libexec /usr/share/man/man1 /usr/share/man/man5
+/usr/bin/install -c less /usr/bin/less
+/usr/bin/install -c lessecho /usr/libexec/lessecho
+/usr/bin/install -c ./less-osc8-open.sh /usr/libexec/less-osc8-open
+/usr/bin/install -c -m 644 ./less.nro /usr/share/man/man1/less.1
+/usr/bin/install -c -m 644 ./lesskey.nro /usr/share/man/man5/lesskey.5
+/usr/bin/install -c -m 644 ./lessecho.nro /usr/share/man/man1/lessecho.1
+713
+Updated registry for less to version 713
+[VERSION] less: 713
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package less in /var/lib/custom-packages/
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: less: 712->713.
+[master 21a77c7] less: 712->713.
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: less: 712->713.
+[master 96e3b78] less: 712->713.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-42
+r13.1-661
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libavcodec.so.63.1.102
+cand_sobase=libavcodec.so
+search_base=libavcodec
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavformat.so.63.1.102
+cand_sobase=libavformat.so
+search_base=libavformat
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavutil.so.61.1.102
+cand_sobase=libavutil.so
+search_base=libavutil
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgnutls.so.30.42.0
+cand_sobase=libgnutls.so
+search_base=libgnutls
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz.so.0.61510.0
+cand_sobase=libharfbuzz.so
+search_base=libharfbuzz
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz-subset.so.0.61510.0
+cand_sobase=libharfbuzz-subset.so
+search_base=libharfbuzz-subset
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libpari-gmp-tls.so.2.19.0
+cand_sobase=libpari-gmp-tls.so
+search_base=libpari-gmp-tls
+replacement_found=true
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libavcodec.so.63.1.102
+Path: /usr/lib/libavcodec.so.63.1.102
+Skipping generic/unsafe name 'libavcodec.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavcodec.so.63 libavcodec.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavcodec.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavcodec.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavformat.so.63.1.102
+Path: /usr/lib/libavformat.so.63.1.102
+Skipping generic/unsafe name 'libavformat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavformat.so.63 libavformat.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavformat.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavformat.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavutil.so.61.1.102
+Path: /usr/lib/libavutil.so.61.1.102
+Skipping generic/unsafe name 'libavutil.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavutil.so.61 libavutil.so.61.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavutil.so.61.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavutil.so.61.1.102.
+------------------------------------------------
+Checking obsolete version (file): libgnutls.so.30.42.0
+Path: /usr/lib/libgnutls.so.30.42.0
+Skipping generic/unsafe name 'libgnutls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 31 remaining dependents.
+Names tracked: libgnutls.so.30 libgnutls.so.30.42.0
+Example dependents: ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0 ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11 ...
+Warning: No parent package found for ANY of the 31 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libgnutls.so.30.42.0:
+  - ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-resume
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cxx
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-ocsp-client
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/print-ciphersuites
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/tlsproxy/tlsproxy
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/alert-printlist
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/errcodes
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/printlist
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0T
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/certtool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli-debug
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-serv
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/ocsptool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/p11tool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/psktool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/systemkey
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/eagain-cli
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/mini-record-timing
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libgnutls.so.30.42.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz.so.0.61510.0
+Path: /usr/lib/libharfbuzz.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz.so.0 libharfbuzz.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz-subset.so.0.61510.0
+Path: /usr/lib/libharfbuzz-subset.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz-subset.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz-subset.so.0 libharfbuzz-subset.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz-subset.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz-subset.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libpari-gmp-tls.so.2.19.0
+Path: /usr/lib/libpari-gmp-tls.so.2.19.0
+Skipping generic/unsafe name 'libpari-gmp-tls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libpari-gmp-tls.so.10 libpari-gmp-tls.so.2.19.0
+Example dependents: ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libpari-gmp-tls.so.2.19.0:
+  - ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libpari-gmp-tls.so.2.19.0.
+------------------------------------------------
+Checking obsolete version (file): libswscale.so.10.1.102
+Path: /usr/lib/libswscale.so.10.1.102
+Skipping generic/unsafe name 'libswscale.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libswscale.so.10 libswscale.so.10.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libswscale.so.10.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libswscale.so.10.1.102.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.5...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.5-lfs-r13.1-40
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
