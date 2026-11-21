@@ -1,0 +1,258 @@
+===== Update check started: 2026-11-22 01:05:07 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261122_010507
+Packages needing attention: woxi-git
+===== Starting updatec: 2026-11-22 01:05:09 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - woxi-git
+
+Building custom package woxi-git...
+[01:05:10] Found custom package for woxi-git, bypassing BLFS aliases.
+[01:05:10] Custom package detected at /home/fusion809/lfs_packaging/woxi-git (package: woxi-git)
+[01:05:10] Checking conflicting package(s) for 'woxi-git': woxi 
+[01:05:10] Extracting dependencies for custom package 'woxi-git'...
+[01:05:10] Required deps: gcc glibc rust 
+[01:05:10] Dependency 'gcc' already installed.
+[01:05:10] Dependency 'glibc' already installed.
+[01:05:10] Dependency 'rust' already installed.
+[01:05:11] [LFS-AUTOBUILD] Skipping custom package woxi-git: version eebe72c716e76032e699f4ffda3e310a1b0b4211 already installed (use -f to force build).
+Updating Python packages via pip...
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master 93fba5b] Updating packages
+ 1 file changed, 1 insertion(+), 8 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master 134f3be] Updating packages
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-42
+r13.1-678
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libavcodec.so.63.1.102
+cand_sobase=libavcodec.so
+search_base=libavcodec
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavformat.so.63.1.102
+cand_sobase=libavformat.so
+search_base=libavformat
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavutil.so.61.1.102
+cand_sobase=libavutil.so
+search_base=libavutil
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgnutls.so.30.42.0
+cand_sobase=libgnutls.so
+search_base=libgnutls
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz.so.0.61510.0
+cand_sobase=libharfbuzz.so
+search_base=libharfbuzz
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz-subset.so.0.61510.0
+cand_sobase=libharfbuzz-subset.so
+search_base=libharfbuzz-subset
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libpari-gmp-tls.so.2.19.0
+cand_sobase=libpari-gmp-tls.so
+search_base=libpari-gmp-tls
+replacement_found=true
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libavcodec.so.63.1.102
+Path: /usr/lib/libavcodec.so.63.1.102
+Skipping generic/unsafe name 'libavcodec.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavcodec.so.63 libavcodec.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavcodec.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavcodec.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavformat.so.63.1.102
+Path: /usr/lib/libavformat.so.63.1.102
+Skipping generic/unsafe name 'libavformat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavformat.so.63 libavformat.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavformat.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavformat.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavutil.so.61.1.102
+Path: /usr/lib/libavutil.so.61.1.102
+Skipping generic/unsafe name 'libavutil.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavutil.so.61 libavutil.so.61.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavutil.so.61.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavutil.so.61.1.102.
+------------------------------------------------
+Checking obsolete version (file): libgnutls.so.30.42.0
+Path: /usr/lib/libgnutls.so.30.42.0
+Skipping generic/unsafe name 'libgnutls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 31 remaining dependents.
+Names tracked: libgnutls.so.30 libgnutls.so.30.42.0
+Example dependents: ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0 ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11 ...
+Warning: No parent package found for ANY of the 31 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libgnutls.so.30.42.0:
+  - ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-resume
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cxx
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-ocsp-client
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/print-ciphersuites
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/tlsproxy/tlsproxy
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/alert-printlist
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/errcodes
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/printlist
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0T
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/certtool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli-debug
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-serv
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/ocsptool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/p11tool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/psktool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/systemkey
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/eagain-cli
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/mini-record-timing
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libgnutls.so.30.42.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz.so.0.61510.0
+Path: /usr/lib/libharfbuzz.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz.so.0 libharfbuzz.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz-subset.so.0.61510.0
+Path: /usr/lib/libharfbuzz-subset.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz-subset.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz-subset.so.0 libharfbuzz-subset.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz-subset.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz-subset.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libpari-gmp-tls.so.2.19.0
+Path: /usr/lib/libpari-gmp-tls.so.2.19.0
+Skipping generic/unsafe name 'libpari-gmp-tls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libpari-gmp-tls.so.10 libpari-gmp-tls.so.2.19.0
+Example dependents: ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libpari-gmp-tls.so.2.19.0:
+  - ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libpari-gmp-tls.so.2.19.0.
+------------------------------------------------
+Checking obsolete version (file): libswscale.so.10.1.102
+Path: /usr/lib/libswscale.so.10.1.102
+Skipping generic/unsafe name 'libswscale.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libswscale.so.10 libswscale.so.10.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libswscale.so.10.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libswscale.so.10.1.102.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.5...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.5-lfs-r13.1-40
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
