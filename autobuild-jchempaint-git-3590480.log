@@ -1,0 +1,723 @@
+[23:10:11] Found custom package for jchempaint-git, bypassing BLFS aliases.
+[23:10:11] Custom package detected at /home/fusion809/lfs_packaging/jchempaint-git (package: jchempaint-git)
+[23:10:11] Extracting dependencies for custom package 'jchempaint-git'...
+[23:10:11] Required deps: maven-bin 
+[23:10:11] Dependency 'maven-bin' already installed.
+[VERSION] jchempaint-git: b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3
+[23:10:11] Installing jchempaint-git version: b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3
+[23:10:11] Starting remote custom build for jchempaint-git...
+--2026-11-22 23:10:32--  https://github.com/JChemPaint/jchempaint/archive/b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/JChemPaint/jchempaint/tar.gz/b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3 [following]
+--2026-11-22 23:10:32--  https://codeload.github.com/JChemPaint/jchempaint/tar.gz/b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3.tar.gz’
+
+          jchempain     [<=>                 ]       0  --.-KB/s                        jchempaint     [ <=>                ]   1016K  4.96MB/s               jchempaint-b765af4b     [  <=>               ]   2.61M  7.47MB/s    in 0.3s    
+
+2026-11-22 23:10:34 (7.47 MB/s) - ‘jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3.tar.gz’ saved [2736242]
+
+Patched null-panel file opening in core/src/main/java/org/openscience/jchempaint/application/JChemPaint.java
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.openscience.jchempaint:jchempaint-inchi-nestedvm:jar:3.4-SNAPSHOT
+[WARNING] 'dependencies.dependency.scope' for org.iupac:nestedvm-inchi:jar declares usage of deprecated 'system' scope  @ line 54, column 20
+[WARNING] 'dependencies.dependency.systemPath' for org.iupac:nestedvm-inchi:jar should not point at files within the project directory, ${project.basedir}/dep/inchi-1.0.2.jar will be unresolvable by dependent projects @ line 55, column 25
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.openscience.jchempaint:jchempaint-app-windows:jar:3.4-SNAPSHOT
+[WARNING] The expression ${version} is deprecated. Please use ${project.version} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[WARNING] The project org.openscience.jchempaint:jchempaint:pom:3.4-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] jchempaint                                                         [pom]
+[INFO] jchempaint-inchi                                                   [jar]
+[INFO] jchempaint-render                                                  [jar]
+[INFO] jchempaint-core                                                    [jar]
+[INFO] jchempaint-inchi-nestedvm                                          [jar]
+[INFO] jchempaint-inchi-jni                                               [jar]
+[INFO] jchempaint-app-osx                                                 [jar]
+[INFO] jchempaint-app-jar                                                 [jar]
+[INFO] jchempaint-app-windows                                             [jar]
+[INFO] 
+[INFO] ---------------< org.openscience.jchempaint:jchempaint >----------------
+[INFO] Building jchempaint 3.4-SNAPSHOT                                   [1/9]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] Loaded 24572 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint/3.4-SNAPSHOT/jchempaint-3.4-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------< org.openscience.jchempaint:jchempaint-inchi >-------------
+[INFO] Building jchempaint-inchi 3.4-SNAPSHOT                             [2/9]
+[INFO]   from inchi/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-test/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-data/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-interfaces/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 2.0 kBProgress (2): 2.0 kB | 2.0 kBProgress (3): 2.0 kB | 2.0 kB | 1.6 kB                                      Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-data/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 1.6 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-data/2.15-SNAPSHOT/cdk-data-2.15-20261121.184217-6.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-interfaces/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 1.4 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-interfaces/2.15-SNAPSHOT/cdk-interfaces-2.15-20261121.184217-6.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-test/2.15-SNAPSHOT/maven-metadata.xml (1.6 kB at 1.0 kB/s)
+Progress (1): 1.1 kBProgress (1): 3.3 kB                    Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-test/2.15-SNAPSHOT/cdk-test-2.15-20261121.184217-6.pom
+Progress (2): 3.3 kB | 1.2 kBProgress (2): 3.3 kB | 1.5 kB                             Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-data/2.15-SNAPSHOT/cdk-data-2.15-20261121.184217-6.pom (3.3 kB at 6.7 kB/s)
+Progress (2): 1.5 kB | 1.3 kBProgress (2): 1.5 kB | 3.1 kB                             Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-base/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-interfaces/2.15-SNAPSHOT/cdk-interfaces-2.15-20261121.184217-6.pom (1.5 kB at 2.9 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-test/2.15-SNAPSHOT/cdk-test-2.15-20261121.184217-6.pom (3.1 kB at 6.9 kB/s)
+Progress (1): 778 B                   Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-base/2.15-SNAPSHOT/maven-metadata.xml (778 B at 1.7 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-base/2.15-SNAPSHOT/cdk-base-2.15-20261121.184217-6.pom
+Progress (1): 1.1 kBProgress (1): 1.1 kB                    Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-base/2.15-SNAPSHOT/cdk-base-2.15-20261121.184217-6.pom (1.1 kB at 2.4 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 773 B                   Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk/2.15-SNAPSHOT/maven-metadata.xml (773 B at 4.5 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk/2.15-SNAPSHOT/cdk-2.15-20261121.184217-6.pom
+Progress (1): 568 BProgress (1): 2.3 kBProgress (1): 4.1 kBProgress (1): 6.2 kBProgress (1): 10 kB Progress (1): 14 kBProgress (1): 16 kBProgress (1): 22 kBProgress (1): 25 kBProgress (1): 28 kBProgress (1): 32 kBProgress (1): 37 kBProgress (1): 38 kB                   Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk/2.15-SNAPSHOT/cdk-2.15-20261121.184217-6.pom (38 kB at 61 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-core/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-core/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 2.0 kBProgress (2): 2.0 kB | 2.0 kB                             Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-core/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 6.6 kB/s)
+Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-core/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 6.1 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-core/2.15-SNAPSHOT/cdk-core-2.15-20261121.184217-6.pom
+Progress (1): 994 BProgress (1): 2.4 kB                    Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-core/2.15-SNAPSHOT/cdk-core-2.15-20261121.184217-6.pom (2.4 kB at 4.8 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-interfaces/2.15-SNAPSHOT/cdk-interfaces-2.15-20261121.184217-6.jar
+Progress (1): 0.4/77 kBProgress (1): 1.8/77 kBProgress (1): 3.2/77 kBProgress (1): 4.5/77 kBProgress (1): 5.9/77 kBProgress (1): 7.3/77 kBProgress (1): 8.7/77 kBProgress (1): 10/77 kB Progress (1): 11/77 kBProgress (1): 13/77 kBProgress (1): 14/77 kBProgress (1): 15/77 kBProgress (1): 17/77 kBProgress (1): 18/77 kBProgress (1): 20/77 kBProgress (1): 21/77 kBProgress (1): 22/77 kBProgress (1): 23/77 kBProgress (1): 25/77 kBProgress (1): 26/77 kBProgress (1): 27/77 kBProgress (1): 29/77 kBProgress (1): 30/77 kBProgress (1): 32/77 kBProgress (1): 33/77 kBProgress (1): 37/77 kBProgress (1): 41/77 kBProgress (1): 45/77 kBProgress (1): 49/77 kBProgress (1): 54/77 kBProgress (1): 58/77 kBProgress (1): 62/77 kBProgress (1): 66/77 kBProgress (1): 71/77 kBProgress (1): 75/77 kBProgress (1): 77 kB                      Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-interfaces/2.15-SNAPSHOT/cdk-interfaces-2.15-20261121.184217-6.jar (77 kB at 94 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-data/2.15-SNAPSHOT/cdk-data-2.15-20261121.184217-6.jar
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-test/2.15-SNAPSHOT/cdk-test-2.15-20261121.184217-6.jar
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-core/2.15-SNAPSHOT/cdk-core-2.15-20261121.184217-6.jar
+Progress (1): 0.8/2.0 kBProgress (1): 2.0 kB    Progress (2): 2.0 kB | 3.6/163 kBProgress (2): 2.0 kB | 5.6/163 kBProgress (2): 2.0 kB | 9.8/163 kBProgress (2): 2.0 kB | 14/163 kB Progress (2): 2.0 kB | 18/163 kBProgress (2): 2.0 kB | 22/163 kBProgress (2): 2.0 kB | 26/163 kBProgress (2): 2.0 kB | 30/163 kBProgress (2): 2.0 kB | 35/163 kBProgress (2): 2.0 kB | 39/163 kBProgress (2): 2.0 kB | 41/163 kBProgress (2): 2.0 kB | 45/163 kBProgress (2): 2.0 kB | 49/163 kBProgress (3): 2.0 kB | 49/163 kB | 0.8/310 kBProgress (3): 2.0 kB | 49/163 kB | 2.1/310 kBProgress (3): 2.0 kB | 49/163 kB | 3.5/310 kBProgress (3): 2.0 kB | 49/163 kB | 4.9/310 kBProgress (3): 2.0 kB | 49/163 kB | 6.3/310 kBProgress (3): 2.0 kB | 49/163 kB | 7.6/310 kBProgress (3): 2.0 kB | 54/163 kB | 7.6/310 kBProgress (3): 2.0 kB | 58/163 kB | 7.6/310 kBProgress (3): 2.0 kB | 62/163 kB | 7.6/310 kBProgress (3): 2.0 kB | 66/163 kB | 7.6/310 kBProgress (3): 2.0 kB | 66/163 kB | 8.2/310 kBProgress (3): 2.0 kB | 66/163 kB | 9.6/310 kBProgress (3): 2.0 kB | 66/163 kB | 11/310 kB Progress (3): 2.0 kB | 66/163 kB | 12/310 kBProgress (3): 2.0 kB | 66/163 kB | 14/310 kBProgress (3): 2.0 kB | 66/163 kB | 15/310 kBProgress (3): 2.0 kB | 66/163 kB | 16/310 kBProgress (3): 2.0 kB | 66/163 kB | 18/310 kBProgress (3): 2.0 kB | 66/163 kB | 19/310 kBProgress (3): 2.0 kB | 66/163 kB | 21/310 kBProgress (3): 2.0 kB | 66/163 kB | 22/310 kBProgress (3): 2.0 kB | 66/163 kB | 23/310 kBProgress (3): 2.0 kB | 66/163 kB | 25/310 kBProgress (3): 2.0 kB | 66/163 kB | 26/310 kBProgress (3): 2.0 kB | 66/163 kB | 27/310 kBProgress (3): 2.0 kB | 66/163 kB | 29/310 kBProgress (3): 2.0 kB | 66/163 kB | 30/310 kBProgress (3): 2.0 kB | 66/163 kB | 31/310 kBProgress (3): 2.0 kB | 66/163 kB | 33/310 kBProgress (3): 2.0 kB | 70/163 kB | 33/310 kBProgress (3): 2.0 kB | 74/163 kB | 33/310 kBProgress (3): 2.0 kB | 78/163 kB | 33/310 kBProgress (3): 2.0 kB | 82/163 kB | 33/310 kBProgress (3): 2.0 kB | 86/163 kB | 33/310 kBProgress (3): 2.0 kB | 91/163 kB | 33/310 kBProgress (3): 2.0 kB | 95/163 kB | 33/310 kBProgress (3): 2.0 kB | 99/163 kB | 33/310 kBProgress (3): 2.0 kB | 103/163 kB | 33/310 kBProgress (3): 2.0 kB | 108/163 kB | 33/310 kBProgress (3): 2.0 kB | 123/163 kB | 33/310 kBProgress (3): 2.0 kB | 131/163 kB | 33/310 kBProgress (3): 2.0 kB | 131/163 kB | 34/310 kBProgress (3): 2.0 kB | 131/163 kB | 36/310 kBProgress (3): 2.0 kB | 131/163 kB | 37/310 kBProgress (3): 2.0 kB | 131/163 kB | 38/310 kBProgress (3): 2.0 kB | 131/163 kB | 40/310 kBProgress (3): 2.0 kB | 131/163 kB | 41/310 kBProgress (3): 2.0 kB | 131/163 kB | 42/310 kBProgress (3): 2.0 kB | 131/163 kB | 44/310 kBProgress (3): 2.0 kB | 147/163 kB | 44/310 kBProgress (3): 2.0 kB | 147/163 kB | 45/310 kBProgress (3): 2.0 kB | 147/163 kB | 49/310 kBProgress (3): 2.0 kB | 147/163 kB | 54/310 kBProgress (3): 2.0 kB | 147/163 kB | 58/310 kBProgress (3): 2.0 kB | 147/163 kB | 62/310 kBProgress (3): 2.0 kB | 163 kB | 62/310 kB    Progress (3): 2.0 kB | 163 kB | 66/310 kBProgress (3): 2.0 kB | 163 kB | 70/310 kBProgress (3): 2.0 kB | 163 kB | 74/310 kBProgress (3): 2.0 kB | 163 kB | 78/310 kBProgress (3): 2.0 kB | 163 kB | 82/310 kBProgress (3): 2.0 kB | 163 kB | 86/310 kBProgress (3): 2.0 kB | 163 kB | 91/310 kBProgress (3): 2.0 kB | 163 kB | 95/310 kBProgress (3): 2.0 kB | 163 kB | 99/310 kBProgress (3): 2.0 kB | 163 kB | 103/310 kBProgress (3): 2.0 kB | 163 kB | 106/310 kB                                          Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-test/2.15-SNAPSHOT/cdk-test-2.15-20261121.184217-6.jar (2.0 kB at 4.2 kB/s)
+Progress (2): 163 kB | 111/310 kBProgress (2): 163 kB | 115/310 kBProgress (2): 163 kB | 119/310 kBProgress (2): 163 kB | 123/310 kBProgress (2): 163 kB | 128/310 kBProgress (2): 163 kB | 132/310 kBProgress (2): 163 kB | 136/310 kBProgress (2): 163 kB | 139/310 kBProgress (2): 163 kB | 143/310 kBProgress (2): 163 kB | 148/310 kBProgress (2): 163 kB | 152/310 kBProgress (2): 163 kB | 156/310 kBProgress (2): 163 kB | 160/310 kBProgress (2): 163 kB | 164/310 kBProgress (2): 163 kB | 168/310 kBProgress (2): 163 kB | 172/310 kBProgress (2): 163 kB | 176/310 kBProgress (2): 163 kB | 180/310 kBProgress (2): 163 kB | 185/310 kBProgress (2): 163 kB | 188/310 kBProgress (2): 163 kB | 193/310 kBProgress (2): 163 kB | 197/310 kBProgress (2): 163 kB | 201/310 kBProgress (2): 163 kB | 205/310 kBProgress (2): 163 kB | 209/310 kBProgress (2): 163 kB | 225/310 kBProgress (2): 163 kB | 238/310 kBProgress (2): 163 kB | 254/310 kBProgress (2): 163 kB | 270/310 kB                                 Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-data/2.15-SNAPSHOT/cdk-data-2.15-20261121.184217-6.jar (163 kB at 104 kB/s)
+Progress (1): 287/310 kBProgress (1): 303/310 kBProgress (1): 310 kB                        Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-core/2.15-SNAPSHOT/cdk-core-2.15-20261121.184217-6.jar (310 kB at 168 kB/s)
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-inchi ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/inchi/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-inchi ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-inchi ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/inchi/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-inchi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-inchi ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-inchi ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/inchi/target/jchempaint-inchi-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-inchi ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/inchi/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi/3.4-SNAPSHOT/jchempaint-inchi-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/inchi/target/jchempaint-inchi-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi/3.4-SNAPSHOT/jchempaint-inchi-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] ------------< org.openscience.jchempaint:jchempaint-render >------------
+[INFO] Building jchempaint-render 3.4-SNAPSHOT                            [3/9]
+[INFO]   from render/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderawt/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-render/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderbasic/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderextra/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 2.0 kBProgress (2): 2.0 kB | 2.0 kBProgress (3): 2.0 kB | 2.0 kB | 2.0 kB                                      Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderbasic/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 2.6 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderbasic/2.15-SNAPSHOT/cdk-renderbasic-2.15-20261121.184217-6.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderawt/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 2.6 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderawt/2.15-SNAPSHOT/cdk-renderawt-2.15-20261121.184217-6.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderextra/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 2.4 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderextra/2.15-SNAPSHOT/cdk-renderextra-2.15-20261121.184217-6.pom
+Progress (1): 2.0 kBProgress (2): 2.0 kB | 1.1 kBProgress (2): 2.0 kB | 3.1 kBProgress (3): 2.0 kB | 3.1 kB | 1.5 kBProgress (4): 2.0 kB | 3.1 kB | 1.5 kB | 2.3 kB                                               Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-render/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 4.3 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-render/2.15-SNAPSHOT/cdk-render-2.15-20261121.184217-6.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderbasic/2.15-SNAPSHOT/cdk-renderbasic-2.15-20261121.184217-6.pom (3.1 kB)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-display/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderawt/2.15-SNAPSHOT/cdk-renderawt-2.15-20261121.184217-6.pom (1.5 kB)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderextra/2.15-SNAPSHOT/cdk-renderextra-2.15-20261121.184217-6.pom (2.3 kB)
+Progress (1): 1.2 kBProgress (1): 2.1 kBProgress (2): 2.1 kB | 781 B                            Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-render/2.15-SNAPSHOT/cdk-render-2.15-20261121.184217-6.pom (2.1 kB at 4.6 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-display/2.15-SNAPSHOT/maven-metadata.xml (781 B at 1.6 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-display/2.15-SNAPSHOT/cdk-display-2.15-20261121.184217-6.pom
+Progress (1): 741 B                   Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-display/2.15-SNAPSHOT/cdk-display-2.15-20261121.184217-6.pom (741 B at 1.1 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-standard/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-standard/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 2.0 kBProgress (2): 2.0 kB | 2.0 kB                             Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-standard/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 4.1 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-standard/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 3.9 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-standard/2.15-SNAPSHOT/cdk-standard-2.15-20261121.184217-6.pom
+Progress (1): 1.8 kB                    Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-standard/2.15-SNAPSHOT/cdk-standard-2.15-20261121.184217-6.pom (1.8 kB at 1.5 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-render/2.15-SNAPSHOT/cdk-render-2.15-20261121.184217-6.jar
+Progress (1): 7.3/45 kBProgress (1): 15/45 kB Progress (1): 22/45 kBProgress (1): 38/45 kBProgress (1): 45 kB                      Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-render/2.15-SNAPSHOT/cdk-render-2.15-20261121.184217-6.jar (45 kB at 216 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderbasic/2.15-SNAPSHOT/cdk-renderbasic-2.15-20261121.184217-6.jar
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderextra/2.15-SNAPSHOT/cdk-renderextra-2.15-20261121.184217-6.jar
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderawt/2.15-SNAPSHOT/cdk-renderawt-2.15-20261121.184217-6.jar
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-standard/2.15-SNAPSHOT/cdk-standard-2.15-20261121.184217-6.jar
+Progress (1): 5.6/17 kBProgress (1): 17 kB    Progress (2): 17 kB | 7.6/221 kBProgress (2): 17 kB | 16/221 kB Progress (2): 17 kB | 25/221 kBProgress (2): 17 kB | 41/221 kBProgress (2): 17 kB | 57/221 kBProgress (2): 17 kB | 66/221 kBProgress (2): 17 kB | 74/221 kBProgress (2): 17 kB | 90/221 kBProgress (2): 17 kB | 106/221 kBProgress (2): 17 kB | 123/221 kBProgress (2): 17 kB | 139/221 kBProgress (3): 17 kB | 139/221 kB | 0.8/363 kBProgress (3): 17 kB | 156/221 kB | 0.8/363 kBProgress (3): 17 kB | 156/221 kB | 2.1/363 kBProgress (3): 17 kB | 156/221 kB | 3.5/363 kBProgress (3): 17 kB | 156/221 kB | 4.9/363 kBProgress (3): 17 kB | 156/221 kB | 6.3/363 kBProgress (3): 17 kB | 156/221 kB | 7.6/363 kBProgress (3): 17 kB | 156/221 kB | 9.0/363 kBProgress (3): 17 kB | 156/221 kB | 13/363 kB Progress (3): 17 kB | 156/221 kB | 17/363 kBProgress (3): 17 kB | 156/221 kB | 22/363 kBProgress (3): 17 kB | 156/221 kB | 26/363 kBProgress (3): 17 kB | 156/221 kB | 30/363 kBProgress (3): 17 kB | 156/221 kB | 34/363 kBProgress (3): 17 kB | 164/221 kB | 34/363 kBProgress (3): 17 kB | 172/221 kB | 34/363 kBProgress (3): 17 kB | 172/221 kB | 39/363 kBProgress (3): 17 kB | 172/221 kB | 43/363 kBProgress (3): 17 kB | 172/221 kB | 47/363 kBProgress (3): 17 kB | 172/221 kB | 50/363 kBProgress (3): 17 kB | 188/221 kB | 50/363 kBProgress (3): 17 kB | 197/221 kB | 50/363 kBProgress (3): 17 kB | 213/221 kB | 50/363 kBProgress (3): 17 kB | 221 kB | 50/363 kB    Progress (4): 17 kB | 221 kB | 50/363 kB | 0.8/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 2.1/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 3.5/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 4.9/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 5.6/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 7.0/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 8.3/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 9.7/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 11/58 kB Progress (4): 17 kB | 221 kB | 50/363 kB | 12/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 14/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 15/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 17/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 18/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 19/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 21/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 22/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 23/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 25/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 26/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 28/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 29/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 30/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 50/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 54/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 58/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 63/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 67/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 71/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 75/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 80/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 83/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 87/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 91/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 96/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 98/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 103/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 107/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 111/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 115/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 119/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 124/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 128/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 131/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 135/363 kB | 32/58 kBProgress (4): 17 kB | 221 kB | 139/363 kB | 32/58 kB                                                    Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderawt/2.15-SNAPSHOT/cdk-renderawt-2.15-20261121.184217-6.jar (17 kB at 34 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderbasic/2.15-SNAPSHOT/cdk-renderbasic-2.15-20261121.184217-6.jar (221 kB at 355 kB/s)
+Progress (2): 139/363 kB | 34/58 kBProgress (2): 139/363 kB | 35/58 kBProgress (2): 139/363 kB | 36/58 kBProgress (2): 139/363 kB | 38/58 kBProgress (2): 139/363 kB | 39/58 kBProgress (2): 139/363 kB | 40/58 kBProgress (2): 139/363 kB | 45/58 kBProgress (2): 139/363 kB | 49/58 kBProgress (2): 139/363 kB | 51/58 kBProgress (2): 139/363 kB | 55/58 kBProgress (2): 139/363 kB | 58 kB   Progress (2): 143/363 kB | 58 kBProgress (2): 148/363 kB | 58 kBProgress (2): 152/363 kB | 58 kBProgress (2): 156/363 kB | 58 kBProgress (2): 160/363 kB | 58 kBProgress (2): 165/363 kB | 58 kBProgress (2): 169/363 kB | 58 kBProgress (2): 172/363 kB | 58 kBProgress (2): 188/363 kB | 58 kBProgress (2): 205/363 kB | 58 kBProgress (2): 221/363 kB | 58 kBProgress (2): 229/363 kB | 58 kBProgress (2): 238/363 kB | 58 kBProgress (2): 254/363 kB | 58 kBProgress (2): 262/363 kB | 58 kBProgress (2): 270/363 kB | 58 kBProgress (2): 287/363 kB | 58 kBProgress (2): 295/363 kB | 58 kBProgress (2): 303/363 kB | 58 kBProgress (2): 319/363 kB | 58 kBProgress (2): 328/363 kB | 58 kBProgress (2): 336/363 kB | 58 kBProgress (2): 352/363 kB | 58 kBProgress (2): 360/363 kB | 58 kBProgress (2): 363 kB | 58 kB                                Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderextra/2.15-SNAPSHOT/cdk-renderextra-2.15-20261121.184217-6.jar (58 kB at 66 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-standard/2.15-SNAPSHOT/cdk-standard-2.15-20261121.184217-6.jar (363 kB at 349 kB/s)
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-render ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/render/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-render ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 36 source files with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/render/src/main/java/org/openscience/jchempaint/renderer/JChemPaintRendererModel.java: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/render/src/main/java/org/openscience/jchempaint/renderer/JChemPaintRendererModel.java uses or overrides a deprecated API.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/render/src/main/java/org/openscience/jchempaint/renderer/JChemPaintRendererModel.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-render ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/render/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-render ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-render ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-render ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/render/target/jchempaint-render-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-render ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/render/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-render/3.4-SNAPSHOT/jchempaint-render-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/render/target/jchempaint-render-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-render/3.4-SNAPSHOT/jchempaint-render-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] -------------< org.openscience.jchempaint:jchempaint-core >-------------
+[INFO] Building jchempaint-core 3.4-SNAPSHOT                              [4/9]
+[INFO]   from core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-depict/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-formula/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ioformats/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-libiocml/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-io/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 2.0 kBProgress (2): 2.0 kB | 2.0 kBProgress (3): 2.0 kB | 2.0 kB | 2.0 kBProgress (4): 2.0 kB | 2.0 kB | 2.0 kB | 2.0 kB                                               Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-depict/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 4.2 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-depict/2.15-SNAPSHOT/cdk-depict-2.15-20261121.184217-6.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-formula/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 3.9 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ioformats/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 3.9 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-formula/2.15-SNAPSHOT/cdk-formula-2.15-20261121.184217-6.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-libiocml/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 3.9 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ioformats/2.15-SNAPSHOT/cdk-ioformats-2.15-20261121.184217-6.pom
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-libiocml/2.15-SNAPSHOT/cdk-libiocml-2.15-20261121.184217-6.pom
+Progress (1): 2.0 kBProgress (2): 2.0 kB | 3.2 kBProgress (2): 2.0 kB | 4.0 kBProgress (3): 2.0 kB | 4.0 kB | 2.9 kBProgress (4): 2.0 kB | 4.0 kB | 2.9 kB | 2.2 kBProgress (4): 2.0 kB | 4.0 kB | 2.9 kB | 4.9 kBProgress (5): 2.0 kB | 4.0 kB | 2.9 kB | 4.9 kB | 1.7 kB                                                        Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-io/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 2.3 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-io/2.15-SNAPSHOT/cdk-io-2.15-20261121.184217-6.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-depict/2.15-SNAPSHOT/cdk-depict-2.15-20261121.184217-6.pom (4.0 kB at 4.2 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-app/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-formula/2.15-SNAPSHOT/cdk-formula-2.15-20261121.184217-6.pom (2.9 kB at 3.1 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-tool/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-libiocml/2.15-SNAPSHOT/cdk-libiocml-2.15-20261121.184217-6.pom (4.9 kB at 5.2 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-storage/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ioformats/2.15-SNAPSHOT/cdk-ioformats-2.15-20261121.184217-6.pom (1.7 kB at 1.8 kB/s)
+Progress (1): 1.1 kBProgress (1): 3.7 kBProgress (2): 3.7 kB | 777 BProgress (3): 3.7 kB | 777 B | 778 BProgress (4): 3.7 kB | 777 B | 778 B | 781 B                                            Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-io/2.15-SNAPSHOT/cdk-io-2.15-20261121.184217-6.pom (3.7 kB at 3.9 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-app/2.15-SNAPSHOT/maven-metadata.xml (777 B at 1.6 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-app/2.15-SNAPSHOT/cdk-app-2.15-20261121.184217-6.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-tool/2.15-SNAPSHOT/maven-metadata.xml (778 B at 1.6 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-tool/2.15-SNAPSHOT/cdk-tool-2.15-20261121.184217-6.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-storage/2.15-SNAPSHOT/maven-metadata.xml (781 B at 1.6 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-storage/2.15-SNAPSHOT/cdk-storage-2.15-20261121.184217-6.pom
+Progress (1): 620 BProgress (2): 620 B | 1.1 kBProgress (3): 620 B | 1.1 kB | 957 B                                    Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-app/2.15-SNAPSHOT/cdk-app-2.15-20261121.184217-6.pom (620 B at 1.3 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-sdg/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-tool/2.15-SNAPSHOT/cdk-tool-2.15-20261121.184217-6.pom (1.1 kB at 2.3 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-smiles/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-storage/2.15-SNAPSHOT/cdk-storage-2.15-20261121.184217-6.pom (957 B at 2.7 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-valencycheck/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-inchi/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 2.0 kB                    Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-isomorphism/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-isomorphism/2.15-SNAPSHOT/maven-metadata.xml
+Progress (2): 2.0 kB | 2.0 kBProgress (3): 2.0 kB | 2.0 kB | 2.0 kBProgress (4): 2.0 kB | 2.0 kB | 2.0 kB | 2.0 kB                                               Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-sdg/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 5.5 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-sdg/2.15-SNAPSHOT/cdk-sdg-2.15-20261121.184217-6.pom
+Progress (4): 2.0 kB | 2.0 kB | 2.0 kB | 2.0 kB                                               Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-smiles/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 5.3 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-smiles/2.15-SNAPSHOT/cdk-smiles-2.15-20261121.184217-6.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-valencycheck/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 4.3 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-valencycheck/2.15-SNAPSHOT/cdk-valencycheck-2.15-20261121.184217-6.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-inchi/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 4.1 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-inchi/2.15-SNAPSHOT/cdk-inchi-2.15-20261121.184217-6.pom
+Progress (2): 2.0 kB | 3.1 kB                             Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-isomorphism/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 4.0 kB/s)
+Progress (2): 3.1 kB | 3.2 kBProgress (2): 3.1 kB | 4.0 kBProgress (3): 3.1 kB | 4.0 kB | 2.0 kBProgress (4): 3.1 kB | 4.0 kB | 2.0 kB | 1.5 kBProgress (5): 3.1 kB | 4.0 kB | 2.0 kB | 1.5 kB | 925 BProgress (5): 3.1 kB | 4.0 kB | 2.0 kB | 1.5 kB | 4.9 kB                                                        Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-sdg/2.15-SNAPSHOT/cdk-sdg-2.15-20261121.184217-6.pom (3.1 kB at 6.6 kB/s)
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderawt/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-smiles/2.15-SNAPSHOT/cdk-smiles-2.15-20261121.184217-6.pom (4.0 kB at 8.5 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-silent/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-silent/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-isomorphism/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 2.3 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-valencycheck/2.15-SNAPSHOT/cdk-valencycheck-2.15-20261121.184217-6.pom (1.5 kB at 3.2 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-isomorphism/2.15-SNAPSHOT/cdk-isomorphism-2.15-20261121.184217-6.pom
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-atomtype/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-atomtype/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-inchi/2.15-SNAPSHOT/cdk-inchi-2.15-20261121.184217-6.pom (4.9 kB at 10 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-dict/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-dict/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 2.0 kBProgress (2): 2.0 kB | 2.0 kBProgress (3): 2.0 kB | 2.0 kB | 2.0 kBProgress (4): 2.0 kB | 2.0 kB | 2.0 kB | 2.5 kBProgress (5): 2.0 kB | 2.0 kB | 2.0 kB | 2.5 kB | 2.0 kBProgress (6): 2.0 kB | 2.0 kB | 2.0 kB | 2.5 kB | 2.0 kB | 2.0 kB                                                                 Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderawt/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 3.9 kB/s)
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ctab/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ctab/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-silent/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 4.2 kB/s)
+Progress (5): 2.0 kB | 2.5 kB | 2.0 kB | 2.0 kB | 2.0 kB                                                        Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-isomorphism/2.15-SNAPSHOT/cdk-isomorphism-2.15-20261121.184217-6.pom (2.5 kB at 5.3 kB/s)
+Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-atomtype/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 4.2 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-dict/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 4.0 kB/s)
+Progress (3): 2.0 kB | 2.0 kB | 2.0 kBProgress (4): 2.0 kB | 2.0 kB | 2.0 kB | 2.0 kB                                               Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-dict/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 3.4 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-dict/2.15-SNAPSHOT/cdk-dict-2.15-20261121.184217-6.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-silent/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 26 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-silent/2.15-SNAPSHOT/cdk-silent-2.15-20261121.184217-6.pom
+Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ctab/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-atomtype/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 13 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-atomtype/2.15-SNAPSHOT/cdk-atomtype-2.15-20261121.184217-6.pom
+Progress (1): 1.1 kBProgress (1): 1.9 kBProgress (2): 1.9 kB | 2.6 kBProgress (2): 1.9 kB | 3.3 kBProgress (3): 1.9 kB | 3.3 kB | 2.0 kB                                      Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-dict/2.15-SNAPSHOT/cdk-dict-2.15-20261121.184217-6.pom (1.9 kB at 5.6 kB/s)
+Progress (3): 3.3 kB | 2.0 kB | 1.1 kBProgress (3): 3.3 kB | 2.0 kB | 1.7 kB                                      Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-silent/2.15-SNAPSHOT/cdk-silent-2.15-20261121.184217-6.pom (3.3 kB at 3.1 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ctab/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 2.7 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ctab/2.15-SNAPSHOT/cdk-ctab-2.15-20261121.184217-6.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-atomtype/2.15-SNAPSHOT/cdk-atomtype-2.15-20261121.184217-6.pom (1.7 kB at 1.6 kB/s)
+Progress (1): 1.6 kBProgress (1): 3.3 kB                    Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ctab/2.15-SNAPSHOT/cdk-ctab-2.15-20261121.184217-6.pom (3.3 kB at 6.9 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-depict/2.15-SNAPSHOT/cdk-depict-2.15-20261121.184217-6.jar
+Progress (1): 0.4/86 kBProgress (1): 1.8/86 kBProgress (1): 3.2/86 kBProgress (1): 4.5/86 kBProgress (1): 5.6/86 kBProgress (1): 7.0/86 kBProgress (1): 8.3/86 kBProgress (1): 9.7/86 kBProgress (1): 11/86 kB Progress (1): 12/86 kBProgress (1): 14/86 kBProgress (1): 15/86 kBProgress (1): 17/86 kBProgress (1): 18/86 kBProgress (1): 19/86 kBProgress (1): 21/86 kBProgress (1): 22/86 kBProgress (1): 23/86 kBProgress (1): 25/86 kBProgress (1): 26/86 kBProgress (1): 27/86 kBProgress (1): 29/86 kBProgress (1): 30/86 kBProgress (1): 31/86 kBProgress (1): 33/86 kBProgress (1): 34/86 kBProgress (1): 36/86 kBProgress (1): 37/86 kBProgress (1): 38/86 kBProgress (1): 40/86 kBProgress (1): 41/86 kBProgress (1): 42/86 kBProgress (1): 44/86 kBProgress (1): 45/86 kBProgress (1): 49/86 kBProgress (1): 50/86 kBProgress (1): 54/86 kBProgress (1): 59/86 kBProgress (1): 63/86 kBProgress (1): 67/86 kBProgress (1): 71/86 kBProgress (1): 76/86 kBProgress (1): 80/86 kBProgress (1): 83/86 kBProgress (1): 86 kB                      Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-depict/2.15-SNAPSHOT/cdk-depict-2.15-20261121.184217-6.jar (86 kB at 168 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-formula/2.15-SNAPSHOT/cdk-formula-2.15-20261121.184217-6.jar
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ioformats/2.15-SNAPSHOT/cdk-ioformats-2.15-20261121.184217-6.jar
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-io/2.15-SNAPSHOT/cdk-io-2.15-20261121.184217-6.jar
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-libiocml/2.15-SNAPSHOT/cdk-libiocml-2.15-20261121.184217-6.jar
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-sdg/2.15-SNAPSHOT/cdk-sdg-2.15-20261121.184217-6.jar
+Progress (1): 3.6/79 kBProgress (1): 7.9/79 kBProgress (1): 12/79 kB Progress (1): 16/79 kBProgress (1): 21/79 kBProgress (1): 22/79 kBProgress (1): 26/79 kBProgress (1): 30/79 kBProgress (1): 33/79 kBProgress (1): 37/79 kBProgress (1): 41/79 kBProgress (1): 45/79 kBProgress (1): 50/79 kBProgress (1): 54/79 kBProgress (1): 58/79 kBProgress (1): 59/79 kBProgress (1): 63/79 kBProgress (1): 67/79 kBProgress (1): 72/79 kBProgress (1): 76/79 kBProgress (1): 79 kB   Progress (2): 79 kB | 5.6/106 kBProgress (2): 79 kB | 22/106 kB Progress (2): 79 kB | 38/106 kBProgress (2): 79 kB | 55/106 kBProgress (2): 79 kB | 66/106 kBProgress (2): 79 kB | 74/106 kBProgress (2): 79 kB | 90/106 kBProgress (2): 79 kB | 92/106 kBProgress (2): 79 kB | 106 kB   Progress (3): 79 kB | 106 kB | 7.6/248 kBProgress (3): 79 kB | 106 kB | 8.2/248 kBProgress (3): 79 kB | 106 kB | 25/248 kB Progress (3): 79 kB | 106 kB | 41/248 kBProgress (3): 79 kB | 106 kB | 57/248 kBProgress (3): 79 kB | 106 kB | 74/248 kBProgress (3): 79 kB | 106 kB | 83/248 kBProgress (3): 79 kB | 106 kB | 98/248 kBProgress (3): 79 kB | 106 kB | 115/248 kBProgress (3): 79 kB | 106 kB | 124/248 kBProgress (3): 79 kB | 106 kB | 141/248 kBProgress (3): 79 kB | 106 kB | 157/248 kBProgress (3): 79 kB | 106 kB | 164/248 kBProgress (3): 79 kB | 106 kB | 172/248 kBProgress (3): 79 kB | 106 kB | 188/248 kBProgress (3): 79 kB | 106 kB | 197/248 kBProgress (3): 79 kB | 106 kB | 213/248 kBProgress (3): 79 kB | 106 kB | 229/248 kBProgress (3): 79 kB | 106 kB | 246/248 kBProgress (3): 79 kB | 106 kB | 248 kB    Progress (4): 79 kB | 106 kB | 248 kB | 0.8/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 2.1/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 3.5/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 4.9/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 6.3/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 7.6/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 9.0/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 10/28 kB Progress (4): 79 kB | 106 kB | 248 kB | 12/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 13/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 14/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 16/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 17/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 19/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 20/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 21/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 23/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 24/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 25/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 27/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 28/28 kBProgress (4): 79 kB | 106 kB | 248 kB | 28 kB   Progress (5): 79 kB | 106 kB | 248 kB | 28 kB | 0.8/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 2.1/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 3.5/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 4.9/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 5.6/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 7.0/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 8.3/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 9.7/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 11/456 kB Progress (5): 79 kB | 106 kB | 248 kB | 28 kB | 12/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 14/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 15/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 17/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 18/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 19/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 21/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 22/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 23/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 25/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 26/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 27/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 29/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 30/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 32/456 kBProgress (5): 79 kB | 106 kB | 248 kB | 28 kB | 33/456 kB                                                         Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-formula/2.15-SNAPSHOT/cdk-formula-2.15-20261121.184217-6.jar (79 kB at 166 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-smiles/2.15-SNAPSHOT/cdk-smiles-2.15-20261121.184217-6.jar
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ioformats/2.15-SNAPSHOT/cdk-ioformats-2.15-20261121.184217-6.jar (106 kB at 217 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-valencycheck/2.15-SNAPSHOT/cdk-valencycheck-2.15-20261121.184217-6.jar
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-sdg/2.15-SNAPSHOT/cdk-sdg-2.15-20261121.184217-6.jar (248 kB at 326 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-inchi/2.15-SNAPSHOT/cdk-inchi-2.15-20261121.184217-6.jar
+Progress (2): 28 kB | 34/456 kBProgress (2): 28 kB | 36/456 kBProgress (2): 28 kB | 37/456 kBProgress (2): 28 kB | 38/456 kBProgress (2): 28 kB | 40/456 kBProgress (2): 28 kB | 41/456 kBProgress (2): 28 kB | 42/456 kBProgress (2): 28 kB | 44/456 kBProgress (2): 28 kB | 45/456 kBProgress (2): 28 kB | 49/456 kBProgress (2): 28 kB | 54/456 kBProgress (2): 28 kB | 58/456 kBProgress (2): 28 kB | 60/456 kBProgress (2): 28 kB | 64/456 kBProgress (2): 28 kB | 68/456 kBProgress (2): 28 kB | 72/456 kBProgress (2): 28 kB | 76/456 kBProgress (2): 28 kB | 80/456 kBProgress (2): 28 kB | 85/456 kBProgress (2): 28 kB | 89/456 kBProgress (2): 28 kB | 92/456 kB                               Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-libiocml/2.15-SNAPSHOT/cdk-libiocml-2.15-20261121.184217-6.jar (28 kB at 33 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-isomorphism/2.15-SNAPSHOT/cdk-isomorphism-2.15-20261121.184217-6.jar
+Progress (1): 97/456 kBProgress (1): 101/456 kBProgress (1): 105/456 kBProgress (1): 109/456 kBProgress (1): 114/456 kBProgress (1): 118/456 kBProgress (1): 122/456 kBProgress (1): 126/456 kBProgress (1): 130/456 kBProgress (1): 135/456 kBProgress (1): 139/456 kBProgress (1): 142/456 kBProgress (1): 146/456 kBProgress (1): 150/456 kBProgress (1): 154/456 kBProgress (1): 158/456 kBProgress (1): 163/456 kBProgress (1): 166/456 kBProgress (1): 170/456 kBProgress (1): 175/456 kBProgress (1): 179/456 kBProgress (1): 183/456 kBProgress (1): 187/456 kBProgress (2): 187/456 kB | 3.6/98 kBProgress (2): 187/456 kB | 7.9/98 kBProgress (2): 187/456 kB | 12/98 kB Progress (2): 187/456 kB | 16/98 kBProgress (2): 191/456 kB | 16/98 kBProgress (2): 191/456 kB | 21/98 kBProgress (2): 191/456 kB | 25/98 kBProgress (2): 191/456 kB | 26/98 kBProgress (2): 191/456 kB | 33/98 kBProgress (3): 191/456 kB | 33/98 kB | 7.6/22 kBProgress (3): 191/456 kB | 33/98 kB | 16/22 kB Progress (3): 191/456 kB | 33/98 kB | 22 kB   Progress (3): 191/456 kB | 49/98 kB | 22 kBProgress (3): 191/456 kB | 66/98 kB | 22 kBProgress (3): 191/456 kB | 74/98 kB | 22 kBProgress (3): 191/456 kB | 83/98 kB | 22 kBProgress (3): 191/456 kB | 98 kB | 22 kB   Progress (4): 191/456 kB | 98 kB | 22 kB | 7.6/42 kBProgress (4): 191/456 kB | 98 kB | 22 kB | 16/42 kB Progress (4): 191/456 kB | 98 kB | 22 kB | 22/42 kBProgress (4): 191/456 kB | 98 kB | 22 kB | 38/42 kBProgress (4): 191/456 kB | 98 kB | 22 kB | 42 kB   Progress (4): 195/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 199/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 203/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 207/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 224/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 232/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 248/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 264/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 281/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 297/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 314/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 322/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 330/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 346/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 355/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 363/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 379/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 387/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 395/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 412/456 kB | 98 kB | 22 kB | 42 kBProgress (4): 420/456 kB | 98 kB | 22 kB | 42 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 0.8/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 2.1/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 3.5/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 4.9/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 6.3/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 7.6/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 9.0/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 10/235 kB Progress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 12/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 13/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 14/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 19/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 22/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 26/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 30/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 33/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 37/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 41/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 45/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 50/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 54/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 58/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 62/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 66/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 70/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 74/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 78/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 82/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 86/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 91/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 95/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 98/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 103/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 107/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 111/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 115/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 119/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 124/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 128/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 131/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 135/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 140/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 144/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 148/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 149/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 153/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 157/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 162/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 166/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 170/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 174/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 182/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 198/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 215/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 231/235 kBProgress (5): 420/456 kB | 98 kB | 22 kB | 42 kB | 235 kB                                                             Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-smiles/2.15-SNAPSHOT/cdk-smiles-2.15-20261121.184217-6.jar (98 kB at 83 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-silent/2.15-SNAPSHOT/cdk-silent-2.15-20261121.184217-6.jar
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-valencycheck/2.15-SNAPSHOT/cdk-valencycheck-2.15-20261121.184217-6.jar (22 kB at 19 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-atomtype/2.15-SNAPSHOT/cdk-atomtype-2.15-20261121.184217-6.jar
+Progress (3): 428/456 kB | 42 kB | 235 kBProgress (3): 445/456 kB | 42 kB | 235 kBProgress (3): 456 kB | 42 kB | 235 kB                                         Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-inchi/2.15-SNAPSHOT/cdk-inchi-2.15-20261121.184217-6.jar (42 kB at 34 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-dict/2.15-SNAPSHOT/cdk-dict-2.15-20261121.184217-6.jar
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-isomorphism/2.15-SNAPSHOT/cdk-isomorphism-2.15-20261121.184217-6.jar (235 kB at 166 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ctab/2.15-SNAPSHOT/cdk-ctab-2.15-20261121.184217-6.jar
+Progress (2): 456 kB | 5.6/27 kBProgress (2): 456 kB | 22/27 kB Progress (2): 456 kB | 27 kB   Progress (3): 456 kB | 27 kB | 7.6/143 kBProgress (3): 456 kB | 27 kB | 16/143 kB Progress (3): 456 kB | 27 kB | 22/143 kBProgress (3): 456 kB | 27 kB | 38/143 kBProgress (3): 456 kB | 27 kB | 55/143 kBProgress (3): 456 kB | 27 kB | 66/143 kB                                        Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-io/2.15-SNAPSHOT/cdk-io-2.15-20261121.184217-6.jar (456 kB at 315 kB/s)
+Progress (2): 27 kB | 74/143 kBProgress (2): 27 kB | 83/143 kBProgress (3): 27 kB | 83/143 kB | 5.6/40 kBProgress (3): 27 kB | 83/143 kB | 22/40 kB Progress (3): 27 kB | 83/143 kB | 38/40 kBProgress (3): 27 kB | 83/143 kB | 40 kB   Progress (3): 27 kB | 100/143 kB | 40 kBProgress (3): 27 kB | 116/143 kB | 40 kBProgress (3): 27 kB | 133/143 kB | 40 kBProgress (3): 27 kB | 143 kB | 40 kB    Progress (4): 27 kB | 143 kB | 40 kB | 5.6/175 kBProgress (4): 27 kB | 143 kB | 40 kB | 22/175 kB Progress (4): 27 kB | 143 kB | 40 kB | 38/175 kBProgress (4): 27 kB | 143 kB | 40 kB | 55/175 kBProgress (4): 27 kB | 143 kB | 40 kB | 66/175 kBProgress (4): 27 kB | 143 kB | 40 kB | 74/175 kBProgress (4): 27 kB | 143 kB | 40 kB | 90/175 kBProgress (4): 27 kB | 143 kB | 40 kB | 98/175 kB                                                Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-atomtype/2.15-SNAPSHOT/cdk-atomtype-2.15-20261121.184217-6.jar (27 kB at 15 kB/s)
+Progress (3): 143 kB | 40 kB | 115/175 kBProgress (3): 143 kB | 40 kB | 131/175 kBProgress (3): 143 kB | 40 kB | 147/175 kBProgress (3): 143 kB | 40 kB | 164/175 kBProgress (3): 143 kB | 40 kB | 175 kB                                         Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-dict/2.15-SNAPSHOT/cdk-dict-2.15-20261121.184217-6.jar (40 kB at 21 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-silent/2.15-SNAPSHOT/cdk-silent-2.15-20261121.184217-6.jar (143 kB at 70 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ctab/2.15-SNAPSHOT/cdk-ctab-2.15-20261121.184217-6.jar (175 kB at 82 kB/s)
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-core ---
+[INFO] Copying 382 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-core ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 158 source files with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/src/main/java/org/openscience/jchempaint/controller/ControllerHub.java: Some input files use or override a deprecated API.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/src/main/java/org/openscience/jchempaint/controller/ControllerHub.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/src/main/java/org/openscience/jchempaint/action/CopyPasteAction.java: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/src/main/java/org/openscience/jchempaint/action/CopyPasteAction.java uses unchecked or unsafe operations.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/src/main/java/org/openscience/jchempaint/action/CopyPasteAction.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- gettext:1.2.4:dist (convert-po-class) @ jchempaint-core ---
+[INFO] Processing nl.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/target/classes -r app.i18n.Messages -l nl /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/po/nl.po
+[WARNING] Note: /tmp/msg9Ma0TV/app/i18n/Messages_nl.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing cs.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/target/classes -r app.i18n.Messages -l cs /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/po/cs.po
+[WARNING] Note: /tmp/msgJfY0yE/app/i18n/Messages_cs.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing ru.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/target/classes -r app.i18n.Messages -l ru /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/po/ru.po
+[WARNING] Note: /tmp/msgXPvLKR/app/i18n/Messages_ru.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing ca.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/target/classes -r app.i18n.Messages -l ca /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/po/ca.po
+[WARNING] Note: /tmp/msgkA7MiE/app/i18n/Messages_ca.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing zh.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/target/classes -r app.i18n.Messages -l zh /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/po/zh.po
+[WARNING] Note: /tmp/msghjnnwa/app/i18n/Messages_zh.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing es.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/target/classes -r app.i18n.Messages -l es /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/po/es.po
+[WARNING] Note: /tmp/msgjnreoD/app/i18n/Messages_es.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing pt_BR.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/target/classes -r app.i18n.Messages -l pt_BR /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/po/pt_BR.po
+[WARNING] Note: /tmp/msguOe3Rz/app/i18n/Messages_pt_BR.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing th.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/target/classes -r app.i18n.Messages -l th /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/po/th.po
+[WARNING] Note: /tmp/msg5XZJ8m/app/i18n/Messages_th.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing de.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/target/classes -r app.i18n.Messages -l de /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/po/de.po
+[WARNING] Note: /tmp/msg5Kx5ot/app/i18n/Messages_de.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing ar.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/target/classes -r app.i18n.Messages -l ar /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/po/ar.po
+[WARNING] Note: /tmp/msgaOBSLp/app/i18n/Messages_ar.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing hu.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/target/classes -r app.i18n.Messages -l hu /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/po/hu.po
+[WARNING] Note: /tmp/msguFLer3/app/i18n/Messages_hu.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing pl.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/target/classes -r app.i18n.Messages -l pl /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/po/pl.po
+[WARNING] Note: /tmp/msgDCpzFR/app/i18n/Messages_pl.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Creating resource bundle for source locale
+[INFO] Creating default resource bundle
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-core ---
+[INFO] Copying 12 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-core ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 11 source files with javac [debug release 8] to target/test-classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/src/test/java/org/openscience/cdk/CDKTestCase.java: Some input files use or override a deprecated API.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/src/test/java/org/openscience/cdk/CDKTestCase.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ jchempaint-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-core ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/target/jchempaint-core-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-core ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-core/3.4-SNAPSHOT/jchempaint-core-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/core/target/jchempaint-core-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-core/3.4-SNAPSHOT/jchempaint-core-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --------< org.openscience.jchempaint:jchempaint-inchi-nestedvm >--------
+[INFO] Building jchempaint-inchi-nestedvm 3.4-SNAPSHOT                    [5/9]
+[INFO]   from inchi-nestedvm/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-smiles/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ioformats/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 2.0 kBProgress (2): 2.0 kB | 2.0 kB                             Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-smiles/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 4.1 kB/s)
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-valencycheck/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ioformats/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 3.8 kB/s)
+Progress (1): 2.0 kB                    Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-valencycheck/2.15-SNAPSHOT/maven-metadata.xml (2.0 kB at 10.0 kB/s)
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-inchi-nestedvm ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-inchi-nestedvm ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 5 source files with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-inchi-nestedvm ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/inchi-nestedvm/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-inchi-nestedvm ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 8] to target/test-classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-inchi-nestedvm ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-inchi-nestedvm ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/inchi-nestedvm/target/jchempaint-inchi-nestedvm-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-inchi-nestedvm ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/inchi-nestedvm/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi-nestedvm/3.4-SNAPSHOT/jchempaint-inchi-nestedvm-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/inchi-nestedvm/target/jchempaint-inchi-nestedvm-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi-nestedvm/3.4-SNAPSHOT/jchempaint-inchi-nestedvm-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] ----------< org.openscience.jchempaint:jchempaint-inchi-jni >-----------
+[INFO] Building jchempaint-inchi-jni 3.4-SNAPSHOT                         [6/9]
+[INFO]   from inchi-jni/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-inchi-jni ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-inchi-jni ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-inchi-jni ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/inchi-jni/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-inchi-jni ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-inchi-jni ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-inchi-jni ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/inchi-jni/target/jchempaint-inchi-jni-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-inchi-jni ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/inchi-jni/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi-jni/3.4-SNAPSHOT/jchempaint-inchi-jni-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/inchi-jni/target/jchempaint-inchi-jni-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi-jni/3.4-SNAPSHOT/jchempaint-inchi-jni-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] -----------< org.openscience.jchempaint:jchempaint-app-osx >------------
+[INFO] Building jchempaint-app-osx 3.4-SNAPSHOT                           [7/9]
+[INFO]   from app-osx/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-app-osx ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-app-osx ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-app-osx ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-osx/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-app-osx ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-app-osx ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-app-osx ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-osx/target/jchempaint-app-osx-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-app-osx ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-osx/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-osx/3.4-SNAPSHOT/jchempaint-app-osx-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-osx/target/jchempaint-app-osx-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-osx/3.4-SNAPSHOT/jchempaint-app-osx-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] -----------< org.openscience.jchempaint:jchempaint-app-jar >------------
+[INFO] Building jchempaint-app-jar 3.4-SNAPSHOT                           [8/9]
+[INFO]   from app-jar/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-app-jar ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-app-jar ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-app-jar ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-jar/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-app-jar ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-app-jar ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-app-jar ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-jar/target/jchempaint-app-jar-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- shade:2.0:shade (default) @ jchempaint-app-jar ---
+[INFO] Including org.openscience.jchempaint:jchempaint-core:jar:3.4-SNAPSHOT in the shaded jar.
+[INFO] Including com.formdev:flatlaf:jar:3.6.1 in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-depict:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including javax.vecmath:vecmath:jar:1.5.2 in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-isomorphism:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-renderawt:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-silent:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.freehep:freehep-graphicsio-pdf:jar:2.4 in the shaded jar.
+[INFO] Including org.freehep:freehep-graphics2d:jar:2.4 in the shaded jar.
+[INFO] Including org.freehep:freehep-graphicsio:jar:2.4 in the shaded jar.
+[INFO] Including org.freehep:freehep-io:jar:2.2.2 in the shaded jar.
+[INFO] Including org.freehep:freehep-graphicsio-tests:jar:2.4 in the shaded jar.
+[INFO] Including org.freehep:freehep-graphicsbase:jar:2.4 in the shaded jar.
+[INFO] Including org.freehep:freehep-graphicsio-ps:jar:2.4 in the shaded jar.
+[INFO] Including commons-cli:commons-cli:jar:1.2 in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-core:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-data:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-formula:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-render:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-renderbasic:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-renderextra:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-interfaces:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-ioformats:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-io:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-atomtype:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-libiocml:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.blueobelisk:cmlxom:jar:4.20 in the shaded jar.
+[INFO] Including org.blueobelisk:euclid:jar:2.20 in the shaded jar.
+[INFO] Including org.apache.logging.log4j:log4j-core:jar:2.26.1 in the shaded jar.
+[INFO] Including org.apache.commons:commons-lang3:jar:3.21.0 in the shaded jar.
+[INFO] Including org.apache.commons:commons-math:jar:2.2 in the shaded jar.
+[INFO] Including xom:xom:jar:1.4.6 in the shaded jar.
+[INFO] Including joda-time:joda-time:jar:2.15.1 in the shaded jar.
+[INFO] Including commons-io:commons-io:jar:2.22.0 in the shaded jar.
+[INFO] Including org.apache.logging.log4j:log4j-1.2-api:jar:2.26.1 in the shaded jar.
+[INFO] Including org.apache.logging.log4j:log4j-api:jar:2.26.1 in the shaded jar.
+[INFO] Including org.ccil.cowan.tagsoup:tagsoup:jar:1.2.1 in the shaded jar.
+[INFO] Including xml-apis:xml-apis:jar:1.4.01 in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-dict:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-ctab:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-sdg:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-smiles:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including uk.ac.ebi.beam:beam-core:jar:1.4 in the shaded jar.
+[INFO] Including uk.ac.ebi.beam:beam-func:jar:1.4 in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-standard:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-valencycheck:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-inchi:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-api:jar:1.3.1 in the shaded jar.
+[INFO] Including net.java.dev.jna:jna:jar:5.10.0 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-core:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-darwin-aarch64:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-darwin-x86-64:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-linux-aarch64:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-linux-arm:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-linux-x86:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-linux-x86-64:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-win32-x86:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-win32-x86-64:jar:1.3.1 in the shaded jar.
+[INFO] Including org.openscience.jchempaint:jchempaint-inchi:jar:3.4-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.jchempaint:jchempaint-render:jar:3.4-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.jchempaint:jchempaint-inchi-jni:jar:3.4-SNAPSHOT in the shaded jar.
+[WARNING] We have a duplicate module-info.class in /home/fusion809/.m2/repository/org/apache/logging/log4j/log4j-core/2.26.1/log4j-core-2.26.1.jar
+[WARNING] We have a duplicate META-INF/versions/9/module-info.class in /home/fusion809/.m2/repository/commons-io/commons-io/2.22.0/commons-io-2.22.0.jar
+[WARNING] We have a duplicate module-info.class in /home/fusion809/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.26.1/log4j-1.2-api-2.26.1.jar
+[WARNING] We have a duplicate module-info.class in /home/fusion809/.m2/repository/org/apache/logging/log4j/log4j-api/2.26.1/log4j-api-2.26.1.jar
+[INFO] Replacing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-jar/target/JChemPaint.jar with /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-jar/target/jchempaint-app-jar-3.4-SNAPSHOT-shaded.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-app-jar ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-jar/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-jar/3.4-SNAPSHOT/jchempaint-app-jar-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-jar/target/jchempaint-app-jar-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-jar/3.4-SNAPSHOT/jchempaint-app-jar-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] ---------< org.openscience.jchempaint:jchempaint-app-windows >----------
+[INFO] Building jchempaint-app-windows 3.4-SNAPSHOT                       [9/9]
+[INFO]   from app-windows/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-app-windows ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-app-windows ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-app-windows ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-windows/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-app-windows ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-app-windows ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-app-windows ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-windows/target/jchempaint-app-windows-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- shade:2.0:shade (default) @ jchempaint-app-windows ---
+[INFO] Including org.openscience.jchempaint:jchempaint-core:jar:3.4-SNAPSHOT in the shaded jar.
+[INFO] Including com.formdev:flatlaf:jar:3.6.1 in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-depict:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including javax.vecmath:vecmath:jar:1.5.2 in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-isomorphism:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-renderawt:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-silent:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.freehep:freehep-graphicsio-pdf:jar:2.4 in the shaded jar.
+[INFO] Including org.freehep:freehep-graphics2d:jar:2.4 in the shaded jar.
+[INFO] Including org.freehep:freehep-graphicsio:jar:2.4 in the shaded jar.
+[INFO] Including org.freehep:freehep-io:jar:2.2.2 in the shaded jar.
+[INFO] Including org.freehep:freehep-graphicsio-tests:jar:2.4 in the shaded jar.
+[INFO] Including org.freehep:freehep-graphicsbase:jar:2.4 in the shaded jar.
+[INFO] Including org.freehep:freehep-graphicsio-ps:jar:2.4 in the shaded jar.
+[INFO] Including commons-cli:commons-cli:jar:1.2 in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-core:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-data:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-formula:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-render:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-renderbasic:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-renderextra:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-interfaces:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-ioformats:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-io:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-atomtype:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-libiocml:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.blueobelisk:cmlxom:jar:4.20 in the shaded jar.
+[INFO] Including org.blueobelisk:euclid:jar:2.20 in the shaded jar.
+[INFO] Including org.apache.logging.log4j:log4j-core:jar:2.26.1 in the shaded jar.
+[INFO] Including org.apache.commons:commons-lang3:jar:3.21.0 in the shaded jar.
+[INFO] Including org.apache.commons:commons-math:jar:2.2 in the shaded jar.
+[INFO] Including xom:xom:jar:1.4.6 in the shaded jar.
+[INFO] Including joda-time:joda-time:jar:2.15.1 in the shaded jar.
+[INFO] Including commons-io:commons-io:jar:2.22.0 in the shaded jar.
+[INFO] Including org.apache.logging.log4j:log4j-1.2-api:jar:2.26.1 in the shaded jar.
+[INFO] Including org.apache.logging.log4j:log4j-api:jar:2.26.1 in the shaded jar.
+[INFO] Including org.ccil.cowan.tagsoup:tagsoup:jar:1.2.1 in the shaded jar.
+[INFO] Including xml-apis:xml-apis:jar:1.4.01 in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-dict:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-ctab:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-sdg:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-smiles:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including uk.ac.ebi.beam:beam-core:jar:1.4 in the shaded jar.
+[INFO] Including uk.ac.ebi.beam:beam-func:jar:1.4 in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-standard:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-valencycheck:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.cdk:cdk-inchi:jar:2.15-SNAPSHOT in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-api:jar:1.3.1 in the shaded jar.
+[INFO] Including net.java.dev.jna:jna:jar:5.10.0 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-core:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-darwin-aarch64:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-darwin-x86-64:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-linux-aarch64:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-linux-arm:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-linux-x86:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-linux-x86-64:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-win32-x86:jar:1.3.1 in the shaded jar.
+[INFO] Including io.github.dan2097:jna-inchi-win32-x86-64:jar:1.3.1 in the shaded jar.
+[INFO] Including org.openscience.jchempaint:jchempaint-inchi:jar:3.4-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.jchempaint:jchempaint-render:jar:3.4-SNAPSHOT in the shaded jar.
+[INFO] Including org.openscience.jchempaint:jchempaint-inchi-jni:jar:3.4-SNAPSHOT in the shaded jar.
+[WARNING] We have a duplicate module-info.class in /home/fusion809/.m2/repository/org/apache/logging/log4j/log4j-core/2.26.1/log4j-core-2.26.1.jar
+[WARNING] We have a duplicate META-INF/versions/9/module-info.class in /home/fusion809/.m2/repository/commons-io/commons-io/2.22.0/commons-io-2.22.0.jar
+[WARNING] We have a duplicate module-info.class in /home/fusion809/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.26.1/log4j-1.2-api-2.26.1.jar
+[WARNING] We have a duplicate module-info.class in /home/fusion809/.m2/repository/org/apache/logging/log4j/log4j-api/2.26.1/log4j-api-2.26.1.jar
+[INFO] Attaching shaded artifact.
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-app-windows ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-windows/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-windows/3.4-SNAPSHOT/jchempaint-app-windows-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-windows/target/jchempaint-app-windows-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-windows/3.4-SNAPSHOT/jchempaint-app-windows-3.4-SNAPSHOT.jar
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3/app-windows/target/jchempaint-app-windows-3.4-SNAPSHOT-shaded.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-windows/3.4-SNAPSHOT/jchempaint-app-windows-3.4-SNAPSHOT-shaded.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for jchempaint 3.4-SNAPSHOT:
+[INFO] 
+[INFO] jchempaint ......................................... SUCCESS [  0.877 s]
+[INFO] jchempaint-inchi ................................... SUCCESS [ 10.072 s]
+[INFO] jchempaint-render .................................. SUCCESS [  6.010 s]
+[INFO] jchempaint-core .................................... SUCCESS [ 46.883 s]
+[INFO] jchempaint-inchi-nestedvm .......................... SUCCESS [  0.962 s]
+[INFO] jchempaint-inchi-jni ............................... SUCCESS [  0.125 s]
+[INFO] jchempaint-app-osx ................................. SUCCESS [  0.209 s]
+[INFO] jchempaint-app-jar ................................. SUCCESS [  3.632 s]
+[INFO] jchempaint-app-windows ............................. SUCCESS [  3.533 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:12 min
+[INFO] Finished at: 2026-11-22T23:11:48+10:00
+[INFO] ------------------------------------------------------------------------
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=JChemPaint
+GenericName=Chemical 2D structure editor
+Icon=io.github.jchempaint.JChemPaint
+Exec=/usr/bin/jchempaint %F
+TryExec=/usr/bin/jchempaint
+MimeType=chemical/x-cml;chemical/x-daylight-smiles;text/plain;chemical/x-mdl-sdfile;chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;
+Categories=Science;Chemistry;Education;
+StartupWMClass=org-openscience-jchempaint-application-JChemPaint
+b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3
+Updated registry for jchempaint-git to version b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3
+[VERSION] jchempaint-git: b765af4b0b86c3f3ef728b8eb820ad1f6d9bd8e3
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package jchempaint-git in /var/lib/custom-packages/
