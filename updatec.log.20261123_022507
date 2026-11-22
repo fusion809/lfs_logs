@@ -1,0 +1,1109 @@
+===== Update check started: 2026-11-23 02:25:07 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261123_022507
+Packages needing attention: at-spi2-core
+===== Starting updatec: 2026-11-23 02:25:08 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - at-spi2-core
+
+Building custom package at-spi2-core...
+[02:25:10] Found custom package for at-spi2-core, bypassing BLFS aliases.
+[02:25:10] Custom package detected at /home/fusion809/lfs_packaging/at-spi2-core (package: at-spi2-core)
+[02:25:10] Extracting dependencies for custom package 'at-spi2-core'...
+[02:25:10] Required deps: dbus glib2 glibc libffi libx11 libxau libxcb libxdmcp libxext libxi libxres libxtst pcre2 systemd util-linux zlib 
+[02:25:10] Dependency 'dbus' already installed.
+[02:25:10] Dependency 'glib2' already installed.
+[02:25:10] Dependency 'glibc' already installed.
+[02:25:10] Dependency 'libffi' already installed.
+[02:25:10] Dependency 'libx11' already installed.
+[02:25:10] Dependency 'libxau' already installed.
+[02:25:10] Dependency 'libxcb' already installed.
+[02:25:10] Dependency 'libxdmcp' already installed.
+[02:25:10] Dependency 'libxext' already installed.
+[02:25:10] Dependency 'libxi' already installed.
+[02:25:10] Dependency 'libxres' already installed.
+[02:25:10] Dependency 'libxtst' already installed.
+[02:25:10] Dependency 'pcre2' already installed.
+[02:25:10] Dependency 'systemd' already installed.
+[02:25:10] Dependency 'util-linux' already installed.
+[02:25:10] Dependency 'zlib' already installed.
+[VERSION] at-spi2-core: 2.62.2
+[02:25:11] Installing at-spi2-core version: 2.62.2
+[02:25:11] Starting remote custom build for at-spi2-core...
+--2026-11-23 02:25:25--  https://download.gnome.org/sources/at-spi2-core/2.62/at-spi2-core-2.62.2.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 143.244.62.9, 143.244.62.6, 2a02:6ea0:db00::11, ...
+Connecting to download.gnome.org (download.gnome.org)|143.244.62.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 602156 (588K) [application/octet-stream]
+Saving to: ‘at-spi2-core-2.62.2.tar.xz’
+
+          at-spi2-c   0%[                    ]       0  --.-KB/s                        at-spi2-co  48%[========>           ] 287.48K  1.40MB/s               at-spi2-core-2.62.2 100%[===================>] 588.04K  1.99MB/s    in 0.3s    
+
+2026-11-23 02:25:26 (1.99 MB/s) - ‘at-spi2-core-2.62.2.tar.xz’ saved [602156/602156]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+meson_args: <-D>
+meson_args: <gtk2_atk_adaptor=false>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <-D> <gtk2_atk_adaptor=false> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2
+Build dir: /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/build
+Build type: native build
+Project name: at-spi2-core
+Project version: 2.62.2
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -fvisibility=hidden: YES 
+Compiler for C supports link arguments -Wl,-Bsymbolic: YES 
+Compiler for C supports link arguments -Wl,-z,relro: YES 
+Compiler for C supports link arguments -Wl,-z,now: YES 
+Checking for function "bind_textdomain_codeset" : YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Run-time dependency dbus-1 found: YES 1.16.4
+Dependency dbus-glib-1 for host machine skipped: feature dbus_glib disabled
+Run-time dependency glib-2.0 found: YES 2.90.1
+Run-time dependency gobject-2.0 found: YES 2.90.1
+Run-time dependency gio-2.0 found: YES 2.90.1
+Checking for function "dlopen" : YES 
+Run-time dependency gmodule-2.0 found: YES 2.90.1
+Run-time dependency libxml-2.0 found: YES 2.15.4
+Run-time dependency x11 found: YES 1.8.13
+Run-time dependency xtst found: YES 1.2.6
+Checking for function "XkbGetMap" with dependencies x11, xtst: YES 
+Run-time dependency xi found: YES 1.8.4
+Run-time dependency xres found: YES 1.2.3
+Checking for alignment of "char" : 1 
+Checking for alignment of "double" : 8 
+Checking for alignment of "dbus_bool_t" with dependency dbus-1: 4 
+Checking for alignment of "dbus_int16_t" with dependency dbus-1: 2 
+Checking for alignment of "dbus_int32_t" with dependency dbus-1: 4 
+Checking for alignment of "dbus_int64_t" with dependency dbus-1: 8 
+Checking for alignment of "dbind_pointer" : 8 
+Checking for alignment of "dbind_struct" : 1 
+Program g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Program python3 found: YES (/usr/bin/python3)
+Program xgettext found: YES (/usr/bin/xgettext)
+Configuring config.h using configuration
+Configuring atkversion.h using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-genmarshal found: YES (/usr/bin/glib-genmarshal)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Program generate-introspection.py found: YES (/usr/bin/python3.15 /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/xml/generate-introspection.py)
+Configuring atspi-version.h using configuration
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-genmarshal found: YES (/usr/bin/glib-genmarshal)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Configuring accessibility.conf using configuration
+Configuring at-spi-dbus-bus.desktop using configuration
+Configuring org.a11y.Bus.service using configuration
+Configuring at-spi-dbus-bus.service using configuration
+Program dbus-daemon found: YES (/usr/bin/dbus-daemon)
+Program dbus-broker-launch found: NO
+Configuring org.a11y.atspi.Registry.service using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Build targets in project: 143
+
+at-spi2-core 2.62.2
+
+  User defined options
+    buildtype       : release
+    gtk2_atk_adaptor: false
+    prefix          : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/295] Generating glib marshaller header atk/atkmarshal_h
+[2/295] Generating glib marshaller header atspi/atspimarshal_h
+[3/295] Generating glib marshaller source atk/atkmarshal_c
+[4/295] Generating GObject enum file atk/atk-enum-types.h (wrapped by meson to capture output)
+[5/295] Generating glib marshaller source atspi/atspimarshal_c
+[6/295] Generating GObject enum file atspi/atspi-enum-types.h (wrapped by meson to capture output)
+[7/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/meson-generated_.._atkmarshal.c.o
+[8/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkaction.c.o
+[9/295] Generating GObject enum file atk/atk-enum-types.c (wrapped by meson to capture output)
+[10/295] Generating GObject enum file atspi/atspi-enum-types.c (wrapped by meson to capture output)
+[11/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/meson-generated_.._atk-enum-types.c.o
+[12/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkcomponent.c.o
+[13/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkeditabletext.c.o
+[14/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkdocument.c.o
+[15/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkgobjectaccessible.c.o
+[16/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkhyperlinkimpl.c.o
+[17/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkhyperlink.c.o
+[18/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkimage.c.o
+[19/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkhypertext.c.o
+[20/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atknoopobject.c.o
+[21/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atknoopobjectfactory.c.o
+[22/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkobjectfactory.c.o
+[23/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkplug.c.o
+[24/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkprivate.c.o
+[25/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkrange.c.o
+[26/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkregistry.c.o
+[27/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkobject.c.o
+[28/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkrelation.c.o
+[29/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkselection.c.o
+[30/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkrelationset.c.o
+[31/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atksocket.c.o
+[32/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkstate.c.o
+[33/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkstreamablecontent.c.o
+[34/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkstateset.c.o
+[35/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atktable.c.o
+[36/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atktablecell.c.o
+[37/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkmisc.c.o
+[38/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atktext.c.o
+[39/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkutil.c.o
+[40/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkwindow.c.o
+[41/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkvalue.c.o
+[42/295] Compiling C object atk/libatk-1.0.so.0.26211.1.p/atkversion.c.o
+[43/295] Generating xml/introspection_generated with a custom command
+[44/295] Compiling C object atspi/libatspi.so.0.0.1.p/meson-generated_.._atspimarshal.c.o
+[45/295] Compiling C object atspi/libatspi.so.0.0.1.p/meson-generated_.._atspi-enum-types.c.o
+[46/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-action.c.o
+[47/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-application.c.o
+[48/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-collection.c.o
+[49/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-component.c.o
+[50/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-accessible.c.o
+[51/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-device.c.o
+[52/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-device-legacy.c.o
+[53/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-device-a11y-manager.c.o
+[54/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-device-listener.c.o
+[55/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-document.c.o
+[56/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-editabletext.c.o
+[57/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-hyperlink.c.o
+[58/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-hypertext.c.o
+[59/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-event-listener.c.o
+[60/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-matchrule.c.o
+[61/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-image.c.o
+[62/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-object.c.o
+[63/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-registry.c.o
+[64/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-relation.c.o
+[65/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-selection.c.o
+[66/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-stateset.c.o
+[67/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-table.c.o
+[68/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-misc.c.o
+[69/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-table-cell.c.o
+[70/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-value.c.o
+[71/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-text.c.o
+[72/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-device-x11.c.o
+[73/295] Compiling C object atspi/libatspi.so.0.0.1.p/atspi-gmain.c.o
+[74/295] Compiling C object atspi/libatspi.so.0.0.1.p/.._dbind_dbind.c.o
+[75/295] Linking target atk/libatk-1.0.so.0.26211.1
+[76/295] Compiling C object droute/libdroute.a.p/droute-variant.c.o
+[77/295] Compiling C object droute/libdroute.a.p/droute-pairhash.c.o
+[78/295] Compiling C object droute/libdroute.a.p/droute.c.o
+[79/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/meson-generated_.._.._.._xml_introspection.c.o
+[80/295] Compiling C object atspi/libatspi.so.0.0.1.p/.._dbind_dbind-any.c.o
+[81/295] Linking target atspi/libatspi.so.0.0.1
+[82/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/action-adaptor.c.o
+[83/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/application-adaptor.c.o
+[84/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/accessible-adaptor.c.o
+[85/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/cache-adaptor.c.o
+[86/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/component-adaptor.c.o
+[87/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/document-adaptor.c.o
+[88/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/collection-adaptor.c.o
+[89/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/editabletext-adaptor.c.o
+[90/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/hypertext-adaptor.c.o
+[91/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/hyperlink-adaptor.c.o
+[92/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/image-adaptor.c.o
+[93/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/selection-adaptor.c.o
+[94/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/socket-adaptor.c.o
+[95/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/table-cell-adaptor.c.o
+[96/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/table-adaptor.c.o
+[97/295] Generating symbol file atk/libatk-1.0.so.0.26211.1.p/libatk-1.0.so.0.26211.1.symbols
+[98/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/text-adaptor.c.o
+[99/295] Compiling C object atk-adaptor/adaptors/libatk-bridge-adaptors.a.p/value-adaptor.c.o
+[100/295] Linking static target droute/libdroute.a
+[101/295] Linking static target atk-adaptor/adaptors/libatk-bridge-adaptors.a
+[102/295] Generating symbol file atspi/libatspi.so.0.0.1.p/libatspi.so.0.0.1.symbols
+[103/295] Compiling C object atk-adaptor/libatk-bridge-2.0.so.0.0.0.p/meson-generated_.._.._xml_introspection.c.o
+[104/295] Compiling C object atk-adaptor/libatk-bridge-2.0.so.0.0.0.p/accessible-leasing.c.o
+[105/295] Compiling C object atk-adaptor/libatk-bridge-2.0.so.0.0.0.p/accessible-register.c.o
+[106/295] Compiling C object atk-adaptor/libatk-bridge-2.0.so.0.0.0.p/accessible-stateset.c.o
+[107/295] Compiling C object atk-adaptor/libatk-bridge-2.0.so.0.0.0.p/accessible-cache.c.o
+[108/295] Compiling C object atk-adaptor/libatk-bridge-2.0.so.0.0.0.p/object.c.o
+[109/295] Compiling C object atk-adaptor/libatk-bridge-2.0.so.0.0.0.p/bridge.c.o
+[110/295] Compiling C object atk-adaptor/libatk-bridge-2.0.so.0.0.0.p/event.c.o
+[111/295] Compiling C object atk-adaptor/libatk-bridge-2.0.so.0.0.0.p/spi-dbus.c.o
+[112/295] Linking target atk-adaptor/libatk-bridge-2.0.so.0.0.0
+[113/295] Compiling C object tests/at-spi2-atk/dummyatk/libdummyatk.a.p/my-atk-action.c.o
+[114/295] Compiling C object tests/at-spi2-atk/dummyatk/libdummyatk.a.p/my-atk-component.c.o
+[115/295] Compiling C object tests/at-spi2-atk/dummyatk/libdummyatk.a.p/my-atk-document.c.o
+[116/295] Compiling C object tests/at-spi2-atk/dummyatk/libdummyatk.a.p/my-atk-editable-text.c.o
+[117/295] Compiling C object tests/at-spi2-atk/dummyatk/libdummyatk.a.p/my-atk-hyperlink.c.o
+[118/295] Compiling C object tests/at-spi2-atk/dummyatk/libdummyatk.a.p/my-atk-hypertext.c.o
+[119/295] Compiling C object tests/at-spi2-atk/dummyatk/libdummyatk.a.p/my-atk-image.c.o
+[120/295] Compiling C object tests/at-spi2-atk/dummyatk/libdummyatk.a.p/my-atk-object.c.o
+[121/295] Compiling C object tests/at-spi2-atk/dummyatk/libdummyatk.a.p/my-atk-text.c.o
+[122/295] Compiling C object tests/at-spi2-atk/dummyatk/libdummyatk.a.p/my-atk-table.c.o
+[123/295] Compiling C object tests/at-spi2-atk/dummyatk/libdummyatk.a.p/my-atk-table-cell.c.o
+[124/295] Compiling C object tests/at-spi2-atk/dummyatk/libdummyatk.a.p/my-atk-selection.c.o
+[125/295] Compiling C object tests/at-spi2-atk/dummyatk/libdummyatk.a.p/my-atk-value.c.o
+[126/295] Compiling C object tests/at-spi2-atk/libtestutils.a.p/atk_test_util.c.o
+[127/295] Compiling C object tests/at-spi2-atk/libxmlloader.a.p/atk-object-xml-loader.c.o
+[128/295] Compiling C object dbind/dbind-test.p/dbtest.c.o
+[129/295] Compiling C object dbind/dbind-test.p/.._atspi_atspi-gmain.c.o
+[130/295] Compiling C object dbind/dbind-test.p/dbind.c.o
+[131/295] Compiling C object dbind/dbind-test.p/dbind-any.c.o
+[132/295] Compiling C object bus/at-spi-bus-launcher.p/at-spi-bus-launcher.c.o
+[133/295] Compiling C object registryd/at-spi2-registryd.p/meson-generated_.._.._xml_introspection.c.o
+[134/295] Generating atk/Atk-1.0.gir with a custom command (wrapped by meson to set env)
+[135/295] Compiling C object registryd/at-spi2-registryd.p/marshal-dbus.c.o
+[136/295] Compiling C object registryd/at-spi2-registryd.p/reentrant-list.c.o
+[137/295] Compiling C object registryd/at-spi2-registryd.p/registry-main.c.o
+[138/295] Compiling C object registryd/at-spi2-registryd.p/deviceeventcontroller.c.o
+[139/295] Generating atspi/Atspi-2.0.gir with a custom command (wrapped by meson to set env)
+[140/295] Compiling C object registryd/at-spi2-registryd.p/display.c.o
+[141/295] Compiling C object registryd/at-spi2-registryd.p/event-source.c.o
+[142/295] Compiling C object registryd/at-spi2-registryd.p/ucs2keysym.c.o
+[143/295] Compiling C object registryd/at-spi2-registryd.p/deviceeventcontroller-x11.c.o
+[144/295] Compiling C object registryd/at-spi2-registryd.p/registry.c.o
+[145/295] Generating symbol file atk-adaptor/libatk-bridge-2.0.so.0.0.0.p/libatk-bridge-2.0.so.0.0.0.symbols
+[146/295] Compiling C object droute/droute-test.p/droute-test.c.o
+[147/295] Compiling C object tests/atspi/test-application.p/test-application.c.o
+[148/295] Compiling C object tests/atk/testrole.p/testrole.c.o
+[149/295] Compiling C object tests/atk/testdocument.p/testdocument.c.o
+[150/295] Compiling C object tests/atspi/memory.p/memory.c.o
+[151/295] Compiling C object tests/atk/testrelation.p/testrelation.c.o
+[152/295] Compiling C object tests/atk/teststateset.p/teststateset.c.o
+[153/295] Linking static target tests/at-spi2-atk/dummyatk/libdummyatk.a
+[154/295] Linking static target tests/at-spi2-atk/libxmlloader.a
+[155/295] Compiling C object tests/atk/testvalue.p/testvalue.c.o
+[156/295] Linking static target tests/at-spi2-atk/libtestutils.a
+[157/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_suite.c.o
+[158/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_action.c.o
+[159/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_component.c.o
+[160/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_accessible.c.o
+[161/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_collection.c.o
+[162/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_editable_text.c.o
+[163/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_document.c.o
+[164/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_hyperlink.c.o
+[165/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_hypertext.c.o
+[166/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_image.c.o
+[167/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_selection.c.o
+[168/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_state_set.c.o
+[169/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_table.c.o
+[170/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_table_cell.c.o
+[171/295] Compiling C object tests/at-spi2-atk/app-test.p/test-application.c.o
+[172/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_value.c.o
+[173/295] Compiling C object tests/at-spi2-atk/atk-test.p/atk_test_text.c.o
+[174/295] Linking target dbind/dbind-test
+[175/295] Generating atk/Atk-1.0.typelib with a custom command
+[176/295] Generating atspi/Atspi-2.0.typelib with a custom command
+[177/295] Compiling C object tests/at-spi2-atk/direct-connection-test.p/test-direct-connection.c.o
+[178/295] Linking target registryd/at-spi2-registryd
+[179/295] Linking target droute/droute-test
+[180/295] Linking target tests/atspi/test-application
+[181/295] Linking target bus/at-spi-bus-launcher
+[182/295] Linking target tests/atspi/memory
+[183/295] Linking target tests/atk/testrole
+[184/295] Linking target tests/atk/testdocument
+[185/295] Linking target tests/atk/testrelation
+[186/295] Linking target tests/atk/testvalue
+[187/295] Linking target tests/atk/teststateset
+[188/295] Linking target tests/at-spi2-atk/direct-connection-test
+[189/295] Linking target tests/at-spi2-atk/atk-test
+[190/295] Building translation po/ab/LC_MESSAGES/at-spi2-core-ab.mo
+[191/295] Building translation po/af/LC_MESSAGES/at-spi2-core-af.mo
+[192/295] Building translation po/am/LC_MESSAGES/at-spi2-core-am.mo
+[193/295] Building translation po/an/LC_MESSAGES/at-spi2-core-an.mo
+[194/295] Building translation po/ar/LC_MESSAGES/at-spi2-core-ar.mo
+[195/295] Building translation po/as/LC_MESSAGES/at-spi2-core-as.mo
+[196/295] Building translation po/ast/LC_MESSAGES/at-spi2-core-ast.mo
+[197/295] Linking target tests/at-spi2-atk/app-test
+[198/295] Building translation po/az/LC_MESSAGES/at-spi2-core-az.mo
+[199/295] Building translation po/be/LC_MESSAGES/at-spi2-core-be.mo
+[200/295] Building translation po/bg/LC_MESSAGES/at-spi2-core-bg.mo
+[201/295] Building translation po/be@latin/LC_MESSAGES/at-spi2-core-be@latin.mo
+[202/295] Building translation po/bn/LC_MESSAGES/at-spi2-core-bn.mo
+[203/295] Building translation po/bn_IN/LC_MESSAGES/at-spi2-core-bn_IN.mo
+[204/295] Building translation po/bs/LC_MESSAGES/at-spi2-core-bs.mo
+[205/295] Building translation po/ca@valencia/LC_MESSAGES/at-spi2-core-ca@valencia.mo
+[206/295] Building translation po/ca/LC_MESSAGES/at-spi2-core-ca.mo
+[207/295] Building translation po/ckb/LC_MESSAGES/at-spi2-core-ckb.mo
+[208/295] Building translation po/cy/LC_MESSAGES/at-spi2-core-cy.mo
+[209/295] Building translation po/cs/LC_MESSAGES/at-spi2-core-cs.mo
+[210/295] Building translation po/da/LC_MESSAGES/at-spi2-core-da.mo
+[211/295] Building translation po/de/LC_MESSAGES/at-spi2-core-de.mo
+[212/295] Building translation po/dz/LC_MESSAGES/at-spi2-core-dz.mo
+[213/295] Building translation po/el/LC_MESSAGES/at-spi2-core-el.mo
+[214/295] Building translation po/en_CA/LC_MESSAGES/at-spi2-core-en_CA.mo
+[215/295] Building translation po/en_GB/LC_MESSAGES/at-spi2-core-en_GB.mo
+[216/295] Building translation po/en@shaw/LC_MESSAGES/at-spi2-core-en@shaw.mo
+[217/295] Building translation po/eo/LC_MESSAGES/at-spi2-core-eo.mo
+[218/295] Building translation po/es/LC_MESSAGES/at-spi2-core-es.mo
+[219/295] Building translation po/fa/LC_MESSAGES/at-spi2-core-fa.mo
+[220/295] Building translation po/et/LC_MESSAGES/at-spi2-core-et.mo
+[221/295] Building translation po/eu/LC_MESSAGES/at-spi2-core-eu.mo
+[222/295] Building translation po/fr/LC_MESSAGES/at-spi2-core-fr.mo
+[223/295] Building translation po/fi/LC_MESSAGES/at-spi2-core-fi.mo
+[224/295] Building translation po/fur/LC_MESSAGES/at-spi2-core-fur.mo
+[225/295] Building translation po/ga/LC_MESSAGES/at-spi2-core-ga.mo
+[226/295] Building translation po/gu/LC_MESSAGES/at-spi2-core-gu.mo
+[227/295] Building translation po/gd/LC_MESSAGES/at-spi2-core-gd.mo
+[228/295] Building translation po/gl/LC_MESSAGES/at-spi2-core-gl.mo
+[229/295] Building translation po/hr/LC_MESSAGES/at-spi2-core-hr.mo
+[230/295] Building translation po/he/LC_MESSAGES/at-spi2-core-he.mo
+[231/295] Building translation po/hi/LC_MESSAGES/at-spi2-core-hi.mo
+[232/295] Building translation po/hu/LC_MESSAGES/at-spi2-core-hu.mo
+[233/295] Building translation po/hy/LC_MESSAGES/at-spi2-core-hy.mo
+[234/295] Building translation po/id/LC_MESSAGES/at-spi2-core-id.mo
+[235/295] Building translation po/is/LC_MESSAGES/at-spi2-core-is.mo
+[236/295] Building translation po/it/LC_MESSAGES/at-spi2-core-it.mo
+[237/295] Building translation po/ja/LC_MESSAGES/at-spi2-core-ja.mo
+[238/295] Building translation po/ka/LC_MESSAGES/at-spi2-core-ka.mo
+[239/295] Building translation po/kab/LC_MESSAGES/at-spi2-core-kab.mo
+[240/295] Building translation po/kk/LC_MESSAGES/at-spi2-core-kk.mo
+[241/295] Building translation po/kn/LC_MESSAGES/at-spi2-core-kn.mo
+[242/295] Building translation po/km/LC_MESSAGES/at-spi2-core-km.mo
+[243/295] Building translation po/ko/LC_MESSAGES/at-spi2-core-ko.mo
+[244/295] Building translation po/li/LC_MESSAGES/at-spi2-core-li.mo
+[245/295] Building translation po/ku/LC_MESSAGES/at-spi2-core-ku.mo
+[246/295] Building translation po/lt/LC_MESSAGES/at-spi2-core-lt.mo
+[247/295] Building translation po/lv/LC_MESSAGES/at-spi2-core-lv.mo
+[248/295] Building translation po/mai/LC_MESSAGES/at-spi2-core-mai.mo
+[249/295] Building translation po/mi/LC_MESSAGES/at-spi2-core-mi.mo
+[250/295] Building translation po/mk/LC_MESSAGES/at-spi2-core-mk.mo
+[251/295] Building translation po/ml/LC_MESSAGES/at-spi2-core-ml.mo
+[252/295] Building translation po/mn/LC_MESSAGES/at-spi2-core-mn.mo
+[253/295] Building translation po/mr/LC_MESSAGES/at-spi2-core-mr.mo
+[254/295] Building translation po/ms/LC_MESSAGES/at-spi2-core-ms.mo
+[255/295] Building translation po/nb/LC_MESSAGES/at-spi2-core-nb.mo
+[256/295] Building translation po/ne/LC_MESSAGES/at-spi2-core-ne.mo
+[257/295] Building translation po/nn/LC_MESSAGES/at-spi2-core-nn.mo
+[258/295] Building translation po/nl/LC_MESSAGES/at-spi2-core-nl.mo
+[259/295] Building translation po/oc/LC_MESSAGES/at-spi2-core-oc.mo
+[260/295] Building translation po/or/LC_MESSAGES/at-spi2-core-or.mo
+[261/295] Building translation po/pa/LC_MESSAGES/at-spi2-core-pa.mo
+[262/295] Building translation po/ps/LC_MESSAGES/at-spi2-core-ps.mo
+[263/295] Building translation po/pl/LC_MESSAGES/at-spi2-core-pl.mo
+[264/295] Building translation po/pt/LC_MESSAGES/at-spi2-core-pt.mo
+[265/295] Building translation po/pt_BR/LC_MESSAGES/at-spi2-core-pt_BR.mo
+[266/295] Building translation po/ro/LC_MESSAGES/at-spi2-core-ro.mo
+[267/295] Building translation po/ru/LC_MESSAGES/at-spi2-core-ru.mo
+[268/295] Building translation po/si/LC_MESSAGES/at-spi2-core-si.mo
+[269/295] Building translation po/rw/LC_MESSAGES/at-spi2-core-rw.mo
+[270/295] Building translation po/sk/LC_MESSAGES/at-spi2-core-sk.mo
+[271/295] Building translation po/sq/LC_MESSAGES/at-spi2-core-sq.mo
+[272/295] Building translation po/sl/LC_MESSAGES/at-spi2-core-sl.mo
+[273/295] Building translation po/sr/LC_MESSAGES/at-spi2-core-sr.mo
+[274/295] Building translation po/sr@ije/LC_MESSAGES/at-spi2-core-sr@ije.mo
+[275/295] Building translation po/sr@latin/LC_MESSAGES/at-spi2-core-sr@latin.mo
+[276/295] Building translation po/sv/LC_MESSAGES/at-spi2-core-sv.mo
+[277/295] Building translation po/te/LC_MESSAGES/at-spi2-core-te.mo
+[278/295] Building translation po/ta/LC_MESSAGES/at-spi2-core-ta.mo
+[279/295] Building translation po/th/LC_MESSAGES/at-spi2-core-th.mo
+[280/295] Building translation po/tg/LC_MESSAGES/at-spi2-core-tg.mo
+[281/295] Building translation po/tk/LC_MESSAGES/at-spi2-core-tk.mo
+[282/295] Building translation po/tr/LC_MESSAGES/at-spi2-core-tr.mo
+[283/295] Building translation po/tt/LC_MESSAGES/at-spi2-core-tt.mo
+[284/295] Building translation po/uz/LC_MESSAGES/at-spi2-core-uz.mo
+[285/295] Building translation po/ug/LC_MESSAGES/at-spi2-core-ug.mo
+[286/295] Building translation po/uk/LC_MESSAGES/at-spi2-core-uk.mo
+[287/295] Building translation po/uz@cyrillic/LC_MESSAGES/at-spi2-core-uz@cyrillic.mo
+[288/295] Building translation po/vi/LC_MESSAGES/at-spi2-core-vi.mo
+[289/295] Building translation po/wa/LC_MESSAGES/at-spi2-core-wa.mo
+[290/295] Building translation po/yi/LC_MESSAGES/at-spi2-core-yi.mo
+[291/295] Building translation po/xh/LC_MESSAGES/at-spi2-core-xh.mo
+[292/295] Building translation po/zh_HK/LC_MESSAGES/at-spi2-core-zh_HK.mo
+[293/295] Building translation po/zh_TW/LC_MESSAGES/at-spi2-core-zh_TW.mo
+[294/295] Building translation po/zh_CN/LC_MESSAGES/at-spi2-core-zh_CN.mo
+[295/295] Building translation po/zu/LC_MESSAGES/at-spi2-core-zu.mo
+[0/1] Installing files
+Compiling '/usr/lib/python3.15/site-packages/gi/overrides/Atspi.py'...
+Installing atk/atk-enum-types.h to /usr/include/atk-1.0/atk
+Installing atk/libatk-1.0.so.0.26211.1 to /usr/lib
+Installing atk/Atk-1.0.gir to /usr/share/gir-1.0
+Installing atk/Atk-1.0.typelib to /usr/lib/girepository-1.0
+Installing atspi/atspi-enum-types.h to /usr/include/at-spi-2.0/atspi
+Installing atspi/libatspi.so.0.0.1 to /usr/lib
+Installing atspi/Atspi-2.0.gir to /usr/share/gir-1.0
+Installing atspi/Atspi-2.0.typelib to /usr/lib/girepository-1.0
+Installing bus/at-spi-bus-launcher to /usr/libexec
+Installing registryd/at-spi2-registryd to /usr/libexec
+Installing atk-adaptor/libatk-bridge-2.0.so.0.0.0 to /usr/lib
+Installing po/ab/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ab/LC_MESSAGES
+Installing po/af/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/af/LC_MESSAGES
+Installing po/am/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/am/LC_MESSAGES
+Installing po/an/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/an/LC_MESSAGES
+Installing po/ar/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ar/LC_MESSAGES
+Installing po/as/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/as/LC_MESSAGES
+Installing po/ast/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ast/LC_MESSAGES
+Installing po/az/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/az/LC_MESSAGES
+Installing po/be/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/be/LC_MESSAGES
+Installing po/be@latin/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/be@latin/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/bg/LC_MESSAGES
+Installing po/bn/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/bn/LC_MESSAGES
+Installing po/bn_IN/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/bn_IN/LC_MESSAGES
+Installing po/bs/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/bs/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ca/LC_MESSAGES
+Installing po/ca@valencia/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ca@valencia/LC_MESSAGES
+Installing po/ckb/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ckb/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/cs/LC_MESSAGES
+Installing po/cy/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/cy/LC_MESSAGES
+Installing po/da/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/de/LC_MESSAGES
+Installing po/dz/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/dz/LC_MESSAGES
+Installing po/el/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/el/LC_MESSAGES
+Installing po/en_CA/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/en_CA/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/en_GB/LC_MESSAGES
+Installing po/en@shaw/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/en@shaw/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/es/LC_MESSAGES
+Installing po/et/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/et/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/eu/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/fur/LC_MESSAGES
+Installing po/ga/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ga/LC_MESSAGES
+Installing po/gd/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/gd/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/gl/LC_MESSAGES
+Installing po/gu/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/gu/LC_MESSAGES
+Installing po/he/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/hu/LC_MESSAGES
+Installing po/hy/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/hy/LC_MESSAGES
+Installing po/id/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/id/LC_MESSAGES
+Installing po/is/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/is/LC_MESSAGES
+Installing po/it/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ka/LC_MESSAGES
+Installing po/kab/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/kab/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/kk/LC_MESSAGES
+Installing po/km/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/km/LC_MESSAGES
+Installing po/kn/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/kn/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ko/LC_MESSAGES
+Installing po/ku/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ku/LC_MESSAGES
+Installing po/li/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/li/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/lt/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/lv/LC_MESSAGES
+Installing po/mai/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/mai/LC_MESSAGES
+Installing po/mi/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/mi/LC_MESSAGES
+Installing po/mk/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/mk/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ml/LC_MESSAGES
+Installing po/mn/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/mn/LC_MESSAGES
+Installing po/mr/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/mr/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ms/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/nb/LC_MESSAGES
+Installing po/ne/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ne/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/nl/LC_MESSAGES
+Installing po/nn/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/nn/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/oc/LC_MESSAGES
+Installing po/or/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/or/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/pl/LC_MESSAGES
+Installing po/ps/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ps/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ru/LC_MESSAGES
+Installing po/rw/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/rw/LC_MESSAGES
+Installing po/si/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/si/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/sl/LC_MESSAGES
+Installing po/sq/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/sq/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@ije/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/sr@ije/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ta/LC_MESSAGES
+Installing po/te/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/te/LC_MESSAGES
+Installing po/tg/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/tg/LC_MESSAGES
+Installing po/th/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/th/LC_MESSAGES
+Installing po/tk/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/tk/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/tr/LC_MESSAGES
+Installing po/tt/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/tt/LC_MESSAGES
+Installing po/ug/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/ug/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/uk/LC_MESSAGES
+Installing po/uz/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/uz/LC_MESSAGES
+Installing po/uz@cyrillic/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/uz@cyrillic/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/vi/LC_MESSAGES
+Installing po/wa/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/wa/LC_MESSAGES
+Installing po/xh/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/xh/LC_MESSAGES
+Installing po/yi/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/yi/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_HK/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/zh_HK/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/zh_TW/LC_MESSAGES
+Installing po/zu/LC_MESSAGES/at-spi2-core.mo to /usr/share/locale/zu/LC_MESSAGES
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkaction.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkcomponent.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkdocument.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkeditabletext.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkgobjectaccessible.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkhyperlink.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkhyperlinkimpl.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkhypertext.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkimage.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkmisc.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atknoopobject.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atknoopobjectfactory.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkobject.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkobjectfactory.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkplug.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkrange.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkregistry.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkrelation.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkrelationtype.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkrelationset.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkselection.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atksocket.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkstate.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkstateset.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkstreamablecontent.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atktable.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atktablecell.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atktext.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkutil.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkvalue.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atkwindow.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atk-autocleanups.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk/atk.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-accessible.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-action.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-application.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-collection.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-component.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-constants.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-device.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-device-a11y-manager.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-device-legacy.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-device-listener.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-document.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-editabletext.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-event-listener.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-hyperlink.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-hypertext.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-image.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-matchrule.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-misc.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-object.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-registry.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-relation.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-selection.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-stateset.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-table.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-table-cell.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-text.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-types.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-value.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atspi/atspi-device-x11.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/atk-adaptor/atk-bridge.h to /usr/include/at-spi2-atk/2.0
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/build/atk/atkversion.h to /usr/include/atk-1.0/atk
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/build/meson-private/atk.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/at-spi2-atk.desktop to /usr/lib/gnome-settings-daemon-3.0/gtk-modules
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/build/atspi/atspi-version.h to /usr/include/at-spi-2.0/atspi
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/build/meson-private/atspi-2.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/build/bus/accessibility.conf to /usr/share/defaults/at-spi2
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/build/bus/at-spi-dbus-bus.desktop to /etc/xdg/autostart
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/build/bus/org.a11y.Bus.service to /usr/share/dbus-1/services
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/build/bus/at-spi-dbus-bus.service to /usr/lib/systemd/user
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/bus/00-at-spi to /etc/xdg/Xwayland-session.d
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/build/registryd/org.a11y.atspi.Registry.service to /usr/share/dbus-1/accessibility-services
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/build/meson-private/atk-bridge-2.0.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/python/Atspi.py to /usr/lib/python3.15/site-packages/gi/overrides
+Installing symlink pointing to libatk-1.0.so.0.26211.1 to /usr/lib/libatk-1.0.so.0
+Installing symlink pointing to libatk-1.0.so.0 to /usr/lib/libatk-1.0.so
+Installing symlink pointing to libatspi.so.0.0.1 to /usr/lib/libatspi.so.0
+Installing symlink pointing to libatspi.so.0 to /usr/lib/libatspi.so
+Installing symlink pointing to libatk-bridge-2.0.so.0.0.0 to /usr/lib/libatk-bridge-2.0.so.0
+Installing symlink pointing to libatk-bridge-2.0.so.0 to /usr/lib/libatk-bridge-2.0.so
+Running custom install script '/usr/bin/python3 /home/fusion809/lfs_packaging/at-spi2-core/at-spi2-core-2.62.2/build/meson-private/pycompile.py python-3.15-installed.json 0'
+2.62.2
+Updated registry for at-spi2-core to version 2.62.2
+[VERSION] at-spi2-core: 2.62.2
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package at-spi2-core in /var/lib/custom-packages/
+Updating Python packages via pip...
+Requirement already satisfied: affine in /usr/lib/python3.15/site-packages (3.0.1)
+Requirement already satisfied: alabaster in /usr/lib/python3.15/site-packages (1.0.0)
+Requirement already satisfied: anyio in /usr/lib/python3.15/site-packages (4.16.0)
+Requirement already satisfied: appdirs in /usr/lib/python3.15/site-packages (1.4.4)
+Requirement already satisfied: argcomplete in /usr/lib/python3.15/site-packages (3.7.2)
+Collecting argcomplete
+  Using cached argcomplete-3.8.0-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: arrow in /usr/lib/python3.15/site-packages (1.4.0)
+Requirement already satisfied: asgiref in /usr/lib/python3.15/site-packages (3.13.0)
+Requirement already satisfied: astroid in /usr/lib/python3.15/site-packages (4.3.4)
+Requirement already satisfied: asttokens in /usr/lib/python3.15/site-packages (3.0.2)
+Requirement already satisfied: attrs in /usr/lib/python3.15/site-packages (26.1.0)
+Requirement already satisfied: babel in /usr/lib/python3.15/site-packages (2.18.0)
+Requirement already satisfied: beautifulsoup4 in /usr/lib/python3.15/site-packages (4.15.0)
+Requirement already satisfied: black in /usr/lib/python3.15/site-packages (26.10.1)
+Requirement already satisfied: bleach in /usr/lib/python3.15/site-packages (6.4.0)
+Requirement already satisfied: brotli in /usr/lib/python3.15/site-packages (1.2.1)
+Requirement already satisfied: build in /usr/lib/python3.15/site-packages (1.6.1)
+Requirement already satisfied: cclib in /usr/lib/python3.15/site-packages (1.8.1)
+Requirement already satisfied: certifi in /usr/lib/python3.15/site-packages (2026.10.23)
+Collecting certifi
+  Using cached certifi-2026.11.20-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: cffi in /usr/lib/python3.15/site-packages (2.1.1)
+Requirement already satisfied: chardet in /usr/lib/python3.15/site-packages (5.2.0)
+Collecting chardet
+  Using cached chardet-7.7.0-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Requirement already satisfied: click in /usr/lib/python3.15/site-packages (8.5.1)
+Requirement already satisfied: colorama in /usr/lib/python3.15/site-packages (0.4.6)
+Requirement already satisfied: columnize in /usr/lib/python3.15/site-packages (0.3.11)
+Requirement already satisfied: comm in /usr/lib/python3.15/site-packages (0.2.3)
+Requirement already satisfied: contourpy in /usr/lib/python3.15/site-packages (1.4.0)
+Requirement already satisfied: cryptography in /usr/lib/python3.15/site-packages (50.0.2)
+Requirement already satisfied: cssselect in /usr/lib/python3.15/site-packages (1.6.0)
+Requirement already satisfied: cycler in /usr/lib/python3.15/site-packages (0.12.1)
+Requirement already satisfied: dateutils in /usr/lib/python3.15/site-packages (0.6.12)
+Requirement already satisfied: debugpy in /usr/lib/python3.15/site-packages (1.8.22)
+Requirement already satisfied: decorator in /usr/lib/python3.15/site-packages (5.3.2)
+Requirement already satisfied: defusedxml in /usr/lib/python3.15/site-packages (0.7.1)
+Requirement already satisfied: dill in /usr/lib/python3.15/site-packages (0.4.1)
+Requirement already satisfied: docutils in /usr/lib/python3.15/site-packages (0.22.4)
+Collecting docutils
+  Using cached docutils-0.23-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: doxypypy in /usr/lib/python3.15/site-packages (0.8.8.7)
+Requirement already satisfied: doxyqml in /usr/lib/python3.15/site-packages (0.6.0)
+Requirement already satisfied: editables in /usr/lib/python3.15/site-packages (0.6)
+Requirement already satisfied: executing in /usr/lib/python3.15/site-packages (2.3.0)
+Requirement already satisfied: fastjsonschema in /usr/lib/python3.15/site-packages (2.22.3)
+Requirement already satisfied: flake8 in /usr/lib/python3.15/site-packages (7.5.0)
+Requirement already satisfied: flexcache in /usr/lib/python3.15/site-packages (0.3)
+Requirement already satisfied: flexparser in /usr/lib/python3.15/site-packages (0.4)
+Requirement already satisfied: flit_core in /usr/lib/python3.15/site-packages (4.2.0)
+Requirement already satisfied: fonttools in /usr/lib/python3.15/site-packages (4.68.0)
+Requirement already satisfied: fqdn in /usr/lib/python3.15/site-packages (1.6.0)
+Requirement already satisfied: gobject in /usr/lib/python3.15/site-packages (0.1.0)
+Requirement already satisfied: h11 in /usr/lib/python3.15/site-packages (0.16.0)
+Requirement already satisfied: hatchling in /usr/lib/python3.15/site-packages (1.33.0)
+Requirement already satisfied: html5lib in /usr/lib/python3.15/site-packages (1.1)
+Requirement already satisfied: httpcore in /usr/lib/python3.15/site-packages (1.0.9)
+Requirement already satisfied: httpx in /usr/lib/python3.15/site-packages (0.28.1)
+Requirement already satisfied: idna in /usr/lib/python3.15/site-packages (3.20)
+Requirement already satisfied: imagesize in /usr/lib/python3.15/site-packages (2.0.1)
+Requirement already satisfied: installer in /usr/lib/python3.15/site-packages (1.1.0)
+Requirement already satisfied: ipykernel in /usr/lib/python3.15/site-packages (7.4.0)
+Requirement already satisfied: ipython in /usr/lib/python3.15/site-packages (9.18.1)
+Requirement already satisfied: ipython_pygments_lexers in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: isoduration in /usr/lib/python3.15/site-packages (20.11.0)
+Requirement already satisfied: isort in /usr/lib/python3.15/site-packages (9.0.2)
+Requirement already satisfied: jedi in /usr/lib/python3.15/site-packages (0.20.1)
+Requirement already satisfied: json5 in /usr/lib/python3.15/site-packages (0.17.3)
+Requirement already satisfied: jsonpointer in /usr/lib/python3.15/site-packages (3.12)
+Requirement already satisfied: jsonschema in /usr/lib/python3.15/site-packages (4.26.0)
+Requirement already satisfied: jupyter_builder in /usr/lib/python3.15/site-packages (1.3.0)
+Requirement already satisfied: jupyter_client in /usr/lib/python3.15/site-packages (8.10.0)
+Requirement already satisfied: jupyter_core in /usr/lib/python3.15/site-packages (5.9.1)
+Requirement already satisfied: jupyter_server in /usr/lib/python3.15/site-packages (2.21.1)
+Requirement already satisfied: jupyter_server_terminals in /usr/lib/python3.15/site-packages (0.5.4)
+Requirement already satisfied: jupyterlab in /usr/lib/python3.15/site-packages (4.6.6)
+Requirement already satisfied: jupyterlab_pygments in /usr/lib/python3.15/site-packages (0.3.0)
+Requirement already satisfied: jupyterlab_server in /usr/lib/python3.15/site-packages (2.28.1)
+Requirement already satisfied: kiwisolver in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: lark in /usr/lib/python3.15/site-packages (1.3.1)
+Requirement already satisfied: lxml in /usr/lib/python3.15/site-packages (6.1.3)
+Requirement already satisfied: mathics3_notebook_frontends in /usr/lib/python3.15/site-packages (1.0.1)
+Requirement already satisfied: mathicsscript in /usr/lib/python3.15/site-packages (10.0.0)
+Requirement already satisfied: matplotlib in /usr/lib/python3.15/site-packages (3.11.2)
+Requirement already satisfied: mccabe in /usr/lib/python3.15/site-packages (0.7.0)
+Requirement already satisfied: meson in /usr/lib/python3.15/site-packages (1.12.1)
+Requirement already satisfied: metakernel in /usr/lib/python3.15/site-packages (1.0.7)
+Requirement already satisfied: mistune in /usr/lib/python3.15/site-packages (3.4.0)
+Requirement already satisfied: mpmath in /usr/lib/python3.15/site-packages (1.3.0)
+Collecting mpmath
+  Using cached mpmath-1.4.1-py3-none-any.whl.metadata (9.1 kB)
+Requirement already satisfied: msgpack in /usr/lib/python3.15/site-packages (1.2.4)
+Requirement already satisfied: mypy_extensions in /usr/lib/python3.15/site-packages (1.2.0)
+Requirement already satisfied: narwhals in /usr/lib/python3.15/site-packages (2.29.0)
+Requirement already satisfied: nbclient in /usr/lib/python3.15/site-packages (0.11.0)
+Requirement already satisfied: nbconvert in /usr/lib/python3.15/site-packages (7.17.2)
+Requirement already satisfied: nbformat in /usr/lib/python3.15/site-packages (5.11.1)
+Requirement already satisfied: networkx in /usr/lib/python3.15/site-packages (3.7)
+Requirement already satisfied: notebook_shim in /usr/lib/python3.15/site-packages (0.2.4)
+Requirement already satisfied: numpy in /usr/lib/python3.15/site-packages (2.5.5)
+Requirement already satisfied: octave_kernel in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: packaging in /usr/lib/python3.15/site-packages (26.3)
+Requirement already satisfied: palettable in /usr/lib/python3.15/site-packages (3.3.3)
+Requirement already satisfied: pandocfilters in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: parameterized in /usr/lib/python3.15/site-packages (0.9.0)
+Requirement already satisfied: parso in /usr/lib/python3.15/site-packages (0.8.7)
+Requirement already satisfied: pathspec in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: periodictable in /usr/lib/python3.15/site-packages (2.1.0)
+Requirement already satisfied: pexpect in /usr/lib/python3.15/site-packages (4.9.0)
+Requirement already satisfied: pillow in /usr/lib/python3.15/site-packages (13.0.0)
+Requirement already satisfied: pip in /usr/lib/python3.15/site-packages (26.3)
+Requirement already satisfied: platformdirs in /usr/lib/python3.15/site-packages (4.14.8)
+Requirement already satisfied: pluggy in /usr/lib/python3.15/site-packages (1.7.0)
+Requirement already satisfied: prometheus_client in /usr/lib/python3.15/site-packages (0.26.0)
+Requirement already satisfied: prompt_toolkit in /usr/lib/python3.15/site-packages (3.0.53)
+Requirement already satisfied: psutil in /usr/lib/python3.15/site-packages (7.2.2)
+Requirement already satisfied: ptyprocess in /usr/lib/python3.15/site-packages (0.7.0)
+Requirement already satisfied: pure_eval in /usr/lib/python3.15/site-packages (0.2.4)
+Requirement already satisfied: pyasn1 in /usr/lib/python3.15/site-packages (0.6.5)
+Requirement already satisfied: pybind11 in /usr/lib/python3.15/site-packages (3.1.0)
+Requirement already satisfied: pycairo in /usr/lib/python3.15/site-packages (1.29.2)
+Requirement already satisfied: pycodestyle in /usr/lib/python3.15/site-packages (2.15.0)
+Requirement already satisfied: pycparser in /usr/lib/python3.15/site-packages (3.12)
+Requirement already satisfied: pydeck in /usr/lib/python3.15/site-packages (0.9.3)
+Requirement already satisfied: pyelftools in /usr/lib/python3.15/site-packages (0.33)
+Requirement already satisfied: pyflakes in /usr/lib/python3.15/site-packages (4.1.0)
+Requirement already satisfied: pygdbmi in /usr/lib/python3.15/site-packages (0.11.0.0)
+Requirement already satisfied: pylint in /usr/lib/python3.15/site-packages (4.1.4)
+Requirement already satisfied: Pympler in /usr/lib/python3.15/site-packages (1.1)
+Requirement already satisfied: pyparsing in /usr/lib/python3.15/site-packages (3.3.3)
+Requirement already satisfied: pyproject_hooks in /usr/lib/python3.15/site-packages (1.3.3)
+Requirement already satisfied: pyserial in /usr/lib/python3.15/site-packages (3.5)
+Requirement already satisfied: pyte in /usr/lib/python3.15/site-packages (0.8.2)
+Requirement already satisfied: pytokens in /usr/lib/python3.15/site-packages (0.4.1)
+Requirement already satisfied: pytz in /usr/lib/python3.15/site-packages (2026.6)
+Requirement already satisfied: pyzmq in /usr/lib/python3.15/site-packages (27.3.0)
+Requirement already satisfied: rasterio in /usr/lib/python3.15/site-packages (1.5.2)
+Requirement already satisfied: rdflib in /usr/lib/python3.15/site-packages (7.6.0)
+Requirement already satisfied: referencing in /usr/lib/python3.15/site-packages (0.37.0)
+Requirement already satisfied: requests in /usr/lib/python3.15/site-packages (2.34.2)
+Requirement already satisfied: rnc2rng in /usr/lib/python3.15/site-packages (2.8.0)
+Requirement already satisfied: rply in /usr/lib/python3.15/site-packages (0.7.8)
+Requirement already satisfied: scikit_build_core in /usr/lib/python3.15/site-packages (1.1.2)
+Requirement already satisfied: scipy in /usr/lib/python3.15/site-packages (1.18.1)
+Requirement already satisfied: scour in /usr/lib/python3.15/site-packages (0.38.2)
+Requirement already satisfied: setuptools in /usr/lib/python3.15/site-packages (84.2.1)
+Requirement already satisfied: sip in /usr/lib/python3.15/site-packages (6.17.3)
+Requirement already satisfied: six in /usr/lib/python3.15/site-packages (1.17.0)
+Requirement already satisfied: smartypants in /usr/lib/python3.15/site-packages (2.0.2)
+Requirement already satisfied: snowballstemmer in /usr/lib/python3.15/site-packages (3.1.1)
+Requirement already satisfied: soupsieve in /usr/lib/python3.15/site-packages (4.1.3)
+Requirement already satisfied: sphinx_lv2_theme in /usr/lib/python3.15/site-packages (1.4.6)
+Requirement already satisfied: sphinxygen in /usr/lib/python3.15/site-packages (1.0.12)
+Requirement already satisfied: sqlparse in /usr/lib/python3.15/site-packages (0.6.1)
+Requirement already satisfied: sympy in /usr/lib/python3.15/site-packages (1.14.0)
+Requirement already satisfied: terminado in /usr/lib/python3.15/site-packages (0.18.1)
+Requirement already satisfied: tinycss2 in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: tomlkit in /usr/lib/python3.15/site-packages (0.15.2)
+Requirement already satisfied: tornado in /usr/lib/python3.15/site-packages (6.6.1)
+Requirement already satisfied: traitlets in /usr/lib/python3.15/site-packages (5.16.1)
+Requirement already satisfied: typing_extensions in /usr/lib/python3.15/site-packages (4.16.0)
+Requirement already satisfied: typogrify in /usr/lib/python3.15/site-packages (2.1.0)
+Requirement already satisfied: tzdata in /usr/lib/python3.15/site-packages (2026.6)
+Requirement already satisfied: urllib3 in /usr/lib/python3.15/site-packages (2.8.0)
+Requirement already satisfied: wcwidth in /usr/lib/python3.15/site-packages (0.9.4)
+Collecting wcwidth
+  Using cached wcwidth-0.9.5-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (26 kB)
+Requirement already satisfied: webcolors in /usr/lib/python3.15/site-packages (25.10.0)
+Requirement already satisfied: webencodings in /usr/lib/python3.15/site-packages (0.6.1)
+Requirement already satisfied: wheel in /usr/lib/python3.15/site-packages (0.48.0)
+Requirement already satisfied: python-dateutil>=2.7.0 in /usr/lib/python3.15/site-packages (from arrow) (3.0.0)
+Requirement already satisfied: trove-classifiers in /usr/lib/python3.15/site-packages (from hatchling) (2026.6.1.19)
+Requirement already satisfied: matplotlib-inline>=0.1 in /usr/lib/python3.15/site-packages (from ipykernel) (0.2.2)
+Requirement already satisfied: nest-asyncio2>=1.7.0 in /usr/lib/python3.15/site-packages (from ipykernel) (1.7.4)
+Requirement already satisfied: pygments>=2.14.0 in /usr/lib/python3.15/site-packages (from ipython) (2.21.0)
+Requirement already satisfied: stack_data>=0.6.0 in /usr/lib/python3.15/site-packages (from ipython) (0.6.3)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /usr/lib/python3.15/site-packages (from jsonschema) (2025.9.1)
+Requirement already satisfied: rpds-py>=0.25.0 in /usr/lib/python3.15/site-packages (from jsonschema) (2026.9.1)
+Requirement already satisfied: argon2-cffi>=21.1 in /usr/lib/python3.15/site-packages (from jupyter_server) (25.1.0)
+Requirement already satisfied: jinja2>=3.0.3 in /usr/lib/python3.15/site-packages (from jupyter_server) (3.1.6)
+Requirement already satisfied: jupyter-events>=0.11.0 in /usr/lib/python3.15/site-packages (from jupyter_server) (0.12.1)
+Requirement already satisfied: send2trash>=1.8.2 in /usr/lib/python3.15/site-packages (from jupyter_server) (2.1.0)
+Requirement already satisfied: websocket-client>=1.7 in /usr/lib/python3.15/site-packages (from jupyter_server) (1.9.2)
+Requirement already satisfied: async-lru>=1.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.4.0)
+Requirement already satisfied: jupyter-lsp>=2.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.3.1)
+Requirement already satisfied: Mathics3>=10.0.1 in /usr/lib/python3.15/site-packages (from mathics3_notebook_frontends) (10.0.1)
+Requirement already satisfied: charset-normalizer<4.0.0,>=2.0.0 in /usr/lib/python3.15/site-packages (from mathics3_notebook_frontends) (3.5.2)
+Requirement already satisfied: Mathics3_Scanner>=10.0.0 in /usr/lib/python3.15/site-packages (from mathicsscript) (10.0.1)
+Requirement already satisfied: Mathics3_pygments>=10.0.0 in /usr/lib/python3.15/site-packages (from mathicsscript) (10.0.0)
+Requirement already satisfied: term-background>=1.0.5 in /usr/lib/python3.15/site-packages (from mathicsscript) (1.0.5)
+Requirement already satisfied: markupsafe>=2.0 in /usr/lib/python3.15/site-packages (from nbconvert) (3.0.4)
+Requirement already satisfied: sphinx in /usr/lib/python3.15/site-packages (from sphinx_lv2_theme) (9.1.0)
+Requirement already satisfied: argon2-cffi-bindings in /usr/lib/python3.15/site-packages (from argon2-cffi>=21.1->jupyter_server) (26.1.0)
+Requirement already satisfied: python-json-logger>=2.0.4 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (4.2.0)
+Requirement already satisfied: pyyaml>=5.3 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (6.0.3)
+Requirement already satisfied: rfc3339-validator in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (0.1.4)
+Requirement already satisfied: rfc3986-validator>=0.1.1 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (0.1.1)
+Requirement already satisfied: rfc3987-syntax>=1.1.0 in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter_server) (1.1.0)
+Requirement already satisfied: uri-template in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter_server) (1.3.0)
+Requirement already satisfied: pint>=0.24 in /usr/lib/python3.15/site-packages (from Mathics3>=10.0.1->mathics3_notebook_frontends) (0.26.2)
+Requirement already satisfied: Timed-Threads in /usr/lib/python3.15/site-packages (from Mathics3>=10.0.1->mathics3_notebook_frontends) (2.0.0)
+Requirement already satisfied: sphinxcontrib-applehelp>=1.0.7 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-devhelp>=1.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-htmlhelp>=2.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.1.0)
+Requirement already satisfied: sphinxcontrib-jsmath>=1.0.1 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (1.0.1)
+Requirement already satisfied: sphinxcontrib-qthelp>=1.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-serializinghtml>=1.1.9 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: roman-numerals>=1.0.0 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (4.1.0)
+Using cached argcomplete-3.8.0-py3-none-any.whl (45 kB)
+Using cached certifi-2026.11.20-py3-none-any.whl (127 kB)
+Using cached wcwidth-0.9.5-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (822 kB)
+WARNING: Error parsing dependencies of certifi: No package metadata was found.
+WARNING: Error parsing dependencies of wcwidth: No package metadata was found.
+Installing collected packages: wcwidth, certifi, argcomplete
+  Attempting uninstall: wcwidth
+ERROR: Could not install packages due to an OSError: No package metadata was found.
+
+
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: at-spi2-core: 2.62.1->2.62.2.
+[master ba56065] at-spi2-core: 2.62.1->2.62.2.
+ 1 file changed, 237 insertions(+), 234 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: at-spi2-core: 2.62.1->2.62.2.
+[master 4bdf5fb] at-spi2-core: 2.62.1->2.62.2.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-42
+r13.1-684
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libatk-1.0.so.0.26210.1
+cand_sobase=libatk.so
+search_base=libatk
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavcodec.so.63.1.102
+cand_sobase=libavcodec.so
+search_base=libavcodec
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavformat.so.63.1.102
+cand_sobase=libavformat.so
+search_base=libavformat
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavutil.so.61.1.102
+cand_sobase=libavutil.so
+search_base=libavutil
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgnutls.so.30.42.0
+cand_sobase=libgnutls.so
+search_base=libgnutls
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz.so.0.61510.0
+cand_sobase=libharfbuzz.so
+search_base=libharfbuzz
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz-subset.so.0.61510.0
+cand_sobase=libharfbuzz-subset.so
+search_base=libharfbuzz-subset
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libpari-gmp-tls.so.2.19.0
+cand_sobase=libpari-gmp-tls.so
+search_base=libpari-gmp-tls
+replacement_found=true
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libatk-1.0.so.0.26210.1
+Path: /usr/lib/libatk-1.0.so.0.26210.1
+Skipping generic/unsafe name 'libatk-1.0.so.' to prevent false positive matches.
+i_dir=/usr/lib
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libatk-1.0.so.0.26210.1...
+------------------------------------------------
+Checking obsolete version (file): libavcodec.so.63.1.102
+Path: /usr/lib/libavcodec.so.63.1.102
+Skipping generic/unsafe name 'libavcodec.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavcodec.so.63 libavcodec.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavcodec.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavcodec.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavformat.so.63.1.102
+Path: /usr/lib/libavformat.so.63.1.102
+Skipping generic/unsafe name 'libavformat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavformat.so.63 libavformat.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavformat.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavformat.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavutil.so.61.1.102
+Path: /usr/lib/libavutil.so.61.1.102
+Skipping generic/unsafe name 'libavutil.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavutil.so.61 libavutil.so.61.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavutil.so.61.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavutil.so.61.1.102.
+------------------------------------------------
+Checking obsolete version (file): libgnutls.so.30.42.0
+Path: /usr/lib/libgnutls.so.30.42.0
+Skipping generic/unsafe name 'libgnutls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 31 remaining dependents.
+Names tracked: libgnutls.so.30 libgnutls.so.30.42.0
+Example dependents: ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0 ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11 ...
+Warning: No parent package found for ANY of the 31 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libgnutls.so.30.42.0:
+  - ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-resume
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cxx
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-ocsp-client
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/print-ciphersuites
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/tlsproxy/tlsproxy
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/alert-printlist
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/errcodes
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/printlist
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0T
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/certtool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli-debug
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-serv
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/ocsptool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/p11tool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/psktool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/systemkey
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/eagain-cli
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/mini-record-timing
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libgnutls.so.30.42.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz.so.0.61510.0
+Path: /usr/lib/libharfbuzz.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz.so.0 libharfbuzz.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz-subset.so.0.61510.0
+Path: /usr/lib/libharfbuzz-subset.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz-subset.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz-subset.so.0 libharfbuzz-subset.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz-subset.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz-subset.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libpari-gmp-tls.so.2.19.0
+Path: /usr/lib/libpari-gmp-tls.so.2.19.0
+Skipping generic/unsafe name 'libpari-gmp-tls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libpari-gmp-tls.so.10 libpari-gmp-tls.so.2.19.0
+Example dependents: ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libpari-gmp-tls.so.2.19.0:
+  - ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libpari-gmp-tls.so.2.19.0.
+------------------------------------------------
+Checking obsolete version (file): libswscale.so.10.1.102
+Path: /usr/lib/libswscale.so.10.1.102
+Skipping generic/unsafe name 'libswscale.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libswscale.so.10 libswscale.so.10.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libswscale.so.10.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libswscale.so.10.1.102.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.5...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.5-lfs-r13.1-40
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
