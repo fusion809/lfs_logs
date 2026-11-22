@@ -1,0 +1,25 @@
+[22:00:10] Found custom package for maven-bin, bypassing BLFS aliases.
+[22:00:10] Custom package detected at /home/fusion809/lfs_packaging/maven-bin (package: maven-bin)
+[22:00:10] Extracting dependencies for custom package 'maven-bin'...
+[VERSION] maven-bin: 3.10.2
+[22:00:15] Installing maven-bin version: 3.10.2
+[22:00:15] Starting remote custom build for maven-bin...
+--2026-11-22 22:00:32--  https://dlcdn.apache.org/maven/maven-3/3.10.2/binaries/apache-maven-3.10.2-bin.tar.gz
+Resolving dlcdn.apache.org (dlcdn.apache.org)... 151.101.2.132, 2a04:4e42::644
+Connecting to dlcdn.apache.org (dlcdn.apache.org)|151.101.2.132|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9283057 (8.9M) [application/x-gzip]
+Saving to: ‘apache-maven-3.10.2-bin.tar.gz’
+
+          apache-ma   0%[                    ]       0  --.-KB/s                        apache-mav  13%[=>                  ]   1.20M  5.98MB/s                       apache-mave  38%[======>             ]   3.40M  8.47MB/s                      apache-maven  62%[===========>        ]   5.57M  9.24MB/s                     apache-maven-  87%[================>   ]   7.74M  9.64MB/s               apache-maven-3.10.2 100%[===================>]   8.85M  9.80MB/s    in 0.9s    
+
+2026-11-22 22:00:38 (9.80 MB/s) - ‘apache-maven-3.10.2-bin.tar.gz’ saved [9283057/9283057]
+
+#!/bin/bash
+export PATH=$PATH:/opt/maven/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/maven/lib
+3.10.2
+Updated registry for maven-bin to version 3.10.2
+[VERSION] maven-bin: 3.10.2
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package maven-bin in /var/lib/custom-packages/
