@@ -1,0 +1,564 @@
+[23:30:03] Found custom package for jchempaint-git, bypassing BLFS aliases.
+[23:30:03] Custom package detected at /home/fusion809/lfs_packaging/jchempaint-git (package: jchempaint-git)
+[23:30:03] Extracting dependencies for custom package 'jchempaint-git'...
+[23:30:03] Required deps: maven-bin 
+[23:30:03] Dependency 'maven-bin' already installed.
+[VERSION] jchempaint-git: 411bdc2d2bededc21a899ade66bf17195cee8bbf
+[23:30:04] Installing jchempaint-git version: 411bdc2d2bededc21a899ade66bf17195cee8bbf
+[23:30:04] Starting remote custom build for jchempaint-git...
+--2026-11-22 23:30:19--  https://github.com/JChemPaint/jchempaint/archive/411bdc2d2bededc21a899ade66bf17195cee8bbf.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/JChemPaint/jchempaint/tar.gz/411bdc2d2bededc21a899ade66bf17195cee8bbf [following]
+--2026-11-22 23:30:19--  https://codeload.github.com/JChemPaint/jchempaint/tar.gz/411bdc2d2bededc21a899ade66bf17195cee8bbf
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf.tar.gz’
+
+          jchempain     [<=>                 ]       0  --.-KB/s                        jchempaint     [ <=>                ] 970.80K  4.74MB/s               jchempaint-411bdc2d     [  <=>               ]   2.61M  7.44MB/s    in 0.4s    
+
+2026-11-22 23:30:20 (7.44 MB/s) - ‘jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf.tar.gz’ saved [2736373]
+
+Patched null-panel file opening in core/src/main/java/org/openscience/jchempaint/application/JChemPaint.java
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.openscience.jchempaint:jchempaint-inchi-nestedvm:jar:3.4-SNAPSHOT
+[WARNING] 'dependencies.dependency.scope' for org.iupac:nestedvm-inchi:jar declares usage of deprecated 'system' scope  @ line 54, column 20
+[WARNING] 'dependencies.dependency.systemPath' for org.iupac:nestedvm-inchi:jar should not point at files within the project directory, ${project.basedir}/dep/inchi-1.0.2.jar will be unresolvable by dependent projects @ line 55, column 25
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[WARNING] The project org.openscience.jchempaint:jchempaint:pom:3.4-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] jchempaint                                                         [pom]
+[INFO] jchempaint-inchi                                                   [jar]
+[INFO] jchempaint-render                                                  [jar]
+[INFO] jchempaint-core                                                    [jar]
+[INFO] jchempaint-inchi-nestedvm                                          [jar]
+[INFO] jchempaint-inchi-jni                                               [jar]
+[INFO] jchempaint-app-osx                                                 [jar]
+[INFO] jchempaint-app-jar                                                 [jar]
+[INFO] jchempaint-app-windows                                             [jar]
+[INFO] 
+[INFO] ---------------< org.openscience.jchempaint:jchempaint >----------------
+[INFO] Building jchempaint 3.4-SNAPSHOT                                   [1/9]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] Loaded 24572 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/3.6.1/maven-enforcer-plugin-3.6.1.pom
+Progress (1): 810 BProgress (1): 871 BProgress (1): 3.7 kBProgress (1): 5.5 kBProgress (1): 7.4 kBProgress (1): 8.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/3.6.1/maven-enforcer-plugin-3.6.1.pom (8.2 kB at 16 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer/3.6.1/enforcer-3.6.1.pom
+Progress (1): 807 BProgress (1): 867 BProgress (1): 2.4 kBProgress (1): 5.4 kBProgress (1): 8.2 kBProgress (1): 9.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer/3.6.1/enforcer-3.6.1.pom (9.1 kB at 185 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/3.6.1/maven-enforcer-plugin-3.6.1.jar
+Progress (1): 0.5/40 kBProgress (1): 1.9/40 kBProgress (1): 3.2/40 kBProgress (1): 4.5/40 kBProgress (1): 5.9/40 kBProgress (1): 7.3/40 kBProgress (1): 8.7/40 kBProgress (1): 10/40 kB Progress (1): 11/40 kBProgress (1): 13/40 kBProgress (1): 14/40 kBProgress (1): 15/40 kBProgress (1): 17/40 kBProgress (1): 18/40 kBProgress (1): 20/40 kBProgress (1): 21/40 kBProgress (1): 22/40 kBProgress (1): 24/40 kBProgress (1): 25/40 kBProgress (1): 26/40 kBProgress (1): 28/40 kBProgress (1): 29/40 kBProgress (1): 30/40 kBProgress (1): 32/40 kBProgress (1): 33/40 kBProgress (1): 35/40 kBProgress (1): 36/40 kBProgress (1): 37/40 kBProgress (1): 39/40 kBProgress (1): 40 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/3.6.1/maven-enforcer-plugin-3.6.1.jar (40 kB at 559 kB/s)
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/3.6.1/enforcer-rules-3.6.1.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/3.6.1/enforcer-api-3.6.1.pom
+Progress (1): 829 BProgress (1): 896 BProgress (1): 2.6 kBProgress (1): 3.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/3.6.1/enforcer-api-3.6.1.pom (3.8 kB at 80 kB/s)
+Progress (1): 976 BProgress (1): 1.1 kBProgress (1): 4.5 kBProgress (1): 7.8 kBProgress (1): 10 kB Progress (1): 13 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.pom (13 kB at 95 kB/s)
+Progress (1): 853 BProgress (1): 905 BProgress (1): 4.3 kBProgress (1): 5.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/3.6.1/enforcer-rules-3.6.1.pom (5.2 kB at 35 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.23/maven-resolver-util-1.9.23.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.pom
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.18.0/commons-codec-1.18.0.pom
+Progress (1): 878 BProgress (1): 1.0 kBProgress (1): 2.3 kBProgress (1): 5.0 kBProgress (1): 5.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.pom (5.0 kB at 10 kB/s)
+Progress (1): 838 BProgress (1): 898 BProgress (2): 898 B | 744 BProgress (2): 898 B | 1.9 kBProgress (2): 898 B | 4.0 kBProgress (2): 898 B | 5.8 kBProgress (2): 898 B | 8.3 kBProgress (2): 898 B | 11 kB Progress (2): 898 B | 13 kBProgress (2): 2.2 kB | 13 kBProgress (2): 2.2 kB | 16 kBProgress (2): 2.2 kB | 18 kB                            Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.18.0/commons-codec-1.18.0.pom (18 kB at 35 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.23/maven-resolver-util-1.9.23.pom (2.2 kB at 4.4 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/79/commons-parent-79.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver/1.9.23/maven-resolver-1.9.23.pom
+Progress (1): 755 BProgress (1): 797 BProgress (1): 2.5 kBProgress (1): 4.1 kBProgress (1): 8.3 kBProgress (1): 11 kB Progress (1): 15 kBProgress (1): 18 kBProgress (1): 20 kBProgress (1): 23 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver/1.9.23/maven-resolver-1.9.23.pom (23 kB at 443 kB/s)
+Progress (1): 702 BProgress (1): 1.9 kBProgress (1): 3.2 kBProgress (1): 4.7 kBProgress (1): 6.9 kBProgress (1): 9.4 kBProgress (1): 11 kB Progress (1): 12 kBProgress (1): 15 kBProgress (1): 17 kBProgress (1): 20 kBProgress (1): 22 kBProgress (1): 24 kBProgress (1): 28 kBProgress (1): 31 kBProgress (1): 32 kBProgress (1): 37 kBProgress (1): 40 kBProgress (1): 44 kBProgress (1): 46 kBProgress (1): 49 kBProgress (1): 52 kBProgress (1): 55 kBProgress (1): 57 kBProgress (1): 58 kBProgress (1): 61 kBProgress (1): 65 kBProgress (1): 69 kBProgress (1): 71 kBProgress (1): 73 kBProgress (1): 76 kBProgress (1): 77 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/79/commons-parent-79.pom (77 kB at 1.1 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.23/maven-resolver-api-1.9.23.pom
+Progress (1): 835 BProgress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.23/maven-resolver-api-1.9.23.pom (2.2 kB at 37 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.jar
+Progress (1): 3.4/193 kBProgress (1): 7.6/193 kBProgress (1): 7.7/193 kBProgress (1): 12/193 kB Progress (1): 16/193 kBProgress (1): 20/193 kBProgress (1): 24/193 kBProgress (1): 28/193 kBProgress (1): 33/193 kBProgress (1): 37/193 kBProgress (1): 41/193 kBProgress (1): 45/193 kBProgress (1): 49/193 kBProgress (1): 54/193 kBProgress (1): 57/193 kBProgress (1): 61/193 kBProgress (1): 65/193 kBProgress (1): 70/193 kBProgress (1): 74/193 kBProgress (1): 78/193 kBProgress (1): 82/193 kBProgress (1): 86/193 kBProgress (1): 91/193 kBProgress (1): 95/193 kBProgress (1): 99/193 kBProgress (1): 103/193 kBProgress (1): 108/193 kBProgress (1): 112/193 kBProgress (1): 116/193 kBProgress (1): 120/193 kBProgress (1): 122/193 kBProgress (1): 139/193 kBProgress (1): 155/193 kBProgress (1): 172/193 kBProgress (1): 188/193 kBProgress (1): 193 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.jar (193 kB at 1.8 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/3.6.1/enforcer-api-3.6.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/3.6.1/enforcer-rules-3.6.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.23/maven-resolver-util-1.9.23.jar
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.18.0/commons-codec-1.18.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.19.0/commons-io-2.19.0.jar
+Progress (1): 0.9/152 kBProgress (1): 2.3/152 kBProgress (1): 3.6/152 kBProgress (1): 4.1/152 kBProgress (1): 5.5/152 kBProgress (2): 5.5/152 kB | 0.9/196 kBProgress (2): 6.8/152 kB | 0.9/196 kBProgress (2): 6.8/152 kB | 2.3/196 kBProgress (2): 6.8/152 kB | 3.6/196 kBProgress (2): 8.2/152 kB | 3.6/196 kBProgress (2): 9.6/152 kB | 3.6/196 kBProgress (2): 11/152 kB | 3.6/196 kB Progress (2): 11/152 kB | 5.0/196 kBProgress (2): 12/152 kB | 5.0/196 kBProgress (2): 14/152 kB | 5.0/196 kBProgress (2): 14/152 kB | 6.4/196 kBProgress (2): 15/152 kB | 6.4/196 kBProgress (2): 15/152 kB | 7.7/196 kBProgress (2): 16/152 kB | 7.7/196 kBProgress (2): 16/152 kB | 9.1/196 kBProgress (2): 18/152 kB | 9.1/196 kBProgress (2): 19/152 kB | 9.1/196 kBProgress (2): 19/152 kB | 10/196 kB Progress (2): 21/152 kB | 10/196 kBProgress (2): 22/152 kB | 10/196 kBProgress (2): 22/152 kB | 12/196 kBProgress (2): 23/152 kB | 12/196 kBProgress (2): 25/152 kB | 12/196 kBProgress (2): 26/152 kB | 12/196 kBProgress (2): 27/152 kB | 12/196 kBProgress (2): 29/152 kB | 12/196 kBProgress (2): 29/152 kB | 13/196 kBProgress (2): 29/152 kB | 15/196 kBProgress (2): 30/152 kB | 15/196 kBProgress (2): 30/152 kB | 16/196 kBProgress (2): 31/152 kB | 16/196 kBProgress (2): 31/152 kB | 17/196 kBProgress (2): 33/152 kB | 17/196 kBProgress (2): 33/152 kB | 19/196 kBProgress (2): 33/152 kB | 20/196 kBProgress (2): 33/152 kB | 21/196 kBProgress (2): 33/152 kB | 23/196 kBProgress (2): 33/152 kB | 24/196 kBProgress (2): 33/152 kB | 25/196 kBProgress (2): 34/152 kB | 25/196 kBProgress (2): 34/152 kB | 27/196 kBProgress (2): 36/152 kB | 27/196 kBProgress (2): 36/152 kB | 28/196 kBProgress (2): 37/152 kB | 28/196 kBProgress (2): 38/152 kB | 28/196 kBProgress (2): 40/152 kB | 28/196 kBProgress (2): 41/152 kB | 28/196 kBProgress (2): 42/152 kB | 28/196 kBProgress (2): 44/152 kB | 28/196 kBProgress (2): 45/152 kB | 28/196 kBProgress (2): 46/152 kB | 28/196 kBProgress (2): 51/152 kB | 28/196 kBProgress (2): 51/152 kB | 30/196 kBProgress (2): 51/152 kB | 31/196 kBProgress (2): 51/152 kB | 32/196 kBProgress (2): 55/152 kB | 32/196 kBProgress (2): 55/152 kB | 34/196 kBProgress (2): 55/152 kB | 35/196 kBProgress (2): 55/152 kB | 36/196 kBProgress (2): 55/152 kB | 38/196 kBProgress (2): 59/152 kB | 38/196 kBProgress (2): 59/152 kB | 39/196 kBProgress (2): 59/152 kB | 43/196 kBProgress (3): 59/152 kB | 43/196 kB | 7.7/15 kBProgress (3): 59/152 kB | 43/196 kB | 15 kB    Progress (3): 63/152 kB | 43/196 kB | 15 kBProgress (3): 68/152 kB | 43/196 kB | 15 kBProgress (3): 72/152 kB | 43/196 kB | 15 kBProgress (3): 76/152 kB | 43/196 kB | 15 kBProgress (3): 76/152 kB | 48/196 kB | 15 kBProgress (3): 76/152 kB | 52/196 kB | 15 kBProgress (3): 76/152 kB | 56/196 kB | 15 kBProgress (3): 76/152 kB | 57/196 kB | 15 kB                                           Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/3.6.1/enforcer-api-3.6.1.jar (15 kB at 176 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar
+Progress (2): 76/152 kB | 61/196 kBProgress (2): 80/152 kB | 61/196 kBProgress (2): 85/152 kB | 61/196 kBProgress (2): 89/152 kB | 61/196 kBProgress (2): 89/152 kB | 65/196 kBProgress (2): 89/152 kB | 70/196 kBProgress (2): 89/152 kB | 74/196 kBProgress (2): 89/152 kB | 78/196 kBProgress (2): 93/152 kB | 78/196 kBProgress (2): 94/152 kB | 78/196 kBProgress (2): 94/152 kB | 82/196 kBProgress (2): 94/152 kB | 86/196 kBProgress (2): 94/152 kB | 91/196 kBProgress (2): 94/152 kB | 95/196 kBProgress (2): 94/152 kB | 99/196 kBProgress (2): 94/152 kB | 103/196 kBProgress (2): 98/152 kB | 103/196 kBProgress (2): 103/152 kB | 103/196 kBProgress (2): 107/152 kB | 103/196 kBProgress (2): 111/152 kB | 103/196 kBProgress (2): 115/152 kB | 103/196 kBProgress (2): 120/152 kB | 103/196 kBProgress (2): 124/152 kB | 103/196 kBProgress (2): 128/152 kB | 103/196 kBProgress (2): 132/152 kB | 103/196 kBProgress (2): 136/152 kB | 103/196 kBProgress (2): 141/152 kB | 103/196 kBProgress (2): 145/152 kB | 103/196 kBProgress (2): 149/152 kB | 103/196 kBProgress (2): 152 kB | 103/196 kB    Progress (2): 152 kB | 108/196 kBProgress (2): 152 kB | 112/196 kBProgress (2): 152 kB | 116/196 kBProgress (2): 152 kB | 120/196 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/3.6.1/enforcer-rules-3.6.1.jar (152 kB at 1.3 MB/s)
+Progress (1): 122/196 kBProgress (1): 127/196 kBProgress (1): 131/196 kBProgress (2): 131/196 kB | 7.7/389 kBProgress (2): 131/196 kB | 11/389 kB Progress (2): 135/196 kB | 11/389 kBProgress (2): 139/196 kB | 11/389 kBProgress (2): 144/196 kB | 11/389 kBProgress (2): 144/196 kB | 28/389 kBProgress (2): 148/196 kB | 28/389 kBProgress (2): 152/196 kB | 28/389 kBProgress (2): 152/196 kB | 44/389 kBProgress (2): 156/196 kB | 44/389 kBProgress (2): 156/196 kB | 61/389 kBProgress (2): 156/196 kB | 77/389 kBProgress (2): 160/196 kB | 77/389 kBProgress (2): 165/196 kB | 77/389 kBProgress (2): 165/196 kB | 93/389 kBProgress (2): 169/196 kB | 93/389 kBProgress (2): 169/196 kB | 110/389 kBProgress (2): 173/196 kB | 110/389 kBProgress (2): 177/196 kB | 110/389 kBProgress (2): 182/196 kB | 110/389 kBProgress (2): 186/196 kB | 110/389 kBProgress (2): 186/196 kB | 126/389 kBProgress (2): 190/196 kB | 126/389 kBProgress (2): 194/196 kB | 126/389 kBProgress (2): 196 kB | 126/389 kB    Progress (2): 196 kB | 142/389 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.23/maven-resolver-util-1.9.23.jar (196 kB at 1.5 MB/s)
+Progress (1): 159/389 kBProgress (1): 175/389 kBProgress (1): 192/389 kBProgress (1): 192/389 kBProgress (1): 208/389 kBProgress (1): 224/389 kBProgress (2): 224/389 kB | 0.9/556 kBProgress (2): 224/389 kB | 2.3/556 kBProgress (2): 224/389 kB | 3.6/556 kBProgress (2): 241/389 kB | 3.6/556 kBProgress (2): 241/389 kB | 5.0/556 kBProgress (2): 241/389 kB | 6.4/556 kBProgress (2): 241/389 kB | 7.7/556 kBProgress (2): 241/389 kB | 9.1/556 kBProgress (2): 241/389 kB | 10/556 kB Progress (2): 241/389 kB | 12/556 kBProgress (2): 241/389 kB | 13/556 kBProgress (2): 241/389 kB | 15/556 kBProgress (2): 241/389 kB | 15/556 kBProgress (2): 241/389 kB | 17/556 kBProgress (2): 241/389 kB | 18/556 kBProgress (2): 241/389 kB | 20/556 kBProgress (2): 257/389 kB | 20/556 kBProgress (2): 257/389 kB | 21/556 kBProgress (2): 273/389 kB | 21/556 kBProgress (2): 273/389 kB | 22/556 kBProgress (2): 273/389 kB | 24/556 kBProgress (2): 273/389 kB | 25/556 kBProgress (2): 273/389 kB | 26/556 kBProgress (2): 273/389 kB | 28/556 kBProgress (2): 273/389 kB | 29/556 kBProgress (2): 273/389 kB | 30/556 kBProgress (2): 273/389 kB | 32/556 kBProgress (2): 273/389 kB | 33/556 kBProgress (2): 273/389 kB | 35/556 kBProgress (2): 273/389 kB | 36/556 kBProgress (2): 273/389 kB | 37/556 kBProgress (2): 273/389 kB | 39/556 kBProgress (2): 273/389 kB | 40/556 kBProgress (2): 273/389 kB | 41/556 kBProgress (2): 273/389 kB | 43/556 kBProgress (2): 273/389 kB | 44/556 kBProgress (2): 290/389 kB | 44/556 kBProgress (2): 290/389 kB | 46/556 kBProgress (2): 290/389 kB | 47/556 kBProgress (2): 290/389 kB | 48/556 kBProgress (2): 290/389 kB | 50/556 kBProgress (2): 290/389 kB | 51/556 kBProgress (2): 290/389 kB | 52/556 kBProgress (2): 290/389 kB | 54/556 kBProgress (2): 290/389 kB | 55/556 kBProgress (2): 290/389 kB | 59/556 kBProgress (2): 306/389 kB | 59/556 kBProgress (3): 306/389 kB | 59/556 kB | 0.9/373 kBProgress (3): 306/389 kB | 59/556 kB | 2.3/373 kBProgress (3): 306/389 kB | 59/556 kB | 3.2/373 kBProgress (3): 306/389 kB | 59/556 kB | 4.5/373 kBProgress (3): 323/389 kB | 59/556 kB | 4.5/373 kBProgress (3): 323/389 kB | 59/556 kB | 5.9/373 kBProgress (3): 323/389 kB | 59/556 kB | 7.3/373 kBProgress (3): 323/389 kB | 59/556 kB | 8.7/373 kBProgress (3): 323/389 kB | 59/556 kB | 10/373 kB Progress (3): 323/389 kB | 59/556 kB | 11/373 kBProgress (3): 323/389 kB | 59/556 kB | 13/373 kBProgress (3): 323/389 kB | 59/556 kB | 14/373 kBProgress (3): 323/389 kB | 59/556 kB | 15/373 kBProgress (3): 323/389 kB | 59/556 kB | 17/373 kBProgress (3): 323/389 kB | 59/556 kB | 18/373 kBProgress (3): 323/389 kB | 59/556 kB | 20/373 kBProgress (3): 339/389 kB | 59/556 kB | 20/373 kBProgress (3): 339/389 kB | 59/556 kB | 21/373 kBProgress (3): 355/389 kB | 59/556 kB | 21/373 kBProgress (3): 355/389 kB | 59/556 kB | 22/373 kBProgress (3): 355/389 kB | 59/556 kB | 24/373 kBProgress (3): 355/389 kB | 59/556 kB | 25/373 kBProgress (3): 355/389 kB | 59/556 kB | 26/373 kBProgress (3): 355/389 kB | 59/556 kB | 28/373 kBProgress (3): 355/389 kB | 59/556 kB | 29/373 kBProgress (3): 355/389 kB | 59/556 kB | 30/373 kBProgress (3): 355/389 kB | 59/556 kB | 32/373 kBProgress (3): 372/389 kB | 59/556 kB | 32/373 kBProgress (3): 372/389 kB | 59/556 kB | 33/373 kBProgress (3): 372/389 kB | 59/556 kB | 35/373 kBProgress (3): 372/389 kB | 59/556 kB | 36/373 kBProgress (3): 372/389 kB | 59/556 kB | 37/373 kBProgress (3): 388/389 kB | 59/556 kB | 37/373 kBProgress (3): 388/389 kB | 59/556 kB | 39/373 kBProgress (3): 389 kB | 59/556 kB | 39/373 kB    Progress (3): 389 kB | 59/556 kB | 40/373 kBProgress (3): 389 kB | 59/556 kB | 41/373 kBProgress (3): 389 kB | 59/556 kB | 43/373 kBProgress (3): 389 kB | 59/556 kB | 44/373 kBProgress (3): 389 kB | 59/556 kB | 46/373 kBProgress (3): 389 kB | 59/556 kB | 47/373 kBProgress (3): 389 kB | 59/556 kB | 48/373 kBProgress (3): 389 kB | 59/556 kB | 50/373 kBProgress (3): 389 kB | 59/556 kB | 51/373 kBProgress (3): 389 kB | 59/556 kB | 52/373 kBProgress (3): 389 kB | 59/556 kB | 54/373 kB                                            Downloaded from central: https://repo.maven.apache.org/maven2/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar (389 kB at 2.5 MB/s)
+Progress (2): 59/556 kB | 55/373 kBProgress (2): 59/556 kB | 59/373 kBProgress (2): 59/556 kB | 61/373 kBProgress (2): 59/556 kB | 65/373 kBProgress (2): 59/556 kB | 66/373 kBProgress (2): 64/556 kB | 66/373 kBProgress (2): 65/556 kB | 66/373 kBProgress (2): 69/556 kB | 66/373 kBProgress (2): 73/556 kB | 66/373 kBProgress (2): 77/556 kB | 66/373 kBProgress (2): 82/556 kB | 66/373 kBProgress (2): 86/556 kB | 66/373 kBProgress (2): 86/556 kB | 70/373 kBProgress (2): 86/556 kB | 74/373 kBProgress (2): 86/556 kB | 78/373 kBProgress (2): 86/556 kB | 82/373 kBProgress (2): 86/556 kB | 87/373 kBProgress (2): 86/556 kB | 91/373 kBProgress (2): 86/556 kB | 95/373 kBProgress (2): 86/556 kB | 98/373 kBProgress (2): 90/556 kB | 98/373 kBProgress (2): 94/556 kB | 98/373 kBProgress (2): 98/556 kB | 98/373 kBProgress (2): 103/556 kB | 98/373 kBProgress (2): 107/556 kB | 98/373 kBProgress (2): 111/556 kB | 98/373 kBProgress (2): 115/556 kB | 98/373 kBProgress (2): 120/556 kB | 98/373 kBProgress (2): 124/556 kB | 98/373 kBProgress (2): 128/556 kB | 98/373 kBProgress (2): 130/556 kB | 98/373 kBProgress (2): 134/556 kB | 98/373 kBProgress (2): 139/556 kB | 98/373 kBProgress (2): 143/556 kB | 98/373 kBProgress (2): 147/556 kB | 98/373 kBProgress (2): 151/556 kB | 98/373 kBProgress (2): 155/556 kB | 98/373 kBProgress (2): 160/556 kB | 98/373 kBProgress (2): 164/556 kB | 98/373 kBProgress (2): 168/556 kB | 98/373 kBProgress (2): 172/556 kB | 98/373 kBProgress (2): 177/556 kB | 98/373 kBProgress (2): 181/556 kB | 98/373 kBProgress (2): 185/556 kB | 98/373 kBProgress (2): 189/556 kB | 98/373 kBProgress (2): 189/556 kB | 103/373 kBProgress (2): 189/556 kB | 107/373 kBProgress (2): 194/556 kB | 107/373 kBProgress (2): 194/556 kB | 111/373 kBProgress (2): 198/556 kB | 111/373 kBProgress (2): 202/556 kB | 111/373 kBProgress (2): 202/556 kB | 115/373 kBProgress (2): 202/556 kB | 119/373 kBProgress (2): 202/556 kB | 124/373 kBProgress (2): 202/556 kB | 128/373 kBProgress (2): 202/556 kB | 132/373 kBProgress (2): 202/556 kB | 136/373 kBProgress (2): 202/556 kB | 141/373 kBProgress (2): 202/556 kB | 145/373 kBProgress (2): 202/556 kB | 149/373 kBProgress (2): 202/556 kB | 153/373 kBProgress (2): 202/556 kB | 158/373 kBProgress (2): 202/556 kB | 162/373 kBProgress (2): 202/556 kB | 166/373 kBProgress (2): 202/556 kB | 170/373 kBProgress (2): 206/556 kB | 170/373 kBProgress (2): 206/556 kB | 174/373 kBProgress (2): 206/556 kB | 179/373 kBProgress (2): 206/556 kB | 183/373 kBProgress (2): 210/556 kB | 183/373 kBProgress (2): 210/556 kB | 187/373 kBProgress (2): 210/556 kB | 191/373 kBProgress (2): 215/556 kB | 191/373 kBProgress (2): 219/556 kB | 191/373 kBProgress (2): 219/556 kB | 196/373 kBProgress (2): 219/556 kB | 200/373 kBProgress (2): 219/556 kB | 204/373 kBProgress (2): 219/556 kB | 208/373 kBProgress (2): 235/556 kB | 208/373 kBProgress (2): 235/556 kB | 212/373 kBProgress (2): 235/556 kB | 217/373 kBProgress (2): 252/556 kB | 217/373 kBProgress (2): 261/556 kB | 217/373 kBProgress (2): 261/556 kB | 229/373 kBProgress (2): 278/556 kB | 229/373 kBProgress (2): 294/556 kB | 229/373 kBProgress (2): 310/556 kB | 229/373 kBProgress (2): 327/556 kB | 229/373 kBProgress (2): 343/556 kB | 229/373 kBProgress (2): 343/556 kB | 246/373 kBProgress (2): 359/556 kB | 246/373 kBProgress (2): 359/556 kB | 262/373 kBProgress (2): 376/556 kB | 262/373 kBProgress (2): 376/556 kB | 279/373 kBProgress (2): 392/556 kB | 279/373 kBProgress (2): 409/556 kB | 279/373 kBProgress (2): 409/556 kB | 295/373 kBProgress (2): 425/556 kB | 295/373 kBProgress (2): 425/556 kB | 311/373 kBProgress (2): 441/556 kB | 311/373 kBProgress (2): 441/556 kB | 328/373 kBProgress (2): 458/556 kB | 328/373 kBProgress (2): 458/556 kB | 344/373 kBProgress (2): 474/556 kB | 344/373 kBProgress (2): 491/556 kB | 344/373 kBProgress (2): 491/556 kB | 360/373 kBProgress (2): 507/556 kB | 360/373 kBProgress (2): 523/556 kB | 360/373 kBProgress (2): 523/556 kB | 373 kB    Progress (2): 540/556 kB | 373 kBProgress (2): 556 kB | 373 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.18.0/commons-codec-1.18.0.jar (373 kB at 1.4 MB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.19.0/commons-io-2.19.0.jar (556 kB at 2.1 MB/s)
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint/3.4-SNAPSHOT/jchempaint-3.4-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------< org.openscience.jchempaint:jchempaint-inchi >-------------
+[INFO] Building jchempaint-inchi 3.4-SNAPSHOT                             [2/9]
+[INFO]   from inchi/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-inchi ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-inchi ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/inchi/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-inchi ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-inchi ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/inchi/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-inchi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-inchi ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-inchi ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/inchi/target/jchempaint-inchi-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-inchi ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/inchi/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi/3.4-SNAPSHOT/jchempaint-inchi-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/inchi/target/jchempaint-inchi-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi/3.4-SNAPSHOT/jchempaint-inchi-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] ------------< org.openscience.jchempaint:jchempaint-render >------------
+[INFO] Building jchempaint-render 3.4-SNAPSHOT                            [3/9]
+[INFO]   from render/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-render ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-render ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/render/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-render ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 36 source files with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/render/src/main/java/org/openscience/jchempaint/renderer/JChemPaintRendererModel.java: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/render/src/main/java/org/openscience/jchempaint/renderer/JChemPaintRendererModel.java uses or overrides a deprecated API.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/render/src/main/java/org/openscience/jchempaint/renderer/JChemPaintRendererModel.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-render ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/render/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-render ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-render ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-render ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/render/target/jchempaint-render-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-render ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/render/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-render/3.4-SNAPSHOT/jchempaint-render-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/render/target/jchempaint-render-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-render/3.4-SNAPSHOT/jchempaint-render-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] -------------< org.openscience.jchempaint:jchempaint-core >-------------
+[INFO] Building jchempaint-core 3.4-SNAPSHOT                              [4/9]
+[INFO]   from core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/com/formdev/flatlaf/3.8/flatlaf-3.8.pom
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/commons-cli/commons-cli/1.11.0/commons-cli-1.11.0.pom
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/easytesting/fest-swing/1.2.1/fest-swing-1.2.1.pom
+Downloading from central: https://repo.maven.apache.org/maven2/com/formdev/flatlaf/3.8/flatlaf-3.8.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-swing/1.2.1/fest-swing-1.2.1.pom
+Downloading from central: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.11.0/commons-cli-1.11.0.pom
+Progress (1): 1.3 kBProgress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-swing/1.2.1/fest-swing-1.2.1.pom (3.9 kB at 88 kB/s)
+Progress (1): 984 BProgress (1): 1.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/com/formdev/flatlaf/3.8/flatlaf-3.8.pom (1.5 kB at 28 kB/s)
+Progress (1): 776 BProgress (1): 2.2 kBProgress (1): 4.7 kBProgress (1): 7.0 kBProgress (1): 9.8 kBProgress (1): 12 kB Progress (1): 14 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.11.0/commons-cli-1.11.0.pom (14 kB at 213 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/easytesting/fest-util/1.1.3/fest-util-1.1.3.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.3/fest-util-1.1.3.pom
+Progress (1): 1.3 kBProgress (1): 1.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.3/fest-util-1.1.3.pom (1.6 kB at 8.1 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/easytesting/fest-swing/1.2.1/fest-swing-1.2.1.jar
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/com/formdev/flatlaf/3.8/flatlaf-3.8.jar
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/commons-cli/commons-cli/1.11.0/commons-cli-1.11.0.jar
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/easytesting/fest-util/1.1.3/fest-util-1.1.3.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-swing/1.2.1/fest-swing-1.2.1.jar
+Progress (1): 4.1/729 kBProgress (1): 12/729 kB Progress (1): 29/729 kBProgress (1): 45/729 kBProgress (1): 61/729 kBProgress (1): 78/729 kBProgress (1): 94/729 kBProgress (1): 111/729 kBProgress (1): 127/729 kBProgress (1): 143/729 kBProgress (1): 160/729 kBProgress (1): 176/729 kBProgress (1): 193/729 kBProgress (1): 209/729 kBProgress (1): 225/729 kBProgress (1): 242/729 kBProgress (1): 258/729 kBProgress (1): 274/729 kBProgress (1): 291/729 kBProgress (1): 307/729 kBProgress (1): 324/729 kBProgress (1): 340/729 kBProgress (1): 356/729 kBProgress (1): 373/729 kBProgress (1): 389/729 kBProgress (1): 405/729 kBProgress (1): 422/729 kBProgress (1): 438/729 kBProgress (1): 455/729 kBProgress (1): 471/729 kBProgress (1): 487/729 kBProgress (1): 504/729 kBProgress (1): 520/729 kBProgress (1): 537/729 kBProgress (1): 553/729 kBProgress (1): 569/729 kBProgress (1): 586/729 kBProgress (1): 602/729 kBProgress (1): 618/729 kBProgress (1): 635/729 kBProgress (1): 651/729 kBProgress (1): 668/729 kBProgress (1): 684/729 kBProgress (1): 700/729 kBProgress (1): 717/729 kBProgress (1): 729 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-swing/1.2.1/fest-swing-1.2.1.jar (729 kB at 2.8 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.11.0/commons-cli-1.11.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.3/fest-util-1.1.3.jar
+Downloading from central: https://repo.maven.apache.org/maven2/com/formdev/flatlaf/3.8/flatlaf-3.8.jar
+Progress (1): 7.7/20 kBProgress (1): 16/20 kB Progress (1): 20 kB   Progress (2): 20 kB | 0/1.1 MBProgress (2): 20 kB | 0/1.1 MBProgress (2): 20 kB | 0/1.1 MBProgress (3): 20 kB | 0/1.1 MB | 7.7/110 kBProgress (3): 20 kB | 0/1.1 MB | 16/110 kB Progress (3): 20 kB | 0/1.1 MB | 24/110 kBProgress (3): 20 kB | 0/1.1 MB | 24/110 kBProgress (3): 20 kB | 0/1.1 MB | 40/110 kBProgress (3): 20 kB | 0/1.1 MB | 57/110 kB                                          Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.3/fest-util-1.1.3.jar (20 kB at 379 kB/s)
+Progress (2): 0/1.1 MB | 57/110 kBProgress (2): 0/1.1 MB | 73/110 kBProgress (2): 0/1.1 MB | 90/110 kBProgress (2): 0.1/1.1 MB | 90/110 kBProgress (2): 0.1/1.1 MB | 106/110 kBProgress (2): 0.1/1.1 MB | 110 kB    Progress (2): 0.1/1.1 MB | 110 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.11.0/commons-cli-1.11.0.jar (110 kB at 1.7 MB/s)
+Progress (1): 0.1/1.1 MBProgress (1): 0.1/1.1 MBProgress (1): 0.1/1.1 MBProgress (1): 0.1/1.1 MBProgress (1): 0.2/1.1 MBProgress (1): 0.2/1.1 MBProgress (1): 0.2/1.1 MBProgress (1): 0.2/1.1 MBProgress (1): 0.2/1.1 MBProgress (1): 0.2/1.1 MBProgress (1): 0.3/1.1 MBProgress (1): 0.3/1.1 MBProgress (1): 0.3/1.1 MBProgress (1): 0.3/1.1 MBProgress (1): 0.3/1.1 MBProgress (1): 0.3/1.1 MBProgress (1): 0.4/1.1 MBProgress (1): 0.4/1.1 MBProgress (1): 0.4/1.1 MBProgress (1): 0.4/1.1 MBProgress (1): 0.4/1.1 MBProgress (1): 0.4/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.7/1.1 MBProgress (1): 0.7/1.1 MBProgress (1): 0.7/1.1 MBProgress (1): 0.7/1.1 MBProgress (1): 0.7/1.1 MBProgress (1): 0.7/1.1 MBProgress (1): 0.8/1.1 MBProgress (1): 0.8/1.1 MBProgress (1): 0.8/1.1 MBProgress (1): 0.8/1.1 MBProgress (1): 0.8/1.1 MBProgress (1): 0.8/1.1 MBProgress (1): 0.9/1.1 MBProgress (1): 0.9/1.1 MBProgress (1): 0.9/1.1 MBProgress (1): 0.9/1.1 MBProgress (1): 0.9/1.1 MBProgress (1): 0.9/1.1 MBProgress (1): 1.0/1.1 MBProgress (1): 1.0/1.1 MBProgress (1): 1.0/1.1 MBProgress (1): 1.0/1.1 MBProgress (1): 1.0/1.1 MBProgress (1): 1.0/1.1 MBProgress (1): 1.1 MB                        Downloaded from central: https://repo.maven.apache.org/maven2/com/formdev/flatlaf/3.8/flatlaf-3.8.jar (1.1 MB at 7.3 MB/s)
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-core ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-core ---
+[INFO] Copying 382 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-core ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 158 source files with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/src/main/java/org/openscience/jchempaint/controller/ControllerHub.java: Some input files use or override a deprecated API.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/src/main/java/org/openscience/jchempaint/controller/ControllerHub.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/src/main/java/org/openscience/jchempaint/action/CopyPasteAction.java: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/src/main/java/org/openscience/jchempaint/action/CopyPasteAction.java uses unchecked or unsafe operations.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/src/main/java/org/openscience/jchempaint/action/CopyPasteAction.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- gettext:1.2.4:dist (convert-po-class) @ jchempaint-core ---
+[INFO] Processing nl.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/target/classes -r app.i18n.Messages -l nl /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/po/nl.po
+[WARNING] Note: /tmp/msgGf2RF1/app/i18n/Messages_nl.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing cs.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/target/classes -r app.i18n.Messages -l cs /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/po/cs.po
+[WARNING] Note: /tmp/msgqqqGH7/app/i18n/Messages_cs.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing ru.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/target/classes -r app.i18n.Messages -l ru /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/po/ru.po
+[WARNING] Note: /tmp/msgzq2p19/app/i18n/Messages_ru.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing ca.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/target/classes -r app.i18n.Messages -l ca /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/po/ca.po
+[WARNING] Note: /tmp/msg1E8Tpi/app/i18n/Messages_ca.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing zh.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/target/classes -r app.i18n.Messages -l zh /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/po/zh.po
+[WARNING] Note: /tmp/msgmqXjS9/app/i18n/Messages_zh.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing es.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/target/classes -r app.i18n.Messages -l es /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/po/es.po
+[WARNING] Note: /tmp/msgUWCVgd/app/i18n/Messages_es.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing pt_BR.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/target/classes -r app.i18n.Messages -l pt_BR /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/po/pt_BR.po
+[WARNING] Note: /tmp/msgR5yfuF/app/i18n/Messages_pt_BR.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing th.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/target/classes -r app.i18n.Messages -l th /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/po/th.po
+[WARNING] Note: /tmp/msgrvkNJ5/app/i18n/Messages_th.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing de.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/target/classes -r app.i18n.Messages -l de /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/po/de.po
+[WARNING] Note: /tmp/msgZRZeOt/app/i18n/Messages_de.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing ar.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/target/classes -r app.i18n.Messages -l ar /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/po/ar.po
+[WARNING] Note: /tmp/msgijvbyL/app/i18n/Messages_ar.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing hu.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/target/classes -r app.i18n.Messages -l hu /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/po/hu.po
+[WARNING] Note: /tmp/msgzsXZWo/app/i18n/Messages_hu.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing pl.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/target/classes -r app.i18n.Messages -l pl /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/po/pl.po
+[WARNING] Note: /tmp/msganlo88/app/i18n/Messages_pl.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Creating resource bundle for source locale
+[INFO] Creating default resource bundle
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-core ---
+[INFO] Copying 12 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-core ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 11 source files with javac [debug release 8] to target/test-classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/src/test/java/org/openscience/cdk/CDKTestCase.java: Some input files use or override a deprecated API.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/src/test/java/org/openscience/cdk/CDKTestCase.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-core ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/target/jchempaint-core-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-core ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-core/3.4-SNAPSHOT/jchempaint-core-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/core/target/jchempaint-core-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-core/3.4-SNAPSHOT/jchempaint-core-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --------< org.openscience.jchempaint:jchempaint-inchi-nestedvm >--------
+[INFO] Building jchempaint-inchi-nestedvm 3.4-SNAPSHOT                    [5/9]
+[INFO]   from inchi-nestedvm/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-inchi-nestedvm ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-inchi-nestedvm ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-inchi-nestedvm ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 5 source files with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-inchi-nestedvm ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/inchi-nestedvm/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-inchi-nestedvm ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 8] to target/test-classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-inchi-nestedvm ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-inchi-nestedvm ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/inchi-nestedvm/target/jchempaint-inchi-nestedvm-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-inchi-nestedvm ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/inchi-nestedvm/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi-nestedvm/3.4-SNAPSHOT/jchempaint-inchi-nestedvm-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/inchi-nestedvm/target/jchempaint-inchi-nestedvm-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi-nestedvm/3.4-SNAPSHOT/jchempaint-inchi-nestedvm-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] ----------< org.openscience.jchempaint:jchempaint-inchi-jni >-----------
+[INFO] Building jchempaint-inchi-jni 3.4-SNAPSHOT                         [6/9]
+[INFO]   from inchi-jni/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-inchi-jni ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-inchi-jni ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-inchi-jni ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-inchi-jni ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/inchi-jni/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-inchi-jni ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-inchi-jni ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-inchi-jni ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/inchi-jni/target/jchempaint-inchi-jni-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-inchi-jni ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/inchi-jni/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi-jni/3.4-SNAPSHOT/jchempaint-inchi-jni-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/inchi-jni/target/jchempaint-inchi-jni-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi-jni/3.4-SNAPSHOT/jchempaint-inchi-jni-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] -----------< org.openscience.jchempaint:jchempaint-app-osx >------------
+[INFO] Building jchempaint-app-osx 3.4-SNAPSHOT                           [7/9]
+[INFO]   from app-osx/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-app-osx ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-app-osx ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-app-osx ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-app-osx ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/app-osx/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-app-osx ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-app-osx ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-app-osx ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/app-osx/target/jchempaint-app-osx-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-app-osx ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/app-osx/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-osx/3.4-SNAPSHOT/jchempaint-app-osx-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/app-osx/target/jchempaint-app-osx-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-osx/3.4-SNAPSHOT/jchempaint-app-osx-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] -----------< org.openscience.jchempaint:jchempaint-app-jar >------------
+[INFO] Building jchempaint-app-jar 3.4-SNAPSHOT                           [8/9]
+[INFO]   from app-jar/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.6.2/maven-shade-plugin-3.6.2.pom
+Progress (1): 775 BProgress (1): 2.3 kBProgress (1): 4.6 kBProgress (1): 8.2 kBProgress (1): 11 kB Progress (1): 12 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.6.2/maven-shade-plugin-3.6.2.pom (12 kB at 259 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.6.2/maven-shade-plugin-3.6.2.jar
+Progress (1): 3.2/150 kBProgress (1): 20/150 kB Progress (1): 28/150 kBProgress (1): 44/150 kBProgress (1): 61/150 kBProgress (1): 77/150 kBProgress (1): 93/150 kBProgress (1): 110/150 kBProgress (1): 126/150 kBProgress (1): 142/150 kBProgress (1): 150 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.6.2/maven-shade-plugin-3.6.2.jar (150 kB)
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-app-jar ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-app-jar ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-app-jar ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-app-jar ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/app-jar/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-app-jar ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-app-jar ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-app-jar ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/app-jar/target/jchempaint-app-jar-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- shade:3.6.2:shade (default) @ jchempaint-app-jar ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.15/jdependency-2.15.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.pom
+Progress (1): 1.3 kBProgress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.pom (2.4 kB at 56 kB/s)
+Progress (1): 956 BProgress (1): 2.2 kBProgress (1): 3.2 kBProgress (1): 4.6 kBProgress (2): 4.6 kB | 1.1 kBProgress (2): 4.6 kB | 4.9 kBProgress (2): 4.6 kB | 8.0 kBProgress (2): 4.6 kB | 12 kB Progress (2): 4.6 kB | 14 kBProgress (3): 4.6 kB | 14 kB | 1.1 kBProgress (3): 4.6 kB | 14 kB | 2.8 kB                                     Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.pom (2.8 kB at 49 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.pom (4.6 kB at 73 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.15/jdependency-2.15.pom (14 kB at 225 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.pom
+Progress (1): 1.1 kBProgress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.pom (2.6 kB at 50 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.jar
+Progress (1): 7.3/126 kBProgress (1): 24/126 kB Progress (1): 32/126 kBProgress (1): 48/126 kBProgress (1): 65/126 kBProgress (1): 81/126 kBProgress (1): 97/126 kBProgress (1): 114/126 kBProgress (1): 126 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.jar (126 kB at 2.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.15/jdependency-2.15.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.jar
+Progress (1): 7.7/328 kBProgress (1): 7.7/328 kBProgress (2): 7.7/328 kB | 4.1/52 kBProgress (2): 24/328 kB | 4.1/52 kB Progress (2): 24/328 kB | 12/52 kB Progress (2): 40/328 kB | 12/52 kBProgress (2): 40/328 kB | 29/52 kBProgress (2): 57/328 kB | 29/52 kBProgress (2): 57/328 kB | 45/52 kBProgress (2): 73/328 kB | 45/52 kBProgress (2): 90/328 kB | 45/52 kBProgress (2): 90/328 kB | 52 kB                                  Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.jar (52 kB at 945 kB/s)
+Progress (1): 106/328 kBProgress (2): 106/328 kB | 7.7/75 kBProgress (2): 106/328 kB | 16/75 kB Progress (2): 106/328 kB | 24/75 kBProgress (2): 122/328 kB | 24/75 kBProgress (2): 139/328 kB | 24/75 kBProgress (2): 155/328 kB | 24/75 kBProgress (2): 172/328 kB | 24/75 kBProgress (2): 188/328 kB | 24/75 kBProgress (2): 188/328 kB | 40/75 kBProgress (2): 204/328 kB | 40/75 kBProgress (2): 221/328 kB | 40/75 kBProgress (2): 221/328 kB | 57/75 kBProgress (2): 237/328 kB | 57/75 kBProgress (2): 253/328 kB | 57/75 kBProgress (2): 253/328 kB | 73/75 kBProgress (2): 253/328 kB | 75 kB   Progress (2): 270/328 kB | 75 kB                                Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.jar (75 kB at 974 kB/s)
+Progress (1): 286/328 kBProgress (1): 303/328 kBProgress (1): 319/328 kBProgress (2): 319/328 kB | 7.7/488 kBProgress (2): 328 kB | 7.7/488 kB    Progress (2): 328 kB | 8.2/488 kBProgress (2): 328 kB | 25/488 kB Progress (2): 328 kB | 41/488 kBProgress (2): 328 kB | 57/488 kB                                Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.jar (328 kB at 3.8 MB/s)
+Progress (1): 74/488 kBProgress (1): 90/488 kBProgress (1): 106/488 kBProgress (1): 123/488 kBProgress (1): 139/488 kBProgress (1): 156/488 kBProgress (1): 172/488 kBProgress (1): 188/488 kBProgress (1): 205/488 kBProgress (1): 221/488 kBProgress (1): 238/488 kBProgress (1): 254/488 kBProgress (1): 270/488 kBProgress (1): 287/488 kBProgress (1): 303/488 kBProgress (1): 319/488 kBProgress (1): 336/488 kBProgress (1): 352/488 kBProgress (1): 369/488 kBProgress (1): 385/488 kBProgress (1): 401/488 kBProgress (1): 418/488 kBProgress (1): 434/488 kBProgress (1): 451/488 kBProgress (1): 467/488 kBProgress (1): 483/488 kBProgress (1): 488 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.15/jdependency-2.15.jar (488 kB at 3.4 MB/s)
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] beam-core-1.4.jar, beam-func-1.4.jar, cdk-atomtype-2.15-SNAPSHOT.jar, cdk-core-2.15-SNAPSHOT.jar, cdk-ctab-2.15-SNAPSHOT.jar, cdk-data-2.15-SNAPSHOT.jar, cdk-depict-2.15-SNAPSHOT.jar, cdk-dict-2.15-SNAPSHOT.jar, cdk-formula-2.15-SNAPSHOT.jar, cdk-inchi-2.15-SNAPSHOT.jar, cdk-interfaces-2.15-SNAPSHOT.jar, cdk-io-2.15-SNAPSHOT.jar, cdk-ioformats-2.15-SNAPSHOT.jar, cdk-isomorphism-2.15-SNAPSHOT.jar, cdk-libiocml-2.15-SNAPSHOT.jar, cdk-render-2.15-SNAPSHOT.jar, cdk-renderawt-2.15-SNAPSHOT.jar, cdk-renderbasic-2.15-SNAPSHOT.jar, cdk-renderextra-2.15-SNAPSHOT.jar, cdk-sdg-2.15-SNAPSHOT.jar, cdk-silent-2.15-SNAPSHOT.jar, cdk-smiles-2.15-SNAPSHOT.jar, cdk-standard-2.15-SNAPSHOT.jar, cdk-valencycheck-2.15-SNAPSHOT.jar, cmlxom-4.20.jar, commons-cli-1.11.0.jar, commons-io-2.22.0.jar, commons-lang3-3.21.0.jar, commons-math-2.2.jar, euclid-2.20.jar, flatlaf-3.8.jar, freehep-graphics2d-2.4.jar, freehep-graphicsbase-2.4.jar, freehep-graphicsio-2.4.jar, freehep-graphicsio-pdf-2.4.jar, freehep-graphicsio-ps-2.4.jar, freehep-graphicsio-tests-2.4.jar, freehep-io-2.2.2.jar, jchempaint-app-jar-3.4-SNAPSHOT.jar, jchempaint-core-3.4-SNAPSHOT.jar, jchempaint-inchi-3.4-SNAPSHOT.jar, jchempaint-inchi-jni-3.4-SNAPSHOT.jar, jchempaint-render-3.4-SNAPSHOT.jar, jna-5.10.0.jar, jna-inchi-api-1.3.1.jar, jna-inchi-core-1.3.1.jar, jna-inchi-darwin-aarch64-1.3.1.jar, jna-inchi-darwin-x86-64-1.3.1.jar, jna-inchi-linux-aarch64-1.3.1.jar, jna-inchi-linux-arm-1.3.1.jar, jna-inchi-linux-x86-1.3.1.jar, jna-inchi-linux-x86-64-1.3.1.jar, jna-inchi-win32-x86-1.3.1.jar, jna-inchi-win32-x86-64-1.3.1.jar, joda-time-2.15.1.jar, log4j-1.2-api-2.26.1.jar, log4j-api-2.26.1.jar, log4j-core-2.26.1.jar, tagsoup-1.2.1.jar, vecmath-1.5.2.jar, xml-apis-1.4.01.jar, xom-1.4.6.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] cmlxom-4.20.jar, euclid-2.20.jar define 1 overlapping resource: 
+[WARNING]   - header.txt
+[WARNING] log4j-1.2-api-2.26.1.jar, log4j-core-2.26.1.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/org/apache/logging/log4j/core/config/plugins/Log4j2Plugins.dat
+[WARNING] commons-cli-1.11.0.jar, commons-io-2.22.0.jar, commons-lang3-3.21.0.jar define 1 overlapping classes: 
+[WARNING]   - META-INF.versions.9.module-info
+[WARNING] commons-cli-1.11.0.jar, commons-io-2.22.0.jar, commons-lang3-3.21.0.jar, commons-math-2.2.jar, joda-time-2.15.1.jar define 2 overlapping resources: 
+[WARNING]   - META-INF/LICENSE.txt
+[WARNING]   - META-INF/NOTICE.txt
+[WARNING] log4j-1.2-api-2.26.1.jar, log4j-api-2.26.1.jar, log4j-core-2.26.1.jar define 2 overlapping resources: 
+[WARNING]   - META-INF/DEPENDENCIES
+[WARNING]   - META-INF/NOTICE
+[WARNING] flatlaf-3.8.jar, jna-5.10.0.jar, log4j-1.2-api-2.26.1.jar, log4j-api-2.26.1.jar, log4j-core-2.26.1.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/LICENSE
+[WARNING] maven-shade-plugin has detected that some files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the file is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See https://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-app-jar ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/app-jar/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-jar/3.4-SNAPSHOT/jchempaint-app-jar-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/app-jar/target/jchempaint-app-jar-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-jar/3.4-SNAPSHOT/jchempaint-app-jar-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] ---------< org.openscience.jchempaint:jchempaint-app-windows >----------
+[INFO] Building jchempaint-app-windows 3.4-SNAPSHOT                       [9/9]
+[INFO]   from app-windows/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-app-windows ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-app-windows ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-app-windows ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-app-windows ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/app-windows/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-app-windows ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-app-windows ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-app-windows ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/app-windows/target/jchempaint-app-windows-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- shade:3.6.2:shade (default) @ jchempaint-app-windows ---
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] cmlxom-4.20.jar, euclid-2.20.jar define 1 overlapping resource: 
+[WARNING]   - header.txt
+[WARNING] log4j-1.2-api-2.26.1.jar, log4j-core-2.26.1.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/org/apache/logging/log4j/core/config/plugins/Log4j2Plugins.dat
+[WARNING] commons-cli-1.11.0.jar, commons-io-2.22.0.jar, commons-lang3-3.21.0.jar define 1 overlapping classes: 
+[WARNING]   - META-INF.versions.9.module-info
+[WARNING] commons-cli-1.11.0.jar, commons-io-2.22.0.jar, commons-lang3-3.21.0.jar, commons-math-2.2.jar, joda-time-2.15.1.jar define 2 overlapping resources: 
+[WARNING]   - META-INF/LICENSE.txt
+[WARNING]   - META-INF/NOTICE.txt
+[WARNING] log4j-1.2-api-2.26.1.jar, log4j-api-2.26.1.jar, log4j-core-2.26.1.jar define 2 overlapping resources: 
+[WARNING]   - META-INF/DEPENDENCIES
+[WARNING]   - META-INF/NOTICE
+[WARNING] beam-core-1.4.jar, beam-func-1.4.jar, cdk-atomtype-2.15-SNAPSHOT.jar, cdk-core-2.15-SNAPSHOT.jar, cdk-ctab-2.15-SNAPSHOT.jar, cdk-data-2.15-SNAPSHOT.jar, cdk-depict-2.15-SNAPSHOT.jar, cdk-dict-2.15-SNAPSHOT.jar, cdk-formula-2.15-SNAPSHOT.jar, cdk-inchi-2.15-SNAPSHOT.jar, cdk-interfaces-2.15-SNAPSHOT.jar, cdk-io-2.15-SNAPSHOT.jar, cdk-ioformats-2.15-SNAPSHOT.jar, cdk-isomorphism-2.15-SNAPSHOT.jar, cdk-libiocml-2.15-SNAPSHOT.jar, cdk-render-2.15-SNAPSHOT.jar, cdk-renderawt-2.15-SNAPSHOT.jar, cdk-renderbasic-2.15-SNAPSHOT.jar, cdk-renderextra-2.15-SNAPSHOT.jar, cdk-sdg-2.15-SNAPSHOT.jar, cdk-silent-2.15-SNAPSHOT.jar, cdk-smiles-2.15-SNAPSHOT.jar, cdk-standard-2.15-SNAPSHOT.jar, cdk-valencycheck-2.15-SNAPSHOT.jar, cmlxom-4.20.jar, commons-cli-1.11.0.jar, commons-io-2.22.0.jar, commons-lang3-3.21.0.jar, commons-math-2.2.jar, euclid-2.20.jar, flatlaf-3.8.jar, freehep-graphics2d-2.4.jar, freehep-graphicsbase-2.4.jar, freehep-graphicsio-2.4.jar, freehep-graphicsio-pdf-2.4.jar, freehep-graphicsio-ps-2.4.jar, freehep-graphicsio-tests-2.4.jar, freehep-io-2.2.2.jar, jchempaint-app-windows-3.4-SNAPSHOT.jar, jchempaint-core-3.4-SNAPSHOT.jar, jchempaint-inchi-3.4-SNAPSHOT.jar, jchempaint-inchi-jni-3.4-SNAPSHOT.jar, jchempaint-render-3.4-SNAPSHOT.jar, jna-5.10.0.jar, jna-inchi-api-1.3.1.jar, jna-inchi-core-1.3.1.jar, jna-inchi-darwin-aarch64-1.3.1.jar, jna-inchi-darwin-x86-64-1.3.1.jar, jna-inchi-linux-aarch64-1.3.1.jar, jna-inchi-linux-arm-1.3.1.jar, jna-inchi-linux-x86-1.3.1.jar, jna-inchi-linux-x86-64-1.3.1.jar, jna-inchi-win32-x86-1.3.1.jar, jna-inchi-win32-x86-64-1.3.1.jar, joda-time-2.15.1.jar, log4j-1.2-api-2.26.1.jar, log4j-api-2.26.1.jar, log4j-core-2.26.1.jar, tagsoup-1.2.1.jar, vecmath-1.5.2.jar, xml-apis-1.4.01.jar, xom-1.4.6.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] flatlaf-3.8.jar, jna-5.10.0.jar, log4j-1.2-api-2.26.1.jar, log4j-api-2.26.1.jar, log4j-core-2.26.1.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/LICENSE
+[WARNING] maven-shade-plugin has detected that some files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the file is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See https://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Attaching shaded artifact.
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-app-windows ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/app-windows/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-windows/3.4-SNAPSHOT/jchempaint-app-windows-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/app-windows/target/jchempaint-app-windows-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-windows/3.4-SNAPSHOT/jchempaint-app-windows-3.4-SNAPSHOT.jar
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-411bdc2d2bededc21a899ade66bf17195cee8bbf/app-windows/target/jchempaint-app-windows-3.4-SNAPSHOT-shaded.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-windows/3.4-SNAPSHOT/jchempaint-app-windows-3.4-SNAPSHOT-shaded.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for jchempaint 3.4-SNAPSHOT:
+[INFO] 
+[INFO] jchempaint ......................................... SUCCESS [  3.289 s]
+[INFO] jchempaint-inchi ................................... SUCCESS [  1.165 s]
+[INFO] jchempaint-render .................................. SUCCESS [  1.317 s]
+[INFO] jchempaint-core .................................... SUCCESS [ 44.919 s]
+[INFO] jchempaint-inchi-nestedvm .......................... SUCCESS [  0.267 s]
+[INFO] jchempaint-inchi-jni ............................... SUCCESS [  0.396 s]
+[INFO] jchempaint-app-osx ................................. SUCCESS [  0.370 s]
+[INFO] jchempaint-app-jar ................................. SUCCESS [  3.197 s]
+[INFO] jchempaint-app-windows ............................. SUCCESS [  2.616 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  57.829 s
+[INFO] Finished at: 2026-11-22T23:31:19+10:00
+[INFO] ------------------------------------------------------------------------
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=JChemPaint
+GenericName=Chemical 2D structure editor
+Icon=io.github.jchempaint.JChemPaint
+Exec=/usr/bin/jchempaint %F
+TryExec=/usr/bin/jchempaint
+MimeType=chemical/x-cml;chemical/x-daylight-smiles;text/plain;chemical/x-mdl-sdfile;chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;
+Categories=Science;Chemistry;Education;
+StartupWMClass=org-openscience-jchempaint-application-JChemPaint
+411bdc2d2bededc21a899ade66bf17195cee8bbf
+Updated registry for jchempaint-git to version 411bdc2d2bededc21a899ade66bf17195cee8bbf
+[VERSION] jchempaint-git: 411bdc2d2bededc21a899ade66bf17195cee8bbf
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package jchempaint-git in /var/lib/custom-packages/
