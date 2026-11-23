@@ -1,0 +1,1352 @@
+===== Update check started: 2026-11-23 21:40:07 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261123_214007
+Packages needing attention: jchempaint-git
+===== Starting updatec: 2026-11-23 21:40:10 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - jchempaint-git
+
+Building custom package jchempaint-git...
+[21:40:11] Found custom package for jchempaint-git, bypassing BLFS aliases.
+[21:40:11] Custom package detected at /home/fusion809/lfs_packaging/jchempaint-git (package: jchempaint-git)
+[21:40:11] Extracting dependencies for custom package 'jchempaint-git'...
+[21:40:11] Required deps: maven-bin 
+[21:40:11] Dependency 'maven-bin' already installed.
+[VERSION] jchempaint-git: 2307393879300f2ea0b01bb89ae1d361a23a66d9
+[21:40:11] Installing jchempaint-git version: 2307393879300f2ea0b01bb89ae1d361a23a66d9
+[21:40:11] Starting remote custom build for jchempaint-git...
+--2026-11-23 21:40:28--  https://github.com/JChemPaint/jchempaint/archive/2307393879300f2ea0b01bb89ae1d361a23a66d9.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/JChemPaint/jchempaint/tar.gz/2307393879300f2ea0b01bb89ae1d361a23a66d9 [following]
+--2026-11-23 21:40:29--  https://codeload.github.com/JChemPaint/jchempaint/tar.gz/2307393879300f2ea0b01bb89ae1d361a23a66d9
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9.tar.gz’
+
+          jchempain     [<=>                 ]       0  --.-KB/s                        jchempaint     [ <=>                ] 885.77K  4.32MB/s               jchempaint-23073938     [  <=>               ]   2.61M  7.01MB/s    in 0.4s    
+
+2026-11-23 21:40:29 (7.01 MB/s) - ‘jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9.tar.gz’ saved [2736424]
+
+Patched null-panel file opening in core/src/main/java/org/openscience/jchempaint/application/JChemPaint.java
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.openscience.jchempaint:jchempaint-inchi-nestedvm:jar:3.4-SNAPSHOT
+[WARNING] 'dependencies.dependency.scope' for org.iupac:nestedvm-inchi:jar declares usage of deprecated 'system' scope  @ line 54, column 20
+[WARNING] 'dependencies.dependency.systemPath' for org.iupac:nestedvm-inchi:jar should not point at files within the project directory, ${project.basedir}/dep/inchi-1.0.2.jar will be unresolvable by dependent projects @ line 55, column 25
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[WARNING] The project org.openscience.jchempaint:jchempaint:pom:3.4-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] jchempaint                                                         [pom]
+[INFO] jchempaint-inchi                                                   [jar]
+[INFO] jchempaint-render                                                  [jar]
+[INFO] jchempaint-core                                                    [jar]
+[INFO] jchempaint-inchi-nestedvm                                          [jar]
+[INFO] jchempaint-inchi-jni                                               [jar]
+[INFO] jchempaint-app-osx                                                 [jar]
+[INFO] jchempaint-app-jar                                                 [jar]
+[INFO] jchempaint-app-windows                                             [jar]
+[INFO] 
+[INFO] ---------------< org.openscience.jchempaint:jchempaint >----------------
+[INFO] Building jchempaint 3.4-SNAPSHOT                                   [1/9]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] Loaded 24592 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint/3.4-SNAPSHOT/jchempaint-3.4-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------< org.openscience.jchempaint:jchempaint-inchi >-------------
+[INFO] Building jchempaint-inchi 3.4-SNAPSHOT                             [2/9]
+[INFO]   from inchi/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-interfaces/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-data/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-test/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kBProgress (2): 1.2 kB | 1.2 kB                             Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-interfaces/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 9.6 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-base/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-data/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 5.3 kB/s)
+Progress (1): 985 BProgress (2): 985 B | 602 B                           Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-test/2.15-SNAPSHOT/maven-metadata.xml (985 B at 1.9 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-base/2.15-SNAPSHOT/maven-metadata.xml (602 B at 1.2 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 597 B                   Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk/2.15-SNAPSHOT/maven-metadata.xml (597 B at 450 B/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-core/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-core/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kBProgress (2): 1.2 kB | 1.2 kB                             Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-core/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-core/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB)
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-inchi ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-inchi ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/inchi/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-inchi ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-inchi ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/inchi/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-inchi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-inchi ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-inchi ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/inchi/target/jchempaint-inchi-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-inchi ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/inchi/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi/3.4-SNAPSHOT/jchempaint-inchi-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/inchi/target/jchempaint-inchi-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi/3.4-SNAPSHOT/jchempaint-inchi-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] ------------< org.openscience.jchempaint:jchempaint-render >------------
+[INFO] Building jchempaint-render 3.4-SNAPSHOT                            [3/9]
+[INFO]   from render/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderawt/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-render/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderbasic/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderextra/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kBProgress (2): 1.2 kB | 1.2 kBProgress (3): 1.2 kB | 1.2 kB | 1.2 kB                                      Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderawt/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 1.2 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderbasic/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 1.2 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-display/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-render/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 1.2 kB/s)
+Progress (1): 1.2 kBProgress (2): 1.2 kB | 605 B                            Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderextra/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 862 B/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-display/2.15-SNAPSHOT/maven-metadata.xml (605 B at 1.2 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-standard/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-standard/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kBProgress (2): 1.2 kB | 1.2 kB                             Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-standard/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 3.0 kB/s)
+Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-standard/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.9 kB/s)
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-render ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-render ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/render/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-render ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 36 source files with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/render/src/main/java/org/openscience/jchempaint/renderer/JChemPaintRendererModel.java: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/render/src/main/java/org/openscience/jchempaint/renderer/JChemPaintRendererModel.java uses or overrides a deprecated API.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/render/src/main/java/org/openscience/jchempaint/renderer/JChemPaintRendererModel.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-render ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/render/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-render ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-render ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-render ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/render/target/jchempaint-render-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-render ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/render/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-render/3.4-SNAPSHOT/jchempaint-render-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/render/target/jchempaint-render-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-render/3.4-SNAPSHOT/jchempaint-render-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] -------------< org.openscience.jchempaint:jchempaint-core >-------------
+[INFO] Building jchempaint-core 3.4-SNAPSHOT                              [4/9]
+[INFO]   from core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-depict/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/assertj/assertj-swing/3.17.1/assertj-swing-3.17.1.pom
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-formula/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ioformats/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-io/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-swing/3.17.1/assertj-swing-3.17.1.pom
+Progress (1): 1.2 kBProgress (2): 1.2 kB | 1.2 kBProgress (3): 1.2 kB | 1.2 kB | 1.2 kBProgress (3): 1.2 kB | 1.2 kB | 3.7 kB                                      Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-swing/3.17.1/assertj-swing-3.17.1.pom (3.7 kB)
+Progress (3): 1.2 kB | 1.2 kB | 1.2 kB                                      Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/assertj/assertj-swing-parent-pom/3.17.1/assertj-swing-parent-pom-3.17.1.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-swing-parent-pom/3.17.1/assertj-swing-parent-pom-3.17.1.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-depict/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.7 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ioformats/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.8 kB/s)
+Progress (2): 1.2 kB | 1.2 kBProgress (2): 1.2 kB | 3.8 kBProgress (2): 1.2 kB | 4.3 kB                             Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-swing-parent-pom/3.17.1/assertj-swing-parent-pom-3.17.1.pom (4.3 kB at 90 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-formula/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.7 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/assertj/assertj-parent-pom/2.2.1/assertj-parent-pom-2.2.1.pom
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-storage/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-app/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-tool/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kB                    Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-parent-pom/2.2.1/assertj-parent-pom-2.2.1.pom
+Progress (2): 1.2 kB | 605 BProgress (3): 1.2 kB | 605 B | 951 BProgress (3): 1.2 kB | 605 B | 3.2 kBProgress (3): 1.2 kB | 605 B | 7.0 kBProgress (3): 1.2 kB | 605 B | 11 kB Progress (3): 1.2 kB | 605 B | 14 kBProgress (3): 1.2 kB | 605 B | 15 kB                                    Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-parent-pom/2.2.1/assertj-parent-pom-2.2.1.pom (15 kB at 274 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-libiocml/2.15-SNAPSHOT/maven-metadata.xml
+Progress (3): 1.2 kB | 605 B | 601 BProgress (4): 1.2 kB | 605 B | 601 B | 602 B                                            Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-io/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 1.8 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-storage/2.15-SNAPSHOT/maven-metadata.xml (605 B at 1.2 kB/s)
+Progress (3): 601 B | 602 B | 1.2 kB                                    Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-app/2.15-SNAPSHOT/maven-metadata.xml (601 B at 1.2 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-sdg/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-smiles/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-tool/2.15-SNAPSHOT/maven-metadata.xml (602 B at 1.1 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-valencycheck/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-inchi/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-libiocml/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.5 kB/s)
+Progress (1): 1.2 kBProgress (2): 1.2 kB | 1.2 kB                             Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/assertj/assertj-core/3.17.2/assertj-core-3.17.2.pom
+Progress (3): 1.2 kB | 1.2 kB | 1.2 kBProgress (4): 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB                                               Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.17.2/assertj-core-3.17.2.pom
+Progress (5): 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB | 1.1 kBProgress (5): 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB | 3.5 kBProgress (5): 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB | 6.6 kBProgress (5): 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB | 10 kB                                                        Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-sdg/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 5.8 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-smiles/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 6.2 kB/s)
+Progress (3): 1.2 kB | 1.2 kB | 13 kBProgress (3): 1.2 kB | 1.2 kB | 17 kBProgress (3): 1.2 kB | 1.2 kB | 20 kBProgress (3): 1.2 kB | 1.2 kB | 23 kB                                     Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.17.2/assertj-core-3.17.2.pom (23 kB)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/assertj/assertj-parent-pom/2.2.7/assertj-parent-pom-2.2.7.pom
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/easytesting/fest-util/1.2.5/fest-util-1.2.5.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-valencycheck/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 6.4 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-isomorphism/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-isomorphism/2.15-SNAPSHOT/maven-metadata.xml
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-inchi/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 6.4 kB/s)
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderawt/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-silent/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-silent/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-parent-pom/2.2.7/assertj-parent-pom-2.2.7.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.2.5/fest-util-1.2.5.pom
+Progress (1): 973 BProgress (1): 2.9 kBProgress (1): 6.1 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 17 kBProgress (1): 20 kBProgress (1): 23 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-parent-pom/2.2.7/assertj-parent-pom-2.2.7.pom (23 kB at 387 kB/s)
+Progress (1): 1.2 kB                    Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/junit/junit-bom/5.6.2/junit-bom-5.6.2.pom
+Progress (2): 1.2 kB | 1.2 kBProgress (3): 1.2 kB | 1.2 kB | 1.2 kBProgress (4): 1.2 kB | 1.2 kB | 1.2 kB | 1.3 kBProgress (4): 1.2 kB | 1.2 kB | 1.2 kB | 1.4 kBProgress (4): 1.2 kB | 1.2 kB | 1.2 kB | 1.6 kB                                               Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.2.5/fest-util-1.2.5.pom (1.6 kB at 11 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/easytesting/fest/1.0.15/fest-1.0.15.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.6.2/junit-bom-5.6.2.pom
+Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-isomorphism/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.5 kB/s)
+Progress (3): 1.2 kB | 1.2 kB | 916 BProgress (3): 1.2 kB | 1.2 kB | 984 BProgress (3): 1.2 kB | 1.2 kB | 4.6 kBProgress (3): 1.2 kB | 1.2 kB | 4.9 kB                                      Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.6.2/junit-bom-5.6.2.pom (4.9 kB at 90 kB/s)
+Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-renderawt/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.4 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest/1.0.15/fest-1.0.15.pom
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-isomorphism/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.3 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-atomtype/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-atomtype/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-dict/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-dict/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ctab/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ctab/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 969 BProgress (1): 1.1 kBProgress (1): 3.2 kBProgress (1): 7.1 kBProgress (1): 7.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest/1.0.15/fest-1.0.15.pom (7.6 kB at 151 kB/s)
+Progress (1): 1.2 kBProgress (2): 1.2 kB | 1.2 kBProgress (3): 1.2 kB | 1.2 kB | 1.2 kBProgress (4): 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kBProgress (5): 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kBProgress (6): 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kBProgress (7): 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kBProgress (8): 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB | 1.2 kB                                                                                   Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-silent/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 1.3 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-dict/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.5 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-atomtype/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.4 kB/s)
+Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-dict/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.4 kB/s)
+Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-atomtype/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.3 kB/s)
+Downloaded from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ctab/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.3 kB/s)
+Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ctab/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.0 kB/s)
+Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-silent/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 1.0 kB/s)
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/assertj/assertj-swing/3.17.1/assertj-swing-3.17.1.jar
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/assertj/assertj-core/3.17.2/assertj-core-3.17.2.jar
+Downloading from Sonatype Snapshots S01: https://central.sonatype.com/repository/maven-snapshots/org/easytesting/fest-util/1.2.5/fest-util-1.2.5.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-swing/3.17.1/assertj-swing-3.17.1.jar
+Progress (1): 0.5/778 kBProgress (1): 1.9/778 kBProgress (1): 3.3/778 kBProgress (1): 4.7/778 kBProgress (1): 6.0/778 kBProgress (1): 7.4/778 kBProgress (1): 7.7/778 kBProgress (1): 9.1/778 kBProgress (1): 10/778 kB Progress (1): 12/778 kBProgress (1): 13/778 kBProgress (1): 15/778 kBProgress (1): 16/778 kBProgress (1): 17/778 kBProgress (1): 19/778 kBProgress (1): 20/778 kBProgress (1): 21/778 kBProgress (1): 23/778 kBProgress (1): 24/778 kBProgress (1): 25/778 kBProgress (1): 27/778 kBProgress (1): 28/778 kBProgress (1): 30/778 kBProgress (1): 31/778 kBProgress (1): 32/778 kBProgress (1): 34/778 kBProgress (1): 35/778 kBProgress (1): 36/778 kBProgress (1): 38/778 kBProgress (1): 39/778 kBProgress (1): 41/778 kBProgress (1): 42/778 kBProgress (1): 46/778 kBProgress (1): 50/778 kBProgress (1): 55/778 kBProgress (1): 57/778 kBProgress (1): 61/778 kBProgress (1): 65/778 kBProgress (1): 70/778 kBProgress (1): 74/778 kBProgress (1): 78/778 kBProgress (1): 82/778 kBProgress (1): 86/778 kBProgress (1): 91/778 kBProgress (1): 95/778 kBProgress (1): 99/778 kBProgress (1): 103/778 kBProgress (1): 108/778 kBProgress (1): 112/778 kBProgress (1): 116/778 kBProgress (1): 120/778 kBProgress (1): 122/778 kBProgress (1): 122/778 kBProgress (1): 127/778 kBProgress (1): 131/778 kBProgress (1): 135/778 kBProgress (1): 139/778 kBProgress (1): 144/778 kBProgress (1): 148/778 kBProgress (1): 152/778 kBProgress (1): 156/778 kBProgress (1): 160/778 kBProgress (1): 165/778 kBProgress (1): 169/778 kBProgress (1): 173/778 kBProgress (1): 177/778 kBProgress (1): 182/778 kBProgress (1): 186/778 kBProgress (1): 190/778 kBProgress (1): 194/778 kBProgress (1): 199/778 kBProgress (1): 203/778 kBProgress (1): 219/778 kBProgress (1): 236/778 kBProgress (1): 252/778 kBProgress (1): 253/778 kBProgress (1): 270/778 kBProgress (1): 286/778 kBProgress (1): 303/778 kBProgress (1): 319/778 kBProgress (1): 335/778 kBProgress (1): 352/778 kBProgress (1): 368/778 kBProgress (1): 385/778 kBProgress (1): 401/778 kBProgress (1): 417/778 kBProgress (1): 434/778 kBProgress (1): 450/778 kBProgress (1): 466/778 kBProgress (1): 483/778 kBProgress (1): 499/778 kBProgress (1): 516/778 kBProgress (1): 532/778 kBProgress (1): 548/778 kBProgress (1): 565/778 kBProgress (1): 581/778 kBProgress (1): 598/778 kBProgress (1): 614/778 kBProgress (1): 630/778 kBProgress (1): 647/778 kBProgress (1): 663/778 kBProgress (1): 679/778 kBProgress (1): 696/778 kBProgress (1): 712/778 kBProgress (1): 729/778 kBProgress (1): 745/778 kBProgress (1): 761/778 kBProgress (1): 778 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-swing/3.17.1/assertj-swing-3.17.1.jar (778 kB at 4.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.17.2/assertj-core-3.17.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.2.5/fest-util-1.2.5.jar
+Progress (1): 0/4.8 MBProgress (1): 0/4.8 MBProgress (1): 0/4.8 MBProgress (1): 0/4.8 MBProgress (2): 0/4.8 MB | 3.8/33 kBProgress (2): 0.1/4.8 MB | 3.8/33 kBProgress (2): 0.1/4.8 MB | 3.8/33 kBProgress (2): 0.1/4.8 MB | 3.8/33 kBProgress (2): 0.1/4.8 MB | 8.0/33 kBProgress (2): 0.1/4.8 MB | 12/33 kB Progress (2): 0.1/4.8 MB | 12/33 kBProgress (2): 0.1/4.8 MB | 16/33 kBProgress (2): 0.1/4.8 MB | 16/33 kBProgress (2): 0.1/4.8 MB | 16/33 kBProgress (2): 0.1/4.8 MB | 21/33 kBProgress (2): 0.2/4.8 MB | 21/33 kBProgress (2): 0.2/4.8 MB | 25/33 kBProgress (2): 0.2/4.8 MB | 25/33 kBProgress (2): 0.2/4.8 MB | 29/33 kBProgress (2): 0.2/4.8 MB | 29/33 kBProgress (2): 0.2/4.8 MB | 29/33 kBProgress (2): 0.2/4.8 MB | 33 kB                                   Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.2.5/fest-util-1.2.5.jar (33 kB at 458 kB/s)
+Progress (1): 0.2/4.8 MBProgress (1): 0.2/4.8 MBProgress (1): 0.3/4.8 MBProgress (1): 0.3/4.8 MBProgress (1): 0.3/4.8 MBProgress (1): 0.3/4.8 MBProgress (1): 0.3/4.8 MBProgress (1): 0.3/4.8 MBProgress (1): 0.3/4.8 MBProgress (1): 0.4/4.8 MBProgress (1): 0.4/4.8 MBProgress (1): 0.4/4.8 MBProgress (1): 0.4/4.8 MBProgress (1): 0.4/4.8 MBProgress (1): 0.4/4.8 MBProgress (1): 0.5/4.8 MBProgress (1): 0.5/4.8 MBProgress (1): 0.5/4.8 MBProgress (1): 0.5/4.8 MBProgress (1): 0.5/4.8 MBProgress (1): 0.5/4.8 MBProgress (1): 0.5/4.8 MBProgress (1): 0.6/4.8 MBProgress (1): 0.6/4.8 MBProgress (1): 0.6/4.8 MBProgress (1): 0.6/4.8 MBProgress (1): 0.6/4.8 MBProgress (1): 0.6/4.8 MBProgress (1): 0.7/4.8 MBProgress (1): 0.7/4.8 MBProgress (1): 0.7/4.8 MBProgress (1): 0.7/4.8 MBProgress (1): 0.7/4.8 MBProgress (1): 0.7/4.8 MBProgress (1): 0.8/4.8 MBProgress (1): 0.8/4.8 MBProgress (1): 0.8/4.8 MBProgress (1): 0.8/4.8 MBProgress (1): 0.8/4.8 MBProgress (1): 0.8/4.8 MBProgress (1): 0.9/4.8 MBProgress (1): 0.9/4.8 MBProgress (1): 0.9/4.8 MBProgress (1): 0.9/4.8 MBProgress (1): 0.9/4.8 MBProgress (1): 0.9/4.8 MBProgress (1): 0.9/4.8 MBProgress (1): 1.0/4.8 MBProgress (1): 1.0/4.8 MBProgress (1): 1.0/4.8 MBProgress (1): 1.0/4.8 MBProgress (1): 1.0/4.8 MBProgress (1): 1.0/4.8 MBProgress (1): 1.0/4.8 MBProgress (1): 1.1/4.8 MBProgress (1): 1.1/4.8 MBProgress (1): 1.1/4.8 MBProgress (1): 1.1/4.8 MBProgress (1): 1.1/4.8 MBProgress (1): 1.1/4.8 MBProgress (1): 1.2/4.8 MBProgress (1): 1.2/4.8 MBProgress (1): 1.2/4.8 MBProgress (1): 1.2/4.8 MBProgress (1): 1.2/4.8 MBProgress (1): 1.2/4.8 MBProgress (1): 1.3/4.8 MBProgress (1): 1.3/4.8 MBProgress (1): 1.3/4.8 MBProgress (1): 1.3/4.8 MBProgress (1): 1.3/4.8 MBProgress (1): 1.3/4.8 MBProgress (1): 1.4/4.8 MBProgress (1): 1.4/4.8 MBProgress (1): 1.4/4.8 MBProgress (1): 1.4/4.8 MBProgress (1): 1.4/4.8 MBProgress (1): 1.4/4.8 MBProgress (1): 1.5/4.8 MBProgress (1): 1.5/4.8 MBProgress (1): 1.5/4.8 MBProgress (1): 1.5/4.8 MBProgress (1): 1.5/4.8 MBProgress (1): 1.5/4.8 MBProgress (1): 1.6/4.8 MBProgress (1): 1.6/4.8 MBProgress (1): 1.6/4.8 MBProgress (1): 1.6/4.8 MBProgress (1): 1.6/4.8 MBProgress (1): 1.6/4.8 MBProgress (1): 1.7/4.8 MBProgress (1): 1.7/4.8 MBProgress (1): 1.7/4.8 MBProgress (1): 1.7/4.8 MBProgress (1): 1.7/4.8 MBProgress (1): 1.7/4.8 MBProgress (1): 1.8/4.8 MBProgress (1): 1.8/4.8 MBProgress (1): 1.8/4.8 MBProgress (1): 1.8/4.8 MBProgress (1): 1.8/4.8 MBProgress (1): 1.8/4.8 MBProgress (1): 1.9/4.8 MBProgress (1): 1.9/4.8 MBProgress (1): 1.9/4.8 MBProgress (1): 1.9/4.8 MBProgress (1): 1.9/4.8 MBProgress (1): 1.9/4.8 MBProgress (1): 1.9/4.8 MBProgress (1): 2.0/4.8 MBProgress (1): 2.0/4.8 MBProgress (1): 2.0/4.8 MBProgress (1): 2.0/4.8 MBProgress (1): 2.0/4.8 MBProgress (1): 2.0/4.8 MBProgress (1): 2.0/4.8 MBProgress (1): 2.1/4.8 MBProgress (1): 2.1/4.8 MBProgress (1): 2.1/4.8 MBProgress (1): 2.1/4.8 MBProgress (1): 2.1/4.8 MBProgress (1): 2.1/4.8 MBProgress (1): 2.2/4.8 MBProgress (1): 2.2/4.8 MBProgress (1): 2.2/4.8 MBProgress (1): 2.2/4.8 MBProgress (1): 2.2/4.8 MBProgress (1): 2.2/4.8 MBProgress (1): 2.3/4.8 MBProgress (1): 2.3/4.8 MBProgress (1): 2.3/4.8 MBProgress (1): 2.3/4.8 MBProgress (1): 2.3/4.8 MBProgress (1): 2.3/4.8 MBProgress (1): 2.4/4.8 MBProgress (1): 2.4/4.8 MBProgress (1): 2.4/4.8 MBProgress (1): 2.4/4.8 MBProgress (1): 2.4/4.8 MBProgress (1): 2.4/4.8 MBProgress (1): 2.5/4.8 MBProgress (1): 2.5/4.8 MBProgress (1): 2.5/4.8 MBProgress (1): 2.5/4.8 MBProgress (1): 2.5/4.8 MBProgress (1): 2.5/4.8 MBProgress (1): 2.6/4.8 MBProgress (1): 2.6/4.8 MBProgress (1): 2.6/4.8 MBProgress (1): 2.6/4.8 MBProgress (1): 2.6/4.8 MBProgress (1): 2.6/4.8 MBProgress (1): 2.7/4.8 MBProgress (1): 2.7/4.8 MBProgress (1): 2.7/4.8 MBProgress (1): 2.7/4.8 MBProgress (1): 2.7/4.8 MBProgress (1): 2.7/4.8 MBProgress (1): 2.8/4.8 MBProgress (1): 2.8/4.8 MBProgress (1): 2.8/4.8 MBProgress (1): 2.8/4.8 MBProgress (1): 2.8/4.8 MBProgress (1): 2.8/4.8 MBProgress (1): 2.9/4.8 MBProgress (1): 2.9/4.8 MBProgress (1): 2.9/4.8 MBProgress (1): 2.9/4.8 MBProgress (1): 2.9/4.8 MBProgress (1): 2.9/4.8 MBProgress (1): 2.9/4.8 MBProgress (1): 3.0/4.8 MBProgress (1): 3.0/4.8 MBProgress (1): 3.0/4.8 MBProgress (1): 3.0/4.8 MBProgress (1): 3.0/4.8 MBProgress (1): 3.0/4.8 MBProgress (1): 3.0/4.8 MBProgress (1): 3.1/4.8 MBProgress (1): 3.1/4.8 MBProgress (1): 3.1/4.8 MBProgress (1): 3.1/4.8 MBProgress (1): 3.1/4.8 MBProgress (1): 3.1/4.8 MBProgress (1): 3.2/4.8 MBProgress (1): 3.2/4.8 MBProgress (1): 3.2/4.8 MBProgress (1): 3.2/4.8 MBProgress (1): 3.2/4.8 MBProgress (1): 3.2/4.8 MBProgress (1): 3.3/4.8 MBProgress (1): 3.3/4.8 MBProgress (1): 3.3/4.8 MBProgress (1): 3.3/4.8 MBProgress (1): 3.3/4.8 MBProgress (1): 3.3/4.8 MBProgress (1): 3.4/4.8 MBProgress (1): 3.4/4.8 MBProgress (1): 3.4/4.8 MBProgress (1): 3.4/4.8 MBProgress (1): 3.4/4.8 MBProgress (1): 3.4/4.8 MBProgress (1): 3.5/4.8 MBProgress (1): 3.5/4.8 MBProgress (1): 3.5/4.8 MBProgress (1): 3.5/4.8 MBProgress (1): 3.5/4.8 MBProgress (1): 3.5/4.8 MBProgress (1): 3.6/4.8 MBProgress (1): 3.6/4.8 MBProgress (1): 3.6/4.8 MBProgress (1): 3.6/4.8 MBProgress (1): 3.6/4.8 MBProgress (1): 3.6/4.8 MBProgress (1): 3.7/4.8 MBProgress (1): 3.7/4.8 MBProgress (1): 3.7/4.8 MBProgress (1): 3.7/4.8 MBProgress (1): 3.7/4.8 MBProgress (1): 3.7/4.8 MBProgress (1): 3.8/4.8 MBProgress (1): 3.8/4.8 MBProgress (1): 3.8/4.8 MBProgress (1): 3.8/4.8 MBProgress (1): 3.8/4.8 MBProgress (1): 3.8/4.8 MBProgress (1): 3.9/4.8 MBProgress (1): 3.9/4.8 MBProgress (1): 3.9/4.8 MBProgress (1): 3.9/4.8 MBProgress (1): 3.9/4.8 MBProgress (1): 3.9/4.8 MBProgress (1): 3.9/4.8 MBProgress (1): 4.0/4.8 MBProgress (1): 4.0/4.8 MBProgress (1): 4.0/4.8 MBProgress (1): 4.0/4.8 MBProgress (1): 4.0/4.8 MBProgress (1): 4.0/4.8 MBProgress (1): 4.1/4.8 MBProgress (1): 4.1/4.8 MBProgress (1): 4.1/4.8 MBProgress (1): 4.1/4.8 MBProgress (1): 4.1/4.8 MBProgress (1): 4.1/4.8 MBProgress (1): 4.2/4.8 MBProgress (1): 4.2/4.8 MBProgress (1): 4.2/4.8 MBProgress (1): 4.2/4.8 MBProgress (1): 4.2/4.8 MBProgress (1): 4.2/4.8 MBProgress (1): 4.3/4.8 MBProgress (1): 4.3/4.8 MBProgress (1): 4.3/4.8 MBProgress (1): 4.3/4.8 MBProgress (1): 4.3/4.8 MBProgress (1): 4.3/4.8 MBProgress (1): 4.4/4.8 MBProgress (1): 4.4/4.8 MBProgress (1): 4.4/4.8 MBProgress (1): 4.4/4.8 MBProgress (1): 4.4/4.8 MBProgress (1): 4.4/4.8 MBProgress (1): 4.5/4.8 MBProgress (1): 4.5/4.8 MBProgress (1): 4.5/4.8 MBProgress (1): 4.5/4.8 MBProgress (1): 4.5/4.8 MBProgress (1): 4.5/4.8 MBProgress (1): 4.6/4.8 MBProgress (1): 4.6/4.8 MBProgress (1): 4.6/4.8 MBProgress (1): 4.6/4.8 MBProgress (1): 4.6/4.8 MBProgress (1): 4.6/4.8 MBProgress (1): 4.7/4.8 MBProgress (1): 4.7/4.8 MBProgress (1): 4.7/4.8 MBProgress (1): 4.7/4.8 MBProgress (1): 4.7/4.8 MBProgress (1): 4.7/4.8 MBProgress (1): 4.8/4.8 MBProgress (1): 4.8/4.8 MBProgress (1): 4.8 MB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.17.2/assertj-core-3.17.2.jar (4.8 MB at 13 MB/s)
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-core ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-core ---
+[INFO] Copying 382 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-core ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 158 source files with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/src/main/java/org/openscience/jchempaint/controller/ControllerHub.java: Some input files use or override a deprecated API.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/src/main/java/org/openscience/jchempaint/controller/ControllerHub.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/src/main/java/org/openscience/jchempaint/action/CopyPasteAction.java: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/src/main/java/org/openscience/jchempaint/action/CopyPasteAction.java uses unchecked or unsafe operations.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/src/main/java/org/openscience/jchempaint/action/CopyPasteAction.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- gettext:1.2.4:dist (convert-po-class) @ jchempaint-core ---
+[INFO] Processing nl.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/target/classes -r app.i18n.Messages -l nl /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/po/nl.po
+[WARNING] Note: /tmp/msgFWMcuf/app/i18n/Messages_nl.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing cs.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/target/classes -r app.i18n.Messages -l cs /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/po/cs.po
+[WARNING] Note: /tmp/msgE7PBsf/app/i18n/Messages_cs.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing ru.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/target/classes -r app.i18n.Messages -l ru /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/po/ru.po
+[WARNING] Note: /tmp/msg89bOjx/app/i18n/Messages_ru.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing ca.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/target/classes -r app.i18n.Messages -l ca /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/po/ca.po
+[WARNING] Note: /tmp/msgDqcltg/app/i18n/Messages_ca.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing zh.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/target/classes -r app.i18n.Messages -l zh /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/po/zh.po
+[WARNING] Note: /tmp/msguD6mer/app/i18n/Messages_zh.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing es.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/target/classes -r app.i18n.Messages -l es /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/po/es.po
+[WARNING] Note: /tmp/msg1MJe19/app/i18n/Messages_es.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing pt_BR.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/target/classes -r app.i18n.Messages -l pt_BR /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/po/pt_BR.po
+[WARNING] Note: /tmp/msgq3UFTU/app/i18n/Messages_pt_BR.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing th.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/target/classes -r app.i18n.Messages -l th /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/po/th.po
+[WARNING] Note: /tmp/msg4k1xku/app/i18n/Messages_th.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing de.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/target/classes -r app.i18n.Messages -l de /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/po/de.po
+[WARNING] Note: /tmp/msgd2Xsmv/app/i18n/Messages_de.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing ar.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/target/classes -r app.i18n.Messages -l ar /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/po/ar.po
+[WARNING] Note: /tmp/msgn86flx/app/i18n/Messages_ar.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing hu.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/target/classes -r app.i18n.Messages -l hu /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/po/hu.po
+[WARNING] Note: /tmp/msg5N9PCA/app/i18n/Messages_hu.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Processing pl.po
+[WARNING] msgfmt --java2 -d /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/target/classes -r app.i18n.Messages -l pl /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/po/pl.po
+[WARNING] Note: /tmp/msglYKszU/app/i18n/Messages_pl.java uses unchecked or unsafe operations.
+[WARNING] Note: Recompile with -Xlint:unchecked for details.
+[INFO] Creating resource bundle for source locale
+[INFO] Creating default resource bundle
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-core ---
+[INFO] Copying 12 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-core ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 11 source files with javac [debug release 8] to target/test-classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/src/test/java/org/openscience/cdk/CDKTestCase.java: Some input files use or override a deprecated API.
+[INFO] /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/src/test/java/org/openscience/cdk/CDKTestCase.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-core ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/target/jchempaint-core-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-core ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-core/3.4-SNAPSHOT/jchempaint-core-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/core/target/jchempaint-core-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-core/3.4-SNAPSHOT/jchempaint-core-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --------< org.openscience.jchempaint:jchempaint-inchi-nestedvm >--------
+[INFO] Building jchempaint-inchi-nestedvm 3.4-SNAPSHOT                    [5/9]
+[INFO]   from inchi-nestedvm/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ioformats/2.15-SNAPSHOT/maven-metadata.xml
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-smiles/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kBProgress (2): 1.2 kB | 1.2 kB                             Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-ioformats/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 1.4 kB/s)
+Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-smiles/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 1.4 kB/s)
+Downloading from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-valencycheck/2.15-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.2 kB                    Downloaded from central-snapshots: https://central.sonatype.com/repository/maven-snapshots/org/openscience/cdk/cdk-valencycheck/2.15-SNAPSHOT/maven-metadata.xml (1.2 kB at 2.5 kB/s)
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-inchi-nestedvm ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-inchi-nestedvm ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-inchi-nestedvm ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 5 source files with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-inchi-nestedvm ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/inchi-nestedvm/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-inchi-nestedvm ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 8] to target/test-classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-inchi-nestedvm ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-inchi-nestedvm ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/inchi-nestedvm/target/jchempaint-inchi-nestedvm-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-inchi-nestedvm ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/inchi-nestedvm/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi-nestedvm/3.4-SNAPSHOT/jchempaint-inchi-nestedvm-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/inchi-nestedvm/target/jchempaint-inchi-nestedvm-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi-nestedvm/3.4-SNAPSHOT/jchempaint-inchi-nestedvm-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] ----------< org.openscience.jchempaint:jchempaint-inchi-jni >-----------
+[INFO] Building jchempaint-inchi-jni 3.4-SNAPSHOT                         [6/9]
+[INFO]   from inchi-jni/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-inchi-jni ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-inchi-jni ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-inchi-jni ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-inchi-jni ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/inchi-jni/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-inchi-jni ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-inchi-jni ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-inchi-jni ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/inchi-jni/target/jchempaint-inchi-jni-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-inchi-jni ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/inchi-jni/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi-jni/3.4-SNAPSHOT/jchempaint-inchi-jni-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/inchi-jni/target/jchempaint-inchi-jni-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-inchi-jni/3.4-SNAPSHOT/jchempaint-inchi-jni-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] -----------< org.openscience.jchempaint:jchempaint-app-osx >------------
+[INFO] Building jchempaint-app-osx 3.4-SNAPSHOT                           [7/9]
+[INFO]   from app-osx/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-app-osx ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-app-osx ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-app-osx ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 8] to target/classes
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-app-osx ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/app-osx/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-app-osx ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-app-osx ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-app-osx ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/app-osx/target/jchempaint-app-osx-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-app-osx ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/app-osx/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-osx/3.4-SNAPSHOT/jchempaint-app-osx-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/app-osx/target/jchempaint-app-osx-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-osx/3.4-SNAPSHOT/jchempaint-app-osx-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] -----------< org.openscience.jchempaint:jchempaint-app-jar >------------
+[INFO] Building jchempaint-app-jar 3.4-SNAPSHOT                           [8/9]
+[INFO]   from app-jar/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-app-jar ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-app-jar ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-app-jar ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-app-jar ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/app-jar/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-app-jar ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-app-jar ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-app-jar ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/app-jar/target/jchempaint-app-jar-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- shade:3.6.2:shade (default) @ jchempaint-app-jar ---
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] cmlxom-4.20.jar, euclid-2.20.jar define 1 overlapping resource: 
+[WARNING]   - header.txt
+[WARNING] log4j-1.2-api-2.26.1.jar, log4j-core-2.26.1.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/org/apache/logging/log4j/core/config/plugins/Log4j2Plugins.dat
+[WARNING] beam-core-1.4.jar, beam-func-1.4.jar, cdk-atomtype-2.15-SNAPSHOT.jar, cdk-core-2.15-SNAPSHOT.jar, cdk-ctab-2.15-SNAPSHOT.jar, cdk-data-2.15-SNAPSHOT.jar, cdk-depict-2.15-SNAPSHOT.jar, cdk-dict-2.15-SNAPSHOT.jar, cdk-formula-2.15-SNAPSHOT.jar, cdk-inchi-2.15-SNAPSHOT.jar, cdk-interfaces-2.15-SNAPSHOT.jar, cdk-io-2.15-SNAPSHOT.jar, cdk-ioformats-2.15-SNAPSHOT.jar, cdk-isomorphism-2.15-SNAPSHOT.jar, cdk-libiocml-2.15-SNAPSHOT.jar, cdk-render-2.15-SNAPSHOT.jar, cdk-renderawt-2.15-SNAPSHOT.jar, cdk-renderbasic-2.15-SNAPSHOT.jar, cdk-renderextra-2.15-SNAPSHOT.jar, cdk-sdg-2.15-SNAPSHOT.jar, cdk-silent-2.15-SNAPSHOT.jar, cdk-smiles-2.15-SNAPSHOT.jar, cdk-standard-2.15-SNAPSHOT.jar, cdk-valencycheck-2.15-SNAPSHOT.jar, cmlxom-4.20.jar, commons-cli-1.11.0.jar, commons-io-2.22.0.jar, commons-lang3-3.21.0.jar, commons-math-2.2.jar, euclid-2.20.jar, flatlaf-3.8.jar, freehep-graphics2d-2.4.jar, freehep-graphicsbase-2.4.jar, freehep-graphicsio-2.4.jar, freehep-graphicsio-pdf-2.4.jar, freehep-graphicsio-ps-2.4.jar, freehep-graphicsio-tests-2.4.jar, freehep-io-2.2.2.jar, jchempaint-app-jar-3.4-SNAPSHOT.jar, jchempaint-core-3.4-SNAPSHOT.jar, jchempaint-inchi-3.4-SNAPSHOT.jar, jchempaint-inchi-jni-3.4-SNAPSHOT.jar, jchempaint-render-3.4-SNAPSHOT.jar, jna-5.10.0.jar, jna-inchi-api-1.3.1.jar, jna-inchi-core-1.3.1.jar, jna-inchi-darwin-aarch64-1.3.1.jar, jna-inchi-darwin-x86-64-1.3.1.jar, jna-inchi-linux-aarch64-1.3.1.jar, jna-inchi-linux-arm-1.3.1.jar, jna-inchi-linux-x86-1.3.1.jar, jna-inchi-linux-x86-64-1.3.1.jar, jna-inchi-win32-x86-1.3.1.jar, jna-inchi-win32-x86-64-1.3.1.jar, joda-time-2.15.1.jar, log4j-1.2-api-2.26.1.jar, log4j-api-2.26.1.jar, log4j-core-2.26.1.jar, tagsoup-1.2.1.jar, vecmath-1.5.2.jar, xml-apis-1.4.01.jar, xom-1.4.6.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] commons-cli-1.11.0.jar, commons-io-2.22.0.jar, commons-lang3-3.21.0.jar define 1 overlapping classes: 
+[WARNING]   - META-INF.versions.9.module-info
+[WARNING] commons-cli-1.11.0.jar, commons-io-2.22.0.jar, commons-lang3-3.21.0.jar, commons-math-2.2.jar, joda-time-2.15.1.jar define 2 overlapping resources: 
+[WARNING]   - META-INF/LICENSE.txt
+[WARNING]   - META-INF/NOTICE.txt
+[WARNING] log4j-1.2-api-2.26.1.jar, log4j-api-2.26.1.jar, log4j-core-2.26.1.jar define 2 overlapping resources: 
+[WARNING]   - META-INF/DEPENDENCIES
+[WARNING]   - META-INF/NOTICE
+[WARNING] flatlaf-3.8.jar, jna-5.10.0.jar, log4j-1.2-api-2.26.1.jar, log4j-api-2.26.1.jar, log4j-core-2.26.1.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/LICENSE
+[WARNING] maven-shade-plugin has detected that some files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the file is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See https://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-app-jar ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/app-jar/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-jar/3.4-SNAPSHOT/jchempaint-app-jar-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/app-jar/target/jchempaint-app-jar-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-jar/3.4-SNAPSHOT/jchempaint-app-jar-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] ---------< org.openscience.jchempaint:jchempaint-app-windows >----------
+[INFO] Building jchempaint-app-windows 3.4-SNAPSHOT                       [9/9]
+[INFO]   from app-windows/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.1:enforce (enforce-maven) @ jchempaint-app-windows ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jchempaint-app-windows ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ jchempaint-app-windows ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jchempaint-app-windows ---
+[INFO] skip non existing resourceDirectory /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/app-windows/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ jchempaint-app-windows ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ jchempaint-app-windows ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ jchempaint-app-windows ---
+[INFO] Building jar: /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/app-windows/target/jchempaint-app-windows-3.4-SNAPSHOT.jar
+[INFO] 
+[INFO] --- shade:3.6.2:shade (default) @ jchempaint-app-windows ---
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] beam-core-1.4.jar, beam-func-1.4.jar, cdk-atomtype-2.15-SNAPSHOT.jar, cdk-core-2.15-SNAPSHOT.jar, cdk-ctab-2.15-SNAPSHOT.jar, cdk-data-2.15-SNAPSHOT.jar, cdk-depict-2.15-SNAPSHOT.jar, cdk-dict-2.15-SNAPSHOT.jar, cdk-formula-2.15-SNAPSHOT.jar, cdk-inchi-2.15-SNAPSHOT.jar, cdk-interfaces-2.15-SNAPSHOT.jar, cdk-io-2.15-SNAPSHOT.jar, cdk-ioformats-2.15-SNAPSHOT.jar, cdk-isomorphism-2.15-SNAPSHOT.jar, cdk-libiocml-2.15-SNAPSHOT.jar, cdk-render-2.15-SNAPSHOT.jar, cdk-renderawt-2.15-SNAPSHOT.jar, cdk-renderbasic-2.15-SNAPSHOT.jar, cdk-renderextra-2.15-SNAPSHOT.jar, cdk-sdg-2.15-SNAPSHOT.jar, cdk-silent-2.15-SNAPSHOT.jar, cdk-smiles-2.15-SNAPSHOT.jar, cdk-standard-2.15-SNAPSHOT.jar, cdk-valencycheck-2.15-SNAPSHOT.jar, cmlxom-4.20.jar, commons-cli-1.11.0.jar, commons-io-2.22.0.jar, commons-lang3-3.21.0.jar, commons-math-2.2.jar, euclid-2.20.jar, flatlaf-3.8.jar, freehep-graphics2d-2.4.jar, freehep-graphicsbase-2.4.jar, freehep-graphicsio-2.4.jar, freehep-graphicsio-pdf-2.4.jar, freehep-graphicsio-ps-2.4.jar, freehep-graphicsio-tests-2.4.jar, freehep-io-2.2.2.jar, jchempaint-app-windows-3.4-SNAPSHOT.jar, jchempaint-core-3.4-SNAPSHOT.jar, jchempaint-inchi-3.4-SNAPSHOT.jar, jchempaint-inchi-jni-3.4-SNAPSHOT.jar, jchempaint-render-3.4-SNAPSHOT.jar, jna-5.10.0.jar, jna-inchi-api-1.3.1.jar, jna-inchi-core-1.3.1.jar, jna-inchi-darwin-aarch64-1.3.1.jar, jna-inchi-darwin-x86-64-1.3.1.jar, jna-inchi-linux-aarch64-1.3.1.jar, jna-inchi-linux-arm-1.3.1.jar, jna-inchi-linux-x86-1.3.1.jar, jna-inchi-linux-x86-64-1.3.1.jar, jna-inchi-win32-x86-1.3.1.jar, jna-inchi-win32-x86-64-1.3.1.jar, joda-time-2.15.1.jar, log4j-1.2-api-2.26.1.jar, log4j-api-2.26.1.jar, log4j-core-2.26.1.jar, tagsoup-1.2.1.jar, vecmath-1.5.2.jar, xml-apis-1.4.01.jar, xom-1.4.6.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] cmlxom-4.20.jar, euclid-2.20.jar define 1 overlapping resource: 
+[WARNING]   - header.txt
+[WARNING] log4j-1.2-api-2.26.1.jar, log4j-core-2.26.1.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/org/apache/logging/log4j/core/config/plugins/Log4j2Plugins.dat
+[WARNING] commons-cli-1.11.0.jar, commons-io-2.22.0.jar, commons-lang3-3.21.0.jar define 1 overlapping classes: 
+[WARNING]   - META-INF.versions.9.module-info
+[WARNING] commons-cli-1.11.0.jar, commons-io-2.22.0.jar, commons-lang3-3.21.0.jar, commons-math-2.2.jar, joda-time-2.15.1.jar define 2 overlapping resources: 
+[WARNING]   - META-INF/LICENSE.txt
+[WARNING]   - META-INF/NOTICE.txt
+[WARNING] log4j-1.2-api-2.26.1.jar, log4j-api-2.26.1.jar, log4j-core-2.26.1.jar define 2 overlapping resources: 
+[WARNING]   - META-INF/DEPENDENCIES
+[WARNING]   - META-INF/NOTICE
+[WARNING] flatlaf-3.8.jar, jna-5.10.0.jar, log4j-1.2-api-2.26.1.jar, log4j-api-2.26.1.jar, log4j-core-2.26.1.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/LICENSE
+[WARNING] maven-shade-plugin has detected that some files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the file is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See https://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Attaching shaded artifact.
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ jchempaint-app-windows ---
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/app-windows/pom.xml to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-windows/3.4-SNAPSHOT/jchempaint-app-windows-3.4-SNAPSHOT.pom
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/app-windows/target/jchempaint-app-windows-3.4-SNAPSHOT.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-windows/3.4-SNAPSHOT/jchempaint-app-windows-3.4-SNAPSHOT.jar
+[INFO] Installing /home/fusion809/lfs_packaging/jchempaint-git/jchempaint-2307393879300f2ea0b01bb89ae1d361a23a66d9/app-windows/target/jchempaint-app-windows-3.4-SNAPSHOT-shaded.jar to /home/fusion809/.m2/repository/org/openscience/jchempaint/jchempaint-app-windows/3.4-SNAPSHOT/jchempaint-app-windows-3.4-SNAPSHOT-shaded.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for jchempaint 3.4-SNAPSHOT:
+[INFO] 
+[INFO] jchempaint ......................................... SUCCESS [  2.211 s]
+[INFO] jchempaint-inchi ................................... SUCCESS [  4.901 s]
+[INFO] jchempaint-render .................................. SUCCESS [  3.397 s]
+[INFO] jchempaint-core .................................... SUCCESS [ 51.622 s]
+[INFO] jchempaint-inchi-nestedvm .......................... SUCCESS [  1.683 s]
+[INFO] jchempaint-inchi-jni ............................... SUCCESS [  0.-05 s]
+[INFO] jchempaint-app-osx ................................. SUCCESS [  0.242 s]
+[INFO] jchempaint-app-jar ................................. SUCCESS [  3.240 s]
+[INFO] jchempaint-app-windows ............................. SUCCESS [  3.439 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:11 min
+[INFO] Finished at: 2026-11-23T21:41:45+10:00
+[INFO] ------------------------------------------------------------------------
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=JChemPaint
+GenericName=Chemical 2D structure editor
+Icon=io.github.jchempaint.JChemPaint
+Exec=/usr/bin/jchempaint %F
+TryExec=/usr/bin/jchempaint
+MimeType=chemical/x-cml;chemical/x-daylight-smiles;text/plain;chemical/x-mdl-sdfile;chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;
+Categories=Science;Chemistry;Education;
+StartupWMClass=org-openscience-jchempaint-application-JChemPaint
+2307393879300f2ea0b01bb89ae1d361a23a66d9
+Updated registry for jchempaint-git to version 2307393879300f2ea0b01bb89ae1d361a23a66d9
+[VERSION] jchempaint-git: 2307393879300f2ea0b01bb89ae1d361a23a66d9
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package jchempaint-git in /var/lib/custom-packages/
+Updating Python packages via pip...
+Requirement already satisfied: affine in /usr/lib/python3.15/site-packages (3.0.1)
+Requirement already satisfied: alabaster in /usr/lib/python3.15/site-packages (1.0.0)
+Requirement already satisfied: anyio in /usr/lib/python3.15/site-packages (4.16.0)
+Requirement already satisfied: appdirs in /usr/lib/python3.15/site-packages (1.4.4)
+Requirement already satisfied: argcomplete in /usr/lib/python3.15/site-packages (3.7.2)
+Collecting argcomplete
+  Using cached argcomplete-3.8.0-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: arrow in /usr/lib/python3.15/site-packages (1.4.0)
+Requirement already satisfied: asgiref in /usr/lib/python3.15/site-packages (3.13.0)
+Requirement already satisfied: astroid in /usr/lib/python3.15/site-packages (4.3.4)
+Requirement already satisfied: asttokens in /usr/lib/python3.15/site-packages (3.0.2)
+Requirement already satisfied: attrs in /usr/lib/python3.15/site-packages (26.1.0)
+Requirement already satisfied: babel in /usr/lib/python3.15/site-packages (2.18.0)
+Requirement already satisfied: beautifulsoup4 in /usr/lib/python3.15/site-packages (4.15.0)
+Requirement already satisfied: black in /usr/lib/python3.15/site-packages (26.10.1)
+Requirement already satisfied: bleach in /usr/lib/python3.15/site-packages (6.4.0)
+Requirement already satisfied: brotli in /usr/lib/python3.15/site-packages (1.2.1)
+Requirement already satisfied: build in /usr/lib/python3.15/site-packages (1.6.1)
+Requirement already satisfied: cclib in /usr/lib/python3.15/site-packages (1.8.1)
+Requirement already satisfied: certifi in /usr/lib/python3.15/site-packages (2026.10.23)
+Collecting certifi
+  Using cached certifi-2026.11.20-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: cffi in /usr/lib/python3.15/site-packages (2.1.1)
+Requirement already satisfied: chardet in /usr/lib/python3.15/site-packages (5.2.0)
+Collecting chardet
+  Using cached chardet-7.7.0-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Requirement already satisfied: click in /usr/lib/python3.15/site-packages (8.5.1)
+Requirement already satisfied: colorama in /usr/lib/python3.15/site-packages (0.4.6)
+Requirement already satisfied: columnize in /usr/lib/python3.15/site-packages (0.3.11)
+Requirement already satisfied: comm in /usr/lib/python3.15/site-packages (0.2.3)
+Requirement already satisfied: contourpy in /usr/lib/python3.15/site-packages (1.4.0)
+Requirement already satisfied: cryptography in /usr/lib/python3.15/site-packages (50.0.2)
+Requirement already satisfied: cssselect in /usr/lib/python3.15/site-packages (1.6.0)
+Requirement already satisfied: cycler in /usr/lib/python3.15/site-packages (0.12.1)
+Requirement already satisfied: dateutils in /usr/lib/python3.15/site-packages (0.6.12)
+Requirement already satisfied: debugpy in /usr/lib/python3.15/site-packages (1.8.22)
+Requirement already satisfied: decorator in /usr/lib/python3.15/site-packages (5.3.2)
+Requirement already satisfied: defusedxml in /usr/lib/python3.15/site-packages (0.7.1)
+Requirement already satisfied: dill in /usr/lib/python3.15/site-packages (0.4.1)
+Requirement already satisfied: docutils in /usr/lib/python3.15/site-packages (0.22.4)
+Collecting docutils
+  Using cached docutils-0.23-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: doxypypy in /usr/lib/python3.15/site-packages (0.8.8.7)
+Requirement already satisfied: doxyqml in /usr/lib/python3.15/site-packages (0.6.0)
+Requirement already satisfied: editables in /usr/lib/python3.15/site-packages (0.6)
+Requirement already satisfied: executing in /usr/lib/python3.15/site-packages (2.3.0)
+Requirement already satisfied: fastjsonschema in /usr/lib/python3.15/site-packages (2.22.3)
+Requirement already satisfied: flake8 in /usr/lib/python3.15/site-packages (7.5.0)
+Requirement already satisfied: flexcache in /usr/lib/python3.15/site-packages (0.3)
+Requirement already satisfied: flexparser in /usr/lib/python3.15/site-packages (0.4)
+Requirement already satisfied: flit_core in /usr/lib/python3.15/site-packages (4.2.0)
+Requirement already satisfied: fonttools in /usr/lib/python3.15/site-packages (4.68.0)
+Requirement already satisfied: fqdn in /usr/lib/python3.15/site-packages (1.6.0)
+Requirement already satisfied: gobject in /usr/lib/python3.15/site-packages (0.1.0)
+Requirement already satisfied: h11 in /usr/lib/python3.15/site-packages (0.16.0)
+Requirement already satisfied: hatchling in /usr/lib/python3.15/site-packages (1.33.0)
+Requirement already satisfied: html5lib in /usr/lib/python3.15/site-packages (1.1)
+Requirement already satisfied: httpcore in /usr/lib/python3.15/site-packages (1.0.9)
+Requirement already satisfied: httpx in /usr/lib/python3.15/site-packages (0.28.1)
+Requirement already satisfied: idna in /usr/lib/python3.15/site-packages (3.20)
+Requirement already satisfied: imagesize in /usr/lib/python3.15/site-packages (2.0.1)
+Requirement already satisfied: installer in /usr/lib/python3.15/site-packages (1.1.0)
+Requirement already satisfied: ipykernel in /usr/lib/python3.15/site-packages (7.4.0)
+Requirement already satisfied: ipython in /usr/lib/python3.15/site-packages (9.18.1)
+Collecting ipython
+  Using cached ipython-9.19.1-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: ipython_pygments_lexers in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: isoduration in /usr/lib/python3.15/site-packages (20.11.0)
+Requirement already satisfied: isort in /usr/lib/python3.15/site-packages (9.0.2)
+Requirement already satisfied: jedi in /usr/lib/python3.15/site-packages (0.20.1)
+Requirement already satisfied: json5 in /usr/lib/python3.15/site-packages (0.17.3)
+Requirement already satisfied: jsonpointer in /usr/lib/python3.15/site-packages (3.12)
+Requirement already satisfied: jsonschema in /usr/lib/python3.15/site-packages (4.26.0)
+Requirement already satisfied: jupyter_builder in /usr/lib/python3.15/site-packages (1.3.0)
+Requirement already satisfied: jupyter_client in /usr/lib/python3.15/site-packages (8.10.0)
+Requirement already satisfied: jupyter_core in /usr/lib/python3.15/site-packages (5.9.1)
+Requirement already satisfied: jupyter_server in /usr/lib/python3.15/site-packages (2.21.1)
+Requirement already satisfied: jupyter_server_terminals in /usr/lib/python3.15/site-packages (0.5.4)
+Requirement already satisfied: jupyterlab in /usr/lib/python3.15/site-packages (4.6.6)
+Requirement already satisfied: jupyterlab_pygments in /usr/lib/python3.15/site-packages (0.3.0)
+Requirement already satisfied: jupyterlab_server in /usr/lib/python3.15/site-packages (2.28.1)
+Requirement already satisfied: kiwisolver in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: lark in /usr/lib/python3.15/site-packages (1.3.1)
+Requirement already satisfied: lxml in /usr/lib/python3.15/site-packages (6.1.3)
+Requirement already satisfied: mathics3_notebook_frontends in /usr/lib/python3.15/site-packages (1.0.1)
+Requirement already satisfied: mathicsscript in /usr/lib/python3.15/site-packages (10.0.0)
+Requirement already satisfied: matplotlib in /usr/lib/python3.15/site-packages (3.11.2)
+Requirement already satisfied: mccabe in /usr/lib/python3.15/site-packages (0.7.0)
+Requirement already satisfied: meson in /usr/lib/python3.15/site-packages (1.12.1)
+Requirement already satisfied: metakernel in /usr/lib/python3.15/site-packages (1.0.7)
+Requirement already satisfied: mistune in /usr/lib/python3.15/site-packages (3.4.0)
+Requirement already satisfied: mpmath in /usr/lib/python3.15/site-packages (1.3.0)
+Collecting mpmath
+  Using cached mpmath-1.4.1-py3-none-any.whl.metadata (9.1 kB)
+Requirement already satisfied: msgpack in /usr/lib/python3.15/site-packages (1.2.4)
+Requirement already satisfied: mypy_extensions in /usr/lib/python3.15/site-packages (1.2.0)
+Requirement already satisfied: narwhals in /usr/lib/python3.15/site-packages (2.29.0)
+Requirement already satisfied: nbclient in /usr/lib/python3.15/site-packages (0.11.0)
+Requirement already satisfied: nbconvert in /usr/lib/python3.15/site-packages (7.17.2)
+Requirement already satisfied: nbformat in /usr/lib/python3.15/site-packages (5.11.1)
+Requirement already satisfied: networkx in /usr/lib/python3.15/site-packages (3.7)
+Requirement already satisfied: notebook_shim in /usr/lib/python3.15/site-packages (0.2.4)
+Requirement already satisfied: numpy in /usr/lib/python3.15/site-packages (2.5.5)
+Requirement already satisfied: octave_kernel in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: packaging in /usr/lib/python3.15/site-packages (26.3)
+Requirement already satisfied: palettable in /usr/lib/python3.15/site-packages (3.3.3)
+Requirement already satisfied: pandocfilters in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: parameterized in /usr/lib/python3.15/site-packages (0.9.0)
+Requirement already satisfied: parso in /usr/lib/python3.15/site-packages (0.8.7)
+Requirement already satisfied: pathspec in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: periodictable in /usr/lib/python3.15/site-packages (2.1.0)
+Requirement already satisfied: pexpect in /usr/lib/python3.15/site-packages (4.9.0)
+Requirement already satisfied: pillow in /usr/lib/python3.15/site-packages (13.0.0)
+Requirement already satisfied: pip in /usr/lib/python3.15/site-packages (26.3)
+Requirement already satisfied: platformdirs in /usr/lib/python3.15/site-packages (4.14.8)
+Requirement already satisfied: pluggy in /usr/lib/python3.15/site-packages (1.7.0)
+Requirement already satisfied: prometheus_client in /usr/lib/python3.15/site-packages (0.26.0)
+Requirement already satisfied: prompt_toolkit in /usr/lib/python3.15/site-packages (3.0.53)
+Requirement already satisfied: psutil in /usr/lib/python3.15/site-packages (7.2.2)
+Requirement already satisfied: ptyprocess in /usr/lib/python3.15/site-packages (0.7.0)
+Requirement already satisfied: pure_eval in /usr/lib/python3.15/site-packages (0.2.4)
+Requirement already satisfied: pyasn1 in /usr/lib/python3.15/site-packages (0.6.5)
+Requirement already satisfied: pybind11 in /usr/lib/python3.15/site-packages (3.1.0)
+Requirement already satisfied: pycairo in /usr/lib/python3.15/site-packages (1.29.2)
+Requirement already satisfied: pycodestyle in /usr/lib/python3.15/site-packages (2.15.0)
+Requirement already satisfied: pycparser in /usr/lib/python3.15/site-packages (3.12)
+Requirement already satisfied: pydeck in /usr/lib/python3.15/site-packages (0.9.3)
+Requirement already satisfied: pyelftools in /usr/lib/python3.15/site-packages (0.33)
+Requirement already satisfied: pyflakes in /usr/lib/python3.15/site-packages (4.1.0)
+Requirement already satisfied: pygdbmi in /usr/lib/python3.15/site-packages (0.11.0.0)
+Requirement already satisfied: pylint in /usr/lib/python3.15/site-packages (4.1.4)
+Requirement already satisfied: Pympler in /usr/lib/python3.15/site-packages (1.1)
+Requirement already satisfied: pyparsing in /usr/lib/python3.15/site-packages (3.3.3)
+Requirement already satisfied: pyproject_hooks in /usr/lib/python3.15/site-packages (1.3.3)
+Requirement already satisfied: pyserial in /usr/lib/python3.15/site-packages (3.5)
+Requirement already satisfied: pyte in /usr/lib/python3.15/site-packages (0.8.2)
+Requirement already satisfied: pytokens in /usr/lib/python3.15/site-packages (0.4.1)
+Requirement already satisfied: pytz in /usr/lib/python3.15/site-packages (2026.6)
+Requirement already satisfied: pyzmq in /usr/lib/python3.15/site-packages (27.3.0)
+Requirement already satisfied: rasterio in /usr/lib/python3.15/site-packages (1.5.2)
+Requirement already satisfied: rdflib in /usr/lib/python3.15/site-packages (7.6.0)
+Requirement already satisfied: referencing in /usr/lib/python3.15/site-packages (0.37.0)
+Requirement already satisfied: requests in /usr/lib/python3.15/site-packages (2.34.2)
+Requirement already satisfied: rnc2rng in /usr/lib/python3.15/site-packages (2.8.0)
+Requirement already satisfied: rply in /usr/lib/python3.15/site-packages (0.7.8)
+Requirement already satisfied: scikit_build_core in /usr/lib/python3.15/site-packages (1.1.2)
+Requirement already satisfied: scipy in /usr/lib/python3.15/site-packages (1.18.1)
+Requirement already satisfied: scour in /usr/lib/python3.15/site-packages (0.38.2)
+Requirement already satisfied: setuptools in /usr/lib/python3.15/site-packages (84.2.1)
+Requirement already satisfied: sip in /usr/lib/python3.15/site-packages (6.17.3)
+Requirement already satisfied: six in /usr/lib/python3.15/site-packages (1.17.0)
+Requirement already satisfied: smartypants in /usr/lib/python3.15/site-packages (2.0.2)
+Requirement already satisfied: snowballstemmer in /usr/lib/python3.15/site-packages (3.1.1)
+Requirement already satisfied: soupsieve in /usr/lib/python3.15/site-packages (4.1.3)
+Requirement already satisfied: sphinx_lv2_theme in /usr/lib/python3.15/site-packages (1.4.6)
+Requirement already satisfied: sphinxygen in /usr/lib/python3.15/site-packages (1.0.12)
+Requirement already satisfied: sqlparse in /usr/lib/python3.15/site-packages (0.6.1)
+Requirement already satisfied: sympy in /usr/lib/python3.15/site-packages (1.14.0)
+Requirement already satisfied: terminado in /usr/lib/python3.15/site-packages (0.18.1)
+Requirement already satisfied: tinycss2 in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: tomlkit in /usr/lib/python3.15/site-packages (0.15.2)
+Requirement already satisfied: tornado in /usr/lib/python3.15/site-packages (6.6.1)
+Requirement already satisfied: traitlets in /usr/lib/python3.15/site-packages (5.16.1)
+Requirement already satisfied: typing_extensions in /usr/lib/python3.15/site-packages (4.16.0)
+Requirement already satisfied: typogrify in /usr/lib/python3.15/site-packages (2.1.0)
+Requirement already satisfied: tzdata in /usr/lib/python3.15/site-packages (2026.6)
+Requirement already satisfied: urllib3 in /usr/lib/python3.15/site-packages (2.8.0)
+Requirement already satisfied: wcwidth in /usr/lib/python3.15/site-packages (0.9.4)
+Collecting wcwidth
+  Using cached wcwidth-0.9.5-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (26 kB)
+Requirement already satisfied: webcolors in /usr/lib/python3.15/site-packages (25.10.0)
+Requirement already satisfied: webencodings in /usr/lib/python3.15/site-packages (0.6.1)
+Requirement already satisfied: wheel in /usr/lib/python3.15/site-packages (0.48.0)
+Requirement already satisfied: python-dateutil>=2.7.0 in /usr/lib/python3.15/site-packages (from arrow) (3.0.0)
+Requirement already satisfied: trove-classifiers in /usr/lib/python3.15/site-packages (from hatchling) (2026.6.1.19)
+Requirement already satisfied: matplotlib-inline>=0.1 in /usr/lib/python3.15/site-packages (from ipykernel) (0.2.2)
+Requirement already satisfied: nest-asyncio2>=1.7.0 in /usr/lib/python3.15/site-packages (from ipykernel) (1.7.4)
+Requirement already satisfied: pygments>=2.14.0 in /usr/lib/python3.15/site-packages (from ipython) (2.21.0)
+Requirement already satisfied: stack_data>=0.6.0 in /usr/lib/python3.15/site-packages (from ipython) (0.6.3)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /usr/lib/python3.15/site-packages (from jsonschema) (2025.9.1)
+Requirement already satisfied: rpds-py>=0.25.0 in /usr/lib/python3.15/site-packages (from jsonschema) (2026.9.1)
+Requirement already satisfied: argon2-cffi>=21.1 in /usr/lib/python3.15/site-packages (from jupyter_server) (25.1.0)
+Requirement already satisfied: jinja2>=3.0.3 in /usr/lib/python3.15/site-packages (from jupyter_server) (3.1.6)
+Requirement already satisfied: jupyter-events>=0.11.0 in /usr/lib/python3.15/site-packages (from jupyter_server) (0.12.1)
+Requirement already satisfied: send2trash>=1.8.2 in /usr/lib/python3.15/site-packages (from jupyter_server) (2.1.0)
+Requirement already satisfied: websocket-client>=1.7 in /usr/lib/python3.15/site-packages (from jupyter_server) (1.9.2)
+Requirement already satisfied: async-lru>=1.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.4.0)
+Requirement already satisfied: jupyter-lsp>=2.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.3.1)
+Requirement already satisfied: Mathics3>=10.0.1 in /usr/lib/python3.15/site-packages (from mathics3_notebook_frontends) (10.0.1)
+Requirement already satisfied: charset-normalizer<4.0.0,>=2.0.0 in /usr/lib/python3.15/site-packages (from mathics3_notebook_frontends) (3.5.2)
+Requirement already satisfied: Mathics3_Scanner>=10.0.0 in /usr/lib/python3.15/site-packages (from mathicsscript) (10.0.1)
+Requirement already satisfied: Mathics3_pygments>=10.0.0 in /usr/lib/python3.15/site-packages (from mathicsscript) (10.0.0)
+Requirement already satisfied: term-background>=1.0.5 in /usr/lib/python3.15/site-packages (from mathicsscript) (1.0.5)
+Requirement already satisfied: markupsafe>=2.0 in /usr/lib/python3.15/site-packages (from nbconvert) (3.0.4)
+Requirement already satisfied: sphinx in /usr/lib/python3.15/site-packages (from sphinx_lv2_theme) (9.1.0)
+Requirement already satisfied: argon2-cffi-bindings in /usr/lib/python3.15/site-packages (from argon2-cffi>=21.1->jupyter_server) (26.1.0)
+Requirement already satisfied: python-json-logger>=2.0.4 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (4.2.0)
+Requirement already satisfied: pyyaml>=5.3 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (6.0.3)
+Requirement already satisfied: rfc3339-validator in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (0.1.4)
+Requirement already satisfied: rfc3986-validator>=0.1.1 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (0.1.1)
+Requirement already satisfied: rfc3987-syntax>=1.1.0 in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter_server) (1.1.0)
+Requirement already satisfied: uri-template in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter_server) (1.3.0)
+Requirement already satisfied: pint>=0.24 in /usr/lib/python3.15/site-packages (from Mathics3>=10.0.1->mathics3_notebook_frontends) (0.26.2)
+Requirement already satisfied: Timed-Threads in /usr/lib/python3.15/site-packages (from Mathics3>=10.0.1->mathics3_notebook_frontends) (2.0.0)
+Requirement already satisfied: sphinxcontrib-applehelp>=1.0.7 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-devhelp>=1.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-htmlhelp>=2.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.1.0)
+Requirement already satisfied: sphinxcontrib-jsmath>=1.0.1 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (1.0.1)
+Requirement already satisfied: sphinxcontrib-qthelp>=1.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-serializinghtml>=1.1.9 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: roman-numerals>=1.0.0 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (4.1.0)
+Using cached argcomplete-3.8.0-py3-none-any.whl (45 kB)
+Using cached certifi-2026.11.20-py3-none-any.whl (127 kB)
+Using cached ipython-9.19.1-py3-none-any.whl (649 kB)
+Using cached wcwidth-0.9.5-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (822 kB)
+WARNING: Error parsing dependencies of certifi: No package metadata was found.
+WARNING: Error parsing dependencies of wcwidth: No package metadata was found.
+Installing collected packages: wcwidth, certifi, argcomplete, ipython
+  Attempting uninstall: wcwidth
+ERROR: Could not install packages due to an OSError: No package metadata was found.
+
+
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master 810772e] Updating packages
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master da36fea] Updating packages
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-42
+r13.1-691
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libavcodec.so.63.1.102
+cand_sobase=libavcodec.so
+search_base=libavcodec
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavformat.so.63.1.102
+cand_sobase=libavformat.so
+search_base=libavformat
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavutil.so.61.1.102
+cand_sobase=libavutil.so
+search_base=libavutil
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgnutls.so.30.42.0
+cand_sobase=libgnutls.so
+search_base=libgnutls
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz.so.0.61510.0
+cand_sobase=libharfbuzz.so
+search_base=libharfbuzz
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz-subset.so.0.61510.0
+cand_sobase=libharfbuzz-subset.so
+search_base=libharfbuzz-subset
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIex-3_5.so.34.3.5.4
+cand_sobase=libIex-.so
+search_base=libIex-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIlmThread-3_5.so.34.3.5.4
+cand_sobase=libIlmThread-.so
+search_base=libIlmThread-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXR-3_5.so.34.3.5.4
+cand_sobase=libOpenEXR-.so
+search_base=libOpenEXR-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXRCore-3_5.so.34.3.5.4
+cand_sobase=libOpenEXRCore-.so
+search_base=libOpenEXRCore-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXRUtil-3_5.so.34.3.5.4
+cand_sobase=libOpenEXRUtil-.so
+search_base=libOpenEXRUtil-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libpari-gmp-tls.so.2.19.0
+cand_sobase=libpari-gmp-tls.so
+search_base=libpari-gmp-tls
+replacement_found=true
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libavcodec.so.63.1.102
+Path: /usr/lib/libavcodec.so.63.1.102
+Skipping generic/unsafe name 'libavcodec.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavcodec.so.63 libavcodec.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavcodec.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavcodec.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavformat.so.63.1.102
+Path: /usr/lib/libavformat.so.63.1.102
+Skipping generic/unsafe name 'libavformat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavformat.so.63 libavformat.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavformat.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavformat.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavutil.so.61.1.102
+Path: /usr/lib/libavutil.so.61.1.102
+Skipping generic/unsafe name 'libavutil.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavutil.so.61 libavutil.so.61.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavutil.so.61.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavutil.so.61.1.102.
+------------------------------------------------
+Checking obsolete version (file): libgnutls.so.30.42.0
+Path: /usr/lib/libgnutls.so.30.42.0
+Skipping generic/unsafe name 'libgnutls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 31 remaining dependents.
+Names tracked: libgnutls.so.30 libgnutls.so.30.42.0
+Example dependents: ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0 ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11 ...
+Warning: No parent package found for ANY of the 31 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libgnutls.so.30.42.0:
+  - ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-resume
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cxx
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-ocsp-client
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/print-ciphersuites
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/tlsproxy/tlsproxy
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/alert-printlist
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/errcodes
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/printlist
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0T
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/certtool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli-debug
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-serv
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/ocsptool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/p11tool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/psktool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/systemkey
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/eagain-cli
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/mini-record-timing
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libgnutls.so.30.42.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz.so.0.61510.0
+Path: /usr/lib/libharfbuzz.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz.so.0 libharfbuzz.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz-subset.so.0.61510.0
+Path: /usr/lib/libharfbuzz-subset.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz-subset.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz-subset.so.0 libharfbuzz-subset.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz-subset.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz-subset.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libIex-3_5.so.34.3.5.4
+Path: /usr/lib/libIex-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libIex-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 48 remaining dependents.
+Names tracked: libIex-3_5.so.34 libIex-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 48 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIex-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/IexTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/IlmThread/libIlmThread-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/IexTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/IlmThread/libIlmThread-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIex-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libIlmThread-3_5.so.34.3.5.4
+Path: /usr/lib/libIlmThread-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libIlmThread-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 44 remaining dependents.
+Names tracked: libIlmThread-3_5.so.34 libIlmThread-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 44 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIlmThread-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIlmThread-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXR-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXR-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXR-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 42 remaining dependents.
+Names tracked: libOpenEXR-3_5.so.34 libOpenEXR-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 42 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXR-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXR-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRCore-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXRCore-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 44 remaining dependents.
+Names tracked: libOpenEXRCore-3_5.so.34 libOpenEXRCore-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 44 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRUtil-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXRUtil-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 26 remaining dependents.
+Names tracked: libOpenEXRUtil-3_5.so.34 libOpenEXRUtil-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap ...
+Warning: No parent package found for ANY of the 26 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libpari-gmp-tls.so.2.19.0
+Path: /usr/lib/libpari-gmp-tls.so.2.19.0
+Skipping generic/unsafe name 'libpari-gmp-tls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libpari-gmp-tls.so.10 libpari-gmp-tls.so.2.19.0
+Example dependents: ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libpari-gmp-tls.so.2.19.0:
+  - ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libpari-gmp-tls.so.2.19.0.
+------------------------------------------------
+Checking obsolete version (file): libswscale.so.10.1.102
+Path: /usr/lib/libswscale.so.10.1.102
+Skipping generic/unsafe name 'libswscale.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libswscale.so.10 libswscale.so.10.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libswscale.so.10.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libswscale.so.10.1.102.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.5...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.6-lfs-r13.1-42
+Found linux image: /boot/vmlinuz-7.3.5-lfs-r13.1-40
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
