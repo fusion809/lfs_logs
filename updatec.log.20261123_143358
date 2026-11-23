@@ -1,0 +1,1275 @@
+===== Update check started: 2026-11-23 14:33:58 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261123_143358
+Packages needing attention: gspell reshiki-git
+===== Starting updatec: 2026-11-23 14:34:02 AEST =====
+Checking for packages with missing file inventories...
+name=gspell
+local_ver=1.14.5
+remote_ver=1.14.6
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - gspell
+  - reshiki-git
+
+Building custom package gspell...
+[14:34:03] Found custom package for gspell, bypassing BLFS aliases.
+[14:34:03] Custom package detected at /home/fusion809/lfs_packaging/gspell (package: gspell)
+[14:34:03] Extracting dependencies for custom package 'gspell'...
+[14:34:03] Required deps: at-spi2-core brotli bzip2 cairo dbus enchant expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz icu libepoxy libffi libpng libseccomp libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres pango pcre2 pixman systemd util-linux wayland zlib 
+[14:34:03] Dependency 'at-spi2-core' already installed.
+[14:34:03] Dependency 'brotli' already installed.
+[14:34:03] Dependency 'bzip2' already installed.
+[14:34:03] Dependency 'cairo' already installed.
+[14:34:03] Dependency 'dbus' already installed.
+[14:34:03] Dependency 'enchant' already installed.
+[14:34:03] Dependency 'expat' already installed.
+[14:34:03] Dependency 'fontconfig' already installed.
+[14:34:03] Dependency 'freetype' already installed.
+[14:34:03] Dependency 'fribidi' already installed.
+[14:34:03] Dependency 'gcc' already installed.
+[14:34:03] Dependency 'gdk-pixbuf' already installed.
+[14:34:03] Dependency 'glib2' already installed.
+[14:34:03] Dependency 'glibc' already installed.
+[14:34:03] Dependency 'glycin' already installed.
+[14:34:03] Dependency 'graphite2' already installed.
+[14:34:03] Dependency 'gtk3' already installed.
+[14:34:03] Dependency 'harfbuzz' already installed.
+[14:34:03] Dependency 'icu' already installed.
+[14:34:03] Dependency 'libepoxy' already installed.
+[14:34:03] Dependency 'libffi' already installed.
+[14:34:03] Dependency 'libpng' already installed.
+[14:34:03] Dependency 'libseccomp' already installed.
+[14:34:03] Dependency 'libx11' already installed.
+[14:34:03] Dependency 'libxau' already installed.
+[14:34:03] Dependency 'libxcb' already installed.
+[14:34:03] Dependency 'libxcomposite' already installed.
+[14:34:03] Dependency 'libxcursor' already installed.
+[14:34:03] Dependency 'libxdamage' already installed.
+[14:34:03] Dependency 'libxdmcp' already installed.
+[14:34:03] Dependency 'libxext' already installed.
+[14:34:03] Dependency 'libxfixes' already installed.
+[14:34:03] Dependency 'libxi' already installed.
+[14:34:03] Dependency 'libxinerama' already installed.
+[14:34:03] Dependency 'libxkbcommon' already installed.
+[14:34:03] Dependency 'libxrandr' already installed.
+[14:34:03] Dependency 'libxrender' already installed.
+[14:34:03] Dependency 'libxres' already installed.
+[14:34:03] Dependency 'pango' already installed.
+[14:34:03] Dependency 'pcre2' already installed.
+[14:34:03] Dependency 'pixman' already installed.
+[14:34:03] Dependency 'systemd' already installed.
+[14:34:03] Dependency 'util-linux' already installed.
+[14:34:03] Dependency 'wayland' already installed.
+[14:34:03] Dependency 'zlib' already installed.
+[VERSION] gspell: 1.14.6
+[14:34:05] Installing gspell version: 1.14.6
+[14:34:05] Starting remote custom build for gspell...
+--2026-11-23 14:34:24--  https://download.gnome.org/sources/gspell/1.14/gspell-1.14.6.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 143.244.62.9, 143.244.62.6, 2a02:6ea0:db00::11, ...
+Connecting to download.gnome.org (download.gnome.org)|143.244.62.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 120596 (118K) [application/octet-stream]
+Saving to: ‘gspell-1.14.6.tar.xz’
+
+gspell-1.14.6.tar.x   0%[                    ]       0  --.-KB/s               gspell-1.14.6.tar.x 100%[===================>] 117.77K  --.-KB/s    in 0.1s    
+
+2026-11-23 14:34:24 (861 KB/s) - ‘gspell-1.14.6.tar.xz’ saved [120596/120596]
+
+source_dir=..
+Optional 3 build, applicable to p11-kit
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/gspell/gspell-1.14.6
+Build dir: /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/p11-build
+Build type: native build
+Project name: gspell
+Project version: 1.14.6
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Run-time dependency gio-2.0 found: YES 2.90.1
+Run-time dependency gtk+-3.0 found: YES 3.24.52
+Run-time dependency enchant-2 found: YES 2.8.21
+Run-time dependency icu-uc found: YES 79.1
+Configuring gspell-config.h using configuration
+Compiler for C supports arguments -fno-strict-aliasing: YES 
+Compiler for C supports arguments -Wundef: YES 
+Compiler for C supports arguments -Wnested-externs: YES 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C supports arguments -Wredundant-decls: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C supports arguments -Wdeclaration-after-statement: YES 
+Compiler for C supports arguments -Wformat=2: YES 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Compiler for C supports arguments -Wcast-align: YES 
+Compiler for C supports arguments -Wformat-nonliteral: YES 
+Compiler for C supports arguments -Wformat-security: YES 
+Compiler for C supports arguments -Wsign-compare: YES 
+Compiler for C supports arguments -Wstrict-aliasing: YES 
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Winline: YES 
+Compiler for C supports arguments -Wpacked: YES 
+Compiler for C supports arguments -Wmissing-format-attribute: YES 
+Compiler for C supports arguments -Wmissing-noreturn: YES 
+Compiler for C supports arguments -Winit-self: YES 
+Compiler for C supports arguments -Wredundant-decls: YES (cached)
+Compiler for C supports arguments -Wmissing-include-dirs: YES 
+Compiler for C supports arguments -Wunused-but-set-variable: YES 
+Compiler for C supports arguments -Warray-bounds: YES 
+Compiler for C supports arguments -Wimplicit-function-declaration: YES 
+Compiler for C supports arguments -Wreturn-type: YES 
+Compiler for C supports arguments -Wswitch-enum: YES 
+Compiler for C supports arguments -Wswitch-default: YES 
+Compiler for C supports arguments -Wduplicated-cond: YES 
+Compiler for C supports arguments -Wduplicated-branches: YES 
+Compiler for C supports arguments -Wlogical-op: YES 
+Compiler for C supports arguments -Wrestrict: YES 
+Compiler for C supports arguments -Wnull-dereference: YES 
+Compiler for C supports arguments -Wjump-misses-init: YES 
+Compiler for C supports arguments -Wdouble-promotion: YES 
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Run-time dependency glib-2.0 found: YES 2.90.1
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Compiler for C supports link arguments -Wl,--version-script,/home/fusion809/lfs_packaging/gspell/gspell-1.14.6/gspell/symbol.map: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program vapigen found: YES (/usr/bin/vapigen)
+Configuring test-checker.test using configuration
+Configuring test-entry.test using configuration
+Configuring test-icu.test using configuration
+Configuring test-inline-checker-text-buffer.test using configuration
+Configuring test-text-iter.test using configuration
+Configuring test-utils.test using configuration
+Build targets in project: 90
+
+gspell 1.14.6
+
+    API version          : 1
+    Prefix               : /usr
+    GObject Introspection: true
+    Vala vapi            : true
+    API documentation    : false
+    gspell-app           : true
+    Build tests          : true
+    Install tests        : true
+
+  User defined options
+    buildtype            : release
+    gtk_doc              : false
+    prefix               : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/121] Generating gspell/resources/gspell-resources_h with a custom command
+[2/121] Generating gspell/resources/gspell-resources_c with a custom command
+[3/121] Building translation po/ab/LC_MESSAGES/gspell-1-ab.mo
+[4/121] Building translation po/ar/LC_MESSAGES/gspell-1-ar.mo
+[5/121] Building translation po/az/LC_MESSAGES/gspell-1-az.mo
+[6/121] Building translation po/be/LC_MESSAGES/gspell-1-be.mo
+[7/121] Building translation po/bg/LC_MESSAGES/gspell-1-bg.mo
+[8/121] Building translation po/ca/LC_MESSAGES/gspell-1-ca.mo
+[9/121] Generating GObject enum file gspell/gspell-enum-types.c (wrapped by meson because command contains newlines, to capture output)
+[10/121] Building translation po/ca@valencia/LC_MESSAGES/gspell-1-ca@valencia.mo
+[11/121] Building translation po/ckb/LC_MESSAGES/gspell-1-ckb.mo
+[12/121] Building translation po/cs/LC_MESSAGES/gspell-1-cs.mo
+[13/121] Generating GObject enum file gspell/gspell-enum-types.h (wrapped by meson because command contains newlines, to capture output)
+[14/121] Building translation po/da/LC_MESSAGES/gspell-1-da.mo
+[15/121] Building translation po/de/LC_MESSAGES/gspell-1-de.mo
+[16/121] Compiling C object gspell/libgspell-static.a.p/meson-generated_.._resources_gspell-resources.c.o
+[17/121] Compiling C object gspell/libgspell-static.a.p/meson-generated_.._gspell-enum-types.c.o
+[18/121] Compiling C object gspell/libgspell-static.a.p/gspell-checker.c.o
+[19/121] Compiling C object gspell/libgspell-static.a.p/gspell-checker-dialog.c.o
+[20/121] Compiling C object gspell/libgspell-static.a.p/gspell-language.c.o
+[21/121] Compiling C object gspell/libgspell-static.a.p/gspell-entry-buffer.c.o
+[22/121] Compiling C object gspell/libgspell-static.a.p/gspell-entry.c.o
+[23/121] Compiling C object gspell/libgspell-static.a.p/gspell-language-chooser.c.o
+[24/121] Compiling C object gspell/libgspell-static.a.p/gspell-navigator.c.o
+[25/121] Compiling C object gspell/libgspell-static.a.p/gspell-language-chooser-button.c.o
+[26/121] Compiling C object gspell/libgspell-static.a.p/gspell-language-chooser-dialog.c.o
+[27/121] Compiling C object gspell/libgspell-static.a.p/gspell-text-buffer.c.o
+[28/121] Compiling C object gspell/libgspell-static.a.p/gspell-navigator-text-view.c.o
+[29/121] Compiling C object gspell/libgspell-static.a.p/gspell-text-view.c.o
+[30/121] Compiling C object gspell/libgspell-static.a.p/gspell-context-menu.c.o
+[31/121] Compiling C object gspell/libgspell-static.a.p/gspell-current-word-policy.c.o
+[32/121] Compiling C object gspell/libgspell-static.a.p/gspell-icu.c.o
+[33/121] Compiling C object gspell/libgspell-static.a.p/gspellregion.c.o
+[34/121] Compiling C object gspell/libgspell-static.a.p/gspell-init.c.o
+[35/121] Compiling C object gspell/libgspell-static.a.p/gspell-entry-utils.c.o
+[36/121] Compiling C object gspell/libgspell-static.a.p/gspell-text-iter.c.o
+[37/121] Compiling C object gspell/libgspell-static.a.p/gspell-inline-checker-text-buffer.c.o
+[38/121] Compiling C object gspell/libgspell-static.a.p/gspell-utils.c.o
+[39/121] Linking target gspell/libgspell-1.so.3
+[40/121] Linking static target gspell/libgspell-static.a
+[41/121] Compiling C object gspell-app/gspell-app1.p/gspell-app.c.o
+[42/121] Generating symbol file gspell/libgspell-1.so.3.p/libgspell-1.so.3.symbols
+[43/121] Compiling C object tests/interactive-tests/test-entry.p/test-entry.c.o
+[44/121] Compiling C object tests/interactive-tests/test-text-view-basic.p/test-text-view-basic.c.o
+[45/121] Compiling C object tests/interactive-tests/test-text-view.p/test-text-view.c.o
+[46/121] Compiling C object tests/unit-tests/test-checker.p/test-checker.c.o
+[47/121] Compiling C object tests/unit-tests/test-entry.p/test-entry.c.o
+[48/121] Compiling C object tests/unit-tests/test-icu.p/test-icu.c.o
+[49/121] Generating gspell/Gspell-1.gir with a custom command (wrapped by meson to set env)
+[50/121] Compiling C object tests/unit-tests/test-inline-checker-text-buffer.p/test-inline-checker-text-buffer.c.o
+[51/121] Building translation po/el/LC_MESSAGES/gspell-1-el.mo
+[52/121] Building translation po/en_GB/LC_MESSAGES/gspell-1-en_GB.mo
+[53/121] Building translation po/eo/LC_MESSAGES/gspell-1-eo.mo
+[54/121] Building translation po/es/LC_MESSAGES/gspell-1-es.mo
+[55/121] Building translation po/eu/LC_MESSAGES/gspell-1-eu.mo
+[56/121] Building translation po/fa/LC_MESSAGES/gspell-1-fa.mo
+[57/121] Building translation po/fi/LC_MESSAGES/gspell-1-fi.mo
+[58/121] Building translation po/fr/LC_MESSAGES/gspell-1-fr.mo
+[59/121] Building translation po/fur/LC_MESSAGES/gspell-1-fur.mo
+[60/121] Building translation po/gd/LC_MESSAGES/gspell-1-gd.mo
+[61/121] Building translation po/gl/LC_MESSAGES/gspell-1-gl.mo
+[62/121] Building translation po/he/LC_MESSAGES/gspell-1-he.mo
+[63/121] Building translation po/hi/LC_MESSAGES/gspell-1-hi.mo
+[64/121] Compiling C object tests/unit-tests/test-text-iter.p/test-text-iter.c.o
+[65/121] Building translation po/hr/LC_MESSAGES/gspell-1-hr.mo
+[66/121] Building translation po/hu/LC_MESSAGES/gspell-1-hu.mo
+[67/121] Building translation po/id/LC_MESSAGES/gspell-1-id.mo
+[68/121] Building translation po/ie/LC_MESSAGES/gspell-1-ie.mo
+[69/121] Building translation po/is/LC_MESSAGES/gspell-1-is.mo
+[70/121] Building translation po/it/LC_MESSAGES/gspell-1-it.mo
+[71/121] Building translation po/ja/LC_MESSAGES/gspell-1-ja.mo
+[72/121] Building translation po/ka/LC_MESSAGES/gspell-1-ka.mo
+[73/121] Building translation po/kab/LC_MESSAGES/gspell-1-kab.mo
+[74/121] Building translation po/kk/LC_MESSAGES/gspell-1-kk.mo
+[75/121] Building translation po/ko/LC_MESSAGES/gspell-1-ko.mo
+[76/121] Building translation po/kw/LC_MESSAGES/gspell-1-kw.mo
+[77/121] Building translation po/lt/LC_MESSAGES/gspell-1-lt.mo
+[78/121] Building translation po/lo/LC_MESSAGES/gspell-1-lo.mo
+[79/121] Building translation po/lv/LC_MESSAGES/gspell-1-lv.mo
+[80/121] Building translation po/mi/LC_MESSAGES/gspell-1-mi.mo
+[81/121] Building translation po/mjw/LC_MESSAGES/gspell-1-mjw.mo
+[82/121] Building translation po/ml/LC_MESSAGES/gspell-1-ml.mo
+[83/121] Building translation po/ms/LC_MESSAGES/gspell-1-ms.mo
+[84/121] Building translation po/nb/LC_MESSAGES/gspell-1-nb.mo
+[85/121] Compiling C object tests/unit-tests/test-utils.p/test-utils.c.o
+[86/121] Building translation po/ne/LC_MESSAGES/gspell-1-ne.mo
+[87/121] Building translation po/nl/LC_MESSAGES/gspell-1-nl.mo
+[88/121] Building translation po/nn/LC_MESSAGES/gspell-1-nn.mo
+[89/121] Building translation po/pa/LC_MESSAGES/gspell-1-pa.mo
+[90/121] Building translation po/oc/LC_MESSAGES/gspell-1-oc.mo
+[91/121] Building translation po/pl/LC_MESSAGES/gspell-1-pl.mo
+[92/121] Building translation po/pt_BR/LC_MESSAGES/gspell-1-pt_BR.mo
+[93/121] Building translation po/ro/LC_MESSAGES/gspell-1-ro.mo
+[94/121] Building translation po/pt/LC_MESSAGES/gspell-1-pt.mo
+[95/121] Building translation po/ru/LC_MESSAGES/gspell-1-ru.mo
+[96/121] Building translation po/sk/LC_MESSAGES/gspell-1-sk.mo
+[97/121] Building translation po/sl/LC_MESSAGES/gspell-1-sl.mo
+[98/121] Building translation po/sr@latin/LC_MESSAGES/gspell-1-sr@latin.mo
+[99/121] Building translation po/sr/LC_MESSAGES/gspell-1-sr.mo
+[100/121] Building translation po/sv/LC_MESSAGES/gspell-1-sv.mo
+[101/121] Building translation po/ta/LC_MESSAGES/gspell-1-ta.mo
+[102/121] Building translation po/tr/LC_MESSAGES/gspell-1-tr.mo
+[103/121] Building translation po/th/LC_MESSAGES/gspell-1-th.mo
+[104/121] Building translation po/ug/LC_MESSAGES/gspell-1-ug.mo
+[105/121] Building translation po/uk/LC_MESSAGES/gspell-1-uk.mo
+[106/121] Building translation po/uz/LC_MESSAGES/gspell-1-uz.mo
+[107/121] Building translation po/vi/LC_MESSAGES/gspell-1-vi.mo
+[108/121] Building translation po/zh_CN/LC_MESSAGES/gspell-1-zh_CN.mo
+[109/121] Building translation po/zh_TW/LC_MESSAGES/gspell-1-zh_TW.mo
+[110/121] Linking target gspell-app/gspell-app1
+[111/121] Linking target tests/interactive-tests/test-entry
+[112/121] Linking target tests/interactive-tests/test-text-view
+[113/121] Generating gspell/gspell-1.vapi with a custom command
+[114/121] Linking target tests/interactive-tests/test-text-view-basic
+[115/121] Generating gspell/Gspell-1.typelib with a custom command
+[116/121] Linking target tests/unit-tests/test-checker
+[117/121] Linking target tests/unit-tests/test-entry
+[118/121] Linking target tests/unit-tests/test-inline-checker-text-buffer
+[119/121] Linking target tests/unit-tests/test-icu
+[120/121] Linking target tests/unit-tests/test-text-iter
+[121/121] Linking target tests/unit-tests/test-utils
+[0/1] Installing files
+Installing po/ab/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ab/LC_MESSAGES
+Installing po/ar/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ar/LC_MESSAGES
+Installing po/az/LC_MESSAGES/gspell-1.mo to /usr/share/locale/az/LC_MESSAGES
+Installing po/be/LC_MESSAGES/gspell-1.mo to /usr/share/locale/be/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/gspell-1.mo to /usr/share/locale/bg/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ca/LC_MESSAGES
+Installing po/ca@valencia/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ca@valencia/LC_MESSAGES
+Installing po/ckb/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ckb/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/gspell-1.mo to /usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/gspell-1.mo to /usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/gspell-1.mo to /usr/share/locale/de/LC_MESSAGES
+Installing po/el/LC_MESSAGES/gspell-1.mo to /usr/share/locale/el/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/gspell-1.mo to /usr/share/locale/en_GB/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/gspell-1.mo to /usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/gspell-1.mo to /usr/share/locale/es/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/gspell-1.mo to /usr/share/locale/eu/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/gspell-1.mo to /usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/gspell-1.mo to /usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/gspell-1.mo to /usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/gspell-1.mo to /usr/share/locale/fur/LC_MESSAGES
+Installing po/gd/LC_MESSAGES/gspell-1.mo to /usr/share/locale/gd/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/gspell-1.mo to /usr/share/locale/gl/LC_MESSAGES
+Installing po/he/LC_MESSAGES/gspell-1.mo to /usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/gspell-1.mo to /usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/gspell-1.mo to /usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/gspell-1.mo to /usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/gspell-1.mo to /usr/share/locale/id/LC_MESSAGES
+Installing po/ie/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ie/LC_MESSAGES
+Installing po/is/LC_MESSAGES/gspell-1.mo to /usr/share/locale/is/LC_MESSAGES
+Installing po/it/LC_MESSAGES/gspell-1.mo to /usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ka/LC_MESSAGES
+Installing po/kab/LC_MESSAGES/gspell-1.mo to /usr/share/locale/kab/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/gspell-1.mo to /usr/share/locale/kk/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ko/LC_MESSAGES
+Installing po/kw/LC_MESSAGES/gspell-1.mo to /usr/share/locale/kw/LC_MESSAGES
+Installing po/lo/LC_MESSAGES/gspell-1.mo to /usr/share/locale/lo/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/gspell-1.mo to /usr/share/locale/lt/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/gspell-1.mo to /usr/share/locale/lv/LC_MESSAGES
+Installing po/mi/LC_MESSAGES/gspell-1.mo to /usr/share/locale/mi/LC_MESSAGES
+Installing po/mjw/LC_MESSAGES/gspell-1.mo to /usr/share/locale/mjw/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ml/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ms/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/gspell-1.mo to /usr/share/locale/nb/LC_MESSAGES
+Installing po/ne/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ne/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/gspell-1.mo to /usr/share/locale/nl/LC_MESSAGES
+Installing po/nn/LC_MESSAGES/gspell-1.mo to /usr/share/locale/nn/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/gspell-1.mo to /usr/share/locale/oc/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/gspell-1.mo to /usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/gspell-1.mo to /usr/share/locale/pl/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/gspell-1.mo to /usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/gspell-1.mo to /usr/share/locale/pt/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/gspell-1.mo to /usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/gspell-1.mo to /usr/share/locale/sl/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/gspell-1.mo to /usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/gspell-1.mo to /usr/share/locale/sr/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/gspell-1.mo to /usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ta/LC_MESSAGES
+Installing po/th/LC_MESSAGES/gspell-1.mo to /usr/share/locale/th/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/gspell-1.mo to /usr/share/locale/tr/LC_MESSAGES
+Installing po/ug/LC_MESSAGES/gspell-1.mo to /usr/share/locale/ug/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/gspell-1.mo to /usr/share/locale/uk/LC_MESSAGES
+Installing po/uz/LC_MESSAGES/gspell-1.mo to /usr/share/locale/uz/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/gspell-1.mo to /usr/share/locale/vi/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/gspell-1.mo to /usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/gspell-1.mo to /usr/share/locale/zh_TW/LC_MESSAGES
+Installing gspell/gspell-enum-types.h to /usr/include/gspell-1/gspell
+Installing gspell/libgspell-1.so.3 to /usr/lib
+Installing gspell/Gspell-1.gir to /usr/share/gir-1.0
+Installing gspell/Gspell-1.typelib to /usr/lib/girepository-1.0
+Installing gspell/gspell-1.vapi to /usr/share/vala/vapi
+Installing gspell-app/gspell-app1 to /usr/bin
+Installing tests/unit-tests/test-checker to /usr/libexec/installed-tests/gspell-1
+Installing tests/unit-tests/test-entry to /usr/libexec/installed-tests/gspell-1
+Installing tests/unit-tests/test-icu to /usr/libexec/installed-tests/gspell-1
+Installing tests/unit-tests/test-inline-checker-text-buffer to /usr/libexec/installed-tests/gspell-1
+Installing tests/unit-tests/test-text-iter to /usr/libexec/installed-tests/gspell-1
+Installing tests/unit-tests/test-utils to /usr/libexec/installed-tests/gspell-1
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/gspell/gspell.h to /usr/include/gspell-1/gspell
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/gspell/gspell-checker.h to /usr/include/gspell-1/gspell
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/gspell/gspell-checker-dialog.h to /usr/include/gspell-1/gspell
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/gspell/gspell-entry.h to /usr/include/gspell-1/gspell
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/gspell/gspell-entry-buffer.h to /usr/include/gspell-1/gspell
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/gspell/gspell-language.h to /usr/include/gspell-1/gspell
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/gspell/gspell-language-chooser.h to /usr/include/gspell-1/gspell
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/gspell/gspell-language-chooser-button.h to /usr/include/gspell-1/gspell
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/gspell/gspell-language-chooser-dialog.h to /usr/include/gspell-1/gspell
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/gspell/gspell-navigator.h to /usr/include/gspell-1/gspell
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/gspell/gspell-navigator-text-view.h to /usr/include/gspell-1/gspell
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/gspell/gspell-text-buffer.h to /usr/include/gspell-1/gspell
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/gspell/gspell-text-view.h to /usr/include/gspell-1/gspell
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/p11-build/meson-private/gspell-1.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/p11-build/meson-private/gspell-1.deps to /usr/share/vala/vapi
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/p11-build/tests/unit-tests/test-checker.test to /usr/share/installed-tests/gspell-1
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/p11-build/tests/unit-tests/test-entry.test to /usr/share/installed-tests/gspell-1
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/p11-build/tests/unit-tests/test-icu.test to /usr/share/installed-tests/gspell-1
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/p11-build/tests/unit-tests/test-inline-checker-text-buffer.test to /usr/share/installed-tests/gspell-1
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/p11-build/tests/unit-tests/test-text-iter.test to /usr/share/installed-tests/gspell-1
+Installing /home/fusion809/lfs_packaging/gspell/gspell-1.14.6/p11-build/tests/unit-tests/test-utils.test to /usr/share/installed-tests/gspell-1
+Installing symlink pointing to libgspell-1.so.3 to /usr/lib/libgspell-1.so
+1.14.6
+Updated registry for gspell to version 1.14.6
+[VERSION] gspell: 1.14.6
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package gspell in /var/lib/custom-packages/
+Building custom package reshiki-git...
+[14:34:47] Found custom package for reshiki-git, bypassing BLFS aliases.
+[14:34:47] Custom package detected at /home/fusion809/lfs_packaging/reshiki-git (package: reshiki-git)
+[14:34:48] Extracting dependencies for custom package 'reshiki-git'...
+[14:34:48] Required deps: acl at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz libcanberra libepoxy libffi libice libogg libpng libseccomp libselinux libsm libtool libvorbis libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres libxt ncurses pango pcre2 pixman systemd util-linux wayland zlib 
+[14:34:48] Dependency 'acl' already installed.
+[14:34:48] Dependency 'at-spi2-core' already installed.
+[14:34:48] Dependency 'brotli' already installed.
+[14:34:48] Dependency 'bzip2' already installed.
+[14:34:48] Dependency 'cairo' already installed.
+[14:34:48] Dependency 'dbus' already installed.
+[14:34:48] Dependency 'expat' already installed.
+[14:34:48] Dependency 'fontconfig' already installed.
+[14:34:48] Dependency 'freetype' already installed.
+[14:34:48] Dependency 'fribidi' already installed.
+[14:34:48] Dependency 'gcc' already installed.
+[14:34:48] Dependency 'gdk-pixbuf' already installed.
+[14:34:48] Dependency 'glib2' already installed.
+[14:34:48] Dependency 'glibc' already installed.
+[14:34:48] Dependency 'glycin' already installed.
+[14:34:48] Dependency 'graphite2' already installed.
+[14:34:48] Dependency 'gtk3' already installed.
+[14:34:48] Dependency 'harfbuzz' already installed.
+[14:34:48] Dependency 'libcanberra' already installed.
+[14:34:48] Dependency 'libepoxy' already installed.
+[14:34:48] Dependency 'libffi' already installed.
+[14:34:48] Dependency 'libice' already installed.
+[14:34:48] Dependency 'libogg' already installed.
+[14:34:48] Dependency 'libpng' already installed.
+[14:34:48] Dependency 'libseccomp' already installed.
+[14:34:48] Dependency 'libselinux' already installed.
+[14:34:48] Dependency 'libsm' already installed.
+[14:34:48] Dependency 'libtool' already installed.
+[14:34:48] Dependency 'libvorbis' already installed.
+[14:34:48] Dependency 'libx11' already installed.
+[14:34:48] Dependency 'libxau' already installed.
+[14:34:48] Dependency 'libxcb' already installed.
+[14:34:48] Dependency 'libxcomposite' already installed.
+[14:34:48] Dependency 'libxcursor' already installed.
+[14:34:48] Dependency 'libxdamage' already installed.
+[14:34:48] Dependency 'libxdmcp' already installed.
+[14:34:48] Dependency 'libxext' already installed.
+[14:34:48] Dependency 'libxfixes' already installed.
+[14:34:48] Dependency 'libxi' already installed.
+[14:34:48] Dependency 'libxinerama' already installed.
+[14:34:48] Dependency 'libxkbcommon' already installed.
+[14:34:48] Dependency 'libxrandr' already installed.
+[14:34:48] Dependency 'libxrender' already installed.
+[14:34:48] Dependency 'libxres' already installed.
+[14:34:48] Dependency 'libxt' already installed.
+[14:34:48] Dependency 'ncurses' already installed.
+[14:34:48] Dependency 'pango' already installed.
+[14:34:48] Dependency 'pcre2' already installed.
+[14:34:48] Dependency 'pixman' already installed.
+[14:34:48] Dependency 'systemd' already installed.
+[14:34:48] Dependency 'util-linux' already installed.
+[14:34:48] Dependency 'wayland' already installed.
+[14:34:48] Dependency 'zlib' already installed.
+[VERSION] reshiki-git: 2aa62d17f302927e1a422222dba996cfbf42a04c
+[14:34:49] Installing reshiki-git version: 2aa62d17f302927e1a422222dba996cfbf42a04c
+[14:34:49] Starting remote custom build for reshiki-git...
+From https://github.com/Ameyanagi/ReShiki
+   895c8e620..2aa62d17f  main                    -> origin/main
+ * [new branch]          perf/browser-clipboard  -> origin/perf/browser-clipboard
+   0a3405c3c..dc6ca073b  perf/editor-preview     -> origin/perf/editor-preview
+   b8d2290b1..127f45291  perf/gpu-cache          -> origin/perf/gpu-cache
+   52f24c4c9..9eac6426c  perf/recovery-discovery -> origin/perf/recovery-discovery
+   cd520d796..6cb0824e9  perf/render-pipeline    -> origin/perf/render-pipeline
+Previous HEAD position was 895c8e620 Merge pull request #1384 from Ameyanagi/equipment/bidirectional-tube-length
+HEAD is now at 2aa62d17f Merge pull request #1386 from Ameyanagi/perf/export-pipeline
+   Compiling reshiki-chemistry v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/chemistry)
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor/iced_widget/src/pick_list.rs:375:22
+    |
+375 |                 f32::INFINITY,
+    |                      ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: `iced_widget` (lib) generated 1 warning
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:586:55
+    |
+586 |         let event = if let Ok(event) = event_receiver.try_next() {
+    |                                                       ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:297:64
+    |
+297 |                     task::Poll::Pending => match self.receiver.try_next() {
+    |                                                                ^^^^^^^^
+
+warning: `iced_winit` (lib) generated 2 warnings
+   Compiling reshiki-model v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/model)
+   Compiling reshiki-io v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/io)
+   Compiling reshiki-agent v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/agent)
+   Compiling reshiki-mcp v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/mcp)
+   Compiling reshiki v0.16.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki)
+    Finished `release` profile [optimized + debuginfo] target(s) in 22m 04s
+[Desktop Entry]
+Name=ReShiki (git)
+Type=Application
+Exec=/usr/bin/reshiki-git %U
+TryExec=/usr/bin/reshiki-git
+Icon=reshiki-git
+MimeType=chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;chemical/x-smiles;chemical/x-cml;chemical/x-inchi;
+StartupNotify=true
+Categories=Education;Science;Chemistry;
+StartupWMClass=reshiki-git
+Saved working directory and index state WIP on (no branch): 2aa62d17f Merge pull request #1386 from Ameyanagi/perf/export-pipeline
+2aa62d17f302927e1a422222dba996cfbf42a04c
+Updated registry for reshiki-git to version 09713cd43db67971d152b84ddd69b279d3170f7b
+[VERSION] reshiki-git: 09713cd43db67971d152b84ddd69b279d3170f7b
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package reshiki-git in /var/lib/custom-packages/
+Updating Python packages via pip...
+Requirement already satisfied: affine in /usr/lib/python3.15/site-packages (3.0.1)
+Requirement already satisfied: alabaster in /usr/lib/python3.15/site-packages (1.0.0)
+Requirement already satisfied: anyio in /usr/lib/python3.15/site-packages (4.16.0)
+Requirement already satisfied: appdirs in /usr/lib/python3.15/site-packages (1.4.4)
+Requirement already satisfied: argcomplete in /usr/lib/python3.15/site-packages (3.7.2)
+Collecting argcomplete
+  Using cached argcomplete-3.8.0-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: arrow in /usr/lib/python3.15/site-packages (1.4.0)
+Requirement already satisfied: asgiref in /usr/lib/python3.15/site-packages (3.13.0)
+Requirement already satisfied: astroid in /usr/lib/python3.15/site-packages (4.3.4)
+Requirement already satisfied: asttokens in /usr/lib/python3.15/site-packages (3.0.2)
+Requirement already satisfied: attrs in /usr/lib/python3.15/site-packages (26.1.0)
+Requirement already satisfied: babel in /usr/lib/python3.15/site-packages (2.18.0)
+Requirement already satisfied: beautifulsoup4 in /usr/lib/python3.15/site-packages (4.15.0)
+Requirement already satisfied: black in /usr/lib/python3.15/site-packages (26.10.1)
+Requirement already satisfied: bleach in /usr/lib/python3.15/site-packages (6.4.0)
+Requirement already satisfied: brotli in /usr/lib/python3.15/site-packages (1.2.1)
+Requirement already satisfied: build in /usr/lib/python3.15/site-packages (1.6.1)
+Requirement already satisfied: cclib in /usr/lib/python3.15/site-packages (1.8.1)
+Requirement already satisfied: certifi in /usr/lib/python3.15/site-packages (2026.10.23)
+Collecting certifi
+  Using cached certifi-2026.11.20-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: cffi in /usr/lib/python3.15/site-packages (2.1.1)
+Requirement already satisfied: chardet in /usr/lib/python3.15/site-packages (5.2.0)
+Collecting chardet
+  Using cached chardet-7.7.0-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Requirement already satisfied: click in /usr/lib/python3.15/site-packages (8.5.1)
+Requirement already satisfied: colorama in /usr/lib/python3.15/site-packages (0.4.6)
+Requirement already satisfied: columnize in /usr/lib/python3.15/site-packages (0.3.11)
+Requirement already satisfied: comm in /usr/lib/python3.15/site-packages (0.2.3)
+Requirement already satisfied: contourpy in /usr/lib/python3.15/site-packages (1.4.0)
+Requirement already satisfied: cryptography in /usr/lib/python3.15/site-packages (50.0.2)
+Requirement already satisfied: cssselect in /usr/lib/python3.15/site-packages (1.6.0)
+Requirement already satisfied: cycler in /usr/lib/python3.15/site-packages (0.12.1)
+Requirement already satisfied: dateutils in /usr/lib/python3.15/site-packages (0.6.12)
+Requirement already satisfied: debugpy in /usr/lib/python3.15/site-packages (1.8.22)
+Requirement already satisfied: decorator in /usr/lib/python3.15/site-packages (5.3.2)
+Requirement already satisfied: defusedxml in /usr/lib/python3.15/site-packages (0.7.1)
+Requirement already satisfied: dill in /usr/lib/python3.15/site-packages (0.4.1)
+Requirement already satisfied: docutils in /usr/lib/python3.15/site-packages (0.22.4)
+Collecting docutils
+  Using cached docutils-0.23-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: doxypypy in /usr/lib/python3.15/site-packages (0.8.8.7)
+Requirement already satisfied: doxyqml in /usr/lib/python3.15/site-packages (0.6.0)
+Requirement already satisfied: editables in /usr/lib/python3.15/site-packages (0.6)
+Requirement already satisfied: executing in /usr/lib/python3.15/site-packages (2.3.0)
+Requirement already satisfied: fastjsonschema in /usr/lib/python3.15/site-packages (2.22.3)
+Requirement already satisfied: flake8 in /usr/lib/python3.15/site-packages (7.5.0)
+Requirement already satisfied: flexcache in /usr/lib/python3.15/site-packages (0.3)
+Requirement already satisfied: flexparser in /usr/lib/python3.15/site-packages (0.4)
+Requirement already satisfied: flit_core in /usr/lib/python3.15/site-packages (4.2.0)
+Requirement already satisfied: fonttools in /usr/lib/python3.15/site-packages (4.68.0)
+Requirement already satisfied: fqdn in /usr/lib/python3.15/site-packages (1.6.0)
+Requirement already satisfied: gobject in /usr/lib/python3.15/site-packages (0.1.0)
+Requirement already satisfied: h11 in /usr/lib/python3.15/site-packages (0.16.0)
+Requirement already satisfied: hatchling in /usr/lib/python3.15/site-packages (1.33.0)
+Requirement already satisfied: html5lib in /usr/lib/python3.15/site-packages (1.1)
+Requirement already satisfied: httpcore in /usr/lib/python3.15/site-packages (1.0.9)
+Requirement already satisfied: httpx in /usr/lib/python3.15/site-packages (0.28.1)
+Requirement already satisfied: idna in /usr/lib/python3.15/site-packages (3.20)
+Requirement already satisfied: imagesize in /usr/lib/python3.15/site-packages (2.0.1)
+Requirement already satisfied: installer in /usr/lib/python3.15/site-packages (1.1.0)
+Requirement already satisfied: ipykernel in /usr/lib/python3.15/site-packages (7.4.0)
+Requirement already satisfied: ipython in /usr/lib/python3.15/site-packages (9.18.1)
+Requirement already satisfied: ipython_pygments_lexers in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: isoduration in /usr/lib/python3.15/site-packages (20.11.0)
+Requirement already satisfied: isort in /usr/lib/python3.15/site-packages (9.0.2)
+Requirement already satisfied: jedi in /usr/lib/python3.15/site-packages (0.20.1)
+Requirement already satisfied: json5 in /usr/lib/python3.15/site-packages (0.17.3)
+Requirement already satisfied: jsonpointer in /usr/lib/python3.15/site-packages (3.12)
+Requirement already satisfied: jsonschema in /usr/lib/python3.15/site-packages (4.26.0)
+Requirement already satisfied: jupyter_builder in /usr/lib/python3.15/site-packages (1.3.0)
+Requirement already satisfied: jupyter_client in /usr/lib/python3.15/site-packages (8.10.0)
+Requirement already satisfied: jupyter_core in /usr/lib/python3.15/site-packages (5.9.1)
+Requirement already satisfied: jupyter_server in /usr/lib/python3.15/site-packages (2.21.1)
+Requirement already satisfied: jupyter_server_terminals in /usr/lib/python3.15/site-packages (0.5.4)
+Requirement already satisfied: jupyterlab in /usr/lib/python3.15/site-packages (4.6.6)
+Requirement already satisfied: jupyterlab_pygments in /usr/lib/python3.15/site-packages (0.3.0)
+Requirement already satisfied: jupyterlab_server in /usr/lib/python3.15/site-packages (2.28.1)
+Requirement already satisfied: kiwisolver in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: lark in /usr/lib/python3.15/site-packages (1.3.1)
+Requirement already satisfied: lxml in /usr/lib/python3.15/site-packages (6.1.3)
+Requirement already satisfied: mathics3_notebook_frontends in /usr/lib/python3.15/site-packages (1.0.1)
+Requirement already satisfied: mathicsscript in /usr/lib/python3.15/site-packages (10.0.0)
+Requirement already satisfied: matplotlib in /usr/lib/python3.15/site-packages (3.11.2)
+Requirement already satisfied: mccabe in /usr/lib/python3.15/site-packages (0.7.0)
+Requirement already satisfied: meson in /usr/lib/python3.15/site-packages (1.12.1)
+Requirement already satisfied: metakernel in /usr/lib/python3.15/site-packages (1.0.7)
+Requirement already satisfied: mistune in /usr/lib/python3.15/site-packages (3.4.0)
+Requirement already satisfied: mpmath in /usr/lib/python3.15/site-packages (1.3.0)
+Collecting mpmath
+  Using cached mpmath-1.4.1-py3-none-any.whl.metadata (9.1 kB)
+Requirement already satisfied: msgpack in /usr/lib/python3.15/site-packages (1.2.4)
+Requirement already satisfied: mypy_extensions in /usr/lib/python3.15/site-packages (1.2.0)
+Requirement already satisfied: narwhals in /usr/lib/python3.15/site-packages (2.29.0)
+Requirement already satisfied: nbclient in /usr/lib/python3.15/site-packages (0.11.0)
+Requirement already satisfied: nbconvert in /usr/lib/python3.15/site-packages (7.17.2)
+Requirement already satisfied: nbformat in /usr/lib/python3.15/site-packages (5.11.1)
+Requirement already satisfied: networkx in /usr/lib/python3.15/site-packages (3.7)
+Requirement already satisfied: notebook_shim in /usr/lib/python3.15/site-packages (0.2.4)
+Requirement already satisfied: numpy in /usr/lib/python3.15/site-packages (2.5.5)
+Requirement already satisfied: octave_kernel in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: packaging in /usr/lib/python3.15/site-packages (26.3)
+Requirement already satisfied: palettable in /usr/lib/python3.15/site-packages (3.3.3)
+Requirement already satisfied: pandocfilters in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: parameterized in /usr/lib/python3.15/site-packages (0.9.0)
+Requirement already satisfied: parso in /usr/lib/python3.15/site-packages (0.8.7)
+Requirement already satisfied: pathspec in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: periodictable in /usr/lib/python3.15/site-packages (2.1.0)
+Requirement already satisfied: pexpect in /usr/lib/python3.15/site-packages (4.9.0)
+Requirement already satisfied: pillow in /usr/lib/python3.15/site-packages (13.0.0)
+Requirement already satisfied: pip in /usr/lib/python3.15/site-packages (26.3)
+Requirement already satisfied: platformdirs in /usr/lib/python3.15/site-packages (4.14.8)
+Requirement already satisfied: pluggy in /usr/lib/python3.15/site-packages (1.7.0)
+Requirement already satisfied: prometheus_client in /usr/lib/python3.15/site-packages (0.26.0)
+Requirement already satisfied: prompt_toolkit in /usr/lib/python3.15/site-packages (3.0.53)
+Requirement already satisfied: psutil in /usr/lib/python3.15/site-packages (7.2.2)
+Requirement already satisfied: ptyprocess in /usr/lib/python3.15/site-packages (0.7.0)
+Requirement already satisfied: pure_eval in /usr/lib/python3.15/site-packages (0.2.4)
+Requirement already satisfied: pyasn1 in /usr/lib/python3.15/site-packages (0.6.5)
+Requirement already satisfied: pybind11 in /usr/lib/python3.15/site-packages (3.1.0)
+Requirement already satisfied: pycairo in /usr/lib/python3.15/site-packages (1.29.2)
+Requirement already satisfied: pycodestyle in /usr/lib/python3.15/site-packages (2.15.0)
+Requirement already satisfied: pycparser in /usr/lib/python3.15/site-packages (3.12)
+Requirement already satisfied: pydeck in /usr/lib/python3.15/site-packages (0.9.3)
+Requirement already satisfied: pyelftools in /usr/lib/python3.15/site-packages (0.33)
+Requirement already satisfied: pyflakes in /usr/lib/python3.15/site-packages (4.1.0)
+Requirement already satisfied: pygdbmi in /usr/lib/python3.15/site-packages (0.11.0.0)
+Requirement already satisfied: pylint in /usr/lib/python3.15/site-packages (4.1.4)
+Requirement already satisfied: Pympler in /usr/lib/python3.15/site-packages (1.1)
+Requirement already satisfied: pyparsing in /usr/lib/python3.15/site-packages (3.3.3)
+Requirement already satisfied: pyproject_hooks in /usr/lib/python3.15/site-packages (1.3.3)
+Requirement already satisfied: pyserial in /usr/lib/python3.15/site-packages (3.5)
+Requirement already satisfied: pyte in /usr/lib/python3.15/site-packages (0.8.2)
+Requirement already satisfied: pytokens in /usr/lib/python3.15/site-packages (0.4.1)
+Requirement already satisfied: pytz in /usr/lib/python3.15/site-packages (2026.6)
+Requirement already satisfied: pyzmq in /usr/lib/python3.15/site-packages (27.3.0)
+Requirement already satisfied: rasterio in /usr/lib/python3.15/site-packages (1.5.2)
+Requirement already satisfied: rdflib in /usr/lib/python3.15/site-packages (7.6.0)
+Requirement already satisfied: referencing in /usr/lib/python3.15/site-packages (0.37.0)
+Requirement already satisfied: requests in /usr/lib/python3.15/site-packages (2.34.2)
+Requirement already satisfied: rnc2rng in /usr/lib/python3.15/site-packages (2.8.0)
+Requirement already satisfied: rply in /usr/lib/python3.15/site-packages (0.7.8)
+Requirement already satisfied: scikit_build_core in /usr/lib/python3.15/site-packages (1.1.2)
+Requirement already satisfied: scipy in /usr/lib/python3.15/site-packages (1.18.1)
+Requirement already satisfied: scour in /usr/lib/python3.15/site-packages (0.38.2)
+Requirement already satisfied: setuptools in /usr/lib/python3.15/site-packages (84.2.1)
+Requirement already satisfied: sip in /usr/lib/python3.15/site-packages (6.17.3)
+Requirement already satisfied: six in /usr/lib/python3.15/site-packages (1.17.0)
+Requirement already satisfied: smartypants in /usr/lib/python3.15/site-packages (2.0.2)
+Requirement already satisfied: snowballstemmer in /usr/lib/python3.15/site-packages (3.1.1)
+Requirement already satisfied: soupsieve in /usr/lib/python3.15/site-packages (4.1.3)
+Requirement already satisfied: sphinx_lv2_theme in /usr/lib/python3.15/site-packages (1.4.6)
+Requirement already satisfied: sphinxygen in /usr/lib/python3.15/site-packages (1.0.12)
+Requirement already satisfied: sqlparse in /usr/lib/python3.15/site-packages (0.6.1)
+Requirement already satisfied: sympy in /usr/lib/python3.15/site-packages (1.14.0)
+Requirement already satisfied: terminado in /usr/lib/python3.15/site-packages (0.18.1)
+Requirement already satisfied: tinycss2 in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: tomlkit in /usr/lib/python3.15/site-packages (0.15.2)
+Requirement already satisfied: tornado in /usr/lib/python3.15/site-packages (6.6.1)
+Requirement already satisfied: traitlets in /usr/lib/python3.15/site-packages (5.16.1)
+Requirement already satisfied: typing_extensions in /usr/lib/python3.15/site-packages (4.16.0)
+Requirement already satisfied: typogrify in /usr/lib/python3.15/site-packages (2.1.0)
+Requirement already satisfied: tzdata in /usr/lib/python3.15/site-packages (2026.6)
+Requirement already satisfied: urllib3 in /usr/lib/python3.15/site-packages (2.8.0)
+Requirement already satisfied: wcwidth in /usr/lib/python3.15/site-packages (0.9.4)
+Collecting wcwidth
+  Using cached wcwidth-0.9.5-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (26 kB)
+Requirement already satisfied: webcolors in /usr/lib/python3.15/site-packages (25.10.0)
+Requirement already satisfied: webencodings in /usr/lib/python3.15/site-packages (0.6.1)
+Requirement already satisfied: wheel in /usr/lib/python3.15/site-packages (0.48.0)
+Requirement already satisfied: python-dateutil>=2.7.0 in /usr/lib/python3.15/site-packages (from arrow) (3.0.0)
+Requirement already satisfied: trove-classifiers in /usr/lib/python3.15/site-packages (from hatchling) (2026.6.1.19)
+Requirement already satisfied: matplotlib-inline>=0.1 in /usr/lib/python3.15/site-packages (from ipykernel) (0.2.2)
+Requirement already satisfied: nest-asyncio2>=1.7.0 in /usr/lib/python3.15/site-packages (from ipykernel) (1.7.4)
+Requirement already satisfied: pygments>=2.14.0 in /usr/lib/python3.15/site-packages (from ipython) (2.21.0)
+Requirement already satisfied: stack_data>=0.6.0 in /usr/lib/python3.15/site-packages (from ipython) (0.6.3)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /usr/lib/python3.15/site-packages (from jsonschema) (2025.9.1)
+Requirement already satisfied: rpds-py>=0.25.0 in /usr/lib/python3.15/site-packages (from jsonschema) (2026.9.1)
+Requirement already satisfied: argon2-cffi>=21.1 in /usr/lib/python3.15/site-packages (from jupyter_server) (25.1.0)
+Requirement already satisfied: jinja2>=3.0.3 in /usr/lib/python3.15/site-packages (from jupyter_server) (3.1.6)
+Requirement already satisfied: jupyter-events>=0.11.0 in /usr/lib/python3.15/site-packages (from jupyter_server) (0.12.1)
+Requirement already satisfied: send2trash>=1.8.2 in /usr/lib/python3.15/site-packages (from jupyter_server) (2.1.0)
+Requirement already satisfied: websocket-client>=1.7 in /usr/lib/python3.15/site-packages (from jupyter_server) (1.9.2)
+Requirement already satisfied: async-lru>=1.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.4.0)
+Requirement already satisfied: jupyter-lsp>=2.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.3.1)
+Requirement already satisfied: Mathics3>=10.0.1 in /usr/lib/python3.15/site-packages (from mathics3_notebook_frontends) (10.0.1)
+Requirement already satisfied: charset-normalizer<4.0.0,>=2.0.0 in /usr/lib/python3.15/site-packages (from mathics3_notebook_frontends) (3.5.2)
+Requirement already satisfied: Mathics3_Scanner>=10.0.0 in /usr/lib/python3.15/site-packages (from mathicsscript) (10.0.1)
+Requirement already satisfied: Mathics3_pygments>=10.0.0 in /usr/lib/python3.15/site-packages (from mathicsscript) (10.0.0)
+Requirement already satisfied: term-background>=1.0.5 in /usr/lib/python3.15/site-packages (from mathicsscript) (1.0.5)
+Requirement already satisfied: markupsafe>=2.0 in /usr/lib/python3.15/site-packages (from nbconvert) (3.0.4)
+Requirement already satisfied: sphinx in /usr/lib/python3.15/site-packages (from sphinx_lv2_theme) (9.1.0)
+Requirement already satisfied: argon2-cffi-bindings in /usr/lib/python3.15/site-packages (from argon2-cffi>=21.1->jupyter_server) (26.1.0)
+Requirement already satisfied: python-json-logger>=2.0.4 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (4.2.0)
+Requirement already satisfied: pyyaml>=5.3 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (6.0.3)
+Requirement already satisfied: rfc3339-validator in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (0.1.4)
+Requirement already satisfied: rfc3986-validator>=0.1.1 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (0.1.1)
+Requirement already satisfied: rfc3987-syntax>=1.1.0 in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter_server) (1.1.0)
+Requirement already satisfied: uri-template in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter_server) (1.3.0)
+Requirement already satisfied: pint>=0.24 in /usr/lib/python3.15/site-packages (from Mathics3>=10.0.1->mathics3_notebook_frontends) (0.26.2)
+Requirement already satisfied: Timed-Threads in /usr/lib/python3.15/site-packages (from Mathics3>=10.0.1->mathics3_notebook_frontends) (2.0.0)
+Requirement already satisfied: sphinxcontrib-applehelp>=1.0.7 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-devhelp>=1.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-htmlhelp>=2.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.1.0)
+Requirement already satisfied: sphinxcontrib-jsmath>=1.0.1 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (1.0.1)
+Requirement already satisfied: sphinxcontrib-qthelp>=1.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-serializinghtml>=1.1.9 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: roman-numerals>=1.0.0 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (4.1.0)
+Using cached argcomplete-3.8.0-py3-none-any.whl (45 kB)
+Using cached certifi-2026.11.20-py3-none-any.whl (127 kB)
+Using cached wcwidth-0.9.5-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (822 kB)
+WARNING: Error parsing dependencies of certifi: No package metadata was found.
+WARNING: Error parsing dependencies of wcwidth: No package metadata was found.
+Installing collected packages: wcwidth, certifi, argcomplete
+  Attempting uninstall: wcwidth
+ERROR: Could not install packages due to an OSError: No package metadata was found.
+
+
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: Updating packages
+[master 244decc] Updating packages
+ 2 files changed, 130 insertions(+), 126 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: Updating packages
+[master 5e1e3b9] Updating packages
+ 2 files changed, 2 insertions(+)
+Pushing changes in ~/build_duration...
+r13.1-42
+r13.1-684
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Building dependency cache (searching )...
+Dependency cache built.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libavcodec.so.63.1.102
+cand_sobase=libavcodec.so
+search_base=libavcodec
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavformat.so.63.1.102
+cand_sobase=libavformat.so
+search_base=libavformat
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavutil.so.61.1.102
+cand_sobase=libavutil.so
+search_base=libavutil
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgnutls.so.30.42.0
+cand_sobase=libgnutls.so
+search_base=libgnutls
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz.so.0.61510.0
+cand_sobase=libharfbuzz.so
+search_base=libharfbuzz
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz-subset.so.0.61510.0
+cand_sobase=libharfbuzz-subset.so
+search_base=libharfbuzz-subset
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIex-3_5.so.34.3.5.4
+cand_sobase=libIex-.so
+search_base=libIex-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIlmThread-3_5.so.34.3.5.4
+cand_sobase=libIlmThread-.so
+search_base=libIlmThread-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXR-3_5.so.34.3.5.4
+cand_sobase=libOpenEXR-.so
+search_base=libOpenEXR-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXRCore-3_5.so.34.3.5.4
+cand_sobase=libOpenEXRCore-.so
+search_base=libOpenEXRCore-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXRUtil-3_5.so.34.3.5.4
+cand_sobase=libOpenEXRUtil-.so
+search_base=libOpenEXRUtil-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libpari-gmp-tls.so.2.19.0
+cand_sobase=libpari-gmp-tls.so
+search_base=libpari-gmp-tls
+replacement_found=true
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libavcodec.so.63.1.102
+Path: /usr/lib/libavcodec.so.63.1.102
+Skipping generic/unsafe name 'libavcodec.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavcodec.so.63 libavcodec.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavcodec.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavcodec.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavformat.so.63.1.102
+Path: /usr/lib/libavformat.so.63.1.102
+Skipping generic/unsafe name 'libavformat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavformat.so.63 libavformat.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavformat.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavformat.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavutil.so.61.1.102
+Path: /usr/lib/libavutil.so.61.1.102
+Skipping generic/unsafe name 'libavutil.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavutil.so.61 libavutil.so.61.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavutil.so.61.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavutil.so.61.1.102.
+------------------------------------------------
+Checking obsolete version (file): libgnutls.so.30.42.0
+Path: /usr/lib/libgnutls.so.30.42.0
+Skipping generic/unsafe name 'libgnutls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 31 remaining dependents.
+Names tracked: libgnutls.so.30 libgnutls.so.30.42.0
+Example dependents: ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0 ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11 ...
+Warning: No parent package found for ANY of the 31 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libgnutls.so.30.42.0:
+  - ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-resume
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cxx
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-ocsp-client
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/print-ciphersuites
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/tlsproxy/tlsproxy
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/alert-printlist
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/errcodes
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/printlist
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0T
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/certtool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli-debug
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-serv
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/ocsptool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/p11tool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/psktool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/systemkey
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/eagain-cli
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/mini-record-timing
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libgnutls.so.30.42.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz.so.0.61510.0
+Path: /usr/lib/libharfbuzz.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz.so.0 libharfbuzz.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz-subset.so.0.61510.0
+Path: /usr/lib/libharfbuzz-subset.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz-subset.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz-subset.so.0 libharfbuzz-subset.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz-subset.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz-subset.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libIex-3_5.so.34.3.5.4
+Path: /usr/lib/libIex-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libIex-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 48 remaining dependents.
+Names tracked: libIex-3_5.so.34 libIex-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 48 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIex-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/IexTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/IlmThread/libIlmThread-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/IexTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/IlmThread/libIlmThread-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIex-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libIlmThread-3_5.so.34.3.5.4
+Path: /usr/lib/libIlmThread-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libIlmThread-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 44 remaining dependents.
+Names tracked: libIlmThread-3_5.so.34 libIlmThread-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 44 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIlmThread-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIlmThread-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXR-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXR-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXR-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 42 remaining dependents.
+Names tracked: libOpenEXR-3_5.so.34 libOpenEXR-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 42 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXR-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXR-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRCore-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXRCore-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 44 remaining dependents.
+Names tracked: libOpenEXRCore-3_5.so.34 libOpenEXRCore-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 44 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRUtil-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXRUtil-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 26 remaining dependents.
+Names tracked: libOpenEXRUtil-3_5.so.34 libOpenEXRUtil-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap ...
+Warning: No parent package found for ANY of the 26 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libpari-gmp-tls.so.2.19.0
+Path: /usr/lib/libpari-gmp-tls.so.2.19.0
+Skipping generic/unsafe name 'libpari-gmp-tls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libpari-gmp-tls.so.10 libpari-gmp-tls.so.2.19.0
+Example dependents: ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libpari-gmp-tls.so.2.19.0:
+  - ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libpari-gmp-tls.so.2.19.0.
+------------------------------------------------
+Checking obsolete version (file): libswscale.so.10.1.102
+Path: /usr/lib/libswscale.so.10.1.102
+Skipping generic/unsafe name 'libswscale.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libswscale.so.10 libswscale.so.10.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libswscale.so.10.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libswscale.so.10.1.102.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.5...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.5-lfs-r13.1-40
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
