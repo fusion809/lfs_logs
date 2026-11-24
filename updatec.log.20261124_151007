@@ -1,0 +1,87 @@
+===== Update check started: 2026-11-24 15:10:07 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261124_151007
+Packages needing attention: gnome-control-center kmod nautilus zstd
+===== Starting updatec: 2026-11-24 15:10:10 AEST =====
+Checking for packages with missing file inventories...
+name=gnome-control-center
+local_ver=51.2
+remote_ver=51.2.1
+name=kmod
+local_ver=34.3
+remote_ver=34.4
+name=nautilus
+local_ver=51.1
+remote_ver=51.2
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - zstd
+  - gnome-control-center
+  - kmod
+  - nautilus
+
+Building custom package zstd...
+[15:10:11] Found custom package for zstd, bypassing BLFS aliases.
+[15:10:11] Custom package detected at /home/fusion809/lfs_packaging/zstd (package: zstd)
+[15:10:11] Extracting dependencies for custom package 'zstd'...
+[15:10:11] Required deps: coreutils gcc glibc gzip lz4 make tar xz zlib 
+[15:10:11] Dependency 'coreutils' already installed.
+[15:10:11] Dependency 'gcc' already installed.
+[15:10:11] Dependency 'glibc' already installed.
+[15:10:11] Dependency 'gzip' already installed.
+[15:10:11] Dependency 'lz4' already installed.
+[15:10:11] Dependency 'make' already installed.
+[15:10:11] Dependency 'tar' already installed.
+[15:10:11] Dependency 'xz' already installed.
+[15:10:11] Dependency 'zlib' already installed.
+[VERSION] zstd: 1.6.0
+[15:10:13] Installing zstd version: 1.6.0
+[15:10:13] Starting remote custom build for zstd...
+zstd-1.6.0.tar.gz already present and appears valid.
+make[1]: Entering directory '/home/fusion809/lfs_packaging/zstd/zstd-1.6.0/lib'
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/debug.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/entropy_common.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/error_private.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/fse_decompress.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/pool.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/threading.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/xxhash.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_common.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/fse_compress.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/hist.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/huf_compress.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_compress.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_compress_literals.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_compress_sequences.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_compress_superblock.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_double_fast.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_fast.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_lazy.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_ldm.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_opt.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_preSplit.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstdmt_compress.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/huf_decompress.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_ddict.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_decompress.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_decompress_block.o
+AS obj/conf_ca13810d3af0adef54084f3032add24c/static/huf_decompress_amd64.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/cover.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/divsufsort.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/fastcover.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zdict.o
+compiling single-threaded static library 1.6.0
+make[2]: /var/lib/custom-packages: Permission denied
+make[2]: *** [Makefile:131: libzstd.a] Error 127
+make[1]: *** [Makefile:113: libzstd.a] Error 2
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/zstd/zstd-1.6.0/lib'
+make: *** [Makefile:63: lib-release] Error 2
+[ERROR] build.sh exited with code 2 for zstd
+[ERROR] Custom build failed for zstd
+[15:11:08] ========================================
+[15:11:08] Build completed with 1 failure(s):
+[15:11:08]   - zstd
+[15:11:08] ========================================
+Error: Build failed for zstd. Aborting update loop.
+===== ERROR: updatec exited with status 1 =====
+Finished: 2026-11-24 15:11:08 AEST
+Exit status: 1

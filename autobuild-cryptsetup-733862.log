@@ -1,0 +1,461 @@
+[06:55:13] Found custom package for cryptsetup, bypassing BLFS aliases.
+[06:55:13] Custom package detected at /home/fusion809/lfs_packaging/cryptsetup (package: cryptsetup)
+[06:55:13] Extracting dependencies for custom package 'cryptsetup'...
+[06:55:13] Required deps: gcc glibc json-c libselinux lvm2 openssl pcre2 popt systemd util-linux 
+[06:55:13] Dependency 'gcc' already installed.
+[06:55:13] Dependency 'glibc' already installed.
+[06:55:13] Dependency 'json-c' already installed.
+[06:55:13] Dependency 'libselinux' already installed.
+[06:55:13] Dependency 'lvm2' already installed.
+[06:55:13] Dependency 'openssl' already installed.
+[06:55:13] Dependency 'pcre2' already installed.
+[06:55:13] Dependency 'popt' already installed.
+[06:55:13] Dependency 'systemd' already installed.
+[06:55:13] Dependency 'util-linux' already installed.
+[VERSION] cryptsetup: 2.8.9
+[06:55:15] Installing cryptsetup version: 2.8.9
+[06:55:15] Starting remote custom build for cryptsetup...
+--2026-11-24 06:55:49--  https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.9.tar.gz
+Resolving www.kernel.org (www.kernel.org)... 151.101.129.55, 151.101.1.55, 151.101.193.55, ...
+Connecting to www.kernel.org (www.kernel.org)|151.101.129.55|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13673104 (13M) [application/x-gzip]
+Saving to: ‘cryptsetup-2.8.9.tar.gz’
+
+cryptsetup-2.8.9.ta   0%[                    ]       0  --.-KB/s               cryptsetup-2.8.9.ta   7%[>                   ]   1.00M  --.-KB/s               cryptsetup-2.8.9.ta  15%[==>                 ]   2.00M   936KB/s               cryptsetup-2.8.9.ta  23%[===>                ]   3.00M   945KB/s    eta 11s    cryptsetup-2.8.9.ta  30%[=====>              ]   4.00M   942KB/s    eta 10s    cryptsetup-2.8.9.ta  38%[======>             ]   5.01M  1003KB/s    eta 10s    cryptsetup-2.8.9.ta  46%[========>           ]   6.00M   998KB/s    eta 7s     cryptsetup-2.8.9.ta  53%[=========>          ]   7.00M   990KB/s    eta 6s     cryptsetup-2.8.9.ta  61%[===========>        ]   8.02M  1021KB/s    eta 6s     cryptsetup-2.8.9.ta  69%[============>       ]   9.02M  1.03MB/s    eta 4s     cryptsetup-2.8.9.ta  76%[==============>     ]  10.00M  1.02MB/s    eta 3s     cryptsetup-2.8.9.ta  84%[===============>    ]  11.02M  1.04MB/s    eta 3s     cryptsetup-2.8.9.ta  92%[=================>  ]  12.02M  1.04MB/s    eta 1s     cryptsetup-2.8.9.ta 100%[===================>]  13.04M  1.12MB/s    in 12s     
+
+2026-11-24 06:56:02 (1.12 MB/s) - ‘cryptsetup-2.8.9.tar.gz’ saved [13673104/13673104]
+
+configure found
+checking whether make supports nested variables... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... make: Warning: File 'conftest.mk' has modification time 0.071 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '97' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C23 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C23 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking whether make sets $(MAKE)... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... ranlib
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for asciidoctor... no
+configure: re-use already generated man-pages.
+checking for C/C++ restrict keyword... __restrict__
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for fcntl.h... yes
+checking for malloc.h... yes
+checking for inttypes.h... (cached) yes
+checking for uchar.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/mman.h... yes
+checking for sys/sysmacros.h... yes
+checking for sys/statvfs.h... yes
+checking for ctype.h... yes
+checking for unistd.h... (cached) yes
+checking for locale.h... yes
+checking for byteswap.h... yes
+checking for endian.h... yes
+checking for stdint.h... (cached) yes
+checking for gcc options to detect undeclared functions... none needed
+checking for gcc options to ignore future-version functions... none needed
+checking whether O_CLOEXEC is declared... yes
+checking for uuid/uuid.h... yes
+checking for libdevmapper.h... yes
+checking for linux/keyctl.h... yes
+checking whether __NR_add_key is declared... yes
+checking whether __NR_keyctl is declared... yes
+checking whether __NR_request_key is declared... yes
+checking for key_serial_t... no
+checking for uuid_clear in -luuid... yes
+checking for library containing clock_gettime... none required
+checking for posix_memalign... yes
+checking for clock_gettime... yes
+checking for posix_fallocate... yes
+checking for explicit_bzero... yes
+checking whether byte ordering is bigendian... no
+checking for off_t... yes
+checking for gcc option to support large files... none needed
+checking for declarations of fseeko and ftello... yes
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking for library containing dlsym... none required
+checking for dlvsym... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by gcc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for poptConfigFileToString in -lpopt... yes
+checking for devmapper >= 1.02.03... yes
+checking whether dm_task_secure_data is declared... yes
+checking whether dm_task_retry_remove is declared... yes
+checking whether dm_task_deferred_remove is declared... yes
+checking whether dm_device_has_mounted_fs is declared... yes
+checking whether dm_device_has_holders is declared... yes
+checking whether dm_device_get_name is declared... yes
+checking whether DM_DEVICE_GET_TARGET_VERSION is declared... yes
+checking whether DM_UDEV_DISABLE_DISK_RULES_FLAG is declared... yes
+checking for json-c... yes
+checking whether json_object_object_add_ex is declared... yes
+checking whether json_object_deep_copy is declared... yes
+checking for linux/if_alg.h... yes
+checking for libcrypto >= 0.9.8... yes
+checking whether OSSL_get_max_threads is declared... yes
+checking whether OSSL_KDF_PARAM_ARGON2_VERSION is declared... yes
+configure: Argon2 in openssl lib is used; internal Argon2 options are ignored.
+checking for blkid... yes
+checking for blkid/blkid.h... yes
+checking whether blkid_do_wipe is declared... yes
+checking whether blkid_probe_step_back is declared... yes
+checking whether blkid_reset_probe is declared... yes
+checking whether blkid_probe_set_device is declared... yes
+checking whether blkid_probe_filter_superblocks_type is declared... yes
+checking whether blkid_do_safeprobe is declared... yes
+checking whether blkid_do_probe is declared... yes
+checking whether blkid_probe_lookup_value is declared... yes
+checking whether OPAL_FL_SUM_SUPPORTED is declared... yes
+checking whether IOC_OPAL_GET_LR_STATUS is declared... yes
+checking whether IOC_OPAL_GET_GEOMETRY is declared... yes
+checking for symver attribute support... yes
+checking for zero_call_used_regs(user)... yes
+checking for systemd tmpfiles config directory... /usr/lib/tmpfiles.d
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lib/libcryptsetup.pc
+config.status: creating po/Makefile.in
+config.status: creating scripts/cryptsetup.conf
+config.status: creating tests/Makefile
+config.status: creating tests/fuzz/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+make  all-recursive
+make[1]: Entering directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9'
+Making all in po
+make[2]: Entering directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/po'
+Making all in tests
+make[2]: Entering directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests'
+./generate-symbols-list ../lib/libcryptsetup.sym > ./test-symbols-list.h
+make  all-am
+make[3]: Entering directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests'
+Making all in tests/fuzz
+make[2]: Entering directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests/fuzz'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests/fuzz'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9'
+  CC       lib/libcryptsetup_la-keyslot_context.lo
+  CC       lib/libcryptsetup_la-utils_blkid.lo
+  CC       lib/libutils_io_la-utils_io.lo
+  CC       src/veritysetup.o
+  CC       src/integritysetup.o
+  CC       lib/utils_crypt.o
+  CC       lib/utils_loop.o
+  CC       lib/utils_io.o
+  CC       lib/utils_blkid.o
+  CC       src/utils_args.o
+  CC       src/utils_tools.o
+  CC       src/utils_password.o
+  CC       src/utils_luks.o
+  CC       src/utils_blockdev.o
+  CC       src/utils_reencrypt.o
+  CC       src/utils_reencrypt_luks1.o
+  CC       src/utils_progress.o
+  CC       src/utils_key_description.o
+  CC       src/utils_keyslot_check.o
+  CC       src/cryptsetup.o
+  CC       lib/libcryptsetup_la-setup.lo
+  CC       lib/libcryptsetup_la-utils.lo
+  CC       lib/libcryptsetup_la-utils_benchmark.lo
+  CC       lib/libcryptsetup_la-utils_crypt.lo
+  CC       lib/libcryptsetup_la-utils_loop.lo
+  CC       lib/libcryptsetup_la-utils_devpath.lo
+  CC       lib/libcryptsetup_la-utils_wipe.lo
+  CC       lib/libcryptsetup_la-utils_device.lo
+  CC       lib/libcryptsetup_la-utils_keyring.lo
+  CC       lib/libcryptsetup_la-utils_device_locking.lo
+  CC       lib/libcryptsetup_la-utils_pbkdf.lo
+  CC       lib/libcryptsetup_la-utils_safe_memory.lo
+  CC       lib/libcryptsetup_la-utils_storage_wrappers.lo
+  CC       lib/libcryptsetup_la-libdevmapper.lo
+  CC       lib/libcryptsetup_la-volumekey.lo
+  CC       lib/libcryptsetup_la-random.lo
+  CC       lib/libcryptsetup_la-crypt_plain.lo
+  CC       lib/integrity/libcryptsetup_la-integrity.lo
+  CC       lib/loopaes/libcryptsetup_la-loopaes.lo
+  CC       lib/tcrypt/libcryptsetup_la-tcrypt.lo
+  CC       lib/luks1/libcryptsetup_la-af.lo
+  CC       lib/luks1/libcryptsetup_la-keyencryption.lo
+  CC       lib/luks1/libcryptsetup_la-keymanage.lo
+  CC       lib/verity/libcryptsetup_la-verity_hash.lo
+  CC       lib/verity/libcryptsetup_la-verity_fec.lo
+  CC       lib/verity/libcryptsetup_la-verity.lo
+  CC       lib/verity/libcryptsetup_la-rs_encode_char.lo
+  CC       lib/verity/libcryptsetup_la-rs_decode_char.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_disk_metadata.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_json_format.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_json_metadata.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_luks1_convert.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_digest.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_digest_pbkdf2.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_keyslot.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_keyslot_luks2.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_keyslot_reenc.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_reencrypt.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_reencrypt_digest.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_segment.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_token_keyring.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_token.lo
+  CC       lib/luks2/hw_opal/libcryptsetup_la-hw_opal.lo
+  CC       lib/bitlk/libcryptsetup_la-bitlk.lo
+  CC       lib/fvault2/libcryptsetup_la-fvault2.lo
+  CCLD     libutils_io.la
+  CC       lib/crypto_backend/libcrypto_backend_la-crypto_cipher_kernel.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-crypto_storage.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-pbkdf_check.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-crc32.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-base64.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-utf8.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-argon2_generic.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-cipher_check.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-cipher_generic.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-memutils.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-crypto_openssl.lo
+  CCLD     libcrypto_backend.la
+  CCLD     libcryptsetup.la
+  CCLD     cryptsetup
+  CCLD     veritysetup
+  CCLD     integritysetup
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9'
+Making install in po
+make[1]: Entering directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/po'
+installing cs.gmo as /usr/share/locale/cs/LC_MESSAGES/cryptsetup.mo
+installing da.gmo as /usr/share/locale/da/LC_MESSAGES/cryptsetup.mo
+installing de.gmo as /usr/share/locale/de/LC_MESSAGES/cryptsetup.mo
+installing es.gmo as /usr/share/locale/es/LC_MESSAGES/cryptsetup.mo
+installing fi.gmo as /usr/share/locale/fi/LC_MESSAGES/cryptsetup.mo
+installing fr.gmo as /usr/share/locale/fr/LC_MESSAGES/cryptsetup.mo
+installing id.gmo as /usr/share/locale/id/LC_MESSAGES/cryptsetup.mo
+installing it.gmo as /usr/share/locale/it/LC_MESSAGES/cryptsetup.mo
+installing ja.gmo as /usr/share/locale/ja/LC_MESSAGES/cryptsetup.mo
+installing ka.gmo as /usr/share/locale/ka/LC_MESSAGES/cryptsetup.mo
+installing ko.gmo as /usr/share/locale/ko/LC_MESSAGES/cryptsetup.mo
+installing lv.gmo as /usr/share/locale/lv/LC_MESSAGES/cryptsetup.mo
+installing nl.gmo as /usr/share/locale/nl/LC_MESSAGES/cryptsetup.mo
+installing pl.gmo as /usr/share/locale/pl/LC_MESSAGES/cryptsetup.mo
+installing pt_BR.gmo as /usr/share/locale/pt_BR/LC_MESSAGES/cryptsetup.mo
+installing ro.gmo as /usr/share/locale/ro/LC_MESSAGES/cryptsetup.mo
+installing ru.gmo as /usr/share/locale/ru/LC_MESSAGES/cryptsetup.mo
+installing sk.gmo as /usr/share/locale/sk/LC_MESSAGES/cryptsetup.mo
+installing sr.gmo as /usr/share/locale/sr/LC_MESSAGES/cryptsetup.mo
+installing sv.gmo as /usr/share/locale/sv/LC_MESSAGES/cryptsetup.mo
+installing uk.gmo as /usr/share/locale/uk/LC_MESSAGES/cryptsetup.mo
+installing vi.gmo as /usr/share/locale/vi/LC_MESSAGES/cryptsetup.mo
+installing zh_CN.gmo as /usr/share/locale/zh_CN/LC_MESSAGES/cryptsetup.mo
+installing zh_TW.gmo as /usr/share/locale/zh_TW/LC_MESSAGES/cryptsetup.mo
+if test "cryptsetup" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/po'
+Making install in tests
+make[1]: Entering directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests'
+make  install-am
+make[2]: Entering directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests'
+make[3]: Entering directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests'
+Making install in tests/fuzz
+make[1]: Entering directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests/fuzz'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests/fuzz'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests/fuzz'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9/tests/fuzz'
+make[1]: Entering directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9'
+make[2]: Entering directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9'
+ /usr/bin/mkdir -p '/usr/lib'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libcryptsetup.la '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libcryptsetup.so.12.12.0 /usr/lib/libcryptsetup.so.12.12.0
+libtool: install: (cd /usr/lib && { ln -s -f libcryptsetup.so.12.12.0 libcryptsetup.so.12 || { rm -f libcryptsetup.so.12 && ln -s libcryptsetup.so.12.12.0 libcryptsetup.so.12; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libcryptsetup.so.12.12.0 libcryptsetup.so || { rm -f libcryptsetup.so && ln -s libcryptsetup.so.12.12.0 libcryptsetup.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcryptsetup.lai /usr/lib/libcryptsetup.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+After a 'make install' for many GNU/Linux systems, 'ldconfig LIBDIR'
+may need to be executed to help locate newly installed libraries,
+but you should consult with a system administrator before updating
+the shared library cache as this should be done with great care
+and consideration. (See the 'Platform-specific configuration notes'
+section of the documentation for more information.)
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/sbin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c cryptsetup veritysetup integritysetup '/usr/sbin'
+libtool: install: /usr/bin/install -c .libs/cryptsetup /usr/sbin/cryptsetup
+libtool: install: /usr/bin/install -c .libs/veritysetup /usr/sbin/veritysetup
+libtool: install: /usr/bin/install -c .libs/integritysetup /usr/sbin/integritysetup
+/usr/bin/mkdir -p -m 0755 //usr/lib/cryptsetup
+ /usr/bin/mkdir -p '/usr/include'
+ /usr/bin/install -c -m 644 lib/libcryptsetup.h '/usr/include'
+ /usr/bin/mkdir -p '/usr/share/man/man8'
+ /usr/bin/install -c -m 644 man/cryptsetup.8 man/cryptsetup-open.8 man/cryptsetup-close.8 man/cryptsetup-reencrypt.8 man/cryptsetup-status.8 man/cryptsetup-resize.8 man/cryptsetup-refresh.8 man/cryptsetup-luksFormat.8 man/cryptsetup-luksSuspend.8 man/cryptsetup-luksResume.8 man/cryptsetup-luksAddKey.8 man/cryptsetup-luksRemoveKey.8 man/cryptsetup-luksConvertKey.8 man/cryptsetup-luksKillSlot.8 man/cryptsetup-luksChangeKey.8 man/cryptsetup-erase.8 man/cryptsetup-luksUUID.8 man/cryptsetup-isLuks.8 man/cryptsetup-luksDump.8 man/cryptsetup-luksHeaderBackup.8 man/cryptsetup-luksHeaderRestore.8 man/cryptsetup-token.8 man/cryptsetup-convert.8 man/cryptsetup-config.8 man/cryptsetup-tcryptDump.8 man/cryptsetup-bitlkDump.8 man/cryptsetup-fvault2Dump.8 man/cryptsetup-repair.8 man/cryptsetup-benchmark.8 man/veritysetup.8 man/integritysetup.8 man/cryptsetup-create.8 man/cryptsetup-plainOpen.8 man/cryptsetup-luksOpen.8 man/cryptsetup-loopaesOpen.8 man/cryptsetup-tcryptOpen.8 man/cryptsetup-bitlkOpen.8 man/cryptsetup-fvault2Open.8 man/cryptsetup-luksErase.8 '/usr/share/man/man8'
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 lib/libcryptsetup.pc '/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/usr/lib/tmpfiles.d'
+ /usr/bin/install -c -m 644 scripts/cryptsetup.conf '/usr/lib/tmpfiles.d'
+make[2]: Leaving directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9'
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/cryptsetup/cryptsetup-2.8.9'
+2.8.9
+Updated registry for cryptsetup to version 2.8.9
+[VERSION] cryptsetup: 2.8.9
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package cryptsetup in /var/lib/custom-packages/

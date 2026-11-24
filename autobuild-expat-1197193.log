@@ -1,0 +1,232 @@
+[07:24:24] Found custom package for expat, bypassing BLFS aliases.
+[07:24:24] Custom package detected at /home/fusion809/lfs_packaging/expat (package: expat)
+[07:24:24] Extracting dependencies for custom package 'expat'...
+[07:24:24] Required deps: coreutils gcc glibc make tar xz 
+[07:24:24] Dependency 'coreutils' already installed.
+[07:24:24] Dependency 'gcc' already installed.
+[07:24:24] Dependency 'glibc' already installed.
+[07:24:24] Dependency 'make' already installed.
+[07:24:24] Dependency 'tar' already installed.
+[07:24:24] Dependency 'xz' already installed.
+[VERSION] expat: 2.11.0
+[07:24:25] Installing expat version: 2.11.0
+[07:24:25] Starting remote custom build for expat...
+--2026-11-24 07:24:28--  https://github.com/libexpat/libexpat/archive/R_2_11_0.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/libexpat/libexpat/tar.gz/refs/tags/R_2_11_0 [following]
+--2026-11-24 07:24:29--  https://codeload.github.com/libexpat/libexpat/tar.gz/refs/tags/R_2_11_0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8519306 (8.1M) [application/x-gzip]
+Saving to: ‘expat-2.11.0.tar.xz’
+
+expat-2.11.0.tar.xz   0%[                    ]       0  --.-KB/s               expat-2.11.0.tar.xz  13%[=>                  ]   1.07M  5.32MB/s               expat-2.11.0.tar.xz  33%[=====>              ]   2.76M  6.89MB/s               expat-2.11.0.tar.xz  57%[==========>         ]   4.71M  7.84MB/s               expat-2.11.0.tar.xz  85%[================>   ]   6.91M  8.63MB/s               expat-2.11.0.tar.xz 100%[===================>]   8.12M  8.92MB/s    in 0.9s    
+
+2026-11-24 07:24:29 (8.92 MB/s) - ‘expat-2.11.0.tar.xz’ saved [8519306/8519306]
+
+pwd=/home/fusion809/lfs_packaging/expat/libexpat-R_2_11_0/expat
+-- The C compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - found
+-- Looking for fcntl.h
+-- Looking for fcntl.h - found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for memory.h
+-- Looking for memory.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stdlib.h
+-- Looking for stdlib.h - found
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for sys/stat.h
+-- Looking for sys/stat.h - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Looking for getpagesize
+-- Looking for getpagesize - not found
+-- Looking for mmap
+-- Looking for mmap - found
+-- Looking for getrandom
+-- Looking for getrandom - found
+-- Performing Test HAVE_ARC4RANDOM_BUF
+-- Performing Test HAVE_ARC4RANDOM_BUF - Success
+-- Performing Test HAVE_ARC4RANDOM
+-- Performing Test HAVE_ARC4RANDOM - Success
+-- Looking for 4 include files stdlib.h, ..., float.h
+-- Looking for 4 include files stdlib.h, ..., float.h - found
+-- Performing Test HAVE_OFF_T
+-- Performing Test HAVE_OFF_T - Success
+-- Performing Test HAVE_GETENTROPY
+-- Performing Test HAVE_GETENTROPY - Success
+-- Performing Test HAVE_SYSCALL_GETRANDOM
+-- Performing Test HAVE_SYSCALL_GETRANDOM - Success
+-- Performing Test _FLAG_DETECTION_UNUSABLE
+-- Performing Test _FLAG_DETECTION_UNUSABLE - Failed
+-- Performing Test FLAG_NO_STRICT_ALIASING
+-- Performing Test FLAG_NO_STRICT_ALIASING - Success
+-- Performing Test FLAG_WIMPLICIT_FALLTHROUGH
+-- Performing Test FLAG_WIMPLICIT_FALLTHROUGH - Success
+-- Performing Test FLAG_VISIBILITY
+-- Performing Test FLAG_VISIBILITY - Success
+-- Looking for cos in m
+-- Looking for cos in m - found
+-- ===========================================================================
+-- 
+-- CMake version in use ......... 4.5.1
+-- 
+-- Configuration
+--   Generator .................. Unix Makefiles
+--   Build type ................. NoConfig
+--   Prefix ..................... /usr
+--   Shared libraries ........... ON
+--   Character type ............. char (UTF-8)
+--   Library name postfix ....... 
+-- 
+--   Build documentation ........ OFF
+--   Build examples ............. ON
+--   Build fuzzers .............. OFF
+--   Build tests ................ ON
+--   Build tools (xmlwf) ........ ON
+--   Build pkg-config file ...... ON
+--   Install files .............. ON
+-- 
+--   Features
+--     // Advanced options, changes not advised
+--     Context bytes ............ 1024
+--     DTD support .............. ON
+--     General entities ......... ON
+--     Large size ............... OFF
+--     Namespace support ........ ON
+-- 
+--   Entropy sources
+--     arc4random ............... 1
+--     arc4random_buf ........... 1
+--     getentropy ............... 1
+--     getrandom ................ 1
+--     syscall SYS_getrandom .... 1
+--     /dev/urandom ............. OFF
+-- 
+-- Continue with
+--   make
+--   make test
+--   sudo make install
+-- 
+-- ===========================================================================
+-- Configuring done (3.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/expat/libexpat-R_2_11_0/expat/build
+[  1%] Building C object CMakeFiles/expat.dir/lib/xcs.c.o
+[  3%] Building C object CMakeFiles/gennmtab.dir/gennmtab/gennmtab.c.o
+[  5%] Building C object CMakeFiles/runtests.dir/tests/acc_tests.c.o
+[  7%] Building C object CMakeFiles/expat.dir/lib/xmlparse.c.o
+[  9%] Linking C executable gennmtab/gennmtab
+[ 11%] Building C object CMakeFiles/runtests.dir/tests/alloc_tests.c.o
+[ 11%] Built target gennmtab
+[ 12%] Building C object CMakeFiles/expat.dir/lib/xmlrole.c.o
+[ 14%] Building C object CMakeFiles/runtests.dir/tests/basic_tests.c.o
+[ 16%] Building C object CMakeFiles/expat.dir/lib/xmltok.c.o
+[ 18%] Building C object CMakeFiles/expat.dir/lib/random_arc4random.c.o
+[ 20%] Building C object CMakeFiles/expat.dir/lib/random_arc4random_buf.c.o
+[ 22%] Building C object CMakeFiles/expat.dir/lib/random_getentropy.c.o
+[ 24%] Building C object CMakeFiles/runtests.dir/tests/chardata.c.o
+[ 25%] Building C object CMakeFiles/expat.dir/lib/random_getrandom.c.o
+[ 27%] Building C object CMakeFiles/runtests.dir/tests/common.c.o
+[ 29%] Linking C shared library libexpat.so
+[ 31%] Building C object CMakeFiles/runtests.dir/tests/dummy.c.o
+[ 33%] Building C object CMakeFiles/runtests.dir/tests/handlers.c.o
+[ 35%] Building C object CMakeFiles/runtests.dir/tests/hash_tests.c.o
+[ 35%] Built target expat
+[ 37%] Building C object CMakeFiles/runtests.dir/tests/entities_tests.c.o
+[ 38%] Building C object CMakeFiles/runtests.dir/tests/fifth_edition_tests.c.o
+[ 40%] Building C object CMakeFiles/runtests.dir/tests/memcheck.c.o
+[ 42%] Building C object CMakeFiles/runtests.dir/tests/minicheck.c.o
+[ 44%] Building C object CMakeFiles/runtests.dir/tests/misc_tests.c.o
+[ 46%] Building C object CMakeFiles/runtests.dir/tests/ns_tests.c.o
+[ 48%] Building C object CMakeFiles/runtests.dir/tests/nsalloc_tests.c.o
+[ 50%] Building C object CMakeFiles/runtests.dir/tests/props_tests.c.o
+[ 51%] Building C object CMakeFiles/runtests.dir/tests/runtests.c.o
+[ 53%] Building C object CMakeFiles/xmlwf.dir/lib/xcs.c.o
+[ 55%] Building C object CMakeFiles/runtests.dir/tests/structdata.c.o
+[ 57%] Building C object CMakeFiles/xmlwf.dir/xmlwf/codepage.c.o
+[ 59%] Building C object CMakeFiles/runtests.dir/tests/utfx.c.o
+[ 61%] Building C object CMakeFiles/element_declarations.dir/examples/element_declarations.c.o
+[ 62%] Building C object CMakeFiles/xmlwf.dir/xmlwf/readfilemap.c.o
+[ 64%] Building C object CMakeFiles/runtests.dir/tests/xcs_tests.c.o
+[ 66%] Linking C executable examples/element_declarations
+[ 68%] Building C object CMakeFiles/xmlwf.dir/xmlwf/xmlfile.c.o
+[ 70%] Building C object CMakeFiles/runtests.dir/lib/xcs.c.o
+[ 70%] Built target element_declarations
+[ 72%] Building C object CMakeFiles/xmlwf.dir/xmlwf/xmlwf.c.o
+[ 74%] Building C object CMakeFiles/runtests.dir/lib/xmlparse.c.o
+[ 75%] Building C object CMakeFiles/elements.dir/examples/elements.c.o
+[ 77%] Linking C executable examples/elements
+[ 79%] Linking C executable xmlwf/xmlwf
+[ 79%] Built target elements
+[ 81%] Building C object CMakeFiles/outline.dir/examples/outline.c.o
+[ 81%] Built target xmlwf
+[ 83%] Building C object CMakeFiles/runtests.dir/lib/xmlrole.c.o
+[ 85%] Linking C executable examples/outline
+[ 85%] Built target outline
+[ 87%] Building C object CMakeFiles/runtests.dir/lib/xmltok.c.o
+[ 88%] Building C object CMakeFiles/benchmark.dir/tests/benchmark/benchmark.c.o
+[ 90%] Linking C executable tests/benchmark/benchmark
+[ 90%] Built target benchmark
+[ 92%] Building C object CMakeFiles/runtests.dir/lib/random_arc4random.c.o
+[ 94%] Building C object CMakeFiles/runtests.dir/lib/random_arc4random_buf.c.o
+[ 96%] Building C object CMakeFiles/runtests.dir/lib/random_getentropy.c.o
+[ 98%] Building C object CMakeFiles/runtests.dir/lib/random_getrandom.c.o
+[100%] Linking C executable tests/runtests
+[100%] Built target runtests
+[  1%] Linking C shared library libexpat.so
+[ 16%] Built target expat
+[ 18%] Linking C executable xmlwf/xmlwf
+[ 27%] Built target xmlwf
+[ 31%] Built target gennmtab
+[ 33%] Linking C executable examples/element_declarations
+[ 35%] Built target element_declarations
+[ 37%] Linking C executable examples/elements
+[ 38%] Built target elements
+[ 40%] Linking C executable examples/outline
+[ 42%] Built target outline
+[ 96%] Built target runtests
+[ 98%] Linking C executable tests/benchmark/benchmark
+[100%] Built target benchmark
+Install the project...
+-- Install configuration: "NoConfig"
+-- Installing: /usr/include/expat_config.h
+-- Installing: /usr/lib/libexpat.so.1.14.0
+-- Installing: /usr/lib/libexpat.so.1
+-- Up-to-date: /usr/lib/libexpat.so
+-- Installing: /usr/include/expat.h
+-- Installing: /usr/include/expat_external.h
+-- Installing: /usr/lib/pkgconfig/expat.pc
+-- Installing: /usr/bin/xmlwf
+-- Set non-toolchain portion of runtime path of "/usr/bin/xmlwf" to ""
+-- Installing: /usr/share/doc/expat/AUTHORS
+-- Installing: /usr/share/doc/expat/changelog
+-- Installing: /usr/lib/cmake/expat-2.11.0/expat-config.cmake
+-- Installing: /usr/lib/cmake/expat-2.11.0/expat-config-version.cmake
+-- Installing: /usr/lib/cmake/expat-2.11.0/expat.cmake
+-- Installing: /usr/lib/cmake/expat-2.11.0/expat-noconfig.cmake
+'doc/reference.html' -> '/usr/share/doc/expat-2.11.0/reference.html'
+'doc/ok.min.css' -> '/usr/share/doc/expat-2.11.0/ok.min.css'
+'doc/style.css' -> '/usr/share/doc/expat-2.11.0/style.css'
+2.11.0
+Updated registry for expat to version 2.11.0
+[VERSION] expat: 2.11.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package expat in /var/lib/custom-packages/

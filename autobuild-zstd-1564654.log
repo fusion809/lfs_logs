@@ -1,0 +1,80 @@
+[14:37:29] Found custom package for zstd, bypassing BLFS aliases.
+[14:37:29] Custom package detected at /home/fusion809/lfs_packaging/zstd (package: zstd)
+[14:37:29] Extracting dependencies for custom package 'zstd'...
+[14:37:29] Required deps: coreutils gcc glibc gzip lz4 make tar xz zlib 
+[14:37:29] Dependency 'coreutils' already installed.
+[14:37:29] Dependency 'gcc' already installed.
+[14:37:29] Dependency 'glibc' already installed.
+[14:37:29] Dependency 'gzip' already installed.
+[14:37:29] Dependency 'lz4' already installed.
+[14:37:29] Dependency 'make' already installed.
+[14:37:29] Dependency 'tar' already installed.
+[14:37:29] Dependency 'xz' already installed.
+[14:37:29] Dependency 'zlib' already installed.
+[VERSION] zstd: 1.6.0
+[14:37:32] Installing zstd version: 1.6.0
+[14:37:32] Starting remote custom build for zstd...
+--2026-11-24 14:37:38--  https://github.com/facebook/zstd/releases/download/v1.6.0/zstd-1.6.0.tar.gz
+Resolving github.com (github.com)... 4.196.32.112
+Connecting to github.com (github.com)|4.196.32.112|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://github.com/meta/zstd/releases/download/v1.6.0/zstd-1.6.0.tar.gz [following]
+--2026-11-24 14:37:39--  https://github.com/meta/zstd/releases/download/v1.6.0/zstd-1.6.0.tar.gz
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/29759715/5a985969-68b5-4d1c-a6bb-cff2d2daa507?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-24T05%3A33%3A50Z&rscd=attachment%3B+filename%3Dzstd-1.6.0.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-24T04%3A33%3A31Z&ske=2026-11-24T05%3A33%3A50Z&sks=b&skv=2018-11-09&sig=5B8o6UZoR0N92jVM%2FD0HKaqBi7dYPnmW3xL9jN7exN0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTQ5NTM2MSwibmJmIjoxNzk1NDk1MDYxLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.QOYTn7kyvP0rDBcW78dEY8Dp-aVO9EGLs5CbIOPFslo&response-content-disposition=attachment%3B%20filename%3Dzstd-1.6.0.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2026-11-24 14:37:40--  https://release-assets.githubusercontent.com/github-production-release-asset/29759715/5a985969-68b5-4d1c-a6bb-cff2d2daa507?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-24T05%3A33%3A50Z&rscd=attachment%3B+filename%3Dzstd-1.6.0.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-24T04%3A33%3A31Z&ske=2026-11-24T05%3A33%3A50Z&sks=b&skv=2018-11-09&sig=5B8o6UZoR0N92jVM%2FD0HKaqBi7dYPnmW3xL9jN7exN0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTQ5NTM2MSwibmJmIjoxNzk1NDk1MDYxLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.QOYTn7kyvP0rDBcW78dEY8Dp-aVO9EGLs5CbIOPFslo&response-content-disposition=attachment%3B%20filename%3Dzstd-1.6.0.tar.gz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.108.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2564432 (2.4M) [application/octet-stream]
+Saving to: ‘zstd-1.6.0.tar.gz’
+
+zstd-1.6.0.tar.gz     0%[                    ]       0  --.-KB/s               zstd-1.6.0.tar.gz     1%[                    ]  38.88K   163KB/s               zstd-1.6.0.tar.gz     3%[                    ]  93.07K   195KB/s               zstd-1.6.0.tar.gz     6%[>                   ] 157.07K   221KB/s               zstd-1.6.0.tar.gz     8%[>                   ] 221.07K   242KB/s               zstd-1.6.0.tar.gz    12%[=>                  ] 301.07K   265KB/s               zstd-1.6.0.tar.gz    15%[==>                 ] 381.07K   278KB/s               zstd-1.6.0.tar.gz    18%[==>                 ] 461.07K   288KB/s               zstd-1.6.0.tar.gz    21%[===>                ] 541.07K   298KB/s               zstd-1.6.0.tar.gz    25%[====>               ] 637.07K   277KB/s               zstd-1.6.0.tar.gz    29%[====>               ] 733.07K   264KB/s               zstd-1.6.0.tar.gz    31%[=====>              ] 797.07K   264KB/s    eta 6s     zstd-1.6.0.tar.gz    33%[=====>              ] 829.07K   254KB/s    eta 6s     zstd-1.6.0.tar.gz    35%[======>             ] 893.07K   254KB/s    eta 6s     zstd-1.6.0.tar.gz    37%[======>             ] 941.07K   249KB/s    eta 6s     zstd-1.6.0.tar.gz    40%[=======>            ]   1005K   250KB/s    eta 6s     zstd-1.6.0.tar.gz    42%[=======>            ]   1.03M   245KB/s    eta 6s     zstd-1.6.0.tar.gz    44%[=======>            ]   1.09M   251KB/s    eta 6s     zstd-1.6.0.tar.gz    47%[========>           ]   1.15M   251KB/s    eta 6s     zstd-1.6.0.tar.gz    49%[========>           ]   1.22M   250KB/s    eta 5s     zstd-1.6.0.tar.gz    53%[=========>          ]   1.31M   254KB/s    eta 5s     zstd-1.6.0.tar.gz    56%[==========>         ]   1.37M   252KB/s    eta 5s     zstd-1.6.0.tar.gz    59%[==========>         ]   1.47M   252KB/s    eta 5s     zstd-1.6.0.tar.gz    63%[===========>        ]   1.56M   257KB/s    eta 5s     zstd-1.6.0.tar.gz    65%[============>       ]   1.61M   251KB/s    eta 3s     zstd-1.6.0.tar.gz    69%[============>       ]   1.70M   268KB/s    eta 3s     zstd-1.6.0.tar.gz    72%[=============>      ]   1.78M   276KB/s    eta 3s     zstd-1.6.0.tar.gz    76%[==============>     ]   1.87M   285KB/s    eta 3s     zstd-1.6.0.tar.gz    80%[===============>    ]   1.97M   304KB/s    eta 3s     zstd-1.6.0.tar.gz    82%[===============>    ]   2.03M   304KB/s    eta 2s     zstd-1.6.0.tar.gz    86%[================>   ]   2.12M   320KB/s    eta 2s     zstd-1.6.0.tar.gz    89%[================>   ]   2.20M   293KB/s    eta 2s     zstd-1.6.0.tar.gz   100%[===================>]   2.45M   347KB/s    in 8.3s    
+
+2026-11-24 14:37:50 (300 KB/s) - ‘zstd-1.6.0.tar.gz’ saved [2564432/2564432]
+
+make[1]: Entering directory '/home/fusion809/lfs_packaging/zstd/zstd-1.6.0/lib'
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/debug.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/entropy_common.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/error_private.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/fse_decompress.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/pool.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/threading.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/xxhash.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_common.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/fse_compress.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/hist.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/huf_compress.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_compress.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_compress_literals.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_compress_sequences.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_compress_superblock.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_double_fast.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_fast.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_lazy.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_ldm.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_opt.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_preSplit.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstdmt_compress.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/huf_decompress.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_ddict.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_decompress.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zstd_decompress_block.o
+AS obj/conf_ca13810d3af0adef54084f3032add24c/static/huf_decompress_amd64.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/cover.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/divsufsort.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/fastcover.o
+CC obj/conf_ca13810d3af0adef54084f3032add24c/static/zdict.o
+compiling single-threaded static library 1.6.0
+make[2]: /var/lib/custom-packages: Permission denied
+make[2]: *** [Makefile:131: libzstd.a] Error 127
+make[1]: *** [Makefile:113: libzstd.a] Error 2
+make[1]: Leaving directory '/home/fusion809/lfs_packaging/zstd/zstd-1.6.0/lib'
+make: *** [Makefile:63: lib-release] Error 2
+[ERROR] build.sh exited with code 2 for zstd
+[ERROR] Custom build failed for zstd
+[14:38:49] ========================================
+[14:38:49] Build completed with 1 failure(s):
+[14:38:49]   - zstd
+[14:38:49] ========================================

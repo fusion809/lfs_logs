@@ -1,0 +1,211 @@
+[12:52:02] Found custom package for less, bypassing BLFS aliases.
+[12:52:02] Custom package detected at /home/fusion809/lfs_packaging/less (package: less)
+[12:52:02] Extracting dependencies for custom package 'less'...
+[12:52:02] Required deps: glibc ncurses pcre2 
+[12:52:02] Dependency 'glibc' already installed.
+[12:52:02] Dependency 'ncurses' already installed.
+[12:52:02] Dependency 'pcre2' already installed.
+[VERSION] less: 714
+[12:52:08] Installing less version: 714
+[12:52:08] Starting remote custom build for less...
+--2026-11-24 12:52:17--  https://github.com/gwsw/less/archive/v714.tar.gz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/gwsw/less/tar.gz/refs/tags/v714 [following]
+--2026-11-24 12:52:19--  https://codeload.github.com/gwsw/less/tar.gz/refs/tags/v714
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘less-714.tar.gz’
+
+less-714.tar.gz         [<=>                 ]       0  --.-KB/s               less-714.tar.gz         [ <=>                ]  14.02K  31.3KB/s               less-714.tar.gz         [  <=>               ]  41.36K  47.4KB/s               less-714.tar.gz         [   <=>              ]  96.00K  73.2KB/s               less-714.tar.gz         [    <=>             ] 205.37K   110KB/s               less-714.tar.gz         [     <=>            ] 408.34K   197KB/s               less-714.tar.gz         [      <=>           ] 424.34K   143KB/s               less-714.tar.gz         [       <=>          ] 814.87K   258KB/s               less-714.tar.gz         [        <=>         ] 846.71K   252KB/s               less-714.tar.gz         [         <=>        ] 980.17K   275KB/s               less-714.tar.gz         [          <=>       ] 992.21K   263KB/s               less-714.tar.gz         [           <=>      ]   1.12M   288KB/s               less-714.tar.gz         [            <=>     ]   1.15M   276KB/s               less-714.tar.gz         [             <=>    ]   1.26M   295KB/s    in 4.4s    
+
+2026-11-24 12:52:25 (295 KB/s) - ‘less-714.tar.gz’ saved [1317541]
+
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: no obvious need to run autopoint
+autoreconf: running: aclocal --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: configure.ac: no need to run autopoint (confirmed)
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: configure.ac: not using Automake
+autoreconf: './install-sh' is created
+autoreconf: configure.ac: not running make: --make not given
+autoreconf: Leaving directory '.'
+configure: WARNING: unrecognized options: --disable-static
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C23 features... none needed
+checking for library containing strerror... none required
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for gcc option to support large files... none needed
+checking for tgoto in -ltinfo... no
+checking for tgoto in -ltinfow... no
+checking for initscr in -lxcurses... no
+checking for initscr in -lncursesw... yes
+checking for initscr in -lncurses... yes
+checking for initscr in -lcurses... yes
+checking for tgetent in -ltermcap... no
+checking for tgetent in -ltermlib... no
+checking for library containing regcmp... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for ctype.h... yes
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for langinfo.h... yes
+checking for limits.h... yes
+checking for stdckdint.h... yes
+checking for termcap.h... yes
+checking for ncurses/termcap.h... no
+checking for ncursesw/termcap.h... no
+checking for termio.h... no
+checking for termios.h... yes
+checking for time.h... yes
+checking for values.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/stream.h... no
+checking for sys/time.h... yes
+checking for sys/wait.h... yes
+checking whether stat file-mode macros are broken... no
+checking for an ANSI C-conforming const... yes
+checking for off_t... yes
+checking for size_t... yes
+checking for working terminal libraries... using -lncursesw
+checking for terminfo... yes
+checking for const... yes
+checking for time_t... yes
+checking for st_ino in struct stat... yes
+checking for fchmod... yes
+checking for fsync... yes
+checking for nanosleep... yes
+checking for poll... yes
+checking for popen... yes
+checking for realpath... yes
+checking for _setjmp... yes
+checking for setitimer... yes
+checking for sigprocmask... yes
+checking for sigsetmask... yes
+checking for snprintf... yes
+checking for stat... yes
+checking for strsignal... yes
+checking for system... yes
+checking for ttyname... yes
+checking for usleep... yes
+checking for gcc options to detect undeclared functions... none needed
+checking for gcc options to ignore future-version functions... none needed
+checking whether sigsetjmp is declared... yes
+checking for memcpy... yes
+checking for strchr... yes
+checking for strstr... yes
+checking for tcgetattr... yes
+checking for fileno... yes
+checking for strerror... yes
+checking for sys_errlist... yes
+checking for sigset_t... yes
+checking for sigemptyset... yes
+checking for errno... yes - in errno.h
+checking for settable errno... yes
+checking for locale... yes
+checking for ctype functions... yes
+checking termcap for ospeed... yes - in termcap.h
+checking for POSIX regcomp... yes
+regular expression library:  posix
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating defines.h
+configure: WARNING: unrecognized options: --disable-static
+mv -f ./help.c ./help.c.old
+mv: cannot stat './help.c': No such file or directory
+make: [Makefile.aut:71: help.c] Error 1 (ignored)
+rm -rf help.c
+./mkhelp.pl < less.hlp > help.c
+if cmp -s help.c help.c.old; then mv -f help.c.old help.c; fi
+mv -f ./funcs.h ./funcs.h.old
+mv: cannot stat './funcs.h': No such file or directory
+make: [Makefile.aut:81: funcs.h] Error 1 (ignored)
+grep -h '^public [^;]*$' ./main.c ./screen.c ./brac.c ./ch.c ./charset.c ./cmdbuf.c ./command.c ./cvt.c ./decode.c ./edit.c ./evar.c ./filename.c ./forwback.c ./help.c ./ifile.c ./input.c ./jump.c ./lesskey_parse.c ./line.c ./linenum.c ./lmsg.c ./lsystem.c ./mark.c ./optfunc.c ./option.c ./opttbl.c ./os.c ./output.c ./pattern.c ./position.c ./prompt.c ./search.c ./signal.c ./tags.c ./ttyin.c ./version.c ./xbuf.c | sed 's/$/;/' >./funcs.h
+mv -f lessmsg.inc lessmsg.inc.old
+mv: cannot stat 'lessmsg.inc': No such file or directory
+make: [Makefile.aut:85: lessmsg.inc] Error 1 (ignored)
+sed -e '/^ *#/d' -e '/^ *$/d' -e 's/^ *\([^ ]*\)  *\(.*\)/M(\1,"\2")/' lessmsg lessmsg_int > lessmsg.inc
+test ! -f stamp-h || CONFIG_FILES= CONFIG_HEADERS=defines.h ./config.status
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o lessecho.o lessecho.c
+touch stamp-h
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o main.o main.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o screen.o screen.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o brac.o brac.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o ch.o ch.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o charset.o charset.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o cmdbuf.o cmdbuf.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o command.o command.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o cvt.o cvt.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o decode.o decode.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o edit.o edit.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o evar.o evar.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o filename.o filename.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o forwback.o forwback.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o help.o help.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o ifile.o ifile.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o input.o input.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o jump.o jump.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o line.o line.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o linenum.o linenum.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o lmsg.o lmsg.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o lsystem.o lsystem.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o mark.o mark.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o optfunc.o optfunc.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o option.o option.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o opttbl.o opttbl.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o os.o os.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o output.o output.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o pattern.o pattern.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o position.o position.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o prompt.o prompt.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o search.o search.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o signal.o signal.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o tags.o tags.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o ttyin.o ttyin.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o version.o version.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o xbuf.o xbuf.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DLIBEXECDIR=\"/usr/libexec\" -DSYSDIR=\"/usr/etc\"  -g -O2 -o lesskey_parse.o lesskey_parse.c
+gcc  -o lessecho lessecho.o version.o   -lncursesw
+gcc  -o less main.o screen.o brac.o ch.o charset.o cmdbuf.o command.o cvt.o decode.o edit.o evar.o filename.o forwback.o help.o ifile.o input.o jump.o line.o linenum.o lmsg.o lsystem.o mark.o optfunc.o option.o opttbl.o os.o output.o pattern.o position.o prompt.o search.o signal.o tags.o ttyin.o version.o xbuf.o   lesskey_parse.o   -lncursesw
+if [ -n "" ]; then DFLAG="-d@"; fi; DT=`date $DFLAG '+%d %h %Y'`; echo "Stuffing version number 714 into less.nro"; rm -f less.nro; sed -e "s;@@VERSION@@;714;" -e "s;@@DATE@@;$DT;" >less.nro ./less.nro.VER
+Stuffing version number 714 into less.nro
+if [ -n "" ]; then DFLAG="-d@"; fi; DT=`date $DFLAG '+%d %h %Y'`; echo "Stuffing version number 714 into lesskey.nro"; rm -f lesskey.nro; sed -e "s;@@VERSION@@;714;" -e "s;@@DATE@@;$DT;" >lesskey.nro ./lesskey.nro.VER
+Stuffing version number 714 into lesskey.nro
+if [ -n "" ]; then DFLAG="-d@"; fi; DT=`date $DFLAG '+%d %h %Y'`; echo "Stuffing version number 714 into lessecho.nro"; rm -f lessecho.nro; sed -e "s;@@VERSION@@;714;" -e "s;@@DATE@@;$DT;" >lessecho.nro ./lessecho.nro.VER
+Stuffing version number 714 into lessecho.nro
+./mkinstalldirs /usr/bin /usr/libexec /usr/share/man/man1 /usr/share/man/man5
+/usr/bin/install -c less /usr/bin/less
+/usr/bin/install -c lessecho /usr/libexec/lessecho
+/usr/bin/install -c ./less-osc8-open.sh /usr/libexec/less-osc8-open
+/usr/bin/install -c -m 644 ./less.nro /usr/share/man/man1/less.1
+/usr/bin/install -c -m 644 ./lesskey.nro /usr/share/man/man5/lesskey.5
+/usr/bin/install -c -m 644 ./lessecho.nro /usr/share/man/man1/lessecho.1
+714
+Updated registry for less to version 714
+[VERSION] less: 714
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package less in /var/lib/custom-packages/
