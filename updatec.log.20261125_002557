@@ -1,0 +1,1647 @@
+===== Update check started: 2026-11-25 00:25:57 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261125_002557
+Packages needing attention: flatpak
+===== Starting updatec: 2026-11-25 00:26:00 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - flatpak
+
+Building custom package flatpak...
+[00:26:01] Found custom package for flatpak, bypassing BLFS aliases.
+[00:26:01] Custom package detected at /home/fusion809/lfs_packaging/flatpak (package: flatpak)
+[00:26:01] Extracting dependencies for custom package 'flatpak'...
+[00:26:01] Required deps: acl appstream avahi bash brotli bubblewrap bzip2 coreutils curl cyrus-sasl dbus dconf e2fsprogs expat fontconfig freetype fuse gcab gcc gdk-pixbuf glib2 glibc glycin gpgme icu json-glib keyutils lcms2 libarchive libassuan libcap libffi libfyaml libgpg-error libidn2 libpng libpsl libseccomp libselinux libsoup libunistring libxau libxml2 libxmlb llvm lz4 meson mitkrb nghttp2 ninja openldap openssl ostree pcre2 polkit python socat sqlite systemd tar util-linux wayland webkitgtk xdg-dbus-proxy xdg-utils xz zlib zstd 
+[00:26:01] Dependency 'acl' already installed.
+[00:26:01] Dependency 'appstream' already installed.
+[00:26:01] Dependency 'avahi' already installed.
+[00:26:01] Dependency 'bash' already installed.
+[00:26:01] Dependency 'brotli' already installed.
+[00:26:01] Dependency 'bubblewrap' already installed.
+[00:26:01] Dependency 'bzip2' already installed.
+[00:26:01] Dependency 'coreutils' already installed.
+[00:26:01] Dependency 'curl' already installed.
+[00:26:01] Dependency 'cyrus-sasl' already installed.
+[00:26:01] Dependency 'dbus' already installed.
+[00:26:01] Dependency 'dconf' already installed.
+[00:26:01] Dependency 'e2fsprogs' already installed.
+[00:26:01] Dependency 'expat' already installed.
+[00:26:01] Dependency 'fontconfig' already installed.
+[00:26:01] Dependency 'freetype' already installed.
+[00:26:01] Dependency 'fuse' already installed.
+[00:26:01] Dependency 'gcab' already installed.
+[00:26:01] Dependency 'gcc' already installed.
+[00:26:01] Dependency 'gdk-pixbuf' already installed.
+[00:26:01] Dependency 'glib2' already installed.
+[00:26:01] Dependency 'glibc' already installed.
+[00:26:01] Dependency 'glycin' already installed.
+[00:26:01] Dependency 'gpgme' already installed.
+[00:26:01] Dependency 'icu' already installed.
+[00:26:01] Dependency 'json-glib' already installed.
+[00:26:01] Dependency 'keyutils' already installed.
+[00:26:01] Dependency 'lcms2' already installed.
+[00:26:01] Dependency 'libarchive' already installed.
+[00:26:01] Dependency 'libassuan' already installed.
+[00:26:01] Dependency 'libcap' already installed.
+[00:26:01] Dependency 'libffi' already installed.
+[00:26:01] Dependency 'libfyaml' already installed.
+[00:26:01] Dependency 'libgpg-error' already installed.
+[00:26:01] Dependency 'libidn2' already installed.
+[00:26:01] Dependency 'libpng' already installed.
+[00:26:01] Dependency 'libpsl' already installed.
+[00:26:01] Dependency 'libseccomp' already installed.
+[00:26:01] Dependency 'libselinux' already installed.
+[00:26:01] Dependency 'libsoup' already installed.
+[00:26:01] Dependency 'libunistring' already installed.
+[00:26:01] Dependency 'libxau' already installed.
+[00:26:01] Dependency 'libxml2' already installed.
+[00:26:01] Dependency 'libxmlb' already installed.
+[00:26:01] Dependency 'llvm' already installed.
+[00:26:01] Dependency 'lz4' already installed.
+[00:26:01] Dependency 'meson' already installed.
+[00:26:01] Dependency 'mitkrb' already installed.
+[00:26:01] Dependency 'nghttp2' already installed.
+[00:26:01] Dependency 'ninja' already installed.
+[00:26:01] Dependency 'openldap' already installed.
+[00:26:01] Dependency 'openssl' already installed.
+[00:26:01] Dependency 'ostree' already installed.
+[00:26:01] Dependency 'pcre2' already installed.
+[00:26:01] Dependency 'polkit' already installed.
+[00:26:01] Dependency 'python' already installed.
+[00:26:01] Dependency 'socat' already installed.
+[00:26:01] Dependency 'sqlite' already installed.
+[00:26:01] Dependency 'systemd' already installed.
+[00:26:01] Dependency 'tar' already installed.
+[00:26:01] Dependency 'util-linux' already installed.
+[00:26:01] Dependency 'wayland' already installed.
+[00:26:01] Dependency 'webkitgtk' already installed.
+[00:26:01] Dependency 'xdg-dbus-proxy' already installed.
+[00:26:01] Dependency 'xdg-utils' already installed.
+[00:26:01] Dependency 'xz' already installed.
+[00:26:01] Dependency 'zlib' already installed.
+[00:26:01] Dependency 'zstd' already installed.
+[VERSION] flatpak: 1.18.6
+[00:26:03] Installing flatpak version: 1.18.6
+[00:26:03] Starting remote custom build for flatpak...
+--2026-11-25 00:26:19--  https://github.com/flatpak/flatpak/releases/download/1.18.6/flatpak-1.18.6.tar.xz
+Resolving github.com (github.com)... 4.237.22.38
+Connecting to github.com (github.com)|4.237.22.38|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/59213200/dfa69230-08cd-4c5f-8e97-927f78d15f35?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-24T15%3A24%3A51Z&rscd=attachment%3B+filename%3Dflatpak-1.18.6.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-24T14%3A24%3A43Z&ske=2026-11-24T15%3A24%3A51Z&sks=b&skv=2018-11-09&sig=3Ie9aA5xMsSOLr7GSfYmexUbq8x04y%2Fex%2FEE7a2YCkw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTUzMDY4MCwibmJmIjoxNzk1NTMwMzgwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.y95mz4l2fHJn9XkXKLCvd1jZ8z4scN1wfCrdc0MkEDI&response-content-disposition=attachment%3B%20filename%3Dflatpak-1.18.6.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2026-11-25 00:26:19--  https://release-assets.githubusercontent.com/github-production-release-asset/59213200/dfa69230-08cd-4c5f-8e97-927f78d15f35?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-24T15%3A24%3A51Z&rscd=attachment%3B+filename%3Dflatpak-1.18.6.tar.xz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-24T14%3A24%3A43Z&ske=2026-11-24T15%3A24%3A51Z&sks=b&skv=2018-11-09&sig=3Ie9aA5xMsSOLr7GSfYmexUbq8x04y%2Fex%2FEE7a2YCkw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTUzMDY4MCwibmJmIjoxNzk1NTMwMzgwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.y95mz4l2fHJn9XkXKLCvd1jZ8z4scN1wfCrdc0MkEDI&response-content-disposition=attachment%3B%20filename%3Dflatpak-1.18.6.tar.xz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.108.133, 185.199.111.133, 185.199.110.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1366064 (1.3M) [application/octet-stream]
+Saving to: ‘flatpak-1.18.6.tar.xz’
+
+flatpak-1.18.6.tar.   0%[                    ]       0  --.-KB/s               flatpak-1.18.6.tar.   9%[>                   ] 125.73K   557KB/s               flatpak-1.18.6.tar.  20%[===>                ] 269.73K   623KB/s               flatpak-1.18.6.tar.  37%[======>             ] 493.73K   767KB/s               flatpak-1.18.6.tar.  52%[=========>          ] 701.73K   809KB/s               flatpak-1.18.6.tar.  63%[===========>        ] 845.73K   784KB/s               flatpak-1.18.6.tar.  71%[=============>      ] 957.73K   741KB/s               flatpak-1.18.6.tar.  80%[===============>    ]   1.04M   711KB/s               flatpak-1.18.6.tar.  92%[=================>  ]   1.20M   716KB/s               flatpak-1.18.6.tar. 100%[===================>]   1.30M   726KB/s    in 1.8s    
+
+2026-11-25 00:26:22 (726 KB/s) - ‘flatpak-1.18.6.tar.xz’ saved [1366064/1366064]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--bindir=/usr/bin>
+meson_args: <--datadir=/usr/share>
+meson_args: <--includedir=/usr/include>
+meson_args: <--infodir=/usr/info>
+meson_args: <--libdir=/usr/lib>
+meson_args: <--libexecdir=/usr/libexec>
+meson_args: <--localstatedir=/var>
+meson_args: <--mandir=/usr/man>
+meson_args: <--prefix=/usr>
+meson_args: <--sbindir=/usr/sbin>
+meson_args: <--sysconfdir=/etc>
+meson_args: <-D>
+meson_args: <man=disabled>
+meson_args: <-D>
+meson_args: <gtkdoc=disabled>
+meson_args: <-D>
+meson_args: <docbook_docs=disabled>
+meson_args: <-Ddocdir=/usr/share/doc/flatpak-1.18.6>
+meson_args: <-Dstrip=true>
+source_dir: <..>
+command: meson setup <--bindir=/usr/bin> <--datadir=/usr/share> <--includedir=/usr/include> <--infodir=/usr/info> <--libdir=/usr/lib> <--libexecdir=/usr/libexec> <--localstatedir=/var> <--mandir=/usr/man> <--prefix=/usr> <--sbindir=/usr/sbin> <--sysconfdir=/etc> <-D> <man=disabled> <-D> <gtkdoc=disabled> <-D> <docbook_docs=disabled> <-Ddocdir=/usr/share/doc/flatpak-1.18.6> <-Dstrip=true> <..>
+Initialized empty Git repository in /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/bubblewrap/.git/
+From https://github.com/containers/bubblewrap
+ * branch            2a76602a8c71f36c1527cf9fc3417d9149822e0c -> FETCH_HEAD
+HEAD is now at 2a76602 NEWS: Update for 0.12.0 release
+Initialized empty Git repository in /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/dbus-proxy/.git/
+From https://github.com/flatpak/xdg-dbus-proxy
+ * branch            72b40c8f6d9d585cfbdb249690724f740d207087 -> FETCH_HEAD
+HEAD is now at 72b40c8 Prepare v0.1.9
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6
+Build dir: /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/build
+Build type: native build
+Project name: flatpak
+Project version: 1.18.6
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -Werror=shadow: YES 
+Compiler for C supports arguments -Werror=empty-body: YES 
+Compiler for C supports arguments -Werror=strict-prototypes: YES 
+Compiler for C supports arguments -Werror=missing-prototypes: YES 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Compiler for C supports arguments -Werror=pointer-arith: YES 
+Compiler for C supports arguments -Werror=init-self: YES 
+Compiler for C supports arguments -Werror=missing-declarations: YES 
+Compiler for C supports arguments -Werror=return-type: YES 
+Compiler for C supports arguments -Werror=overflow: YES 
+Compiler for C supports arguments -Werror=int-conversion: YES 
+Compiler for C supports arguments -Werror=parenthesis: NO 
+Compiler for C supports arguments -Werror=incompatible-pointer-types: YES 
+Compiler for C supports arguments -Werror=misleading-indentation: YES 
+Compiler for C supports arguments -Werror=missing-include-dirs: YES 
+Compiler for C supports arguments -Wno-sign-compare: YES 
+Compiler for C supports arguments -Wno-error=sign-compare: YES 
+Compiler for C supports arguments -Wno-cast-function-type: YES 
+Compiler for C supports arguments -Wno-error=cast-function-type: YES 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C supports arguments -Wno-error=missing-field-initializers: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wno-error=unused-parameter: YES 
+Compiler for C supports arguments -Werror=format=2: YES 
+Compiler for C supports arguments -Werror=format-security: NO 
+Check usable header "sys/xattr.h" : YES 
+
+Executing subproject libglnx for machine: host 
+
+libglnx| Project name: libglnx
+libglnx| Project version: undefined
+libglnx| C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+libglnx| C linker for the host machine: cc ld.bfd 2.47.20260726
+libglnx| Checking if "renameat2() is declared" compiles: YES
+libglnx| Checking if "memfd_create() is declared" compiles: YES
+libglnx| Checking if "copy_file_range() is declared" compiles: YES
+libglnx| Checking if "name_to_handle_at() is declared" compiles: YES
+libglnx| Checking for function "close_range" : YES
+libglnx| Configuring libglnx-config.h using configuration
+libglnx| Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+libglnx| Run-time dependency gio-2.0 found: YES 2.90.1
+libglnx| Run-time dependency gio-unix-2.0 found: YES 2.90.1
+libglnx| Build targets in project: 2
+libglnx| Subproject libglnx finished.
+
+Run-time dependency threads found: YES
+Program bison found: YES (/usr/bin/bison)
+Run-time dependency libcap found: YES 2.78
+Run-time dependency libarchive found: YES 3.8.11
+Run-time dependency glib-2.0 found: YES 2.90.1
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Dependency gio-unix-2.0 for host machine found: YES 2.90.1 (cached)
+Run-time dependency libcurl found: YES 8.23.0
+Run-time dependency libxml-2.0 found: YES 2.15.4
+Run-time dependency libzstd found: YES 1.6.0
+Run-time dependency dconf found: YES 51.0
+Run-time dependency libsystemd found: YES 262
+Run-time dependency malcontent-0 found: YES 0.8.0
+Run-time dependency polkit-agent-1 found: YES 128
+Run-time dependency fuse3 found: YES 3.18.3
+Program fusermount3 found: YES (/usr/bin/fusermount3)
+Run-time dependency xau found: YES 1.0.12
+Run-time dependency ostree-1 found: YES 2026.7
+Run-time dependency json-glib-1.0 found: YES 1.10.8
+Run-time dependency appstream found: YES 1.2.3
+Run-time dependency gdk-pixbuf-2.0 found: YES 2.44.8
+Run-time dependency libseccomp found: YES 2.6.2
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gtk-doc for host machine skipped: feature gtkdoc disabled
+Run-time dependency wayland-client found: YES 1.26.0
+Run-time dependency wayland-scanner found: YES 1.26.0
+Run-time dependency wayland-protocols found: YES 1.49
+Run-time dependency gpgme found: YES 2.3.1
+Program xsltproc skipped: feature man disabled
+Program xmlto skipped: feature docbook_docs disabled
+Program pkcheck found: YES (/usr/bin/pkcheck)
+Program socat found: YES (/usr/bin/socat)
+Checking for function "archive_read_support_filter_all" with dependency libarchive: YES 
+Configuring config.h using configuration
+
+Executing subproject bubblewrap for machine: host 
+
+bubblewrap| Project name: bubblewrap
+bubblewrap| Project version: 0.12.0
+bubblewrap| C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+bubblewrap| C linker for the host machine: cc ld.bfd 2.47.20260726
+bubblewrap| Compiler for C supports arguments -Werror=shadow: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=empty-body: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=strict-prototypes: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=missing-prototypes: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=implicit-function-declaration: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=pointer-arith: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=init-self: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=missing-declarations: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=return-type: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=overflow: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=int-conversion: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=parenthesis: NO (cached)
+bubblewrap| Compiler for C supports arguments -Werror=incompatible-pointer-types: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=misleading-indentation: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=missing-include-dirs: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=aggregate-return: YES
+bubblewrap| Compiler for C supports arguments -Werror=switch-default: YES
+bubblewrap| Compiler for C supports arguments -Wswitch-enum: YES
+bubblewrap| Compiler for C supports arguments -Wno-missing-field-initializers: YES (cached)
+bubblewrap| Compiler for C supports arguments -Wno-error=missing-field-initializers: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=format=2: YES (cached)
+bubblewrap| Compiler for C supports arguments -Werror=format-security: NO (cached)
+bubblewrap| Program bash found: YES (/usr/bin/bash)
+bubblewrap| Program python3 found: YES (/usr/bin/python3)
+bubblewrap| Dependency libcap for host machine found: YES 2.78 (cached)
+bubblewrap| Run-time dependency libselinux found: YES 3.11
+bubblewrap| Configuring config.h using configuration
+bubblewrap| Program xsltproc found: YES (/usr/bin/xsltproc)
+bubblewrap| Build targets in project: 3
+bubblewrap| Subproject bubblewrap finished.
+
+
+Executing subproject dbus-proxy for machine: host 
+
+dbus-proxy| Project name: xdg-dbus-proxy
+dbus-proxy| Project version: 0.1.9
+dbus-proxy| C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+dbus-proxy| C linker for the host machine: cc ld.bfd 2.47.20260726
+dbus-proxy| Compiler for C supports arguments -Werror=aggregate-return: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=empty-body: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=implicit-function-declaration: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=incompatible-pointer-types: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=init-self: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=int-conversion: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=misleading-indentation: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=missing-declarations: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=missing-include-dirs: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=missing-prototypes: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=overflow: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=parenthesis: NO (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=pointer-arith: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=return-type: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=shadow: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=strict-prototypes: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Werror=switch-default: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Wswitch-enum: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Wno-missing-field-initializers: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Wno-error=missing-field-initializers: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+dbus-proxy| Compiler for C supports arguments -Wno-error=unused-parameter: YES (cached)
+dbus-proxy| Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+dbus-proxy| Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+dbus-proxy| Dependency gio-unix-2.0 for host machine found: YES 2.90.1 (cached)
+dbus-proxy| Configuring config.h using configuration
+dbus-proxy| Program xsltproc found: YES (/usr/bin/xsltproc)
+dbus-proxy| Build targets in project: 4
+dbus-proxy| Subproject dbus-proxy finished.
+
+Configuring flatpak-version-macros.h using configuration
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Program /usr/bin/wayland-scanner found: YES (/usr/bin/wayland-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Configuring flatpak-oci-authenticator.service using configuration
+Configuring org.flatpak.Authenticator.Oci.service using configuration
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Configuring flatpak-portal.service using configuration
+Configuring org.freedesktop.portal.Flatpak.service using configuration
+Configuring flatpak-session-helper.service using configuration
+Configuring org.freedesktop.Flatpak.service using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Configuring flatpak-system-helper.service using configuration
+Configuring org.freedesktop.Flatpak.SystemHelper.service using configuration
+Configuring org.freedesktop.Flatpak.rules using configuration
+Configuring flatpak.conf using configuration
+Program /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/buildutil/tap-test found: YES (/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/buildutil/tap-test)
+Checking if "static libc" links: YES 
+Configuring org.flatpak.Authenticator.Oci.service using configuration
+Configuring org.freedesktop.portal.Flatpak.service using configuration
+Configuring org.freedesktop.Flatpak.service using configuration
+Configuring org.freedesktop.Flatpak.SystemHelper.service using configuration
+Configuring org.flatpak.Authenticator.test.service using configuration
+Configuring org.freedesktop.impl.portal.desktop.test.service using configuration
+Configuring package_version.txt using configuration
+Build targets in project: 94
+NOTICE: Future-deprecated features used:
+ * 0.62.0: {'pkgconfig.generate variable for builtin directories'}
+
+flatpak 1.18.6
+
+    Build system helper     : YES
+    Build selinux module    : NO
+    Build bubblewrap        : YES
+    Build dbus-proxy        : YES
+    fusermount executable   : /usr/bin/fusermount3
+    Use sandboxed triggers  : YES
+    Use seccomp             : YES
+    Privileged group        : wheel
+    Use dconf               : YES
+    Use libsystemd          : YES
+    Use libmalcontent       : YES
+    Use libzstd             : YES
+    Use auto sideloading    : NO
+    Wayland security context: YES
+
+  Subprojects (for host machine)
+    bubblewrap              : YES
+    dbus-proxy              : YES
+    libglnx                 : YES
+
+  User defined options
+    bindir                  : /usr/bin
+    datadir                 : /usr/share
+    docbook_docs            : disabled
+    docdir                  : /usr/share/doc/flatpak-1.18.6
+    gtkdoc                  : disabled
+    includedir              : /usr/include
+    infodir                 : /usr/info
+    libdir                  : /usr/lib
+    libexecdir              : /usr/libexec
+    localstatedir           : /var
+    man                     : disabled
+    mandir                  : /usr/man
+    prefix                  : /usr
+    sbindir                 : /usr/sbin
+    strip                   : true
+    sysconfdir              : /etc
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/263] Generating gdbus header common/flatpak-dbus-generated.h
+[2/263] Generating gdbus source common/flatpak-dbus-generated.c
+[3/263] Generating gdbus source common/flatpak-document-dbus-generated.c
+[4/263] Generating GObject enum file common/flatpak-enum-types.h (wrapped by meson to capture output)
+[5/263] Generating gdbus header common/flatpak-document-dbus-generated.h
+[6/263] Generating gdbus source common/flatpak-systemd-dbus-generated.c
+[7/263] Generating gdbus header common/flatpak-systemd-dbus-generated.h
+[8/263] Generating common/security-context-v1-protocol.c with a custom command
+[9/263] Generating common/security-context-v1-protocol.h with a custom command
+[10/263] Generating GObject enum file common/flatpak-enum-types.c (wrapped by meson to capture output)
+[11/263] Generating common/flatpak-variant-private.h with a custom command
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:37: PyparsingDeprecationWarning: 'setName' deprecated - use 'set_name'
+  ident = Word(alphas + "_", alphanums + "_").setName("identifier")
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:1762: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  basicType = oneOf(list(basic_types.keys())).setParseAction(lambda toks: BasicType(toks[0]))
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:1762: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  basicType = oneOf(list(basic_types.keys())).setParseAction(lambda toks: BasicType(toks[0]))
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:1764: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  variantType = Keyword("variant").setParseAction(lambda toks: VariantType())
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:1766: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  arrayType = (LBRACK + RBRACK + typeSpec).setParseAction(lambda toks: ArrayType(toks[0]))
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:1768: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  indexAttribute = oneOf("sorted")
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:1770: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  dictType = (LBRACK + Group(ZeroOrMore(indexAttribute)) + basicType + RBRACK + typeSpec).setParseAction(lambda toks: DictType(toks[0], toks[1], toks[2]))
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:1772: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  maybeType = (Suppress("?") + typeSpec).setParseAction(lambda toks: MaybeType(toks[0]))
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:1774: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  fieldAttribute = oneOf("bigendian littleendian")
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:1776: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  field = (ident + COLON + Group(ZeroOrMore(fieldAttribute)) + typeSpec + SEMI).setParseAction(lambda toks: Field(toks[0], toks[1], toks[2]))
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:1778: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  structType = (LBRACE + ZeroOrMore(field) + RBRACE).setParseAction(lambda toks: StructType(toks))
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:1780: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  namedType = ident.copy().setParseAction(lambda toks: get_named_type(str(toks[0])))
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:1789: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  nameableType = (Optional(Combine(Suppress("'") + ident)) + (arrayType ^ maybeType ^ dictType ^ structType)).setParseAction(handleNameableType)
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:1793: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  typeDef = (Suppress(Keyword("type")) + ident + typeSpec + SEMI).setParseAction(lambda toks: TypeDef(toks[0], toks[1]))
+/home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/subprojects/variant-schema-compiler/variant-schema-compiler:1826: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  typedefs = typeDefs.parseString(testdata, parseAll=True)
+[12/263] Compiling C object subprojects/libglnx/libglnx.a.p/glnx-backport-testutils.c.o
+[13/263] Compiling C object subprojects/libglnx/libglnx.a.p/glnx-backports.c.o
+[14/263] Compiling C object subprojects/libglnx/libglnx.a.p/glnx-console.c.o
+[15/263] Compiling C object subprojects/libglnx/libglnx.a.p/glnx-chase.c.o
+[16/263] Compiling C object subprojects/libglnx/libglnx.a.p/glnx-dirfd.c.o
+[17/263] Compiling C object subprojects/libglnx/libglnx.a.p/glnx-errors.c.o
+[18/263] Compiling C object subprojects/libglnx/libglnx.a.p/glnx-local-alloc.c.o
+[19/263] Compiling C object subprojects/libglnx/libglnx.a.p/glnx-lockfile.c.o
+[20/263] Compiling C object subprojects/libglnx/libglnx.a.p/glnx-shutil.c.o
+[21/263] Compiling C object subprojects/libglnx/libglnx.a.p/glnx-xattrs.c.o
+[22/263] Compiling C object subprojects/libglnx/libglnx.a.p/glnx-fdio.c.o
+[23/263] Compiling C object common/libflatpak-common-base.a.p/flatpak-utils-base.c.o
+[24/263] Compiling C object common/libflatpak-common.a.p/meson-generated_.._flatpak-enum-types.c.o
+[25/263] Compiling C object common/libflatpak-common-base.a.p/meson-generated_.._flatpak-document-dbus-generated.c.o
+[26/263] Compiling C object common/libflatpak-common.a.p/meson-generated_.._security-context-v1-protocol.c.o
+[27/263] Compiling C object common/libflatpak-common.a.p/flatpak-appdata.c.o
+[28/263] Compiling C object common/libflatpak-common.a.p/meson-generated_.._flatpak-systemd-dbus-generated.c.o
+[29/263] Compiling C object common/libflatpak-common.a.p/flatpak-auth.c.o
+[30/263] Compiling C object common/libflatpak-common.a.p/flatpak-bundle-ref.c.o
+[31/263] Compiling C object common/libflatpak-common.a.p/flatpak-chain-input-stream.c.o
+[32/263] Compiling C object common/libflatpak-common-base.a.p/meson-generated_.._flatpak-dbus-generated.c.o
+[33/263] Compiling C object common/libflatpak-common.a.p/flatpak-bwrap.c.o
+[34/263] Compiling C object common/libflatpak-common.a.p/flatpak-dir-utils.c.o
+[35/263] Compiling C object common/libflatpak-common.a.p/flatpak-docker-reference.c.o
+[36/263] Compiling C object common/libflatpak-common.a.p/flatpak-error.c.o
+[37/263] Compiling C object common/libflatpak-common.a.p/flatpak-context.c.o
+[38/263] Compiling C object common/libflatpak-common.a.p/flatpak-exports.c.o
+[39/263] Compiling C object common/libflatpak-common.a.p/flatpak-glib-backports.c.o
+[40/263] Compiling C object common/libflatpak-common.a.p/flatpak-image-collection.c.o
+[41/263] Compiling C object common/libflatpak-common.a.p/flatpak-image-source.c.o
+[42/263] Compiling C object common/libflatpak-common.a.p/flatpak-installed-ref.c.o
+[43/263] Compiling C object common/libflatpak-common.a.p/flatpak-instance.c.o
+[44/263] Compiling C object common/libflatpak-common.a.p/flatpak-installation.c.o
+[45/263] Compiling C object common/libflatpak-common.a.p/flatpak-json.c.o
+[46/263] Compiling C object common/libflatpak-common.a.p/flatpak-json-oci.c.o
+[47/263] Compiling C object common/libflatpak-common.a.p/flatpak-locale-utils.c.o
+[48/263] Compiling C object common/libflatpak-common.a.p/flatpak-oci-signatures.c.o
+[49/263] Compiling C object common/libflatpak-common.a.p/flatpak-portal-error.c.o
+[50/263] Compiling C object common/libflatpak-common.a.p/flatpak-progress.c.o
+[51/263] Compiling C object common/libflatpak-common.a.p/flatpak-prune.c.o
+In function ‘prune_unreachable_loose_objects_at’,
+    inlined from ‘prune_unreachable_loose_objects’ at ../common/flatpak-prune.c:730:11,
+    inlined from ‘flatpak_repo_prune’ at ../common/flatpak-prune.c:808:14:
+../common/flatpak-prune.c:655:6: warning: ‘exists’ may be used uninitialized [-Wmaybe-uninitialized]
+  655 |   if (!exists)
+      |      ^
+../common/flatpak-prune.c: In function ‘flatpak_repo_prune’:
+../common/flatpak-prune.c:651:12: note: ‘exists’ was declared here
+  651 |   gboolean exists;
+      |            ^~~~~~
+[52/263] Compiling C object common/libflatpak-common.a.p/flatpak-oci-registry.c.o
+[53/263] Compiling C object common/libflatpak-common.a.p/flatpak-ref.c.o
+[54/263] Compiling C object common/libflatpak-common.a.p/flatpak-related-ref.c.o
+[55/263] Compiling C object common/libflatpak-common.a.p/flatpak-ref-utils.c.o
+[56/263] Compiling C object common/libflatpak-common.a.p/flatpak-remote-ref.c.o
+[57/263] Compiling C object common/libflatpak-common.a.p/flatpak-remote.c.o
+[58/263] Compiling C object common/libflatpak-common.a.p/flatpak-dir.c.o
+[59/263] Compiling C object common/libflatpak-common.a.p/flatpak-run.c.o
+[60/263] Compiling C object common/libflatpak-common.a.p/flatpak-run-cups.c.o
+[61/263] Compiling C object common/libflatpak-common.a.p/flatpak-run-dbus.c.o
+[62/263] Compiling C object common/libflatpak-common.a.p/flatpak-run-sockets.c.o
+[63/263] Compiling C object common/libflatpak-common.a.p/flatpak-run-pulseaudio.c.o
+[64/263] Compiling C object common/libflatpak-common.a.p/flatpak-run-wayland.c.o
+[65/263] Compiling C object common/libflatpak-common.a.p/flatpak-run-x11.c.o
+[66/263] Compiling C object common/libflatpak-common.a.p/flatpak-repo-utils.c.o
+[67/263] Compiling C object common/libflatpak-common.a.p/flatpak-utils-http.c.o
+[68/263] Compiling C object common/libflatpak-common.a.p/flatpak-uri.c.o
+[69/263] Compiling C object common/libflatpak-common.a.p/flatpak-utils.c.o
+[70/263] Compiling C object common/libflatpak-common.a.p/flatpak-usb.c.o
+[71/263] Compiling C object common/libflatpak-common.a.p/flatpak-xml-utils.c.o
+[72/263] Compiling C object common/libflatpak-common.a.p/flatpak-zstd-compressor.c.o
+[73/263] Compiling C object common/libflatpak-common.a.p/flatpak-parental-controls.c.o
+[74/263] Compiling C object common/libflatpak-common.a.p/flatpak-zstd-decompressor.c.o
+[75/263] Linking static target subprojects/libglnx/libglnx.a
+[76/263] Linking static target common/libflatpak-common-base.a
+[77/263] Compiling C object common/libflatpak.so.0.11806.0.p/flatpak.c.o
+[78/263] Compiling C object common/libflatpak-common.a.p/flatpak-transaction.c.o
+[79/263] Linking static target common/libflatpak-common.a
+[80/263] Generating app/parse-datetime.c with a custom command
+[81/263] Generating gdbus source app/flatpak-permission-dbus-generated.c
+[82/263] Compiling C object subprojects/libglnx/tests/libglnx-testlib.a.p/libglnx-testlib.c.o
+[83/263] Linking target common/libflatpak.so.0.11806.0
+[84/263] Generating gdbus header app/flatpak-permission-dbus-generated.h
+[85/263] Compiling C object app/liblibflatpak-app.a.p/meson-generated_.._parse-datetime.c.o
+app/parse-datetime.c: In function ‘yyparse’:
+app/parse-datetime.c:1323:9: warning: variable ‘yynerrs’ set but not used [-Wunused-but-set-variable=]
+ 1323 |     int yynerrs = 0;
+      |         ^~~~~~~
+[86/263] Compiling C object app/liblibflatpak-app.a.p/flatpak-table-printer.c.o
+[87/263] Generating gdbus source portal/flatpak-permission-dbus.c
+[88/263] Generating gdbus header portal/flatpak-permission-dbus.h
+[89/263] Compiling C object app/liblibflatpak-app.a.p/flatpak-builtins-utils.c.o
+[90/263] Generating gdbus source portal/flatpak-portal-dbus.c
+[91/263] Compiling C object app/liblibflatpak-app.a.p/flatpak-tty-utils.c.o
+[92/263] Linking static target subprojects/libglnx/tests/libglnx-testlib.a
+[93/263] Generating gdbus header portal/flatpak-portal-dbus.h
+[94/263] Compiling C object tests/libtestlib.a.p/testlib.c.o
+[95/263] Compiling C object subprojects/bubblewrap/flatpak-bwrap.p/bind-mount.c.o
+[96/263] Compiling C object subprojects/bubblewrap/flatpak-bwrap.p/network.c.o
+[97/263] Compiling C object subprojects/bubblewrap/flatpak-bwrap.p/chroot_realpath.c.o
+[98/263] Compiling C object subprojects/bubblewrap/flatpak-bwrap.p/utils.c.o
+[99/263] Compiling C object subprojects/bubblewrap/flatpak-bwrap.p/safe_openat.c.o
+[100/263] Compiling C object subprojects/bubblewrap/flatpak-bwrap.p/bubblewrap.c.o
+[101/263] Generating symbol file common/libflatpak.so.0.11806.0.p/libflatpak.so.0.11806.0.symbols
+[102/263] Compiling C object subprojects/dbus-proxy/flatpak-dbus-proxy.p/dbus-proxy.c.o
+[103/263] Compiling C object common/test-libflatpak.p/test-lib.c.o
+[104/263] Linking static target app/liblibflatpak-app.a
+[105/263] Compiling C object subprojects/dbus-proxy/flatpak-dbus-proxy.p/flatpak-proxy.c.o
+[106/263] Compiling C object app/flatpak.p/meson-generated_.._flatpak-permission-dbus-generated.c.o
+[107/263] Generating common/Flatpak-1.0.gir with a custom command (wrapped by meson to set env)
+[108/263] Compiling C object app/flatpak.p/flatpak-builtins-build-bundle.c.o
+[109/263] Compiling C object app/flatpak.p/flatpak-builtins-build-commit-from.c.o
+[110/263] Compiling C object app/flatpak.p/meson-generated_.._.._common_flatpak-dbus-generated.c.o
+[111/263] Compiling C object app/flatpak.p/flatpak-builtins-build-import-bundle.c.o
+[112/263] Compiling C object app/flatpak.p/flatpak-builtins-build-export.c.o
+[113/263] Compiling C object app/flatpak.p/flatpak-builtins-build-finish.c.o
+[114/263] Compiling C object app/flatpak.p/flatpak-builtins-build-sign.c.o
+[115/263] Compiling C object app/flatpak.p/flatpak-builtins-build-init.c.o
+[116/263] Compiling C object app/flatpak.p/flatpak-builtins-build.c.o
+[117/263] Compiling C object app/flatpak.p/flatpak-builtins-config.c.o
+[118/263] Compiling C object app/flatpak.p/flatpak-builtins-build-update-repo.c.o
+[119/263] Compiling C object app/flatpak.p/flatpak-builtins-document-info.c.o
+[120/263] Compiling C object app/flatpak.p/flatpak-builtins-document-export.c.o
+[121/263] Compiling C object app/flatpak.p/flatpak-builtins-create-usb.c.o
+[122/263] Compiling C object app/flatpak.p/flatpak-builtins-document-unexport.c.o
+[123/263] Compiling C object app/flatpak.p/flatpak-builtins-document-list.c.o
+[124/263] Compiling C object app/flatpak.p/flatpak-builtins-enter.c.o
+[125/263] Compiling C object app/flatpak.p/flatpak-builtins-history.c.o
+[126/263] Compiling C object app/flatpak.p/flatpak-builtins-info.c.o
+[127/263] Compiling C object app/flatpak.p/flatpak-builtins-kill.c.o
+[128/263] Compiling C object app/flatpak.p/flatpak-builtins-install.c.o
+[129/263] Compiling C object app/flatpak.p/flatpak-builtins-mask.c.o
+[130/263] Compiling C object app/flatpak.p/flatpak-builtins-make-current.c.o
+[131/263] Compiling C object app/flatpak.p/flatpak-builtins-list.c.o
+[132/263] Compiling C object app/flatpak.p/flatpak-builtins-override.c.o
+[133/263] Compiling C object app/flatpak.p/flatpak-builtins-permission-list.c.o
+[134/263] Compiling C object app/flatpak.p/flatpak-builtins-permission-remove.c.o
+[135/263] Compiling C object app/flatpak.p/flatpak-builtins-permission-reset.c.o
+[136/263] Compiling C object app/flatpak.p/flatpak-builtins-permission-set.c.o
+[137/263] Compiling C object app/flatpak.p/flatpak-builtins-permission-show.c.o
+[138/263] Compiling C object app/flatpak.p/flatpak-builtins-pin.c.o
+[139/263] Compiling C object app/flatpak.p/flatpak-builtins-preinstall.c.o
+[140/263] Compiling C object app/flatpak.p/flatpak-builtins-ps.c.o
+[141/263] Compiling C object app/flatpak.p/flatpak-builtins-remote-add.c.o
+[142/263] Compiling C object app/flatpak.p/flatpak-builtins-remote-delete.c.o
+[143/263] Compiling C object app/flatpak.p/flatpak-builtins-remote-list.c.o
+[144/263] Compiling C object app/flatpak.p/flatpak-builtins-remote-info.c.o
+[145/263] Compiling C object app/flatpak.p/flatpak-builtins-remote-modify.c.o
+[146/263] Compiling C object app/flatpak.p/flatpak-builtins-remote-ls.c.o
+[147/263] Compiling C object app/flatpak.p/flatpak-builtins-repair.c.o
+[148/263] Compiling C object app/flatpak.p/flatpak-builtins-search.c.o
+[149/263] Compiling C object app/flatpak.p/flatpak-builtins-run.c.o
+[150/263] Compiling C object app/flatpak.p/flatpak-builtins-repo.c.o
+[151/263] Compiling C object app/flatpak.p/flatpak-builtins-uninstall.c.o
+[152/263] Compiling C object app/flatpak.p/flatpak-builtins-update.c.o
+[153/263] Compiling C object app/flatpak.p/flatpak-main.c.o
+[154/263] Compiling C object app/flatpak.p/flatpak-complete.c.o
+[155/263] Compiling C object app/flatpak.p/flatpak-quiet-transaction.c.o
+[156/263] Compiling C object app/flatpak.p/flatpak-cli-transaction.c.o
+[157/263] Compiling C object app/flatpak.p/flatpak-polkit-agent-text-listener.c.o
+[158/263] Compiling C object icon-validator/flatpak-validate-icon.p/validate-icon.c.o
+[159/263] Compiling C object oci-authenticator/flatpak-oci-authenticator.p/flatpak-oci-authenticator.c.o
+[160/263] Compiling C object portal/flatpak-portal.p/meson-generated_.._flatpak-permission-dbus.c.o
+[161/263] Compiling C object portal/flatpak-portal.p/flatpak-portal-app-info.c.o
+[162/263] Compiling C object portal/flatpak-portal.p/meson-generated_.._flatpak-portal-dbus.c.o
+[163/263] Compiling C object portal/flatpak-portal.p/portal-impl.c.o
+[164/263] Compiling C object portal/flatpak-portal.p/.._common_flatpak-portal-error.c.o
+[165/263] Compiling C object portal/flatpak-portal.p/.._common_flatpak-dbus-utils.c.o
+[166/263] Compiling C object revokefs/revokefs-fuse.p/main.c.o
+[167/263] Compiling C object revokefs/revokefs-fuse.p/writer.c.o
+[168/263] Compiling C object revokefs/revokefs-demo.p/demo.c.o
+[169/263] Compiling C object portal/flatpak-portal.p/flatpak-portal.c.o
+[170/263] Compiling C object session-helper/flatpak-session-helper.p/.._common_flatpak-dbus-utils.c.o
+[171/263] Linking static target tests/libtestlib.a
+[172/263] Compiling C object session-helper/flatpak-session-helper.p/flatpak-session-helper.c.o
+[173/263] Compiling C object tests/testapp.p/testapp.c.o
+[174/263] Compiling C object system-helper/flatpak-system-helper.p/flatpak-system-helper.c.o
+[175/263] Compiling C object tests/testlibrary.p/can-use-fuse.c.o
+[176/263] Compiling C object tests/testcommon.p/testcommon.c.o
+[177/263] Compiling C object tests/testlibrary.p/testlib.c.o
+[178/263] Compiling C object tests/test-dbus-utils.p/test-dbus-utils.c.o
+[179/263] Compiling C object tests/test-dbus-utils.p/.._common_flatpak-dbus-utils.c.o
+[180/263] Compiling C object tests/test-context.p/test-context.c.o
+[181/263] Compiling C object tests/test-instance.p/test-instance.c.o
+[182/263] Compiling C object tests/test-exports.p/test-exports.c.o
+[183/263] Compiling C object tests/test-locale-utils.p/test-locale-utils.c.o
+[184/263] Compiling C object tests/test-portal.p/test-portal.c.o
+[185/263] Compiling C object tests/testlibrary.p/testlibrary.c.o
+[186/263] Compiling C object tests/test-portal.p/meson-generated_.._.._portal_flatpak-portal-dbus.c.o
+[187/263] Compiling C object tests/hold-lock.p/hold-lock.c.o
+[188/263] Compiling C object tests/test-ref-utils.p/test-ref-utils.c.o
+[189/263] Compiling C object tests/httpcache.p/httpcache.c.o
+[190/263] Compiling C object tests/mock-flatpak.p/mock-flatpak.c.o
+[191/263] Compiling C object tests/test-portal-impl.p/test-portal-impl.c.o
+[192/263] Compiling C object tests/test-update-portal.p/test-update-portal.c.o
+[193/263] Compiling C object tests/try-syscall.p/try-syscall.c.o
+[194/263] Compiling C object tests/test-authenticator.p/test-authenticator.c.o
+[195/263] Compiling C object tests/apply-extra-static.p/apply-extra-static.c.o
+[196/263] Compiling C object tests/apply-extra-deeply-nested-setuid.p/apply-extra-deeply-nested-setuid.c.o
+[197/263] Compiling C object tests/list-unused.p/list-unused.c.o
+[198/263] Compiling C object tests/libpreload.so.p/libpreload.c.o
+[199/263] Linking target subprojects/bubblewrap/flatpak-bwrap
+[200/263] Linking target subprojects/dbus-proxy/flatpak-dbus-proxy
+[201/263] Compiling C object tests/test-update-portal.p/meson-generated_.._.._portal_flatpak-portal-dbus.c.o
+[202/263] Linking target common/test-libflatpak
+[203/263] Linking target icon-validator/flatpak-validate-icon
+[204/263] Generating common/Flatpak-1.0.typelib with a custom command
+[205/263] Linking target app/flatpak
+[206/263] Linking target revokefs/revokefs-fuse
+[207/263] Linking target revokefs/revokefs-demo
+[208/263] Linking target oci-authenticator/flatpak-oci-authenticator
+[209/263] Building translation po/bg/LC_MESSAGES/flatpak-bg.mo
+[210/263] Linking target session-helper/flatpak-session-helper
+[211/263] Building translation po/cs/LC_MESSAGES/flatpak-cs.mo
+[212/263] Building translation po/da/LC_MESSAGES/flatpak-da.mo
+[213/263] Linking target portal/flatpak-portal
+[214/263] Building translation po/de/LC_MESSAGES/flatpak-de.mo
+[215/263] Building translation po/es/LC_MESSAGES/flatpak-es.mo
+[216/263] Building translation po/en_GB/LC_MESSAGES/flatpak-en_GB.mo
+[217/263] Building translation po/eo/LC_MESSAGES/flatpak-eo.mo
+[218/263] Building translation po/fr/LC_MESSAGES/flatpak-fr.mo
+[219/263] Building translation po/hi/LC_MESSAGES/flatpak-hi.mo
+[220/263] Building translation po/gl/LC_MESSAGES/flatpak-gl.mo
+[221/263] Building translation po/hr/LC_MESSAGES/flatpak-hr.mo
+[222/263] Building translation po/hu/LC_MESSAGES/flatpak-hu.mo
+[223/263] Building translation po/id/LC_MESSAGES/flatpak-id.mo
+[224/263] Building translation po/ka/LC_MESSAGES/flatpak-ka.mo
+[225/263] Building translation po/kk/LC_MESSAGES/flatpak-kk.mo
+[226/263] Building translation po/nl/LC_MESSAGES/flatpak-nl.mo
+[227/263] Building translation po/oc/LC_MESSAGES/flatpak-oc.mo
+[228/263] Building translation po/pl/LC_MESSAGES/flatpak-pl.mo
+[229/263] Building translation po/pt/LC_MESSAGES/flatpak-pt.mo
+[230/263] Building translation po/pt_BR/LC_MESSAGES/flatpak-pt_BR.mo
+[231/263] Building translation po/ro/LC_MESSAGES/flatpak-ro.mo
+[232/263] Building translation po/ru/LC_MESSAGES/flatpak-ru.mo
+[233/263] Building translation po/sk/LC_MESSAGES/flatpak-sk.mo
+[234/263] Building translation po/sl/LC_MESSAGES/flatpak-sl.mo
+[235/263] Building translation po/sr/LC_MESSAGES/flatpak-sr.mo
+[236/263] Building translation po/sv/LC_MESSAGES/flatpak-sv.mo
+[237/263] Building translation po/tr/LC_MESSAGES/flatpak-tr.mo
+[238/263] Building translation po/uk/LC_MESSAGES/flatpak-uk.mo
+[239/263] Building translation po/zh_CN/LC_MESSAGES/flatpak-zh_CN.mo
+[240/263] Building translation po/zh_TW/LC_MESSAGES/flatpak-zh_TW.mo
+[241/263] Linking target tests/testapp
+[242/263] Linking target system-helper/flatpak-system-helper
+[243/263] Linking target tests/testlibrary
+[244/263] Linking target tests/testcommon
+[245/263] Linking target tests/test-dbus-utils
+[246/263] Merging translations for system-helper/org.freedesktop.Flatpak.policy
+[247/263] Linking target tests/test-instance
+[248/263] Linking target tests/test-exports
+[249/263] Linking target tests/test-context
+[250/263] Linking target tests/test-locale-utils
+[251/263] Linking target tests/test-portal
+[252/263] Linking target tests/hold-lock
+[253/263] Linking target tests/test-ref-utils
+[254/263] Linking target tests/test-update-portal
+[255/263] Linking target tests/httpcache
+[256/263] Linking target tests/test-portal-impl
+[257/263] Linking target tests/try-syscall
+[258/263] Linking target tests/mock-flatpak
+[259/263] Linking target tests/test-authenticator
+[260/263] Linking target tests/apply-extra-static
+[261/263] Linking target tests/libpreload.so
+[262/263] Linking target tests/list-unused
+[263/263] Linking target tests/apply-extra-deeply-nested-setuid
+[1/7] Compiling C object app/liblibflatpak-app.a.p/flatpak-table-printer.c.o
+[2/7] Compiling C object app/liblibflatpak-app.a.p/flatpak-builtins-utils.c.o
+[3/7] Linking static target app/liblibflatpak-app.a
+[4/7] Linking target app/flatpak
+[5/7] Linking target tests/mock-flatpak
+[6/7] Linking target tests/testapp
+[6/7] Installing files
+Installing subprojects/bubblewrap/flatpak-bwrap to /usr/libexec
+Stripping target 'subprojects/bubblewrap/flatpak-bwrap'.
+Installing subprojects/dbus-proxy/flatpak-dbus-proxy to /usr/libexec
+Stripping target 'subprojects/dbus-proxy/flatpak-dbus-proxy'.
+Installing common/flatpak-enum-types.h to /usr/include/flatpak
+Installing common/libflatpak.so.0.11806.0 to /usr/lib
+Stripping target 'common/libflatpak.so.0.11806.0'.
+Installing common/Flatpak-1.0.gir to /usr/share/gir-1.0
+Installing common/Flatpak-1.0.typelib to /usr/lib/girepository-1.0
+Installing app/flatpak to /usr/bin
+Stripping target 'app/flatpak'.
+Installing icon-validator/flatpak-validate-icon to /usr/libexec
+Stripping target 'icon-validator/flatpak-validate-icon'.
+Installing oci-authenticator/flatpak-oci-authenticator to /usr/libexec
+Stripping target 'oci-authenticator/flatpak-oci-authenticator'.
+Installing portal/flatpak-portal to /usr/libexec
+Stripping target 'portal/flatpak-portal'.
+Installing revokefs/revokefs-fuse to /usr/libexec
+Stripping target 'revokefs/revokefs-fuse'.
+Installing session-helper/flatpak-session-helper to /usr/libexec
+Stripping target 'session-helper/flatpak-session-helper'.
+Installing po/bg/LC_MESSAGES/flatpak.mo to /usr/share/locale/bg/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/flatpak.mo to /usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/flatpak.mo to /usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/flatpak.mo to /usr/share/locale/de/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/flatpak.mo to /usr/share/locale/en_GB/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/flatpak.mo to /usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/flatpak.mo to /usr/share/locale/es/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/flatpak.mo to /usr/share/locale/fr/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/flatpak.mo to /usr/share/locale/gl/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/flatpak.mo to /usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/flatpak.mo to /usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/flatpak.mo to /usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/flatpak.mo to /usr/share/locale/id/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/flatpak.mo to /usr/share/locale/ka/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/flatpak.mo to /usr/share/locale/kk/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/flatpak.mo to /usr/share/locale/nl/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/flatpak.mo to /usr/share/locale/oc/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/flatpak.mo to /usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/flatpak.mo to /usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/flatpak.mo to /usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/flatpak.mo to /usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/flatpak.mo to /usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/flatpak.mo to /usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/flatpak.mo to /usr/share/locale/sl/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/flatpak.mo to /usr/share/locale/sr/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/flatpak.mo to /usr/share/locale/sv/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/flatpak.mo to /usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/flatpak.mo to /usr/share/locale/uk/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/flatpak.mo to /usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/flatpak.mo to /usr/share/locale/zh_TW/LC_MESSAGES
+Installing system-helper/flatpak-system-helper to /usr/libexec
+Stripping target 'system-helper/flatpak-system-helper'.
+Installing system-helper/org.freedesktop.Flatpak.policy to /usr/share/polkit-1/actions
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/common/flatpak-bundle-ref.h to /usr/include/flatpak
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/common/flatpak-error.h to /usr/include/flatpak
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/common/flatpak-installation.h to /usr/include/flatpak
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/common/flatpak-installed-ref.h to /usr/include/flatpak
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/common/flatpak-instance.h to /usr/include/flatpak
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/common/flatpak-portal-error.h to /usr/include/flatpak
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/common/flatpak-ref.h to /usr/include/flatpak
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/common/flatpak-related-ref.h to /usr/include/flatpak
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/common/flatpak-remote-ref.h to /usr/include/flatpak
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/common/flatpak-remote.h to /usr/include/flatpak
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/common/flatpak-transaction.h to /usr/include/flatpak
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/common/flatpak.h to /usr/include/flatpak
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/build/common/flatpak-version-macros.h to /usr/include/flatpak
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/data/org.freedesktop.Flatpak.xml to /usr/share/dbus-1/interfaces
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/data/org.freedesktop.Flatpak.Authenticator.xml to /usr/share/dbus-1/interfaces
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/data/org.freedesktop.portal.Flatpak.xml to /usr/share/dbus-1/interfaces
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/data/tmpfiles.d/flatpak.conf to /usr/lib/tmpfiles.d
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/env.d/60-flatpak to /usr/lib/systemd/user-environment-generators
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/env.d/60-flatpak-system-only to /usr/lib/systemd/system-environment-generators
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/profile/flatpak.csh to /etc/profile.d
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/profile/flatpak.sh to /etc/profile.d
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/profile/flatpak.fish to /usr/share/fish/vendor_conf.d
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/build/oci-authenticator/flatpak-oci-authenticator.service to /usr/lib/systemd/user
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/build/oci-authenticator/org.flatpak.Authenticator.Oci.service to /usr/share/dbus-1/services
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/build/portal/flatpak-portal.service to /usr/lib/systemd/user
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/build/portal/org.freedesktop.portal.Flatpak.service to /usr/share/dbus-1/services
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/build/session-helper/flatpak-session-helper.service to /usr/lib/systemd/user
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/build/session-helper/org.freedesktop.Flatpak.service to /usr/share/dbus-1/services
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/scripts/flatpak-bisect to /usr/bin
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/scripts/flatpak-coredumpctl to /usr/bin
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/completion/flatpak to /usr/share/bash-completion/completions
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/completion/_flatpak to /usr/share/zsh/site-functions
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/completion/flatpak.fish to /usr/share/fish/vendor_completions.d
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/triggers/desktop-database.trigger to /usr/share/flatpak/triggers
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/triggers/gtk-icon-cache.trigger to /usr/share/flatpak/triggers
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/triggers/mime-database.trigger to /usr/share/flatpak/triggers
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/build/system-helper/flatpak-system-helper.service to /usr/lib/systemd/system
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/build/system-helper/org.freedesktop.Flatpak.SystemHelper.service to /usr/share/dbus-1/system-services
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/system-helper/org.freedesktop.Flatpak.SystemHelper.conf to /usr/share/dbus-1/system.d
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/build/system-helper/org.freedesktop.Flatpak.rules to /usr/share/polkit-1/rules.d
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/build/system-helper/flatpak.conf to /usr/lib/sysusers.d
+Installing /home/fusion809/lfs_packaging/flatpak/flatpak-1.18.6/build/meson-private/flatpak.pc to /usr/lib/pkgconfig
+Installing symlink pointing to libflatpak.so.0.11806.0 to /usr/lib/libflatpak.so.0
+Installing symlink pointing to libflatpak.so.0 to /usr/lib/libflatpak.so
+1.18.6
+Updated registry for flatpak to version 1.18.6
+[VERSION] flatpak: 1.18.6
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package flatpak in /var/lib/custom-packages/
+Updating Python packages via pip...
+Requirement already satisfied: affine in /usr/lib/python3.15/site-packages (3.0.1)
+Requirement already satisfied: alabaster in /usr/lib/python3.15/site-packages (1.0.0)
+Requirement already satisfied: anyio in /usr/lib/python3.15/site-packages (4.16.0)
+Requirement already satisfied: appdirs in /usr/lib/python3.15/site-packages (1.4.4)
+Requirement already satisfied: argcomplete in /usr/lib/python3.15/site-packages (3.7.2)
+Collecting argcomplete
+  Using cached argcomplete-3.8.0-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: arrow in /usr/lib/python3.15/site-packages (1.4.0)
+Requirement already satisfied: asgiref in /usr/lib/python3.15/site-packages (3.13.0)
+Requirement already satisfied: astroid in /usr/lib/python3.15/site-packages (4.3.4)
+Requirement already satisfied: asttokens in /usr/lib/python3.15/site-packages (3.0.2)
+Requirement already satisfied: attrs in /usr/lib/python3.15/site-packages (26.1.0)
+Requirement already satisfied: babel in /usr/lib/python3.15/site-packages (2.18.0)
+Requirement already satisfied: beautifulsoup4 in /usr/lib/python3.15/site-packages (4.15.0)
+Requirement already satisfied: black in /usr/lib/python3.15/site-packages (26.10.1)
+Requirement already satisfied: bleach in /usr/lib/python3.15/site-packages (6.4.0)
+Requirement already satisfied: brotli in /usr/lib/python3.15/site-packages (1.2.1)
+Requirement already satisfied: build in /usr/lib/python3.15/site-packages (1.6.1)
+Requirement already satisfied: cclib in /usr/lib/python3.15/site-packages (1.8.1)
+Requirement already satisfied: certifi in /usr/lib/python3.15/site-packages (2026.10.23)
+Collecting certifi
+  Using cached certifi-2026.11.20-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: cffi in /usr/lib/python3.15/site-packages (2.1.1)
+Requirement already satisfied: chardet in /usr/lib/python3.15/site-packages (5.2.0)
+Collecting chardet
+  Using cached chardet-7.7.0-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Requirement already satisfied: click in /usr/lib/python3.15/site-packages (8.5.1)
+Requirement already satisfied: colorama in /usr/lib/python3.15/site-packages (0.4.6)
+Requirement already satisfied: columnize in /usr/lib/python3.15/site-packages (0.3.11)
+Requirement already satisfied: comm in /usr/lib/python3.15/site-packages (0.2.3)
+Requirement already satisfied: contourpy in /usr/lib/python3.15/site-packages (1.4.0)
+Requirement already satisfied: cryptography in /usr/lib/python3.15/site-packages (50.0.2)
+Requirement already satisfied: cssselect in /usr/lib/python3.15/site-packages (1.6.0)
+Requirement already satisfied: cycler in /usr/lib/python3.15/site-packages (0.12.1)
+Requirement already satisfied: dateutils in /usr/lib/python3.15/site-packages (0.6.12)
+Requirement already satisfied: debugpy in /usr/lib/python3.15/site-packages (1.8.22)
+Requirement already satisfied: decorator in /usr/lib/python3.15/site-packages (5.3.2)
+Requirement already satisfied: defusedxml in /usr/lib/python3.15/site-packages (0.7.1)
+Requirement already satisfied: dill in /usr/lib/python3.15/site-packages (0.4.1)
+Requirement already satisfied: docutils in /usr/lib/python3.15/site-packages (0.22.4)
+Collecting docutils
+  Using cached docutils-0.23-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: doxypypy in /usr/lib/python3.15/site-packages (0.8.8.7)
+Requirement already satisfied: doxyqml in /usr/lib/python3.15/site-packages (0.6.0)
+Requirement already satisfied: editables in /usr/lib/python3.15/site-packages (0.6)
+Requirement already satisfied: executing in /usr/lib/python3.15/site-packages (2.3.0)
+Requirement already satisfied: fastjsonschema in /usr/lib/python3.15/site-packages (2.22.3)
+Requirement already satisfied: flake8 in /usr/lib/python3.15/site-packages (7.5.0)
+Requirement already satisfied: flexcache in /usr/lib/python3.15/site-packages (0.3)
+Requirement already satisfied: flexparser in /usr/lib/python3.15/site-packages (0.4)
+Requirement already satisfied: flit_core in /usr/lib/python3.15/site-packages (4.2.0)
+Requirement already satisfied: fonttools in /usr/lib/python3.15/site-packages (4.68.0)
+Requirement already satisfied: fqdn in /usr/lib/python3.15/site-packages (1.6.0)
+Requirement already satisfied: gobject in /usr/lib/python3.15/site-packages (0.1.0)
+Requirement already satisfied: h11 in /usr/lib/python3.15/site-packages (0.16.0)
+Requirement already satisfied: hatchling in /usr/lib/python3.15/site-packages (1.33.0)
+Requirement already satisfied: html5lib in /usr/lib/python3.15/site-packages (1.1)
+Requirement already satisfied: httpcore in /usr/lib/python3.15/site-packages (1.0.9)
+Requirement already satisfied: httpx in /usr/lib/python3.15/site-packages (0.28.1)
+Requirement already satisfied: idna in /usr/lib/python3.15/site-packages (3.20)
+Requirement already satisfied: imagesize in /usr/lib/python3.15/site-packages (2.0.1)
+Requirement already satisfied: installer in /usr/lib/python3.15/site-packages (1.1.0)
+Requirement already satisfied: ipykernel in /usr/lib/python3.15/site-packages (7.4.0)
+Requirement already satisfied: ipython in /usr/lib/python3.15/site-packages (9.18.1)
+Collecting ipython
+  Using cached ipython-9.19.1-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: ipython_pygments_lexers in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: isoduration in /usr/lib/python3.15/site-packages (20.11.0)
+Requirement already satisfied: isort in /usr/lib/python3.15/site-packages (9.0.2)
+Requirement already satisfied: jedi in /usr/lib/python3.15/site-packages (0.20.1)
+Requirement already satisfied: json5 in /usr/lib/python3.15/site-packages (0.17.3)
+Requirement already satisfied: jsonpointer in /usr/lib/python3.15/site-packages (3.12)
+Requirement already satisfied: jsonschema in /usr/lib/python3.15/site-packages (4.26.0)
+Requirement already satisfied: jupyter_builder in /usr/lib/python3.15/site-packages (1.3.0)
+Requirement already satisfied: jupyter_client in /usr/lib/python3.15/site-packages (8.10.0)
+Requirement already satisfied: jupyter_core in /usr/lib/python3.15/site-packages (5.9.1)
+Requirement already satisfied: jupyter_server in /usr/lib/python3.15/site-packages (2.21.1)
+Requirement already satisfied: jupyter_server_terminals in /usr/lib/python3.15/site-packages (0.5.4)
+Requirement already satisfied: jupyterlab in /usr/lib/python3.15/site-packages (4.6.6)
+Requirement already satisfied: jupyterlab_pygments in /usr/lib/python3.15/site-packages (0.3.0)
+Requirement already satisfied: jupyterlab_server in /usr/lib/python3.15/site-packages (2.28.1)
+Requirement already satisfied: kiwisolver in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: lark in /usr/lib/python3.15/site-packages (1.3.1)
+Requirement already satisfied: lxml in /usr/lib/python3.15/site-packages (6.1.3)
+Requirement already satisfied: mathics3_notebook_frontends in /usr/lib/python3.15/site-packages (1.0.1)
+Requirement already satisfied: mathicsscript in /usr/lib/python3.15/site-packages (10.0.0)
+Requirement already satisfied: matplotlib in /usr/lib/python3.15/site-packages (3.11.2)
+Requirement already satisfied: mccabe in /usr/lib/python3.15/site-packages (0.7.0)
+Requirement already satisfied: meson in /usr/lib/python3.15/site-packages (1.12.1)
+Requirement already satisfied: metakernel in /usr/lib/python3.15/site-packages (1.0.7)
+Requirement already satisfied: mistune in /usr/lib/python3.15/site-packages (3.4.0)
+Requirement already satisfied: mpmath in /usr/lib/python3.15/site-packages (1.3.0)
+Collecting mpmath
+  Using cached mpmath-1.4.1-py3-none-any.whl.metadata (9.1 kB)
+Requirement already satisfied: msgpack in /usr/lib/python3.15/site-packages (1.2.4)
+Requirement already satisfied: mypy_extensions in /usr/lib/python3.15/site-packages (1.2.0)
+Requirement already satisfied: narwhals in /usr/lib/python3.15/site-packages (2.29.0)
+Requirement already satisfied: nbclient in /usr/lib/python3.15/site-packages (0.11.0)
+Requirement already satisfied: nbconvert in /usr/lib/python3.15/site-packages (7.17.2)
+Requirement already satisfied: nbformat in /usr/lib/python3.15/site-packages (5.11.1)
+Requirement already satisfied: networkx in /usr/lib/python3.15/site-packages (3.7)
+Requirement already satisfied: notebook_shim in /usr/lib/python3.15/site-packages (0.2.4)
+Requirement already satisfied: numpy in /usr/lib/python3.15/site-packages (2.5.5)
+Requirement already satisfied: octave_kernel in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: packaging in /usr/lib/python3.15/site-packages (26.3)
+Collecting packaging
+  Using cached packaging-26.4-py3-none-any.whl.metadata (3.5 kB)
+Requirement already satisfied: palettable in /usr/lib/python3.15/site-packages (3.3.3)
+Requirement already satisfied: pandocfilters in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: parameterized in /usr/lib/python3.15/site-packages (0.9.0)
+Requirement already satisfied: parso in /usr/lib/python3.15/site-packages (0.8.7)
+Requirement already satisfied: pathspec in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: periodictable in /usr/lib/python3.15/site-packages (2.1.0)
+Requirement already satisfied: pexpect in /usr/lib/python3.15/site-packages (4.9.0)
+Requirement already satisfied: pillow in /usr/lib/python3.15/site-packages (13.0.0)
+Requirement already satisfied: pip in /usr/lib/python3.15/site-packages (26.3)
+Requirement already satisfied: platformdirs in /usr/lib/python3.15/site-packages (4.14.8)
+Requirement already satisfied: pluggy in /usr/lib/python3.15/site-packages (1.7.0)
+Requirement already satisfied: prometheus_client in /usr/lib/python3.15/site-packages (0.26.0)
+Requirement already satisfied: prompt_toolkit in /usr/lib/python3.15/site-packages (3.0.53)
+Requirement already satisfied: psutil in /usr/lib/python3.15/site-packages (7.2.2)
+Requirement already satisfied: ptyprocess in /usr/lib/python3.15/site-packages (0.7.0)
+Requirement already satisfied: pure_eval in /usr/lib/python3.15/site-packages (0.2.4)
+Requirement already satisfied: pyasn1 in /usr/lib/python3.15/site-packages (0.6.5)
+Requirement already satisfied: pybind11 in /usr/lib/python3.15/site-packages (3.1.0)
+Requirement already satisfied: pycairo in /usr/lib/python3.15/site-packages (1.29.2)
+Requirement already satisfied: pycodestyle in /usr/lib/python3.15/site-packages (2.15.0)
+Requirement already satisfied: pycparser in /usr/lib/python3.15/site-packages (3.12)
+Requirement already satisfied: pydeck in /usr/lib/python3.15/site-packages (0.9.3)
+Requirement already satisfied: pyelftools in /usr/lib/python3.15/site-packages (0.33)
+Requirement already satisfied: pyflakes in /usr/lib/python3.15/site-packages (4.1.0)
+Requirement already satisfied: pygdbmi in /usr/lib/python3.15/site-packages (0.11.0.0)
+Requirement already satisfied: pylint in /usr/lib/python3.15/site-packages (4.1.4)
+Requirement already satisfied: Pympler in /usr/lib/python3.15/site-packages (1.1)
+Requirement already satisfied: pyparsing in /usr/lib/python3.15/site-packages (3.3.3)
+Requirement already satisfied: pyproject_hooks in /usr/lib/python3.15/site-packages (1.3.3)
+Requirement already satisfied: pyserial in /usr/lib/python3.15/site-packages (3.5)
+Requirement already satisfied: pyte in /usr/lib/python3.15/site-packages (0.8.2)
+Requirement already satisfied: pytokens in /usr/lib/python3.15/site-packages (0.4.1)
+Requirement already satisfied: pytz in /usr/lib/python3.15/site-packages (2026.6)
+Requirement already satisfied: pyzmq in /usr/lib/python3.15/site-packages (27.3.0)
+Requirement already satisfied: rasterio in /usr/lib/python3.15/site-packages (1.5.2)
+Requirement already satisfied: rdflib in /usr/lib/python3.15/site-packages (7.6.0)
+Requirement already satisfied: referencing in /usr/lib/python3.15/site-packages (0.37.0)
+Requirement already satisfied: requests in /usr/lib/python3.15/site-packages (2.34.2)
+Requirement already satisfied: rnc2rng in /usr/lib/python3.15/site-packages (2.8.0)
+Requirement already satisfied: rply in /usr/lib/python3.15/site-packages (0.7.8)
+Requirement already satisfied: scikit_build_core in /usr/lib/python3.15/site-packages (1.1.2)
+Requirement already satisfied: scipy in /usr/lib/python3.15/site-packages (1.18.1)
+Requirement already satisfied: scour in /usr/lib/python3.15/site-packages (0.38.2)
+Requirement already satisfied: setuptools in /usr/lib/python3.15/site-packages (84.2.1)
+Requirement already satisfied: sip in /usr/lib/python3.15/site-packages (6.17.3)
+Requirement already satisfied: six in /usr/lib/python3.15/site-packages (1.17.0)
+Requirement already satisfied: smartypants in /usr/lib/python3.15/site-packages (2.0.2)
+Requirement already satisfied: snowballstemmer in /usr/lib/python3.15/site-packages (3.1.1)
+Requirement already satisfied: soupsieve in /usr/lib/python3.15/site-packages (4.1.3)
+Requirement already satisfied: sphinx_lv2_theme in /usr/lib/python3.15/site-packages (1.4.6)
+Requirement already satisfied: sphinxygen in /usr/lib/python3.15/site-packages (1.0.12)
+Requirement already satisfied: sqlparse in /usr/lib/python3.15/site-packages (0.6.1)
+Requirement already satisfied: sympy in /usr/lib/python3.15/site-packages (1.14.0)
+Requirement already satisfied: terminado in /usr/lib/python3.15/site-packages (0.18.1)
+Requirement already satisfied: tinycss2 in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: tomlkit in /usr/lib/python3.15/site-packages (0.15.2)
+Collecting tomlkit
+  Using cached tomlkit-0.15.3-py3-none-any.whl.metadata (3.4 kB)
+Requirement already satisfied: tornado in /usr/lib/python3.15/site-packages (6.6.1)
+Requirement already satisfied: traitlets in /usr/lib/python3.15/site-packages (5.16.1)
+Requirement already satisfied: typing_extensions in /usr/lib/python3.15/site-packages (4.16.0)
+Requirement already satisfied: typogrify in /usr/lib/python3.15/site-packages (2.1.0)
+Requirement already satisfied: tzdata in /usr/lib/python3.15/site-packages (2026.6)
+Requirement already satisfied: urllib3 in /usr/lib/python3.15/site-packages (2.8.0)
+Requirement already satisfied: wcwidth in /usr/lib/python3.15/site-packages (0.9.4)
+Collecting wcwidth
+  Using cached wcwidth-0.9.5-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (26 kB)
+Requirement already satisfied: webcolors in /usr/lib/python3.15/site-packages (25.10.0)
+Requirement already satisfied: webencodings in /usr/lib/python3.15/site-packages (0.6.1)
+Requirement already satisfied: wheel in /usr/lib/python3.15/site-packages (0.48.0)
+Requirement already satisfied: python-dateutil>=2.7.0 in /usr/lib/python3.15/site-packages (from arrow) (3.0.0)
+Requirement already satisfied: trove-classifiers in /usr/lib/python3.15/site-packages (from hatchling) (2026.6.1.19)
+Requirement already satisfied: matplotlib-inline>=0.1 in /usr/lib/python3.15/site-packages (from ipykernel) (0.2.2)
+Requirement already satisfied: nest-asyncio2>=1.7.0 in /usr/lib/python3.15/site-packages (from ipykernel) (1.7.4)
+Requirement already satisfied: pygments>=2.14.0 in /usr/lib/python3.15/site-packages (from ipython) (2.21.0)
+Requirement already satisfied: stack_data>=0.6.0 in /usr/lib/python3.15/site-packages (from ipython) (0.6.3)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /usr/lib/python3.15/site-packages (from jsonschema) (2025.9.1)
+Requirement already satisfied: rpds-py>=0.25.0 in /usr/lib/python3.15/site-packages (from jsonschema) (2026.9.1)
+Requirement already satisfied: argon2-cffi>=21.1 in /usr/lib/python3.15/site-packages (from jupyter_server) (25.1.0)
+Requirement already satisfied: jinja2>=3.0.3 in /usr/lib/python3.15/site-packages (from jupyter_server) (3.1.6)
+Requirement already satisfied: jupyter-events>=0.11.0 in /usr/lib/python3.15/site-packages (from jupyter_server) (0.12.1)
+Requirement already satisfied: send2trash>=1.8.2 in /usr/lib/python3.15/site-packages (from jupyter_server) (2.1.0)
+Requirement already satisfied: websocket-client>=1.7 in /usr/lib/python3.15/site-packages (from jupyter_server) (1.9.2)
+Requirement already satisfied: async-lru>=1.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.4.0)
+Requirement already satisfied: jupyter-lsp>=2.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.3.1)
+Requirement already satisfied: Mathics3>=10.0.1 in /usr/lib/python3.15/site-packages (from mathics3_notebook_frontends) (10.0.1)
+Requirement already satisfied: charset-normalizer<4.0.0,>=2.0.0 in /usr/lib/python3.15/site-packages (from mathics3_notebook_frontends) (3.5.2)
+Requirement already satisfied: Mathics3_Scanner>=10.0.0 in /usr/lib/python3.15/site-packages (from mathicsscript) (10.0.1)
+Requirement already satisfied: Mathics3_pygments>=10.0.0 in /usr/lib/python3.15/site-packages (from mathicsscript) (10.0.0)
+Requirement already satisfied: term-background>=1.0.5 in /usr/lib/python3.15/site-packages (from mathicsscript) (1.0.5)
+Requirement already satisfied: markupsafe>=2.0 in /usr/lib/python3.15/site-packages (from nbconvert) (3.0.4)
+Requirement already satisfied: sphinx in /usr/lib/python3.15/site-packages (from sphinx_lv2_theme) (9.1.0)
+Requirement already satisfied: argon2-cffi-bindings in /usr/lib/python3.15/site-packages (from argon2-cffi>=21.1->jupyter_server) (26.1.0)
+Requirement already satisfied: python-json-logger>=2.0.4 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (4.2.0)
+Requirement already satisfied: pyyaml>=5.3 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (6.0.3)
+Requirement already satisfied: rfc3339-validator in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (0.1.4)
+Requirement already satisfied: rfc3986-validator>=0.1.1 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (0.1.1)
+Requirement already satisfied: rfc3987-syntax>=1.1.0 in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter_server) (1.1.0)
+Requirement already satisfied: uri-template in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter_server) (1.3.0)
+Requirement already satisfied: pint>=0.24 in /usr/lib/python3.15/site-packages (from Mathics3>=10.0.1->mathics3_notebook_frontends) (0.26.2)
+Requirement already satisfied: Timed-Threads in /usr/lib/python3.15/site-packages (from Mathics3>=10.0.1->mathics3_notebook_frontends) (2.0.0)
+Requirement already satisfied: sphinxcontrib-applehelp>=1.0.7 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-devhelp>=1.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-htmlhelp>=2.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.1.0)
+Requirement already satisfied: sphinxcontrib-jsmath>=1.0.1 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (1.0.1)
+Requirement already satisfied: sphinxcontrib-qthelp>=1.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-serializinghtml>=1.1.9 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: roman-numerals>=1.0.0 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (4.1.0)
+Using cached argcomplete-3.8.0-py3-none-any.whl (45 kB)
+Using cached certifi-2026.11.20-py3-none-any.whl (127 kB)
+Using cached ipython-9.19.1-py3-none-any.whl (649 kB)
+Using cached packaging-26.4-py3-none-any.whl (140 kB)
+Using cached tomlkit-0.15.3-py3-none-any.whl (55 kB)
+Using cached wcwidth-0.9.5-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (822 kB)
+WARNING: Error parsing dependencies of certifi: No package metadata was found.
+WARNING: Error parsing dependencies of wcwidth: No package metadata was found.
+Installing collected packages: wcwidth, tomlkit, packaging, certifi, argcomplete, ipython
+  Attempting uninstall: wcwidth
+ERROR: Could not install packages due to an OSError: No package metadata was found.
+
+
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: flatpak: 1.18.4->1.18.6.
+[master 3b136a4] flatpak: 1.18.4->1.18.6.
+ 1 file changed, 89 insertions(+), 89 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: flatpak: 1.18.4->1.18.6.
+[master bb1ce31] flatpak: 1.18.4->1.18.6.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-42
+r13.1-694
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libavcodec.so.63.1.102
+cand_sobase=libavcodec.so
+search_base=libavcodec
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavformat.so.63.1.102
+cand_sobase=libavformat.so
+search_base=libavformat
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavutil.so.61.1.102
+cand_sobase=libavutil.so
+search_base=libavutil
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libexpat.so.1.13.1
+cand_sobase=libexpat.so
+search_base=libexpat
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libflatpak.so.0.11804.0
+cand_sobase=libflatpak.so
+search_base=libflatpak
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgnutls.so.30.42.0
+cand_sobase=libgnutls.so
+search_base=libgnutls
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz.so.0.61510.0
+cand_sobase=libharfbuzz.so
+search_base=libharfbuzz
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz-subset.so.0.61510.0
+cand_sobase=libharfbuzz-subset.so
+search_base=libharfbuzz-subset
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIex-3_5.so.34.3.5.4
+cand_sobase=libIex-.so
+search_base=libIex-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIlmThread-3_5.so.34.3.5.4
+cand_sobase=libIlmThread-.so
+search_base=libIlmThread-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXR-3_5.so.34.3.5.4
+cand_sobase=libOpenEXR-.so
+search_base=libOpenEXR-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXRCore-3_5.so.34.3.5.4
+cand_sobase=libOpenEXRCore-.so
+search_base=libOpenEXRCore-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXRUtil-3_5.so.34.3.5.4
+cand_sobase=libOpenEXRUtil-.so
+search_base=libOpenEXRUtil-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libpari-gmp-tls.so.2.19.0
+cand_sobase=libpari-gmp-tls.so
+search_base=libpari-gmp-tls
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libswscale.so.10.1.102
+cand_sobase=libswscale.so
+search_base=libswscale
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libyaml-0.so.2.0.9
+cand_sobase=libyaml.so
+search_base=libyaml
+replacement_found=true
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libavcodec.so.63.1.102
+Path: /usr/lib/libavcodec.so.63.1.102
+Skipping generic/unsafe name 'libavcodec.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavcodec.so.63 libavcodec.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavcodec.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavcodec.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavformat.so.63.1.102
+Path: /usr/lib/libavformat.so.63.1.102
+Skipping generic/unsafe name 'libavformat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavformat.so.63 libavformat.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavformat.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavformat.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavutil.so.61.1.102
+Path: /usr/lib/libavutil.so.61.1.102
+Skipping generic/unsafe name 'libavutil.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavutil.so.61 libavutil.so.61.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavutil.so.61.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavutil.so.61.1.102.
+------------------------------------------------
+Checking obsolete version (file): libexpat.so.1.13.1
+Path: /usr/lib/libexpat.so.1.13.1
+Skipping generic/unsafe name 'libexpat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libexpat.so.1 libexpat.so.1.13.1
+Example dependents: ./miniconda3/bin/dbus-daemon ./miniconda3/bin/xmlwf ./miniconda3/libexec/dbus-daemon-launch-helper ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libexpat.so.1.13.1:
+  - ./miniconda3/bin/dbus-daemon
+  - ./miniconda3/bin/xmlwf
+  - ./miniconda3/libexec/dbus-daemon-launch-helper
+  - ./miniconda3/lib/python3.14/lib-dynload/pyexpat.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libexpat.so.1.13.1.
+------------------------------------------------
+Checking obsolete version (file): libflatpak.so.0.11804.0
+Path: /usr/lib/libflatpak.so.0.11804.0
+Skipping generic/unsafe name 'libflatpak.so.' to prevent false positive matches.
+i_dir=/usr/lib
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libflatpak.so.0.11804.0...
+------------------------------------------------
+Checking obsolete version (file): libgnutls.so.30.42.0
+Path: /usr/lib/libgnutls.so.30.42.0
+Skipping generic/unsafe name 'libgnutls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 31 remaining dependents.
+Names tracked: libgnutls.so.30 libgnutls.so.30.42.0
+Example dependents: ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0 ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11 ...
+Warning: No parent package found for ANY of the 31 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libgnutls.so.30.42.0:
+  - ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-resume
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cxx
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-ocsp-client
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/print-ciphersuites
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/tlsproxy/tlsproxy
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/alert-printlist
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/errcodes
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/printlist
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0T
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/certtool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli-debug
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-serv
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/ocsptool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/p11tool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/psktool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/systemkey
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/eagain-cli
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/mini-record-timing
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libgnutls.so.30.42.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz.so.0.61510.0
+Path: /usr/lib/libharfbuzz.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz.so.0 libharfbuzz.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz-subset.so.0.61510.0
+Path: /usr/lib/libharfbuzz-subset.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz-subset.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz-subset.so.0 libharfbuzz-subset.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz-subset.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz-subset.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libIex-3_5.so.34.3.5.4
+Path: /usr/lib/libIex-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libIex-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 48 remaining dependents.
+Names tracked: libIex-3_5.so.34 libIex-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 48 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIex-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/IexTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/IlmThread/libIlmThread-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/IexTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/IlmThread/libIlmThread-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIex-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libIlmThread-3_5.so.34.3.5.4
+Path: /usr/lib/libIlmThread-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libIlmThread-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 44 remaining dependents.
+Names tracked: libIlmThread-3_5.so.34 libIlmThread-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 44 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIlmThread-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIlmThread-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXR-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXR-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXR-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 42 remaining dependents.
+Names tracked: libOpenEXR-3_5.so.34 libOpenEXR-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 42 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXR-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXR-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRCore-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXRCore-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 44 remaining dependents.
+Names tracked: libOpenEXRCore-3_5.so.34 libOpenEXRCore-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 44 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRUtil-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXRUtil-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 26 remaining dependents.
+Names tracked: libOpenEXRUtil-3_5.so.34 libOpenEXRUtil-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap ...
+Warning: No parent package found for ANY of the 26 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libpari-gmp-tls.so.2.19.0
+Path: /usr/lib/libpari-gmp-tls.so.2.19.0
+Skipping generic/unsafe name 'libpari-gmp-tls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libpari-gmp-tls.so.10 libpari-gmp-tls.so.2.19.0
+Example dependents: ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libpari-gmp-tls.so.2.19.0:
+  - ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libpari-gmp-tls.so.2.19.0.
+------------------------------------------------
+Checking obsolete version (file): libswscale.so.10.1.102
+Path: /usr/lib/libswscale.so.10.1.102
+Skipping generic/unsafe name 'libswscale.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libswscale.so.10 libswscale.so.10.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libswscale.so.10.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libswscale.so.10.1.102.
+------------------------------------------------
+Checking obsolete version (file): libyaml-0.so.2.0.9
+Path: /usr/lib/libyaml-0.so.2.0.9
+Skipping generic/unsafe name 'libyaml-0.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libyaml-0.so.2 libyaml-0.so.2.0.9
+Example dependents: ./.cache/electron-builder/fpm@2.1.4/fpm-1.17.0-ruby-3.4.3-linux-amd64-1nk0v/ruby-3.4.3-portable/bin/ruby ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libyaml-0.so.2.0.9:
+  - ./.cache/electron-builder/fpm@2.1.4/fpm-1.17.0-ruby-3.4.3-linux-amd64-1nk0v/ruby-3.4.3-portable/bin/ruby
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libyaml-0.so.2.0.9.
+------------------------------------------------
+Checking obsolete version (file): libzstd.so.1.5.7
+Path: /usr/lib/libzstd.so.1.5.7
+Skipping generic/unsafe name 'libzstd.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 15 remaining dependents.
+Names tracked: libzstd.so.1 libzstd.so.1.5.7
+Example dependents: ./lfs_packaging/kmod/kmod-34.3/build/kmod ./lfs_packaging/kmod/kmod-34.3/build/libkmod.so.2.5.1 ./lfs_packaging/kmod/kmod-34.4/build/kmod ...
+Warning: No parent package found for ANY of the 15 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libzstd.so.1.5.7:
+  - ./lfs_packaging/kmod/kmod-34.3/build/kmod
+  - ./lfs_packaging/kmod/kmod-34.3/build/libkmod.so.2.5.1
+  - ./lfs_packaging/kmod/kmod-34.4/build/kmod
+  - ./lfs_packaging/kmod/kmod-34.4/build/libkmod.so.2.5.1
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRCore/libOpenEXRCore-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRCore/libOpenEXRCore-3_5.so.34.3.5.5
+  - ./miniconda3/bin/bsdcat
+  - ./miniconda3/bin/bsdcpio
+  - ./miniconda3/bin/bsdtar
+  - ./miniconda3/bin/bsdunzip
+  - ./miniconda3/bin/zstd
+  - ./miniconda3/lib/libarchive.so.13.8.8
+  - ./miniconda3/lib/libcurl.so.4.8.0
+  - ./miniconda3/lib/libmamba.so.4.0.1
+  - ./miniconda3/lib/python3.14/lib-dynload/_zstd.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libzstd.so.1.5.7.
+Scanning /usr/share/doc for stale old-version directories...
+Removing stale: flatpak-1.18.4  (newer: flatpak-1.18.6)
+---
+Removed : 1
+Kept    : 0
+Deleting kernels older than 7.3.6...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.6-lfs-r13.1-42
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
