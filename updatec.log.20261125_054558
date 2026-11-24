@@ -1,0 +1,58 @@
+===== Update check started: 2026-11-25 05:45:58 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261125_054558
+Packages needing attention: gdm vim
+===== Starting updatec: 2026-11-25 05:46:00 AEST =====
+Checking for packages with missing file inventories...
+name=gdm
+local_ver=51.1.1
+remote_ver=51.2
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - gdm
+  - vim
+
+Building custom package gdm...
+[05:46:01] Found custom package for gdm, bypassing BLFS aliases.
+[05:46:01] Custom package detected at /home/fusion809/lfs_packaging/gdm (package: gdm)
+[05:46:01] Extracting dependencies for custom package 'gdm'...
+[05:46:01] Required deps: accountsservice glib2 glibc json-glib keyutils libffi libgudev libxau libxcrypt linux-pam pcre2 polkit systemd util-linux zlib 
+[05:46:01] Dependency 'accountsservice' already installed.
+[05:46:01] Dependency 'glib2' already installed.
+[05:46:01] Dependency 'glibc' already installed.
+[05:46:01] Dependency 'json-glib' already installed.
+[05:46:01] Dependency 'keyutils' already installed.
+[05:46:01] Dependency 'libffi' already installed.
+[05:46:01] Dependency 'libgudev' already installed.
+[05:46:01] Dependency 'libxau' already installed.
+[05:46:01] Dependency 'libxcrypt' already installed.
+[05:46:01] Dependency 'linux-pam' already installed.
+[05:46:01] Dependency 'pcre2' already installed.
+[05:46:01] Dependency 'polkit' already installed.
+[05:46:01] Dependency 'systemd' already installed.
+[05:46:01] Dependency 'util-linux' already installed.
+[05:46:01] Dependency 'zlib' already installed.
+[VERSION] gdm: 51.2
+[05:46:04] Installing gdm version: 51.2
+[05:46:04] Starting remote custom build for gdm...
+--2026-11-25 05:46:08--  https://download.gnome.org/sources/gdm/51/gdm-51.2.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 143.244.62.6, 143.244.62.9, 2a02:6ea0:db00::11, ...
+Connecting to download.gnome.org (download.gnome.org)|143.244.62.6|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-25 05:46:08 ERROR 404: Not Found.
+
+--2026-11-25 05:46:09--  https://download.gnome.org/sources/gdm/51/gdm-51.2.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 143.244.62.9, 143.244.62.6, 2a02:6ea0:db00::11, ...
+Connecting to download.gnome.org (download.gnome.org)|143.244.62.9|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-11-25 05:46:09 ERROR 404: Not Found.
+
+[ERROR] build.sh exited with code 8 for gdm
+[ERROR] Custom build failed for gdm
+[05:46:09] ========================================
+[05:46:09] Build completed with 1 failure(s):
+[05:46:09]   - gdm
+[05:46:09] ========================================
+Error: Build failed for gdm. Aborting update loop.
+===== ERROR: updatec exited with status 1 =====
+Finished: 2026-11-25 05:46:09 AEST
+Exit status: 1
