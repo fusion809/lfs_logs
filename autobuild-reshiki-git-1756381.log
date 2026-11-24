@@ -1,0 +1,114 @@
+[18:35:11] Found custom package for reshiki-git, bypassing BLFS aliases.
+[18:35:11] Custom package detected at /home/fusion809/lfs_packaging/reshiki-git (package: reshiki-git)
+[18:35:11] Extracting dependencies for custom package 'reshiki-git'...
+[18:35:11] Required deps: acl at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz libcanberra libepoxy libffi libice libogg libpng libseccomp libselinux libsm libtool libvorbis libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres libxt ncurses pango pcre2 pixman systemd util-linux wayland zlib 
+[18:35:11] Dependency 'acl' already installed.
+[18:35:11] Dependency 'at-spi2-core' already installed.
+[18:35:11] Dependency 'brotli' already installed.
+[18:35:11] Dependency 'bzip2' already installed.
+[18:35:11] Dependency 'cairo' already installed.
+[18:35:11] Dependency 'dbus' already installed.
+[18:35:11] Dependency 'expat' already installed.
+[18:35:11] Dependency 'fontconfig' already installed.
+[18:35:11] Dependency 'freetype' already installed.
+[18:35:11] Dependency 'fribidi' already installed.
+[18:35:11] Dependency 'gcc' already installed.
+[18:35:11] Dependency 'gdk-pixbuf' already installed.
+[18:35:11] Dependency 'glib2' already installed.
+[18:35:11] Dependency 'glibc' already installed.
+[18:35:11] Dependency 'glycin' already installed.
+[18:35:11] Dependency 'graphite2' already installed.
+[18:35:11] Dependency 'gtk3' already installed.
+[18:35:11] Dependency 'harfbuzz' already installed.
+[18:35:11] Dependency 'libcanberra' already installed.
+[18:35:11] Dependency 'libepoxy' already installed.
+[18:35:11] Dependency 'libffi' already installed.
+[18:35:11] Dependency 'libice' already installed.
+[18:35:11] Dependency 'libogg' already installed.
+[18:35:11] Dependency 'libpng' already installed.
+[18:35:11] Dependency 'libseccomp' already installed.
+[18:35:11] Dependency 'libselinux' already installed.
+[18:35:11] Dependency 'libsm' already installed.
+[18:35:11] Dependency 'libtool' already installed.
+[18:35:11] Dependency 'libvorbis' already installed.
+[18:35:11] Dependency 'libx11' already installed.
+[18:35:11] Dependency 'libxau' already installed.
+[18:35:11] Dependency 'libxcb' already installed.
+[18:35:11] Dependency 'libxcomposite' already installed.
+[18:35:11] Dependency 'libxcursor' already installed.
+[18:35:11] Dependency 'libxdamage' already installed.
+[18:35:11] Dependency 'libxdmcp' already installed.
+[18:35:11] Dependency 'libxext' already installed.
+[18:35:11] Dependency 'libxfixes' already installed.
+[18:35:11] Dependency 'libxi' already installed.
+[18:35:11] Dependency 'libxinerama' already installed.
+[18:35:11] Dependency 'libxkbcommon' already installed.
+[18:35:11] Dependency 'libxrandr' already installed.
+[18:35:11] Dependency 'libxrender' already installed.
+[18:35:11] Dependency 'libxres' already installed.
+[18:35:11] Dependency 'libxt' already installed.
+[18:35:11] Dependency 'ncurses' already installed.
+[18:35:11] Dependency 'pango' already installed.
+[18:35:11] Dependency 'pcre2' already installed.
+[18:35:11] Dependency 'pixman' already installed.
+[18:35:11] Dependency 'systemd' already installed.
+[18:35:11] Dependency 'util-linux' already installed.
+[18:35:11] Dependency 'wayland' already installed.
+[18:35:11] Dependency 'zlib' already installed.
+[VERSION] reshiki-git: caa0d42034819a0324130fbb8a4948b8432f1c8e
+[18:35:12] Installing reshiki-git version: caa0d42034819a0324130fbb8a4948b8432f1c8e
+[18:35:12] Starting remote custom build for reshiki-git...
+From https://github.com/Ameyanagi/ReShiki
+ * [new branch]          ci/slim-intel-macos-release-tests -> origin/ci/slim-intel-macos-release-tests
+   628b9184c..53c082eb2  equipment/flexible-metal-hose -> origin/equipment/flexible-metal-hose
+   eb27d5f14..690b339cc  equipment/hose-connectors -> origin/equipment/hose-connectors
+   6416dee18..2a1572969  fix/tube-end-joint-snap -> origin/fix/tube-end-joint-snap
+   256099c92..caa0d4203  main                    -> origin/main
+Previous HEAD position was 256099c92 Add editable bends to stainless compression tubing (#1408)
+HEAD is now at caa0d4203 Add stainless hose connectors and matching flexible hoses (#1402)
+   Compiling reshiki-model v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/model)
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor/iced_widget/src/pick_list.rs:375:22
+    |
+375 |                 f32::INFINITY,
+    |                      ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: `iced_widget` (lib) generated 1 warning
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:586:55
+    |
+586 |         let event = if let Ok(event) = event_receiver.try_next() {
+    |                                                       ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:297:64
+    |
+297 |                     task::Poll::Pending => match self.receiver.try_next() {
+    |                                                                ^^^^^^^^
+
+warning: `iced_winit` (lib) generated 2 warnings
+   Compiling reshiki-io v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/io)
+   Compiling reshiki-agent v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/agent)
+   Compiling reshiki-mcp v0.1.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki/crates/mcp)
+   Compiling reshiki v0.17.0 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki)
+    Finished `release` profile [optimized + debuginfo] target(s) in 22m 11s
+[Desktop Entry]
+Name=ReShiki (git)
+Type=Application
+Exec=/usr/bin/reshiki-git %U
+TryExec=/usr/bin/reshiki-git
+Icon=reshiki-git
+MimeType=chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;chemical/x-smiles;chemical/x-cml;chemical/x-inchi;
+StartupNotify=true
+Categories=Education;Science;Chemistry;
+StartupWMClass=reshiki-git
+Saved working directory and index state WIP on (no branch): caa0d4203 Add stainless hose connectors and matching flexible hoses (#1402)
+caa0d42034819a0324130fbb8a4948b8432f1c8e
+Updated registry for reshiki-git to version 4c3ea6b45e38b5f0bb5e8d4dee097cae4ada3464
+[VERSION] reshiki-git: 4c3ea6b45e38b5f0bb5e8d4dee097cae4ada3464
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package reshiki-git in /var/lib/custom-packages/
