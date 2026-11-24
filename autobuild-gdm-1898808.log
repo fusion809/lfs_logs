@@ -1,0 +1,618 @@
+[07:46:01] Found custom package for gdm, bypassing BLFS aliases.
+[07:46:01] Custom package detected at /home/fusion809/lfs_packaging/gdm (package: gdm)
+[07:46:01] Extracting dependencies for custom package 'gdm'...
+[07:46:01] Required deps: accountsservice glib2 glibc json-glib keyutils libffi libgudev libxau libxcrypt linux-pam pcre2 polkit systemd util-linux zlib 
+[07:46:01] Dependency 'accountsservice' already installed.
+[07:46:01] Dependency 'glib2' already installed.
+[07:46:01] Dependency 'glibc' already installed.
+[07:46:01] Dependency 'json-glib' already installed.
+[07:46:01] Dependency 'keyutils' already installed.
+[07:46:01] Dependency 'libffi' already installed.
+[07:46:01] Dependency 'libgudev' already installed.
+[07:46:01] Dependency 'libxau' already installed.
+[07:46:01] Dependency 'libxcrypt' already installed.
+[07:46:01] Dependency 'linux-pam' already installed.
+[07:46:01] Dependency 'pcre2' already installed.
+[07:46:01] Dependency 'polkit' already installed.
+[07:46:01] Dependency 'systemd' already installed.
+[07:46:01] Dependency 'util-linux' already installed.
+[07:46:01] Dependency 'zlib' already installed.
+[VERSION] gdm: 51.2
+[07:46:03] Installing gdm version: 51.2
+[07:46:03] Starting remote custom build for gdm...
+--2026-11-25 07:46:19--  https://download.gnome.org/sources/gdm/51/gdm-51.2.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 143.244.62.9, 143.244.62.5, 2a02:6ea0:db00::11, ...
+Connecting to download.gnome.org (download.gnome.org)|143.244.62.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 479800 (469K) [application/octet-stream]
+Saving to: ‘gdm-51.2.tar.xz’
+
+gdm-51.2.tar.xz       0%[                    ]       0  --.-KB/s               gdm-51.2.tar.xz      23%[===>                ] 111.46K   546KB/s               gdm-51.2.tar.xz      71%[=============>      ] 335.46K   804KB/s               gdm-51.2.tar.xz     100%[===================>] 468.55K   877KB/s    in 0.5s    
+
+2026-11-25 07:46:21 (877 KB/s) - ‘gdm-51.2.tar.xz’ saved [479800/479800]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+meson_args: <-D>
+meson_args: <gdm-xsession=true>
+meson_args: <-D>
+meson_args: <run-dir=/run/gdm>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <-D> <gdm-xsession=true> <-D> <run-dir=/run/gdm> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/gdm/gdm-51.2
+Build dir: /home/fusion809/lfs_packaging/gdm/gdm-51.2/build
+Build type: native build
+Project name: gdm
+Project version: 51.2
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Run-time dependency gudev-1.0 found: YES 238
+Library pam found: YES
+Header "security/pam_appl.h" has symbol "PAM_BINARY_PROMPT" with dependency -lpam: YES 
+Run-time dependency glib-2.0 found: YES 2.90.1
+Run-time dependency gobject-2.0 found: YES 2.90.1
+Run-time dependency gio-2.0 found: YES 2.90.1
+Run-time dependency gio-unix-2.0 found: YES 2.90.1
+Run-time dependency dconf found: YES 51.0
+Run-time dependency json-glib-1.0 found: YES 1.10.8
+Run-time dependency accountsservice found: YES 26.37.672
+Run-time dependency libkeyutils found: YES 1.6.3
+Run-time dependency libselinux found: YES 3.11
+Run-time dependency polkit-gobject-1 found: YES 128
+Run-time dependency xau found: YES 1.0.12
+Run-time dependency systemd found: YES 262
+Run-time dependency libsystemd found: YES 262
+../meson.build:81: WARNING: Project targets '>= 0.57' but uses feature introduced in '0.58.0': Positional argument to dependency.get_variable().
+../meson.build:82: WARNING: Project targets '>= 0.57' but uses feature introduced in '0.58.0': Positional argument to dependency.get_variable().
+Program nologin found: YES (/sbin/nologin)
+../meson.build:92: WARNING: Project targets '>= 0.57' but uses feature deprecated since '0.55.0': Program.path. use Program.full_path() instead
+Found CMake: /usr/bin/cmake (4.5.1)
+Run-time dependency ply-boot-client found: NO  (tried pkg-config and cmake)
+Header "bsm/adt.h" has symbol "ADT_USER" : NO 
+Run-time dependency audit found: NO  (tried pkg-config and cmake)
+Run-time dependency check found: NO  (tried pkg-config and cmake)
+Has header "security/pam_modutil.h" : YES 
+Has header "security/pam_ext.h" : YES 
+Checking for function "pam_syslog" : YES 
+Has header "utmpx.h" : YES 
+Has header "utmp.h" : YES 
+Checking whether type "struct utmpx" has member "ut_host" : YES 
+Checking whether type "struct utmpx" has member "ut_pid" : YES 
+Checking whether type "struct utmpx" has member "ut_id" : YES 
+Checking whether type "struct utmpx" has member "ut_name" : NO 
+Checking whether type "struct utmpx" has member "ut_type" : YES 
+Checking whether type "struct utmpx" has member "ut_exit.e_termination" : NO 
+Checking whether type "struct utmpx" has member "ut_user" : YES 
+Checking whether type "struct utmpx" has member "ut_time" : NO 
+Checking whether type "struct utmpx" has member "ut_tv" : YES 
+Checking whether type "struct utmpx" has member "ut_syslen" : NO 
+WARNING: You should add the boolean check kwarg to the run_command call.
+         It currently defaults to false,
+         but it will default to true in meson 2.0.
+         See also: https://github.com/mesonbuild/meson/issues/9300
+Checking for function "getutxent" : YES 
+Checking for function "updwtmp" : YES 
+Checking for function "updwtmpx" : YES 
+Checking for function "login" : YES 
+Checking for function "logout" : YES 
+Checking for function "logwtmp" : YES 
+Checking for function "explicit_bzero" : YES 
+Has header "sys/fsuid.h" : YES 
+Has header "sys/sockio.h" : NO 
+Configuring config.h using configuration
+Configuring mime-dummy-handler.desktop using configuration
+Configuring mimeapps.list using configuration
+Configuring gdm using configuration
+Program dconf found: YES (/usr/bin/dconf)
+Configuring gdm.conf using configuration
+Program dirname found: YES (/usr/bin/dirname)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Configuring gnome-greeter.desktop using configuration
+Configuring gnome-initial-setup.desktop using configuration
+Configuring gdm.service using configuration
+Configuring gnome-headless-session@.service using configuration
+Configuring Xsession using configuration
+Configuring 20-gdm.rules using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Build targets in project: 160
+WARNING: Project specifies a minimum meson_version '>= 0.57' but uses features which were added in newer versions:
+ * 0.58.0: {'Positional argument to dependency.get_variable()'}
+WARNING: Deprecated features used:
+ * 0.55.0: {'Program.path'}
+
+gdm 51.2
+
+  Paths
+    datadir                 : /usr/share
+    sysconfdir              : /etc
+    bindir                  : /usr/bin
+    libdir                  : /usr/lib
+    libexecdir              : /usr/libexec
+    logdir                  : /var/log/gdm
+    System DBus             : /etc/dbus-1/system.d
+    DM conf                 : /etc/dm
+    GDM conf                : /etc/gdm
+    GDM Run                 : /run/gdm
+    GDM Dynamic Homes       : /run/gdm/home
+    GDM PID file            : /run/gdm/gdm.pid
+    GDM Defaults config     : /usr/share/gdm/defaults.conf
+    GDM Custom config       : /etc/gdm/custom.conf
+    GDM Runtime config      : /run/gdm/custom.conf
+    GDM Session default path: /usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
+    GDM Working dir         : /var/lib/gdm
+    PAM Services dir        : /usr/lib/pam.d
+    PAM Services config dir : /etc/pam.d
+    PAM Modules dir         : /usr/lib/security
+    GNOME locale            : /usr/share/locale
+    AT SPI registryd        : /usr/libexec
+    Lang config file        : /etc/locale.conf
+
+  Features
+    ADT                     : NO
+    PAM Syslog              : YES
+    Supports PAM Extensions : YES
+    SeLinux                 : YES
+    Logind Provider         : systemd
+    Use GDM Xsession        : YES
+    Use SystemdJournal      : YES
+    Use X11Support          : YES
+    Use Profiling           : NO
+    Initial VT              : 1
+    Groupname               : gdm
+    Plymouth                : NO
+
+  User defined options
+    buildtype               : release
+    gdm-xsession            : true
+    prefix                  : /usr
+    run-dir                 : /run/gdm
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/222] Compiling C object common/libgdmcommon.a.p/gdm-log.c.o
+[2/222] Compiling C object common/libgdmcommon.a.p/gdm-profile.c.o
+[3/222] Compiling C object common/libgdmcommon.a.p/gdm-file-utils.c.o
+[4/222] Compiling C object common/libgdmcommon.a.p/gdm-settings-backend.c.o
+[5/222] Compiling C object common/libgdmcommon.a.p/gdm-settings-desktop-backend.c.o
+[6/222] Compiling C object common/libgdmcommon.a.p/gdm-common.c.o
+[7/222] Compiling C object common/libgdmcommon.a.p/gdm-settings-direct.c.o
+[8/222] Generating gdbus source libgdm/gdm-manager-glue.c
+[9/222] Compiling C object common/libgdmcommon.a.p/gdm-settings-utils.c.o
+[10/222] Generating gdbus header libgdm/gdm-manager-glue.h
+[11/222] Compiling C object common/libgdmcommon.a.p/gdm-settings.c.o
+[12/222] Generating gdbus source libgdm/gdm-client-glue.c
+[13/222] Linking static target common/libgdmcommon.a
+[14/222] Generating gdbus header libgdm/gdm-client-glue.h
+[15/222] Generating GObject enum file daemon/gdm-session-enum-types.h (wrapped by meson to capture output)
+[16/222] Generating GObject enum file daemon/gdm-session-worker-enum-types.h (wrapped by meson to capture output)
+[17/222] Compiling C object libgdm/libgdm.so.1.0.0.p/meson-generated_.._gdm-manager-glue.c.o
+[18/222] Compiling C object libgdm/libgdm.so.1.0.0.p/gdm-client.c.o
+[19/222] Compiling C object libgdm/libgdm.so.1.0.0.p/gdm-sessions.c.o
+[20/222] Compiling C object libgdm/libgdm.so.1.0.0.p/gdm-user-switching.c.o
+[21/222] Generating gdbus source daemon/gdm-dbus-glue.c
+[22/222] Generating gdbus header daemon/gdm-dbus-glue.h
+[23/222] Generating gdbus source daemon/gdm-display-glue.c
+[24/222] Generating gdbus source daemon/gdm-local-display-glue.c
+[25/222] Generating gdbus header daemon/gdm-display-glue.h
+[26/222] Generating gdbus header daemon/gdm-local-display-glue.h
+[27/222] Generating gdbus source daemon/gdm-local-display-factory-glue.c
+[28/222] Generating gdbus header daemon/gdm-local-display-factory-glue.h
+[29/222] Generating gdbus source daemon/gdm-remote-display-glue.c
+[30/222] Generating gdbus header daemon/gdm-remote-display-glue.h
+[31/222] Generating gdbus source daemon/gdm-remote-display-factory-glue.c
+[32/222] Generating gdbus header daemon/gdm-remote-display-factory-glue.h
+[33/222] Generating gdbus source daemon/gdm-manager-glue.c
+[34/222] Generating gdbus header daemon/gdm-manager-glue.h
+[35/222] Generating gdbus source daemon/gdm-session-glue.c
+[36/222] Generating gdbus header daemon/gdm-session-glue.h
+[37/222] Generating gdbus source daemon/gdm-session-worker-glue.c
+[38/222] Generating gdbus header daemon/gdm-session-worker-glue.h
+[39/222] Compiling C object libgdm/libgdm.so.1.0.0.p/meson-generated_.._gdm-client-glue.c.o
+[40/222] Linking target libgdm/libgdm.so.1.0.0
+[41/222] Generating GObject enum file daemon/gdm-session-worker-enum-types.c (wrapped by meson to capture output)
+[42/222] Generating GObject enum file daemon/gdm-session-enum-types.c (wrapped by meson to capture output)
+[43/222] Compiling C object common/test-log.p/test-log.c.o
+[44/222] Compiling C object daemon/test-session-client.p/test-session-client.c.o
+[45/222] Compiling C object daemon/test-session-client.p/meson-generated_.._gdm-manager-glue.c.o
+[46/222] Compiling C object daemon/gdm-session-worker.p/meson-generated_.._gdm-dbus-glue.c.o
+[47/222] Compiling C object daemon/test-session-client.p/meson-generated_.._gdm-session-glue.c.o
+[48/222] Compiling C object daemon/gdm-session-worker.p/meson-generated_.._gdm-session-worker-glue.c.o
+[49/222] Compiling C object daemon/gdm-session-worker.p/meson-generated_.._gdm-session-enum-types.c.o
+[50/222] Compiling C object daemon/gdm-session-worker.p/meson-generated_.._gdm-session-worker-enum-types.c.o
+[51/222] Compiling C object daemon/gdm-session-worker.p/session-worker-main.c.o
+[52/222] Compiling C object daemon/gdm-session-worker.p/meson-generated_.._gdm-session-glue.c.o
+[53/222] Compiling C object daemon/gdm-session-worker.p/gdm-session-auditor.c.o
+[54/222] Compiling C object daemon/gdm-session-worker.p/gdm-session-settings.c.o
+[55/222] Compiling C object daemon/gdm-session-worker.p/gdm-session-record.c.o
+[56/222] Compiling C object daemon/gdm-session-worker.p/gdm-session-worker-job.c.o
+[57/222] Compiling C object daemon/gdm-session-worker.p/gdm-session.c.o
+[58/222] Compiling C object daemon/gdm-session-worker.p/gdm-session-worker-common.c.o
+[59/222] Compiling C object daemon/gdm-session-worker.p/gdm-dbus-util.c.o
+[60/222] Compiling C object daemon/gdm-wayland-session.p/gdm-wayland-session.c.o
+[61/222] Compiling C object daemon/gdm-session-worker.p/gdm-session-worker.c.o
+[62/222] Compiling C object daemon/gdm-wayland-session.p/meson-generated_.._gdm-manager-glue.c.o
+[63/222] Compiling C object daemon/gdm-x-session.p/gdm-x-session.c.o
+[64/222] Compiling C object daemon/gdm-x-session.p/meson-generated_.._gdm-manager-glue.c.o
+[65/222] Compiling C object daemon/gdm.p/meson-generated_.._gdm-display-glue.c.o
+[66/222] Compiling C object daemon/gdm.p/meson-generated_.._gdm-local-display-factory-glue.c.o
+[67/222] Compiling C object daemon/gdm.p/meson-generated_.._gdm-local-display-glue.c.o
+[68/222] Compiling C object daemon/gdm.p/meson-generated_.._gdm-manager-glue.c.o
+[69/222] Compiling C object daemon/gdm.p/meson-generated_.._gdm-remote-display-glue.c.o
+[70/222] Compiling C object daemon/gdm.p/meson-generated_.._gdm-remote-display-factory-glue.c.o
+[71/222] Compiling C object daemon/gdm.p/meson-generated_.._gdm-session-enum-types.c.o
+[72/222] Compiling C object daemon/gdm.p/meson-generated_.._gdm-session-worker-glue.c.o
+[73/222] Compiling C object daemon/gdm.p/gdm-dbus-util.c.o
+[74/222] Compiling C object daemon/gdm.p/gdm-display-store.c.o
+[75/222] Compiling C object daemon/gdm.p/gdm-display-factory.c.o
+[76/222] Compiling C object daemon/gdm.p/gdm-dynamic-user-store.c.o
+[77/222] Compiling C object daemon/gdm.p/meson-generated_.._gdm-session-glue.c.o
+[78/222] Compiling C object daemon/gdm.p/gdm-display.c.o
+[79/222] Compiling C object daemon/gdm.p/gdm-local-display.c.o
+[80/222] Compiling C object daemon/gdm.p/gdm-launch-environment.c.o
+[81/222] Compiling C object daemon/gdm.p/gdm-remote-display.c.o
+[82/222] Compiling C object daemon/gdm.p/gdm-local-display-factory.c.o
+[83/222] Compiling C object daemon/gdm.p/gdm-session-record.c.o
+[84/222] Compiling C object daemon/gdm.p/gdm-remote-display-factory.c.o
+[85/222] Compiling C object daemon/gdm.p/gdm-session-worker-common.c.o
+[86/222] Compiling C object daemon/gdm.p/gdm-session-worker-job.c.o
+[87/222] Compiling C object daemon/gdm.p/gdm-manager.c.o
+[88/222] Compiling C object daemon/gdm.p/main.c.o
+[89/222] Compiling C object utils/gdm-runtime-config.p/gdm-runtime-config.c.o
+[90/222] Compiling C object daemon/gdm.p/gdm-session.c.o
+[91/222] Compiling C object utils/gdm-config.p/gdm-config.c.o
+[92/222] Generating libgdm/Gdm-1.0.gir with a custom command (wrapped by meson to set env)
+[93/222] Compiling C object pam_gdm/pam_gdm.so.p/pam_gdm.c.o
+[94/222] Generating data/dconf/greeter-dconf-defaults with a custom command
+[95/222] Compiling gschemas data/gsettings-compile-data
+[96/222] Compiling C object utils/gdm-new-session.p/gdm-new-session.c.o
+[97/222] Linking target common/test-log
+[98/222] Linking target daemon/test-session-client
+[99/222] Linking target daemon/gdm-wayland-session
+[100/222] Linking target daemon/gdm-session-worker
+[101/222] Linking target daemon/gdm-x-session
+[102/222] Linking target daemon/gdm
+[103/222] Linking target utils/gdm-runtime-config
+[104/222] Linking target utils/gdm-config
+[105/222] Generating libgdm/Gdm-1.0.typelib with a custom command
+[106/222] Linking target utils/gdm-new-session
+[107/222] Linking target pam_gdm/pam_gdm.so
+[108/222] Building translation po/af/LC_MESSAGES/gdm-af.mo
+[109/222] Building translation po/am/LC_MESSAGES/gdm-am.mo
+[110/222] Building translation po/ab/LC_MESSAGES/gdm-ab.mo
+[111/222] Building translation po/ar/LC_MESSAGES/gdm-ar.mo
+[112/222] Building translation po/an/LC_MESSAGES/gdm-an.mo
+[113/222] Building translation po/as/LC_MESSAGES/gdm-as.mo
+[114/222] Building translation po/az/LC_MESSAGES/gdm-az.mo
+[115/222] Building translation po/ast/LC_MESSAGES/gdm-ast.mo
+[116/222] Building translation po/be/LC_MESSAGES/gdm-be.mo
+[117/222] Building translation po/be@latin/LC_MESSAGES/gdm-be@latin.mo
+[118/222] Building translation po/bg/LC_MESSAGES/gdm-bg.mo
+[119/222] Building translation po/bn/LC_MESSAGES/gdm-bn.mo
+[120/222] Building translation po/bn_IN/LC_MESSAGES/gdm-bn_IN.mo
+[121/222] Building translation po/br/LC_MESSAGES/gdm-br.mo
+[122/222] Building translation po/bs/LC_MESSAGES/gdm-bs.mo
+[123/222] Building translation po/ca@valencia/LC_MESSAGES/gdm-ca@valencia.mo
+[124/222] Building translation po/ca/LC_MESSAGES/gdm-ca.mo
+[125/222] Building translation po/ckb/LC_MESSAGES/gdm-ckb.mo
+[126/222] Building translation po/crh/LC_MESSAGES/gdm-crh.mo
+[127/222] Building translation po/cy/LC_MESSAGES/gdm-cy.mo
+[128/222] Building translation po/csb/LC_MESSAGES/gdm-csb.mo
+[129/222] Building translation po/cs/LC_MESSAGES/gdm-cs.mo
+[130/222] Building translation po/da/LC_MESSAGES/gdm-da.mo
+[131/222] Building translation po/de/LC_MESSAGES/gdm-de.mo
+[132/222] Building translation po/dz/LC_MESSAGES/gdm-dz.mo
+[133/222] Building translation po/el/LC_MESSAGES/gdm-el.mo
+[134/222] Building translation po/en_CA/LC_MESSAGES/gdm-en_CA.mo
+[135/222] Building translation po/en_GB/LC_MESSAGES/gdm-en_GB.mo
+[136/222] Building translation po/eo/LC_MESSAGES/gdm-eo.mo
+[137/222] Building translation po/en@shaw/LC_MESSAGES/gdm-en@shaw.mo
+[138/222] Building translation po/es/LC_MESSAGES/gdm-es.mo
+[139/222] Building translation po/et/LC_MESSAGES/gdm-et.mo
+[140/222] Building translation po/eu/LC_MESSAGES/gdm-eu.mo
+[141/222] Building translation po/fr/LC_MESSAGES/gdm-fr.mo
+[142/222] Building translation po/fa/LC_MESSAGES/gdm-fa.mo
+[143/222] Building translation po/fi/LC_MESSAGES/gdm-fi.mo
+[144/222] Building translation po/fur/LC_MESSAGES/gdm-fur.mo
+[145/222] Building translation po/ga/LC_MESSAGES/gdm-ga.mo
+[146/222] Building translation po/fy/LC_MESSAGES/gdm-fy.mo
+[147/222] Building translation po/gd/LC_MESSAGES/gdm-gd.mo
+[148/222] Building translation po/gl/LC_MESSAGES/gdm-gl.mo
+[149/222] Building translation po/gu/LC_MESSAGES/gdm-gu.mo
+[150/222] Building translation po/gv/LC_MESSAGES/gdm-gv.mo
+[151/222] Building translation po/he/LC_MESSAGES/gdm-he.mo
+[152/222] Building translation po/hr/LC_MESSAGES/gdm-hr.mo
+[153/222] Building translation po/hi/LC_MESSAGES/gdm-hi.mo
+[154/222] Building translation po/hu/LC_MESSAGES/gdm-hu.mo
+[155/222] Building translation po/ia/LC_MESSAGES/gdm-ia.mo
+[156/222] Building translation po/hy/LC_MESSAGES/gdm-hy.mo
+[157/222] Building translation po/it/LC_MESSAGES/gdm-it.mo
+[158/222] Building translation po/id/LC_MESSAGES/gdm-id.mo
+[159/222] Building translation po/is/LC_MESSAGES/gdm-is.mo
+[160/222] Building translation po/ja/LC_MESSAGES/gdm-ja.mo
+[161/222] Building translation po/ka/LC_MESSAGES/gdm-ka.mo
+[162/222] Building translation po/kk/LC_MESSAGES/gdm-kk.mo
+[163/222] Building translation po/kab/LC_MESSAGES/gdm-kab.mo
+[164/222] Building translation po/kn/LC_MESSAGES/gdm-kn.mo
+[165/222] Building translation po/km/LC_MESSAGES/gdm-km.mo
+[166/222] Building translation po/ko/LC_MESSAGES/gdm-ko.mo
+[167/222] Building translation po/ku/LC_MESSAGES/gdm-ku.mo
+[168/222] Building translation po/kw/LC_MESSAGES/gdm-kw.mo
+[169/222] Building translation po/lo/LC_MESSAGES/gdm-lo.mo
+[170/222] Building translation po/ky/LC_MESSAGES/gdm-ky.mo
+[171/222] Building translation po/lt/LC_MESSAGES/gdm-lt.mo
+[172/222] Building translation po/lv/LC_MESSAGES/gdm-lv.mo
+[173/222] Building translation po/mai/LC_MESSAGES/gdm-mai.mo
+[174/222] Building translation po/mg/LC_MESSAGES/gdm-mg.mo
+[175/222] Building translation po/mi/LC_MESSAGES/gdm-mi.mo
+[176/222] Building translation po/mjw/LC_MESSAGES/gdm-mjw.mo
+[177/222] Building translation po/mk/LC_MESSAGES/gdm-mk.mo
+[178/222] Building translation po/mn/LC_MESSAGES/gdm-mn.mo
+[179/222] Building translation po/mr/LC_MESSAGES/gdm-mr.mo
+[180/222] Building translation po/ml/LC_MESSAGES/gdm-ml.mo
+[181/222] Building translation po/nb/LC_MESSAGES/gdm-nb.mo
+[182/222] Building translation po/ms/LC_MESSAGES/gdm-ms.mo
+[183/222] Building translation po/nds/LC_MESSAGES/gdm-nds.mo
+[184/222] Building translation po/ne/LC_MESSAGES/gdm-ne.mo
+[185/222] Building translation po/nn/LC_MESSAGES/gdm-nn.mo
+[186/222] Building translation po/nso/LC_MESSAGES/gdm-nso.mo
+[187/222] Building translation po/nl/LC_MESSAGES/gdm-nl.mo
+[188/222] Building translation po/or/LC_MESSAGES/gdm-or.mo
+[189/222] Building translation po/oc/LC_MESSAGES/gdm-oc.mo
+[190/222] Building translation po/pa/LC_MESSAGES/gdm-pa.mo
+[191/222] Building translation po/pl/LC_MESSAGES/gdm-pl.mo
+[192/222] Building translation po/ps/LC_MESSAGES/gdm-ps.mo
+[193/222] Building translation po/pt/LC_MESSAGES/gdm-pt.mo
+[194/222] Building translation po/ro/LC_MESSAGES/gdm-ro.mo
+[195/222] Building translation po/pt_BR/LC_MESSAGES/gdm-pt_BR.mo
+[196/222] Building translation po/ru/LC_MESSAGES/gdm-ru.mo
+[197/222] Building translation po/rw/LC_MESSAGES/gdm-rw.mo
+[198/222] Building translation po/si/LC_MESSAGES/gdm-si.mo
+[199/222] Building translation po/sat/LC_MESSAGES/gdm-sat.mo
+[200/222] Building translation po/sk/LC_MESSAGES/gdm-sk.mo
+[201/222] Building translation po/sl/LC_MESSAGES/gdm-sl.mo
+[202/222] Building translation po/sq/LC_MESSAGES/gdm-sq.mo
+[203/222] Building translation po/sr/LC_MESSAGES/gdm-sr.mo
+[204/222] Building translation po/sr@latin/LC_MESSAGES/gdm-sr@latin.mo
+[205/222] Building translation po/sv/LC_MESSAGES/gdm-sv.mo
+[206/222] Building translation po/sw/LC_MESSAGES/gdm-sw.mo
+[207/222] Building translation po/ta/LC_MESSAGES/gdm-ta.mo
+[208/222] Building translation po/te/LC_MESSAGES/gdm-te.mo
+[209/222] Building translation po/tr/LC_MESSAGES/gdm-tr.mo
+[210/222] Building translation po/tg/LC_MESSAGES/gdm-tg.mo
+[211/222] Building translation po/th/LC_MESSAGES/gdm-th.mo
+[212/222] Building translation po/ug/LC_MESSAGES/gdm-ug.mo
+[213/222] Building translation po/uk/LC_MESSAGES/gdm-uk.mo
+[214/222] Building translation po/uz/LC_MESSAGES/gdm-uz.mo
+[215/222] Building translation po/uz@cyrillic/LC_MESSAGES/gdm-uz@cyrillic.mo
+[216/222] Building translation po/vi/LC_MESSAGES/gdm-vi.mo
+[217/222] Building translation po/wa/LC_MESSAGES/gdm-wa.mo
+[218/222] Building translation po/xh/LC_MESSAGES/gdm-xh.mo
+[219/222] Building translation po/zh_TW/LC_MESSAGES/gdm-zh_TW.mo
+[220/222] Building translation po/zh_HK/LC_MESSAGES/gdm-zh_HK.mo
+[221/222] Building translation po/zh_CN/LC_MESSAGES/gdm-zh_CN.mo
+[222/222] Building translation po/zu/LC_MESSAGES/gdm-zu.mo
+[1/5] Compiling C object libgdm/libgdm.so.1.0.0.p/meson-generated_.._gdm-manager-glue.c.o
+[2/5] Linking target libgdm/libgdm.so.1.0.0
+[3/5] Generating libgdm/Gdm-1.0.gir with a custom command (wrapped by meson to set env)
+[4/5] Generating libgdm/Gdm-1.0.typelib with a custom command
+[4/5] Installing files
+Installing data/dconf/greeter-dconf-defaults to /usr/share/gdm
+Installing daemon/gdm-session-worker to /usr/libexec
+Installing daemon/gdm-wayland-session to /usr/libexec
+Installing daemon/gdm-x-session to /usr/libexec
+Installing daemon/gdm to /usr/sbin
+Installing libgdm/gdm-client-glue.h to /usr/include/gdm
+Installing libgdm/libgdm.so.1.0.0 to /usr/lib
+Installing libgdm/Gdm-1.0.gir to /usr/share/gir-1.0
+Installing libgdm/Gdm-1.0.typelib to /usr/lib/girepository-1.0
+Installing utils/gdm-runtime-config to /usr/libexec
+Installing utils/gdm-config to /usr/bin
+Installing utils/gdm-new-session to /usr/libexec
+Installing pam_gdm/pam_gdm.so to /usr/lib/security
+Installing po/ab/LC_MESSAGES/gdm.mo to /usr/share/locale/ab/LC_MESSAGES
+Installing po/af/LC_MESSAGES/gdm.mo to /usr/share/locale/af/LC_MESSAGES
+Installing po/am/LC_MESSAGES/gdm.mo to /usr/share/locale/am/LC_MESSAGES
+Installing po/an/LC_MESSAGES/gdm.mo to /usr/share/locale/an/LC_MESSAGES
+Installing po/ar/LC_MESSAGES/gdm.mo to /usr/share/locale/ar/LC_MESSAGES
+Installing po/as/LC_MESSAGES/gdm.mo to /usr/share/locale/as/LC_MESSAGES
+Installing po/ast/LC_MESSAGES/gdm.mo to /usr/share/locale/ast/LC_MESSAGES
+Installing po/az/LC_MESSAGES/gdm.mo to /usr/share/locale/az/LC_MESSAGES
+Installing po/be/LC_MESSAGES/gdm.mo to /usr/share/locale/be/LC_MESSAGES
+Installing po/be@latin/LC_MESSAGES/gdm.mo to /usr/share/locale/be@latin/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/gdm.mo to /usr/share/locale/bg/LC_MESSAGES
+Installing po/bn/LC_MESSAGES/gdm.mo to /usr/share/locale/bn/LC_MESSAGES
+Installing po/bn_IN/LC_MESSAGES/gdm.mo to /usr/share/locale/bn_IN/LC_MESSAGES
+Installing po/br/LC_MESSAGES/gdm.mo to /usr/share/locale/br/LC_MESSAGES
+Installing po/bs/LC_MESSAGES/gdm.mo to /usr/share/locale/bs/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/gdm.mo to /usr/share/locale/ca/LC_MESSAGES
+Installing po/ca@valencia/LC_MESSAGES/gdm.mo to /usr/share/locale/ca@valencia/LC_MESSAGES
+Installing po/ckb/LC_MESSAGES/gdm.mo to /usr/share/locale/ckb/LC_MESSAGES
+Installing po/crh/LC_MESSAGES/gdm.mo to /usr/share/locale/crh/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/gdm.mo to /usr/share/locale/cs/LC_MESSAGES
+Installing po/csb/LC_MESSAGES/gdm.mo to /usr/share/locale/csb/LC_MESSAGES
+Installing po/cy/LC_MESSAGES/gdm.mo to /usr/share/locale/cy/LC_MESSAGES
+Installing po/da/LC_MESSAGES/gdm.mo to /usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/gdm.mo to /usr/share/locale/de/LC_MESSAGES
+Installing po/dz/LC_MESSAGES/gdm.mo to /usr/share/locale/dz/LC_MESSAGES
+Installing po/el/LC_MESSAGES/gdm.mo to /usr/share/locale/el/LC_MESSAGES
+Installing po/en_CA/LC_MESSAGES/gdm.mo to /usr/share/locale/en_CA/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/gdm.mo to /usr/share/locale/en_GB/LC_MESSAGES
+Installing po/en@shaw/LC_MESSAGES/gdm.mo to /usr/share/locale/en@shaw/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/gdm.mo to /usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/gdm.mo to /usr/share/locale/es/LC_MESSAGES
+Installing po/et/LC_MESSAGES/gdm.mo to /usr/share/locale/et/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/gdm.mo to /usr/share/locale/eu/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/gdm.mo to /usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/gdm.mo to /usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/gdm.mo to /usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/gdm.mo to /usr/share/locale/fur/LC_MESSAGES
+Installing po/fy/LC_MESSAGES/gdm.mo to /usr/share/locale/fy/LC_MESSAGES
+Installing po/ga/LC_MESSAGES/gdm.mo to /usr/share/locale/ga/LC_MESSAGES
+Installing po/gd/LC_MESSAGES/gdm.mo to /usr/share/locale/gd/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/gdm.mo to /usr/share/locale/gl/LC_MESSAGES
+Installing po/gu/LC_MESSAGES/gdm.mo to /usr/share/locale/gu/LC_MESSAGES
+Installing po/gv/LC_MESSAGES/gdm.mo to /usr/share/locale/gv/LC_MESSAGES
+Installing po/he/LC_MESSAGES/gdm.mo to /usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/gdm.mo to /usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/gdm.mo to /usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/gdm.mo to /usr/share/locale/hu/LC_MESSAGES
+Installing po/hy/LC_MESSAGES/gdm.mo to /usr/share/locale/hy/LC_MESSAGES
+Installing po/ia/LC_MESSAGES/gdm.mo to /usr/share/locale/ia/LC_MESSAGES
+Installing po/id/LC_MESSAGES/gdm.mo to /usr/share/locale/id/LC_MESSAGES
+Installing po/is/LC_MESSAGES/gdm.mo to /usr/share/locale/is/LC_MESSAGES
+Installing po/it/LC_MESSAGES/gdm.mo to /usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/gdm.mo to /usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/gdm.mo to /usr/share/locale/ka/LC_MESSAGES
+Installing po/kab/LC_MESSAGES/gdm.mo to /usr/share/locale/kab/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/gdm.mo to /usr/share/locale/kk/LC_MESSAGES
+Installing po/km/LC_MESSAGES/gdm.mo to /usr/share/locale/km/LC_MESSAGES
+Installing po/kn/LC_MESSAGES/gdm.mo to /usr/share/locale/kn/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/gdm.mo to /usr/share/locale/ko/LC_MESSAGES
+Installing po/ku/LC_MESSAGES/gdm.mo to /usr/share/locale/ku/LC_MESSAGES
+Installing po/kw/LC_MESSAGES/gdm.mo to /usr/share/locale/kw/LC_MESSAGES
+Installing po/ky/LC_MESSAGES/gdm.mo to /usr/share/locale/ky/LC_MESSAGES
+Installing po/lo/LC_MESSAGES/gdm.mo to /usr/share/locale/lo/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/gdm.mo to /usr/share/locale/lt/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/gdm.mo to /usr/share/locale/lv/LC_MESSAGES
+Installing po/mai/LC_MESSAGES/gdm.mo to /usr/share/locale/mai/LC_MESSAGES
+Installing po/mg/LC_MESSAGES/gdm.mo to /usr/share/locale/mg/LC_MESSAGES
+Installing po/mi/LC_MESSAGES/gdm.mo to /usr/share/locale/mi/LC_MESSAGES
+Installing po/mjw/LC_MESSAGES/gdm.mo to /usr/share/locale/mjw/LC_MESSAGES
+Installing po/mk/LC_MESSAGES/gdm.mo to /usr/share/locale/mk/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/gdm.mo to /usr/share/locale/ml/LC_MESSAGES
+Installing po/mn/LC_MESSAGES/gdm.mo to /usr/share/locale/mn/LC_MESSAGES
+Installing po/mr/LC_MESSAGES/gdm.mo to /usr/share/locale/mr/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/gdm.mo to /usr/share/locale/ms/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/gdm.mo to /usr/share/locale/nb/LC_MESSAGES
+Installing po/nds/LC_MESSAGES/gdm.mo to /usr/share/locale/nds/LC_MESSAGES
+Installing po/ne/LC_MESSAGES/gdm.mo to /usr/share/locale/ne/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/gdm.mo to /usr/share/locale/nl/LC_MESSAGES
+Installing po/nn/LC_MESSAGES/gdm.mo to /usr/share/locale/nn/LC_MESSAGES
+Installing po/nso/LC_MESSAGES/gdm.mo to /usr/share/locale/nso/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/gdm.mo to /usr/share/locale/oc/LC_MESSAGES
+Installing po/or/LC_MESSAGES/gdm.mo to /usr/share/locale/or/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/gdm.mo to /usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/gdm.mo to /usr/share/locale/pl/LC_MESSAGES
+Installing po/ps/LC_MESSAGES/gdm.mo to /usr/share/locale/ps/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/gdm.mo to /usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/gdm.mo to /usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/gdm.mo to /usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/gdm.mo to /usr/share/locale/ru/LC_MESSAGES
+Installing po/rw/LC_MESSAGES/gdm.mo to /usr/share/locale/rw/LC_MESSAGES
+Installing po/sat/LC_MESSAGES/gdm.mo to /usr/share/locale/sat/LC_MESSAGES
+Installing po/si/LC_MESSAGES/gdm.mo to /usr/share/locale/si/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/gdm.mo to /usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/gdm.mo to /usr/share/locale/sl/LC_MESSAGES
+Installing po/sq/LC_MESSAGES/gdm.mo to /usr/share/locale/sq/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/gdm.mo to /usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/gdm.mo to /usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/gdm.mo to /usr/share/locale/sv/LC_MESSAGES
+Installing po/sw/LC_MESSAGES/gdm.mo to /usr/share/locale/sw/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/gdm.mo to /usr/share/locale/ta/LC_MESSAGES
+Installing po/te/LC_MESSAGES/gdm.mo to /usr/share/locale/te/LC_MESSAGES
+Installing po/tg/LC_MESSAGES/gdm.mo to /usr/share/locale/tg/LC_MESSAGES
+Installing po/th/LC_MESSAGES/gdm.mo to /usr/share/locale/th/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/gdm.mo to /usr/share/locale/tr/LC_MESSAGES
+Installing po/ug/LC_MESSAGES/gdm.mo to /usr/share/locale/ug/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/gdm.mo to /usr/share/locale/uk/LC_MESSAGES
+Installing po/uz/LC_MESSAGES/gdm.mo to /usr/share/locale/uz/LC_MESSAGES
+Installing po/uz@cyrillic/LC_MESSAGES/gdm.mo to /usr/share/locale/uz@cyrillic/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/gdm.mo to /usr/share/locale/vi/LC_MESSAGES
+Installing po/wa/LC_MESSAGES/gdm.mo to /usr/share/locale/wa/LC_MESSAGES
+Installing po/xh/LC_MESSAGES/gdm.mo to /usr/share/locale/xh/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/gdm.mo to /usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_HK/LC_MESSAGES/gdm.mo to /usr/share/locale/zh_HK/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/gdm.mo to /usr/share/locale/zh_TW/LC_MESSAGES
+Installing po/zu/LC_MESSAGES/gdm.mo to /usr/share/locale/zu/LC_MESSAGES
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/pam-extensions/gdm-pam-extensions.h to /usr/include/gdm
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/pam-extensions/gdm-pam-extensions-common.h to /usr/include/gdm
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/pam-extensions/gdm-choice-list-pam-extension.h to /usr/include/gdm
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/pam-extensions/gdm-custom-json-pam-extension.h to /usr/include/gdm
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/libgdm/gdm-client.h to /usr/include/gdm
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/libgdm/gdm-sessions.h to /usr/include/gdm
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/libgdm/gdm-user-switching.h to /usr/include/gdm
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/build/data/applications/mime-dummy-handler.desktop to /usr/share/gdm/greeter/applications
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/build/data/applications/mimeapps.list to /usr/share/gdm/greeter/applications
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/build/data/dconf/gdm to /usr/share/dconf/profile
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/build/data/gdm.conf to /etc/dbus-1/system.d
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/build/data/custom.conf to /etc/gdm
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/data/org.gnome.login-screen.gschema.xml to /usr/share/glib-2.0/schemas
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/data/gdm.schemas to /usr/share/gdm
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/data/locale.alias to /usr/share/gdm
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/data/gnome-login.session to /usr/share/gnome-session/sessions
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/build/data/gnome-greeter.desktop to /usr/share/gdm/greeter/wayland-sessions
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/build/data/gnome-initial-setup.desktop to /usr/share/gdm/greeter/wayland-sessions
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/data/pam-lfs/gdm-autologin.pam to /usr/lib/pam.d
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/data/pam-lfs/gdm-launch-environment.pam to /usr/lib/pam.d
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/data/pam-lfs/gdm-fingerprint.pam to /usr/lib/pam.d
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/data/pam-lfs/gdm-smartcard.pam to /usr/lib/pam.d
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/data/pam-lfs/gdm-password.pam to /usr/lib/pam.d
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/build/data/gdm.service to /usr/lib/systemd/system
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/build/data/gnome-headless-session@.service to /usr/lib/systemd/system
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/data/gnome-login.session.conf to /usr/lib/systemd/user/gnome-session@gnome-login.target.d
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/build/data/Xsession to /etc/gdm
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/build/data/20-gdm.rules to /usr/share/polkit-1/rules.d
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/data/org.gnome.displaymanager.policy to /usr/share/polkit-1/actions
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/common/gdb-cmd to /usr/share/gdm
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/build/meson-private/gdm-pam-extensions.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/build/meson-private/gdm.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/gdm/gdm-51.2/utils/gdm-auth-config-generic to /usr/libexec
+Installing symlink pointing to libgdm.so.1.0.0 to /usr/lib/libgdm.so.1
+Installing symlink pointing to libgdm.so.1 to /usr/lib/libgdm.so
+Running custom install script '/usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas'
+Warning: Schema “org.gnome.crypto.cache” has path “/desktop/gnome/crypto/cache/”.  Paths starting with “/apps/”, “/desktop/” or “/system/” are deprecated.
+
+51.2
+Updated registry for gdm to version 51.2
+[VERSION] gdm: 51.2
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package gdm in /var/lib/custom-packages/
