@@ -1,0 +1,1266 @@
+===== Update check started: 2026-11-24 21:31:00 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261124_213100
+Packages needing attention: cargo-c
+===== Starting updatec: 2026-11-24 21:31:03 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - cargo-c
+
+Building custom package cargo-c...
+[21:31:04] Found custom package for cargo-c, bypassing BLFS aliases.
+[21:31:04] Custom package detected at /home/fusion809/lfs_packaging/cargo-c (package: cargo-c)
+[21:31:04] Extracting dependencies for custom package 'cargo-c'...
+[21:31:04] Required deps: brotli curl cyrus-sasl gcc glibc libidn2 libpsl libssh2 libunistring nghttp2 openldap openssl sqlite zlib zstd 
+[21:31:04] Dependency 'brotli' already installed.
+[21:31:04] Dependency 'curl' already installed.
+[21:31:04] Dependency 'cyrus-sasl' already installed.
+[21:31:04] Dependency 'gcc' already installed.
+[21:31:04] Dependency 'glibc' already installed.
+[21:31:04] Dependency 'libidn2' already installed.
+[21:31:04] Dependency 'libpsl' already installed.
+[21:31:04] Dependency 'libssh2' already installed.
+[21:31:04] Dependency 'libunistring' already installed.
+[21:31:04] Dependency 'nghttp2' already installed.
+[21:31:04] Dependency 'openldap' already installed.
+[21:31:04] Dependency 'openssl' already installed.
+[21:31:04] Dependency 'sqlite' already installed.
+[21:31:04] Dependency 'zlib' already installed.
+[21:31:04] Dependency 'zstd' already installed.
+[VERSION] cargo-c: 0.10.28
+[21:31:06] Installing cargo-c version: 0.10.28
+[21:31:06] Starting remote custom build for cargo-c...
+--2026-11-24 21:31:31--  https://github.com/lu-zero/cargo-c/archive/v0.10.28.tar.gz
+Resolving github.com (github.com)... 4.196.32.112
+Connecting to github.com (github.com)|4.196.32.112|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/lu-zero/cargo-c/tar.gz/refs/tags/v0.10.28 [following]
+--2026-11-24 21:31:32--  https://codeload.github.com/lu-zero/cargo-c/tar.gz/refs/tags/v0.10.28
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘cargo-c-0.10.28.tar.gz’
+
+cargo-c-0.10.28.tar     [<=>                 ]       0  --.-KB/s               cargo-c-0.10.28.tar     [ <=>                ]  46.44K  --.-KB/s    in 0.1s    
+
+2026-11-24 21:31:32 (343 KB/s) - ‘cargo-c-0.10.28.tar.gz’ saved [47555]
+
+--2026-11-24 21:31:33--  https://github.com/lu-zero/cargo-c/releases/download/v0.10.28/Cargo.lock
+Resolving github.com (github.com)... 4.196.32.112
+Connecting to github.com (github.com)|4.196.32.112|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/188232648/089f94f8-af05-4e64-b7fe-9160ae55ef4e?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-24T12%3A20%3A44Z&rscd=attachment%3B+filename%3DCargo.lock&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-24T11%3A20%3A29Z&ske=2026-11-24T12%3A20%3A44Z&sks=b&skv=2018-11-09&sig=P62eM782RBBzT9yHLwFl5SBecblfDv23jznxnH%2FGzyg%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTUyMDE5NCwibmJmIjoxNzk1NTE5ODk0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.dDLe6yvV75gXE8CRs_2hJ6dr-DO94lEfSRMM3SaQZDk&response-content-disposition=attachment%3B%20filename%3DCargo.lock&response-content-type=application%2Foctet-stream [following]
+--2026-11-24 21:31:34--  https://release-assets.githubusercontent.com/github-production-release-asset/188232648/089f94f8-af05-4e64-b7fe-9160ae55ef4e?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-24T12%3A20%3A44Z&rscd=attachment%3B+filename%3DCargo.lock&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-24T11%3A20%3A29Z&ske=2026-11-24T12%3A20%3A44Z&sks=b&skv=2018-11-09&sig=P62eM782RBBzT9yHLwFl5SBecblfDv23jznxnH%2FGzyg%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTUyMDE5NCwibmJmIjoxNzk1NTE5ODk0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.dDLe6yvV75gXE8CRs_2hJ6dr-DO94lEfSRMM3SaQZDk&response-content-disposition=attachment%3B%20filename%3DCargo.lock&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.109.133, 185.199.108.133, 185.199.111.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 97990 (96K) [application/octet-stream]
+Saving to: ‘Cargo.lock’
+
+Cargo.lock            0%[                    ]       0  --.-KB/s               Cargo.lock          100%[===================>]  95.69K  --.-KB/s    in 0.1s    
+
+2026-11-24 21:31:34 (909 KB/s) - ‘Cargo.lock’ saved [97990/97990]
+
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded cargo-util-terminal v0.1.3
+  Downloaded jiff-static v0.2.46
+  Downloaded form_urlencoded v1.2.3
+  Downloaded cargo-credential-libsecret v0.5.11
+  Downloaded clap_lex v1.1.2
+  Downloaded crates-io v0.41.3
+  Downloaded filetime v0.2.30
+  Downloaded pin-project-lite v0.2.18
+  Downloaded walkdir v2.5.1
+  Downloaded clap_derive v4.6.9
+  Downloaded globset v0.4.22
+  Downloaded anyhow v1.0.105
+  Downloaded toml_parser v1.1.6+spec-1.1.0
+  Downloaded smallvec v1.16.6
+  Downloaded cargo-util-schemas v0.15.0
+  Downloaded clap v4.6.9
+  Downloaded clap_complete v4.6.12
+  Downloaded toml v1.2.2+spec-1.1.0
+  Downloaded cargo-util v0.2.33
+  Downloaded crc32fast v1.5.6
+  Downloaded toml_edit v0.25.20+spec-1.1.0
+  Downloaded ignore v0.4.35
+  Downloaded bytes v1.12.2
+  Downloaded url v2.5.9
+  Downloaded jiff-core v0.1.8
+  Downloaded cc v1.11.3
+  Downloaded regex v1.13.2
+  Downloaded hashbrown v0.17.2
+  Downloaded zlib-rs v0.6.9
+  Downloaded nix v0.31.4
+  Downloaded bstr v1.14.0
+  Downloaded regex-syntax v0.8.12
+  Downloaded regex-automata v0.4.19
+  Downloaded jiff v0.2.46
+  Downloaded cargo v0.101.0
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling memchr v2.8.3
+   Compiling libc v0.2.191
+   Compiling syn v3.0.10
+   Compiling cfg-if v1.0.5
+   Compiling aho-corasick v1.1.5
+   Compiling regex-syntax v0.8.12
+   Compiling regex-automata v0.4.19
+   Compiling serde_core v1.0.229
+   Compiling smallvec v1.16.6
+   Compiling thiserror v2.0.21
+   Compiling thiserror-impl v2.0.21
+   Compiling stable_deref_trait v1.2.1
+   Compiling rand_core v0.10.1
+   Compiling bstr v1.14.0
+   Compiling getrandom v0.4.3
+   Compiling bitflags v2.13.2
+   Compiling once_cell v1.21.4
+   Compiling fastrand v2.5.0
+   Compiling crossbeam-utils v0.8.23
+   Compiling typenum v1.20.1
+   Compiling gix-trace v0.1.21
+   Compiling scopeguard v1.2.0
+   Compiling parking_lot_core v0.9.12
+   Compiling gix-validate v0.11.4
+   Compiling tinyvec v1.13.3
+   Compiling autocfg v1.5.1
+   Compiling unicode-normalization v0.1.26
+   Compiling gix-path v0.12.6
+   Compiling lock_api v0.4.14
+   Compiling crc32fast v1.5.6
+   Compiling gix-utils v0.3.6
+   Compiling same-file v1.0.6
+   Compiling walkdir v2.5.1
+   Compiling parking_lot v0.12.5
+   Compiling allocator-api2 v0.2.21
+   Compiling foldhash v0.2.0
+   Compiling equivalent v1.0.3
+   Compiling bytes v1.12.2
+   Compiling version_check v0.9.5
+   Compiling jobserver v0.1.35
+   Compiling find-msvc-tools v0.1.15
+   Compiling zlib-rs v0.6.9
+   Compiling shlex v2.0.1
+   Compiling cc v1.11.3
+   Compiling prodash v31.0.1
+   Compiling crossbeam-channel v0.5.17
+   Compiling itoa v1.0.19
+   Compiling gix-features v0.48.1
+   Compiling hashbrown v0.17.2
+   Compiling gix-error v0.2.5
+   Compiling generic-array v0.14.7
+   Compiling byteorder v1.5.0
+   Compiling rustix v1.1.6
+   Compiling heapless v0.8.0
+   Compiling hash32 v0.3.1
+   Compiling faster-hex v0.10.1
+   Compiling linux-raw-sys v0.12.1
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.7
+   Compiling pkg-config v0.3.34
+   Compiling digest v0.10.7
+   Compiling jiff-core v0.1.8
+   Compiling cpufeatures v0.2.17
+   Compiling sha1 v0.10.7
+   Compiling sha1-checked v0.10.0
+   Compiling jiff v0.2.46
+   Compiling vcpkg v0.2.15
+   Compiling gix-hash v0.25.1
+   Compiling gix-hashtable v0.15.2
+   Compiling synstructure v0.14.0
+   Compiling tempfile v3.27.0
+   Compiling memmap2 v0.9.12
+   Compiling zerofrom-derive v0.1.8
+   Compiling yoke-derive v0.8.4
+   Compiling gix-date v0.15.6
+   Compiling gix-actor v0.41.2
+   Compiling gix-object v0.62.0
+   Compiling zerofrom v0.1.8
+   Compiling hashbrown v0.14.5
+   Compiling dashmap v6.2.1
+   Compiling yoke v0.8.4
+   Compiling openssl-sys v0.9.118
+   Compiling libz-sys v1.1.33
+   Compiling gix-chunk v0.7.3
+   Compiling gix-fs v0.21.2
+   Compiling filetime v0.2.30
+   Compiling gix-tempfile v23.0.2
+   Compiling gix-quote v0.7.2
+   Compiling zerovec-derive v0.11.7
+   Compiling nonempty v0.12.0
+   Compiling displaydoc v0.2.7
+   Compiling percent-encoding v2.3.2
+   Compiling gix-commitgraph v0.37.1
+   Compiling zerovec v0.11.9
+   Compiling gix-glob v0.26.1
+   Compiling gix-revwalk v0.33.0
+   Compiling gix-lock v23.0.1
+   Compiling tinystr v0.8.5
+   Compiling libnghttp2-sys v0.1.13+1.68.1
+   Compiling gix-config-value v0.18.1
+   Compiling syn v2.0.119
+   Compiling utf_types v1.0.0
+   Compiling rustversion v1.0.23
+   Compiling unicode-bom v2.0.3
+   Compiling log v0.4.35
+   Compiling litemap v0.8.3
+   Compiling writeable v0.6.4
+   Compiling utf8_iter v1.1.0
+   Compiling icu_locale_core v2.4.0
+   Compiling potential_utf v0.1.6
+   Compiling zerotrie v0.2.5
+   Compiling icu_normalizer_data v2.4.0
+   Compiling serde v1.0.229
+   Compiling icu_properties_data v2.4.0
+   Compiling static_assertions v1.1.0
+   Compiling zmij v1.0.23
+   Compiling kstring v2.0.5
+   Compiling icu_provider v2.4.0
+   Compiling icu_collections v2.4.0
+   Compiling curl-sys v0.4.91+curl-8.22.0
+   Compiling gix-sec v0.14.2
+   Compiling serde_derive v1.0.229
+   Compiling shell-words v1.1.1
+   Compiling serde_json v1.0.154
+   Compiling gix-command v0.9.2
+   Compiling gix-attributes v0.33.2
+   Compiling hybrid-array v0.4.15
+   Compiling pin-project-lite v0.2.18
+   Compiling semver v1.0.28
+   Compiling libssh2-sys v0.3.4
+   Compiling icu_properties v2.4.0
+   Compiling icu_normalizer v2.4.0
+   Compiling gix-ref v0.65.0
+   Compiling indexmap v2.14.2
+   Compiling cmov v0.5.4
+   Compiling cpufeatures v0.3.1
+   Compiling ctutils v0.4.8
+   Compiling idna_adapter v1.2.2
+   Compiling block-buffer v0.12.1
+   Compiling crypto-common v0.2.2
+   Compiling encoding_rs v0.8.44
+   Compiling gix-traverse v0.59.0
+   Compiling gix-packetline v0.21.5
+   Compiling gix-bitmap v0.3.3
+   Compiling tracing-core v0.1.36
+   Compiling openssl-probe v0.1.6
+   Compiling crossbeam-epoch v0.9.21
+   Compiling anstyle v1.0.14
+   Compiling anyhow v1.0.105
+   Compiling const-oid v0.10.3
+   Compiling utf8parse v0.2.2
+   Compiling fnv v1.0.7
+   Compiling curl v0.4.51
+   Compiling winnow v1.0.5
+   Compiling gix-index v0.53.0
+   Compiling digest v0.11.3
+   Compiling anstyle-parse v1.0.0
+   Compiling toml_parser v1.1.6+spec-1.1.0
+   Compiling idna v1.1.0
+   Compiling gix-pathspec v0.18.1
+   Compiling tracing-attributes v0.1.31
+   Compiling gix-ignore v0.21.1
+   Compiling gix-url v0.36.2
+   Compiling form_urlencoded v1.2.3
+   Compiling libgit2-sys v0.18.8+1.9.7
+   Compiling num-traits v0.2.19
+   Compiling serde_spanned v1.1.3
+   Compiling socket2 v0.6.5
+   Compiling crossbeam-deque v0.8.8
+   Compiling anstyle-query v1.1.5
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling typeid v1.0.3
+   Compiling colorchoice v1.0.5
+   Compiling core_detect v1.0.0
+   Compiling simdutf8 v0.1.5
+   Compiling multiversion_no_op v1.0.0
+   Compiling anstream v1.0.0
+   Compiling url v2.5.9
+   Compiling gix-worktree v0.54.0
+   Compiling tracing v0.1.44
+   Compiling gix-prompt v0.15.1
+   Compiling gix-revision v0.47.0
+   Compiling hashbrown v0.16.1
+   Compiling erased-serde v0.4.11
+   Compiling futures-core v0.3.34
+   Compiling cfg_aliases v0.2.2
+   Compiling portable-atomic v1.15.0
+   Compiling futures-sink v0.3.34
+   Compiling futures-channel v0.3.34
+   Compiling clru v0.6.3
+   Compiling nix v0.31.4
+   Compiling gix-refspec v0.43.0
+   Compiling gix-credentials v0.38.2
+   Compiling gix-filter v0.32.0
+   Compiling gix-discover v0.53.0
+   Compiling globset v0.4.22
+   Compiling libsqlite3-sys v0.38.2
+   Compiling terminal_size v0.4.4
+   Compiling gix-imara-diff v0.2.5
+   Compiling toml_datetime v1.1.3+spec-1.1.0
+   Compiling deranged v0.5.9
+   Compiling futures-macro v0.3.34
+   Compiling minimal-lexical v0.2.1
+   Compiling futures-io v0.3.34
+   Compiling clap_lex v1.1.2
+   Compiling toml_writer v1.2.0+spec-1.1.0
+   Compiling base64 v0.22.1
+   Compiling strsim v0.11.1
+   Compiling object v0.39.1
+   Compiling time-core v0.1.9
+   Compiling num-conv v0.2.2
+   Compiling heck v0.5.0
+   Compiling powerfmt v0.2.1
+   Compiling slab v0.4.12
+   Compiling lazy_static v1.5.1
+   Compiling futures-task v0.3.34
+   Compiling futures-util v0.3.34
+   Compiling flate2 v1.1.11
+   Compiling sharded-slab v0.1.7
+   Compiling clap_derive v4.6.9
+   Compiling time v0.3.55
+   Compiling clap_builder v4.6.7
+   Compiling gix-transport v0.57.2
+   Compiling nom v7.1.3
+   Compiling gix-diff v0.65.0
+   Compiling ignore v0.4.35
+   Compiling gix-dir v0.27.0
+   Compiling ordered-float v2.10.1
+   Compiling tar v0.4.46
+   Compiling gix-pack v0.72.0
+   Compiling sha2 v0.11.1
+   Compiling tracing-log v0.2.0
+   Compiling gix-config v0.58.0
+   Compiling arc-swap v1.9.5
+   Compiling maybe-async v0.2.11
+   Compiling gix-negotiate v0.33.0
+   Compiling gix-shallow v0.12.1
+   Compiling blake3 v1.8.7
+   Compiling im-rc v15.1.0
+   Compiling memoffset v0.9.1
+   Compiling bitmaps v2.1.0
+   Compiling matchers v0.2.0
+   Compiling thread_local v1.1.10
+   Compiling hex v0.4.3
+   Compiling nu-ansi-term v0.50.3
+   Compiling rand_core v0.6.4
+   Compiling shell-escape v0.1.5
+   Compiling unicode-width v0.2.3
+   Compiling annotate-snippets v0.12.18
+   Compiling cargo-util v0.2.33
+   Compiling rand_xoshiro v0.6.0
+   Compiling tracing-subscriber v0.3.23
+   Compiling git2 v0.21.0
+   Compiling sized-chunks v0.6.5
+   Compiling gix-protocol v0.63.0
+   Compiling gix-odb v0.82.0
+   Compiling gix-submodule v0.32.0
+   Compiling cargo v0.101.0
+   Compiling serde-value v0.7.0
+   Compiling serde-untagged v0.1.9
+   Compiling gix-status v0.32.0
+   Compiling color-print-proc-macro v0.3.7
+   Compiling clap v4.6.9
+   Compiling cargo-credential v0.4.11
+   Compiling futures-executor v0.3.34
+   Compiling toml v1.2.2+spec-1.1.0
+   Compiling chacha20 v0.10.2
+   Compiling anstyle-hyperlink v1.0.2
+   Compiling hashlink v0.12.2
+   Compiling http v1.5.0
+   Compiling toml_datetime v0.7.5+spec-1.1.0
+   Compiling libloading v0.9.1
+   Compiling camino v1.2.6
+   Compiling supports-hyperlinks v3.2.0
+   Compiling fallible-iterator v0.3.0
+   Compiling supports-unicode v3.0.0
+   Compiling anstyle-progress v0.1.6
+   Compiling is_executable v1.0.6
+   Compiling constant_time_eq v0.4.2
+   Compiling winnow v0.7.15
+   Compiling either v1.19.0
+   Compiling fallible-streaming-iterator v0.1.9
+   Compiling arrayvec v0.7.8
+   Compiling cbindgen v0.29.4
+   Compiling toml v0.9.12+spec-1.1.0
+   Compiling clap_complete v4.6.12
+   Compiling rusqlite v0.40.2
+   Compiling itertools v0.15.0
+   Compiling cargo-util-terminal v0.1.3
+   Compiling ar_archive_writer v0.5.5
+   Compiling cargo-credential-libsecret v0.5.11
+   Compiling cargo-util-schemas v0.15.0
+   Compiling crates-io v0.41.3
+   Compiling rand v0.10.4
+   Compiling futures v0.3.34
+   Compiling color-print v0.3.7
+   Compiling gix v0.85.0
+   Compiling os_info v3.15.0
+   Compiling git2-curl v0.22.0
+   Compiling tracing-chrome v0.7.2
+   Compiling toml_edit v0.25.20+spec-1.1.0
+   Compiling sha1 v0.11.0
+   Compiling hmac v0.13.0
+   Compiling rustfix v0.9.8
+   Compiling opener v0.8.5
+   Compiling regex v1.13.2
+   Compiling cargo-platform v0.3.3
+   Compiling serde_ignored v0.1.14
+   Compiling async-trait v0.1.92
+   Compiling http-auth v0.1.10
+   Compiling home v0.5.12
+   Compiling futures-timer v3.0.4
+   Compiling glob v0.3.4
+   Compiling rustc-hash v2.1.3
+   Compiling rustc-stable-hash v0.1.2
+   Compiling base64 v0.23.1
+   Compiling unicase v2.10.0
+   Compiling pathdiff v0.2.3
+   Compiling implib v0.6.0
+   Compiling object v0.41.0
+   Compiling cargo-c v0.10.28+cargo-0.101.0 (/home/fusion809/lfs_packaging/cargo-c/cargo-c-0.10.28)
+    Finished `release` profile [optimized] target(s) in 23m 41s
+removed '/usr/bin/cargo-capi'
+'target/release/cargo-capi' -> '/usr/bin/cargo-capi'
+removed '/usr/bin/cargo-cbuild'
+'target/release/cargo-cbuild' -> '/usr/bin/cargo-cbuild'
+removed '/usr/bin/cargo-cinstall'
+'target/release/cargo-cinstall' -> '/usr/bin/cargo-cinstall'
+removed '/usr/bin/cargo-ctest'
+'target/release/cargo-ctest' -> '/usr/bin/cargo-ctest'
+0.10.28
+Updated registry for cargo-c to version 0.10.28
+[VERSION] cargo-c: 0.10.28
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package cargo-c in /var/lib/custom-packages/
+Updating Python packages via pip...
+Requirement already satisfied: affine in /usr/lib/python3.15/site-packages (3.0.1)
+Requirement already satisfied: alabaster in /usr/lib/python3.15/site-packages (1.0.0)
+Requirement already satisfied: anyio in /usr/lib/python3.15/site-packages (4.16.0)
+Requirement already satisfied: appdirs in /usr/lib/python3.15/site-packages (1.4.4)
+Requirement already satisfied: argcomplete in /usr/lib/python3.15/site-packages (3.7.2)
+Collecting argcomplete
+  Using cached argcomplete-3.8.0-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: arrow in /usr/lib/python3.15/site-packages (1.4.0)
+Requirement already satisfied: asgiref in /usr/lib/python3.15/site-packages (3.13.0)
+Requirement already satisfied: astroid in /usr/lib/python3.15/site-packages (4.3.4)
+Requirement already satisfied: asttokens in /usr/lib/python3.15/site-packages (3.0.2)
+Requirement already satisfied: attrs in /usr/lib/python3.15/site-packages (26.1.0)
+Requirement already satisfied: babel in /usr/lib/python3.15/site-packages (2.18.0)
+Requirement already satisfied: beautifulsoup4 in /usr/lib/python3.15/site-packages (4.15.0)
+Requirement already satisfied: black in /usr/lib/python3.15/site-packages (26.10.1)
+Requirement already satisfied: bleach in /usr/lib/python3.15/site-packages (6.4.0)
+Requirement already satisfied: brotli in /usr/lib/python3.15/site-packages (1.2.1)
+Requirement already satisfied: build in /usr/lib/python3.15/site-packages (1.6.1)
+Requirement already satisfied: cclib in /usr/lib/python3.15/site-packages (1.8.1)
+Requirement already satisfied: certifi in /usr/lib/python3.15/site-packages (2026.10.23)
+Collecting certifi
+  Using cached certifi-2026.11.20-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: cffi in /usr/lib/python3.15/site-packages (2.1.1)
+Requirement already satisfied: chardet in /usr/lib/python3.15/site-packages (5.2.0)
+Collecting chardet
+  Using cached chardet-7.7.0-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Requirement already satisfied: click in /usr/lib/python3.15/site-packages (8.5.1)
+Requirement already satisfied: colorama in /usr/lib/python3.15/site-packages (0.4.6)
+Requirement already satisfied: columnize in /usr/lib/python3.15/site-packages (0.3.11)
+Requirement already satisfied: comm in /usr/lib/python3.15/site-packages (0.2.3)
+Requirement already satisfied: contourpy in /usr/lib/python3.15/site-packages (1.4.0)
+Requirement already satisfied: cryptography in /usr/lib/python3.15/site-packages (50.0.2)
+Requirement already satisfied: cssselect in /usr/lib/python3.15/site-packages (1.6.0)
+Requirement already satisfied: cycler in /usr/lib/python3.15/site-packages (0.12.1)
+Requirement already satisfied: dateutils in /usr/lib/python3.15/site-packages (0.6.12)
+Requirement already satisfied: debugpy in /usr/lib/python3.15/site-packages (1.8.22)
+Requirement already satisfied: decorator in /usr/lib/python3.15/site-packages (5.3.2)
+Requirement already satisfied: defusedxml in /usr/lib/python3.15/site-packages (0.7.1)
+Requirement already satisfied: dill in /usr/lib/python3.15/site-packages (0.4.1)
+Requirement already satisfied: docutils in /usr/lib/python3.15/site-packages (0.22.4)
+Collecting docutils
+  Using cached docutils-0.23-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: doxypypy in /usr/lib/python3.15/site-packages (0.8.8.7)
+Requirement already satisfied: doxyqml in /usr/lib/python3.15/site-packages (0.6.0)
+Requirement already satisfied: editables in /usr/lib/python3.15/site-packages (0.6)
+Requirement already satisfied: executing in /usr/lib/python3.15/site-packages (2.3.0)
+Requirement already satisfied: fastjsonschema in /usr/lib/python3.15/site-packages (2.22.3)
+Requirement already satisfied: flake8 in /usr/lib/python3.15/site-packages (7.5.0)
+Requirement already satisfied: flexcache in /usr/lib/python3.15/site-packages (0.3)
+Requirement already satisfied: flexparser in /usr/lib/python3.15/site-packages (0.4)
+Requirement already satisfied: flit_core in /usr/lib/python3.15/site-packages (4.2.0)
+Requirement already satisfied: fonttools in /usr/lib/python3.15/site-packages (4.68.0)
+Requirement already satisfied: fqdn in /usr/lib/python3.15/site-packages (1.6.0)
+Requirement already satisfied: gobject in /usr/lib/python3.15/site-packages (0.1.0)
+Requirement already satisfied: h11 in /usr/lib/python3.15/site-packages (0.16.0)
+Requirement already satisfied: hatchling in /usr/lib/python3.15/site-packages (1.33.0)
+Requirement already satisfied: html5lib in /usr/lib/python3.15/site-packages (1.1)
+Requirement already satisfied: httpcore in /usr/lib/python3.15/site-packages (1.0.9)
+Requirement already satisfied: httpx in /usr/lib/python3.15/site-packages (0.28.1)
+Requirement already satisfied: idna in /usr/lib/python3.15/site-packages (3.20)
+Requirement already satisfied: imagesize in /usr/lib/python3.15/site-packages (2.0.1)
+Requirement already satisfied: installer in /usr/lib/python3.15/site-packages (1.1.0)
+Requirement already satisfied: ipykernel in /usr/lib/python3.15/site-packages (7.4.0)
+Requirement already satisfied: ipython in /usr/lib/python3.15/site-packages (9.18.1)
+Collecting ipython
+  Using cached ipython-9.19.1-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: ipython_pygments_lexers in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: isoduration in /usr/lib/python3.15/site-packages (20.11.0)
+Requirement already satisfied: isort in /usr/lib/python3.15/site-packages (9.0.2)
+Requirement already satisfied: jedi in /usr/lib/python3.15/site-packages (0.20.1)
+Requirement already satisfied: json5 in /usr/lib/python3.15/site-packages (0.17.3)
+Requirement already satisfied: jsonpointer in /usr/lib/python3.15/site-packages (3.12)
+Requirement already satisfied: jsonschema in /usr/lib/python3.15/site-packages (4.26.0)
+Requirement already satisfied: jupyter_builder in /usr/lib/python3.15/site-packages (1.3.0)
+Requirement already satisfied: jupyter_client in /usr/lib/python3.15/site-packages (8.10.0)
+Requirement already satisfied: jupyter_core in /usr/lib/python3.15/site-packages (5.9.1)
+Requirement already satisfied: jupyter_server in /usr/lib/python3.15/site-packages (2.21.1)
+Requirement already satisfied: jupyter_server_terminals in /usr/lib/python3.15/site-packages (0.5.4)
+Requirement already satisfied: jupyterlab in /usr/lib/python3.15/site-packages (4.6.6)
+Requirement already satisfied: jupyterlab_pygments in /usr/lib/python3.15/site-packages (0.3.0)
+Requirement already satisfied: jupyterlab_server in /usr/lib/python3.15/site-packages (2.28.1)
+Requirement already satisfied: kiwisolver in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: lark in /usr/lib/python3.15/site-packages (1.3.1)
+Requirement already satisfied: lxml in /usr/lib/python3.15/site-packages (6.1.3)
+Requirement already satisfied: mathics3_notebook_frontends in /usr/lib/python3.15/site-packages (1.0.1)
+Requirement already satisfied: mathicsscript in /usr/lib/python3.15/site-packages (10.0.0)
+Requirement already satisfied: matplotlib in /usr/lib/python3.15/site-packages (3.11.2)
+Requirement already satisfied: mccabe in /usr/lib/python3.15/site-packages (0.7.0)
+Requirement already satisfied: meson in /usr/lib/python3.15/site-packages (1.12.1)
+Requirement already satisfied: metakernel in /usr/lib/python3.15/site-packages (1.0.7)
+Requirement already satisfied: mistune in /usr/lib/python3.15/site-packages (3.4.0)
+Requirement already satisfied: mpmath in /usr/lib/python3.15/site-packages (1.3.0)
+Collecting mpmath
+  Using cached mpmath-1.4.1-py3-none-any.whl.metadata (9.1 kB)
+Requirement already satisfied: msgpack in /usr/lib/python3.15/site-packages (1.2.4)
+Requirement already satisfied: mypy_extensions in /usr/lib/python3.15/site-packages (1.2.0)
+Requirement already satisfied: narwhals in /usr/lib/python3.15/site-packages (2.29.0)
+Requirement already satisfied: nbclient in /usr/lib/python3.15/site-packages (0.11.0)
+Requirement already satisfied: nbconvert in /usr/lib/python3.15/site-packages (7.17.2)
+Requirement already satisfied: nbformat in /usr/lib/python3.15/site-packages (5.11.1)
+Requirement already satisfied: networkx in /usr/lib/python3.15/site-packages (3.7)
+Requirement already satisfied: notebook_shim in /usr/lib/python3.15/site-packages (0.2.4)
+Requirement already satisfied: numpy in /usr/lib/python3.15/site-packages (2.5.5)
+Requirement already satisfied: octave_kernel in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: packaging in /usr/lib/python3.15/site-packages (26.3)
+Collecting packaging
+  Using cached packaging-26.4-py3-none-any.whl.metadata (3.5 kB)
+Requirement already satisfied: palettable in /usr/lib/python3.15/site-packages (3.3.3)
+Requirement already satisfied: pandocfilters in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: parameterized in /usr/lib/python3.15/site-packages (0.9.0)
+Requirement already satisfied: parso in /usr/lib/python3.15/site-packages (0.8.7)
+Requirement already satisfied: pathspec in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: periodictable in /usr/lib/python3.15/site-packages (2.1.0)
+Requirement already satisfied: pexpect in /usr/lib/python3.15/site-packages (4.9.0)
+Requirement already satisfied: pillow in /usr/lib/python3.15/site-packages (13.0.0)
+Requirement already satisfied: pip in /usr/lib/python3.15/site-packages (26.3)
+Requirement already satisfied: platformdirs in /usr/lib/python3.15/site-packages (4.14.8)
+Requirement already satisfied: pluggy in /usr/lib/python3.15/site-packages (1.7.0)
+Requirement already satisfied: prometheus_client in /usr/lib/python3.15/site-packages (0.26.0)
+Requirement already satisfied: prompt_toolkit in /usr/lib/python3.15/site-packages (3.0.53)
+Requirement already satisfied: psutil in /usr/lib/python3.15/site-packages (7.2.2)
+Requirement already satisfied: ptyprocess in /usr/lib/python3.15/site-packages (0.7.0)
+Requirement already satisfied: pure_eval in /usr/lib/python3.15/site-packages (0.2.4)
+Requirement already satisfied: pyasn1 in /usr/lib/python3.15/site-packages (0.6.5)
+Requirement already satisfied: pybind11 in /usr/lib/python3.15/site-packages (3.1.0)
+Requirement already satisfied: pycairo in /usr/lib/python3.15/site-packages (1.29.2)
+Requirement already satisfied: pycodestyle in /usr/lib/python3.15/site-packages (2.15.0)
+Requirement already satisfied: pycparser in /usr/lib/python3.15/site-packages (3.12)
+Requirement already satisfied: pydeck in /usr/lib/python3.15/site-packages (0.9.3)
+Requirement already satisfied: pyelftools in /usr/lib/python3.15/site-packages (0.33)
+Requirement already satisfied: pyflakes in /usr/lib/python3.15/site-packages (4.1.0)
+Requirement already satisfied: pygdbmi in /usr/lib/python3.15/site-packages (0.11.0.0)
+Requirement already satisfied: pylint in /usr/lib/python3.15/site-packages (4.1.4)
+Requirement already satisfied: Pympler in /usr/lib/python3.15/site-packages (1.1)
+Requirement already satisfied: pyparsing in /usr/lib/python3.15/site-packages (3.3.3)
+Requirement already satisfied: pyproject_hooks in /usr/lib/python3.15/site-packages (1.3.3)
+Requirement already satisfied: pyserial in /usr/lib/python3.15/site-packages (3.5)
+Requirement already satisfied: pyte in /usr/lib/python3.15/site-packages (0.8.2)
+Requirement already satisfied: pytokens in /usr/lib/python3.15/site-packages (0.4.1)
+Requirement already satisfied: pytz in /usr/lib/python3.15/site-packages (2026.6)
+Requirement already satisfied: pyzmq in /usr/lib/python3.15/site-packages (27.3.0)
+Requirement already satisfied: rasterio in /usr/lib/python3.15/site-packages (1.5.2)
+Requirement already satisfied: rdflib in /usr/lib/python3.15/site-packages (7.6.0)
+Requirement already satisfied: referencing in /usr/lib/python3.15/site-packages (0.37.0)
+Requirement already satisfied: requests in /usr/lib/python3.15/site-packages (2.34.2)
+Requirement already satisfied: rnc2rng in /usr/lib/python3.15/site-packages (2.8.0)
+Requirement already satisfied: rply in /usr/lib/python3.15/site-packages (0.7.8)
+Requirement already satisfied: scikit_build_core in /usr/lib/python3.15/site-packages (1.1.2)
+Requirement already satisfied: scipy in /usr/lib/python3.15/site-packages (1.18.1)
+Requirement already satisfied: scour in /usr/lib/python3.15/site-packages (0.38.2)
+Requirement already satisfied: setuptools in /usr/lib/python3.15/site-packages (84.2.1)
+Requirement already satisfied: sip in /usr/lib/python3.15/site-packages (6.17.3)
+Requirement already satisfied: six in /usr/lib/python3.15/site-packages (1.17.0)
+Requirement already satisfied: smartypants in /usr/lib/python3.15/site-packages (2.0.2)
+Requirement already satisfied: snowballstemmer in /usr/lib/python3.15/site-packages (3.1.1)
+Requirement already satisfied: soupsieve in /usr/lib/python3.15/site-packages (4.1.3)
+Requirement already satisfied: sphinx_lv2_theme in /usr/lib/python3.15/site-packages (1.4.6)
+Requirement already satisfied: sphinxygen in /usr/lib/python3.15/site-packages (1.0.12)
+Requirement already satisfied: sqlparse in /usr/lib/python3.15/site-packages (0.6.1)
+Requirement already satisfied: sympy in /usr/lib/python3.15/site-packages (1.14.0)
+Requirement already satisfied: terminado in /usr/lib/python3.15/site-packages (0.18.1)
+Requirement already satisfied: tinycss2 in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: tomlkit in /usr/lib/python3.15/site-packages (0.15.2)
+Collecting tomlkit
+  Using cached tomlkit-0.15.3-py3-none-any.whl.metadata (3.4 kB)
+Requirement already satisfied: tornado in /usr/lib/python3.15/site-packages (6.6.1)
+Requirement already satisfied: traitlets in /usr/lib/python3.15/site-packages (5.16.1)
+Requirement already satisfied: typing_extensions in /usr/lib/python3.15/site-packages (4.16.0)
+Requirement already satisfied: typogrify in /usr/lib/python3.15/site-packages (2.1.0)
+Requirement already satisfied: tzdata in /usr/lib/python3.15/site-packages (2026.6)
+Requirement already satisfied: urllib3 in /usr/lib/python3.15/site-packages (2.8.0)
+Requirement already satisfied: wcwidth in /usr/lib/python3.15/site-packages (0.9.4)
+Collecting wcwidth
+  Using cached wcwidth-0.9.5-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (26 kB)
+Requirement already satisfied: webcolors in /usr/lib/python3.15/site-packages (25.10.0)
+Requirement already satisfied: webencodings in /usr/lib/python3.15/site-packages (0.6.1)
+Requirement already satisfied: wheel in /usr/lib/python3.15/site-packages (0.48.0)
+Requirement already satisfied: python-dateutil>=2.7.0 in /usr/lib/python3.15/site-packages (from arrow) (3.0.0)
+Requirement already satisfied: trove-classifiers in /usr/lib/python3.15/site-packages (from hatchling) (2026.6.1.19)
+Requirement already satisfied: matplotlib-inline>=0.1 in /usr/lib/python3.15/site-packages (from ipykernel) (0.2.2)
+Requirement already satisfied: nest-asyncio2>=1.7.0 in /usr/lib/python3.15/site-packages (from ipykernel) (1.7.4)
+Requirement already satisfied: pygments>=2.14.0 in /usr/lib/python3.15/site-packages (from ipython) (2.21.0)
+Requirement already satisfied: stack_data>=0.6.0 in /usr/lib/python3.15/site-packages (from ipython) (0.6.3)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /usr/lib/python3.15/site-packages (from jsonschema) (2025.9.1)
+Requirement already satisfied: rpds-py>=0.25.0 in /usr/lib/python3.15/site-packages (from jsonschema) (2026.9.1)
+Requirement already satisfied: argon2-cffi>=21.1 in /usr/lib/python3.15/site-packages (from jupyter_server) (25.1.0)
+Requirement already satisfied: jinja2>=3.0.3 in /usr/lib/python3.15/site-packages (from jupyter_server) (3.1.6)
+Requirement already satisfied: jupyter-events>=0.11.0 in /usr/lib/python3.15/site-packages (from jupyter_server) (0.12.1)
+Requirement already satisfied: send2trash>=1.8.2 in /usr/lib/python3.15/site-packages (from jupyter_server) (2.1.0)
+Requirement already satisfied: websocket-client>=1.7 in /usr/lib/python3.15/site-packages (from jupyter_server) (1.9.2)
+Requirement already satisfied: async-lru>=1.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.4.0)
+Requirement already satisfied: jupyter-lsp>=2.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.3.1)
+Requirement already satisfied: Mathics3>=10.0.1 in /usr/lib/python3.15/site-packages (from mathics3_notebook_frontends) (10.0.1)
+Requirement already satisfied: charset-normalizer<4.0.0,>=2.0.0 in /usr/lib/python3.15/site-packages (from mathics3_notebook_frontends) (3.5.2)
+Requirement already satisfied: Mathics3_Scanner>=10.0.0 in /usr/lib/python3.15/site-packages (from mathicsscript) (10.0.1)
+Requirement already satisfied: Mathics3_pygments>=10.0.0 in /usr/lib/python3.15/site-packages (from mathicsscript) (10.0.0)
+Requirement already satisfied: term-background>=1.0.5 in /usr/lib/python3.15/site-packages (from mathicsscript) (1.0.5)
+Requirement already satisfied: markupsafe>=2.0 in /usr/lib/python3.15/site-packages (from nbconvert) (3.0.4)
+Requirement already satisfied: sphinx in /usr/lib/python3.15/site-packages (from sphinx_lv2_theme) (9.1.0)
+Requirement already satisfied: argon2-cffi-bindings in /usr/lib/python3.15/site-packages (from argon2-cffi>=21.1->jupyter_server) (26.1.0)
+Requirement already satisfied: python-json-logger>=2.0.4 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (4.2.0)
+Requirement already satisfied: pyyaml>=5.3 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (6.0.3)
+Requirement already satisfied: rfc3339-validator in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (0.1.4)
+Requirement already satisfied: rfc3986-validator>=0.1.1 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (0.1.1)
+Requirement already satisfied: rfc3987-syntax>=1.1.0 in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter_server) (1.1.0)
+Requirement already satisfied: uri-template in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter_server) (1.3.0)
+Requirement already satisfied: pint>=0.24 in /usr/lib/python3.15/site-packages (from Mathics3>=10.0.1->mathics3_notebook_frontends) (0.26.2)
+Requirement already satisfied: Timed-Threads in /usr/lib/python3.15/site-packages (from Mathics3>=10.0.1->mathics3_notebook_frontends) (2.0.0)
+Requirement already satisfied: sphinxcontrib-applehelp>=1.0.7 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-devhelp>=1.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-htmlhelp>=2.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.1.0)
+Requirement already satisfied: sphinxcontrib-jsmath>=1.0.1 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (1.0.1)
+Requirement already satisfied: sphinxcontrib-qthelp>=1.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-serializinghtml>=1.1.9 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: roman-numerals>=1.0.0 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (4.1.0)
+Using cached argcomplete-3.8.0-py3-none-any.whl (45 kB)
+Using cached certifi-2026.11.20-py3-none-any.whl (127 kB)
+Using cached ipython-9.19.1-py3-none-any.whl (649 kB)
+Using cached packaging-26.4-py3-none-any.whl (140 kB)
+Using cached tomlkit-0.15.3-py3-none-any.whl (55 kB)
+Using cached wcwidth-0.9.5-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (822 kB)
+WARNING: Error parsing dependencies of certifi: No package metadata was found.
+WARNING: Error parsing dependencies of wcwidth: No package metadata was found.
+Installing collected packages: wcwidth, tomlkit, packaging, certifi, argcomplete, ipython
+  Attempting uninstall: wcwidth
+ERROR: Could not install packages due to an OSError: No package metadata was found.
+
+
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: cargo-c: 0.10.27->0.10.28.
+[master 52b417b] cargo-c: 0.10.27->0.10.28.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: cargo-c: 0.10.27->0.10.28.
+[master c1d93b6] cargo-c: 0.10.27->0.10.28.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-42
+r13.1-694
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libavcodec.so.63.1.102
+cand_sobase=libavcodec.so
+search_base=libavcodec
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavformat.so.63.1.102
+cand_sobase=libavformat.so
+search_base=libavformat
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavutil.so.61.1.102
+cand_sobase=libavutil.so
+search_base=libavutil
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libexpat.so.1.13.1
+cand_sobase=libexpat.so
+search_base=libexpat
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgnutls.so.30.42.0
+cand_sobase=libgnutls.so
+search_base=libgnutls
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz.so.0.61510.0
+cand_sobase=libharfbuzz.so
+search_base=libharfbuzz
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz-subset.so.0.61510.0
+cand_sobase=libharfbuzz-subset.so
+search_base=libharfbuzz-subset
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIex-3_5.so.34.3.5.4
+cand_sobase=libIex-.so
+search_base=libIex-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIlmThread-3_5.so.34.3.5.4
+cand_sobase=libIlmThread-.so
+search_base=libIlmThread-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXR-3_5.so.34.3.5.4
+cand_sobase=libOpenEXR-.so
+search_base=libOpenEXR-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXRCore-3_5.so.34.3.5.4
+cand_sobase=libOpenEXRCore-.so
+search_base=libOpenEXRCore-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXRUtil-3_5.so.34.3.5.4
+cand_sobase=libOpenEXRUtil-.so
+search_base=libOpenEXRUtil-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libpari-gmp-tls.so.2.19.0
+cand_sobase=libpari-gmp-tls.so
+search_base=libpari-gmp-tls
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libswscale.so.10.1.102
+cand_sobase=libswscale.so
+search_base=libswscale
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libyaml-0.so.2.0.9
+cand_sobase=libyaml.so
+search_base=libyaml
+replacement_found=true
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libavcodec.so.63.1.102
+Path: /usr/lib/libavcodec.so.63.1.102
+Skipping generic/unsafe name 'libavcodec.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavcodec.so.63 libavcodec.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavcodec.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavcodec.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavformat.so.63.1.102
+Path: /usr/lib/libavformat.so.63.1.102
+Skipping generic/unsafe name 'libavformat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavformat.so.63 libavformat.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavformat.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavformat.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavutil.so.61.1.102
+Path: /usr/lib/libavutil.so.61.1.102
+Skipping generic/unsafe name 'libavutil.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavutil.so.61 libavutil.so.61.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavutil.so.61.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavutil.so.61.1.102.
+------------------------------------------------
+Checking obsolete version (file): libexpat.so.1.13.1
+Path: /usr/lib/libexpat.so.1.13.1
+Skipping generic/unsafe name 'libexpat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libexpat.so.1 libexpat.so.1.13.1
+Example dependents: ./miniconda3/bin/dbus-daemon ./miniconda3/bin/xmlwf ./miniconda3/libexec/dbus-daemon-launch-helper ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libexpat.so.1.13.1:
+  - ./miniconda3/bin/dbus-daemon
+  - ./miniconda3/bin/xmlwf
+  - ./miniconda3/libexec/dbus-daemon-launch-helper
+  - ./miniconda3/lib/python3.14/lib-dynload/pyexpat.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libexpat.so.1.13.1.
+------------------------------------------------
+Checking obsolete version (file): libgnutls.so.30.42.0
+Path: /usr/lib/libgnutls.so.30.42.0
+Skipping generic/unsafe name 'libgnutls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 31 remaining dependents.
+Names tracked: libgnutls.so.30 libgnutls.so.30.42.0
+Example dependents: ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0 ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11 ...
+Warning: No parent package found for ANY of the 31 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libgnutls.so.30.42.0:
+  - ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-resume
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cxx
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-ocsp-client
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/print-ciphersuites
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/tlsproxy/tlsproxy
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/alert-printlist
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/errcodes
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/printlist
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0T
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/certtool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli-debug
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-serv
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/ocsptool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/p11tool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/psktool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/systemkey
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/eagain-cli
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/mini-record-timing
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libgnutls.so.30.42.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz.so.0.61510.0
+Path: /usr/lib/libharfbuzz.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz.so.0 libharfbuzz.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz-subset.so.0.61510.0
+Path: /usr/lib/libharfbuzz-subset.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz-subset.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz-subset.so.0 libharfbuzz-subset.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz-subset.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz-subset.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libIex-3_5.so.34.3.5.4
+Path: /usr/lib/libIex-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libIex-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 48 remaining dependents.
+Names tracked: libIex-3_5.so.34 libIex-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 48 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIex-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/IexTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/IlmThread/libIlmThread-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/IexTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/IlmThread/libIlmThread-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIex-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libIlmThread-3_5.so.34.3.5.4
+Path: /usr/lib/libIlmThread-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libIlmThread-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 44 remaining dependents.
+Names tracked: libIlmThread-3_5.so.34 libIlmThread-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 44 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIlmThread-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIlmThread-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXR-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXR-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXR-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 42 remaining dependents.
+Names tracked: libOpenEXR-3_5.so.34 libOpenEXR-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 42 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXR-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXR-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRCore-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXRCore-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 44 remaining dependents.
+Names tracked: libOpenEXRCore-3_5.so.34 libOpenEXRCore-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 44 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRUtil-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXRUtil-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 26 remaining dependents.
+Names tracked: libOpenEXRUtil-3_5.so.34 libOpenEXRUtil-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap ...
+Warning: No parent package found for ANY of the 26 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libpari-gmp-tls.so.2.19.0
+Path: /usr/lib/libpari-gmp-tls.so.2.19.0
+Skipping generic/unsafe name 'libpari-gmp-tls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libpari-gmp-tls.so.10 libpari-gmp-tls.so.2.19.0
+Example dependents: ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libpari-gmp-tls.so.2.19.0:
+  - ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libpari-gmp-tls.so.2.19.0.
+------------------------------------------------
+Checking obsolete version (file): libswscale.so.10.1.102
+Path: /usr/lib/libswscale.so.10.1.102
+Skipping generic/unsafe name 'libswscale.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libswscale.so.10 libswscale.so.10.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libswscale.so.10.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libswscale.so.10.1.102.
+------------------------------------------------
+Checking obsolete version (file): libyaml-0.so.2.0.9
+Path: /usr/lib/libyaml-0.so.2.0.9
+Skipping generic/unsafe name 'libyaml-0.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libyaml-0.so.2 libyaml-0.so.2.0.9
+Example dependents: ./.cache/electron-builder/fpm@2.1.4/fpm-1.17.0-ruby-3.4.3-linux-amd64-1nk0v/ruby-3.4.3-portable/bin/ruby ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libyaml-0.so.2.0.9:
+  - ./.cache/electron-builder/fpm@2.1.4/fpm-1.17.0-ruby-3.4.3-linux-amd64-1nk0v/ruby-3.4.3-portable/bin/ruby
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libyaml-0.so.2.0.9.
+------------------------------------------------
+Checking obsolete version (file): libzstd.so.1.5.7
+Path: /usr/lib/libzstd.so.1.5.7
+Skipping generic/unsafe name 'libzstd.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 15 remaining dependents.
+Names tracked: libzstd.so.1 libzstd.so.1.5.7
+Example dependents: ./lfs_packaging/kmod/kmod-34.3/build/kmod ./lfs_packaging/kmod/kmod-34.3/build/libkmod.so.2.5.1 ./lfs_packaging/kmod/kmod-34.4/build/kmod ...
+Warning: No parent package found for ANY of the 15 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libzstd.so.1.5.7:
+  - ./lfs_packaging/kmod/kmod-34.3/build/kmod
+  - ./lfs_packaging/kmod/kmod-34.3/build/libkmod.so.2.5.1
+  - ./lfs_packaging/kmod/kmod-34.4/build/kmod
+  - ./lfs_packaging/kmod/kmod-34.4/build/libkmod.so.2.5.1
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRCore/libOpenEXRCore-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRCore/libOpenEXRCore-3_5.so.34.3.5.5
+  - ./miniconda3/bin/bsdcat
+  - ./miniconda3/bin/bsdcpio
+  - ./miniconda3/bin/bsdtar
+  - ./miniconda3/bin/bsdunzip
+  - ./miniconda3/bin/zstd
+  - ./miniconda3/lib/libarchive.so.13.8.8
+  - ./miniconda3/lib/libcurl.so.4.8.0
+  - ./miniconda3/lib/libmamba.so.4.0.1
+  - ./miniconda3/lib/python3.14/lib-dynload/_zstd.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libzstd.so.1.5.7.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.6...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.6-lfs-r13.1-42
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
