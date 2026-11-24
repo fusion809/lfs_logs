@@ -1,0 +1,1377 @@
+===== Update check started: 2026-11-25 02:40:57 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261125_024057
+Packages needing attention: libpcap zxing-cpp
+===== Starting updatec: 2026-11-25 02:40:59 AEST =====
+Checking for packages with missing file inventories...
+name=libpcap
+local_ver=1.11.0
+remote_ver=1.11.1
+Resolving dependencies and determining build order...
+Applying updates in dependency order:
+  - libpcap
+  - zxing-cpp
+
+Building custom package libpcap...
+[02:41:01] Found custom package for libpcap, bypassing BLFS aliases.
+[02:41:01] Custom package detected at /home/fusion809/lfs_packaging/libpcap (package: libpcap)
+[02:41:01] Extracting dependencies for custom package 'libpcap'...
+[02:41:01] Required deps: dbus glibc libnl systemd 
+[02:41:01] Dependency 'dbus' already installed.
+[02:41:01] Dependency 'glibc' already installed.
+[02:41:01] Dependency 'libnl' already installed.
+[02:41:01] Dependency 'systemd' already installed.
+[VERSION] libpcap: 1.11.1
+[02:41:03] Installing libpcap version: 1.11.1
+[02:41:03] Starting remote custom build for libpcap...
+--2026-11-25 02:41:07--  https://www.tcpdump.org/release/libpcap-1.11.1.tar.gz
+Resolving www.tcpdump.org (www.tcpdump.org)... 62.100.206.148, 2a03:2800:500::625
+Connecting to www.tcpdump.org (www.tcpdump.org)|62.100.206.148|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1074483 (1.0M) [application/x-gzip]
+Saving to: ‘libpcap-1.11.1.tar.gz’
+
+libpcap-1.11.1.tar.   0%[                    ]       0  --.-KB/s               libpcap-1.11.1.tar.   1%[                    ]  15.46K  45.0KB/s               libpcap-1.11.1.tar.   4%[                    ]  46.71K  67.7KB/s               libpcap-1.11.1.tar.  10%[=>                  ] 109.21K   105KB/s               libpcap-1.11.1.tar.  22%[===>                ] 234.21K   169KB/s               libpcap-1.11.1.tar.  43%[=======>            ] 452.96K   286KB/s               libpcap-1.11.1.tar.  52%[=========>          ] 546.71K   306KB/s               libpcap-1.11.1.tar.  74%[=============>      ] 781.09K   392KB/s               libpcap-1.11.1.tar.  94%[=================>  ] 992.02K   451KB/s               libpcap-1.11.1.tar. 100%[===================>]   1.02M   467KB/s    in 2.2s    
+
+2026-11-25 02:41:10 (467 KB/s) - ‘libpcap-1.11.1.tar.gz’ saved [1074483/1074483]
+
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for  option for large files... none needed
+checking for declarations of fseeko and ftello... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for sysexits.h... yes
+checking size of void *... 8
+checking size of time_t... 8
+checking whether the compiler supports the -fvisibility=hidden option... yes
+checking for strerror_r... yes
+checking whether strerror_r is GNU-style... yes
+checking whether snprintf is suitable... yes
+checking whether atexit works... yes
+checking for vasprintf... yes
+checking for asprintf... yes
+checking for strlcat... yes
+checking for strlcpy... yes
+checking for strtok_r... yes
+checking for getaddrinfo... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether getnetbyname_r is declared... yes
+checking for the Linux getnetbyname_r()... yes
+checking whether getprotobyname_r is declared... yes
+checking for the Linux getprotobyname_r()... yes
+checking for ether_hostton... yes
+checking whether ether_hostton is declared... no
+checking whether ether_hostton is declared... yes
+checking if features.h defines __GLIBC__... yes
+checking for pthread.h... yes
+checking for pthread_create... yes
+checking whether to enable the instrument functions code... no
+checking if --disable-protochain option is specified... enabled
+checking packet capture type... linux
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.17.0... yes
+checking for brew... no
+checking for libnl-genl-3.0 with pkg-config... found
+checking whether SKF_AD_VLAN_TAG_PRESENT is declared... yes
+checking for __atomic_load_n... yes
+checking for __atomic_store_n... yes
+checking for getifaddrs... yes
+checking for ifaddrs.h... yes
+checking for linux/net_tstamp.h... yes
+checking for socklen_t... yes
+checking for dagapi.h... no
+checking for snf.h... no
+checking whether to enable remote packet capture... no
+checking whether to build optimizer debugging code... no
+checking whether to build parser debugging code... no
+checking for flex... flex
+checking for lex output file root... lex.yy
+checking for lex library... none needed
+checking whether yytext is a pointer... yes
+checking for capable lex... yes
+checking for bison... bison
+checking for ranlib... ranlib
+checking for ar... ar
+checking whether ln -s works... yes
+checking whether the compiler implements __builtin_bswap16()... yes
+checking whether the compiler implements __builtin_bswap32()... yes
+checking whether the compiler implements __builtin_bswap64()... yes
+checking whether the compiler implements __builtin_ctz()... yes
+checking for struct sockaddr.sa_len... no
+checking for Linux usbmon USB sniffing support... yes
+checking for linux/compiler.h... no
+checking for linux/usbdevice_fs.h... yes
+checking for struct usbdevfs_ctrltransfer.bRequestType... yes
+checking whether we can compile the netfilter support... yes
+checking whether we can compile the netmap support... no
+checking for bluetooth/bluetooth.h... yes
+configure: Bluetooth sniffing is supported
+checking for struct sockaddr_hci.hci_channel... yes
+checking if HCI_CHANNEL_MONITOR is defined... yes
+checking for dbus-1 with pkg-config... found
+checking whether the D-Bus library defines dbus_connection_read_write... yes
+checking for libibverbs with pkg-config... not found
+checking for ibv_get_device_list in -libverbs... no
+checking for a BSD-compatible install... /usr/bin/install -c
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating grammar.y
+config.status: creating pcap-filter.manmisc
+config.status: creating pcap-linktype.manmisc
+config.status: creating pcap-tstamp.manmisc
+config.status: creating pcap-savefile.manfile
+config.status: creating pcap.3pcap
+config.status: creating pcap_compile.3pcap
+config.status: creating pcap_datalink.3pcap
+config.status: creating pcap_dump_open.3pcap
+config.status: creating pcap_get_tstamp_precision.3pcap
+config.status: creating pcap_list_datalinks.3pcap
+config.status: creating pcap_list_tstamp_types.3pcap
+config.status: creating pcap_open_dead.3pcap
+config.status: creating pcap_open_offline.3pcap
+config.status: creating pcap_set_immediate_mode.3pcap
+config.status: creating pcap_set_tstamp_precision.3pcap
+config.status: creating pcap_set_tstamp_type.3pcap
+config.status: creating rpcapd/Makefile
+config.status: creating rpcapd/rpcapd.manadmin
+config.status: creating rpcapd/rpcapd-config.manfile
+config.status: creating testprogs/Makefile
+config.status: creating config.h
+config.status: executing .devel commands
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o pcap-linux.o pcap-linux.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o fad-getad.o fad-getad.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o pcap-usb-linux.o pcap-usb-linux.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o pcap-netfilter-linux.o pcap-netfilter-linux.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o pcap-bt-linux.o pcap-bt-linux.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o pcap-bt-monitor-linux.o pcap-bt-monitor-linux.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o pcap-dbus.o pcap-dbus.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o pcap.o pcap.c
+bison -p pcap_ -o grammar.c -d grammar.y
+flex -P pcap_ --header-file=scanner.h --nounput -o scanner.c scanner.l
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o optimize.o optimize.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o nametoaddr.o nametoaddr.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o etherent.o etherent.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o fmtutils.o fmtutils.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o pcap-util.o pcap-util.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o pcap-new.o pcap-new.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o savefile.o savefile.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o sf-pcap.o sf-pcap.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o sf-pcapng.o sf-pcapng.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o pcap-common.o pcap-common.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o bpf_image.o bpf_image.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o bpf_filter.o bpf_filter.c
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c -o bpf_dump.o bpf_dump.c
+./config.status --file=libpcap.pc.tmp:./libpcap.pc.in
+./config.status --file=pcap-config.tmp:./pcap-config.in
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c scanner.c
+config.status: creating libpcap.pc.tmp
+config.status: creating pcap-config.tmp
+mv libpcap.pc.tmp libpcap.pc
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c grammar.c
+mv pcap-config.tmp pcap-config
+chmod a+x pcap-config
+gcc -fvisibility=hidden  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -g -O2    -c ./gencode.c
+ar rc libpcap.a pcap-linux.o fad-getad.o pcap-usb-linux.o pcap-netfilter-linux.o pcap-bt-linux.o pcap-bt-monitor-linux.o pcap-dbus.o pcap.o gencode.o optimize.o nametoaddr.o etherent.o fmtutils.o pcap-util.o pcap-new.o savefile.o sf-pcap.o sf-pcapng.o pcap-common.o bpf_image.o bpf_filter.o bpf_dump.o scanner.o grammar.o  
+MAJOR_VER=`sed 's/\([0-9][0-9]*\)\..*/\1/' ./VERSION`; \
+gcc  -shared -Wl,-soname,libpcap.so.$MAJOR_VER \
+    -o libpcap.so.1.11.1 pcap-linux.o fad-getad.o pcap-usb-linux.o pcap-netfilter-linux.o pcap-bt-linux.o pcap-bt-monitor-linux.o pcap-dbus.o pcap.o gencode.o optimize.o nametoaddr.o etherent.o fmtutils.o pcap-util.o pcap-new.o savefile.o sf-pcap.o sf-pcapng.o pcap-common.o bpf_image.o bpf_filter.o bpf_dump.o scanner.o grammar.o   -lnl-genl-3 -lnl-3  -ldbus-1 
+ranlib libpcap.a
+MAJOR_VER=`sed 's/\([0-9][0-9]*\)\..*/\1/' ./VERSION`; \
+gcc  -shared -Wl,-soname,libpcap.so.$MAJOR_VER \
+    -o libpcap.so.1.11.1 pcap-linux.o fad-getad.o pcap-usb-linux.o pcap-netfilter-linux.o pcap-bt-linux.o pcap-bt-monitor-linux.o pcap-dbus.o pcap.o gencode.o optimize.o nametoaddr.o etherent.o fmtutils.o pcap-util.o pcap-new.o savefile.o sf-pcap.o sf-pcapng.o pcap-common.o bpf_image.o bpf_filter.o bpf_dump.o scanner.o grammar.o   -lnl-genl-3 -lnl-3  -ldbus-1 
+[ -d /usr/lib ] || \
+    (mkdir -p /usr/lib; chmod 755 /usr/lib)
+MAJOR_VER=`sed 's/\([0-9][0-9]*\)\..*/\1/' ./VERSION`; \
+/usr/bin/install -c libpcap.so.1.11.1 /usr/lib/libpcap.so.1.11.1; \
+ln -sf libpcap.so.1.11.1 /usr/lib/libpcap.so.$MAJOR_VER; \
+ln -sf libpcap.so.$MAJOR_VER /usr/lib/libpcap.so
+[ -d /usr/lib ] || \
+    (mkdir -p /usr/lib; chmod 755 /usr/lib)
+[ -d /usr/lib ] || \
+    (mkdir -p /usr/lib; chmod 755 /usr/lib)
+[ -d /usr/include ] || \
+    (mkdir -p /usr/include; chmod 755 /usr/include)
+[ -d /usr/include/pcap ] || \
+    (mkdir -p /usr/include/pcap; chmod 755 /usr/include/pcap)
+[ -d /usr/share/man/man1 ] || \
+    (mkdir -p /usr/share/man/man1; chmod 755 /usr/share/man/man1)
+[ -d /usr/share/man/man3 ] || \
+    (mkdir -p /usr/share/man/man3; chmod 755 /usr/share/man/man3)
+[ -d /usr/share/man/man5 ] || \
+    (mkdir -p /usr/share/man/man5; chmod 755 /usr/share/man/man5)
+[ -d /usr/share/man/man7 ] || \
+    (mkdir -p /usr/share/man/man7; chmod 755 /usr/share/man/man7)
+for i in pcap.h pcap-bpf.h pcap-namedb.h pcap/bluetooth.h pcap/bpf.h pcap/can_socketcan.h pcap/compiler-tests.h pcap/dlt.h pcap/funcattrs.h pcap/ipnet.h pcap/namedb.h pcap/nflog.h pcap/pcap-inttypes.h pcap/pcap.h pcap/sll.h pcap/socket.h pcap/usb.h pcap/vlan.h; do \
+	/usr/bin/install -c -m 644 ./$i \
+	    /usr/include/$i; done
+[ -d /usr/bin ] || \
+    (mkdir -p /usr/bin; chmod 755 /usr/bin)
+/usr/bin/install -c pcap-config /usr/bin/pcap-config
+[ -d /usr/lib/pkgconfig ] || \
+    (mkdir -p /usr/lib/pkgconfig; chmod 755 /usr/lib/pkgconfig)
+/usr/bin/install -c -m 644 libpcap.pc /usr/lib/pkgconfig/libpcap.pc
+for i in pcap-config.1; do \
+	/usr/bin/install -c -m 644 ./$i \
+	    /usr/share/man/man1/$i; done
+for i in pcap_activate.3pcap pcap_breakloop.3pcap pcap_can_set_rfmon.3pcap pcap_close.3pcap pcap_create.3pcap pcap_datalink_name_to_val.3pcap pcap_datalink_val_to_name.3pcap pcap_dump.3pcap pcap_dump_close.3pcap pcap_dump_file.3pcap pcap_dump_flush.3pcap pcap_dump_ftell.3pcap pcap_file.3pcap pcap_fileno.3pcap pcap_findalldevs.3pcap pcap_freecode.3pcap pcap_get_required_select_timeout.3pcap pcap_get_selectable_fd.3pcap pcap_geterr.3pcap pcap_init.3pcap pcap_inject.3pcap pcap_is_swapped.3pcap pcap_lib_version.3pcap pcap_lookupdev.3pcap pcap_lookupnet.3pcap pcap_loop.3pcap pcap_major_version.3pcap pcap_next_ex.3pcap pcap_offline_filter.3pcap pcap_open_live.3pcap pcap_set_buffer_size.3pcap pcap_set_datalink.3pcap pcap_set_promisc.3pcap pcap_set_protocol_linux.3pcap pcap_set_rfmon.3pcap pcap_set_snaplen.3pcap pcap_set_timeout.3pcap pcap_setdirection.3pcap pcap_setfilter.3pcap pcap_setnonblock.3pcap pcap_snapshot.3pcap pcap_stats.3pcap pcap_statustostr.3pcap pcap_strerror.3pcap pcap_tstamp_type_name_to_val.3pcap pcap_tstamp_type_val_to_name.3pcap; do \
+	/usr/bin/install -c -m 644 ./$i \
+	    /usr/share/man/man3/$i; done
+for i in pcap.3pcap pcap_compile.3pcap pcap_datalink.3pcap pcap_dump_open.3pcap pcap_get_tstamp_precision.3pcap pcap_list_datalinks.3pcap pcap_list_tstamp_types.3pcap pcap_open_dead.3pcap pcap_open_offline.3pcap pcap_set_immediate_mode.3pcap pcap_set_tstamp_precision.3pcap pcap_set_tstamp_type.3pcap; do \
+	/usr/bin/install -c -m 644 $i \
+	    /usr/share/man/man3/$i; done
+(cd /usr/share/man/man3 && \
+rm -f pcap_datalink_val_to_description.3pcap && \
+ln -s pcap_datalink_val_to_name.3pcap \
+	 pcap_datalink_val_to_description.3pcap && \
+rm -f pcap_datalink_val_to_description_or_dlt.3pcap && \
+ln -s pcap_datalink_val_to_name.3pcap \
+	 pcap_datalink_val_to_description_or_dlt.3pcap && \
+rm -f pcap_dump_fopen.3pcap && \
+ln -s pcap_dump_open.3pcap pcap_dump_fopen.3pcap && \
+rm -f pcap_freealldevs.3pcap && \
+ln -s pcap_findalldevs.3pcap pcap_freealldevs.3pcap && \
+rm -f pcap_perror.3pcap && \
+ln -s pcap_geterr.3pcap pcap_perror.3pcap && \
+rm -f pcap_sendpacket.3pcap && \
+ln -s pcap_inject.3pcap pcap_sendpacket.3pcap && \
+rm -f pcap_free_datalinks.3pcap && \
+ln -s pcap_list_datalinks.3pcap pcap_free_datalinks.3pcap && \
+rm -f pcap_free_tstamp_types.3pcap && \
+ln -s pcap_list_tstamp_types.3pcap pcap_free_tstamp_types.3pcap && \
+rm -f pcap_dispatch.3pcap && \
+ln -s pcap_loop.3pcap pcap_dispatch.3pcap && \
+rm -f pcap_minor_version.3pcap && \
+ln -s pcap_major_version.3pcap pcap_minor_version.3pcap && \
+rm -f pcap_next.3pcap && \
+ln -s pcap_next_ex.3pcap pcap_next.3pcap && \
+rm -f pcap_open_dead_with_tstamp_precision.3pcap && \
+ln -s pcap_open_dead.3pcap \
+	 pcap_open_dead_with_tstamp_precision.3pcap && \
+rm -f pcap_open_offline_with_tstamp_precision.3pcap && \
+ln -s pcap_open_offline.3pcap pcap_open_offline_with_tstamp_precision.3pcap && \
+rm -f pcap_fopen_offline.3pcap && \
+ln -s pcap_open_offline.3pcap pcap_fopen_offline.3pcap && \
+rm -f pcap_fopen_offline_with_tstamp_precision.3pcap && \
+ln -s pcap_open_offline.3pcap pcap_fopen_offline_with_tstamp_precision.3pcap && \
+rm -f pcap_tstamp_type_val_to_description.3pcap && \
+ln -s pcap_tstamp_type_val_to_name.3pcap pcap_tstamp_type_val_to_description.3pcap && \
+rm -f pcap_getnonblock.3pcap && \
+ln -s pcap_setnonblock.3pcap pcap_getnonblock.3pcap)
+for i in pcap-savefile.manfile.in; do \
+	/usr/bin/install -c -m 644 `echo $i | sed 's/.manfile.in/.manfile/'` \
+	    /usr/share/man/man5/`echo $i | sed 's/.manfile.in/.5/'`; done
+for i in pcap-filter.manmisc.in pcap-linktype.manmisc.in pcap-tstamp.manmisc.in; do \
+	/usr/bin/install -c -m 644 `echo $i | sed 's/.manmisc.in/.manmisc/'` \
+	    /usr/share/man/man7/`echo $i | sed 's/.manmisc.in/.7/'`; done
+1.11.1
+Updated registry for libpcap to version 1.11.1
+[VERSION] libpcap: 1.11.1
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package libpcap in /var/lib/custom-packages/
+Building custom package zxing-cpp...
+[02:41:32] Found custom package for zxing-cpp, bypassing BLFS aliases.
+[02:41:32] Custom package detected at /home/fusion809/lfs_packaging/zxing-cpp (package: zxing-cpp)
+[02:41:32] Extracting dependencies for custom package 'zxing-cpp'...
+[02:41:32] Required deps: gcc glibc 
+[02:41:32] Dependency 'gcc' already installed.
+[02:41:32] Dependency 'glibc' already installed.
+[VERSION] zxing-cpp: 3.2.0
+[02:41:33] Installing zxing-cpp version: 3.2.0
+[02:41:33] Starting remote custom build for zxing-cpp...
+--2026-11-25 02:41:36--  https://github.com/zxing-cpp/zxing-cpp/releases/download/v3.2.0/zxing-cpp-3.2.0.tar.gz
+Resolving github.com (github.com)... 4.195.217.80
+Connecting to github.com (github.com)|4.195.217.80|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://release-assets.githubusercontent.com/github-production-release-asset/56102506/ea2bacea-1a91-473d-9a14-62d460ded773?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-24T17%3A42%3A10Z&rscd=attachment%3B+filename%3Dzxing-cpp-3.2.0.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-24T16%3A41%3A24Z&ske=2026-11-24T17%3A42%3A10Z&sks=b&skv=2018-11-09&sig=TxBdOVr5pUBZrXd5oCTo5lTqeGYBuIftq308UDgrK2E%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTUzODc5NywibmJmIjoxNzk1NTM4NDk3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ._-IV5q1lHmUggDcay9ouXF7mpYXxNqIx19So64n8aSE&response-content-disposition=attachment%3B%20filename%3Dzxing-cpp-3.2.0.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2026-11-25 02:41:36--  https://release-assets.githubusercontent.com/github-production-release-asset/56102506/ea2bacea-1a91-473d-9a14-62d460ded773?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-24T17%3A42%3A10Z&rscd=attachment%3B+filename%3Dzxing-cpp-3.2.0.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-24T16%3A41%3A24Z&ske=2026-11-24T17%3A42%3A10Z&sks=b&skv=2018-11-09&sig=TxBdOVr5pUBZrXd5oCTo5lTqeGYBuIftq308UDgrK2E%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTUzODc5NywibmJmIjoxNzk1NTM4NDk3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ._-IV5q1lHmUggDcay9ouXF7mpYXxNqIx19So64n8aSE&response-content-disposition=attachment%3B%20filename%3Dzxing-cpp-3.2.0.tar.gz&response-content-type=application%2Foctet-stream
+Resolving release-assets.githubusercontent.com (release-assets.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.110.133, ...
+Connecting to release-assets.githubusercontent.com (release-assets.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1646718 (1.6M) [application/octet-stream]
+Saving to: ‘zxing-cpp-3.2.0.tar.gz’
+
+zxing-cpp-3.2.0.tar   0%[                    ]       0  --.-KB/s               zxing-cpp-3.2.0.tar   5%[>                   ]  93.36K   425KB/s               zxing-cpp-3.2.0.tar  15%[==>                 ] 253.36K   594KB/s               zxing-cpp-3.2.0.tar  29%[====>               ] 477.36K   742KB/s               zxing-cpp-3.2.0.tar  41%[=======>            ] 669.36K   790KB/s               zxing-cpp-3.2.0.tar  54%[=========>          ] 877.36K   835KB/s               zxing-cpp-3.2.0.tar  68%[============>       ]   1.08M   879KB/s               zxing-cpp-3.2.0.tar  82%[===============>    ]   1.29M   912KB/s               zxing-cpp-3.2.0.tar  95%[==================> ]   1.50M   920KB/s               zxing-cpp-3.2.0.tar 100%[===================>]   1.57M   923KB/s    in 1.7s    
+
+2026-11-25 02:41:39 (923 KB/s) - ‘zxing-cpp-3.2.0.tar.gz’ saved [1646718/1646718]
+
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Setting build type to 'Release' as none was specified.
+-- Performing Test HAS_FILE_PREFIX_ARG
+-- Performing Test HAS_FILE_PREFIX_ARG - Success
+-- Performing Test COMPILER_KNOWS_Os
+-- Performing Test COMPILER_KNOWS_Os - Success
+-- Configuring done (1.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/zxing-cpp/zxing-cpp-3.2.0/build
+make: Warning: File 'Makefile' has modification time 0.14 s in the future
+-- Configuring done (0.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/zxing-cpp/zxing-cpp-3.2.0/build
+[  1%] Building CXX object core/CMakeFiles/ZXing.dir/src/BarcodeFormat.cpp.o
+[  1%] Building CXX object core/CMakeFiles/ZXing.dir/cmake_pch.hxx.gch
+[  2%] Building CXX object core/CMakeFiles/ZXing.dir/src/Barcode.cpp.o
+[  3%] Building CXX object core/CMakeFiles/ZXing.dir/src/BitMatrixIO.cpp.o
+[  4%] Building CXX object core/CMakeFiles/ZXing.dir/src/CreateBarcode.cpp.o
+[  5%] Building CXX object core/CMakeFiles/ZXing.dir/src/Error.cpp.o
+[  6%] Building CXX object core/CMakeFiles/ZXing.dir/src/GTIN.cpp.o
+[  6%] Building CXX object core/CMakeFiles/ZXing.dir/src/JSON.cpp.o
+[  7%] Building CXX object core/CMakeFiles/ZXing.dir/src/ReadBarcode.cpp.o
+[  8%] Building CXX object core/CMakeFiles/ZXing.dir/src/ReedSolomon.cpp.o
+[  9%] Building CXX object core/CMakeFiles/ZXing.dir/src/Utf.cpp.o
+[  9%] Building CXX object core/CMakeFiles/ZXing.dir/src/WriteBarcode.cpp.o
+[ 10%] Building CXX object core/CMakeFiles/ZXing.dir/src/ZXingCpp.cpp.o
+[ 11%] Building CXX object core/CMakeFiles/ZXing.dir/src/BitArray.cpp.o
+[ 11%] Building CXX object core/CMakeFiles/ZXing.dir/src/HRI.cpp.o
+[ 12%] Building CXX object core/CMakeFiles/ZXing.dir/src/BinaryBitmap.cpp.o
+[ 13%] Building CXX object core/CMakeFiles/ZXing.dir/src/BitSource.cpp.o
+[ 14%] Building CXX object core/CMakeFiles/ZXing.dir/src/ConcentricFinder.cpp.o
+[ 14%] Building CXX object core/CMakeFiles/ZXing.dir/src/GlobalHistogramBinarizer.cpp.o
+[ 15%] Building CXX object core/CMakeFiles/ZXing.dir/src/GridSampler.cpp.o
+[ 16%] Building CXX object core/CMakeFiles/ZXing.dir/src/LocalGrid.cpp.o
+[ 17%] Building CXX object core/CMakeFiles/ZXing.dir/src/HybridBinarizer.cpp.o
+[ 17%] Building CXX object core/CMakeFiles/ZXing.dir/src/MultiFormatReader.cpp.o
+[ 18%] Building CXX object core/CMakeFiles/ZXing.dir/src/PerspectiveTransform.cpp.o
+[ 19%] Building CXX object core/CMakeFiles/ZXing.dir/src/ResultPoint.cpp.o
+[ 20%] Building CXX object core/CMakeFiles/ZXing.dir/src/TextDecoder.cpp.o
+[ 20%] Building CXX object core/CMakeFiles/ZXing.dir/src/WhiteRectDetector.cpp.o
+[ 21%] Building CXX object core/CMakeFiles/ZXing.dir/src/TextEncoder.cpp.o
+[ 22%] Building CXX object core/CMakeFiles/ZXing.dir/src/MultiFormatWriter.cpp.o
+[ 23%] Building CXX object core/CMakeFiles/ZXing.dir/src/aztec/AZDecoder.cpp.o
+[ 23%] Building CXX object core/CMakeFiles/ZXing.dir/src/aztec/AZDetector.cpp.o
+[ 24%] Building CXX object core/CMakeFiles/ZXing.dir/src/aztec/AZReader.cpp.o
+[ 25%] Building CXX object core/CMakeFiles/ZXing.dir/src/aztec/AZEncoder.cpp.o
+[ 25%] Building CXX object core/CMakeFiles/ZXing.dir/src/aztec/AZHighLevelEncoder.cpp.o
+[ 26%] Building CXX object core/CMakeFiles/ZXing.dir/src/aztec/AZToken.cpp.o
+[ 27%] Building CXX object core/CMakeFiles/ZXing.dir/src/aztec/AZWriter.cpp.o
+[ 28%] Building CXX object core/CMakeFiles/ZXing.dir/src/datamatrix/DMBitLayout.cpp.o
+[ 28%] Building CXX object core/CMakeFiles/ZXing.dir/src/datamatrix/DMVersion.cpp.o
+[ 29%] Building CXX object core/CMakeFiles/ZXing.dir/src/datamatrix/DMDataBlock.cpp.o
+[ 30%] Building CXX object core/CMakeFiles/ZXing.dir/src/datamatrix/DMDecoder.cpp.o
+[ 31%] Building CXX object core/CMakeFiles/ZXing.dir/src/datamatrix/DMDetector.cpp.o
+[ 31%] Building CXX object core/CMakeFiles/ZXing.dir/src/datamatrix/DMReader.cpp.o
+[ 32%] Building CXX object core/CMakeFiles/ZXing.dir/src/datamatrix/DMECEncoder.cpp.o
+[ 33%] Building CXX object core/CMakeFiles/ZXing.dir/src/datamatrix/DMHighLevelEncoder.cpp.o
+[ 34%] Building CXX object core/CMakeFiles/ZXing.dir/src/datamatrix/DMSymbolInfo.cpp.o
+[ 34%] Building CXX object core/CMakeFiles/ZXing.dir/src/datamatrix/DMWriter.cpp.o
+[ 35%] Building CXX object core/CMakeFiles/ZXing.dir/src/maxicode/MCDecoder.cpp.o
+[ 36%] Building CXX object core/CMakeFiles/ZXing.dir/src/maxicode/MCBitMatrixParser.cpp.o
+[ 36%] Building CXX object core/CMakeFiles/ZXing.dir/src/maxicode/MCReader.cpp.o
+[ 37%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODUPCEANCommon.cpp.o
+[ 38%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODCodabarReader.cpp.o
+[ 39%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODCode39Reader.cpp.o
+[ 39%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODCode93Reader.cpp.o
+[ 40%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODCode128Reader.cpp.o
+[ 41%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODDataBarCommon.cpp.o
+[ 42%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODDataBarReader.cpp.o
+[ 42%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODDataBarExpandedBitDecoder.cpp.o
+[ 43%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODDataBarExpandedReader.cpp.o
+[ 44%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODDataBarLimitedReader.cpp.o
+[ 45%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODDXFilmEdgeReader.cpp.o
+[ 45%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODITFReader.cpp.o
+[ 46%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODTelepenReader.cpp.o
+[ 47%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODMultiUPCEANReader.cpp.o
+[ 48%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODReader.cpp.o
+[ 48%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODCodabarWriter.cpp.o
+[ 49%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODCode39Writer.cpp.o
+[ 50%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODCode93Writer.cpp.o
+[ 50%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODCode128Writer.cpp.o
+[ 51%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODEAN8Writer.cpp.o
+[ 52%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODEAN13Writer.cpp.o
+[ 53%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODITFWriter.cpp.o
+[ 53%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODUPCEWriter.cpp.o
+[ 54%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODUPCAWriter.cpp.o
+[ 55%] Building CXX object core/CMakeFiles/ZXing.dir/src/oned/ODWriterHelper.cpp.o
+[ 56%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/ZXBigInteger.cpp.o
+[ 56%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/PDF417.cpp.o
+[ 57%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/PDFBarcodeValue.cpp.o
+[ 58%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/PDFBoundingBox.cpp.o
+[ 59%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/PDFCodewordDecoder.cpp.o
+[ 59%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/PDFDecoder.cpp.o
+[ 60%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/PDFDetectionResult.cpp.o
+[ 61%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/PDFDetectionResultColumn.cpp.o
+[ 61%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/PDFDetector.cpp.o
+[ 62%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/PDFReader.cpp.o
+[ 63%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/PDFScanningDecoder.cpp.o
+[ 64%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/MicroPDFReader.cpp.o
+[ 64%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/PDFEncoder.cpp.o
+[ 65%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/PDFHighLevelEncoder.cpp.o
+[ 66%] Building CXX object core/CMakeFiles/ZXing.dir/src/pdf417/PDFWriter.cpp.o
+[ 67%] Building CXX object core/CMakeFiles/ZXing.dir/src/qrcode/QRCodecMode.cpp.o
+[ 67%] Building CXX object core/CMakeFiles/ZXing.dir/src/qrcode/QRErrorCorrectionLevel.cpp.o
+[ 68%] Building CXX object core/CMakeFiles/ZXing.dir/src/qrcode/QRVersion.cpp.o
+[ 69%] Building CXX object core/CMakeFiles/ZXing.dir/src/qrcode/QRBitMatrixParser.cpp.o
+[ 70%] Building CXX object core/CMakeFiles/ZXing.dir/src/qrcode/QRDataBlock.cpp.o
+[ 70%] Building CXX object core/CMakeFiles/ZXing.dir/src/qrcode/QRDecoder.cpp.o
+[ 71%] Building CXX object core/CMakeFiles/ZXing.dir/src/qrcode/QRDetector.cpp.o
+[ 72%] Building CXX object core/CMakeFiles/ZXing.dir/src/qrcode/QRFormatInformation.cpp.o
+[ 73%] Building CXX object core/CMakeFiles/ZXing.dir/src/qrcode/QRReader.cpp.o
+[ 73%] Building CXX object core/CMakeFiles/ZXing.dir/src/qrcode/QREncoder.cpp.o
+[ 74%] Building CXX object core/CMakeFiles/ZXing.dir/src/qrcode/QRMaskUtil.cpp.o
+[ 75%] Building CXX object core/CMakeFiles/ZXing.dir/src/qrcode/QRMatrixUtil.cpp.o
+[ 75%] Building CXX object core/CMakeFiles/ZXing.dir/src/qrcode/QRWriter.cpp.o
+[ 76%] Building C object core/CMakeFiles/ZXing.dir/src/libzueci/zueci.c.o
+[ 77%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/stubs.c.o
+[ 78%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/common.c.o
+[ 78%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/eci.c.o
+[ 79%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/filemem.c.o
+[ 80%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/general_field.c.o
+[ 81%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/gs1.c.o
+[ 81%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/large.c.o
+[ 82%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/library.c.o
+[ 83%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/output.c.o
+[01m[K/home/fusion809/lfs_packaging/zxing-cpp/zxing-cpp-3.2.0/core/src/libzint/output.c:[m[K In function ‘[01m[Kzint_out_fopen[m[K’:
+[01m[K/home/fusion809/lfs_packaging/zxing-cpp/zxing-cpp-3.2.0/core/src/libzint/output.c:974:24:[m[K [01;35m[Kwarning: [m[Kinitialization discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  974 |         char *dirend = [01;35m[Kstrrchr[m[K(filename, '/');
+      |                        [01;35m[K^~~~~~~[m[K
+[ 84%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/raster.c.o
+[ 84%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/reedsol.c.o
+[ 85%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/svg.c.o
+[ 86%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/vector.c.o
+[ 86%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/2of5inter.c.o
+[ 87%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/2of5inter_based.c.o
+[ 88%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/telepen.c.o
+[ 89%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/codabar.c.o
+[ 89%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/code128.c.o
+[ 90%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/code.c.o
+[ 91%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/dxfilmedge.c.o
+[ 92%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/medical.c.o
+[ 92%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/rss.c.o
+[ 93%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/upcean.c.o
+[ 94%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/aztec.c.o
+[ 95%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/dmatrix.c.o
+[ 95%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/maxicode.c.o
+[ 96%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/pdf417.c.o
+[ 97%] Building C object core/CMakeFiles/ZXing.dir/src/libzint/qr.c.o
+[ 97%] Building CXX object core/CMakeFiles/ZXing.dir/src/BitMatrix.cpp.o
+[ 98%] Building CXX object core/CMakeFiles/ZXing.dir/src/CharacterSet.cpp.o
+[ 98%] Building CXX object core/CMakeFiles/ZXing.dir/src/Content.cpp.o
+[ 99%] Building CXX object core/CMakeFiles/ZXing.dir/src/ECI.cpp.o
+[100%] Linking CXX shared library libZXing.so
+[100%] Built target ZXing
+make: warning:  Clock skew detected.  Your build may be incomplete.
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/fusion809/lfs_packaging/zxing-cpp/zxing-cpp-3.2.0/build
+make[2]: Warning: File 'core/CMakeFiles/ZXing.dir/src/Content.cpp.o' has modification time 0.029 s in the future
+[  1%] Linking CXX shared library libZXing.so
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[100%] Built target ZXing
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/lib/libZXing.so.3.2.0
+-- Installing: /usr/lib/libZXing.so.4
+-- Set non-toolchain portion of runtime path of "/usr/lib/libZXing.so.3.2.0" to "$ORIGIN/../lib"
+-- Up-to-date: /usr/lib/libZXing.so
+-- Installing: /usr/include/ZXing/Barcode.h
+-- Installing: /usr/include/ZXing/BarcodeFormat.h
+-- Installing: /usr/include/ZXing/CharacterSet.h
+-- Installing: /usr/include/ZXing/ContentType.h
+-- Installing: /usr/include/ZXing/CreateBarcode.h
+-- Installing: /usr/include/ZXing/Error.h
+-- Installing: /usr/include/ZXing/GTIN.h
+-- Installing: /usr/include/ZXing/ImageView.h
+-- Installing: /usr/include/ZXing/Point.h
+-- Installing: /usr/include/ZXing/Quadrilateral.h
+-- Installing: /usr/include/ZXing/ReadBarcode.h
+-- Installing: /usr/include/ZXing/ReaderOptions.h
+-- Installing: /usr/include/ZXing/WriteBarcode.h
+-- Installing: /usr/include/ZXing/ZXingCpp.h
+-- Installing: /usr/include/ZXing/ZXVersion.h
+-- Installing: /usr/include/ZXing/ZXingQt.h
+-- Installing: /usr/include/ZXing/BitMatrix.h
+-- Installing: /usr/include/ZXing/BitMatrixIO.h
+-- Installing: /usr/include/ZXing/Matrix.h
+-- Installing: /usr/include/ZXing/MultiFormatWriter.h
+-- Installing: /usr/include/ZXing/Version.h
+-- Old export file "/usr/lib/cmake/ZXing/ZXingTargets.cmake" will be replaced.  Removing files [/usr/lib/cmake/ZXing/ZXingTargets-release.cmake].
+-- Installing: /usr/lib/cmake/ZXing/ZXingTargets.cmake
+-- Installing: /usr/lib/cmake/ZXing/ZXingTargets-release.cmake
+-- Installing: /usr/lib/pkgconfig/zxing.pc
+-- Installing: /usr/lib/cmake/ZXing/ZXingConfig.cmake
+-- Installing: /usr/lib/cmake/ZXing/ZXingConfigVersion.cmake
+3.2.0
+Updated registry for zxing-cpp to version 3.2.0
+[VERSION] zxing-cpp: 3.2.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package zxing-cpp in /var/lib/custom-packages/
+Updating Python packages via pip...
+Requirement already satisfied: affine in /usr/lib/python3.15/site-packages (3.0.1)
+Requirement already satisfied: alabaster in /usr/lib/python3.15/site-packages (1.0.0)
+Requirement already satisfied: anyio in /usr/lib/python3.15/site-packages (4.16.0)
+Requirement already satisfied: appdirs in /usr/lib/python3.15/site-packages (1.4.4)
+Requirement already satisfied: argcomplete in /usr/lib/python3.15/site-packages (3.7.2)
+Collecting argcomplete
+  Using cached argcomplete-3.8.0-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: arrow in /usr/lib/python3.15/site-packages (1.4.0)
+Requirement already satisfied: asgiref in /usr/lib/python3.15/site-packages (3.13.0)
+Requirement already satisfied: astroid in /usr/lib/python3.15/site-packages (4.3.4)
+Requirement already satisfied: asttokens in /usr/lib/python3.15/site-packages (3.0.2)
+Requirement already satisfied: attrs in /usr/lib/python3.15/site-packages (26.1.0)
+Requirement already satisfied: babel in /usr/lib/python3.15/site-packages (2.18.0)
+Requirement already satisfied: beautifulsoup4 in /usr/lib/python3.15/site-packages (4.15.0)
+Requirement already satisfied: black in /usr/lib/python3.15/site-packages (26.10.1)
+Requirement already satisfied: bleach in /usr/lib/python3.15/site-packages (6.4.0)
+Requirement already satisfied: brotli in /usr/lib/python3.15/site-packages (1.2.1)
+Requirement already satisfied: build in /usr/lib/python3.15/site-packages (1.6.1)
+Requirement already satisfied: cclib in /usr/lib/python3.15/site-packages (1.8.1)
+Requirement already satisfied: certifi in /usr/lib/python3.15/site-packages (2026.10.23)
+Collecting certifi
+  Using cached certifi-2026.11.20-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: cffi in /usr/lib/python3.15/site-packages (2.1.1)
+Requirement already satisfied: chardet in /usr/lib/python3.15/site-packages (5.2.0)
+Collecting chardet
+  Using cached chardet-7.7.0-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Requirement already satisfied: click in /usr/lib/python3.15/site-packages (8.5.1)
+Requirement already satisfied: colorama in /usr/lib/python3.15/site-packages (0.4.6)
+Requirement already satisfied: columnize in /usr/lib/python3.15/site-packages (0.3.11)
+Requirement already satisfied: comm in /usr/lib/python3.15/site-packages (0.2.3)
+Requirement already satisfied: contourpy in /usr/lib/python3.15/site-packages (1.4.0)
+Requirement already satisfied: cryptography in /usr/lib/python3.15/site-packages (50.0.2)
+Requirement already satisfied: cssselect in /usr/lib/python3.15/site-packages (1.6.0)
+Requirement already satisfied: cycler in /usr/lib/python3.15/site-packages (0.12.1)
+Requirement already satisfied: dateutils in /usr/lib/python3.15/site-packages (0.6.12)
+Requirement already satisfied: debugpy in /usr/lib/python3.15/site-packages (1.8.22)
+Requirement already satisfied: decorator in /usr/lib/python3.15/site-packages (5.3.2)
+Requirement already satisfied: defusedxml in /usr/lib/python3.15/site-packages (0.7.1)
+Requirement already satisfied: dill in /usr/lib/python3.15/site-packages (0.4.1)
+Requirement already satisfied: docutils in /usr/lib/python3.15/site-packages (0.22.4)
+Collecting docutils
+  Using cached docutils-0.23-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: doxypypy in /usr/lib/python3.15/site-packages (0.8.8.7)
+Requirement already satisfied: doxyqml in /usr/lib/python3.15/site-packages (0.6.0)
+Requirement already satisfied: editables in /usr/lib/python3.15/site-packages (0.6)
+Requirement already satisfied: executing in /usr/lib/python3.15/site-packages (2.3.0)
+Requirement already satisfied: fastjsonschema in /usr/lib/python3.15/site-packages (2.22.3)
+Requirement already satisfied: flake8 in /usr/lib/python3.15/site-packages (7.5.0)
+Requirement already satisfied: flexcache in /usr/lib/python3.15/site-packages (0.3)
+Requirement already satisfied: flexparser in /usr/lib/python3.15/site-packages (0.4)
+Requirement already satisfied: flit_core in /usr/lib/python3.15/site-packages (4.2.0)
+Requirement already satisfied: fonttools in /usr/lib/python3.15/site-packages (4.68.0)
+Requirement already satisfied: fqdn in /usr/lib/python3.15/site-packages (1.6.0)
+Requirement already satisfied: gobject in /usr/lib/python3.15/site-packages (0.1.0)
+Requirement already satisfied: h11 in /usr/lib/python3.15/site-packages (0.16.0)
+Requirement already satisfied: hatchling in /usr/lib/python3.15/site-packages (1.33.0)
+Requirement already satisfied: html5lib in /usr/lib/python3.15/site-packages (1.1)
+Requirement already satisfied: httpcore in /usr/lib/python3.15/site-packages (1.0.9)
+Requirement already satisfied: httpx in /usr/lib/python3.15/site-packages (0.28.1)
+Requirement already satisfied: idna in /usr/lib/python3.15/site-packages (3.20)
+Requirement already satisfied: imagesize in /usr/lib/python3.15/site-packages (2.0.1)
+Requirement already satisfied: installer in /usr/lib/python3.15/site-packages (1.1.0)
+Requirement already satisfied: ipykernel in /usr/lib/python3.15/site-packages (7.4.0)
+Requirement already satisfied: ipython in /usr/lib/python3.15/site-packages (9.18.1)
+Collecting ipython
+  Using cached ipython-9.19.1-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: ipython_pygments_lexers in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: isoduration in /usr/lib/python3.15/site-packages (20.11.0)
+Requirement already satisfied: isort in /usr/lib/python3.15/site-packages (9.0.2)
+Requirement already satisfied: jedi in /usr/lib/python3.15/site-packages (0.20.1)
+Requirement already satisfied: json5 in /usr/lib/python3.15/site-packages (0.17.3)
+Requirement already satisfied: jsonpointer in /usr/lib/python3.15/site-packages (3.12)
+Requirement already satisfied: jsonschema in /usr/lib/python3.15/site-packages (4.26.0)
+Requirement already satisfied: jupyter_builder in /usr/lib/python3.15/site-packages (1.3.0)
+Requirement already satisfied: jupyter_client in /usr/lib/python3.15/site-packages (8.10.0)
+Requirement already satisfied: jupyter_core in /usr/lib/python3.15/site-packages (5.9.1)
+Requirement already satisfied: jupyter_server in /usr/lib/python3.15/site-packages (2.21.1)
+Requirement already satisfied: jupyter_server_terminals in /usr/lib/python3.15/site-packages (0.5.4)
+Requirement already satisfied: jupyterlab in /usr/lib/python3.15/site-packages (4.6.6)
+Requirement already satisfied: jupyterlab_pygments in /usr/lib/python3.15/site-packages (0.3.0)
+Requirement already satisfied: jupyterlab_server in /usr/lib/python3.15/site-packages (2.28.1)
+Requirement already satisfied: kiwisolver in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: lark in /usr/lib/python3.15/site-packages (1.3.1)
+Requirement already satisfied: lxml in /usr/lib/python3.15/site-packages (6.1.3)
+Requirement already satisfied: mathics3_notebook_frontends in /usr/lib/python3.15/site-packages (1.0.1)
+Requirement already satisfied: mathicsscript in /usr/lib/python3.15/site-packages (10.0.0)
+Requirement already satisfied: matplotlib in /usr/lib/python3.15/site-packages (3.11.2)
+Requirement already satisfied: mccabe in /usr/lib/python3.15/site-packages (0.7.0)
+Requirement already satisfied: meson in /usr/lib/python3.15/site-packages (1.12.1)
+Requirement already satisfied: metakernel in /usr/lib/python3.15/site-packages (1.0.7)
+Requirement already satisfied: mistune in /usr/lib/python3.15/site-packages (3.4.0)
+Requirement already satisfied: mpmath in /usr/lib/python3.15/site-packages (1.3.0)
+Collecting mpmath
+  Using cached mpmath-1.4.1-py3-none-any.whl.metadata (9.1 kB)
+Requirement already satisfied: msgpack in /usr/lib/python3.15/site-packages (1.2.4)
+Requirement already satisfied: mypy_extensions in /usr/lib/python3.15/site-packages (1.2.0)
+Requirement already satisfied: narwhals in /usr/lib/python3.15/site-packages (2.29.0)
+Requirement already satisfied: nbclient in /usr/lib/python3.15/site-packages (0.11.0)
+Requirement already satisfied: nbconvert in /usr/lib/python3.15/site-packages (7.17.2)
+Requirement already satisfied: nbformat in /usr/lib/python3.15/site-packages (5.11.1)
+Requirement already satisfied: networkx in /usr/lib/python3.15/site-packages (3.7)
+Requirement already satisfied: notebook_shim in /usr/lib/python3.15/site-packages (0.2.4)
+Requirement already satisfied: numpy in /usr/lib/python3.15/site-packages (2.5.5)
+Requirement already satisfied: octave_kernel in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: packaging in /usr/lib/python3.15/site-packages (26.3)
+Collecting packaging
+  Using cached packaging-26.4-py3-none-any.whl.metadata (3.5 kB)
+Requirement already satisfied: palettable in /usr/lib/python3.15/site-packages (3.3.3)
+Requirement already satisfied: pandocfilters in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: parameterized in /usr/lib/python3.15/site-packages (0.9.0)
+Requirement already satisfied: parso in /usr/lib/python3.15/site-packages (0.8.7)
+Requirement already satisfied: pathspec in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: periodictable in /usr/lib/python3.15/site-packages (2.1.0)
+Requirement already satisfied: pexpect in /usr/lib/python3.15/site-packages (4.9.0)
+Requirement already satisfied: pillow in /usr/lib/python3.15/site-packages (13.0.0)
+Requirement already satisfied: pip in /usr/lib/python3.15/site-packages (26.3)
+Requirement already satisfied: platformdirs in /usr/lib/python3.15/site-packages (4.14.8)
+Requirement already satisfied: pluggy in /usr/lib/python3.15/site-packages (1.7.0)
+Requirement already satisfied: prometheus_client in /usr/lib/python3.15/site-packages (0.26.0)
+Requirement already satisfied: prompt_toolkit in /usr/lib/python3.15/site-packages (3.0.53)
+Requirement already satisfied: psutil in /usr/lib/python3.15/site-packages (7.2.2)
+Requirement already satisfied: ptyprocess in /usr/lib/python3.15/site-packages (0.7.0)
+Requirement already satisfied: pure_eval in /usr/lib/python3.15/site-packages (0.2.4)
+Requirement already satisfied: pyasn1 in /usr/lib/python3.15/site-packages (0.6.5)
+Requirement already satisfied: pybind11 in /usr/lib/python3.15/site-packages (3.1.0)
+Requirement already satisfied: pycairo in /usr/lib/python3.15/site-packages (1.29.2)
+Requirement already satisfied: pycodestyle in /usr/lib/python3.15/site-packages (2.15.0)
+Requirement already satisfied: pycparser in /usr/lib/python3.15/site-packages (3.12)
+Requirement already satisfied: pydeck in /usr/lib/python3.15/site-packages (0.9.3)
+Requirement already satisfied: pyelftools in /usr/lib/python3.15/site-packages (0.33)
+Requirement already satisfied: pyflakes in /usr/lib/python3.15/site-packages (4.1.0)
+Requirement already satisfied: pygdbmi in /usr/lib/python3.15/site-packages (0.11.0.0)
+Requirement already satisfied: pylint in /usr/lib/python3.15/site-packages (4.1.4)
+Requirement already satisfied: Pympler in /usr/lib/python3.15/site-packages (1.1)
+Requirement already satisfied: pyparsing in /usr/lib/python3.15/site-packages (3.3.3)
+Requirement already satisfied: pyproject_hooks in /usr/lib/python3.15/site-packages (1.3.3)
+Requirement already satisfied: pyserial in /usr/lib/python3.15/site-packages (3.5)
+Requirement already satisfied: pyte in /usr/lib/python3.15/site-packages (0.8.2)
+Requirement already satisfied: pytokens in /usr/lib/python3.15/site-packages (0.4.1)
+Requirement already satisfied: pytz in /usr/lib/python3.15/site-packages (2026.6)
+Requirement already satisfied: pyzmq in /usr/lib/python3.15/site-packages (27.3.0)
+Requirement already satisfied: rasterio in /usr/lib/python3.15/site-packages (1.5.2)
+Requirement already satisfied: rdflib in /usr/lib/python3.15/site-packages (7.6.0)
+Requirement already satisfied: referencing in /usr/lib/python3.15/site-packages (0.37.0)
+Requirement already satisfied: requests in /usr/lib/python3.15/site-packages (2.34.2)
+Requirement already satisfied: rnc2rng in /usr/lib/python3.15/site-packages (2.8.0)
+Requirement already satisfied: rply in /usr/lib/python3.15/site-packages (0.7.8)
+Requirement already satisfied: scikit_build_core in /usr/lib/python3.15/site-packages (1.1.2)
+Requirement already satisfied: scipy in /usr/lib/python3.15/site-packages (1.18.1)
+Requirement already satisfied: scour in /usr/lib/python3.15/site-packages (0.38.2)
+Requirement already satisfied: setuptools in /usr/lib/python3.15/site-packages (84.2.1)
+Requirement already satisfied: sip in /usr/lib/python3.15/site-packages (6.17.3)
+Requirement already satisfied: six in /usr/lib/python3.15/site-packages (1.17.0)
+Requirement already satisfied: smartypants in /usr/lib/python3.15/site-packages (2.0.2)
+Requirement already satisfied: snowballstemmer in /usr/lib/python3.15/site-packages (3.1.1)
+Requirement already satisfied: soupsieve in /usr/lib/python3.15/site-packages (4.1.3)
+Requirement already satisfied: sphinx_lv2_theme in /usr/lib/python3.15/site-packages (1.4.6)
+Requirement already satisfied: sphinxygen in /usr/lib/python3.15/site-packages (1.0.12)
+Requirement already satisfied: sqlparse in /usr/lib/python3.15/site-packages (0.6.1)
+Requirement already satisfied: sympy in /usr/lib/python3.15/site-packages (1.14.0)
+Requirement already satisfied: terminado in /usr/lib/python3.15/site-packages (0.18.1)
+Requirement already satisfied: tinycss2 in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: tomlkit in /usr/lib/python3.15/site-packages (0.15.2)
+Collecting tomlkit
+  Using cached tomlkit-0.15.3-py3-none-any.whl.metadata (3.4 kB)
+Requirement already satisfied: tornado in /usr/lib/python3.15/site-packages (6.6.1)
+Requirement already satisfied: traitlets in /usr/lib/python3.15/site-packages (5.16.1)
+Requirement already satisfied: typing_extensions in /usr/lib/python3.15/site-packages (4.16.0)
+Requirement already satisfied: typogrify in /usr/lib/python3.15/site-packages (2.1.0)
+Requirement already satisfied: tzdata in /usr/lib/python3.15/site-packages (2026.6)
+Requirement already satisfied: urllib3 in /usr/lib/python3.15/site-packages (2.8.0)
+Requirement already satisfied: wcwidth in /usr/lib/python3.15/site-packages (0.9.4)
+Collecting wcwidth
+  Using cached wcwidth-0.9.5-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (26 kB)
+Requirement already satisfied: webcolors in /usr/lib/python3.15/site-packages (25.10.0)
+Requirement already satisfied: webencodings in /usr/lib/python3.15/site-packages (0.6.1)
+Requirement already satisfied: wheel in /usr/lib/python3.15/site-packages (0.48.0)
+Requirement already satisfied: python-dateutil>=2.7.0 in /usr/lib/python3.15/site-packages (from arrow) (3.0.0)
+Requirement already satisfied: trove-classifiers in /usr/lib/python3.15/site-packages (from hatchling) (2026.6.1.19)
+Requirement already satisfied: matplotlib-inline>=0.1 in /usr/lib/python3.15/site-packages (from ipykernel) (0.2.2)
+Requirement already satisfied: nest-asyncio2>=1.7.0 in /usr/lib/python3.15/site-packages (from ipykernel) (1.7.4)
+Requirement already satisfied: pygments>=2.14.0 in /usr/lib/python3.15/site-packages (from ipython) (2.21.0)
+Requirement already satisfied: stack_data>=0.6.0 in /usr/lib/python3.15/site-packages (from ipython) (0.6.3)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /usr/lib/python3.15/site-packages (from jsonschema) (2025.9.1)
+Requirement already satisfied: rpds-py>=0.25.0 in /usr/lib/python3.15/site-packages (from jsonschema) (2026.9.1)
+Requirement already satisfied: argon2-cffi>=21.1 in /usr/lib/python3.15/site-packages (from jupyter_server) (25.1.0)
+Requirement already satisfied: jinja2>=3.0.3 in /usr/lib/python3.15/site-packages (from jupyter_server) (3.1.6)
+Requirement already satisfied: jupyter-events>=0.11.0 in /usr/lib/python3.15/site-packages (from jupyter_server) (0.12.1)
+Requirement already satisfied: send2trash>=1.8.2 in /usr/lib/python3.15/site-packages (from jupyter_server) (2.1.0)
+Requirement already satisfied: websocket-client>=1.7 in /usr/lib/python3.15/site-packages (from jupyter_server) (1.9.2)
+Requirement already satisfied: async-lru>=1.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.4.0)
+Requirement already satisfied: jupyter-lsp>=2.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.3.1)
+Requirement already satisfied: Mathics3>=10.0.1 in /usr/lib/python3.15/site-packages (from mathics3_notebook_frontends) (10.0.1)
+Requirement already satisfied: charset-normalizer<4.0.0,>=2.0.0 in /usr/lib/python3.15/site-packages (from mathics3_notebook_frontends) (3.5.2)
+Requirement already satisfied: Mathics3_Scanner>=10.0.0 in /usr/lib/python3.15/site-packages (from mathicsscript) (10.0.1)
+Requirement already satisfied: Mathics3_pygments>=10.0.0 in /usr/lib/python3.15/site-packages (from mathicsscript) (10.0.0)
+Requirement already satisfied: term-background>=1.0.5 in /usr/lib/python3.15/site-packages (from mathicsscript) (1.0.5)
+Requirement already satisfied: markupsafe>=2.0 in /usr/lib/python3.15/site-packages (from nbconvert) (3.0.4)
+Requirement already satisfied: sphinx in /usr/lib/python3.15/site-packages (from sphinx_lv2_theme) (9.1.0)
+Requirement already satisfied: argon2-cffi-bindings in /usr/lib/python3.15/site-packages (from argon2-cffi>=21.1->jupyter_server) (26.1.0)
+Requirement already satisfied: python-json-logger>=2.0.4 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (4.2.0)
+Requirement already satisfied: pyyaml>=5.3 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (6.0.3)
+Requirement already satisfied: rfc3339-validator in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (0.1.4)
+Requirement already satisfied: rfc3986-validator>=0.1.1 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (0.1.1)
+Requirement already satisfied: rfc3987-syntax>=1.1.0 in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter_server) (1.1.0)
+Requirement already satisfied: uri-template in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter_server) (1.3.0)
+Requirement already satisfied: pint>=0.24 in /usr/lib/python3.15/site-packages (from Mathics3>=10.0.1->mathics3_notebook_frontends) (0.26.2)
+Requirement already satisfied: Timed-Threads in /usr/lib/python3.15/site-packages (from Mathics3>=10.0.1->mathics3_notebook_frontends) (2.0.0)
+Requirement already satisfied: sphinxcontrib-applehelp>=1.0.7 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-devhelp>=1.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-htmlhelp>=2.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.1.0)
+Requirement already satisfied: sphinxcontrib-jsmath>=1.0.1 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (1.0.1)
+Requirement already satisfied: sphinxcontrib-qthelp>=1.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-serializinghtml>=1.1.9 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: roman-numerals>=1.0.0 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (4.1.0)
+Using cached argcomplete-3.8.0-py3-none-any.whl (45 kB)
+Using cached certifi-2026.11.20-py3-none-any.whl (127 kB)
+Using cached ipython-9.19.1-py3-none-any.whl (649 kB)
+Using cached packaging-26.4-py3-none-any.whl (140 kB)
+Using cached tomlkit-0.15.3-py3-none-any.whl (55 kB)
+Using cached wcwidth-0.9.5-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (822 kB)
+WARNING: Error parsing dependencies of certifi: No package metadata was found.
+WARNING: Error parsing dependencies of wcwidth: No package metadata was found.
+Installing collected packages: wcwidth, tomlkit, packaging, certifi, argcomplete, ipython
+  Attempting uninstall: wcwidth
+ERROR: Could not install packages due to an OSError: No package metadata was found.
+
+
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: libpcap: 1.11.0->1.11.1; zxing-cpp: 3.1.1->3.2.0.
+[master 6545a19] libpcap: 1.11.0->1.11.1; zxing-cpp: 3.1.1->3.2.0.
+ 2 files changed, 70 insertions(+), 69 deletions(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: libpcap: 1.11.0->1.11.1; zxing-cpp: 3.1.1->3.2.0.
+[master 5175bb0] libpcap: 1.11.0->1.11.1; zxing-cpp: 3.1.1->3.2.0.
+ 2 files changed, 2 insertions(+)
+Pushing changes in ~/build_duration...
+r13.1-42
+r13.1-694
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+cand_dir=/usr/lib
+cand_base=libavcodec.so.63.1.102
+cand_sobase=libavcodec.so
+search_base=libavcodec
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavformat.so.63.1.102
+cand_sobase=libavformat.so
+search_base=libavformat
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libavutil.so.61.1.102
+cand_sobase=libavutil.so
+search_base=libavutil
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libexpat.so.1.13.1
+cand_sobase=libexpat.so
+search_base=libexpat
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libgnutls.so.30.42.0
+cand_sobase=libgnutls.so
+search_base=libgnutls
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz.so.0.61510.0
+cand_sobase=libharfbuzz.so
+search_base=libharfbuzz
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libharfbuzz-subset.so.0.61510.0
+cand_sobase=libharfbuzz-subset.so
+search_base=libharfbuzz-subset
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIex-3_5.so.34.3.5.4
+cand_sobase=libIex-.so
+search_base=libIex-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libIlmThread-3_5.so.34.3.5.4
+cand_sobase=libIlmThread-.so
+search_base=libIlmThread-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXR-3_5.so.34.3.5.4
+cand_sobase=libOpenEXR-.so
+search_base=libOpenEXR-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXRCore-3_5.so.34.3.5.4
+cand_sobase=libOpenEXRCore-.so
+search_base=libOpenEXRCore-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libOpenEXRUtil-3_5.so.34.3.5.4
+cand_sobase=libOpenEXRUtil-.so
+search_base=libOpenEXRUtil-
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libpari-gmp-tls.so.2.19.0
+cand_sobase=libpari-gmp-tls.so
+search_base=libpari-gmp-tls
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libpcap.so.1.11.0
+cand_sobase=libpcap.so
+search_base=libpcap
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libswscale.so.10.1.102
+cand_sobase=libswscale.so
+search_base=libswscale
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libyaml-0.so.2.0.9
+cand_sobase=libyaml.so
+search_base=libyaml
+replacement_found=true
+cand_dir=/usr/lib
+cand_base=libzstd.so.1.5.7
+cand_sobase=libzstd.so
+search_base=libzstd
+replacement_found=true
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+------------------------------------------------
+Checking obsolete version (file): libavcodec.so.63.1.102
+Path: /usr/lib/libavcodec.so.63.1.102
+Skipping generic/unsafe name 'libavcodec.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavcodec.so.63 libavcodec.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavcodec.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavcodec.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavformat.so.63.1.102
+Path: /usr/lib/libavformat.so.63.1.102
+Skipping generic/unsafe name 'libavformat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavformat.so.63 libavformat.so.63.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavformat.so.63.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavformat.so.63.1.102.
+------------------------------------------------
+Checking obsolete version (file): libavutil.so.61.1.102
+Path: /usr/lib/libavutil.so.61.1.102
+Skipping generic/unsafe name 'libavutil.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libavutil.so.61 libavutil.so.61.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libavutil.so.61.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libavutil.so.61.1.102.
+------------------------------------------------
+Checking obsolete version (file): libexpat.so.1.13.1
+Path: /usr/lib/libexpat.so.1.13.1
+Skipping generic/unsafe name 'libexpat.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 4 remaining dependents.
+Names tracked: libexpat.so.1 libexpat.so.1.13.1
+Example dependents: ./miniconda3/bin/dbus-daemon ./miniconda3/bin/xmlwf ./miniconda3/libexec/dbus-daemon-launch-helper ...
+Warning: No parent package found for ANY of the 4 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libexpat.so.1.13.1:
+  - ./miniconda3/bin/dbus-daemon
+  - ./miniconda3/bin/xmlwf
+  - ./miniconda3/libexec/dbus-daemon-launch-helper
+  - ./miniconda3/lib/python3.14/lib-dynload/pyexpat.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libexpat.so.1.13.1.
+------------------------------------------------
+Checking obsolete version (file): libgnutls.so.30.42.0
+Path: /usr/lib/libgnutls.so.30.42.0
+Skipping generic/unsafe name 'libgnutls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 31 remaining dependents.
+Names tracked: libgnutls.so.30 libgnutls.so.30.42.0
+Example dependents: ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0 ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11 ...
+Warning: No parent package found for ANY of the 31 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libgnutls.so.30.42.0:
+  - ./lfs_packaging/gavl/gavl/gavl/.libs/libgavl.so.3.0.0
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cert-select-pkcs11
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-resume
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-client-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-cxx
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-ocsp-client
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-anon
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-dtls
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-psk
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/ex-serv-x509
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/print-ciphersuites
+  - ./lfs_packaging/gnutls/gnutls/doc/examples/tlsproxy/tlsproxy
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/alert-printlist
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/errcodes
+  - ./lfs_packaging/gnutls/gnutls/doc/.libs/printlist
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0
+  - ./lfs_packaging/gnutls/gnutls/lib/.libs/libgnutlsxx.so.30.0.0T
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/certtool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-cli-debug
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/gnutls-serv
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/ocsptool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/p11tool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/psktool
+  - ./lfs_packaging/gnutls/gnutls/src/.libs/systemkey
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/eagain-cli
+  - ./lfs_packaging/gnutls/gnutls/tests/suite/mini-record-timing
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libgnutls.so.30.42.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz.so.0.61510.0
+Path: /usr/lib/libharfbuzz.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz.so.0 libharfbuzz.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libharfbuzz-subset.so.0.61510.0
+Path: /usr/lib/libharfbuzz-subset.so.0.61510.0
+Skipping generic/unsafe name 'libharfbuzz-subset.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libharfbuzz-subset.so.0 libharfbuzz-subset.so.0.61510.0
+Example dependents: ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0 ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libharfbuzz-subset.so.0.61510.0:
+  - ./lfs_packaging/poppler/poppler-26.11.0/build/libpoppler.so.166.0.0
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libharfbuzz-subset.so.0.61510.0.
+------------------------------------------------
+Checking obsolete version (file): libIex-3_5.so.34.3.5.4
+Path: /usr/lib/libIex-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libIex-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 48 remaining dependents.
+Names tracked: libIex-3_5.so.34 libIex-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 48 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIex-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/IexTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/IlmThread/libIlmThread-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/IexTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/IlmThread/libIlmThread-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIex-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libIlmThread-3_5.so.34.3.5.4
+Path: /usr/lib/libIlmThread-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libIlmThread-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 44 remaining dependents.
+Names tracked: libIlmThread-3_5.so.34 libIlmThread-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 44 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libIlmThread-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libIlmThread-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXR-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXR-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXR-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 42 remaining dependents.
+Names tracked: libOpenEXR-3_5.so.34 libOpenEXR-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 42 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXR-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXR-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRCore-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXRCore-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 44 remaining dependents.
+Names tracked: libOpenEXRCore-3_5.so.34 libOpenEXRCore-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ...
+Warning: No parent package found for ANY of the 44 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build2/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build2/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+  - ./lfs_packaging/openexr/openexr/build/bin/CorePerfTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRCoreTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRExamples
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRTest
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidexample
+  - ./lfs_packaging/openexr/openexr/build/src/examples/deepidselect
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXR/libOpenEXR-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRUtil/libOpenEXRUtil-3_5.so.34.3.5.5
+  - ./lfs_packaging/openexr/openexr/build/src/wrappers/python/OpenEXR.cpython-315-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRCore-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libOpenEXRUtil-3_5.so.34.3.5.4
+Path: /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4
+Skipping generic/unsafe name 'libOpenEXRUtil-3_5.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 26 remaining dependents.
+Names tracked: libOpenEXRUtil-3_5.so.34 libOpenEXRUtil-3_5.so.34.3.5.4
+Example dependents: ./lfs_packaging/openexr/openexr/build2/bin/exr2aces ./lfs_packaging/openexr/openexr/build2/bin/exrcheck ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap ...
+Warning: No parent package found for ANY of the 26 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4:
+  - ./lfs_packaging/openexr/openexr/build2/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build2/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build2/bin/OpenEXRUtilTest
+  - ./lfs_packaging/openexr/openexr/build/bin/exr2aces
+  - ./lfs_packaging/openexr/openexr/build/bin/exrcheck
+  - ./lfs_packaging/openexr/openexr/build/bin/exrenvmap
+  - ./lfs_packaging/openexr/openexr/build/bin/exrheader
+  - ./lfs_packaging/openexr/openexr/build/bin/exrinfo
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmakepreview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmaketiled
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmanifest
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmetrics
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultipart
+  - ./lfs_packaging/openexr/openexr/build/bin/exrmultiview
+  - ./lfs_packaging/openexr/openexr/build/bin/exrstdattr
+  - ./lfs_packaging/openexr/openexr/build/bin/OpenEXRUtilTest
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libOpenEXRUtil-3_5.so.34.3.5.4.
+------------------------------------------------
+Checking obsolete version (file): libpari-gmp-tls.so.2.19.0
+Path: /usr/lib/libpari-gmp-tls.so.2.19.0
+Skipping generic/unsafe name 'libpari-gmp-tls.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libpari-gmp-tls.so.10 libpari-gmp-tls.so.2.19.0
+Example dependents: ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libpari-gmp-tls.so.2.19.0:
+  - ./lfs_packaging/pari/pari/Olinux-x86_64/gp-dyn
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libpari-gmp-tls.so.2.19.0.
+------------------------------------------------
+Checking obsolete version (file): libpcap.so.1.11.0
+Path: /usr/lib/libpcap.so.1.11.0
+Skipping generic/unsafe name 'libpcap.so.' to prevent false positive matches.
+i_dir=/usr/lib
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libpcap.so.1.11.0...
+------------------------------------------------
+Checking obsolete version (file): libswscale.so.10.1.102
+Path: /usr/lib/libswscale.so.10.1.102
+Skipping generic/unsafe name 'libswscale.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 10 remaining dependents.
+Names tracked: libswscale.so.10 libswscale.so.10.1.102
+Example dependents: ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length ...
+Warning: No parent package found for ANY of the 10 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libswscale.so.10.1.102:
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_aep_gradient_xml
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_animatable
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_length
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_bezier_solver
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_cos_parser
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_keyframe_transition
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_property
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_riff
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trace
+  - ./lfs_packaging/mlt/mlt/src/modules/glaxnimate/glaxnimate/build2/bin/test_trim_path
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libswscale.so.10.1.102.
+------------------------------------------------
+Checking obsolete version (file): libyaml-0.so.2.0.9
+Path: /usr/lib/libyaml-0.so.2.0.9
+Skipping generic/unsafe name 'libyaml-0.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 1 remaining dependents.
+Names tracked: libyaml-0.so.2 libyaml-0.so.2.0.9
+Example dependents: ./.cache/electron-builder/fpm@2.1.4/fpm-1.17.0-ruby-3.4.3-linux-amd64-1nk0v/ruby-3.4.3-portable/bin/ruby ...
+Warning: No parent package found for ANY of the 1 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libyaml-0.so.2.0.9:
+  - ./.cache/electron-builder/fpm@2.1.4/fpm-1.17.0-ruby-3.4.3-linux-amd64-1nk0v/ruby-3.4.3-portable/bin/ruby
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libyaml-0.so.2.0.9.
+------------------------------------------------
+Checking obsolete version (file): libzstd.so.1.5.7
+Path: /usr/lib/libzstd.so.1.5.7
+Skipping generic/unsafe name 'libzstd.so.' to prevent false positive matches.
+Status: Library (or its symlinks) has 15 remaining dependents.
+Names tracked: libzstd.so.1 libzstd.so.1.5.7
+Example dependents: ./lfs_packaging/kmod/kmod-34.3/build/kmod ./lfs_packaging/kmod/kmod-34.3/build/libkmod.so.2.5.1 ./lfs_packaging/kmod/kmod-34.4/build/kmod ...
+Warning: No parent package found for ANY of the 15 dependents.
+These dependents are likely orphaned files from a previous version (e.g., protobuf binaries).
+Orphaned files preventing deletion of /usr/lib/libzstd.so.1.5.7:
+  - ./lfs_packaging/kmod/kmod-34.3/build/kmod
+  - ./lfs_packaging/kmod/kmod-34.3/build/libkmod.so.2.5.1
+  - ./lfs_packaging/kmod/kmod-34.4/build/kmod
+  - ./lfs_packaging/kmod/kmod-34.4/build/libkmod.so.2.5.1
+  - ./lfs_packaging/openexr/openexr/build2/src/lib/OpenEXRCore/libOpenEXRCore-3_5.so.34.3.5.4
+  - ./lfs_packaging/openexr/openexr/build/src/lib/OpenEXRCore/libOpenEXRCore-3_5.so.34.3.5.5
+  - ./miniconda3/bin/bsdcat
+  - ./miniconda3/bin/bsdcpio
+  - ./miniconda3/bin/bsdtar
+  - ./miniconda3/bin/bsdunzip
+  - ./miniconda3/bin/zstd
+  - ./miniconda3/lib/libarchive.so.13.8.8
+  - ./miniconda3/lib/libcurl.so.4.8.0
+  - ./miniconda3/lib/libmamba.so.4.0.1
+  - ./miniconda3/lib/python3.14/lib-dynload/_zstd.cpython-314-x86_64-linux-gnu.so
+Please manually delete these orphaned files if they are no longer needed.
+Safety Hold: Keeping /usr/lib/libzstd.so.1.5.7.
+------------------------------------------------
+Checking obsolete version (file): libZXing.so.3.1.1
+Path: /usr/lib/libZXing.so.3.1.1
+Skipping generic/unsafe name 'libZXing.so.' to prevent false positive matches.
+i_dir=/usr/lib
+i_base=libpcap.so.1.11.0
+i_sobase=libpcap.so
+replacement_found=true
+Result: Unused. Deleting /usr/lib/libZXing.so.3.1.1...
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.6...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.6-lfs-r13.1-42
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
