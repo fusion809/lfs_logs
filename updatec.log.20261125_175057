@@ -1,0 +1,42 @@
+===== Update check started: 2026-11-25 17:50:57 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261125_175057
+Packages needing attention: hdf5
+===== Starting updatec: 2026-11-25 17:51:00 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - hdf5
+
+Building custom package hdf5...
+[17:51:01] Found custom package for hdf5, bypassing BLFS aliases.
+[17:51:01] Custom package detected at /home/fusion809/lfs_packaging/hdf5 (package: hdf5)
+[17:51:01] Extracting dependencies for custom package 'hdf5'...
+[17:51:01] Required deps: bash cmake coreutils freetype gcc glib2 glibc gzip java libaec make sed tar wget zlib 
+[17:51:01] Dependency 'bash' already installed.
+[17:51:01] Dependency 'cmake' already installed.
+[17:51:01] Dependency 'coreutils' already installed.
+[17:51:01] Dependency 'freetype' already installed.
+[17:51:01] Dependency 'gcc' already installed.
+[17:51:01] Dependency 'glib2' already installed.
+[17:51:01] Dependency 'glibc' already installed.
+[17:51:01] Dependency 'gzip' already installed.
+[17:51:01] Dependency 'java' already installed.
+[17:51:01] Dependency 'libaec' already installed.
+[17:51:01] Dependency 'make' already installed.
+[17:51:01] Dependency 'sed' already installed.
+[17:51:01] Dependency 'tar' already installed.
+[17:51:01] Dependency 'wget' already installed.
+[17:51:01] Dependency 'zlib' already installed.
+[VERSION] hdf5: 2.3.0
+[17:51:02] Installing hdf5 version: 2.3.0
+[17:51:03] Starting remote custom build for hdf5...
+build.sh: line 12: syntax error near unexpected token `)'
+[ERROR] build.sh exited with code 2 for hdf5
+[ERROR] Custom build failed for hdf5
+[17:51:05] ========================================
+[17:51:05] Build completed with 1 failure(s):
+[17:51:05]   - hdf5
+[17:51:05] ========================================
+Error: Build failed for hdf5. Aborting update loop.
+===== ERROR: updatec exited with status 1 =====
+Finished: 2026-11-25 17:51:05 AEST
+Exit status: 1
