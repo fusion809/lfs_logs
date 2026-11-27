@@ -1,0 +1,278 @@
+===== Update check started: 2026-11-27 15:20:54 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261127_152054
+Packages needing attention: gjs
+===== Starting updatec: 2026-11-27 15:20:56 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - gjs
+
+Building custom package gjs...
+[15:20:57] Found custom package for gjs, bypassing BLFS aliases.
+[15:20:57] Custom package detected at /home/fusion809/lfs_packaging/gjs (package: gjs)
+[15:20:57] Extracting dependencies for custom package 'gjs'...
+[15:20:57] Required deps: brotli bzip2 cairo expat fontconfig freetype gcc glib2 glibc icu libffi libpng libx11 libxau libxcb libxdmcp libxext libxrender ncurses pcre2 pixman readline systemd util-linux zlib 
+[15:20:57] Dependency 'brotli' already installed.
+[15:20:57] Dependency 'bzip2' already installed.
+[15:20:57] Dependency 'cairo' already installed.
+[15:20:57] Dependency 'expat' already installed.
+[15:20:57] Dependency 'fontconfig' already installed.
+[15:20:57] Dependency 'freetype' already installed.
+[15:20:57] Dependency 'gcc' already installed.
+[15:20:57] Dependency 'glib2' already installed.
+[15:20:57] Dependency 'glibc' already installed.
+[15:20:57] Dependency 'icu' already installed.
+[15:20:57] Dependency 'libffi' already installed.
+[15:20:57] Dependency 'libpng' already installed.
+[15:20:57] Dependency 'libx11' already installed.
+[15:20:57] Dependency 'libxau' already installed.
+[15:20:57] Dependency 'libxcb' already installed.
+[15:20:57] Dependency 'libxdmcp' already installed.
+[15:20:57] Dependency 'libxext' already installed.
+[15:20:57] Dependency 'libxrender' already installed.
+[15:20:57] Dependency 'ncurses' already installed.
+[15:20:57] Dependency 'pcre2' already installed.
+[15:20:57] Dependency 'pixman' already installed.
+[15:20:57] Dependency 'readline' already installed.
+[15:20:57] Dependency 'systemd' already installed.
+[15:20:57] Dependency 'util-linux' already installed.
+[15:20:57] Dependency 'zlib' already installed.
+[VERSION] gjs: 1.90.2
+[15:20:59] Installing gjs version: 1.90.2
+[15:20:59] Starting remote custom build for gjs...
+gjs-1.90.2.tar.xz already present and appears valid.
+source_dir=..
+Optional 3 build, applicable to p11-kit
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/gjs/gjs-1.90.2
+Build dir: /home/fusion809/lfs_packaging/gjs/gjs-1.90.2/p11-build
+Build type: native build
+DEPRECATION: WrapDB v1 is deprecated, updated using `meson wrap update zlib`
+Project name: gjs
+Project version: 1.90.2
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+C++ compiler for the host machine: c++ (gcc 16.2.0 "c++ (GCC) 16.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C++ supports arguments -fno-strict-aliasing: YES 
+Compiler for C++ supports arguments -Wno-variadic-macros: YES 
+Compiler for C++ supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C++ supports arguments -Wno-dangling-pointer: YES 
+Compiler for C supports arguments -Wno-typedef-redefinition: NO 
+Compiler for C++ supports link arguments -Bsymbolic-functions: YES 
+Compiler for C supports arguments -fno-semantic-interposition: YES 
+Compiler for C++ supports arguments -fno-semantic-interposition: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Run-time dependency glib-2.0 found: YES 2.91.0
+Run-time dependency gthread-2.0 found: YES 2.91.0
+Run-time dependency gobject-2.0 found: YES 2.91.0
+Run-time dependency gio-2.0 found: YES 2.91.0
+Run-time dependency girepository-2.0 found: YES 2.91.0
+Run-time dependency libffi found: YES 3.8.2
+Run-time dependency cairo found: YES 1.18.6
+Run-time dependency cairo-gobject found: YES 1.18.6
+Run-time dependency cairo-xlib found: YES 1.18.6
+Run-time dependency mozjs-140 found: YES 140.17.0
+Found CMake: /usr/bin/cmake (4.5.1)
+Run-time dependency sysprof-capture-4 found: NO  (tried pkg-config and cmake)
+Not looking for a fallback subproject for the dependency sysprof-capture-4 because:
+Use of fallback dependencies is disabled.
+Library readline found: YES
+Checking if "64-bit atomics built-in" links: YES 
+Run-time dependency gtk+-3.0 found: YES 3.24.52
+Run-time dependency gtk4 found: YES 4.25.1
+Checking if "SpiderMonkey is a non-debug build" with dependency mozjs-140 compiles: YES 
+Checking if "SpiderMonkey sanity check" with dependency mozjs-140 runs: YES
+Program dtrace found: NO
+Program dbus-run-session found: YES (/usr/bin/dbus-run-session)
+Program glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Check usable header "readline/readline.h" : YES 
+Check usable header "sys/syscall.h" : YES 
+Check usable header "unistd.h" : YES 
+Check usable header "signal.h" : YES 
+Configuring config.h using configuration
+Configuring gjs.stp using configuration
+Dependency glib-2.0 for host machine found: YES 2.91.0 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 for host machine found: YES 2.91.0 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Dependency gio-2.0 for host machine found: YES 2.91.0 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Run-time dependency gio-unix-2.0 found: YES 2.91.0
+Compiler for C++ supports link arguments -Wl,--version-script,/home/fusion809/lfs_packaging/gjs/gjs-1.90.2/libgjs.map: YES 
+Compiler for C++ supports link arguments -Wl,-exported_symbols_list,/home/fusion809/lfs_packaging/gjs/gjs-1.90.2/libgjs.symbols: NO 
+Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+
+Executing subproject gobject-introspection-tests for machine: host 
+
+gobject-introspection-tests| Project name: gobject-introspection-tests
+gobject-introspection-tests| Project version: unversioned
+gobject-introspection-tests| C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+gobject-introspection-tests| C linker for the host machine: cc ld.bfd 2.47.20260726
+gobject-introspection-tests| Dependency glib-2.0 for host machine found: YES 2.91.0 (cached)
+gobject-introspection-tests| Dependency gobject-2.0 for host machine found: YES 2.91.0 (cached)
+gobject-introspection-tests| Dependency gio-2.0 for host machine found: YES 2.91.0 (cached)
+gobject-introspection-tests| Dependency cairo for host machine found: YES 1.18.6 (cached)
+gobject-introspection-tests| Dependency cairo-gobject for host machine found: YES 1.18.6 (cached)
+gobject-introspection-tests| Build targets in project: 25
+gobject-introspection-tests| Subproject gobject-introspection-tests finished.
+
+Configuring testCommandLine.sh.test using configuration
+Configuring testCommandLineModules.sh.test using configuration
+Configuring testWarnings.sh.test using configuration
+Configuring testGtk4Warnings.sh.test using configuration
+Dependency gio-2.0 for host machine found: YES 2.91.0 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gio-2.0 for host machine found: YES 2.91.0 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Configuring testself.test using configuration
+Configuring testAsync.test using configuration
+Configuring testAsyncMainloop.test using configuration
+Configuring testCairo.test using configuration
+Configuring testConsole.test using configuration
+Configuring testEncoding.test using configuration
+Configuring testESModules.test using configuration
+Configuring testExceptions.test using configuration
+Configuring testFundamental.test using configuration
+Configuring testGdkPixbuf.test using configuration
+Configuring testGettext.test using configuration
+Configuring testGIMarshalling.test using configuration
+Configuring testGio.test using configuration
+Configuring testGLib.test using configuration
+Configuring testGLibLogWriter.test using configuration
+Configuring testGlobal.test using configuration
+Configuring testGObject.test using configuration
+Configuring testGObjectClass.test using configuration
+Configuring testGObjectInterface.test using configuration
+Configuring testGObjectValue.test using configuration
+Configuring testGTypeClass.test using configuration
+Configuring testIntrospection.test using configuration
+Configuring testNamespace.test using configuration
+Configuring testParamSpec.test using configuration
+Configuring testPrint.test using configuration
+Configuring testPromise.test using configuration
+Configuring testRegress.test using configuration
+Configuring testSystem.test using configuration
+Configuring testTimers.test using configuration
+Configuring testUtility.test using configuration
+Configuring testWarnLib.test using configuration
+Configuring testWeakRef.test using configuration
+Configuring testGObjectDestructionAccess.test using configuration
+Configuring testGtk3.test using configuration
+Configuring testGtk4.test using configuration
+Configuring testGDBus.test using configuration
+Configuring testFormat.test using configuration
+Configuring testImporter.test using configuration
+Configuring testImporter2.test using configuration
+Configuring testLang.test using configuration
+Configuring testLegacyByteArray.test using configuration
+Configuring testLegacyCairo.test using configuration
+Configuring testLegacyClass.test using configuration
+Configuring testLegacyGObject.test using configuration
+Configuring testMainloop.test using configuration
+Configuring testOverrides.test using configuration
+Configuring testPackage.test using configuration
+Configuring testSignals.test using configuration
+Configuring testTweener.test using configuration
+Configuring testLegacyGtk.test using configuration
+Program debugger-test.sh found: YES (/home/fusion809/lfs_packaging/gjs/gjs-1.90.2/installed-tests/debugger-test.sh)
+Configuring backtrace.test using configuration
+Configuring breakpoint.test using configuration
+Configuring continue.test using configuration
+Configuring delete.test using configuration
+Configuring detach.test using configuration
+Configuring down-up.test using configuration
+Configuring finish.test using configuration
+Configuring frame.test using configuration
+Configuring keys.test using configuration
+Configuring lastvalues.test using configuration
+Configuring list.test using configuration
+Configuring next.test using configuration
+Configuring print.test using configuration
+Configuring quit.test using configuration
+Configuring return.test using configuration
+Configuring set.test using configuration
+Configuring step.test using configuration
+Configuring throw.test using configuration
+Configuring until.test using configuration
+Configuring sourcemap-dynamic-module.test using configuration
+Configuring sourcemap-separate-module.test using configuration
+Configuring sourcemap-separate.test using configuration
+Configuring sourcemap-inlined.test using configuration
+Configuring sourcemap-inlined-module.test using configuration
+Configuring throw-ignored.test using configuration
+Dependency gio-2.0 for host machine found: YES 2.91.0 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Build targets in project: 38
+
+gobject-introspection-tests unversioned
+
+    Build type            : release
+    Install test libraries: YES
+    GLib                  : 2.91.0 (in /usr)
+    Cairo support         : YES
+    Cairo                 : 1.18.6 (in /usr)
+    Cairo-gobject         : 1.18.6 (in /usr)
+    Install location      : libexec/installed-tests/gjs
+
+gjs 1.90.2
+
+  Directories
+    prefix                     : /usr
+    bindir                     : /usr/bin
+    libdir                     : /usr/lib
+    datadir                    : /usr/share
+    libexecdir                 : /usr/libexec
+
+  Dependencies
+    libffi                     : 3.8.2 (in /usr)
+    GLib                       : 2.91.0 (in /usr)
+    SpiderMonkey               : 140.17.0 (in /usr, release build)
+    Readline                   : (library)
+
+  Build options
+    Build type                 : release
+    Installed tests            : YES
+    -Bsymbolic-functions       : YES
+    Skip DBus tests            : NO
+    Skip GTK tests             : NO
+    Extra debug logs           : NO
+    Precompiled headers        : YES
+
+  Optional features
+    Use readline for input     : YES
+    Profiler (Linux only)      : NO
+    Dtrace debugging           : NO
+    Systemtap debugging        : NO
+
+  Subprojects (for host machine)
+    gobject-introspection-tests: YES
+
+  User defined options
+    buildtype                  : release
+    prefix                     : /usr
+    wrap_mode                  : nofallback
+
+Found ninja-1.13.2 at /usr/bin/ninja
+
+ERROR: Clock skew detected. File /home/fusion809/lfs_packaging/gjs/gjs-1.90.2/p11-build/meson-private/coredata.dat has a time stamp 0.0816s in the future.
+
+A full log can be found at /home/fusion809/lfs_packaging/gjs/gjs-1.90.2/p11-build/meson-logs/meson-log.txt
+[ERROR] build.sh exited with code 1 for gjs
+[ERROR] Custom build failed for gjs
+[15:21:09] ========================================
+[15:21:09] Build completed with 1 failure(s):
+[15:21:09]   - gjs
+[15:21:09] ========================================
+Error: Build failed for gjs. Aborting update loop.
+===== ERROR: updatec exited with status 1 =====
+Finished: 2026-11-27 15:21:09 AEST
+Exit status: 1
