@@ -1,0 +1,642 @@
+[08:12:34] Found custom package for pygobject, bypassing BLFS aliases.
+[08:12:34] Custom package detected at /home/fusion809/lfs_packaging/pygobject (package: pygobject)
+[08:12:34] Extracting dependencies for custom package 'pygobject'...
+[08:12:34] Required deps: brotli bzip2 cairo expat fontconfig freetype glib2 glibc libffi libpng libx11 libxau libxcb libxdmcp libxext libxrender pcre2 pixman pycairo zlib 
+[08:12:34] Dependency 'brotli' already installed.
+[08:12:34] Dependency 'bzip2' already installed.
+[08:12:34] Dependency 'cairo' already installed.
+[08:12:34] Dependency 'expat' already installed.
+[08:12:34] Dependency 'fontconfig' already installed.
+[08:12:34] Dependency 'freetype' already installed.
+[08:12:34] Dependency 'glib2' already installed.
+[08:12:34] Dependency 'glibc' already installed.
+[08:12:34] Dependency 'libffi' already installed.
+[08:12:34] Dependency 'libpng' already installed.
+[08:12:34] Dependency 'libx11' already installed.
+[08:12:34] Dependency 'libxau' already installed.
+[08:12:34] Dependency 'libxcb' already installed.
+[08:12:34] Dependency 'libxdmcp' already installed.
+[08:12:34] Dependency 'libxext' already installed.
+[08:12:35] Dependency 'libxrender' already installed.
+[08:12:35] Dependency 'pcre2' already installed.
+[08:12:35] Dependency 'pixman' already installed.
+[08:12:35] Dependency 'pycairo' already installed.
+[08:12:35] Dependency 'zlib' already installed.
+[VERSION] pygobject: 3.59.0
+[08:12:36] Installing pygobject version: 3.59.0
+[08:12:36] Starting remote custom build for pygobject...
+--2026-11-28 08:12:41--  https://download.gnome.org/sources/pygobject/3.59/pygobject-3.59.0.tar.gz
+Resolving download.gnome.org (download.gnome.org)... 143.244.62.5, 143.244.62.9, 2a02:6ea0:db00::11, ...
+Connecting to download.gnome.org (download.gnome.org)|143.244.62.5|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1413979 (1.3M) [application/octet-stream]
+Saving to: ‘pygobject-3.59.0.tar.gz’
+
+pygobject-3.59.0.ta   0%[                    ]       0  --.-KB/s               pygobject-3.59.0.ta  88%[================>   ]   1.19M  5.86MB/s               pygobject-3.59.0.ta 100%[===================>]   1.35M  5.90MB/s    in 0.2s    
+
+2026-11-28 08:12:42 (5.90 MB/s) - ‘pygobject-3.59.0.tar.gz’ saved [1413979/1413979]
+
+source_dir=..
+Optional 2 build, should be generally applicable
+meson_args: <--prefix=/usr>
+meson_args: <--buildtype=release>
+source_dir: <..>
+command: meson setup <--prefix=/usr> <--buildtype=release> <..>
+The Meson build system
+Version: 1.12.1
+Source dir: /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0
+Build dir: /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/build
+Build type: native build
+Project name: pygobject
+Project version: 3.59.0
+C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: cc ld.bfd 2.47.20260726
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program python3 found: YES (/usr/bin/python3)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Run-time dependency python found: YES 3.15
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+Run-time dependency girepository-2.0 found: YES 2.91.0
+Run-time dependency glib-2.0 found: YES 2.91.0
+Run-time dependency gobject-2.0 found: YES 2.91.0
+Run-time dependency gio-2.0 found: YES 2.91.0
+Run-time dependency libffi found: YES 3.8.2
+
+Executing subproject pythoncapi-compat for machine: host 
+
+pythoncapi-compat| Project name: pythoncapi-compat
+pythoncapi-compat| Project version: undefined
+pythoncapi-compat| C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+pythoncapi-compat| C linker for the host machine: cc ld.bfd 2.47.20260726
+pythoncapi-compat| Build targets in project: 0
+pythoncapi-compat| Subproject pythoncapi-compat finished.
+
+Run-time dependency cairo found: YES 1.18.6
+Run-time dependency cairo-gobject found: YES 1.18.6
+Message: Found pycairo with target Python: /usr/lib/python3.15/site-packages/cairo/include
+Compiler for C supports arguments -Wall: YES 
+Compiler for C supports arguments -Warray-bounds: YES 
+Compiler for C supports arguments -Wcast-align: YES 
+Compiler for C supports arguments -Wconversion: YES 
+Compiler for C supports arguments -Wduplicated-branches: YES 
+Compiler for C supports arguments -Wextra: YES 
+Compiler for C supports arguments -Wformat=2: YES 
+Compiler for C supports arguments -Wformat-nonliteral: YES 
+Compiler for C supports arguments -Wformat-security: YES 
+Compiler for C supports arguments -Wimplicit-function-declaration: YES 
+Compiler for C supports arguments -Winit-self: YES 
+Compiler for C supports arguments -Wjump-misses-init: YES 
+Compiler for C supports arguments -Wlogical-op: YES 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wmissing-format-attribute: YES 
+Compiler for C supports arguments -Wmissing-include-dirs: YES 
+Compiler for C supports arguments -Wmissing-noreturn: YES 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wnull-dereference: YES 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Compiler for C supports arguments -Wpacked: YES 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Compiler for C supports arguments -Wrestrict: YES 
+Compiler for C supports arguments -Wreturn-type: YES 
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wsign-compare: YES 
+Compiler for C supports arguments -Wstrict-aliasing: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C supports arguments -Wswitch-default: YES 
+Compiler for C supports arguments -Wswitch-enum: YES 
+Compiler for C supports arguments -Wundef: YES 
+Compiler for C supports arguments -Wunused-but-set-variable: YES 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Compiler for C supports arguments -Wno-incompatible-pointer-types-discards-qualifiers: NO 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wno-discarded-qualifiers: YES 
+Compiler for C supports arguments -Wno-sign-conversion: YES 
+Compiler for C supports arguments -Wno-cast-function-type: YES 
+Compiler for C supports arguments -fno-strict-aliasing: YES 
+Compiler for C supports arguments -fvisibility=hidden: YES 
+Configuring config.h using configuration
+Configuring pygobject-3.0.pc using configuration
+Configuring METADATA using configuration
+Configuring config.h using configuration
+
+Executing subproject gobject-introspection-tests for machine: host 
+
+gobject-introspection-tests| Project name: gobject-introspection-tests
+gobject-introspection-tests| Project version: unversioned
+gobject-introspection-tests| C compiler for the host machine: cc (gcc 16.2.0 "cc (GCC) 16.2.0")
+gobject-introspection-tests| C linker for the host machine: cc ld.bfd 2.47.20260726
+gobject-introspection-tests| Dependency glib-2.0 for host machine found: YES 2.91.0 (cached)
+gobject-introspection-tests| Dependency gobject-2.0 for host machine found: YES 2.91.0 (cached)
+gobject-introspection-tests| Dependency gio-2.0 for host machine found: YES 2.91.0 (cached)
+gobject-introspection-tests| Dependency cairo for host machine found: YES 1.18.6 (cached)
+gobject-introspection-tests| Dependency cairo-gobject for host machine found: YES 1.18.6 (cached)
+gobject-introspection-tests| Run-time dependency gobject-introspection-1.0 found: YES 1.86.0
+gobject-introspection-tests| Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+gobject-introspection-tests| Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+gobject-introspection-tests| Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+gobject-introspection-tests| Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+gobject-introspection-tests| Found pkg-config: YES (/usr/bin/pkg-config) 3.0.11
+gobject-introspection-tests| Build targets in project: 16
+gobject-introspection-tests| Subproject gobject-introspection-tests finished.
+
+Dependency gobject-introspection-1.0 for host machine found: YES 1.86.0 (cached)
+Dependency gio-2.0 for host machine found: YES 2.91.0 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Build targets in project: 18
+
+gobject-introspection-tests unversioned
+
+    Build type            : release
+    Install test libraries: NO
+    GLib                  : 2.91.0 (in /usr)
+    Cairo support         : YES
+    Cairo                 : 1.18.6 (in /usr)
+    Cairo-gobject         : 1.18.6 (in /usr)
+
+pygobject 3.59.0
+
+  Subprojects (for host machine)
+    gobject-introspection-tests: YES
+    pythoncapi-compat          : YES
+
+  User defined options
+    buildtype                  : release
+    prefix                     : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1/75] Compiling C object subprojects/gobject-introspection-tests/libutility.so.p/utility.c.o
+[2/75] Linking target subprojects/gobject-introspection-tests/libutility.so
+[3/75] Compiling C object subprojects/gobject-introspection-tests/libregress.so.p/annotation.c.o
+[4/75] Compiling C object subprojects/gobject-introspection-tests/libregress.so.p/drawable.c.o
+[5/75] Compiling C object subprojects/gobject-introspection-tests/libregress.so.p/foo.c.o
+[6/75] Compiling C object subprojects/gobject-introspection-tests/libregress.so.p/regressextra.c.o
+[7/75] Compiling C object subprojects/gobject-introspection-tests/libregress.so.p/regress-unix.c.o
+[8/75] Compiling C object subprojects/gobject-introspection-tests/libwarnlib.so.p/warnlib.c.o
+[9/75] Compiling C object subprojects/gobject-introspection-tests/libgimarshallingtests.so.p/gimarshallingtestsextra.c.o
+[10/75] Compiling C object subprojects/gobject-introspection-tests/libregress.so.p/regress.c.o
+[11/75] Linking target subprojects/gobject-introspection-tests/libregress.so
+[12/75] Linking target subprojects/gobject-introspection-tests/libwarnlib.so
+[13/75] Generating subprojects/gobject-introspection-tests/Utility-1.0.gir with a custom command (wrapped by meson to set env)
+[14/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygbasictype.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygbasictype.h:22,
+                 from ../gi/pygbasictype.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[15/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/gimodule.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygboxed.h:22,
+                 from ../gi/gimodule.c:26:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[16/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygboxed.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygboxed.h:22,
+                 from ../gi/pygboxed.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[17/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygenum.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygenum.h:22,
+                 from ../gi/pygenum.c:22:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[18/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pyginterface.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pyginterface.h:23,
+                 from ../gi/pyginterface.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[19/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygflags.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygflags.h:22,
+                 from ../gi/pygflags.c:22:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[20/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygobject-class.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygenum.h:22,
+                 from ../gi/pygobject-class.c:25:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[21/75] Compiling C object subprojects/gobject-introspection-tests/libgimarshallingtests.so.p/gimarshallingtests.c.o
+[22/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygobject-props.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygobject-props.h:3,
+                 from ../gi/pygobject-props.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[23/75] Linking target subprojects/gobject-introspection-tests/libgimarshallingtests.so
+[24/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygpointer.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygpointer.h:22,
+                 from ../gi/pygpointer.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[25/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygutil.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygutil.h:3,
+                 from ../gi/pygutil.c:19:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[26/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygobject-object.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygobject-object.h:3,
+                 from ../gi/pygobject-object.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[27/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-capi.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-capi.h:26,
+                 from ../gi/pygi-capi.c:24:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[28/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-repository.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-repository.h:22,
+                 from ../gi/pygi-repository.c:22:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[29/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-foreign.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-foreign.h:27,
+                 from ../gi/pygi-foreign.c:25:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[30/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-struct.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-struct.h:22,
+                 from ../gi/pygi-struct.c:22:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[31/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-argument.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-invoke-state-struct.h:3,
+                 from ../gi/pygi-argument.h:22,
+                 from ../gi/pygi-argument.c:22:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[32/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-source.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-source.h:26,
+                 from ../gi/pygi-source.c:26:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[33/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-resulttuple.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-resulttuple.h:22,
+                 from ../gi/pygi-resulttuple.c:20:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[34/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-info.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-invoke-state-struct.h:3,
+                 from ../gi/pygi-argument.h:22,
+                 from ../gi/pygi-info.c:23:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[35/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-async.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-cache.h:23,
+                 from ../gi/pygi-info.h:22,
+                 from ../gi/pygi-async.h:22,
+                 from ../gi/pygi-async.c:20:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[36/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-boxed.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-boxed.h:22,
+                 from ../gi/pygi-boxed.c:22:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[37/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-ccallback.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-cache.h:23,
+                 from ../gi/pygi-ccallback.h:22,
+                 from ../gi/pygi-ccallback.c:22:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[38/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-closure.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-closure.h:20,
+                 from ../gi/pygi-closure.c:20:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[39/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-type.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-type.h:23,
+                 from ../gi/pygi-type.c:19:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[40/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-signal-closure.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-signal-closure.h:26,
+                 from ../gi/pygi-signal-closure.c:19:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[41/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-property.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-invoke-state-struct.h:3,
+                 from ../gi/pygi-argument.h:22,
+                 from ../gi/pygi-property.h:26,
+                 from ../gi/pygi-property.c:24:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[42/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-invoke.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-cache.h:23,
+                 from ../gi/pygi-info.h:22,
+                 from ../gi/pygi-invoke.h:22,
+                 from ../gi/pygi-invoke.c:23:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[43/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-cache.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-cache.h:23,
+                 from ../gi/pygi-cache-private.h:22,
+                 from ../gi/pygi-cache.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[44/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-cache-array.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-invoke-state-struct.h:3,
+                 from ../gi/pygi-argument.h:22,
+                 from ../gi/pygi-cache-array.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[45/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-cache-basic.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-invoke-state-struct.h:3,
+                 from ../gi/pygi-argument.h:22,
+                 from ../gi/pygi-cache-basic.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[46/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-cache-closure.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-cache.h:23,
+                 from ../gi/pygi-info.h:22,
+                 from ../gi/pygi-async.h:22,
+                 from ../gi/pygi-cache-closure.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[47/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-cache-enum.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygenum.h:22,
+                 from ../gi/pygi-cache-enum.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[48/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-cache-error.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-cache.h:23,
+                 from ../gi/pygi-cache-private.h:22,
+                 from ../gi/pygi-cache-error.c:23:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[49/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-cache-hashtable.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-invoke-state-struct.h:3,
+                 from ../gi/pygi-argument.h:22,
+                 from ../gi/pygi-cache-hashtable.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[50/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-cache-interface.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-cache.h:23,
+                 from ../gi/pygi-cache-private.h:22,
+                 from ../gi/pygi-cache-interface.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[51/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-cache-list.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-invoke-state-struct.h:3,
+                 from ../gi/pygi-argument.h:22,
+                 from ../gi/pygi-cache-list.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[52/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-cache-object.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-cache.h:23,
+                 from ../gi/pygi-cache-private.h:22,
+                 from ../gi/pygi-cache-object.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[53/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-cache-struct.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygboxed.h:22,
+                 from ../gi/pygi-cache-struct.c:21:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[54/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-marshal-cleanup.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-cache.h:23,
+                 from ../gi/pygi-marshal-cleanup.h:22,
+                 from ../gi/pygi-marshal-cleanup.c:20:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[55/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-error.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-cache.h:23,
+                 from ../gi/pygi-error.h:24,
+                 from ../gi/pygi-error.c:23:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[56/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-fundamental.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-fundamental.h:26,
+                 from ../gi/pygi-fundamental.c:27:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[57/75] Compiling C object gi/_gi.cpython-315-x86_64-linux-gnu.so.p/pygi-value.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../gi/pygi-value.h:20,
+                 from ../gi/pygi-value.c:18:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[58/75] Compiling C object gi/_gi_cairo.cpython-315-x86_64-linux-gnu.so.p/pygi-foreign-cairo.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from /usr/lib/python3.15/site-packages/cairo/include/py3cairo.h:35,
+                 from ../gi/pygi-foreign-cairo.c:24:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[59/75] Generating subprojects/gobject-introspection-tests/RegressUnix-1.0.gir with a custom command (wrapped by meson to set env)
+[60/75] Generating subprojects/gobject-introspection-tests/Regress-1.0.gir with a custom command (wrapped by meson to set env)
+[61/75] Generating subprojects/gobject-introspection-tests/WarnLib-1.0.gir with a custom command (wrapped by meson to set env)
+../subprojects/gobject-introspection-tests/warnlib.h:37: Warning: WarnLib: symbol='do_moo': missing parameter name; undocumentable
+../subprojects/gobject-introspection-tests/warnlib.h:37: Warning: WarnLib: symbol='do_moo': missing parameter name; undocumentable
+../subprojects/gobject-introspection-tests/warnlib.h:43: Warning: WarnLib: symbol='warnlib_whatever_do_moo': missing parameter name; undocumentable
+../subprojects/gobject-introspection-tests/warnlib.h:43: Warning: WarnLib: symbol='warnlib_whatever_do_moo': missing parameter name; undocumentable
+../subprojects/gobject-introspection-tests/warnlib.h:45: Warning: WarnLib: symbol='warnlib_whatever_do_boo': missing parameter name; undocumentable
+../subprojects/gobject-introspection-tests/warnlib.h:45: Warning: WarnLib: symbol='warnlib_whatever_do_boo': missing parameter name; undocumentable
+../subprojects/gobject-introspection-tests/warnlib.c:40: Warning: WarnLib: warnlib_whatever_do_boo: unknown parameter 'x' in documentation comment, should be one of 'arg1', 'arg2'
+../subprojects/gobject-introspection-tests/warnlib.c:41: Warning: WarnLib: warnlib_whatever_do_boo: unknown parameter 'y' in documentation comment, should be one of 'arg1', 'arg2'
+<unknown>:: Warning: WarnLib: (ErrorQuarkFunction)unpaired_error_quark: warnlib_unpaired_error_quark: Couldn't find corresponding enumeration
+[62/75] Compiling C object tests/testhelper.cpython-315-x86_64-linux-gnu.so.p/test-floating.c.o
+[63/75] Compiling C object tests/testhelper.cpython-315-x86_64-linux-gnu.so.p/test-thread.c.o
+[64/75] Compiling C object tests/testhelper.cpython-315-x86_64-linux-gnu.so.p/test-unknown.c.o
+[65/75] Compiling C object tests/testhelper.cpython-315-x86_64-linux-gnu.so.p/testhelpermodule.c.o
+In file included from /usr/include/python3.15/Python.h:68,
+                 from ../subprojects/pythoncapi-compat/pythoncapi_compat.h:22,
+                 from ../tests/testhelpermodule.c:1:
+/usr/include/python3.15/pyport.h:494:9: warning: ‘_Py_STDC_VERSION’ is not defined, evaluates to ‘0’ [-Wundef]
+  494 | #  elif _Py_STDC_VERSION >= 201112L && !defined(__STDC_NO_THREADS__)
+      |         ^~~~~~~~~~~~~~~~
+[66/75] Linking target gi/_gi.cpython-315-x86_64-linux-gnu.so
+[67/75] Linking target gi/_gi_cairo.cpython-315-x86_64-linux-gnu.so
+[68/75] Generating subprojects/gobject-introspection-tests/Utility-1.0.typelib with a custom command
+[69/75] Generating subprojects/gobject-introspection-tests/Regress-1.0.typelib with a custom command
+[70/75] Generating subprojects/gobject-introspection-tests/GIMarshallingTests-1.0.gir with a custom command (wrapped by meson to set env)
+[71/75] Generating subprojects/gobject-introspection-tests/RegressUnix-1.0.typelib with a custom command
+[72/75] Linking target tests/testhelper.cpython-315-x86_64-linux-gnu.so
+[73/75] Compiling gschemas tests/gsettings-compile-tests
+[74/75] Generating subprojects/gobject-introspection-tests/WarnLib-1.0.typelib with a custom command
+[75/75] Generating subprojects/gobject-introspection-tests/GIMarshallingTests-1.0.typelib with a custom command
+[0/1] Installing files
+Compiling '/usr/lib/python3.15/site-packages/gi/events.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/_constants.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/docstring.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/_enum.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/_gtktemplate.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/importer.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/__init__.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/module.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/_ossighelper.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/_propertyhelper.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/_signalhelper.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/_signature.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/types.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/overrides/GLib.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/overrides/GLibUnix.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/overrides/Gtk.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/overrides/Gdk.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/overrides/GdkPixbuf.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/overrides/GObject.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/overrides/Gio.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/overrides/GioUnix.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/overrides/GIMarshallingTests.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/overrides/Pango.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/overrides/__init__.py'...
+Compiling '/usr/lib/python3.15/site-packages/gi/repository/__init__.py'...
+Installing gi/_gi.cpython-315-x86_64-linux-gnu.so to /usr/lib/python3.15/site-packages/gi
+Installing gi/_gi_cairo.cpython-315-x86_64-linux-gnu.so to /usr/lib/python3.15/site-packages/gi
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/pygobject.h to /usr/include/pygobject-3.0
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/pygobject-types.h to /usr/include/pygobject-3.0
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/build/pygobject-3.0.pc to /usr/lib/pkgconfig
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/build/METADATA to /usr/lib/python3.15/site-packages/PyGObject-3.59.0.dev0.dist-info
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/events.py to /usr/lib/python3.15/site-packages/gi
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/_constants.py to /usr/lib/python3.15/site-packages/gi
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/docstring.py to /usr/lib/python3.15/site-packages/gi
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/_enum.py to /usr/lib/python3.15/site-packages/gi
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/_gtktemplate.py to /usr/lib/python3.15/site-packages/gi
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/importer.py to /usr/lib/python3.15/site-packages/gi
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/__init__.py to /usr/lib/python3.15/site-packages/gi
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/module.py to /usr/lib/python3.15/site-packages/gi
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/_ossighelper.py to /usr/lib/python3.15/site-packages/gi
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/_propertyhelper.py to /usr/lib/python3.15/site-packages/gi
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/_signalhelper.py to /usr/lib/python3.15/site-packages/gi
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/_signature.py to /usr/lib/python3.15/site-packages/gi
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/types.py to /usr/lib/python3.15/site-packages/gi
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/overrides/GLib.py to /usr/lib/python3.15/site-packages/gi/overrides
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/overrides/GLibUnix.py to /usr/lib/python3.15/site-packages/gi/overrides
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/overrides/Gtk.py to /usr/lib/python3.15/site-packages/gi/overrides
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/overrides/Gdk.py to /usr/lib/python3.15/site-packages/gi/overrides
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/overrides/GdkPixbuf.py to /usr/lib/python3.15/site-packages/gi/overrides
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/overrides/GObject.py to /usr/lib/python3.15/site-packages/gi/overrides
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/overrides/Gio.py to /usr/lib/python3.15/site-packages/gi/overrides
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/overrides/GioUnix.py to /usr/lib/python3.15/site-packages/gi/overrides
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/overrides/GIMarshallingTests.py to /usr/lib/python3.15/site-packages/gi/overrides
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/overrides/Pango.py to /usr/lib/python3.15/site-packages/gi/overrides
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/overrides/__init__.py to /usr/lib/python3.15/site-packages/gi/overrides
+Installing /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/gi/repository/__init__.py to /usr/lib/python3.15/site-packages/gi/repository
+Running custom install script '/usr/bin/python3 /home/fusion809/lfs_packaging/pygobject/pygobject-3.59.0/build/meson-private/pycompile.py python-3.15-installed.json 0'
+3.59.0
+Updated registry for pygobject to version 3.59.0
+[VERSION] pygobject: 3.59.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package pygobject in /var/lib/custom-packages/
