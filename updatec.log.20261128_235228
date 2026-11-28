@@ -1,0 +1,1572 @@
+===== Update check started: 2026-11-28 23:52:28 AEST =====
+Run log: /home/fusion809/logs/updatec.log.20261128_235228
+Packages needing attention: cargo-tauri
+===== Starting updatec: 2026-11-28 23:52:31 AEST =====
+Checking for packages with missing file inventories...
+Applying updates in dependency order:
+  - cargo-tauri
+
+Building custom package cargo-tauri...
+[23:52:32] Found custom package for cargo-tauri, bypassing BLFS aliases.
+[23:52:32] Custom package detected at /home/fusion809/lfs_packaging/cargo-tauri (package: cargo-tauri)
+[23:52:32] Extracting dependencies for custom package 'cargo-tauri'...
+[VERSION] cargo-tauri: 2.2.0
+[23:52:33] Installing cargo-tauri version: 2.2.0
+[23:52:33] Starting remote custom build for cargo-tauri...
+--2026-11-28 23:52:50--  https://github.com/tauri-apps/tauri/archive/tauri-v2.2.0.tar.gz
+Resolving github.com (github.com)... 4.195.217.80
+Connecting to github.com (github.com)|4.195.217.80|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/tauri-apps/tauri/tar.gz/refs/tags/tauri-v2.2.0 [following]
+--2026-11-28 23:52:50--  https://codeload.github.com/tauri-apps/tauri/tar.gz/refs/tags/tauri-v2.2.0
+Resolving codeload.github.com (codeload.github.com)... 4.237.22.35
+Connecting to codeload.github.com (codeload.github.com)|4.237.22.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘tauri-v2.2.0.tar.gz’
+
+tauri-v2.2.0.tar.gz     [<=>                 ]       0  --.-KB/s               tauri-v2.2.0.tar.gz     [ <=>                ] 184.18K   920KB/s               tauri-v2.2.0.tar.gz     [  <=>               ] 361.36K   900KB/s               tauri-v2.2.0.tar.gz     [   <=>              ] 518.68K   862KB/s               tauri-v2.2.0.tar.gz     [    <=>             ] 671.30K   836KB/s               tauri-v2.2.0.tar.gz     [     <=>            ] 826.86K   824KB/s               tauri-v2.2.0.tar.gz     [      <=>           ] 997.34K   825KB/s               tauri-v2.2.0.tar.gz     [       <=>          ]   1.10M   798KB/s               tauri-v2.2.0.tar.gz     [        <=>         ]   1.25M   791KB/s               tauri-v2.2.0.tar.gz     [         <=>        ]   1.37M   774KB/s               tauri-v2.2.0.tar.gz     [          <=>       ]   1.52M   774KB/s               tauri-v2.2.0.tar.gz     [           <=>      ]   1.66M   769KB/s               tauri-v2.2.0.tar.gz     [            <=>     ]   1.84M   781KB/s               tauri-v2.2.0.tar.gz     [             <=>    ]   2.02M   789KB/s               tauri-v2.2.0.tar.gz     [              <=>   ]   2.22M   807KB/s               tauri-v2.2.0.tar.gz     [               <=>  ]   2.40M   814KB/s               tauri-v2.2.0.tar.gz     [                <=> ]   2.61M   832KB/s               tauri-v2.2.0.tar.gz     [                 <=>]   2.81M   832KB/s               tauri-v2.2.0.tar.gz     [                <=> ]   3.00M   837KB/s               tauri-v2.2.0.tar.gz     [               <=>  ]   3.15M   842KB/s               tauri-v2.2.0.tar.gz     [              <=>   ]   3.32M   837KB/s               tauri-v2.2.0.tar.gz     [             <=>    ]   3.48M   838KB/s               tauri-v2.2.0.tar.gz     [            <=>     ]   3.60M   831KB/s               tauri-v2.2.0.tar.gz     [           <=>      ]   3.75M   846KB/s               tauri-v2.2.0.tar.gz     [          <=>       ]   3.90M   838KB/s               tauri-v2.2.0.tar.gz     [         <=>        ]   4.07M   849KB/s               tauri-v2.2.0.tar.gz     [        <=>         ]   4.27M   869KB/s               tauri-v2.2.0.tar.gz     [       <=>          ]   4.46M   872KB/s               tauri-v2.2.0.tar.gz     [      <=>           ]   4.66M   885KB/s               tauri-v2.2.0.tar.gz     [     <=>            ]   4.87M   891KB/s               tauri-v2.2.0.tar.gz     [    <=>             ]   5.09M   906KB/s               tauri-v2.2.0.tar.gz     [   <=>              ]   5.28M   905KB/s               tauri-v2.2.0.tar.gz     [  <=>               ]   5.47M   894KB/s               tauri-v2.2.0.tar.gz     [ <=>                ]   5.65M   886KB/s               tauri-v2.2.0.tar.gz     [<=>                 ]   5.80M   878KB/s               tauri-v2.2.0.tar.gz     [ <=>                ]   5.97M   883KB/s               tauri-v2.2.0.tar.gz     [  <=>               ]   6.06M   875KB/s               tauri-v2.2.0.tar.gz     [   <=>              ]   6.18M   860KB/s               tauri-v2.2.0.tar.gz     [    <=>             ]   6.24M   745KB/s               tauri-v2.2.0.tar.gz     [     <=>            ]   6.80M   869KB/s               tauri-v2.2.0.tar.gz     [      <=>           ]   6.96M   866KB/s               tauri-v2.2.0.tar.gz     [       <=>          ]   7.12M   852KB/s               tauri-v2.2.0.tar.gz     [        <=>         ]   7.29M   845KB/s               tauri-v2.2.0.tar.gz     [         <=>        ]   7.46M   842KB/s               tauri-v2.2.0.tar.gz     [          <=>       ]   7.64M   827KB/s               tauri-v2.2.0.tar.gz     [           <=>      ]   7.77M   807KB/s               tauri-v2.2.0.tar.gz     [            <=>     ]   7.92M   792KB/s               tauri-v2.2.0.tar.gz     [             <=>    ]   8.07M   778KB/s               tauri-v2.2.0.tar.gz     [              <=>   ]   8.29M   786KB/s               tauri-v2.2.0.tar.gz     [               <=>  ]   8.50M   805KB/s               tauri-v2.2.0.tar.gz     [                <=> ]   8.72M   820KB/s               tauri-v2.2.0.tar.gz     [                 <=>]   8.93M   844KB/s               tauri-v2.2.0.tar.gz     [                <=> ]   9.15M   876KB/s               tauri-v2.2.0.tar.gz     [               <=>  ]   9.36M   898KB/s               tauri-v2.2.0.tar.gz     [              <=>   ]   9.55M  1019KB/s               tauri-v2.2.0.tar.gz     [             <=>    ]   9.72M   938KB/s               tauri-v2.2.0.tar.gz     [            <=>     ]   9.93M   948KB/s               tauri-v2.2.0.tar.gz     [           <=>      ]  10.14M   968KB/s               tauri-v2.2.0.tar.gz     [          <=>       ]  10.35M   979KB/s               tauri-v2.2.0.tar.gz     [         <=>        ]  10.57M   994KB/s               tauri-v2.2.0.tar.gz     [        <=>         ]  10.78M  1022KB/s               tauri-v2.2.0.tar.gz     [       <=>          ]  10.99M  1.01MB/s               tauri-v2.2.0.tar.gz     [      <=>           ]  11.20M  1.03MB/s               tauri-v2.2.0.tar.gz     [     <=>            ]  11.42M  1.04MB/s               tauri-v2.2.0.tar.gz     [    <=>             ]  11.64M  1.04MB/s               tauri-v2.2.0.tar.gz     [   <=>              ]  11.85M  1.04MB/s               tauri-v2.2.0.tar.gz     [  <=>               ]  12.07M  1.05MB/s               tauri-v2.2.0.tar.gz     [ <=>                ]  12.29M  1.04MB/s               tauri-v2.2.0.tar.gz     [<=>                 ]  12.47M  1.04MB/s               tauri-v2.2.0.tar.gz     [ <=>                ]  12.68M  1.04MB/s               tauri-v2.2.0.tar.gz     [  <=>               ]  12.87M  1.04MB/s               tauri-v2.2.0.tar.gz     [   <=>              ]  13.06M  1.04MB/s               tauri-v2.2.0.tar.gz     [    <=>             ]  13.24M  1.03MB/s               tauri-v2.2.0.tar.gz     [     <=>            ]  13.38M  1.01MB/s               tauri-v2.2.0.tar.gz     [      <=>           ]  13.58M  1.00MB/s               tauri-v2.2.0.tar.gz     [       <=>          ]  13.74M  1008KB/s               tauri-v2.2.0.tar.gz     [        <=>         ]  13.91M   996KB/s               tauri-v2.2.0.tar.gz     [         <=>        ]  14.09M   987KB/s               tauri-v2.2.0.tar.gz     [          <=>       ]  14.25M   965KB/s               tauri-v2.2.0.tar.gz     [           <=>      ]  14.43M   955KB/s               tauri-v2.2.0.tar.gz     [            <=>     ]  14.56M   941KB/s    in 16s     
+
+2026-11-28 23:53:06 (904 KB/s) - ‘tauri-v2.2.0.tar.gz’ saved [15265596]
+
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded addr2line v0.24.1
+  Downloaded atk v0.18.0
+  Downloaded aws-credential-types v1.2.1
+  Downloaded adler v1.0.2
+  Downloaded anstyle v1.0.8
+  Downloaded anstream v0.6.15
+  Downloaded anstyle-query v1.1.1
+  Downloaded aws-smithy-query v0.60.7
+  Downloaded base16ct v0.1.1
+  Downloaded clap_lex v0.7.2
+  Downloaded atk-sys v0.18.0
+  Downloaded crc32c v0.6.8
+  Downloaded built v0.7.4
+  Downloaded colorchoice v1.0.2
+  Downloaded cpufeatures v0.2.14
+  Downloaded itoa v0.4.8
+  Downloaded napi-sys v2.4.0
+  Downloaded dirs-next v2.0.0
+  Downloaded phf_codegen v0.10.0
+  Downloaded anstyle-parse v0.2.5
+  Downloaded async-trait v0.1.83
+  Downloaded axum-core v0.4.5
+  Downloaded num_enum_derive v0.5.11
+  Downloaded phf_macros v0.8.0
+  Downloaded ff v0.12.1
+  Downloaded env_filter v0.1.2
+  Downloaded md5 v0.7.0
+  Downloaded num_enum v0.5.11
+  Downloaded notify-types v1.0.1
+  Downloaded gdkx11-sys v0.18.0
+  Downloaded phf_shared v0.11.2
+  Downloaded gtk3-macros v0.18.0
+  Downloaded notify v7.0.0
+  Downloaded profiling-procmacros v1.0.15
+  Downloaded rfc6979 v0.3.1
+  Downloaded cargo_metadata v0.18.1
+  Downloaded convert_case v0.6.0
+  Downloaded clap_derive v4.5.18
+  Downloaded colored v2.1.0
+  Downloaded servo_arc v0.1.1
+  Downloaded markup5ever v0.11.0
+  Downloaded json-patch v1.4.0
+  Downloaded dlopen2 v0.7.0
+  Downloaded os_info v3.8.2
+  Downloaded pkcs8 v0.9.0
+  Downloaded duct v0.13.7
+  Downloaded ecdsa v0.14.8
+  Downloaded instant v0.1.13
+  Downloaded napi-build v2.1.3
+  Downloaded unicode-bidi-mirroring v0.3.0
+  Downloaded unicode-ccc v0.3.0
+  Downloaded serialize-to-javascript v0.1.1
+  Downloaded serialize-to-javascript-impl v0.1.1
+  Downloaded signature v1.6.4
+  Downloaded sync_wrapper v1.0.1
+  Downloaded thin-slice v0.1.1
+  Downloaded aws-smithy-checksums v0.60.12
+  Downloaded aws-smithy-xml v0.60.9
+  Downloaded derive_builder_macro v0.20.1
+  Downloaded profiling v1.0.15
+  Downloaded jsonrpsee v0.24.5
+  Downloaded jsonrpsee-ws-client v0.24.5
+  Downloaded gdkwayland-sys v0.18.0
+  Downloaded rustc-hash v2.0.0
+  Downloaded ctor v0.2.8
+  Downloaded cpio v0.4.0
+  Downloaded jsonrpsee-types v0.24.5
+  Downloaded env_logger v0.11.5
+  Downloaded fdeflate v0.3.5
+  Downloaded jsonrpsee-client-transport v0.24.5
+  Downloaded futures-executor v0.3.30
+  Downloaded gdkx11 v0.18.0
+  Downloaded group v0.12.1
+  Downloaded syn_derive v0.1.8
+  Downloaded sval_serde v2.13.1
+  Downloaded notify-debouncer-mini v0.5.0
+  Downloaded const_panic v0.2.10
+  Downloaded console v0.15.8
+  Downloaded crypto-bigint v0.4.9
+  Downloaded wasm-bindgen-futures v0.4.43
+  Downloaded simple_asn1 v0.6.2
+  Downloaded inotify v0.10.2
+  Downloaded sval_ref v2.13.1
+  Downloaded app-store-connect v0.5.0
+  Downloaded pin-project-internal v1.1.5
+  Downloaded worker-macros v0.5.0
+  Downloaded bitflags v2.6.0
+  Downloaded borsh-derive v1.5.1
+  Downloaded tauri-plugin v2.0.3
+  Downloaded borsh v1.5.1
+  Downloaded bytemuck v1.18.0
+  Downloaded wasm-bindgen-shared v0.2.93
+  Downloaded value-bag-serde1 v1.9.0
+  Downloaded xattr v1.3.1
+  Downloaded worker-kv v0.7.0
+  Downloaded sval_fmt v2.13.1
+  Downloaded aws-smithy-async v1.2.1
+  Downloaded aws-smithy-eventstream v0.60.5
+  Downloaded aws-types v1.3.3
+  Downloaded aws-smithy-http v0.60.11
+  Downloaded aws-smithy-json v0.60.7
+  Downloaded cargo_toml v0.17.2
+  Downloaded sval_json v2.13.1
+  Downloaded lru v0.12.4
+  Downloaded embed-resource v2.5.0
+  Downloaded sval_dynamic v2.13.1
+  Downloaded derive_builder_core v0.20.1
+  Downloaded rustversion v1.0.17
+  Downloaded worker-sys v0.5.0
+  Downloaded infer v0.13.0
+  Downloaded infer v0.16.0
+  Downloaded value-bag-sval2 v1.9.0
+  Downloaded sec1 v0.3.0
+  Downloaded which v4.4.2
+  Downloaded wasm-bindgen-macro v0.2.93
+  Downloaded napi-derive-backend v1.0.74
+  Downloaded serde-wasm-bindgen v0.5.0
+  Downloaded simplecss v0.2.1
+  Downloaded spki v0.6.0
+  Downloaded clap_complete v4.5.29
+  Downloaded tauri-winres v0.1.1
+  Downloaded cssparser v0.27.2
+  Downloaded napi-derive v2.16.12
+  Downloaded tokio-macros v2.4.0
+  Downloaded elliptic-curve v0.12.3
+  Downloaded tokio-tungstenite v0.24.0
+  Downloaded ipnet v2.10.0
+  Downloaded byte-unit v5.1.4
+  Downloaded tracing-attributes v0.1.27
+  Downloaded konst_kernel v0.3.9
+  Downloaded derive_builder v0.20.1
+  Downloaded kuchikiki v0.8.2
+  Downloaded pest_generator v2.7.13
+  Downloaded referencing v0.28.1
+  Downloaded futures v0.3.30
+  Downloaded miniz_oxide v0.7.4
+  Downloaded serde_with_macros v3.10.0
+  Downloaded miniz_oxide v0.8.0
+  Downloaded pin-project v1.1.5
+  Downloaded which v6.0.3
+  Downloaded wasm-streams v0.4.1
+  Downloaded thiserror v1.0.68
+  Downloaded thiserror v2.0.9
+  Downloaded sval_buffer v2.13.1
+  Downloaded image-webp v0.1.3
+  Downloaded js-sys v0.3.70
+  Downloaded sval_nested v2.13.1
+  Downloaded thiserror-impl v1.0.68
+  Downloaded thiserror-impl v2.0.9
+  Downloaded aws-runtime v1.4.3
+  Downloaded wasm-bindgen-macro-support v0.2.93
+  Downloaded wasm-bindgen v0.2.93
+  Downloaded wasm-bindgen-backend v0.2.93
+  Downloaded pest_derive v2.7.13
+  Downloaded selectors v0.22.0
+  Downloaded tempfile v3.14.0
+  Downloaded svgtypes v0.15.2
+  Downloaded clap v4.5.19
+  Downloaded tokio-stream v0.1.16
+  Downloaded aws-sigv4 v1.2.4
+  Downloaded unicode-ident v1.0.13
+  Downloaded resvg v0.44.0
+  Downloaded gdk-sys v0.18.0
+  Downloaded html5ever v0.26.0
+  Downloaded value-bag v1.9.0
+  Downloaded aws-sdk-sso v1.39.0
+  Downloaded der v0.6.1
+  Downloaded aws-smithy-runtime-api v1.7.2
+  Downloaded compact_str v0.8.0
+  Downloaded hyper-util v0.1.9
+  Downloaded ico v0.3.0
+  Downloaded zune-jpeg v0.4.13
+  Downloaded p256 v0.11.1
+  Downloaded soketto v0.8.0
+  Downloaded sval v2.13.1
+  Downloaded pest_meta v2.7.13
+  Downloaded serde_derive v1.0.217
+  Downloaded fancy-regex v0.14.0
+  Downloaded tauri-utils v1.6.0
+  Downloaded toml v0.7.8
+  Downloaded toml v0.8.19
+  Downloaded gdk v0.18.0
+  Downloaded tracing-core v0.1.32
+  Downloaded indexmap v2.6.0
+  Downloaded typewit v1.9.0
+  Downloaded aws-sdk-ssooidc v1.40.0
+  Downloaded jsonrpsee-server v0.24.5
+  Downloaded jsonrpsee-core v0.24.5
+  Downloaded unicode-id-start v1.3.0
+  Downloaded worker v0.5.0
+  Downloaded aws-smithy-types v1.2.9
+  Downloaded tauri-plugin-log v2.2.0
+  Downloaded xml-rs v0.8.22
+  Downloaded http v1.1.0
+  Downloaded jsonwebtoken v9.3.0
+  Downloaded serde v1.0.217
+  Downloaded regex-lite v0.1.6
+  Downloaded tracing v0.1.40
+  Downloaded cc v1.1.24
+  Downloaded flate2 v1.0.35
+  Downloaded fontdb v0.22.0
+  Downloaded handlebars v6.2.0
+  Downloaded aws-config v1.5.5
+  Downloaded konst v0.3.9
+  Downloaded aws-smithy-runtime v1.7.3
+  Downloaded gtk-sys v0.18.0
+  Downloaded tray-icon v0.19.0
+  Downloaded pest v2.7.13
+  Downloaded napi v2.16.11
+  Downloaded aws-sdk-sts v1.39.0
+  Downloaded muda v0.15.1
+  Downloaded jsonschema v0.28.1
+  Downloaded toml_edit v0.22.22
+  Downloaded clap_builder v4.5.19
+  Downloaded libm v0.2.8
+  Downloaded tauri-utils v2.1.0
+  Downloaded h2 v0.4.6
+  Downloaded hyper v1.4.1
+  Downloaded brotli-decompressor v4.0.1
+  Downloaded tokio-util v0.7.12
+  Downloaded winnow v0.6.20
+  Downloaded wry v0.48.0
+  Downloaded axum v0.7.7
+  Downloaded zip v2.2.2
+  Downloaded chrono v0.4.38
+  Downloaded ureq v2.12.1
+  Downloaded hyper v0.14.30
+  Downloaded serde_with v3.10.0
+  Downloaded usvg v0.44.0
+  Downloaded exr v1.72.0
+  Downloaded serde_json v1.0.134
+  Downloaded rustybuzz v0.18.0
+  Downloaded gimli v0.31.0
+  Downloaded cargo-mobile2 v0.17.3
+  Downloaded reqwest v0.12.9
+  Downloaded ttf-parser v0.24.1
+  Downloaded bstr v1.10.0
+  Downloaded gtk v0.18.1
+  Downloaded syn v2.0.94
+  Downloaded webpki-roots v0.26.6
+  Downloaded object v0.36.5
+  Downloaded web-sys v0.3.70
+  Downloaded rustix v0.37.27
+  Downloaded tokio v1.41.0
+  Downloaded rustix v0.38.42
+  Downloaded aws-sdk-s3 v1.46.0
+  Downloaded brotli v7.0.0
+  Downloaded regex-automata v0.4.8
+  Downloaded pgp v0.14.0
+  Downloaded tao v0.31.0
+   Compiling proc-macro2 v1.0.92
+   Compiling unicode-ident v1.0.13
+   Compiling libc v0.2.169
+   Compiling version_check v0.9.5
+   Compiling cfg-if v1.0.0
+   Compiling autocfg v1.4.0
+   Compiling serde v1.0.217
+   Compiling quote v1.0.38
+   Compiling syn v2.0.94
+   Compiling typenum v1.17.0
+   Compiling getrandom v0.2.15
+   Compiling memchr v2.7.4
+   Compiling thiserror v1.0.68
+   Compiling once_cell v1.20.2
+   Compiling equivalent v1.0.1
+   Compiling hashbrown v0.15.2
+   Compiling lock_api v0.4.12
+   Compiling indexmap v2.6.0
+   Compiling rand_core v0.6.4
+   Compiling value-bag v1.9.0
+   Compiling log v0.4.22
+   Compiling generic-array v0.14.7
+   Compiling smallvec v1.13.2
+   Compiling serde_derive v1.0.217
+   Compiling zeroize_derive v1.4.2
+   Compiling zeroize v1.8.1
+   Compiling thiserror-impl v1.0.68
+   Compiling toml_datetime v0.6.8
+   Compiling zerocopy-derive v0.7.35
+   Compiling serde_spanned v0.6.8
+   Compiling syn v1.0.109
+   Compiling winnow v0.6.20
+   Compiling crypto-common v0.1.6
+   Compiling subtle v2.6.1
+   Compiling toml_edit v0.22.22
+   Compiling itoa v1.0.11
+   Compiling toml v0.8.19
+   Compiling synstructure v0.13.1
+   Compiling pkg-config v0.3.31
+   Compiling heck v0.5.0
+   Compiling zerofrom-derive v0.1.4
+   Compiling semver v1.0.24
+   Compiling yoke-derive v0.7.4
+   Compiling displaydoc v0.2.5
+   Compiling zerovec-derive v0.10.3
+   Compiling byteorder v1.5.0
+   Compiling pin-project-lite v0.2.14
+   Compiling futures-core v0.3.31
+   Compiling icu_provider_macros v1.5.0
+   Compiling futures-sink v0.3.31
+   Compiling zerocopy v0.7.35
+   Compiling slab v0.4.9
+   Compiling futures-io v0.3.31
+   Compiling siphasher v0.3.11
+   Compiling ppv-lite86 v0.2.20
+   Compiling futures-channel v0.3.31
+   Compiling futures-macro v0.3.31
+   Compiling futures-task v0.3.31
+   Compiling pin-utils v0.1.0
+   Compiling futures-util v0.3.31
+   Compiling bytes v1.9.0
+   Compiling jobserver v0.1.32
+   Compiling shlex v1.3.0
+   Compiling scopeguard v1.2.0
+   Compiling cc v1.1.24
+   Compiling libm v0.2.8
+   Compiling ryu v1.0.18
+   Compiling const-oid v0.9.6
+   Compiling fnv v1.0.7
+   Compiling target-lexicon v0.12.16
+   Compiling parking_lot_core v0.9.10
+   Compiling num-traits v0.2.19
+   Compiling version-compare v0.2.0
+   Compiling cfg-expr v0.15.8
+   Compiling system-deps v6.2.2
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.5
+   Compiling getrandom v0.1.16
+   Compiling block-buffer v0.10.4
+   Compiling digest v0.10.7
+   Compiling rustc_version v0.4.1
+   Compiling rand_core v0.5.1
+   Compiling cpufeatures v0.2.14
+   Compiling rand_chacha v0.2.2
+   Compiling rand_pcg v0.2.1
+   Compiling phf_shared v0.10.0
+   Compiling phf_shared v0.8.0
+   Compiling rand v0.7.3
+   Compiling mio v1.0.2
+   Compiling signal-hook-registry v1.4.2
+   Compiling winnow v0.5.40
+   Compiling phf_generator v0.10.0
+   Compiling tokio-macros v2.4.0
+   Compiling socket2 v0.5.7
+   Compiling strsim v0.11.1
+   Compiling proc-macro-hack v0.5.20+deprecated
+   Compiling ident_case v1.0.1
+   Compiling tokio v1.41.0
+   Compiling darling_core v0.20.10
+   Compiling phf_generator v0.8.0
+   Compiling http v1.1.0
+   Compiling spin v0.9.8
+   Compiling phf_codegen v0.10.0
+   Compiling string_cache_codegen v0.5.2
+   Compiling convert_case v0.4.0
+   Compiling derive_more v0.99.18
+   Compiling darling_macro v0.20.10
+   Compiling darling v0.20.10
+   Compiling markup5ever v0.11.0
+   Compiling phf_macros v0.8.0
+   Compiling cssparser v0.27.2
+   Compiling phf_shared v0.11.2
+   Compiling indexmap v1.9.3
+   Compiling phf_generator v0.11.2
+   Compiling phf_codegen v0.8.0
+   Compiling bitflags v2.6.0
+   Compiling typeid v1.0.2
+   Compiling stable_deref_trait v1.2.0
+   Compiling selectors v0.22.0
+   Compiling phf_macros v0.11.2
+   Compiling html5ever v0.26.0
+   Compiling cssparser-macros v0.6.1
+   Compiling percent-encoding v2.3.1
+   Compiling thiserror v2.0.9
+   Compiling camino v1.1.9
+   Compiling serde_json v1.0.134
+   Compiling tokio-util v0.7.12
+   Compiling zerofrom v0.1.4
+   Compiling thiserror-impl v2.0.9
+   Compiling schemars v0.8.21
+   Compiling yoke v0.7.4
+   Compiling num-integer v0.1.46
+   Compiling tracing-attributes v0.1.27
+   Compiling serde_derive_internals v0.29.1
+   Compiling tracing-core v0.1.32
+   Compiling schemars_derive v0.8.21 (https://github.com/tauri-apps/schemars.git?branch=feat%2Fpreserve-description-newlines#c30f9848)
+   Compiling tracing v0.1.40
+   Compiling zerovec v0.10.4
+   Compiling serde_with_macros v3.10.0
+   Compiling anyhow v1.0.95
+   Compiling ctor v0.2.8
+   Compiling tinystr v0.7.6
+   Compiling form_urlencoded v1.2.1
+   Compiling writeable v0.5.5
+   Compiling litemap v0.7.3
+   Compiling icu_locid v1.5.0
+   Compiling serialize-to-javascript-impl v0.1.1
+   Compiling icu_provider v1.5.0
+   Compiling toml_edit v0.19.15
+   Compiling icu_locid_transform_data v1.5.0
+   Compiling icu_locid_transform v1.5.0
+   Compiling icu_collections v1.5.0
+   Compiling crc32fast v1.4.2
+   Compiling icu_properties_data v1.5.0
+   Compiling bitflags v1.3.2
+   Compiling icu_properties v1.5.1
+   Compiling uuid v1.11.0
+   Compiling block-padding v0.3.3
+   Compiling utf16_iter v1.0.5
+   Compiling utf8_iter v1.0.4
+   Compiling icu_normalizer_data v1.5.0
+   Compiling httparse v1.9.5
+   Compiling either v1.13.0
+   Compiling write16 v1.0.0
+   Compiling icu_normalizer v1.5.0
+   Compiling inout v0.1.3
+   Compiling http-body v1.0.1
+   Compiling aho-corasick v1.1.3
+   Compiling new_debug_unreachable v1.0.6
+   Compiling crossbeam-utils v0.8.20
+   Compiling regex-syntax v0.8.5
+   Compiling idna_adapter v1.2.0
+   Compiling cipher v0.4.4
+   Compiling glib-sys v0.18.1
+   Compiling precomputed-hash v0.1.1
+   Compiling mac v0.1.1
+   Compiling futf v0.1.5
+   Compiling idna v1.0.3
+   Compiling parking_lot v0.12.3
+   Compiling regex-automata v0.4.8
+   Compiling dtoa v1.0.9
+   Compiling simd-adler32 v0.3.7
+   Compiling utf-8 v0.7.6
+   Compiling tendril v0.4.3
+   Compiling dtoa-short v0.3.5
+   Compiling url v2.5.4
+   Compiling string_cache v0.8.7
+   Compiling regex v1.11.1
+   Compiling http-body-util v0.1.2
+   Compiling phf v0.8.0
+   Compiling futures-executor v0.3.30
+   Compiling phf v0.10.1
+   Compiling gobject-sys v0.18.0
+   Compiling hashbrown v0.12.3
+   Compiling matches v0.1.10
+   Compiling nodrop v0.1.14
+   Compiling unic-char-range v0.9.0
+   Compiling unic-common v0.9.0
+   Compiling itoa v0.4.8
+   Compiling unic-ucd-version v0.9.0
+   Compiling unic-char-property v0.9.0
+   Compiling servo_arc v0.1.1
+   Compiling fxhash v0.2.1
+   Compiling cargo-platform v0.1.8
+   Compiling base64ct v1.6.0
+   Compiling num-conv v0.1.0
+   Compiling thin-slice v0.1.1
+   Compiling time-core v0.1.2
+   Compiling powerfmt v0.2.0
+   Compiling time-macros v0.2.19
+   Compiling deranged v0.3.11
+   Compiling erased-serde v0.4.5
+   Compiling unic-ucd-ident v0.9.0
+   Compiling jsonptr v0.6.3
+   Compiling cfb v0.7.3
+   Compiling tower-service v0.3.3
+   Compiling num_threads v0.1.7
+   Compiling dyn-clone v1.0.17
+   Compiling universal-hash v0.5.1
+   Compiling infer v0.16.0
+   Compiling time v0.3.37
+   Compiling json-patch v3.0.1
+   Compiling urlpattern v0.3.0
+   Compiling serde-untagged v0.1.6
+   Compiling kuchikiki v0.8.2
+   Compiling serde_with v3.10.0
+   Compiling phf v0.11.2
+   Compiling dunce v1.0.5
+   Compiling alloc-no-stdlib v2.0.4
+   Compiling adler2 v2.0.0
+   Compiling same-file v1.0.6
+   Compiling try-lock v0.2.5
+   Compiling opaque-debug v0.3.1
+   Compiling base64 v0.22.1
+   Compiling glob v0.3.2
+   Compiling polyval v0.6.2
+   Compiling want v0.3.1
+   Compiling walkdir v2.5.0
+   Compiling miniz_oxide v0.8.0
+   Compiling alloc-stdlib v0.2.2
+   Compiling gio-sys v0.18.1
+   Compiling httpdate v1.0.3
+   Compiling brotli-decompressor v4.0.1
+   Compiling ghash v0.5.1
+   Compiling ctr v0.9.2
+   Compiling aes v0.8.4
+   Compiling aead v0.5.2
+   Compiling brotli v7.0.0
+   Compiling aes-gcm v0.10.3
+   Compiling cargo_metadata v0.19.0
+   Compiling serialize-to-javascript v0.1.1
+   Compiling tauri-utils v2.1.1 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tauri-utils)
+   Compiling ring v0.17.8
+   Compiling sha1_smol v1.0.1
+   Compiling flate2 v1.0.35
+   Compiling heck v0.4.1
+   Compiling proc-macro-error-attr v1.0.4
+   Compiling fdeflate v0.3.5
+   Compiling gdk-sys v0.18.0
+   Compiling proc-macro-error v1.0.4
+   Compiling png v0.17.16
+   Compiling lazy_static v1.5.0
+   Compiling hmac v0.12.1
+   Compiling untrusted v0.9.0
+   Compiling ico v0.3.0
+   Compiling sha2 v0.10.8
+   Compiling num-bigint v0.4.6
+   Compiling toml_edit v0.20.7
+   Compiling tauri-codegen v2.0.4 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tauri-codegen)
+   Compiling proc-macro-crate v2.0.0
+   Compiling pango-sys v0.18.0
+   Compiling gdk-pixbuf-sys v0.18.0
+   Compiling cairo-sys-rs v0.18.2
+   Compiling option-ext v0.2.0
+   Compiling minimal-lexical v0.2.1
+   Compiling dirs-sys v0.4.1
+   Compiling glib-macros v0.18.5
+   Compiling toml v0.7.8
+   Compiling nom v7.1.3
+   Compiling embed-resource v2.5.0
+   Compiling atk-sys v0.18.0
+   Compiling arrayvec v0.7.6
+   Compiling rayon-core v1.12.1
+   Compiling tauri-winres v0.1.1
+   Compiling glib v0.18.5
+   Compiling dirs v5.0.1
+   Compiling proc-macro-crate v1.3.1
+   Compiling http v0.2.12
+   Compiling cargo_toml v0.17.2
+   Compiling ucd-trie v0.1.7
+   Compiling pest v2.7.13
+   Compiling tauri-build v2.0.4 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tauri-build)
+   Compiling pest_meta v2.7.13
+   Compiling http-body v0.4.6
+   Compiling crossbeam-epoch v0.9.18
+   Compiling pem-rfc7468 v0.7.0
+   Compiling gtk-sys v0.18.0
+   Compiling gio v0.18.4
+   Compiling mime v0.3.17
+   Compiling der v0.7.9
+   Compiling crossbeam-deque v0.8.5
+   Compiling pest_generator v2.7.13
+   Compiling serde_urlencoded v0.7.1
+   Compiling spki v0.7.3
+   Compiling pest_derive v2.7.13
+   Compiling sha1 v0.10.6
+   Compiling outref v0.5.1
+   Compiling vsimd v0.8.0
+   Compiling base64 v0.21.7
+   Compiling bytemuck v1.18.0
+   Compiling atomic-waker v1.1.2
+   Compiling h2 v0.4.6
+   Compiling num-rational v0.4.2
+   Compiling memoffset v0.9.1
+   Compiling hex v0.4.3
+   Compiling wasm-bindgen-shared v0.2.93
+   Compiling ipnet v2.10.0
+   Compiling pango v0.18.3
+   Compiling gdk-pixbuf v0.18.5
+   Compiling hyper v1.4.1
+   Compiling json5 v0.4.1
+   Compiling cairo-rs v0.18.5
+   Compiling field-offset v0.3.6
+   Compiling signature v2.2.0
+   Compiling crypto-bigint v0.5.5
+   Compiling gdk v0.18.0
+   Compiling hyper-util v0.1.9
+   Compiling rayon v1.10.0
+   Compiling tauri v2.2.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tauri)
+   Compiling sync_wrapper v1.0.1
+   Compiling gtk v0.18.1
+   Compiling bumpalo v3.16.0
+   Compiling wasm-bindgen-backend v0.2.93
+   Compiling atk v0.18.0
+   Compiling pkcs8 v0.10.2
+   Compiling gtk3-macros v0.18.0
+   Compiling wasm-bindgen v0.2.93
+   Compiling quick-error v2.0.1
+   Compiling built v0.7.4
+   Compiling aligned-vec v0.5.0
+   Compiling allocator-api2 v0.2.21
+   Compiling paste v1.0.15
+   Compiling rav1e v0.7.1
+   Compiling v_frame v0.3.8
+   Compiling wasm-bindgen-macro-support v0.2.93
+   Compiling base64-simd v0.8.0
+   Compiling bytes-utils v0.1.4
+   Compiling profiling-procmacros v1.0.15
+   Compiling num-derive v0.4.2
+   Compiling byteorder-lite v0.1.0
+   Compiling weezl v0.1.8
+   Compiling iana-time-zone v0.1.61
+   Compiling rustix v0.38.42
+   Compiling chrono v0.4.38
+   Compiling profiling v1.0.15
+   Compiling aws-smithy-types v1.2.9
+   Compiling wasm-bindgen-macro v0.2.93
+   Compiling av1-grain v0.2.3
+   Compiling maybe-rayon v0.1.1
+   Compiling rgb v0.8.50
+   Compiling itertools v0.12.1
+   Compiling javascriptcore-rs-sys v1.1.1
+   Compiling soup3-sys v0.5.0
+   Compiling x11 v2.21.0
+   Compiling arg_enum_proc_macro v0.3.4
+   Compiling simd_helpers v0.1.0
+   Compiling adler v1.0.2
+   Compiling noop_proc_macro v0.3.0
+   Compiling linux-raw-sys v0.4.14
+   Compiling openssl-probe v0.1.5
+   Compiling rustls v0.21.12
+   Compiling color_quant v1.1.0
+   Compiling bitstream-io v2.3.0
+   Compiling zune-core v0.4.12
+   Compiling fastrand v2.1.1
+   Compiling imgref v1.10.1
+   Compiling loop9 v0.1.5
+   Compiling zune-jpeg v0.4.13
+   Compiling gif v0.13.1
+   Compiling miniz_oxide v0.7.4
+   Compiling h2 v0.3.26
+   Compiling avif-serialize v0.8.2
+   Compiling rustls-webpki v0.101.7
+   Compiling sct v0.7.1
+   Compiling zune-inflate v0.2.54
+   Compiling flume v0.11.0
+   Compiling gdkx11-sys v0.18.0
+   Compiling webkit2gtk-sys v2.0.1
+   Compiling dpi v0.1.1
+   Compiling half v2.4.1
+   Compiling ahash v0.8.11
+   Compiling bit_field v0.10.2
+   Compiling jpeg-decoder v0.3.1
+   Compiling lebe v0.5.2
+   Compiling exr v1.72.0
+   Compiling tiff v0.9.1
+   Compiling ravif v0.11.11
+   Compiling hyper v0.14.30
+   Compiling image-webp v0.2.0
+   Compiling qoi v0.4.1
+   Compiling rustls-pemfile v1.0.4
+   Compiling hkdf v0.12.4
+   Compiling x11-dl v2.21.0
+   Compiling ff v0.13.0
+   Compiling base16ct v0.2.0
+   Compiling io-lifetimes v1.0.11
+   Compiling unicode-width v0.1.14
+   Compiling rustversion v1.0.17
+   Compiling sec1 v0.7.3
+   Compiling group v0.13.0
+   Compiling rustls-native-certs v0.6.3
+   Compiling image v0.25.5
+   Compiling tokio-rustls v0.24.1
+   Compiling reqwest v0.12.9
+   Compiling crossbeam-channel v0.5.13
+   Compiling num-iter v0.1.45
+   Compiling aws-smithy-async v1.2.1
+   Compiling der v0.6.1
+   Compiling cookie v0.18.1
+   Compiling rustix v0.37.27
+   Compiling raw-window-handle v0.6.2
+   Compiling rustls-pki-types v1.10.1
+   Compiling spki v0.6.0
+   Compiling aws-smithy-runtime-api v1.7.2
+   Compiling hyper-rustls v0.24.2
+   Compiling elliptic-curve v0.13.8
+   Compiling soup3 v0.5.0
+   Compiling javascriptcore-rs v1.1.2
+   Compiling rfc6979 v0.4.0
+   Compiling dlopen2_derive v0.4.0
+   Compiling libloading v0.7.4
+   Compiling static_assertions v1.1.0
+   Compiling tauri-runtime v2.3.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tauri-runtime)
+   Compiling unicode-segmentation v1.12.0
+   Compiling unicode-xid v0.2.6
+   Compiling wry v0.48.0
+   Compiling linux-raw-sys v0.3.8
+   Compiling keyboard-types v0.7.0
+   Compiling libappindicator-sys v0.9.0
+   Compiling dlopen2 v0.7.0
+   Compiling webkit2gtk v2.0.1
+   Compiling pkcs8 v0.9.0
+   Compiling gdkx11 v0.18.0
+   Compiling gdkwayland-sys v0.18.0
+   Compiling futures v0.3.30
+   Compiling curve25519-dalek v4.1.3
+   Compiling ff v0.12.1
+   Compiling crypto-bigint v0.4.9
+   Compiling async-trait v0.1.83
+   Compiling tauri-runtime-wry v2.3.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tauri-runtime-wry)
+   Compiling rustc-hash v2.0.0
+   Compiling num-bigint-dig v0.8.4
+   Compiling base16ct v0.1.1
+   Compiling group v0.12.1
+   Compiling sec1 v0.3.0
+   Compiling tao v0.31.0
+   Compiling libappindicator v0.9.0
+warning: hiding a lifetime that's elided elsewhere is confusing
+   --> crates/tauri-runtime/src/lib.rs:305:21
+    |
+305 |   fn display_handle(&self) -> std::result::Result<DisplayHandle, raw_window_handle::HandleError>;
+    |                     ^^^^^                         ^^^^^^^^^^^^^ the same lifetime is hidden here
+    |                     |
+    |                     the lifetime is elided here
+    |
+    = help: the same lifetime is referred to in inconsistent ways, making the signature confusing
+    = note: `#[warn(mismatched_lifetime_syntaxes)]` on by default
+help: use `'_` for type paths
+    |
+305 |   fn display_handle(&self) -> std::result::Result<DisplayHandle<'_>, raw_window_handle::HandleError>;
+    |                                                                ++++
+
+warning: `tauri-runtime` (lib) generated 1 warning (run `cargo fix --lib -p tauri-runtime` to apply 1 suggestion)
+   Compiling terminal_size v0.2.6
+   Compiling muda v0.15.1
+   Compiling ecdsa v0.16.9
+   Compiling hashbrown v0.14.5
+   Compiling aws-smithy-eventstream v0.60.5
+   Compiling md-5 v0.10.6
+   Compiling bzip2-sys v0.1.11+1.0.8
+   Compiling lzma-sys v0.1.20
+   Compiling curve25519-dalek-derive v0.1.1
+   Compiling pin-project-internal v1.1.5
+   Compiling encoding_rs v0.8.34
+   Compiling owo-colors v4.1.0
+   Compiling smawk v0.3.2
+   Compiling unicode-linebreak v0.1.5
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-parse v0.2.5
+   Compiling textwrap v0.16.1
+   Compiling pin-project v1.1.5
+   Compiling aws-smithy-http v0.60.11
+warning: hiding a lifetime that's elided elsewhere is confusing
+    --> crates/tauri-runtime-wry/src/lib.rs:2408:21
+     |
+2408 |   fn display_handle(&self) -> std::result::Result<DisplayHandle, raw_window_handle::HandleError> {
+     |                     ^^^^^                         ^^^^^^^^^^^^^ the same lifetime is hidden here
+     |                     |
+     |                     the lifetime is elided here
+     |
+     = help: the same lifetime is referred to in inconsistent ways, making the signature confusing
+     = note: `#[warn(mismatched_lifetime_syntaxes)]` on by default
+help: use `'_` for type paths
+     |
+2408 |   fn display_handle(&self) -> std::result::Result<DisplayHandle<'_>, raw_window_handle::HandleError> {
+     |                                                                ++++
+
+   Compiling tray-icon v0.19.0
+warning: `tauri-runtime-wry` (lib) generated 1 warning (run `cargo fix --lib -p tauri-runtime-wry` to apply 1 suggestion)
+   Compiling elliptic-curve v0.12.3
+   Compiling rfc6979 v0.3.1
+   Compiling primeorder v0.13.6
+   Compiling rustls-webpki v0.102.8
+   Compiling tauri-macros v2.0.4 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tauri-macros)
+   Compiling signature v1.6.4
+   Compiling serde_repr v0.1.19
+   Compiling http-range v0.1.5
+   Compiling is_terminal_polyfill v1.70.1
+   Compiling anstyle v1.0.8
+   Compiling data-encoding v2.6.0
+   Compiling tower-layer v0.3.3
+   Compiling anstyle-query v1.1.1
+   Compiling colorchoice v1.0.2
+   Compiling anstream v0.6.15
+   Compiling ecdsa v0.14.8
+   Compiling aws-credential-types v1.2.1
+   Compiling tempfile v3.14.0
+   Compiling pkcs1 v0.7.5
+   Compiling aws-types v1.3.3
+   Compiling zstd-sys v2.0.13+zstd.1.5.6
+   Compiling oxc-miette-derive v1.0.2
+   Compiling unicode-width v0.2.0
+   Compiling oxc-miette v1.0.2
+warning: struct `WebviewLabel` is never constructed
+  --> crates/tauri/src/event/plugin.rs:43:12
+   |
+43 | pub struct WebviewLabel(String);
+   |            ^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `default_true` is never used
+  --> crates/tauri/src/webview/plugin.rs:25:6
+   |
+25 |   fn default_true() -> bool {
+   |      ^^^^^^^^^^^^
+
+warning: struct `WebviewConfig` is never constructed
+  --> crates/tauri/src/webview/plugin.rs:31:14
+   |
+31 |   pub struct WebviewConfig {
+   |              ^^^^^^^^^^^^^
+
+   Compiling rsa v0.9.6
+   Compiling xz2 v0.1.7
+   Compiling bzip2 v0.4.4
+   Compiling p256 v0.11.1
+   Compiling js-sys v0.3.70
+   Compiling castaway v0.2.3
+   Compiling des v0.8.1
+   Compiling bstr v1.10.0
+   Compiling filetime v0.2.25
+   Compiling clap_lex v0.7.2
+   Compiling clap_builder v4.5.19
+warning: `tauri` (lib) generated 3 warnings
+   Compiling compact_str v0.8.0
+   Compiling aws-sigv4 v1.2.4
+   Compiling p256 v0.13.2
+   Compiling aws-smithy-runtime v1.7.3
+   Compiling oxc_allocator v0.36.0
+   Compiling pem v3.0.4
+   Compiling cargo_metadata v0.18.1
+   Compiling jsonrpsee-types v0.24.5
+   Compiling tokio-stream v0.1.16
+   Compiling derive_builder_core v0.20.1
+   Compiling num-complex v0.4.6
+   Compiling core_maths v0.1.0
+   Compiling clap_derive v4.5.18
+   Compiling dbl v0.3.2
+   Compiling oxc_ast_macros v0.36.0
+   Compiling slotmap v1.0.7
+   Compiling crc24 v0.1.6
+   Compiling ref-cast v1.0.23
+   Compiling fiat-crypto v0.1.20
+   Compiling humantime v2.1.0
+   Compiling rustls v0.23.20
+   Compiling float-cmp v0.9.0
+   Compiling zstd-safe v7.2.1
+   Compiling oxc_estree v0.36.0
+   Compiling futures-timer v3.0.3
+   Compiling oxc_span v0.36.0
+   Compiling jsonrpsee-core v0.24.5
+   Compiling strict-num v0.1.1
+   Compiling ed448-goldilocks v0.7.2
+   Compiling cmac v0.7.2
+   Compiling clap v4.5.19
+   Compiling ttf-parser v0.24.1
+   Compiling num v0.4.3
+   Compiling derive_builder_macro v0.20.1
+   Compiling aws-runtime v1.4.3
+   Compiling tauri-utils v2.1.0
+   Compiling tungstenite v0.24.0
+   Compiling soketto v0.8.0
+   Compiling derive_more-impl v1.0.0
+   Compiling aws-smithy-json v0.60.7
+   Compiling ed25519 v2.2.3
+   Compiling num_enum_derive v0.5.11
+   Compiling password-hash v0.5.0
+   Compiling blake2 v0.10.6
+   Compiling bcder v0.7.4
+   Compiling ref-cast-impl v1.0.23
+   Compiling os_pipe v1.2.1
+   Compiling proc-macro2-diagnostics v0.10.1
+   Compiling radium v0.7.0
+   Compiling num-modular v0.6.1
+   Compiling arrayref v0.3.9
+   Compiling home v0.5.9
+   Compiling unicode-id-start v1.3.0
+   Compiling roxmltree v0.20.0
+   Compiling keccak v0.1.5
+   Compiling webpki-roots v0.25.4
+   Compiling cfg_aliases v0.2.1
+   Compiling regex-lite v0.1.6
+   Compiling tinyvec_macros v0.1.1
+   Compiling sync_wrapper v0.1.2
+   Compiling reqwest v0.11.27
+   Compiling tinyvec v1.8.0
+   Compiling nix v0.29.0
+   Compiling sha3 v0.10.8
+   Compiling x448 v0.6.0
+   Compiling fontconfig-parser v0.5.7
+   Compiling num-order v1.2.0
+   Compiling tiny-skia-path v0.11.4
+   Compiling x509-certificate v0.23.1
+   Compiling argon2 v0.5.3
+   Compiling num_enum v0.5.11
+   Compiling derive_more v1.0.0
+   Compiling tauri-plugin v2.0.3
+   Compiling ed25519-dalek v2.1.1
+   Compiling tokio-tungstenite v0.24.0
+   Compiling derive_builder v0.20.1
+   Compiling eax v0.5.0
+   Compiling oxc_diagnostics v0.36.0
+   Compiling axum-core v0.4.5
+   Compiling tower v0.5.2
+   Compiling dsa v0.6.3
+   Compiling p521 v0.13.3
+   Compiling p384 v0.13.0
+   Compiling x25519-dalek v2.0.1
+   Compiling dashmap v6.1.0
+   Compiling k256 v0.13.4
+   Compiling webpki-roots v0.26.6
+   Compiling console v0.15.8
+   Compiling sha1-checked v0.10.0
+   Compiling aes-kw v0.2.1
+   Compiling ocb3 v0.1.0
+   Compiling kurbo v0.11.1
+   Compiling tauri-plugin v2.0.4 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tauri-plugin)
+   Compiling cfb-mode v0.8.2
+   Compiling twofish v0.7.1
+   Compiling cast5 v0.11.1
+   Compiling camellia v0.1.0
+   Compiling idea v0.5.1
+   Compiling blowfish v0.9.1
+   Compiling crc32c v0.6.8
+   Compiling ripemd v0.1.3
+   Compiling socks v0.3.4
+   Compiling serde_path_to_error v0.1.16
+   Compiling scroll_derive v0.12.0
+   Compiling buffer-redux v1.0.2
+   Compiling memmap2 v0.9.5
+   Compiling inotify-sys v0.1.5
+   Compiling instant v0.1.13
+   Compiling yansi v1.0.1
+   Compiling unicode-bidi-mirroring v0.3.0
+   Compiling pico-args v0.5.0
+   Compiling unicode-ccc v0.3.0
+   Compiling zip v2.2.2
+   Compiling bitfield v0.14.0
+   Compiling iter-read v1.1.0
+   Compiling gimli v0.31.0
+   Compiling doc-comment v0.3.3
+   Compiling shell-words v1.1.0
+   Compiling matchit v0.7.3
+   Compiling bit-vec v0.8.0
+   Compiling borrow-or-share v0.2.2
+   Compiling xmlparser v0.13.6
+   Compiling unicode-properties v0.1.3
+   Compiling siphasher v1.0.1
+   Compiling assert-unchecked v0.1.2
+   Compiling nonmax v0.5.5
+   Compiling typewit_proc_macros v1.8.1
+   Compiling lockfree-object-pool v0.1.6
+   Compiling unicode-script v0.5.7
+   Compiling tap v1.0.1
+   Compiling oxc_index v0.36.0
+   Compiling rust_decimal v1.36.0
+   Compiling oxc_syntax v0.36.0
+   Compiling rustybuzz v0.18.0
+   Compiling addr2line v0.24.1
+   Compiling wyz v0.5.1
+   Compiling zopfli v0.8.1
+   Compiling typewit v1.9.0
+   Compiling aws-smithy-xml v0.60.9
+   Compiling svgtypes v0.15.2
+   Compiling fluent-uri v0.3.2
+   Compiling bit-set v0.8.0
+   Compiling axum v0.7.7
+   Compiling dialoguer v0.11.0
+   Compiling pgp v0.14.0
+   Compiling notify-types v1.0.1
+   Compiling inotify v0.10.2
+   Compiling fontdb v0.22.0
+   Compiling scroll v0.12.0
+   Compiling ureq v2.12.1
+   Compiling tauri-plugin-sample v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/examples/api/src-tauri/tauri-plugin-sample)
+   Compiling oxc_regular_expression v0.36.0
+   Compiling zstd v0.13.2
+   Compiling enum-primitive-derive v0.3.0
+   Compiling tauri-plugin-log v2.2.0
+   Compiling handlebars v6.2.0
+   Compiling globset v0.4.15
+   Compiling tower v0.4.13
+   Compiling neli-proc-macros v0.1.3
+   Compiling synstructure v0.12.6
+   Compiling xattr v1.3.1
+   Compiling once-cell-regex v0.2.1
+   Compiling pbkdf2 v0.12.2
+   Compiling salsa20 v0.10.2
+   Compiling itertools v0.13.0
+   Compiling enum-display-derive v0.1.1
+   Compiling simplecss v0.2.1
+   Compiling object v0.36.5
+   Compiling rtoolbox v0.0.2
+   Compiling shared_child v1.0.1
+   Compiling uncased v0.9.10
+   Compiling unicode-vo v0.1.0
+   Compiling std_prelude v0.2.12
+   Compiling xmlwriter v0.1.0
+   Compiling simple-file-manifest v0.11.0
+   Compiling funty v2.0.0
+   Compiling imagesize v0.13.0
+   Compiling xml-rs v0.8.22
+   Compiling unicode-bidi v0.3.15
+   Compiling cpio v0.4.0
+   Compiling urlencoding v2.1.3
+   Compiling cargo-mobile2 v0.17.3
+   Compiling cow-utils v0.1.3
+   Compiling route-recognizer v0.3.1
+   Compiling stfu8 v0.2.7
+   Compiling data-url v0.3.1
+   Compiling rustls v0.22.4
+   Compiling rustc-demangle v0.1.24
+   Compiling path_abs v0.5.1
+   Compiling backtrace v0.3.74
+   Compiling usvg v0.44.0
+   Compiling jsonrpsee-server v0.24.5
+   Compiling oxc_ast v0.36.0
+   Compiling aws-smithy-query v0.60.7
+   Compiling rpm v0.16.0
+   Compiling serde-xml-rs v0.6.0
+   Compiling bitvec v1.0.1
+   Compiling duct v0.13.7
+   Compiling rpassword v7.3.1
+   Compiling scrypt v0.11.0
+   Compiling tar v0.4.43
+   Compiling asn1-rs-derive v0.4.0
+   Compiling neli v0.6.4
+   Compiling ignore v0.4.23
+   Compiling notify v7.0.0
+   Compiling pear_codegen v0.2.9
+   Compiling fancy-regex v0.14.0
+   Compiling referencing v0.28.1
+   Compiling konst_kernel v0.3.9
+   Compiling web-sys v0.3.70
+   Compiling cryptographic-message-syntax v0.26.0
+   Compiling tiny-skia v0.11.4
+   Compiling which v6.0.3
+   Compiling jsonrpsee-client-transport v0.24.5
+   Compiling fraction v0.15.3
+   Compiling wasm-bindgen-futures v0.4.43
+   Compiling java-properties v2.0.0
+   Compiling itertools v0.10.5
+   Compiling twox-hash v1.6.3
+   Compiling rustls-pemfile v2.2.0
+   Compiling image-webp v0.1.3
+   Compiling infer v0.13.0
+   Compiling uuid-simd v0.8.0
+   Compiling rusticata-macros v4.1.0
+   Compiling freedesktop_entry_parser v1.3.0
+   Compiling simple_asn1 v0.6.2
+   Compiling env_filter v0.1.2
+   Compiling colored v2.1.0
+   Compiling snafu-derive v0.7.5
+   Compiling json-patch v1.4.0
+   Compiling ordered-float v2.10.1
+   Compiling asn1-rs-impl v0.1.0
+   Compiling email_address v0.2.9
+   Compiling quick-xml v0.32.0
+   Compiling is-terminal v0.4.13
+   Compiling include_dir_macros v0.7.4
+   Compiling figment v0.10.19
+   Compiling num-cmp v0.1.0
+   Compiling md5 v0.7.0
+   Compiling bytecount v0.6.8
+   Compiling base64 v0.13.1
+   Compiling tauri-cli v2.2.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tauri-cli)
+   Compiling vlq v0.5.1
+   Compiling utf8-width v0.1.7
+   Compiling termcolor v1.4.1
+   Compiling minicbor v0.20.0
+   Compiling ar v0.9.0
+   Compiling const_panic v0.2.10
+   Compiling is_executable v1.0.4
+   Compiling signal-hook v0.3.17
+   Compiling deunicode v1.6.0
+   Compiling inlinable_string v0.1.15
+   Compiling seq-macro v0.3.5
+   Compiling oid-registry v0.6.1
+   Compiling english-numbers v0.3.3
+   Compiling oxc_parser v0.36.0
+   Compiling pear v0.2.9
+   Compiling cpio-archive v0.9.0
+   Compiling tauri-bundler v2.2.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tauri-bundler)
+   Compiling konst v0.3.9
+   Compiling env_logger v0.10.2
+   Compiling convert_case v0.6.0
+   Compiling byte-unit v5.1.4
+   Compiling magic_string v0.3.4
+   Compiling jsonschema v0.28.1
+   Compiling snafu v0.7.5
+   Compiling plist v1.7.0
+   Compiling include_dir v0.7.4
+   Compiling asn1-rs v0.5.2
+   Compiling serde-value v0.7.0
+   Compiling tauri-utils v1.6.0
+   Compiling env_logger v0.11.5
+   Compiling jsonwebtoken v9.3.0
+   Compiling resvg v0.44.0
+   Compiling rasn-derive v0.12.5
+   Compiling rustls-native-certs v0.7.3
+   Compiling ruzstd v0.5.0
+   Compiling jsonrpsee-ws-client v0.24.5
+   Compiling apple-xar v0.18.0
+   Compiling worker-sys v0.5.0
+   Compiling notify-debouncer-mini v0.5.0
+   Compiling aws-smithy-checksums v0.60.12
+   Compiling ctrlc v3.4.5
+   Compiling local-ip-address v0.6.3
+   Compiling bitvec-nom2 v0.2.1
+   Compiling minisign v0.7.3
+   Compiling aws-sdk-sts v1.39.0
+   Compiling jsonrpsee v0.24.5
+   Compiling aws-sdk-sso v1.39.0
+   Compiling aws-sdk-ssooidc v1.40.0
+   Compiling clap_complete v4.5.29
+   Compiling serde-wasm-bindgen v0.5.0
+   Compiling lru v0.12.4
+   Compiling cookie-factory v0.3.3
+   Compiling tauri-icns v0.1.0
+   Compiling api v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/examples/api/src-tauri)
+   Compiling cbc v0.1.2
+   Compiling rc2 v0.8.1
+   Compiling minicbor-derive v0.13.0
+   Compiling fern v0.7.1
+   Compiling os_info v3.8.2
+   Compiling napi-build v2.1.3
+   Compiling unsafe-libyaml v0.2.11
+   Compiling jzon v0.12.5
+   Compiling common-path v1.0.0
+   Compiling css-color v0.2.8
+   Compiling bytesize v1.3.0
+   Compiling ascii v1.1.0
+   Compiling elf v0.7.4
+   Compiling chunked_transfer v1.5.0
+   Compiling sublime_fuzzy v0.7.0
+   Compiling yasna v0.5.2
+   Compiling plain v0.2.3
+   Compiling goblin v0.8.2
+   Compiling p12 v0.6.3
+   Compiling tiny_http v0.11.0
+   Compiling zip_structs v0.2.1
+   Compiling rasn v0.12.5
+   Compiling serde_yaml v0.9.34+deprecated
+   Compiling tauri-cli-node v0.0.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/packages/cli)
+   Compiling x509 v0.2.0
+   Compiling worker-kv v0.7.0
+   Compiling aws-sdk-s3 v1.46.0
+   Compiling aws-config v1.5.5
+   Compiling worker-macros v0.5.0
+   Compiling tungstenite v0.21.0
+   Compiling apple-flat-package v0.18.0
+   Compiling object v0.32.2
+   Compiling app-store-connect v0.5.0
+   Compiling apple-bundles v0.19.0
+   Compiling napi-derive-backend v1.0.74
+   Compiling wasm-streams v0.4.1
+   Compiling serde-wasm-bindgen v0.6.5
+   Compiling spake2 v0.4.0
+   Compiling resources v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/examples/resources/src-tauri)
+   Compiling bench_cpu_intensive v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/bench/tests/cpu_intensive/src-tauri)
+   Compiling bench_helloworld v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/bench/tests/helloworld/src-tauri)
+   Compiling tauri-file-associations-demo v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/examples/file-associations/src-tauri)
+   Compiling bench_files_transfer v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/bench/tests/files_transfer/src-tauri)
+   Compiling zip v0.6.6
+   Compiling tauri-schema-generator v0.0.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tauri-schema-generator)
+   Compiling dirs-sys-next v0.1.2
+   Compiling napi-sys v2.4.0
+   Compiling restart v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tests/restart)
+   Compiling difference v2.0.0
+   Compiling dirs-next v2.0.0
+   Compiling apple-codesign v0.27.0
+   Compiling napi v2.16.11
+   Compiling worker v0.5.0
+warning: unused variable: `webview`
+  --> examples/api/src-tauri/src/lib.rs:80:11
+   |
+80 |       let webview = window_builder.build()?;
+   |           ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_webview`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+   Compiling napi-derive v2.16.12
+   Compiling signal-hook-tokio v0.3.1
+   Compiling which v4.4.2
+   Compiling console_error_panic_hook v0.1.7
+   Compiling tauri-driver v2.0.1 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tauri-driver)
+   Compiling tauri-schema-worker v0.0.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tauri-schema-worker)
+warning: unexpected `cfg` condition name: `wasm_bindgen_unstable_test_coverage`
+  --> crates/tauri-schema-worker/src/lib.rs:11:1
+   |
+11 | #[worker::event(fetch)]
+   | ^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: expected names are: `docsrs`, `feature`, and `test` and 34 more
+   = note: using a cfg inside a attribute macro will use the cfgs from the destination crate and not the ones from the defining crate
+   = help: try referring to `worker::event` crate for guidance on how handle this unexpected cfg
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: `#[warn(unexpected_cfgs)]` on by default
+   = note: this warning originates in the attribute macro `worker::event` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: `tauri-schema-worker` (lib) generated 1 warning
+warning: unexpected `cfg` condition value: `noop`
+  --> packages/cli/src/lib.rs:12:1
+   |
+12 | #[napi_derive::napi]
+   | ^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: expected values for `feature` are: `default`, `native-tls`, and `native-tls-vendored`
+   = note: using a cfg inside a attribute macro will use the cfgs from the destination crate and not the ones from the defining crate
+   = help: try referring to `napi_derive::napi` crate for guidance on how handle this unexpected cfg
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: `#[warn(unexpected_cfgs)]` on by default
+   = note: this warning originates in the attribute macro `napi_derive::napi` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unexpected `cfg` condition value: `used_linker`
+  --> packages/cli/src/lib.rs:12:1
+   |
+12 | #[napi_derive::napi]
+   | ^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: expected values for `feature` are: `default`, `native-tls`, and `native-tls-vendored`
+   = note: using a cfg inside a attribute macro will use the cfgs from the destination crate and not the ones from the defining crate
+   = help: try referring to `napi::bindgen_prelude::ctor` crate for guidance on how handle this unexpected cfg
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: this warning originates in the attribute macro `napi::bindgen_prelude::ctor` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unexpected `cfg` condition value: `noop`
+  --> packages/cli/src/lib.rs:47:1
+   |
+47 | #[napi_derive::napi]
+   | ^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: expected values for `feature` are: `default`, `native-tls`, and `native-tls-vendored`
+   = note: using a cfg inside a attribute macro will use the cfgs from the destination crate and not the ones from the defining crate
+   = help: try referring to `napi_derive::napi` crate for guidance on how handle this unexpected cfg
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: this warning originates in the attribute macro `napi_derive::napi` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unexpected `cfg` condition value: `used_linker`
+  --> packages/cli/src/lib.rs:47:1
+   |
+47 | #[napi_derive::napi]
+   | ^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: expected values for `feature` are: `default`, `native-tls`, and `native-tls-vendored`
+   = note: using a cfg inside a attribute macro will use the cfgs from the destination crate and not the ones from the defining crate
+   = help: try referring to `napi::bindgen_prelude::ctor` crate for guidance on how handle this unexpected cfg
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: this warning originates in the attribute macro `napi::bindgen_prelude::ctor` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+   Compiling tauri-macos-sign v2.0.1 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tauri-macos-sign)
+warning: `api` (lib) generated 1 warning (run `cargo fix --lib -p api` to apply 1 suggestion)
+warning: `tauri-cli-node` (lib) generated 4 warnings
+   Compiling tauri_bench v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/bench)
+   Compiling acl-tests v0.1.0 (/home/fusion809/lfs_packaging/cargo-tauri/tauri-tauri-v2.2.0/crates/tests/acl)
+    Finished `release` profile [optimized] target(s) in 35m 36s
+warning: the following packages contain code that will be rejected by a future version of Rust: num-bigint-dig v0.8.4
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+2.2.0
+Updated registry for cargo-tauri to version 2.2.0
+[VERSION] cargo-tauri: 2.2.0
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package cargo-tauri in /var/lib/custom-packages/
+Updating Python packages via pip...
+Requirement already satisfied: affine in /usr/lib/python3.15/site-packages (3.0.1)
+Requirement already satisfied: alabaster in /usr/lib/python3.15/site-packages (1.0.0)
+Requirement already satisfied: anyio in /usr/lib/python3.15/site-packages (4.16.0)
+Requirement already satisfied: appdirs in /usr/lib/python3.15/site-packages (1.4.4)
+Requirement already satisfied: argcomplete in /usr/lib/python3.15/site-packages (3.7.2)
+Collecting argcomplete
+  Using cached argcomplete-3.8.0-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: arrow in /usr/lib/python3.15/site-packages (1.4.0)
+Requirement already satisfied: asgiref in /usr/lib/python3.15/site-packages (3.13.0)
+Requirement already satisfied: astroid in /usr/lib/python3.15/site-packages (4.3.4)
+Requirement already satisfied: asttokens in /usr/lib/python3.15/site-packages (3.0.2)
+Requirement already satisfied: attrs in /usr/lib/python3.15/site-packages (26.1.0)
+Requirement already satisfied: babel in /usr/lib/python3.15/site-packages (2.18.0)
+Collecting babel
+  Using cached babel-2.19.0-py3-none-any.whl.metadata (2.6 kB)
+Requirement already satisfied: beautifulsoup4 in /usr/lib/python3.15/site-packages (4.15.0)
+Requirement already satisfied: black in /usr/lib/python3.15/site-packages (26.10.1)
+Requirement already satisfied: bleach in /usr/lib/python3.15/site-packages (6.4.0)
+Requirement already satisfied: brotli in /usr/lib/python3.15/site-packages (1.2.1)
+Requirement already satisfied: build in /usr/lib/python3.15/site-packages (1.6.1)
+Requirement already satisfied: cclib in /usr/lib/python3.15/site-packages (1.8.1)
+Requirement already satisfied: certifi in /usr/lib/python3.15/site-packages (2026.10.23)
+Collecting certifi
+  Using cached certifi-2026.11.20-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: cffi in /usr/lib/python3.15/site-packages (2.1.1)
+Requirement already satisfied: chardet in /usr/lib/python3.15/site-packages (5.2.0)
+Collecting chardet
+  Using cached chardet-7.7.0-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Requirement already satisfied: click in /usr/lib/python3.15/site-packages (8.5.1)
+Requirement already satisfied: colorama in /usr/lib/python3.15/site-packages (0.4.6)
+Requirement already satisfied: columnize in /usr/lib/python3.15/site-packages (0.3.11)
+Requirement already satisfied: comm in /usr/lib/python3.15/site-packages (0.2.3)
+Requirement already satisfied: contourpy in /usr/lib/python3.15/site-packages (1.4.0)
+Requirement already satisfied: cryptography in /usr/lib/python3.15/site-packages (50.0.2)
+Requirement already satisfied: cssselect in /usr/lib/python3.15/site-packages (1.6.0)
+Requirement already satisfied: cycler in /usr/lib/python3.15/site-packages (0.12.1)
+Requirement already satisfied: dateutils in /usr/lib/python3.15/site-packages (0.6.12)
+Requirement already satisfied: debugpy in /usr/lib/python3.15/site-packages (1.8.22)
+Requirement already satisfied: decorator in /usr/lib/python3.15/site-packages (5.3.2)
+Requirement already satisfied: defusedxml in /usr/lib/python3.15/site-packages (0.7.1)
+Requirement already satisfied: dill in /usr/lib/python3.15/site-packages (0.4.1)
+Requirement already satisfied: docutils in /usr/lib/python3.15/site-packages (0.22.4)
+Collecting docutils
+  Using cached docutils-0.23-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: doxypypy in /usr/lib/python3.15/site-packages (0.8.8.7)
+Requirement already satisfied: doxyqml in /usr/lib/python3.15/site-packages (0.6.0)
+Requirement already satisfied: editables in /usr/lib/python3.15/site-packages (0.6)
+Requirement already satisfied: executing in /usr/lib/python3.15/site-packages (2.3.0)
+Requirement already satisfied: fastjsonschema in /usr/lib/python3.15/site-packages (2.22.3)
+Requirement already satisfied: flake8 in /usr/lib/python3.15/site-packages (7.5.0)
+Requirement already satisfied: flexcache in /usr/lib/python3.15/site-packages (0.3)
+Requirement already satisfied: flexparser in /usr/lib/python3.15/site-packages (0.4)
+Requirement already satisfied: flit_core in /usr/lib/python3.15/site-packages (4.2.0)
+Requirement already satisfied: fonttools in /usr/lib/python3.15/site-packages (4.68.0)
+Collecting fonttools
+  Using cached fonttools-4.69.1-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (147 kB)
+Requirement already satisfied: fqdn in /usr/lib/python3.15/site-packages (1.6.0)
+Requirement already satisfied: gobject in /usr/lib/python3.15/site-packages (0.1.0)
+Requirement already satisfied: h11 in /usr/lib/python3.15/site-packages (0.16.0)
+Requirement already satisfied: hatchling in /usr/lib/python3.15/site-packages (1.33.0)
+Requirement already satisfied: html5lib in /usr/lib/python3.15/site-packages (1.1)
+Requirement already satisfied: httpcore in /usr/lib/python3.15/site-packages (1.0.9)
+Requirement already satisfied: httpx in /usr/lib/python3.15/site-packages (0.28.1)
+Collecting httpx
+  Using cached httpx-0.29.0-py3-none-any.whl.metadata (7.1 kB)
+Requirement already satisfied: idna in /usr/lib/python3.15/site-packages (3.20)
+Requirement already satisfied: imagesize in /usr/lib/python3.15/site-packages (2.0.1)
+Requirement already satisfied: installer in /usr/lib/python3.15/site-packages (1.1.0)
+Requirement already satisfied: ipykernel in /usr/lib/python3.15/site-packages (7.4.0)
+Requirement already satisfied: ipython in /usr/lib/python3.15/site-packages (9.18.1)
+Collecting ipython
+  Using cached ipython-9.19.1-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: ipython_pygments_lexers in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: isoduration in /usr/lib/python3.15/site-packages (20.11.0)
+Requirement already satisfied: isort in /usr/lib/python3.15/site-packages (9.0.2)
+Requirement already satisfied: jedi in /usr/lib/python3.15/site-packages (0.20.1)
+Requirement already satisfied: json5 in /usr/lib/python3.15/site-packages (0.17.3)
+Requirement already satisfied: jsonpointer in /usr/lib/python3.15/site-packages (3.12)
+Requirement already satisfied: jsonschema in /usr/lib/python3.15/site-packages (4.26.0)
+Requirement already satisfied: jupyter_builder in /usr/lib/python3.15/site-packages (1.3.0)
+Collecting jupyter_builder
+  Using cached jupyter_builder-1.3.1-py3-none-any.whl.metadata (8.5 kB)
+Requirement already satisfied: jupyter_client in /usr/lib/python3.15/site-packages (8.10.0)
+Requirement already satisfied: jupyter_core in /usr/lib/python3.15/site-packages (5.9.1)
+Requirement already satisfied: jupyter_server in /usr/lib/python3.15/site-packages (2.21.1)
+Requirement already satisfied: jupyter_server_terminals in /usr/lib/python3.15/site-packages (0.5.4)
+Requirement already satisfied: jupyterlab in /usr/lib/python3.15/site-packages (4.6.6)
+Requirement already satisfied: jupyterlab_pygments in /usr/lib/python3.15/site-packages (0.3.0)
+Requirement already satisfied: jupyterlab_server in /usr/lib/python3.15/site-packages (2.28.1)
+Requirement already satisfied: kiwisolver in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: lark in /usr/lib/python3.15/site-packages (1.3.1)
+Requirement already satisfied: lxml in /usr/lib/python3.15/site-packages (6.1.3)
+Collecting lxml
+  Using cached lxml-6.2.0-cp315-cp315-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (5.6 kB)
+Requirement already satisfied: mathics3_notebook_frontends in /usr/lib/python3.15/site-packages (1.0.1)
+Requirement already satisfied: mathicsscript in /usr/lib/python3.15/site-packages (10.0.0)
+Requirement already satisfied: matplotlib in /usr/lib/python3.15/site-packages (3.11.2)
+Requirement already satisfied: mccabe in /usr/lib/python3.15/site-packages (0.7.0)
+Requirement already satisfied: meson in /usr/lib/python3.15/site-packages (1.12.1)
+Requirement already satisfied: metakernel in /usr/lib/python3.15/site-packages (1.0.7)
+Requirement already satisfied: mistune in /usr/lib/python3.15/site-packages (3.4.0)
+Requirement already satisfied: mpmath in /usr/lib/python3.15/site-packages (1.3.0)
+Collecting mpmath
+  Using cached mpmath-1.4.1-py3-none-any.whl.metadata (9.1 kB)
+Requirement already satisfied: msgpack in /usr/lib/python3.15/site-packages (1.2.4)
+Requirement already satisfied: mypy_extensions in /usr/lib/python3.15/site-packages (1.2.0)
+Requirement already satisfied: narwhals in /usr/lib/python3.15/site-packages (2.29.0)
+Requirement already satisfied: nbclient in /usr/lib/python3.15/site-packages (0.11.0)
+Requirement already satisfied: nbconvert in /usr/lib/python3.15/site-packages (7.17.2)
+Requirement already satisfied: nbformat in /usr/lib/python3.15/site-packages (5.11.1)
+Requirement already satisfied: networkx in /usr/lib/python3.15/site-packages (3.7)
+Requirement already satisfied: notebook_shim in /usr/lib/python3.15/site-packages (0.2.4)
+Requirement already satisfied: numpy in /usr/lib/python3.15/site-packages (2.5.5)
+Requirement already satisfied: octave_kernel in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: packaging in /usr/lib/python3.15/site-packages (26.3)
+Collecting packaging
+  Using cached packaging-26.4-py3-none-any.whl.metadata (3.5 kB)
+Requirement already satisfied: palettable in /usr/lib/python3.15/site-packages (3.3.3)
+Requirement already satisfied: pandocfilters in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: parameterized in /usr/lib/python3.15/site-packages (0.9.0)
+Requirement already satisfied: parso in /usr/lib/python3.15/site-packages (0.8.7)
+Requirement already satisfied: pathspec in /usr/lib/python3.15/site-packages (1.1.1)
+Requirement already satisfied: periodictable in /usr/lib/python3.15/site-packages (2.1.0)
+Requirement already satisfied: pexpect in /usr/lib/python3.15/site-packages (4.9.0)
+Requirement already satisfied: pillow in /usr/lib/python3.15/site-packages (13.0.0)
+Requirement already satisfied: pip in /usr/lib/python3.15/site-packages (26.3)
+Requirement already satisfied: platformdirs in /usr/lib/python3.15/site-packages (4.14.8)
+Collecting platformdirs
+  Using cached platformdirs-4.14.9-py3-none-any.whl.metadata (5.7 kB)
+Requirement already satisfied: pluggy in /usr/lib/python3.15/site-packages (1.7.0)
+Requirement already satisfied: prometheus_client in /usr/lib/python3.15/site-packages (0.26.0)
+Requirement already satisfied: prompt_toolkit in /usr/lib/python3.15/site-packages (3.0.53)
+Requirement already satisfied: psutil in /usr/lib/python3.15/site-packages (7.2.2)
+Requirement already satisfied: ptyprocess in /usr/lib/python3.15/site-packages (0.7.0)
+Requirement already satisfied: pure_eval in /usr/lib/python3.15/site-packages (0.2.4)
+Requirement already satisfied: pyasn1 in /usr/lib/python3.15/site-packages (0.6.5)
+Requirement already satisfied: pybind11 in /usr/lib/python3.15/site-packages (3.1.0)
+Requirement already satisfied: pycairo in /usr/lib/python3.15/site-packages (1.29.2)
+Requirement already satisfied: pycodestyle in /usr/lib/python3.15/site-packages (2.15.0)
+Requirement already satisfied: pycparser in /usr/lib/python3.15/site-packages (3.12)
+Requirement already satisfied: pydeck in /usr/lib/python3.15/site-packages (0.9.3)
+Requirement already satisfied: pyelftools in /usr/lib/python3.15/site-packages (0.33)
+Requirement already satisfied: pyflakes in /usr/lib/python3.15/site-packages (4.1.0)
+Requirement already satisfied: pygdbmi in /usr/lib/python3.15/site-packages (0.11.0.0)
+Requirement already satisfied: pylint in /usr/lib/python3.15/site-packages (4.1.4)
+Requirement already satisfied: Pympler in /usr/lib/python3.15/site-packages (1.1)
+Requirement already satisfied: pyparsing in /usr/lib/python3.15/site-packages (3.3.3)
+Requirement already satisfied: pyproject_hooks in /usr/lib/python3.15/site-packages (1.3.3)
+Requirement already satisfied: pyserial in /usr/lib/python3.15/site-packages (3.5)
+Requirement already satisfied: pyte in /usr/lib/python3.15/site-packages (0.8.2)
+Requirement already satisfied: pytokens in /usr/lib/python3.15/site-packages (0.4.1)
+Requirement already satisfied: pytz in /usr/lib/python3.15/site-packages (2026.6)
+Requirement already satisfied: pyzmq in /usr/lib/python3.15/site-packages (27.3.0)
+Requirement already satisfied: rasterio in /usr/lib/python3.15/site-packages (1.5.2)
+Requirement already satisfied: rdflib in /usr/lib/python3.15/site-packages (7.6.0)
+Requirement already satisfied: referencing in /usr/lib/python3.15/site-packages (0.37.0)
+Requirement already satisfied: requests in /usr/lib/python3.15/site-packages (2.34.2)
+Requirement already satisfied: rnc2rng in /usr/lib/python3.15/site-packages (2.8.0)
+Collecting rnc2rng
+  Using cached rnc2rng-2.9.0-py3-none-any.whl.metadata (3.8 kB)
+Requirement already satisfied: rply in /usr/lib/python3.15/site-packages (0.7.8)
+Requirement already satisfied: scikit_build_core in /usr/lib/python3.15/site-packages (1.1.2)
+Requirement already satisfied: scipy in /usr/lib/python3.15/site-packages (1.18.1)
+Requirement already satisfied: scour in /usr/lib/python3.15/site-packages (0.38.2)
+Requirement already satisfied: setuptools in /usr/lib/python3.15/site-packages (84.2.1)
+Requirement already satisfied: sip in /usr/lib/python3.15/site-packages (6.17.3)
+Requirement already satisfied: six in /usr/lib/python3.15/site-packages (1.17.0)
+Requirement already satisfied: smartypants in /usr/lib/python3.15/site-packages (2.0.2)
+Requirement already satisfied: snowballstemmer in /usr/lib/python3.15/site-packages (3.1.1)
+Requirement already satisfied: soupsieve in /usr/lib/python3.15/site-packages (4.1.3)
+Requirement already satisfied: sphinx_lv2_theme in /usr/lib/python3.15/site-packages (1.4.6)
+Requirement already satisfied: sphinxygen in /usr/lib/python3.15/site-packages (1.0.12)
+Requirement already satisfied: sqlparse in /usr/lib/python3.15/site-packages (0.6.1)
+Requirement already satisfied: sympy in /usr/lib/python3.15/site-packages (1.14.0)
+Requirement already satisfied: terminado in /usr/lib/python3.15/site-packages (0.18.1)
+Requirement already satisfied: tinycss2 in /usr/lib/python3.15/site-packages (1.5.1)
+Requirement already satisfied: tomlkit in /usr/lib/python3.15/site-packages (0.15.2)
+Collecting tomlkit
+  Using cached tomlkit-0.15.3-py3-none-any.whl.metadata (3.4 kB)
+Requirement already satisfied: tornado in /usr/lib/python3.15/site-packages (6.6.1)
+Requirement already satisfied: traitlets in /usr/lib/python3.15/site-packages (5.16.1)
+Requirement already satisfied: typing_extensions in /usr/lib/python3.15/site-packages (4.16.0)
+Requirement already satisfied: typogrify in /usr/lib/python3.15/site-packages (2.1.0)
+Requirement already satisfied: tzdata in /usr/lib/python3.15/site-packages (2026.6)
+Requirement already satisfied: urllib3 in /usr/lib/python3.15/site-packages (2.8.0)
+Requirement already satisfied: wcwidth in /usr/lib/python3.15/site-packages (0.9.4)
+Collecting wcwidth
+  Using cached wcwidth-0.9.5-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (26 kB)
+Requirement already satisfied: webcolors in /usr/lib/python3.15/site-packages (25.10.0)
+Requirement already satisfied: webencodings in /usr/lib/python3.15/site-packages (0.6.1)
+Requirement already satisfied: wheel in /usr/lib/python3.15/site-packages (0.48.0)
+Requirement already satisfied: python-dateutil>=2.7.0 in /usr/lib/python3.15/site-packages (from arrow) (3.0.0)
+Requirement already satisfied: trove-classifiers in /usr/lib/python3.15/site-packages (from hatchling) (2026.6.1.19)
+Requirement already satisfied: matplotlib-inline>=0.1 in /usr/lib/python3.15/site-packages (from ipykernel) (0.2.2)
+Requirement already satisfied: nest-asyncio2>=1.7.0 in /usr/lib/python3.15/site-packages (from ipykernel) (1.7.4)
+Requirement already satisfied: pygments>=2.14.0 in /usr/lib/python3.15/site-packages (from ipython) (2.21.0)
+Requirement already satisfied: stack_data>=0.6.0 in /usr/lib/python3.15/site-packages (from ipython) (0.6.3)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /usr/lib/python3.15/site-packages (from jsonschema) (2025.9.1)
+Requirement already satisfied: rpds-py>=0.25.0 in /usr/lib/python3.15/site-packages (from jsonschema) (2026.9.1)
+Requirement already satisfied: argon2-cffi>=21.1 in /usr/lib/python3.15/site-packages (from jupyter_server) (25.1.0)
+Requirement already satisfied: jinja2>=3.0.3 in /usr/lib/python3.15/site-packages (from jupyter_server) (3.1.6)
+Requirement already satisfied: jupyter-events>=0.11.0 in /usr/lib/python3.15/site-packages (from jupyter_server) (0.12.1)
+Requirement already satisfied: send2trash>=1.8.2 in /usr/lib/python3.15/site-packages (from jupyter_server) (2.1.0)
+Requirement already satisfied: websocket-client>=1.7 in /usr/lib/python3.15/site-packages (from jupyter_server) (1.9.2)
+Requirement already satisfied: async-lru>=1.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.4.0)
+Requirement already satisfied: jupyter-lsp>=2.0.0 in /usr/lib/python3.15/site-packages (from jupyterlab) (2.3.1)
+Requirement already satisfied: Mathics3>=10.0.1 in /usr/lib/python3.15/site-packages (from mathics3_notebook_frontends) (10.0.1)
+Requirement already satisfied: charset-normalizer<4.0.0,>=2.0.0 in /usr/lib/python3.15/site-packages (from mathics3_notebook_frontends) (3.5.2)
+Requirement already satisfied: Mathics3_Scanner>=10.0.0 in /usr/lib/python3.15/site-packages (from mathicsscript) (10.0.1)
+Requirement already satisfied: Mathics3_pygments>=10.0.0 in /usr/lib/python3.15/site-packages (from mathicsscript) (10.0.0)
+Requirement already satisfied: term-background>=1.0.5 in /usr/lib/python3.15/site-packages (from mathicsscript) (1.0.5)
+Requirement already satisfied: markupsafe>=2.0 in /usr/lib/python3.15/site-packages (from nbconvert) (3.0.4)
+Requirement already satisfied: sphinx in /usr/lib/python3.15/site-packages (from sphinx_lv2_theme) (9.1.0)
+Requirement already satisfied: argon2-cffi-bindings in /usr/lib/python3.15/site-packages (from argon2-cffi>=21.1->jupyter_server) (26.1.0)
+Requirement already satisfied: python-json-logger>=2.0.4 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (4.2.0)
+Requirement already satisfied: pyyaml>=5.3 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (6.0.3)
+Requirement already satisfied: rfc3339-validator in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (0.1.4)
+Requirement already satisfied: rfc3986-validator>=0.1.1 in /usr/lib/python3.15/site-packages (from jupyter-events>=0.11.0->jupyter_server) (0.1.1)
+Requirement already satisfied: rfc3987-syntax>=1.1.0 in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter_server) (1.1.0)
+Requirement already satisfied: uri-template in /usr/lib/python3.15/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter_server) (1.3.0)
+Requirement already satisfied: pint>=0.24 in /usr/lib/python3.15/site-packages (from Mathics3>=10.0.1->mathics3_notebook_frontends) (0.26.2)
+Requirement already satisfied: Timed-Threads in /usr/lib/python3.15/site-packages (from Mathics3>=10.0.1->mathics3_notebook_frontends) (2.0.0)
+Requirement already satisfied: sphinxcontrib-applehelp>=1.0.7 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-devhelp>=1.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-htmlhelp>=2.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.1.0)
+Requirement already satisfied: sphinxcontrib-jsmath>=1.0.1 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (1.0.1)
+Requirement already satisfied: sphinxcontrib-qthelp>=1.0.6 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: sphinxcontrib-serializinghtml>=1.1.9 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (2.0.0)
+Requirement already satisfied: roman-numerals>=1.0.0 in /usr/lib/python3.15/site-packages (from sphinx->sphinx_lv2_theme) (4.1.0)
+Using cached argcomplete-3.8.0-py3-none-any.whl (45 kB)
+Using cached babel-2.19.0-py3-none-any.whl (11.0 MB)
+Using cached certifi-2026.11.20-py3-none-any.whl (127 kB)
+Using cached fonttools-4.69.1-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (6.7 MB)
+Using cached httpx-0.29.0-py3-none-any.whl (73 kB)
+Using cached ipython-9.19.1-py3-none-any.whl (649 kB)
+Using cached jupyter_builder-1.3.1-py3-none-any.whl (950 kB)
+Using cached lxml-6.2.0-cp315-cp315-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (5.3 MB)
+Using cached packaging-26.4-py3-none-any.whl (140 kB)
+Using cached platformdirs-4.14.9-py3-none-any.whl (94 kB)
+Using cached rnc2rng-2.9.0-py3-none-any.whl (16 kB)
+Using cached tomlkit-0.15.3-py3-none-any.whl (55 kB)
+Using cached wcwidth-0.9.5-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (822 kB)
+WARNING: Error parsing dependencies of certifi: No package metadata was found.
+WARNING: Error parsing dependencies of wcwidth: No package metadata was found.
+Installing collected packages: wcwidth, tomlkit, platformdirs, packaging, lxml, fonttools, certifi, babel, argcomplete, rnc2rng, jupyter_builder, ipython, httpx
+  Attempting uninstall: wcwidth
+ERROR: Could not install packages due to an OSError: No package metadata was found.
+
+
+Checking system health before committing updates...
+System healthy. Triggering automated registry commit...
+Committing updates in /var/lib/custom-packages: cargo-tauri: 2.8.0->2.2.0.
+[master c3c1391] cargo-tauri: 2.8.0->2.2.0.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Pushing changes in /var/lib/custom-packages...
+Committing changes in ~/build_duration: cargo-tauri: 2.8.0->2.2.0.
+[master 06db3b5] cargo-tauri: 2.8.0->2.2.0.
+ 1 file changed, 1 insertion(+)
+Pushing changes in ~/build_duration...
+r13.1-42
+r13.1-721
+[LFS-AUTOBUILD] Generating dependency and package caches. This ensures accurate and fast cleanup...
+Dependency cache is up-to-date.
+[LFS-AUTOBUILD] Caches generated. Evaluating system libraries...
+Skipping registered directory: /usr/lib/gnome-settings-daemon-3.0 (belongs to an installed package)
+Skipping registered directory: /usr/lib/gtk-3.0 (belongs to an installed package)
+No old library versions found to clean up.
+Scanning /usr/share/doc for stale old-version directories...
+---
+Removed : 0
+Kept    : 0
+Deleting kernels older than 7.3.6...
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.3.6-lfs-r13.1-42
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Scanning /usr/share for orphaned directories...
+No orphaned versioned directories were found to delete.
+Cleanup of /usr/share complete.
+~
+~/logs ~ ~/lfs_packaging
