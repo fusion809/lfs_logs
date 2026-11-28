@@ -1,0 +1,108 @@
+[22:47:15] Found custom package for reshiki-git, bypassing BLFS aliases.
+[22:47:15] Custom package detected at /home/fusion809/lfs_packaging/reshiki-git (package: reshiki-git)
+[22:47:15] Extracting dependencies for custom package 'reshiki-git'...
+[22:47:15] Required deps: acl at-spi2-core brotli bzip2 cairo dbus expat fontconfig freetype fribidi gcc gdk-pixbuf glib2 glibc glycin graphite2 gtk3 harfbuzz libcanberra libepoxy libffi libice libogg libpng libseccomp libselinux libsm libtool libvorbis libx11 libxau libxcb libxcomposite libxcursor libxdamage libxdmcp libxext libxfixes libxi libxinerama libxkbcommon libxrandr libxrender libxres libxt ncurses pango pcre2 pixman systemd util-linux wayland zlib 
+[22:47:15] Dependency 'acl' already installed.
+[22:47:15] Dependency 'at-spi2-core' already installed.
+[22:47:15] Dependency 'brotli' already installed.
+[22:47:15] Dependency 'bzip2' already installed.
+[22:47:15] Dependency 'cairo' already installed.
+[22:47:15] Dependency 'dbus' already installed.
+[22:47:15] Dependency 'expat' already installed.
+[22:47:15] Dependency 'fontconfig' already installed.
+[22:47:15] Dependency 'freetype' already installed.
+[22:47:15] Dependency 'fribidi' already installed.
+[22:47:15] Dependency 'gcc' already installed.
+[22:47:15] Dependency 'gdk-pixbuf' already installed.
+[22:47:15] Dependency 'glib2' already installed.
+[22:47:15] Dependency 'glibc' already installed.
+[22:47:15] Dependency 'glycin' already installed.
+[22:47:15] Dependency 'graphite2' already installed.
+[22:47:15] Dependency 'gtk3' already installed.
+[22:47:15] Dependency 'harfbuzz' already installed.
+[22:47:15] Dependency 'libcanberra' already installed.
+[22:47:15] Dependency 'libepoxy' already installed.
+[22:47:15] Dependency 'libffi' already installed.
+[22:47:15] Dependency 'libice' already installed.
+[22:47:15] Dependency 'libogg' already installed.
+[22:47:15] Dependency 'libpng' already installed.
+[22:47:15] Dependency 'libseccomp' already installed.
+[22:47:15] Dependency 'libselinux' already installed.
+[22:47:15] Dependency 'libsm' already installed.
+[22:47:15] Dependency 'libtool' already installed.
+[22:47:15] Dependency 'libvorbis' already installed.
+[22:47:15] Dependency 'libx11' already installed.
+[22:47:15] Dependency 'libxau' already installed.
+[22:47:15] Dependency 'libxcb' already installed.
+[22:47:15] Dependency 'libxcomposite' already installed.
+[22:47:15] Dependency 'libxcursor' already installed.
+[22:47:15] Dependency 'libxdamage' already installed.
+[22:47:15] Dependency 'libxdmcp' already installed.
+[22:47:15] Dependency 'libxext' already installed.
+[22:47:15] Dependency 'libxfixes' already installed.
+[22:47:15] Dependency 'libxi' already installed.
+[22:47:15] Dependency 'libxinerama' already installed.
+[22:47:15] Dependency 'libxkbcommon' already installed.
+[22:47:15] Dependency 'libxrandr' already installed.
+[22:47:15] Dependency 'libxrender' already installed.
+[22:47:15] Dependency 'libxres' already installed.
+[22:47:15] Dependency 'libxt' already installed.
+[22:47:15] Dependency 'ncurses' already installed.
+[22:47:15] Dependency 'pango' already installed.
+[22:47:15] Dependency 'pcre2' already installed.
+[22:47:15] Dependency 'pixman' already installed.
+[22:47:15] Dependency 'systemd' already installed.
+[22:47:15] Dependency 'util-linux' already installed.
+[22:47:15] Dependency 'wayland' already installed.
+[22:47:15] Dependency 'zlib' already installed.
+[VERSION] reshiki-git: 8b2e155464fa185f1286868bda37dc42ca09b7e6
+[22:47:16] Installing reshiki-git version: 8b2e155464fa185f1286868bda37dc42ca09b7e6
+[22:47:16] Starting remote custom build for reshiki-git...
+From https://github.com/Ameyanagi/ReShiki
+ * [new branch]          deps/axtb-kernel-allocation -> origin/deps/axtb-kernel-allocation
+   eaf77ec26..8b2e15546  main               -> origin/main
+   99c39ae5f..3d1664a44  windows/enable-xtb -> origin/windows/enable-xtb
+Previous HEAD position was eaf77ec26 Merge pull request #1492 from Ameyanagi/xtb/scheme-discover-intermediates
+HEAD is now at 8b2e15546 Merge pull request #1495 from Ameyanagi/windows/enable-xtb
+warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+   --> vendor/iced_widget/src/pick_list.rs:375:22
+    |
+375 |                 f32::INFINITY,
+    |                      ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: `iced_widget` (lib) generated 1 warning
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:586:55
+    |
+586 |         let event = if let Ok(event) = event_receiver.try_next() {
+    |                                                       ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated method `iced_debug::iced_futures::futures::futures_channel::mpsc::UnboundedReceiver::<T>::try_next`: please use `try_recv` instead
+   --> vendor/iced_winit/src/lib.rs:297:64
+    |
+297 |                     task::Poll::Pending => match self.receiver.try_next() {
+    |                                                                ^^^^^^^^
+
+warning: `iced_winit` (lib) generated 2 warnings
+   Compiling reshiki v0.17.1 (/home/fusion809/lfs_packaging/reshiki-git/ReShiki)
+    Finished `release` profile [optimized + debuginfo] target(s) in 12m 01s
+[Desktop Entry]
+Name=ReShiki (git)
+Type=Application
+Exec=/usr/bin/reshiki-git %U
+TryExec=/usr/bin/reshiki-git
+Icon=reshiki-git
+MimeType=chemical/x-mdl-molfile;chemical/x-mdl-rxnfile;chemical/x-smiles;chemical/x-cml;chemical/x-inchi;
+StartupNotify=true
+Categories=Education;Science;Chemistry;
+StartupWMClass=reshiki-git
+Saved working directory and index state WIP on (no branch): 8b2e15546 Merge pull request #1495 from Ameyanagi/windows/enable-xtb
+8b2e155464fa185f1286868bda37dc42ca09b7e6
+Updated registry for reshiki-git to version 8b2e155464fa185f1286868bda37dc42ca09b7e6
+[VERSION] reshiki-git: 8b2e155464fa185f1286868bda37dc42ca09b7e6
+Parsing build log for additional files (Up-to-date/Installing)...
+Recorded installed files for custom package reshiki-git in /var/lib/custom-packages/
